@@ -1,0 +1,41 @@
+{
+  "namespace": "Microsoft.AspNetCore.Mvc.Core.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Mvc.Core"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Core.Infrastructure.IAntiforgeryValidationFailedResult",
+      "clrName": "Microsoft.AspNetCore.Mvc.Core.Infrastructure.IAntiforgeryValidationFailedResult",
+      "tsEmitName": "IAntiforgeryValidationFailedResult",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IActionResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
+          "clrName": "ExecuteResultAsync",
+          "tsEmitName": "executeResultAsync",
+          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

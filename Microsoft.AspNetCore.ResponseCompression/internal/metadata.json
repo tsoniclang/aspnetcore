@@ -1,0 +1,749 @@
+{
+  "namespace": "Microsoft.AspNetCore.ResponseCompression",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.ResponseCompression"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.ICompressionProvider",
+      "tsEmitName": "ICompressionProvider",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::CreateStream(System.IO.Stream):System.IO.Stream",
+          "clrName": "CreateStream",
+          "tsEmitName": "createStream",
+          "normalizedSignature": "CreateStream|(System.IO.Stream):System.IO.Stream|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::EncodingName:System.String",
+          "clrName": "EncodingName",
+          "tsEmitName": "encodingName",
+          "normalizedSignature": "EncodingName|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::SupportsFlush:System.Boolean",
+          "clrName": "SupportsFlush",
+          "tsEmitName": "supportsFlush",
+          "normalizedSignature": "SupportsFlush|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider",
+      "tsEmitName": "IResponseCompressionProvider",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider::GetCompressionProvider(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.ResponseCompression.ICompressionProvider",
+          "clrName": "GetCompressionProvider",
+          "tsEmitName": "getCompressionProvider",
+          "normalizedSignature": "GetCompressionProvider|(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.ResponseCompression.ICompressionProvider|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider::ShouldCompressResponse(Microsoft.AspNetCore.Http.HttpContext):System.Boolean",
+          "clrName": "ShouldCompressResponse",
+          "tsEmitName": "shouldCompressResponse",
+          "normalizedSignature": "ShouldCompressResponse|(Microsoft.AspNetCore.Http.HttpContext):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProvider",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProvider",
+      "tsEmitName": "BrotliCompressionProvider",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProvider::CreateStream(System.IO.Stream):System.IO.Stream",
+          "clrName": "CreateStream",
+          "tsEmitName": "createStream",
+          "normalizedSignature": "CreateStream|(System.IO.Stream):System.IO.Stream|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::CreateStream(System.IO.Stream):System.IO.Stream",
+          "clrName": "CreateStream",
+          "tsEmitName": "createStream$view",
+          "normalizedSignature": "CreateStream|(System.IO.Stream):System.IO.Stream|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.ICompressionProvider",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProvider::EncodingName:System.String",
+          "clrName": "EncodingName",
+          "tsEmitName": "encodingName",
+          "normalizedSignature": "EncodingName|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProvider::SupportsFlush:System.Boolean",
+          "clrName": "SupportsFlush",
+          "tsEmitName": "supportsFlush",
+          "normalizedSignature": "SupportsFlush|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::EncodingName:System.String",
+          "clrName": "EncodingName",
+          "tsEmitName": "encodingName$view",
+          "normalizedSignature": "EncodingName|:System.String|static=false|accessor=get",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.ICompressionProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::SupportsFlush:System.Boolean",
+          "clrName": "SupportsFlush",
+          "tsEmitName": "supportsFlush$view",
+          "normalizedSignature": "SupportsFlush|:System.Boolean|static=false|accessor=get",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.ICompressionProvider"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProviderOptions,Microsoft.AspNetCore.ResponseCompression,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProviderOptions",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProviderOptions",
+      "tsEmitName": "BrotliCompressionProviderOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProviderOptions::Level:System.IO.Compression.CompressionLevel",
+          "clrName": "Level",
+          "tsEmitName": "level",
+          "normalizedSignature": "Level|:System.IO.Compression.CompressionLevel|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.CompressionProviderCollection",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.CompressionProviderCollection",
+      "tsEmitName": "CompressionProviderCollection",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.CompressionProviderCollection::Add():System.Void",
+          "clrName": "Add",
+          "tsEmitName": "add",
+          "normalizedSignature": "Add|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 1,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.CompressionProviderCollection::Add(System.Type):System.Void",
+          "clrName": "Add",
+          "tsEmitName": "add",
+          "normalizedSignature": "Add|(System.Type):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.GzipCompressionProvider",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.GzipCompressionProvider",
+      "tsEmitName": "GzipCompressionProvider",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.GzipCompressionProvider::CreateStream(System.IO.Stream):System.IO.Stream",
+          "clrName": "CreateStream",
+          "tsEmitName": "createStream",
+          "normalizedSignature": "CreateStream|(System.IO.Stream):System.IO.Stream|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::CreateStream(System.IO.Stream):System.IO.Stream",
+          "clrName": "CreateStream",
+          "tsEmitName": "createStream$view",
+          "normalizedSignature": "CreateStream|(System.IO.Stream):System.IO.Stream|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.ICompressionProvider",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.GzipCompressionProvider::EncodingName:System.String",
+          "clrName": "EncodingName",
+          "tsEmitName": "encodingName",
+          "normalizedSignature": "EncodingName|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.GzipCompressionProvider::SupportsFlush:System.Boolean",
+          "clrName": "SupportsFlush",
+          "tsEmitName": "supportsFlush",
+          "normalizedSignature": "SupportsFlush|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::EncodingName:System.String",
+          "clrName": "EncodingName",
+          "tsEmitName": "encodingName$view",
+          "normalizedSignature": "EncodingName|:System.String|static=false|accessor=get",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.ICompressionProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ICompressionProvider::SupportsFlush:System.Boolean",
+          "clrName": "SupportsFlush",
+          "tsEmitName": "supportsFlush$view",
+          "normalizedSignature": "SupportsFlush|:System.Boolean|static=false|accessor=get",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.ICompressionProvider"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCompression.GzipCompressionProviderOptions,Microsoft.AspNetCore.ResponseCompression,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.GzipCompressionProviderOptions",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.GzipCompressionProviderOptions",
+      "tsEmitName": "GzipCompressionProviderOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.GzipCompressionProviderOptions::Level:System.IO.Compression.CompressionLevel",
+          "clrName": "Level",
+          "tsEmitName": "level",
+          "normalizedSignature": "Level|:System.IO.Compression.CompressionLevel|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionDefaults",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.ResponseCompressionDefaults",
+      "tsEmitName": "ResponseCompressionDefaults",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionDefaults::MimeTypesSystem.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MimeTypes",
+          "tsEmitName": "mimeTypes",
+          "normalizedSignature": "MimeTypes|System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware",
+      "tsEmitName": "ResponseCompressionMiddleware",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions",
+      "tsEmitName": "ResponseCompressionOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions::MimeTypes:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MimeTypes",
+          "tsEmitName": "mimeTypes",
+          "normalizedSignature": "MimeTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions::ExcludedMimeTypes:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ExcludedMimeTypes",
+          "tsEmitName": "excludedMimeTypes",
+          "normalizedSignature": "ExcludedMimeTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions::EnableForHttps:System.Boolean",
+          "clrName": "EnableForHttps",
+          "tsEmitName": "enableForHttps",
+          "normalizedSignature": "EnableForHttps|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions::Providers:Microsoft.AspNetCore.ResponseCompression.CompressionProviderCollection",
+          "clrName": "Providers",
+          "tsEmitName": "providers",
+          "normalizedSignature": "Providers|:Microsoft.AspNetCore.ResponseCompression.CompressionProviderCollection|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionProvider",
+      "clrName": "Microsoft.AspNetCore.ResponseCompression.ResponseCompressionProvider",
+      "tsEmitName": "ResponseCompressionProvider",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionProvider::GetCompressionProvider(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.ResponseCompression.ICompressionProvider",
+          "clrName": "GetCompressionProvider",
+          "tsEmitName": "getCompressionProvider",
+          "normalizedSignature": "GetCompressionProvider|(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.ResponseCompression.ICompressionProvider|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionProvider::ShouldCompressResponse(Microsoft.AspNetCore.Http.HttpContext):System.Boolean",
+          "clrName": "ShouldCompressResponse",
+          "tsEmitName": "shouldCompressResponse",
+          "normalizedSignature": "ShouldCompressResponse|(Microsoft.AspNetCore.Http.HttpContext):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionProvider::CheckRequestAcceptsCompression(Microsoft.AspNetCore.Http.HttpContext):System.Boolean",
+          "clrName": "CheckRequestAcceptsCompression",
+          "tsEmitName": "checkRequestAcceptsCompression",
+          "normalizedSignature": "CheckRequestAcceptsCompression|(Microsoft.AspNetCore.Http.HttpContext):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider::GetCompressionProvider(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.ResponseCompression.ICompressionProvider",
+          "clrName": "GetCompressionProvider",
+          "tsEmitName": "getCompressionProvider$view",
+          "normalizedSignature": "GetCompressionProvider|(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.ResponseCompression.ICompressionProvider|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCompression:Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider::ShouldCompressResponse(Microsoft.AspNetCore.Http.HttpContext):System.Boolean",
+          "clrName": "ShouldCompressResponse",
+          "tsEmitName": "shouldCompressResponse$view",
+          "normalizedSignature": "ShouldCompressResponse|(Microsoft.AspNetCore.Http.HttpContext):System.Boolean|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.ResponseCompression.IResponseCompressionProvider",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.IServiceProvider,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions,Microsoft.AspNetCore.ResponseCompression,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    }
+  ]
+}

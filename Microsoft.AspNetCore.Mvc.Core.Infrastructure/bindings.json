@@ -1,0 +1,44 @@
+{
+  "namespace": "Microsoft.AspNetCore.Mvc.Core.Infrastructure",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Core.Infrastructure.IAntiforgeryValidationFailedResult",
+      "clrName": "Microsoft.AspNetCore.Mvc.Core.Infrastructure.IAntiforgeryValidationFailedResult",
+      "tsEmitName": "IAntiforgeryValidationFailedResult",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IActionResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
+          "clrName": "ExecuteResultAsync",
+          "tsEmitName": "executeResultAsync",
+          "metadataToken": 100663352,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IActionResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "executeResultAsync",
+          "isStatic": false,
+          "tsSignatureId": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IActionResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663352
+          }
+        }
+      ]
+    }
+  ]
+}

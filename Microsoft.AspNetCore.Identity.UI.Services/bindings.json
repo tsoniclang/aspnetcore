@@ -1,0 +1,129 @@
+{
+  "namespace": "Microsoft.AspNetCore.Identity.UI.Services",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
+      "clrName": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
+      "tsEmitName": "IEmailSender",
+      "assemblyName": "Microsoft.AspNetCore.Identity",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender::SendEmailAsync(System.String,System.String,System.String):System.Threading.Tasks.Task",
+          "clrName": "SendEmailAsync",
+          "tsEmitName": "sendEmailAsync",
+          "metadataToken": 100664018,
+          "canonicalSignature": "(System.String,System.String,System.String):System.Threading.Tasks.Task",
+          "normalizedSignature": "SendEmailAsync|(System.String,System.String,System.String):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "sendEmailAsync",
+          "isStatic": false,
+          "tsSignatureId": "SendEmailAsync|(System.String,System.String,System.String):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
+            "metadataToken": 100664018
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
+      "clrName": "Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
+      "tsEmitName": "NoOpEmailSender",
+      "assemblyName": "Microsoft.AspNetCore.Identity",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender::SendEmailAsync(System.String,System.String,System.String):System.Threading.Tasks.Task",
+          "clrName": "SendEmailAsync",
+          "tsEmitName": "sendEmailAsync",
+          "metadataToken": 100664019,
+          "canonicalSignature": "(System.String,System.String,System.String):System.Threading.Tasks.Task",
+          "normalizedSignature": "SendEmailAsync|(System.String,System.String,System.String):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender::SendEmailAsync(System.String,System.String,System.String):System.Threading.Tasks.Task",
+          "clrName": "SendEmailAsync",
+          "tsEmitName": "sendEmailAsync$view",
+          "metadataToken": 100664018,
+          "canonicalSignature": "(System.String,System.String,System.String):System.Threading.Tasks.Task",
+          "normalizedSignature": "SendEmailAsync|(System.String,System.String,System.String):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender::.ctor():void",
+          "metadataToken": 100664020,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "sendEmailAsync",
+          "isStatic": false,
+          "tsSignatureId": "SendEmailAsync|(System.String,System.String,System.String):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
+            "metadataToken": 100664019
+          }
+        },
+        {
+          "tsName": "sendEmailAsync$view",
+          "isStatic": false,
+          "tsSignatureId": "SendEmailAsync|(System.String,System.String,System.String):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
+            "metadataToken": 100664018
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
+            "metadataToken": 100664020
+          }
+        }
+      ]
+    }
+  ]
+}

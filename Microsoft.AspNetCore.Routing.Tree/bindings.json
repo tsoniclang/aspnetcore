@@ -1,0 +1,1295 @@
+{
+  "namespace": "Microsoft.AspNetCore.Routing.Tree",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+      "tsEmitName": "InboundMatch",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundMatch::Entry:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "clrName": "Entry",
+          "tsEmitName": "entry",
+          "metadataToken": 385876139,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "normalizedSignature": "Entry|:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundMatch::TemplateMatcher:Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+          "clrName": "TemplateMatcher",
+          "tsEmitName": "templateMatcher",
+          "metadataToken": 385876140,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+          "normalizedSignature": "TemplateMatcher|:Microsoft.AspNetCore.Routing.Template.TemplateMatcher|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundMatch::.ctor():void",
+          "metadataToken": 100663994,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "entry",
+          "isStatic": false,
+          "tsSignatureId": "Entry|:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876139
+          }
+        },
+        {
+          "tsName": "templateMatcher",
+          "isStatic": false,
+          "tsSignatureId": "TemplateMatcher|:Microsoft.AspNetCore.Routing.Template.TemplateMatcher|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876140
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100663994
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+      "tsEmitName": "InboundRouteEntry",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::Constraints:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Constraints",
+          "tsEmitName": "constraints",
+          "metadataToken": 385876141,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Constraints|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::Defaults:Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "clrName": "Defaults",
+          "tsEmitName": "defaults",
+          "metadataToken": 385876142,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "normalizedSignature": "Defaults|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::Handler:Microsoft.AspNetCore.Routing.IRouter",
+          "clrName": "Handler",
+          "tsEmitName": "handler",
+          "metadataToken": 385876143,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.IRouter",
+          "normalizedSignature": "Handler|:Microsoft.AspNetCore.Routing.IRouter|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::Order:System.Int32",
+          "clrName": "Order",
+          "tsEmitName": "order",
+          "metadataToken": 385876144,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Order|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::Precedence:System.Decimal",
+          "clrName": "Precedence",
+          "tsEmitName": "precedence",
+          "metadataToken": 385876145,
+          "canonicalSignature": ":System.Decimal",
+          "normalizedSignature": "Precedence|:System.Decimal|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::RouteName:System.String",
+          "clrName": "RouteName",
+          "tsEmitName": "routeName",
+          "metadataToken": 385876146,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::RouteTemplate:Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "clrName": "RouteTemplate",
+          "tsEmitName": "routeTemplate",
+          "metadataToken": 385876147,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "normalizedSignature": "RouteTemplate|:Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry::.ctor():void",
+          "metadataToken": 100664009,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "constraints",
+          "isStatic": false,
+          "tsSignatureId": "Constraints|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876141
+          }
+        },
+        {
+          "tsName": "defaults",
+          "isStatic": false,
+          "tsSignatureId": "Defaults|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876142
+          }
+        },
+        {
+          "tsName": "handler",
+          "isStatic": false,
+          "tsSignatureId": "Handler|:Microsoft.AspNetCore.Routing.IRouter|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876143
+          }
+        },
+        {
+          "tsName": "order",
+          "isStatic": false,
+          "tsSignatureId": "Order|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876144
+          }
+        },
+        {
+          "tsName": "precedence",
+          "isStatic": false,
+          "tsSignatureId": "Precedence|:System.Decimal|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876145
+          }
+        },
+        {
+          "tsName": "routeName",
+          "isStatic": false,
+          "tsSignatureId": "RouteName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876146
+          }
+        },
+        {
+          "tsName": "routeTemplate",
+          "isStatic": false,
+          "tsSignatureId": "RouteTemplate|:Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876147
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664009
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+      "tsEmitName": "OutboundMatch",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundMatch::Entry:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "clrName": "Entry",
+          "tsEmitName": "entry",
+          "metadataToken": 385876149,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "normalizedSignature": "Entry|:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundMatch::TemplateBinder:Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "clrName": "TemplateBinder",
+          "tsEmitName": "templateBinder",
+          "metadataToken": 385876150,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "normalizedSignature": "TemplateBinder|:Microsoft.AspNetCore.Routing.Template.TemplateBinder|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundMatch::.ctor():void",
+          "metadataToken": 100664021,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "entry",
+          "isStatic": false,
+          "tsSignatureId": "Entry|:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876149
+          }
+        },
+        {
+          "tsName": "templateBinder",
+          "isStatic": false,
+          "tsSignatureId": "TemplateBinder|:Microsoft.AspNetCore.Routing.Template.TemplateBinder|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876150
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664021
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+      "tsEmitName": "OutboundRouteEntry",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::Constraints:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Constraints",
+          "tsEmitName": "constraints",
+          "metadataToken": 385876153,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Constraints|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::Defaults:Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "clrName": "Defaults",
+          "tsEmitName": "defaults",
+          "metadataToken": 385876154,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "normalizedSignature": "Defaults|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::Handler:Microsoft.AspNetCore.Routing.IRouter",
+          "clrName": "Handler",
+          "tsEmitName": "handler",
+          "metadataToken": 385876155,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.IRouter",
+          "normalizedSignature": "Handler|:Microsoft.AspNetCore.Routing.IRouter|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::Order:System.Int32",
+          "clrName": "Order",
+          "tsEmitName": "order",
+          "metadataToken": 385876156,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Order|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::Precedence:System.Decimal",
+          "clrName": "Precedence",
+          "tsEmitName": "precedence",
+          "metadataToken": 385876157,
+          "canonicalSignature": ":System.Decimal",
+          "normalizedSignature": "Precedence|:System.Decimal|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::RouteName:System.String",
+          "clrName": "RouteName",
+          "tsEmitName": "routeName",
+          "metadataToken": 385876158,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::RequiredLinkValues:Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "clrName": "RequiredLinkValues",
+          "tsEmitName": "requiredLinkValues",
+          "metadataToken": 385876159,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "normalizedSignature": "RequiredLinkValues|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::RouteTemplate:Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "clrName": "RouteTemplate",
+          "tsEmitName": "routeTemplate",
+          "metadataToken": 385876160,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "normalizedSignature": "RouteTemplate|:Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::Data:System.Object",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "metadataToken": 385876161,
+          "canonicalSignature": ":System.Object",
+          "normalizedSignature": "Data|:System.Object|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry::.ctor():void",
+          "metadataToken": 100664043,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "constraints",
+          "isStatic": false,
+          "tsSignatureId": "Constraints|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876153
+          }
+        },
+        {
+          "tsName": "defaults",
+          "isStatic": false,
+          "tsSignatureId": "Defaults|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876154
+          }
+        },
+        {
+          "tsName": "handler",
+          "isStatic": false,
+          "tsSignatureId": "Handler|:Microsoft.AspNetCore.Routing.IRouter|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876155
+          }
+        },
+        {
+          "tsName": "order",
+          "isStatic": false,
+          "tsSignatureId": "Order|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876156
+          }
+        },
+        {
+          "tsName": "precedence",
+          "isStatic": false,
+          "tsSignatureId": "Precedence|:System.Decimal|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876157
+          }
+        },
+        {
+          "tsName": "routeName",
+          "isStatic": false,
+          "tsSignatureId": "RouteName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876158
+          }
+        },
+        {
+          "tsName": "requiredLinkValues",
+          "isStatic": false,
+          "tsSignatureId": "RequiredLinkValues|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876159
+          }
+        },
+        {
+          "tsName": "routeTemplate",
+          "isStatic": false,
+          "tsSignatureId": "RouteTemplate|:Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876160
+          }
+        },
+        {
+          "tsName": "data",
+          "isStatic": false,
+          "tsSignatureId": "Data|:System.Object|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876161
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664043
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+      "tsEmitName": "TreeRouteBuilder",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::MapInbound(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "clrName": "MapInbound",
+          "tsEmitName": "mapInbound",
+          "metadataToken": 100664052,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
+          "normalizedSignature": "MapInbound|(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::MapOutbound(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "clrName": "MapOutbound",
+          "tsEmitName": "mapOutbound",
+          "metadataToken": 100664053,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
+          "normalizedSignature": "MapOutbound|(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::Build():Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100664056,
+          "canonicalSignature": "():Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "normalizedSignature": "Build|():Microsoft.AspNetCore.Routing.Tree.TreeRouter|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::Build(System.Int32):Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100664057,
+          "canonicalSignature": "(System.Int32):Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "normalizedSignature": "Build|(System.Int32):Microsoft.AspNetCore.Routing.Tree.TreeRouter|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::Clear():System.Void",
+          "clrName": "Clear",
+          "tsEmitName": "clear",
+          "metadataToken": 100664058,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Clear|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::InboundEntries:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "InboundEntries",
+          "tsEmitName": "inboundEntries",
+          "metadataToken": 385876164,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "InboundEntries|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::OutboundEntries:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "OutboundEntries",
+          "tsEmitName": "outboundEntries",
+          "metadataToken": 385876165,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "OutboundEntries|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "mapInbound",
+          "isStatic": false,
+          "tsSignatureId": "MapInbound|(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664052
+          }
+        },
+        {
+          "tsName": "mapOutbound",
+          "isStatic": false,
+          "tsSignatureId": "MapOutbound|(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664053
+          }
+        },
+        {
+          "tsName": "build",
+          "isStatic": false,
+          "tsSignatureId": "Build|():Microsoft.AspNetCore.Routing.Tree.TreeRouter|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664056
+          }
+        },
+        {
+          "tsName": "build",
+          "isStatic": false,
+          "tsSignatureId": "Build|(System.Int32):Microsoft.AspNetCore.Routing.Tree.TreeRouter|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664057
+          }
+        },
+        {
+          "tsName": "clear",
+          "isStatic": false,
+          "tsSignatureId": "Clear|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664058
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "inboundEntries",
+          "isStatic": false,
+          "tsSignatureId": "InboundEntries|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876164
+          }
+        },
+        {
+          "tsName": "outboundEntries",
+          "isStatic": false,
+          "tsSignatureId": "OutboundEntries|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876165
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+      "tsEmitName": "TreeRouter",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouter::GetVirtualPath(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData",
+          "clrName": "GetVirtualPath",
+          "tsEmitName": "getVirtualPath",
+          "metadataToken": 100664062,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData",
+          "normalizedSignature": "GetVirtualPath|(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouter::RouteAsync(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task",
+          "clrName": "RouteAsync",
+          "tsEmitName": "routeAsync",
+          "metadataToken": 100664063,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "RouteAsync|(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouter::RouteAsync(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task",
+          "clrName": "RouteAsync",
+          "tsEmitName": "routeAsync$view",
+          "metadataToken": 100663329,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "RouteAsync|(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouter::GetVirtualPath(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData",
+          "clrName": "GetVirtualPath",
+          "tsEmitName": "getVirtualPath$view",
+          "metadataToken": 100663330,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData",
+          "normalizedSignature": "GetVirtualPath|(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouter::Version:System.Int32",
+          "clrName": "Version",
+          "tsEmitName": "version",
+          "metadataToken": 385876166,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouter::RouteGroupKeySystem.String",
+          "clrName": "RouteGroupKey",
+          "tsEmitName": "routeGroupKey",
+          "metadataToken": 67109135,
+          "normalizedSignature": "RouteGroupKey|System.String|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getVirtualPath",
+          "isStatic": false,
+          "tsSignatureId": "GetVirtualPath|(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664062
+          }
+        },
+        {
+          "tsName": "routeAsync",
+          "isStatic": false,
+          "tsSignatureId": "RouteAsync|(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664063
+          }
+        },
+        {
+          "tsName": "routeAsync$view",
+          "isStatic": false,
+          "tsSignatureId": "RouteAsync|(Microsoft.AspNetCore.Routing.RouteContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouter",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663329
+          }
+        },
+        {
+          "tsName": "getVirtualPath$view",
+          "isStatic": false,
+          "tsSignatureId": "GetVirtualPath|(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouter",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663330
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "version",
+          "isStatic": false,
+          "tsSignatureId": "Version|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876166
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "routeGroupKey",
+          "isStatic": true,
+          "tsSignatureId": "RouteGroupKey|System.String|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 67109135
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+      "tsEmitName": "UrlMatchingNode",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::Depth:System.Int32",
+          "clrName": "Depth",
+          "tsEmitName": "depth",
+          "metadataToken": 385876168,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Depth|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::IsCatchAll:System.Boolean",
+          "clrName": "IsCatchAll",
+          "tsEmitName": "isCatchAll",
+          "metadataToken": 385876169,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsCatchAll|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::Matches:System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Tree.InboundMatch,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Matches",
+          "tsEmitName": "matches",
+          "metadataToken": 385876170,
+          "canonicalSignature": ":System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Tree.InboundMatch,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Matches|:System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Tree.InboundMatch,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::Literals:System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Literals",
+          "tsEmitName": "literals",
+          "metadataToken": 385876171,
+          "canonicalSignature": ":System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Literals|:System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::ConstrainedParameters:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "clrName": "ConstrainedParameters",
+          "tsEmitName": "constrainedParameters",
+          "metadataToken": 385876172,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "normalizedSignature": "ConstrainedParameters|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::Parameters:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "clrName": "Parameters",
+          "tsEmitName": "parameters",
+          "metadataToken": 385876173,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "normalizedSignature": "Parameters|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::ConstrainedCatchAlls:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "clrName": "ConstrainedCatchAlls",
+          "tsEmitName": "constrainedCatchAlls",
+          "metadataToken": 385876174,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "normalizedSignature": "ConstrainedCatchAlls|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::CatchAlls:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "clrName": "CatchAlls",
+          "tsEmitName": "catchAlls",
+          "metadataToken": 385876175,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "normalizedSignature": "CatchAlls|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode::.ctor(System.Int32):void",
+          "metadataToken": 100664067,
+          "canonicalSignature": "(System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "depth",
+          "isStatic": false,
+          "tsSignatureId": "Depth|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876168
+          }
+        },
+        {
+          "tsName": "isCatchAll",
+          "isStatic": false,
+          "tsSignatureId": "IsCatchAll|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876169
+          }
+        },
+        {
+          "tsName": "matches",
+          "isStatic": false,
+          "tsSignatureId": "Matches|:System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Tree.InboundMatch,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876170
+          }
+        },
+        {
+          "tsName": "literals",
+          "isStatic": false,
+          "tsSignatureId": "Literals|:System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876171
+          }
+        },
+        {
+          "tsName": "constrainedParameters",
+          "isStatic": false,
+          "tsSignatureId": "ConstrainedParameters|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876172
+          }
+        },
+        {
+          "tsName": "parameters",
+          "isStatic": false,
+          "tsSignatureId": "Parameters|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876173
+          }
+        },
+        {
+          "tsName": "constrainedCatchAlls",
+          "isStatic": false,
+          "tsSignatureId": "ConstrainedCatchAlls|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876174
+          }
+        },
+        {
+          "tsName": "catchAlls",
+          "isStatic": false,
+          "tsSignatureId": "CatchAlls|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876175
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664067
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+      "clrName": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+      "tsEmitName": "UrlMatchingTree",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree::Order:System.Int32",
+          "clrName": "Order",
+          "tsEmitName": "order",
+          "metadataToken": 385876176,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree::Root:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "clrName": "Root",
+          "tsEmitName": "root",
+          "metadataToken": 385876177,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
+          "normalizedSignature": "Root|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree::.ctor(System.Int32):void",
+          "metadataToken": 100664082,
+          "canonicalSignature": "(System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "order",
+          "isStatic": false,
+          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876176
+          }
+        },
+        {
+          "tsName": "root",
+          "isStatic": false,
+          "tsSignatureId": "Root|:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876177
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664082
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,594 @@
+{
+  "namespace": "Microsoft.AspNetCore.Mvc.ViewEngines",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine",
+      "tsEmitName": "ICompositeViewEngine",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine::FindView(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "FindView",
+          "tsEmitName": "findView",
+          "metadataToken": 100663510,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine::GetView(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "GetView",
+          "tsEmitName": "getView",
+          "metadataToken": 100663511,
+          "canonicalSignature": "(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine::ViewEngines:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ViewEngines",
+          "tsEmitName": "viewEngines",
+          "metadataToken": 385876031,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ViewEngines|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "findView",
+          "isStatic": false,
+          "tsSignatureId": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663510
+          }
+        },
+        {
+          "tsName": "getView",
+          "isStatic": false,
+          "tsSignatureId": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663511
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "viewEngines",
+          "isStatic": false,
+          "tsSignatureId": "ViewEngines|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876031
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+      "tsEmitName": "IView",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IView::RenderAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext):System.Threading.Tasks.Task",
+          "clrName": "RenderAsync",
+          "tsEmitName": "renderAsync",
+          "metadataToken": 100663509,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Rendering.ViewContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "RenderAsync|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IView::Path:System.String",
+          "clrName": "Path",
+          "tsEmitName": "path",
+          "metadataToken": 385876032,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Path|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "renderAsync",
+          "isStatic": false,
+          "tsSignatureId": "RenderAsync|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663509
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876032
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+      "tsEmitName": "IViewEngine",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine::FindView(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "FindView",
+          "tsEmitName": "findView",
+          "metadataToken": 100663510,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine::GetView(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "GetView",
+          "tsEmitName": "getView",
+          "metadataToken": 100663511,
+          "canonicalSignature": "(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "findView",
+          "isStatic": false,
+          "tsSignatureId": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663510
+          }
+        },
+        {
+          "tsName": "getView",
+          "isStatic": false,
+          "tsSignatureId": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663511
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+      "tsEmitName": "CompositeViewEngine",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine::FindView(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "FindView",
+          "tsEmitName": "findView",
+          "metadataToken": 100663505,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine::GetView(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "GetView",
+          "tsEmitName": "getView",
+          "metadataToken": 100663506,
+          "canonicalSignature": "(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine::FindView(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "FindView",
+          "tsEmitName": "findView$view",
+          "metadataToken": 100663510,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine::GetView(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "GetView",
+          "tsEmitName": "getView$view",
+          "metadataToken": 100663511,
+          "canonicalSignature": "(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine::ViewEngines:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ViewEngines",
+          "tsEmitName": "viewEngines",
+          "metadataToken": 385876030,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ViewEngines|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine::ViewEngines:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ViewEngines",
+          "tsEmitName": "viewEngines$view",
+          "metadataToken": 385876031,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ViewEngines|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine::.ctor(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcViewOptions,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100663503,
+          "canonicalSignature": "(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcViewOptions,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcViewOptions,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "findView",
+          "isStatic": false,
+          "tsSignatureId": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663505
+          }
+        },
+        {
+          "tsName": "getView",
+          "isStatic": false,
+          "tsSignatureId": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663506
+          }
+        },
+        {
+          "tsName": "findView$view",
+          "isStatic": false,
+          "tsSignatureId": "FindView|(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663510
+          }
+        },
+        {
+          "tsName": "getView$view",
+          "isStatic": false,
+          "tsSignatureId": "GetView|(System.String,System.String,System.Boolean):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663511
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "viewEngines",
+          "isStatic": false,
+          "tsSignatureId": "ViewEngines|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876030
+          }
+        },
+        {
+          "tsName": "viewEngines$view",
+          "isStatic": false,
+          "tsSignatureId": "ViewEngines|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876031
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcViewOptions,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663503
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+      "tsEmitName": "ViewEngineResult",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult::NotFound(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "NotFound",
+          "tsEmitName": "notFound",
+          "metadataToken": 100663520,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "NotFound|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult::Found(System.String,Microsoft.AspNetCore.Mvc.ViewEngines.IView):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "Found",
+          "tsEmitName": "found",
+          "metadataToken": 100663521,
+          "canonicalSignature": "(System.String,Microsoft.AspNetCore.Mvc.ViewEngines.IView):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "Found|(System.String,Microsoft.AspNetCore.Mvc.ViewEngines.IView):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult::EnsureSuccessful(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "clrName": "EnsureSuccessful",
+          "tsEmitName": "ensureSuccessful",
+          "metadataToken": 100663522,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "normalizedSignature": "EnsureSuccessful|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult::SearchedLocations:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "SearchedLocations",
+          "tsEmitName": "searchedLocations",
+          "metadataToken": 385876033,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "SearchedLocations|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult::View:Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+          "clrName": "View",
+          "tsEmitName": "view",
+          "metadataToken": 385876034,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ViewEngines.IView",
+          "normalizedSignature": "View|:Microsoft.AspNetCore.Mvc.ViewEngines.IView|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult::ViewName:System.String",
+          "clrName": "ViewName",
+          "tsEmitName": "viewName",
+          "metadataToken": 385876035,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ViewName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult::Success:System.Boolean",
+          "clrName": "Success",
+          "tsEmitName": "success",
+          "metadataToken": 385876036,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "Success|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "notFound",
+          "isStatic": true,
+          "tsSignatureId": "NotFound|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663520
+          }
+        },
+        {
+          "tsName": "found",
+          "isStatic": true,
+          "tsSignatureId": "Found|(System.String,Microsoft.AspNetCore.Mvc.ViewEngines.IView):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663521
+          }
+        },
+        {
+          "tsName": "ensureSuccessful",
+          "isStatic": false,
+          "tsSignatureId": "EnsureSuccessful|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100663522
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "searchedLocations",
+          "isStatic": false,
+          "tsSignatureId": "SearchedLocations|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876033
+          }
+        },
+        {
+          "tsName": "view",
+          "isStatic": false,
+          "tsSignatureId": "View|:Microsoft.AspNetCore.Mvc.ViewEngines.IView|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876034
+          }
+        },
+        {
+          "tsName": "viewName",
+          "isStatic": false,
+          "tsSignatureId": "ViewName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876035
+          }
+        },
+        {
+          "tsName": "success",
+          "isStatic": false,
+          "tsSignatureId": "Success|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 385876036
+          }
+        }
+      ]
+    }
+  ]
+}

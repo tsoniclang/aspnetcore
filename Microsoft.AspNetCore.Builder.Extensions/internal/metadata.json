@@ -1,0 +1,246 @@
+{
+  "namespace": "Microsoft.AspNetCore.Builder.Extensions",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Http.Abstractions"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
+      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
+      "tsEmitName": "MapMiddleware",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions",
+      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
+      "tsEmitName": "MapOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions::PathMatch:Microsoft.AspNetCore.Http.PathString",
+          "clrName": "PathMatch",
+          "tsEmitName": "pathMatch",
+          "normalizedSignature": "PathMatch|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions::Branch:Microsoft.AspNetCore.Http.RequestDelegate",
+          "clrName": "Branch",
+          "tsEmitName": "branch",
+          "normalizedSignature": "Branch|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapOptions::PreserveMatchedPathSegment:System.Boolean",
+          "clrName": "PreserveMatchedPathSegment",
+          "tsEmitName": "preserveMatchedPathSegment",
+          "normalizedSignature": "PreserveMatchedPathSegment|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
+      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
+      "tsEmitName": "MapWhenMiddleware",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
+      "clrName": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
+      "tsEmitName": "MapWhenOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions::Predicate:System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Predicate",
+          "tsEmitName": "predicate",
+          "normalizedSignature": "Predicate|:System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions::Branch:Microsoft.AspNetCore.Http.RequestDelegate",
+          "clrName": "Branch",
+          "tsEmitName": "branch",
+          "normalizedSignature": "Branch|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
+      "clrName": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
+      "tsEmitName": "UsePathBaseMiddleware",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.PathString):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    }
+  ]
+}

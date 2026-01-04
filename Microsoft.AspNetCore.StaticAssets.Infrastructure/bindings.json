@@ -1,0 +1,68 @@
+{
+  "namespace": "Microsoft.AspNetCore.StaticAssets.Infrastructure",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+      "clrName": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+      "tsEmitName": "StaticAssetsEndpointDataSourceHelper",
+      "assemblyName": "Microsoft.AspNetCore.StaticAssets",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper::HasStaticAssetsDataSource(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Boolean",
+          "clrName": "HasStaticAssetsDataSource",
+          "tsEmitName": "hasStaticAssetsDataSource",
+          "metadataToken": 100663453,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Boolean",
+          "normalizedSignature": "HasStaticAssetsDataSource|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper::ResolveStaticAssetDescriptors(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ResolveStaticAssetDescriptors",
+          "tsEmitName": "resolveStaticAssetDescriptors",
+          "metadataToken": 100663454,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ResolveStaticAssetDescriptors|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "hasStaticAssetsDataSource",
+          "isStatic": true,
+          "tsSignatureId": "HasStaticAssetsDataSource|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+            "metadataToken": 100663453
+          }
+        },
+        {
+          "tsName": "resolveStaticAssetDescriptors",
+          "isStatic": true,
+          "tsSignatureId": "ResolveStaticAssetDescriptors|(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor,Microsoft.AspNetCore.StaticAssets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.StaticAssets.Infrastructure.StaticAssetsEndpointDataSourceHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
+            "metadataToken": 100663454
+          }
+        }
+      ]
+    }
+  ]
+}

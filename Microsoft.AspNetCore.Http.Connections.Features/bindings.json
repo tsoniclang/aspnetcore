@@ -1,0 +1,83 @@
+{
+  "namespace": "Microsoft.AspNetCore.Http.Connections.Features",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+      "clrName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+      "tsEmitName": "IHttpContextFeature",
+      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature::HttpContext:Microsoft.AspNetCore.Http.HttpContext",
+          "clrName": "HttpContext",
+          "tsEmitName": "httpContext",
+          "metadataToken": 385876035,
+          "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
+          "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "httpContext",
+          "isStatic": false,
+          "tsSignatureId": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
+            "metadataToken": 385876035
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+      "clrName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+      "tsEmitName": "IHttpTransportFeature",
+      "assemblyName": "Microsoft.AspNetCore.Http.Connections",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature::TransportType:Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "clrName": "TransportType",
+          "tsEmitName": "transportType",
+          "metadataToken": 385876036,
+          "canonicalSignature": ":Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "normalizedSignature": "TransportType|:Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "transportType",
+          "isStatic": false,
+          "tsSignatureId": "TransportType|:Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
+            "metadataToken": 385876036
+          }
+        }
+      ]
+    }
+  ]
+}

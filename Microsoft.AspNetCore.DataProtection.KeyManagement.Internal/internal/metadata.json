@@ -1,0 +1,302 @@
+{
+  "namespace": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.DataProtection"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.ICacheableKeyRingProvider",
+      "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.ICacheableKeyRingProvider",
+      "tsEmitName": "ICacheableKeyRingProvider",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.ICacheableKeyRingProvider::GetCacheableKeyRing(System.DateTimeOffset):Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.CacheableKeyRing",
+          "clrName": "GetCacheableKeyRing",
+          "tsEmitName": "getCacheableKeyRing",
+          "normalizedSignature": "GetCacheableKeyRing|(System.DateTimeOffset):Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.CacheableKeyRing|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IDefaultKeyResolver",
+      "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IDefaultKeyResolver",
+      "tsEmitName": "IDefaultKeyResolver",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IDefaultKeyResolver::ResolveDefaultKeyPolicy(System.DateTimeOffset,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.IKey,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution",
+          "clrName": "ResolveDefaultKeyPolicy",
+          "tsEmitName": "resolveDefaultKeyPolicy",
+          "normalizedSignature": "ResolveDefaultKeyPolicy|(System.DateTimeOffset,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.IKey,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager",
+      "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager",
+      "tsEmitName": "IInternalXmlKeyManager",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager::CreateNewKey(System.Guid,System.DateTimeOffset,System.DateTimeOffset,System.DateTimeOffset):Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
+          "clrName": "CreateNewKey",
+          "tsEmitName": "createNewKey",
+          "normalizedSignature": "CreateNewKey|(System.Guid,System.DateTimeOffset,System.DateTimeOffset,System.DateTimeOffset):Microsoft.AspNetCore.DataProtection.KeyManagement.IKey|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 4,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager::DeserializeDescriptorFromKeyElement(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.IAuthenticatedEncryptorDescriptor",
+          "clrName": "DeserializeDescriptorFromKeyElement",
+          "tsEmitName": "deserializeDescriptorFromKeyElement",
+          "normalizedSignature": "DeserializeDescriptorFromKeyElement|(System.Xml.Linq.XElement):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.IAuthenticatedEncryptorDescriptor|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager::RevokeSingleKey(System.Guid,System.DateTimeOffset,System.String):System.Void",
+          "clrName": "RevokeSingleKey",
+          "tsEmitName": "revokeSingleKey",
+          "normalizedSignature": "RevokeSingleKey|(System.Guid,System.DateTimeOffset,System.String):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRing",
+      "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRing",
+      "tsEmitName": "IKeyRing",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRing::GetAuthenticatedEncryptorByKeyId(System.Guid,System.Boolean\u0026):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
+          "clrName": "GetAuthenticatedEncryptorByKeyId",
+          "tsEmitName": "getAuthenticatedEncryptorByKeyId",
+          "normalizedSignature": "GetAuthenticatedEncryptorByKeyId|(System.Guid,System.Boolean\u0026):Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRing::DefaultAuthenticatedEncryptor:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor",
+          "clrName": "DefaultAuthenticatedEncryptor",
+          "tsEmitName": "defaultAuthenticatedEncryptor",
+          "normalizedSignature": "DefaultAuthenticatedEncryptor|:Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.IAuthenticatedEncryptor|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRing::DefaultKeyId:System.Guid",
+          "clrName": "DefaultKeyId",
+          "tsEmitName": "defaultKeyId",
+          "normalizedSignature": "DefaultKeyId|:System.Guid|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRingProvider",
+      "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRingProvider",
+      "tsEmitName": "IKeyRingProvider",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRingProvider::GetCurrentKeyRing():Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRing",
+          "clrName": "GetCurrentKeyRing",
+          "tsEmitName": "getCurrentKeyRing",
+          "normalizedSignature": "GetCurrentKeyRing|():Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IKeyRing|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution",
+      "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution",
+      "tsEmitName": "DefaultKeyResolution",
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution::DefaultKeyMicrosoft.AspNetCore.DataProtection.KeyManagement.IKey",
+          "clrName": "DefaultKey",
+          "tsEmitName": "defaultKey",
+          "normalizedSignature": "DefaultKey|Microsoft.AspNetCore.DataProtection.KeyManagement.IKey|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution::FallbackKeyMicrosoft.AspNetCore.DataProtection.KeyManagement.IKey",
+          "clrName": "FallbackKey",
+          "tsEmitName": "fallbackKey",
+          "normalizedSignature": "FallbackKey|Microsoft.AspNetCore.DataProtection.KeyManagement.IKey|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.DefaultKeyResolution::ShouldGenerateNewKeySystem.Boolean",
+          "clrName": "ShouldGenerateNewKey",
+          "tsEmitName": "shouldGenerateNewKey",
+          "normalizedSignature": "ShouldGenerateNewKey|System.Boolean|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.CacheableKeyRing",
+      "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.CacheableKeyRing",
+      "tsEmitName": "CacheableKeyRing",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "namespace": "Microsoft.AspNetCore.DataProtection.Internal",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator",
+      "clrName": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
+      "tsEmitName": "IActivator",
+      "assemblyName": "Microsoft.AspNetCore.DataProtection",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator::CreateInstance(System.Type,System.String):System.Object",
+          "clrName": "CreateInstance",
+          "tsEmitName": "createInstance",
+          "metadataToken": 100663833,
+          "canonicalSignature": "(System.Type,System.String):System.Object",
+          "normalizedSignature": "CreateInstance|(System.Type,System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createInstance",
+          "isStatic": false,
+          "tsSignatureId": "CreateInstance|(System.Type,System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
+            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
+            "metadataToken": 100663833
+          }
+        }
+      ]
+    }
+  ]
+}

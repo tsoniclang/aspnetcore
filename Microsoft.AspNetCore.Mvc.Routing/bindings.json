@@ -1,0 +1,1957 @@
+{
+  "namespace": "Microsoft.AspNetCore.Mvc.Routing",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider",
+      "tsEmitName": "IActionHttpMethodProvider",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider::HttpMethods:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HttpMethods",
+          "tsEmitName": "httpMethods",
+          "metadataToken": 385876315,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HttpMethods|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "httpMethods",
+          "isStatic": false,
+          "tsSignatureId": "HttpMethods|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876315
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+      "tsEmitName": "IRouteTemplateProvider",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider::Template:System.String",
+          "clrName": "Template",
+          "tsEmitName": "template",
+          "metadataToken": 385876316,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Template|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider::Order:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Order",
+          "tsEmitName": "order",
+          "metadataToken": 385876317,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Order|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876318,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "template",
+          "isStatic": false,
+          "tsSignatureId": "Template|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876316
+          }
+        },
+        {
+          "tsName": "order",
+          "isStatic": false,
+          "tsSignatureId": "Order|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876317
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876318
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+      "tsEmitName": "IRouteValueProvider",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider::RouteKey:System.String",
+          "clrName": "RouteKey",
+          "tsEmitName": "routeKey",
+          "metadataToken": 385876319,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteKey|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider::RouteValue:System.String",
+          "clrName": "RouteValue",
+          "tsEmitName": "routeValue",
+          "metadataToken": 385876320,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteValue|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "routeKey",
+          "isStatic": false,
+          "tsSignatureId": "RouteKey|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876319
+          }
+        },
+        {
+          "tsName": "routeValue",
+          "isStatic": false,
+          "tsSignatureId": "RouteValue|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876320
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory",
+      "tsEmitName": "IUrlHelperFactory",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory::GetUrlHelper(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "clrName": "GetUrlHelper",
+          "tsEmitName": "getUrlHelper",
+          "metadataToken": 100664725,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "normalizedSignature": "GetUrlHelper|(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getUrlHelper",
+          "isStatic": false,
+          "tsSignatureId": "GetUrlHelper|(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664725
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+      "tsEmitName": "AttributeRouteInfo",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo::Template:System.String",
+          "clrName": "Template",
+          "tsEmitName": "template",
+          "metadataToken": 385875977,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Template|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo::Order:System.Int32",
+          "clrName": "Order",
+          "tsEmitName": "order",
+          "metadataToken": 385875978,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Order|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875979,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo::SuppressLinkGeneration:System.Boolean",
+          "clrName": "SuppressLinkGeneration",
+          "tsEmitName": "suppressLinkGeneration",
+          "metadataToken": 385875980,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SuppressLinkGeneration|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo::SuppressPathMatching:System.Boolean",
+          "clrName": "SuppressPathMatching",
+          "tsEmitName": "suppressPathMatching",
+          "metadataToken": 385875981,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SuppressPathMatching|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo::.ctor():void",
+          "metadataToken": 100663369,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "template",
+          "isStatic": false,
+          "tsSignatureId": "Template|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "order",
+          "isStatic": false,
+          "tsSignatureId": "Order|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875978
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875979
+          }
+        },
+        {
+          "tsName": "suppressLinkGeneration",
+          "isStatic": false,
+          "tsSignatureId": "SuppressLinkGeneration|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875980
+          }
+        },
+        {
+          "tsName": "suppressPathMatching",
+          "isStatic": false,
+          "tsSignatureId": "SuppressPathMatching|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875981
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.AttributeRouteInfo",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663369
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+      "tsEmitName": "DynamicRouteValueTransformer",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer::TransformAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "TransformAsync",
+          "tsEmitName": "transformAsync",
+          "metadataToken": 100664700,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "TransformAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer::FilterAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "FilterAsync",
+          "tsEmitName": "filterAsync",
+          "metadataToken": 100664701,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "FilterAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer::State:System.Object",
+          "clrName": "State",
+          "tsEmitName": "state",
+          "metadataToken": 385876309,
+          "canonicalSignature": ":System.Object",
+          "normalizedSignature": "State|:System.Object|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "transformAsync",
+          "isStatic": false,
+          "tsSignatureId": "TransformAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664700
+          }
+        },
+        {
+          "tsName": "filterAsync",
+          "isStatic": false,
+          "tsSignatureId": "FilterAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664701
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "state",
+          "isStatic": false,
+          "tsSignatureId": "State|:System.Object|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876309
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+      "tsEmitName": "HttpMethodAttribute",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute::HttpMethods:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HttpMethods",
+          "tsEmitName": "httpMethods",
+          "metadataToken": 385876310,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HttpMethods|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute::Template:System.String",
+          "clrName": "Template",
+          "tsEmitName": "template",
+          "metadataToken": 385876311,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Template|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute::Order:System.Int32",
+          "clrName": "Order",
+          "tsEmitName": "order",
+          "metadataToken": 385876312,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Order|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876314,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider::Order:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Order",
+          "tsEmitName": "order$view",
+          "metadataToken": 385876317,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Order|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider::HttpMethods:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HttpMethods",
+          "tsEmitName": "httpMethods$view",
+          "metadataToken": 385876315,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HttpMethods|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider::Template:System.String",
+          "clrName": "Template",
+          "tsEmitName": "template$view",
+          "metadataToken": 385876316,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Template|:System.String|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name$view",
+          "metadataToken": 385876318,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute::.ctor(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100664707,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute::.ctor(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void",
+          "metadataToken": 100664708,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "httpMethods",
+          "isStatic": false,
+          "tsSignatureId": "HttpMethods|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876310
+          }
+        },
+        {
+          "tsName": "template",
+          "isStatic": false,
+          "tsSignatureId": "Template|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876311
+          }
+        },
+        {
+          "tsName": "order",
+          "isStatic": false,
+          "tsSignatureId": "Order|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876312
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876314
+          }
+        },
+        {
+          "tsName": "order$view",
+          "isStatic": false,
+          "tsSignatureId": "Order|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876317
+          }
+        },
+        {
+          "tsName": "httpMethods$view",
+          "isStatic": false,
+          "tsSignatureId": "HttpMethods|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IActionHttpMethodProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876315
+          }
+        },
+        {
+          "tsName": "template$view",
+          "isStatic": false,
+          "tsSignatureId": "Template|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876316
+          }
+        },
+        {
+          "tsName": "name$view",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876318
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664707
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.HttpMethodAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664708
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint",
+      "tsEmitName": "KnownRouteValueConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664727,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint::.ctor(Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider):void",
+          "metadataToken": 100664726,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664727
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664726
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute",
+      "tsEmitName": "RouteValueAttribute",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute::RouteKey:System.String",
+          "clrName": "RouteKey",
+          "tsEmitName": "routeKey",
+          "metadataToken": 385876322,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteKey|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute::RouteValue:System.String",
+          "clrName": "RouteValue",
+          "tsEmitName": "routeValue",
+          "metadataToken": 385876323,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteValue|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider::RouteKey:System.String",
+          "clrName": "RouteKey",
+          "tsEmitName": "routeKey$view",
+          "metadataToken": 385876319,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteKey|:System.String|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider::RouteValue:System.String",
+          "clrName": "RouteValue",
+          "tsEmitName": "routeValue$view",
+          "metadataToken": 385876320,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteValue|:System.String|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "routeKey",
+          "isStatic": false,
+          "tsSignatureId": "RouteKey|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876322
+          }
+        },
+        {
+          "tsName": "routeValue",
+          "isStatic": false,
+          "tsSignatureId": "RouteValue|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.RouteValueAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876323
+          }
+        },
+        {
+          "tsName": "routeKey$view",
+          "isStatic": false,
+          "tsSignatureId": "RouteKey|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876319
+          }
+        },
+        {
+          "tsName": "routeValue$view",
+          "isStatic": false,
+          "tsSignatureId": "RouteValue|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IRouteValueProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876320
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+      "tsEmitName": "UrlActionContext",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext::Action:System.String",
+          "clrName": "Action",
+          "tsEmitName": "action",
+          "metadataToken": 385875982,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Action|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext::Controller:System.String",
+          "clrName": "Controller",
+          "tsEmitName": "controller",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Controller|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext::Values:System.Object",
+          "clrName": "Values",
+          "tsEmitName": "values",
+          "metadataToken": 385875984,
+          "canonicalSignature": ":System.Object",
+          "normalizedSignature": "Values|:System.Object|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext::Protocol:System.String",
+          "clrName": "Protocol",
+          "tsEmitName": "protocol",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Protocol|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext::Host:System.String",
+          "clrName": "Host",
+          "tsEmitName": "host",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Host|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext::Fragment:System.String",
+          "clrName": "Fragment",
+          "tsEmitName": "fragment",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Fragment|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlActionContext::.ctor():void",
+          "metadataToken": 100663382,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "action",
+          "isStatic": false,
+          "tsSignatureId": "Action|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875982
+          }
+        },
+        {
+          "tsName": "controller",
+          "isStatic": false,
+          "tsSignatureId": "Controller|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875983
+          }
+        },
+        {
+          "tsName": "values",
+          "isStatic": false,
+          "tsSignatureId": "Values|:System.Object|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875984
+          }
+        },
+        {
+          "tsName": "protocol",
+          "isStatic": false,
+          "tsSignatureId": "Protocol|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875985
+          }
+        },
+        {
+          "tsName": "host",
+          "isStatic": false,
+          "tsSignatureId": "Host|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "fragment",
+          "isStatic": false,
+          "tsSignatureId": "Fragment|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875987
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlActionContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663382
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+      "tsEmitName": "UrlHelper",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelper::Action(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "clrName": "Action",
+          "tsEmitName": "action",
+          "metadataToken": 100664752,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "normalizedSignature": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelper::RouteUrl(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "clrName": "RouteUrl",
+          "tsEmitName": "routeUrl",
+          "metadataToken": 100664753,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "normalizedSignature": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::Content(System.String):System.String",
+          "clrName": "Content",
+          "tsEmitName": "content$view",
+          "metadataToken": 100663355,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "Content|(System.String):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::IsLocalUrl(System.String):System.Boolean",
+          "clrName": "IsLocalUrl",
+          "tsEmitName": "isLocalUrl$view",
+          "metadataToken": 100663356,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::Link(System.String,System.Object):System.String",
+          "clrName": "Link",
+          "tsEmitName": "link$view",
+          "metadataToken": 100663358,
+          "canonicalSignature": "(System.String,System.Object):System.String",
+          "normalizedSignature": "Link|(System.String,System.Object):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::Action(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "clrName": "Action",
+          "tsEmitName": "action$view",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "normalizedSignature": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::RouteUrl(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "clrName": "RouteUrl",
+          "tsEmitName": "routeUrl$view",
+          "metadataToken": 100663357,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "normalizedSignature": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelper::Content(System.String):System.String",
+          "clrName": "Content",
+          "tsEmitName": "content",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "Content|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelper::IsLocalUrl(System.String):System.Boolean",
+          "clrName": "IsLocalUrl",
+          "tsEmitName": "isLocalUrl",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelper::Link(System.String,System.Object):System.String",
+          "clrName": "Link",
+          "tsEmitName": "link",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.Object):System.String",
+          "normalizedSignature": "Link|(System.String,System.Object):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::ActionContext:Microsoft.AspNetCore.Mvc.ActionContext",
+          "clrName": "ActionContext",
+          "tsEmitName": "actionContext",
+          "metadataToken": 385875976,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ActionContext",
+          "normalizedSignature": "ActionContext|:Microsoft.AspNetCore.Mvc.ActionContext|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelper::.ctor(Microsoft.AspNetCore.Mvc.ActionContext):void",
+          "metadataToken": 100664749,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "action",
+          "isStatic": false,
+          "tsSignatureId": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664752
+          }
+        },
+        {
+          "tsName": "routeUrl",
+          "isStatic": false,
+          "tsSignatureId": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664753
+          }
+        },
+        {
+          "tsName": "content$view",
+          "isStatic": false,
+          "tsSignatureId": "Content|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663355
+          }
+        },
+        {
+          "tsName": "isLocalUrl$view",
+          "isStatic": false,
+          "tsSignatureId": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663356
+          }
+        },
+        {
+          "tsName": "link$view",
+          "isStatic": false,
+          "tsSignatureId": "Link|(System.String,System.Object):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663358
+          }
+        },
+        {
+          "tsName": "action$view",
+          "isStatic": false,
+          "tsSignatureId": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663354
+          }
+        },
+        {
+          "tsName": "routeUrl$view",
+          "isStatic": false,
+          "tsSignatureId": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663357
+          }
+        },
+        {
+          "tsName": "content",
+          "isStatic": false,
+          "tsSignatureId": "Content|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "isLocalUrl",
+          "isStatic": false,
+          "tsSignatureId": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "link",
+          "isStatic": false,
+          "tsSignatureId": "Link|(System.String,System.Object):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "actionContext",
+          "isStatic": false,
+          "tsSignatureId": "ActionContext|:Microsoft.AspNetCore.Mvc.ActionContext|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875976
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664749
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+      "tsEmitName": "UrlHelperBase",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase::IsLocalUrl(System.String):System.Boolean",
+          "clrName": "IsLocalUrl",
+          "tsEmitName": "isLocalUrl",
+          "metadataToken": 100664759,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase::Content(System.String):System.String",
+          "clrName": "Content",
+          "tsEmitName": "content",
+          "metadataToken": 100664760,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "Content|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase::Link(System.String,System.Object):System.String",
+          "clrName": "Link",
+          "tsEmitName": "link",
+          "metadataToken": 100664761,
+          "canonicalSignature": "(System.String,System.Object):System.String",
+          "normalizedSignature": "Link|(System.String,System.Object):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase::Action(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "clrName": "Action",
+          "tsEmitName": "action",
+          "metadataToken": 100664762,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "normalizedSignature": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase::RouteUrl(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "clrName": "RouteUrl",
+          "tsEmitName": "routeUrl",
+          "metadataToken": 100664763,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "normalizedSignature": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::Action(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "clrName": "Action",
+          "tsEmitName": "action$view",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String",
+          "normalizedSignature": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::Content(System.String):System.String",
+          "clrName": "Content",
+          "tsEmitName": "content$view",
+          "metadataToken": 100663355,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "Content|(System.String):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::IsLocalUrl(System.String):System.Boolean",
+          "clrName": "IsLocalUrl",
+          "tsEmitName": "isLocalUrl$view",
+          "metadataToken": 100663356,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::RouteUrl(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "clrName": "RouteUrl",
+          "tsEmitName": "routeUrl$view",
+          "metadataToken": 100663357,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String",
+          "normalizedSignature": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::Link(System.String,System.Object):System.String",
+          "clrName": "Link",
+          "tsEmitName": "link$view",
+          "metadataToken": 100663358,
+          "canonicalSignature": "(System.String,System.Object):System.String",
+          "normalizedSignature": "Link|(System.String,System.Object):System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase::ActionContext:Microsoft.AspNetCore.Mvc.ActionContext",
+          "clrName": "ActionContext",
+          "tsEmitName": "actionContext",
+          "metadataToken": 385876327,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ActionContext",
+          "normalizedSignature": "ActionContext|:Microsoft.AspNetCore.Mvc.ActionContext|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IUrlHelper::ActionContext:Microsoft.AspNetCore.Mvc.ActionContext",
+          "clrName": "ActionContext",
+          "tsEmitName": "actionContext$view",
+          "metadataToken": 385875976,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ActionContext",
+          "normalizedSignature": "ActionContext|:Microsoft.AspNetCore.Mvc.ActionContext|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "isLocalUrl",
+          "isStatic": false,
+          "tsSignatureId": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664759
+          }
+        },
+        {
+          "tsName": "content",
+          "isStatic": false,
+          "tsSignatureId": "Content|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664760
+          }
+        },
+        {
+          "tsName": "link",
+          "isStatic": false,
+          "tsSignatureId": "Link|(System.String,System.Object):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664761
+          }
+        },
+        {
+          "tsName": "action",
+          "isStatic": false,
+          "tsSignatureId": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664762
+          }
+        },
+        {
+          "tsName": "routeUrl",
+          "isStatic": false,
+          "tsSignatureId": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664763
+          }
+        },
+        {
+          "tsName": "action$view",
+          "isStatic": false,
+          "tsSignatureId": "Action|(Microsoft.AspNetCore.Mvc.Routing.UrlActionContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663354
+          }
+        },
+        {
+          "tsName": "content$view",
+          "isStatic": false,
+          "tsSignatureId": "Content|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663355
+          }
+        },
+        {
+          "tsName": "isLocalUrl$view",
+          "isStatic": false,
+          "tsSignatureId": "IsLocalUrl|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663356
+          }
+        },
+        {
+          "tsName": "routeUrl$view",
+          "isStatic": false,
+          "tsSignatureId": "RouteUrl|(Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663357
+          }
+        },
+        {
+          "tsName": "link$view",
+          "isStatic": false,
+          "tsSignatureId": "Link|(System.String,System.Object):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663358
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "actionContext",
+          "isStatic": false,
+          "tsSignatureId": "ActionContext|:Microsoft.AspNetCore.Mvc.ActionContext|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperBase",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 385876327
+          }
+        },
+        {
+          "tsName": "actionContext$view",
+          "isStatic": false,
+          "tsSignatureId": "ActionContext|:Microsoft.AspNetCore.Mvc.ActionContext|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.IUrlHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875976
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory",
+      "tsEmitName": "UrlHelperFactory",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory::GetUrlHelper(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "clrName": "GetUrlHelper",
+          "tsEmitName": "getUrlHelper",
+          "metadataToken": 100664776,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "normalizedSignature": "GetUrlHelper|(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory::GetUrlHelper(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "clrName": "GetUrlHelper",
+          "tsEmitName": "getUrlHelper$view",
+          "metadataToken": 100664725,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper",
+          "normalizedSignature": "GetUrlHelper|(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory::.ctor():void",
+          "metadataToken": 100664777,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getUrlHelper",
+          "isStatic": false,
+          "tsSignatureId": "GetUrlHelper|(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664776
+          }
+        },
+        {
+          "tsName": "getUrlHelper$view",
+          "isStatic": false,
+          "tsSignatureId": "GetUrlHelper|(Microsoft.AspNetCore.Mvc.ActionContext):Microsoft.AspNetCore.Mvc.IUrlHelper|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664725
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlHelperFactory",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+            "metadataToken": 100664777
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+      "clrName": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+      "tsEmitName": "UrlRouteContext",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext::RouteName:System.String",
+          "clrName": "RouteName",
+          "tsEmitName": "routeName",
+          "metadataToken": 385875988,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RouteName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext::Values:System.Object",
+          "clrName": "Values",
+          "tsEmitName": "values",
+          "metadataToken": 385875989,
+          "canonicalSignature": ":System.Object",
+          "normalizedSignature": "Values|:System.Object|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext::Protocol:System.String",
+          "clrName": "Protocol",
+          "tsEmitName": "protocol",
+          "metadataToken": 385875990,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Protocol|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext::Host:System.String",
+          "clrName": "Host",
+          "tsEmitName": "host",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Host|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext::Fragment:System.String",
+          "clrName": "Fragment",
+          "tsEmitName": "fragment",
+          "metadataToken": 385875992,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Fragment|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext::.ctor():void",
+          "metadataToken": 100663393,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "routeName",
+          "isStatic": false,
+          "tsSignatureId": "RouteName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875988
+          }
+        },
+        {
+          "tsName": "values",
+          "isStatic": false,
+          "tsSignatureId": "Values|:System.Object|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875989
+          }
+        },
+        {
+          "tsName": "protocol",
+          "isStatic": false,
+          "tsSignatureId": "Protocol|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875990
+          }
+        },
+        {
+          "tsName": "host",
+          "isStatic": false,
+          "tsSignatureId": "Host|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875991
+          }
+        },
+        {
+          "tsName": "fragment",
+          "isStatic": false,
+          "tsSignatureId": "Fragment|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 385875992
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.Routing.UrlRouteContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "metadataToken": 100663393
+          }
+        }
+      ]
+    }
+  ]
+}

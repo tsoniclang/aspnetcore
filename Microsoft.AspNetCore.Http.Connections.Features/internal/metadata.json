@@ -1,0 +1,72 @@
+{
+  "namespace": "Microsoft.AspNetCore.Http.Connections.Features",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Http.Connections"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+      "clrName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
+      "tsEmitName": "IHttpContextFeature",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature::HttpContext:Microsoft.AspNetCore.Http.HttpContext",
+          "clrName": "HttpContext",
+          "tsEmitName": "httpContext",
+          "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+      "clrName": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
+      "tsEmitName": "IHttpTransportFeature",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature::TransportType:Microsoft.AspNetCore.Http.Connections.HttpTransportType",
+          "clrName": "TransportType",
+          "tsEmitName": "transportType",
+          "normalizedSignature": "TransportType|:Microsoft.AspNetCore.Http.Connections.HttpTransportType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

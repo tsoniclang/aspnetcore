@@ -1,0 +1,353 @@
+{
+  "namespace": "Microsoft.AspNetCore.CookiePolicy",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.CookiePolicy"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+      "clrName": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+      "tsEmitName": "HttpOnlyPolicy",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy::NoneMicrosoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "normalizedSignature": "None|Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy::AlwaysMicrosoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
+          "clrName": "Always",
+          "tsEmitName": "always",
+          "normalizedSignature": "Always|Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+      "clrName": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
+      "tsEmitName": "AppendCookieContext",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::Context:Microsoft.AspNetCore.Http.HttpContext",
+          "clrName": "Context",
+          "tsEmitName": "context",
+          "normalizedSignature": "Context|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::CookieOptions:Microsoft.AspNetCore.Http.CookieOptions",
+          "clrName": "CookieOptions",
+          "tsEmitName": "cookieOptions",
+          "normalizedSignature": "CookieOptions|:Microsoft.AspNetCore.Http.CookieOptions|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::CookieName:System.String",
+          "clrName": "CookieName",
+          "tsEmitName": "cookieName",
+          "normalizedSignature": "CookieName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::CookieValue:System.String",
+          "clrName": "CookieValue",
+          "tsEmitName": "cookieValue",
+          "normalizedSignature": "CookieValue|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::IsConsentNeeded:System.Boolean",
+          "clrName": "IsConsentNeeded",
+          "tsEmitName": "isConsentNeeded",
+          "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::HasConsent:System.Boolean",
+          "clrName": "HasConsent",
+          "tsEmitName": "hasConsent",
+          "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.AppendCookieContext::IssueCookie:System.Boolean",
+          "clrName": "IssueCookie",
+          "tsEmitName": "issueCookie",
+          "normalizedSignature": "IssueCookie|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.CookieOptions,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
+      "clrName": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
+      "tsEmitName": "CookiePolicyMiddleware",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware::Options:Microsoft.AspNetCore.Builder.CookiePolicyOptions",
+          "clrName": "Options",
+          "tsEmitName": "options",
+          "normalizedSignature": "Options|:Microsoft.AspNetCore.Builder.CookiePolicyOptions|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.CookiePolicyOptions,Microsoft.AspNetCore.CookiePolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.CookiePolicyOptions,Microsoft.AspNetCore.CookiePolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+      "clrName": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
+      "tsEmitName": "DeleteCookieContext",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::Context:Microsoft.AspNetCore.Http.HttpContext",
+          "clrName": "Context",
+          "tsEmitName": "context",
+          "normalizedSignature": "Context|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::CookieOptions:Microsoft.AspNetCore.Http.CookieOptions",
+          "clrName": "CookieOptions",
+          "tsEmitName": "cookieOptions",
+          "normalizedSignature": "CookieOptions|:Microsoft.AspNetCore.Http.CookieOptions|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::CookieName:System.String",
+          "clrName": "CookieName",
+          "tsEmitName": "cookieName",
+          "normalizedSignature": "CookieName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::IsConsentNeeded:System.Boolean",
+          "clrName": "IsConsentNeeded",
+          "tsEmitName": "isConsentNeeded",
+          "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::HasConsent:System.Boolean",
+          "clrName": "HasConsent",
+          "tsEmitName": "hasConsent",
+          "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext::IssueCookie:System.Boolean",
+          "clrName": "IssueCookie",
+          "tsEmitName": "issueCookie",
+          "normalizedSignature": "IssueCookie|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.CookieOptions,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    }
+  ]
+}

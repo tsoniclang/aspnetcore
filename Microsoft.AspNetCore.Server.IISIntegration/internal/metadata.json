@@ -1,0 +1,158 @@
+{
+  "namespace": "Microsoft.AspNetCore.Server.IISIntegration",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Server.IISIntegration"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISDefaults",
+      "clrName": "Microsoft.AspNetCore.Server.IISIntegration.IISDefaults",
+      "tsEmitName": "IISDefaults",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISDefaults::AuthenticationSchemeSystem.String",
+          "clrName": "AuthenticationScheme",
+          "tsEmitName": "authenticationScheme",
+          "normalizedSignature": "AuthenticationScheme|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISDefaults::NegotiateSystem.String",
+          "clrName": "Negotiate",
+          "tsEmitName": "negotiate",
+          "normalizedSignature": "Negotiate|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISDefaults::NtlmSystem.String",
+          "clrName": "Ntlm",
+          "tsEmitName": "ntlm",
+          "normalizedSignature": "Ntlm|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISHostingStartup",
+      "clrName": "Microsoft.AspNetCore.Server.IISIntegration.IISHostingStartup",
+      "tsEmitName": "IISHostingStartup",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISHostingStartup::Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void",
+          "clrName": "Configure",
+          "tsEmitName": "configure",
+          "normalizedSignature": "Configure|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Abstractions:Microsoft.AspNetCore.Hosting.IHostingStartup::Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void",
+          "clrName": "Configure",
+          "tsEmitName": "configure$view",
+          "normalizedSignature": "Configure|(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.Hosting.IHostingStartup",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware",
+      "clrName": "Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware",
+      "tsEmitName": "IISMiddleware",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Server.IISIntegration:Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.IISOptions,Microsoft.AspNetCore.Server.IISIntegration,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.Extensions.Hosting.IHostApplicationLifetime):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.IISOptions,Microsoft.AspNetCore.Server.IISIntegration,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.Boolean,Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.Extensions.Hosting.IHostApplicationLifetime):void|static=false",
+          "isStatic": false,
+          "parameterCount": 7
+        }
+      ]
+    }
+  ]
+}

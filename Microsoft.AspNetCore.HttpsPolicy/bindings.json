@@ -1,0 +1,383 @@
+{
+  "namespace": "Microsoft.AspNetCore.HttpsPolicy",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+      "tsEmitName": "HstsMiddleware",
+      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "metadataToken": 100663301,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100663302,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "invoke",
+          "isStatic": false,
+          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663303
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HstsOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663302
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+      "tsEmitName": "HstsOptions",
+      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::MaxAge:System.TimeSpan",
+          "clrName": "MaxAge",
+          "tsEmitName": "maxAge",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "MaxAge|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::IncludeSubDomains:System.Boolean",
+          "clrName": "IncludeSubDomains",
+          "tsEmitName": "includeSubDomains",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IncludeSubDomains|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::Preload:System.Boolean",
+          "clrName": "Preload",
+          "tsEmitName": "preload",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "Preload|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::ExcludedHosts:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ExcludedHosts",
+          "tsEmitName": "excludedHosts",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ExcludedHosts|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HstsOptions::.ctor():void",
+          "metadataToken": 100663312,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "maxAge",
+          "isStatic": false,
+          "tsSignatureId": "MaxAge|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 385875969
+          }
+        },
+        {
+          "tsName": "includeSubDomains",
+          "isStatic": false,
+          "tsSignatureId": "IncludeSubDomains|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "preload",
+          "isStatic": false,
+          "tsSignatureId": "Preload|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "excludedHosts",
+          "isStatic": false,
+          "tsSignatureId": "ExcludedHosts|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 385875972
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HstsOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663312
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+      "tsEmitName": "HttpsRedirectionMiddleware",
+      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "metadataToken": 100663320,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "metadataToken": 100663318,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature):void",
+          "metadataToken": 100663319,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "invoke",
+          "isStatic": false,
+          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663320
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663318
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions,Microsoft.AspNetCore.HttpsPolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663319
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+      "clrName": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+      "tsEmitName": "HttpsRedirectionOptions",
+      "assemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions::RedirectStatusCode:System.Int32",
+          "clrName": "RedirectStatusCode",
+          "tsEmitName": "redirectStatusCode",
+          "metadataToken": 385875973,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "RedirectStatusCode|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions::HttpsPort:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HttpsPort",
+          "tsEmitName": "httpsPort",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HttpsPort|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.HttpsPolicy:Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions::.ctor():void",
+          "metadataToken": 100663327,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "redirectStatusCode",
+          "isStatic": false,
+          "tsSignatureId": "RedirectStatusCode|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 385875973
+          }
+        },
+        {
+          "tsName": "httpsPort",
+          "isStatic": false,
+          "tsSignatureId": "HttpsPort|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 385875974
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HttpsPolicy",
+            "metadataToken": 100663327
+          }
+        }
+      ]
+    }
+  ]
+}

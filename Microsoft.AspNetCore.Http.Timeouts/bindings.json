@@ -1,0 +1,481 @@
+{
+  "namespace": "Microsoft.AspNetCore.Http.Timeouts",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature",
+      "clrName": "Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature",
+      "tsEmitName": "IHttpRequestTimeoutFeature",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature::DisableTimeout():System.Void",
+          "clrName": "DisableTimeout",
+          "tsEmitName": "disableTimeout",
+          "metadataToken": 100663784,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "DisableTimeout|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature::RequestTimeoutToken:System.Threading.CancellationToken",
+          "clrName": "RequestTimeoutToken",
+          "tsEmitName": "requestTimeoutToken",
+          "metadataToken": 385876133,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "RequestTimeoutToken|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "disableTimeout",
+          "isStatic": false,
+          "tsSignatureId": "DisableTimeout|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663784
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "requestTimeoutToken",
+          "isStatic": false,
+          "tsSignatureId": "RequestTimeoutToken|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.IHttpRequestTimeoutFeature",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876133
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute",
+      "clrName": "Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute",
+      "tsEmitName": "DisableRequestTimeoutAttribute",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100663777,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute::.ctor():void",
+          "metadataToken": 100663778,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663777
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.DisableRequestTimeoutAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663778
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+      "clrName": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+      "tsEmitName": "RequestTimeoutAttribute",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute::Timeout:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Timeout",
+          "tsEmitName": "timeout",
+          "metadataToken": 385876134,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Timeout|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute::PolicyName:System.String",
+          "clrName": "PolicyName",
+          "tsEmitName": "policyName",
+          "metadataToken": 385876135,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "PolicyName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute::.ctor(System.Int32):void",
+          "metadataToken": 100663789,
+          "canonicalSignature": "(System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute::.ctor(System.String):void",
+          "metadataToken": 100663790,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "timeout",
+          "isStatic": false,
+          "tsSignatureId": "Timeout|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876134
+          }
+        },
+        {
+          "tsName": "policyName",
+          "isStatic": false,
+          "tsSignatureId": "PolicyName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876135
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663789
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663790
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+      "clrName": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+      "tsEmitName": "RequestTimeoutOptions",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions::AddPolicy(System.String,System.TimeSpan):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "clrName": "AddPolicy",
+          "tsEmitName": "addPolicy",
+          "metadataToken": 100663794,
+          "canonicalSignature": "(System.String,System.TimeSpan):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "normalizedSignature": "AddPolicy|(System.String,System.TimeSpan):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions::AddPolicy(System.String,Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "clrName": "AddPolicy",
+          "tsEmitName": "addPolicy",
+          "metadataToken": 100663795,
+          "canonicalSignature": "(System.String,Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "normalizedSignature": "AddPolicy|(System.String,Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions::DefaultPolicy:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+          "clrName": "DefaultPolicy",
+          "tsEmitName": "defaultPolicy",
+          "metadataToken": 385876136,
+          "canonicalSignature": ":Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+          "normalizedSignature": "DefaultPolicy|:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions::Policies:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy,Microsoft.AspNetCore.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Policies",
+          "tsEmitName": "policies",
+          "metadataToken": 385876137,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy,Microsoft.AspNetCore.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Policies|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy,Microsoft.AspNetCore.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions::.ctor():void",
+          "metadataToken": 100663796,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "addPolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddPolicy|(System.String,System.TimeSpan):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663794
+          }
+        },
+        {
+          "tsName": "addPolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddPolicy|(System.String,Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy):Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663795
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "defaultPolicy",
+          "isStatic": false,
+          "tsSignatureId": "DefaultPolicy|:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876136
+          }
+        },
+        {
+          "tsName": "policies",
+          "isStatic": false,
+          "tsSignatureId": "Policies|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy,Microsoft.AspNetCore.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876137
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663796
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+      "clrName": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+      "tsEmitName": "RequestTimeoutPolicy",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy::Timeout:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Timeout",
+          "tsEmitName": "timeout",
+          "metadataToken": 385876138,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Timeout|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy::TimeoutStatusCode:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "TimeoutStatusCode",
+          "tsEmitName": "timeoutStatusCode",
+          "metadataToken": 385876139,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "TimeoutStatusCode|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy::WriteTimeoutResponse:Microsoft.AspNetCore.Http.RequestDelegate",
+          "clrName": "WriteTimeoutResponse",
+          "tsEmitName": "writeTimeoutResponse",
+          "metadataToken": 385876140,
+          "canonicalSignature": ":Microsoft.AspNetCore.Http.RequestDelegate",
+          "normalizedSignature": "WriteTimeoutResponse|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy::.ctor():void",
+          "metadataToken": 100663803,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "timeout",
+          "isStatic": false,
+          "tsSignatureId": "Timeout|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876138
+          }
+        },
+        {
+          "tsName": "timeoutStatusCode",
+          "isStatic": false,
+          "tsSignatureId": "TimeoutStatusCode|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876139
+          }
+        },
+        {
+          "tsName": "writeTimeoutResponse",
+          "isStatic": false,
+          "tsSignatureId": "WriteTimeoutResponse|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 385876140
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Timeouts.RequestTimeoutPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+            "metadataToken": 100663803
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "namespace": "Microsoft.AspNetCore.Components.Sections",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent",
+      "clrName": "Microsoft.AspNetCore.Components.Sections.SectionContent",
+      "tsEmitName": "SectionContent",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
+          "clrName": "Attach",
+          "tsEmitName": "attach",
+          "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.Components.IComponent",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
+          "clrName": "SetParametersAsync",
+          "tsEmitName": "setParametersAsync",
+          "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.Components.IComponent",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::SectionName:System.String",
+          "clrName": "SectionName",
+          "tsEmitName": "sectionName",
+          "normalizedSignature": "SectionName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::SectionId:System.Object",
+          "clrName": "SectionId",
+          "tsEmitName": "sectionId",
+          "normalizedSignature": "SectionId|:System.Object|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionContent::ChildContent:Microsoft.AspNetCore.Components.RenderFragment",
+          "clrName": "ChildContent",
+          "tsEmitName": "childContent",
+          "normalizedSignature": "ChildContent|:Microsoft.AspNetCore.Components.RenderFragment|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet",
+      "clrName": "Microsoft.AspNetCore.Components.Sections.SectionOutlet",
+      "tsEmitName": "SectionOutlet",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
+          "clrName": "Attach",
+          "tsEmitName": "attach",
+          "normalizedSignature": "Attach|(Microsoft.AspNetCore.Components.RenderHandle):System.Void|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.Components.IComponent",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task",
+          "clrName": "SetParametersAsync",
+          "tsEmitName": "setParametersAsync",
+          "normalizedSignature": "SetParametersAsync|(Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.Task|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.AspNetCore.Components.IComponent",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet::SectionName:System.String",
+          "clrName": "SectionName",
+          "tsEmitName": "sectionName",
+          "normalizedSignature": "SectionName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Sections.SectionOutlet::SectionId:System.Object",
+          "clrName": "SectionId",
+          "tsEmitName": "sectionId",
+          "normalizedSignature": "SectionId|:System.Object|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

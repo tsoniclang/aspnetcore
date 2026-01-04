@@ -1,0 +1,1450 @@
+{
+  "namespace": "Microsoft.AspNetCore.Http.Metadata",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+      "tsEmitName": "IAcceptsMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata::ContentTypes:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ContentTypes",
+          "tsEmitName": "contentTypes",
+          "metadataToken": 385876246,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ContentTypes|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata::RequestType:System.Type",
+          "clrName": "RequestType",
+          "tsEmitName": "requestType",
+          "metadataToken": 385876247,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "RequestType|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata::IsOptional:System.Boolean",
+          "clrName": "IsOptional",
+          "tsEmitName": "isOptional",
+          "metadataToken": 385876248,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "contentTypes",
+          "isStatic": false,
+          "tsSignatureId": "ContentTypes|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876246
+          }
+        },
+        {
+          "tsName": "requestType",
+          "isStatic": false,
+          "tsSignatureId": "RequestType|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876247
+          }
+        },
+        {
+          "tsName": "isOptional",
+          "isStatic": false,
+          "tsSignatureId": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876248
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAllowCookieRedirectMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IAllowCookieRedirectMetadata",
+      "tsEmitName": "IAllowCookieRedirectMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IDisableCookieRedirectMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IDisableCookieRedirectMetadata",
+      "tsEmitName": "IDisableCookieRedirectMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IDisableHttpMetricsMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IDisableHttpMetricsMetadata",
+      "tsEmitName": "IDisableHttpMetricsMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IDisableValidationMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IDisableValidationMetadata",
+      "tsEmitName": "IDisableValidationMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointDescriptionMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IEndpointDescriptionMetadata",
+      "tsEmitName": "IEndpointDescriptionMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointDescriptionMetadata::Description:System.String",
+          "clrName": "Description",
+          "tsEmitName": "description",
+          "metadataToken": 385876249,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Description|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointDescriptionMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "description",
+          "isStatic": false,
+          "tsSignatureId": "Description|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointDescriptionMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876249
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointMetadataProvider",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IEndpointMetadataProvider",
+      "tsEmitName": "IEndpointMetadataProvider",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointMetadataProvider::PopulateMetadata(System.Reflection.MethodInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void",
+          "clrName": "PopulateMetadata",
+          "tsEmitName": "populateMetadata",
+          "metadataToken": 100664216,
+          "canonicalSignature": "(System.Reflection.MethodInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void",
+          "normalizedSignature": "PopulateMetadata|(System.Reflection.MethodInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "populateMetadata",
+          "isStatic": true,
+          "tsSignatureId": "PopulateMetadata|(System.Reflection.MethodInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointMetadataProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 100664216
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointParameterMetadataProvider",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IEndpointParameterMetadataProvider",
+      "tsEmitName": "IEndpointParameterMetadataProvider",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointParameterMetadataProvider::PopulateMetadata(System.Reflection.ParameterInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void",
+          "clrName": "PopulateMetadata",
+          "tsEmitName": "populateMetadata",
+          "metadataToken": 100664217,
+          "canonicalSignature": "(System.Reflection.ParameterInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void",
+          "normalizedSignature": "PopulateMetadata|(System.Reflection.ParameterInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointParameterMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "populateMetadata",
+          "isStatic": true,
+          "tsSignatureId": "PopulateMetadata|(System.Reflection.ParameterInfo,Microsoft.AspNetCore.Builder.EndpointBuilder):System.Void|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointParameterMetadataProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 100664217
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointSummaryMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IEndpointSummaryMetadata",
+      "tsEmitName": "IEndpointSummaryMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IEndpointSummaryMetadata::Summary:System.String",
+          "clrName": "Summary",
+          "tsEmitName": "summary",
+          "metadataToken": 385876276,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Summary|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointSummaryMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "summary",
+          "isStatic": false,
+          "tsSignatureId": "Summary|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointSummaryMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876276
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+      "tsEmitName": "IFormOptionsMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::BufferBody:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "BufferBody",
+          "tsEmitName": "bufferBody",
+          "metadataToken": 385876250,
+          "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "BufferBody|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::MemoryBufferThreshold:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MemoryBufferThreshold",
+          "tsEmitName": "memoryBufferThreshold",
+          "metadataToken": 385876251,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MemoryBufferThreshold|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::BufferBodyLengthLimit:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "BufferBodyLengthLimit",
+          "tsEmitName": "bufferBodyLengthLimit",
+          "metadataToken": 385876252,
+          "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "BufferBodyLengthLimit|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::ValueCountLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ValueCountLimit",
+          "tsEmitName": "valueCountLimit",
+          "metadataToken": 385876253,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ValueCountLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::KeyLengthLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "KeyLengthLimit",
+          "tsEmitName": "keyLengthLimit",
+          "metadataToken": 385876254,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "KeyLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::ValueLengthLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ValueLengthLimit",
+          "tsEmitName": "valueLengthLimit",
+          "metadataToken": 385876255,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ValueLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::MultipartBoundaryLengthLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MultipartBoundaryLengthLimit",
+          "tsEmitName": "multipartBoundaryLengthLimit",
+          "metadataToken": 385876256,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MultipartBoundaryLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::MultipartHeadersCountLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MultipartHeadersCountLimit",
+          "tsEmitName": "multipartHeadersCountLimit",
+          "metadataToken": 385876257,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MultipartHeadersCountLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::MultipartHeadersLengthLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MultipartHeadersLengthLimit",
+          "tsEmitName": "multipartHeadersLengthLimit",
+          "metadataToken": 385876258,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MultipartHeadersLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata::MultipartBodyLengthLimit:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MultipartBodyLengthLimit",
+          "tsEmitName": "multipartBodyLengthLimit",
+          "metadataToken": 385876259,
+          "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MultipartBodyLengthLimit|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "bufferBody",
+          "isStatic": false,
+          "tsSignatureId": "BufferBody|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876250
+          }
+        },
+        {
+          "tsName": "memoryBufferThreshold",
+          "isStatic": false,
+          "tsSignatureId": "MemoryBufferThreshold|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876251
+          }
+        },
+        {
+          "tsName": "bufferBodyLengthLimit",
+          "isStatic": false,
+          "tsSignatureId": "BufferBodyLengthLimit|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876252
+          }
+        },
+        {
+          "tsName": "valueCountLimit",
+          "isStatic": false,
+          "tsSignatureId": "ValueCountLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876253
+          }
+        },
+        {
+          "tsName": "keyLengthLimit",
+          "isStatic": false,
+          "tsSignatureId": "KeyLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876254
+          }
+        },
+        {
+          "tsName": "valueLengthLimit",
+          "isStatic": false,
+          "tsSignatureId": "ValueLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876255
+          }
+        },
+        {
+          "tsName": "multipartBoundaryLengthLimit",
+          "isStatic": false,
+          "tsSignatureId": "MultipartBoundaryLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876256
+          }
+        },
+        {
+          "tsName": "multipartHeadersCountLimit",
+          "isStatic": false,
+          "tsSignatureId": "MultipartHeadersCountLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876257
+          }
+        },
+        {
+          "tsName": "multipartHeadersLengthLimit",
+          "isStatic": false,
+          "tsSignatureId": "MultipartHeadersLengthLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876258
+          }
+        },
+        {
+          "tsName": "multipartBodyLengthLimit",
+          "isStatic": false,
+          "tsSignatureId": "MultipartBodyLengthLimit|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876259
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromBodyMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IFromBodyMetadata",
+      "tsEmitName": "IFromBodyMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromBodyMetadata::AllowEmpty:System.Boolean",
+          "clrName": "AllowEmpty",
+          "tsEmitName": "allowEmpty",
+          "metadataToken": 385876260,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AllowEmpty|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromBodyMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "allowEmpty",
+          "isStatic": false,
+          "tsSignatureId": "AllowEmpty|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromBodyMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876260
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromFormMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IFromFormMetadata",
+      "tsEmitName": "IFromFormMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromFormMetadata::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876261,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromFormMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromFormMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876261
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromHeaderMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IFromHeaderMetadata",
+      "tsEmitName": "IFromHeaderMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromHeaderMetadata::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876262,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromHeaderMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromHeaderMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876262
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromQueryMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IFromQueryMetadata",
+      "tsEmitName": "IFromQueryMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromQueryMetadata::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876263,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromQueryMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromQueryMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876263
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromRouteMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IFromRouteMetadata",
+      "tsEmitName": "IFromRouteMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromRouteMetadata::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876264,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromRouteMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromRouteMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876264
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IFromServiceMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IFromServiceMetadata",
+      "tsEmitName": "IFromServiceMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+      "tsEmitName": "IParameterBindingMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876265,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata::HasTryParse:System.Boolean",
+          "clrName": "HasTryParse",
+          "tsEmitName": "hasTryParse",
+          "metadataToken": 385876266,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "HasTryParse|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata::HasBindAsync:System.Boolean",
+          "clrName": "HasBindAsync",
+          "tsEmitName": "hasBindAsync",
+          "metadataToken": 385876267,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "HasBindAsync|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata::ParameterInfo:System.Reflection.ParameterInfo",
+          "clrName": "ParameterInfo",
+          "tsEmitName": "parameterInfo",
+          "metadataToken": 385876268,
+          "canonicalSignature": ":System.Reflection.ParameterInfo",
+          "normalizedSignature": "ParameterInfo|:System.Reflection.ParameterInfo|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata::IsOptional:System.Boolean",
+          "clrName": "IsOptional",
+          "tsEmitName": "isOptional",
+          "metadataToken": 385876269,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876265
+          }
+        },
+        {
+          "tsName": "hasTryParse",
+          "isStatic": false,
+          "tsSignatureId": "HasTryParse|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876266
+          }
+        },
+        {
+          "tsName": "hasBindAsync",
+          "isStatic": false,
+          "tsSignatureId": "HasBindAsync|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876267
+          }
+        },
+        {
+          "tsName": "parameterInfo",
+          "isStatic": false,
+          "tsSignatureId": "ParameterInfo|:System.Reflection.ParameterInfo|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876268
+          }
+        },
+        {
+          "tsName": "isOptional",
+          "isStatic": false,
+          "tsSignatureId": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876269
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+      "tsEmitName": "IProducesResponseTypeMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata::Type:System.Type",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "metadataToken": 385876270,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata::StatusCode:System.Int32",
+          "clrName": "StatusCode",
+          "tsEmitName": "statusCode",
+          "metadataToken": 385876271,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "StatusCode|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata::Description:System.String",
+          "clrName": "Description",
+          "tsEmitName": "description",
+          "metadataToken": 385876272,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Description|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata::ContentTypes:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ContentTypes",
+          "tsEmitName": "contentTypes",
+          "metadataToken": 385876273,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ContentTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876270
+          }
+        },
+        {
+          "tsName": "statusCode",
+          "isStatic": false,
+          "tsSignatureId": "StatusCode|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876271
+          }
+        },
+        {
+          "tsName": "description",
+          "isStatic": false,
+          "tsSignatureId": "Description|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876272
+          }
+        },
+        {
+          "tsName": "contentTypes",
+          "isStatic": false,
+          "tsSignatureId": "ContentTypes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876273
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IRequestSizeLimitMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IRequestSizeLimitMetadata",
+      "tsEmitName": "IRequestSizeLimitMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IRequestSizeLimitMetadata::MaxRequestBodySize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MaxRequestBodySize",
+          "tsEmitName": "maxRequestBodySize",
+          "metadataToken": 385876274,
+          "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MaxRequestBodySize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IRequestSizeLimitMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "maxRequestBodySize",
+          "isStatic": false,
+          "tsSignatureId": "MaxRequestBodySize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IRequestSizeLimitMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876274
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IRouteDiagnosticsMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.IRouteDiagnosticsMetadata",
+      "tsEmitName": "IRouteDiagnosticsMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IRouteDiagnosticsMetadata::Route:System.String",
+          "clrName": "Route",
+          "tsEmitName": "route",
+          "metadataToken": 385876275,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Route|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IRouteDiagnosticsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "route",
+          "isStatic": false,
+          "tsSignatureId": "Route|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IRouteDiagnosticsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876275
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.ISkipStatusCodePagesMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.ISkipStatusCodePagesMetadata",
+      "tsEmitName": "ISkipStatusCodePagesMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.ITagsMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.ITagsMetadata",
+      "tsEmitName": "ITagsMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.ITagsMetadata::Tags:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Tags",
+          "tsEmitName": "tags",
+          "metadataToken": 385876277,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Tags|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.ITagsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "tags",
+          "isStatic": false,
+          "tsSignatureId": "Tags|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.ITagsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876277
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+      "tsEmitName": "AcceptsMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100664205,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata::ContentTypes:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ContentTypes",
+          "tsEmitName": "contentTypes",
+          "metadataToken": 385876240,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ContentTypes|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata::RequestType:System.Type",
+          "clrName": "RequestType",
+          "tsEmitName": "requestType",
+          "metadataToken": 385876241,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "RequestType|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata::IsOptional:System.Boolean",
+          "clrName": "IsOptional",
+          "tsEmitName": "isOptional",
+          "metadataToken": 385876242,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata::ContentTypes:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ContentTypes",
+          "tsEmitName": "contentTypes$view",
+          "metadataToken": 385876246,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ContentTypes|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata::RequestType:System.Type",
+          "clrName": "RequestType",
+          "tsEmitName": "requestType$view",
+          "metadataToken": 385876247,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "RequestType|:System.Type|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata::IsOptional:System.Boolean",
+          "clrName": "IsOptional",
+          "tsEmitName": "isOptional$view",
+          "metadataToken": 385876248,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata::.ctor(System.String[],System.Type,System.Boolean):void",
+          "metadataToken": 100664201,
+          "canonicalSignature": "(System.String[],System.Type,System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String[],System.Type,System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 100664205
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "contentTypes",
+          "isStatic": false,
+          "tsSignatureId": "ContentTypes|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876240
+          }
+        },
+        {
+          "tsName": "requestType",
+          "isStatic": false,
+          "tsSignatureId": "RequestType|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876241
+          }
+        },
+        {
+          "tsName": "isOptional",
+          "isStatic": false,
+          "tsSignatureId": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876242
+          }
+        },
+        {
+          "tsName": "contentTypes$view",
+          "isStatic": false,
+          "tsSignatureId": "ContentTypes|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876246
+          }
+        },
+        {
+          "tsName": "requestType$view",
+          "isStatic": false,
+          "tsSignatureId": "RequestType|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876247
+          }
+        },
+        {
+          "tsName": "isOptional$view",
+          "isStatic": false,
+          "tsSignatureId": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876248
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String[],System.Type,System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 100664201
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+      "clrName": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+      "tsEmitName": "FormMappingOptionsMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata::MaxCollectionSize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MaxCollectionSize",
+          "tsEmitName": "maxCollectionSize",
+          "metadataToken": 385876243,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MaxCollectionSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata::MaxRecursionDepth:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MaxRecursionDepth",
+          "tsEmitName": "maxRecursionDepth",
+          "metadataToken": 385876244,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MaxRecursionDepth|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata::MaxKeySize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MaxKeySize",
+          "tsEmitName": "maxKeySize",
+          "metadataToken": 385876245,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MaxKeySize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata::.ctor(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100664208,
+          "canonicalSignature": "(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "maxCollectionSize",
+          "isStatic": false,
+          "tsSignatureId": "MaxCollectionSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876243
+          }
+        },
+        {
+          "tsName": "maxRecursionDepth",
+          "isStatic": false,
+          "tsSignatureId": "MaxRecursionDepth|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876244
+          }
+        },
+        {
+          "tsName": "maxKeySize",
+          "isStatic": false,
+          "tsSignatureId": "MaxKeySize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 385876245
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+            "metadataToken": 100664208
+          }
+        }
+      ]
+    }
+  ]
+}

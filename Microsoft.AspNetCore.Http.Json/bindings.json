@@ -1,0 +1,66 @@
+{
+  "namespace": "Microsoft.AspNetCore.Http.Json",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions",
+      "clrName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+      "tsEmitName": "JsonOptions",
+      "assemblyName": "Microsoft.AspNetCore.Http.Extensions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::SerializerOptions:System.Text.Json.JsonSerializerOptions",
+          "clrName": "SerializerOptions",
+          "tsEmitName": "serializerOptions",
+          "metadataToken": 385876139,
+          "canonicalSignature": ":System.Text.Json.JsonSerializerOptions",
+          "normalizedSignature": "SerializerOptions|:System.Text.Json.JsonSerializerOptions|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::.ctor():void",
+          "metadataToken": 100664159,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "serializerOptions",
+          "isStatic": false,
+          "tsSignatureId": "SerializerOptions|:System.Text.Json.JsonSerializerOptions|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+            "metadataToken": 385876139
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
+            "metadataToken": 100664159
+          }
+        }
+      ]
+    }
+  ]
+}

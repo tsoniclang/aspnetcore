@@ -1,0 +1,175 @@
+{
+  "namespace": "Microsoft.AspNetCore.HostFiltering",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+      "clrName": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+      "tsEmitName": "HostFilteringMiddleware",
+      "assemblyName": "Microsoft.AspNetCore.HostFiltering",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "metadataToken": 100663298,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100663297,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "invoke",
+          "isStatic": false,
+          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
+            "metadataToken": 100663298
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
+            "metadataToken": 100663297
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+      "clrName": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+      "tsEmitName": "HostFilteringOptions",
+      "assemblyName": "Microsoft.AspNetCore.HostFiltering",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::AllowedHosts:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "AllowedHosts",
+          "tsEmitName": "allowedHosts",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "AllowedHosts|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::AllowEmptyHosts:System.Boolean",
+          "clrName": "AllowEmptyHosts",
+          "tsEmitName": "allowEmptyHosts",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AllowEmptyHosts|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::IncludeFailureMessage:System.Boolean",
+          "clrName": "IncludeFailureMessage",
+          "tsEmitName": "includeFailureMessage",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IncludeFailureMessage|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringOptions::.ctor():void",
+          "metadataToken": 100663310,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "allowedHosts",
+          "isStatic": false,
+          "tsSignatureId": "AllowedHosts|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
+            "metadataToken": 385875969
+          }
+        },
+        {
+          "tsName": "allowEmptyHosts",
+          "isStatic": false,
+          "tsSignatureId": "AllowEmptyHosts|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "includeFailureMessage",
+          "isStatic": false,
+          "tsSignatureId": "IncludeFailureMessage|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
+            "metadataToken": 385875971
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
+            "metadataToken": 100663310
+          }
+        }
+      ]
+    }
+  ]
+}

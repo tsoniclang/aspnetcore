@@ -1,0 +1,47 @@
+{
+  "namespace": "Microsoft.AspNetCore.Hosting.StaticWebAssets",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Hosting"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+      "clrName": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+      "tsEmitName": "StaticWebAssetsLoader",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader::UseStaticWebAssets(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void",
+          "clrName": "UseStaticWebAssets",
+          "tsEmitName": "useStaticWebAssets",
+          "normalizedSignature": "UseStaticWebAssets|(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}
