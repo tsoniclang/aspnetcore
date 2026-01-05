@@ -71,6 +71,7 @@ import * as Microsoft_AspNetCore_WebUtilities from "../../Microsoft.AspNetCore.W
 import * as Microsoft_Extensions_DependencyInjection from "../../Microsoft.Extensions.DependencyInjection/internal/index.js";
 import * as Microsoft_JSInterop from "../../Microsoft.JSInterop/internal/index.js";
 import * as Microsoft_Net_Http_Headers from "../../Microsoft.Net.Http.Headers/internal/index.js";
+import * as System_Threading_RateLimiting from "../../System.Threading.RateLimiting/internal/index.js";
 
 // Import primitive type aliases
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
@@ -993,10 +994,10 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExplorer {
 }
 
 export interface __Ext_Microsoft_AspNetCore_RateLimiting_RateLimiterOptions {
-  addTokenBucketLimiter(policyName: string, configureOptions: Action_1<TokenBucketRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
-  addFixedWindowLimiter(policyName: string, configureOptions: Action_1<FixedWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
-  addSlidingWindowLimiter(policyName: string, configureOptions: Action_1<SlidingWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
-  addConcurrencyLimiter(policyName: string, configureOptions: Action_1<ConcurrencyLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  addTokenBucketLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.TokenBucketRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  addFixedWindowLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.FixedWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  addSlidingWindowLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.SlidingWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  addConcurrencyLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.ConcurrencyLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem {
