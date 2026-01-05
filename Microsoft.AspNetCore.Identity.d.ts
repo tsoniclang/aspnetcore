@@ -125,6 +125,12 @@ export { IdentityUserToken_1 as IdentityUserToken } from './Microsoft.AspNetCore
 export { RoleStoreBase_4 as RoleStoreBase } from './Microsoft.AspNetCore.Identity/internal/index.js';
 export { UserStoreBase_5 as UserStoreBase } from './Microsoft.AspNetCore.Identity/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const IdentityRole: typeof Internal.IdentityRole;
+export const IdentityUser: typeof Internal.IdentityUser;
+export const PasskeyAssertionResult: typeof Internal.PasskeyAssertionResult$instance;
+export const SecurityStampValidator: typeof Internal.SecurityStampValidator$instance;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

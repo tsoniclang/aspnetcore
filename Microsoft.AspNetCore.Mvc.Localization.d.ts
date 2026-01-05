@@ -24,6 +24,9 @@ export type IViewLocalizer = Internal.IViewLocalizer;
 export { LocalizedHtmlString as LocalizedHtmlString } from './Microsoft.AspNetCore.Mvc.Localization/internal/index.js';
 export { ViewLocalizer as ViewLocalizer } from './Microsoft.AspNetCore.Mvc.Localization/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const HtmlLocalizer: typeof Internal.HtmlLocalizer;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

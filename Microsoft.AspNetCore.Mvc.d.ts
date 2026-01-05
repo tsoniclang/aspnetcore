@@ -166,6 +166,16 @@ export { ViewComponentResult as ViewComponentResult } from './Microsoft.AspNetCo
 export { ViewDataAttribute as ViewDataAttribute } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 export { ViewResult as ViewResult } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const ActionResult: typeof Internal.ActionResult;
+export const MiddlewareFilterAttribute: typeof Internal.MiddlewareFilterAttribute;
+export const ModelBinderAttribute: typeof Internal.ModelBinderAttribute;
+export const ModelMetadataTypeAttribute: typeof Internal.ModelMetadataTypeAttribute;
+export const ProducesAttribute: typeof Internal.ProducesAttribute;
+export const ProducesResponseTypeAttribute: typeof Internal.ProducesResponseTypeAttribute;
+export const ServiceFilterAttribute: typeof Internal.ServiceFilterAttribute;
+export const TypeFilterAttribute: typeof Internal.TypeFilterAttribute;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

@@ -45,6 +45,19 @@ export { Utf8ContentHttpResult as Utf8ContentHttpResult } from './Microsoft.AspN
 export { ValidationProblem as ValidationProblem } from './Microsoft.AspNetCore.Http.HttpResults/internal/index.js';
 export { VirtualFileHttpResult as VirtualFileHttpResult } from './Microsoft.AspNetCore.Http.HttpResults/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const Accepted: typeof Internal.Accepted;
+export const AcceptedAtRoute: typeof Internal.AcceptedAtRoute;
+export const BadRequest: typeof Internal.BadRequest;
+export const Conflict: typeof Internal.Conflict;
+export const Created: typeof Internal.Created;
+export const CreatedAtRoute: typeof Internal.CreatedAtRoute;
+export const InternalServerError: typeof Internal.InternalServerError;
+export const NotFound: typeof Internal.NotFound;
+export const Ok: typeof Internal.Ok;
+export const RazorComponentResult: typeof Internal.RazorComponentResult;
+export const UnprocessableEntity: typeof Internal.UnprocessableEntity;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

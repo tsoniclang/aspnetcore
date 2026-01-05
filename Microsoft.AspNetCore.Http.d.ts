@@ -134,6 +134,8 @@ export { TypedResults$instance as TypedResults } from './Microsoft.AspNetCore.Ht
 export { EndpointFilterExtensions$instance as EndpointFilterExtensions } from './Microsoft.AspNetCore.Http/internal/index.js';
 export { OpenApiRouteHandlerBuilderExtensions$instance as OpenApiRouteHandlerBuilderExtensions } from './Microsoft.AspNetCore.Http/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

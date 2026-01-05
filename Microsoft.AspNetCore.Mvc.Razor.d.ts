@@ -51,6 +51,9 @@ export type RenderAsyncDelegate = Internal.RenderAsyncDelegate;
 export { TagHelperInitializer_1 as TagHelperInitializer } from './Microsoft.AspNetCore.Mvc.Razor/internal/index.js';
 export { ViewLocationExpanderContext as ViewLocationExpanderContext } from './Microsoft.AspNetCore.Mvc.Razor/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const RazorPage: typeof Internal.RazorPage;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

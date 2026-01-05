@@ -78,6 +78,10 @@ export { ViewExecutor as ViewExecutor } from './Microsoft.AspNetCore.Mvc.ViewFea
 export { ViewResultExecutor as ViewResultExecutor } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 export { AttributeDictionary_Enumerator as AttributeDictionary_Enumerator } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const HtmlHelper: typeof Internal.HtmlHelper;
+export const ViewDataDictionary: typeof Internal.ViewDataDictionary;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
