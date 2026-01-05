@@ -1,0 +1,324 @@
+{
+  "Microsoft.AspNetCore.Authorization.AuthorizationHandler": {
+    "stem": "AuthorizationHandler",
+    "namespace": "Microsoft.AspNetCore.Authorization",
+    "minArity": 1,
+    "maxArity": 2,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Components.EventCallback": {
+    "stem": "EventCallback",
+    "namespace": "Microsoft.AspNetCore.Components",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Components.OwningComponentBase": {
+    "stem": "OwningComponentBase",
+    "namespace": "Microsoft.AspNetCore.Components",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Components.RenderFragment": {
+    "stem": "RenderFragment",
+    "namespace": "Microsoft.AspNetCore.Components",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": true
+  },
+  "Microsoft.AspNetCore.Hosting.StartupBase": {
+    "stem": "StartupBase",
+    "namespace": "Microsoft.AspNetCore.Hosting",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.IValueHttpResult": {
+    "stem": "IValueHttpResult",
+    "namespace": "Microsoft.AspNetCore.Http",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult": {
+    "stem": "RazorComponentResult",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.Accepted": {
+    "stem": "Accepted",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.AcceptedAtRoute": {
+    "stem": "AcceptedAtRoute",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.BadRequest": {
+    "stem": "BadRequest",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.Conflict": {
+    "stem": "Conflict",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.Created": {
+    "stem": "Created",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.CreatedAtRoute": {
+    "stem": "CreatedAtRoute",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.InternalServerError": {
+    "stem": "InternalServerError",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.NotFound": {
+    "stem": "NotFound",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.Ok": {
+    "stem": "Ok",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.Results": {
+    "stem": "Results",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 2,
+    "maxArity": 6,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Http.HttpResults.UnprocessableEntity": {
+    "stem": "UnprocessableEntity",
+    "namespace": "Microsoft.AspNetCore.Http.HttpResults",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Identity.PasskeyAssertionResult": {
+    "stem": "PasskeyAssertionResult",
+    "namespace": "Microsoft.AspNetCore.Identity",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Identity.SecurityStampValidator": {
+    "stem": "SecurityStampValidator",
+    "namespace": "Microsoft.AspNetCore.Identity",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Identity.UserClaimsPrincipalFactory": {
+    "stem": "UserClaimsPrincipalFactory",
+    "namespace": "Microsoft.AspNetCore.Identity",
+    "minArity": 1,
+    "maxArity": 2,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Identity.IdentityRole": {
+    "stem": "IdentityRole",
+    "namespace": "Microsoft.AspNetCore.Identity",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Identity.IdentityUser": {
+    "stem": "IdentityUser",
+    "namespace": "Microsoft.AspNetCore.Identity",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ActionResult": {
+    "stem": "ActionResult",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.MiddlewareFilterAttribute": {
+    "stem": "MiddlewareFilterAttribute",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ModelBinderAttribute": {
+    "stem": "ModelBinderAttribute",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ModelMetadataTypeAttribute": {
+    "stem": "ModelMetadataTypeAttribute",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ProducesAttribute": {
+    "stem": "ProducesAttribute",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute": {
+    "stem": "ProducesResponseTypeAttribute",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ServiceFilterAttribute": {
+    "stem": "ServiceFilterAttribute",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.TypeFilterAttribute": {
+    "stem": "TypeFilterAttribute",
+    "namespace": "Microsoft.AspNetCore.Mvc",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider": {
+    "stem": "IApplicationFeatureProvider",
+    "namespace": "Microsoft.AspNetCore.Mvc.ApplicationParts",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer": {
+    "stem": "HtmlLocalizer",
+    "namespace": "Microsoft.AspNetCore.Mvc.Localization",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer": {
+    "stem": "IHtmlLocalizer",
+    "namespace": "Microsoft.AspNetCore.Mvc.Localization",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.Razor.RazorPage": {
+    "stem": "RazorPage",
+    "namespace": "Microsoft.AspNetCore.Mvc.Razor",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper": {
+    "stem": "IHtmlHelper",
+    "namespace": "Microsoft.AspNetCore.Mvc.Rendering",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper": {
+    "stem": "HtmlHelper",
+    "namespace": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary": {
+    "stem": "ViewDataDictionary",
+    "namespace": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer": {
+    "stem": "EndpointMetadataComparer",
+    "namespace": "Microsoft.AspNetCore.Routing.Matching",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.SignalR.Hub": {
+    "stem": "Hub",
+    "namespace": "Microsoft.AspNetCore.SignalR",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.SignalR.HubOptions": {
+    "stem": "HubOptions",
+    "namespace": "Microsoft.AspNetCore.SignalR",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.SignalR.HubOptionsSetup": {
+    "stem": "HubOptionsSetup",
+    "namespace": "Microsoft.AspNetCore.SignalR",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.SignalR.IHubCallerClients": {
+    "stem": "IHubCallerClients",
+    "namespace": "Microsoft.AspNetCore.SignalR",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.SignalR.IHubClients": {
+    "stem": "IHubClients",
+    "namespace": "Microsoft.AspNetCore.SignalR",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.AspNetCore.SignalR.IHubContext": {
+    "stem": "IHubContext",
+    "namespace": "Microsoft.AspNetCore.SignalR",
+    "minArity": 0,
+    "maxArity": 2,
+    "isDelegate": false
+  },
+  "Microsoft.JSInterop.DotNetObjectReference": {
+    "stem": "DotNetObjectReference",
+    "namespace": "Microsoft.JSInterop",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  }
+}

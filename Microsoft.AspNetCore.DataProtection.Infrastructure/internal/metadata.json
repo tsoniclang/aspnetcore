@@ -1,0 +1,40 @@
+{
+  "namespace": "Microsoft.AspNetCore.DataProtection.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.DataProtection.Abstractions"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
+      "clrName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
+      "tsEmitName": "IApplicationDiscriminator",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator::Discriminator:System.String",
+          "clrName": "Discriminator",
+          "tsEmitName": "discriminator",
+          "normalizedSignature": "Discriminator|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

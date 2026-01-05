@@ -1,0 +1,199 @@
+{
+  "namespace": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware",
+      "clrName": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware",
+      "tsEmitName": "HealthCheckMiddleware",
+      "assemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware::InvokeAsync(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "InvokeAsync",
+          "tsEmitName": "invokeAsync",
+          "metadataToken": 100663298,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "InvokeAsync|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions,Microsoft.AspNetCore.Diagnostics.HealthChecks,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService):void",
+          "metadataToken": 100663297,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions,Microsoft.AspNetCore.Diagnostics.HealthChecks,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions,Microsoft.AspNetCore.Diagnostics.HealthChecks,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "invokeAsync",
+          "isStatic": false,
+          "tsSignatureId": "InvokeAsync|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "metadataToken": 100663298
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions,Microsoft.AspNetCore.Diagnostics.HealthChecks,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "metadataToken": 100663297
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+      "clrName": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+      "tsEmitName": "HealthCheckOptions",
+      "assemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions::Predicate:System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Predicate",
+          "tsEmitName": "predicate",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Predicate|:System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions::ResultStatusCodes:System.Collections.Generic.IDictionary_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ResultStatusCodes",
+          "tsEmitName": "resultStatusCodes",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ResultStatusCodes|:System.Collections.Generic.IDictionary_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions::ResponseWriter:System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ResponseWriter",
+          "tsEmitName": "responseWriter",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ResponseWriter|:System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions::AllowCachingResponses:System.Boolean",
+          "clrName": "AllowCachingResponses",
+          "tsEmitName": "allowCachingResponses",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AllowCachingResponses|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.HealthChecks:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions::.ctor():void",
+          "metadataToken": 100663308,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "predicate",
+          "isStatic": false,
+          "tsSignatureId": "Predicate|:System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "metadataToken": 385875969
+          }
+        },
+        {
+          "tsName": "resultStatusCodes",
+          "isStatic": false,
+          "tsSignatureId": "ResultStatusCodes|:System.Collections.Generic.IDictionary_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "responseWriter",
+          "isStatic": false,
+          "tsSignatureId": "ResponseWriter|:System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "allowCachingResponses",
+          "isStatic": false,
+          "tsSignatureId": "AllowCachingResponses|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "metadataToken": 385875972
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "metadataToken": 100663308
+          }
+        }
+      ]
+    }
+  ]
+}

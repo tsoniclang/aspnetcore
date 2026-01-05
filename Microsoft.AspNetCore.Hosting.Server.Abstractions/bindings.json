@@ -1,0 +1,44 @@
+{
+  "namespace": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601",
+      "clrName": "Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601",
+      "tsEmitName": "IHostContextContainer_1",
+      "assemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601::HostContext:TContext",
+          "clrName": "HostContext",
+          "tsEmitName": "hostContext",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":TContext",
+          "normalizedSignature": "HostContext|:TContext|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "hostContext",
+          "isStatic": false,
+          "tsSignatureId": "HostContext|:TContext|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer\u00601",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+            "metadataToken": 385875974
+          }
+        }
+      ]
+    }
+  ]
+}

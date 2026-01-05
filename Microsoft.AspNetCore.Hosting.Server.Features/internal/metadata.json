@@ -1,0 +1,141 @@
+{
+  "namespace": "Microsoft.AspNetCore.Hosting.Server.Features",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Hosting",
+    "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+      "clrName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+      "tsEmitName": "IServerAddressesFeature",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::Addresses:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Addresses",
+          "tsEmitName": "addresses",
+          "normalizedSignature": "Addresses|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::PreferHostingUrls:System.Boolean",
+          "clrName": "PreferHostingUrls",
+          "tsEmitName": "preferHostingUrls",
+          "normalizedSignature": "PreferHostingUrls|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
+      "clrName": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
+      "tsEmitName": "ServerAddressesFeature",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature::Addresses:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Addresses",
+          "tsEmitName": "addresses",
+          "normalizedSignature": "Addresses|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature::PreferHostingUrls:System.Boolean",
+          "clrName": "PreferHostingUrls",
+          "tsEmitName": "preferHostingUrls",
+          "normalizedSignature": "PreferHostingUrls|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::Addresses:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Addresses",
+          "tsEmitName": "addresses$view",
+          "normalizedSignature": "Addresses|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature::PreferHostingUrls:System.Boolean",
+          "clrName": "PreferHostingUrls",
+          "tsEmitName": "preferHostingUrls$view",
+          "normalizedSignature": "PreferHostingUrls|:System.Boolean|static=false|accessor=getset",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

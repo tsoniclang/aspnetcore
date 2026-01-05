@@ -1,0 +1,122 @@
+{
+  "namespace": "Microsoft.AspNetCore.Hosting.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Hosting"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost",
+      "clrName": "Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost",
+      "tsEmitName": "ISupportsConfigureWebHost",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsConfigureWebHost::ConfigureWebHost(System.Action_1[[Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.Extensions.Hosting.WebHostBuilderOptions,Microsoft.AspNetCore.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
+          "clrName": "ConfigureWebHost",
+          "tsEmitName": "configureWebHost",
+          "normalizedSignature": "ConfigureWebHost|(System.Action_1[[Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.Extensions.Hosting.WebHostBuilderOptions,Microsoft.AspNetCore.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup",
+      "clrName": "Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup",
+      "tsEmitName": "ISupportsStartup",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup::Configure(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "clrName": "Configure",
+          "tsEmitName": "configure",
+          "normalizedSignature": "Configure|(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup::Configure(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "clrName": "Configure",
+          "tsEmitName": "configure",
+          "normalizedSignature": "Configure|(System.Action_2[[Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup::UseStartup(System.Type):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "clrName": "UseStartup",
+          "tsEmitName": "useStartup",
+          "normalizedSignature": "UseStartup|(System.Type):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup::UseStartup(Func_2):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
+          "clrName": "UseStartup",
+          "tsEmitName": "useStartup",
+          "normalizedSignature": "UseStartup|(Func_2):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 1,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

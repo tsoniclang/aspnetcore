@@ -1,0 +1,805 @@
+{
+  "namespace": "Microsoft.AspNetCore.Routing.Template",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Routing"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.InlineConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.InlineConstraint",
+      "tsEmitName": "InlineConstraint",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.InlineConstraint::Constraint:System.String",
+          "clrName": "Constraint",
+          "tsEmitName": "constraint",
+          "normalizedSignature": "Constraint|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPolicyReference):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+      "tsEmitName": "RouteTemplate",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::GetSegment(System.Int32):Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+          "clrName": "GetSegment",
+          "tsEmitName": "getSegment",
+          "normalizedSignature": "GetSegment|(System.Int32):Microsoft.AspNetCore.Routing.Template.TemplateSegment|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::GetParameter(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "clrName": "GetParameter",
+          "tsEmitName": "getParameter",
+          "normalizedSignature": "GetParameter|(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::ToRoutePattern():Microsoft.AspNetCore.Routing.Patterns.RoutePattern",
+          "clrName": "ToRoutePattern",
+          "tsEmitName": "toRoutePattern",
+          "normalizedSignature": "ToRoutePattern|():Microsoft.AspNetCore.Routing.Patterns.RoutePattern|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::TemplateText:System.String",
+          "clrName": "TemplateText",
+          "tsEmitName": "templateText",
+          "normalizedSignature": "TemplateText|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::Parameters:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Parameters",
+          "tsEmitName": "parameters",
+          "normalizedSignature": "Parameters|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RouteTemplate::Segments:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplateSegment,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Segments",
+          "tsEmitName": "segments",
+          "normalizedSignature": "Segments|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Routing.Template.TemplateSegment,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.Patterns.RoutePattern):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.String,System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Template.TemplateSegment,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+      "tsEmitName": "TemplateBinder",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::GetValues(Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
+          "clrName": "GetValues",
+          "tsEmitName": "getValues",
+          "normalizedSignature": "GetValues|(Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateValuesResult|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::TryProcessConstraints(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String\u0026,Microsoft.AspNetCore.Routing.IRouteConstraint\u0026):System.Boolean",
+          "clrName": "TryProcessConstraints",
+          "tsEmitName": "tryProcessConstraints",
+          "normalizedSignature": "TryProcessConstraints|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.String\u0026,Microsoft.AspNetCore.Routing.IRouteConstraint\u0026):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 4,
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "out"
+            },
+            {
+              "index": 3,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::BindValues(Microsoft.AspNetCore.Routing.RouteValueDictionary):System.String",
+          "clrName": "BindValues",
+          "tsEmitName": "bindValues",
+          "normalizedSignature": "BindValues|(Microsoft.AspNetCore.Routing.RouteValueDictionary):System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinder::RoutePartsEqual(System.Object,System.Object):System.Boolean",
+          "clrName": "RoutePartsEqual",
+          "tsEmitName": "routePartsEqual",
+          "normalizedSignature": "RoutePartsEqual|(System.Object,System.Object):System.Boolean|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory",
+      "tsEmitName": "TemplateBinderFactory",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory::Create(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "normalizedSignature": "Create|(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary):Microsoft.AspNetCore.Routing.Template.TemplateBinder|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory::Create(Microsoft.AspNetCore.Routing.Patterns.RoutePattern):Microsoft.AspNetCore.Routing.Template.TemplateBinder",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "normalizedSignature": "Create|(Microsoft.AspNetCore.Routing.Patterns.RoutePattern):Microsoft.AspNetCore.Routing.Template.TemplateBinder|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateMatcher",
+      "tsEmitName": "TemplateMatcher",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher::TryMatch(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Boolean",
+          "clrName": "TryMatch",
+          "tsEmitName": "tryMatch",
+          "normalizedSignature": "TryMatch|(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher::Defaults:Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "clrName": "Defaults",
+          "tsEmitName": "defaults",
+          "normalizedSignature": "Defaults|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateMatcher::Template:Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "clrName": "Template",
+          "tsEmitName": "template",
+          "normalizedSignature": "Template|:Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplatePart",
+      "tsEmitName": "TemplatePart",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::CreateLiteral(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "clrName": "CreateLiteral",
+          "tsEmitName": "createLiteral",
+          "normalizedSignature": "CreateLiteral|(System.String):Microsoft.AspNetCore.Routing.Template.TemplatePart|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::CreateParameter(System.String,System.Boolean,System.Boolean,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Template.TemplatePart",
+          "clrName": "CreateParameter",
+          "tsEmitName": "createParameter",
+          "normalizedSignature": "CreateParameter|(System.String,System.Boolean,System.Boolean,System.Object,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Template.TemplatePart|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 5,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::ToRoutePatternPart():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart",
+          "clrName": "ToRoutePatternPart",
+          "tsEmitName": "toRoutePatternPart",
+          "normalizedSignature": "ToRoutePatternPart|():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsCatchAll:System.Boolean",
+          "clrName": "IsCatchAll",
+          "tsEmitName": "isCatchAll",
+          "normalizedSignature": "IsCatchAll|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsLiteral:System.Boolean",
+          "clrName": "IsLiteral",
+          "tsEmitName": "isLiteral",
+          "normalizedSignature": "IsLiteral|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsParameter:System.Boolean",
+          "clrName": "IsParameter",
+          "tsEmitName": "isParameter",
+          "normalizedSignature": "IsParameter|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsOptional:System.Boolean",
+          "clrName": "IsOptional",
+          "tsEmitName": "isOptional",
+          "normalizedSignature": "IsOptional|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::IsOptionalSeperator:System.Boolean",
+          "clrName": "IsOptionalSeperator",
+          "tsEmitName": "isOptionalSeperator",
+          "normalizedSignature": "IsOptionalSeperator|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::Text:System.String",
+          "clrName": "Text",
+          "tsEmitName": "text",
+          "normalizedSignature": "Text|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::DefaultValue:System.Object",
+          "clrName": "DefaultValue",
+          "tsEmitName": "defaultValue",
+          "normalizedSignature": "DefaultValue|:System.Object|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplatePart::InlineConstraints:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "InlineConstraints",
+          "tsEmitName": "inlineConstraints",
+          "normalizedSignature": "InlineConstraints|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.Template.InlineConstraint,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateSegment",
+      "tsEmitName": "TemplateSegment",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment::ToRoutePatternPathSegment():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment",
+          "clrName": "ToRoutePatternPathSegment",
+          "tsEmitName": "toRoutePatternPathSegment",
+          "normalizedSignature": "ToRoutePatternPathSegment|():Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment::IsSimple:System.Boolean",
+          "clrName": "IsSimple",
+          "tsEmitName": "isSimple",
+          "normalizedSignature": "IsSimple|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateSegment::Parts:System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Parts",
+          "tsEmitName": "parts",
+          "normalizedSignature": "Parts|:System.Collections.Generic.List_1[[Microsoft.AspNetCore.Routing.Template.TemplatePart,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateValuesResult",
+      "tsEmitName": "TemplateValuesResult",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateValuesResult::AcceptedValues:Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "clrName": "AcceptedValues",
+          "tsEmitName": "acceptedValues",
+          "normalizedSignature": "AcceptedValues|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateValuesResult::CombinedValues:Microsoft.AspNetCore.Routing.RouteValueDictionary",
+          "clrName": "CombinedValues",
+          "tsEmitName": "combinedValues",
+          "normalizedSignature": "CombinedValues|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.RoutePrecedence",
+      "tsEmitName": "RoutePrecedence",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RoutePrecedence::ComputeInbound(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal",
+          "clrName": "ComputeInbound",
+          "tsEmitName": "computeInbound",
+          "normalizedSignature": "ComputeInbound|(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.RoutePrecedence::ComputeOutbound(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal",
+          "clrName": "ComputeOutbound",
+          "tsEmitName": "computeOutbound",
+          "normalizedSignature": "ComputeOutbound|(Microsoft.AspNetCore.Routing.Template.RouteTemplate):System.Decimal|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateParser",
+      "clrName": "Microsoft.AspNetCore.Routing.Template.TemplateParser",
+      "tsEmitName": "TemplateParser",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Template.TemplateParser::Parse(System.String):Microsoft.AspNetCore.Routing.Template.RouteTemplate",
+          "clrName": "Parse",
+          "tsEmitName": "parse",
+          "normalizedSignature": "Parse|(System.String):Microsoft.AspNetCore.Routing.Template.RouteTemplate|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

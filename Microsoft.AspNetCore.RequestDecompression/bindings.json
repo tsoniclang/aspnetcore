@@ -1,0 +1,144 @@
+{
+  "namespace": "Microsoft.AspNetCore.RequestDecompression",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider",
+      "clrName": "Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider",
+      "tsEmitName": "IDecompressionProvider",
+      "assemblyName": "Microsoft.AspNetCore.RequestDecompression",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider::GetDecompressionStream(System.IO.Stream):System.IO.Stream",
+          "clrName": "GetDecompressionStream",
+          "tsEmitName": "getDecompressionStream",
+          "metadataToken": 100663322,
+          "canonicalSignature": "(System.IO.Stream):System.IO.Stream",
+          "normalizedSignature": "GetDecompressionStream|(System.IO.Stream):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getDecompressionStream",
+          "isStatic": false,
+          "tsSignatureId": "GetDecompressionStream|(System.IO.Stream):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
+            "metadataToken": 100663322
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.AspNetCore.RequestDecompression.IRequestDecompressionProvider",
+      "clrName": "Microsoft.AspNetCore.RequestDecompression.IRequestDecompressionProvider",
+      "tsEmitName": "IRequestDecompressionProvider",
+      "assemblyName": "Microsoft.AspNetCore.RequestDecompression",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.AspNetCore.RequestDecompression.IRequestDecompressionProvider::GetDecompressionStream(Microsoft.AspNetCore.Http.HttpContext):System.IO.Stream",
+          "clrName": "GetDecompressionStream",
+          "tsEmitName": "getDecompressionStream",
+          "metadataToken": 100663323,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.IO.Stream",
+          "normalizedSignature": "GetDecompressionStream|(Microsoft.AspNetCore.Http.HttpContext):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.IRequestDecompressionProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getDecompressionStream",
+          "isStatic": false,
+          "tsSignatureId": "GetDecompressionStream|(Microsoft.AspNetCore.Http.HttpContext):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.IRequestDecompressionProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
+            "metadataToken": 100663323
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions",
+      "clrName": "Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions",
+      "tsEmitName": "RequestDecompressionOptions",
+      "assemblyName": "Microsoft.AspNetCore.RequestDecompression",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions::DecompressionProviders:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider,Microsoft.AspNetCore.RequestDecompression,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "DecompressionProviders",
+          "tsEmitName": "decompressionProviders",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider,Microsoft.AspNetCore.RequestDecompression,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "DecompressionProviders|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider,Microsoft.AspNetCore.RequestDecompression,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions::.ctor():void",
+          "metadataToken": 100663328,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "decompressionProviders",
+          "isStatic": false,
+          "tsSignatureId": "DecompressionProviders|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.RequestDecompression.IDecompressionProvider,Microsoft.AspNetCore.RequestDecompression,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
+            "metadataToken": 385875974
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.RequestDecompression.RequestDecompressionOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
+            "metadataToken": 100663328
+          }
+        }
+      ]
+    }
+  ]
+}

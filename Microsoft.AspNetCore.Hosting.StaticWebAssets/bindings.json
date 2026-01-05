@@ -1,0 +1,66 @@
+{
+  "namespace": "Microsoft.AspNetCore.Hosting.StaticWebAssets",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+      "clrName": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+      "tsEmitName": "StaticWebAssetsLoader",
+      "assemblyName": "Microsoft.AspNetCore.Hosting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader::UseStaticWebAssets(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void",
+          "clrName": "UseStaticWebAssets",
+          "tsEmitName": "useStaticWebAssets",
+          "metadataToken": 100663778,
+          "canonicalSignature": "(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void",
+          "normalizedSignature": "UseStaticWebAssets|(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader::.ctor():void",
+          "metadataToken": 100663782,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "useStaticWebAssets",
+          "isStatic": true,
+          "tsSignatureId": "UseStaticWebAssets|(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+            "metadataToken": 100663778
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
+            "metadataToken": 100663782
+          }
+        }
+      ]
+    }
+  ]
+}

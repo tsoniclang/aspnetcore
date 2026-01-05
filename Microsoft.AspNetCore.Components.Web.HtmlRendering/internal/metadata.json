@@ -1,0 +1,73 @@
+{
+  "namespace": "Microsoft.AspNetCore.Components.Web.HtmlRendering",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components.Web"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
+      "clrName": "Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
+      "tsEmitName": "HtmlRootComponent",
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent::ToHtmlString():System.String",
+          "clrName": "ToHtmlString",
+          "tsEmitName": "toHtmlString",
+          "normalizedSignature": "ToHtmlString|():System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent::WriteHtmlTo(System.IO.TextWriter):System.Void",
+          "clrName": "WriteHtmlTo",
+          "tsEmitName": "writeHtmlTo",
+          "normalizedSignature": "WriteHtmlTo|(System.IO.TextWriter):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent::QuiescenceTask:System.Threading.Tasks.Task",
+          "clrName": "QuiescenceTask",
+          "tsEmitName": "quiescenceTask",
+          "normalizedSignature": "QuiescenceTask|:System.Threading.Tasks.Task|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

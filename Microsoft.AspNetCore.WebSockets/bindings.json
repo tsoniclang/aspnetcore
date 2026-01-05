@@ -1,0 +1,254 @@
+{
+  "namespace": "Microsoft.AspNetCore.WebSockets",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+      "clrName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+      "tsEmitName": "ExtendedWebSocketAcceptContext",
+      "assemblyName": "Microsoft.AspNetCore.WebSockets",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::SubProtocol:System.String",
+          "clrName": "SubProtocol",
+          "tsEmitName": "subProtocol",
+          "metadataToken": 385875984,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "SubProtocol|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::ReceiveBufferSize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ReceiveBufferSize",
+          "tsEmitName": "receiveBufferSize",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ReceiveBufferSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::KeepAliveInterval:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "KeepAliveInterval",
+          "tsEmitName": "keepAliveInterval",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "KeepAliveInterval|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::.ctor():void",
+          "metadataToken": 100663373,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "subProtocol",
+          "isStatic": false,
+          "tsSignatureId": "SubProtocol|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+            "metadataToken": 385875984
+          }
+        },
+        {
+          "tsName": "receiveBufferSize",
+          "isStatic": false,
+          "tsSignatureId": "ReceiveBufferSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+            "metadataToken": 385875985
+          }
+        },
+        {
+          "tsName": "keepAliveInterval",
+          "isStatic": false,
+          "tsSignatureId": "KeepAliveInterval|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "keepAliveTimeout",
+          "isStatic": false,
+          "tsSignatureId": "KeepAliveTimeout|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.WebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
+            "metadataToken": 385876093
+          }
+        },
+        {
+          "tsName": "dangerousEnableCompression",
+          "isStatic": false,
+          "tsSignatureId": "DangerousEnableCompression|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.WebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
+            "metadataToken": 385876094
+          }
+        },
+        {
+          "tsName": "disableServerContextTakeover",
+          "isStatic": false,
+          "tsSignatureId": "DisableServerContextTakeover|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.WebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
+            "metadataToken": 385876095
+          }
+        },
+        {
+          "tsName": "serverMaxWindowBits",
+          "isStatic": false,
+          "tsSignatureId": "ServerMaxWindowBits|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Http.WebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
+            "metadataToken": 385876096
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+            "metadataToken": 100663373
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+      "clrName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+      "tsEmitName": "WebSocketMiddleware",
+      "assemblyName": "Microsoft.AspNetCore.WebSockets",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "metadataToken": 100663381,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "metadataToken": 100663380,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+          "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "invoke",
+          "isStatic": false,
+          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+            "metadataToken": 100663381
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+            "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+            "metadataToken": 100663380
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+      "clrName": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+      "tsEmitName": "WebSocketsDependencyInjectionExtensions",
+      "assemblyName": "Microsoft.AspNetCore.WebSockets",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions::AddWebSockets(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddWebSockets",
+          "tsEmitName": "addWebSockets",
+          "metadataToken": 100663382,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddWebSockets|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "addWebSockets",
+          "isStatic": true,
+          "tsSignatureId": "AddWebSockets|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
+            "metadataToken": 100663382
+          }
+        }
+      ]
+    }
+  ]
+}

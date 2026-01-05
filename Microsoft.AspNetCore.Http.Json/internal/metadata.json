@@ -1,0 +1,46 @@
+{
+  "namespace": "Microsoft.AspNetCore.Http.Json",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Http.Extensions"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions",
+      "clrName": "Microsoft.AspNetCore.Http.Json.JsonOptions",
+      "tsEmitName": "JsonOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Json.JsonOptions::SerializerOptions:System.Text.Json.JsonSerializerOptions",
+          "clrName": "SerializerOptions",
+          "tsEmitName": "serializerOptions",
+          "normalizedSignature": "SerializerOptions|:System.Text.Json.JsonSerializerOptions|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

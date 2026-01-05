@@ -1,0 +1,42 @@
+{
+  "namespace": "System.Security.Claims",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Identity.Core",
+    "System.Security.Claims"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions",
+      "clrName": "System.Security.Claims.PrincipalExtensions",
+      "tsEmitName": "PrincipalExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions::FindFirstValue(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
+          "clrName": "FindFirstValue",
+          "tsEmitName": "findFirstValue",
+          "normalizedSignature": "FindFirstValue|(System.Security.Claims.ClaimsPrincipal,System.String):System.String|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

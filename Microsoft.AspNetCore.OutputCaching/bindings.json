@@ -1,0 +1,1791 @@
+{
+  "namespace": "Microsoft.AspNetCore.OutputCaching",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
+      "tsEmitName": "IOutputCacheBufferStore",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore::TryGetAsync(System.String,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "TryGetAsync",
+          "tsEmitName": "tryGetAsync",
+          "metadataToken": 100663353,
+          "canonicalSignature": "(System.String,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "TryGetAsync|(System.String,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore::SetAsync(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlyMemory_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "clrName": "SetAsync",
+          "tsEmitName": "setAsync",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlyMemory_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "SetAsync|(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlyMemory_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore::EvictByTagAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "clrName": "EvictByTagAsync",
+          "tsEmitName": "evictByTagAsync",
+          "metadataToken": 100663360,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "EvictByTagAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore::GetAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetAsync",
+          "tsEmitName": "getAsync",
+          "metadataToken": 100663361,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore::SetAsync(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "clrName": "SetAsync",
+          "tsEmitName": "setAsync",
+          "metadataToken": 100663362,
+          "canonicalSignature": "(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "SetAsync|(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "tryGetAsync",
+          "isStatic": false,
+          "tsSignatureId": "TryGetAsync|(System.String,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663353
+          }
+        },
+        {
+          "tsName": "setAsync",
+          "isStatic": false,
+          "tsSignatureId": "SetAsync|(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlyMemory_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663354
+          }
+        },
+        {
+          "tsName": "evictByTagAsync",
+          "isStatic": false,
+          "tsSignatureId": "EvictByTagAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663360
+          }
+        },
+        {
+          "tsName": "getAsync",
+          "isStatic": false,
+          "tsSignatureId": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663361
+          }
+        },
+        {
+          "tsName": "setAsync",
+          "isStatic": false,
+          "tsSignatureId": "SetAsync|(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663362
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheFeature",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.IOutputCacheFeature",
+      "tsEmitName": "IOutputCacheFeature",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheFeature::Context:Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "clrName": "Context",
+          "tsEmitName": "context",
+          "metadataToken": 385875978,
+          "canonicalSignature": ":Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "normalizedSignature": "Context|:Microsoft.AspNetCore.OutputCaching.OutputCacheContext|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheFeature",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "context",
+          "isStatic": false,
+          "tsSignatureId": "Context|:Microsoft.AspNetCore.OutputCaching.OutputCacheContext|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheFeature",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875978
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy",
+      "tsEmitName": "IOutputCachePolicy",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy::CacheRequestAsync(Microsoft.AspNetCore.OutputCaching.OutputCacheContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "clrName": "CacheRequestAsync",
+          "tsEmitName": "cacheRequestAsync",
+          "metadataToken": 100663357,
+          "canonicalSignature": "(Microsoft.AspNetCore.OutputCaching.OutputCacheContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "CacheRequestAsync|(Microsoft.AspNetCore.OutputCaching.OutputCacheContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "cacheRequestAsync",
+          "isStatic": false,
+          "tsSignatureId": "CacheRequestAsync|(Microsoft.AspNetCore.OutputCaching.OutputCacheContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663357
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+      "tsEmitName": "IOutputCacheStore",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore::EvictByTagAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "clrName": "EvictByTagAsync",
+          "tsEmitName": "evictByTagAsync",
+          "metadataToken": 100663360,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "EvictByTagAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore::GetAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetAsync",
+          "tsEmitName": "getAsync",
+          "metadataToken": 100663361,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore::SetAsync(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "clrName": "SetAsync",
+          "tsEmitName": "setAsync",
+          "metadataToken": 100663362,
+          "canonicalSignature": "(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "SetAsync|(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "evictByTagAsync",
+          "isStatic": false,
+          "tsSignatureId": "EvictByTagAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663360
+          }
+        },
+        {
+          "tsName": "getAsync",
+          "isStatic": false,
+          "tsSignatureId": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663361
+          }
+        },
+        {
+          "tsName": "setAsync",
+          "isStatic": false,
+          "tsSignatureId": "SetAsync|(System.String,System.Byte[],System.String[],System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663362
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+      "tsEmitName": "CacheVaryByRules",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules::VaryByValues:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "VaryByValues",
+          "tsEmitName": "varyByValues",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "VaryByValues|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules::RouteValueNames:Microsoft.Extensions.Primitives.StringValues",
+          "clrName": "RouteValueNames",
+          "tsEmitName": "routeValueNames",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":Microsoft.Extensions.Primitives.StringValues",
+          "normalizedSignature": "RouteValueNames|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules::HeaderNames:Microsoft.Extensions.Primitives.StringValues",
+          "clrName": "HeaderNames",
+          "tsEmitName": "headerNames",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":Microsoft.Extensions.Primitives.StringValues",
+          "normalizedSignature": "HeaderNames|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules::QueryKeys:Microsoft.Extensions.Primitives.StringValues",
+          "clrName": "QueryKeys",
+          "tsEmitName": "queryKeys",
+          "metadataToken": 385875973,
+          "canonicalSignature": ":Microsoft.Extensions.Primitives.StringValues",
+          "normalizedSignature": "QueryKeys|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules::CacheKeyPrefix:System.String",
+          "clrName": "CacheKeyPrefix",
+          "tsEmitName": "cacheKeyPrefix",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "CacheKeyPrefix|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules::VaryByHost:System.Boolean",
+          "clrName": "VaryByHost",
+          "tsEmitName": "varyByHost",
+          "metadataToken": 385875975,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "VaryByHost|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules::.ctor():void",
+          "metadataToken": 100663322,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "varyByValues",
+          "isStatic": false,
+          "tsSignatureId": "VaryByValues|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "routeValueNames",
+          "isStatic": false,
+          "tsSignatureId": "RouteValueNames|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "headerNames",
+          "isStatic": false,
+          "tsSignatureId": "HeaderNames|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875972
+          }
+        },
+        {
+          "tsName": "queryKeys",
+          "isStatic": false,
+          "tsSignatureId": "QueryKeys|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875973
+          }
+        },
+        {
+          "tsName": "cacheKeyPrefix",
+          "isStatic": false,
+          "tsSignatureId": "CacheKeyPrefix|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875974
+          }
+        },
+        {
+          "tsName": "varyByHost",
+          "isStatic": false,
+          "tsSignatureId": "VaryByHost|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875975
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663322
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+      "tsEmitName": "OutputCacheAttribute",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::Duration:System.Int32",
+          "clrName": "Duration",
+          "tsEmitName": "duration",
+          "metadataToken": 385875979,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Duration|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::NoStore:System.Boolean",
+          "clrName": "NoStore",
+          "tsEmitName": "noStore",
+          "metadataToken": 385875980,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "NoStore|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::VaryByQueryKeys:System.String[]",
+          "clrName": "VaryByQueryKeys",
+          "tsEmitName": "varyByQueryKeys",
+          "metadataToken": 385875981,
+          "canonicalSignature": ":System.String[]",
+          "normalizedSignature": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::VaryByHeaderNames:System.String[]",
+          "clrName": "VaryByHeaderNames",
+          "tsEmitName": "varyByHeaderNames",
+          "metadataToken": 385875982,
+          "canonicalSignature": ":System.String[]",
+          "normalizedSignature": "VaryByHeaderNames|:System.String[]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::VaryByRouteValueNames:System.String[]",
+          "clrName": "VaryByRouteValueNames",
+          "tsEmitName": "varyByRouteValueNames",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.String[]",
+          "normalizedSignature": "VaryByRouteValueNames|:System.String[]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::Tags:System.String[]",
+          "clrName": "Tags",
+          "tsEmitName": "tags",
+          "metadataToken": 385875984,
+          "canonicalSignature": ":System.String[]",
+          "normalizedSignature": "Tags|:System.String[]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::PolicyName:System.String",
+          "clrName": "PolicyName",
+          "tsEmitName": "policyName",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "PolicyName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute::.ctor():void",
+          "metadataToken": 100663392,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "duration",
+          "isStatic": false,
+          "tsSignatureId": "Duration|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875979
+          }
+        },
+        {
+          "tsName": "noStore",
+          "isStatic": false,
+          "tsSignatureId": "NoStore|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875980
+          }
+        },
+        {
+          "tsName": "varyByQueryKeys",
+          "isStatic": false,
+          "tsSignatureId": "VaryByQueryKeys|:System.String[]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875981
+          }
+        },
+        {
+          "tsName": "varyByHeaderNames",
+          "isStatic": false,
+          "tsSignatureId": "VaryByHeaderNames|:System.String[]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875982
+          }
+        },
+        {
+          "tsName": "varyByRouteValueNames",
+          "isStatic": false,
+          "tsSignatureId": "VaryByRouteValueNames|:System.String[]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875983
+          }
+        },
+        {
+          "tsName": "tags",
+          "isStatic": false,
+          "tsSignatureId": "Tags|:System.String[]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875984
+          }
+        },
+        {
+          "tsName": "policyName",
+          "isStatic": false,
+          "tsSignatureId": "PolicyName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875985
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663392
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+      "tsEmitName": "OutputCacheContext",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::EnableOutputCaching:System.Boolean",
+          "clrName": "EnableOutputCaching",
+          "tsEmitName": "enableOutputCaching",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "EnableOutputCaching|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::AllowCacheLookup:System.Boolean",
+          "clrName": "AllowCacheLookup",
+          "tsEmitName": "allowCacheLookup",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AllowCacheLookup|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::AllowCacheStorage:System.Boolean",
+          "clrName": "AllowCacheStorage",
+          "tsEmitName": "allowCacheStorage",
+          "metadataToken": 385875988,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AllowCacheStorage|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::AllowLocking:System.Boolean",
+          "clrName": "AllowLocking",
+          "tsEmitName": "allowLocking",
+          "metadataToken": 385875989,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AllowLocking|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::HttpContext:Microsoft.AspNetCore.Http.HttpContext",
+          "clrName": "HttpContext",
+          "tsEmitName": "httpContext",
+          "metadataToken": 385875990,
+          "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
+          "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::ResponseTime:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ResponseTime",
+          "tsEmitName": "responseTime",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ResponseTime|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::CacheVaryByRules:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "clrName": "CacheVaryByRules",
+          "tsEmitName": "cacheVaryByRules",
+          "metadataToken": 385875992,
+          "canonicalSignature": ":Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
+          "normalizedSignature": "CacheVaryByRules|:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::Tags:System.Collections.Generic.HashSet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Tags",
+          "tsEmitName": "tags",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.Collections.Generic.HashSet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Tags|:System.Collections.Generic.HashSet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::ResponseExpirationTimeSpan:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ResponseExpirationTimeSpan",
+          "tsEmitName": "responseExpirationTimeSpan",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ResponseExpirationTimeSpan|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheContext::.ctor():void",
+          "metadataToken": 100663393,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "enableOutputCaching",
+          "isStatic": false,
+          "tsSignatureId": "EnableOutputCaching|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "allowCacheLookup",
+          "isStatic": false,
+          "tsSignatureId": "AllowCacheLookup|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875987
+          }
+        },
+        {
+          "tsName": "allowCacheStorage",
+          "isStatic": false,
+          "tsSignatureId": "AllowCacheStorage|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875988
+          }
+        },
+        {
+          "tsName": "allowLocking",
+          "isStatic": false,
+          "tsSignatureId": "AllowLocking|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875989
+          }
+        },
+        {
+          "tsName": "httpContext",
+          "isStatic": false,
+          "tsSignatureId": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875990
+          }
+        },
+        {
+          "tsName": "responseTime",
+          "isStatic": false,
+          "tsSignatureId": "ResponseTime|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875991
+          }
+        },
+        {
+          "tsName": "cacheVaryByRules",
+          "isStatic": false,
+          "tsSignatureId": "CacheVaryByRules|:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875992
+          }
+        },
+        {
+          "tsName": "tags",
+          "isStatic": false,
+          "tsSignatureId": "Tags|:System.Collections.Generic.HashSet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875993
+          }
+        },
+        {
+          "tsName": "responseExpirationTimeSpan",
+          "isStatic": false,
+          "tsSignatureId": "ResponseExpirationTimeSpan|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385875994
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663393
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+      "tsEmitName": "OutputCacheOptions",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::AddPolicy(System.String,Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void",
+          "clrName": "AddPolicy",
+          "tsEmitName": "addPolicy",
+          "metadataToken": 100663498,
+          "canonicalSignature": "(System.String,Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void",
+          "normalizedSignature": "AddPolicy|(System.String,Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::AddPolicy(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "AddPolicy",
+          "tsEmitName": "addPolicy",
+          "metadataToken": 100663499,
+          "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "AddPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::AddPolicy(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
+          "clrName": "AddPolicy",
+          "tsEmitName": "addPolicy",
+          "metadataToken": 100663500,
+          "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
+          "normalizedSignature": "AddPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::AddBasePolicy(Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void",
+          "clrName": "AddBasePolicy",
+          "tsEmitName": "addBasePolicy",
+          "metadataToken": 100663501,
+          "canonicalSignature": "(Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void",
+          "normalizedSignature": "AddBasePolicy|(Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::AddBasePolicy(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "AddBasePolicy",
+          "tsEmitName": "addBasePolicy",
+          "metadataToken": 100663502,
+          "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "AddBasePolicy|(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::AddBasePolicy(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
+          "clrName": "AddBasePolicy",
+          "tsEmitName": "addBasePolicy",
+          "metadataToken": 100663503,
+          "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
+          "normalizedSignature": "AddBasePolicy|(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::SizeLimit:System.Int64",
+          "clrName": "SizeLimit",
+          "tsEmitName": "sizeLimit",
+          "metadataToken": 385876008,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "SizeLimit|:System.Int64|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::MaximumBodySize:System.Int64",
+          "clrName": "MaximumBodySize",
+          "tsEmitName": "maximumBodySize",
+          "metadataToken": 385876009,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "MaximumBodySize|:System.Int64|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::DefaultExpirationTimeSpan:System.TimeSpan",
+          "clrName": "DefaultExpirationTimeSpan",
+          "tsEmitName": "defaultExpirationTimeSpan",
+          "metadataToken": 385876010,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "DefaultExpirationTimeSpan|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::UseCaseSensitivePaths:System.Boolean",
+          "clrName": "UseCaseSensitivePaths",
+          "tsEmitName": "useCaseSensitivePaths",
+          "metadataToken": 385876011,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "UseCaseSensitivePaths|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::ApplicationServices:System.IServiceProvider",
+          "clrName": "ApplicationServices",
+          "tsEmitName": "applicationServices",
+          "metadataToken": 385876012,
+          "canonicalSignature": ":System.IServiceProvider",
+          "normalizedSignature": "ApplicationServices|:System.IServiceProvider|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::.ctor():void",
+          "metadataToken": 100663504,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "addPolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddPolicy|(System.String,Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663498
+          }
+        },
+        {
+          "tsName": "addPolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663499
+          }
+        },
+        {
+          "tsName": "addPolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddPolicy|(System.String,System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663500
+          }
+        },
+        {
+          "tsName": "addBasePolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddBasePolicy|(Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663501
+          }
+        },
+        {
+          "tsName": "addBasePolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddBasePolicy|(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663502
+          }
+        },
+        {
+          "tsName": "addBasePolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddBasePolicy|(System.Action_1[[Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663503
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "sizeLimit",
+          "isStatic": false,
+          "tsSignatureId": "SizeLimit|:System.Int64|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385876008
+          }
+        },
+        {
+          "tsName": "maximumBodySize",
+          "isStatic": false,
+          "tsSignatureId": "MaximumBodySize|:System.Int64|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385876009
+          }
+        },
+        {
+          "tsName": "defaultExpirationTimeSpan",
+          "isStatic": false,
+          "tsSignatureId": "DefaultExpirationTimeSpan|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385876010
+          }
+        },
+        {
+          "tsName": "useCaseSensitivePaths",
+          "isStatic": false,
+          "tsSignatureId": "UseCaseSensitivePaths|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385876011
+          }
+        },
+        {
+          "tsName": "applicationServices",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationServices|:System.IServiceProvider|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 385876012
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663504
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+      "clrName": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+      "tsEmitName": "OutputCachePolicyBuilder",
+      "assemblyName": "Microsoft.AspNetCore.OutputCaching",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::AddPolicy(System.Type):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "AddPolicy",
+          "tsEmitName": "addPolicy",
+          "metadataToken": 100663510,
+          "canonicalSignature": "(System.Type):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "AddPolicy|(System.Type):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::AddPolicy():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "AddPolicy",
+          "tsEmitName": "addPolicy",
+          "metadataToken": 100663511,
+          "canonicalSignature": "():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "AddPolicy|():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::With(System.Func_3[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "With",
+          "tsEmitName": "with_",
+          "metadataToken": 100663512,
+          "canonicalSignature": "(System.Func_3[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "With|(System.Func_3[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::With(System.Func_2[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "With",
+          "tsEmitName": "with_",
+          "metadataToken": 100663513,
+          "canonicalSignature": "(System.Func_2[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "With|(System.Func_2[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetVaryByQuery(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetVaryByQuery",
+          "tsEmitName": "setVaryByQuery",
+          "metadataToken": 100663514,
+          "canonicalSignature": "(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetVaryByQuery|(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetVaryByQuery(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetVaryByQuery",
+          "tsEmitName": "setVaryByQuery",
+          "metadataToken": 100663515,
+          "canonicalSignature": "(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetVaryByQuery|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetVaryByHeader(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetVaryByHeader",
+          "tsEmitName": "setVaryByHeader",
+          "metadataToken": 100663516,
+          "canonicalSignature": "(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetVaryByHeader|(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetVaryByHeader(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetVaryByHeader",
+          "tsEmitName": "setVaryByHeader",
+          "metadataToken": 100663517,
+          "canonicalSignature": "(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetVaryByHeader|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetVaryByRouteValue(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetVaryByRouteValue",
+          "tsEmitName": "setVaryByRouteValue",
+          "metadataToken": 100663518,
+          "canonicalSignature": "(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetVaryByRouteValue|(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetVaryByRouteValue(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetVaryByRouteValue",
+          "tsEmitName": "setVaryByRouteValue",
+          "metadataToken": 100663519,
+          "canonicalSignature": "(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetVaryByRouteValue|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetCacheKeyPrefix(System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetCacheKeyPrefix",
+          "tsEmitName": "setCacheKeyPrefix",
+          "metadataToken": 100663520,
+          "canonicalSignature": "(System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetCacheKeyPrefix|(System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetCacheKeyPrefix(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetCacheKeyPrefix",
+          "tsEmitName": "setCacheKeyPrefix",
+          "metadataToken": 100663521,
+          "canonicalSignature": "(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetCacheKeyPrefix|(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetCacheKeyPrefix(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetCacheKeyPrefix",
+          "tsEmitName": "setCacheKeyPrefix",
+          "metadataToken": 100663522,
+          "canonicalSignature": "(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetCacheKeyPrefix|(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::VaryByValue(System.String,System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "VaryByValue",
+          "tsEmitName": "varyByValue",
+          "metadataToken": 100663523,
+          "canonicalSignature": "(System.String,System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "VaryByValue|(System.String,System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::VaryByValue(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "VaryByValue",
+          "tsEmitName": "varyByValue",
+          "metadataToken": 100663524,
+          "canonicalSignature": "(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "VaryByValue|(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::VaryByValue(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "VaryByValue",
+          "tsEmitName": "varyByValue",
+          "metadataToken": 100663525,
+          "canonicalSignature": "(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "VaryByValue|(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::Tag(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "Tag",
+          "tsEmitName": "tag",
+          "metadataToken": 100663526,
+          "canonicalSignature": "(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "Tag|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::Expire(System.TimeSpan):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "Expire",
+          "tsEmitName": "expire",
+          "metadataToken": 100663527,
+          "canonicalSignature": "(System.TimeSpan):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "Expire|(System.TimeSpan):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetLocking(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetLocking",
+          "tsEmitName": "setLocking",
+          "metadataToken": 100663528,
+          "canonicalSignature": "(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetLocking|(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::NoCache():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "NoCache",
+          "tsEmitName": "noCache",
+          "metadataToken": 100663529,
+          "canonicalSignature": "():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "NoCache|():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::Cache():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "Cache",
+          "tsEmitName": "cache",
+          "metadataToken": 100663530,
+          "canonicalSignature": "():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "Cache|():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::SetVaryByHost(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "clrName": "SetVaryByHost",
+          "tsEmitName": "setVaryByHost",
+          "metadataToken": 100663531,
+          "canonicalSignature": "(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "normalizedSignature": "SetVaryByHost|(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+          "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "addPolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddPolicy|(System.Type):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663510
+          }
+        },
+        {
+          "tsName": "addPolicy",
+          "isStatic": false,
+          "tsSignatureId": "AddPolicy|():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663511
+          }
+        },
+        {
+          "tsName": "with_",
+          "isStatic": false,
+          "tsSignatureId": "With|(System.Func_3[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663512
+          }
+        },
+        {
+          "tsName": "with_",
+          "isStatic": false,
+          "tsSignatureId": "With|(System.Func_2[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663513
+          }
+        },
+        {
+          "tsName": "setVaryByQuery",
+          "isStatic": false,
+          "tsSignatureId": "SetVaryByQuery|(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663514
+          }
+        },
+        {
+          "tsName": "setVaryByQuery",
+          "isStatic": false,
+          "tsSignatureId": "SetVaryByQuery|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663515
+          }
+        },
+        {
+          "tsName": "setVaryByHeader",
+          "isStatic": false,
+          "tsSignatureId": "SetVaryByHeader|(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663516
+          }
+        },
+        {
+          "tsName": "setVaryByHeader",
+          "isStatic": false,
+          "tsSignatureId": "SetVaryByHeader|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663517
+          }
+        },
+        {
+          "tsName": "setVaryByRouteValue",
+          "isStatic": false,
+          "tsSignatureId": "SetVaryByRouteValue|(System.String,System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663518
+          }
+        },
+        {
+          "tsName": "setVaryByRouteValue",
+          "isStatic": false,
+          "tsSignatureId": "SetVaryByRouteValue|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663519
+          }
+        },
+        {
+          "tsName": "setCacheKeyPrefix",
+          "isStatic": false,
+          "tsSignatureId": "SetCacheKeyPrefix|(System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663520
+          }
+        },
+        {
+          "tsName": "setCacheKeyPrefix",
+          "isStatic": false,
+          "tsSignatureId": "SetCacheKeyPrefix|(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663521
+          }
+        },
+        {
+          "tsName": "setCacheKeyPrefix",
+          "isStatic": false,
+          "tsSignatureId": "SetCacheKeyPrefix|(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663522
+          }
+        },
+        {
+          "tsName": "varyByValue",
+          "isStatic": false,
+          "tsSignatureId": "VaryByValue|(System.String,System.String):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663523
+          }
+        },
+        {
+          "tsName": "varyByValue",
+          "isStatic": false,
+          "tsSignatureId": "VaryByValue|(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663524
+          }
+        },
+        {
+          "tsName": "varyByValue",
+          "isStatic": false,
+          "tsSignatureId": "VaryByValue|(System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663525
+          }
+        },
+        {
+          "tsName": "tag",
+          "isStatic": false,
+          "tsSignatureId": "Tag|(System.String[]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663526
+          }
+        },
+        {
+          "tsName": "expire",
+          "isStatic": false,
+          "tsSignatureId": "Expire|(System.TimeSpan):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663527
+          }
+        },
+        {
+          "tsName": "setLocking",
+          "isStatic": false,
+          "tsSignatureId": "SetLocking|(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663528
+          }
+        },
+        {
+          "tsName": "noCache",
+          "isStatic": false,
+          "tsSignatureId": "NoCache|():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663529
+          }
+        },
+        {
+          "tsName": "cache",
+          "isStatic": false,
+          "tsSignatureId": "Cache|():Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663530
+          }
+        },
+        {
+          "tsName": "setVaryByHost",
+          "isStatic": false,
+          "tsSignatureId": "SetVaryByHost|(System.Boolean):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
+            "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
+            "metadataToken": 100663531
+          }
+        }
+      ]
+    }
+  ]
+}

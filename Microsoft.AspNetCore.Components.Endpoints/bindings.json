@@ -1,0 +1,437 @@
+{
+  "namespace": "Microsoft.AspNetCore.Components.Endpoints",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+      "clrName": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+      "tsEmitName": "IComponentPrerenderer",
+      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer::PrerenderComponentAsync(Microsoft.AspNetCore.Http.HttpContext,System.Type,Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlAsyncContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "PrerenderComponentAsync",
+          "tsEmitName": "prerenderComponentAsync",
+          "metadataToken": 100663713,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.Type,Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlAsyncContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "PrerenderComponentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Type,Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlAsyncContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer::PrerenderPersistedStateAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Components.PersistedStateSerializationMode):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "PrerenderPersistedStateAsync",
+          "tsEmitName": "prerenderPersistedStateAsync",
+          "metadataToken": 100663714,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Components.PersistedStateSerializationMode):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "PrerenderPersistedStateAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Components.PersistedStateSerializationMode):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer::Dispatcher:Microsoft.AspNetCore.Components.Dispatcher",
+          "clrName": "Dispatcher",
+          "tsEmitName": "dispatcher",
+          "metadataToken": 385876076,
+          "canonicalSignature": ":Microsoft.AspNetCore.Components.Dispatcher",
+          "normalizedSignature": "Dispatcher|:Microsoft.AspNetCore.Components.Dispatcher|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "prerenderComponentAsync",
+          "isStatic": false,
+          "tsSignatureId": "PrerenderComponentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Type,Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Components.ParameterView):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlAsyncContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100663713
+          }
+        },
+        {
+          "tsName": "prerenderPersistedStateAsync",
+          "isStatic": false,
+          "tsSignatureId": "PrerenderPersistedStateAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Components.PersistedStateSerializationMode):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100663714
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "dispatcher",
+          "isStatic": false,
+          "tsSignatureId": "Dispatcher|:Microsoft.AspNetCore.Components.Dispatcher|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IComponentPrerenderer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876076
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
+      "clrName": "Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
+      "tsEmitName": "IRazorComponentEndpointInvoker",
+      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker::Render(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Render",
+          "tsEmitName": "render",
+          "metadataToken": 100663785,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "normalizedSignature": "Render|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "render",
+          "isStatic": false,
+          "tsSignatureId": "Render|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.IRazorComponentEndpointInvoker",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100663785
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+      "clrName": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+      "tsEmitName": "ComponentTypeMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata::Type:System.Type",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "metadataToken": 385876053,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata::.ctor(System.Type):void",
+          "metadataToken": 100663633,
+          "canonicalSignature": "(System.Type):void",
+          "normalizedSignature": "constructor|(System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876053
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Type):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100663633
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+      "clrName": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+      "tsEmitName": "RazorComponentsServiceOptions",
+      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::DetailedErrors:System.Boolean",
+          "clrName": "DetailedErrors",
+          "tsEmitName": "detailedErrors",
+          "metadataToken": 385876078,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "DetailedErrors|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingCollectionSize:System.Int32",
+          "clrName": "MaxFormMappingCollectionSize",
+          "tsEmitName": "maxFormMappingCollectionSize",
+          "metadataToken": 385876079,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxFormMappingCollectionSize|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingRecursionDepth:System.Int32",
+          "clrName": "MaxFormMappingRecursionDepth",
+          "tsEmitName": "maxFormMappingRecursionDepth",
+          "metadataToken": 385876080,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxFormMappingRecursionDepth|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingErrorCount:System.Int32",
+          "clrName": "MaxFormMappingErrorCount",
+          "tsEmitName": "maxFormMappingErrorCount",
+          "metadataToken": 385876081,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxFormMappingErrorCount|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::MaxFormMappingKeySize:System.Int32",
+          "clrName": "MaxFormMappingKeySize",
+          "tsEmitName": "maxFormMappingKeySize",
+          "metadataToken": 385876082,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxFormMappingKeySize|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::TemporaryRedirectionUrlValidityDuration:System.TimeSpan",
+          "clrName": "TemporaryRedirectionUrlValidityDuration",
+          "tsEmitName": "temporaryRedirectionUrlValidityDuration",
+          "metadataToken": 385876083,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "TemporaryRedirectionUrlValidityDuration|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions::.ctor():void",
+          "metadataToken": 100663737,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "detailedErrors",
+          "isStatic": false,
+          "tsSignatureId": "DetailedErrors|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876078
+          }
+        },
+        {
+          "tsName": "maxFormMappingCollectionSize",
+          "isStatic": false,
+          "tsSignatureId": "MaxFormMappingCollectionSize|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876079
+          }
+        },
+        {
+          "tsName": "maxFormMappingRecursionDepth",
+          "isStatic": false,
+          "tsSignatureId": "MaxFormMappingRecursionDepth|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876080
+          }
+        },
+        {
+          "tsName": "maxFormMappingErrorCount",
+          "isStatic": false,
+          "tsSignatureId": "MaxFormMappingErrorCount|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876081
+          }
+        },
+        {
+          "tsName": "maxFormMappingKeySize",
+          "isStatic": false,
+          "tsSignatureId": "MaxFormMappingKeySize|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876082
+          }
+        },
+        {
+          "tsName": "temporaryRedirectionUrlValidityDuration",
+          "isStatic": false,
+          "tsSignatureId": "TemporaryRedirectionUrlValidityDuration|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876083
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100663737
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+      "clrName": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+      "tsEmitName": "RootComponentMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata::Type:System.Type",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "metadataToken": 385876073,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata::.ctor(System.Type):void",
+          "metadataToken": 100663694,
+          "canonicalSignature": "(System.Type):void",
+          "normalizedSignature": "constructor|(System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 385876073
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Type):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100663694
+          }
+        }
+      ]
+    }
+  ]
+}

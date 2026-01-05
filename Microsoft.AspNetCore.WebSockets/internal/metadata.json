@@ -1,0 +1,148 @@
+{
+  "namespace": "Microsoft.AspNetCore.WebSockets",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.WebSockets"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+      "clrName": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
+      "tsEmitName": "ExtendedWebSocketAcceptContext",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::SubProtocol:System.String",
+          "clrName": "SubProtocol",
+          "tsEmitName": "subProtocol",
+          "normalizedSignature": "SubProtocol|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::ReceiveBufferSize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ReceiveBufferSize",
+          "tsEmitName": "receiveBufferSize",
+          "normalizedSignature": "ReceiveBufferSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext::KeepAliveInterval:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "KeepAliveInterval",
+          "tsEmitName": "keepAliveInterval",
+          "normalizedSignature": "KeepAliveInterval|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+      "clrName": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
+      "tsEmitName": "WebSocketMiddleware",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+      "clrName": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
+      "tsEmitName": "WebSocketsDependencyInjectionExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions::AddWebSockets(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddWebSockets",
+          "tsEmitName": "addWebSockets",
+          "normalizedSignature": "AddWebSockets|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "namespace": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+      "clrName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
+      "tsEmitName": "QuicTransportOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxBidirectionalStreamCount:System.Int32",
+          "clrName": "MaxBidirectionalStreamCount",
+          "tsEmitName": "maxBidirectionalStreamCount",
+          "normalizedSignature": "MaxBidirectionalStreamCount|:System.Int32|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxUnidirectionalStreamCount:System.Int32",
+          "clrName": "MaxUnidirectionalStreamCount",
+          "tsEmitName": "maxUnidirectionalStreamCount",
+          "normalizedSignature": "MaxUnidirectionalStreamCount|:System.Int32|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxReadBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MaxReadBufferSize",
+          "tsEmitName": "maxReadBufferSize",
+          "normalizedSignature": "MaxReadBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::MaxWriteBufferSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MaxWriteBufferSize",
+          "tsEmitName": "maxWriteBufferSize",
+          "normalizedSignature": "MaxWriteBufferSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::Backlog:System.Int32",
+          "clrName": "Backlog",
+          "tsEmitName": "backlog",
+          "normalizedSignature": "Backlog|:System.Int32|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::DefaultStreamErrorCode:System.Int64",
+          "clrName": "DefaultStreamErrorCode",
+          "tsEmitName": "defaultStreamErrorCode",
+          "normalizedSignature": "DefaultStreamErrorCode|:System.Int64|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic:Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions::DefaultCloseErrorCode:System.Int64",
+          "clrName": "DefaultCloseErrorCode",
+          "tsEmitName": "defaultCloseErrorCode",
+          "normalizedSignature": "DefaultCloseErrorCode|:System.Int64|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

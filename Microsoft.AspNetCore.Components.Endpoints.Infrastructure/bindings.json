@@ -1,0 +1,131 @@
+{
+  "namespace": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider",
+      "clrName": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider",
+      "tsEmitName": "RenderModeEndpointProvider",
+      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider::Supports(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Boolean",
+          "clrName": "Supports",
+          "tsEmitName": "supports",
+          "metadataToken": 100664270,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Boolean",
+          "normalizedSignature": "Supports|(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider::GetEndpointBuilders(Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.RouteEndpointBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetEndpointBuilders",
+          "tsEmitName": "getEndpointBuilders",
+          "metadataToken": 100664271,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.RouteEndpointBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetEndpointBuilders|(Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.RouteEndpointBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "supports",
+          "isStatic": false,
+          "tsSignatureId": "Supports|(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100664270
+          }
+        },
+        {
+          "tsName": "getEndpointBuilders",
+          "isStatic": false,
+          "tsSignatureId": "GetEndpointBuilders|(Microsoft.AspNetCore.Components.IComponentRenderMode,Microsoft.AspNetCore.Builder.IApplicationBuilder):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.RouteEndpointBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.RenderModeEndpointProvider",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100664271
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper",
+      "clrName": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper",
+      "tsEmitName": "ComponentEndpointConventionBuilderHelper",
+      "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper::AddRenderMode(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder,Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void",
+          "clrName": "AddRenderMode",
+          "tsEmitName": "addRenderMode",
+          "metadataToken": 100664268,
+          "canonicalSignature": "(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder,Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void",
+          "normalizedSignature": "AddRenderMode|(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder,Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper::GetEndpointRouteBuilder(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder):Microsoft.AspNetCore.Routing.IEndpointRouteBuilder",
+          "clrName": "GetEndpointRouteBuilder",
+          "tsEmitName": "getEndpointRouteBuilder",
+          "metadataToken": 100664269,
+          "canonicalSignature": "(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder):Microsoft.AspNetCore.Routing.IEndpointRouteBuilder",
+          "normalizedSignature": "GetEndpointRouteBuilder|(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder):Microsoft.AspNetCore.Routing.IEndpointRouteBuilder|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "addRenderMode",
+          "isStatic": true,
+          "tsSignatureId": "AddRenderMode|(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder,Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100664268
+          }
+        },
+        {
+          "tsName": "getEndpointRouteBuilder",
+          "isStatic": true,
+          "tsSignatureId": "GetEndpointRouteBuilder|(Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder):Microsoft.AspNetCore.Routing.IEndpointRouteBuilder|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Components.Endpoints.Infrastructure.ComponentEndpointConventionBuilderHelper",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
+            "metadataToken": 100664269
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2977 @@
+{
+  "namespace": "Microsoft.AspNetCore.Routing.Constraints",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+      "tsEmitName": "AlphaRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral$view",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 0,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint::.ctor():void",
+          "metadataToken": 100664562,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        },
+        {
+          "tsName": "matchesLiteral$view",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "constraint",
+          "isStatic": false,
+          "tsSignatureId": "Constraint|:System.Text.RegularExpressions.Regex|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876278
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664562
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+      "tsEmitName": "BoolRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664564,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint::.ctor():void",
+          "metadataToken": 100664567,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664564
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664567
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+      "tsEmitName": "CompositeRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664571,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint::Constraints:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Constraints",
+          "tsEmitName": "constraints",
+          "metadataToken": 385876267,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Constraints|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint::.ctor(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100664568,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664571
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "constraints",
+          "isStatic": false,
+          "tsSignatureId": "Constraints|:System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876267
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Routing.IRouteConstraint,Microsoft.AspNetCore.Routing.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664568
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+      "tsEmitName": "DateTimeRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664573,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint::.ctor():void",
+          "metadataToken": 100664576,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664573
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664576
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+      "tsEmitName": "DecimalRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664577,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint::.ctor():void",
+          "metadataToken": 100664580,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664577
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664580
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+      "tsEmitName": "DoubleRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664581,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint::.ctor():void",
+          "metadataToken": 100664584,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664581
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664584
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+      "tsEmitName": "FileNameRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664585,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint::.ctor():void",
+          "metadataToken": 100664588,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664585
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664588
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+      "tsEmitName": "FloatRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664589,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint::.ctor():void",
+          "metadataToken": 100664592,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664589
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664592
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+      "tsEmitName": "GuidRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664593,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint::.ctor():void",
+          "metadataToken": 100664596,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664593
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664596
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+      "tsEmitName": "HttpMethodRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664599,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint::AllowedMethods:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "AllowedMethods",
+          "tsEmitName": "allowedMethods",
+          "metadataToken": 385876268,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "AllowedMethods|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint::.ctor(System.String[]):void",
+          "metadataToken": 100664597,
+          "canonicalSignature": "(System.String[]):void",
+          "normalizedSignature": "constructor|(System.String[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664599
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "allowedMethods",
+          "isStatic": false,
+          "tsSignatureId": "AllowedMethods|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876268
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String[]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664597
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+      "tsEmitName": "IntRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664600,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint::.ctor():void",
+          "metadataToken": 100664603,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664600
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664603
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+      "tsEmitName": "LengthRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664608,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::MinLength:System.Int32",
+          "clrName": "MinLength",
+          "tsEmitName": "minLength",
+          "metadataToken": 385876269,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MinLength|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::MaxLength:System.Int32",
+          "clrName": "MaxLength",
+          "tsEmitName": "maxLength",
+          "metadataToken": 385876270,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxLength|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::.ctor(System.Int32):void",
+          "metadataToken": 100664604,
+          "canonicalSignature": "(System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint::.ctor(System.Int32,System.Int32):void",
+          "metadataToken": 100664605,
+          "canonicalSignature": "(System.Int32,System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664608
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "minLength",
+          "isStatic": false,
+          "tsSignatureId": "MinLength|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876269
+          }
+        },
+        {
+          "tsName": "maxLength",
+          "isStatic": false,
+          "tsSignatureId": "MaxLength|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876270
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664604
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664605
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+      "tsEmitName": "LongRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664611,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint::.ctor():void",
+          "metadataToken": 100664614,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664611
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664614
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+      "tsEmitName": "MaxLengthRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664617,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint::MaxLength:System.Int32",
+          "clrName": "MaxLength",
+          "tsEmitName": "maxLength",
+          "metadataToken": 385876271,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxLength|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint::.ctor(System.Int32):void",
+          "metadataToken": 100664615,
+          "canonicalSignature": "(System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664617
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "maxLength",
+          "isStatic": false,
+          "tsSignatureId": "MaxLength|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876271
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664615
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+      "tsEmitName": "MaxRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664623,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint::Max:System.Int64",
+          "clrName": "Max",
+          "tsEmitName": "max",
+          "metadataToken": 385876272,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "Max|:System.Int64|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint::.ctor(System.Int64):void",
+          "metadataToken": 100664620,
+          "canonicalSignature": "(System.Int64):void",
+          "normalizedSignature": "constructor|(System.Int64):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664623
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "max",
+          "isStatic": false,
+          "tsSignatureId": "Max|:System.Int64|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876272
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int64):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664620
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+      "tsEmitName": "MinLengthRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664629,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint::MinLength:System.Int32",
+          "clrName": "MinLength",
+          "tsEmitName": "minLength",
+          "metadataToken": 385876273,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MinLength|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint::.ctor(System.Int32):void",
+          "metadataToken": 100664626,
+          "canonicalSignature": "(System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664629
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "minLength",
+          "isStatic": false,
+          "tsSignatureId": "MinLength|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876273
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664626
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+      "tsEmitName": "MinRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664634,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint::Min:System.Int64",
+          "clrName": "Min",
+          "tsEmitName": "min",
+          "metadataToken": 385876274,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "Min|:System.Int64|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint::.ctor(System.Int64):void",
+          "metadataToken": 100664632,
+          "canonicalSignature": "(System.Int64):void",
+          "normalizedSignature": "constructor|(System.Int64):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664634
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "min",
+          "isStatic": false,
+          "tsSignatureId": "Min|:System.Int64|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876274
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int64):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664632
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+      "tsEmitName": "NonFileNameRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664637,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint::.ctor():void",
+          "metadataToken": 100664639,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664637
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664639
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+      "tsEmitName": "OptionalRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664645,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint::InnerConstraint:Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "clrName": "InnerConstraint",
+          "tsEmitName": "innerConstraint",
+          "metadataToken": 385876275,
+          "canonicalSignature": ":Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "normalizedSignature": "InnerConstraint|:Microsoft.AspNetCore.Routing.IRouteConstraint|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint::.ctor(Microsoft.AspNetCore.Routing.IRouteConstraint):void",
+          "metadataToken": 100664643,
+          "canonicalSignature": "(Microsoft.AspNetCore.Routing.IRouteConstraint):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.IRouteConstraint):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664645
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "innerConstraint",
+          "isStatic": false,
+          "tsSignatureId": "InnerConstraint|:Microsoft.AspNetCore.Routing.IRouteConstraint|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876275
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Routing.IRouteConstraint):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664643
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+      "tsEmitName": "RangeRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664651,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint::Min:System.Int64",
+          "clrName": "Min",
+          "tsEmitName": "min",
+          "metadataToken": 385876276,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "Min|:System.Int64|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint::Max:System.Int64",
+          "clrName": "Max",
+          "tsEmitName": "max",
+          "metadataToken": 385876277,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "Max|:System.Int64|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint::.ctor(System.Int64,System.Int64):void",
+          "metadataToken": 100664646,
+          "canonicalSignature": "(System.Int64,System.Int64):void",
+          "normalizedSignature": "constructor|(System.Int64,System.Int64):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664651
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "min",
+          "isStatic": false,
+          "tsSignatureId": "Min|:System.Int64|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876276
+          }
+        },
+        {
+          "tsName": "max",
+          "isStatic": false,
+          "tsSignatureId": "Max|:System.Int64|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876277
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int64,System.Int64):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664646
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+      "tsEmitName": "RegexInlineRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral$view",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 0,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint::.ctor(System.String):void",
+          "metadataToken": 100664656,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        },
+        {
+          "tsName": "matchesLiteral$view",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "constraint",
+          "isStatic": false,
+          "tsSignatureId": "Constraint|:System.Text.RegularExpressions.Regex|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876278
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664656
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+      "tsEmitName": "RegexRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664660,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint::Constraint:System.Text.RegularExpressions.Regex",
+          "clrName": "Constraint",
+          "tsEmitName": "constraint",
+          "metadataToken": 385876278,
+          "canonicalSignature": ":System.Text.RegularExpressions.Regex",
+          "normalizedSignature": "Constraint|:System.Text.RegularExpressions.Regex|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint::.ctor(System.Text.RegularExpressions.Regex):void",
+          "metadataToken": 100664657,
+          "canonicalSignature": "(System.Text.RegularExpressions.Regex):void",
+          "normalizedSignature": "constructor|(System.Text.RegularExpressions.Regex):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint::.ctor(System.String):void",
+          "metadataToken": 100664658,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664660
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "constraint",
+          "isStatic": false,
+          "tsSignatureId": "Constraint|:System.Text.RegularExpressions.Regex|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 385876278
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Text.RegularExpressions.Regex):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664657
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664658
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+      "tsEmitName": "RequiredRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664663,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint::.ctor():void",
+          "metadataToken": 100664664,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664663
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664664
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+      "clrName": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+      "tsEmitName": "StringRouteConstraint",
+      "assemblyName": "Microsoft.AspNetCore.Routing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "metadataToken": 100664666,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
+          "clrName": "MatchesLiteral",
+          "tsEmitName": "matchesLiteral",
+          "metadataToken": 100664474,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouteConstraint::Match(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "clrName": "Match",
+          "tsEmitName": "match$view",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean",
+          "normalizedSignature": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint::.ctor(System.String):void",
+          "metadataToken": 100664665,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "match",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664666
+          }
+        },
+        {
+          "tsName": "matchesLiteral",
+          "isStatic": false,
+          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664474
+          }
+        },
+        {
+          "tsName": "match$view",
+          "isStatic": false,
+          "tsSignatureId": "Match|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteDirection):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.IRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
+            "metadataToken": 100663327
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+            "metadataToken": 100664665
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "namespace": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Mvc.ViewFeatures"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope",
+      "tsEmitName": "IViewBufferScope",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::GetPage(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]",
+          "clrName": "GetPage",
+          "tsEmitName": "getPage",
+          "normalizedSignature": "GetPage|(System.Int32):Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::ReturnSegment(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void",
+          "clrName": "ReturnSegment",
+          "tsEmitName": "returnSegment",
+          "normalizedSignature": "ReturnSegment|(Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[]):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope::CreateWriter(System.IO.TextWriter):System.IO.TextWriter",
+          "clrName": "CreateWriter",
+          "tsEmitName": "createWriter",
+          "normalizedSignature": "CreateWriter|(System.IO.TextWriter):System.IO.TextWriter|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue",
+      "tsEmitName": "ViewBufferValue",
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue::Value:System.Object",
+          "clrName": "Value",
+          "tsEmitName": "value",
+          "normalizedSignature": "Value|:System.Object|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Html.IHtmlContent):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    }
+  ]
+}

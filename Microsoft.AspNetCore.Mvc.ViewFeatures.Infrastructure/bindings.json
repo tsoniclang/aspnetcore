@@ -1,0 +1,92 @@
+{
+  "namespace": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure",
+  "types": [
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+      "tsEmitName": "TempDataSerializer",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer::Deserialize(System.Byte[]):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Deserialize",
+          "tsEmitName": "deserialize",
+          "metadataToken": 100664708,
+          "canonicalSignature": "(System.Byte[]):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Deserialize|(System.Byte[]):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer::Serialize(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]",
+          "clrName": "Serialize",
+          "tsEmitName": "serialize",
+          "metadataToken": 100664709,
+          "canonicalSignature": "(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]",
+          "normalizedSignature": "Serialize|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer::CanSerializeType(System.Type):System.Boolean",
+          "clrName": "CanSerializeType",
+          "tsEmitName": "canSerializeType",
+          "metadataToken": 100664710,
+          "canonicalSignature": "(System.Type):System.Boolean",
+          "normalizedSignature": "CanSerializeType|(System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "deserialize",
+          "isStatic": false,
+          "tsSignatureId": "Deserialize|(System.Byte[]):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100664708
+          }
+        },
+        {
+          "tsName": "serialize",
+          "isStatic": false,
+          "tsSignatureId": "Serialize|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Byte[]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100664709
+          }
+        },
+        {
+          "tsName": "canSerializeType",
+          "isStatic": false,
+          "tsSignatureId": "CanSerializeType|(System.Type):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer",
+            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "metadataToken": 100664710
+          }
+        }
+      ]
+    }
+  ]
+}
