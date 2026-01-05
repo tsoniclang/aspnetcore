@@ -59,6 +59,11 @@ export { SignalRConnectionBuilderExtensions$instance as SignalRConnectionBuilder
 export { HubConnectionStore_Enumerator as HubConnectionStore_Enumerator } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { JsonHubProtocolOptions as JsonHubProtocolOptions } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const Hub: typeof Internal.Hub;
+export const HubOptions: typeof Internal.HubOptions;
+export const HubOptionsSetup: typeof Internal.HubOptionsSetup;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

@@ -58,6 +58,9 @@ export { WebHostBuilderNamedPipeExtensions$instance as WebHostBuilderNamedPipeEx
 export { WebHostBuilderQuicExtensions$instance as WebHostBuilderQuicExtensions } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 export { WebHostBuilderSocketExtensions$instance as WebHostBuilderSocketExtensions } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const StartupBase: typeof Internal.StartupBase;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

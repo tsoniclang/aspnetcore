@@ -232,7 +232,7 @@ export type AcceptVerbsAttribute = AcceptVerbsAttribute$instance & __AcceptVerbs
 
 
 export interface ActionContext$instance {
-    actionDescriptor: ActionDescriptor | ControllerActionDescriptor;
+    actionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
     httpContext: HttpContext;
     readonly modelState: ModelStateDictionary;
     routeData: RouteData;

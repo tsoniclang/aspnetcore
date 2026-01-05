@@ -91,6 +91,10 @@ export { ElementReferenceExtensions$instance as ElementReferenceExtensions } fro
 export { SupplyParameterFromFormAttribute as SupplyParameterFromFormAttribute } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { WebElementReferenceContext as WebElementReferenceContext } from './Microsoft.AspNetCore.Components/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const EventCallback: typeof Internal.EventCallback;
+export const OwningComponentBase: typeof Internal.OwningComponentBase;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

@@ -732,7 +732,7 @@ export interface RemoteAuthenticationOptions$instance extends AuthenticationSche
     correlationCookie: CookieBuilder;
     get dataProtectionProvider(): IDataProtectionProvider | undefined;
     set dataProtectionProvider(value: IDataProtectionProvider);
-    events: RemoteAuthenticationEvents | unknown;
+    events: OAuthEvents | RemoteAuthenticationEvents | unknown;
     remoteAuthenticationTimeout: TimeSpan;
     returnUrlParameter: string;
     saveTokens: boolean;

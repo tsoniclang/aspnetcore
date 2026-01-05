@@ -30,6 +30,9 @@ export { JSObjectReferenceExtensions$instance as JSObjectReferenceExtensions } f
 export { JSRuntime as JSRuntime } from './Microsoft.JSInterop/internal/index.js';
 export { JSRuntimeExtensions$instance as JSRuntimeExtensions } from './Microsoft.JSInterop/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const DotNetObjectReference: typeof Internal.DotNetObjectReference$instance;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

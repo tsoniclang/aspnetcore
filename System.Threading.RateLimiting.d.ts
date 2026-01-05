@@ -26,6 +26,11 @@ export { SlidingWindowRateLimiterOptions as SlidingWindowRateLimiterOptions } fr
 export { TokenBucketRateLimiter as TokenBucketRateLimiter } from './System.Threading.RateLimiting/internal/index.js';
 export { TokenBucketRateLimiterOptions as TokenBucketRateLimiterOptions } from './System.Threading.RateLimiting/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const MetadataName: typeof Internal.MetadataName$instance;
+export const PartitionedRateLimiter: typeof Internal.PartitionedRateLimiter$instance;
+export const RateLimitPartition: typeof Internal.RateLimitPartition$instance;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
