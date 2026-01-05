@@ -50,11 +50,13 @@
     "Microsoft.Extensions.Diagnostics",
     "Microsoft.Extensions.Diagnostics.HealthChecks",
     "Microsoft.Extensions.Hosting.Abstractions",
+    "Microsoft.Extensions.Http",
     "Microsoft.Extensions.Identity.Core",
     "Microsoft.Extensions.Localization",
     "Microsoft.Extensions.Logging",
     "Microsoft.Extensions.Options",
     "Microsoft.Extensions.Options.ConfigurationExtensions",
+    "Microsoft.Extensions.Options.DataAnnotations",
     "Microsoft.Extensions.Validation",
     "Microsoft.Extensions.WebEncoders"
   ],

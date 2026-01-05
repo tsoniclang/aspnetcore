@@ -381,7 +381,7 @@ export type AuthenticationSchemeBuilder = AuthenticationSchemeBuilder$instance;
 export interface AuthenticationSchemeOptions$instance {
     get claimsIssuer(): string | undefined;
     set claimsIssuer(value: string);
-    events: RemoteAuthenticationEvents | unknown;
+    events: BearerTokenEvents | unknown;
     get eventsType(): Type | undefined;
     set eventsType(value: Type);
     get forwardAuthenticate(): string | undefined;

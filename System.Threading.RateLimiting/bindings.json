@@ -1,0 +1,2848 @@
+{
+  "namespace": "System.Threading.RateLimiting",
+  "types": [
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.QueueProcessingOrder",
+      "clrName": "System.Threading.RateLimiting.QueueProcessingOrder",
+      "tsEmitName": "QueueProcessingOrder",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.QueueProcessingOrder::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108923,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.QueueProcessingOrder::OldestFirstSystem.Threading.RateLimiting.QueueProcessingOrder",
+          "clrName": "OldestFirst",
+          "tsEmitName": "oldestFirst",
+          "metadataToken": 67108924,
+          "normalizedSignature": "OldestFirst|System.Threading.RateLimiting.QueueProcessingOrder|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.QueueProcessingOrder::NewestFirstSystem.Threading.RateLimiting.QueueProcessingOrder",
+          "clrName": "NewestFirst",
+          "tsEmitName": "newestFirst",
+          "metadataToken": 67108925,
+          "normalizedSignature": "NewestFirst|System.Threading.RateLimiting.QueueProcessingOrder|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 67108923
+          }
+        },
+        {
+          "tsName": "oldestFirst",
+          "isStatic": true,
+          "tsSignatureId": "OldestFirst|System.Threading.RateLimiting.QueueProcessingOrder|static=true|const=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 67108924
+          }
+        },
+        {
+          "tsName": "newestFirst",
+          "isStatic": true,
+          "tsSignatureId": "NewestFirst|System.Threading.RateLimiting.QueueProcessingOrder|static=true|const=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 67108925
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition\u00601",
+      "clrName": "System.Threading.RateLimiting.RateLimitPartition\u00601",
+      "tsEmitName": "RateLimitPartition_1",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition\u00601::PartitionKey:TKey",
+          "clrName": "PartitionKey",
+          "tsEmitName": "partitionKey",
+          "metadataToken": 385876007,
+          "canonicalSignature": ":TKey",
+          "normalizedSignature": "PartitionKey|:TKey|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition\u00601::Factory:Func_2",
+          "clrName": "Factory",
+          "tsEmitName": "factory",
+          "metadataToken": 385876008,
+          "canonicalSignature": ":Func_2",
+          "normalizedSignature": "Factory|:Func_2|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition\u00601::.ctor(TKey,Func_2):void",
+          "metadataToken": 100663476,
+          "canonicalSignature": "(TKey,Func_2):void",
+          "normalizedSignature": "constructor|(TKey,Func_2):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "partitionKey",
+          "isStatic": false,
+          "tsSignatureId": "PartitionKey|:TKey|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876007
+          }
+        },
+        {
+          "tsName": "factory",
+          "isStatic": false,
+          "tsSignatureId": "Factory|:Func_2|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876008
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(TKey,Func_2):void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663476
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter",
+      "clrName": "System.Threading.RateLimiting.ConcurrencyLimiter",
+      "tsEmitName": "ConcurrencyLimiter",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
+          "clrName": "GetStatistics",
+          "tsEmitName": "getStatistics",
+          "metadataToken": 100663350,
+          "canonicalSignature": "():System.Threading.RateLimiting.RateLimiterStatistics",
+          "normalizedSignature": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::IdleDuration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "IdleDuration",
+          "tsEmitName": "idleDuration",
+          "metadataToken": 385875982,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::.ctor(System.Threading.RateLimiting.ConcurrencyLimiterOptions):void",
+          "metadataToken": 100663349,
+          "canonicalSignature": "(System.Threading.RateLimiting.ConcurrencyLimiterOptions):void",
+          "normalizedSignature": "constructor|(System.Threading.RateLimiting.ConcurrencyLimiterOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getStatistics",
+          "isStatic": false,
+          "tsSignatureId": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663350
+          }
+        },
+        {
+          "tsName": "createChained",
+          "isStatic": true,
+          "tsSignatureId": "CreateChained|(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663439
+          }
+        },
+        {
+          "tsName": "attemptAcquire",
+          "isStatic": false,
+          "tsSignatureId": "AttemptAcquire|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663442
+          }
+        },
+        {
+          "tsName": "acquireAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663444
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663449
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "idleDuration",
+          "isStatic": false,
+          "tsSignatureId": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875982
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Threading.RateLimiting.ConcurrencyLimiterOptions):void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663349
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+      "clrName": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+      "tsEmitName": "ConcurrencyLimiterOptions",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiterOptions::PermitLimit:System.Int32",
+          "clrName": "PermitLimit",
+          "tsEmitName": "permitLimit",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "PermitLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiterOptions::QueueProcessingOrder:System.Threading.RateLimiting.QueueProcessingOrder",
+          "clrName": "QueueProcessingOrder",
+          "tsEmitName": "queueProcessingOrder",
+          "metadataToken": 385875984,
+          "canonicalSignature": ":System.Threading.RateLimiting.QueueProcessingOrder",
+          "normalizedSignature": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiterOptions::QueueLimit:System.Int32",
+          "clrName": "QueueLimit",
+          "tsEmitName": "queueLimit",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiterOptions::.ctor():void",
+          "metadataToken": 100663365,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "permitLimit",
+          "isStatic": false,
+          "tsSignatureId": "PermitLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875983
+          }
+        },
+        {
+          "tsName": "queueProcessingOrder",
+          "isStatic": false,
+          "tsSignatureId": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875984
+          }
+        },
+        {
+          "tsName": "queueLimit",
+          "isStatic": false,
+          "tsSignatureId": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875985
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663365
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter",
+      "clrName": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+      "tsEmitName": "FixedWindowRateLimiter",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
+          "clrName": "GetStatistics",
+          "tsEmitName": "getStatistics",
+          "metadataToken": 100663385,
+          "canonicalSignature": "():System.Threading.RateLimiting.RateLimiterStatistics",
+          "normalizedSignature": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::TryReplenish():System.Boolean",
+          "clrName": "TryReplenish",
+          "tsEmitName": "tryReplenish",
+          "metadataToken": 100663390,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "TryReplenish|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::IdleDuration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "IdleDuration",
+          "tsEmitName": "idleDuration",
+          "metadataToken": 385875988,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::IsAutoReplenishing:System.Boolean",
+          "clrName": "IsAutoReplenishing",
+          "tsEmitName": "isAutoReplenishing",
+          "metadataToken": 385875989,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::ReplenishmentPeriod:System.TimeSpan",
+          "clrName": "ReplenishmentPeriod",
+          "tsEmitName": "replenishmentPeriod",
+          "metadataToken": 385875990,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::.ctor(System.Threading.RateLimiting.FixedWindowRateLimiterOptions):void",
+          "metadataToken": 100663384,
+          "canonicalSignature": "(System.Threading.RateLimiting.FixedWindowRateLimiterOptions):void",
+          "normalizedSignature": "constructor|(System.Threading.RateLimiting.FixedWindowRateLimiterOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getStatistics",
+          "isStatic": false,
+          "tsSignatureId": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663385
+          }
+        },
+        {
+          "tsName": "tryReplenish",
+          "isStatic": false,
+          "tsSignatureId": "TryReplenish|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663390
+          }
+        },
+        {
+          "tsName": "createChained",
+          "isStatic": true,
+          "tsSignatureId": "CreateChained|(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663439
+          }
+        },
+        {
+          "tsName": "attemptAcquire",
+          "isStatic": false,
+          "tsSignatureId": "AttemptAcquire|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663442
+          }
+        },
+        {
+          "tsName": "acquireAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663444
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663449
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "idleDuration",
+          "isStatic": false,
+          "tsSignatureId": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875988
+          }
+        },
+        {
+          "tsName": "isAutoReplenishing",
+          "isStatic": false,
+          "tsSignatureId": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875989
+          }
+        },
+        {
+          "tsName": "replenishmentPeriod",
+          "isStatic": false,
+          "tsSignatureId": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875990
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Threading.RateLimiting.FixedWindowRateLimiterOptions):void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663384
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+      "clrName": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+      "tsEmitName": "FixedWindowRateLimiterOptions",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiterOptions::Window:System.TimeSpan",
+          "clrName": "Window",
+          "tsEmitName": "window",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "Window|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiterOptions::AutoReplenishment:System.Boolean",
+          "clrName": "AutoReplenishment",
+          "tsEmitName": "autoReplenishment",
+          "metadataToken": 385875992,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AutoReplenishment|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiterOptions::PermitLimit:System.Int32",
+          "clrName": "PermitLimit",
+          "tsEmitName": "permitLimit",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "PermitLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiterOptions::QueueProcessingOrder:System.Threading.RateLimiting.QueueProcessingOrder",
+          "clrName": "QueueProcessingOrder",
+          "tsEmitName": "queueProcessingOrder",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":System.Threading.RateLimiting.QueueProcessingOrder",
+          "normalizedSignature": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiterOptions::QueueLimit:System.Int32",
+          "clrName": "QueueLimit",
+          "tsEmitName": "queueLimit",
+          "metadataToken": 385875995,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiterOptions::.ctor():void",
+          "metadataToken": 100663407,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "window",
+          "isStatic": false,
+          "tsSignatureId": "Window|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875991
+          }
+        },
+        {
+          "tsName": "autoReplenishment",
+          "isStatic": false,
+          "tsSignatureId": "AutoReplenishment|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875992
+          }
+        },
+        {
+          "tsName": "permitLimit",
+          "isStatic": false,
+          "tsSignatureId": "PermitLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875993
+          }
+        },
+        {
+          "tsName": "queueProcessingOrder",
+          "isStatic": false,
+          "tsSignatureId": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875994
+          }
+        },
+        {
+          "tsName": "queueLimit",
+          "isStatic": false,
+          "tsSignatureId": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875995
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663407
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601",
+      "clrName": "System.Threading.RateLimiting.MetadataName\u00601",
+      "tsEmitName": "MetadataName_1",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100663414,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100663415,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100663416,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601::Equals(MetadataName_1):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100663417,
+          "canonicalSignature": "(MetadataName_1):System.Boolean",
+          "normalizedSignature": "Equals|(MetadataName_1):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875998,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601::.ctor(System.String):void",
+          "metadataToken": 100663412,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663414
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663415
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663416
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(MetadataName_1):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663417
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875998
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663412
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+      "clrName": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+      "tsEmitName": "PartitionedRateLimiter_1",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::GetStatistics(TResource):System.Threading.RateLimiting.RateLimiterStatistics",
+          "clrName": "GetStatistics",
+          "tsEmitName": "getStatistics",
+          "metadataToken": 100663428,
+          "canonicalSignature": "(TResource):System.Threading.RateLimiting.RateLimiterStatistics",
+          "normalizedSignature": "GetStatistics|(TResource):System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::AttemptAcquire(TResource,System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquire",
+          "tsEmitName": "attemptAcquire",
+          "metadataToken": 100663429,
+          "canonicalSignature": "(TResource,System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquire|(TResource,System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::AcquireAsync(TResource,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsync",
+          "tsEmitName": "acquireAsync",
+          "metadataToken": 100663431,
+          "canonicalSignature": "(TResource,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsync|(TResource,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663434,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::DisposeAsync():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsync",
+          "tsEmitName": "disposeAsync",
+          "metadataToken": 100663436,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::WithTranslatedKey(Func_2,System.Boolean):PartitionedRateLimiter_1",
+          "clrName": "WithTranslatedKey",
+          "tsEmitName": "withTranslatedKey",
+          "metadataToken": 100663437,
+          "canonicalSignature": "(Func_2,System.Boolean):PartitionedRateLimiter_1",
+          "normalizedSignature": "WithTranslatedKey|(Func_2,System.Boolean):PartitionedRateLimiter_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getStatistics",
+          "isStatic": false,
+          "tsSignatureId": "GetStatistics|(TResource):System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663428
+          }
+        },
+        {
+          "tsName": "attemptAcquire",
+          "isStatic": false,
+          "tsSignatureId": "AttemptAcquire|(TResource,System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663429
+          }
+        },
+        {
+          "tsName": "acquireAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireAsync|(TResource,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663431
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663434
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663436
+          }
+        },
+        {
+          "tsName": "withTranslatedKey",
+          "isStatic": false,
+          "tsSignatureId": "WithTranslatedKey|(Func_2,System.Boolean):PartitionedRateLimiter_1|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663437
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter",
+      "clrName": "System.Threading.RateLimiting.RateLimiter",
+      "tsEmitName": "RateLimiter",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::CreateChained(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter",
+          "clrName": "CreateChained",
+          "tsEmitName": "createChained",
+          "metadataToken": 100663439,
+          "canonicalSignature": "(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter",
+          "normalizedSignature": "CreateChained|(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
+          "clrName": "GetStatistics",
+          "tsEmitName": "getStatistics",
+          "metadataToken": 100663440,
+          "canonicalSignature": "():System.Threading.RateLimiting.RateLimiterStatistics",
+          "normalizedSignature": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::AttemptAcquire(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquire",
+          "tsEmitName": "attemptAcquire",
+          "metadataToken": 100663442,
+          "canonicalSignature": "(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquire|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::AcquireAsync(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsync",
+          "tsEmitName": "acquireAsync",
+          "metadataToken": 100663444,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663447,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::DisposeAsync():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsync",
+          "tsEmitName": "disposeAsync",
+          "metadataToken": 100663449,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::IdleDuration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "IdleDuration",
+          "tsEmitName": "idleDuration",
+          "metadataToken": 385876000,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createChained",
+          "isStatic": true,
+          "tsSignatureId": "CreateChained|(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663439
+          }
+        },
+        {
+          "tsName": "getStatistics",
+          "isStatic": false,
+          "tsSignatureId": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663440
+          }
+        },
+        {
+          "tsName": "attemptAcquire",
+          "isStatic": false,
+          "tsSignatureId": "AttemptAcquire|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663442
+          }
+        },
+        {
+          "tsName": "acquireAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663444
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663449
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "idleDuration",
+          "isStatic": false,
+          "tsSignatureId": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876000
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics",
+      "clrName": "System.Threading.RateLimiting.RateLimiterStatistics",
+      "tsEmitName": "RateLimiterStatistics",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics::CurrentAvailablePermits:System.Int64",
+          "clrName": "CurrentAvailablePermits",
+          "tsEmitName": "currentAvailablePermits",
+          "metadataToken": 385876001,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "CurrentAvailablePermits|:System.Int64|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics::CurrentQueuedCount:System.Int64",
+          "clrName": "CurrentQueuedCount",
+          "tsEmitName": "currentQueuedCount",
+          "metadataToken": 385876002,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "CurrentQueuedCount|:System.Int64|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics::TotalFailedLeases:System.Int64",
+          "clrName": "TotalFailedLeases",
+          "tsEmitName": "totalFailedLeases",
+          "metadataToken": 385876003,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "TotalFailedLeases|:System.Int64|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics::TotalSuccessfulLeases:System.Int64",
+          "clrName": "TotalSuccessfulLeases",
+          "tsEmitName": "totalSuccessfulLeases",
+          "metadataToken": 385876004,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "TotalSuccessfulLeases|:System.Int64|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics::.ctor():void",
+          "metadataToken": 100663453,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "currentAvailablePermits",
+          "isStatic": false,
+          "tsSignatureId": "CurrentAvailablePermits|:System.Int64|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876001
+          }
+        },
+        {
+          "tsName": "currentQueuedCount",
+          "isStatic": false,
+          "tsSignatureId": "CurrentQueuedCount|:System.Int64|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876002
+          }
+        },
+        {
+          "tsName": "totalFailedLeases",
+          "isStatic": false,
+          "tsSignatureId": "TotalFailedLeases|:System.Int64|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876003
+          }
+        },
+        {
+          "tsName": "totalSuccessfulLeases",
+          "isStatic": false,
+          "tsSignatureId": "TotalSuccessfulLeases|:System.Int64|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876004
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663453
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease",
+      "clrName": "System.Threading.RateLimiting.RateLimitLease",
+      "tsEmitName": "RateLimitLease",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::TryGetMetadata(System.String,System.Object\u0026):System.Boolean",
+          "clrName": "TryGetMetadata",
+          "tsEmitName": "tryGetMetadata",
+          "metadataToken": 100663463,
+          "canonicalSignature": "(System.String,System.Object\u0026):System.Boolean",
+          "normalizedSignature": "TryGetMetadata|(System.String,System.Object\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::TryGetMetadata(MetadataName_1,T\u0026):System.Boolean",
+          "clrName": "TryGetMetadata",
+          "tsEmitName": "tryGetMetadata",
+          "metadataToken": 100663464,
+          "canonicalSignature": "(MetadataName_1,T\u0026):System.Boolean",
+          "normalizedSignature": "TryGetMetadata|(MetadataName_1,T\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::GetAllMetadata():System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetAllMetadata",
+          "tsEmitName": "getAllMetadata",
+          "metadataToken": 100663466,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetAllMetadata|():System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663467,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::IsAcquired:System.Boolean",
+          "clrName": "IsAcquired",
+          "tsEmitName": "isAcquired",
+          "metadataToken": 385876005,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsAcquired|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::MetadataNames:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MetadataNames",
+          "tsEmitName": "metadataNames",
+          "metadataToken": 385876006,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "MetadataNames|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "tryGetMetadata",
+          "isStatic": false,
+          "tsSignatureId": "TryGetMetadata|(System.String,System.Object\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663463
+          }
+        },
+        {
+          "tsName": "tryGetMetadata",
+          "isStatic": false,
+          "tsSignatureId": "TryGetMetadata|(MetadataName_1,T\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663464
+          }
+        },
+        {
+          "tsName": "getAllMetadata",
+          "isStatic": false,
+          "tsSignatureId": "GetAllMetadata|():System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663466
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663467
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "isAcquired",
+          "isStatic": false,
+          "tsSignatureId": "IsAcquired|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876005
+          }
+        },
+        {
+          "tsName": "metadataNames",
+          "isStatic": false,
+          "tsSignatureId": "MetadataNames|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876006
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter",
+      "clrName": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+      "tsEmitName": "ReplenishingRateLimiter",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter::TryReplenish():System.Boolean",
+          "clrName": "TryReplenish",
+          "tsEmitName": "tryReplenish",
+          "metadataToken": 100663481,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "TryReplenish|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter::ReplenishmentPeriod:System.TimeSpan",
+          "clrName": "ReplenishmentPeriod",
+          "tsEmitName": "replenishmentPeriod",
+          "metadataToken": 385876009,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter::IsAutoReplenishing:System.Boolean",
+          "clrName": "IsAutoReplenishing",
+          "tsEmitName": "isAutoReplenishing",
+          "metadataToken": 385876010,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "tryReplenish",
+          "isStatic": false,
+          "tsSignatureId": "TryReplenish|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663481
+          }
+        },
+        {
+          "tsName": "createChained",
+          "isStatic": true,
+          "tsSignatureId": "CreateChained|(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663439
+          }
+        },
+        {
+          "tsName": "getStatistics",
+          "isStatic": false,
+          "tsSignatureId": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663440
+          }
+        },
+        {
+          "tsName": "attemptAcquire",
+          "isStatic": false,
+          "tsSignatureId": "AttemptAcquire|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663442
+          }
+        },
+        {
+          "tsName": "acquireAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663444
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663449
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "replenishmentPeriod",
+          "isStatic": false,
+          "tsSignatureId": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876009
+          }
+        },
+        {
+          "tsName": "isAutoReplenishing",
+          "isStatic": false,
+          "tsSignatureId": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876010
+          }
+        },
+        {
+          "tsName": "idleDuration",
+          "isStatic": false,
+          "tsSignatureId": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876000
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter",
+      "clrName": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+      "tsEmitName": "SlidingWindowRateLimiter",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
+          "clrName": "GetStatistics",
+          "tsEmitName": "getStatistics",
+          "metadataToken": 100663488,
+          "canonicalSignature": "():System.Threading.RateLimiting.RateLimiterStatistics",
+          "normalizedSignature": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::TryReplenish():System.Boolean",
+          "clrName": "TryReplenish",
+          "tsEmitName": "tryReplenish",
+          "metadataToken": 100663492,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "TryReplenish|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::IdleDuration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "IdleDuration",
+          "tsEmitName": "idleDuration",
+          "metadataToken": 385876012,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::IsAutoReplenishing:System.Boolean",
+          "clrName": "IsAutoReplenishing",
+          "tsEmitName": "isAutoReplenishing",
+          "metadataToken": 385876013,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::ReplenishmentPeriod:System.TimeSpan",
+          "clrName": "ReplenishmentPeriod",
+          "tsEmitName": "replenishmentPeriod",
+          "metadataToken": 385876014,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::.ctor(System.Threading.RateLimiting.SlidingWindowRateLimiterOptions):void",
+          "metadataToken": 100663487,
+          "canonicalSignature": "(System.Threading.RateLimiting.SlidingWindowRateLimiterOptions):void",
+          "normalizedSignature": "constructor|(System.Threading.RateLimiting.SlidingWindowRateLimiterOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getStatistics",
+          "isStatic": false,
+          "tsSignatureId": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663488
+          }
+        },
+        {
+          "tsName": "tryReplenish",
+          "isStatic": false,
+          "tsSignatureId": "TryReplenish|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663492
+          }
+        },
+        {
+          "tsName": "createChained",
+          "isStatic": true,
+          "tsSignatureId": "CreateChained|(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663439
+          }
+        },
+        {
+          "tsName": "attemptAcquire",
+          "isStatic": false,
+          "tsSignatureId": "AttemptAcquire|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663442
+          }
+        },
+        {
+          "tsName": "acquireAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663444
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663449
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "idleDuration",
+          "isStatic": false,
+          "tsSignatureId": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876012
+          }
+        },
+        {
+          "tsName": "isAutoReplenishing",
+          "isStatic": false,
+          "tsSignatureId": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876013
+          }
+        },
+        {
+          "tsName": "replenishmentPeriod",
+          "isStatic": false,
+          "tsSignatureId": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876014
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Threading.RateLimiting.SlidingWindowRateLimiterOptions):void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663487
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+      "clrName": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+      "tsEmitName": "SlidingWindowRateLimiterOptions",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions::Window:System.TimeSpan",
+          "clrName": "Window",
+          "tsEmitName": "window",
+          "metadataToken": 385876015,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "Window|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions::SegmentsPerWindow:System.Int32",
+          "clrName": "SegmentsPerWindow",
+          "tsEmitName": "segmentsPerWindow",
+          "metadataToken": 385876016,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "SegmentsPerWindow|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions::AutoReplenishment:System.Boolean",
+          "clrName": "AutoReplenishment",
+          "tsEmitName": "autoReplenishment",
+          "metadataToken": 385876017,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AutoReplenishment|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions::PermitLimit:System.Int32",
+          "clrName": "PermitLimit",
+          "tsEmitName": "permitLimit",
+          "metadataToken": 385876018,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "PermitLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions::QueueProcessingOrder:System.Threading.RateLimiting.QueueProcessingOrder",
+          "clrName": "QueueProcessingOrder",
+          "tsEmitName": "queueProcessingOrder",
+          "metadataToken": 385876019,
+          "canonicalSignature": ":System.Threading.RateLimiting.QueueProcessingOrder",
+          "normalizedSignature": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions::QueueLimit:System.Int32",
+          "clrName": "QueueLimit",
+          "tsEmitName": "queueLimit",
+          "metadataToken": 385876020,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiterOptions::.ctor():void",
+          "metadataToken": 100663511,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "window",
+          "isStatic": false,
+          "tsSignatureId": "Window|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876015
+          }
+        },
+        {
+          "tsName": "segmentsPerWindow",
+          "isStatic": false,
+          "tsSignatureId": "SegmentsPerWindow|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876016
+          }
+        },
+        {
+          "tsName": "autoReplenishment",
+          "isStatic": false,
+          "tsSignatureId": "AutoReplenishment|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876017
+          }
+        },
+        {
+          "tsName": "permitLimit",
+          "isStatic": false,
+          "tsSignatureId": "PermitLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876018
+          }
+        },
+        {
+          "tsName": "queueProcessingOrder",
+          "isStatic": false,
+          "tsSignatureId": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876019
+          }
+        },
+        {
+          "tsName": "queueLimit",
+          "isStatic": false,
+          "tsSignatureId": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876020
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663511
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter",
+      "clrName": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+      "tsEmitName": "TokenBucketRateLimiter",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
+          "clrName": "GetStatistics",
+          "tsEmitName": "getStatistics",
+          "metadataToken": 100663528,
+          "canonicalSignature": "():System.Threading.RateLimiting.RateLimiterStatistics",
+          "normalizedSignature": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::TryReplenish():System.Boolean",
+          "clrName": "TryReplenish",
+          "tsEmitName": "tryReplenish",
+          "metadataToken": 100663533,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "TryReplenish|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::IdleDuration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "IdleDuration",
+          "tsEmitName": "idleDuration",
+          "metadataToken": 385876023,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::IsAutoReplenishing:System.Boolean",
+          "clrName": "IsAutoReplenishing",
+          "tsEmitName": "isAutoReplenishing",
+          "metadataToken": 385876024,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::ReplenishmentPeriod:System.TimeSpan",
+          "clrName": "ReplenishmentPeriod",
+          "tsEmitName": "replenishmentPeriod",
+          "metadataToken": 385876025,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::.ctor(System.Threading.RateLimiting.TokenBucketRateLimiterOptions):void",
+          "metadataToken": 100663527,
+          "canonicalSignature": "(System.Threading.RateLimiting.TokenBucketRateLimiterOptions):void",
+          "normalizedSignature": "constructor|(System.Threading.RateLimiting.TokenBucketRateLimiterOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getStatistics",
+          "isStatic": false,
+          "tsSignatureId": "GetStatistics|():System.Threading.RateLimiting.RateLimiterStatistics|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663528
+          }
+        },
+        {
+          "tsName": "tryReplenish",
+          "isStatic": false,
+          "tsSignatureId": "TryReplenish|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663533
+          }
+        },
+        {
+          "tsName": "createChained",
+          "isStatic": true,
+          "tsSignatureId": "CreateChained|(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663439
+          }
+        },
+        {
+          "tsName": "attemptAcquire",
+          "isStatic": false,
+          "tsSignatureId": "AttemptAcquire|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663442
+          }
+        },
+        {
+          "tsName": "acquireAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663444
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663449
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "idleDuration",
+          "isStatic": false,
+          "tsSignatureId": "IdleDuration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876023
+          }
+        },
+        {
+          "tsName": "isAutoReplenishing",
+          "isStatic": false,
+          "tsSignatureId": "IsAutoReplenishing|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876024
+          }
+        },
+        {
+          "tsName": "replenishmentPeriod",
+          "isStatic": false,
+          "tsSignatureId": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876025
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Threading.RateLimiting.TokenBucketRateLimiterOptions):void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663527
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+      "clrName": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+      "tsEmitName": "TokenBucketRateLimiterOptions",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions::ReplenishmentPeriod:System.TimeSpan",
+          "clrName": "ReplenishmentPeriod",
+          "tsEmitName": "replenishmentPeriod",
+          "metadataToken": 385876026,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions::TokensPerPeriod:System.Int32",
+          "clrName": "TokensPerPeriod",
+          "tsEmitName": "tokensPerPeriod",
+          "metadataToken": 385876027,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "TokensPerPeriod|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions::AutoReplenishment:System.Boolean",
+          "clrName": "AutoReplenishment",
+          "tsEmitName": "autoReplenishment",
+          "metadataToken": 385876028,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AutoReplenishment|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions::TokenLimit:System.Int32",
+          "clrName": "TokenLimit",
+          "tsEmitName": "tokenLimit",
+          "metadataToken": 385876029,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "TokenLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions::QueueProcessingOrder:System.Threading.RateLimiting.QueueProcessingOrder",
+          "clrName": "QueueProcessingOrder",
+          "tsEmitName": "queueProcessingOrder",
+          "metadataToken": 385876030,
+          "canonicalSignature": ":System.Threading.RateLimiting.QueueProcessingOrder",
+          "normalizedSignature": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions::QueueLimit:System.Int32",
+          "clrName": "QueueLimit",
+          "tsEmitName": "queueLimit",
+          "metadataToken": 385876031,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiterOptions::.ctor():void",
+          "metadataToken": 100663552,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "replenishmentPeriod",
+          "isStatic": false,
+          "tsSignatureId": "ReplenishmentPeriod|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876026
+          }
+        },
+        {
+          "tsName": "tokensPerPeriod",
+          "isStatic": false,
+          "tsSignatureId": "TokensPerPeriod|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876027
+          }
+        },
+        {
+          "tsName": "autoReplenishment",
+          "isStatic": false,
+          "tsSignatureId": "AutoReplenishment|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876028
+          }
+        },
+        {
+          "tsName": "tokenLimit",
+          "isStatic": false,
+          "tsSignatureId": "TokenLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876029
+          }
+        },
+        {
+          "tsName": "queueProcessingOrder",
+          "isStatic": false,
+          "tsSignatureId": "QueueProcessingOrder|:System.Threading.RateLimiting.QueueProcessingOrder|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876030
+          }
+        },
+        {
+          "tsName": "queueLimit",
+          "isStatic": false,
+          "tsSignatureId": "QueueLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385876031
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663552
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName",
+      "clrName": "System.Threading.RateLimiting.MetadataName",
+      "tsEmitName": "MetadataName",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName::Create(System.String):MetadataName_1",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663410,
+          "canonicalSignature": "(System.String):MetadataName_1",
+          "normalizedSignature": "Create|(System.String):MetadataName_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName::RetryAfter:System.Threading.RateLimiting.MetadataName_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "RetryAfter",
+          "tsEmitName": "retryAfter",
+          "metadataToken": 385875996,
+          "canonicalSignature": ":System.Threading.RateLimiting.MetadataName_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "RetryAfter|:System.Threading.RateLimiting.MetadataName_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName::ReasonPhrase:System.Threading.RateLimiting.MetadataName_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ReasonPhrase",
+          "tsEmitName": "reasonPhrase",
+          "metadataToken": 385875997,
+          "canonicalSignature": ":System.Threading.RateLimiting.MetadataName_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ReasonPhrase|:System.Threading.RateLimiting.MetadataName_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Threading.RateLimiting.MetadataName",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(System.String):MetadataName_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663410
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "retryAfter",
+          "isStatic": true,
+          "tsSignatureId": "RetryAfter|:System.Threading.RateLimiting.MetadataName_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875996
+          }
+        },
+        {
+          "tsName": "reasonPhrase",
+          "isStatic": true,
+          "tsSignatureId": "ReasonPhrase|:System.Threading.RateLimiting.MetadataName_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.MetadataName",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 385875997
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter",
+      "clrName": "System.Threading.RateLimiting.PartitionedRateLimiter",
+      "tsEmitName": "PartitionedRateLimiter",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter::Create(Func_2,IEqualityComparer_1):PartitionedRateLimiter_1",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663426,
+          "canonicalSignature": "(Func_2,IEqualityComparer_1):PartitionedRateLimiter_1",
+          "normalizedSignature": "Create|(Func_2,IEqualityComparer_1):PartitionedRateLimiter_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 2,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter::CreateChained(PartitionedRateLimiter_1[]):PartitionedRateLimiter_1",
+          "clrName": "CreateChained",
+          "tsEmitName": "createChained",
+          "metadataToken": 100663427,
+          "canonicalSignature": "(PartitionedRateLimiter_1[]):PartitionedRateLimiter_1",
+          "normalizedSignature": "CreateChained|(PartitionedRateLimiter_1[]):PartitionedRateLimiter_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(Func_2,IEqualityComparer_1):PartitionedRateLimiter_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663426
+          }
+        },
+        {
+          "tsName": "createChained",
+          "isStatic": true,
+          "tsSignatureId": "CreateChained|(PartitionedRateLimiter_1[]):PartitionedRateLimiter_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663427
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition",
+      "clrName": "System.Threading.RateLimiting.RateLimitPartition",
+      "tsEmitName": "RateLimitPartition",
+      "assemblyName": "System.Threading.RateLimiting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::Get(TKey,Func_2):RateLimitPartition_1",
+          "clrName": "Get",
+          "tsEmitName": "get_",
+          "metadataToken": 100663470,
+          "canonicalSignature": "(TKey,Func_2):RateLimitPartition_1",
+          "normalizedSignature": "Get|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::GetConcurrencyLimiter(TKey,Func_2):RateLimitPartition_1",
+          "clrName": "GetConcurrencyLimiter",
+          "tsEmitName": "getConcurrencyLimiter",
+          "metadataToken": 100663471,
+          "canonicalSignature": "(TKey,Func_2):RateLimitPartition_1",
+          "normalizedSignature": "GetConcurrencyLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::GetNoLimiter(TKey):RateLimitPartition_1",
+          "clrName": "GetNoLimiter",
+          "tsEmitName": "getNoLimiter",
+          "metadataToken": 100663472,
+          "canonicalSignature": "(TKey):RateLimitPartition_1",
+          "normalizedSignature": "GetNoLimiter|(TKey):RateLimitPartition_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 1,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::GetTokenBucketLimiter(TKey,Func_2):RateLimitPartition_1",
+          "clrName": "GetTokenBucketLimiter",
+          "tsEmitName": "getTokenBucketLimiter",
+          "metadataToken": 100663473,
+          "canonicalSignature": "(TKey,Func_2):RateLimitPartition_1",
+          "normalizedSignature": "GetTokenBucketLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::GetSlidingWindowLimiter(TKey,Func_2):RateLimitPartition_1",
+          "clrName": "GetSlidingWindowLimiter",
+          "tsEmitName": "getSlidingWindowLimiter",
+          "metadataToken": 100663474,
+          "canonicalSignature": "(TKey,Func_2):RateLimitPartition_1",
+          "normalizedSignature": "GetSlidingWindowLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::GetFixedWindowLimiter(TKey,Func_2):RateLimitPartition_1",
+          "clrName": "GetFixedWindowLimiter",
+          "tsEmitName": "getFixedWindowLimiter",
+          "metadataToken": 100663475,
+          "canonicalSignature": "(TKey,Func_2):RateLimitPartition_1",
+          "normalizedSignature": "GetFixedWindowLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "get_",
+          "isStatic": true,
+          "tsSignatureId": "Get|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663470
+          }
+        },
+        {
+          "tsName": "getConcurrencyLimiter",
+          "isStatic": true,
+          "tsSignatureId": "GetConcurrencyLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663471
+          }
+        },
+        {
+          "tsName": "getNoLimiter",
+          "isStatic": true,
+          "tsSignatureId": "GetNoLimiter|(TKey):RateLimitPartition_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663472
+          }
+        },
+        {
+          "tsName": "getTokenBucketLimiter",
+          "isStatic": true,
+          "tsSignatureId": "GetTokenBucketLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663473
+          }
+        },
+        {
+          "tsName": "getSlidingWindowLimiter",
+          "isStatic": true,
+          "tsSignatureId": "GetSlidingWindowLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663474
+          }
+        },
+        {
+          "tsName": "getFixedWindowLimiter",
+          "isStatic": true,
+          "tsSignatureId": "GetFixedWindowLimiter|(TKey,Func_2):RateLimitPartition_1|static=true",
+          "target": {
+            "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
+            "declaringAssemblyName": "System.Threading.RateLimiting",
+            "metadataToken": 100663475
+          }
+        }
+      ]
+    }
+  ]
+}

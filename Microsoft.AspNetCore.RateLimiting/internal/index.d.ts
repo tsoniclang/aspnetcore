@@ -7,15 +7,15 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
+import type { ConcurrencyLimiterOptions, FixedWindowRateLimiterOptions, PartitionedRateLimiter_1, RateLimitLease, RateLimitPartition_1, SlidingWindowRateLimiterOptions, TokenBucketRateLimiterOptions } from "../../System.Threading.RateLimiting/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Attribute, Func, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ConcurrencyLimiterOptions, FixedWindowRateLimiterOptions, PartitionedRateLimiter, RateLimitLease, RateLimitPartition, SlidingWindowRateLimiterOptions, TokenBucketRateLimiterOptions } from "@tsonic/dotnet/System.Threading.RateLimiting.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IRateLimiterPolicy_1$instance<TPartitionKey> {
     readonly onRejected: Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
-    getPartition(httpContext: HttpContext): RateLimitPartition<TPartitionKey>;
+    getPartition(httpContext: HttpContext): RateLimitPartition_1<TPartitionKey>;
 }
 
 
@@ -58,12 +58,12 @@ export const OnRejectedContext: {
 export type OnRejectedContext = OnRejectedContext$instance;
 
 export interface RateLimiterOptions$instance {
-    get globalLimiter(): PartitionedRateLimiter<HttpContext> | undefined;
-    set globalLimiter(value: PartitionedRateLimiter<HttpContext>);
+    get globalLimiter(): PartitionedRateLimiter_1<HttpContext> | undefined;
+    set globalLimiter(value: PartitionedRateLimiter_1<HttpContext>);
     get onRejected(): Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
     set onRejected(value: Func<OnRejectedContext, CancellationToken, ValueTask>);
     rejectionStatusCode: int;
-    addPolicy<TPartitionKey>(policyName: string, partitioner: Func<HttpContext, RateLimitPartition<TPartitionKey>>): RateLimiterOptions;
+    addPolicy<TPartitionKey>(policyName: string, partitioner: Func<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
     addPolicy<TPartitionKey, TPolicy extends IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;
     addPolicy<TPartitionKey>(policyName: string, policy: IRateLimiterPolicy_1<TPartitionKey>): RateLimiterOptions;
 }

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Generate TypeScript declarations for Microsoft.AspNetCore.* from the ASP.NET Core shared framework.
+# Generate TypeScript declarations from the ASP.NET Core shared framework (Microsoft.AspNetCore.App).
 #
 # Prerequisites:
 #   - .NET 10 SDK installed
@@ -95,30 +95,24 @@ echo "  Done"
 
 echo "[3/3] Generating TypeScript declarations..."
 
-ASPNET_DLLS=( "$ASPNET_RUNTIME_PATH"/Microsoft.AspNetCore*.dll )
+# This package represents the ASP.NET Core shared framework surface area that
+# is NOT already provided by:
+#   - @tsonic/dotnet (Microsoft.NETCore.App)
+#   - @tsonic/microsoft-extensions (curated Microsoft.Extensions.* set)
+#
+# Packages are defined by assembly groups (not namespaces). Microsoft.AspNetCore.App
+# also ships some System.* assemblies, so we include *all* assemblies from the
+# shared framework directory and rely on --lib filtering to avoid duplication.
+
+ASPNET_DLLS=( "$ASPNET_RUNTIME_PATH"/*.dll )
 if [ ! -f "${ASPNET_DLLS[0]}" ]; then
-    echo "ERROR: No Microsoft.AspNetCore*.dll assemblies found at $ASPNET_RUNTIME_PATH"
+    echo "ERROR: No .dll assemblies found at $ASPNET_RUNTIME_PATH"
     exit 1
 fi
 
 GEN_ARGS=()
 for dll in "${ASPNET_DLLS[@]}"; do
     GEN_ARGS+=( -a "$dll" )
-done
-
-# Additional shared-framework assemblies that are part of Microsoft.AspNetCore.App but not under Microsoft.AspNetCore.*
-EXTRA_DLLS=( \
-    "$ASPNET_RUNTIME_PATH"/Microsoft.JSInterop.dll \
-    "$ASPNET_RUNTIME_PATH"/Microsoft.Net.Http.Headers.dll \
-    "$ASPNET_RUNTIME_PATH"/Microsoft.Extensions.Features.dll \
-    "$ASPNET_RUNTIME_PATH"/Microsoft.Extensions.Identity.Core.dll \
-    "$ASPNET_RUNTIME_PATH"/Microsoft.Extensions.Identity.Stores.dll \
-)
-
-for dll in "${EXTRA_DLLS[@]}"; do
-    if [ -f "$dll" ]; then
-        GEN_ARGS+=( -a "$dll" )
-    fi
 done
 
 dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \

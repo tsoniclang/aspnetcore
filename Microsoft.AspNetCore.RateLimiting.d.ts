@@ -7,9 +7,9 @@ import * as Internal from './Microsoft.AspNetCore.RateLimiting/internal/index.js
 
 // Cross-namespace type imports for constraints
 import type { HttpContext } from './Microsoft.AspNetCore.Http/internal/index.js';
+import type { ConcurrencyLimiterOptions, FixedWindowRateLimiterOptions, PartitionedRateLimiter_1, RateLimitLease, RateLimitPartition_1, SlidingWindowRateLimiterOptions, TokenBucketRateLimiterOptions } from './System.Threading.RateLimiting/internal/index.js';
 import type { Action, Attribute, Func, Int32, Object as ClrObject, String as ClrString } from '@tsonic/dotnet/System.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
-import type { ConcurrencyLimiterOptions, FixedWindowRateLimiterOptions, PartitionedRateLimiter, RateLimitLease, RateLimitPartition, SlidingWindowRateLimiterOptions, TokenBucketRateLimiterOptions } from '@tsonic/dotnet/System.Threading.RateLimiting.js';
 import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

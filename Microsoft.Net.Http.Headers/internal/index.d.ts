@@ -170,8 +170,7 @@ export type EntityTagHeaderValue = EntityTagHeaderValue$instance;
 export interface MediaTypeHeaderValue$instance {
     boundary: StringSegment;
     charset: StringSegment;
-    get encoding(): Encoding | undefined;
-    set encoding(value: Encoding);
+    encoding: Encoding;
     readonly facets: IEnumerable<StringSegment>;
     readonly isReadOnly: boolean;
     readonly matchesAllSubTypes: boolean;
