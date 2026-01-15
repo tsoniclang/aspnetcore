@@ -14,9 +14,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan, SByte, Span, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export enum HttpMethod {
-    get_ = 0,
+    get = 0,
     put = 1,
-    delete_ = 2,
+    delete = 2,
     post = 3,
     head = 4,
     trace = 5,
@@ -29,14 +29,14 @@ export enum HttpMethod {
 
 
 export enum HttpScheme {
-    unknown_ = -1,
+    unknown = -1,
     http = 0,
     https = 1
 }
 
 
 export enum HttpVersion {
-    unknown_ = -1,
+    unknown = -1,
     http10 = 0,
     http11 = 1,
     http2 = 2,

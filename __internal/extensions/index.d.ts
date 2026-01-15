@@ -668,9 +668,9 @@ export interface __Ext_Microsoft_AspNetCore_Http_HttpRequest {
   readFromJsonAsync<TValue>(options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<TValue>>;
   readFromJsonAsync<TValue>(jsonTypeInfo: JsonTypeInfo_1<TValue>, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<TValue>>;
   readFromJsonAsync(jsonTypeInfo: JsonTypeInfo, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
-  readFromJsonAsync(type_: Type, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
-  readFromJsonAsync(type_: Type, options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
-  readFromJsonAsync(type_: Type, context: JsonSerializerContext, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
+  readFromJsonAsync(type: Type, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
+  readFromJsonAsync(type: Type, options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
+  readFromJsonAsync(type: Type, context: JsonSerializerContext, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
   hasJsonContentType(): ExtensionMethods_Microsoft_AspNetCore_Http<boolean>;
 }
 
@@ -686,10 +686,10 @@ export interface __Ext_Microsoft_AspNetCore_Http_HttpResponse {
   writeAsJsonAsync<TValue>(value: TValue, options: JsonSerializerOptions, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
   writeAsJsonAsync<TValue>(value: TValue, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
   writeAsJsonAsync(value: unknown, jsonTypeInfo: JsonTypeInfo, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  writeAsJsonAsync(value: unknown, type_: Type, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  writeAsJsonAsync(value: unknown, type_: Type, options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  writeAsJsonAsync(value: unknown, type_: Type, options: JsonSerializerOptions, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  writeAsJsonAsync(value: unknown, type_: Type, context: JsonSerializerContext, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
+  writeAsJsonAsync(value: unknown, type: Type, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
+  writeAsJsonAsync(value: unknown, type: Type, options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
+  writeAsJsonAsync(value: unknown, type: Type, options: JsonSerializerOptions, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
+  writeAsJsonAsync(value: unknown, type: Type, context: JsonSerializerContext, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
   clear(): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   redirect(location: string, permanent: boolean, preserveMethod: boolean): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   sendFileAsync(file: IFileInfo, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
@@ -711,7 +711,7 @@ export interface __Ext_Microsoft_AspNetCore_Http_ISession {
   getInt32(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<Nullable_1<System_Internal.Int32>>;
   setString(key: string, value: string): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   getString(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<string | undefined>;
-  get_(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<byte[] | undefined>;
+  get(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<byte[] | undefined>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Http_RouteGroupBuilder {

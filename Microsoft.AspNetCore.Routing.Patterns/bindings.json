@@ -663,7 +663,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPart::Default:System.Object",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876210,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Default|:System.Object|static=false|accessor=get",
@@ -756,7 +756,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": false,
           "tsSignatureId": "Default|:System.Object|static=false|accessor=get",
           "target": {

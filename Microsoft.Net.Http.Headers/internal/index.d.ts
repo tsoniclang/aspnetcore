@@ -36,10 +36,10 @@ export interface CacheControlHeaderValue$instance {
     noStore: boolean;
     noTransform: boolean;
     onlyIfCached: boolean;
-    private_: boolean;
+    private: boolean;
     readonly privateHeaders: ICollection<StringSegment>;
     proxyRevalidate: boolean;
-    public_: boolean;
+    public: boolean;
     sharedMaxAge: Nullable<TimeSpan>;
     equals(obj: unknown): boolean;
     getHashCode(): int;
@@ -96,7 +96,7 @@ export const ContentDispositionHeaderValue: {
 export type ContentDispositionHeaderValue = ContentDispositionHeaderValue$instance;
 
 export interface ContentRangeHeaderValue$instance {
-    readonly from_: Nullable<System_Internal.Int64>;
+    readonly from: Nullable<System_Internal.Int64>;
     readonly hasLength: boolean;
     readonly hasRange: boolean;
     readonly length: Nullable<System_Internal.Int64>;
@@ -109,9 +109,9 @@ export interface ContentRangeHeaderValue$instance {
 
 
 export const ContentRangeHeaderValue: {
-    new(from_: long, to: long, length: long): ContentRangeHeaderValue;
+    new(from: long, to: long, length: long): ContentRangeHeaderValue;
     new(length: long): ContentRangeHeaderValue;
-    new(from_: long, to: long): ContentRangeHeaderValue;
+    new(from: long, to: long): ContentRangeHeaderValue;
     parse(input: StringSegment): ContentRangeHeaderValue;
     tryParse(input: StringSegment, parsedValue: ContentRangeHeaderValue): boolean;
 };
@@ -155,7 +155,7 @@ export interface EntityTagHeaderValue$instance {
 export const EntityTagHeaderValue: {
     new(tag: StringSegment): EntityTagHeaderValue;
     new(tag: StringSegment, isWeak: boolean): EntityTagHeaderValue;
-    readonly any_: EntityTagHeaderValue;
+    readonly any: EntityTagHeaderValue;
     parse(input: StringSegment): EntityTagHeaderValue;
     parseList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
     parseStrictList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
@@ -183,7 +183,7 @@ export interface MediaTypeHeaderValue$instance {
     readonly subType: StringSegment;
     readonly subTypeWithoutSuffix: StringSegment;
     readonly suffix: StringSegment;
-    readonly type_: StringSegment;
+    readonly type: StringSegment;
     copy(): MediaTypeHeaderValue;
     copyAsReadOnly(): MediaTypeHeaderValue;
     equals(obj: unknown): boolean;
@@ -281,7 +281,7 @@ export interface RangeHeaderValue$instance {
 
 export const RangeHeaderValue: {
     new(): RangeHeaderValue;
-    new(from_: Nullable<System_Internal.Int64>, to: Nullable<System_Internal.Int64>): RangeHeaderValue;
+    new(from: Nullable<System_Internal.Int64>, to: Nullable<System_Internal.Int64>): RangeHeaderValue;
     parse(input: StringSegment): RangeHeaderValue;
     tryParse(input: StringSegment, parsedValue: RangeHeaderValue): boolean;
 };
@@ -290,7 +290,7 @@ export const RangeHeaderValue: {
 export type RangeHeaderValue = RangeHeaderValue$instance;
 
 export interface RangeItemHeaderValue$instance {
-    readonly from_: Nullable<System_Internal.Int64>;
+    readonly from: Nullable<System_Internal.Int64>;
     readonly to: Nullable<System_Internal.Int64>;
     equals(obj: unknown): boolean;
     getHashCode(): int;
@@ -299,7 +299,7 @@ export interface RangeItemHeaderValue$instance {
 
 
 export const RangeItemHeaderValue: {
-    new(from_: Nullable<System_Internal.Int64>, to: Nullable<System_Internal.Int64>): RangeItemHeaderValue;
+    new(from: Nullable<System_Internal.Int64>, to: Nullable<System_Internal.Int64>): RangeItemHeaderValue;
 };
 
 
@@ -420,7 +420,7 @@ export abstract class HeaderNames$instance {
     static readonly eTag: string;
     static readonly expires: string;
     static readonly expect: string;
-    static readonly from_: string;
+    static readonly from: string;
     static readonly grpcAcceptEncoding: string;
     static readonly grpcEncoding: string;
     static readonly grpcMessage: string;

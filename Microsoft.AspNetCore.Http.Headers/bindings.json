@@ -11,7 +11,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Get(System.String):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100664112,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "Get|(System.String):T|static=false",
@@ -39,7 +39,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Set(System.String,System.Object):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100664114,
           "canonicalSignature": "(System.String,System.Object):System.Void",
           "normalizedSignature": "Set|(System.String,System.Object):System.Void|static=false",
@@ -419,7 +419,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):T|static=false",
           "target": {
@@ -439,7 +439,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.Object):System.Void|static=false",
           "target": {
@@ -723,7 +723,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Get(System.String):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100664142,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "Get|(System.String):T|static=false",
@@ -751,7 +751,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Set(System.String,System.Object):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100664144,
           "canonicalSignature": "(System.String,System.Object):System.Void",
           "normalizedSignature": "Set|(System.String,System.Object):System.Void|static=false",
@@ -991,7 +991,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):T|static=false",
           "target": {
@@ -1011,7 +1011,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.Object):System.Void|static=false",
           "target": {

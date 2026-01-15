@@ -40,7 +40,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.BindingBehavior::NeverMicrosoft.AspNetCore.Mvc.ModelBinding.BindingBehavior",
           "clrName": "Never",
-          "tsEmitName": "never_",
+          "tsEmitName": "never",
           "normalizedSignature": "Never|Microsoft.AspNetCore.Mvc.ModelBinding.BindingBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -84,7 +84,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.EmptyBodyBehavior::DefaultMicrosoft.AspNetCore.Mvc.ModelBinding.EmptyBodyBehavior",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.AspNetCore.Mvc.ModelBinding.EmptyBodyBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -7334,7 +7334,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.SuppressChildValidationMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

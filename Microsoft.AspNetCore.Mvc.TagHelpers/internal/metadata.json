@@ -2306,7 +2306,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2532,7 +2532,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -3121,7 +3121,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -3619,7 +3619,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -3921,7 +3921,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4118,7 +4118,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4284,7 +4284,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",

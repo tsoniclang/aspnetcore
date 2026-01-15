@@ -24802,7 +24802,7 @@
         {
           "stableId": "Microsoft.Extensions.Identity.Core:Microsoft.AspNetCore.Identity.IdentitySchemaVersions::DefaultSystem.Version",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108911,
           "normalizedSignature": "Default|System.Version|static=true|const=false",
           "isStatic": true,
@@ -24848,7 +24848,7 @@
       "constructors": [],
       "exposedFields": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|System.Version|static=true|const=false",
           "target": {

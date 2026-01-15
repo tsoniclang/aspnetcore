@@ -18,7 +18,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Get(System.String):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):T|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -50,7 +50,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Set(System.String,System.Object):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Object):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -468,7 +468,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Get(System.String):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):T|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -500,7 +500,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Set(System.String,System.Object):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Object):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

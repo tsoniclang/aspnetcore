@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior::AnyMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior",
           "clrName": "Any",
-          "tsEmitName": "any_",
+          "tsEmitName": "any",
           "metadataToken": 67110038,
           "normalizedSignature": "Any|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior|static=true|const=true",
           "isStatic": true,
@@ -80,7 +80,7 @@
           }
         },
         {
-          "tsName": "any_",
+          "tsName": "any",
           "isStatic": true,
           "tsSignatureId": "Any|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionNameMatchBehavior|static=true|const=true",
           "target": {
@@ -144,7 +144,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior::AnyMicrosoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior",
           "clrName": "Any",
-          "tsEmitName": "any_",
+          "tsEmitName": "any",
           "metadataToken": 67110045,
           "normalizedSignature": "Any|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior|static=true|const=true",
           "isStatic": true,
@@ -178,7 +178,7 @@
           }
         },
         {
-          "tsName": "any_",
+          "tsName": "any",
           "isStatic": true,
           "tsSignatureId": "Any|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiConventionTypeMatchBehavior|static=true|const=true",
           "target": {
@@ -225,7 +225,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385877027,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -282,7 +282,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -600,7 +600,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385877027,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -657,7 +657,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -1560,7 +1560,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiParameterDescription::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876261,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -1680,7 +1680,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {
@@ -2050,7 +2050,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiResponseType::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876274,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -2140,7 +2140,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {

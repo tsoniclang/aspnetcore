@@ -518,7 +518,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::DefaultEndpointMetadataComparer\u00601",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|EndpointMetadataComparer\u00601|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,

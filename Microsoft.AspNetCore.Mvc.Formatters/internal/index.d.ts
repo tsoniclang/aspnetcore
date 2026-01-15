@@ -73,10 +73,10 @@ export interface MediaType$instance {
     readonly subType: StringSegment;
     readonly subTypeSuffix: StringSegment;
     readonly subTypeWithoutSuffix: StringSegment;
-    readonly type_: StringSegment;
+    readonly type: StringSegment;
     getParameter(parameterName: string): StringSegment;
     getParameter(parameterName: StringSegment): StringSegment;
-    isSubsetOf(set_: MediaType): boolean;
+    isSubsetOf(set: MediaType): boolean;
 }
 
 
@@ -299,7 +299,7 @@ export interface OutputFormatterCanWriteContext$instance {
     contentType: StringSegment;
     contentTypeIsServerDefined: boolean;
     readonly httpContext: HttpContext;
-    readonly object_: unknown | undefined;
+    readonly object: unknown | undefined;
     readonly objectType: Type | undefined;
 }
 
@@ -316,7 +316,7 @@ export interface OutputFormatterWriteContext$instance extends OutputFormatterCan
 
 
 export const OutputFormatterWriteContext: {
-    new(httpContext: HttpContext, writerFactory: Func<Stream, Encoding, TextWriter>, objectType: Type, object_: unknown): OutputFormatterWriteContext;
+    new(httpContext: HttpContext, writerFactory: Func<Stream, Encoding, TextWriter>, objectType: Type, object: unknown): OutputFormatterWriteContext;
 };
 
 

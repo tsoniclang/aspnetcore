@@ -24,7 +24,7 @@ export interface RazorCompiledItem$instance {
     readonly identifier: string;
     readonly kind: string;
     readonly metadata: IReadOnlyList<unknown>;
-    readonly type_: Type;
+    readonly type: Type;
 }
 
 
@@ -37,12 +37,12 @@ export type RazorCompiledItem = RazorCompiledItem$instance;
 export interface RazorCompiledItemAttribute$instance extends Attribute {
     readonly identifier: string | undefined;
     readonly kind: string;
-    readonly type_: Type;
+    readonly type: Type;
 }
 
 
 export const RazorCompiledItemAttribute: {
-    new(type_: Type, kind: string, identifier: string): RazorCompiledItemAttribute;
+    new(type: Type, kind: string, identifier: string): RazorCompiledItemAttribute;
 };
 
 

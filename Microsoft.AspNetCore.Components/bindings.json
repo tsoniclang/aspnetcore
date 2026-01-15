@@ -123,7 +123,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.RestoreBehavior::DefaultMicrosoft.AspNetCore.Components.RestoreBehavior",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67109150,
           "normalizedSignature": "Default|Microsoft.AspNetCore.Components.RestoreBehavior|static=true|const=true",
           "isStatic": true,
@@ -168,7 +168,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.AspNetCore.Components.RestoreBehavior|static=true|const=true",
           "target": {
@@ -2422,7 +2422,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.BindInputElementAttribute::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=get",
@@ -2520,7 +2520,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=get",
           "target": {
@@ -3545,7 +3545,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.DynamicComponent::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876074,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -3643,7 +3643,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {

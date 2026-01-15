@@ -3480,7 +3480,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.InputDate\u00601::Type:Microsoft.AspNetCore.Components.Forms.InputDateType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876156,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Forms.InputDateType",
           "normalizedSignature": "Type|:Microsoft.AspNetCore.Components.Forms.InputDateType|static=false|accessor=getset",
@@ -3618,7 +3618,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Microsoft.AspNetCore.Components.Forms.InputDateType|static=false|accessor=getset",
           "target": {
@@ -6609,7 +6609,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.ValidationMessage\u00601::For:Expression_1",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "metadataToken": 385876214,
           "canonicalSignature": ":Expression_1",
           "normalizedSignature": "For|:Expression_1|static=false|accessor=getset",
@@ -6729,7 +6729,7 @@
           }
         },
         {
-          "tsName": "for_",
+          "tsName": "for",
           "isStatic": false,
           "tsSignatureId": "For|:Expression_1|static=false|accessor=getset",
           "target": {

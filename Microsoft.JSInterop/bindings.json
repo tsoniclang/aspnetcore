@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.JSCallResultType::DefaultMicrosoft.JSInterop.JSCallResultType",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108875,
           "normalizedSignature": "Default|Microsoft.JSInterop.JSCallResultType|static=true|const=true",
           "isStatic": true,
@@ -80,7 +80,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.JSInterop.JSCallResultType|static=true|const=true",
           "target": {

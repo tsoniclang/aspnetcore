@@ -342,7 +342,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::NullSystem.Formats.Cbor.CborReaderState",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "metadataToken": 67109010,
           "normalizedSignature": "Null|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
@@ -353,7 +353,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::BooleanSystem.Formats.Cbor.CborReaderState",
           "clrName": "Boolean",
-          "tsEmitName": "boolean_",
+          "tsEmitName": "boolean",
           "metadataToken": 67109011,
           "normalizedSignature": "Boolean|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
@@ -567,7 +567,7 @@
           }
         },
         {
-          "tsName": "null_",
+          "tsName": "null",
           "isStatic": true,
           "tsSignatureId": "Null|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "target": {
@@ -577,7 +577,7 @@
           }
         },
         {
-          "tsName": "boolean_",
+          "tsName": "boolean",
           "isStatic": true,
           "tsSignatureId": "Boolean|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "target": {
@@ -621,7 +621,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::FalseSystem.Formats.Cbor.CborSimpleValue",
           "clrName": "False",
-          "tsEmitName": "false_",
+          "tsEmitName": "false",
           "metadataToken": 67109098,
           "normalizedSignature": "False|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
@@ -632,7 +632,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::TrueSystem.Formats.Cbor.CborSimpleValue",
           "clrName": "True",
-          "tsEmitName": "true_",
+          "tsEmitName": "true",
           "metadataToken": 67109099,
           "normalizedSignature": "True|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
@@ -643,7 +643,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::NullSystem.Formats.Cbor.CborSimpleValue",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "metadataToken": 67109100,
           "normalizedSignature": "Null|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
@@ -677,7 +677,7 @@
           }
         },
         {
-          "tsName": "false_",
+          "tsName": "false",
           "isStatic": true,
           "tsSignatureId": "False|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "target": {
@@ -687,7 +687,7 @@
           }
         },
         {
-          "tsName": "true_",
+          "tsName": "true",
           "isStatic": true,
           "tsSignatureId": "True|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "target": {
@@ -697,7 +697,7 @@
           }
         },
         {
-          "tsName": "null_",
+          "tsName": "null",
           "isStatic": true,
           "tsSignatureId": "Null|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "target": {

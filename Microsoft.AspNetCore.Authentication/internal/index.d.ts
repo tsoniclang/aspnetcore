@@ -381,7 +381,7 @@ export type AuthenticationSchemeBuilder = AuthenticationSchemeBuilder$instance;
 export interface AuthenticationSchemeOptions$instance {
     get claimsIssuer(): string | undefined;
     set claimsIssuer(value: string);
-    events: BearerTokenEvents | unknown;
+    events: CookieAuthenticationEvents | unknown;
     get eventsType(): Type | undefined;
     set eventsType(value: Type);
     get forwardAuthenticate(): string | undefined;
@@ -647,7 +647,7 @@ export interface PropertiesSerializer$instance {
 
 export const PropertiesSerializer: {
     new(): PropertiesSerializer;
-    readonly default_: PropertiesSerializer;
+    readonly default: PropertiesSerializer;
 };
 
 
@@ -732,7 +732,7 @@ export interface RemoteAuthenticationOptions$instance extends AuthenticationSche
     correlationCookie: CookieBuilder;
     get dataProtectionProvider(): IDataProtectionProvider | undefined;
     set dataProtectionProvider(value: IDataProtectionProvider);
-    events: OAuthEvents | RemoteAuthenticationEvents | unknown;
+    events: RemoteAuthenticationEvents | unknown;
     remoteAuthenticationTimeout: TimeSpan;
     returnUrlParameter: string;
     saveTokens: boolean;
@@ -920,7 +920,7 @@ export interface TicketSerializer$instance {
 
 export const TicketSerializer: {
     new(): TicketSerializer;
-    readonly default_: TicketSerializer;
+    readonly default: TicketSerializer;
 };
 
 

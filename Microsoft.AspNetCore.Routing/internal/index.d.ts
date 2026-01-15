@@ -792,7 +792,7 @@ export interface RouteOptions$instance {
     lowercaseUrls: boolean;
     suppressCheckForUnhandledSecurityMetadata: boolean;
     setParameterPolicy<T extends IParameterPolicy>(token: string): void;
-    setParameterPolicy(token: string, type_: Type): void;
+    setParameterPolicy(token: string, type: Type): void;
 }
 
 
@@ -840,7 +840,7 @@ export interface RouteValueEqualityComparer$instance {
 
 export const RouteValueEqualityComparer: {
     new(): RouteValueEqualityComparer;
-    readonly default_: RouteValueEqualityComparer;
+    readonly default: RouteValueEqualityComparer;
 };
 
 

@@ -30,7 +30,7 @@ export interface IRazorComponentEndpointInvoker$instance {
 export type IRazorComponentEndpointInvoker = IRazorComponentEndpointInvoker$instance;
 
 export interface ComponentTypeMetadata$instance {
-    readonly type_: Type;
+    readonly type: Type;
 }
 
 
@@ -59,7 +59,7 @@ export const RazorComponentsServiceOptions: {
 export type RazorComponentsServiceOptions = RazorComponentsServiceOptions$instance;
 
 export interface RootComponentMetadata$instance {
-    readonly type_: Type;
+    readonly type: Type;
 }
 
 

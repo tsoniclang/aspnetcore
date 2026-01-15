@@ -201,7 +201,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.Rendering.FormMethod::GetMicrosoft.AspNetCore.Mvc.Rendering.FormMethod",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 67108985,
           "normalizedSignature": "Get|Microsoft.AspNetCore.Mvc.Rendering.FormMethod|static=true|const=true",
           "isStatic": true,
@@ -246,7 +246,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|Microsoft.AspNetCore.Mvc.Rendering.FormMethod|static=true|const=true",
           "target": {
@@ -378,7 +378,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.Rendering.RenderMode::StaticMicrosoft.AspNetCore.Mvc.Rendering.RenderMode",
           "clrName": "Static",
-          "tsEmitName": "static_",
+          "tsEmitName": "static",
           "metadataToken": 67109034,
           "normalizedSignature": "Static|Microsoft.AspNetCore.Mvc.Rendering.RenderMode|static=true|const=true",
           "isStatic": true,
@@ -445,7 +445,7 @@
           }
         },
         {
-          "tsName": "static_",
+          "tsName": "static",
           "isStatic": true,
           "tsSignatureId": "Static|Microsoft.AspNetCore.Mvc.Rendering.RenderMode|static=true|const=true",
           "target": {

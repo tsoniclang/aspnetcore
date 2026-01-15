@@ -2329,7 +2329,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.InputDate\u00601::Type:Microsoft.AspNetCore.Components.Forms.InputDateType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Microsoft.AspNetCore.Components.Forms.InputDateType|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4171,7 +4171,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.ValidationMessage\u00601::For:Expression_1",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "normalizedSignature": "For|:Expression_1|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",

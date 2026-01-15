@@ -165,7 +165,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ResponseCacheLocation::AnyMicrosoft.AspNetCore.Mvc.ResponseCacheLocation",
           "clrName": "Any",
-          "tsEmitName": "any_",
+          "tsEmitName": "any",
           "metadataToken": 67109251,
           "normalizedSignature": "Any|Microsoft.AspNetCore.Mvc.ResponseCacheLocation|static=true|const=true",
           "isStatic": true,
@@ -210,7 +210,7 @@
           }
         },
         {
-          "tsName": "any_",
+          "tsName": "any",
           "isStatic": true,
           "tsSignatureId": "Any|Microsoft.AspNetCore.Mvc.ResponseCacheLocation|static=true|const=true",
           "target": {
@@ -19972,7 +19972,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Mvc.ProblemDetails::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -20070,7 +20070,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -20238,7 +20238,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesAttribute::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876199,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -20450,7 +20450,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {
@@ -20671,7 +20671,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385877027,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -20799,7 +20799,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -20829,7 +20829,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {
@@ -20907,7 +20907,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesDefaultResponseTypeAttribute::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876204,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -21027,7 +21027,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -21119,7 +21119,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesErrorResponseTypeAttribute::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876207,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -21147,7 +21147,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -21195,7 +21195,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876208,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -21325,7 +21325,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {
@@ -21455,7 +21455,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385877027,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -21543,7 +21543,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -21573,7 +21573,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {
@@ -27712,7 +27712,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -29203,7 +29203,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.DefaultApiConventions::Get(System.Object):System.Void",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100664022,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Get|(System.Object):System.Void|static=true",
@@ -29301,7 +29301,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.DefaultApiConventions::Delete(System.Object):System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 100664029,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Delete|(System.Object):System.Void|static=true",
@@ -29319,7 +29319,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(System.Object):System.Void|static=true",
           "target": {
@@ -29389,7 +29389,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|(System.Object):System.Void|static=true",
           "target": {

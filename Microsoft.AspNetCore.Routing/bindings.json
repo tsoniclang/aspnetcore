@@ -6345,7 +6345,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.RouteValueEqualityComparer::DefaultMicrosoft.AspNetCore.Routing.RouteValueEqualityComparer",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67109069,
           "normalizedSignature": "Default|Microsoft.AspNetCore.Routing.RouteValueEqualityComparer|static=true|const=false",
           "isStatic": true,
@@ -6391,7 +6391,7 @@
       ],
       "exposedFields": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.AspNetCore.Routing.RouteValueEqualityComparer|static=true|const=false",
           "target": {

@@ -29,7 +29,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::GetMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -47,7 +47,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::DeleteMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -154,7 +154,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme::UnknownMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -207,7 +207,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::UnknownMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

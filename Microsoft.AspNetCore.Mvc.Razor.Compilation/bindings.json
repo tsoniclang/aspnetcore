@@ -146,7 +146,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876091,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -234,7 +234,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {

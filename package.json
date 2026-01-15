@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/aspnetcore",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TypeScript type definitions for Microsoft.AspNetCore.App shared framework for .NET 10",
   "type": "module",
   "keywords": [

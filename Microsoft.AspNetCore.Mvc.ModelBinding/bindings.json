@@ -35,7 +35,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.BindingBehavior::NeverMicrosoft.AspNetCore.Mvc.ModelBinding.BindingBehavior",
           "clrName": "Never",
-          "tsEmitName": "never_",
+          "tsEmitName": "never",
           "metadataToken": 67109358,
           "normalizedSignature": "Never|Microsoft.AspNetCore.Mvc.ModelBinding.BindingBehavior|static=true|const=true",
           "isStatic": true,
@@ -79,7 +79,7 @@
           }
         },
         {
-          "tsName": "never_",
+          "tsName": "never",
           "isStatic": true,
           "tsSignatureId": "Never|Microsoft.AspNetCore.Mvc.ModelBinding.BindingBehavior|static=true|const=true",
           "target": {
@@ -123,7 +123,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.EmptyBodyBehavior::DefaultMicrosoft.AspNetCore.Mvc.ModelBinding.EmptyBodyBehavior",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108926,
           "normalizedSignature": "Default|Microsoft.AspNetCore.Mvc.ModelBinding.EmptyBodyBehavior|static=true|const=true",
           "isStatic": true,
@@ -168,7 +168,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.AspNetCore.Mvc.ModelBinding.EmptyBodyBehavior|static=true|const=true",
           "target": {
@@ -11431,7 +11431,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.SuppressChildValidationMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876369,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -11505,7 +11505,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {

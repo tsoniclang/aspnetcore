@@ -42,7 +42,7 @@ export enum FormInputRenderMode {
 
 
 export enum FormMethod {
-    get_ = 0,
+    get = 0,
     post = 1,
     dialog = 2
 }
@@ -55,7 +55,7 @@ export enum Html5DateRenderingMode {
 
 
 export enum RenderMode {
-    static_ = 1,
+    static = 1,
     server = 2,
     serverPrerendered = 3,
     webAssembly = 4,

@@ -719,7 +719,7 @@ export interface SimpleTypeModelBinder$instance {
 
 
 export const SimpleTypeModelBinder: {
-    new(type_: Type, loggerFactory: ILoggerFactory): SimpleTypeModelBinder;
+    new(type: Type, loggerFactory: ILoggerFactory): SimpleTypeModelBinder;
 };
 
 

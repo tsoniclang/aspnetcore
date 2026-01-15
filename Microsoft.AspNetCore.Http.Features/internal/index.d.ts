@@ -31,7 +31,7 @@ import type { IServiceScopeFactory } from "@tsonic/microsoft-extensions/Microsof
 import type { ObjectPool } from "@tsonic/microsoft-extensions/Microsoft.Extensions.ObjectPool.js";
 
 export enum HttpsCompressionMode {
-    default_ = 0,
+    default = 0,
     doNotCompress = 1,
     compress = 2
 }
@@ -57,8 +57,8 @@ export interface IFeatureCollection$instance extends IEnumerable__System_Collect
     readonly revision: int;
     get item(): unknown | undefined;
     set item(value: unknown);
-    get_<TFeature>(): TFeature | undefined;
-    set_<TFeature>(instance: TFeature): void;
+    get<TFeature>(): TFeature | undefined;
+    set<TFeature>(instance: TFeature): void;
 }
 
 
@@ -349,7 +349,7 @@ export interface FeatureReference_1$instance<T> {
 
 export const FeatureReference_1: {
     new<T>(): FeatureReference_1<T>;
-    readonly default_: unknown;
+    readonly default: unknown;
 };
 
 
@@ -397,9 +397,9 @@ export interface FeatureCollection$instance {
     get item(): unknown | undefined;
     set item(value: unknown);
     readonly revision: int;
-    get_<TFeature>(): TFeature | undefined;
+    get<TFeature>(): TFeature | undefined;
     getEnumerator(): IEnumerator<KeyValuePair<Type, unknown>>;
-    set_<TFeature>(instance: TFeature): void;
+    set<TFeature>(instance: TFeature): void;
 }
 
 

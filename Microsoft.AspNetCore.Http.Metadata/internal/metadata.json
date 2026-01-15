@@ -710,7 +710,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

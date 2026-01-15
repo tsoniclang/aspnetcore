@@ -172,7 +172,7 @@ export interface IHeaderDictionary$instance extends IDictionary<System_Internal.
     eTag: StringValues;
     expires: StringValues;
     expect: StringValues;
-    from_: StringValues;
+    from: StringValues;
     grpcAcceptEncoding: StringValues;
     grpcEncoding: StringValues;
     grpcMessage: StringValues;
@@ -310,8 +310,8 @@ export interface IResponseCookies$instance {
     append(keyValuePairs: ReadOnlySpan<KeyValuePair<System_Internal.String, System_Internal.String>>, options: CookieOptions): void;
     append(key: string, value: string, options: CookieOptions): void;
     append(key: string, value: string): void;
-    delete_(key: string, options: CookieOptions): void;
-    delete_(key: string): void;
+    delete(key: string, options: CookieOptions): void;
+    delete(key: string): void;
 }
 
 
@@ -337,7 +337,7 @@ export interface ISession$instance {
     clear(): void;
     loadAsync(cancellationToken?: CancellationToken): Task;
     remove(key: string): void;
-    set_(key: string, value: byte[]): void;
+    set(key: string, value: byte[]): void;
     tryGetValue(key: string, value: byte[]): boolean;
 }
 
@@ -1113,13 +1113,13 @@ export interface ProducesResponseTypeMetadata$instance {
     readonly contentTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
     description: string;
     readonly statusCode: int;
-    readonly type_: Type;
+    readonly type: Type;
     toString(): string;
 }
 
 
 export const ProducesResponseTypeMetadata: {
-    new(statusCode: int, type_: Type, contentTypes: string[]): ProducesResponseTypeMetadata;
+    new(statusCode: int, type: Type, contentTypes: string[]): ProducesResponseTypeMetadata;
 };
 
 
@@ -1327,8 +1327,8 @@ export type HttpContextServerVariableExtensions = HttpContextServerVariableExten
 
 export abstract class HttpMethods$instance {
     static readonly connect: string;
-    static readonly delete_: string;
-    static readonly get_: string;
+    static readonly delete: string;
+    static readonly get: string;
     static readonly head: string;
     static readonly options: string;
     static readonly patch: string;
@@ -1376,9 +1376,9 @@ export abstract class HttpRequestJsonExtensions$instance {
     static readFromJsonAsync<TValue>(request: HttpRequest, options: JsonSerializerOptions, cancellationToken?: CancellationToken): ValueTask<TValue>;
     static readFromJsonAsync(request: HttpRequest, jsonTypeInfo: JsonTypeInfo, cancellationToken?: CancellationToken): ValueTask<unknown>;
     static readFromJsonAsync<TValue>(request: HttpRequest, cancellationToken?: CancellationToken): ValueTask<TValue>;
-    static readFromJsonAsync(request: HttpRequest, type_: Type, options: JsonSerializerOptions, cancellationToken?: CancellationToken): ValueTask<unknown>;
-    static readFromJsonAsync(request: HttpRequest, type_: Type, context: JsonSerializerContext, cancellationToken?: CancellationToken): ValueTask<unknown>;
-    static readFromJsonAsync(request: HttpRequest, type_: Type, cancellationToken?: CancellationToken): ValueTask<unknown>;
+    static readFromJsonAsync(request: HttpRequest, type: Type, options: JsonSerializerOptions, cancellationToken?: CancellationToken): ValueTask<unknown>;
+    static readFromJsonAsync(request: HttpRequest, type: Type, context: JsonSerializerContext, cancellationToken?: CancellationToken): ValueTask<unknown>;
+    static readFromJsonAsync(request: HttpRequest, type: Type, cancellationToken?: CancellationToken): ValueTask<unknown>;
 }
 
 
@@ -1396,10 +1396,10 @@ export type HttpRequestRewindExtensions = HttpRequestRewindExtensions$instance;
 
 export abstract class HttpResponseJsonExtensions$instance {
     static writeAsJsonAsync(response: HttpResponse, value: unknown, jsonTypeInfo: JsonTypeInfo, contentType?: string, cancellationToken?: CancellationToken): Task;
-    static writeAsJsonAsync(response: HttpResponse, value: unknown, type_: Type, options: JsonSerializerOptions, contentType: string, cancellationToken?: CancellationToken): Task;
-    static writeAsJsonAsync(response: HttpResponse, value: unknown, type_: Type, options: JsonSerializerOptions, cancellationToken?: CancellationToken): Task;
-    static writeAsJsonAsync(response: HttpResponse, value: unknown, type_: Type, context: JsonSerializerContext, contentType?: string, cancellationToken?: CancellationToken): Task;
-    static writeAsJsonAsync(response: HttpResponse, value: unknown, type_: Type, cancellationToken?: CancellationToken): Task;
+    static writeAsJsonAsync(response: HttpResponse, value: unknown, type: Type, options: JsonSerializerOptions, contentType: string, cancellationToken?: CancellationToken): Task;
+    static writeAsJsonAsync(response: HttpResponse, value: unknown, type: Type, options: JsonSerializerOptions, cancellationToken?: CancellationToken): Task;
+    static writeAsJsonAsync(response: HttpResponse, value: unknown, type: Type, context: JsonSerializerContext, contentType?: string, cancellationToken?: CancellationToken): Task;
+    static writeAsJsonAsync(response: HttpResponse, value: unknown, type: Type, cancellationToken?: CancellationToken): Task;
     static writeAsJsonAsync<TValue>(response: HttpResponse, value: TValue, jsonTypeInfo: JsonTypeInfo<TValue>, contentType?: string, cancellationToken?: CancellationToken): Task;
     static writeAsJsonAsync<TValue>(response: HttpResponse, value: TValue, options: JsonSerializerOptions, contentType: string, cancellationToken?: CancellationToken): Task;
     static writeAsJsonAsync<TValue>(response: HttpResponse, value: TValue, options: JsonSerializerOptions, cancellationToken?: CancellationToken): Task;
@@ -1520,7 +1520,7 @@ export abstract class Results$instance {
     static internalServerError<TValue>(error: TValue): IResult;
     static json(data: unknown, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
     static json(data: unknown, jsonTypeInfo: JsonTypeInfo, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
-    static json(data: unknown, type_: Type, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
+    static json(data: unknown, type: Type, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
     static json<TValue>(data: TValue, jsonTypeInfo: JsonTypeInfo<TValue>, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
     static json<TValue>(data: TValue, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
     static json<TValue>(data: TValue, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
@@ -1531,8 +1531,8 @@ export abstract class Results$instance {
     static ok(value?: unknown): IResult;
     static ok<TValue>(value: TValue): IResult;
     static problem(problemDetails: ProblemDetails): IResult;
-    static problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type_: string, extensions: IDictionary<System_Internal.String, unknown>): IResult;
-    static problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): IResult;
+    static problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): IResult;
+    static problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): IResult;
     static redirect(url: string, permanent?: boolean, preserveMethod?: boolean): IResult;
     static redirectToRoute(routeName: string, routeValues: RouteValueDictionary, permanent?: boolean, preserveMethod?: boolean, fragment?: string): IResult;
     static redirectToRoute(routeName?: string, routeValues?: unknown, permanent?: boolean, preserveMethod?: boolean, fragment?: string): IResult;
@@ -1551,8 +1551,8 @@ export abstract class Results$instance {
     static unauthorized(): IResult;
     static unprocessableEntity(error?: unknown): IResult;
     static unprocessableEntity<TValue>(error: TValue): IResult;
-    static validationProblem(errors: IDictionary<System_Internal.String, string[]>, detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type_: string, extensions: IDictionary<System_Internal.String, unknown>): IResult;
-    static validationProblem(errors: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, string[]>>, detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): IResult;
+    static validationProblem(errors: IDictionary<System_Internal.String, string[]>, detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): IResult;
+    static validationProblem(errors: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, string[]>>, detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): IResult;
 }
 
 
@@ -1576,7 +1576,7 @@ export abstract class SendFileResponseExtensions$instance {
 export type SendFileResponseExtensions = SendFileResponseExtensions$instance;
 
 export abstract class SessionExtensions$instance {
-    static get_(session: ISession, key: string): byte[] | undefined;
+    static get(session: ISession, key: string): byte[] | undefined;
     static getInt32(session: ISession, key: string): Nullable<System_Internal.Int32>;
     static getString(session: ISession, key: string): string | undefined;
     static setInt32(session: ISession, key: string, value: int): void;
@@ -1704,8 +1704,8 @@ export abstract class TypedResults$instance {
     static ok<TValue>(value: TValue): Ok_1<TValue>;
     static physicalFile(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): PhysicalFileHttpResult;
     static problem(problemDetails: ProblemDetails): ProblemHttpResult;
-    static problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type_: string, extensions: IDictionary<System_Internal.String, unknown>): ProblemHttpResult;
-    static problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): ProblemHttpResult;
+    static problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): ProblemHttpResult;
+    static problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): ProblemHttpResult;
     static redirect(url: string, permanent?: boolean, preserveMethod?: boolean): RedirectHttpResult;
     static redirectToRoute(routeName: string, routeValues: RouteValueDictionary, permanent?: boolean, preserveMethod?: boolean, fragment?: string): RedirectToRouteHttpResult;
     static redirectToRoute(routeName?: string, routeValues?: unknown, permanent?: boolean, preserveMethod?: boolean, fragment?: string): RedirectToRouteHttpResult;
@@ -1724,8 +1724,8 @@ export abstract class TypedResults$instance {
     static unauthorized(): UnauthorizedHttpResult;
     static unprocessableEntity(): UnprocessableEntity;
     static unprocessableEntity<TValue>(error: TValue): UnprocessableEntity_1<TValue>;
-    static validationProblem(errors: IDictionary<System_Internal.String, string[]>, detail: string, instance: string, title: string, type_: string, extensions: IDictionary<System_Internal.String, unknown>): ValidationProblem;
-    static validationProblem(errors: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, string[]>>, detail?: string, instance?: string, title?: string, type_?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): ValidationProblem;
+    static validationProblem(errors: IDictionary<System_Internal.String, string[]>, detail: string, instance: string, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): ValidationProblem;
+    static validationProblem(errors: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, string[]>>, detail?: string, instance?: string, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): ValidationProblem;
     static virtualFile(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): VirtualFileHttpResult;
 }
 

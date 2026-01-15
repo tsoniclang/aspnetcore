@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::GetMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 67110621,
           "normalizedSignature": "Get|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
@@ -46,7 +46,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod::DeleteMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 67110623,
           "normalizedSignature": "Delete|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "isStatic": true,
@@ -157,7 +157,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "target": {
@@ -177,7 +177,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod|static=true|const=true",
           "target": {
@@ -291,7 +291,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme::UnknownMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67110767,
           "normalizedSignature": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme|static=true|const=true",
           "isStatic": true,
@@ -336,7 +336,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpScheme|static=true|const=true",
           "target": {
@@ -390,7 +390,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion::UnknownMicrosoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67110777,
           "normalizedSignature": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "isStatic": true,
@@ -457,7 +457,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersion|static=true|const=true",
           "target": {

@@ -42,9 +42,9 @@ export interface RequestHeaders$instance {
     set referer(value: Uri);
     append(name: string, value: unknown): void;
     appendList<T>(name: string, values: IList<T>): void;
-    get_<T>(name: string): T | undefined;
+    get<T>(name: string): T | undefined;
     getList<T>(name: string): IList<T>;
-    set_(name: string, value: unknown): void;
+    set(name: string, value: unknown): void;
     setList<T>(name: string, values: IList<T>): void;
 }
 
@@ -75,9 +75,9 @@ export interface ResponseHeaders$instance {
     setCookie: IList<SetCookieHeaderValue>;
     append(name: string, value: unknown): void;
     appendList<T>(name: string, values: IList<T>): void;
-    get_<T>(name: string): T | undefined;
+    get<T>(name: string): T | undefined;
     getList<T>(name: string): IList<T>;
-    set_(name: string, value: unknown): void;
+    set(name: string, value: unknown): void;
     setList<T>(name: string, values: IList<T>): void;
 }
 

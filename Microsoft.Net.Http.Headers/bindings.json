@@ -349,7 +349,7 @@
         {
           "stableId": "Microsoft.Net.Http.Headers:Microsoft.Net.Http.Headers.CacheControlHeaderValue::Public:System.Boolean",
           "clrName": "Public",
-          "tsEmitName": "public_",
+          "tsEmitName": "public",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Public|:System.Boolean|static=false|accessor=getset",
@@ -363,7 +363,7 @@
         {
           "stableId": "Microsoft.Net.Http.Headers:Microsoft.Net.Http.Headers.CacheControlHeaderValue::Private:System.Boolean",
           "clrName": "Private",
-          "tsEmitName": "private_",
+          "tsEmitName": "private",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Private|:System.Boolean|static=false|accessor=getset",
@@ -732,7 +732,7 @@
           }
         },
         {
-          "tsName": "public_",
+          "tsName": "public",
           "isStatic": false,
           "tsSignatureId": "Public|:System.Boolean|static=false|accessor=getset",
           "target": {
@@ -742,7 +742,7 @@
           }
         },
         {
-          "tsName": "private_",
+          "tsName": "private",
           "isStatic": false,
           "tsSignatureId": "Private|:System.Boolean|static=false|accessor=getset",
           "target": {
@@ -1458,7 +1458,7 @@
         {
           "stableId": "Microsoft.Net.Http.Headers:Microsoft.Net.Http.Headers.ContentRangeHeaderValue::From:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "From",
-          "tsEmitName": "from_",
+          "tsEmitName": "from",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "From|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -1624,7 +1624,7 @@
           }
         },
         {
-          "tsName": "from_",
+          "tsName": "from",
           "isStatic": false,
           "tsSignatureId": "From|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "target": {
@@ -2215,7 +2215,7 @@
         {
           "stableId": "Microsoft.Net.Http.Headers:Microsoft.Net.Http.Headers.EntityTagHeaderValue::Any:Microsoft.Net.Http.Headers.EntityTagHeaderValue",
           "clrName": "Any",
-          "tsEmitName": "any_",
+          "tsEmitName": "any",
           "metadataToken": 385876004,
           "canonicalSignature": ":Microsoft.Net.Http.Headers.EntityTagHeaderValue",
           "normalizedSignature": "Any|:Microsoft.Net.Http.Headers.EntityTagHeaderValue|static=true|accessor=get",
@@ -2383,7 +2383,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "any_",
+          "tsName": "any",
           "isStatic": true,
           "tsSignatureId": "Any|:Microsoft.Net.Http.Headers.EntityTagHeaderValue|static=true|accessor=get",
           "target": {
@@ -2730,7 +2730,7 @@
         {
           "stableId": "Microsoft.Net.Http.Headers:Microsoft.Net.Http.Headers.MediaTypeHeaderValue::Type:Microsoft.Extensions.Primitives.StringSegment",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876014,
           "canonicalSignature": ":Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "Type|:Microsoft.Extensions.Primitives.StringSegment|static=false|accessor=get",
@@ -3072,7 +3072,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Microsoft.Extensions.Primitives.StringSegment|static=false|accessor=get",
           "target": {
@@ -4273,7 +4273,7 @@
         {
           "stableId": "Microsoft.Net.Http.Headers:Microsoft.Net.Http.Headers.RangeItemHeaderValue::From:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "From",
-          "tsEmitName": "from_",
+          "tsEmitName": "from",
           "metadataToken": 385876032,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "From|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -4347,7 +4347,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "from_",
+          "tsName": "from",
           "isStatic": false,
           "tsSignatureId": "From|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "target": {
@@ -5836,7 +5836,7 @@
         {
           "stableId": "Microsoft.Net.Http.Headers:Microsoft.Net.Http.Headers.HeaderNames::FromSystem.String",
           "clrName": "From",
-          "tsEmitName": "from_",
+          "tsEmitName": "from",
           "metadataToken": 67108965,
           "normalizedSignature": "From|System.String|static=true|const=false",
           "isStatic": true,
@@ -6856,7 +6856,7 @@
           }
         },
         {
-          "tsName": "from_",
+          "tsName": "from",
           "isStatic": true,
           "tsSignatureId": "From|System.String|static=true|const=false",
           "target": {

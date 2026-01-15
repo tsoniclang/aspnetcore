@@ -306,7 +306,7 @@
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

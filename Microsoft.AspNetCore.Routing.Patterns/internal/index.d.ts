@@ -74,7 +74,7 @@ export const RoutePatternLiteralPart: {
 export type RoutePatternLiteralPart = RoutePatternLiteralPart$instance;
 
 export interface RoutePatternParameterPart$instance extends RoutePatternPart {
-    readonly default_: unknown | undefined;
+    readonly default: unknown | undefined;
     readonly encodeSlashes: boolean;
     readonly isCatchAll: boolean;
     readonly isOptional: boolean;

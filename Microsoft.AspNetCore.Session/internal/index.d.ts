@@ -39,7 +39,7 @@ export interface DistributedSession$instance {
     commitAsync(cancellationToken?: CancellationToken): Task;
     loadAsync(cancellationToken?: CancellationToken): Task;
     remove(key: string): void;
-    set_(key: string, value: byte[]): void;
+    set(key: string, value: byte[]): void;
     tryGetValue(key: string, value: byte[]): boolean;
 }
 

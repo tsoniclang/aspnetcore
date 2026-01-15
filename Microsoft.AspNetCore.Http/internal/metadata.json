@@ -1319,7 +1319,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.IHeaderDictionary::From:Microsoft.Extensions.Primitives.StringValues",
           "clrName": "From",
-          "tsEmitName": "from_",
+          "tsEmitName": "from",
           "normalizedSignature": "From|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2688,7 +2688,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.IResponseCookies::Delete(System.String):System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|(System.String):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2704,7 +2704,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.IResponseCookies::Delete(System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|(System.String,Microsoft.AspNetCore.Http.CookieOptions):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2824,7 +2824,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.ISession::Set(System.String,System.Byte[]):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Byte[]):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -7777,7 +7777,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.IHeaderDictionary::From:Microsoft.Extensions.Primitives.StringValues",
           "clrName": "From",
-          "tsEmitName": "from_",
+          "tsEmitName": "from",
           "normalizedSignature": "From|:Microsoft.Extensions.Primitives.StringValues|static=false|accessor=getset",
           "provenance": "ExplicitView",
           "emitScope": "ViewOnly",
@@ -9834,7 +9834,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.ProducesResponseTypeMetadata::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -11468,7 +11468,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpMethods::DeleteSystem.String",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
@@ -11477,7 +11477,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpMethods::GetSystem.String",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
@@ -14039,7 +14039,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.SessionExtensions::Get(Microsoft.AspNetCore.Http.ISession,System.String):System.Byte[]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(Microsoft.AspNetCore.Http.ISession,System.String):System.Byte[]|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",

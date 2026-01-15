@@ -33,7 +33,7 @@ export interface CompiledViewDescriptor$instance {
     get item(): RazorCompiledItem | undefined;
     set item(value: RazorCompiledItem);
     relativePath: string;
-    readonly type_: Type;
+    readonly type: Type;
     get viewAttribute(): RazorViewAttribute | undefined;
     set viewAttribute(value: RazorViewAttribute);
 }

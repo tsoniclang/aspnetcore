@@ -32,7 +32,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.HttpsCompressionMode::DefaultMicrosoft.AspNetCore.Http.Features.HttpsCompressionMode",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.AspNetCore.Http.Features.HttpsCompressionMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -138,7 +138,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.IFeatureCollection::Get():TFeature",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|():TFeature|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -154,7 +154,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.IFeatureCollection::Set(TFeature):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(TFeature):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1969,7 +1969,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureReference\u00601::DefaultFeatureReference\u00601",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|FeatureReference\u00601|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
@@ -2203,7 +2203,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureCollection::Get():TFeature",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|():TFeature|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2219,7 +2219,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureCollection::Set(TFeature):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(TFeature):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

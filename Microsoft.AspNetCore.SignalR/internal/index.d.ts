@@ -232,7 +232,7 @@ export interface DefaultHubLifetimeManager_1$instance<THub extends Hub> extends 
     sendUserAsync(userId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
     sendUsersAsync(userIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
     setConnectionResultAsync(connectionId: string, result: CompletionMessage): Task;
-    tryGetReturnType(invocationId: string, type_: Type): boolean;
+    tryGetReturnType(invocationId: string, type: Type): boolean;
 }
 
 
@@ -467,7 +467,7 @@ export interface HubLifetimeManager_1$instance<THub extends Hub> {
     sendUserAsync(userId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
     sendUsersAsync(userIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
     setConnectionResultAsync(connectionId: string, result: CompletionMessage): Task;
-    tryGetReturnType(invocationId: string, type_: Type): boolean;
+    tryGetReturnType(invocationId: string, type: Type): boolean;
 }
 
 

@@ -133,7 +133,7 @@ export const RenderTreeDiff: {
 export type RenderTreeDiff = RenderTreeDiff$instance;
 
 export interface RenderTreeEdit$instance {
-    readonly type_: RenderTreeEditType;
+    readonly type: RenderTreeEditType;
     readonly siblingIndex: int;
     readonly referenceFrameIndex: int;
     readonly moveToSiblingIndex: int;

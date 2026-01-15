@@ -25,7 +25,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.IApplicationBuilder::New():Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "clrName": "New",
-          "tsEmitName": "new_",
+          "tsEmitName": "new",
           "metadataToken": 100663457,
           "canonicalSignature": "():Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "normalizedSignature": "New|():Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
@@ -110,7 +110,7 @@
           }
         },
         {
-          "tsName": "new_",
+          "tsName": "new",
           "isStatic": false,
           "tsSignatureId": "New|():Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
           "target": {
@@ -265,7 +265,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Builder.ApplicationBuilder::New():Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "clrName": "New",
-          "tsEmitName": "new_",
+          "tsEmitName": "new",
           "metadataToken": 100663423,
           "canonicalSignature": "():Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "normalizedSignature": "New|():Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
@@ -455,7 +455,7 @@
           }
         },
         {
-          "tsName": "new_",
+          "tsName": "new",
           "isStatic": false,
           "tsSignatureId": "New|():Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
           "target": {
@@ -612,7 +612,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "metadataToken": 100663606,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -654,7 +654,7 @@
           }
         },
         {
-          "tsName": "finally_",
+          "tsName": "finally",
           "isStatic": false,
           "tsSignatureId": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "target": {
@@ -1260,7 +1260,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "metadataToken": 100663586,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -1302,7 +1302,7 @@
           }
         },
         {
-          "tsName": "finally_",
+          "tsName": "finally",
           "isStatic": false,
           "tsSignatureId": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "target": {
@@ -1347,7 +1347,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Builder.ControllerActionEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "metadataToken": 100663613,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -1389,7 +1389,7 @@
           }
         },
         {
-          "tsName": "finally_",
+          "tsName": "finally",
           "isStatic": false,
           "tsSignatureId": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "target": {
@@ -2956,7 +2956,7 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR:Microsoft.AspNetCore.Builder.HubEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "metadataToken": 100663303,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -2998,7 +2998,7 @@
           }
         },
         {
-          "tsName": "finally_",
+          "tsName": "finally",
           "isStatic": false,
           "tsSignatureId": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "target": {
@@ -3309,7 +3309,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Builder.PageActionEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "metadataToken": 100663331,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -3351,7 +3351,7 @@
           }
         },
         {
-          "tsName": "finally_",
+          "tsName": "finally",
           "isStatic": false,
           "tsSignatureId": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "target": {
@@ -3396,7 +3396,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Builder.RazorComponentsEndpointConventionBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -3438,7 +3438,7 @@
           }
         },
         {
-          "tsName": "finally_",
+          "tsName": "finally",
           "isStatic": false,
           "tsSignatureId": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "target": {
@@ -3787,7 +3787,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Builder.RouteHandlerBuilder::Finally(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "Finally",
-          "tsEmitName": "finally_",
+          "tsEmitName": "finally",
           "metadataToken": 100663395,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -3840,7 +3840,7 @@
           }
         },
         {
-          "tsName": "finally_",
+          "tsName": "finally",
           "isStatic": false,
           "tsSignatureId": "Finally|(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "target": {
@@ -4563,7 +4563,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.IApplicationBuilder::New():Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "clrName": "New",
-          "tsEmitName": "new_",
+          "tsEmitName": "new",
           "metadataToken": 100663457,
           "canonicalSignature": "():Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "normalizedSignature": "New|():Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
@@ -4918,7 +4918,7 @@
           }
         },
         {
-          "tsName": "new_",
+          "tsName": "new",
           "isStatic": false,
           "tsSignatureId": "New|():Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
           "target": {

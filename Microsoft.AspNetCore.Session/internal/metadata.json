@@ -73,7 +73,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Session:Microsoft.AspNetCore.Session.DistributedSession::Set(System.String,System.Byte[]):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Byte[]):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

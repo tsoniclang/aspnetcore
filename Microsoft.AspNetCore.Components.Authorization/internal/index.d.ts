@@ -27,13 +27,13 @@ export interface IHostEnvironmentAuthenticationStateProvider$instance {
 export type IHostEnvironmentAuthenticationStateProvider = IHostEnvironmentAuthenticationStateProvider$instance;
 
 export interface ClaimData$instance {
-    readonly type_: string;
+    readonly type: string;
     readonly value: string;
 }
 
 
 export const ClaimData: {
-    new(type_: string, value: string): ClaimData;
+    new(type: string, value: string): ClaimData;
     new(claim: Claim): ClaimData;
 };
 

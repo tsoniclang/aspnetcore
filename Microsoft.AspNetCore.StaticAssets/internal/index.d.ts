@@ -70,7 +70,7 @@ export type StaticAssetSelector = StaticAssetSelector$instance;
 
 export interface StaticAssetsEndpointConventionBuilder$instance {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(convention: Action<EndpointBuilder>): void;
+    finally(convention: Action<EndpointBuilder>): void;
 }
 
 

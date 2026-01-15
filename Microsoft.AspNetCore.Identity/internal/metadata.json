@@ -15170,7 +15170,7 @@
         {
           "stableId": "Microsoft.Extensions.Identity.Core:Microsoft.AspNetCore.Identity.IdentitySchemaVersions::DefaultSystem.Version",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|System.Version|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,

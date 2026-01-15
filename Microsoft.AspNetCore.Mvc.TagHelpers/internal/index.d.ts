@@ -325,8 +325,8 @@ export type ImageTagHelper = ImageTagHelper$instance & __ImageTagHelper$views;
 
 
 export interface InputTagHelper$instance extends TagHelper, ITagHelper {
-    get for_(): ModelExpression | undefined;
-    set for_(value: ModelExpression);
+    get for(): ModelExpression | undefined;
+    set for(value: ModelExpression);
     format: string;
     get formName(): string | undefined;
     set formName(value: string);
@@ -356,8 +356,8 @@ export type InputTagHelper = InputTagHelper$instance & __InputTagHelper$views;
 
 
 export interface LabelTagHelper$instance extends TagHelper, ITagHelper {
-    get for_(): ModelExpression | undefined;
-    set for_(value: ModelExpression);
+    get for(): ModelExpression | undefined;
+    set for(value: ModelExpression);
     readonly order: int;
     viewContext: ViewContext;
     init(context: TagHelperContext): void;
@@ -435,8 +435,8 @@ export type OptionTagHelper = OptionTagHelper$instance & __OptionTagHelper$views
 
 export interface PartialTagHelper$instance extends TagHelper {
     fallbackName: string;
-    get for_(): ModelExpression | undefined;
-    set for_(value: ModelExpression);
+    get for(): ModelExpression | undefined;
+    set for(value: ModelExpression);
     model: unknown;
     name: string;
     optional: boolean;
@@ -517,7 +517,7 @@ export interface ScriptTagHelper$instance extends UrlResolutionTagHelper, ITagHe
     srcExclude: string;
     srcInclude: string;
     suppressFallbackIntegrity: boolean;
-    type_: string;
+    type: string;
     init(context: TagHelperContext): void;
     processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
@@ -536,8 +536,8 @@ export type ScriptTagHelper = ScriptTagHelper$instance & __ScriptTagHelper$views
 
 
 export interface SelectTagHelper$instance extends TagHelper, ITagHelper {
-    get for_(): ModelExpression | undefined;
-    set for_(value: ModelExpression);
+    get for(): ModelExpression | undefined;
+    set for(value: ModelExpression);
     items: IEnumerable<SelectListItem>;
     name: string;
     readonly order: int;
@@ -563,8 +563,8 @@ export type SelectTagHelper = SelectTagHelper$instance & __SelectTagHelper$views
 
 
 export interface TextAreaTagHelper$instance extends TagHelper, ITagHelper {
-    get for_(): ModelExpression | undefined;
-    set for_(value: ModelExpression);
+    get for(): ModelExpression | undefined;
+    set for(value: ModelExpression);
     name: string;
     readonly order: int;
     viewContext: ViewContext;
@@ -589,8 +589,8 @@ export type TextAreaTagHelper = TextAreaTagHelper$instance & __TextAreaTagHelper
 
 
 export interface ValidationMessageTagHelper$instance extends TagHelper, ITagHelper {
-    get for_(): ModelExpression | undefined;
-    set for_(value: ModelExpression);
+    get for(): ModelExpression | undefined;
+    set for(value: ModelExpression);
     readonly order: int;
     viewContext: ViewContext;
     init(context: TagHelperContext): void;

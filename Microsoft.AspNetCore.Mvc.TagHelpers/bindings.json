@@ -3828,7 +3828,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "metadataToken": 385876057,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
@@ -4012,7 +4012,7 @@
           }
         },
         {
-          "tsName": "for_",
+          "tsName": "for",
           "isStatic": false,
           "tsSignatureId": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "target": {
@@ -4190,7 +4190,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "metadataToken": 385876066,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
@@ -4304,7 +4304,7 @@
           }
         },
         {
-          "tsName": "for_",
+          "tsName": "for",
           "isStatic": false,
           "tsSignatureId": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "target": {
@@ -5142,7 +5142,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "metadataToken": 385876092,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
@@ -5316,7 +5316,7 @@
           }
         },
         {
-          "tsName": "for_",
+          "tsName": "for",
           "isStatic": false,
           "tsSignatureId": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "target": {
@@ -5930,7 +5930,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876104,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -6170,7 +6170,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -6412,7 +6412,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "metadataToken": 385876123,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
@@ -6554,7 +6554,7 @@
           }
         },
         {
-          "tsName": "for_",
+          "tsName": "for",
           "isStatic": false,
           "tsSignatureId": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "target": {
@@ -6716,7 +6716,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "metadataToken": 385876129,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
@@ -6844,7 +6844,7 @@
           }
         },
         {
-          "tsName": "for_",
+          "tsName": "for",
           "isStatic": false,
           "tsSignatureId": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "target": {
@@ -6982,7 +6982,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper::For:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "clrName": "For",
-          "tsEmitName": "for_",
+          "tsEmitName": "for",
           "metadataToken": 385876134,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
           "normalizedSignature": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
@@ -7096,7 +7096,7 @@
           }
         },
         {
-          "tsName": "for_",
+          "tsName": "for",
           "isStatic": false,
           "tsSignatureId": "For|:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression|static=false|accessor=getset",
           "target": {

@@ -153,8 +153,8 @@ export interface OutputCachePolicyBuilder$instance {
     varyByValue(key: string, value: string): OutputCachePolicyBuilder;
     varyByValue(varyBy: Func<HttpContext, KeyValuePair<System_Internal.String, System_Internal.String>>): OutputCachePolicyBuilder;
     varyByValue(varyBy: Func<HttpContext, CancellationToken, ValueTask<KeyValuePair<System_Internal.String, System_Internal.String>>>): OutputCachePolicyBuilder;
-    with_(predicate: Func<OutputCacheContext, CancellationToken, ValueTask<System_Internal.Boolean>>): OutputCachePolicyBuilder;
-    with_(predicate: Func<OutputCacheContext, System_Internal.Boolean>): OutputCachePolicyBuilder;
+    with(predicate: Func<OutputCacheContext, CancellationToken, ValueTask<System_Internal.Boolean>>): OutputCachePolicyBuilder;
+    with(predicate: Func<OutputCacheContext, System_Internal.Boolean>): OutputCachePolicyBuilder;
 }
 
 
