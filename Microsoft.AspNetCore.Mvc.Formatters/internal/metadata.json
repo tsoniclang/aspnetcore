@@ -324,7 +324,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.MediaType::Type:Microsoft.Extensions.Primitives.StringSegment",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Microsoft.Extensions.Primitives.StringSegment|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1752,7 +1752,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext::Object:System.Object",
           "clrName": "Object",
-          "tsEmitName": "object_",
+          "tsEmitName": "object",
           "normalizedSignature": "Object|:System.Object|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

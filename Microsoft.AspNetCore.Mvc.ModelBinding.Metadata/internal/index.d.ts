@@ -18,10 +18,10 @@ import type { JsonNamingPolicy } from "@tsonic/dotnet/System.Text.Json.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum ModelMetadataKind {
-    type_ = 0,
+    type = 0,
     property = 1,
     parameter = 2,
-    constructor_ = 3
+    constructor = 3
 }
 
 
@@ -85,7 +85,7 @@ export interface ModelMetadataIdentity$instance {
 
 export const ModelMetadataIdentity: {
     new(): ModelMetadataIdentity;
-    forConstructor(constructor_: ConstructorInfo, modelType: Type): ModelMetadataIdentity;
+    forConstructor(constructor: ConstructorInfo, modelType: Type): ModelMetadataIdentity;
     forParameter(parameter: ParameterInfo, modelType: Type): ModelMetadataIdentity;
     forParameter(parameter: ParameterInfo): ModelMetadataIdentity;
     forProperty(propertyInfo: PropertyInfo, modelType: Type, containerType: Type): ModelMetadataIdentity;
@@ -140,13 +140,13 @@ export type BindingMetadataProviderContext = BindingMetadataProviderContext$inst
 
 export interface BindingSourceMetadataProvider$instance extends IMetadataDetailsProvider {
     readonly bindingSource: BindingSource | undefined;
-    readonly type_: Type;
+    readonly type: Type;
     createBindingMetadata(context: BindingMetadataProviderContext): void;
 }
 
 
 export const BindingSourceMetadataProvider: {
-    new(type_: Type, bindingSource: BindingSource): BindingSourceMetadataProvider;
+    new(type: Type, bindingSource: BindingSource): BindingSourceMetadataProvider;
 };
 
 
@@ -394,7 +394,7 @@ export interface ExcludeBindingMetadataProvider$instance extends IMetadataDetail
 
 
 export const ExcludeBindingMetadataProvider: {
-    new(type_: Type): ExcludeBindingMetadataProvider;
+    new(type: Type): ExcludeBindingMetadataProvider;
 };
 
 
@@ -487,7 +487,7 @@ export const ValidationMetadataProviderContext: {
 export type ValidationMetadataProviderContext = ValidationMetadataProviderContext$instance;
 
 export abstract class MetadataDetailsProviderExtensions$instance {
-    static removeType(list: IList<IMetadataDetailsProvider>, type_: Type): void;
+    static removeType(list: IList<IMetadataDetailsProvider>, type: Type): void;
     static removeType<TMetadataDetailsProvider extends IMetadataDetailsProvider>(list: IList<IMetadataDetailsProvider>): void;
 }
 

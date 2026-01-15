@@ -109,7 +109,7 @@ export abstract class ApplicationModelConventionExtensions$instance {
     static add(conventions: IList<IApplicationModelConvention>, controllerModelConvention: IControllerModelConvention): void;
     static add(conventions: IList<IApplicationModelConvention>, parameterModelConvention: IParameterModelBaseConvention): void;
     static add(conventions: IList<IApplicationModelConvention>, parameterModelConvention: IParameterModelConvention): void;
-    static removeType(list: IList<IApplicationModelConvention>, type_: Type): void;
+    static removeType(list: IList<IApplicationModelConvention>, type: Type): void;
     static removeType<TApplicationModelConvention extends IApplicationModelConvention>(list: IList<IApplicationModelConvention>): void;
 }
 

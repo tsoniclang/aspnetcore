@@ -6367,7 +6367,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PropertiesSerializer::Default:Microsoft.AspNetCore.Authentication.PropertiesSerializer",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876027,
           "canonicalSignature": ":Microsoft.AspNetCore.Authentication.PropertiesSerializer",
           "normalizedSignature": "Default|:Microsoft.AspNetCore.Authentication.PropertiesSerializer|static=true|accessor=get",
@@ -6457,7 +6457,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.AspNetCore.Authentication.PropertiesSerializer|static=true|accessor=get",
           "target": {
@@ -9771,7 +9771,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.TicketSerializer::Default:Microsoft.AspNetCore.Authentication.TicketSerializer",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876045,
           "canonicalSignature": ":Microsoft.AspNetCore.Authentication.TicketSerializer",
           "normalizedSignature": "Default|:Microsoft.AspNetCore.Authentication.TicketSerializer|static=true|accessor=get",
@@ -9861,7 +9861,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.AspNetCore.Authentication.TicketSerializer|static=true|accessor=get",
           "target": {

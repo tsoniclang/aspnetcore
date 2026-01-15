@@ -1594,7 +1594,7 @@
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::Get(TKey,Func_2):RateLimitPartition_1",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(TKey,Func_2):RateLimitPartition_1|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",

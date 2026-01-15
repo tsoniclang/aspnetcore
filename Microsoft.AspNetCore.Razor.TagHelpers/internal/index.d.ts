@@ -155,7 +155,7 @@ export interface NullHtmlEncoder$instance extends HtmlEncoder {
 
 export const NullHtmlEncoder: {
     new(): NullHtmlEncoder;
-    readonly default_: NullHtmlEncoder;
+    readonly default: NullHtmlEncoder;
 };
 
 

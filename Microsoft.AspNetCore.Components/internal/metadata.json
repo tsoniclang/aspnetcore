@@ -84,7 +84,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.RestoreBehavior::DefaultMicrosoft.AspNetCore.Components.RestoreBehavior",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.AspNetCore.Components.RestoreBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1623,7 +1623,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.BindInputElementAttribute::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2373,7 +2373,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.DynamicComponent::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",

@@ -701,7 +701,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.RenderTree.RenderTreeEdit::TypeMicrosoft.AspNetCore.Components.RenderTree.RenderTreeEditType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|Microsoft.AspNetCore.Components.RenderTree.RenderTreeEditType|static=false|const=false",
           "isStatic": false,
           "isReadOnly": true,

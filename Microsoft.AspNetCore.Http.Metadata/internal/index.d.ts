@@ -140,7 +140,7 @@ export interface IParameterBindingMetadata$instance {
 export type IParameterBindingMetadata = IParameterBindingMetadata$instance;
 
 export interface IProducesResponseTypeMetadata$instance {
-    readonly type_: Type;
+    readonly type: Type;
     readonly statusCode: int;
     readonly description: string;
     readonly contentTypes: IEnumerable<System_Internal.String>;
@@ -185,7 +185,7 @@ export interface AcceptsMetadata$instance {
 
 
 export const AcceptsMetadata: {
-    new(contentTypes: string[], type_: Type, isOptional: boolean): AcceptsMetadata;
+    new(contentTypes: string[], type: Type, isOptional: boolean): AcceptsMetadata;
 };
 
 

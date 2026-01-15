@@ -406,7 +406,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPart::Default:System.Object",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:System.Object|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

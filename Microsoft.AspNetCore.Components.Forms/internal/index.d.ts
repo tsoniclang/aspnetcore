@@ -343,7 +343,7 @@ export type InputCheckbox = InputCheckbox$instance & __InputCheckbox$views;
 export interface InputDate_1$instance<TValue> extends InputBase_1$instance<TValue> {
     readonly element: Nullable<ElementReference>;
     parsingErrorMessage: string;
-    type_: InputDateType;
+    type: InputDateType;
     attach(renderHandle: RenderHandle): void;
     handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     onAfterRenderAsync(): Task;
@@ -594,8 +594,8 @@ export type RemoteBrowserFileStreamOptions = RemoteBrowserFileStreamOptions$inst
 export interface ValidationMessage_1$instance<TValue> extends ComponentBase {
     get additionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
     set additionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    get for_(): Expression<Func<TValue>> | undefined;
-    set for_(value: Expression<Func<TValue>>);
+    get for(): Expression<Func<TValue>> | undefined;
+    set for(value: Expression<Func<TValue>>);
     attach(renderHandle: RenderHandle): void;
     handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     onAfterRenderAsync(): Task;

@@ -2695,7 +2695,7 @@
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::Get(TKey,Func_2):RateLimitPartition_1",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663470,
           "canonicalSignature": "(TKey,Func_2):RateLimitPartition_1",
           "normalizedSignature": "Get|(TKey,Func_2):RateLimitPartition_1|static=true",
@@ -2783,7 +2783,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(TKey,Func_2):RateLimitPartition_1|static=true",
           "target": {

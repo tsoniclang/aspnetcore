@@ -123,7 +123,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.ClaimData::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

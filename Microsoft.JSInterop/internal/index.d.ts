@@ -15,7 +15,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum JSCallResultType {
-    default_ = 0,
+    default = 0,
     jsObjectReference = 1,
     jsStreamReference = 2,
     jsVoidResult = 3

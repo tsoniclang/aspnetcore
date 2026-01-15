@@ -709,7 +709,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::DefaultEndpointMetadataComparer\u00601",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67109283,
           "normalizedSignature": "Default|EndpointMetadataComparer\u00601|static=true|const=false",
           "isStatic": true,
@@ -734,7 +734,7 @@
       ],
       "exposedFields": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|EndpointMetadataComparer\u00601|static=true|const=false",
           "target": {

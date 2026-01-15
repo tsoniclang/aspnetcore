@@ -253,7 +253,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::NullSystem.Formats.Cbor.CborReaderState",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "normalizedSignature": "Null|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -262,7 +262,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborReaderState::BooleanSystem.Formats.Cbor.CborReaderState",
           "clrName": "Boolean",
-          "tsEmitName": "boolean_",
+          "tsEmitName": "boolean",
           "normalizedSignature": "Boolean|System.Formats.Cbor.CborReaderState|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -306,7 +306,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::FalseSystem.Formats.Cbor.CborSimpleValue",
           "clrName": "False",
-          "tsEmitName": "false_",
+          "tsEmitName": "false",
           "normalizedSignature": "False|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -315,7 +315,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::TrueSystem.Formats.Cbor.CborSimpleValue",
           "clrName": "True",
-          "tsEmitName": "true_",
+          "tsEmitName": "true",
           "normalizedSignature": "True|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -324,7 +324,7 @@
         {
           "stableId": "System.Formats.Cbor:System.Formats.Cbor.CborSimpleValue::NullSystem.Formats.Cbor.CborSimpleValue",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "normalizedSignature": "Null|System.Formats.Cbor.CborSimpleValue|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

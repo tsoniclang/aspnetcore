@@ -345,7 +345,7 @@ export const ValidatorItem: {
 export type ValidatorItem = ValidatorItem$instance;
 
 export abstract class ModelValidatorProviderExtensions$instance {
-    static removeType(list: IList<IModelValidatorProvider>, type_: Type): void;
+    static removeType(list: IList<IModelValidatorProvider>, type: Type): void;
     static removeType<TModelValidatorProvider extends IModelValidatorProvider>(list: IList<IModelValidatorProvider>): void;
 }
 

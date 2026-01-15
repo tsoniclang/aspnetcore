@@ -871,7 +871,7 @@
         {
           "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::With(System.Func_3[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "clrName": "With",
-          "tsEmitName": "with_",
+          "tsEmitName": "with",
           "normalizedSignature": "With|(System.Func_3[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -887,7 +887,7 @@
         {
           "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::With(System.Func_2[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "clrName": "With",
-          "tsEmitName": "with_",
+          "tsEmitName": "with",
           "normalizedSignature": "With|(System.Func_2[[Microsoft.AspNetCore.OutputCaching.OutputCacheContext,Microsoft.AspNetCore.OutputCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

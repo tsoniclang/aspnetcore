@@ -270,7 +270,7 @@ export abstract class PartitionedRateLimiter$instance {
 export type PartitionedRateLimiter = PartitionedRateLimiter$instance;
 
 export abstract class RateLimitPartition$instance {
-    static get_<TKey>(partitionKey: TKey, factory: Func<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
+    static get<TKey>(partitionKey: TKey, factory: Func<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
     static getConcurrencyLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, ConcurrencyLimiterOptions>): RateLimitPartition_1<TKey>;
     static getFixedWindowLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, FixedWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
     static getNoLimiter<TKey>(partitionKey: TKey): RateLimitPartition_1<TKey>;

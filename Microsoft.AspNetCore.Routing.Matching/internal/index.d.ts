@@ -126,7 +126,7 @@ export interface EndpointMetadataComparer_1$instance<TMetadata> {
 
 
 export const EndpointMetadataComparer_1: {
-    readonly default_: unknown;
+    readonly default: unknown;
 };
 
 

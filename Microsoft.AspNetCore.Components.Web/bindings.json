@@ -90,7 +90,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.ClipboardEventArgs::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876024,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -118,7 +118,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -322,7 +322,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.DataTransferItem::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876031,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -360,7 +360,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -601,7 +601,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -961,7 +961,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.ErrorEventArgs::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876038,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -1029,7 +1029,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -1062,7 +1062,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.FocusEventArgs::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876039,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -1090,7 +1090,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -2298,7 +2298,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.KeyboardEventArgs::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876048,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -2420,7 +2420,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -2701,7 +2701,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.MouseEventArgs::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876067,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -2899,7 +2899,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -3564,7 +3564,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -3639,7 +3639,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.ProgressEventArgs::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876079,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -3697,7 +3697,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -3842,7 +3842,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.TouchEventArgs::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876088,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -3950,7 +3950,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -4468,7 +4468,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {

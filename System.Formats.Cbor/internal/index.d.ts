@@ -42,16 +42,16 @@ export enum CborReaderState {
     halfPrecisionFloat = 15,
     singlePrecisionFloat = 16,
     doublePrecisionFloat = 17,
-    null_ = 18,
-    boolean_ = 19,
+    null = 18,
+    boolean = 19,
     finished = 20
 }
 
 
 export enum CborSimpleValue {
-    false_ = 20,
-    true_ = 21,
-    null_ = 22,
+    false = 20,
+    true = 21,
+    null = 22,
     undefined = 23
 }
 

@@ -20,7 +20,7 @@ import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible,
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum ApiConventionNameMatchBehavior {
-    any_ = 0,
+    any = 0,
     exact = 1,
     prefix = 2,
     suffix = 3
@@ -28,13 +28,13 @@ export enum ApiConventionNameMatchBehavior {
 
 
 export enum ApiConventionTypeMatchBehavior {
-    any_ = 0,
+    any = 0,
     assignableFrom = 1
 }
 
 
 export interface IApiDefaultResponseMetadataProvider$instance extends IApiResponseMetadataProvider, IFilterMetadata {
-    readonly type_: Type;
+    readonly type: Type;
     readonly description: string;
     readonly statusCode: int;
     setContentTypes(contentTypes: MediaTypeCollection): void;
@@ -91,7 +91,7 @@ export interface IApiRequestMetadataProvider$instance extends Microsoft_AspNetCo
 export type IApiRequestMetadataProvider = IApiRequestMetadataProvider$instance;
 
 export interface IApiResponseMetadataProvider$instance extends IFilterMetadata {
-    readonly type_: Type;
+    readonly type: Type;
     readonly description: string;
     readonly statusCode: int;
     setContentTypes(contentTypes: MediaTypeCollection): void;
@@ -234,7 +234,7 @@ export interface ApiParameterDescription$instance {
     get routeInfo(): ApiParameterRouteInfo | undefined;
     set routeInfo(value: ApiParameterRouteInfo);
     source: BindingSource;
-    type_: Type;
+    type: Type;
 }
 
 
@@ -292,7 +292,7 @@ export interface ApiResponseType$instance {
     isDefaultResponse: boolean;
     modelMetadata: ModelMetadata;
     statusCode: int;
-    type_: Type;
+    type: Type;
 }
 
 

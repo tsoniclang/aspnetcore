@@ -30,7 +30,7 @@ export interface IJSComponentConfiguration$instance {
 export type IJSComponentConfiguration = IJSComponentConfiguration$instance;
 
 export interface ClipboardEventArgs$instance extends EventArgs {
-    type_: string;
+    type: string;
 }
 
 
@@ -60,7 +60,7 @@ export type DataTransfer = DataTransfer$instance;
 
 export interface DataTransferItem$instance {
     kind: string;
-    type_: string;
+    type: string;
 }
 
 
@@ -112,7 +112,7 @@ export interface ErrorEventArgs$instance extends EventArgs {
     lineno: int;
     get message(): string | undefined;
     set message(value: string);
-    type_: string;
+    type: string;
 }
 
 
@@ -124,7 +124,7 @@ export const ErrorEventArgs: {
 export type ErrorEventArgs = ErrorEventArgs$instance;
 
 export interface FocusEventArgs$instance extends EventArgs {
-    type_: string;
+    type: string;
 }
 
 
@@ -266,7 +266,7 @@ export interface KeyboardEventArgs$instance extends EventArgs {
     metaKey: boolean;
     repeat: boolean;
     shiftKey: boolean;
-    type_: string;
+    type: string;
 }
 
 
@@ -295,7 +295,7 @@ export interface MouseEventArgs$instance extends EventArgs {
     screenX: double;
     screenY: double;
     shiftKey: boolean;
-    type_: string;
+    type: string;
 }
 
 
@@ -354,7 +354,7 @@ export interface ProgressEventArgs$instance extends EventArgs {
     lengthComputable: boolean;
     loaded: long;
     total: long;
-    type_: string;
+    type: string;
 }
 
 
@@ -374,7 +374,7 @@ export interface TouchEventArgs$instance extends EventArgs {
     shiftKey: boolean;
     targetTouches: TouchPoint[];
     touches: TouchPoint[];
-    type_: string;
+    type: string;
 }
 
 

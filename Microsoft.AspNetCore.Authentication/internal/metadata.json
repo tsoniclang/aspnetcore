@@ -3961,7 +3961,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.PropertiesSerializer::Default:Microsoft.AspNetCore.Authentication.PropertiesSerializer",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Microsoft.AspNetCore.Authentication.PropertiesSerializer|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -5740,7 +5740,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.TicketSerializer::Default:Microsoft.AspNetCore.Authentication.TicketSerializer",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Microsoft.AspNetCore.Authentication.TicketSerializer|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

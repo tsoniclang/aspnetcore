@@ -141,7 +141,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.ComponentTypeMetadata::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876053,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -169,7 +169,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -383,7 +383,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Endpoints.RootComponentMetadata::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876073,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -411,7 +411,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {

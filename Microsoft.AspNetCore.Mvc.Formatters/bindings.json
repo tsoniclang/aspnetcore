@@ -368,7 +368,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.MediaType::Type:Microsoft.Extensions.Primitives.StringSegment",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876729,
           "canonicalSignature": ":Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "Type|:Microsoft.Extensions.Primitives.StringSegment|static=false|accessor=get",
@@ -624,7 +624,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Microsoft.Extensions.Primitives.StringSegment|static=false|accessor=get",
           "target": {
@@ -2652,7 +2652,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext::Object:System.Object",
           "clrName": "Object",
-          "tsEmitName": "object_",
+          "tsEmitName": "object",
           "metadataToken": 385876200,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Object|:System.Object|static=false|accessor=get",
@@ -2713,7 +2713,7 @@
           }
         },
         {
-          "tsName": "object_",
+          "tsName": "object",
           "isStatic": false,
           "tsSignatureId": "Object|:System.Object|static=false|accessor=get",
           "target": {
@@ -2813,7 +2813,7 @@
           }
         },
         {
-          "tsName": "object_",
+          "tsName": "object",
           "isStatic": false,
           "tsSignatureId": "Object|:System.Object|static=false|accessor=get",
           "target": {

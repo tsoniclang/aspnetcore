@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind::TypeMicrosoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 67109032,
           "normalizedSignature": "Type|Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind|static=true|const=true",
           "isStatic": true,
@@ -57,7 +57,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind::ConstructorMicrosoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "clrName": "Constructor",
-          "tsEmitName": "constructor_",
+          "tsEmitName": "constructor",
           "metadataToken": 67109035,
           "normalizedSignature": "Constructor|Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind|static=true|const=true",
           "isStatic": true,
@@ -80,7 +80,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": true,
           "tsSignatureId": "Type|Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind|static=true|const=true",
           "target": {
@@ -110,7 +110,7 @@
           }
         },
         {
-          "tsName": "constructor_",
+          "tsName": "constructor",
           "isStatic": true,
           "tsSignatureId": "Constructor|Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind|static=true|const=true",
           "target": {
@@ -1213,7 +1213,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingSourceMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876407,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -1277,7 +1277,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {

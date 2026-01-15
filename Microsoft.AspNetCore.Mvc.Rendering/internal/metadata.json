@@ -127,7 +127,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.Rendering.FormMethod::GetMicrosoft.AspNetCore.Mvc.Rendering.FormMethod",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|Microsoft.AspNetCore.Mvc.Rendering.FormMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -224,7 +224,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.Rendering.RenderMode::StaticMicrosoft.AspNetCore.Mvc.Rendering.RenderMode",
           "clrName": "Static",
-          "tsEmitName": "static_",
+          "tsEmitName": "static",
           "normalizedSignature": "Static|Microsoft.AspNetCore.Mvc.Rendering.RenderMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

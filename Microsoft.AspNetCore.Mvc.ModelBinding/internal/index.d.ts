@@ -39,13 +39,13 @@ import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extens
 
 export enum BindingBehavior {
     optional = 0,
-    never_ = 1,
+    never = 1,
     required = 2
 }
 
 
 export enum EmptyBodyBehavior {
-    default_ = 0,
+    default = 0,
     allow = 1,
     disallow = 2
 }
@@ -760,8 +760,8 @@ export const ModelAttributes: {
     getAttributesForParameter(parameterInfo: ParameterInfo, modelType: Type): ModelAttributes;
     getAttributesForParameter(parameterInfo: ParameterInfo): ModelAttributes;
     getAttributesForProperty(containerType: Type, property: PropertyInfo, modelType: Type): ModelAttributes;
-    getAttributesForProperty(type_: Type, property: PropertyInfo): ModelAttributes;
-    getAttributesForType(type_: Type): ModelAttributes;
+    getAttributesForProperty(type: Type, property: PropertyInfo): ModelAttributes;
+    getAttributesForType(type: Type): ModelAttributes;
 };
 
 
@@ -955,7 +955,7 @@ export type ModelMetadata = ModelMetadata$instance & __ModelMetadata$views;
 
 
 export interface ModelMetadataProvider$instance {
-    getMetadataForConstructor(constructor_: ConstructorInfo, modelType: Type): ModelMetadata;
+    getMetadataForConstructor(constructor: ConstructorInfo, modelType: Type): ModelMetadata;
     getMetadataForParameter(parameter: ParameterInfo): ModelMetadata;
     getMetadataForParameter(parameter: ParameterInfo, modelType: Type): ModelMetadata;
     getMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
@@ -1184,13 +1184,13 @@ export type RouteValueProviderFactory = RouteValueProviderFactory$instance & __R
 
 export interface SuppressChildValidationMetadataProvider$instance extends IMetadataDetailsProvider {
     readonly fullTypeName: string | undefined;
-    readonly type_: Type;
+    readonly type: Type;
     createValidationMetadata(context: ValidationMetadataProviderContext): void;
 }
 
 
 export const SuppressChildValidationMetadataProvider: {
-    new(type_: Type): SuppressChildValidationMetadataProvider;
+    new(type: Type): SuppressChildValidationMetadataProvider;
     new(fullTypeName: string): SuppressChildValidationMetadataProvider;
 };
 
@@ -1274,7 +1274,7 @@ export const ValueProviderFactoryContext: {
 export type ValueProviderFactoryContext = ValueProviderFactoryContext$instance;
 
 export abstract class ModelBinderProviderExtensions$instance {
-    static removeType(list: IList__System_Collections_Generic<IModelBinderProvider>, type_: Type): void;
+    static removeType(list: IList__System_Collections_Generic<IModelBinderProvider>, type: Type): void;
     static removeType<TModelBinderProvider extends IModelBinderProvider>(list: IList__System_Collections_Generic<IModelBinderProvider>): void;
 }
 
@@ -1309,7 +1309,7 @@ export abstract class ModelStateDictionaryExtensions$instance {
 export type ModelStateDictionaryExtensions = ModelStateDictionaryExtensions$instance;
 
 export abstract class ValueProviderFactoryExtensions$instance {
-    static removeType(list: IList__System_Collections_Generic<IValueProviderFactory>, type_: Type): void;
+    static removeType(list: IList__System_Collections_Generic<IValueProviderFactory>, type: Type): void;
     static removeType<TValueProviderFactory extends IValueProviderFactory>(list: IList__System_Collections_Generic<IValueProviderFactory>): void;
 }
 

@@ -141,7 +141,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876006,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -188,7 +188,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -238,7 +238,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876009,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {

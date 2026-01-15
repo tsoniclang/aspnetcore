@@ -34,7 +34,7 @@ export enum PersistedStateSerializationMode {
 
 
 export enum RestoreBehavior {
-    default_ = 0,
+    default = 0,
     skipInitialValue = 1,
     skipLastSnapshot = 2
 }
@@ -316,13 +316,13 @@ export interface BindInputElementAttribute$instance extends Attribute {
     readonly format: string | undefined;
     readonly isInvariantCulture: boolean;
     readonly suffix: string | undefined;
-    readonly type_: string;
+    readonly type: string;
     readonly valueAttribute: string;
 }
 
 
 export const BindInputElementAttribute: {
-    new(type_: string, suffix: string, valueAttribute: string, changeAttribute: string, isInvariantCulture: boolean, format: string): BindInputElementAttribute;
+    new(type: string, suffix: string, valueAttribute: string, changeAttribute: string, isInvariantCulture: boolean, format: string): BindInputElementAttribute;
 };
 
 
@@ -455,7 +455,7 @@ export type Dispatcher = Dispatcher$instance;
 export interface DynamicComponent$instance {
     readonly instance: unknown;
     parameters: IDictionary<System_Internal.String, unknown>;
-    type_: Type;
+    type: Type;
     attach(renderHandle: RenderHandle): void;
     setParametersAsync(parameters: ParameterView): Task;
 }

@@ -31,7 +31,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind::TypeMicrosoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -58,7 +58,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind::ConstructorMicrosoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "clrName": "Constructor",
-          "tsEmitName": "constructor_",
+          "tsEmitName": "constructor",
           "normalizedSignature": "Constructor|Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -835,7 +835,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingSourceMetadataProvider::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

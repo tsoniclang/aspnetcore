@@ -60,7 +60,7 @@ export interface IApplicationBuilder$instance {
     readonly serverFeatures: IFeatureCollection;
     readonly properties: IDictionary<System_Internal.String, unknown | undefined>;
     build(): RequestDelegate;
-    new_(): IApplicationBuilder;
+    new(): IApplicationBuilder;
     use(middleware: Func<RequestDelegate, RequestDelegate>): IApplicationBuilder;
 }
 
@@ -88,7 +88,7 @@ export interface ApplicationBuilder$instance {
     readonly properties: IDictionary<System_Internal.String, unknown | undefined>;
     readonly serverFeatures: IFeatureCollection;
     build(): RequestDelegate;
-    new_(): IApplicationBuilder;
+    new(): IApplicationBuilder;
     use(middleware: Func<RequestDelegate, RequestDelegate>): IApplicationBuilder;
 }
 
@@ -110,7 +110,7 @@ export type ApplicationBuilder = ApplicationBuilder$instance & __ApplicationBuil
 
 export interface ComponentEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(finalConvention: Action<EndpointBuilder>): void;
+    finally(finalConvention: Action<EndpointBuilder>): void;
 }
 
 
@@ -177,7 +177,7 @@ export type ConfigureWebHostBuilder = ConfigureWebHostBuilder$instance & __Confi
 
 export interface ConnectionEndpointRouteBuilder$instance {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(finalConvention: Action<EndpointBuilder>): void;
+    finally(finalConvention: Action<EndpointBuilder>): void;
 }
 
 
@@ -197,7 +197,7 @@ export type ConnectionEndpointRouteBuilder = ConnectionEndpointRouteBuilder$inst
 
 export interface ControllerActionEndpointConventionBuilder$instance {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(finalConvention: Action<EndpointBuilder>): void;
+    finally(finalConvention: Action<EndpointBuilder>): void;
 }
 
 
@@ -369,7 +369,7 @@ export type HttpMethodOverrideOptions = HttpMethodOverrideOptions$instance;
 
 export interface HubEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(finalConvention: Action<EndpointBuilder>): void;
+    finally(finalConvention: Action<EndpointBuilder>): void;
 }
 
 
@@ -419,7 +419,7 @@ export type IISServerOptions = IISServerOptions$instance;
 
 export interface PageActionEndpointConventionBuilder$instance {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(finalConvention: Action<EndpointBuilder>): void;
+    finally(finalConvention: Action<EndpointBuilder>): void;
 }
 
 
@@ -439,7 +439,7 @@ export type PageActionEndpointConventionBuilder = PageActionEndpointConventionBu
 
 export interface RazorComponentsEndpointConventionBuilder$instance {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(finallyConvention: Action<EndpointBuilder>): void;
+    finally(finallyConvention: Action<EndpointBuilder>): void;
 }
 
 
@@ -483,7 +483,7 @@ export type RequestLocalizationOptions = RequestLocalizationOptions$instance;
 
 export interface RouteHandlerBuilder$instance {
     add(convention: Action<EndpointBuilder>): void;
-    finally_(finalConvention: Action<EndpointBuilder>): void;
+    finally(finalConvention: Action<EndpointBuilder>): void;
 }
 
 

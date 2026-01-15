@@ -1499,7 +1499,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder::Default:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder",
           "normalizedSignature": "Default|:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder|static=true|accessor=get",
@@ -1592,7 +1592,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder|static=true|accessor=get",
           "target": {

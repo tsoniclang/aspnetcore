@@ -306,8 +306,8 @@ export const DefaultOutputFormatterSelector: {
 export type DefaultOutputFormatterSelector = DefaultOutputFormatterSelector$instance;
 
 export interface DefaultProblemDetailsFactory$instance extends ProblemDetailsFactory {
-    createProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, detail?: string, instance?: string): ProblemDetails;
-    createValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, detail?: string, instance?: string): ValidationProblemDetails;
+    createProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
+    createValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
 }
 
 
@@ -483,8 +483,8 @@ export type PhysicalFileResultExecutor = PhysicalFileResultExecutor$instance & _
 
 
 export interface ProblemDetailsFactory$instance {
-    createProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, detail?: string, instance?: string): ProblemDetails;
-    createValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, detail?: string, instance?: string): ValidationProblemDetails;
+    createProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
+    createValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
 }
 
 

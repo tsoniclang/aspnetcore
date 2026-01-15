@@ -1512,7 +1512,7 @@ export interface TokenProviderDescriptor$instance {
 
 
 export const TokenProviderDescriptor: {
-    new(type_: Type): TokenProviderDescriptor;
+    new(type: Type): TokenProviderDescriptor;
 };
 
 
@@ -1686,7 +1686,7 @@ export interface UserManager_1$instance<TUser> {
     generateConcurrencyStampAsync(user: TUser): Task<System_Internal.String>;
     generateEmailConfirmationTokenAsync(user: TUser): Task<System_Internal.String>;
     generateNewAuthenticatorKey(): string;
-    generateNewTwoFactorRecoveryCodesAsync(user: TUser, number_: int): Task<IEnumerable<System_Internal.String> | undefined>;
+    generateNewTwoFactorRecoveryCodesAsync(user: TUser, number: int): Task<IEnumerable<System_Internal.String> | undefined>;
     generatePasswordResetTokenAsync(user: TUser): Task<System_Internal.String>;
     generateTwoFactorTokenAsync(user: TUser, tokenProvider: string): Task<System_Internal.String>;
     generateUserTokenAsync(user: TUser, tokenProvider: string, purpose: string): Task<System_Internal.String>;
@@ -1987,7 +1987,7 @@ export abstract class IdentityCookieAuthenticationBuilderExtensions$instance {
 export type IdentityCookieAuthenticationBuilderExtensions = IdentityCookieAuthenticationBuilderExtensions$instance;
 
 export abstract class IdentitySchemaVersions$instance {
-    static readonly default_: Version;
+    static readonly default: Version;
     static readonly version1: Version;
     static readonly version2: Version;
     static readonly version3: Version;

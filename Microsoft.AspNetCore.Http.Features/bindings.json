@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.HttpsCompressionMode::DefaultMicrosoft.AspNetCore.Http.Features.HttpsCompressionMode",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108886,
           "normalizedSignature": "Default|Microsoft.AspNetCore.Http.Features.HttpsCompressionMode|static=true|const=true",
           "isStatic": true,
@@ -69,7 +69,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.AspNetCore.Http.Features.HttpsCompressionMode|static=true|const=true",
           "target": {
@@ -188,7 +188,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.IFeatureCollection::Get():TFeature",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663346,
           "canonicalSignature": "():TFeature",
           "normalizedSignature": "Get|():TFeature|static=false",
@@ -202,7 +202,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.IFeatureCollection::Set(TFeature):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663347,
           "canonicalSignature": "(TFeature):System.Void",
           "normalizedSignature": "Set|(TFeature):System.Void|static=false",
@@ -263,7 +263,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|():TFeature|static=false",
           "target": {
@@ -273,7 +273,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(TFeature):System.Void|static=false",
           "target": {
@@ -2661,7 +2661,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureReference\u00601::DefaultFeatureReference\u00601",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108874,
           "normalizedSignature": "Default|FeatureReference\u00601|static=true|const=false",
           "isStatic": true,
@@ -2696,7 +2696,7 @@
       ],
       "exposedFields": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|FeatureReference\u00601|static=true|const=false",
           "target": {
@@ -3036,7 +3036,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureCollection::Get():TFeature",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663320,
           "canonicalSignature": "():TFeature",
           "normalizedSignature": "Get|():TFeature|static=false",
@@ -3050,7 +3050,7 @@
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureCollection::Set(TFeature):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663321,
           "canonicalSignature": "(TFeature):System.Void",
           "normalizedSignature": "Set|(TFeature):System.Void|static=false",
@@ -3208,7 +3208,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|():TFeature|static=false",
           "target": {
@@ -3218,7 +3218,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(TFeature):System.Void|static=false",
           "target": {

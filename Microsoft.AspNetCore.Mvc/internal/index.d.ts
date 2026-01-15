@@ -70,7 +70,7 @@ export enum CompatibilityVersion {
 
 
 export enum ResponseCacheLocation {
-    any_ = 0,
+    any = 0,
     client = 1,
     none = 2
 }
@@ -845,8 +845,8 @@ export interface ControllerBase$instance {
     physicalFile(physicalPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): PhysicalFileResult;
     physicalFile(physicalPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): PhysicalFileResult;
     physicalFile(physicalPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): PhysicalFileResult;
-    problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type_: string): ObjectResult;
-    problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ObjectResult;
+    problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string): ObjectResult;
+    problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ObjectResult;
     redirect(url: string): RedirectResult;
     redirectPermanent(url: string): RedirectResult;
     redirectPermanentPreserveMethod(url: string): RedirectResult;
@@ -920,8 +920,8 @@ export interface ControllerBase$instance {
     validationProblem(descriptor: ValidationProblemDetails): ActionResult;
     validationProblem(modelStateDictionary: ModelStateDictionary): ActionResult;
     validationProblem(): ActionResult;
-    validationProblem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type_: string, modelStateDictionary: ModelStateDictionary): ActionResult;
-    validationProblem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type_?: string, modelStateDictionary?: ModelStateDictionary, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ActionResult;
+    validationProblem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, modelStateDictionary: ModelStateDictionary): ActionResult;
+    validationProblem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, modelStateDictionary?: ModelStateDictionary, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ActionResult;
 }
 
 
@@ -1633,7 +1633,7 @@ export interface ModelMetadataTypeAttribute$instance extends Attribute {
 
 
 export const ModelMetadataTypeAttribute: {
-    new(type_: Type): ModelMetadataTypeAttribute;
+    new(type: Type): ModelMetadataTypeAttribute;
 };
 
 
@@ -1923,7 +1923,7 @@ export interface ProblemDetails$instance {
     status: Nullable<System_Internal.Int32>;
     get title(): string | undefined;
     set title(value: string);
-    type_: string;
+    type: string;
 }
 
 
@@ -1939,7 +1939,7 @@ export interface ProducesAttribute$instance extends Attribute, IFilterMetadata {
     description: string;
     order: int;
     readonly statusCode: int;
-    type_: Type;
+    type: Type;
     onResultExecuted(context: ResultExecutedContext): void;
     onResultExecuting(context: ResultExecutingContext): void;
     setContentTypes(contentTypes: MediaTypeCollection): void;
@@ -1947,7 +1947,7 @@ export interface ProducesAttribute$instance extends Attribute, IFilterMetadata {
 
 
 export const ProducesAttribute: {
-    new(type_: Type): ProducesAttribute;
+    new(type: Type): ProducesAttribute;
     new(contentType: string, additionalContentTypes: string[]): ProducesAttribute;
 };
 
@@ -1987,13 +1987,13 @@ export type ProducesAttribute_1<T> = ProducesAttribute_1$instance<T> & __Produce
 export interface ProducesDefaultResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
     description: string;
     readonly statusCode: int;
-    readonly type_: Type;
+    readonly type: Type;
 }
 
 
 export const ProducesDefaultResponseTypeAttribute: {
     new(): ProducesDefaultResponseTypeAttribute;
-    new(type_: Type): ProducesDefaultResponseTypeAttribute;
+    new(type: Type): ProducesDefaultResponseTypeAttribute;
 };
 
 
@@ -2005,12 +2005,12 @@ export type ProducesDefaultResponseTypeAttribute = ProducesDefaultResponseTypeAt
 
 
 export interface ProducesErrorResponseTypeAttribute$instance extends Attribute {
-    readonly type_: Type;
+    readonly type: Type;
 }
 
 
 export const ProducesErrorResponseTypeAttribute: {
-    new(type_: Type): ProducesErrorResponseTypeAttribute;
+    new(type: Type): ProducesErrorResponseTypeAttribute;
 };
 
 
@@ -2019,14 +2019,14 @@ export type ProducesErrorResponseTypeAttribute = ProducesErrorResponseTypeAttrib
 export interface ProducesResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
     description: string;
     statusCode: int;
-    type_: Type;
+    type: Type;
 }
 
 
 export const ProducesResponseTypeAttribute: {
     new(statusCode: int): ProducesResponseTypeAttribute;
-    new(type_: Type, statusCode: int): ProducesResponseTypeAttribute;
-    new(type_: Type, statusCode: int, contentType: string, additionalContentTypes: string[]): ProducesResponseTypeAttribute;
+    new(type: Type, statusCode: int): ProducesResponseTypeAttribute;
+    new(type: Type, statusCode: int, contentType: string, additionalContentTypes: string[]): ProducesResponseTypeAttribute;
 };
 
 
@@ -2382,7 +2382,7 @@ export interface ServiceFilterAttribute$instance extends Attribute, IFilterMetad
 
 
 export const ServiceFilterAttribute: {
-    new(type_: Type): ServiceFilterAttribute;
+    new(type: Type): ServiceFilterAttribute;
 };
 
 
@@ -2526,7 +2526,7 @@ export interface TypeFilterAttribute$instance extends Attribute, IFilterMetadata
 
 
 export const TypeFilterAttribute: {
-    new(type_: Type): TypeFilterAttribute;
+    new(type: Type): TypeFilterAttribute;
 };
 
 
@@ -2812,10 +2812,10 @@ export type VirtualFileResult = VirtualFileResult$instance & __VirtualFileResult
 
 export abstract class DefaultApiConventions$instance {
     static create(model: unknown): void;
-    static delete_(id: unknown): void;
+    static delete(id: unknown): void;
     static edit(id: unknown, model: unknown): void;
     static find(id: unknown): void;
-    static get_(id: unknown): void;
+    static get(id: unknown): void;
     static post(model: unknown): void;
     static put(id: unknown, model: unknown): void;
     static update(id: unknown, model: unknown): void;
