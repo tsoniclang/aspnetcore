@@ -14,14 +14,14 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export abstract class WebHost$instance {
-    static createDefaultBuilder(): IWebHostBuilder;
-    static createDefaultBuilder(args: string[]): IWebHostBuilder;
-    static start(app: RequestDelegate): IWebHost;
-    static start(routeBuilder: Action<IRouteBuilder>): IWebHost;
-    static start(url: string, app: RequestDelegate): IWebHost;
-    static start(url: string, routeBuilder: Action<IRouteBuilder>): IWebHost;
-    static startWith(app: Action<IApplicationBuilder>): IWebHost;
-    static startWith(url: string, app: Action<IApplicationBuilder>): IWebHost;
+    static CreateDefaultBuilder(): IWebHostBuilder;
+    static CreateDefaultBuilder(args: string[]): IWebHostBuilder;
+    static Start(app: RequestDelegate): IWebHost;
+    static Start(routeBuilder: Action<IRouteBuilder>): IWebHost;
+    static Start(url: string, app: RequestDelegate): IWebHost;
+    static Start(url: string, routeBuilder: Action<IRouteBuilder>): IWebHost;
+    static StartWith(app: Action<IApplicationBuilder>): IWebHost;
+    static StartWith(url: string, app: Action<IApplicationBuilder>): IWebHost;
 }
 
 

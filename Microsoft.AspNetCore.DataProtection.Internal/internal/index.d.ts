@@ -10,7 +10,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
 
 export interface IActivator$instance {
-    createInstance(expectedBaseType: Type, implementationTypeName: string): unknown;
+    CreateInstance(expectedBaseType: Type, implementationTypeName: string): unknown;
 }
 
 

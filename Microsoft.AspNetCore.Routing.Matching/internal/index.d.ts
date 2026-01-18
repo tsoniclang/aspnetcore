@@ -20,31 +20,31 @@ import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrSt
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IEndpointComparerPolicy$instance {
-    readonly comparer: IComparer<Endpoint>;
+    readonly Comparer: IComparer<Endpoint>;
 }
 
 
 export type IEndpointComparerPolicy = IEndpointComparerPolicy$instance;
 
 export interface IEndpointSelectorPolicy$instance {
-    appliesToEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
-    applyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
+    AppliesToEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
+    ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
 }
 
 
 export type IEndpointSelectorPolicy = IEndpointSelectorPolicy$instance;
 
 export interface INodeBuilderPolicy$instance {
-    appliesToEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
-    buildJumpTable(exitDestination: int, edges: IReadOnlyList<PolicyJumpTableEdge>): PolicyJumpTable;
-    getEdges(endpoints: IReadOnlyList<Endpoint>): IReadOnlyList<PolicyNodeEdge>;
+    AppliesToEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
+    BuildJumpTable(exitDestination: int, edges: IReadOnlyList<PolicyJumpTableEdge>): PolicyJumpTable;
+    GetEdges(endpoints: IReadOnlyList<Endpoint>): IReadOnlyList<PolicyNodeEdge>;
 }
 
 
 export type INodeBuilderPolicy = INodeBuilderPolicy$instance;
 
 export interface IParameterLiteralNodeMatchingPolicy$instance extends IParameterPolicy {
-    matchesLiteral(parameterName: string, literal: string): boolean;
+    MatchesLiteral(parameterName: string, literal: string): boolean;
 }
 
 
@@ -53,9 +53,9 @@ export interface IParameterLiteralNodeMatchingPolicy$instance extends Microsoft_
 export type IParameterLiteralNodeMatchingPolicy = IParameterLiteralNodeMatchingPolicy$instance;
 
 export interface CandidateState$instance {
-    readonly endpoint: Endpoint;
-    readonly score: int;
-    readonly values: RouteValueDictionary;
+    readonly Endpoint: Endpoint;
+    readonly Score: int;
+    readonly Values: RouteValueDictionary;
 }
 
 
@@ -67,8 +67,8 @@ export const CandidateState: {
 export type CandidateState = CandidateState$instance;
 
 export interface PolicyJumpTableEdge$instance {
-    readonly destination: int;
-    readonly state: unknown;
+    readonly Destination: int;
+    readonly State: unknown;
 }
 
 
@@ -80,8 +80,8 @@ export const PolicyJumpTableEdge: {
 export type PolicyJumpTableEdge = PolicyJumpTableEdge$instance;
 
 export interface PolicyNodeEdge$instance {
-    readonly endpoints: IReadOnlyList<Endpoint>;
-    readonly state: unknown;
+    readonly Endpoints: IReadOnlyList<Endpoint>;
+    readonly State: unknown;
 }
 
 
@@ -93,12 +93,12 @@ export const PolicyNodeEdge: {
 export type PolicyNodeEdge = PolicyNodeEdge$instance;
 
 export interface CandidateSet$instance {
-    readonly count: int;
-    readonly item: CandidateState;
-    expandEndpoint(index: int, endpoints: IReadOnlyList<Endpoint>, comparer: IComparer<Endpoint>): void;
-    isValidCandidate(index: int): boolean;
-    replaceEndpoint(index: int, endpoint: Endpoint, values: RouteValueDictionary): void;
-    setValidity(index: int, value: boolean): void;
+    readonly Count: int;
+    readonly Item: CandidateState;
+    ExpandEndpoint(index: int, endpoints: IReadOnlyList<Endpoint>, comparer: IComparer<Endpoint>): void;
+    IsValidCandidate(index: int): boolean;
+    ReplaceEndpoint(index: int, endpoint: Endpoint, values: RouteValueDictionary): void;
+    SetValidity(index: int, value: boolean): void;
 }
 
 
@@ -121,19 +121,19 @@ export const EndpointMetadataComparer: {
 export type EndpointMetadataComparer = EndpointMetadataComparer$instance;
 
 export interface EndpointMetadataComparer_1$instance<TMetadata> {
-    compare(x: Endpoint, y: Endpoint): int;
+    Compare(x: Endpoint, y: Endpoint): int;
 }
 
 
 export const EndpointMetadataComparer_1: {
-    readonly default: unknown;
+    readonly Default: unknown;
 };
 
 
 export type EndpointMetadataComparer_1<TMetadata> = EndpointMetadataComparer_1$instance<TMetadata>;
 
 export interface EndpointSelector$instance {
-    selectAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
+    SelectAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
 }
 
 
@@ -144,11 +144,11 @@ export const EndpointSelector: {
 export type EndpointSelector = EndpointSelector$instance;
 
 export interface HostMatcherPolicy$instance extends MatcherPolicy {
-    readonly comparer: IComparer<Endpoint>;
-    readonly order: int;
-    applyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
-    buildJumpTable(exitDestination: int, edges: IReadOnlyList<PolicyJumpTableEdge>): PolicyJumpTable;
-    getEdges(endpoints: IReadOnlyList<Endpoint>): IReadOnlyList<PolicyNodeEdge>;
+    readonly Comparer: IComparer<Endpoint>;
+    readonly Order: int;
+    ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
+    BuildJumpTable(exitDestination: int, edges: IReadOnlyList<PolicyJumpTableEdge>): PolicyJumpTable;
+    GetEdges(endpoints: IReadOnlyList<Endpoint>): IReadOnlyList<PolicyNodeEdge>;
 }
 
 
@@ -169,11 +169,11 @@ export type HostMatcherPolicy = HostMatcherPolicy$instance & __HostMatcherPolicy
 
 
 export interface HttpMethodMatcherPolicy$instance extends MatcherPolicy {
-    readonly comparer: IComparer<Endpoint>;
-    readonly order: int;
-    applyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
-    buildJumpTable(exitDestination: int, edges: IReadOnlyList<PolicyJumpTableEdge>): PolicyJumpTable;
-    getEdges(endpoints: IReadOnlyList<Endpoint>): IReadOnlyList<PolicyNodeEdge>;
+    readonly Comparer: IComparer<Endpoint>;
+    readonly Order: int;
+    ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
+    BuildJumpTable(exitDestination: int, edges: IReadOnlyList<PolicyJumpTableEdge>): PolicyJumpTable;
+    GetEdges(endpoints: IReadOnlyList<Endpoint>): IReadOnlyList<PolicyNodeEdge>;
 }
 
 
@@ -194,7 +194,7 @@ export type HttpMethodMatcherPolicy = HttpMethodMatcherPolicy$instance & __HttpM
 
 
 export interface PolicyJumpTable$instance {
-    getDestination(httpContext: HttpContext): int;
+    GetDestination(httpContext: HttpContext): int;
 }
 
 

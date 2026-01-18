@@ -1,12 +1,20 @@
 {
   "namespace": "Microsoft.AspNetCore.Components.Web.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components.Web"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
       "clrName": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-      "tsEmitName": "JSComponentInterop",
       "assemblyName": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -21,17 +29,6 @@
           "parameterCount": 1,
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 100663791
-          }
         }
       ]
     }

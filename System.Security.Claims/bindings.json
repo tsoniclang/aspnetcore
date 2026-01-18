@@ -1,23 +1,37 @@
 {
   "namespace": "System.Security.Claims",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Identity.Core",
+    "System.Security.Claims"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions",
       "clrName": "System.Security.Claims.PrincipalExtensions",
-      "tsEmitName": "PrincipalExtensions",
       "assemblyName": "Microsoft.Extensions.Identity.Core",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Identity.Core:System.Security.Claims.PrincipalExtensions::FindFirstValue(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
           "clrName": "FindFirstValue",
-          "tsEmitName": "findFirstValue",
           "metadataToken": 100663297,
           "canonicalSignature": "(System.Security.Claims.ClaimsPrincipal,System.String):System.String",
           "normalizedSignature": "FindFirstValue|(System.Security.Claims.ClaimsPrincipal,System.String):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "System.Security.Claims.PrincipalExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Identity.Core",
           "isExtensionMethod": true
@@ -26,19 +40,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "findFirstValue",
-          "isStatic": true,
-          "tsSignatureId": "FindFirstValue|(System.Security.Claims.ClaimsPrincipal,System.String):System.String|static=true",
-          "target": {
-            "declaringClrType": "System.Security.Claims.PrincipalExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Identity.Core",
-            "metadataToken": 100663297
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

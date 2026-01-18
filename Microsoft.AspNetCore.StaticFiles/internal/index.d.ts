@@ -22,21 +22,21 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IContentTypeProvider$instance {
-    tryGetContentType(subpath: string, contentType: string): boolean;
+    TryGetContentType(subpath: string, contentType: string): boolean;
 }
 
 
 export type IContentTypeProvider = IContentTypeProvider$instance;
 
 export interface IDirectoryFormatter$instance {
-    generateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
+    GenerateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
 }
 
 
 export type IDirectoryFormatter = IDirectoryFormatter$instance;
 
 export interface DefaultFilesMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -48,7 +48,7 @@ export const DefaultFilesMiddleware: {
 export type DefaultFilesMiddleware = DefaultFilesMiddleware$instance;
 
 export interface DirectoryBrowserMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -61,8 +61,8 @@ export const DirectoryBrowserMiddleware: {
 export type DirectoryBrowserMiddleware = DirectoryBrowserMiddleware$instance;
 
 export interface FileExtensionContentTypeProvider$instance {
-    readonly mappings: IDictionary<System_Internal.String, System_Internal.String>;
-    tryGetContentType(subpath: string, contentType: string): boolean;
+    readonly Mappings: IDictionary<System_Internal.String, System_Internal.String>;
+    TryGetContentType(subpath: string, contentType: string): boolean;
 }
 
 
@@ -82,7 +82,7 @@ export type FileExtensionContentTypeProvider = FileExtensionContentTypeProvider$
 
 
 export interface HtmlDirectoryFormatter$instance {
-    generateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
+    GenerateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
 }
 
 
@@ -101,7 +101,7 @@ export type HtmlDirectoryFormatter = HtmlDirectoryFormatter$instance & __HtmlDir
 
 
 export interface StaticFileMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -113,8 +113,8 @@ export const StaticFileMiddleware: {
 export type StaticFileMiddleware = StaticFileMiddleware$instance;
 
 export interface StaticFileResponseContext$instance {
-    readonly context: HttpContext;
-    readonly file: IFileInfo;
+    readonly Context: HttpContext;
+    readonly File: IFileInfo;
 }
 
 

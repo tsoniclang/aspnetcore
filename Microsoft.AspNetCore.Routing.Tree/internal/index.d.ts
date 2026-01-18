@@ -15,8 +15,8 @@ import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface InboundMatch$instance {
-    entry: InboundRouteEntry;
-    templateMatcher: TemplateMatcher;
+    Entry: InboundRouteEntry;
+    TemplateMatcher: TemplateMatcher;
 }
 
 
@@ -28,15 +28,15 @@ export const InboundMatch: {
 export type InboundMatch = InboundMatch$instance;
 
 export interface InboundRouteEntry$instance {
-    constraints: IDictionary<System_Internal.String, IRouteConstraint>;
-    defaults: RouteValueDictionary;
-    handler: IRouter;
-    order: int;
-    precedence: decimal;
-    get routeName(): string | undefined;
-    set routeName(value: string);
-    get routeTemplate(): RouteTemplate | undefined;
-    set routeTemplate(value: RouteTemplate);
+    Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
+    Defaults: RouteValueDictionary;
+    Handler: IRouter;
+    Order: int;
+    Precedence: decimal;
+    get RouteName(): string | undefined;
+    set RouteName(value: string);
+    get RouteTemplate(): RouteTemplate | undefined;
+    set RouteTemplate(value: RouteTemplate);
 }
 
 
@@ -48,8 +48,8 @@ export const InboundRouteEntry: {
 export type InboundRouteEntry = InboundRouteEntry$instance;
 
 export interface OutboundMatch$instance {
-    entry: OutboundRouteEntry;
-    templateBinder: TemplateBinder;
+    Entry: OutboundRouteEntry;
+    TemplateBinder: TemplateBinder;
 }
 
 
@@ -61,17 +61,17 @@ export const OutboundMatch: {
 export type OutboundMatch = OutboundMatch$instance;
 
 export interface OutboundRouteEntry$instance {
-    constraints: IDictionary<System_Internal.String, IRouteConstraint>;
-    data: unknown;
-    defaults: RouteValueDictionary;
-    handler: IRouter;
-    order: int;
-    precedence: decimal;
-    requiredLinkValues: RouteValueDictionary;
-    get routeName(): string | undefined;
-    set routeName(value: string);
-    get routeTemplate(): RouteTemplate | undefined;
-    set routeTemplate(value: RouteTemplate);
+    Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
+    Data: unknown;
+    Defaults: RouteValueDictionary;
+    Handler: IRouter;
+    Order: int;
+    Precedence: decimal;
+    RequiredLinkValues: RouteValueDictionary;
+    get RouteName(): string | undefined;
+    set RouteName(value: string);
+    get RouteTemplate(): RouteTemplate | undefined;
+    set RouteTemplate(value: RouteTemplate);
 }
 
 
@@ -83,13 +83,13 @@ export const OutboundRouteEntry: {
 export type OutboundRouteEntry = OutboundRouteEntry$instance;
 
 export interface TreeRouteBuilder$instance {
-    readonly inboundEntries: IList<InboundRouteEntry>;
-    readonly outboundEntries: IList<OutboundRouteEntry>;
-    build(): TreeRouter;
-    build(version: int): TreeRouter;
-    clear(): void;
-    mapInbound(handler: IRouter, routeTemplate: RouteTemplate, routeName: string, order: int): InboundRouteEntry;
-    mapOutbound(handler: IRouter, routeTemplate: RouteTemplate, requiredLinkValues: RouteValueDictionary, routeName: string, order: int): OutboundRouteEntry;
+    readonly InboundEntries: IList<InboundRouteEntry>;
+    readonly OutboundEntries: IList<OutboundRouteEntry>;
+    Build(): TreeRouter;
+    Build(version: int): TreeRouter;
+    Clear(): void;
+    MapInbound(handler: IRouter, routeTemplate: RouteTemplate, routeName: string, order: int): InboundRouteEntry;
+    MapOutbound(handler: IRouter, routeTemplate: RouteTemplate, requiredLinkValues: RouteValueDictionary, routeName: string, order: int): OutboundRouteEntry;
 }
 
 
@@ -101,15 +101,15 @@ export const TreeRouteBuilder: {
 export type TreeRouteBuilder = TreeRouteBuilder$instance;
 
 export interface TreeRouter$instance {
-    readonly version: int;
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
+    readonly Version: int;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
 }
 
 
 export const TreeRouter: {
     new(): TreeRouter;
-    readonly routeGroupKey: string;
+    readonly RouteGroupKey: string;
 };
 
 
@@ -123,14 +123,14 @@ export type TreeRouter = TreeRouter$instance & __TreeRouter$views;
 
 
 export interface UrlMatchingNode$instance {
-    catchAlls: UrlMatchingNode;
-    constrainedCatchAlls: UrlMatchingNode;
-    constrainedParameters: UrlMatchingNode;
-    readonly depth: int;
-    isCatchAll: boolean;
-    readonly literals: Dictionary<System_Internal.String, UrlMatchingNode>;
-    readonly matches: List<InboundMatch>;
-    parameters: UrlMatchingNode;
+    CatchAlls: UrlMatchingNode;
+    ConstrainedCatchAlls: UrlMatchingNode;
+    ConstrainedParameters: UrlMatchingNode;
+    readonly Depth: int;
+    IsCatchAll: boolean;
+    readonly Literals: Dictionary<System_Internal.String, UrlMatchingNode>;
+    readonly Matches: List<InboundMatch>;
+    Parameters: UrlMatchingNode;
 }
 
 
@@ -142,8 +142,8 @@ export const UrlMatchingNode: {
 export type UrlMatchingNode = UrlMatchingNode$instance;
 
 export interface UrlMatchingTree$instance {
-    readonly order: int;
-    readonly root: UrlMatchingNode;
+    readonly Order: int;
+    readonly Root: UrlMatchingNode;
 }
 
 

@@ -22,26 +22,26 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ICompressionProvider$instance {
-    readonly encodingName: string;
-    readonly supportsFlush: boolean;
-    createStream(outputStream: Stream): Stream;
+    readonly EncodingName: string;
+    readonly SupportsFlush: boolean;
+    CreateStream(outputStream: Stream): Stream;
 }
 
 
 export type ICompressionProvider = ICompressionProvider$instance;
 
 export interface IResponseCompressionProvider$instance {
-    getCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
-    shouldCompressResponse(context: HttpContext): boolean;
+    GetCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
+    ShouldCompressResponse(context: HttpContext): boolean;
 }
 
 
 export type IResponseCompressionProvider = IResponseCompressionProvider$instance;
 
 export interface BrotliCompressionProvider$instance {
-    readonly encodingName: string;
-    readonly supportsFlush: boolean;
-    createStream(outputStream: Stream): Stream;
+    readonly EncodingName: string;
+    readonly SupportsFlush: boolean;
+    CreateStream(outputStream: Stream): Stream;
 }
 
 
@@ -60,7 +60,7 @@ export type BrotliCompressionProvider = BrotliCompressionProvider$instance & __B
 
 
 export interface BrotliCompressionProviderOptions$instance {
-    level: CompressionLevel;
+    Level: CompressionLevel;
 }
 
 
@@ -72,8 +72,8 @@ export const BrotliCompressionProviderOptions: {
 export type BrotliCompressionProviderOptions = BrotliCompressionProviderOptions$instance;
 
 export interface CompressionProviderCollection$instance extends Collection<ICompressionProvider> {
-    add<TCompressionProvider extends ICompressionProvider>(): void;
-    add(providerType: Type): void;
+    Add<TCompressionProvider extends ICompressionProvider>(): void;
+    Add(providerType: Type): void;
 }
 
 
@@ -85,9 +85,9 @@ export const CompressionProviderCollection: {
 export type CompressionProviderCollection = CompressionProviderCollection$instance;
 
 export interface GzipCompressionProvider$instance {
-    readonly encodingName: string;
-    readonly supportsFlush: boolean;
-    createStream(outputStream: Stream): Stream;
+    readonly EncodingName: string;
+    readonly SupportsFlush: boolean;
+    CreateStream(outputStream: Stream): Stream;
 }
 
 
@@ -106,7 +106,7 @@ export type GzipCompressionProvider = GzipCompressionProvider$instance & __GzipC
 
 
 export interface GzipCompressionProviderOptions$instance {
-    level: CompressionLevel;
+    Level: CompressionLevel;
 }
 
 
@@ -123,14 +123,14 @@ export interface ResponseCompressionDefaults$instance {
 
 export const ResponseCompressionDefaults: {
     new(): ResponseCompressionDefaults;
-    readonly mimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly MimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
 };
 
 
 export type ResponseCompressionDefaults = ResponseCompressionDefaults$instance;
 
 export interface ResponseCompressionMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -142,10 +142,10 @@ export const ResponseCompressionMiddleware: {
 export type ResponseCompressionMiddleware = ResponseCompressionMiddleware$instance;
 
 export interface ResponseCompressionOptions$instance {
-    enableForHttps: boolean;
-    excludedMimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    mimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    readonly providers: CompressionProviderCollection;
+    EnableForHttps: boolean;
+    ExcludedMimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    MimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly Providers: CompressionProviderCollection;
 }
 
 
@@ -157,9 +157,9 @@ export const ResponseCompressionOptions: {
 export type ResponseCompressionOptions = ResponseCompressionOptions$instance;
 
 export interface ResponseCompressionProvider$instance {
-    checkRequestAcceptsCompression(context: HttpContext): boolean;
-    getCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
-    shouldCompressResponse(context: HttpContext): boolean;
+    CheckRequestAcceptsCompression(context: HttpContext): boolean;
+    GetCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
+    ShouldCompressResponse(context: HttpContext): boolean;
 }
 
 

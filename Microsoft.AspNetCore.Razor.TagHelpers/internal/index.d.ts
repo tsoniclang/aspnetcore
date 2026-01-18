@@ -25,31 +25,31 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum HtmlAttributeValueStyle {
-    doubleQuotes = 0,
-    singleQuotes = 1,
-    noQuotes = 2,
-    minimized = 3
+    DoubleQuotes = 0,
+    SingleQuotes = 1,
+    NoQuotes = 2,
+    Minimized = 3
 }
 
 
 export enum TagMode {
-    startTagAndEndTag = 0,
-    selfClosing = 1,
-    startTagOnly = 2
+    StartTagAndEndTag = 0,
+    SelfClosing = 1,
+    StartTagOnly = 2
 }
 
 
 export enum TagStructure {
-    unspecified = 0,
-    normalOrSelfClosing = 1,
-    withoutEndTag = 2
+    Unspecified = 0,
+    NormalOrSelfClosing = 1,
+    WithoutEndTag = 2
 }
 
 
 export interface ITagHelper$instance extends ITagHelperComponent {
-    readonly order: int;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -58,30 +58,30 @@ export interface ITagHelper$instance extends ITagHelperComponent$instance {}
 export type ITagHelper = ITagHelper$instance;
 
 export interface ITagHelperComponent$instance {
-    readonly order: int;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
 export type ITagHelperComponent = ITagHelperComponent$instance;
 
 export interface DefaultTagHelperContent$instance extends TagHelperContent$instance {
-    readonly isEmptyOrWhiteSpace: boolean;
-    readonly isModified: boolean;
-    append(unencoded: string): TagHelperContent;
-    append(unencoded: string): IHtmlContentBuilder;
-    appendHtml(htmlContent: IHtmlContent): TagHelperContent;
-    appendHtml(encoded: string): TagHelperContent;
-    appendHtml(content: IHtmlContent): IHtmlContentBuilder;
-    clear(): TagHelperContent;
-    clear(): IHtmlContentBuilder;
-    copyTo(destination: IHtmlContentBuilder): void;
-    getContent(): string;
-    getContent(encoder: HtmlEncoder): string;
-    moveTo(destination: IHtmlContentBuilder): void;
-    reinitialize(): void;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly IsEmptyOrWhiteSpace: boolean;
+    readonly IsModified: boolean;
+    Append(unencoded: string): TagHelperContent;
+    Append(unencoded: string): IHtmlContentBuilder;
+    AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
+    AppendHtml(encoded: string): TagHelperContent;
+    AppendHtml(content: IHtmlContent): IHtmlContentBuilder;
+    Clear(): TagHelperContent;
+    Clear(): IHtmlContentBuilder;
+    CopyTo(destination: IHtmlContentBuilder): void;
+    GetContent(): string;
+    GetContent(encoder: HtmlEncoder): string;
+    MoveTo(destination: IHtmlContentBuilder): void;
+    Reinitialize(): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -100,9 +100,9 @@ export type DefaultTagHelperContent = DefaultTagHelperContent$instance & __Defau
 
 
 export interface HtmlAttributeNameAttribute$instance extends Attribute {
-    dictionaryAttributePrefix: string;
-    readonly dictionaryAttributePrefixSet: boolean;
-    readonly name: string;
+    DictionaryAttributePrefix: string;
+    readonly DictionaryAttributePrefixSet: boolean;
+    readonly Name: string;
 }
 
 
@@ -126,43 +126,43 @@ export const HtmlAttributeNotBoundAttribute: {
 export type HtmlAttributeNotBoundAttribute = HtmlAttributeNotBoundAttribute$instance;
 
 export interface HtmlTargetElementAttribute$instance extends Attribute {
-    attributes: string;
-    parentTag: string;
-    readonly tag: string;
-    tagStructure: TagStructure;
+    Attributes: string;
+    ParentTag: string;
+    readonly Tag: string;
+    TagStructure: TagStructure;
 }
 
 
 export const HtmlTargetElementAttribute: {
     new(): HtmlTargetElementAttribute;
     new(tag: string): HtmlTargetElementAttribute;
-    readonly elementCatchAllTarget: string;
+    readonly ElementCatchAllTarget: string;
 };
 
 
 export type HtmlTargetElementAttribute = HtmlTargetElementAttribute$instance;
 
 export interface NullHtmlEncoder$instance extends HtmlEncoder {
-    readonly maxOutputCharactersPerInputCharacter: int;
-    encode(value: string): string;
-    encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    findFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    tryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    willEncode(unicodeScalar: int): boolean;
+    readonly MaxOutputCharactersPerInputCharacter: int;
+    Encode(value: string): string;
+    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
+    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
+    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
+    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
+    WillEncode(unicodeScalar: int): boolean;
 }
 
 
 export const NullHtmlEncoder: {
     new(): NullHtmlEncoder;
-    readonly default: NullHtmlEncoder;
+    readonly Default: NullHtmlEncoder;
 };
 
 
 export type NullHtmlEncoder = NullHtmlEncoder$instance;
 
 export interface OutputElementHintAttribute$instance extends Attribute {
-    readonly outputElement: string;
+    readonly OutputElement: string;
 }
 
 
@@ -174,11 +174,11 @@ export const OutputElementHintAttribute: {
 export type OutputElementHintAttribute = OutputElementHintAttribute$instance;
 
 export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollection<TagHelperAttribute> {
-    readonly item: TagHelperAttribute;
-    containsName(name: string): boolean;
-    indexOfName(name: string): int;
-    tryGetAttribute(name: string, attribute: TagHelperAttribute): boolean;
-    tryGetAttributes(name: string, attributes: IReadOnlyList<TagHelperAttribute>): boolean;
+    readonly Item: TagHelperAttribute;
+    ContainsName(name: string): boolean;
+    IndexOfName(name: string): int;
+    TryGetAttribute(name: string, attribute: TagHelperAttribute): boolean;
+    TryGetAttributes(name: string, attributes: IReadOnlyList<TagHelperAttribute>): boolean;
 }
 
 
@@ -190,7 +190,7 @@ export const ReadOnlyTagHelperAttributeList: {
 export type ReadOnlyTagHelperAttributeList = ReadOnlyTagHelperAttributeList$instance;
 
 export interface RestrictChildrenAttribute$instance extends Attribute {
-    readonly childTags: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly ChildTags: IEnumerable__System_Collections_Generic<System_Internal.String>;
 }
 
 
@@ -202,10 +202,10 @@ export const RestrictChildrenAttribute: {
 export type RestrictChildrenAttribute = RestrictChildrenAttribute$instance;
 
 export interface TagHelper$instance extends ITagHelper {
-    readonly order: int;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -221,15 +221,15 @@ export type TagHelper = TagHelper$instance & __TagHelper$views;
 
 
 export interface TagHelperAttribute$instance {
-    readonly name: string;
-    readonly value: unknown;
-    readonly valueStyle: HtmlAttributeValueStyle;
-    copyTo(destination: IHtmlContentBuilder): void;
-    equals(other: TagHelperAttribute): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    moveTo(destination: IHtmlContentBuilder): void;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly Name: string;
+    readonly Value: unknown;
+    readonly ValueStyle: HtmlAttributeValueStyle;
+    CopyTo(destination: IHtmlContentBuilder): void;
+    Equals(other: TagHelperAttribute): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    MoveTo(destination: IHtmlContentBuilder): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -249,16 +249,16 @@ export type TagHelperAttribute = TagHelperAttribute$instance & __TagHelperAttrib
 
 
 export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttributeList {
-    item: TagHelperAttribute;
-    add(name: string, value: unknown): void;
-    add(attribute: TagHelperAttribute): void;
-    clear(): void;
-    insert(index: int, attribute: TagHelperAttribute): void;
-    remove(attribute: TagHelperAttribute): boolean;
-    removeAll(name: string): boolean;
-    removeAt(index: int): void;
-    setAttribute(name: string, value: unknown): void;
-    setAttribute(attribute: TagHelperAttribute): void;
+    Item: TagHelperAttribute;
+    Add(name: string, value: unknown): void;
+    Add(attribute: TagHelperAttribute): void;
+    Clear(): void;
+    Insert(index: int, attribute: TagHelperAttribute): void;
+    Remove(attribute: TagHelperAttribute): boolean;
+    RemoveAll(name: string): boolean;
+    RemoveAt(index: int): void;
+    SetAttribute(name: string, value: unknown): void;
+    SetAttribute(attribute: TagHelperAttribute): void;
 }
 
 
@@ -272,10 +272,10 @@ export const TagHelperAttributeList: {
 export type TagHelperAttributeList = TagHelperAttributeList$instance;
 
 export interface TagHelperComponent$instance {
-    readonly order: int;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -293,23 +293,23 @@ export type TagHelperComponent = TagHelperComponent$instance & __TagHelperCompon
 
 
 export interface TagHelperContent$instance {
-    readonly isEmptyOrWhiteSpace: boolean;
-    readonly isModified: boolean;
-    append(unencoded: string): TagHelperContent;
-    appendFormat(format: string, ...args: unknown[]): TagHelperContent;
-    appendFormat(provider: IFormatProvider, format: string, ...args: unknown[]): TagHelperContent;
-    appendHtml(htmlContent: IHtmlContent): TagHelperContent;
-    appendHtml(encoded: string): TagHelperContent;
-    clear(): TagHelperContent;
-    copyTo(destination: IHtmlContentBuilder): void;
-    getContent(): string;
-    getContent(encoder: HtmlEncoder): string;
-    moveTo(destination: IHtmlContentBuilder): void;
-    reinitialize(): void;
-    setContent(unencoded: string): TagHelperContent;
-    setHtmlContent(htmlContent: IHtmlContent): TagHelperContent;
-    setHtmlContent(encoded: string): TagHelperContent;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly IsEmptyOrWhiteSpace: boolean;
+    readonly IsModified: boolean;
+    Append(unencoded: string): TagHelperContent;
+    AppendFormat(format: string, ...args: unknown[]): TagHelperContent;
+    AppendFormat(provider: IFormatProvider, format: string, ...args: unknown[]): TagHelperContent;
+    AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
+    AppendHtml(encoded: string): TagHelperContent;
+    Clear(): TagHelperContent;
+    CopyTo(destination: IHtmlContentBuilder): void;
+    GetContent(): string;
+    GetContent(encoder: HtmlEncoder): string;
+    MoveTo(destination: IHtmlContentBuilder): void;
+    Reinitialize(): void;
+    SetContent(unencoded: string): TagHelperContent;
+    SetHtmlContent(htmlContent: IHtmlContent): TagHelperContent;
+    SetHtmlContent(encoded: string): TagHelperContent;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -327,12 +327,12 @@ export type TagHelperContent = TagHelperContent$instance & __TagHelperContent$vi
 
 
 export interface TagHelperContext$instance {
-    readonly allAttributes: ReadOnlyTagHelperAttributeList;
-    readonly items: IDictionary<unknown, unknown>;
-    readonly tagName: string;
-    readonly uniqueId: string;
-    reinitialize(tagName: string, items: IDictionary<unknown, unknown>, uniqueId: string): void;
-    reinitialize(items: IDictionary<unknown, unknown>, uniqueId: string): void;
+    readonly AllAttributes: ReadOnlyTagHelperAttributeList;
+    readonly Items: IDictionary<unknown, unknown>;
+    readonly TagName: string;
+    readonly UniqueId: string;
+    Reinitialize(tagName: string, items: IDictionary<unknown, unknown>, uniqueId: string): void;
+    Reinitialize(items: IDictionary<unknown, unknown>, uniqueId: string): void;
 }
 
 
@@ -345,22 +345,22 @@ export const TagHelperContext: {
 export type TagHelperContext = TagHelperContext$instance;
 
 export interface TagHelperOutput$instance {
-    readonly attributes: TagHelperAttributeList;
-    content: TagHelperContent;
-    readonly isContentModified: boolean;
-    readonly postContent: TagHelperContent;
-    readonly postElement: TagHelperContent;
-    readonly preContent: TagHelperContent;
-    readonly preElement: TagHelperContent;
-    tagMode: TagMode;
-    tagName: string;
-    getChildContentAsync(): Task<TagHelperContent>;
-    getChildContentAsync(useCachedResult: boolean): Task<TagHelperContent>;
-    getChildContentAsync(encoder: HtmlEncoder): Task<TagHelperContent>;
-    getChildContentAsync(useCachedResult: boolean, encoder: HtmlEncoder): Task<TagHelperContent>;
-    reinitialize(tagName: string, tagMode: TagMode): void;
-    suppressOutput(): void;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly Attributes: TagHelperAttributeList;
+    Content: TagHelperContent;
+    readonly IsContentModified: boolean;
+    readonly PostContent: TagHelperContent;
+    readonly PostElement: TagHelperContent;
+    readonly PreContent: TagHelperContent;
+    readonly PreElement: TagHelperContent;
+    TagMode: TagMode;
+    TagName: string;
+    GetChildContentAsync(): Task<TagHelperContent>;
+    GetChildContentAsync(useCachedResult: boolean): Task<TagHelperContent>;
+    GetChildContentAsync(encoder: HtmlEncoder): Task<TagHelperContent>;
+    GetChildContentAsync(useCachedResult: boolean, encoder: HtmlEncoder): Task<TagHelperContent>;
+    Reinitialize(tagName: string, tagMode: TagMode): void;
+    SuppressOutput(): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 

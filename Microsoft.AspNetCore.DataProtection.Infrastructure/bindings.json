@@ -1,44 +1,44 @@
 {
   "namespace": "Microsoft.AspNetCore.DataProtection.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.DataProtection.Abstractions"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
       "clrName": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-      "tsEmitName": "IApplicationDiscriminator",
       "assemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator::Discriminator:System.String",
           "clrName": "Discriminator",
-          "tsEmitName": "discriminator",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Discriminator|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "discriminator",
-          "isStatic": false,
-          "tsSignatureId": "Discriminator|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 385875975
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

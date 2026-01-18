@@ -14,8 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
 
 export interface RenderModeEndpointProvider$instance {
-    getEndpointBuilders(renderMode: IComponentRenderMode, applicationBuilder: IApplicationBuilder): IEnumerable<RouteEndpointBuilder>;
-    supports(renderMode: IComponentRenderMode): boolean;
+    GetEndpointBuilders(renderMode: IComponentRenderMode, applicationBuilder: IApplicationBuilder): IEnumerable<RouteEndpointBuilder>;
+    Supports(renderMode: IComponentRenderMode): boolean;
 }
 
 
@@ -26,8 +26,8 @@ export const RenderModeEndpointProvider: {
 export type RenderModeEndpointProvider = RenderModeEndpointProvider$instance;
 
 export abstract class ComponentEndpointConventionBuilderHelper$instance {
-    static addRenderMode(builder: RazorComponentsEndpointConventionBuilder, renderMode: IComponentRenderMode): void;
-    static getEndpointRouteBuilder(builder: RazorComponentsEndpointConventionBuilder): IEndpointRouteBuilder;
+    static AddRenderMode(builder: RazorComponentsEndpointConventionBuilder, renderMode: IComponentRenderMode): void;
+    static GetEndpointRouteBuilder(builder: RazorComponentsEndpointConventionBuilder): IEndpointRouteBuilder;
 }
 
 

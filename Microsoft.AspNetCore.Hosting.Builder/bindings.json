@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Hosting.Builder",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Hosting"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory",
       "clrName": "Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory",
-      "tsEmitName": "IApplicationBuilderFactory",
       "assemblyName": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory::CreateBuilder(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "clrName": "CreateBuilder",
-          "tsEmitName": "createBuilder",
           "metadataToken": 100663794,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "normalizedSignature": "CreateBuilder|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
@@ -26,37 +39,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createBuilder",
-          "isStatic": false,
-          "tsSignatureId": "CreateBuilder|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
-            "metadataToken": 100663794
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Builder.ApplicationBuilderFactory",
       "clrName": "Microsoft.AspNetCore.Hosting.Builder.ApplicationBuilderFactory",
-      "tsEmitName": "ApplicationBuilderFactory",
       "assemblyName": "Microsoft.AspNetCore.Hosting",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Builder.ApplicationBuilderFactory::CreateBuilder(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "clrName": "CreateBuilder",
-          "tsEmitName": "createBuilder",
           "metadataToken": 100663793,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "normalizedSignature": "CreateBuilder|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.ApplicationBuilderFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
@@ -64,16 +75,22 @@
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory::CreateBuilder(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "clrName": "CreateBuilder",
-          "tsEmitName": "createBuilder$view",
           "metadataToken": 100663794,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder",
           "normalizedSignature": "CreateBuilder|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory"
         }
       ],
       "properties": [],
@@ -89,39 +106,6 @@
           "parameterCount": 1,
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.ApplicationBuilderFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "createBuilder",
-          "isStatic": false,
-          "tsSignatureId": "CreateBuilder|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.ApplicationBuilderFactory",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
-            "metadataToken": 100663793
-          }
-        },
-        {
-          "tsName": "createBuilder$view",
-          "isStatic": false,
-          "tsSignatureId": "CreateBuilder|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):Microsoft.AspNetCore.Builder.IApplicationBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.IApplicationBuilderFactory",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
-            "metadataToken": 100663794
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.IServiceProvider):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Hosting.Builder.ApplicationBuilderFactory",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
-            "metadataToken": 100663792
-          }
         }
       ]
     }

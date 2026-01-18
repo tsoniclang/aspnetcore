@@ -21,8 +21,8 @@ import type { Attribute, Func, Object as ClrObject, String as ClrString, Type, V
 import type { IStringLocalizer, IStringLocalizerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Localization.js";
 
 export interface IAttributeAdapter$instance extends IClientModelValidator {
-    addValidation(context: ClientModelValidationContext): void;
-    getErrorMessage(validationContext: ModelValidationContextBase): string;
+    AddValidation(context: ClientModelValidationContext): void;
+    GetErrorMessage(validationContext: ModelValidationContextBase): string;
 }
 
 
@@ -31,15 +31,15 @@ export interface IAttributeAdapter$instance extends Microsoft_AspNetCore_Mvc_Mod
 export type IAttributeAdapter = IAttributeAdapter$instance;
 
 export interface IValidationAttributeAdapterProvider$instance {
-    getAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
+    GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
 }
 
 
 export type IValidationAttributeAdapterProvider = IValidationAttributeAdapterProvider$instance;
 
 export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAttribute> extends ValidationAttributeAdapter_1$instance<TAttribute> {
-    addValidation(context: ClientModelValidationContext): void;
-    getErrorMessage(validationContext: ModelValidationContextBase): string;
+    AddValidation(context: ClientModelValidationContext): void;
+    GetErrorMessage(validationContext: ModelValidationContextBase): string;
 }
 
 
@@ -59,7 +59,7 @@ export type AttributeAdapterBase_1<TAttribute extends ValidationAttribute> = Att
 
 
 export interface MvcDataAnnotationsLocalizationOptions$instance {
-    dataAnnotationLocalizerProvider: Func<Type, IStringLocalizerFactory, IStringLocalizer>;
+    DataAnnotationLocalizerProvider: Func<Type, IStringLocalizerFactory, IStringLocalizer>;
 }
 
 
@@ -71,8 +71,8 @@ export const MvcDataAnnotationsLocalizationOptions: {
 export type MvcDataAnnotationsLocalizationOptions = MvcDataAnnotationsLocalizationOptions$instance;
 
 export interface RequiredAttributeAdapter$instance extends AttributeAdapterBase_1$instance<RequiredAttribute> {
-    addValidation(context: ClientModelValidationContext): void;
-    getErrorMessage(validationContext: ModelValidationContextBase): string;
+    AddValidation(context: ClientModelValidationContext): void;
+    GetErrorMessage(validationContext: ModelValidationContextBase): string;
 }
 
 
@@ -90,8 +90,8 @@ export type RequiredAttributeAdapter = RequiredAttributeAdapter$instance & __Req
 
 
 export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> {
-    readonly attribute: TAttribute;
-    addValidation(context: ClientModelValidationContext): void;
+    readonly Attribute: TAttribute;
+    AddValidation(context: ClientModelValidationContext): void;
 }
 
 
@@ -110,7 +110,7 @@ export type ValidationAttributeAdapter_1<TAttribute extends ValidationAttribute>
 
 
 export interface ValidationAttributeAdapterProvider$instance {
-    getAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
+    GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
 }
 
 
@@ -129,7 +129,7 @@ export type ValidationAttributeAdapterProvider = ValidationAttributeAdapterProvi
 
 
 export interface ValidationProviderAttribute$instance extends Attribute {
-    getValidationAttributes(): IEnumerable__System_Collections_Generic<ValidationAttribute>;
+    GetValidationAttributes(): IEnumerable__System_Collections_Generic<ValidationAttribute>;
 }
 
 

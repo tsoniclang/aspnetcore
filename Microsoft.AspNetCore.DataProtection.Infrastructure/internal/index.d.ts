@@ -10,7 +10,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IApplicationDiscriminator$instance {
-    readonly discriminator: string | undefined;
+    readonly Discriminator: string | undefined;
 }
 
 

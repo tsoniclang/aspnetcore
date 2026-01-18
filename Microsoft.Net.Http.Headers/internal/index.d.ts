@@ -17,94 +17,94 @@ import type { Encoding, StringBuilder } from "@tsonic/dotnet/System.Text.js";
 import type { StringSegment, StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export enum SameSiteMode {
-    unspecified = -1,
-    none = 0,
-    lax = 1,
-    strict = 2
+    Unspecified = -1,
+    None = 0,
+    Lax = 1,
+    Strict = 2
 }
 
 
 export interface CacheControlHeaderValue$instance {
-    readonly extensions: IList<NameValueHeaderValue>;
-    maxAge: Nullable<TimeSpan>;
-    maxStale: boolean;
-    maxStaleLimit: Nullable<TimeSpan>;
-    minFresh: Nullable<TimeSpan>;
-    mustRevalidate: boolean;
-    noCache: boolean;
-    readonly noCacheHeaders: ICollection<StringSegment>;
-    noStore: boolean;
-    noTransform: boolean;
-    onlyIfCached: boolean;
-    private: boolean;
-    readonly privateHeaders: ICollection<StringSegment>;
-    proxyRevalidate: boolean;
-    public: boolean;
-    sharedMaxAge: Nullable<TimeSpan>;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Extensions: IList<NameValueHeaderValue>;
+    MaxAge: Nullable<TimeSpan>;
+    MaxStale: boolean;
+    MaxStaleLimit: Nullable<TimeSpan>;
+    MinFresh: Nullable<TimeSpan>;
+    MustRevalidate: boolean;
+    NoCache: boolean;
+    readonly NoCacheHeaders: ICollection<StringSegment>;
+    NoStore: boolean;
+    NoTransform: boolean;
+    OnlyIfCached: boolean;
+    Private: boolean;
+    readonly PrivateHeaders: ICollection<StringSegment>;
+    ProxyRevalidate: boolean;
+    Public: boolean;
+    SharedMaxAge: Nullable<TimeSpan>;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const CacheControlHeaderValue: {
     new(): CacheControlHeaderValue;
-    readonly publicString: string;
-    readonly privateString: string;
-    readonly maxAgeString: string;
-    readonly sharedMaxAgeString: string;
-    readonly noCacheString: string;
-    readonly noStoreString: string;
-    readonly maxStaleString: string;
-    readonly minFreshString: string;
-    readonly noTransformString: string;
-    readonly onlyIfCachedString: string;
-    readonly mustRevalidateString: string;
-    readonly proxyRevalidateString: string;
-    parse(input: StringSegment): CacheControlHeaderValue;
-    tryParse(input: StringSegment, parsedValue: CacheControlHeaderValue): boolean;
+    readonly PublicString: string;
+    readonly PrivateString: string;
+    readonly MaxAgeString: string;
+    readonly SharedMaxAgeString: string;
+    readonly NoCacheString: string;
+    readonly NoStoreString: string;
+    readonly MaxStaleString: string;
+    readonly MinFreshString: string;
+    readonly NoTransformString: string;
+    readonly OnlyIfCachedString: string;
+    readonly MustRevalidateString: string;
+    readonly ProxyRevalidateString: string;
+    Parse(input: StringSegment): CacheControlHeaderValue;
+    TryParse(input: StringSegment, parsedValue: CacheControlHeaderValue): boolean;
 };
 
 
 export type CacheControlHeaderValue = CacheControlHeaderValue$instance;
 
 export interface ContentDispositionHeaderValue$instance {
-    creationDate: Nullable<DateTimeOffset>;
-    dispositionType: StringSegment;
-    fileName: StringSegment;
-    fileNameStar: StringSegment;
-    modificationDate: Nullable<DateTimeOffset>;
-    name: StringSegment;
-    readonly parameters: IList<NameValueHeaderValue>;
-    readDate: Nullable<DateTimeOffset>;
-    size: Nullable<System_Internal.Int64>;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    setHttpFileName(fileName: StringSegment): void;
-    setMimeFileName(fileName: StringSegment): void;
-    toString(): string;
+    CreationDate: Nullable<DateTimeOffset>;
+    DispositionType: StringSegment;
+    FileName: StringSegment;
+    FileNameStar: StringSegment;
+    ModificationDate: Nullable<DateTimeOffset>;
+    Name: StringSegment;
+    readonly Parameters: IList<NameValueHeaderValue>;
+    ReadDate: Nullable<DateTimeOffset>;
+    Size: Nullable<System_Internal.Int64>;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    SetHttpFileName(fileName: StringSegment): void;
+    SetMimeFileName(fileName: StringSegment): void;
+    ToString(): string;
 }
 
 
 export const ContentDispositionHeaderValue: {
     new(dispositionType: StringSegment): ContentDispositionHeaderValue;
-    parse(input: StringSegment): ContentDispositionHeaderValue;
-    tryParse(input: StringSegment, parsedValue: ContentDispositionHeaderValue): boolean;
+    Parse(input: StringSegment): ContentDispositionHeaderValue;
+    TryParse(input: StringSegment, parsedValue: ContentDispositionHeaderValue): boolean;
 };
 
 
 export type ContentDispositionHeaderValue = ContentDispositionHeaderValue$instance;
 
 export interface ContentRangeHeaderValue$instance {
-    readonly from: Nullable<System_Internal.Int64>;
-    readonly hasLength: boolean;
-    readonly hasRange: boolean;
-    readonly length: Nullable<System_Internal.Int64>;
-    readonly to: Nullable<System_Internal.Int64>;
-    unit: StringSegment;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly From: Nullable<System_Internal.Int64>;
+    readonly HasLength: boolean;
+    readonly HasRange: boolean;
+    readonly Length: Nullable<System_Internal.Int64>;
+    readonly To: Nullable<System_Internal.Int64>;
+    Unit: StringSegment;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -112,150 +112,150 @@ export const ContentRangeHeaderValue: {
     new(from: long, to: long, length: long): ContentRangeHeaderValue;
     new(length: long): ContentRangeHeaderValue;
     new(from: long, to: long): ContentRangeHeaderValue;
-    parse(input: StringSegment): ContentRangeHeaderValue;
-    tryParse(input: StringSegment, parsedValue: ContentRangeHeaderValue): boolean;
+    Parse(input: StringSegment): ContentRangeHeaderValue;
+    TryParse(input: StringSegment, parsedValue: ContentRangeHeaderValue): boolean;
 };
 
 
 export type ContentRangeHeaderValue = ContentRangeHeaderValue$instance;
 
 export interface CookieHeaderValue$instance {
-    name: StringSegment;
-    value: StringSegment;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Name: StringSegment;
+    Value: StringSegment;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const CookieHeaderValue: {
     new(name: StringSegment): CookieHeaderValue;
     new(name: StringSegment, value: StringSegment): CookieHeaderValue;
-    parse(input: StringSegment): CookieHeaderValue;
-    parseList(inputs: IList<System_Internal.String>): IList<CookieHeaderValue>;
-    parseStrictList(inputs: IList<System_Internal.String>): IList<CookieHeaderValue>;
-    tryParse(input: StringSegment, parsedValue: CookieHeaderValue): boolean;
-    tryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<CookieHeaderValue>): boolean;
-    tryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<CookieHeaderValue>): boolean;
+    Parse(input: StringSegment): CookieHeaderValue;
+    ParseList(inputs: IList<System_Internal.String>): IList<CookieHeaderValue>;
+    ParseStrictList(inputs: IList<System_Internal.String>): IList<CookieHeaderValue>;
+    TryParse(input: StringSegment, parsedValue: CookieHeaderValue): boolean;
+    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<CookieHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<CookieHeaderValue>): boolean;
 };
 
 
 export type CookieHeaderValue = CookieHeaderValue$instance;
 
 export interface EntityTagHeaderValue$instance {
-    readonly isWeak: boolean;
-    readonly tag: StringSegment;
-    compare(other: EntityTagHeaderValue, useStrongComparison: boolean): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly IsWeak: boolean;
+    readonly Tag: StringSegment;
+    Compare(other: EntityTagHeaderValue, useStrongComparison: boolean): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const EntityTagHeaderValue: {
     new(tag: StringSegment): EntityTagHeaderValue;
     new(tag: StringSegment, isWeak: boolean): EntityTagHeaderValue;
-    readonly any: EntityTagHeaderValue;
-    parse(input: StringSegment): EntityTagHeaderValue;
-    parseList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
-    parseStrictList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
-    tryParse(input: StringSegment, parsedValue: EntityTagHeaderValue): boolean;
-    tryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<EntityTagHeaderValue>): boolean;
-    tryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<EntityTagHeaderValue>): boolean;
+    readonly Any: EntityTagHeaderValue;
+    Parse(input: StringSegment): EntityTagHeaderValue;
+    ParseList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
+    ParseStrictList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
+    TryParse(input: StringSegment, parsedValue: EntityTagHeaderValue): boolean;
+    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<EntityTagHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<EntityTagHeaderValue>): boolean;
 };
 
 
 export type EntityTagHeaderValue = EntityTagHeaderValue$instance;
 
 export interface MediaTypeHeaderValue$instance {
-    boundary: StringSegment;
-    charset: StringSegment;
-    get encoding(): Encoding | undefined;
-    set encoding(value: Encoding);
-    readonly facets: IEnumerable<StringSegment>;
-    readonly isReadOnly: boolean;
-    readonly matchesAllSubTypes: boolean;
-    readonly matchesAllSubTypesWithoutSuffix: boolean;
-    readonly matchesAllTypes: boolean;
-    mediaType: StringSegment;
-    readonly parameters: IList<NameValueHeaderValue>;
-    quality: Nullable<System_Internal.Double>;
-    readonly subType: StringSegment;
-    readonly subTypeWithoutSuffix: StringSegment;
-    readonly suffix: StringSegment;
-    readonly type: StringSegment;
-    copy(): MediaTypeHeaderValue;
-    copyAsReadOnly(): MediaTypeHeaderValue;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    isSubsetOf(otherMediaType: MediaTypeHeaderValue): boolean;
-    matchesMediaType(otherMediaType: StringSegment): boolean;
-    toString(): string;
+    Boundary: StringSegment;
+    Charset: StringSegment;
+    get Encoding(): Encoding | undefined;
+    set Encoding(value: Encoding);
+    readonly Facets: IEnumerable<StringSegment>;
+    readonly IsReadOnly: boolean;
+    readonly MatchesAllSubTypes: boolean;
+    readonly MatchesAllSubTypesWithoutSuffix: boolean;
+    readonly MatchesAllTypes: boolean;
+    MediaType: StringSegment;
+    readonly Parameters: IList<NameValueHeaderValue>;
+    Quality: Nullable<System_Internal.Double>;
+    readonly SubType: StringSegment;
+    readonly SubTypeWithoutSuffix: StringSegment;
+    readonly Suffix: StringSegment;
+    readonly Type: StringSegment;
+    Copy(): MediaTypeHeaderValue;
+    CopyAsReadOnly(): MediaTypeHeaderValue;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    IsSubsetOf(otherMediaType: MediaTypeHeaderValue): boolean;
+    MatchesMediaType(otherMediaType: StringSegment): boolean;
+    ToString(): string;
 }
 
 
 export const MediaTypeHeaderValue: {
     new(mediaType: StringSegment): MediaTypeHeaderValue;
     new(mediaType: StringSegment, quality: double): MediaTypeHeaderValue;
-    parse(input: StringSegment): MediaTypeHeaderValue;
-    parseList(inputs: IList<System_Internal.String>): IList<MediaTypeHeaderValue>;
-    parseStrictList(inputs: IList<System_Internal.String>): IList<MediaTypeHeaderValue>;
-    tryParse(input: StringSegment, parsedValue: MediaTypeHeaderValue): boolean;
-    tryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<MediaTypeHeaderValue>): boolean;
-    tryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<MediaTypeHeaderValue>): boolean;
+    Parse(input: StringSegment): MediaTypeHeaderValue;
+    ParseList(inputs: IList<System_Internal.String>): IList<MediaTypeHeaderValue>;
+    ParseStrictList(inputs: IList<System_Internal.String>): IList<MediaTypeHeaderValue>;
+    TryParse(input: StringSegment, parsedValue: MediaTypeHeaderValue): boolean;
+    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<MediaTypeHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<MediaTypeHeaderValue>): boolean;
 };
 
 
 export type MediaTypeHeaderValue = MediaTypeHeaderValue$instance;
 
 export interface MediaTypeHeaderValueComparer$instance {
-    compare(mediaType1: MediaTypeHeaderValue, mediaType2: MediaTypeHeaderValue): int;
+    Compare(mediaType1: MediaTypeHeaderValue, mediaType2: MediaTypeHeaderValue): int;
 }
 
 
 export const MediaTypeHeaderValueComparer: {
     new(): MediaTypeHeaderValueComparer;
-    readonly qualityComparer: MediaTypeHeaderValueComparer;
+    readonly QualityComparer: MediaTypeHeaderValueComparer;
 };
 
 
 export type MediaTypeHeaderValueComparer = MediaTypeHeaderValueComparer$instance;
 
 export interface NameValueHeaderValue$instance {
-    readonly isReadOnly: boolean;
-    readonly name: StringSegment;
-    value: StringSegment;
-    copy(): NameValueHeaderValue;
-    copyAsReadOnly(): NameValueHeaderValue;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    getUnescapedValue(): StringSegment;
-    setAndEscapeValue(value: StringSegment): void;
-    toString(): string;
+    readonly IsReadOnly: boolean;
+    readonly Name: StringSegment;
+    Value: StringSegment;
+    Copy(): NameValueHeaderValue;
+    CopyAsReadOnly(): NameValueHeaderValue;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    GetUnescapedValue(): StringSegment;
+    SetAndEscapeValue(value: StringSegment): void;
+    ToString(): string;
 }
 
 
 export const NameValueHeaderValue: {
     new(name: StringSegment): NameValueHeaderValue;
     new(name: StringSegment, value: StringSegment): NameValueHeaderValue;
-    find(values: IList<NameValueHeaderValue>, name: StringSegment): NameValueHeaderValue | undefined;
-    parse(input: StringSegment): NameValueHeaderValue;
-    parseList(input: IList<System_Internal.String>): IList<NameValueHeaderValue>;
-    parseStrictList(input: IList<System_Internal.String>): IList<NameValueHeaderValue>;
-    tryParse(input: StringSegment, parsedValue: NameValueHeaderValue): boolean;
-    tryParseList(input: IList<System_Internal.String>, parsedValues: IList<NameValueHeaderValue>): boolean;
-    tryParseStrictList(input: IList<System_Internal.String>, parsedValues: IList<NameValueHeaderValue>): boolean;
+    Find(values: IList<NameValueHeaderValue>, name: StringSegment): NameValueHeaderValue | undefined;
+    Parse(input: StringSegment): NameValueHeaderValue;
+    ParseList(input: IList<System_Internal.String>): IList<NameValueHeaderValue>;
+    ParseStrictList(input: IList<System_Internal.String>): IList<NameValueHeaderValue>;
+    TryParse(input: StringSegment, parsedValue: NameValueHeaderValue): boolean;
+    TryParseList(input: IList<System_Internal.String>, parsedValues: IList<NameValueHeaderValue>): boolean;
+    TryParseStrictList(input: IList<System_Internal.String>, parsedValues: IList<NameValueHeaderValue>): boolean;
 };
 
 
 export type NameValueHeaderValue = NameValueHeaderValue$instance;
 
 export interface RangeConditionHeaderValue$instance {
-    readonly entityTag: EntityTagHeaderValue | undefined;
-    readonly lastModified: Nullable<DateTimeOffset>;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly EntityTag: EntityTagHeaderValue | undefined;
+    readonly LastModified: Nullable<DateTimeOffset>;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -263,38 +263,38 @@ export const RangeConditionHeaderValue: {
     new(lastModified: DateTimeOffset): RangeConditionHeaderValue;
     new(entityTag: EntityTagHeaderValue): RangeConditionHeaderValue;
     new(entityTag: string): RangeConditionHeaderValue;
-    parse(input: StringSegment): RangeConditionHeaderValue;
-    tryParse(input: StringSegment, parsedValue: RangeConditionHeaderValue): boolean;
+    Parse(input: StringSegment): RangeConditionHeaderValue;
+    TryParse(input: StringSegment, parsedValue: RangeConditionHeaderValue): boolean;
 };
 
 
 export type RangeConditionHeaderValue = RangeConditionHeaderValue$instance;
 
 export interface RangeHeaderValue$instance {
-    readonly ranges: ICollection<RangeItemHeaderValue>;
-    unit: StringSegment;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Ranges: ICollection<RangeItemHeaderValue>;
+    Unit: StringSegment;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const RangeHeaderValue: {
     new(): RangeHeaderValue;
     new(from: Nullable<System_Internal.Int64>, to: Nullable<System_Internal.Int64>): RangeHeaderValue;
-    parse(input: StringSegment): RangeHeaderValue;
-    tryParse(input: StringSegment, parsedValue: RangeHeaderValue): boolean;
+    Parse(input: StringSegment): RangeHeaderValue;
+    TryParse(input: StringSegment, parsedValue: RangeHeaderValue): boolean;
 };
 
 
 export type RangeHeaderValue = RangeHeaderValue$instance;
 
 export interface RangeItemHeaderValue$instance {
-    readonly from: Nullable<System_Internal.Int64>;
-    readonly to: Nullable<System_Internal.Int64>;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly From: Nullable<System_Internal.Int64>;
+    readonly To: Nullable<System_Internal.Int64>;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -306,204 +306,204 @@ export const RangeItemHeaderValue: {
 export type RangeItemHeaderValue = RangeItemHeaderValue$instance;
 
 export interface SetCookieHeaderValue$instance {
-    domain: StringSegment;
-    expires: Nullable<DateTimeOffset>;
-    readonly extensions: IList<StringSegment>;
-    httpOnly: boolean;
-    maxAge: Nullable<TimeSpan>;
-    name: StringSegment;
-    path: StringSegment;
-    sameSite: SameSiteMode;
-    secure: boolean;
-    value: StringSegment;
-    appendToStringBuilder(builder: StringBuilder): void;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Domain: StringSegment;
+    Expires: Nullable<DateTimeOffset>;
+    readonly Extensions: IList<StringSegment>;
+    HttpOnly: boolean;
+    MaxAge: Nullable<TimeSpan>;
+    Name: StringSegment;
+    Path: StringSegment;
+    SameSite: SameSiteMode;
+    Secure: boolean;
+    Value: StringSegment;
+    AppendToStringBuilder(builder: StringBuilder): void;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const SetCookieHeaderValue: {
     new(name: StringSegment): SetCookieHeaderValue;
     new(name: StringSegment, value: StringSegment): SetCookieHeaderValue;
-    parse(input: StringSegment): SetCookieHeaderValue;
-    parseList(inputs: IList<System_Internal.String>): IList<SetCookieHeaderValue>;
-    parseStrictList(inputs: IList<System_Internal.String>): IList<SetCookieHeaderValue>;
-    tryParse(input: StringSegment, parsedValue: SetCookieHeaderValue): boolean;
-    tryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<SetCookieHeaderValue>): boolean;
-    tryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<SetCookieHeaderValue>): boolean;
+    Parse(input: StringSegment): SetCookieHeaderValue;
+    ParseList(inputs: IList<System_Internal.String>): IList<SetCookieHeaderValue>;
+    ParseStrictList(inputs: IList<System_Internal.String>): IList<SetCookieHeaderValue>;
+    TryParse(input: StringSegment, parsedValue: SetCookieHeaderValue): boolean;
+    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<SetCookieHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<SetCookieHeaderValue>): boolean;
 };
 
 
 export type SetCookieHeaderValue = SetCookieHeaderValue$instance;
 
 export interface StringWithQualityHeaderValue$instance {
-    readonly quality: Nullable<System_Internal.Double>;
-    readonly value: StringSegment;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Quality: Nullable<System_Internal.Double>;
+    readonly Value: StringSegment;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const StringWithQualityHeaderValue: {
     new(value: StringSegment): StringWithQualityHeaderValue;
     new(value: StringSegment, quality: double): StringWithQualityHeaderValue;
-    parse(input: StringSegment): StringWithQualityHeaderValue;
-    parseList(input: IList<System_Internal.String>): IList<StringWithQualityHeaderValue>;
-    parseStrictList(input: IList<System_Internal.String>): IList<StringWithQualityHeaderValue>;
-    tryParse(input: StringSegment, parsedValue: StringWithQualityHeaderValue): boolean;
-    tryParseList(input: IList<System_Internal.String>, parsedValues: IList<StringWithQualityHeaderValue>): boolean;
-    tryParseStrictList(input: IList<System_Internal.String>, parsedValues: IList<StringWithQualityHeaderValue>): boolean;
+    Parse(input: StringSegment): StringWithQualityHeaderValue;
+    ParseList(input: IList<System_Internal.String>): IList<StringWithQualityHeaderValue>;
+    ParseStrictList(input: IList<System_Internal.String>): IList<StringWithQualityHeaderValue>;
+    TryParse(input: StringSegment, parsedValue: StringWithQualityHeaderValue): boolean;
+    TryParseList(input: IList<System_Internal.String>, parsedValues: IList<StringWithQualityHeaderValue>): boolean;
+    TryParseStrictList(input: IList<System_Internal.String>, parsedValues: IList<StringWithQualityHeaderValue>): boolean;
 };
 
 
 export type StringWithQualityHeaderValue = StringWithQualityHeaderValue$instance;
 
 export interface StringWithQualityHeaderValueComparer$instance {
-    compare(stringWithQuality1: StringWithQualityHeaderValue, stringWithQuality2: StringWithQualityHeaderValue): int;
+    Compare(stringWithQuality1: StringWithQualityHeaderValue, stringWithQuality2: StringWithQualityHeaderValue): int;
 }
 
 
 export const StringWithQualityHeaderValueComparer: {
     new(): StringWithQualityHeaderValueComparer;
-    readonly qualityComparer: StringWithQualityHeaderValueComparer;
+    readonly QualityComparer: StringWithQualityHeaderValueComparer;
 };
 
 
 export type StringWithQualityHeaderValueComparer = StringWithQualityHeaderValueComparer$instance;
 
 export abstract class ContentDispositionHeaderValueIdentityExtensions$instance {
-    static isFileDisposition(header: ContentDispositionHeaderValue): boolean;
-    static isFormDisposition(header: ContentDispositionHeaderValue): boolean;
+    static IsFileDisposition(header: ContentDispositionHeaderValue): boolean;
+    static IsFormDisposition(header: ContentDispositionHeaderValue): boolean;
 }
 
 
 export type ContentDispositionHeaderValueIdentityExtensions = ContentDispositionHeaderValueIdentityExtensions$instance;
 
 export abstract class HeaderNames$instance {
-    static readonly accept: string;
-    static readonly acceptCharset: string;
-    static readonly acceptEncoding: string;
-    static readonly acceptLanguage: string;
-    static readonly acceptRanges: string;
-    static readonly accessControlAllowCredentials: string;
-    static readonly accessControlAllowHeaders: string;
-    static readonly accessControlAllowMethods: string;
-    static readonly accessControlAllowOrigin: string;
-    static readonly accessControlExposeHeaders: string;
-    static readonly accessControlMaxAge: string;
-    static readonly accessControlRequestHeaders: string;
-    static readonly accessControlRequestMethod: string;
-    static readonly age: string;
-    static readonly allow: string;
-    static readonly altSvc: string;
-    static readonly authority: string;
-    static readonly authorization: string;
-    static readonly baggage: string;
-    static readonly cacheControl: string;
-    static readonly connection: string;
-    static readonly contentDisposition: string;
-    static readonly contentEncoding: string;
-    static readonly contentLanguage: string;
-    static readonly contentLength: string;
-    static readonly contentLocation: string;
-    static readonly contentMD5: string;
-    static readonly contentRange: string;
-    static readonly contentSecurityPolicy: string;
-    static readonly contentSecurityPolicyReportOnly: string;
-    static readonly contentType: string;
-    static readonly correlationContext: string;
-    static readonly cookie: string;
-    static readonly date: string;
+    static readonly Accept: string;
+    static readonly AcceptCharset: string;
+    static readonly AcceptEncoding: string;
+    static readonly AcceptLanguage: string;
+    static readonly AcceptRanges: string;
+    static readonly AccessControlAllowCredentials: string;
+    static readonly AccessControlAllowHeaders: string;
+    static readonly AccessControlAllowMethods: string;
+    static readonly AccessControlAllowOrigin: string;
+    static readonly AccessControlExposeHeaders: string;
+    static readonly AccessControlMaxAge: string;
+    static readonly AccessControlRequestHeaders: string;
+    static readonly AccessControlRequestMethod: string;
+    static readonly Age: string;
+    static readonly Allow: string;
+    static readonly AltSvc: string;
+    static readonly Authority: string;
+    static readonly Authorization: string;
+    static readonly Baggage: string;
+    static readonly CacheControl: string;
+    static readonly Connection: string;
+    static readonly ContentDisposition: string;
+    static readonly ContentEncoding: string;
+    static readonly ContentLanguage: string;
+    static readonly ContentLength: string;
+    static readonly ContentLocation: string;
+    static readonly ContentMD5: string;
+    static readonly ContentRange: string;
+    static readonly ContentSecurityPolicy: string;
+    static readonly ContentSecurityPolicyReportOnly: string;
+    static readonly ContentType: string;
+    static readonly CorrelationContext: string;
+    static readonly Cookie: string;
+    static readonly Date: string;
     static readonly DNT: string;
-    static readonly eTag: string;
-    static readonly expires: string;
-    static readonly expect: string;
-    static readonly from: string;
-    static readonly grpcAcceptEncoding: string;
-    static readonly grpcEncoding: string;
-    static readonly grpcMessage: string;
-    static readonly grpcStatus: string;
-    static readonly grpcTimeout: string;
-    static readonly host: string;
-    static readonly keepAlive: string;
-    static readonly ifMatch: string;
-    static readonly ifModifiedSince: string;
-    static readonly ifNoneMatch: string;
-    static readonly ifRange: string;
-    static readonly ifUnmodifiedSince: string;
-    static readonly lastModified: string;
-    static readonly link: string;
-    static readonly location: string;
-    static readonly maxForwards: string;
-    static readonly method: string;
-    static readonly origin: string;
-    static readonly path: string;
-    static readonly pragma: string;
-    static readonly proxyAuthenticate: string;
-    static readonly proxyAuthorization: string;
-    static readonly proxyConnection: string;
-    static readonly range: string;
-    static readonly referer: string;
-    static readonly retryAfter: string;
-    static readonly requestId: string;
-    static readonly scheme: string;
-    static readonly secWebSocketAccept: string;
-    static readonly secWebSocketKey: string;
-    static readonly secWebSocketProtocol: string;
-    static readonly secWebSocketVersion: string;
-    static readonly secWebSocketExtensions: string;
-    static readonly server: string;
-    static readonly setCookie: string;
-    static readonly status: string;
-    static readonly strictTransportSecurity: string;
+    static readonly ETag: string;
+    static readonly Expires: string;
+    static readonly Expect: string;
+    static readonly From: string;
+    static readonly GrpcAcceptEncoding: string;
+    static readonly GrpcEncoding: string;
+    static readonly GrpcMessage: string;
+    static readonly GrpcStatus: string;
+    static readonly GrpcTimeout: string;
+    static readonly Host: string;
+    static readonly KeepAlive: string;
+    static readonly IfMatch: string;
+    static readonly IfModifiedSince: string;
+    static readonly IfNoneMatch: string;
+    static readonly IfRange: string;
+    static readonly IfUnmodifiedSince: string;
+    static readonly LastModified: string;
+    static readonly Link: string;
+    static readonly Location: string;
+    static readonly MaxForwards: string;
+    static readonly Method: string;
+    static readonly Origin: string;
+    static readonly Path: string;
+    static readonly Pragma: string;
+    static readonly ProxyAuthenticate: string;
+    static readonly ProxyAuthorization: string;
+    static readonly ProxyConnection: string;
+    static readonly Range: string;
+    static readonly Referer: string;
+    static readonly RetryAfter: string;
+    static readonly RequestId: string;
+    static readonly Scheme: string;
+    static readonly SecWebSocketAccept: string;
+    static readonly SecWebSocketKey: string;
+    static readonly SecWebSocketProtocol: string;
+    static readonly SecWebSocketVersion: string;
+    static readonly SecWebSocketExtensions: string;
+    static readonly Server: string;
+    static readonly SetCookie: string;
+    static readonly Status: string;
+    static readonly StrictTransportSecurity: string;
     static readonly TE: string;
-    static readonly trailer: string;
-    static readonly transferEncoding: string;
-    static readonly translate: string;
-    static readonly traceParent: string;
-    static readonly traceState: string;
-    static readonly upgrade: string;
-    static readonly upgradeInsecureRequests: string;
-    static readonly userAgent: string;
-    static readonly vary: string;
-    static readonly via: string;
-    static readonly warning: string;
-    static readonly webSocketSubProtocols: string;
-    static readonly wwwAuthenticate: string;
-    static readonly xContentTypeOptions: string;
-    static readonly xFrameOptions: string;
-    static readonly xPoweredBy: string;
-    static readonly xRequestedWith: string;
-    static readonly xuaCompatible: string;
-    static readonly xxssProtection: string;
+    static readonly Trailer: string;
+    static readonly TransferEncoding: string;
+    static readonly Translate: string;
+    static readonly TraceParent: string;
+    static readonly TraceState: string;
+    static readonly Upgrade: string;
+    static readonly UpgradeInsecureRequests: string;
+    static readonly UserAgent: string;
+    static readonly Vary: string;
+    static readonly Via: string;
+    static readonly Warning: string;
+    static readonly WebSocketSubProtocols: string;
+    static readonly WWWAuthenticate: string;
+    static readonly XContentTypeOptions: string;
+    static readonly XFrameOptions: string;
+    static readonly XPoweredBy: string;
+    static readonly XRequestedWith: string;
+    static readonly XUACompatible: string;
+    static readonly XXSSProtection: string;
 }
 
 
 export type HeaderNames = HeaderNames$instance;
 
 export abstract class HeaderQuality$instance {
-    static readonly match: double;
-    static readonly noMatch: double;
+    static readonly Match: double;
+    static readonly NoMatch: double;
 }
 
 
 export type HeaderQuality = HeaderQuality$instance;
 
 export abstract class HeaderUtilities$instance {
-    static containsCacheDirective(cacheControlDirectives: StringValues, targetDirectives: string): boolean;
-    static escapeAsQuotedString(input: StringSegment): StringSegment;
-    static formatDate(dateTime: DateTimeOffset, quoted: boolean): string;
-    static formatDate(dateTime: DateTimeOffset): string;
-    static formatNonNegativeInt64(value: long): string;
-    static isQuoted(input: StringSegment): boolean;
-    static removeQuotes(input: StringSegment): StringSegment;
-    static tryParseDate(input: StringSegment, result: DateTimeOffset): boolean;
-    static tryParseNonNegativeInt32(value: StringSegment, result: int): boolean;
-    static tryParseNonNegativeInt64(value: StringSegment, result: long): boolean;
-    static tryParseSeconds(headerValues: StringValues, targetValue: string, value: Nullable<TimeSpan>): boolean;
-    static unescapeAsQuotedString(input: StringSegment): StringSegment;
+    static ContainsCacheDirective(cacheControlDirectives: StringValues, targetDirectives: string): boolean;
+    static EscapeAsQuotedString(input: StringSegment): StringSegment;
+    static FormatDate(dateTime: DateTimeOffset, quoted: boolean): string;
+    static FormatDate(dateTime: DateTimeOffset): string;
+    static FormatNonNegativeInt64(value: long): string;
+    static IsQuoted(input: StringSegment): boolean;
+    static RemoveQuotes(input: StringSegment): StringSegment;
+    static TryParseDate(input: StringSegment, result: DateTimeOffset): boolean;
+    static TryParseNonNegativeInt32(value: StringSegment, result: int): boolean;
+    static TryParseNonNegativeInt64(value: StringSegment, result: long): boolean;
+    static TryParseSeconds(headerValues: StringValues, targetValue: string, value: Nullable<TimeSpan>): boolean;
+    static UnescapeAsQuotedString(input: StringSegment): StringSegment;
 }
 
 

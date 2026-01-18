@@ -27,49 +27,49 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions, IOptionsMonitor } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IAuthenticateResultFeature$instance {
-    get authenticateResult(): AuthenticateResult | undefined;
-    set authenticateResult(value: AuthenticateResult);
+    get AuthenticateResult(): AuthenticateResult | undefined;
+    set AuthenticateResult(value: AuthenticateResult);
 }
 
 
 export type IAuthenticateResultFeature = IAuthenticateResultFeature$instance;
 
 export interface IAuthenticationConfigurationProvider$instance {
-    readonly authenticationConfiguration: IConfiguration;
+    readonly AuthenticationConfiguration: IConfiguration;
 }
 
 
 export type IAuthenticationConfigurationProvider = IAuthenticationConfigurationProvider$instance;
 
 export interface IAuthenticationFeature$instance {
-    originalPathBase: PathString;
-    originalPath: PathString;
+    OriginalPathBase: PathString;
+    OriginalPath: PathString;
 }
 
 
 export type IAuthenticationFeature = IAuthenticationFeature$instance;
 
 export interface IAuthenticationHandler$instance {
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
 }
 
 
 export type IAuthenticationHandler = IAuthenticationHandler$instance;
 
 export interface IAuthenticationHandlerProvider$instance {
-    getHandlerAsync(context: HttpContext, authenticationScheme: string): Task<IAuthenticationHandler | undefined>;
+    GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task<IAuthenticationHandler | undefined>;
 }
 
 
 export type IAuthenticationHandlerProvider = IAuthenticationHandlerProvider$instance;
 
 export interface IAuthenticationRequestHandler$instance extends IAuthenticationHandler {
-    challengeAsync(properties: AuthenticationProperties): Task;
-    handleRequestAsync(): Task<System_Internal.Boolean>;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    authenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    HandleRequestAsync(): Task<System_Internal.Boolean>;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
 }
 
 
@@ -78,41 +78,41 @@ export interface IAuthenticationRequestHandler$instance extends IAuthenticationH
 export type IAuthenticationRequestHandler = IAuthenticationRequestHandler$instance;
 
 export interface IAuthenticationSchemeProvider$instance {
-    addScheme(scheme: AuthenticationScheme): void;
-    getAllSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
-    getSchemeAsync(name: string): Task<AuthenticationScheme | undefined>;
-    removeScheme(name: string): void;
-    tryAddScheme(scheme: AuthenticationScheme): boolean;
+    AddScheme(scheme: AuthenticationScheme): void;
+    GetAllSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
+    GetSchemeAsync(name: string): Task<AuthenticationScheme | undefined>;
+    RemoveScheme(name: string): void;
+    TryAddScheme(scheme: AuthenticationScheme): boolean;
 }
 
 
 export type IAuthenticationSchemeProvider = IAuthenticationSchemeProvider$instance;
 
 export interface IAuthenticationService$instance {
-    authenticateAsync(context: HttpContext, scheme: string): Task<AuthenticateResult>;
-    challengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    signInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    AuthenticateAsync(context: HttpContext, scheme: string): Task<AuthenticateResult>;
+    ChallengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
 }
 
 
 export type IAuthenticationService = IAuthenticationService$instance;
 
 export interface IAuthenticationSignInHandler$instance extends IAuthenticationSignOutHandler, IAuthenticationHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    signInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    signOutAsync(properties: AuthenticationProperties): Task;
-    challengeAsync(properties: AuthenticationProperties): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    SignOutAsync(properties: AuthenticationProperties): Task;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
 }
 
 
 export type IAuthenticationSignInHandler = IAuthenticationSignInHandler$instance;
 
 export interface IAuthenticationSignOutHandler$instance extends IAuthenticationHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    signOutAsync(properties: AuthenticationProperties): Task;
-    challengeAsync(properties: AuthenticationProperties): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    SignOutAsync(properties: AuthenticationProperties): Task;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
 }
 
 
@@ -121,43 +121,43 @@ export interface IAuthenticationSignOutHandler$instance extends IAuthenticationH
 export type IAuthenticationSignOutHandler = IAuthenticationSignOutHandler$instance;
 
 export interface IClaimsTransformation$instance {
-    transformAsync(principal: ClaimsPrincipal): Task<ClaimsPrincipal>;
+    TransformAsync(principal: ClaimsPrincipal): Task<ClaimsPrincipal>;
 }
 
 
 export type IClaimsTransformation = IClaimsTransformation$instance;
 
 export interface IDataSerializer_1$instance<TModel> {
-    deserialize(data: byte[]): TModel | undefined;
-    serialize(model: TModel): byte[];
+    Deserialize(data: byte[]): TModel | undefined;
+    Serialize(model: TModel): byte[];
 }
 
 
 export type IDataSerializer_1<TModel> = IDataSerializer_1$instance<TModel>;
 
 export interface ISecureDataFormat_1$instance<TData> {
-    protect(data: TData, purpose: string): string;
-    protect(data: TData): string;
-    unprotect(protectedText: string, purpose: string): TData | undefined;
-    unprotect(protectedText: string): TData | undefined;
+    Protect(data: TData, purpose: string): string;
+    Protect(data: TData): string;
+    Unprotect(protectedText: string, purpose: string): TData | undefined;
+    Unprotect(protectedText: string): TData | undefined;
 }
 
 
 export type ISecureDataFormat_1<TData> = ISecureDataFormat_1$instance<TData>;
 
 export interface ISystemClock$instance {
-    readonly utcNow: DateTimeOffset;
+    readonly UtcNow: DateTimeOffset;
 }
 
 
 export type ISystemClock = ISystemClock$instance;
 
 export interface AccessDeniedContext$instance extends HandleRequestContext_1<RemoteAuthenticationOptions> {
-    accessDeniedPath: PathString;
-    properties: AuthenticationProperties;
-    get returnUrl(): string | undefined;
-    set returnUrl(value: string);
-    returnUrlParameter: string;
+    AccessDeniedPath: PathString;
+    Properties: AuthenticationProperties;
+    get ReturnUrl(): string | undefined;
+    set ReturnUrl(value: string);
+    ReturnUrlParameter: string;
 }
 
 
@@ -169,35 +169,35 @@ export const AccessDeniedContext: {
 export type AccessDeniedContext = AccessDeniedContext$instance;
 
 export interface AuthenticateResult$instance {
-    readonly failure: Exception | undefined;
-    readonly none: boolean;
-    readonly principal: ClaimsPrincipal;
-    readonly properties: AuthenticationProperties;
-    readonly succeeded: boolean;
-    readonly ticket: AuthenticationTicket | undefined;
-    clone(): AuthenticateResult;
+    readonly Failure: Exception | undefined;
+    readonly None: boolean;
+    readonly Principal: ClaimsPrincipal;
+    readonly Properties: AuthenticationProperties;
+    readonly Succeeded: boolean;
+    readonly Ticket: AuthenticationTicket | undefined;
+    Clone(): AuthenticateResult;
 }
 
 
 export const AuthenticateResult: {
     new(): AuthenticateResult;
-    fail(failure: Exception, properties: AuthenticationProperties): AuthenticateResult;
-    fail(failure: Exception): AuthenticateResult;
-    fail(failureMessage: string, properties: AuthenticationProperties): AuthenticateResult;
-    fail(failureMessage: string): AuthenticateResult;
-    noResult(): AuthenticateResult;
-    success(ticket: AuthenticationTicket): AuthenticateResult;
+    Fail(failure: Exception, properties: AuthenticationProperties): AuthenticateResult;
+    Fail(failure: Exception): AuthenticateResult;
+    Fail(failureMessage: string, properties: AuthenticationProperties): AuthenticateResult;
+    Fail(failureMessage: string): AuthenticateResult;
+    NoResult(): AuthenticateResult;
+    Success(ticket: AuthenticationTicket): AuthenticateResult;
 };
 
 
 export type AuthenticateResult = AuthenticateResult$instance;
 
 export interface AuthenticationBuilder$instance {
-    readonly services: IServiceCollection;
-    addPolicyScheme(authenticationScheme: string, displayName: string, configureOptions: Action<PolicySchemeOptions>): AuthenticationBuilder;
-    addRemoteScheme<TOptions extends RemoteAuthenticationOptions, THandler extends RemoteAuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
-    addScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
-    addScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
+    readonly Services: IServiceCollection;
+    AddPolicyScheme(authenticationScheme: string, displayName: string, configureOptions: Action<PolicySchemeOptions>): AuthenticationBuilder;
+    AddRemoteScheme<TOptions extends RemoteAuthenticationOptions, THandler extends RemoteAuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
+    AddScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
+    AddScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
 }
 
 
@@ -221,8 +221,8 @@ export const AuthenticationFailureException: {
 export type AuthenticationFailureException = AuthenticationFailureException$instance;
 
 export interface AuthenticationFeature$instance {
-    originalPath: PathString;
-    originalPathBase: PathString;
+    OriginalPath: PathString;
+    OriginalPathBase: PathString;
 }
 
 
@@ -241,12 +241,12 @@ export type AuthenticationFeature = AuthenticationFeature$instance & __Authentic
 
 
 export interface AuthenticationHandler_1$instance<TOptions extends AuthenticationSchemeOptions> {
-    readonly options: TOptions;
-    readonly scheme: AuthenticationScheme;
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    forbidAsync(properties: AuthenticationProperties): Task;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    readonly Options: TOptions;
+    readonly Scheme: AuthenticationScheme;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    ForbidAsync(properties: AuthenticationProperties): Task;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
 }
 
 
@@ -264,8 +264,8 @@ export type AuthenticationHandler_1<TOptions extends AuthenticationSchemeOptions
 
 
 export interface AuthenticationHandlerProvider$instance {
-    readonly schemes: IAuthenticationSchemeProvider;
-    getHandlerAsync(context: HttpContext, authenticationScheme: string): Task<IAuthenticationHandler | undefined>;
+    readonly Schemes: IAuthenticationSchemeProvider;
+    GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task<IAuthenticationHandler | undefined>;
 }
 
 
@@ -284,8 +284,8 @@ export type AuthenticationHandlerProvider = AuthenticationHandlerProvider$instan
 
 
 export interface AuthenticationMiddleware$instance {
-    schemes: IAuthenticationSchemeProvider;
-    invoke(context: HttpContext): Task;
+    Schemes: IAuthenticationSchemeProvider;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -297,23 +297,23 @@ export const AuthenticationMiddleware: {
 export type AuthenticationMiddleware = AuthenticationMiddleware$instance;
 
 export interface AuthenticationOptions$instance {
-    get defaultAuthenticateScheme(): string | undefined;
-    set defaultAuthenticateScheme(value: string);
-    get defaultChallengeScheme(): string | undefined;
-    set defaultChallengeScheme(value: string);
-    get defaultForbidScheme(): string | undefined;
-    set defaultForbidScheme(value: string);
-    get defaultScheme(): string | undefined;
-    set defaultScheme(value: string);
-    get defaultSignInScheme(): string | undefined;
-    set defaultSignInScheme(value: string);
-    get defaultSignOutScheme(): string | undefined;
-    set defaultSignOutScheme(value: string);
-    requireAuthenticatedSignIn: boolean;
-    readonly schemeMap: IDictionary<System_Internal.String, AuthenticationSchemeBuilder>;
-    readonly schemes: IEnumerable<AuthenticationSchemeBuilder>;
-    addScheme(name: string, configureBuilder: Action<AuthenticationSchemeBuilder>): void;
-    addScheme<THandler extends IAuthenticationHandler>(name: string, displayName: string): void;
+    get DefaultAuthenticateScheme(): string | undefined;
+    set DefaultAuthenticateScheme(value: string);
+    get DefaultChallengeScheme(): string | undefined;
+    set DefaultChallengeScheme(value: string);
+    get DefaultForbidScheme(): string | undefined;
+    set DefaultForbidScheme(value: string);
+    get DefaultScheme(): string | undefined;
+    set DefaultScheme(value: string);
+    get DefaultSignInScheme(): string | undefined;
+    set DefaultSignInScheme(value: string);
+    get DefaultSignOutScheme(): string | undefined;
+    set DefaultSignOutScheme(value: string);
+    RequireAuthenticatedSignIn: boolean;
+    readonly SchemeMap: IDictionary<System_Internal.String, AuthenticationSchemeBuilder>;
+    readonly Schemes: IEnumerable<AuthenticationSchemeBuilder>;
+    AddScheme(name: string, configureBuilder: Action<AuthenticationSchemeBuilder>): void;
+    AddScheme<THandler extends IAuthenticationHandler>(name: string, displayName: string): void;
 }
 
 
@@ -325,18 +325,18 @@ export const AuthenticationOptions: {
 export type AuthenticationOptions = AuthenticationOptions$instance;
 
 export interface AuthenticationProperties$instance {
-    allowRefresh: Nullable<System_Internal.Boolean>;
-    expiresUtc: Nullable<DateTimeOffset>;
-    isPersistent: boolean;
-    issuedUtc: Nullable<DateTimeOffset>;
-    readonly items: IDictionary<System_Internal.String, string | undefined>;
-    readonly parameters: IDictionary<System_Internal.String, unknown | undefined>;
-    redirectUri: string;
-    clone(): AuthenticationProperties;
-    getParameter<T>(key: string): T | undefined;
-    getString(key: string): string;
-    setParameter<T>(key: string, value: T): void;
-    setString(key: string, value: string): void;
+    AllowRefresh: Nullable<System_Internal.Boolean>;
+    ExpiresUtc: Nullable<DateTimeOffset>;
+    IsPersistent: boolean;
+    IssuedUtc: Nullable<DateTimeOffset>;
+    readonly Items: IDictionary<System_Internal.String, string | undefined>;
+    readonly Parameters: IDictionary<System_Internal.String, unknown | undefined>;
+    RedirectUri: string;
+    Clone(): AuthenticationProperties;
+    GetParameter<T>(key: string): T | undefined;
+    GetString(key: string): string;
+    SetParameter<T>(key: string, value: T): void;
+    SetString(key: string, value: string): void;
 }
 
 
@@ -350,9 +350,9 @@ export const AuthenticationProperties: {
 export type AuthenticationProperties = AuthenticationProperties$instance;
 
 export interface AuthenticationScheme$instance {
-    readonly displayName: string;
-    readonly handlerType: Type;
-    readonly name: string;
+    readonly DisplayName: string;
+    readonly HandlerType: Type;
+    readonly Name: string;
 }
 
 
@@ -364,10 +364,10 @@ export const AuthenticationScheme: {
 export type AuthenticationScheme = AuthenticationScheme$instance;
 
 export interface AuthenticationSchemeBuilder$instance {
-    displayName: string;
-    handlerType: Type;
-    readonly name: string;
-    build(): AuthenticationScheme;
+    DisplayName: string;
+    HandlerType: Type;
+    readonly Name: string;
+    Build(): AuthenticationScheme;
 }
 
 
@@ -379,28 +379,28 @@ export const AuthenticationSchemeBuilder: {
 export type AuthenticationSchemeBuilder = AuthenticationSchemeBuilder$instance;
 
 export interface AuthenticationSchemeOptions$instance {
-    get claimsIssuer(): string | undefined;
-    set claimsIssuer(value: string);
-    events: CookieAuthenticationEvents | unknown;
-    get eventsType(): Type | undefined;
-    set eventsType(value: Type);
-    get forwardAuthenticate(): string | undefined;
-    set forwardAuthenticate(value: string);
-    get forwardChallenge(): string | undefined;
-    set forwardChallenge(value: string);
-    get forwardDefault(): string | undefined;
-    set forwardDefault(value: string);
-    get forwardDefaultSelector(): Func<HttpContext, string | undefined> | undefined;
-    set forwardDefaultSelector(value: Func<HttpContext, string | undefined>);
-    get forwardForbid(): string | undefined;
-    set forwardForbid(value: string);
-    get forwardSignIn(): string | undefined;
-    set forwardSignIn(value: string);
-    get forwardSignOut(): string | undefined;
-    set forwardSignOut(value: string);
-    timeProvider: TimeProvider;
-    validate(): void;
-    validate(scheme: string): void;
+    get ClaimsIssuer(): string | undefined;
+    set ClaimsIssuer(value: string);
+    Events: BearerTokenEvents | unknown;
+    get EventsType(): Type | undefined;
+    set EventsType(value: Type);
+    get ForwardAuthenticate(): string | undefined;
+    set ForwardAuthenticate(value: string);
+    get ForwardChallenge(): string | undefined;
+    set ForwardChallenge(value: string);
+    get ForwardDefault(): string | undefined;
+    set ForwardDefault(value: string);
+    get ForwardDefaultSelector(): Func<HttpContext, string | undefined> | undefined;
+    set ForwardDefaultSelector(value: Func<HttpContext, string | undefined>);
+    get ForwardForbid(): string | undefined;
+    set ForwardForbid(value: string);
+    get ForwardSignIn(): string | undefined;
+    set ForwardSignIn(value: string);
+    get ForwardSignOut(): string | undefined;
+    set ForwardSignOut(value: string);
+    TimeProvider: TimeProvider;
+    Validate(): void;
+    Validate(scheme: string): void;
 }
 
 
@@ -412,17 +412,17 @@ export const AuthenticationSchemeOptions: {
 export type AuthenticationSchemeOptions = AuthenticationSchemeOptions$instance;
 
 export interface AuthenticationSchemeProvider$instance {
-    addScheme(scheme: AuthenticationScheme): void;
-    getAllSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
-    getDefaultAuthenticateSchemeAsync(): Task<AuthenticationScheme | undefined>;
-    getDefaultChallengeSchemeAsync(): Task<AuthenticationScheme | undefined>;
-    getDefaultForbidSchemeAsync(): Task<AuthenticationScheme | undefined>;
-    getDefaultSignInSchemeAsync(): Task<AuthenticationScheme | undefined>;
-    getDefaultSignOutSchemeAsync(): Task<AuthenticationScheme | undefined>;
-    getRequestHandlerSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
-    getSchemeAsync(name: string): Task<AuthenticationScheme | undefined>;
-    removeScheme(name: string): void;
-    tryAddScheme(scheme: AuthenticationScheme): boolean;
+    AddScheme(scheme: AuthenticationScheme): void;
+    GetAllSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
+    GetDefaultAuthenticateSchemeAsync(): Task<AuthenticationScheme | undefined>;
+    GetDefaultChallengeSchemeAsync(): Task<AuthenticationScheme | undefined>;
+    GetDefaultForbidSchemeAsync(): Task<AuthenticationScheme | undefined>;
+    GetDefaultSignInSchemeAsync(): Task<AuthenticationScheme | undefined>;
+    GetDefaultSignOutSchemeAsync(): Task<AuthenticationScheme | undefined>;
+    GetRequestHandlerSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
+    GetSchemeAsync(name: string): Task<AuthenticationScheme | undefined>;
+    RemoveScheme(name: string): void;
+    TryAddScheme(scheme: AuthenticationScheme): boolean;
 }
 
 
@@ -441,15 +441,15 @@ export type AuthenticationSchemeProvider = AuthenticationSchemeProvider$instance
 
 
 export interface AuthenticationService$instance {
-    readonly handlers: IAuthenticationHandlerProvider;
-    readonly options: AuthenticationOptions;
-    readonly schemes: IAuthenticationSchemeProvider;
-    readonly transform: IClaimsTransformation;
-    authenticateAsync(context: HttpContext, scheme: string): Task<AuthenticateResult>;
-    challengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    forbidAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    signInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    signOutAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    readonly Handlers: IAuthenticationHandlerProvider;
+    readonly Options: AuthenticationOptions;
+    readonly Schemes: IAuthenticationSchemeProvider;
+    readonly Transform: IClaimsTransformation;
+    AuthenticateAsync(context: HttpContext, scheme: string): Task<AuthenticateResult>;
+    ChallengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    ForbidAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    SignOutAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
 }
 
 
@@ -468,10 +468,10 @@ export type AuthenticationService = AuthenticationService$instance & __Authentic
 
 
 export interface AuthenticationTicket$instance {
-    readonly authenticationScheme: string;
-    readonly principal: ClaimsPrincipal;
-    readonly properties: AuthenticationProperties;
-    clone(): AuthenticationTicket;
+    readonly AuthenticationScheme: string;
+    readonly Principal: ClaimsPrincipal;
+    readonly Properties: AuthenticationProperties;
+    Clone(): AuthenticationTicket;
 }
 
 
@@ -484,8 +484,8 @@ export const AuthenticationTicket: {
 export type AuthenticationTicket = AuthenticationTicket$instance;
 
 export interface AuthenticationToken$instance {
-    name: string;
-    value: string;
+    Name: string;
+    Value: string;
 }
 
 
@@ -497,11 +497,11 @@ export const AuthenticationToken: {
 export type AuthenticationToken = AuthenticationToken$instance;
 
 export interface BaseContext_1$instance<TOptions extends AuthenticationSchemeOptions> {
-    readonly httpContext: HttpContext;
-    readonly options: TOptions;
-    readonly request: HttpRequest;
-    readonly response: HttpResponse;
-    readonly scheme: AuthenticationScheme;
+    readonly HttpContext: HttpContext;
+    readonly Options: TOptions;
+    readonly Request: HttpRequest;
+    readonly Response: HttpResponse;
+    readonly Scheme: AuthenticationScheme;
 }
 
 
@@ -512,9 +512,9 @@ export const BaseContext_1: {
 export type BaseContext_1<TOptions extends AuthenticationSchemeOptions> = BaseContext_1$instance<TOptions>;
 
 export interface HandleRequestContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends BaseContext_1<TOptions> {
-    readonly result: HandleRequestResult;
-    handleResponse(): void;
-    skipHandler(): void;
+    readonly Result: HandleRequestResult;
+    HandleResponse(): void;
+    SkipHandler(): void;
 }
 
 
@@ -526,24 +526,24 @@ export const HandleRequestContext_1: {
 export type HandleRequestContext_1<TOptions extends AuthenticationSchemeOptions> = HandleRequestContext_1$instance<TOptions>;
 
 export interface HandleRequestResult$instance extends AuthenticateResult {
-    readonly handled: boolean;
-    readonly skipped: boolean;
+    readonly Handled: boolean;
+    readonly Skipped: boolean;
 }
 
 
 export const HandleRequestResult: {
     new(): HandleRequestResult;
-    fail(failureMessage: string, properties: AuthenticationProperties): HandleRequestResult;
-    fail(failureMessage: string): HandleRequestResult;
-    handle(): HandleRequestResult;
-    skipHandler(): HandleRequestResult;
+    Fail(failureMessage: string, properties: AuthenticationProperties): HandleRequestResult;
+    Fail(failureMessage: string): HandleRequestResult;
+    Handle(): HandleRequestResult;
+    SkipHandler(): HandleRequestResult;
 };
 
 
 export type HandleRequestResult = HandleRequestResult$instance;
 
 export interface NoopClaimsTransformation$instance {
-    transformAsync(principal: ClaimsPrincipal): Task<ClaimsPrincipal>;
+    TransformAsync(principal: ClaimsPrincipal): Task<ClaimsPrincipal>;
 }
 
 
@@ -562,11 +562,11 @@ export type NoopClaimsTransformation = NoopClaimsTransformation$instance & __Noo
 
 
 export interface PolicySchemeHandler$instance extends SignInAuthenticationHandler_1$instance<PolicySchemeOptions>, IAuthenticationSignOutHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    signInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    signOutAsync(properties: AuthenticationProperties): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    SignOutAsync(properties: AuthenticationProperties): Task;
 }
 
 
@@ -596,7 +596,7 @@ export const PolicySchemeOptions: {
 export type PolicySchemeOptions = PolicySchemeOptions$instance;
 
 export interface PrincipalContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends PropertiesContext_1<TOptions> {
-    principal: ClaimsPrincipal;
+    Principal: ClaimsPrincipal;
 }
 
 
@@ -607,7 +607,7 @@ export const PrincipalContext_1: {
 export type PrincipalContext_1<TOptions extends AuthenticationSchemeOptions> = PrincipalContext_1$instance<TOptions>;
 
 export interface PropertiesContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends BaseContext_1<TOptions> {
-    readonly properties: AuthenticationProperties;
+    readonly Properties: AuthenticationProperties;
 }
 
 
@@ -618,10 +618,10 @@ export const PropertiesContext_1: {
 export type PropertiesContext_1<TOptions extends AuthenticationSchemeOptions> = PropertiesContext_1$instance<TOptions>;
 
 export interface PropertiesDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationProperties> {
-    protect(data: AuthenticationProperties): string;
-    protect(data: AuthenticationProperties, purpose: string): string;
-    unprotect(protectedText: string): AuthenticationProperties;
-    unprotect(protectedText: string, purpose: string): AuthenticationProperties;
+    Protect(data: AuthenticationProperties): string;
+    Protect(data: AuthenticationProperties, purpose: string): string;
+    Unprotect(protectedText: string): AuthenticationProperties;
+    Unprotect(protectedText: string, purpose: string): AuthenticationProperties;
 }
 
 
@@ -638,16 +638,16 @@ export type PropertiesDataFormat = PropertiesDataFormat$instance & __PropertiesD
 
 
 export interface PropertiesSerializer$instance {
-    deserialize(data: byte[]): AuthenticationProperties | undefined;
-    read(reader: BinaryReader): AuthenticationProperties | undefined;
-    serialize(model: AuthenticationProperties): byte[];
-    write(writer: BinaryWriter, properties: AuthenticationProperties): void;
+    Deserialize(data: byte[]): AuthenticationProperties | undefined;
+    Read(reader: BinaryReader): AuthenticationProperties | undefined;
+    Serialize(model: AuthenticationProperties): byte[];
+    Write(writer: BinaryWriter, properties: AuthenticationProperties): void;
 }
 
 
 export const PropertiesSerializer: {
     new(): PropertiesSerializer;
-    readonly default: PropertiesSerializer;
+    readonly Default: PropertiesSerializer;
 };
 
 
@@ -659,7 +659,7 @@ export type PropertiesSerializer = PropertiesSerializer$instance & __PropertiesS
 
 
 export interface RedirectContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends PropertiesContext_1<TOptions> {
-    redirectUri: string;
+    RedirectUri: string;
 }
 
 
@@ -671,11 +671,11 @@ export const RedirectContext_1: {
 export type RedirectContext_1<TOptions extends AuthenticationSchemeOptions> = RedirectContext_1$instance<TOptions>;
 
 export interface RemoteAuthenticationContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends HandleRequestContext_1<TOptions> {
-    principal: ClaimsPrincipal;
-    properties: AuthenticationProperties;
-    fail(failure: Exception): void;
-    fail(failureMessage: string): void;
-    success(): void;
+    Principal: ClaimsPrincipal;
+    Properties: AuthenticationProperties;
+    Fail(failure: Exception): void;
+    Fail(failureMessage: string): void;
+    Success(): void;
 }
 
 
@@ -686,12 +686,12 @@ export const RemoteAuthenticationContext_1: {
 export type RemoteAuthenticationContext_1<TOptions extends AuthenticationSchemeOptions> = RemoteAuthenticationContext_1$instance<TOptions>;
 
 export interface RemoteAuthenticationEvents$instance {
-    onAccessDenied: Func<AccessDeniedContext, Task>;
-    onRemoteFailure: Func<RemoteFailureContext, Task>;
-    onTicketReceived: Func<TicketReceivedContext, Task>;
-    accessDenied(context: AccessDeniedContext): Task;
-    remoteFailure(context: RemoteFailureContext): Task;
-    ticketReceived(context: TicketReceivedContext): Task;
+    OnAccessDenied: Func<AccessDeniedContext, Task>;
+    OnRemoteFailure: Func<RemoteFailureContext, Task>;
+    OnTicketReceived: Func<TicketReceivedContext, Task>;
+    AccessDenied(context: AccessDeniedContext): Task;
+    RemoteFailure(context: RemoteFailureContext): Task;
+    TicketReceived(context: TicketReceivedContext): Task;
 }
 
 
@@ -703,11 +703,11 @@ export const RemoteAuthenticationEvents: {
 export type RemoteAuthenticationEvents = RemoteAuthenticationEvents$instance;
 
 export interface RemoteAuthenticationHandler_1$instance<TOptions extends RemoteAuthenticationOptions> extends AuthenticationHandler_1$instance<TOptions>, IAuthenticationRequestHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    handleRequestAsync(): Task<System_Internal.Boolean>;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    shouldHandleRequestAsync(): Task<System_Internal.Boolean>;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    HandleRequestAsync(): Task<System_Internal.Boolean>;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    ShouldHandleRequestAsync(): Task<System_Internal.Boolean>;
 }
 
 
@@ -723,23 +723,23 @@ export type RemoteAuthenticationHandler_1<TOptions extends RemoteAuthenticationO
 
 
 export interface RemoteAuthenticationOptions$instance extends AuthenticationSchemeOptions {
-    accessDeniedPath: PathString;
-    backchannel: HttpClient;
-    get backchannelHttpHandler(): HttpMessageHandler | undefined;
-    set backchannelHttpHandler(value: HttpMessageHandler);
-    backchannelTimeout: TimeSpan;
-    callbackPath: PathString;
-    correlationCookie: CookieBuilder;
-    get dataProtectionProvider(): IDataProtectionProvider | undefined;
-    set dataProtectionProvider(value: IDataProtectionProvider);
-    events: RemoteAuthenticationEvents | unknown;
-    remoteAuthenticationTimeout: TimeSpan;
-    returnUrlParameter: string;
-    saveTokens: boolean;
-    get signInScheme(): string | undefined;
-    set signInScheme(value: string);
-    validate(scheme: string): void;
-    validate(): void;
+    AccessDeniedPath: PathString;
+    Backchannel: HttpClient;
+    get BackchannelHttpHandler(): HttpMessageHandler | undefined;
+    set BackchannelHttpHandler(value: HttpMessageHandler);
+    BackchannelTimeout: TimeSpan;
+    CallbackPath: PathString;
+    CorrelationCookie: CookieBuilder;
+    get DataProtectionProvider(): IDataProtectionProvider | undefined;
+    set DataProtectionProvider(value: IDataProtectionProvider);
+    Events: RemoteAuthenticationEvents | unknown;
+    RemoteAuthenticationTimeout: TimeSpan;
+    ReturnUrlParameter: string;
+    SaveTokens: boolean;
+    get SignInScheme(): string | undefined;
+    set SignInScheme(value: string);
+    Validate(scheme: string): void;
+    Validate(): void;
 }
 
 
@@ -751,9 +751,9 @@ export const RemoteAuthenticationOptions: {
 export type RemoteAuthenticationOptions = RemoteAuthenticationOptions$instance;
 
 export interface RemoteFailureContext$instance extends HandleRequestContext_1<RemoteAuthenticationOptions> {
-    get failure(): Exception | undefined;
-    set failure(value: Exception);
-    properties: AuthenticationProperties;
+    get Failure(): Exception | undefined;
+    set Failure(value: Exception);
+    Properties: AuthenticationProperties;
 }
 
 
@@ -765,8 +765,8 @@ export const RemoteFailureContext: {
 export type RemoteFailureContext = RemoteFailureContext$instance;
 
 export interface RequestPathBaseCookieBuilder$instance extends CookieBuilder {
-    build(context: HttpContext, expiresFrom: DateTimeOffset): CookieOptions;
-    build(context: HttpContext): CookieOptions;
+    Build(context: HttpContext, expiresFrom: DateTimeOffset): CookieOptions;
+    Build(context: HttpContext): CookieOptions;
 }
 
 
@@ -778,13 +778,13 @@ export const RequestPathBaseCookieBuilder: {
 export type RequestPathBaseCookieBuilder = RequestPathBaseCookieBuilder$instance;
 
 export interface ResultContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends BaseContext_1<TOptions> {
-    principal: ClaimsPrincipal;
-    properties: AuthenticationProperties;
-    readonly result: AuthenticateResult;
-    fail(failure: Exception): void;
-    fail(failureMessage: string): void;
-    noResult(): void;
-    success(): void;
+    Principal: ClaimsPrincipal;
+    Properties: AuthenticationProperties;
+    readonly Result: AuthenticateResult;
+    Fail(failure: Exception): void;
+    Fail(failureMessage: string): void;
+    NoResult(): void;
+    Success(): void;
 }
 
 
@@ -795,10 +795,10 @@ export const ResultContext_1: {
 export type ResultContext_1<TOptions extends AuthenticationSchemeOptions> = ResultContext_1$instance<TOptions>;
 
 export interface SecureDataFormat_1$instance<TData> {
-    protect(data: TData): string;
-    protect(data: TData, purpose: string): string;
-    unprotect(protectedText: string): TData | undefined;
-    unprotect(protectedText: string, purpose: string): TData | undefined;
+    Protect(data: TData): string;
+    Protect(data: TData, purpose: string): string;
+    Unprotect(protectedText: string): TData | undefined;
+    Unprotect(protectedText: string, purpose: string): TData | undefined;
 }
 
 
@@ -815,11 +815,11 @@ export type SecureDataFormat_1<TData> = SecureDataFormat_1$instance<TData> & __S
 
 
 export interface SignInAuthenticationHandler_1$instance<TOptions extends AuthenticationSchemeOptions> extends SignOutAuthenticationHandler_1$instance<TOptions>, IAuthenticationSignOutHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    signInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    signOutAsync(properties: AuthenticationProperties): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    SignOutAsync(properties: AuthenticationProperties): Task;
 }
 
 
@@ -838,10 +838,10 @@ export type SignInAuthenticationHandler_1<TOptions extends AuthenticationSchemeO
 
 
 export interface SignOutAuthenticationHandler_1$instance<TOptions extends AuthenticationSchemeOptions> extends AuthenticationHandler_1$instance<TOptions>, IAuthenticationSignOutHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    signOutAsync(properties: AuthenticationProperties): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    SignOutAsync(properties: AuthenticationProperties): Task;
 }
 
 
@@ -859,7 +859,7 @@ export type SignOutAuthenticationHandler_1<TOptions extends AuthenticationScheme
 
 
 export interface SystemClock$instance {
-    readonly utcNow: DateTimeOffset;
+    readonly UtcNow: DateTimeOffset;
 }
 
 
@@ -878,10 +878,10 @@ export type SystemClock = SystemClock$instance & __SystemClock$views;
 
 
 export interface TicketDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationTicket> {
-    protect(data: AuthenticationTicket): string;
-    protect(data: AuthenticationTicket, purpose: string): string;
-    unprotect(protectedText: string): AuthenticationTicket;
-    unprotect(protectedText: string, purpose: string): AuthenticationTicket;
+    Protect(data: AuthenticationTicket): string;
+    Protect(data: AuthenticationTicket, purpose: string): string;
+    Unprotect(protectedText: string): AuthenticationTicket;
+    Unprotect(protectedText: string, purpose: string): AuthenticationTicket;
 }
 
 
@@ -898,8 +898,8 @@ export type TicketDataFormat = TicketDataFormat$instance & __TicketDataFormat$vi
 
 
 export interface TicketReceivedContext$instance extends RemoteAuthenticationContext_1<RemoteAuthenticationOptions> {
-    get returnUri(): string | undefined;
-    set returnUri(value: string);
+    get ReturnUri(): string | undefined;
+    set ReturnUri(value: string);
 }
 
 
@@ -911,16 +911,16 @@ export const TicketReceivedContext: {
 export type TicketReceivedContext = TicketReceivedContext$instance;
 
 export interface TicketSerializer$instance {
-    deserialize(data: byte[]): AuthenticationTicket | undefined;
-    read(reader: BinaryReader): AuthenticationTicket | undefined;
-    serialize(ticket: AuthenticationTicket): byte[];
-    write(writer: BinaryWriter, ticket: AuthenticationTicket): void;
+    Deserialize(data: byte[]): AuthenticationTicket | undefined;
+    Read(reader: BinaryReader): AuthenticationTicket | undefined;
+    Serialize(ticket: AuthenticationTicket): byte[];
+    Write(writer: BinaryWriter, ticket: AuthenticationTicket): void;
 }
 
 
 export const TicketSerializer: {
     new(): TicketSerializer;
-    readonly default: TicketSerializer;
+    readonly Default: TicketSerializer;
 };
 
 
@@ -932,76 +932,76 @@ export type TicketSerializer = TicketSerializer$instance & __TicketSerializer$vi
 
 
 export abstract class AuthenticationConfigurationProviderExtensions$instance {
-    static getSchemeConfiguration(provider: IAuthenticationConfigurationProvider, authenticationScheme: string): IConfiguration;
+    static GetSchemeConfiguration(provider: IAuthenticationConfigurationProvider, authenticationScheme: string): IConfiguration;
 }
 
 
 export type AuthenticationConfigurationProviderExtensions = AuthenticationConfigurationProviderExtensions$instance;
 
 export abstract class AuthenticationHttpContextExtensions$instance {
-    static authenticateAsync(context: HttpContext, scheme: string): Task<AuthenticateResult>;
-    static authenticateAsync(context: HttpContext): Task<AuthenticateResult>;
-    static challengeAsync(context: HttpContext, properties: AuthenticationProperties): Task;
-    static challengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    static challengeAsync(context: HttpContext, scheme: string): Task;
-    static challengeAsync(context: HttpContext): Task;
-    static forbidAsync(context: HttpContext, properties: AuthenticationProperties): Task;
-    static forbidAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    static forbidAsync(context: HttpContext, scheme: string): Task;
-    static forbidAsync(context: HttpContext): Task;
-    static getTokenAsync(context: HttpContext, scheme: string, tokenName: string): Task<string | undefined>;
-    static getTokenAsync(context: HttpContext, tokenName: string): Task<string | undefined>;
-    static signInAsync(context: HttpContext, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    static signInAsync(context: HttpContext, principal: ClaimsPrincipal): Task;
-    static signInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    static signInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal): Task;
-    static signOutAsync(context: HttpContext, properties: AuthenticationProperties): Task;
-    static signOutAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    static signOutAsync(context: HttpContext, scheme: string): Task;
-    static signOutAsync(context: HttpContext): Task;
+    static AuthenticateAsync(context: HttpContext, scheme: string): Task<AuthenticateResult>;
+    static AuthenticateAsync(context: HttpContext): Task<AuthenticateResult>;
+    static ChallengeAsync(context: HttpContext, properties: AuthenticationProperties): Task;
+    static ChallengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    static ChallengeAsync(context: HttpContext, scheme: string): Task;
+    static ChallengeAsync(context: HttpContext): Task;
+    static ForbidAsync(context: HttpContext, properties: AuthenticationProperties): Task;
+    static ForbidAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    static ForbidAsync(context: HttpContext, scheme: string): Task;
+    static ForbidAsync(context: HttpContext): Task;
+    static GetTokenAsync(context: HttpContext, scheme: string, tokenName: string): Task<string | undefined>;
+    static GetTokenAsync(context: HttpContext, tokenName: string): Task<string | undefined>;
+    static SignInAsync(context: HttpContext, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    static SignInAsync(context: HttpContext, principal: ClaimsPrincipal): Task;
+    static SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    static SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal): Task;
+    static SignOutAsync(context: HttpContext, properties: AuthenticationProperties): Task;
+    static SignOutAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    static SignOutAsync(context: HttpContext, scheme: string): Task;
+    static SignOutAsync(context: HttpContext): Task;
 }
 
 
 export type AuthenticationHttpContextExtensions = AuthenticationHttpContextExtensions$instance;
 
 export abstract class AuthenticationTokenExtensions$instance {
-    static getTokenAsync(auth: IAuthenticationService, context: HttpContext, scheme: string, tokenName: string): Task<string | undefined>;
-    static getTokenAsync(auth: IAuthenticationService, context: HttpContext, tokenName: string): Task<string | undefined>;
-    static getTokens(properties: AuthenticationProperties): IEnumerable<AuthenticationToken>;
-    static getTokenValue(properties: AuthenticationProperties, tokenName: string): string | undefined;
-    static storeTokens(properties: AuthenticationProperties, tokens: IEnumerable<AuthenticationToken>): void;
-    static updateTokenValue(properties: AuthenticationProperties, tokenName: string, tokenValue: string): boolean;
+    static GetTokenAsync(auth: IAuthenticationService, context: HttpContext, scheme: string, tokenName: string): Task<string | undefined>;
+    static GetTokenAsync(auth: IAuthenticationService, context: HttpContext, tokenName: string): Task<string | undefined>;
+    static GetTokens(properties: AuthenticationProperties): IEnumerable<AuthenticationToken>;
+    static GetTokenValue(properties: AuthenticationProperties, tokenName: string): string | undefined;
+    static StoreTokens(properties: AuthenticationProperties, tokens: IEnumerable<AuthenticationToken>): void;
+    static UpdateTokenValue(properties: AuthenticationProperties, tokenName: string, tokenValue: string): boolean;
 }
 
 
 export type AuthenticationTokenExtensions = AuthenticationTokenExtensions$instance;
 
 export abstract class Base64UrlTextEncoder$instance {
-    static decode(text: string): byte[];
-    static encode(data: byte[]): string;
+    static Decode(text: string): byte[];
+    static Encode(data: byte[]): string;
 }
 
 
 export type Base64UrlTextEncoder = Base64UrlTextEncoder$instance;
 
 export abstract class ClaimActionCollectionMapExtensions$instance {
-    static deleteClaim(collection: ClaimActionCollection, claimType: string): void;
-    static deleteClaims(collection: ClaimActionCollection, ...claimTypes: string[]): void;
-    static mapAll(collection: ClaimActionCollection): void;
-    static mapAllExcept(collection: ClaimActionCollection, ...exclusions: string[]): void;
-    static mapCustomJson(collection: ClaimActionCollection, claimType: string, resolver: Func<JsonElement, System_Internal.String>): void;
-    static mapCustomJson(collection: ClaimActionCollection, claimType: string, valueType: string, resolver: Func<JsonElement, System_Internal.String>): void;
-    static mapJsonKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, valueType: string): void;
-    static mapJsonKey(collection: ClaimActionCollection, claimType: string, jsonKey: string): void;
-    static mapJsonSubKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, subKey: string, valueType: string): void;
-    static mapJsonSubKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, subKey: string): void;
+    static DeleteClaim(collection: ClaimActionCollection, claimType: string): void;
+    static DeleteClaims(collection: ClaimActionCollection, ...claimTypes: string[]): void;
+    static MapAll(collection: ClaimActionCollection): void;
+    static MapAllExcept(collection: ClaimActionCollection, ...exclusions: string[]): void;
+    static MapCustomJson(collection: ClaimActionCollection, claimType: string, resolver: Func<JsonElement, System_Internal.String>): void;
+    static MapCustomJson(collection: ClaimActionCollection, claimType: string, valueType: string, resolver: Func<JsonElement, System_Internal.String>): void;
+    static MapJsonKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, valueType: string): void;
+    static MapJsonKey(collection: ClaimActionCollection, claimType: string, jsonKey: string): void;
+    static MapJsonSubKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, subKey: string, valueType: string): void;
+    static MapJsonSubKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, subKey: string): void;
 }
 
 
 export type ClaimActionCollectionMapExtensions = ClaimActionCollectionMapExtensions$instance;
 
 export abstract class JsonDocumentAuthExtensions$instance {
-    static getString(element: JsonElement, key: string): string | undefined;
+    static GetString(element: JsonElement, key: string): string | undefined;
 }
 
 

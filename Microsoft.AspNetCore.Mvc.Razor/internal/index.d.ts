@@ -33,8 +33,8 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum LanguageViewLocationExpanderFormat {
-    subFolder = 0,
-    suffix = 1
+    SubFolder = 0,
+    Suffix = 1
 }
 
 
@@ -42,41 +42,41 @@ export type RenderAsyncDelegate = () => Task;
 
 
 export interface IRazorPage$instance {
-    viewContext: ViewContext;
-    get bodyContent(): IHtmlContent | undefined;
-    set bodyContent(value: IHtmlContent);
-    isLayoutBeingRendered: boolean;
-    path: string;
-    layout: string;
-    previousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
-    readonly sectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
-    ensureRenderedBodyOrSections(): void;
-    executeAsync(): Task;
+    ViewContext: ViewContext;
+    get BodyContent(): IHtmlContent | undefined;
+    set BodyContent(value: IHtmlContent);
+    IsLayoutBeingRendered: boolean;
+    Path: string;
+    Layout: string;
+    PreviousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
+    readonly SectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
+    EnsureRenderedBodyOrSections(): void;
+    ExecuteAsync(): Task;
 }
 
 
 export type IRazorPage = IRazorPage$instance;
 
 export interface IRazorPageActivator$instance {
-    activate(page: IRazorPage, context: ViewContext): void;
+    Activate(page: IRazorPage, context: ViewContext): void;
 }
 
 
 export type IRazorPageActivator = IRazorPageActivator$instance;
 
 export interface IRazorPageFactoryProvider$instance {
-    createFactory(relativePath: string): RazorPageFactoryResult;
+    CreateFactory(relativePath: string): RazorPageFactoryResult;
 }
 
 
 export type IRazorPageFactoryProvider = IRazorPageFactoryProvider$instance;
 
 export interface IRazorViewEngine$instance extends IViewEngine {
-    findPage(context: ActionContext, pageName: string): RazorPageResult;
-    findView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    getAbsolutePath(executingFilePath: string, pagePath: string): string | undefined;
-    getPage(executingFilePath: string, pagePath: string): RazorPageResult;
-    getView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    FindPage(context: ActionContext, pageName: string): RazorPageResult;
+    FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
+    GetAbsolutePath(executingFilePath: string, pagePath: string): string | undefined;
+    GetPage(executingFilePath: string, pagePath: string): RazorPageResult;
+    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
@@ -85,38 +85,38 @@ export interface IRazorViewEngine$instance extends Microsoft_AspNetCore_Mvc_View
 export type IRazorViewEngine = IRazorViewEngine$instance;
 
 export interface ITagHelperActivator$instance {
-    create<TTagHelper extends ITagHelper>(context: ViewContext): TTagHelper;
+    Create<TTagHelper extends ITagHelper>(context: ViewContext): TTagHelper;
 }
 
 
 export type ITagHelperActivator = ITagHelperActivator$instance;
 
 export interface ITagHelperFactory$instance {
-    createTagHelper<TTagHelper extends ITagHelper>(context: ViewContext): TTagHelper;
+    CreateTagHelper<TTagHelper extends ITagHelper>(context: ViewContext): TTagHelper;
 }
 
 
 export type ITagHelperFactory = ITagHelperFactory$instance;
 
 export interface ITagHelperInitializer_1$instance<TTagHelper extends ITagHelper> {
-    initialize(helper: TTagHelper, context: ViewContext): void;
+    Initialize(helper: TTagHelper, context: ViewContext): void;
 }
 
 
 export type ITagHelperInitializer_1<TTagHelper extends ITagHelper> = ITagHelperInitializer_1$instance<TTagHelper>;
 
 export interface IViewLocationExpander$instance {
-    expandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
-    populateValues(context: ViewLocationExpanderContext): void;
+    ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
+    PopulateValues(context: ViewLocationExpanderContext): void;
 }
 
 
 export type IViewLocationExpander = IViewLocationExpander$instance;
 
 export interface RazorPageFactoryResult$instance {
-    readonly razorPageFactory: Func<IRazorPage> | undefined;
-    readonly success: boolean;
-    readonly viewDescriptor: CompiledViewDescriptor | undefined;
+    readonly RazorPageFactory: Func<IRazorPage> | undefined;
+    readonly Success: boolean;
+    readonly ViewDescriptor: CompiledViewDescriptor | undefined;
 }
 
 
@@ -128,9 +128,9 @@ export const RazorPageFactoryResult: {
 export type RazorPageFactoryResult = RazorPageFactoryResult$instance;
 
 export interface RazorPageResult$instance {
-    readonly name: string;
-    readonly page: IRazorPage | undefined;
-    readonly searchedLocations: IEnumerable<System_Internal.String> | undefined;
+    readonly Name: string;
+    readonly Page: IRazorPage | undefined;
+    readonly SearchedLocations: IEnumerable<System_Internal.String> | undefined;
 }
 
 
@@ -143,8 +143,8 @@ export const RazorPageResult: {
 export type RazorPageResult = RazorPageResult$instance;
 
 export interface HelperResult$instance {
-    readonly writeAction: Func<TextWriter, Task>;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly WriteAction: Func<TextWriter, Task>;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -163,8 +163,8 @@ export type HelperResult = HelperResult$instance & __HelperResult$views;
 
 
 export interface LanguageViewLocationExpander$instance {
-    expandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
-    populateValues(context: ViewLocationExpanderContext): void;
+    ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
+    PopulateValues(context: ViewLocationExpanderContext): void;
 }
 
 
@@ -184,19 +184,19 @@ export type LanguageViewLocationExpander = LanguageViewLocationExpander$instance
 
 
 export interface RazorPage$instance extends RazorPageBase$instance {
-    readonly context: HttpContext;
-    beginContext(position: int, length: int, isLiteral: boolean): void;
-    defineSection(name: string, section: RenderAsyncDelegate): void;
-    endContext(): void;
-    ensureRenderedBodyOrSections(): void;
-    executeAsync(): Task;
-    ignoreBody(): void;
-    ignoreSection(sectionName: string): void;
-    isSectionDefined(name: string): boolean;
-    renderSection(name: string): HtmlString | undefined;
-    renderSection(name: string, required: boolean): HtmlString | undefined;
-    renderSectionAsync(name: string): Task<HtmlString | undefined>;
-    renderSectionAsync(name: string, required: boolean): Task<HtmlString | undefined>;
+    readonly Context: HttpContext;
+    BeginContext(position: int, length: int, isLiteral: boolean): void;
+    DefineSection(name: string, section: RenderAsyncDelegate): void;
+    EndContext(): void;
+    EnsureRenderedBodyOrSections(): void;
+    ExecuteAsync(): Task;
+    IgnoreBody(): void;
+    IgnoreSection(sectionName: string): void;
+    IsSectionDefined(name: string): boolean;
+    RenderSection(name: string): HtmlString | undefined;
+    RenderSection(name: string, required: boolean): HtmlString | undefined;
+    RenderSectionAsync(name: string): Task<HtmlString | undefined>;
+    RenderSectionAsync(name: string, required: boolean): Task<HtmlString | undefined>;
 }
 
 
@@ -212,10 +212,10 @@ export type RazorPage = RazorPage$instance & __RazorPage$views;
 
 
 export interface RazorPage_1$instance<TModel> extends RazorPage$instance {
-    readonly model: TModel;
-    viewData: ViewDataDictionary_1<TModel>;
-    ensureRenderedBodyOrSections(): void;
-    executeAsync(): Task;
+    readonly Model: TModel;
+    ViewData: ViewDataDictionary_1<TModel>;
+    EnsureRenderedBodyOrSections(): void;
+    ExecuteAsync(): Task;
 }
 
 
@@ -231,7 +231,7 @@ export type RazorPage_1<TModel> = RazorPage_1$instance<TModel> & __RazorPage_1$v
 
 
 export interface RazorPageActivator$instance {
-    activate(page: IRazorPage, context: ViewContext): void;
+    Activate(page: IRazorPage, context: ViewContext): void;
 }
 
 
@@ -250,44 +250,44 @@ export type RazorPageActivator = RazorPageActivator$instance & __RazorPageActiva
 
 
 export interface RazorPageBase$instance {
-    get bodyContent(): IHtmlContent | undefined;
-    set bodyContent(value: IHtmlContent);
-    diagnosticSource: DiagnosticSource;
-    htmlEncoder: HtmlEncoder;
-    isLayoutBeingRendered: boolean;
-    layout: string;
-    readonly output: TextWriter;
-    path: string;
-    previousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
-    readonly sectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
-    readonly tempData: ITempDataDictionary;
-    readonly user: ClaimsPrincipal;
-    readonly viewBag: unknown;
-    viewContext: ViewContext;
-    addHtmlAttributeValue(prefix: string, prefixOffset: int, value: unknown, valueOffset: int, valueLength: int, isLiteral: boolean): void;
-    beginAddHtmlAttributeValues(executionContext: TagHelperExecutionContext, attributeName: string, attributeValuesCount: int, attributeValueStyle: HtmlAttributeValueStyle): void;
-    beginContext(position: int, length: int, isLiteral: boolean): void;
-    beginWriteAttribute(name: string, prefix: string, prefixOffset: int, suffix: string, suffixOffset: int, attributeValuesCount: int): void;
-    beginWriteTagHelperAttribute(): void;
-    createTagHelper<TTagHelper extends ITagHelper>(): TTagHelper;
-    defineSection(name: string, section: RenderAsyncDelegate): void;
-    endAddHtmlAttributeValues(executionContext: TagHelperExecutionContext): void;
-    endContext(): void;
-    endTagHelperWritingScope(): TagHelperContent;
-    endWriteAttribute(): void;
-    endWriteTagHelperAttribute(): string;
-    ensureRenderedBodyOrSections(): void;
-    executeAsync(): Task;
-    flushAsync(): Task<HtmlString>;
-    href(contentPath: string): string;
-    invalidTagHelperIndexerAssignment(attributeName: string, tagHelperTypeName: string, propertyName: string): string;
-    setAntiforgeryCookieAndHeader(): HtmlString;
-    startTagHelperWritingScope(encoder: HtmlEncoder): void;
-    write(value: unknown): void;
-    write(value: string): void;
-    writeAttributeValue(prefix: string, prefixOffset: int, value: unknown, valueOffset: int, valueLength: int, isLiteral: boolean): void;
-    writeLiteral(value: unknown): void;
-    writeLiteral(value: string): void;
+    get BodyContent(): IHtmlContent | undefined;
+    set BodyContent(value: IHtmlContent);
+    DiagnosticSource: DiagnosticSource;
+    HtmlEncoder: HtmlEncoder;
+    IsLayoutBeingRendered: boolean;
+    Layout: string;
+    readonly Output: TextWriter;
+    Path: string;
+    PreviousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
+    readonly SectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
+    readonly TempData: ITempDataDictionary;
+    readonly User: ClaimsPrincipal;
+    readonly ViewBag: unknown;
+    ViewContext: ViewContext;
+    AddHtmlAttributeValue(prefix: string, prefixOffset: int, value: unknown, valueOffset: int, valueLength: int, isLiteral: boolean): void;
+    BeginAddHtmlAttributeValues(executionContext: TagHelperExecutionContext, attributeName: string, attributeValuesCount: int, attributeValueStyle: HtmlAttributeValueStyle): void;
+    BeginContext(position: int, length: int, isLiteral: boolean): void;
+    BeginWriteAttribute(name: string, prefix: string, prefixOffset: int, suffix: string, suffixOffset: int, attributeValuesCount: int): void;
+    BeginWriteTagHelperAttribute(): void;
+    CreateTagHelper<TTagHelper extends ITagHelper>(): TTagHelper;
+    DefineSection(name: string, section: RenderAsyncDelegate): void;
+    EndAddHtmlAttributeValues(executionContext: TagHelperExecutionContext): void;
+    EndContext(): void;
+    EndTagHelperWritingScope(): TagHelperContent;
+    EndWriteAttribute(): void;
+    EndWriteTagHelperAttribute(): string;
+    EnsureRenderedBodyOrSections(): void;
+    ExecuteAsync(): Task;
+    FlushAsync(): Task<HtmlString>;
+    Href(contentPath: string): string;
+    InvalidTagHelperIndexerAssignment(attributeName: string, tagHelperTypeName: string, propertyName: string): string;
+    SetAntiforgeryCookieAndHeader(): HtmlString;
+    StartTagHelperWritingScope(encoder: HtmlEncoder): void;
+    Write(value: unknown): void;
+    Write(value: string): void;
+    WriteAttributeValue(prefix: string, prefixOffset: int, value: unknown, valueOffset: int, valueLength: int, isLiteral: boolean): void;
+    WriteLiteral(value: unknown): void;
+    WriteLiteral(value: string): void;
 }
 
 
@@ -305,10 +305,10 @@ export type RazorPageBase = RazorPageBase$instance & __RazorPageBase$views;
 
 
 export interface RazorView$instance {
-    readonly path: string;
-    readonly razorPage: IRazorPage;
-    readonly viewStartPages: IReadOnlyList<IRazorPage>;
-    renderAsync(context: ViewContext): Task;
+    readonly Path: string;
+    readonly RazorPage: IRazorPage;
+    readonly ViewStartPages: IReadOnlyList<IRazorPage>;
+    RenderAsync(context: ViewContext): Task;
 }
 
 
@@ -327,18 +327,18 @@ export type RazorView = RazorView$instance & __RazorView$views;
 
 
 export interface RazorViewEngine$instance {
-    findPage(context: ActionContext, pageName: string): RazorPageResult;
-    findView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    getAbsolutePath(executingFilePath: string, pagePath: string): string | undefined;
-    getPage(executingFilePath: string, pagePath: string): RazorPageResult;
-    getView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    FindPage(context: ActionContext, pageName: string): RazorPageResult;
+    FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
+    GetAbsolutePath(executingFilePath: string, pagePath: string): string | undefined;
+    GetPage(executingFilePath: string, pagePath: string): RazorPageResult;
+    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
 export const RazorViewEngine: {
     new(pageFactory: IRazorPageFactoryProvider, pageActivator: IRazorPageActivator, htmlEncoder: HtmlEncoder, optionsAccessor: IOptions<RazorViewEngineOptions>, loggerFactory: ILoggerFactory, diagnosticListener: DiagnosticListener): RazorViewEngine;
-    readonly viewExtension: string;
-    getNormalizedRouteValue(context: ActionContext, key: string): string | undefined;
+    readonly ViewExtension: string;
+    GetNormalizedRouteValue(context: ActionContext, key: string): string | undefined;
 };
 
 
@@ -351,11 +351,11 @@ export type RazorViewEngine = RazorViewEngine$instance & __RazorViewEngine$views
 
 
 export interface RazorViewEngineOptions$instance {
-    readonly areaPageViewLocationFormats: IList<System_Internal.String>;
-    readonly areaViewLocationFormats: IList<System_Internal.String>;
-    readonly pageViewLocationFormats: IList<System_Internal.String>;
-    readonly viewLocationExpanders: IList<IViewLocationExpander>;
-    readonly viewLocationFormats: IList<System_Internal.String>;
+    readonly AreaPageViewLocationFormats: IList<System_Internal.String>;
+    readonly AreaViewLocationFormats: IList<System_Internal.String>;
+    readonly PageViewLocationFormats: IList<System_Internal.String>;
+    readonly ViewLocationExpanders: IList<IViewLocationExpander>;
+    readonly ViewLocationFormats: IList<System_Internal.String>;
 }
 
 
@@ -367,7 +367,7 @@ export const RazorViewEngineOptions: {
 export type RazorViewEngineOptions = RazorViewEngineOptions$instance;
 
 export interface TagHelperInitializer_1$instance<TTagHelper extends ITagHelper> {
-    initialize(helper: TTagHelper, context: ViewContext): void;
+    Initialize(helper: TTagHelper, context: ViewContext): void;
 }
 
 
@@ -386,13 +386,13 @@ export type TagHelperInitializer_1<TTagHelper extends ITagHelper> = TagHelperIni
 
 
 export interface ViewLocationExpanderContext$instance {
-    readonly actionContext: ActionContext;
-    readonly areaName: string | undefined;
-    readonly controllerName: string;
-    readonly isMainPage: boolean;
-    readonly pageName: string | undefined;
-    values: IDictionary<System_Internal.String, string | undefined>;
-    readonly viewName: string;
+    readonly ActionContext: ActionContext;
+    readonly AreaName: string | undefined;
+    readonly ControllerName: string;
+    readonly IsMainPage: boolean;
+    readonly PageName: string | undefined;
+    Values: IDictionary<System_Internal.String, string | undefined>;
+    readonly ViewName: string;
 }
 
 

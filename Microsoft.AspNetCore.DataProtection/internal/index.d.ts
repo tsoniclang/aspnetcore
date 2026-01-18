@@ -22,22 +22,22 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IDataProtectionBuilder$instance {
-    readonly services: IServiceCollection;
+    readonly Services: IServiceCollection;
 }
 
 
 export type IDataProtectionBuilder = IDataProtectionBuilder$instance;
 
 export interface IDataProtectionProvider$instance {
-    createProtector(purpose: string): IDataProtector;
+    CreateProtector(purpose: string): IDataProtector;
 }
 
 
 export type IDataProtectionProvider = IDataProtectionProvider$instance;
 
 export interface IDataProtector$instance extends IDataProtectionProvider {
-    createProtector(purpose: string): IDataProtector;
-    protect(plaintext: byte[]): byte[];
+    CreateProtector(purpose: string): IDataProtector;
+    Protect(plaintext: byte[]): byte[];
 }
 
 
@@ -46,36 +46,36 @@ export interface IDataProtector$instance extends IDataProtectionProvider$instanc
 export type IDataProtector = IDataProtector$instance;
 
 export interface IPersistedDataProtector$instance extends IDataProtector, IDataProtectionProvider {
-    createProtector(purpose: string): IDataProtector;
-    dangerousUnprotect(protectedData: byte[], ignoreRevocationErrors: boolean, requiresMigration: boolean, wasRevoked: boolean): byte[];
-    protect(plaintext: byte[]): byte[];
+    CreateProtector(purpose: string): IDataProtector;
+    DangerousUnprotect(protectedData: byte[], ignoreRevocationErrors: boolean, requiresMigration: boolean, wasRevoked: boolean): byte[];
+    Protect(plaintext: byte[]): byte[];
 }
 
 
 export type IPersistedDataProtector = IPersistedDataProtector$instance;
 
 export interface ISecret$instance extends IDisposable {
-    readonly length: int;
-    writeSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;
+    readonly Length: int;
+    WriteSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;
 }
 
 
 export type ISecret = ISecret$instance;
 
 export interface ITimeLimitedDataProtector$instance extends IDataProtector, IDataProtectionProvider {
-    createProtector(purpose: string): IDataProtector;
-    createProtector(purpose: string): ITimeLimitedDataProtector;
-    protect(plaintext: byte[]): byte[];
-    protect(plaintext: byte[], expiration: DateTimeOffset): byte[];
-    unprotect(protectedData: byte[], expiration: DateTimeOffset): byte[];
+    CreateProtector(purpose: string): IDataProtector;
+    CreateProtector(purpose: string): ITimeLimitedDataProtector;
+    Protect(plaintext: byte[]): byte[];
+    Protect(plaintext: byte[], expiration: DateTimeOffset): byte[];
+    Unprotect(protectedData: byte[], expiration: DateTimeOffset): byte[];
 }
 
 
 export type ITimeLimitedDataProtector = ITimeLimitedDataProtector$instance;
 
 export interface DataProtectionOptions$instance {
-    get applicationDiscriminator(): string | undefined;
-    set applicationDiscriminator(value: string);
+    get ApplicationDiscriminator(): string | undefined;
+    set ApplicationDiscriminator(value: string);
 }
 
 
@@ -87,7 +87,7 @@ export const DataProtectionOptions: {
 export type DataProtectionOptions = DataProtectionOptions$instance;
 
 export interface EphemeralDataProtectionProvider$instance {
-    createProtector(purpose: string): IDataProtector;
+    CreateProtector(purpose: string): IDataProtector;
 }
 
 
@@ -107,10 +107,10 @@ export type EphemeralDataProtectionProvider = EphemeralDataProtectionProvider$in
 
 
 export interface Secret$instance {
-    readonly length: int;
-    dispose(): void;
-    writeSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;
-    writeSecretIntoBuffer(buffer: ptr<byte>, bufferLength: int): void;
+    readonly Length: int;
+    Dispose(): void;
+    WriteSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;
+    WriteSecretIntoBuffer(buffer: ptr<byte>, bufferLength: int): void;
 }
 
 
@@ -119,7 +119,7 @@ export const Secret: {
     new(value: byte[]): Secret;
     new(secret: ptr<byte>, secretLength: int): Secret;
     new(secret: ISecret): Secret;
-    random(numBytes: int): Secret;
+    Random(numBytes: int): Secret;
 };
 
 
@@ -131,70 +131,70 @@ export type Secret = Secret$instance & __Secret$views;
 
 
 export abstract class DataProtectionAdvancedExtensions$instance {
-    static protect(protector: ITimeLimitedDataProtector, plaintext: byte[], lifetime: TimeSpan): byte[];
-    static protect(protector: ITimeLimitedDataProtector, plaintext: string, expiration: DateTimeOffset): string;
-    static protect(protector: ITimeLimitedDataProtector, plaintext: string, lifetime: TimeSpan): string;
-    static toTimeLimitedDataProtector(protector: IDataProtector): ITimeLimitedDataProtector;
-    static unprotect(protector: ITimeLimitedDataProtector, protectedData: string, expiration: DateTimeOffset): string;
+    static Protect(protector: ITimeLimitedDataProtector, plaintext: byte[], lifetime: TimeSpan): byte[];
+    static Protect(protector: ITimeLimitedDataProtector, plaintext: string, expiration: DateTimeOffset): string;
+    static Protect(protector: ITimeLimitedDataProtector, plaintext: string, lifetime: TimeSpan): string;
+    static ToTimeLimitedDataProtector(protector: IDataProtector): ITimeLimitedDataProtector;
+    static Unprotect(protector: ITimeLimitedDataProtector, protectedData: string, expiration: DateTimeOffset): string;
 }
 
 
 export type DataProtectionAdvancedExtensions = DataProtectionAdvancedExtensions$instance;
 
 export abstract class DataProtectionBuilderExtensions$instance {
-    static addKeyEscrowSink(builder: IDataProtectionBuilder, sink: IKeyEscrowSink): IDataProtectionBuilder;
-    static addKeyEscrowSink(builder: IDataProtectionBuilder, factory: Func<IServiceProvider, IKeyEscrowSink>): IDataProtectionBuilder;
-    static addKeyEscrowSink<TImplementation extends IKeyEscrowSink>(builder: IDataProtectionBuilder): IDataProtectionBuilder;
-    static addKeyManagementOptions(builder: IDataProtectionBuilder, setupAction: Action<KeyManagementOptions>): IDataProtectionBuilder;
-    static disableAutomaticKeyGeneration(builder: IDataProtectionBuilder): IDataProtectionBuilder;
-    static persistKeysToFileSystem(builder: IDataProtectionBuilder, directory: DirectoryInfo): IDataProtectionBuilder;
-    static persistKeysToRegistry(builder: IDataProtectionBuilder, registryKey: RegistryKey): IDataProtectionBuilder;
-    static protectKeysWithCertificate(builder: IDataProtectionBuilder, certificate: X509Certificate2): IDataProtectionBuilder;
-    static protectKeysWithCertificate(builder: IDataProtectionBuilder, thumbprint: string): IDataProtectionBuilder;
-    static protectKeysWithDpapi(builder: IDataProtectionBuilder, protectToLocalMachine: boolean): IDataProtectionBuilder;
-    static protectKeysWithDpapi(builder: IDataProtectionBuilder): IDataProtectionBuilder;
-    static protectKeysWithDpapiNG(builder: IDataProtectionBuilder, protectionDescriptorRule: string, flags: DpapiNGProtectionDescriptorFlags): IDataProtectionBuilder;
-    static protectKeysWithDpapiNG(builder: IDataProtectionBuilder): IDataProtectionBuilder;
-    static setApplicationName(builder: IDataProtectionBuilder, applicationName: string): IDataProtectionBuilder;
-    static setDefaultKeyLifetime(builder: IDataProtectionBuilder, lifetime: TimeSpan): IDataProtectionBuilder;
-    static unprotectKeysWithAnyCertificate(builder: IDataProtectionBuilder, ...certificates: X509Certificate2[]): IDataProtectionBuilder;
-    static useCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: AuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
-    static useCustomCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: CngCbcAuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
-    static useCustomCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: CngGcmAuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
-    static useCustomCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: ManagedAuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
-    static useEphemeralDataProtectionProvider(builder: IDataProtectionBuilder): IDataProtectionBuilder;
+    static AddKeyEscrowSink(builder: IDataProtectionBuilder, sink: IKeyEscrowSink): IDataProtectionBuilder;
+    static AddKeyEscrowSink(builder: IDataProtectionBuilder, factory: Func<IServiceProvider, IKeyEscrowSink>): IDataProtectionBuilder;
+    static AddKeyEscrowSink<TImplementation extends IKeyEscrowSink>(builder: IDataProtectionBuilder): IDataProtectionBuilder;
+    static AddKeyManagementOptions(builder: IDataProtectionBuilder, setupAction: Action<KeyManagementOptions>): IDataProtectionBuilder;
+    static DisableAutomaticKeyGeneration(builder: IDataProtectionBuilder): IDataProtectionBuilder;
+    static PersistKeysToFileSystem(builder: IDataProtectionBuilder, directory: DirectoryInfo): IDataProtectionBuilder;
+    static PersistKeysToRegistry(builder: IDataProtectionBuilder, registryKey: RegistryKey): IDataProtectionBuilder;
+    static ProtectKeysWithCertificate(builder: IDataProtectionBuilder, certificate: X509Certificate2): IDataProtectionBuilder;
+    static ProtectKeysWithCertificate(builder: IDataProtectionBuilder, thumbprint: string): IDataProtectionBuilder;
+    static ProtectKeysWithDpapi(builder: IDataProtectionBuilder, protectToLocalMachine: boolean): IDataProtectionBuilder;
+    static ProtectKeysWithDpapi(builder: IDataProtectionBuilder): IDataProtectionBuilder;
+    static ProtectKeysWithDpapiNG(builder: IDataProtectionBuilder, protectionDescriptorRule: string, flags: DpapiNGProtectionDescriptorFlags): IDataProtectionBuilder;
+    static ProtectKeysWithDpapiNG(builder: IDataProtectionBuilder): IDataProtectionBuilder;
+    static SetApplicationName(builder: IDataProtectionBuilder, applicationName: string): IDataProtectionBuilder;
+    static SetDefaultKeyLifetime(builder: IDataProtectionBuilder, lifetime: TimeSpan): IDataProtectionBuilder;
+    static UnprotectKeysWithAnyCertificate(builder: IDataProtectionBuilder, ...certificates: X509Certificate2[]): IDataProtectionBuilder;
+    static UseCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: AuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
+    static UseCustomCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: CngCbcAuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
+    static UseCustomCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: CngGcmAuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
+    static UseCustomCryptographicAlgorithms(builder: IDataProtectionBuilder, configuration: ManagedAuthenticatedEncryptorConfiguration): IDataProtectionBuilder;
+    static UseEphemeralDataProtectionProvider(builder: IDataProtectionBuilder): IDataProtectionBuilder;
 }
 
 
 export type DataProtectionBuilderExtensions = DataProtectionBuilderExtensions$instance;
 
 export abstract class DataProtectionCommonExtensions$instance {
-    static createProtector(provider: IDataProtectionProvider, purposes: IEnumerable<System_Internal.String>): IDataProtector;
-    static createProtector(provider: IDataProtectionProvider, purpose: string, ...subPurposes: string[]): IDataProtector;
-    static getDataProtectionProvider(services: IServiceProvider): IDataProtectionProvider;
-    static getDataProtector(services: IServiceProvider, purposes: IEnumerable<System_Internal.String>): IDataProtector;
-    static getDataProtector(services: IServiceProvider, purpose: string, ...subPurposes: string[]): IDataProtector;
-    static protect(protector: IDataProtector, plaintext: string): string;
-    static unprotect(protector: IDataProtector, protectedData: string): string;
+    static CreateProtector(provider: IDataProtectionProvider, purposes: IEnumerable<System_Internal.String>): IDataProtector;
+    static CreateProtector(provider: IDataProtectionProvider, purpose: string, ...subPurposes: string[]): IDataProtector;
+    static GetDataProtectionProvider(services: IServiceProvider): IDataProtectionProvider;
+    static GetDataProtector(services: IServiceProvider, purposes: IEnumerable<System_Internal.String>): IDataProtector;
+    static GetDataProtector(services: IServiceProvider, purpose: string, ...subPurposes: string[]): IDataProtector;
+    static Protect(protector: IDataProtector, plaintext: string): string;
+    static Unprotect(protector: IDataProtector, protectedData: string): string;
 }
 
 
 export type DataProtectionCommonExtensions = DataProtectionCommonExtensions$instance;
 
 export abstract class DataProtectionProvider$instance {
-    static create(keyDirectory: DirectoryInfo, setupAction: Action<IDataProtectionBuilder>, certificate: X509Certificate2): IDataProtectionProvider;
-    static create(keyDirectory: DirectoryInfo, setupAction: Action<IDataProtectionBuilder>): IDataProtectionProvider;
-    static create(keyDirectory: DirectoryInfo, certificate: X509Certificate2): IDataProtectionProvider;
-    static create(keyDirectory: DirectoryInfo): IDataProtectionProvider;
-    static create(applicationName: string, certificate: X509Certificate2): IDataProtectionProvider;
-    static create(applicationName: string): IDataProtectionProvider;
+    static Create(keyDirectory: DirectoryInfo, setupAction: Action<IDataProtectionBuilder>, certificate: X509Certificate2): IDataProtectionProvider;
+    static Create(keyDirectory: DirectoryInfo, setupAction: Action<IDataProtectionBuilder>): IDataProtectionProvider;
+    static Create(keyDirectory: DirectoryInfo, certificate: X509Certificate2): IDataProtectionProvider;
+    static Create(keyDirectory: DirectoryInfo): IDataProtectionProvider;
+    static Create(applicationName: string, certificate: X509Certificate2): IDataProtectionProvider;
+    static Create(applicationName: string): IDataProtectionProvider;
 }
 
 
 export type DataProtectionProvider = DataProtectionProvider$instance;
 
 export abstract class DataProtectionUtilityExtensions$instance {
-    static getApplicationUniqueIdentifier(services: IServiceProvider): string | undefined;
+    static GetApplicationUniqueIdentifier(services: IServiceProvider): string | undefined;
 }
 
 

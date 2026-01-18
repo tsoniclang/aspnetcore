@@ -17,7 +17,7 @@ export interface StaticWebAssetsLoader$instance {
 
 export const StaticWebAssetsLoader: {
     new(): StaticWebAssetsLoader;
-    useStaticWebAssets(environment: IWebHostEnvironment, configuration: IConfiguration): void;
+    UseStaticWebAssets(environment: IWebHostEnvironment, configuration: IConfiguration): void;
 };
 
 

@@ -11,15 +11,15 @@ import type { HttpTransportType } from "../../Microsoft.AspNetCore.Http.Connecti
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 
 export interface IHttpContextFeature$instance {
-    get httpContext(): HttpContext | undefined;
-    set httpContext(value: HttpContext);
+    get HttpContext(): HttpContext | undefined;
+    set HttpContext(value: HttpContext);
 }
 
 
 export type IHttpContextFeature = IHttpContextFeature$instance;
 
 export interface IHttpTransportFeature$instance {
-    readonly transportType: HttpTransportType;
+    readonly TransportType: HttpTransportType;
 }
 
 

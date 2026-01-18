@@ -38,30 +38,30 @@ import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export enum BindingBehavior {
-    optional = 0,
-    never = 1,
-    required = 2
+    Optional = 0,
+    Never = 1,
+    Required = 2
 }
 
 
 export enum EmptyBodyBehavior {
-    default = 0,
-    allow = 1,
-    disallow = 2
+    Default = 0,
+    Allow = 1,
+    Disallow = 2
 }
 
 
 export enum ModelValidationState {
-    unvalidated = 0,
-    invalid = 1,
-    valid = 2,
-    skipped = 3
+    Unvalidated = 0,
+    Invalid = 1,
+    Valid = 2,
+    Skipped = 3
 }
 
 
 export interface IBinderTypeProviderMetadata$instance extends IBindingSourceMetadata {
-    readonly binderType: Type | undefined;
-    readonly bindingSource: BindingSource;
+    readonly BinderType: Type | undefined;
+    readonly BindingSource: BindingSource;
 }
 
 
@@ -70,16 +70,16 @@ export interface IBinderTypeProviderMetadata$instance extends IBindingSourceMeta
 export type IBinderTypeProviderMetadata = IBinderTypeProviderMetadata$instance;
 
 export interface IBindingSourceMetadata$instance {
-    readonly bindingSource: BindingSource;
+    readonly BindingSource: BindingSource;
 }
 
 
 export type IBindingSourceMetadata = IBindingSourceMetadata$instance;
 
 export interface IBindingSourceValueProvider$instance extends IValueProvider {
-    containsPrefix(prefix: string): boolean;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -88,8 +88,8 @@ export interface IBindingSourceValueProvider$instance extends IValueProvider$ins
 export type IBindingSourceValueProvider = IBindingSourceValueProvider$instance;
 
 export interface ICollectionModelBinder$instance extends IModelBinder {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
-    canCreateInstance(targetType: Type): boolean;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
+    CanCreateInstance(targetType: Type): boolean;
 }
 
 
@@ -98,9 +98,9 @@ export interface ICollectionModelBinder$instance extends IModelBinder$instance {
 export type ICollectionModelBinder = ICollectionModelBinder$instance;
 
 export interface IEnumerableValueProvider$instance extends IValueProvider {
-    containsPrefix(prefix: string): boolean;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -109,9 +109,9 @@ export interface IEnumerableValueProvider$instance extends IValueProvider$instan
 export type IEnumerableValueProvider = IEnumerableValueProvider$instance;
 
 export interface IKeyRewriterValueProvider$instance extends IValueProvider {
-    containsPrefix(prefix: string): boolean;
-    filter(): IValueProvider | undefined;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(): IValueProvider | undefined;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -120,73 +120,73 @@ export interface IKeyRewriterValueProvider$instance extends IValueProvider$insta
 export type IKeyRewriterValueProvider = IKeyRewriterValueProvider$instance;
 
 export interface IModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
 export type IModelBinder = IModelBinder$instance;
 
 export interface IModelBinderFactory$instance {
-    createBinder(context: ModelBinderFactoryContext): IModelBinder;
+    CreateBinder(context: ModelBinderFactoryContext): IModelBinder;
 }
 
 
 export type IModelBinderFactory = IModelBinderFactory$instance;
 
 export interface IModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
 export type IModelBinderProvider = IModelBinderProvider$instance;
 
 export interface IModelMetadataProvider$instance {
-    getMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
-    getMetadataForType(modelType: Type): ModelMetadata;
+    GetMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
+    GetMetadataForType(modelType: Type): ModelMetadata;
 }
 
 
 export type IModelMetadataProvider = IModelMetadataProvider$instance;
 
 export interface IModelNameProvider$instance {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
 export type IModelNameProvider = IModelNameProvider$instance;
 
 export interface IPropertyFilterProvider$instance {
-    readonly propertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
+    readonly PropertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
 }
 
 
 export type IPropertyFilterProvider = IPropertyFilterProvider$instance;
 
 export interface IRequestPredicateProvider$instance {
-    readonly requestPredicate: Func<ActionContext, System_Internal.Boolean>;
+    readonly RequestPredicate: Func<ActionContext, System_Internal.Boolean>;
 }
 
 
 export type IRequestPredicateProvider = IRequestPredicateProvider$instance;
 
 export interface IValueProvider$instance {
-    containsPrefix(prefix: string): boolean;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
 export type IValueProvider = IValueProvider$instance;
 
 export interface IValueProviderFactory$instance {
-    createValueProviderAsync(context: ValueProviderFactoryContext): Task;
+    CreateValueProviderAsync(context: ValueProviderFactoryContext): Task;
 }
 
 
 export type IValueProviderFactory = IValueProviderFactory$instance;
 
 export interface EnumGroupAndName$instance {
-    readonly group: string;
-    readonly name: string;
+    readonly Group: string;
+    readonly Name: string;
 }
 
 
@@ -199,7 +199,7 @@ export const EnumGroupAndName: {
 export type EnumGroupAndName = EnumGroupAndName$instance;
 
 export interface ModelBindingContext_NestedScope$instance {
-    dispose(): void;
+    Dispose(): void;
 }
 
 
@@ -211,29 +211,29 @@ export const ModelBindingContext_NestedScope: {
 export type ModelBindingContext_NestedScope = ModelBindingContext_NestedScope$instance;
 
 export interface ModelBindingResult$instance {
-    readonly isModelSet: boolean;
-    readonly model: unknown;
-    equals(obj: unknown): boolean;
-    equals(other: ModelBindingResult): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly IsModelSet: boolean;
+    readonly Model: unknown;
+    Equals(obj: unknown): boolean;
+    Equals(other: ModelBindingResult): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const ModelBindingResult: {
     new(): ModelBindingResult;
-    failed(): ModelBindingResult;
-    success(model: unknown): ModelBindingResult;
+    Failed(): ModelBindingResult;
+    Success(model: unknown): ModelBindingResult;
 };
 
 
 export type ModelBindingResult = ModelBindingResult$instance;
 
 export interface ModelStateDictionary_Enumerator$instance {
-    readonly current: KeyValuePair<System_Internal.String, ModelStateEntry>;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: KeyValuePair<System_Internal.String, ModelStateEntry>;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -245,7 +245,7 @@ export const ModelStateDictionary_Enumerator: {
 export type ModelStateDictionary_Enumerator = ModelStateDictionary_Enumerator$instance;
 
 export interface ModelStateDictionary_KeyEnumerable$instance {
-    getEnumerator(): ModelStateDictionary_KeyEnumerator;
+    GetEnumerator(): ModelStateDictionary_KeyEnumerator;
 }
 
 
@@ -257,10 +257,10 @@ export const ModelStateDictionary_KeyEnumerable: {
 export type ModelStateDictionary_KeyEnumerable = ModelStateDictionary_KeyEnumerable$instance;
 
 export interface ModelStateDictionary_KeyEnumerator$instance {
-    readonly current: string;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: string;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -272,7 +272,7 @@ export const ModelStateDictionary_KeyEnumerator: {
 export type ModelStateDictionary_KeyEnumerator = ModelStateDictionary_KeyEnumerator$instance;
 
 export interface ModelStateDictionary_PrefixEnumerable$instance {
-    getEnumerator(): ModelStateDictionary_Enumerator;
+    GetEnumerator(): ModelStateDictionary_Enumerator;
 }
 
 
@@ -284,7 +284,7 @@ export const ModelStateDictionary_PrefixEnumerable: {
 export type ModelStateDictionary_PrefixEnumerable = ModelStateDictionary_PrefixEnumerable$instance;
 
 export interface ModelStateDictionary_ValueEnumerable$instance {
-    getEnumerator(): ModelStateDictionary_ValueEnumerator;
+    GetEnumerator(): ModelStateDictionary_ValueEnumerator;
 }
 
 
@@ -296,10 +296,10 @@ export const ModelStateDictionary_ValueEnumerable: {
 export type ModelStateDictionary_ValueEnumerable = ModelStateDictionary_ValueEnumerable$instance;
 
 export interface ModelStateDictionary_ValueEnumerator$instance {
-    readonly current: ModelStateEntry;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: ModelStateEntry;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -311,29 +311,29 @@ export const ModelStateDictionary_ValueEnumerator: {
 export type ModelStateDictionary_ValueEnumerator = ModelStateDictionary_ValueEnumerator$instance;
 
 export interface ValueProviderResult$instance {
-    readonly culture: CultureInfo;
-    readonly firstValue: string | undefined;
-    readonly length: int;
-    readonly values: StringValues;
-    equals(obj: unknown): boolean;
-    equals(other: ValueProviderResult): boolean;
-    getEnumerator(): IEnumerator__System_Collections_Generic<System_Internal.String>;
-    getHashCode(): int;
-    toString(): string;
+    readonly Culture: CultureInfo;
+    readonly FirstValue: string | undefined;
+    readonly Length: int;
+    readonly Values: StringValues;
+    Equals(obj: unknown): boolean;
+    Equals(other: ValueProviderResult): boolean;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<System_Internal.String>;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const ValueProviderResult: {
     new(values: StringValues): ValueProviderResult;
     new(values: StringValues, culture: CultureInfo): ValueProviderResult;
-    none: ValueProviderResult;
+    None: ValueProviderResult;
 };
 
 
 export type ValueProviderResult = ValueProviderResult$instance;
 
 export interface BindingBehaviorAttribute$instance extends Attribute {
-    readonly behavior: BindingBehavior;
+    readonly Behavior: BindingBehavior;
 }
 
 
@@ -345,66 +345,66 @@ export const BindingBehaviorAttribute: {
 export type BindingBehaviorAttribute = BindingBehaviorAttribute$instance;
 
 export interface BindingInfo$instance {
-    get binderModelName(): string | undefined;
-    set binderModelName(value: string);
-    get binderType(): Type | undefined;
-    set binderType(value: Type);
-    get bindingSource(): BindingSource | undefined;
-    set bindingSource(value: BindingSource);
-    emptyBodyBehavior: EmptyBodyBehavior;
-    get propertyFilterProvider(): IPropertyFilterProvider | undefined;
-    set propertyFilterProvider(value: IPropertyFilterProvider);
-    get requestPredicate(): Func<ActionContext, System_Internal.Boolean> | undefined;
-    set requestPredicate(value: Func<ActionContext, System_Internal.Boolean>);
-    get serviceKey(): unknown | undefined;
-    set serviceKey(value: unknown);
-    tryApplyBindingInfo(modelMetadata: ModelMetadata): boolean;
+    get BinderModelName(): string | undefined;
+    set BinderModelName(value: string);
+    get BinderType(): Type | undefined;
+    set BinderType(value: Type);
+    get BindingSource(): BindingSource | undefined;
+    set BindingSource(value: BindingSource);
+    EmptyBodyBehavior: EmptyBodyBehavior;
+    get PropertyFilterProvider(): IPropertyFilterProvider | undefined;
+    set PropertyFilterProvider(value: IPropertyFilterProvider);
+    get RequestPredicate(): Func<ActionContext, System_Internal.Boolean> | undefined;
+    set RequestPredicate(value: Func<ActionContext, System_Internal.Boolean>);
+    get ServiceKey(): unknown | undefined;
+    set ServiceKey(value: unknown);
+    TryApplyBindingInfo(modelMetadata: ModelMetadata): boolean;
 }
 
 
 export const BindingInfo: {
     new(): BindingInfo;
     new(other: BindingInfo): BindingInfo;
-    getBindingInfo(attributes: IEnumerable__System_Collections_Generic<unknown>, modelMetadata: ModelMetadata): BindingInfo | undefined;
-    getBindingInfo(attributes: IEnumerable__System_Collections_Generic<unknown>): BindingInfo | undefined;
+    GetBindingInfo(attributes: IEnumerable__System_Collections_Generic<unknown>, modelMetadata: ModelMetadata): BindingInfo | undefined;
+    GetBindingInfo(attributes: IEnumerable__System_Collections_Generic<unknown>): BindingInfo | undefined;
 };
 
 
 export type BindingInfo = BindingInfo$instance;
 
 export interface BindingSource$instance {
-    readonly displayName: string;
-    readonly id: string;
-    readonly isFromRequest: boolean;
-    readonly isGreedy: boolean;
-    canAcceptDataFrom(bindingSource: BindingSource): boolean;
-    equals(other: BindingSource): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly DisplayName: string;
+    readonly Id: string;
+    readonly IsFromRequest: boolean;
+    readonly IsGreedy: boolean;
+    CanAcceptDataFrom(bindingSource: BindingSource): boolean;
+    Equals(other: BindingSource): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
 export const BindingSource: {
     new(id: string, displayName: string, isGreedy: boolean, isFromRequest: boolean): BindingSource;
-    readonly body: BindingSource;
-    readonly custom: BindingSource;
-    readonly form: BindingSource;
-    readonly header: BindingSource;
-    readonly modelBinding: BindingSource;
-    readonly path: BindingSource;
-    readonly query: BindingSource;
-    readonly services: BindingSource;
-    readonly special: BindingSource;
-    readonly formFile: BindingSource;
+    readonly Body: BindingSource;
+    readonly Custom: BindingSource;
+    readonly Form: BindingSource;
+    readonly Header: BindingSource;
+    readonly ModelBinding: BindingSource;
+    readonly Path: BindingSource;
+    readonly Query: BindingSource;
+    readonly Services: BindingSource;
+    readonly Special: BindingSource;
+    readonly FormFile: BindingSource;
 };
 
 
 export type BindingSource = BindingSource$instance;
 
 export interface BindingSourceValueProvider$instance {
-    containsPrefix(prefix: string): boolean;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -444,33 +444,33 @@ export const BindRequiredAttribute: {
 export type BindRequiredAttribute = BindRequiredAttribute$instance;
 
 export interface CompositeBindingSource$instance extends BindingSource {
-    readonly bindingSources: IEnumerable__System_Collections_Generic<BindingSource>;
-    canAcceptDataFrom(bindingSource: BindingSource): boolean;
+    readonly BindingSources: IEnumerable__System_Collections_Generic<BindingSource>;
+    CanAcceptDataFrom(bindingSource: BindingSource): boolean;
 }
 
 
 export const CompositeBindingSource: {
     new(): CompositeBindingSource;
-    create(bindingSources: IEnumerable__System_Collections_Generic<BindingSource>, displayName: string): CompositeBindingSource;
+    Create(bindingSources: IEnumerable__System_Collections_Generic<BindingSource>, displayName: string): CompositeBindingSource;
 };
 
 
 export type CompositeBindingSource = CompositeBindingSource$instance;
 
 export interface CompositeValueProvider$instance extends Collection<IValueProvider> {
-    containsPrefix(prefix: string): boolean;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    filter(): IValueProvider | undefined;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    Filter(): IValueProvider | undefined;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
 export const CompositeValueProvider: {
     new(): CompositeValueProvider;
     new(valueProviders: IList__System_Collections_Generic<IValueProvider>): CompositeValueProvider;
-    createAsync(actionContext: ActionContext, factories: IList__System_Collections_Generic<IValueProviderFactory>): Task<CompositeValueProvider>;
-    createAsync(controllerContext: ControllerContext): Task<CompositeValueProvider>;
+    CreateAsync(actionContext: ActionContext, factories: IList__System_Collections_Generic<IValueProviderFactory>): Task<CompositeValueProvider>;
+    CreateAsync(controllerContext: ControllerContext): Task<CompositeValueProvider>;
 };
 
 
@@ -485,39 +485,39 @@ export type CompositeValueProvider = CompositeValueProvider$instance & __Composi
 
 
 export interface DefaultModelBindingContext$instance extends ModelBindingContext {
-    actionContext: ActionContext;
-    get binderModelName(): string | undefined;
-    set binderModelName(value: string);
-    get bindingSource(): BindingSource | undefined;
-    set bindingSource(value: BindingSource);
-    fieldName: string;
-    isTopLevelObject: boolean;
-    model: unknown;
-    modelMetadata: ModelMetadata;
-    modelName: string;
-    modelState: ModelStateDictionary;
-    originalValueProvider: IValueProvider;
-    propertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
-    result: ModelBindingResult;
-    validationState: ValidationStateDictionary;
-    valueProvider: IValueProvider;
-    enterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown): ModelBindingContext_NestedScope;
-    enterNestedScope(): ModelBindingContext_NestedScope;
+    ActionContext: ActionContext;
+    get BinderModelName(): string | undefined;
+    set BinderModelName(value: string);
+    get BindingSource(): BindingSource | undefined;
+    set BindingSource(value: BindingSource);
+    FieldName: string;
+    IsTopLevelObject: boolean;
+    Model: unknown;
+    ModelMetadata: ModelMetadata;
+    ModelName: string;
+    ModelState: ModelStateDictionary;
+    OriginalValueProvider: IValueProvider;
+    PropertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
+    Result: ModelBindingResult;
+    ValidationState: ValidationStateDictionary;
+    ValueProvider: IValueProvider;
+    EnterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown): ModelBindingContext_NestedScope;
+    EnterNestedScope(): ModelBindingContext_NestedScope;
 }
 
 
 export const DefaultModelBindingContext: {
     new(): DefaultModelBindingContext;
-    createBindingContext(actionContext: ActionContext, valueProvider: IValueProvider, metadata: ModelMetadata, bindingInfo: BindingInfo, modelName: string): ModelBindingContext;
+    CreateBindingContext(actionContext: ActionContext, valueProvider: IValueProvider, metadata: ModelMetadata, bindingInfo: BindingInfo, modelName: string): ModelBindingContext;
 };
 
 
 export type DefaultModelBindingContext = DefaultModelBindingContext$instance;
 
 export interface DefaultPropertyFilterProvider_1$instance<TModel> {
-    readonly prefix: string;
-    readonly propertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
-    readonly propertyIncludeExpressions: IEnumerable__System_Collections_Generic<Expression<Func<TModel, unknown | undefined>>> | undefined;
+    readonly Prefix: string;
+    readonly PropertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
+    readonly PropertyIncludeExpressions: IEnumerable__System_Collections_Generic<Expression<Func<TModel, unknown | undefined>>> | undefined;
 }
 
 
@@ -536,8 +536,8 @@ export type DefaultPropertyFilterProvider_1<TModel> = DefaultPropertyFilterProvi
 
 
 export interface EmptyModelMetadataProvider$instance extends DefaultModelMetadataProvider {
-    getMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
-    getMetadataForType(modelType: Type): ModelMetadata;
+    GetMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
+    GetMetadataForType(modelType: Type): ModelMetadata;
 }
 
 
@@ -554,8 +554,8 @@ export type EmptyModelMetadataProvider = EmptyModelMetadataProvider$instance & _
 
 
 export interface FormFileValueProvider$instance {
-    containsPrefix(prefix: string): boolean;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -574,7 +574,7 @@ export type FormFileValueProvider = FormFileValueProvider$instance & __FormFileV
 
 
 export interface FormFileValueProviderFactory$instance {
-    createValueProviderAsync(context: ValueProviderFactoryContext): Task;
+    CreateValueProviderAsync(context: ValueProviderFactoryContext): Task;
 }
 
 
@@ -593,11 +593,11 @@ export type FormFileValueProviderFactory = FormFileValueProviderFactory$instance
 
 
 export interface FormValueProvider$instance extends BindingSourceValueProvider$instance {
-    readonly culture: CultureInfo;
-    containsPrefix(prefix: string): boolean;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
-    getValue(key: string): ValueProviderResult;
+    readonly Culture: CultureInfo;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -618,7 +618,7 @@ export type FormValueProvider = FormValueProvider$instance & __FormValueProvider
 
 
 export interface FormValueProviderFactory$instance {
-    createValueProviderAsync(context: ValueProviderFactoryContext): Task;
+    CreateValueProviderAsync(context: ValueProviderFactoryContext): Task;
 }
 
 
@@ -637,11 +637,11 @@ export type FormValueProviderFactory = FormValueProviderFactory$instance & __For
 
 
 export interface JQueryFormValueProvider$instance extends JQueryValueProvider$instance {
-    containsPrefix(prefix: string): boolean;
-    filter(): IValueProvider | undefined;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(): IValueProvider | undefined;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -661,7 +661,7 @@ export type JQueryFormValueProvider = JQueryFormValueProvider$instance & __JQuer
 
 
 export interface JQueryFormValueProviderFactory$instance {
-    createValueProviderAsync(context: ValueProviderFactoryContext): Task;
+    CreateValueProviderAsync(context: ValueProviderFactoryContext): Task;
 }
 
 
@@ -680,11 +680,11 @@ export type JQueryFormValueProviderFactory = JQueryFormValueProviderFactory$inst
 
 
 export interface JQueryQueryStringValueProvider$instance extends JQueryValueProvider$instance {
-    containsPrefix(prefix: string): boolean;
-    filter(): IValueProvider | undefined;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(): IValueProvider | undefined;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -704,7 +704,7 @@ export type JQueryQueryStringValueProvider = JQueryQueryStringValueProvider$inst
 
 
 export interface JQueryQueryStringValueProviderFactory$instance {
-    createValueProviderAsync(context: ValueProviderFactoryContext): Task;
+    CreateValueProviderAsync(context: ValueProviderFactoryContext): Task;
 }
 
 
@@ -723,11 +723,11 @@ export type JQueryQueryStringValueProviderFactory = JQueryQueryStringValueProvid
 
 
 export interface JQueryValueProvider$instance extends BindingSourceValueProvider$instance {
-    readonly culture: CultureInfo;
-    containsPrefix(prefix: string): boolean;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
-    getValue(key: string): ValueProviderResult;
+    readonly Culture: CultureInfo;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -748,27 +748,27 @@ export type JQueryValueProvider = JQueryValueProvider$instance & __JQueryValuePr
 
 
 export interface ModelAttributes$instance {
-    readonly attributes: IReadOnlyList<unknown>;
-    readonly parameterAttributes: IReadOnlyList<unknown> | undefined;
-    readonly propertyAttributes: IReadOnlyList<unknown> | undefined;
-    readonly typeAttributes: IReadOnlyList<unknown> | undefined;
+    readonly Attributes: IReadOnlyList<unknown>;
+    readonly ParameterAttributes: IReadOnlyList<unknown> | undefined;
+    readonly PropertyAttributes: IReadOnlyList<unknown> | undefined;
+    readonly TypeAttributes: IReadOnlyList<unknown> | undefined;
 }
 
 
 export const ModelAttributes: {
     new(): ModelAttributes;
-    getAttributesForParameter(parameterInfo: ParameterInfo, modelType: Type): ModelAttributes;
-    getAttributesForParameter(parameterInfo: ParameterInfo): ModelAttributes;
-    getAttributesForProperty(containerType: Type, property: PropertyInfo, modelType: Type): ModelAttributes;
-    getAttributesForProperty(type: Type, property: PropertyInfo): ModelAttributes;
-    getAttributesForType(type: Type): ModelAttributes;
+    GetAttributesForParameter(parameterInfo: ParameterInfo, modelType: Type): ModelAttributes;
+    GetAttributesForParameter(parameterInfo: ParameterInfo): ModelAttributes;
+    GetAttributesForProperty(containerType: Type, property: PropertyInfo, modelType: Type): ModelAttributes;
+    GetAttributesForProperty(type: Type, property: PropertyInfo): ModelAttributes;
+    GetAttributesForType(type: Type): ModelAttributes;
 };
 
 
 export type ModelAttributes = ModelAttributes$instance;
 
 export interface ModelBinderFactory$instance {
-    createBinder(context: ModelBinderFactoryContext): IModelBinder;
+    CreateBinder(context: ModelBinderFactoryContext): IModelBinder;
 }
 
 
@@ -787,10 +787,10 @@ export type ModelBinderFactory = ModelBinderFactory$instance & __ModelBinderFact
 
 
 export interface ModelBinderFactoryContext$instance {
-    bindingInfo: BindingInfo;
-    get cacheToken(): unknown | undefined;
-    set cacheToken(value: unknown);
-    metadata: ModelMetadata;
+    BindingInfo: BindingInfo;
+    get CacheToken(): unknown | undefined;
+    set CacheToken(value: unknown);
+    Metadata: ModelMetadata;
 }
 
 
@@ -802,12 +802,12 @@ export const ModelBinderFactoryContext: {
 export type ModelBinderFactoryContext = ModelBinderFactoryContext$instance;
 
 export interface ModelBinderProviderContext$instance {
-    readonly bindingInfo: BindingInfo;
-    readonly metadata: ModelMetadata;
-    readonly metadataProvider: IModelMetadataProvider;
-    readonly services: IServiceProvider;
-    createBinder(metadata: ModelMetadata): IModelBinder;
-    createBinder(metadata: ModelMetadata, bindingInfo: BindingInfo): IModelBinder;
+    readonly BindingInfo: BindingInfo;
+    readonly Metadata: ModelMetadata;
+    readonly MetadataProvider: IModelMetadataProvider;
+    readonly Services: IServiceProvider;
+    CreateBinder(metadata: ModelMetadata): IModelBinder;
+    CreateBinder(metadata: ModelMetadata, bindingInfo: BindingInfo): IModelBinder;
 }
 
 
@@ -818,26 +818,26 @@ export const ModelBinderProviderContext: {
 export type ModelBinderProviderContext = ModelBinderProviderContext$instance;
 
 export interface ModelBindingContext$instance {
-    actionContext: ActionContext;
-    get binderModelName(): string | undefined;
-    set binderModelName(value: string);
-    get bindingSource(): BindingSource | undefined;
-    set bindingSource(value: BindingSource);
-    fieldName: string;
-    readonly httpContext: HttpContext;
-    isTopLevelObject: boolean;
-    model: unknown;
-    modelMetadata: ModelMetadata;
-    modelName: string;
-    modelState: ModelStateDictionary;
-    readonly modelType: Type;
-    readonly originalModelName: string;
-    propertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
-    result: ModelBindingResult;
-    validationState: ValidationStateDictionary;
-    valueProvider: IValueProvider;
-    enterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown): ModelBindingContext_NestedScope;
-    enterNestedScope(): ModelBindingContext_NestedScope;
+    ActionContext: ActionContext;
+    get BinderModelName(): string | undefined;
+    set BinderModelName(value: string);
+    get BindingSource(): BindingSource | undefined;
+    set BindingSource(value: BindingSource);
+    FieldName: string;
+    readonly HttpContext: HttpContext;
+    IsTopLevelObject: boolean;
+    Model: unknown;
+    ModelMetadata: ModelMetadata;
+    ModelName: string;
+    ModelState: ModelStateDictionary;
+    readonly ModelType: Type;
+    readonly OriginalModelName: string;
+    PropertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
+    Result: ModelBindingResult;
+    ValidationState: ValidationStateDictionary;
+    ValueProvider: IValueProvider;
+    EnterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown): ModelBindingContext_NestedScope;
+    EnterNestedScope(): ModelBindingContext_NestedScope;
 }
 
 
@@ -848,8 +848,8 @@ export const ModelBindingContext: {
 export type ModelBindingContext = ModelBindingContext$instance;
 
 export interface ModelError$instance {
-    readonly errorMessage: string;
-    readonly exception: Exception;
+    readonly ErrorMessage: string;
+    readonly Exception: Exception;
 }
 
 
@@ -863,8 +863,8 @@ export const ModelError: {
 export type ModelError = ModelError$instance;
 
 export interface ModelErrorCollection$instance extends Collection<ModelError> {
-    add(exception: Exception): void;
-    add(errorMessage: string): void;
+    Add(exception: Exception): void;
+    Add(errorMessage: string): void;
 }
 
 
@@ -876,72 +876,72 @@ export const ModelErrorCollection: {
 export type ModelErrorCollection = ModelErrorCollection$instance;
 
 export interface ModelMetadata$instance {
-    readonly additionalValues: IReadOnlyDictionary<unknown, unknown>;
-    readonly binderModelName: string | undefined;
-    readonly binderType: Type | undefined;
-    readonly bindingSource: BindingSource | undefined;
-    readonly boundConstructor: ModelMetadata | undefined;
-    readonly boundConstructorInvoker: Func<(unknown | undefined)[], unknown> | undefined;
-    readonly boundConstructorParameters: IReadOnlyList<ModelMetadata> | undefined;
-    readonly containerMetadata: ModelMetadata | undefined;
-    readonly containerType: Type | undefined;
-    readonly convertEmptyStringToNull: boolean;
-    readonly dataTypeName: string | undefined;
-    readonly description: string;
-    readonly displayFormatString: string | undefined;
-    readonly displayName: string;
-    readonly editFormatString: string | undefined;
-    readonly elementMetadata: ModelMetadata | undefined;
-    readonly elementType: Type | undefined;
-    readonly enumGroupedDisplayNamesAndValues: IEnumerable__System_Collections_Generic<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined;
-    readonly enumNamesAndValues: IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined;
-    readonly hasNonDefaultEditFormat: boolean;
-    readonly hasValidators: Nullable<System_Internal.Boolean>;
-    readonly hideSurroundingHtml: boolean;
-    readonly htmlEncode: boolean;
-    readonly isBindingAllowed: boolean;
-    readonly isBindingRequired: boolean;
-    readonly isCollectionType: boolean;
-    readonly isComplexType: boolean;
-    readonly isEnum: boolean;
-    readonly isEnumerableType: boolean;
-    readonly isFlagsEnum: boolean;
-    readonly isNullableValueType: boolean;
-    readonly isReadOnly: boolean;
-    readonly isReferenceOrNullableType: boolean;
-    readonly isRequired: boolean;
-    readonly metadataKind: ModelMetadataKind;
-    readonly modelBindingMessageProvider: ModelBindingMessageProvider;
-    readonly modelType: Type;
-    readonly name: string;
-    readonly nullDisplayText: string | undefined;
-    readonly order: int;
-    readonly parameterName: string;
-    readonly placeholder: string | undefined;
-    readonly properties: ModelPropertyCollection;
-    readonly propertyFilterProvider: IPropertyFilterProvider | undefined;
-    readonly propertyGetter: Func<unknown, unknown | undefined> | undefined;
-    readonly propertyName: string;
-    readonly propertySetter: Action<unknown, unknown | undefined> | undefined;
-    readonly propertyValidationFilter: IPropertyValidationFilter | undefined;
-    readonly showForDisplay: boolean;
-    readonly showForEdit: boolean;
-    readonly simpleDisplayProperty: string | undefined;
-    readonly templateHint: string | undefined;
-    readonly underlyingOrModelType: Type;
-    readonly validateChildren: boolean;
-    readonly validatorMetadata: IReadOnlyList<unknown>;
-    equals(other: ModelMetadata): boolean;
-    equals(obj: unknown): boolean;
-    getDisplayName(): string;
-    getHashCode(): int;
-    getMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
-    getMetadataForType(modelType: Type): ModelMetadata;
+    readonly AdditionalValues: IReadOnlyDictionary<unknown, unknown>;
+    readonly BinderModelName: string | undefined;
+    readonly BinderType: Type | undefined;
+    readonly BindingSource: BindingSource | undefined;
+    readonly BoundConstructor: ModelMetadata | undefined;
+    readonly BoundConstructorInvoker: Func<(unknown | undefined)[], unknown> | undefined;
+    readonly BoundConstructorParameters: IReadOnlyList<ModelMetadata> | undefined;
+    readonly ContainerMetadata: ModelMetadata | undefined;
+    readonly ContainerType: Type | undefined;
+    readonly ConvertEmptyStringToNull: boolean;
+    readonly DataTypeName: string | undefined;
+    readonly Description: string;
+    readonly DisplayFormatString: string | undefined;
+    readonly DisplayName: string;
+    readonly EditFormatString: string | undefined;
+    readonly ElementMetadata: ModelMetadata | undefined;
+    readonly ElementType: Type | undefined;
+    readonly EnumGroupedDisplayNamesAndValues: IEnumerable__System_Collections_Generic<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined;
+    readonly EnumNamesAndValues: IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined;
+    readonly HasNonDefaultEditFormat: boolean;
+    readonly HasValidators: Nullable<System_Internal.Boolean>;
+    readonly HideSurroundingHtml: boolean;
+    readonly HtmlEncode: boolean;
+    readonly IsBindingAllowed: boolean;
+    readonly IsBindingRequired: boolean;
+    readonly IsCollectionType: boolean;
+    readonly IsComplexType: boolean;
+    readonly IsEnum: boolean;
+    readonly IsEnumerableType: boolean;
+    readonly IsFlagsEnum: boolean;
+    readonly IsNullableValueType: boolean;
+    readonly IsReadOnly: boolean;
+    readonly IsReferenceOrNullableType: boolean;
+    readonly IsRequired: boolean;
+    readonly MetadataKind: ModelMetadataKind;
+    readonly ModelBindingMessageProvider: ModelBindingMessageProvider;
+    readonly ModelType: Type;
+    readonly Name: string;
+    readonly NullDisplayText: string | undefined;
+    readonly Order: int;
+    readonly ParameterName: string;
+    readonly Placeholder: string | undefined;
+    readonly Properties: ModelPropertyCollection;
+    readonly PropertyFilterProvider: IPropertyFilterProvider | undefined;
+    readonly PropertyGetter: Func<unknown, unknown | undefined> | undefined;
+    readonly PropertyName: string;
+    readonly PropertySetter: Action<unknown, unknown | undefined> | undefined;
+    readonly PropertyValidationFilter: IPropertyValidationFilter | undefined;
+    readonly ShowForDisplay: boolean;
+    readonly ShowForEdit: boolean;
+    readonly SimpleDisplayProperty: string | undefined;
+    readonly TemplateHint: string | undefined;
+    readonly UnderlyingOrModelType: Type;
+    readonly ValidateChildren: boolean;
+    readonly ValidatorMetadata: IReadOnlyList<unknown>;
+    Equals(other: ModelMetadata): boolean;
+    Equals(obj: unknown): boolean;
+    GetDisplayName(): string;
+    GetHashCode(): int;
+    GetMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
+    GetMetadataForType(modelType: Type): ModelMetadata;
 }
 
 
 export const ModelMetadata: {
-    readonly defaultOrder: int;
+    readonly DefaultOrder: int;
 };
 
 
@@ -955,12 +955,12 @@ export type ModelMetadata = ModelMetadata$instance & __ModelMetadata$views;
 
 
 export interface ModelMetadataProvider$instance {
-    getMetadataForConstructor(constructor: ConstructorInfo, modelType: Type): ModelMetadata;
-    getMetadataForParameter(parameter: ParameterInfo): ModelMetadata;
-    getMetadataForParameter(parameter: ParameterInfo, modelType: Type): ModelMetadata;
-    getMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
-    getMetadataForProperty(propertyInfo: PropertyInfo, modelType: Type): ModelMetadata;
-    getMetadataForType(modelType: Type): ModelMetadata;
+    GetMetadataForConstructor(constructor: ConstructorInfo, modelType: Type): ModelMetadata;
+    GetMetadataForParameter(parameter: ParameterInfo): ModelMetadata;
+    GetMetadataForParameter(parameter: ParameterInfo, modelType: Type): ModelMetadata;
+    GetMetadataForProperties(modelType: Type): IEnumerable__System_Collections_Generic<ModelMetadata>;
+    GetMetadataForProperty(propertyInfo: PropertyInfo, modelType: Type): ModelMetadata;
+    GetMetadataForType(modelType: Type): ModelMetadata;
 }
 
 
@@ -978,7 +978,7 @@ export type ModelMetadataProvider = ModelMetadataProvider$instance & __ModelMeta
 
 
 export interface ModelPropertyCollection$instance extends ReadOnlyCollection<ModelMetadata> {
-    readonly item: ModelMetadata;
+    readonly Item: ModelMetadata;
 }
 
 
@@ -990,35 +990,35 @@ export const ModelPropertyCollection: {
 export type ModelPropertyCollection = ModelPropertyCollection$instance;
 
 export interface ModelStateDictionary$instance {
-    readonly count: int;
-    readonly errorCount: int;
-    readonly hasReachedMaxErrors: boolean;
-    readonly isValid: boolean;
-    readonly item: ModelStateEntry;
-    readonly keys: ModelStateDictionary_KeyEnumerable;
-    maxAllowedErrors: int;
-    readonly root: ModelStateEntry;
-    readonly validationState: ModelValidationState;
-    readonly values: ModelStateDictionary_ValueEnumerable;
-    addModelError(key: string, exception: Exception, metadata: ModelMetadata): void;
-    addModelError(key: string, errorMessage: string): void;
-    clear(): void;
-    clearValidationState(key: string): void;
-    containsKey(key: string): boolean;
-    findKeysWithPrefix(prefix: string): ModelStateDictionary_PrefixEnumerable;
-    getEnumerator(): ModelStateDictionary_Enumerator;
-    getFieldValidationState(key: string): ModelValidationState;
-    getValidationState(key: string): ModelValidationState;
-    markFieldSkipped(key: string): void;
-    markFieldValid(key: string): void;
-    merge(dictionary: ModelStateDictionary): void;
-    remove(key: string): boolean;
-    setModelValue(key: string, rawValue: unknown, attemptedValue: string): void;
-    setModelValue(key: string, valueProviderResult: ValueProviderResult): void;
-    tryAddModelError(key: string, exception: Exception, metadata: ModelMetadata): boolean;
-    tryAddModelError(key: string, errorMessage: string): boolean;
-    tryAddModelException(key: string, exception: Exception): boolean;
-    tryGetValue(key: string, value: ModelStateEntry): boolean;
+    readonly Count: int;
+    readonly ErrorCount: int;
+    readonly HasReachedMaxErrors: boolean;
+    readonly IsValid: boolean;
+    readonly Item: ModelStateEntry;
+    readonly Keys: ModelStateDictionary_KeyEnumerable;
+    MaxAllowedErrors: int;
+    readonly Root: ModelStateEntry;
+    readonly ValidationState: ModelValidationState;
+    readonly Values: ModelStateDictionary_ValueEnumerable;
+    AddModelError(key: string, exception: Exception, metadata: ModelMetadata): void;
+    AddModelError(key: string, errorMessage: string): void;
+    Clear(): void;
+    ClearValidationState(key: string): void;
+    ContainsKey(key: string): boolean;
+    FindKeysWithPrefix(prefix: string): ModelStateDictionary_PrefixEnumerable;
+    GetEnumerator(): ModelStateDictionary_Enumerator;
+    GetFieldValidationState(key: string): ModelValidationState;
+    GetValidationState(key: string): ModelValidationState;
+    MarkFieldSkipped(key: string): void;
+    MarkFieldValid(key: string): void;
+    Merge(dictionary: ModelStateDictionary): void;
+    Remove(key: string): boolean;
+    SetModelValue(key: string, rawValue: unknown, attemptedValue: string): void;
+    SetModelValue(key: string, valueProviderResult: ValueProviderResult): void;
+    TryAddModelError(key: string, exception: Exception, metadata: ModelMetadata): boolean;
+    TryAddModelError(key: string, errorMessage: string): boolean;
+    TryAddModelException(key: string, exception: Exception): boolean;
+    TryGetValue(key: string, value: ModelStateEntry): boolean;
 }
 
 
@@ -1026,23 +1026,23 @@ export const ModelStateDictionary: {
     new(): ModelStateDictionary;
     new(maxAllowedErrors: int): ModelStateDictionary;
     new(dictionary: ModelStateDictionary): ModelStateDictionary;
-    readonly defaultMaxAllowedErrors: int;
-    startsWithPrefix(prefix: string, key: string): boolean;
+    readonly DefaultMaxAllowedErrors: int;
+    StartsWithPrefix(prefix: string, key: string): boolean;
 };
 
 
 export type ModelStateDictionary = ModelStateDictionary$instance;
 
 export interface ModelStateEntry$instance {
-    get attemptedValue(): string | undefined;
-    set attemptedValue(value: string);
-    readonly children: IReadOnlyList<ModelStateEntry> | undefined;
-    readonly errors: ModelErrorCollection;
-    readonly isContainerNode: boolean;
-    get rawValue(): unknown | undefined;
-    set rawValue(value: unknown);
-    validationState: ModelValidationState;
-    getModelStateForProperty(propertyName: string): ModelStateEntry | undefined;
+    get AttemptedValue(): string | undefined;
+    set AttemptedValue(value: string);
+    readonly Children: IReadOnlyList<ModelStateEntry> | undefined;
+    readonly Errors: ModelErrorCollection;
+    readonly IsContainerNode: boolean;
+    get RawValue(): unknown | undefined;
+    set RawValue(value: unknown);
+    ValidationState: ModelValidationState;
+    GetModelStateForProperty(propertyName: string): ModelStateEntry | undefined;
 }
 
 
@@ -1053,10 +1053,10 @@ export const ModelStateEntry: {
 export type ModelStateEntry = ModelStateEntry$instance;
 
 export interface ObjectModelValidator$instance {
-    getValidationVisitor(actionContext: ActionContext, validatorProvider: IModelValidatorProvider, validatorCache: ValidatorCache, metadataProvider: IModelMetadataProvider, validationState: ValidationStateDictionary): ValidationVisitor;
-    validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown): void;
-    validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown, metadata: ModelMetadata): void;
-    validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown, metadata: ModelMetadata, container: unknown): void;
+    GetValidationVisitor(actionContext: ActionContext, validatorProvider: IModelValidatorProvider, validatorCache: ValidatorCache, metadataProvider: IModelMetadataProvider, validationState: ValidationStateDictionary): ValidationVisitor;
+    Validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown): void;
+    Validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown, metadata: ModelMetadata): void;
+    Validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown, metadata: ModelMetadata, container: unknown): void;
 }
 
 
@@ -1073,8 +1073,8 @@ export type ObjectModelValidator = ObjectModelValidator$instance & __ObjectModel
 
 
 export interface ParameterBinder$instance {
-    bindModelAsync(actionContext: ActionContext, modelBinder: IModelBinder, valueProvider: IValueProvider, parameter: ParameterDescriptor, metadata: ModelMetadata, value: unknown): Task<ModelBindingResult>;
-    bindModelAsync(actionContext: ActionContext, modelBinder: IModelBinder, valueProvider: IValueProvider, parameter: ParameterDescriptor, metadata: ModelMetadata, value: unknown, container: unknown): ValueTask<ModelBindingResult>;
+    BindModelAsync(actionContext: ActionContext, modelBinder: IModelBinder, valueProvider: IValueProvider, parameter: ParameterDescriptor, metadata: ModelMetadata, value: unknown): Task<ModelBindingResult>;
+    BindModelAsync(actionContext: ActionContext, modelBinder: IModelBinder, valueProvider: IValueProvider, parameter: ParameterDescriptor, metadata: ModelMetadata, value: unknown, container: unknown): ValueTask<ModelBindingResult>;
 }
 
 
@@ -1086,8 +1086,8 @@ export const ParameterBinder: {
 export type ParameterBinder = ParameterBinder$instance;
 
 export interface PrefixContainer$instance {
-    containsPrefix(prefix: string): boolean;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    ContainsPrefix(prefix: string): boolean;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
 }
 
 
@@ -1099,11 +1099,11 @@ export const PrefixContainer: {
 export type PrefixContainer = PrefixContainer$instance;
 
 export interface QueryStringValueProvider$instance extends BindingSourceValueProvider$instance {
-    readonly culture: CultureInfo;
-    containsPrefix(prefix: string): boolean;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
-    getValue(key: string): ValueProviderResult;
+    readonly Culture: CultureInfo;
+    ContainsPrefix(prefix: string): boolean;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -1124,7 +1124,7 @@ export type QueryStringValueProvider = QueryStringValueProvider$instance & __Que
 
 
 export interface QueryStringValueProviderFactory$instance {
-    createValueProviderAsync(context: ValueProviderFactoryContext): Task;
+    CreateValueProviderAsync(context: ValueProviderFactoryContext): Task;
 }
 
 
@@ -1143,9 +1143,9 @@ export type QueryStringValueProviderFactory = QueryStringValueProviderFactory$in
 
 
 export interface RouteValueProvider$instance extends BindingSourceValueProvider$instance {
-    containsPrefix(key: string): boolean;
-    filter(bindingSource: BindingSource): IValueProvider | undefined;
-    getValue(key: string): ValueProviderResult;
+    ContainsPrefix(key: string): boolean;
+    Filter(bindingSource: BindingSource): IValueProvider | undefined;
+    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -1164,7 +1164,7 @@ export type RouteValueProvider = RouteValueProvider$instance & __RouteValueProvi
 
 
 export interface RouteValueProviderFactory$instance {
-    createValueProviderAsync(context: ValueProviderFactoryContext): Task;
+    CreateValueProviderAsync(context: ValueProviderFactoryContext): Task;
 }
 
 
@@ -1183,9 +1183,9 @@ export type RouteValueProviderFactory = RouteValueProviderFactory$instance & __R
 
 
 export interface SuppressChildValidationMetadataProvider$instance extends IMetadataDetailsProvider {
-    readonly fullTypeName: string | undefined;
-    readonly type: Type;
-    createValidationMetadata(context: ValidationMetadataProviderContext): void;
+    readonly FullTypeName: string | undefined;
+    readonly Type: Type;
+    CreateValidationMetadata(context: ValidationMetadataProviderContext): void;
 }
 
 
@@ -1227,9 +1227,9 @@ export const UnsupportedContentTypeException: {
 export type UnsupportedContentTypeException = UnsupportedContentTypeException$instance;
 
 export interface UnsupportedContentTypeFilter$instance extends IFilterMetadata {
-    order: int;
-    onActionExecuted(context: ActionExecutedContext): void;
-    onActionExecuting(context: ActionExecutingContext): void;
+    Order: int;
+    OnActionExecuted(context: ActionExecutedContext): void;
+    OnActionExecuting(context: ActionExecutingContext): void;
 }
 
 
@@ -1261,8 +1261,8 @@ export const ValueProviderException: {
 export type ValueProviderException = ValueProviderException$instance;
 
 export interface ValueProviderFactoryContext$instance {
-    readonly actionContext: ActionContext;
-    readonly valueProviders: IList__System_Collections_Generic<IValueProvider>;
+    readonly ActionContext: ActionContext;
+    readonly ValueProviders: IList__System_Collections_Generic<IValueProvider>;
 }
 
 
@@ -1274,43 +1274,43 @@ export const ValueProviderFactoryContext: {
 export type ValueProviderFactoryContext = ValueProviderFactoryContext$instance;
 
 export abstract class ModelBinderProviderExtensions$instance {
-    static removeType(list: IList__System_Collections_Generic<IModelBinderProvider>, type: Type): void;
-    static removeType<TModelBinderProvider extends IModelBinderProvider>(list: IList__System_Collections_Generic<IModelBinderProvider>): void;
+    static RemoveType(list: IList__System_Collections_Generic<IModelBinderProvider>, type: Type): void;
+    static RemoveType<TModelBinderProvider extends IModelBinderProvider>(list: IList__System_Collections_Generic<IModelBinderProvider>): void;
 }
 
 
 export type ModelBinderProviderExtensions = ModelBinderProviderExtensions$instance;
 
 export abstract class ModelMetadataProviderExtensions$instance {
-    static getMetadataForProperty(provider: IModelMetadataProvider, containerType: Type, propertyName: string): ModelMetadata;
+    static GetMetadataForProperty(provider: IModelMetadataProvider, containerType: Type, propertyName: string): ModelMetadata;
 }
 
 
 export type ModelMetadataProviderExtensions = ModelMetadataProviderExtensions$instance;
 
 export abstract class ModelNames$instance {
-    static createIndexModelName(parentName: string, index: int): string;
-    static createIndexModelName(parentName: string, index: string): string;
-    static createPropertyModelName(prefix: string, propertyName: string): string;
+    static CreateIndexModelName(parentName: string, index: int): string;
+    static CreateIndexModelName(parentName: string, index: string): string;
+    static CreatePropertyModelName(prefix: string, propertyName: string): string;
 }
 
 
 export type ModelNames = ModelNames$instance;
 
 export abstract class ModelStateDictionaryExtensions$instance {
-    static addModelError<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>, exception: Exception, metadata: ModelMetadata): void;
-    static addModelError<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>, errorMessage: string): void;
-    static remove<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>): boolean;
-    static removeAll<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>): void;
-    static tryAddModelException<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>, exception: Exception): void;
+    static AddModelError<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>, exception: Exception, metadata: ModelMetadata): void;
+    static AddModelError<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>, errorMessage: string): void;
+    static Remove<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>): boolean;
+    static RemoveAll<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>): void;
+    static TryAddModelException<TModel>(modelState: ModelStateDictionary, expression: Expression<Func<TModel, unknown>>, exception: Exception): void;
 }
 
 
 export type ModelStateDictionaryExtensions = ModelStateDictionaryExtensions$instance;
 
 export abstract class ValueProviderFactoryExtensions$instance {
-    static removeType(list: IList__System_Collections_Generic<IValueProviderFactory>, type: Type): void;
-    static removeType<TValueProviderFactory extends IValueProviderFactory>(list: IList__System_Collections_Generic<IValueProviderFactory>): void;
+    static RemoveType(list: IList__System_Collections_Generic<IValueProviderFactory>, type: Type): void;
+    static RemoveType<TValueProviderFactory extends IValueProviderFactory>(list: IList__System_Collections_Generic<IValueProviderFactory>): void;
 }
 
 

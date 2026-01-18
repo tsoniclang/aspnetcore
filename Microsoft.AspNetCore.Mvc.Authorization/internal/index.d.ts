@@ -34,10 +34,10 @@ export const AllowAnonymousFilter: {
 export type AllowAnonymousFilter = AllowAnonymousFilter$instance;
 
 export interface AuthorizeFilter$instance extends IFilterMetadata {
-    readonly authorizeData: IEnumerable<IAuthorizeData> | undefined;
-    readonly policy: AuthorizationPolicy;
-    readonly policyProvider: IAuthorizationPolicyProvider | undefined;
-    onAuthorizationAsync(context: AuthorizationFilterContext): Task;
+    readonly AuthorizeData: IEnumerable<IAuthorizeData> | undefined;
+    readonly Policy: AuthorizationPolicy;
+    readonly PolicyProvider: IAuthorizationPolicyProvider | undefined;
+    OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
 }
 
 

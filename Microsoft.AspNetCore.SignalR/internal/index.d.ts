@@ -33,49 +33,49 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IConfigureOptions, IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IClientProxy$instance {
-    sendCoreAsync(method: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendCoreAsync(method: string, args: unknown[], cancellationToken?: CancellationToken): Task;
 }
 
 
 export type IClientProxy = IClientProxy$instance;
 
 export interface IGroupManager$instance {
-    addToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
+    AddToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
 }
 
 
 export type IGroupManager = IGroupManager$instance;
 
 export interface IHubActivator_1$instance<THub extends Hub> {
-    create(): THub;
-    release(hub: THub): void;
+    Create(): THub;
+    Release(hub: THub): void;
 }
 
 
 export type IHubActivator_1<THub extends Hub> = IHubActivator_1$instance<THub>;
 
 export interface IHubCallerClients$instance extends IHubCallerClients_1<IClientProxy>, IHubClients_1<IClientProxy> {
-    readonly caller: ISingleClientProxy;
-    readonly others: IClientProxy;
-    readonly all: IClientProxy;
-    allExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
-    client(connectionId: string): ISingleClientProxy;
-    client(connectionId: string): IClientProxy;
-    groupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
-    othersInGroup(groupName: string): IClientProxy;
+    readonly Caller: ISingleClientProxy;
+    readonly Others: IClientProxy;
+    readonly All: IClientProxy;
+    AllExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
+    Client(connectionId: string): ISingleClientProxy;
+    Client(connectionId: string): IClientProxy;
+    GroupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
+    OthersInGroup(groupName: string): IClientProxy;
 }
 
 
 export type IHubCallerClients = IHubCallerClients$instance;
 
 export interface IHubCallerClients_1$instance<T> extends IHubClients_1<T> {
-    readonly caller: T;
-    readonly others: T;
-    readonly all: T;
-    allExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
-    client(connectionId: string): T;
-    groupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
-    othersInGroup(groupName: string): T;
+    readonly Caller: T;
+    readonly Others: T;
+    readonly All: T;
+    AllExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
+    Client(connectionId: string): T;
+    GroupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
+    OthersInGroup(groupName: string): T;
 }
 
 
@@ -84,85 +84,85 @@ export interface IHubCallerClients_1$instance<T> extends IHubClients_1$instance<
 export type IHubCallerClients_1<T> = IHubCallerClients_1$instance<T>;
 
 export interface IHubClients$instance extends IHubClients_1<IClientProxy> {
-    readonly all: IClientProxy;
-    allExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
-    client(connectionId: string): ISingleClientProxy;
-    client(connectionId: string): IClientProxy;
-    groupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
+    readonly All: IClientProxy;
+    AllExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
+    Client(connectionId: string): ISingleClientProxy;
+    Client(connectionId: string): IClientProxy;
+    GroupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
 }
 
 
 export type IHubClients = IHubClients$instance;
 
 export interface IHubClients_1$instance<T> {
-    readonly all: T;
-    allExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
-    client(connectionId: string): T;
-    groupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
+    readonly All: T;
+    AllExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
+    Client(connectionId: string): T;
+    GroupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
 }
 
 
 export type IHubClients_1<T> = IHubClients_1$instance<T>;
 
 export interface IHubContext$instance {
-    readonly clients: IHubClients;
-    readonly groups: IGroupManager;
+    readonly Clients: IHubClients;
+    readonly Groups: IGroupManager;
 }
 
 
 export type IHubContext = IHubContext$instance;
 
 export interface IHubContext_1$instance<THub extends Hub> {
-    readonly clients: IHubClients;
-    readonly groups: IGroupManager;
+    readonly Clients: IHubClients;
+    readonly Groups: IGroupManager;
 }
 
 
 export type IHubContext_1<THub extends Hub> = IHubContext_1$instance<THub>;
 
 export interface IHubContext_2$instance<THub extends Hub_1<T>, T> {
-    readonly clients: IHubClients_1<T>;
-    readonly groups: IGroupManager;
+    readonly Clients: IHubClients_1<T>;
+    readonly Groups: IGroupManager;
 }
 
 
 export type IHubContext_2<THub extends Hub_1<T>, T> = IHubContext_2$instance<THub, T>;
 
 export interface IHubFilter$instance {
-    invokeMethodAsync(invocationContext: HubInvocationContext, next: Func<HubInvocationContext, ValueTask<unknown>>): ValueTask<unknown>;
-    onConnectedAsync(context: HubLifetimeContext, next: Func<HubLifetimeContext, Task>): Task;
-    onDisconnectedAsync(context: HubLifetimeContext, exception: Exception, next: Func<HubLifetimeContext, Exception, Task>): Task;
+    InvokeMethodAsync(invocationContext: HubInvocationContext, next: Func<HubInvocationContext, ValueTask<unknown>>): ValueTask<unknown>;
+    OnConnectedAsync(context: HubLifetimeContext, next: Func<HubLifetimeContext, Task>): Task;
+    OnDisconnectedAsync(context: HubLifetimeContext, exception: Exception, next: Func<HubLifetimeContext, Exception, Task>): Task;
 }
 
 
 export type IHubFilter = IHubFilter$instance;
 
 export interface IHubProtocolResolver$instance {
-    readonly allProtocols: IReadOnlyList<IHubProtocol>;
-    getProtocol(protocolName: string, supportedProtocols: IReadOnlyList<System_Internal.String>): IHubProtocol | undefined;
+    readonly AllProtocols: IReadOnlyList<IHubProtocol>;
+    GetProtocol(protocolName: string, supportedProtocols: IReadOnlyList<System_Internal.String>): IHubProtocol | undefined;
 }
 
 
 export type IHubProtocolResolver = IHubProtocolResolver$instance;
 
 export interface IInvocationBinder$instance {
-    getParameterTypes(methodName: string): IReadOnlyList<Type>;
-    getReturnType(invocationId: string): Type;
-    getTarget(utf8Bytes: ReadOnlySpan<System_Internal.Byte>): string | undefined;
+    GetParameterTypes(methodName: string): IReadOnlyList<Type>;
+    GetReturnType(invocationId: string): Type;
+    GetTarget(utf8Bytes: ReadOnlySpan<System_Internal.Byte>): string | undefined;
 }
 
 
 export type IInvocationBinder = IInvocationBinder$instance;
 
 export interface ISignalRBuilder$instance {
-    readonly services: IServiceCollection;
+    readonly Services: IServiceCollection;
 }
 
 
 export type ISignalRBuilder = ISignalRBuilder$instance;
 
 export interface ISignalRServerBuilder$instance extends ISignalRBuilder {
-    readonly services: IServiceCollection;
+    readonly Services: IServiceCollection;
 }
 
 
@@ -171,8 +171,8 @@ export interface ISignalRServerBuilder$instance extends ISignalRBuilder$instance
 export type ISignalRServerBuilder = ISignalRServerBuilder$instance;
 
 export interface ISingleClientProxy$instance extends IClientProxy {
-    invokeCoreAsync<T>(method: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
-    sendCoreAsync(method: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    InvokeCoreAsync<T>(method: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
+    SendCoreAsync(method: string, args: unknown[], cancellationToken?: CancellationToken): Task;
 }
 
 
@@ -181,17 +181,17 @@ export interface ISingleClientProxy$instance extends IClientProxy$instance {}
 export type ISingleClientProxy = ISingleClientProxy$instance;
 
 export interface IUserIdProvider$instance {
-    getUserId(connection: HubConnectionContext): string | undefined;
+    GetUserId(connection: HubConnectionContext): string | undefined;
 }
 
 
 export type IUserIdProvider = IUserIdProvider$instance;
 
 export interface HubConnectionStore_Enumerator$instance {
-    readonly current: HubConnectionContext;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: HubConnectionContext;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -203,8 +203,8 @@ export const HubConnectionStore_Enumerator: {
 export type HubConnectionStore_Enumerator = HubConnectionStore_Enumerator$instance;
 
 export interface SerializedMessage$instance {
-    readonly protocolName: string;
-    readonly serialized: ReadOnlyMemory<System_Internal.Byte>;
+    readonly ProtocolName: string;
+    readonly Serialized: ReadOnlyMemory<System_Internal.Byte>;
 }
 
 
@@ -216,23 +216,23 @@ export const SerializedMessage: {
 export type SerializedMessage = SerializedMessage$instance;
 
 export interface DefaultHubLifetimeManager_1$instance<THub extends Hub> extends HubLifetimeManager_1<THub> {
-    addToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
-    invokeConnectionAsync<T>(connectionId: string, methodName: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
-    invokeConnectionAsync<T>(connectionId: string, methodName: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
-    onConnectedAsync(connection: HubConnectionContext): Task;
-    onDisconnectedAsync(connection: HubConnectionContext): Task;
-    removeFromGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
-    sendAllAsync(methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendAllExceptAsync(methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
-    sendConnectionAsync(connectionId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendConnectionsAsync(connectionIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendGroupAsync(groupName: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendGroupExceptAsync(groupName: string, methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
-    sendGroupsAsync(groupNames: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendUserAsync(userId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendUsersAsync(userIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    setConnectionResultAsync(connectionId: string, result: CompletionMessage): Task;
-    tryGetReturnType(invocationId: string, type: Type): boolean;
+    AddToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
+    InvokeConnectionAsync<T>(connectionId: string, methodName: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
+    InvokeConnectionAsync<T>(connectionId: string, methodName: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
+    OnConnectedAsync(connection: HubConnectionContext): Task;
+    OnDisconnectedAsync(connection: HubConnectionContext): Task;
+    RemoveFromGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
+    SendAllAsync(methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendAllExceptAsync(methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
+    SendConnectionAsync(connectionId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendConnectionsAsync(connectionIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendGroupAsync(groupName: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendGroupExceptAsync(groupName: string, methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
+    SendGroupsAsync(groupNames: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendUserAsync(userId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendUsersAsync(userIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SetConnectionResultAsync(connectionId: string, result: CompletionMessage): Task;
+    TryGetReturnType(invocationId: string, type: Type): boolean;
 }
 
 
@@ -244,7 +244,7 @@ export const DefaultHubLifetimeManager_1: {
 export type DefaultHubLifetimeManager_1<THub extends Hub> = DefaultHubLifetimeManager_1$instance<THub>;
 
 export interface DefaultUserIdProvider$instance {
-    getUserId(connection: HubConnectionContext): string | undefined;
+    GetUserId(connection: HubConnectionContext): string | undefined;
 }
 
 
@@ -263,7 +263,7 @@ export type DefaultUserIdProvider = DefaultUserIdProvider$instance & __DefaultUs
 
 
 export interface DynamicHub$instance extends Hub {
-    clients: DynamicHubClients | IHubCallerClients;
+    Clients: DynamicHubClients | IHubCallerClients;
 }
 
 
@@ -274,18 +274,18 @@ export const DynamicHub: {
 export type DynamicHub = DynamicHub$instance;
 
 export interface DynamicHubClients$instance {
-    readonly all: unknown;
-    readonly caller: unknown;
-    readonly others: unknown;
-    allExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): unknown;
-    client(connectionId: string): unknown;
-    clients(connectionIds: IReadOnlyList<System_Internal.String>): unknown;
-    group(groupName: string): unknown;
-    groupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): unknown;
-    groups(groupNames: IReadOnlyList<System_Internal.String>): unknown;
-    othersInGroup(groupName: string): unknown;
-    user(userId: string): unknown;
-    users(userIds: IReadOnlyList<System_Internal.String>): unknown;
+    readonly All: unknown;
+    readonly Caller: unknown;
+    readonly Others: unknown;
+    AllExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): unknown;
+    Client(connectionId: string): unknown;
+    Clients(connectionIds: IReadOnlyList<System_Internal.String>): unknown;
+    Group(groupName: string): unknown;
+    GroupExcept(groupName: string, excludedConnectionIds: IReadOnlyList<System_Internal.String>): unknown;
+    Groups(groupNames: IReadOnlyList<System_Internal.String>): unknown;
+    OthersInGroup(groupName: string): unknown;
+    User(userId: string): unknown;
+    Users(userIds: IReadOnlyList<System_Internal.String>): unknown;
 }
 
 
@@ -297,12 +297,12 @@ export const DynamicHubClients: {
 export type DynamicHubClients = DynamicHubClients$instance;
 
 export interface Hub$instance {
-    clients: DynamicHubClients | IHubCallerClients;
-    context: HubCallerContext;
-    groups: IGroupManager;
-    dispose(): void;
-    onConnectedAsync(): Task;
-    onDisconnectedAsync(exception: Exception): Task;
+    Clients: DynamicHubClients | IHubCallerClients;
+    Context: HubCallerContext;
+    Groups: IGroupManager;
+    Dispose(): void;
+    OnConnectedAsync(): Task;
+    OnDisconnectedAsync(exception: Exception): Task;
 }
 
 
@@ -313,7 +313,7 @@ export const Hub: {
 export type Hub = Hub$instance;
 
 export interface Hub_1$instance<T> extends Hub {
-    clients: IHubCallerClients_1<T>;
+    Clients: IHubCallerClients_1<T>;
 }
 
 
@@ -324,13 +324,13 @@ export const Hub_1: {
 export type Hub_1<T> = Hub_1$instance<T>;
 
 export interface HubCallerContext$instance {
-    readonly connectionAborted: CancellationToken;
-    readonly connectionId: string;
-    readonly features: IFeatureCollection;
-    readonly items: IDictionary<unknown, unknown | undefined>;
-    readonly user: ClaimsPrincipal;
-    readonly userIdentifier: string | undefined;
-    abort(): void;
+    readonly ConnectionAborted: CancellationToken;
+    readonly ConnectionId: string;
+    readonly Features: IFeatureCollection;
+    readonly Items: IDictionary<unknown, unknown | undefined>;
+    readonly User: ClaimsPrincipal;
+    readonly UserIdentifier: string | undefined;
+    Abort(): void;
 }
 
 
@@ -341,17 +341,17 @@ export const HubCallerContext: {
 export type HubCallerContext = HubCallerContext$instance;
 
 export interface HubConnectionContext$instance {
-    readonly connectionAborted: CancellationToken;
-    readonly connectionId: string;
-    readonly features: IFeatureCollection;
-    readonly items: IDictionary<unknown, unknown | undefined>;
-    protocol: IHubProtocol;
-    readonly user: ClaimsPrincipal;
-    get userIdentifier(): string | undefined;
-    set userIdentifier(value: string);
-    abort(): void;
-    writeAsync(message: HubMessage, cancellationToken?: CancellationToken): ValueTask;
-    writeAsync(message: SerializedHubMessage, cancellationToken?: CancellationToken): ValueTask;
+    readonly ConnectionAborted: CancellationToken;
+    readonly ConnectionId: string;
+    readonly Features: IFeatureCollection;
+    readonly Items: IDictionary<unknown, unknown | undefined>;
+    Protocol: IHubProtocol;
+    readonly User: ClaimsPrincipal;
+    get UserIdentifier(): string | undefined;
+    set UserIdentifier(value: string);
+    Abort(): void;
+    WriteAsync(message: HubMessage, cancellationToken?: CancellationToken): ValueTask;
+    WriteAsync(message: SerializedHubMessage, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -363,11 +363,11 @@ export const HubConnectionContext: {
 export type HubConnectionContext = HubConnectionContext$instance;
 
 export interface HubConnectionContextOptions$instance {
-    clientTimeoutInterval: TimeSpan;
-    keepAliveInterval: TimeSpan;
-    maximumParallelInvocations: int;
-    maximumReceiveMessageSize: Nullable<System_Internal.Int64>;
-    streamBufferCapacity: int;
+    ClientTimeoutInterval: TimeSpan;
+    KeepAliveInterval: TimeSpan;
+    MaximumParallelInvocations: int;
+    MaximumReceiveMessageSize: Nullable<System_Internal.Int64>;
+    StreamBufferCapacity: int;
 }
 
 
@@ -379,7 +379,7 @@ export const HubConnectionContextOptions: {
 export type HubConnectionContextOptions = HubConnectionContextOptions$instance;
 
 export interface HubConnectionHandler_1$instance<THub extends Hub> extends ConnectionHandler {
-    onConnectedAsync(connection: ConnectionContext): Task;
+    OnConnectedAsync(connection: ConnectionContext): Task;
 }
 
 
@@ -391,11 +391,11 @@ export const HubConnectionHandler_1: {
 export type HubConnectionHandler_1<THub extends Hub> = HubConnectionHandler_1$instance<THub>;
 
 export interface HubConnectionStore$instance {
-    readonly count: int;
-    readonly item: HubConnectionContext;
-    add(connection: HubConnectionContext): void;
-    getEnumerator(): HubConnectionStore_Enumerator;
-    remove(connection: HubConnectionContext): void;
+    readonly Count: int;
+    readonly Item: HubConnectionContext;
+    Add(connection: HubConnectionContext): void;
+    GetEnumerator(): HubConnectionStore_Enumerator;
+    Remove(connection: HubConnectionContext): void;
 }
 
 
@@ -421,12 +421,12 @@ export const HubException: {
 export type HubException = HubException$instance;
 
 export interface HubInvocationContext$instance {
-    readonly context: HubCallerContext;
-    readonly hub: Hub;
-    readonly hubMethod: MethodInfo;
-    readonly hubMethodArguments: IReadOnlyList<unknown | undefined>;
-    readonly hubMethodName: string;
-    readonly serviceProvider: IServiceProvider;
+    readonly Context: HubCallerContext;
+    readonly Hub: Hub;
+    readonly HubMethod: MethodInfo;
+    readonly HubMethodArguments: IReadOnlyList<unknown | undefined>;
+    readonly HubMethodName: string;
+    readonly ServiceProvider: IServiceProvider;
 }
 
 
@@ -438,9 +438,9 @@ export const HubInvocationContext: {
 export type HubInvocationContext = HubInvocationContext$instance;
 
 export interface HubLifetimeContext$instance {
-    readonly context: HubCallerContext;
-    readonly hub: Hub;
-    readonly serviceProvider: IServiceProvider;
+    readonly Context: HubCallerContext;
+    readonly Hub: Hub;
+    readonly ServiceProvider: IServiceProvider;
 }
 
 
@@ -452,22 +452,22 @@ export const HubLifetimeContext: {
 export type HubLifetimeContext = HubLifetimeContext$instance;
 
 export interface HubLifetimeManager_1$instance<THub extends Hub> {
-    addToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
-    invokeConnectionAsync<T>(connectionId: string, methodName: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
-    onConnectedAsync(connection: HubConnectionContext): Task;
-    onDisconnectedAsync(connection: HubConnectionContext): Task;
-    removeFromGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
-    sendAllAsync(methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendAllExceptAsync(methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
-    sendConnectionAsync(connectionId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendConnectionsAsync(connectionIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendGroupAsync(groupName: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendGroupExceptAsync(groupName: string, methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
-    sendGroupsAsync(groupNames: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendUserAsync(userId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    sendUsersAsync(userIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
-    setConnectionResultAsync(connectionId: string, result: CompletionMessage): Task;
-    tryGetReturnType(invocationId: string, type: Type): boolean;
+    AddToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
+    InvokeConnectionAsync<T>(connectionId: string, methodName: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
+    OnConnectedAsync(connection: HubConnectionContext): Task;
+    OnDisconnectedAsync(connection: HubConnectionContext): Task;
+    RemoveFromGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
+    SendAllAsync(methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendAllExceptAsync(methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
+    SendConnectionAsync(connectionId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendConnectionsAsync(connectionIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendGroupAsync(groupName: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendGroupExceptAsync(groupName: string, methodName: string, args: unknown[], excludedConnectionIds: IReadOnlyList<System_Internal.String>, cancellationToken?: CancellationToken): Task;
+    SendGroupsAsync(groupNames: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendUserAsync(userId: string, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SendUsersAsync(userIds: IReadOnlyList<System_Internal.String>, methodName: string, args: unknown[], cancellationToken?: CancellationToken): Task;
+    SetConnectionResultAsync(connectionId: string, result: CompletionMessage): Task;
+    TryGetReturnType(invocationId: string, type: Type): boolean;
 }
 
 
@@ -478,7 +478,7 @@ export const HubLifetimeManager_1: {
 export type HubLifetimeManager_1<THub extends Hub> = HubLifetimeManager_1$instance<THub>;
 
 export interface HubMetadata$instance {
-    readonly hubType: Type;
+    readonly HubType: Type;
 }
 
 
@@ -490,7 +490,7 @@ export const HubMetadata: {
 export type HubMetadata = HubMetadata$instance;
 
 export interface HubMethodNameAttribute$instance extends Attribute {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
@@ -502,17 +502,17 @@ export const HubMethodNameAttribute: {
 export type HubMethodNameAttribute = HubMethodNameAttribute$instance;
 
 export interface HubOptions$instance {
-    clientTimeoutInterval: Nullable<TimeSpan>;
-    disableImplicitFromServicesParameters: boolean;
-    enableDetailedErrors: Nullable<System_Internal.Boolean>;
-    handshakeTimeout: Nullable<TimeSpan>;
-    keepAliveInterval: Nullable<TimeSpan>;
-    maximumParallelInvocationsPerClient: int;
-    maximumReceiveMessageSize: Nullable<System_Internal.Int64>;
-    statefulReconnectBufferSize: long;
-    streamBufferCapacity: Nullable<System_Internal.Int32>;
-    get supportedProtocols(): IList<System_Internal.String> | undefined;
-    set supportedProtocols(value: IList<System_Internal.String>);
+    ClientTimeoutInterval: Nullable<TimeSpan>;
+    DisableImplicitFromServicesParameters: boolean;
+    EnableDetailedErrors: Nullable<System_Internal.Boolean>;
+    HandshakeTimeout: Nullable<TimeSpan>;
+    KeepAliveInterval: Nullable<TimeSpan>;
+    MaximumParallelInvocationsPerClient: int;
+    MaximumReceiveMessageSize: Nullable<System_Internal.Int64>;
+    StatefulReconnectBufferSize: long;
+    StreamBufferCapacity: Nullable<System_Internal.Int32>;
+    get SupportedProtocols(): IList<System_Internal.String> | undefined;
+    set SupportedProtocols(value: IList<System_Internal.String>);
 }
 
 
@@ -535,7 +535,7 @@ export const HubOptions_1: {
 export type HubOptions_1<THub extends Hub> = HubOptions_1$instance<THub>;
 
 export interface HubOptionsSetup$instance {
-    configure(options: HubOptions): void;
+    Configure(options: HubOptions): void;
 }
 
 
@@ -547,7 +547,7 @@ export const HubOptionsSetup: {
 export type HubOptionsSetup = HubOptionsSetup$instance;
 
 export interface HubOptionsSetup_1$instance<THub extends Hub> {
-    configure(options: HubOptions_1<THub>): void;
+    Configure(options: HubOptions_1<THub>): void;
 }
 
 
@@ -559,7 +559,7 @@ export const HubOptionsSetup_1: {
 export type HubOptionsSetup_1<THub extends Hub> = HubOptionsSetup_1$instance<THub>;
 
 export interface JsonHubProtocolOptions$instance {
-    payloadSerializerOptions: JsonSerializerOptions;
+    PayloadSerializerOptions: JsonSerializerOptions;
 }
 
 
@@ -571,8 +571,8 @@ export const JsonHubProtocolOptions: {
 export type JsonHubProtocolOptions = JsonHubProtocolOptions$instance;
 
 export interface SerializedHubMessage$instance {
-    readonly message: HubMessage;
-    getSerializedMessage(protocol: IHubProtocol): ReadOnlyMemory<System_Internal.Byte>;
+    readonly Message: HubMessage;
+    GetSerializedMessage(protocol: IHubProtocol): ReadOnlyMemory<System_Internal.Byte>;
 }
 
 
@@ -585,103 +585,103 @@ export const SerializedHubMessage: {
 export type SerializedHubMessage = SerializedHubMessage$instance;
 
 export abstract class ClientProxyExtensions$instance {
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, cancellationToken: CancellationToken): Task<T>;
-    static invokeAsync<T>(clientProxy: ISingleClientProxy, method: string, cancellationToken: CancellationToken): Task<T>;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, cancellationToken?: CancellationToken): Task;
-    static sendAsync(clientProxy: IClientProxy, method: string, cancellationToken?: CancellationToken): Task;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, arg2: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, arg1: unknown, cancellationToken: CancellationToken): Task<T>;
+    static InvokeAsync<T>(clientProxy: ISingleClientProxy, method: string, cancellationToken: CancellationToken): Task<T>;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, arg2: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, arg1: unknown, cancellationToken?: CancellationToken): Task;
+    static SendAsync(clientProxy: IClientProxy, method: string, cancellationToken?: CancellationToken): Task;
 }
 
 
 export type ClientProxyExtensions = ClientProxyExtensions$instance;
 
 export abstract class GetHttpContextExtensions$instance {
-    static getHttpContext(connection: HubCallerContext): HttpContext | undefined;
-    static getHttpContext(connection: HubConnectionContext): HttpContext | undefined;
+    static GetHttpContext(connection: HubCallerContext): HttpContext | undefined;
+    static GetHttpContext(connection: HubConnectionContext): HttpContext | undefined;
 }
 
 
 export type GetHttpContextExtensions = GetHttpContextExtensions$instance;
 
 export abstract class HubClientsExtensions$instance {
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionIds: IEnumerable<System_Internal.String>): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string): T;
-    static allExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connectionIds: IEnumerable<System_Internal.String>): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string, connection8: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string): T;
-    static clients<T>(hubClients: IHubClients_1<T>, connection1: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionIds: IEnumerable<System_Internal.String>): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string): T;
-    static groupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, groupNames: IEnumerable<System_Internal.String>): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string, group8: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string): T;
-    static groups<T>(hubClients: IHubClients_1<T>, group1: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, userIds: IEnumerable<System_Internal.String>): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string, user8: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string): T;
-    static users<T>(hubClients: IHubClients_1<T>, user1: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionIds: IEnumerable<System_Internal.String>): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string): T;
+    static AllExcept<T>(hubClients: IHubClients_1<T>, excludedConnectionId1: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connectionIds: IEnumerable<System_Internal.String>): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string, connection8: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string, connection3: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string, connection2: string): T;
+    static Clients<T>(hubClients: IHubClients_1<T>, connection1: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionIds: IEnumerable<System_Internal.String>): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string): T;
+    static GroupExcept<T>(hubClients: IHubClients_1<T>, groupName: string, excludedConnectionId1: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, groupNames: IEnumerable<System_Internal.String>): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string, group8: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string, group3: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string, group2: string): T;
+    static Groups<T>(hubClients: IHubClients_1<T>, group1: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, userIds: IEnumerable<System_Internal.String>): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string, user8: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string, user3: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string, user2: string): T;
+    static Users<T>(hubClients: IHubClients_1<T>, user1: string): T;
 }
 
 
 export type HubClientsExtensions = HubClientsExtensions$instance;
 
 export abstract class HubOptionsExtensions$instance {
-    static addFilter(options: HubOptions, hubFilter: IHubFilter): void;
-    static addFilter(options: HubOptions, filterType: Type): void;
-    static addFilter<TFilter extends IHubFilter>(options: HubOptions): void;
+    static AddFilter(options: HubOptions, hubFilter: IHubFilter): void;
+    static AddFilter(options: HubOptions, filterType: Type): void;
+    static AddFilter<TFilter extends IHubFilter>(options: HubOptions): void;
 }
 
 
 export type HubOptionsExtensions = HubOptionsExtensions$instance;
 
 export abstract class SignalRConnectionBuilderExtensions$instance {
-    static useHub<THub extends Hub>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
+    static UseHub<THub extends Hub>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
 }
 
 

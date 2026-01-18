@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Mvc.TagHelpers"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
-      "tsEmitName": "IDistributedCacheTagHelperFormatter",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter::SerializeAsync(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SerializeAsync",
-          "tsEmitName": "serializeAsync",
           "metadataToken": 100663773,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SerializeAsync|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter::DeserializeAsync(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DeserializeAsync",
-          "tsEmitName": "deserializeAsync",
           "metadataToken": 100663774,
           "canonicalSignature": "(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DeserializeAsync|(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -40,47 +58,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "serializeAsync",
-          "isStatic": false,
-          "tsSignatureId": "SerializeAsync|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663773
-          }
-        },
-        {
-          "tsName": "deserializeAsync",
-          "isStatic": false,
-          "tsSignatureId": "DeserializeAsync|(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663774
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService",
-      "tsEmitName": "IDistributedCacheTagHelperService",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService::ProcessContentAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "ProcessContentAsync",
-          "tsEmitName": "processContentAsync",
           "metadataToken": 100663775,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ProcessContentAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -89,37 +95,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "processContentAsync",
-          "isStatic": false,
-          "tsSignatureId": "ProcessContentAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663775
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
-      "tsEmitName": "IDistributedCacheTagHelperStorage",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage::GetAsync(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetAsync",
-          "tsEmitName": "getAsync",
           "metadataToken": 100663776,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAsync|(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -127,13 +131,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage::SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task",
           "clrName": "SetAsync",
-          "tsEmitName": "setAsync",
           "metadataToken": 100663777,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -142,47 +151,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663776
-          }
-        },
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663777
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-      "tsEmitName": "CacheTagKey",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey::GenerateKey():System.String",
           "clrName": "GenerateKey",
-          "tsEmitName": "generateKey",
           "metadataToken": 100663749,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GenerateKey|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -190,13 +187,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey::GenerateHashedKey():System.String",
           "clrName": "GenerateHashedKey",
-          "tsEmitName": "generateHashedKey",
           "metadataToken": 100663750,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GenerateHashedKey|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -204,13 +206,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100663751,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -218,13 +225,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey::Equals(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100663752,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -232,13 +244,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
-          "tsEmitName": "getHashCode",
           "metadataToken": 100663753,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -268,97 +285,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "generateKey",
-          "isStatic": false,
-          "tsSignatureId": "GenerateKey|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663749
-          }
-        },
-        {
-          "tsName": "generateHashedKey",
-          "isStatic": false,
-          "tsSignatureId": "GenerateHashedKey|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663750
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663751
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663752
-          }
-        },
-        {
-          "tsName": "getHashCode",
-          "isStatic": false,
-          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663753
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663745
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663746
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
-      "tsEmitName": "DistributedCacheTagHelperFormatter",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter::SerializeAsync(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SerializeAsync",
-          "tsEmitName": "serializeAsync",
           "metadataToken": 100663760,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SerializeAsync|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -366,13 +321,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter::DeserializeAsync(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DeserializeAsync",
-          "tsEmitName": "deserializeAsync",
           "metadataToken": 100663761,
           "canonicalSignature": "(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DeserializeAsync|(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -380,30 +340,42 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter::SerializeAsync(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SerializeAsync",
-          "tsEmitName": "serializeAsync$view",
           "metadataToken": 100663773,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SerializeAsync|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter::DeserializeAsync(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DeserializeAsync",
-          "tsEmitName": "deserializeAsync$view",
           "metadataToken": 100663774,
           "canonicalSignature": "(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DeserializeAsync|(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter"
         }
       ],
       "properties": [],
@@ -420,80 +392,36 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "serializeAsync",
-          "isStatic": false,
-          "tsSignatureId": "SerializeAsync|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663760
-          }
-        },
-        {
-          "tsName": "deserializeAsync",
-          "isStatic": false,
-          "tsSignatureId": "DeserializeAsync|(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663761
-          }
-        },
-        {
-          "tsName": "serializeAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "SerializeAsync|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663773
-          }
-        },
-        {
-          "tsName": "deserializeAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "DeserializeAsync|(System.Byte[]):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.HtmlString,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663774
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663762
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext",
-      "tsEmitName": "DistributedCacheTagHelperFormattingContext",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext::Html:Microsoft.AspNetCore.Html.HtmlString",
           "clrName": "Html",
-          "tsEmitName": "html",
           "metadataToken": 385876158,
           "canonicalSignature": ":Microsoft.AspNetCore.Html.HtmlString",
           "normalizedSignature": "Html|:Microsoft.AspNetCore.Html.HtmlString|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers"
         }
@@ -511,48 +439,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "html",
-          "isStatic": false,
-          "tsSignatureId": "Html|:Microsoft.AspNetCore.Html.HtmlString|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 385876158
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperFormattingContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663765
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperService",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperService",
-      "tsEmitName": "DistributedCacheTagHelperService",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperService::ProcessContentAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "ProcessContentAsync",
-          "tsEmitName": "processContentAsync",
           "metadataToken": 100663767,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ProcessContentAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -560,16 +475,22 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService::ProcessContentAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "ProcessContentAsync",
-          "tsEmitName": "processContentAsync$view",
           "metadataToken": 100663775,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ProcessContentAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService"
         }
       ],
       "properties": [],
@@ -586,58 +507,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "processContentAsync",
-          "isStatic": false,
-          "tsSignatureId": "ProcessContentAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperService",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663767
-          }
-        },
-        {
-          "tsName": "processContentAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ProcessContentAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.CacheTagKey,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Html.IHtmlContent,Microsoft.AspNetCore.Html.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperService",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663775
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage,Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter,System.Text.Encodings.Web.HtmlEncoder,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperService",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663766
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
       "clrName": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
-      "tsEmitName": "DistributedCacheTagHelperStorage",
       "assemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage::GetAsync(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetAsync",
-          "tsEmitName": "getAsync",
           "metadataToken": 100663771,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAsync|(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -645,13 +543,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage::SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task",
           "clrName": "SetAsync",
-          "tsEmitName": "setAsync",
           "metadataToken": 100663772,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": false
@@ -659,30 +562,42 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage::GetAsync(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetAsync",
-          "tsEmitName": "getAsync$view",
           "metadataToken": 100663776,
           "canonicalSignature": "(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAsync|(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage::SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task",
           "clrName": "SetAsync",
-          "tsEmitName": "setAsync$view",
           "metadataToken": 100663777,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage"
         }
       ],
       "properties": [],
@@ -698,59 +613,6 @@
           "parameterCount": 1,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663771
-          }
-        },
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663772
-          }
-        },
-        {
-          "tsName": "getAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663776
-          }
-        },
-        {
-          "tsName": "setAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663777
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Caching.Distributed.IDistributedCache):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.TagHelpers.Cache.DistributedCacheTagHelperStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-            "metadataToken": 100663770
-          }
         }
       ]
     }

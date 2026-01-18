@@ -28,17 +28,17 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum HttpProtocols {
-    none = 0,
-    http1 = 1,
-    http2 = 2,
-    http1AndHttp2 = 3,
-    http3 = 4,
-    http1AndHttp2AndHttp3 = 7
+    None = 0,
+    Http1 = 1,
+    Http2 = 2,
+    Http1AndHttp2 = 3,
+    Http3 = 4,
+    Http1AndHttp2AndHttp3 = 7
 }
 
 
 export interface BadHttpRequestException$instance extends BadHttpRequestException_Http {
-    readonly statusCode: int;
+    readonly StatusCode: int;
 }
 
 
@@ -50,14 +50,14 @@ export const BadHttpRequestException: {
 export type BadHttpRequestException = BadHttpRequestException$instance;
 
 export interface Http2Limits$instance {
-    headerTableSize: int;
-    initialConnectionWindowSize: int;
-    initialStreamWindowSize: int;
-    keepAlivePingDelay: TimeSpan;
-    keepAlivePingTimeout: TimeSpan;
-    maxFrameSize: int;
-    maxRequestHeaderFieldSize: int;
-    maxStreamsPerConnection: int;
+    HeaderTableSize: int;
+    InitialConnectionWindowSize: int;
+    InitialStreamWindowSize: int;
+    KeepAlivePingDelay: TimeSpan;
+    KeepAlivePingTimeout: TimeSpan;
+    MaxFrameSize: int;
+    MaxRequestHeaderFieldSize: int;
+    MaxStreamsPerConnection: int;
 }
 
 
@@ -69,7 +69,7 @@ export const Http2Limits: {
 export type Http2Limits = Http2Limits$instance;
 
 export interface Http3Limits$instance {
-    maxRequestHeaderFieldSize: int;
+    MaxRequestHeaderFieldSize: int;
 }
 
 
@@ -81,11 +81,11 @@ export const Http3Limits: {
 export type Http3Limits = Http3Limits$instance;
 
 export interface KestrelServer$instance {
-    readonly features: IFeatureCollection;
-    readonly options: KestrelServerOptions;
-    dispose(): void;
-    startAsync<TContext>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
-    stopAsync(cancellationToken: CancellationToken): Task;
+    readonly Features: IFeatureCollection;
+    readonly Options: KestrelServerOptions;
+    Dispose(): void;
+    StartAsync<TContext>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
+    StopAsync(cancellationToken: CancellationToken): Task;
 }
 
 
@@ -104,22 +104,22 @@ export type KestrelServer = KestrelServer$instance & __KestrelServer$views;
 
 
 export interface KestrelServerLimits$instance {
-    readonly http2: Http2Limits;
-    readonly http3: Http3Limits;
-    keepAliveTimeout: TimeSpan;
-    maxConcurrentConnections: Nullable<System_Internal.Int64>;
-    maxConcurrentUpgradedConnections: Nullable<System_Internal.Int64>;
-    maxRequestBodySize: Nullable<System_Internal.Int64>;
-    maxRequestBufferSize: Nullable<System_Internal.Int64>;
-    maxRequestHeaderCount: int;
-    maxRequestHeadersTotalSize: int;
-    maxRequestLineSize: int;
-    maxResponseBufferSize: Nullable<System_Internal.Int64>;
-    get minRequestBodyDataRate(): MinDataRate | undefined;
-    set minRequestBodyDataRate(value: MinDataRate);
-    get minResponseDataRate(): MinDataRate | undefined;
-    set minResponseDataRate(value: MinDataRate);
-    requestHeadersTimeout: TimeSpan;
+    readonly Http2: Http2Limits;
+    readonly Http3: Http3Limits;
+    KeepAliveTimeout: TimeSpan;
+    MaxConcurrentConnections: Nullable<System_Internal.Int64>;
+    MaxConcurrentUpgradedConnections: Nullable<System_Internal.Int64>;
+    MaxRequestBodySize: Nullable<System_Internal.Int64>;
+    MaxRequestBufferSize: Nullable<System_Internal.Int64>;
+    MaxRequestHeaderCount: int;
+    MaxRequestHeadersTotalSize: int;
+    MaxRequestLineSize: int;
+    MaxResponseBufferSize: Nullable<System_Internal.Int64>;
+    get MinRequestBodyDataRate(): MinDataRate | undefined;
+    set MinRequestBodyDataRate(value: MinDataRate);
+    get MinResponseDataRate(): MinDataRate | undefined;
+    set MinResponseDataRate(value: MinDataRate);
+    RequestHeadersTimeout: TimeSpan;
 }
 
 
@@ -131,40 +131,40 @@ export const KestrelServerLimits: {
 export type KestrelServerLimits = KestrelServerLimits$instance;
 
 export interface KestrelServerOptions$instance {
-    addServerHeader: boolean;
-    allowAlternateSchemes: boolean;
-    allowHostHeaderOverride: boolean;
-    allowResponseHeaderCompression: boolean;
-    allowSynchronousIO: boolean;
-    applicationServices: IServiceProvider;
-    get configurationLoader(): KestrelConfigurationLoader | undefined;
-    set configurationLoader(value: KestrelConfigurationLoader);
-    disableStringReuse: boolean;
-    enableAltSvc: boolean;
-    readonly limits: KestrelServerLimits;
-    requestHeaderEncodingSelector: Func<System_Internal.String, Encoding | undefined>;
-    responseHeaderEncodingSelector: Func<System_Internal.String, Encoding | undefined>;
-    configure(): KestrelConfigurationLoader;
-    configure(config: IConfiguration): KestrelConfigurationLoader;
-    configure(config: IConfiguration, reloadOnChange: boolean): KestrelConfigurationLoader;
-    configureEndpointDefaults(configureOptions: Action<ListenOptions>): void;
-    configureHttpsDefaults(configureOptions: Action<HttpsConnectionAdapterOptions>): void;
-    listen(address: IPAddress, port: int): void;
-    listen(address: IPAddress, port: int, configure: Action<ListenOptions>): void;
-    listen(endPoint: IPEndPoint): void;
-    listen(endPoint: EndPoint): void;
-    listen(endPoint: IPEndPoint, configure: Action<ListenOptions>): void;
-    listen(endPoint: EndPoint, configure: Action<ListenOptions>): void;
-    listenAnyIP(port: int): void;
-    listenAnyIP(port: int, configure: Action<ListenOptions>): void;
-    listenHandle(handle: ulong): void;
-    listenHandle(handle: ulong, configure: Action<ListenOptions>): void;
-    listenLocalhost(port: int): void;
-    listenLocalhost(port: int, configure: Action<ListenOptions>): void;
-    listenNamedPipe(pipeName: string): void;
-    listenNamedPipe(pipeName: string, configure: Action<ListenOptions>): void;
-    listenUnixSocket(socketPath: string): void;
-    listenUnixSocket(socketPath: string, configure: Action<ListenOptions>): void;
+    AddServerHeader: boolean;
+    AllowAlternateSchemes: boolean;
+    AllowHostHeaderOverride: boolean;
+    AllowResponseHeaderCompression: boolean;
+    AllowSynchronousIO: boolean;
+    ApplicationServices: IServiceProvider;
+    get ConfigurationLoader(): KestrelConfigurationLoader | undefined;
+    set ConfigurationLoader(value: KestrelConfigurationLoader);
+    DisableStringReuse: boolean;
+    EnableAltSvc: boolean;
+    readonly Limits: KestrelServerLimits;
+    RequestHeaderEncodingSelector: Func<System_Internal.String, Encoding | undefined>;
+    ResponseHeaderEncodingSelector: Func<System_Internal.String, Encoding | undefined>;
+    Configure(): KestrelConfigurationLoader;
+    Configure(config: IConfiguration): KestrelConfigurationLoader;
+    Configure(config: IConfiguration, reloadOnChange: boolean): KestrelConfigurationLoader;
+    ConfigureEndpointDefaults(configureOptions: Action<ListenOptions>): void;
+    ConfigureHttpsDefaults(configureOptions: Action<HttpsConnectionAdapterOptions>): void;
+    Listen(address: IPAddress, port: int): void;
+    Listen(address: IPAddress, port: int, configure: Action<ListenOptions>): void;
+    Listen(endPoint: IPEndPoint): void;
+    Listen(endPoint: EndPoint): void;
+    Listen(endPoint: IPEndPoint, configure: Action<ListenOptions>): void;
+    Listen(endPoint: EndPoint, configure: Action<ListenOptions>): void;
+    ListenAnyIP(port: int): void;
+    ListenAnyIP(port: int, configure: Action<ListenOptions>): void;
+    ListenHandle(handle: ulong): void;
+    ListenHandle(handle: ulong, configure: Action<ListenOptions>): void;
+    ListenLocalhost(port: int): void;
+    ListenLocalhost(port: int, configure: Action<ListenOptions>): void;
+    ListenNamedPipe(pipeName: string): void;
+    ListenNamedPipe(pipeName: string, configure: Action<ListenOptions>): void;
+    ListenUnixSocket(socketPath: string): void;
+    ListenUnixSocket(socketPath: string, configure: Action<ListenOptions>): void;
 }
 
 
@@ -176,18 +176,18 @@ export const KestrelServerOptions: {
 export type KestrelServerOptions = KestrelServerOptions$instance;
 
 export interface ListenOptions$instance {
-    readonly applicationServices: IServiceProvider;
-    disableAltSvcHeader: boolean;
-    readonly endPoint: EndPoint;
-    readonly fileHandle: ulong;
-    readonly ipEndPoint: IPEndPoint | undefined;
-    readonly kestrelServerOptions: KestrelServerOptions;
-    readonly pipeName: string | undefined;
-    protocols: HttpProtocols;
-    readonly socketPath: string | undefined;
-    build(): ConnectionDelegate;
-    toString(): string | undefined;
-    use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
+    readonly ApplicationServices: IServiceProvider;
+    DisableAltSvcHeader: boolean;
+    readonly EndPoint: EndPoint;
+    readonly FileHandle: ulong;
+    readonly IPEndPoint: IPEndPoint | undefined;
+    readonly KestrelServerOptions: KestrelServerOptions;
+    readonly PipeName: string | undefined;
+    Protocols: HttpProtocols;
+    readonly SocketPath: string | undefined;
+    Build(): ConnectionDelegate;
+    ToString(): string | undefined;
+    Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
 }
 
 
@@ -207,9 +207,9 @@ export type ListenOptions = ListenOptions$instance & __ListenOptions$views;
 
 
 export interface MinDataRate$instance {
-    readonly bytesPerSecond: double;
-    readonly gracePeriod: TimeSpan;
-    toString(): string;
+    readonly BytesPerSecond: double;
+    readonly GracePeriod: TimeSpan;
+    ToString(): string;
 }
 
 

@@ -12,7 +12,7 @@ import type { Boolean as ClrBoolean, Func, Object as ClrObject } from "@tsonic/d
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface MapMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -24,10 +24,10 @@ export const MapMiddleware: {
 export type MapMiddleware = MapMiddleware$instance;
 
 export interface MapOptions$instance {
-    get branch(): RequestDelegate | undefined;
-    set branch(value: RequestDelegate);
-    pathMatch: PathString;
-    preserveMatchedPathSegment: boolean;
+    get Branch(): RequestDelegate | undefined;
+    set Branch(value: RequestDelegate);
+    PathMatch: PathString;
+    PreserveMatchedPathSegment: boolean;
 }
 
 
@@ -39,7 +39,7 @@ export const MapOptions: {
 export type MapOptions = MapOptions$instance;
 
 export interface MapWhenMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -51,10 +51,10 @@ export const MapWhenMiddleware: {
 export type MapWhenMiddleware = MapWhenMiddleware$instance;
 
 export interface MapWhenOptions$instance {
-    get branch(): RequestDelegate | undefined;
-    set branch(value: RequestDelegate);
-    get predicate(): Func<HttpContext, System_Internal.Boolean> | undefined;
-    set predicate(value: Func<HttpContext, System_Internal.Boolean>);
+    get Branch(): RequestDelegate | undefined;
+    set Branch(value: RequestDelegate);
+    get Predicate(): Func<HttpContext, System_Internal.Boolean> | undefined;
+    set Predicate(value: Func<HttpContext, System_Internal.Boolean>);
 }
 
 
@@ -66,7 +66,7 @@ export const MapWhenOptions: {
 export type MapWhenOptions = MapWhenOptions$instance;
 
 export interface UsePathBaseMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 

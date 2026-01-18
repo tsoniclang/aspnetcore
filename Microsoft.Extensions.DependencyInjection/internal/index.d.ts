@@ -53,30 +53,30 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IPostConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IMvcBuilder$instance {
-    readonly services: IServiceCollection;
-    readonly partManager: ApplicationPartManager;
+    readonly Services: IServiceCollection;
+    readonly PartManager: ApplicationPartManager;
 }
 
 
 export type IMvcBuilder = IMvcBuilder$instance;
 
 export interface IMvcCoreBuilder$instance {
-    readonly services: IServiceCollection;
-    readonly partManager: ApplicationPartManager;
+    readonly Services: IServiceCollection;
+    readonly PartManager: ApplicationPartManager;
 }
 
 
 export type IMvcCoreBuilder = IMvcCoreBuilder$instance;
 
 export interface IRazorComponentsBuilder$instance {
-    readonly services: IServiceCollection;
+    readonly Services: IServiceCollection;
 }
 
 
 export type IRazorComponentsBuilder = IRazorComponentsBuilder$instance;
 
 export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuilder {
-    readonly services: IServiceCollection;
+    readonly Services: IServiceCollection;
 }
 
 
@@ -85,7 +85,7 @@ export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuild
 export type IServerSideBlazorBuilder = IServerSideBlazorBuilder$instance;
 
 export interface OAuthPostConfigureOptions_2$instance<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>> {
-    postConfigure(name: string, options: TOptions): void;
+    PostConfigure(name: string, options: TOptions): void;
 }
 
 
@@ -97,580 +97,580 @@ export const OAuthPostConfigureOptions_2: {
 export type OAuthPostConfigureOptions_2<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>> = OAuthPostConfigureOptions_2$instance<TOptions, THandler>;
 
 export abstract class AntiforgeryServiceCollectionExtensions$instance {
-    static addAntiforgery(services: IServiceCollection, setupAction: Action<AntiforgeryOptions>): IServiceCollection;
-    static addAntiforgery(services: IServiceCollection): IServiceCollection;
+    static AddAntiforgery(services: IServiceCollection, setupAction: Action<AntiforgeryOptions>): IServiceCollection;
+    static AddAntiforgery(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type AntiforgeryServiceCollectionExtensions = AntiforgeryServiceCollectionExtensions$instance;
 
 export abstract class ApplicationModelConventionExtensions$instance {
-    static add(conventions: IList<IApplicationModelConvention>, actionModelConvention: IActionModelConvention): void;
-    static add(conventions: IList<IApplicationModelConvention>, controllerModelConvention: IControllerModelConvention): void;
-    static add(conventions: IList<IApplicationModelConvention>, parameterModelConvention: IParameterModelBaseConvention): void;
-    static add(conventions: IList<IApplicationModelConvention>, parameterModelConvention: IParameterModelConvention): void;
-    static removeType(list: IList<IApplicationModelConvention>, type: Type): void;
-    static removeType<TApplicationModelConvention extends IApplicationModelConvention>(list: IList<IApplicationModelConvention>): void;
+    static Add(conventions: IList<IApplicationModelConvention>, actionModelConvention: IActionModelConvention): void;
+    static Add(conventions: IList<IApplicationModelConvention>, controllerModelConvention: IControllerModelConvention): void;
+    static Add(conventions: IList<IApplicationModelConvention>, parameterModelConvention: IParameterModelBaseConvention): void;
+    static Add(conventions: IList<IApplicationModelConvention>, parameterModelConvention: IParameterModelConvention): void;
+    static RemoveType(list: IList<IApplicationModelConvention>, type: Type): void;
+    static RemoveType<TApplicationModelConvention extends IApplicationModelConvention>(list: IList<IApplicationModelConvention>): void;
 }
 
 
 export type ApplicationModelConventionExtensions = ApplicationModelConventionExtensions$instance;
 
 export abstract class AuthenticationCoreServiceCollectionExtensions$instance {
-    static addAuthenticationCore(services: IServiceCollection, configureOptions: Action<AuthenticationOptions>): IServiceCollection;
-    static addAuthenticationCore(services: IServiceCollection): IServiceCollection;
+    static AddAuthenticationCore(services: IServiceCollection, configureOptions: Action<AuthenticationOptions>): IServiceCollection;
+    static AddAuthenticationCore(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type AuthenticationCoreServiceCollectionExtensions = AuthenticationCoreServiceCollectionExtensions$instance;
 
 export abstract class AuthenticationServiceCollectionExtensions$instance {
-    static addAuthentication(services: IServiceCollection, configureOptions: Action<AuthenticationOptions>): AuthenticationBuilder;
-    static addAuthentication(services: IServiceCollection, defaultScheme: string): AuthenticationBuilder;
-    static addAuthentication(services: IServiceCollection): AuthenticationBuilder;
+    static AddAuthentication(services: IServiceCollection, configureOptions: Action<AuthenticationOptions>): AuthenticationBuilder;
+    static AddAuthentication(services: IServiceCollection, defaultScheme: string): AuthenticationBuilder;
+    static AddAuthentication(services: IServiceCollection): AuthenticationBuilder;
 }
 
 
 export type AuthenticationServiceCollectionExtensions = AuthenticationServiceCollectionExtensions$instance;
 
 export abstract class AuthorizationServiceCollectionExtensions$instance {
-    static addAuthorizationCore(services: IServiceCollection, configure: Action<AuthorizationOptions>): IServiceCollection;
-    static addAuthorizationCore(services: IServiceCollection): IServiceCollection;
+    static AddAuthorizationCore(services: IServiceCollection, configure: Action<AuthorizationOptions>): IServiceCollection;
+    static AddAuthorizationCore(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type AuthorizationServiceCollectionExtensions = AuthorizationServiceCollectionExtensions$instance;
 
 export abstract class BearerTokenExtensions$instance {
-    static addBearerToken(builder: AuthenticationBuilder, configure: Action<BearerTokenOptions>): AuthenticationBuilder;
-    static addBearerToken(builder: AuthenticationBuilder, authenticationScheme: string, configure: Action<BearerTokenOptions>): AuthenticationBuilder;
-    static addBearerToken(builder: AuthenticationBuilder, authenticationScheme: string): AuthenticationBuilder;
-    static addBearerToken(builder: AuthenticationBuilder): AuthenticationBuilder;
+    static AddBearerToken(builder: AuthenticationBuilder, configure: Action<BearerTokenOptions>): AuthenticationBuilder;
+    static AddBearerToken(builder: AuthenticationBuilder, authenticationScheme: string, configure: Action<BearerTokenOptions>): AuthenticationBuilder;
+    static AddBearerToken(builder: AuthenticationBuilder, authenticationScheme: string): AuthenticationBuilder;
+    static AddBearerToken(builder: AuthenticationBuilder): AuthenticationBuilder;
 }
 
 
 export type BearerTokenExtensions = BearerTokenExtensions$instance;
 
 export abstract class CascadingAuthenticationStateServiceCollectionExtensions$instance {
-    static addCascadingAuthenticationState(serviceCollection: IServiceCollection): IServiceCollection;
+    static AddCascadingAuthenticationState(serviceCollection: IServiceCollection): IServiceCollection;
 }
 
 
 export type CascadingAuthenticationStateServiceCollectionExtensions = CascadingAuthenticationStateServiceCollectionExtensions$instance;
 
 export abstract class CascadingValueServiceCollectionExtensions$instance {
-    static addCascadingValue<TValue>(serviceCollection: IServiceCollection, initialValueFactory: Func<IServiceProvider, TValue>): IServiceCollection;
-    static addCascadingValue<TValue>(serviceCollection: IServiceCollection, name: string, initialValueFactory: Func<IServiceProvider, TValue>): IServiceCollection;
-    static tryAddCascadingValue<TValue>(serviceCollection: IServiceCollection, valueFactory: Func<IServiceProvider, TValue>): void;
-    static tryAddCascadingValue<TValue>(serviceCollection: IServiceCollection, name: string, valueFactory: Func<IServiceProvider, TValue>): void;
+    static AddCascadingValue<TValue>(serviceCollection: IServiceCollection, initialValueFactory: Func<IServiceProvider, TValue>): IServiceCollection;
+    static AddCascadingValue<TValue>(serviceCollection: IServiceCollection, name: string, initialValueFactory: Func<IServiceProvider, TValue>): IServiceCollection;
+    static TryAddCascadingValue<TValue>(serviceCollection: IServiceCollection, valueFactory: Func<IServiceProvider, TValue>): void;
+    static TryAddCascadingValue<TValue>(serviceCollection: IServiceCollection, name: string, valueFactory: Func<IServiceProvider, TValue>): void;
 }
 
 
 export type CascadingValueServiceCollectionExtensions = CascadingValueServiceCollectionExtensions$instance;
 
 export abstract class CertificateForwardingServiceExtensions$instance {
-    static addCertificateForwarding(services: IServiceCollection, configure: Action<CertificateForwardingOptions>): IServiceCollection;
+    static AddCertificateForwarding(services: IServiceCollection, configure: Action<CertificateForwardingOptions>): IServiceCollection;
 }
 
 
 export type CertificateForwardingServiceExtensions = CertificateForwardingServiceExtensions$instance;
 
 export abstract class ComponentServiceCollectionExtensions$instance {
-    static addServerSideBlazor(services: IServiceCollection, configure?: Action<CircuitOptions>): IServerSideBlazorBuilder;
+    static AddServerSideBlazor(services: IServiceCollection, configure?: Action<CircuitOptions>): IServerSideBlazorBuilder;
 }
 
 
 export type ComponentServiceCollectionExtensions = ComponentServiceCollectionExtensions$instance;
 
 export abstract class ConnectionsDependencyInjectionExtensions$instance {
-    static addConnections(services: IServiceCollection, options: Action<ConnectionOptions>): IServiceCollection;
-    static addConnections(services: IServiceCollection): IServiceCollection;
+    static AddConnections(services: IServiceCollection, options: Action<ConnectionOptions>): IServiceCollection;
+    static AddConnections(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type ConnectionsDependencyInjectionExtensions = ConnectionsDependencyInjectionExtensions$instance;
 
 export abstract class CookieExtensions$instance {
-    static addCookie(builder: AuthenticationBuilder, configureOptions: Action<CookieAuthenticationOptions>): AuthenticationBuilder;
-    static addCookie(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action<CookieAuthenticationOptions>): AuthenticationBuilder;
-    static addCookie(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action<CookieAuthenticationOptions>): AuthenticationBuilder;
-    static addCookie(builder: AuthenticationBuilder, authenticationScheme: string): AuthenticationBuilder;
-    static addCookie(builder: AuthenticationBuilder): AuthenticationBuilder;
+    static AddCookie(builder: AuthenticationBuilder, configureOptions: Action<CookieAuthenticationOptions>): AuthenticationBuilder;
+    static AddCookie(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action<CookieAuthenticationOptions>): AuthenticationBuilder;
+    static AddCookie(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action<CookieAuthenticationOptions>): AuthenticationBuilder;
+    static AddCookie(builder: AuthenticationBuilder, authenticationScheme: string): AuthenticationBuilder;
+    static AddCookie(builder: AuthenticationBuilder): AuthenticationBuilder;
 }
 
 
 export type CookieExtensions = CookieExtensions$instance;
 
 export abstract class CookiePolicyServiceCollectionExtensions$instance {
-    static addCookiePolicy<TService>(services: IServiceCollection, configureOptions: Action<CookiePolicyOptions, TService>): IServiceCollection;
-    static addCookiePolicy(services: IServiceCollection, configureOptions: Action<CookiePolicyOptions>): IServiceCollection;
+    static AddCookiePolicy<TService>(services: IServiceCollection, configureOptions: Action<CookiePolicyOptions, TService>): IServiceCollection;
+    static AddCookiePolicy(services: IServiceCollection, configureOptions: Action<CookiePolicyOptions>): IServiceCollection;
 }
 
 
 export type CookiePolicyServiceCollectionExtensions = CookiePolicyServiceCollectionExtensions$instance;
 
 export abstract class CorsServiceCollectionExtensions$instance {
-    static addCors(services: IServiceCollection, setupAction: Action<CorsOptions>): IServiceCollection;
-    static addCors(services: IServiceCollection): IServiceCollection;
+    static AddCors(services: IServiceCollection, setupAction: Action<CorsOptions>): IServiceCollection;
+    static AddCors(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type CorsServiceCollectionExtensions = CorsServiceCollectionExtensions$instance;
 
 export abstract class DataProtectionServiceCollectionExtensions$instance {
-    static addDataProtection(services: IServiceCollection, setupAction: Action<DataProtectionOptions>): IDataProtectionBuilder;
-    static addDataProtection(services: IServiceCollection): IDataProtectionBuilder;
+    static AddDataProtection(services: IServiceCollection, setupAction: Action<DataProtectionOptions>): IDataProtectionBuilder;
+    static AddDataProtection(services: IServiceCollection): IDataProtectionBuilder;
 }
 
 
 export type DataProtectionServiceCollectionExtensions = DataProtectionServiceCollectionExtensions$instance;
 
 export abstract class DirectoryBrowserServiceExtensions$instance {
-    static addDirectoryBrowser(services: IServiceCollection): IServiceCollection;
+    static AddDirectoryBrowser(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type DirectoryBrowserServiceExtensions = DirectoryBrowserServiceExtensions$instance;
 
 export abstract class EndpointMetadataApiExplorerServiceCollectionExtensions$instance {
-    static addEndpointsApiExplorer(services: IServiceCollection): IServiceCollection;
+    static AddEndpointsApiExplorer(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type EndpointMetadataApiExplorerServiceCollectionExtensions = EndpointMetadataApiExplorerServiceCollectionExtensions$instance;
 
 export abstract class ExceptionHandlerServiceCollectionExtensions$instance {
-    static addExceptionHandler<TService>(services: IServiceCollection, configureOptions: Action<ExceptionHandlerOptions, TService>): IServiceCollection;
-    static addExceptionHandler(services: IServiceCollection, configureOptions: Action<ExceptionHandlerOptions>): IServiceCollection;
-    static addExceptionHandler<T extends IExceptionHandler>(services: IServiceCollection): IServiceCollection;
+    static AddExceptionHandler<TService>(services: IServiceCollection, configureOptions: Action<ExceptionHandlerOptions, TService>): IServiceCollection;
+    static AddExceptionHandler(services: IServiceCollection, configureOptions: Action<ExceptionHandlerOptions>): IServiceCollection;
+    static AddExceptionHandler<T extends IExceptionHandler>(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type ExceptionHandlerServiceCollectionExtensions = ExceptionHandlerServiceCollectionExtensions$instance;
 
 export abstract class HttpJsonServiceExtensions$instance {
-    static configureHttpJsonOptions(services: IServiceCollection, configureOptions: Action<JsonOptions>): IServiceCollection;
+    static ConfigureHttpJsonOptions(services: IServiceCollection, configureOptions: Action<JsonOptions>): IServiceCollection;
 }
 
 
 export type HttpJsonServiceExtensions = HttpJsonServiceExtensions$instance;
 
 export abstract class HttpLoggingServicesExtensions$instance {
-    static addHttpLogging(services: IServiceCollection, configureOptions: Action<HttpLoggingOptions>): IServiceCollection;
-    static addHttpLogging(services: IServiceCollection): IServiceCollection;
-    static addHttpLoggingInterceptor<T extends IHttpLoggingInterceptor>(services: IServiceCollection): IServiceCollection;
-    static addW3CLogging(services: IServiceCollection, configureOptions: Action<W3CLoggerOptions>): IServiceCollection;
+    static AddHttpLogging(services: IServiceCollection, configureOptions: Action<HttpLoggingOptions>): IServiceCollection;
+    static AddHttpLogging(services: IServiceCollection): IServiceCollection;
+    static AddHttpLoggingInterceptor<T extends IHttpLoggingInterceptor>(services: IServiceCollection): IServiceCollection;
+    static AddW3CLogging(services: IServiceCollection, configureOptions: Action<W3CLoggerOptions>): IServiceCollection;
 }
 
 
 export type HttpLoggingServicesExtensions = HttpLoggingServicesExtensions$instance;
 
 export abstract class HttpServiceCollectionExtensions$instance {
-    static addHttpContextAccessor(services: IServiceCollection): IServiceCollection;
+    static AddHttpContextAccessor(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type HttpServiceCollectionExtensions = HttpServiceCollectionExtensions$instance;
 
 export abstract class IdentityServiceCollectionExtensions$instance {
-    static addIdentity<TUser, TRole>(services: IServiceCollection, setupAction: Action<IdentityOptions>): IdentityBuilder;
-    static addIdentity<TUser, TRole>(services: IServiceCollection): IdentityBuilder;
-    static addIdentityApiEndpoints<TUser>(services: IServiceCollection, configure: Action<IdentityOptions>): IdentityBuilder;
-    static addIdentityApiEndpoints<TUser>(services: IServiceCollection): IdentityBuilder;
-    static configureApplicationCookie(services: IServiceCollection, configure: Action<CookieAuthenticationOptions>): IServiceCollection;
-    static configureExternalCookie(services: IServiceCollection, configure: Action<CookieAuthenticationOptions>): IServiceCollection;
+    static AddIdentity<TUser, TRole>(services: IServiceCollection, setupAction: Action<IdentityOptions>): IdentityBuilder;
+    static AddIdentity<TUser, TRole>(services: IServiceCollection): IdentityBuilder;
+    static AddIdentityApiEndpoints<TUser>(services: IServiceCollection, configure: Action<IdentityOptions>): IdentityBuilder;
+    static AddIdentityApiEndpoints<TUser>(services: IServiceCollection): IdentityBuilder;
+    static ConfigureApplicationCookie(services: IServiceCollection, configure: Action<CookieAuthenticationOptions>): IServiceCollection;
+    static ConfigureExternalCookie(services: IServiceCollection, configure: Action<CookieAuthenticationOptions>): IServiceCollection;
 }
 
 
 export type IdentityServiceCollectionExtensions = IdentityServiceCollectionExtensions$instance;
 
 export abstract class IdentityServiceCollectionExtensions2$instance {
-    static addIdentityCore<TUser>(services: IServiceCollection, setupAction: Action<IdentityOptions>): IdentityBuilder;
-    static addIdentityCore<TUser>(services: IServiceCollection): IdentityBuilder;
+    static AddIdentityCore<TUser>(services: IServiceCollection, setupAction: Action<IdentityOptions>): IdentityBuilder;
+    static AddIdentityCore<TUser>(services: IServiceCollection): IdentityBuilder;
 }
 
 
 export type IdentityServiceCollectionExtensions2 = IdentityServiceCollectionExtensions2$instance;
 
 export abstract class JsonProtocolDependencyInjectionExtensions$instance {
-    static addJsonProtocol<TBuilder extends ISignalRBuilder>(builder: TBuilder, configure: Action<JsonHubProtocolOptions>): TBuilder;
-    static addJsonProtocol<TBuilder extends ISignalRBuilder>(builder: TBuilder): TBuilder;
+    static AddJsonProtocol<TBuilder extends ISignalRBuilder>(builder: TBuilder, configure: Action<JsonHubProtocolOptions>): TBuilder;
+    static AddJsonProtocol<TBuilder extends ISignalRBuilder>(builder: TBuilder): TBuilder;
 }
 
 
 export type JsonProtocolDependencyInjectionExtensions = JsonProtocolDependencyInjectionExtensions$instance;
 
 export abstract class MvcApiExplorerMvcCoreBuilderExtensions$instance {
-    static addApiExplorer(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddApiExplorer(builder: IMvcCoreBuilder): IMvcCoreBuilder;
 }
 
 
 export type MvcApiExplorerMvcCoreBuilderExtensions = MvcApiExplorerMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcCoreMvcBuilderExtensions$instance {
-    static addApplicationPart(builder: IMvcBuilder, assembly: Assembly): IMvcBuilder;
-    static addControllersAsServices(builder: IMvcBuilder): IMvcBuilder;
-    static addFormatterMappings(builder: IMvcBuilder, setupAction: Action<FormatterMappings>): IMvcBuilder;
-    static addJsonOptions(builder: IMvcBuilder, configure: Action<JsonOptions__Microsoft_AspNetCore_Mvc>): IMvcBuilder;
-    static addMvcOptions(builder: IMvcBuilder, setupAction: Action<MvcOptions>): IMvcBuilder;
-    static configureApiBehaviorOptions(builder: IMvcBuilder, setupAction: Action<ApiBehaviorOptions>): IMvcBuilder;
-    static configureApplicationPartManager(builder: IMvcBuilder, setupAction: Action<ApplicationPartManager>): IMvcBuilder;
-    static setCompatibilityVersion(builder: IMvcBuilder, version: CompatibilityVersion): IMvcBuilder;
+    static AddApplicationPart(builder: IMvcBuilder, assembly: Assembly): IMvcBuilder;
+    static AddControllersAsServices(builder: IMvcBuilder): IMvcBuilder;
+    static AddFormatterMappings(builder: IMvcBuilder, setupAction: Action<FormatterMappings>): IMvcBuilder;
+    static AddJsonOptions(builder: IMvcBuilder, configure: Action<JsonOptions__Microsoft_AspNetCore_Mvc>): IMvcBuilder;
+    static AddMvcOptions(builder: IMvcBuilder, setupAction: Action<MvcOptions>): IMvcBuilder;
+    static ConfigureApiBehaviorOptions(builder: IMvcBuilder, setupAction: Action<ApiBehaviorOptions>): IMvcBuilder;
+    static ConfigureApplicationPartManager(builder: IMvcBuilder, setupAction: Action<ApplicationPartManager>): IMvcBuilder;
+    static SetCompatibilityVersion(builder: IMvcBuilder, version: CompatibilityVersion): IMvcBuilder;
 }
 
 
 export type MvcCoreMvcBuilderExtensions = MvcCoreMvcBuilderExtensions$instance;
 
 export abstract class MvcCoreMvcCoreBuilderExtensions$instance {
-    static addApplicationPart(builder: IMvcCoreBuilder, assembly: Assembly): IMvcCoreBuilder;
-    static addAuthorization(builder: IMvcCoreBuilder, setupAction: Action<AuthorizationOptions>): IMvcCoreBuilder;
-    static addAuthorization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addControllersAsServices(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addFormatterMappings(builder: IMvcCoreBuilder, setupAction: Action<FormatterMappings>): IMvcCoreBuilder;
-    static addFormatterMappings(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addJsonOptions(builder: IMvcCoreBuilder, configure: Action<JsonOptions__Microsoft_AspNetCore_Mvc>): IMvcCoreBuilder;
-    static addMvcOptions(builder: IMvcCoreBuilder, setupAction: Action<MvcOptions>): IMvcCoreBuilder;
-    static configureApiBehaviorOptions(builder: IMvcCoreBuilder, setupAction: Action<ApiBehaviorOptions>): IMvcCoreBuilder;
-    static configureApplicationPartManager(builder: IMvcCoreBuilder, setupAction: Action<ApplicationPartManager>): IMvcCoreBuilder;
-    static setCompatibilityVersion(builder: IMvcCoreBuilder, version: CompatibilityVersion): IMvcCoreBuilder;
+    static AddApplicationPart(builder: IMvcCoreBuilder, assembly: Assembly): IMvcCoreBuilder;
+    static AddAuthorization(builder: IMvcCoreBuilder, setupAction: Action<AuthorizationOptions>): IMvcCoreBuilder;
+    static AddAuthorization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddControllersAsServices(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddFormatterMappings(builder: IMvcCoreBuilder, setupAction: Action<FormatterMappings>): IMvcCoreBuilder;
+    static AddFormatterMappings(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddJsonOptions(builder: IMvcCoreBuilder, configure: Action<JsonOptions__Microsoft_AspNetCore_Mvc>): IMvcCoreBuilder;
+    static AddMvcOptions(builder: IMvcCoreBuilder, setupAction: Action<MvcOptions>): IMvcCoreBuilder;
+    static ConfigureApiBehaviorOptions(builder: IMvcCoreBuilder, setupAction: Action<ApiBehaviorOptions>): IMvcCoreBuilder;
+    static ConfigureApplicationPartManager(builder: IMvcCoreBuilder, setupAction: Action<ApplicationPartManager>): IMvcCoreBuilder;
+    static SetCompatibilityVersion(builder: IMvcCoreBuilder, version: CompatibilityVersion): IMvcCoreBuilder;
 }
 
 
 export type MvcCoreMvcCoreBuilderExtensions = MvcCoreMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcCoreServiceCollectionExtensions$instance {
-    static addMvcCore(services: IServiceCollection, setupAction: Action<MvcOptions>): IMvcCoreBuilder;
-    static addMvcCore(services: IServiceCollection): IMvcCoreBuilder;
+    static AddMvcCore(services: IServiceCollection, setupAction: Action<MvcOptions>): IMvcCoreBuilder;
+    static AddMvcCore(services: IServiceCollection): IMvcCoreBuilder;
 }
 
 
 export type MvcCoreServiceCollectionExtensions = MvcCoreServiceCollectionExtensions$instance;
 
 export abstract class MvcCorsMvcCoreBuilderExtensions$instance {
-    static addCors(builder: IMvcCoreBuilder, setupAction: Action<CorsOptions>): IMvcCoreBuilder;
-    static addCors(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static configureCors(builder: IMvcCoreBuilder, setupAction: Action<CorsOptions>): IMvcCoreBuilder;
+    static AddCors(builder: IMvcCoreBuilder, setupAction: Action<CorsOptions>): IMvcCoreBuilder;
+    static AddCors(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static ConfigureCors(builder: IMvcCoreBuilder, setupAction: Action<CorsOptions>): IMvcCoreBuilder;
 }
 
 
 export type MvcCorsMvcCoreBuilderExtensions = MvcCorsMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcDataAnnotationsMvcBuilderExtensions$instance {
-    static addDataAnnotationsLocalization(builder: IMvcBuilder, setupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static addDataAnnotationsLocalization(builder: IMvcBuilder): IMvcBuilder;
+    static AddDataAnnotationsLocalization(builder: IMvcBuilder, setupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
+    static AddDataAnnotationsLocalization(builder: IMvcBuilder): IMvcBuilder;
 }
 
 
 export type MvcDataAnnotationsMvcBuilderExtensions = MvcDataAnnotationsMvcBuilderExtensions$instance;
 
 export abstract class MvcDataAnnotationsMvcCoreBuilderExtensions$instance {
-    static addDataAnnotations(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addDataAnnotationsLocalization(builder: IMvcCoreBuilder, setupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static addDataAnnotationsLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddDataAnnotations(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddDataAnnotationsLocalization(builder: IMvcCoreBuilder, setupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
+    static AddDataAnnotationsLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
 }
 
 
 export type MvcDataAnnotationsMvcCoreBuilderExtensions = MvcDataAnnotationsMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcLocalizationMvcBuilderExtensions$instance {
-    static addMvcLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static addMvcLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
-    static addMvcLocalization(builder: IMvcBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static addMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static addMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
-    static addMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static addMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>): IMvcBuilder;
-    static addMvcLocalization(builder: IMvcBuilder): IMvcBuilder;
-    static addViewLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action<LocalizationOptions>): IMvcBuilder;
-    static addViewLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
-    static addViewLocalization(builder: IMvcBuilder, setupAction: Action<LocalizationOptions>): IMvcBuilder;
-    static addViewLocalization(builder: IMvcBuilder): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder): IMvcBuilder;
+    static AddViewLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action<LocalizationOptions>): IMvcBuilder;
+    static AddViewLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
+    static AddViewLocalization(builder: IMvcBuilder, setupAction: Action<LocalizationOptions>): IMvcBuilder;
+    static AddViewLocalization(builder: IMvcBuilder): IMvcBuilder;
 }
 
 
 export type MvcLocalizationMvcBuilderExtensions = MvcLocalizationMvcBuilderExtensions$instance;
 
 export abstract class MvcLocalizationMvcCoreBuilderExtensions$instance {
-    static addMvcLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static addMvcLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
-    static addMvcLocalization(builder: IMvcCoreBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static addMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static addMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
-    static addMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static addMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>): IMvcCoreBuilder;
-    static addMvcLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addViewLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action<LocalizationOptions>): IMvcCoreBuilder;
-    static addViewLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
-    static addViewLocalization(builder: IMvcCoreBuilder, setupAction: Action<LocalizationOptions>): IMvcCoreBuilder;
-    static addViewLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action<LocalizationOptions>): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddViewLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action<LocalizationOptions>): IMvcCoreBuilder;
+    static AddViewLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
+    static AddViewLocalization(builder: IMvcCoreBuilder, setupAction: Action<LocalizationOptions>): IMvcCoreBuilder;
+    static AddViewLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
 }
 
 
 export type MvcLocalizationMvcCoreBuilderExtensions = MvcLocalizationMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcRazorMvcBuilderExtensions$instance {
-    static addRazorOptions(builder: IMvcBuilder, setupAction: Action<RazorViewEngineOptions>): IMvcBuilder;
-    static addTagHelpersAsServices(builder: IMvcBuilder): IMvcBuilder;
-    static initializeTagHelper<TTagHelper extends ITagHelper>(builder: IMvcBuilder, initialize: Action<TTagHelper, ViewContext>): IMvcBuilder;
+    static AddRazorOptions(builder: IMvcBuilder, setupAction: Action<RazorViewEngineOptions>): IMvcBuilder;
+    static AddTagHelpersAsServices(builder: IMvcBuilder): IMvcBuilder;
+    static InitializeTagHelper<TTagHelper extends ITagHelper>(builder: IMvcBuilder, initialize: Action<TTagHelper, ViewContext>): IMvcBuilder;
 }
 
 
 export type MvcRazorMvcBuilderExtensions = MvcRazorMvcBuilderExtensions$instance;
 
 export abstract class MvcRazorMvcCoreBuilderExtensions$instance {
-    static addRazorViewEngine(builder: IMvcCoreBuilder, setupAction: Action<RazorViewEngineOptions>): IMvcCoreBuilder;
-    static addRazorViewEngine(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addTagHelpersAsServices(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static initializeTagHelper<TTagHelper extends ITagHelper>(builder: IMvcCoreBuilder, initialize: Action<TTagHelper, ViewContext>): IMvcCoreBuilder;
+    static AddRazorViewEngine(builder: IMvcCoreBuilder, setupAction: Action<RazorViewEngineOptions>): IMvcCoreBuilder;
+    static AddRazorViewEngine(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddTagHelpersAsServices(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static InitializeTagHelper<TTagHelper extends ITagHelper>(builder: IMvcCoreBuilder, initialize: Action<TTagHelper, ViewContext>): IMvcCoreBuilder;
 }
 
 
 export type MvcRazorMvcCoreBuilderExtensions = MvcRazorMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcRazorPagesMvcBuilderExtensions$instance {
-    static addRazorPagesOptions(builder: IMvcBuilder, setupAction: Action<RazorPagesOptions>): IMvcBuilder;
-    static withRazorPagesAtContentRoot(builder: IMvcBuilder): IMvcBuilder;
-    static withRazorPagesRoot(builder: IMvcBuilder, rootDirectory: string): IMvcBuilder;
+    static AddRazorPagesOptions(builder: IMvcBuilder, setupAction: Action<RazorPagesOptions>): IMvcBuilder;
+    static WithRazorPagesAtContentRoot(builder: IMvcBuilder): IMvcBuilder;
+    static WithRazorPagesRoot(builder: IMvcBuilder, rootDirectory: string): IMvcBuilder;
 }
 
 
 export type MvcRazorPagesMvcBuilderExtensions = MvcRazorPagesMvcBuilderExtensions$instance;
 
 export abstract class MvcRazorPagesMvcCoreBuilderExtensions$instance {
-    static addRazorPages(builder: IMvcCoreBuilder, setupAction: Action<RazorPagesOptions>): IMvcCoreBuilder;
-    static addRazorPages(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static withRazorPagesRoot(builder: IMvcCoreBuilder, rootDirectory: string): IMvcCoreBuilder;
+    static AddRazorPages(builder: IMvcCoreBuilder, setupAction: Action<RazorPagesOptions>): IMvcCoreBuilder;
+    static AddRazorPages(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static WithRazorPagesRoot(builder: IMvcCoreBuilder, rootDirectory: string): IMvcCoreBuilder;
 }
 
 
 export type MvcRazorPagesMvcCoreBuilderExtensions = MvcRazorPagesMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcServiceCollectionExtensions$instance {
-    static addControllers(services: IServiceCollection, configure: Action<MvcOptions>): IMvcBuilder;
-    static addControllers(services: IServiceCollection): IMvcBuilder;
-    static addControllersWithViews(services: IServiceCollection, configure: Action<MvcOptions>): IMvcBuilder;
-    static addControllersWithViews(services: IServiceCollection): IMvcBuilder;
-    static addMvc(services: IServiceCollection, setupAction: Action<MvcOptions>): IMvcBuilder;
-    static addMvc(services: IServiceCollection): IMvcBuilder;
-    static addRazorPages(services: IServiceCollection, configure: Action<RazorPagesOptions>): IMvcBuilder;
-    static addRazorPages(services: IServiceCollection): IMvcBuilder;
+    static AddControllers(services: IServiceCollection, configure: Action<MvcOptions>): IMvcBuilder;
+    static AddControllers(services: IServiceCollection): IMvcBuilder;
+    static AddControllersWithViews(services: IServiceCollection, configure: Action<MvcOptions>): IMvcBuilder;
+    static AddControllersWithViews(services: IServiceCollection): IMvcBuilder;
+    static AddMvc(services: IServiceCollection, setupAction: Action<MvcOptions>): IMvcBuilder;
+    static AddMvc(services: IServiceCollection): IMvcBuilder;
+    static AddRazorPages(services: IServiceCollection, configure: Action<RazorPagesOptions>): IMvcBuilder;
+    static AddRazorPages(services: IServiceCollection): IMvcBuilder;
 }
 
 
 export type MvcServiceCollectionExtensions = MvcServiceCollectionExtensions$instance;
 
 export abstract class MvcViewFeaturesMvcBuilderExtensions$instance {
-    static addCookieTempDataProvider(builder: IMvcBuilder, setupAction: Action<CookieTempDataProviderOptions>): IMvcBuilder;
-    static addCookieTempDataProvider(builder: IMvcBuilder): IMvcBuilder;
-    static addSessionStateTempDataProvider(builder: IMvcBuilder): IMvcBuilder;
-    static addViewComponentsAsServices(builder: IMvcBuilder): IMvcBuilder;
-    static addViewOptions(builder: IMvcBuilder, setupAction: Action<MvcViewOptions>): IMvcBuilder;
+    static AddCookieTempDataProvider(builder: IMvcBuilder, setupAction: Action<CookieTempDataProviderOptions>): IMvcBuilder;
+    static AddCookieTempDataProvider(builder: IMvcBuilder): IMvcBuilder;
+    static AddSessionStateTempDataProvider(builder: IMvcBuilder): IMvcBuilder;
+    static AddViewComponentsAsServices(builder: IMvcBuilder): IMvcBuilder;
+    static AddViewOptions(builder: IMvcBuilder, setupAction: Action<MvcViewOptions>): IMvcBuilder;
 }
 
 
 export type MvcViewFeaturesMvcBuilderExtensions = MvcViewFeaturesMvcBuilderExtensions$instance;
 
 export abstract class MvcViewFeaturesMvcCoreBuilderExtensions$instance {
-    static addCookieTempDataProvider(builder: IMvcCoreBuilder, setupAction: Action<CookieTempDataProviderOptions>): IMvcCoreBuilder;
-    static addCookieTempDataProvider(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addViews(builder: IMvcCoreBuilder, setupAction: Action<MvcViewOptions>): IMvcCoreBuilder;
-    static addViews(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static configureViews(builder: IMvcCoreBuilder, setupAction: Action<MvcViewOptions>): IMvcCoreBuilder;
+    static AddCookieTempDataProvider(builder: IMvcCoreBuilder, setupAction: Action<CookieTempDataProviderOptions>): IMvcCoreBuilder;
+    static AddCookieTempDataProvider(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddViews(builder: IMvcCoreBuilder, setupAction: Action<MvcViewOptions>): IMvcCoreBuilder;
+    static AddViews(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static ConfigureViews(builder: IMvcCoreBuilder, setupAction: Action<MvcViewOptions>): IMvcCoreBuilder;
 }
 
 
 export type MvcViewFeaturesMvcCoreBuilderExtensions = MvcViewFeaturesMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcXmlMvcBuilderExtensions$instance {
-    static addXmlDataContractSerializerFormatters(builder: IMvcBuilder, setupAction: Action<MvcXmlOptions>): IMvcBuilder;
-    static addXmlDataContractSerializerFormatters(builder: IMvcBuilder): IMvcBuilder;
-    static addXmlOptions(builder: IMvcBuilder, setupAction: Action<MvcXmlOptions>): IMvcBuilder;
-    static addXmlSerializerFormatters(builder: IMvcBuilder, setupAction: Action<MvcXmlOptions>): IMvcBuilder;
-    static addXmlSerializerFormatters(builder: IMvcBuilder): IMvcBuilder;
+    static AddXmlDataContractSerializerFormatters(builder: IMvcBuilder, setupAction: Action<MvcXmlOptions>): IMvcBuilder;
+    static AddXmlDataContractSerializerFormatters(builder: IMvcBuilder): IMvcBuilder;
+    static AddXmlOptions(builder: IMvcBuilder, setupAction: Action<MvcXmlOptions>): IMvcBuilder;
+    static AddXmlSerializerFormatters(builder: IMvcBuilder, setupAction: Action<MvcXmlOptions>): IMvcBuilder;
+    static AddXmlSerializerFormatters(builder: IMvcBuilder): IMvcBuilder;
 }
 
 
 export type MvcXmlMvcBuilderExtensions = MvcXmlMvcBuilderExtensions$instance;
 
 export abstract class MvcXmlMvcCoreBuilderExtensions$instance {
-    static addXmlDataContractSerializerFormatters(builder: IMvcCoreBuilder, setupAction: Action<MvcXmlOptions>): IMvcCoreBuilder;
-    static addXmlDataContractSerializerFormatters(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addXmlOptions(builder: IMvcCoreBuilder, setupAction: Action<MvcXmlOptions>): IMvcCoreBuilder;
-    static addXmlSerializerFormatters(builder: IMvcCoreBuilder, setupAction: Action<MvcXmlOptions>): IMvcCoreBuilder;
-    static addXmlSerializerFormatters(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddXmlDataContractSerializerFormatters(builder: IMvcCoreBuilder, setupAction: Action<MvcXmlOptions>): IMvcCoreBuilder;
+    static AddXmlDataContractSerializerFormatters(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddXmlOptions(builder: IMvcCoreBuilder, setupAction: Action<MvcXmlOptions>): IMvcCoreBuilder;
+    static AddXmlSerializerFormatters(builder: IMvcCoreBuilder, setupAction: Action<MvcXmlOptions>): IMvcCoreBuilder;
+    static AddXmlSerializerFormatters(builder: IMvcCoreBuilder): IMvcCoreBuilder;
 }
 
 
 export type MvcXmlMvcCoreBuilderExtensions = MvcXmlMvcCoreBuilderExtensions$instance;
 
 export abstract class OAuthExtensions$instance {
-    static addOAuth<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
-    static addOAuth(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action<OAuthOptions>): AuthenticationBuilder;
-    static addOAuth<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
-    static addOAuth(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action<OAuthOptions>): AuthenticationBuilder;
+    static AddOAuth<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
+    static AddOAuth(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action<OAuthOptions>): AuthenticationBuilder;
+    static AddOAuth<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>>(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action<TOptions>): AuthenticationBuilder;
+    static AddOAuth(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action<OAuthOptions>): AuthenticationBuilder;
 }
 
 
 export type OAuthExtensions = OAuthExtensions$instance;
 
 export abstract class OutputCacheConventionBuilderExtensions$instance {
-    static cacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: IOutputCachePolicy): TBuilder;
-    static cacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: Action<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): TBuilder;
-    static cacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: Action<OutputCachePolicyBuilder>): TBuilder;
-    static cacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
-    static cacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
+    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: IOutputCachePolicy): TBuilder;
+    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: Action<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): TBuilder;
+    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: Action<OutputCachePolicyBuilder>): TBuilder;
+    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
+    static CacheOutput<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
 }
 
 
 export type OutputCacheConventionBuilderExtensions = OutputCacheConventionBuilderExtensions$instance;
 
 export abstract class OutputCacheServiceCollectionExtensions$instance {
-    static addOutputCache(services: IServiceCollection, configureOptions: Action<OutputCacheOptions>): IServiceCollection;
-    static addOutputCache(services: IServiceCollection): IServiceCollection;
+    static AddOutputCache(services: IServiceCollection, configureOptions: Action<OutputCacheOptions>): IServiceCollection;
+    static AddOutputCache(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type OutputCacheServiceCollectionExtensions = OutputCacheServiceCollectionExtensions$instance;
 
 export abstract class PageConventionCollectionExtensions$instance {
-    static add(conventions: PageConventionCollection, convention: IParameterModelBaseConvention): PageConventionCollection;
-    static addAreaPageRoute(conventions: PageConventionCollection, areaName: string, pageName: string, route: string): PageConventionCollection;
-    static addPageRoute(conventions: PageConventionCollection, pageName: string, route: string): PageConventionCollection;
-    static allowAnonymousToAreaFolder(conventions: PageConventionCollection, areaName: string, folderPath: string): PageConventionCollection;
-    static allowAnonymousToAreaPage(conventions: PageConventionCollection, areaName: string, pageName: string): PageConventionCollection;
-    static allowAnonymousToFolder(conventions: PageConventionCollection, folderPath: string): PageConventionCollection;
-    static allowAnonymousToPage(conventions: PageConventionCollection, pageName: string): PageConventionCollection;
-    static authorizeAreaFolder(conventions: PageConventionCollection, areaName: string, folderPath: string, policy: string): PageConventionCollection;
-    static authorizeAreaFolder(conventions: PageConventionCollection, areaName: string, folderPath: string): PageConventionCollection;
-    static authorizeAreaPage(conventions: PageConventionCollection, areaName: string, pageName: string, policy: string): PageConventionCollection;
-    static authorizeAreaPage(conventions: PageConventionCollection, areaName: string, pageName: string): PageConventionCollection;
-    static authorizeFolder(conventions: PageConventionCollection, folderPath: string, policy: string): PageConventionCollection;
-    static authorizeFolder(conventions: PageConventionCollection, folderPath: string): PageConventionCollection;
-    static authorizePage(conventions: PageConventionCollection, pageName: string, policy: string): PageConventionCollection;
-    static authorizePage(conventions: PageConventionCollection, pageName: string): PageConventionCollection;
-    static configureFilter(conventions: PageConventionCollection, filter: IFilterMetadata): PageConventionCollection;
-    static configureFilter(conventions: PageConventionCollection, factory: Func<PageApplicationModel, IFilterMetadata>): IPageApplicationModelConvention;
+    static Add(conventions: PageConventionCollection, convention: IParameterModelBaseConvention): PageConventionCollection;
+    static AddAreaPageRoute(conventions: PageConventionCollection, areaName: string, pageName: string, route: string): PageConventionCollection;
+    static AddPageRoute(conventions: PageConventionCollection, pageName: string, route: string): PageConventionCollection;
+    static AllowAnonymousToAreaFolder(conventions: PageConventionCollection, areaName: string, folderPath: string): PageConventionCollection;
+    static AllowAnonymousToAreaPage(conventions: PageConventionCollection, areaName: string, pageName: string): PageConventionCollection;
+    static AllowAnonymousToFolder(conventions: PageConventionCollection, folderPath: string): PageConventionCollection;
+    static AllowAnonymousToPage(conventions: PageConventionCollection, pageName: string): PageConventionCollection;
+    static AuthorizeAreaFolder(conventions: PageConventionCollection, areaName: string, folderPath: string, policy: string): PageConventionCollection;
+    static AuthorizeAreaFolder(conventions: PageConventionCollection, areaName: string, folderPath: string): PageConventionCollection;
+    static AuthorizeAreaPage(conventions: PageConventionCollection, areaName: string, pageName: string, policy: string): PageConventionCollection;
+    static AuthorizeAreaPage(conventions: PageConventionCollection, areaName: string, pageName: string): PageConventionCollection;
+    static AuthorizeFolder(conventions: PageConventionCollection, folderPath: string, policy: string): PageConventionCollection;
+    static AuthorizeFolder(conventions: PageConventionCollection, folderPath: string): PageConventionCollection;
+    static AuthorizePage(conventions: PageConventionCollection, pageName: string, policy: string): PageConventionCollection;
+    static AuthorizePage(conventions: PageConventionCollection, pageName: string): PageConventionCollection;
+    static ConfigureFilter(conventions: PageConventionCollection, filter: IFilterMetadata): PageConventionCollection;
+    static ConfigureFilter(conventions: PageConventionCollection, factory: Func<PageApplicationModel, IFilterMetadata>): IPageApplicationModelConvention;
 }
 
 
 export type PageConventionCollectionExtensions = PageConventionCollectionExtensions$instance;
 
 export abstract class PolicyServiceCollectionExtensions$instance {
-    static addAuthorization(services: IServiceCollection, configure: Action<AuthorizationOptions>): IServiceCollection;
-    static addAuthorization(services: IServiceCollection): IServiceCollection;
-    static addAuthorizationBuilder(services: IServiceCollection): AuthorizationBuilder;
-    static addAuthorizationPolicyEvaluator(services: IServiceCollection): IServiceCollection;
+    static AddAuthorization(services: IServiceCollection, configure: Action<AuthorizationOptions>): IServiceCollection;
+    static AddAuthorization(services: IServiceCollection): IServiceCollection;
+    static AddAuthorizationBuilder(services: IServiceCollection): AuthorizationBuilder;
+    static AddAuthorizationPolicyEvaluator(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type PolicyServiceCollectionExtensions = PolicyServiceCollectionExtensions$instance;
 
 export abstract class ProblemDetailsServiceCollectionExtensions$instance {
-    static addProblemDetails(services: IServiceCollection, configure: Action<ProblemDetailsOptions>): IServiceCollection;
-    static addProblemDetails(services: IServiceCollection): IServiceCollection;
+    static AddProblemDetails(services: IServiceCollection, configure: Action<ProblemDetailsOptions>): IServiceCollection;
+    static AddProblemDetails(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type ProblemDetailsServiceCollectionExtensions = ProblemDetailsServiceCollectionExtensions$instance;
 
 export abstract class RazorComponentsRazorComponentBuilderExtensions$instance {
-    static registerPersistentService<TPersistentService>(builder: IRazorComponentsBuilder, renderMode: IComponentRenderMode): IRazorComponentsBuilder;
+    static RegisterPersistentService<TPersistentService>(builder: IRazorComponentsBuilder, renderMode: IComponentRenderMode): IRazorComponentsBuilder;
 }
 
 
 export type RazorComponentsRazorComponentBuilderExtensions = RazorComponentsRazorComponentBuilderExtensions$instance;
 
 export abstract class RazorComponentsServiceCollectionExtensions$instance {
-    static addRazorComponents(services: IServiceCollection, configure?: Action<RazorComponentsServiceOptions>): IRazorComponentsBuilder;
+    static AddRazorComponents(services: IServiceCollection, configure?: Action<RazorComponentsServiceOptions>): IRazorComponentsBuilder;
 }
 
 
 export type RazorComponentsServiceCollectionExtensions = RazorComponentsServiceCollectionExtensions$instance;
 
 export abstract class RequestDecompressionServiceExtensions$instance {
-    static addRequestDecompression(services: IServiceCollection, configureOptions: Action<RequestDecompressionOptions>): IServiceCollection;
-    static addRequestDecompression(services: IServiceCollection): IServiceCollection;
+    static AddRequestDecompression(services: IServiceCollection, configureOptions: Action<RequestDecompressionOptions>): IServiceCollection;
+    static AddRequestDecompression(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type RequestDecompressionServiceExtensions = RequestDecompressionServiceExtensions$instance;
 
 export abstract class RequestLocalizationServiceCollectionExtensions$instance {
-    static addRequestLocalization<TService>(services: IServiceCollection, configureOptions: Action<RequestLocalizationOptions, TService>): IServiceCollection;
-    static addRequestLocalization(services: IServiceCollection, configureOptions: Action<RequestLocalizationOptions>): IServiceCollection;
+    static AddRequestLocalization<TService>(services: IServiceCollection, configureOptions: Action<RequestLocalizationOptions, TService>): IServiceCollection;
+    static AddRequestLocalization(services: IServiceCollection, configureOptions: Action<RequestLocalizationOptions>): IServiceCollection;
 }
 
 
 export type RequestLocalizationServiceCollectionExtensions = RequestLocalizationServiceCollectionExtensions$instance;
 
 export abstract class RequestTimeoutsIServiceCollectionExtensions$instance {
-    static addRequestTimeouts(services: IServiceCollection, configure: Action<RequestTimeoutOptions>): IServiceCollection;
-    static addRequestTimeouts(services: IServiceCollection): IServiceCollection;
+    static AddRequestTimeouts(services: IServiceCollection, configure: Action<RequestTimeoutOptions>): IServiceCollection;
+    static AddRequestTimeouts(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type RequestTimeoutsIServiceCollectionExtensions = RequestTimeoutsIServiceCollectionExtensions$instance;
 
 export abstract class ResponseCachingServicesExtensions$instance {
-    static addResponseCaching(services: IServiceCollection, configureOptions: Action<ResponseCachingOptions>): IServiceCollection;
-    static addResponseCaching(services: IServiceCollection): IServiceCollection;
+    static AddResponseCaching(services: IServiceCollection, configureOptions: Action<ResponseCachingOptions>): IServiceCollection;
+    static AddResponseCaching(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type ResponseCachingServicesExtensions = ResponseCachingServicesExtensions$instance;
 
 export abstract class RoutingServiceCollectionExtensions$instance {
-    static addRouting(services: IServiceCollection, configureOptions: Action<RouteOptions>): IServiceCollection;
-    static addRouting(services: IServiceCollection): IServiceCollection;
-    static addRoutingCore(services: IServiceCollection): IServiceCollection;
+    static AddRouting(services: IServiceCollection, configureOptions: Action<RouteOptions>): IServiceCollection;
+    static AddRouting(services: IServiceCollection): IServiceCollection;
+    static AddRoutingCore(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type RoutingServiceCollectionExtensions = RoutingServiceCollectionExtensions$instance;
 
 export abstract class ServerRazorComponentsBuilderExtensions$instance {
-    static addInteractiveServerComponents(builder: IRazorComponentsBuilder, configure?: Action<CircuitOptions>): IServerSideBlazorBuilder;
+    static AddInteractiveServerComponents(builder: IRazorComponentsBuilder, configure?: Action<CircuitOptions>): IServerSideBlazorBuilder;
 }
 
 
 export type ServerRazorComponentsBuilderExtensions = ServerRazorComponentsBuilderExtensions$instance;
 
 export abstract class ServerSideBlazorBuilderExtensions$instance {
-    static addCircuitOptions(builder: IServerSideBlazorBuilder, configure: Action<CircuitOptions>): IServerSideBlazorBuilder;
-    static addHubOptions(builder: IServerSideBlazorBuilder, configure: Action<HubOptions>): IServerSideBlazorBuilder;
+    static AddCircuitOptions(builder: IServerSideBlazorBuilder, configure: Action<CircuitOptions>): IServerSideBlazorBuilder;
+    static AddHubOptions(builder: IServerSideBlazorBuilder, configure: Action<HubOptions>): IServerSideBlazorBuilder;
 }
 
 
 export type ServerSideBlazorBuilderExtensions = ServerSideBlazorBuilderExtensions$instance;
 
 export abstract class SessionServiceCollectionExtensions$instance {
-    static addSession(services: IServiceCollection, configure: Action<SessionOptions>): IServiceCollection;
-    static addSession(services: IServiceCollection): IServiceCollection;
+    static AddSession(services: IServiceCollection, configure: Action<SessionOptions>): IServiceCollection;
+    static AddSession(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type SessionServiceCollectionExtensions = SessionServiceCollectionExtensions$instance;
 
 export abstract class SignalRDependencyInjectionExtensions$instance {
-    static addHubOptions<THub extends Hub>(signalrBuilder: ISignalRServerBuilder, configure: Action<HubOptions_1<THub>>): ISignalRServerBuilder;
-    static addSignalR(services: IServiceCollection, configure: Action<HubOptions>): ISignalRServerBuilder;
-    static addSignalR(services: IServiceCollection): ISignalRServerBuilder;
+    static AddHubOptions<THub extends Hub>(signalrBuilder: ISignalRServerBuilder, configure: Action<HubOptions_1<THub>>): ISignalRServerBuilder;
+    static AddSignalR(services: IServiceCollection, configure: Action<HubOptions>): ISignalRServerBuilder;
+    static AddSignalR(services: IServiceCollection): ISignalRServerBuilder;
 }
 
 
 export type SignalRDependencyInjectionExtensions = SignalRDependencyInjectionExtensions$instance;
 
 export abstract class SignalRDependencyInjectionExtensions2$instance {
-    static addSignalRCore(services: IServiceCollection): ISignalRServerBuilder;
+    static AddSignalRCore(services: IServiceCollection): ISignalRServerBuilder;
 }
 
 
 export type SignalRDependencyInjectionExtensions2 = SignalRDependencyInjectionExtensions2$instance;
 
 export abstract class TagHelperServicesExtensions$instance {
-    static addCacheTagHelper(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static addCacheTagHelperLimits(builder: IMvcBuilder, configure: Action<CacheTagHelperOptions>): IMvcBuilder;
-    static addCacheTagHelperLimits(builder: IMvcCoreBuilder, configure: Action<CacheTagHelperOptions>): IMvcCoreBuilder;
+    static AddCacheTagHelper(builder: IMvcCoreBuilder): IMvcCoreBuilder;
+    static AddCacheTagHelperLimits(builder: IMvcBuilder, configure: Action<CacheTagHelperOptions>): IMvcBuilder;
+    static AddCacheTagHelperLimits(builder: IMvcCoreBuilder, configure: Action<CacheTagHelperOptions>): IMvcCoreBuilder;
 }
 
 

@@ -22,169 +22,169 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IConnectionCompleteFeature$instance {
-    onCompleted(callback: Func<unknown, Task>, state: unknown): void;
+    OnCompleted(callback: Func<unknown, Task>, state: unknown): void;
 }
 
 
 export type IConnectionCompleteFeature = IConnectionCompleteFeature$instance;
 
 export interface IConnectionEndPointFeature$instance {
-    get localEndPoint(): EndPoint | undefined;
-    set localEndPoint(value: EndPoint);
-    get remoteEndPoint(): EndPoint | undefined;
-    set remoteEndPoint(value: EndPoint);
+    get LocalEndPoint(): EndPoint | undefined;
+    set LocalEndPoint(value: EndPoint);
+    get RemoteEndPoint(): EndPoint | undefined;
+    set RemoteEndPoint(value: EndPoint);
 }
 
 
 export type IConnectionEndPointFeature = IConnectionEndPointFeature$instance;
 
 export interface IConnectionHeartbeatFeature$instance {
-    onHeartbeat(action: Action<unknown>, state: unknown): void;
+    OnHeartbeat(action: Action<unknown>, state: unknown): void;
 }
 
 
 export type IConnectionHeartbeatFeature = IConnectionHeartbeatFeature$instance;
 
 export interface IConnectionIdFeature$instance {
-    connectionId: string;
+    ConnectionId: string;
 }
 
 
 export type IConnectionIdFeature = IConnectionIdFeature$instance;
 
 export interface IConnectionInherentKeepAliveFeature$instance {
-    readonly hasInherentKeepAlive: boolean;
+    readonly HasInherentKeepAlive: boolean;
 }
 
 
 export type IConnectionInherentKeepAliveFeature = IConnectionInherentKeepAliveFeature$instance;
 
 export interface IConnectionItemsFeature$instance {
-    items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary<unknown, unknown | undefined>;
 }
 
 
 export type IConnectionItemsFeature = IConnectionItemsFeature$instance;
 
 export interface IConnectionLifetimeFeature$instance {
-    connectionClosed: CancellationToken;
-    abort(): void;
+    ConnectionClosed: CancellationToken;
+    Abort(): void;
 }
 
 
 export type IConnectionLifetimeFeature = IConnectionLifetimeFeature$instance;
 
 export interface IConnectionLifetimeNotificationFeature$instance {
-    connectionClosedRequested: CancellationToken;
-    requestClose(): void;
+    ConnectionClosedRequested: CancellationToken;
+    RequestClose(): void;
 }
 
 
 export type IConnectionLifetimeNotificationFeature = IConnectionLifetimeNotificationFeature$instance;
 
 export interface IConnectionMetricsTagsFeature$instance {
-    readonly tags: ICollection<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Tags: ICollection<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export type IConnectionMetricsTagsFeature = IConnectionMetricsTagsFeature$instance;
 
 export interface IConnectionNamedPipeFeature$instance {
-    readonly namedPipe: NamedPipeServerStream;
+    readonly NamedPipe: NamedPipeServerStream;
 }
 
 
 export type IConnectionNamedPipeFeature = IConnectionNamedPipeFeature$instance;
 
 export interface IConnectionSocketFeature$instance {
-    readonly socket: Socket;
+    readonly Socket: Socket;
 }
 
 
 export type IConnectionSocketFeature = IConnectionSocketFeature$instance;
 
 export interface IConnectionTransportFeature$instance {
-    transport: IDuplexPipe;
+    Transport: IDuplexPipe;
 }
 
 
 export type IConnectionTransportFeature = IConnectionTransportFeature$instance;
 
 export interface IConnectionUserFeature$instance {
-    user: ClaimsPrincipal;
+    User: ClaimsPrincipal;
 }
 
 
 export type IConnectionUserFeature = IConnectionUserFeature$instance;
 
 export interface IMemoryPoolFeature$instance {
-    readonly memoryPool: MemoryPool<System_Internal.Byte>;
+    readonly MemoryPool: MemoryPool<System_Internal.Byte>;
 }
 
 
 export type IMemoryPoolFeature = IMemoryPoolFeature$instance;
 
 export interface IPersistentStateFeature$instance {
-    readonly state: IDictionary<unknown, unknown | undefined>;
+    readonly State: IDictionary<unknown, unknown | undefined>;
 }
 
 
 export type IPersistentStateFeature = IPersistentStateFeature$instance;
 
 export interface IProtocolErrorCodeFeature$instance {
-    error: long;
+    Error: long;
 }
 
 
 export type IProtocolErrorCodeFeature = IProtocolErrorCodeFeature$instance;
 
 export interface IStreamAbortFeature$instance {
-    abortRead(errorCode: long, abortReason: ConnectionAbortedException): void;
+    AbortRead(errorCode: long, abortReason: ConnectionAbortedException): void;
 }
 
 
 export type IStreamAbortFeature = IStreamAbortFeature$instance;
 
 export interface IStreamClosedFeature$instance {
-    onClosed(callback: Action<unknown>, state: unknown): void;
+    OnClosed(callback: Action<unknown>, state: unknown): void;
 }
 
 
 export type IStreamClosedFeature = IStreamClosedFeature$instance;
 
 export interface IStreamDirectionFeature$instance {
-    readonly canRead: boolean;
-    readonly canWrite: boolean;
+    readonly CanRead: boolean;
+    readonly CanWrite: boolean;
 }
 
 
 export type IStreamDirectionFeature = IStreamDirectionFeature$instance;
 
 export interface IStreamIdFeature$instance {
-    readonly streamId: long;
+    readonly StreamId: long;
 }
 
 
 export type IStreamIdFeature = IStreamIdFeature$instance;
 
 export interface ITlsHandshakeFeature$instance {
-    readonly protocol: SslProtocols;
-    readonly negotiatedCipherSuite: Nullable<TlsCipherSuite>;
-    readonly hostName: string;
-    readonly cipherAlgorithm: CipherAlgorithmType;
-    readonly cipherStrength: int;
-    readonly hashAlgorithm: HashAlgorithmType;
-    readonly hashStrength: int;
-    readonly keyExchangeAlgorithm: ExchangeAlgorithmType;
-    readonly keyExchangeStrength: int;
+    readonly Protocol: SslProtocols;
+    readonly NegotiatedCipherSuite: Nullable<TlsCipherSuite>;
+    readonly HostName: string;
+    readonly CipherAlgorithm: CipherAlgorithmType;
+    readonly CipherStrength: int;
+    readonly HashAlgorithm: HashAlgorithmType;
+    readonly HashStrength: int;
+    readonly KeyExchangeAlgorithm: ExchangeAlgorithmType;
+    readonly KeyExchangeStrength: int;
 }
 
 
 export type ITlsHandshakeFeature = ITlsHandshakeFeature$instance;
 
 export interface ITransferFormatFeature$instance {
-    readonly supportedFormats: TransferFormat;
-    activeFormat: TransferFormat;
+    readonly SupportedFormats: TransferFormat;
+    ActiveFormat: TransferFormat;
 }
 
 

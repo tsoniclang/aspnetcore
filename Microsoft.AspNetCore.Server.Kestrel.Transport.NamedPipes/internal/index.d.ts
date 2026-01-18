@@ -12,10 +12,10 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Func, Int32, Int64, Nullable, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface CreateNamedPipeServerStreamContext$instance {
-    namedPipeEndPoint: NamedPipeEndPoint;
-    pipeOptions: PipeOptions;
-    get pipeSecurity(): PipeSecurity | undefined;
-    set pipeSecurity(value: PipeSecurity);
+    NamedPipeEndPoint: NamedPipeEndPoint;
+    PipeOptions: PipeOptions;
+    get PipeSecurity(): PipeSecurity | undefined;
+    set PipeSecurity(value: PipeSecurity);
 }
 
 
@@ -27,19 +27,19 @@ export const CreateNamedPipeServerStreamContext: {
 export type CreateNamedPipeServerStreamContext = CreateNamedPipeServerStreamContext$instance;
 
 export interface NamedPipeTransportOptions$instance {
-    createNamedPipeServerStream: Func<CreateNamedPipeServerStreamContext, NamedPipeServerStream>;
-    currentUserOnly: boolean;
-    listenerQueueCount: int;
-    maxReadBufferSize: Nullable<System_Internal.Int64>;
-    maxWriteBufferSize: Nullable<System_Internal.Int64>;
-    get pipeSecurity(): PipeSecurity | undefined;
-    set pipeSecurity(value: PipeSecurity);
+    CreateNamedPipeServerStream: Func<CreateNamedPipeServerStreamContext, NamedPipeServerStream>;
+    CurrentUserOnly: boolean;
+    ListenerQueueCount: int;
+    MaxReadBufferSize: Nullable<System_Internal.Int64>;
+    MaxWriteBufferSize: Nullable<System_Internal.Int64>;
+    get PipeSecurity(): PipeSecurity | undefined;
+    set PipeSecurity(value: PipeSecurity);
 }
 
 
 export const NamedPipeTransportOptions: {
     new(): NamedPipeTransportOptions;
-    createDefaultNamedPipeServerStream(context: CreateNamedPipeServerStreamContext): NamedPipeServerStream;
+    CreateDefaultNamedPipeServerStream(context: CreateNamedPipeServerStreamContext): NamedPipeServerStream;
 };
 
 

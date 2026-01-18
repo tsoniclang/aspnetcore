@@ -1,122 +1,98 @@
 {
   "namespace": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
       "clrName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-      "tsEmitName": "KeyDerivationPrf",
       "assemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67108865,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         },
         {
           "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA1Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "clrName": "HMACSHA1",
-          "tsEmitName": "HMACSHA1",
           "metadataToken": 67108866,
           "normalizedSignature": "HMACSHA1|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         },
         {
           "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA256Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "clrName": "HMACSHA256",
-          "tsEmitName": "HMACSHA256",
           "metadataToken": 67108867,
           "normalizedSignature": "HMACSHA256|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         },
         {
           "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf::HMACSHA512Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "clrName": "HMACSHA512",
-          "tsEmitName": "HMACSHA512",
           "metadataToken": 67108868,
           "normalizedSignature": "HMACSHA512|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-            "metadataToken": 67108865
-          }
-        },
-        {
-          "tsName": "HMACSHA1",
-          "isStatic": true,
-          "tsSignatureId": "HMACSHA1|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-            "metadataToken": 67108866
-          }
-        },
-        {
-          "tsName": "HMACSHA256",
-          "isStatic": true,
-          "tsSignatureId": "HMACSHA256|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-            "metadataToken": 67108867
-          }
-        },
-        {
-          "tsName": "HMACSHA512",
-          "isStatic": true,
-          "tsSignatureId": "HMACSHA512|Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-            "metadataToken": 67108868
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
       "clrName": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
-      "tsEmitName": "KeyDerivation",
       "assemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation::Pbkdf2(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]",
           "clrName": "Pbkdf2",
-          "tsEmitName": "pbkdf2",
           "metadataToken": 100663307,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]",
           "normalizedSignature": "Pbkdf2|(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 5,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
           "isExtensionMethod": false
@@ -125,19 +101,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "pbkdf2",
-          "isStatic": true,
-          "tsSignatureId": "Pbkdf2|(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
-            "metadataToken": 100663307
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

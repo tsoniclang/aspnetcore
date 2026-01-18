@@ -13,21 +13,21 @@ import type { Int32, Object as ClrObject, String as ClrString, Type, Void } from
 import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
 
 export interface IAuthenticatedEncryptorDescriptor$instance {
-    exportToXml(): XmlSerializedDescriptorInfo;
+    ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
 
 export type IAuthenticatedEncryptorDescriptor = IAuthenticatedEncryptorDescriptor$instance;
 
 export interface IAuthenticatedEncryptorDescriptorDeserializer$instance {
-    importFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
+    ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
 
 export type IAuthenticatedEncryptorDescriptorDeserializer = IAuthenticatedEncryptorDescriptorDeserializer$instance;
 
 export interface AlgorithmConfiguration$instance {
-    createNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -38,9 +38,9 @@ export const AlgorithmConfiguration: {
 export type AlgorithmConfiguration = AlgorithmConfiguration$instance;
 
 export interface AuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
-    encryptionAlgorithm: EncryptionAlgorithm;
-    validationAlgorithm: ValidationAlgorithm;
-    createNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    EncryptionAlgorithm: EncryptionAlgorithm;
+    ValidationAlgorithm: ValidationAlgorithm;
+    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -52,7 +52,7 @@ export const AuthenticatedEncryptorConfiguration: {
 export type AuthenticatedEncryptorConfiguration = AuthenticatedEncryptorConfiguration$instance;
 
 export interface AuthenticatedEncryptorDescriptor$instance {
-    exportToXml(): XmlSerializedDescriptorInfo;
+    ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
 
@@ -71,7 +71,7 @@ export type AuthenticatedEncryptorDescriptor = AuthenticatedEncryptorDescriptor$
 
 
 export interface AuthenticatedEncryptorDescriptorDeserializer$instance {
-    importFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
+    ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -90,14 +90,14 @@ export type AuthenticatedEncryptorDescriptorDeserializer = AuthenticatedEncrypto
 
 
 export interface CngCbcAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
-    encryptionAlgorithm: string;
-    encryptionAlgorithmKeySize: int;
-    get encryptionAlgorithmProvider(): string | undefined;
-    set encryptionAlgorithmProvider(value: string);
-    hashAlgorithm: string;
-    get hashAlgorithmProvider(): string | undefined;
-    set hashAlgorithmProvider(value: string);
-    createNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    EncryptionAlgorithm: string;
+    EncryptionAlgorithmKeySize: int;
+    get EncryptionAlgorithmProvider(): string | undefined;
+    set EncryptionAlgorithmProvider(value: string);
+    HashAlgorithm: string;
+    get HashAlgorithmProvider(): string | undefined;
+    set HashAlgorithmProvider(value: string);
+    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -109,7 +109,7 @@ export const CngCbcAuthenticatedEncryptorConfiguration: {
 export type CngCbcAuthenticatedEncryptorConfiguration = CngCbcAuthenticatedEncryptorConfiguration$instance;
 
 export interface CngCbcAuthenticatedEncryptorDescriptor$instance {
-    exportToXml(): XmlSerializedDescriptorInfo;
+    ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
 
@@ -128,7 +128,7 @@ export type CngCbcAuthenticatedEncryptorDescriptor = CngCbcAuthenticatedEncrypto
 
 
 export interface CngCbcAuthenticatedEncryptorDescriptorDeserializer$instance {
-    importFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
+    ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -147,11 +147,11 @@ export type CngCbcAuthenticatedEncryptorDescriptorDeserializer = CngCbcAuthentic
 
 
 export interface CngGcmAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
-    encryptionAlgorithm: string;
-    encryptionAlgorithmKeySize: int;
-    get encryptionAlgorithmProvider(): string | undefined;
-    set encryptionAlgorithmProvider(value: string);
-    createNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    EncryptionAlgorithm: string;
+    EncryptionAlgorithmKeySize: int;
+    get EncryptionAlgorithmProvider(): string | undefined;
+    set EncryptionAlgorithmProvider(value: string);
+    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -163,7 +163,7 @@ export const CngGcmAuthenticatedEncryptorConfiguration: {
 export type CngGcmAuthenticatedEncryptorConfiguration = CngGcmAuthenticatedEncryptorConfiguration$instance;
 
 export interface CngGcmAuthenticatedEncryptorDescriptor$instance {
-    exportToXml(): XmlSerializedDescriptorInfo;
+    ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
 
@@ -182,7 +182,7 @@ export type CngGcmAuthenticatedEncryptorDescriptor = CngGcmAuthenticatedEncrypto
 
 
 export interface CngGcmAuthenticatedEncryptorDescriptorDeserializer$instance {
-    importFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
+    ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -201,10 +201,10 @@ export type CngGcmAuthenticatedEncryptorDescriptorDeserializer = CngGcmAuthentic
 
 
 export interface ManagedAuthenticatedEncryptorConfiguration$instance extends AlgorithmConfiguration {
-    encryptionAlgorithmKeySize: int;
-    encryptionAlgorithmType: Type;
-    validationAlgorithmType: Type;
-    createNewDescriptor(): IAuthenticatedEncryptorDescriptor;
+    EncryptionAlgorithmKeySize: int;
+    EncryptionAlgorithmType: Type;
+    ValidationAlgorithmType: Type;
+    CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -216,7 +216,7 @@ export const ManagedAuthenticatedEncryptorConfiguration: {
 export type ManagedAuthenticatedEncryptorConfiguration = ManagedAuthenticatedEncryptorConfiguration$instance;
 
 export interface ManagedAuthenticatedEncryptorDescriptor$instance {
-    exportToXml(): XmlSerializedDescriptorInfo;
+    ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
 
@@ -235,7 +235,7 @@ export type ManagedAuthenticatedEncryptorDescriptor = ManagedAuthenticatedEncryp
 
 
 export interface ManagedAuthenticatedEncryptorDescriptorDeserializer$instance {
-    importFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
+    ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
 
@@ -254,8 +254,8 @@ export type ManagedAuthenticatedEncryptorDescriptorDeserializer = ManagedAuthent
 
 
 export interface XmlSerializedDescriptorInfo$instance {
-    readonly deserializerType: Type;
-    readonly serializedDescriptorElement: XElement;
+    readonly DeserializerType: Type;
+    readonly SerializedDescriptorElement: XElement;
 }
 
 
@@ -267,7 +267,7 @@ export const XmlSerializedDescriptorInfo: {
 export type XmlSerializedDescriptorInfo = XmlSerializedDescriptorInfo$instance;
 
 export abstract class XmlExtensions$instance {
-    static markAsRequiresEncryption(element: XElement): void;
+    static MarkAsRequiresEncryption(element: XElement): void;
 }
 
 

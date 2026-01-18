@@ -15,9 +15,9 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ICompositeViewEngine$instance extends IViewEngine {
-    readonly viewEngines: IReadOnlyList<IViewEngine>;
-    findView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    getView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    readonly ViewEngines: IReadOnlyList<IViewEngine>;
+    FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
@@ -26,25 +26,25 @@ export interface ICompositeViewEngine$instance extends IViewEngine$instance {}
 export type ICompositeViewEngine = ICompositeViewEngine$instance;
 
 export interface IView$instance {
-    readonly path: string;
-    renderAsync(context: ViewContext): Task;
+    readonly Path: string;
+    RenderAsync(context: ViewContext): Task;
 }
 
 
 export type IView = IView$instance;
 
 export interface IViewEngine$instance {
-    findView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    getView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
 export type IViewEngine = IViewEngine$instance;
 
 export interface CompositeViewEngine$instance {
-    readonly viewEngines: IReadOnlyList<IViewEngine>;
-    findView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    getView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    readonly ViewEngines: IReadOnlyList<IViewEngine>;
+    FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
@@ -62,18 +62,18 @@ export type CompositeViewEngine = CompositeViewEngine$instance & __CompositeView
 
 
 export interface ViewEngineResult$instance {
-    readonly searchedLocations: IEnumerable<System_Internal.String>;
-    readonly success: boolean;
-    readonly view: IView;
-    readonly viewName: string;
-    ensureSuccessful(originalLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
+    readonly SearchedLocations: IEnumerable<System_Internal.String>;
+    readonly Success: boolean;
+    readonly View: IView;
+    readonly ViewName: string;
+    EnsureSuccessful(originalLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
 }
 
 
 export const ViewEngineResult: {
     new(): ViewEngineResult;
-    found(viewName: string, view: IView): ViewEngineResult;
-    notFound(viewName: string, searchedLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
+    Found(viewName: string, view: IView): ViewEngineResult;
+    NotFound(viewName: string, searchedLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
 };
 
 

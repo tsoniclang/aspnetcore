@@ -14,8 +14,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IRateLimiterPolicy_1$instance<TPartitionKey> {
-    readonly onRejected: Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
-    getPartition(httpContext: HttpContext): RateLimitPartition_1<TPartitionKey>;
+    readonly OnRejected: Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
+    GetPartition(httpContext: HttpContext): RateLimitPartition_1<TPartitionKey>;
 }
 
 
@@ -33,7 +33,7 @@ export const DisableRateLimitingAttribute: {
 export type DisableRateLimitingAttribute = DisableRateLimitingAttribute$instance;
 
 export interface EnableRateLimitingAttribute$instance extends Attribute {
-    readonly policyName: string | undefined;
+    readonly PolicyName: string | undefined;
 }
 
 
@@ -45,8 +45,8 @@ export const EnableRateLimitingAttribute: {
 export type EnableRateLimitingAttribute = EnableRateLimitingAttribute$instance;
 
 export interface OnRejectedContext$instance {
-    httpContext: HttpContext;
-    lease: RateLimitLease;
+    HttpContext: HttpContext;
+    Lease: RateLimitLease;
 }
 
 
@@ -58,14 +58,14 @@ export const OnRejectedContext: {
 export type OnRejectedContext = OnRejectedContext$instance;
 
 export interface RateLimiterOptions$instance {
-    get globalLimiter(): PartitionedRateLimiter_1<HttpContext> | undefined;
-    set globalLimiter(value: PartitionedRateLimiter_1<HttpContext>);
-    get onRejected(): Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
-    set onRejected(value: Func<OnRejectedContext, CancellationToken, ValueTask>);
-    rejectionStatusCode: int;
-    addPolicy<TPartitionKey>(policyName: string, partitioner: Func<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
-    addPolicy<TPartitionKey, TPolicy extends IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;
-    addPolicy<TPartitionKey>(policyName: string, policy: IRateLimiterPolicy_1<TPartitionKey>): RateLimiterOptions;
+    get GlobalLimiter(): PartitionedRateLimiter_1<HttpContext> | undefined;
+    set GlobalLimiter(value: PartitionedRateLimiter_1<HttpContext>);
+    get OnRejected(): Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
+    set OnRejected(value: Func<OnRejectedContext, CancellationToken, ValueTask>);
+    RejectionStatusCode: int;
+    AddPolicy<TPartitionKey>(policyName: string, partitioner: Func<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
+    AddPolicy<TPartitionKey, TPolicy extends IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;
+    AddPolicy<TPartitionKey>(policyName: string, policy: IRateLimiterPolicy_1<TPartitionKey>): RateLimiterOptions;
 }
 
 
@@ -77,10 +77,10 @@ export const RateLimiterOptions: {
 export type RateLimiterOptions = RateLimiterOptions$instance;
 
 export abstract class RateLimiterOptionsExtensions$instance {
-    static addConcurrencyLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<ConcurrencyLimiterOptions>): RateLimiterOptions;
-    static addFixedWindowLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<FixedWindowRateLimiterOptions>): RateLimiterOptions;
-    static addSlidingWindowLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<SlidingWindowRateLimiterOptions>): RateLimiterOptions;
-    static addTokenBucketLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<TokenBucketRateLimiterOptions>): RateLimiterOptions;
+    static AddConcurrencyLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<ConcurrencyLimiterOptions>): RateLimiterOptions;
+    static AddFixedWindowLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<FixedWindowRateLimiterOptions>): RateLimiterOptions;
+    static AddSlidingWindowLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<SlidingWindowRateLimiterOptions>): RateLimiterOptions;
+    static AddTokenBucketLimiter(options: RateLimiterOptions, policyName: string, configureOptions: Action<TokenBucketRateLimiterOptions>): RateLimiterOptions;
 }
 
 

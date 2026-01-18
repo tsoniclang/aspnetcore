@@ -25,10 +25,10 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface EventData_Enumerator$instance {
-    readonly current: KeyValuePair<System_Internal.String, unknown>;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: KeyValuePair<System_Internal.String, unknown>;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -40,693 +40,693 @@ export const EventData_Enumerator: {
 export type EventData_Enumerator = EventData_Enumerator$instance;
 
 export interface AfterActionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly httpContext: HttpContext;
-    readonly routeData: RouteData;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly HttpContext: HttpContext;
+    readonly RouteData: RouteData;
 }
 
 
 export const AfterActionEventData: {
     new(actionDescriptor: ActionDescriptor, httpContext: HttpContext, routeData: RouteData): AfterActionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterActionEventData = AfterActionEventData$instance;
 
 export interface AfterActionFilterOnActionExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly actionExecutedContext: ActionExecutedContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ActionExecutedContext: ActionExecutedContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const AfterActionFilterOnActionExecutedEventData: {
     new(actionDescriptor: ActionDescriptor, actionExecutedContext: ActionExecutedContext, filter: IFilterMetadata): AfterActionFilterOnActionExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterActionFilterOnActionExecutedEventData = AfterActionFilterOnActionExecutedEventData$instance;
 
 export interface AfterActionFilterOnActionExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly actionExecutingContext: ActionExecutingContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ActionExecutingContext: ActionExecutingContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const AfterActionFilterOnActionExecutingEventData: {
     new(actionDescriptor: ActionDescriptor, actionExecutingContext: ActionExecutingContext, filter: IFilterMetadata): AfterActionFilterOnActionExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterActionFilterOnActionExecutingEventData = AfterActionFilterOnActionExecutingEventData$instance;
 
 export interface AfterActionFilterOnActionExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly actionExecutedContext: ActionExecutedContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ActionExecutedContext: ActionExecutedContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const AfterActionFilterOnActionExecutionEventData: {
     new(actionDescriptor: ActionDescriptor, actionExecutedContext: ActionExecutedContext, filter: IFilterMetadata): AfterActionFilterOnActionExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterActionFilterOnActionExecutionEventData = AfterActionFilterOnActionExecutionEventData$instance;
 
 export interface AfterActionResultEventData$instance extends EventData {
-    readonly actionContext: ActionContext;
-    readonly result: IActionResult;
+    readonly ActionContext: ActionContext;
+    readonly Result: IActionResult;
 }
 
 
 export const AfterActionResultEventData: {
     new(actionContext: ActionContext, result: IActionResult): AfterActionResultEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterActionResultEventData = AfterActionResultEventData$instance;
 
 export interface AfterAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly authorizationContext: AuthorizationFilterContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly AuthorizationContext: AuthorizationFilterContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const AfterAuthorizationFilterOnAuthorizationEventData: {
     new(actionDescriptor: ActionDescriptor, authorizationContext: AuthorizationFilterContext, filter: IFilterMetadata): AfterAuthorizationFilterOnAuthorizationEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterAuthorizationFilterOnAuthorizationEventData = AfterAuthorizationFilterOnAuthorizationEventData$instance;
 
 export interface AfterControllerActionMethodEventData$instance extends EventData {
-    readonly actionContext: ActionContext;
-    readonly arguments: IReadOnlyDictionary<System_Internal.String, unknown>;
-    readonly controller: unknown;
-    readonly result: IActionResult;
+    readonly ActionContext: ActionContext;
+    readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Controller: unknown;
+    readonly Result: IActionResult;
 }
 
 
 export const AfterControllerActionMethodEventData: {
     new(actionContext: ActionContext, arguments: IReadOnlyDictionary<System_Internal.String, unknown>, controller: unknown, result: IActionResult): AfterControllerActionMethodEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterControllerActionMethodEventData = AfterControllerActionMethodEventData$instance;
 
 export interface AfterExceptionFilterOnExceptionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly exceptionContext: ExceptionContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ExceptionContext: ExceptionContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const AfterExceptionFilterOnExceptionEventData: {
     new(actionDescriptor: ActionDescriptor, exceptionContext: ExceptionContext, filter: IFilterMetadata): AfterExceptionFilterOnExceptionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterExceptionFilterOnExceptionEventData = AfterExceptionFilterOnExceptionEventData$instance;
 
 export interface AfterHandlerMethodEventData$instance extends EventData {
-    readonly actionContext: ActionContext;
-    readonly arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
-    readonly handlerMethodDescriptor: HandlerMethodDescriptor;
-    readonly instance: unknown;
-    readonly result: IActionResult;
+    readonly ActionContext: ActionContext;
+    readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
+    readonly Instance: unknown;
+    readonly Result: IActionResult;
 }
 
 
 export const AfterHandlerMethodEventData: {
     new(actionContext: ActionContext, arguments: IReadOnlyDictionary<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown, result: IActionResult): AfterHandlerMethodEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterHandlerMethodEventData = AfterHandlerMethodEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IPageFilter;
-    readonly handlerExecutedContext: PageHandlerExecutedContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IPageFilter;
+    readonly HandlerExecutedContext: PageHandlerExecutedContext;
 }
 
 
 export const AfterPageFilterOnPageHandlerExecutedEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerExecutedContext: PageHandlerExecutedContext, filter: IPageFilter): AfterPageFilterOnPageHandlerExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterPageFilterOnPageHandlerExecutedEventData = AfterPageFilterOnPageHandlerExecutedEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IPageFilter;
-    readonly handlerExecutingContext: PageHandlerExecutingContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IPageFilter;
+    readonly HandlerExecutingContext: PageHandlerExecutingContext;
 }
 
 
 export const AfterPageFilterOnPageHandlerExecutingEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerExecutingContext: PageHandlerExecutingContext, filter: IPageFilter): AfterPageFilterOnPageHandlerExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterPageFilterOnPageHandlerExecutingEventData = AfterPageFilterOnPageHandlerExecutingEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IAsyncPageFilter;
-    readonly handlerExecutedContext: PageHandlerExecutedContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IAsyncPageFilter;
+    readonly HandlerExecutedContext: PageHandlerExecutedContext;
 }
 
 
 export const AfterPageFilterOnPageHandlerExecutionEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerExecutedContext: PageHandlerExecutedContext, filter: IAsyncPageFilter): AfterPageFilterOnPageHandlerExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterPageFilterOnPageHandlerExecutionEventData = AfterPageFilterOnPageHandlerExecutionEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerSelectedEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IPageFilter;
-    readonly handlerSelectedContext: PageHandlerSelectedContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IPageFilter;
+    readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
 
 
 export const AfterPageFilterOnPageHandlerSelectedEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerSelectedContext: PageHandlerSelectedContext, filter: IPageFilter): AfterPageFilterOnPageHandlerSelectedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterPageFilterOnPageHandlerSelectedEventData = AfterPageFilterOnPageHandlerSelectedEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerSelectionEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IAsyncPageFilter;
-    readonly handlerSelectedContext: PageHandlerSelectedContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IAsyncPageFilter;
+    readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
 
 
 export const AfterPageFilterOnPageHandlerSelectionEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerSelectedContext: PageHandlerSelectedContext, filter: IAsyncPageFilter): AfterPageFilterOnPageHandlerSelectionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterPageFilterOnPageHandlerSelectionEventData = AfterPageFilterOnPageHandlerSelectionEventData$instance;
 
 export interface AfterResourceFilterOnResourceExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resourceExecutedContext: ResourceExecutedContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResourceExecutedContext: ResourceExecutedContext;
 }
 
 
 export const AfterResourceFilterOnResourceExecutedEventData: {
     new(actionDescriptor: ActionDescriptor, resourceExecutedContext: ResourceExecutedContext, filter: IFilterMetadata): AfterResourceFilterOnResourceExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterResourceFilterOnResourceExecutedEventData = AfterResourceFilterOnResourceExecutedEventData$instance;
 
 export interface AfterResourceFilterOnResourceExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resourceExecutingContext: ResourceExecutingContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResourceExecutingContext: ResourceExecutingContext;
 }
 
 
 export const AfterResourceFilterOnResourceExecutingEventData: {
     new(actionDescriptor: ActionDescriptor, resourceExecutingContext: ResourceExecutingContext, filter: IFilterMetadata): AfterResourceFilterOnResourceExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterResourceFilterOnResourceExecutingEventData = AfterResourceFilterOnResourceExecutingEventData$instance;
 
 export interface AfterResourceFilterOnResourceExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resourceExecutedContext: ResourceExecutedContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResourceExecutedContext: ResourceExecutedContext;
 }
 
 
 export const AfterResourceFilterOnResourceExecutionEventData: {
     new(actionDescriptor: ActionDescriptor, resourceExecutedContext: ResourceExecutedContext, filter: IFilterMetadata): AfterResourceFilterOnResourceExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterResourceFilterOnResourceExecutionEventData = AfterResourceFilterOnResourceExecutionEventData$instance;
 
 export interface AfterResultFilterOnResultExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resultExecutedContext: ResultExecutedContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResultExecutedContext: ResultExecutedContext;
 }
 
 
 export const AfterResultFilterOnResultExecutedEventData: {
     new(actionDescriptor: ActionDescriptor, resultExecutedContext: ResultExecutedContext, filter: IFilterMetadata): AfterResultFilterOnResultExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterResultFilterOnResultExecutedEventData = AfterResultFilterOnResultExecutedEventData$instance;
 
 export interface AfterResultFilterOnResultExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resultExecutingContext: ResultExecutingContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResultExecutingContext: ResultExecutingContext;
 }
 
 
 export const AfterResultFilterOnResultExecutingEventData: {
     new(actionDescriptor: ActionDescriptor, resultExecutingContext: ResultExecutingContext, filter: IFilterMetadata): AfterResultFilterOnResultExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterResultFilterOnResultExecutingEventData = AfterResultFilterOnResultExecutingEventData$instance;
 
 export interface AfterResultFilterOnResultExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resultExecutedContext: ResultExecutedContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResultExecutedContext: ResultExecutedContext;
 }
 
 
 export const AfterResultFilterOnResultExecutionEventData: {
     new(actionDescriptor: ActionDescriptor, resultExecutedContext: ResultExecutedContext, filter: IFilterMetadata): AfterResultFilterOnResultExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterResultFilterOnResultExecutionEventData = AfterResultFilterOnResultExecutionEventData$instance;
 
 export interface AfterViewComponentEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly viewComponent: unknown;
-    readonly viewComponentContext: ViewComponentContext;
-    readonly viewComponentResult: IViewComponentResult;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ViewComponent: unknown;
+    readonly ViewComponentContext: ViewComponentContext;
+    readonly ViewComponentResult: IViewComponentResult;
 }
 
 
 export const AfterViewComponentEventData: {
     new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, viewComponentResult: IViewComponentResult, viewComponent: unknown): AfterViewComponentEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterViewComponentEventData = AfterViewComponentEventData$instance;
 
 export interface AfterViewEventData$instance extends EventData {
-    readonly view: IView;
-    readonly viewContext: ViewContext;
+    readonly View: IView;
+    readonly ViewContext: ViewContext;
 }
 
 
 export const AfterViewEventData: {
     new(view: IView, viewContext: ViewContext): AfterViewEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterViewEventData = AfterViewEventData$instance;
 
 export interface AfterViewPageEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly httpContext: HttpContext;
-    readonly page: IRazorPage;
-    readonly viewContext: ViewContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly HttpContext: HttpContext;
+    readonly Page: IRazorPage;
+    readonly ViewContext: ViewContext;
 }
 
 
 export const AfterViewPageEventData: {
     new(page: IRazorPage, viewContext: ViewContext, actionDescriptor: ActionDescriptor, httpContext: HttpContext): AfterViewPageEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type AfterViewPageEventData = AfterViewPageEventData$instance;
 
 export interface BeforeActionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly httpContext: HttpContext;
-    readonly routeData: RouteData;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly HttpContext: HttpContext;
+    readonly RouteData: RouteData;
 }
 
 
 export const BeforeActionEventData: {
     new(actionDescriptor: ActionDescriptor, httpContext: HttpContext, routeData: RouteData): BeforeActionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeActionEventData = BeforeActionEventData$instance;
 
 export interface BeforeActionFilterOnActionExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly actionExecutedContext: ActionExecutedContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ActionExecutedContext: ActionExecutedContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const BeforeActionFilterOnActionExecutedEventData: {
     new(actionDescriptor: ActionDescriptor, actionExecutedContext: ActionExecutedContext, filter: IFilterMetadata): BeforeActionFilterOnActionExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeActionFilterOnActionExecutedEventData = BeforeActionFilterOnActionExecutedEventData$instance;
 
 export interface BeforeActionFilterOnActionExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly actionExecutingContext: ActionExecutingContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ActionExecutingContext: ActionExecutingContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const BeforeActionFilterOnActionExecutingEventData: {
     new(actionDescriptor: ActionDescriptor, actionExecutingContext: ActionExecutingContext, filter: IFilterMetadata): BeforeActionFilterOnActionExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeActionFilterOnActionExecutingEventData = BeforeActionFilterOnActionExecutingEventData$instance;
 
 export interface BeforeActionFilterOnActionExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly actionExecutingContext: ActionExecutingContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ActionExecutingContext: ActionExecutingContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const BeforeActionFilterOnActionExecutionEventData: {
     new(actionDescriptor: ActionDescriptor, actionExecutingContext: ActionExecutingContext, filter: IFilterMetadata): BeforeActionFilterOnActionExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeActionFilterOnActionExecutionEventData = BeforeActionFilterOnActionExecutionEventData$instance;
 
 export interface BeforeActionResultEventData$instance extends EventData {
-    readonly actionContext: ActionContext;
-    readonly result: IActionResult;
+    readonly ActionContext: ActionContext;
+    readonly Result: IActionResult;
 }
 
 
 export const BeforeActionResultEventData: {
     new(actionContext: ActionContext, result: IActionResult): BeforeActionResultEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeActionResultEventData = BeforeActionResultEventData$instance;
 
 export interface BeforeAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly authorizationContext: AuthorizationFilterContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly AuthorizationContext: AuthorizationFilterContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const BeforeAuthorizationFilterOnAuthorizationEventData: {
     new(actionDescriptor: ActionDescriptor, authorizationContext: AuthorizationFilterContext, filter: IFilterMetadata): BeforeAuthorizationFilterOnAuthorizationEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeAuthorizationFilterOnAuthorizationEventData = BeforeAuthorizationFilterOnAuthorizationEventData$instance;
 
 export interface BeforeControllerActionMethodEventData$instance extends EventData {
-    readonly actionArguments: IReadOnlyDictionary<System_Internal.String, unknown>;
-    readonly actionContext: ActionContext;
-    readonly controller: unknown;
+    readonly ActionArguments: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly ActionContext: ActionContext;
+    readonly Controller: unknown;
 }
 
 
 export const BeforeControllerActionMethodEventData: {
     new(actionContext: ActionContext, actionArguments: IReadOnlyDictionary<System_Internal.String, unknown>, controller: unknown): BeforeControllerActionMethodEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeControllerActionMethodEventData = BeforeControllerActionMethodEventData$instance;
 
 export interface BeforeExceptionFilterOnException$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly exceptionContext: ExceptionContext;
-    readonly filter: IFilterMetadata;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ExceptionContext: ExceptionContext;
+    readonly Filter: IFilterMetadata;
 }
 
 
 export const BeforeExceptionFilterOnException: {
     new(actionDescriptor: ActionDescriptor, exceptionContext: ExceptionContext, filter: IFilterMetadata): BeforeExceptionFilterOnException;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeExceptionFilterOnException = BeforeExceptionFilterOnException$instance;
 
 export interface BeforeHandlerMethodEventData$instance extends EventData {
-    readonly actionContext: ActionContext;
-    readonly arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
-    readonly handlerMethodDescriptor: HandlerMethodDescriptor;
-    readonly instance: unknown;
+    readonly ActionContext: ActionContext;
+    readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
+    readonly Instance: unknown;
 }
 
 
 export const BeforeHandlerMethodEventData: {
     new(actionContext: ActionContext, arguments: IReadOnlyDictionary<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown): BeforeHandlerMethodEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeHandlerMethodEventData = BeforeHandlerMethodEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IPageFilter;
-    readonly handlerExecutedContext: PageHandlerExecutedContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IPageFilter;
+    readonly HandlerExecutedContext: PageHandlerExecutedContext;
 }
 
 
 export const BeforePageFilterOnPageHandlerExecutedEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerExecutedContext: PageHandlerExecutedContext, filter: IPageFilter): BeforePageFilterOnPageHandlerExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforePageFilterOnPageHandlerExecutedEventData = BeforePageFilterOnPageHandlerExecutedEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IPageFilter;
-    readonly handlerExecutingContext: PageHandlerExecutingContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IPageFilter;
+    readonly HandlerExecutingContext: PageHandlerExecutingContext;
 }
 
 
 export const BeforePageFilterOnPageHandlerExecutingEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerExecutingContext: PageHandlerExecutingContext, filter: IPageFilter): BeforePageFilterOnPageHandlerExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforePageFilterOnPageHandlerExecutingEventData = BeforePageFilterOnPageHandlerExecutingEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IAsyncPageFilter;
-    readonly handlerExecutionContext: PageHandlerExecutingContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IAsyncPageFilter;
+    readonly HandlerExecutionContext: PageHandlerExecutingContext;
 }
 
 
 export const BeforePageFilterOnPageHandlerExecutionEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerExecutionContext: PageHandlerExecutingContext, filter: IAsyncPageFilter): BeforePageFilterOnPageHandlerExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforePageFilterOnPageHandlerExecutionEventData = BeforePageFilterOnPageHandlerExecutionEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerSelectedEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IPageFilter;
-    readonly handlerSelectedContext: PageHandlerSelectedContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IPageFilter;
+    readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
 
 
 export const BeforePageFilterOnPageHandlerSelectedEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerSelectedContext: PageHandlerSelectedContext, filter: IPageFilter): BeforePageFilterOnPageHandlerSelectedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforePageFilterOnPageHandlerSelectedEventData = BeforePageFilterOnPageHandlerSelectedEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerSelectionEventData$instance extends EventData {
-    readonly actionDescriptor: CompiledPageActionDescriptor;
-    readonly filter: IAsyncPageFilter;
-    readonly handlerSelectedContext: PageHandlerSelectedContext;
+    readonly ActionDescriptor: CompiledPageActionDescriptor;
+    readonly Filter: IAsyncPageFilter;
+    readonly HandlerSelectedContext: PageHandlerSelectedContext;
 }
 
 
 export const BeforePageFilterOnPageHandlerSelectionEventData: {
     new(actionDescriptor: CompiledPageActionDescriptor, handlerSelectedContext: PageHandlerSelectedContext, filter: IAsyncPageFilter): BeforePageFilterOnPageHandlerSelectionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforePageFilterOnPageHandlerSelectionEventData = BeforePageFilterOnPageHandlerSelectionEventData$instance;
 
 export interface BeforeResourceFilterOnResourceExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resourceExecutedContext: ResourceExecutedContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResourceExecutedContext: ResourceExecutedContext;
 }
 
 
 export const BeforeResourceFilterOnResourceExecutedEventData: {
     new(actionDescriptor: ActionDescriptor, resourceExecutedContext: ResourceExecutedContext, filter: IFilterMetadata): BeforeResourceFilterOnResourceExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeResourceFilterOnResourceExecutedEventData = BeforeResourceFilterOnResourceExecutedEventData$instance;
 
 export interface BeforeResourceFilterOnResourceExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resourceExecutingContext: ResourceExecutingContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResourceExecutingContext: ResourceExecutingContext;
 }
 
 
 export const BeforeResourceFilterOnResourceExecutingEventData: {
     new(actionDescriptor: ActionDescriptor, resourceExecutingContext: ResourceExecutingContext, filter: IFilterMetadata): BeforeResourceFilterOnResourceExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeResourceFilterOnResourceExecutingEventData = BeforeResourceFilterOnResourceExecutingEventData$instance;
 
 export interface BeforeResourceFilterOnResourceExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resourceExecutingContext: ResourceExecutingContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResourceExecutingContext: ResourceExecutingContext;
 }
 
 
 export const BeforeResourceFilterOnResourceExecutionEventData: {
     new(actionDescriptor: ActionDescriptor, resourceExecutingContext: ResourceExecutingContext, filter: IFilterMetadata): BeforeResourceFilterOnResourceExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeResourceFilterOnResourceExecutionEventData = BeforeResourceFilterOnResourceExecutionEventData$instance;
 
 export interface BeforeResultFilterOnResultExecutedEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resultExecutedContext: ResultExecutedContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResultExecutedContext: ResultExecutedContext;
 }
 
 
 export const BeforeResultFilterOnResultExecutedEventData: {
     new(actionDescriptor: ActionDescriptor, resultExecutedContext: ResultExecutedContext, filter: IFilterMetadata): BeforeResultFilterOnResultExecutedEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeResultFilterOnResultExecutedEventData = BeforeResultFilterOnResultExecutedEventData$instance;
 
 export interface BeforeResultFilterOnResultExecutingEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resultExecutingContext: ResultExecutingContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResultExecutingContext: ResultExecutingContext;
 }
 
 
 export const BeforeResultFilterOnResultExecutingEventData: {
     new(actionDescriptor: ActionDescriptor, resultExecutingContext: ResultExecutingContext, filter: IFilterMetadata): BeforeResultFilterOnResultExecutingEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeResultFilterOnResultExecutingEventData = BeforeResultFilterOnResultExecutingEventData$instance;
 
 export interface BeforeResultFilterOnResultExecutionEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly filter: IFilterMetadata;
-    readonly resultExecutingContext: ResultExecutingContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly Filter: IFilterMetadata;
+    readonly ResultExecutingContext: ResultExecutingContext;
 }
 
 
 export const BeforeResultFilterOnResultExecutionEventData: {
     new(actionDescriptor: ActionDescriptor, resultExecutingContext: ResultExecutingContext, filter: IFilterMetadata): BeforeResultFilterOnResultExecutionEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeResultFilterOnResultExecutionEventData = BeforeResultFilterOnResultExecutionEventData$instance;
 
 export interface BeforeViewComponentEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly viewComponent: unknown;
-    readonly viewComponentContext: ViewComponentContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly ViewComponent: unknown;
+    readonly ViewComponentContext: ViewComponentContext;
 }
 
 
 export const BeforeViewComponentEventData: {
     new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, viewComponent: unknown): BeforeViewComponentEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeViewComponentEventData = BeforeViewComponentEventData$instance;
 
 export interface BeforeViewEventData$instance extends EventData {
-    readonly view: IView;
-    readonly viewContext: ViewContext;
+    readonly View: IView;
+    readonly ViewContext: ViewContext;
 }
 
 
 export const BeforeViewEventData: {
     new(view: IView, viewContext: ViewContext): BeforeViewEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type BeforeViewEventData = BeforeViewEventData$instance;
 
 export interface BeforeViewPageEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly httpContext: HttpContext;
-    readonly page: IRazorPage;
-    readonly viewContext: ViewContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly HttpContext: HttpContext;
+    readonly Page: IRazorPage;
+    readonly ViewContext: ViewContext;
 }
 
 
 export const BeforeViewPageEventData: {
     new(page: IRazorPage, viewContext: ViewContext, actionDescriptor: ActionDescriptor, httpContext: HttpContext): BeforeViewPageEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
@@ -743,64 +743,64 @@ export const EventData: {
 export type EventData = EventData$instance;
 
 export interface ViewComponentAfterViewExecuteEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly view: IView;
-    readonly viewComponentContext: ViewComponentContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly View: IView;
+    readonly ViewComponentContext: ViewComponentContext;
 }
 
 
 export const ViewComponentAfterViewExecuteEventData: {
     new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, view: IView): ViewComponentAfterViewExecuteEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type ViewComponentAfterViewExecuteEventData = ViewComponentAfterViewExecuteEventData$instance;
 
 export interface ViewComponentBeforeViewExecuteEventData$instance extends EventData {
-    readonly actionDescriptor: ActionDescriptor;
-    readonly view: IView;
-    readonly viewComponentContext: ViewComponentContext;
+    readonly ActionDescriptor: ActionDescriptor;
+    readonly View: IView;
+    readonly ViewComponentContext: ViewComponentContext;
 }
 
 
 export const ViewComponentBeforeViewExecuteEventData: {
     new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, view: IView): ViewComponentBeforeViewExecuteEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type ViewComponentBeforeViewExecuteEventData = ViewComponentBeforeViewExecuteEventData$instance;
 
 export interface ViewFoundEventData$instance extends EventData {
-    readonly actionContext: ActionContext;
-    readonly isMainPage: boolean;
-    readonly result: ActionResult;
-    readonly view: IView;
-    readonly viewName: string;
+    readonly ActionContext: ActionContext;
+    readonly IsMainPage: boolean;
+    readonly Result: ActionResult;
+    readonly View: IView;
+    readonly ViewName: string;
 }
 
 
 export const ViewFoundEventData: {
     new(actionContext: ActionContext, isMainPage: boolean, result: ActionResult, viewName: string, view: IView): ViewFoundEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 
 export type ViewFoundEventData = ViewFoundEventData$instance;
 
 export interface ViewNotFoundEventData$instance extends EventData {
-    readonly actionContext: ActionContext;
-    readonly isMainPage: boolean;
-    readonly result: ActionResult;
-    readonly searchedLocations: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    readonly viewName: string;
+    readonly ActionContext: ActionContext;
+    readonly IsMainPage: boolean;
+    readonly Result: ActionResult;
+    readonly SearchedLocations: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly ViewName: string;
 }
 
 
 export const ViewNotFoundEventData: {
     new(actionContext: ActionContext, isMainPage: boolean, result: ActionResult, viewName: string, searchedLocations: IEnumerable__System_Collections_Generic<System_Internal.String>): ViewNotFoundEventData;
-    readonly eventName: string;
+    readonly EventName: string;
 };
 
 

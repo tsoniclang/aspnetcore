@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components.Web"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
       "clrName": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
-      "tsEmitName": "StaticHtmlRenderer",
       "assemblyName": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer::BeginRenderingComponent(System.Type,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
           "clrName": "BeginRenderingComponent",
-          "tsEmitName": "beginRenderingComponent",
           "metadataToken": 100663423,
           "canonicalSignature": "(System.Type,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
           "normalizedSignature": "BeginRenderingComponent|(System.Type,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer::BeginRenderingComponent(Microsoft.AspNetCore.Components.IComponent,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
           "clrName": "BeginRenderingComponent",
-          "tsEmitName": "beginRenderingComponent",
           "metadataToken": 100663424,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.IComponent,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent",
           "normalizedSignature": "BeginRenderingComponent|(Microsoft.AspNetCore.Components.IComponent,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -41,14 +59,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer::Dispatcher:Microsoft.AspNetCore.Components.Dispatcher",
           "clrName": "Dispatcher",
-          "tsEmitName": "dispatcher",
           "metadataToken": 385876009,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Dispatcher",
           "normalizedSignature": "Dispatcher|:Microsoft.AspNetCore.Components.Dispatcher|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -65,113 +87,6 @@
           "parameterCount": 2,
           "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "beginRenderingComponent",
-          "isStatic": false,
-          "tsSignatureId": "BeginRenderingComponent|(System.Type,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 100663423
-          }
-        },
-        {
-          "tsName": "beginRenderingComponent",
-          "isStatic": false,
-          "tsSignatureId": "BeginRenderingComponent|(Microsoft.AspNetCore.Components.IComponent,Microsoft.AspNetCore.Components.ParameterView):Microsoft.AspNetCore.Components.Web.HtmlRendering.HtmlRootComponent|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 100663424
-          }
-        },
-        {
-          "tsName": "dispatchEventAsync",
-          "isStatic": false,
-          "tsSignatureId": "DispatchEventAsync|(System.UInt64,Microsoft.AspNetCore.Components.RenderTree.EventFieldInfo,System.EventArgs):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100664696
-          }
-        },
-        {
-          "tsName": "dispatchEventAsync",
-          "isStatic": false,
-          "tsSignatureId": "DispatchEventAsync|(System.UInt64,Microsoft.AspNetCore.Components.RenderTree.EventFieldInfo,System.EventArgs,System.Boolean):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100664697
-          }
-        },
-        {
-          "tsName": "getEventArgsType",
-          "isStatic": false,
-          "tsSignatureId": "GetEventArgsType|(System.UInt64):System.Type|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100664698
-          }
-        },
-        {
-          "tsName": "dispose",
-          "isStatic": false,
-          "tsSignatureId": "Dispose|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100664725
-          }
-        },
-        {
-          "tsName": "disposeAsync",
-          "isStatic": false,
-          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100664726
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "dispatcher",
-          "isStatic": false,
-          "tsSignatureId": "Dispatcher|:Microsoft.AspNetCore.Components.Dispatcher|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 385876009
-          }
-        }
-      ],
-      "exposedEvents": [
-        {
-          "tsName": "unhandledSynchronizationException",
-          "isStatic": false,
-          "tsSignatureId": "UnhandledSynchronizationException|System.UnhandledExceptionEventHandler|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.RenderTree.Renderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 335544325
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.IServiceProvider,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 100663420
-          }
         }
       ]
     }

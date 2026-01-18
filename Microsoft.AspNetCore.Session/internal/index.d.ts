@@ -25,22 +25,22 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ISessionStore$instance {
-    create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
+    Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
 }
 
 
 export type ISessionStore = ISessionStore$instance;
 
 export interface DistributedSession$instance {
-    readonly id: string;
-    readonly isAvailable: boolean;
-    readonly keys: IEnumerable<System_Internal.String>;
-    clear(): void;
-    commitAsync(cancellationToken?: CancellationToken): Task;
-    loadAsync(cancellationToken?: CancellationToken): Task;
-    remove(key: string): void;
-    set(key: string, value: byte[]): void;
-    tryGetValue(key: string, value: byte[]): boolean;
+    readonly Id: string;
+    readonly IsAvailable: boolean;
+    readonly Keys: IEnumerable<System_Internal.String>;
+    Clear(): void;
+    CommitAsync(cancellationToken?: CancellationToken): Task;
+    LoadAsync(cancellationToken?: CancellationToken): Task;
+    Remove(key: string): void;
+    Set(key: string, value: byte[]): void;
+    TryGetValue(key: string, value: byte[]): boolean;
 }
 
 
@@ -59,7 +59,7 @@ export type DistributedSession = DistributedSession$instance & __DistributedSess
 
 
 export interface DistributedSessionStore$instance {
-    create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
+    Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
 }
 
 
@@ -78,7 +78,7 @@ export type DistributedSessionStore = DistributedSessionStore$instance & __Distr
 
 
 export interface SessionFeature$instance {
-    session: ISession;
+    Session: ISession;
 }
 
 
@@ -97,7 +97,7 @@ export type SessionFeature = SessionFeature$instance & __SessionFeature$views;
 
 
 export interface SessionMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -109,8 +109,8 @@ export const SessionMiddleware: {
 export type SessionMiddleware = SessionMiddleware$instance;
 
 export abstract class SessionDefaults$instance {
-    static readonly cookieName: string;
-    static readonly cookiePath: string;
+    static readonly CookieName: string;
+    static readonly CookiePath: string;
 }
 
 

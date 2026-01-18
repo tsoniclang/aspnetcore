@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Connections.Abstractions",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Connections.Abstractions"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
       "clrName": "Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
-      "tsEmitName": "IStatefulReconnectFeature",
       "assemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature::OnReconnected(System.Func_2[[System.IO.Pipelines.PipeWriter,System.IO.Pipelines,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "OnReconnected",
-          "tsEmitName": "onReconnected",
           "metadataToken": 100663453,
           "canonicalSignature": "(System.Func_2[[System.IO.Pipelines.PipeWriter,System.IO.Pipelines,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "OnReconnected|(System.Func_2[[System.IO.Pipelines.PipeWriter,System.IO.Pipelines,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature::DisableReconnect():System.Void",
           "clrName": "DisableReconnect",
-          "tsEmitName": "disableReconnect",
           "metadataToken": 100663454,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "DisableReconnect|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -40,29 +58,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "onReconnected",
-          "isStatic": false,
-          "tsSignatureId": "OnReconnected|(System.Func_2[[System.IO.Pipelines.PipeWriter,System.IO.Pipelines,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
-            "metadataToken": 100663453
-          }
-        },
-        {
-          "tsName": "disableReconnect",
-          "isStatic": false,
-          "tsSignatureId": "DisableReconnect|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
-            "metadataToken": 100663454
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

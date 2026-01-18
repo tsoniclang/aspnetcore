@@ -30,29 +30,29 @@ import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Exten
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum PersistenceMode {
-    server = 0,
-    webAssembly = 1
+    Server = 0,
+    WebAssembly = 1
 }
 
 
 export interface AnchorTagHelper$instance extends TagHelper, ITagHelper {
-    action: string;
-    area: string;
-    controller: string;
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    host: string;
-    readonly order: int;
-    page: string;
-    get pageHandler(): string | undefined;
-    set pageHandler(value: string);
-    protocol: string;
-    route: string;
-    routeValues: IDictionary<System_Internal.String, System_Internal.String>;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Action: string;
+    Area: string;
+    Controller: string;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    Host: string;
+    readonly Order: int;
+    Page: string;
+    get PageHandler(): string | undefined;
+    set PageHandler(value: string);
+    Protocol: string;
+    Route: string;
+    RouteValues: IDictionary<System_Internal.String, System_Internal.String>;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -71,15 +71,15 @@ export type AnchorTagHelper = AnchorTagHelper$instance & __AnchorTagHelper$views
 
 
 export interface CacheTagHelper$instance extends CacheTagHelperBase$instance {
-    priority: Nullable<CacheItemPriority>;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Priority: Nullable<CacheItemPriority>;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
 export const CacheTagHelper: {
     new(factory: CacheTagHelperMemoryCacheFactory, htmlEncoder: HtmlEncoder): CacheTagHelper;
-    readonly cacheKeyPrefix: string;
+    readonly CacheKeyPrefix: string;
 };
 
 
@@ -91,28 +91,28 @@ export type CacheTagHelper = CacheTagHelper$instance & __CacheTagHelper$views;
 
 
 export interface CacheTagHelperBase$instance extends TagHelper, ITagHelper {
-    enabled: boolean;
-    expiresAfter: Nullable<TimeSpan>;
-    expiresOn: Nullable<DateTimeOffset>;
-    expiresSliding: Nullable<TimeSpan>;
-    readonly order: int;
-    varyBy: string;
-    varyByCookie: string;
-    varyByCulture: boolean;
-    get varyByHeader(): string | undefined;
-    set varyByHeader(value: string);
-    varyByQuery: string;
-    varyByRoute: string;
-    varyByUser: boolean;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Enabled: boolean;
+    ExpiresAfter: Nullable<TimeSpan>;
+    ExpiresOn: Nullable<DateTimeOffset>;
+    ExpiresSliding: Nullable<TimeSpan>;
+    readonly Order: int;
+    VaryBy: string;
+    VaryByCookie: string;
+    VaryByCulture: boolean;
+    get VaryByHeader(): string | undefined;
+    set VaryByHeader(value: string);
+    VaryByQuery: string;
+    VaryByRoute: string;
+    VaryByUser: boolean;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
 export const CacheTagHelperBase: {
     new(htmlEncoder: HtmlEncoder): CacheTagHelperBase;
-    readonly defaultExpiration: TimeSpan;
+    readonly DefaultExpiration: TimeSpan;
 };
 
 
@@ -126,7 +126,7 @@ export type CacheTagHelperBase = CacheTagHelperBase$instance & __CacheTagHelperB
 
 
 export interface CacheTagHelperMemoryCacheFactory$instance {
-    readonly cache: IMemoryCache;
+    readonly Cache: IMemoryCache;
 }
 
 
@@ -138,7 +138,7 @@ export const CacheTagHelperMemoryCacheFactory: {
 export type CacheTagHelperMemoryCacheFactory = CacheTagHelperMemoryCacheFactory$instance;
 
 export interface CacheTagHelperOptions$instance {
-    sizeLimit: long;
+    SizeLimit: long;
 }
 
 
@@ -150,12 +150,12 @@ export const CacheTagHelperOptions: {
 export type CacheTagHelperOptions = CacheTagHelperOptions$instance;
 
 export interface ComponentTagHelper$instance extends TagHelper {
-    componentType: Type;
-    parameters: IDictionary<System_Internal.String, unknown>;
-    renderMode: RenderMode;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    ComponentType: Type;
+    Parameters: IDictionary<System_Internal.String, unknown>;
+    RenderMode: RenderMode;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -174,15 +174,15 @@ export type ComponentTagHelper = ComponentTagHelper$instance & __ComponentTagHel
 
 
 export interface DistributedCacheTagHelper$instance extends CacheTagHelperBase$instance {
-    name: string;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Name: string;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
 export const DistributedCacheTagHelper: {
     new(distributedCacheService: IDistributedCacheTagHelperService, htmlEncoder: HtmlEncoder): DistributedCacheTagHelper;
-    readonly cacheKeyPrefix: string;
+    readonly CacheKeyPrefix: string;
 };
 
 
@@ -194,13 +194,13 @@ export type DistributedCacheTagHelper = DistributedCacheTagHelper$instance & __D
 
 
 export interface EnvironmentTagHelper$instance extends TagHelper, ITagHelper {
-    exclude: string;
-    include: string;
-    names: string;
-    readonly order: int;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Exclude: string;
+    Include: string;
+    Names: string;
+    readonly Order: int;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -219,21 +219,21 @@ export type EnvironmentTagHelper = EnvironmentTagHelper$instance & __Environment
 
 
 export interface FormActionTagHelper$instance extends TagHelper, ITagHelper {
-    action: string;
-    area: string;
-    controller: string;
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    readonly order: int;
-    page: string;
-    get pageHandler(): string | undefined;
-    set pageHandler(value: string);
-    route: string;
-    routeValues: IDictionary<System_Internal.String, System_Internal.String>;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Action: string;
+    Area: string;
+    Controller: string;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    readonly Order: int;
+    Page: string;
+    get PageHandler(): string | undefined;
+    set PageHandler(value: string);
+    Route: string;
+    RouteValues: IDictionary<System_Internal.String, System_Internal.String>;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -252,23 +252,23 @@ export type FormActionTagHelper = FormActionTagHelper$instance & __FormActionTag
 
 
 export interface FormTagHelper$instance extends TagHelper, ITagHelper {
-    action: string;
-    antiforgery: Nullable<System_Internal.Boolean>;
-    area: string;
-    controller: string;
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    method: string;
-    readonly order: int;
-    page: string;
-    get pageHandler(): string | undefined;
-    set pageHandler(value: string);
-    route: string;
-    routeValues: IDictionary<System_Internal.String, System_Internal.String>;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Action: string;
+    Antiforgery: Nullable<System_Internal.Boolean>;
+    Area: string;
+    Controller: string;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    Method: string;
+    readonly Order: int;
+    Page: string;
+    get PageHandler(): string | undefined;
+    set PageHandler(value: string);
+    Route: string;
+    RouteValues: IDictionary<System_Internal.String, System_Internal.String>;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -287,10 +287,10 @@ export type FormTagHelper = FormTagHelper$instance & __FormTagHelper$views;
 
 
 export interface GlobbingUrlBuilder$instance {
-    readonly cache: IMemoryCache;
-    readonly fileProvider: IFileProvider | undefined;
-    readonly requestPathBase: PathString;
-    buildUrlList(staticUrl: string, includePattern: string, excludePattern: string): IReadOnlyList<System_Internal.String>;
+    readonly Cache: IMemoryCache;
+    readonly FileProvider: IFileProvider | undefined;
+    readonly RequestPathBase: PathString;
+    BuildUrlList(staticUrl: string, includePattern: string, excludePattern: string): IReadOnlyList<System_Internal.String>;
 }
 
 
@@ -302,12 +302,12 @@ export const GlobbingUrlBuilder: {
 export type GlobbingUrlBuilder = GlobbingUrlBuilder$instance;
 
 export interface ImageTagHelper$instance extends UrlResolutionTagHelper, ITagHelper {
-    appendVersion: boolean;
-    readonly order: int;
-    src: string;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    AppendVersion: boolean;
+    readonly Order: int;
+    Src: string;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -325,19 +325,19 @@ export type ImageTagHelper = ImageTagHelper$instance & __ImageTagHelper$views;
 
 
 export interface InputTagHelper$instance extends TagHelper, ITagHelper {
-    get for(): ModelExpression | undefined;
-    set for(value: ModelExpression);
-    format: string;
-    get formName(): string | undefined;
-    set formName(value: string);
-    inputTypeName: string;
-    name: string;
-    readonly order: int;
-    value: string;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    get For(): ModelExpression | undefined;
+    set For(value: ModelExpression);
+    Format: string;
+    get FormName(): string | undefined;
+    set FormName(value: string);
+    InputTypeName: string;
+    Name: string;
+    readonly Order: int;
+    Value: string;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -356,12 +356,12 @@ export type InputTagHelper = InputTagHelper$instance & __InputTagHelper$views;
 
 
 export interface LabelTagHelper$instance extends TagHelper, ITagHelper {
-    get for(): ModelExpression | undefined;
-    set for(value: ModelExpression);
-    readonly order: int;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    get For(): ModelExpression | undefined;
+    set For(value: ModelExpression);
+    readonly Order: int;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -380,21 +380,21 @@ export type LabelTagHelper = LabelTagHelper$instance & __LabelTagHelper$views;
 
 
 export interface LinkTagHelper$instance extends UrlResolutionTagHelper, ITagHelper {
-    appendVersion: Nullable<System_Internal.Boolean>;
-    fallbackHref: string;
-    fallbackHrefExclude: string;
-    fallbackHrefInclude: string;
-    fallbackTestClass: string;
-    fallbackTestProperty: string;
-    fallbackTestValue: string;
-    href: string;
-    hrefExclude: string;
-    hrefInclude: string;
-    readonly order: int;
-    suppressFallbackIntegrity: boolean;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    AppendVersion: Nullable<System_Internal.Boolean>;
+    FallbackHref: string;
+    FallbackHrefExclude: string;
+    FallbackHrefInclude: string;
+    FallbackTestClass: string;
+    FallbackTestProperty: string;
+    FallbackTestValue: string;
+    Href: string;
+    HrefExclude: string;
+    HrefInclude: string;
+    readonly Order: int;
+    SuppressFallbackIntegrity: boolean;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -411,11 +411,11 @@ export type LinkTagHelper = LinkTagHelper$instance & __LinkTagHelper$views;
 
 
 export interface OptionTagHelper$instance extends TagHelper, ITagHelper {
-    readonly order: int;
-    value: string;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    Value: string;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -434,16 +434,16 @@ export type OptionTagHelper = OptionTagHelper$instance & __OptionTagHelper$views
 
 
 export interface PartialTagHelper$instance extends TagHelper {
-    fallbackName: string;
-    get for(): ModelExpression | undefined;
-    set for(value: ModelExpression);
-    model: unknown;
-    name: string;
-    optional: boolean;
-    viewContext: ViewContext;
-    viewData: ViewDataDictionary;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    FallbackName: string;
+    get For(): ModelExpression | undefined;
+    set For(value: ModelExpression);
+    Model: unknown;
+    Name: string;
+    Optional: boolean;
+    ViewContext: ViewContext;
+    ViewData: ViewDataDictionary;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -462,10 +462,10 @@ export type PartialTagHelper = PartialTagHelper$instance & __PartialTagHelper$vi
 
 
 export interface PersistComponentStateTagHelper$instance extends TagHelper {
-    persistenceMode: Nullable<PersistenceMode>;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    PersistenceMode: Nullable<PersistenceMode>;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -484,10 +484,10 @@ export type PersistComponentStateTagHelper = PersistComponentStateTagHelper$inst
 
 
 export interface RenderAtEndOfFormTagHelper$instance extends TagHelper, ITagHelper {
-    readonly order: int;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -506,20 +506,20 @@ export type RenderAtEndOfFormTagHelper = RenderAtEndOfFormTagHelper$instance & _
 
 
 export interface ScriptTagHelper$instance extends UrlResolutionTagHelper, ITagHelper {
-    appendVersion: Nullable<System_Internal.Boolean>;
-    fallbackSrc: string;
-    fallbackSrcExclude: string;
-    fallbackSrcInclude: string;
-    fallbackTestExpression: string;
-    importMap: ImportMapDefinition;
-    readonly order: int;
-    src: string;
-    srcExclude: string;
-    srcInclude: string;
-    suppressFallbackIntegrity: boolean;
-    type: string;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    AppendVersion: Nullable<System_Internal.Boolean>;
+    FallbackSrc: string;
+    FallbackSrcExclude: string;
+    FallbackSrcInclude: string;
+    FallbackTestExpression: string;
+    ImportMap: ImportMapDefinition;
+    readonly Order: int;
+    Src: string;
+    SrcExclude: string;
+    SrcInclude: string;
+    SuppressFallbackIntegrity: boolean;
+    Type: string;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -536,15 +536,15 @@ export type ScriptTagHelper = ScriptTagHelper$instance & __ScriptTagHelper$views
 
 
 export interface SelectTagHelper$instance extends TagHelper, ITagHelper {
-    get for(): ModelExpression | undefined;
-    set for(value: ModelExpression);
-    items: IEnumerable<SelectListItem>;
-    name: string;
-    readonly order: int;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    get For(): ModelExpression | undefined;
+    set For(value: ModelExpression);
+    Items: IEnumerable<SelectListItem>;
+    Name: string;
+    readonly Order: int;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -563,14 +563,14 @@ export type SelectTagHelper = SelectTagHelper$instance & __SelectTagHelper$views
 
 
 export interface TextAreaTagHelper$instance extends TagHelper, ITagHelper {
-    get for(): ModelExpression | undefined;
-    set for(value: ModelExpression);
-    name: string;
-    readonly order: int;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    get For(): ModelExpression | undefined;
+    set For(value: ModelExpression);
+    Name: string;
+    readonly Order: int;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -589,12 +589,12 @@ export type TextAreaTagHelper = TextAreaTagHelper$instance & __TextAreaTagHelper
 
 
 export interface ValidationMessageTagHelper$instance extends TagHelper, ITagHelper {
-    get for(): ModelExpression | undefined;
-    set for(value: ModelExpression);
-    readonly order: int;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    get For(): ModelExpression | undefined;
+    set For(value: ModelExpression);
+    readonly Order: int;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -613,12 +613,12 @@ export type ValidationMessageTagHelper = ValidationMessageTagHelper$instance & _
 
 
 export interface ValidationSummaryTagHelper$instance extends TagHelper, ITagHelper {
-    readonly order: int;
-    validationSummary: ValidationSummary;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    ValidationSummary: ValidationSummary;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -637,11 +637,11 @@ export type ValidationSummaryTagHelper = ValidationSummaryTagHelper$instance & _
 
 
 export abstract class TagHelperOutputExtensions$instance {
-    static addClass(tagHelperOutput: TagHelperOutput, classValue: string, htmlEncoder: HtmlEncoder): void;
-    static copyHtmlAttribute(tagHelperOutput: TagHelperOutput, attributeName: string, context: TagHelperContext): void;
-    static mergeAttributes(tagHelperOutput: TagHelperOutput, tagBuilder: TagBuilder): void;
-    static removeClass(tagHelperOutput: TagHelperOutput, classValue: string, htmlEncoder: HtmlEncoder): void;
-    static removeRange(tagHelperOutput: TagHelperOutput, attributes: IEnumerable<TagHelperAttribute>): void;
+    static AddClass(tagHelperOutput: TagHelperOutput, classValue: string, htmlEncoder: HtmlEncoder): void;
+    static CopyHtmlAttribute(tagHelperOutput: TagHelperOutput, attributeName: string, context: TagHelperContext): void;
+    static MergeAttributes(tagHelperOutput: TagHelperOutput, tagBuilder: TagBuilder): void;
+    static RemoveClass(tagHelperOutput: TagHelperOutput, classValue: string, htmlEncoder: HtmlEncoder): void;
+    static RemoveRange(tagHelperOutput: TagHelperOutput, attributes: IEnumerable<TagHelperAttribute>): void;
 }
 
 

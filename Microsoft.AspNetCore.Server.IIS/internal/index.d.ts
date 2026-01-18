@@ -14,22 +14,22 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export interface IIISEnvironmentFeature$instance {
-    readonly iisVersion: Version;
-    readonly appPoolId: string;
-    readonly appPoolConfigFile: string;
-    readonly appConfigPath: string;
-    readonly applicationPhysicalPath: string;
-    readonly applicationVirtualPath: string;
-    readonly applicationId: string;
-    readonly siteName: string;
-    readonly siteId: uint;
+    readonly IISVersion: Version;
+    readonly AppPoolId: string;
+    readonly AppPoolConfigFile: string;
+    readonly AppConfigPath: string;
+    readonly ApplicationPhysicalPath: string;
+    readonly ApplicationVirtualPath: string;
+    readonly ApplicationId: string;
+    readonly SiteName: string;
+    readonly SiteId: uint;
 }
 
 
 export type IIISEnvironmentFeature = IIISEnvironmentFeature$instance;
 
 export interface BadHttpRequestException$instance extends BadHttpRequestException_Http {
-    readonly statusCode: int;
+    readonly StatusCode: int;
 }
 
 
@@ -46,14 +46,14 @@ export interface IISServerDefaults$instance {
 
 export const IISServerDefaults: {
     new(): IISServerDefaults;
-    readonly authenticationScheme: string;
+    readonly AuthenticationScheme: string;
 };
 
 
 export type IISServerDefaults = IISServerDefaults$instance;
 
 export abstract class HttpContextExtensions$instance {
-    static getIISServerVariable(context: HttpContext, variableName: string): string | undefined;
+    static GetIISServerVariable(context: HttpContext, variableName: string): string | undefined;
 }
 
 

@@ -36,23 +36,23 @@ import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IPageHandlerMethodSelector$instance {
-    select(context: PageContext): HandlerMethodDescriptor | undefined;
+    Select(context: PageContext): HandlerMethodDescriptor | undefined;
 }
 
 
 export type IPageHandlerMethodSelector = IPageHandlerMethodSelector$instance;
 
 export interface IPageLoader$instance {
-    load(actionDescriptor: PageActionDescriptor): CompiledPageActionDescriptor;
+    Load(actionDescriptor: PageActionDescriptor): CompiledPageActionDescriptor;
 }
 
 
 export type IPageLoader = IPageLoader$instance;
 
 export interface CompiledPageActionDescriptorProvider$instance {
-    readonly order: int;
-    onProvidersExecuted(context: ActionDescriptorProviderContext): void;
-    onProvidersExecuting(context: ActionDescriptorProviderContext): void;
+    readonly Order: int;
+    OnProvidersExecuted(context: ActionDescriptorProviderContext): void;
+    OnProvidersExecuting(context: ActionDescriptorProviderContext): void;
 }
 
 
@@ -71,10 +71,10 @@ export type CompiledPageActionDescriptorProvider = CompiledPageActionDescriptorP
 
 
 export interface HandlerMethodDescriptor$instance {
-    httpMethod: string;
-    methodInfo: MethodInfo;
-    name: string;
-    parameters: IList<HandlerParameterDescriptor>;
+    HttpMethod: string;
+    MethodInfo: MethodInfo;
+    Name: string;
+    Parameters: IList<HandlerParameterDescriptor>;
 }
 
 
@@ -86,7 +86,7 @@ export const HandlerMethodDescriptor: {
 export type HandlerMethodDescriptor = HandlerMethodDescriptor$instance;
 
 export interface HandlerParameterDescriptor$instance extends ParameterDescriptor {
-    parameterInfo: ParameterInfo;
+    ParameterInfo: ParameterInfo;
 }
 
 
@@ -103,9 +103,9 @@ export type HandlerParameterDescriptor = HandlerParameterDescriptor$instance & _
 
 
 export interface PageActionDescriptorProvider$instance {
-    order: int;
-    onProvidersExecuted(context: ActionDescriptorProviderContext): void;
-    onProvidersExecuting(context: ActionDescriptorProviderContext): void;
+    Order: int;
+    OnProvidersExecuted(context: ActionDescriptorProviderContext): void;
+    OnProvidersExecuting(context: ActionDescriptorProviderContext): void;
 }
 
 
@@ -122,7 +122,7 @@ export type PageActionDescriptorProvider = PageActionDescriptorProvider$instance
 
 
 export interface PageBoundPropertyDescriptor$instance extends ParameterDescriptor {
-    property: PropertyInfo;
+    Property: PropertyInfo;
 }
 
 
@@ -141,8 +141,8 @@ export type PageBoundPropertyDescriptor = PageBoundPropertyDescriptor$instance &
 
 
 export interface PageLoader$instance {
-    loadAsync(actionDescriptor: PageActionDescriptor): Task<CompiledPageActionDescriptor>;
-    loadAsync(actionDescriptor: PageActionDescriptor, endpointMetadata: EndpointMetadataCollection): Task<CompiledPageActionDescriptor>;
+    LoadAsync(actionDescriptor: PageActionDescriptor): Task<CompiledPageActionDescriptor>;
+    LoadAsync(actionDescriptor: PageActionDescriptor, endpointMetadata: EndpointMetadataCollection): Task<CompiledPageActionDescriptor>;
 }
 
 
@@ -171,8 +171,8 @@ export const PageModelAttribute: {
 export type PageModelAttribute = PageModelAttribute$instance;
 
 export interface PageResultExecutor$instance extends ViewExecutor {
-    executeAsync(pageContext: PageContext, result: PageResult): Task;
-    executeAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    ExecuteAsync(pageContext: PageContext, result: PageResult): Task;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
 }
 
 
@@ -184,8 +184,8 @@ export const PageResultExecutor: {
 export type PageResultExecutor = PageResultExecutor$instance;
 
 export interface PageViewLocationExpander$instance {
-    expandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
-    populateValues(context: ViewLocationExpanderContext): void;
+    ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
+    PopulateValues(context: ViewLocationExpanderContext): void;
 }
 
 
@@ -204,16 +204,16 @@ export type PageViewLocationExpander = PageViewLocationExpander$instance & __Pag
 
 
 export interface RazorPageAdapter$instance {
-    get bodyContent(): IHtmlContent | undefined;
-    set bodyContent(value: IHtmlContent);
-    isLayoutBeingRendered: boolean;
-    layout: string;
-    path: string;
-    previousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
-    readonly sectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
-    viewContext: ViewContext;
-    ensureRenderedBodyOrSections(): void;
-    executeAsync(): Task;
+    get BodyContent(): IHtmlContent | undefined;
+    set BodyContent(value: IHtmlContent);
+    IsLayoutBeingRendered: boolean;
+    Layout: string;
+    Path: string;
+    PreviousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
+    readonly SectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
+    ViewContext: ViewContext;
+    EnsureRenderedBodyOrSections(): void;
+    ExecuteAsync(): Task;
 }
 
 
@@ -232,7 +232,7 @@ export type RazorPageAdapter = RazorPageAdapter$instance & __RazorPageAdapter$vi
 
 
 export interface RazorPageAttribute$instance extends RazorViewAttribute {
-    readonly routeTemplate: string;
+    readonly RouteTemplate: string;
 }
 
 
@@ -244,8 +244,8 @@ export const RazorPageAttribute: {
 export type RazorPageAttribute = RazorPageAttribute$instance;
 
 export interface ServiceBasedPageModelActivatorProvider$instance {
-    createActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown>;
-    createReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
+    CreateActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown>;
+    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
 }
 
 

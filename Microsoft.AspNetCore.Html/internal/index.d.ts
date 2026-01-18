@@ -14,8 +14,8 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IHtmlAsyncContent$instance extends IHtmlContent {
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
-    writeToAsync(writer: TextWriter): ValueTask;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    WriteToAsync(writer: TextWriter): ValueTask;
 }
 
 
@@ -24,26 +24,26 @@ export interface IHtmlAsyncContent$instance extends IHtmlContent$instance {}
 export type IHtmlAsyncContent = IHtmlAsyncContent$instance;
 
 export interface IHtmlContent$instance {
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
 export type IHtmlContent = IHtmlContent$instance;
 
 export interface IHtmlContentBuilder$instance extends IHtmlContentContainer, IHtmlContent {
-    append(unencoded: string): IHtmlContentBuilder;
-    appendHtml(content: IHtmlContent): IHtmlContentBuilder;
-    clear(): IHtmlContentBuilder;
-    copyTo(builder: IHtmlContentBuilder): void;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    Append(unencoded: string): IHtmlContentBuilder;
+    AppendHtml(content: IHtmlContent): IHtmlContentBuilder;
+    Clear(): IHtmlContentBuilder;
+    CopyTo(builder: IHtmlContentBuilder): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
 export type IHtmlContentBuilder = IHtmlContentBuilder$instance;
 
 export interface IHtmlContentContainer$instance extends IHtmlContent {
-    copyTo(builder: IHtmlContentBuilder): void;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    CopyTo(builder: IHtmlContentBuilder): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -52,14 +52,14 @@ export interface IHtmlContentContainer$instance extends IHtmlContent$instance {}
 export type IHtmlContentContainer = IHtmlContentContainer$instance;
 
 export interface HtmlContentBuilder$instance {
-    readonly count: int;
-    append(unencoded: string): IHtmlContentBuilder;
-    appendHtml(htmlContent: IHtmlContent): IHtmlContentBuilder;
-    appendHtml(encoded: string): IHtmlContentBuilder;
-    clear(): IHtmlContentBuilder;
-    copyTo(destination: IHtmlContentBuilder): void;
-    moveTo(destination: IHtmlContentBuilder): void;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly Count: int;
+    Append(unencoded: string): IHtmlContentBuilder;
+    AppendHtml(htmlContent: IHtmlContent): IHtmlContentBuilder;
+    AppendHtml(encoded: string): IHtmlContentBuilder;
+    Clear(): IHtmlContentBuilder;
+    CopyTo(destination: IHtmlContentBuilder): void;
+    MoveTo(destination: IHtmlContentBuilder): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -80,7 +80,7 @@ export type HtmlContentBuilder = HtmlContentBuilder$instance & __HtmlContentBuil
 
 
 export interface HtmlFormattableString$instance {
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -100,16 +100,16 @@ export type HtmlFormattableString = HtmlFormattableString$instance & __HtmlForma
 
 
 export interface HtmlString$instance {
-    readonly value: string;
-    toString(): string;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly Value: string;
+    ToString(): string;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
 export const HtmlString: {
     new(value: string): HtmlString;
-    readonly newLine: HtmlString;
-    readonly empty: HtmlString;
+    readonly NewLine: HtmlString;
+    readonly Empty: HtmlString;
 };
 
 
@@ -123,15 +123,15 @@ export type HtmlString = HtmlString$instance & __HtmlString$views;
 
 
 export abstract class HtmlContentBuilderExtensions$instance {
-    static appendFormat(builder: IHtmlContentBuilder, formatProvider: IFormatProvider, format: string, ...args: unknown[]): IHtmlContentBuilder;
-    static appendFormat(builder: IHtmlContentBuilder, format: string, ...args: unknown[]): IHtmlContentBuilder;
-    static appendHtmlLine(builder: IHtmlContentBuilder, encoded: string): IHtmlContentBuilder;
-    static appendLine(builder: IHtmlContentBuilder, content: IHtmlContent): IHtmlContentBuilder;
-    static appendLine(builder: IHtmlContentBuilder, unencoded: string): IHtmlContentBuilder;
-    static appendLine(builder: IHtmlContentBuilder): IHtmlContentBuilder;
-    static setContent(builder: IHtmlContentBuilder, unencoded: string): IHtmlContentBuilder;
-    static setHtmlContent(builder: IHtmlContentBuilder, content: IHtmlContent): IHtmlContentBuilder;
-    static setHtmlContent(builder: IHtmlContentBuilder, encoded: string): IHtmlContentBuilder;
+    static AppendFormat(builder: IHtmlContentBuilder, formatProvider: IFormatProvider, format: string, ...args: unknown[]): IHtmlContentBuilder;
+    static AppendFormat(builder: IHtmlContentBuilder, format: string, ...args: unknown[]): IHtmlContentBuilder;
+    static AppendHtmlLine(builder: IHtmlContentBuilder, encoded: string): IHtmlContentBuilder;
+    static AppendLine(builder: IHtmlContentBuilder, content: IHtmlContent): IHtmlContentBuilder;
+    static AppendLine(builder: IHtmlContentBuilder, unencoded: string): IHtmlContentBuilder;
+    static AppendLine(builder: IHtmlContentBuilder): IHtmlContentBuilder;
+    static SetContent(builder: IHtmlContentBuilder, unencoded: string): IHtmlContentBuilder;
+    static SetHtmlContent(builder: IHtmlContentBuilder, content: IHtmlContent): IHtmlContentBuilder;
+    static SetHtmlContent(builder: IHtmlContentBuilder, encoded: string): IHtmlContentBuilder;
 }
 
 

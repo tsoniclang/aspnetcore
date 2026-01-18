@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Mvc.RazorPages"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageHandlerMethodSelector",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageHandlerMethodSelector",
-      "tsEmitName": "IPageHandlerMethodSelector",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageHandlerMethodSelector::Select(Microsoft.AspNetCore.Mvc.RazorPages.PageContext):Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "clrName": "Select",
-          "tsEmitName": "select",
           "metadataToken": 100663976,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.PageContext):Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "normalizedSignature": "Select|(Microsoft.AspNetCore.Mvc.RazorPages.PageContext):Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageHandlerMethodSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -26,37 +39,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "select",
-          "isStatic": false,
-          "tsSignatureId": "Select|(Microsoft.AspNetCore.Mvc.RazorPages.PageContext):Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageHandlerMethodSelector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663976
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
-      "tsEmitName": "IPageLoader",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader::Load(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor",
           "clrName": "Load",
-          "tsEmitName": "load",
           "metadataToken": 100663977,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor",
           "normalizedSignature": "Load|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -65,37 +76,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "load",
-          "isStatic": false,
-          "tsSignatureId": "Load|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663977
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
-      "tsEmitName": "CompiledPageActionDescriptorProvider",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "clrName": "OnProvidersExecuting",
-          "tsEmitName": "onProvidersExecuting",
           "metadataToken": 100663897,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -103,13 +112,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider::OnProvidersExecuted(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "clrName": "OnProvidersExecuted",
-          "tsEmitName": "onProvidersExecuted",
           "metadataToken": 100663898,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuted|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -117,44 +131,59 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "clrName": "OnProvidersExecuting",
-          "tsEmitName": "onProvidersExecuting$view",
           "metadataToken": 100664089,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385876126,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order$view",
           "metadataToken": 385876307,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -172,134 +201,90 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "onProvidersExecuting",
-          "isStatic": false,
-          "tsSignatureId": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663897
-          }
-        },
-        {
-          "tsName": "onProvidersExecuted",
-          "isStatic": false,
-          "tsSignatureId": "OnProvidersExecuted|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663898
-          }
-        },
-        {
-          "tsName": "onProvidersExecuting$view",
-          "isStatic": false,
-          "tsSignatureId": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 100664089
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876126
-          }
-        },
-        {
-          "tsName": "order$view",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876307
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663895
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
-      "tsEmitName": "HandlerMethodDescriptor",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor::MethodInfo:System.Reflection.MethodInfo",
           "clrName": "MethodInfo",
-          "tsEmitName": "methodInfo",
           "metadataToken": 385876136,
           "canonicalSignature": ":System.Reflection.MethodInfo",
           "normalizedSignature": "MethodInfo|:System.Reflection.MethodInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor::HttpMethod:System.String",
           "clrName": "HttpMethod",
-          "tsEmitName": "httpMethod",
           "metadataToken": 385876137,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HttpMethod|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name",
           "metadataToken": 385876138,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor::Parameters:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Parameters",
-          "tsEmitName": "parameters",
           "metadataToken": 385876139,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Parameters|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -317,94 +302,55 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "methodInfo",
-          "isStatic": false,
-          "tsSignatureId": "MethodInfo|:System.Reflection.MethodInfo|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876136
-          }
-        },
-        {
-          "tsName": "httpMethod",
-          "isStatic": false,
-          "tsSignatureId": "HttpMethod|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876137
-          }
-        },
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876138
-          }
-        },
-        {
-          "tsName": "parameters",
-          "isStatic": false,
-          "tsSignatureId": "Parameters|:System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876139
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663972
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
-      "tsEmitName": "HandlerParameterDescriptor",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor::ParameterInfo:System.Reflection.ParameterInfo",
           "clrName": "ParameterInfo",
-          "tsEmitName": "parameterInfo",
           "metadataToken": 385876140,
           "canonicalSignature": ":System.Reflection.ParameterInfo",
           "normalizedSignature": "ParameterInfo|:System.Reflection.ParameterInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor::ParameterInfo:System.Reflection.ParameterInfo",
           "clrName": "ParameterInfo",
-          "tsEmitName": "parameterInfo$view",
           "metadataToken": 385876708,
           "canonicalSignature": ":System.Reflection.ParameterInfo",
           "normalizedSignature": "ParameterInfo|:System.Reflection.ParameterInfo|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -422,88 +368,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "parameterInfo",
-          "isStatic": false,
-          "tsSignatureId": "ParameterInfo|:System.Reflection.ParameterInfo|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876140
-          }
-        },
-        {
-          "tsName": "parameterInfo$view",
-          "isStatic": false,
-          "tsSignatureId": "ParameterInfo|:System.Reflection.ParameterInfo|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-            "metadataToken": 385876708
-          }
-        },
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876309
-          }
-        },
-        {
-          "tsName": "parameterType",
-          "isStatic": false,
-          "tsSignatureId": "ParameterType|:System.Type|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876310
-          }
-        },
-        {
-          "tsName": "bindingInfo",
-          "isStatic": false,
-          "tsSignatureId": "BindingInfo|:Microsoft.AspNetCore.Mvc.ModelBinding.BindingInfo|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876311
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663975
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
-      "tsEmitName": "PageActionDescriptorProvider",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "clrName": "OnProvidersExecuting",
-          "tsEmitName": "onProvidersExecuting",
           "metadataToken": 100663981,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -511,13 +404,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider::OnProvidersExecuted(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "clrName": "OnProvidersExecuted",
-          "tsEmitName": "onProvidersExecuted",
           "metadataToken": 100663983,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuted|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -525,44 +423,59 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "clrName": "OnProvidersExecuting",
-          "tsEmitName": "onProvidersExecuting$view",
           "metadataToken": 100664089,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
           "normalizedSignature": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385876141,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order$view",
           "metadataToken": 385876307,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -580,106 +493,55 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "onProvidersExecuting",
-          "isStatic": false,
-          "tsSignatureId": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663981
-          }
-        },
-        {
-          "tsName": "onProvidersExecuted",
-          "isStatic": false,
-          "tsSignatureId": "OnProvidersExecuted|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663983
-          }
-        },
-        {
-          "tsName": "onProvidersExecuting$view",
-          "isStatic": false,
-          "tsSignatureId": "OnProvidersExecuting|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 100664089
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876141
-          }
-        },
-        {
-          "tsName": "order$view",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876307
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663978
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
-      "tsEmitName": "PageBoundPropertyDescriptor",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor::Property:System.Reflection.PropertyInfo",
           "clrName": "Property",
-          "tsEmitName": "property",
           "metadataToken": 385876161,
           "canonicalSignature": ":System.Reflection.PropertyInfo",
           "normalizedSignature": "Property|:System.Reflection.PropertyInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor::PropertyInfo:System.Reflection.PropertyInfo",
           "clrName": "PropertyInfo",
-          "tsEmitName": "propertyInfo",
           "metadataToken": 385876709,
           "canonicalSignature": ":System.Reflection.PropertyInfo",
           "normalizedSignature": "PropertyInfo|:System.Reflection.PropertyInfo|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -697,88 +559,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "property",
-          "isStatic": false,
-          "tsSignatureId": "Property|:System.Reflection.PropertyInfo|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876161
-          }
-        },
-        {
-          "tsName": "propertyInfo",
-          "isStatic": false,
-          "tsSignatureId": "PropertyInfo|:System.Reflection.PropertyInfo|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-            "metadataToken": 385876709
-          }
-        },
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876309
-          }
-        },
-        {
-          "tsName": "parameterType",
-          "isStatic": false,
-          "tsSignatureId": "ParameterType|:System.Type|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876310
-          }
-        },
-        {
-          "tsName": "bindingInfo",
-          "isStatic": false,
-          "tsSignatureId": "BindingInfo|:Microsoft.AspNetCore.Mvc.ModelBinding.BindingInfo|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-            "metadataToken": 385876311
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664043
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
-      "tsEmitName": "PageLoader",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader::LoadAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "LoadAsync",
-          "tsEmitName": "loadAsync",
           "metadataToken": 100664054,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "LoadAsync|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -786,13 +595,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader::LoadAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,Microsoft.AspNetCore.Http.EndpointMetadataCollection):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "LoadAsync",
-          "tsEmitName": "loadAsync",
           "metadataToken": 100664055,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,Microsoft.AspNetCore.Http.EndpointMetadataCollection):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "LoadAsync|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,Microsoft.AspNetCore.Http.EndpointMetadataCollection):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -800,61 +614,40 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader::Load(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor",
           "clrName": "Load",
-          "tsEmitName": "load",
           "metadataToken": 100663977,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor",
           "normalizedSignature": "Load|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader"
         }
       ],
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "loadAsync",
-          "isStatic": false,
-          "tsSignatureId": "LoadAsync|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664054
-          }
-        },
-        {
-          "tsName": "loadAsync",
-          "isStatic": false,
-          "tsSignatureId": "LoadAsync|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,Microsoft.AspNetCore.Http.EndpointMetadataCollection):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664055
-          }
-        },
-        {
-          "tsName": "load",
-          "isStatic": false,
-          "tsSignatureId": "Load|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663977
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute",
-      "tsEmitName": "PageModelAttribute",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -870,36 +663,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664058
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
-      "tsEmitName": "PageResultExecutor",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages.PageResult):System.Threading.Tasks.Task",
           "clrName": "ExecuteAsync",
-          "tsEmitName": "executeAsync2",
           "metadataToken": 100664063,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages.PageResult):System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages.PageResult):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -907,13 +699,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1):System.Threading.Tasks.Task",
           "clrName": "ExecuteAsync",
-          "tsEmitName": "executeAsync",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1):System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 6,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -933,68 +730,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "executeAsync2",
-          "isStatic": false,
-          "tsSignatureId": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages.PageResult):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664063
-          }
-        },
-        {
-          "tsName": "executeAsync",
-          "isStatic": false,
-          "tsSignatureId": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "executeAsync",
-          "isStatic": false,
-          "tsSignatureId": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-            "metadataToken": 100664581
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory,Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine,Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine,Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator,System.Diagnostics.DiagnosticListener,System.Text.Encodings.Web.HtmlEncoder):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664062
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
-      "tsEmitName": "PageViewLocationExpander",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander::ExpandViewLocations(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "ExpandViewLocations",
-          "tsEmitName": "expandViewLocations",
           "metadataToken": 100664065,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ExpandViewLocations|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1002,13 +766,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander::PopulateValues(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void",
           "clrName": "PopulateValues",
-          "tsEmitName": "populateValues",
           "metadataToken": 100664066,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void",
           "normalizedSignature": "PopulateValues|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1016,30 +785,42 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander::PopulateValues(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void",
           "clrName": "PopulateValues",
-          "tsEmitName": "populateValues$view",
           "metadataToken": 100663356,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void",
           "normalizedSignature": "PopulateValues|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander::ExpandViewLocations(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "ExpandViewLocations",
-          "tsEmitName": "expandViewLocations$view",
           "metadataToken": 100663357,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ExpandViewLocations|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander"
         }
       ],
       "properties": [],
@@ -1056,78 +837,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "expandViewLocations",
-          "isStatic": false,
-          "tsSignatureId": "ExpandViewLocations|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664065
-          }
-        },
-        {
-          "tsName": "populateValues",
-          "isStatic": false,
-          "tsSignatureId": "PopulateValues|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664066
-          }
-        },
-        {
-          "tsName": "populateValues$view",
-          "isStatic": false,
-          "tsSignatureId": "PopulateValues|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663356
-          }
-        },
-        {
-          "tsName": "expandViewLocations$view",
-          "isStatic": false,
-          "tsSignatureId": "ExpandViewLocations|(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663357
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664067
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-      "tsEmitName": "RazorPageAdapter",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::EnsureRenderedBodyOrSections():System.Void",
           "clrName": "EnsureRenderedBodyOrSections",
-          "tsEmitName": "ensureRenderedBodyOrSections",
           "metadataToken": 100664082,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "EnsureRenderedBodyOrSections|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1135,13 +873,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::ExecuteAsync():System.Threading.Tasks.Task",
           "clrName": "ExecuteAsync",
-          "tsEmitName": "executeAsync",
           "metadataToken": 100664083,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteAsync|():System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1149,226 +892,301 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::ExecuteAsync():System.Threading.Tasks.Task",
           "clrName": "ExecuteAsync",
-          "tsEmitName": "executeAsync$view",
           "metadataToken": 100663346,
           "canonicalSignature": "():System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteAsync|():System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::EnsureRenderedBodyOrSections():System.Void",
           "clrName": "EnsureRenderedBodyOrSections",
-          "tsEmitName": "ensureRenderedBodyOrSections$view",
           "metadataToken": 100663347,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "EnsureRenderedBodyOrSections|():System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::ViewContext:Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "clrName": "ViewContext",
-          "tsEmitName": "viewContext",
           "metadataToken": 385876164,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "normalizedSignature": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::BodyContent:Microsoft.AspNetCore.Html.IHtmlContent",
           "clrName": "BodyContent",
-          "tsEmitName": "bodyContent",
           "metadataToken": 385876165,
           "canonicalSignature": ":Microsoft.AspNetCore.Html.IHtmlContent",
           "normalizedSignature": "BodyContent|:Microsoft.AspNetCore.Html.IHtmlContent|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::IsLayoutBeingRendered:System.Boolean",
           "clrName": "IsLayoutBeingRendered",
-          "tsEmitName": "isLayoutBeingRendered",
           "metadataToken": 385876166,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsLayoutBeingRendered|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::Path:System.String",
           "clrName": "Path",
-          "tsEmitName": "path",
           "metadataToken": 385876167,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::Layout:System.String",
           "clrName": "Layout",
-          "tsEmitName": "layout",
           "metadataToken": 385876168,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Layout|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::PreviousSectionWriters:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "PreviousSectionWriters",
-          "tsEmitName": "previousSectionWriters",
           "metadataToken": 385876169,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "PreviousSectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::SectionWriters:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "SectionWriters",
-          "tsEmitName": "sectionWriters",
           "metadataToken": 385876170,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "SectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::PreviousSectionWriters:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "PreviousSectionWriters",
-          "tsEmitName": "previousSectionWriters$view",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "PreviousSectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::ViewContext:Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "clrName": "ViewContext",
-          "tsEmitName": "viewContext$view",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "normalizedSignature": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::BodyContent:Microsoft.AspNetCore.Html.IHtmlContent",
           "clrName": "BodyContent",
-          "tsEmitName": "bodyContent$view",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.AspNetCore.Html.IHtmlContent",
           "normalizedSignature": "BodyContent|:Microsoft.AspNetCore.Html.IHtmlContent|static=false|accessor=getset",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::IsLayoutBeingRendered:System.Boolean",
           "clrName": "IsLayoutBeingRendered",
-          "tsEmitName": "isLayoutBeingRendered$view",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsLayoutBeingRendered|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::Path:System.String",
           "clrName": "Path",
-          "tsEmitName": "path$view",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=getset",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::Layout:System.String",
           "clrName": "Layout",
-          "tsEmitName": "layout$view",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Layout|:System.String|static=false|accessor=getset",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage::SectionWriters:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "SectionWriters",
-          "tsEmitName": "sectionWriters$view",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "SectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -1386,222 +1204,36 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "ensureRenderedBodyOrSections",
-          "isStatic": false,
-          "tsSignatureId": "EnsureRenderedBodyOrSections|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664082
-          }
-        },
-        {
-          "tsName": "executeAsync",
-          "isStatic": false,
-          "tsSignatureId": "ExecuteAsync|():System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664083
-          }
-        },
-        {
-          "tsName": "executeAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ExecuteAsync|():System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663346
-          }
-        },
-        {
-          "tsName": "ensureRenderedBodyOrSections$view",
-          "isStatic": false,
-          "tsSignatureId": "EnsureRenderedBodyOrSections|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663347
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "viewContext",
-          "isStatic": false,
-          "tsSignatureId": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876164
-          }
-        },
-        {
-          "tsName": "bodyContent",
-          "isStatic": false,
-          "tsSignatureId": "BodyContent|:Microsoft.AspNetCore.Html.IHtmlContent|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876165
-          }
-        },
-        {
-          "tsName": "isLayoutBeingRendered",
-          "isStatic": false,
-          "tsSignatureId": "IsLayoutBeingRendered|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876166
-          }
-        },
-        {
-          "tsName": "path",
-          "isStatic": false,
-          "tsSignatureId": "Path|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876167
-          }
-        },
-        {
-          "tsName": "layout",
-          "isStatic": false,
-          "tsSignatureId": "Layout|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876168
-          }
-        },
-        {
-          "tsName": "previousSectionWriters",
-          "isStatic": false,
-          "tsSignatureId": "PreviousSectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876169
-          }
-        },
-        {
-          "tsName": "sectionWriters",
-          "isStatic": false,
-          "tsSignatureId": "SectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876170
-          }
-        },
-        {
-          "tsName": "previousSectionWriters$view",
-          "isStatic": false,
-          "tsSignatureId": "PreviousSectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "viewContext$view",
-          "isStatic": false,
-          "tsSignatureId": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385875982
-          }
-        },
-        {
-          "tsName": "bodyContent$view",
-          "isStatic": false,
-          "tsSignatureId": "BodyContent|:Microsoft.AspNetCore.Html.IHtmlContent|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385875983
-          }
-        },
-        {
-          "tsName": "isLayoutBeingRendered$view",
-          "isStatic": false,
-          "tsSignatureId": "IsLayoutBeingRendered|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385875984
-          }
-        },
-        {
-          "tsName": "path$view",
-          "isStatic": false,
-          "tsSignatureId": "Path|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "layout$view",
-          "isStatic": false,
-          "tsSignatureId": "Layout|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385875986
-          }
-        },
-        {
-          "tsName": "sectionWriters$view",
-          "isStatic": false,
-          "tsSignatureId": "SectionWriters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385875988
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.Razor.RazorPageBase,System.Type):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664068
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
-      "tsEmitName": "RazorPageAttribute",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute::RouteTemplate:System.String",
           "clrName": "RouteTemplate",
-          "tsEmitName": "routeTemplate",
           "metadataToken": 385876171,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "RouteTemplate|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -1619,68 +1251,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "routeTemplate",
-          "isStatic": false,
-          "tsSignatureId": "RouteTemplate|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 385876171
-          }
-        },
-        {
-          "tsName": "path",
-          "isStatic": false,
-          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876095
-          }
-        },
-        {
-          "tsName": "viewType",
-          "isStatic": false,
-          "tsSignatureId": "ViewType|:System.Type|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876096
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Type,System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664085
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
       "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
-      "tsEmitName": "ServiceBasedPageModelActivatorProvider",
       "assemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider::CreateActivator(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CreateActivator",
-          "tsEmitName": "createActivator",
           "metadataToken": 100664087,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateActivator|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1688,13 +1287,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider::CreateReleaser(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CreateReleaser",
-          "tsEmitName": "createReleaser",
           "metadataToken": 100664088,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateReleaser|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1702,44 +1306,62 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider::CreateAsyncReleaser(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_3[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CreateAsyncReleaser",
-          "tsEmitName": "createAsyncReleaser",
           "metadataToken": 100663524,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_3[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateAsyncReleaser|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_3[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider::CreateActivator(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CreateActivator",
-          "tsEmitName": "createActivator$view",
           "metadataToken": 100663522,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateActivator|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider::CreateReleaser(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CreateReleaser",
-          "tsEmitName": "createReleaser$view",
           "metadataToken": 100663523,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateReleaser|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider"
         }
       ],
       "properties": [],
@@ -1755,69 +1377,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "createActivator",
-          "isStatic": false,
-          "tsSignatureId": "CreateActivator|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664087
-          }
-        },
-        {
-          "tsName": "createReleaser",
-          "isStatic": false,
-          "tsSignatureId": "CreateReleaser|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664088
-          }
-        },
-        {
-          "tsName": "createAsyncReleaser",
-          "isStatic": false,
-          "tsSignatureId": "CreateAsyncReleaser|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_3[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.ValueTask,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663524
-          }
-        },
-        {
-          "tsName": "createActivator$view",
-          "isStatic": false,
-          "tsSignatureId": "CreateActivator|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663522
-          }
-        },
-        {
-          "tsName": "createReleaser$view",
-          "isStatic": false,
-          "tsSignatureId": "CreateReleaser|(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Action_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100663523
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-            "metadataToken": 100664089
-          }
         }
       ]
     }

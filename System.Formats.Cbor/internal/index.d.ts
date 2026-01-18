@@ -16,63 +16,63 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export enum CborConformanceMode {
-    lax = 0,
-    strict = 1,
-    canonical = 2,
-    ctap2Canonical = 3
+    Lax = 0,
+    Strict = 1,
+    Canonical = 2,
+    Ctap2Canonical = 3
 }
 
 
 export enum CborReaderState {
-    undefined = 0,
-    unsignedInteger = 1,
-    negativeInteger = 2,
-    byteString = 3,
-    startIndefiniteLengthByteString = 4,
-    endIndefiniteLengthByteString = 5,
-    textString = 6,
-    startIndefiniteLengthTextString = 7,
-    endIndefiniteLengthTextString = 8,
-    startArray = 9,
-    endArray = 10,
-    startMap = 11,
-    endMap = 12,
-    tag = 13,
-    simpleValue = 14,
-    halfPrecisionFloat = 15,
-    singlePrecisionFloat = 16,
-    doublePrecisionFloat = 17,
-    null = 18,
-    boolean = 19,
-    finished = 20
+    Undefined = 0,
+    UnsignedInteger = 1,
+    NegativeInteger = 2,
+    ByteString = 3,
+    StartIndefiniteLengthByteString = 4,
+    EndIndefiniteLengthByteString = 5,
+    TextString = 6,
+    StartIndefiniteLengthTextString = 7,
+    EndIndefiniteLengthTextString = 8,
+    StartArray = 9,
+    EndArray = 10,
+    StartMap = 11,
+    EndMap = 12,
+    Tag = 13,
+    SimpleValue = 14,
+    HalfPrecisionFloat = 15,
+    SinglePrecisionFloat = 16,
+    DoublePrecisionFloat = 17,
+    Null = 18,
+    Boolean = 19,
+    Finished = 20
 }
 
 
 export enum CborSimpleValue {
-    false = 20,
-    true = 21,
-    null = 22,
-    undefined = 23
+    False = 20,
+    True = 21,
+    Null = 22,
+    Undefined = 23
 }
 
 
 export enum CborTag {
-    dateTimeString = 0,
-    unixTimeSeconds = 1,
-    unsignedBigNum = 2,
-    negativeBigNum = 3,
-    decimalFraction = 4,
-    bigFloat = 5,
-    base64UrlLaterEncoding = 21,
-    base64StringLaterEncoding = 22,
-    base16StringLaterEncoding = 23,
-    encodedCborDataItem = 24,
-    uri = 32,
-    base64Url = 33,
-    base64 = 34,
-    regex = 35,
-    mimeMessage = 36,
-    selfDescribeCbor = 55799
+    DateTimeString = 0,
+    UnixTimeSeconds = 1,
+    UnsignedBigNum = 2,
+    NegativeBigNum = 3,
+    DecimalFraction = 4,
+    BigFloat = 5,
+    Base64UrlLaterEncoding = 21,
+    Base64StringLaterEncoding = 22,
+    Base16StringLaterEncoding = 23,
+    EncodedCborDataItem = 24,
+    Uri = 32,
+    Base64Url = 33,
+    Base64 = 34,
+    Regex = 35,
+    MimeMessage = 36,
+    SelfDescribeCbor = 55799
 }
 
 
@@ -89,46 +89,46 @@ export const CborContentException: {
 export type CborContentException = CborContentException$instance;
 
 export interface CborReader$instance {
-    readonly allowMultipleRootLevelValues: boolean;
-    readonly bytesRemaining: int;
-    readonly conformanceMode: CborConformanceMode;
-    readonly currentDepth: int;
-    peekState(): CborReaderState;
-    peekTag(): CborTag;
-    readBigInteger(): BigInteger;
-    readBoolean(): boolean;
-    readByteString(): byte[];
-    readCborNegativeIntegerRepresentation(): ulong;
-    readDateTimeOffset(): DateTimeOffset;
-    readDecimal(): decimal;
-    readDefiniteLengthByteString(): ReadOnlyMemory<System_Internal.Byte>;
-    readDefiniteLengthTextStringBytes(): ReadOnlyMemory<System_Internal.Byte>;
-    readDouble(): double;
-    readEncodedValue(disableConformanceModeChecks?: boolean): ReadOnlyMemory<System_Internal.Byte>;
-    readEndArray(): void;
-    readEndIndefiniteLengthByteString(): void;
-    readEndIndefiniteLengthTextString(): void;
-    readEndMap(): void;
-    readHalf(): half;
-    readInt32(): int;
-    readInt64(): long;
-    readNull(): void;
-    readSimpleValue(): CborSimpleValue;
-    readSingle(): float;
-    readStartArray(): Nullable<System_Internal.Int32>;
-    readStartIndefiniteLengthByteString(): void;
-    readStartIndefiniteLengthTextString(): void;
-    readStartMap(): Nullable<System_Internal.Int32>;
-    readTag(): CborTag;
-    readTextString(): string;
-    readUInt32(): uint;
-    readUInt64(): ulong;
-    readUnixTimeSeconds(): DateTimeOffset;
-    reset(data: ReadOnlyMemory<System_Internal.Byte>): void;
-    skipToParent(disableConformanceModeChecks?: boolean): void;
-    skipValue(disableConformanceModeChecks?: boolean): void;
-    tryReadByteString(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    tryReadTextString(destination: Span<System_Internal.Char>, charsWritten: int): boolean;
+    readonly AllowMultipleRootLevelValues: boolean;
+    readonly BytesRemaining: int;
+    readonly ConformanceMode: CborConformanceMode;
+    readonly CurrentDepth: int;
+    PeekState(): CborReaderState;
+    PeekTag(): CborTag;
+    ReadBigInteger(): BigInteger;
+    ReadBoolean(): boolean;
+    ReadByteString(): byte[];
+    ReadCborNegativeIntegerRepresentation(): ulong;
+    ReadDateTimeOffset(): DateTimeOffset;
+    ReadDecimal(): decimal;
+    ReadDefiniteLengthByteString(): ReadOnlyMemory<System_Internal.Byte>;
+    ReadDefiniteLengthTextStringBytes(): ReadOnlyMemory<System_Internal.Byte>;
+    ReadDouble(): double;
+    ReadEncodedValue(disableConformanceModeChecks?: boolean): ReadOnlyMemory<System_Internal.Byte>;
+    ReadEndArray(): void;
+    ReadEndIndefiniteLengthByteString(): void;
+    ReadEndIndefiniteLengthTextString(): void;
+    ReadEndMap(): void;
+    ReadHalf(): half;
+    ReadInt32(): int;
+    ReadInt64(): long;
+    ReadNull(): void;
+    ReadSimpleValue(): CborSimpleValue;
+    ReadSingle(): float;
+    ReadStartArray(): Nullable<System_Internal.Int32>;
+    ReadStartIndefiniteLengthByteString(): void;
+    ReadStartIndefiniteLengthTextString(): void;
+    ReadStartMap(): Nullable<System_Internal.Int32>;
+    ReadTag(): CborTag;
+    ReadTextString(): string;
+    ReadUInt32(): uint;
+    ReadUInt64(): ulong;
+    ReadUnixTimeSeconds(): DateTimeOffset;
+    Reset(data: ReadOnlyMemory<System_Internal.Byte>): void;
+    SkipToParent(disableConformanceModeChecks?: boolean): void;
+    SkipValue(disableConformanceModeChecks?: boolean): void;
+    TryReadByteString(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    TryReadTextString(destination: Span<System_Internal.Char>, charsWritten: int): boolean;
 }
 
 
@@ -140,46 +140,46 @@ export const CborReader: {
 export type CborReader = CborReader$instance;
 
 export interface CborWriter$instance {
-    readonly allowMultipleRootLevelValues: boolean;
-    readonly bytesWritten: int;
-    readonly conformanceMode: CborConformanceMode;
-    readonly convertIndefiniteLengthEncodings: boolean;
-    readonly currentDepth: int;
-    readonly isWriteCompleted: boolean;
-    encode(): byte[];
-    encode(destination: Span<System_Internal.Byte>): int;
-    reset(): void;
-    tryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    writeBigInteger(value: BigInteger): void;
-    writeBoolean(value: boolean): void;
-    writeByteString(value: byte[]): void;
-    writeByteString(value: ReadOnlySpan<System_Internal.Byte>): void;
-    writeCborNegativeIntegerRepresentation(value: ulong): void;
-    writeDateTimeOffset(value: DateTimeOffset): void;
-    writeDecimal(value: decimal): void;
-    writeDouble(value: double): void;
-    writeEncodedValue(encodedValue: ReadOnlySpan<System_Internal.Byte>): void;
-    writeEndArray(): void;
-    writeEndIndefiniteLengthByteString(): void;
-    writeEndIndefiniteLengthTextString(): void;
-    writeEndMap(): void;
-    writeHalf(value: half): void;
-    writeInt32(value: int): void;
-    writeInt64(value: long): void;
-    writeNull(): void;
-    writeSimpleValue(value: CborSimpleValue): void;
-    writeSingle(value: float): void;
-    writeStartArray(definiteLength: Nullable<System_Internal.Int32>): void;
-    writeStartIndefiniteLengthByteString(): void;
-    writeStartIndefiniteLengthTextString(): void;
-    writeStartMap(definiteLength: Nullable<System_Internal.Int32>): void;
-    writeTag(tag: CborTag): void;
-    writeTextString(value: string): void;
-    writeTextString(value: ReadOnlySpan<System_Internal.Char>): void;
-    writeUInt32(value: uint): void;
-    writeUInt64(value: ulong): void;
-    writeUnixTimeSeconds(seconds: long): void;
-    writeUnixTimeSeconds(seconds: double): void;
+    readonly AllowMultipleRootLevelValues: boolean;
+    readonly BytesWritten: int;
+    readonly ConformanceMode: CborConformanceMode;
+    readonly ConvertIndefiniteLengthEncodings: boolean;
+    readonly CurrentDepth: int;
+    readonly IsWriteCompleted: boolean;
+    Encode(): byte[];
+    Encode(destination: Span<System_Internal.Byte>): int;
+    Reset(): void;
+    TryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    WriteBigInteger(value: BigInteger): void;
+    WriteBoolean(value: boolean): void;
+    WriteByteString(value: byte[]): void;
+    WriteByteString(value: ReadOnlySpan<System_Internal.Byte>): void;
+    WriteCborNegativeIntegerRepresentation(value: ulong): void;
+    WriteDateTimeOffset(value: DateTimeOffset): void;
+    WriteDecimal(value: decimal): void;
+    WriteDouble(value: double): void;
+    WriteEncodedValue(encodedValue: ReadOnlySpan<System_Internal.Byte>): void;
+    WriteEndArray(): void;
+    WriteEndIndefiniteLengthByteString(): void;
+    WriteEndIndefiniteLengthTextString(): void;
+    WriteEndMap(): void;
+    WriteHalf(value: half): void;
+    WriteInt32(value: int): void;
+    WriteInt64(value: long): void;
+    WriteNull(): void;
+    WriteSimpleValue(value: CborSimpleValue): void;
+    WriteSingle(value: float): void;
+    WriteStartArray(definiteLength: Nullable<System_Internal.Int32>): void;
+    WriteStartIndefiniteLengthByteString(): void;
+    WriteStartIndefiniteLengthTextString(): void;
+    WriteStartMap(definiteLength: Nullable<System_Internal.Int32>): void;
+    WriteTag(tag: CborTag): void;
+    WriteTextString(value: string): void;
+    WriteTextString(value: ReadOnlySpan<System_Internal.Char>): void;
+    WriteUInt32(value: uint): void;
+    WriteUInt64(value: ulong): void;
+    WriteUnixTimeSeconds(seconds: long): void;
+    WriteUnixTimeSeconds(seconds: double): void;
 }
 
 

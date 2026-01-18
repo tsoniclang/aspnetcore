@@ -20,9 +20,9 @@ export type ItemsProviderDelegate_1<TItem> = (request: ItemsProviderRequest) => 
 
 
 export interface ItemsProviderRequest$instance {
-    readonly cancellationToken: CancellationToken;
-    readonly count: int;
-    readonly startIndex: int;
+    readonly CancellationToken: CancellationToken;
+    readonly Count: int;
+    readonly StartIndex: int;
 }
 
 
@@ -34,8 +34,8 @@ export const ItemsProviderRequest: {
 export type ItemsProviderRequest = ItemsProviderRequest$instance;
 
 export interface ItemsProviderResult_1$instance<TItem> {
-    readonly items: IEnumerable<TItem>;
-    readonly totalItemCount: int;
+    readonly Items: IEnumerable<TItem>;
+    readonly TotalItemCount: int;
 }
 
 
@@ -47,8 +47,8 @@ export const ItemsProviderResult_1: {
 export type ItemsProviderResult_1<TItem> = ItemsProviderResult_1$instance<TItem>;
 
 export interface PlaceholderContext$instance {
-    readonly index: int;
-    readonly size: float;
+    readonly Index: int;
+    readonly Size: float;
 }
 
 
@@ -60,26 +60,26 @@ export const PlaceholderContext: {
 export type PlaceholderContext = PlaceholderContext$instance;
 
 export interface Virtualize_1$instance<TItem> extends ComponentBase {
-    childContent: RenderFragment_1<TItem>;
-    get emptyContent(): RenderFragment | undefined;
-    set emptyContent(value: RenderFragment);
-    get itemContent(): RenderFragment_1<TItem> | undefined;
-    set itemContent(value: RenderFragment_1<TItem>);
-    items: ICollection<TItem>;
-    itemSize: float;
-    get itemsProvider(): ItemsProviderDelegate_1<TItem> | undefined;
-    set itemsProvider(value: ItemsProviderDelegate_1<TItem>);
-    maxItemCount: int;
-    overscanCount: int;
-    get placeholder(): RenderFragment_1<PlaceholderContext> | undefined;
-    set placeholder(value: RenderFragment_1<PlaceholderContext>);
-    spacerElement: string;
-    attach(renderHandle: RenderHandle): void;
-    disposeAsync(): ValueTask;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    refreshDataAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    ChildContent: RenderFragment_1<TItem>;
+    get EmptyContent(): RenderFragment | undefined;
+    set EmptyContent(value: RenderFragment);
+    get ItemContent(): RenderFragment_1<TItem> | undefined;
+    set ItemContent(value: RenderFragment_1<TItem>);
+    Items: ICollection<TItem>;
+    ItemSize: float;
+    get ItemsProvider(): ItemsProviderDelegate_1<TItem> | undefined;
+    set ItemsProvider(value: ItemsProviderDelegate_1<TItem>);
+    MaxItemCount: int;
+    OverscanCount: int;
+    get Placeholder(): RenderFragment_1<PlaceholderContext> | undefined;
+    set Placeholder(value: RenderFragment_1<PlaceholderContext>);
+    SpacerElement: string;
+    Attach(renderHandle: RenderHandle): void;
+    DisposeAsync(): ValueTask;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    RefreshDataAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 

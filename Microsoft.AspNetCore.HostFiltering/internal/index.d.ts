@@ -15,7 +15,7 @@ import type { ILogger } from "@tsonic/microsoft-extensions/Microsoft.Extensions.
 import type { IOptionsMonitor } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface HostFilteringMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -27,9 +27,9 @@ export const HostFilteringMiddleware: {
 export type HostFilteringMiddleware = HostFilteringMiddleware$instance;
 
 export interface HostFilteringOptions$instance {
-    allowedHosts: IList<System_Internal.String>;
-    allowEmptyHosts: boolean;
-    includeFailureMessage: boolean;
+    AllowedHosts: IList<System_Internal.String>;
+    AllowEmptyHosts: boolean;
+    IncludeFailureMessage: boolean;
 }
 
 

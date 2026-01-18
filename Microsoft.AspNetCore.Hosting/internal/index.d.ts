@@ -30,96 +30,96 @@ import type { IHostEnvironment } from "@tsonic/microsoft-extensions/Microsoft.Ex
 import type { ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IApplicationLifetime$instance {
-    readonly applicationStarted: CancellationToken;
-    readonly applicationStopping: CancellationToken;
-    readonly applicationStopped: CancellationToken;
-    stopApplication(): void;
+    readonly ApplicationStarted: CancellationToken;
+    readonly ApplicationStopping: CancellationToken;
+    readonly ApplicationStopped: CancellationToken;
+    StopApplication(): void;
 }
 
 
 export type IApplicationLifetime = IApplicationLifetime$instance;
 
 export interface IHostingEnvironment$instance {
-    environmentName: string;
-    applicationName: string;
-    webRootPath: string;
-    webRootFileProvider: IFileProvider;
-    contentRootPath: string;
-    contentRootFileProvider: IFileProvider;
+    EnvironmentName: string;
+    ApplicationName: string;
+    WebRootPath: string;
+    WebRootFileProvider: IFileProvider;
+    ContentRootPath: string;
+    ContentRootFileProvider: IFileProvider;
 }
 
 
 export type IHostingEnvironment = IHostingEnvironment$instance;
 
 export interface IHostingStartup$instance {
-    configure(builder: IWebHostBuilder): void;
+    Configure(builder: IWebHostBuilder): void;
 }
 
 
 export type IHostingStartup = IHostingStartup$instance;
 
 export interface IStartup$instance {
-    configure(app: IApplicationBuilder): void;
-    configureServices(services: IServiceCollection): IServiceProvider;
+    Configure(app: IApplicationBuilder): void;
+    ConfigureServices(services: IServiceCollection): IServiceProvider;
 }
 
 
 export type IStartup = IStartup$instance;
 
 export interface IStartupConfigureContainerFilter_1$instance<TContainerBuilder> {
-    configureContainer(container: Action<TContainerBuilder>): Action<TContainerBuilder>;
+    ConfigureContainer(container: Action<TContainerBuilder>): Action<TContainerBuilder>;
 }
 
 
 export type IStartupConfigureContainerFilter_1<TContainerBuilder> = IStartupConfigureContainerFilter_1$instance<TContainerBuilder>;
 
 export interface IStartupConfigureServicesFilter$instance {
-    configureServices(next: Action<IServiceCollection>): Action<IServiceCollection>;
+    ConfigureServices(next: Action<IServiceCollection>): Action<IServiceCollection>;
 }
 
 
 export type IStartupConfigureServicesFilter = IStartupConfigureServicesFilter$instance;
 
 export interface IStartupFilter$instance {
-    configure(next: Action<IApplicationBuilder>): Action<IApplicationBuilder>;
+    Configure(next: Action<IApplicationBuilder>): Action<IApplicationBuilder>;
 }
 
 
 export type IStartupFilter = IStartupFilter$instance;
 
 export interface IWebHost$instance extends IDisposable {
-    readonly serverFeatures: IFeatureCollection;
-    readonly services: IServiceProvider;
-    start(): void;
-    startAsync(cancellationToken?: CancellationToken): Task;
+    readonly ServerFeatures: IFeatureCollection;
+    readonly Services: IServiceProvider;
+    Start(): void;
+    StartAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
 export type IWebHost = IWebHost$instance;
 
 export interface IWebHostBuilder$instance {
-    build(): IWebHost;
-    configureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
-    configureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
-    getSetting(key: string): string | undefined;
-    useSetting(key: string, value: string): IWebHostBuilder;
+    Build(): IWebHost;
+    ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
+    GetSetting(key: string): string | undefined;
+    UseSetting(key: string, value: string): IWebHostBuilder;
 }
 
 
 export type IWebHostBuilder = IWebHostBuilder$instance;
 
 export interface IWebHostEnvironment$instance extends IHostEnvironment {
-    webRootPath: string;
-    webRootFileProvider: IFileProvider;
+    WebRootPath: string;
+    WebRootFileProvider: IFileProvider;
 }
 
 
 export type IWebHostEnvironment = IWebHostEnvironment$instance;
 
 export interface DelegateStartup$instance extends StartupBase_1$instance<IServiceCollection> {
-    configure(app: IApplicationBuilder): void;
-    configureServices(services: IServiceCollection): IServiceProvider;
-    configureServices(services: IServiceCollection): void;
+    Configure(app: IApplicationBuilder): void;
+    ConfigureServices(services: IServiceCollection): IServiceProvider;
+    ConfigureServices(services: IServiceCollection): void;
 }
 
 
@@ -136,7 +136,7 @@ export type DelegateStartup = DelegateStartup$instance & __DelegateStartup$views
 
 
 export interface HostingStartupAttribute$instance extends Attribute {
-    readonly hostingStartupType: Type;
+    readonly HostingStartupType: Type;
 }
 
 
@@ -148,9 +148,9 @@ export const HostingStartupAttribute: {
 export type HostingStartupAttribute = HostingStartupAttribute$instance;
 
 export interface StartupBase$instance {
-    configure(app: IApplicationBuilder): void;
-    configureServices(services: IServiceCollection): void;
-    createServiceProvider(services: IServiceCollection): IServiceProvider;
+    Configure(app: IApplicationBuilder): void;
+    ConfigureServices(services: IServiceCollection): void;
+    CreateServiceProvider(services: IServiceCollection): IServiceProvider;
 }
 
 
@@ -166,11 +166,11 @@ export type StartupBase = StartupBase$instance & __StartupBase$views;
 
 
 export interface StartupBase_1$instance<TBuilder> extends StartupBase$instance {
-    configure(app: IApplicationBuilder): void;
-    configureContainer(builder: TBuilder): void;
-    configureServices(services: IServiceCollection): void;
-    configureServices(services: IServiceCollection): IServiceProvider;
-    createServiceProvider(services: IServiceCollection): IServiceProvider;
+    Configure(app: IApplicationBuilder): void;
+    ConfigureContainer(builder: TBuilder): void;
+    ConfigureServices(services: IServiceCollection): void;
+    ConfigureServices(services: IServiceCollection): IServiceProvider;
+    CreateServiceProvider(services: IServiceCollection): IServiceProvider;
 }
 
 
@@ -187,12 +187,12 @@ export type StartupBase_1<TBuilder> = StartupBase_1$instance<TBuilder> & __Start
 
 
 export interface WebHostBuilder$instance {
-    build(): IWebHost;
-    configureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
-    configureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
-    configureServices(configureServices: Action<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
-    getSetting(key: string): string | undefined;
-    useSetting(key: string, value: string): IWebHostBuilder;
+    Build(): IWebHost;
+    ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
+    GetSetting(key: string): string | undefined;
+    UseSetting(key: string, value: string): IWebHostBuilder;
 }
 
 
@@ -211,8 +211,8 @@ export type WebHostBuilder = WebHostBuilder$instance & __WebHostBuilder$views;
 
 
 export interface WebHostBuilderContext$instance {
-    configuration: IConfiguration;
-    hostingEnvironment: IWebHostEnvironment;
+    Configuration: IConfiguration;
+    HostingEnvironment: IWebHostEnvironment;
 }
 
 
@@ -224,184 +224,184 @@ export const WebHostBuilderContext: {
 export type WebHostBuilderContext = WebHostBuilderContext$instance;
 
 export abstract class EnvironmentName$instance {
-    static readonly development: string;
-    static readonly staging: string;
-    static readonly production: string;
+    static readonly Development: string;
+    static readonly Staging: string;
+    static readonly Production: string;
 }
 
 
 export type EnvironmentName = EnvironmentName$instance;
 
 export abstract class HostingAbstractionsWebHostBuilderExtensions$instance {
-    static captureStartupErrors(hostBuilder: IWebHostBuilder, captureStartupErrors: boolean): IWebHostBuilder;
-    static preferHostingUrls(hostBuilder: IWebHostBuilder, preferHostingUrls: boolean): IWebHostBuilder;
-    static start(hostBuilder: IWebHostBuilder, ...urls: string[]): IWebHost;
-    static suppressStatusMessages(hostBuilder: IWebHostBuilder, suppressStatusMessages: boolean): IWebHostBuilder;
-    static useConfiguration(hostBuilder: IWebHostBuilder, configuration: IConfiguration): IWebHostBuilder;
-    static useContentRoot(hostBuilder: IWebHostBuilder, contentRoot: string): IWebHostBuilder;
-    static useEnvironment(hostBuilder: IWebHostBuilder, environment: string): IWebHostBuilder;
-    static useServer(hostBuilder: IWebHostBuilder, server: IServer): IWebHostBuilder;
-    static useShutdownTimeout(hostBuilder: IWebHostBuilder, timeout: TimeSpan): IWebHostBuilder;
-    static useStartup(hostBuilder: IWebHostBuilder, startupAssemblyName: string): IWebHostBuilder;
-    static useUrls(hostBuilder: IWebHostBuilder, ...urls: string[]): IWebHostBuilder;
-    static useWebRoot(hostBuilder: IWebHostBuilder, webRoot: string): IWebHostBuilder;
+    static CaptureStartupErrors(hostBuilder: IWebHostBuilder, captureStartupErrors: boolean): IWebHostBuilder;
+    static PreferHostingUrls(hostBuilder: IWebHostBuilder, preferHostingUrls: boolean): IWebHostBuilder;
+    static Start(hostBuilder: IWebHostBuilder, ...urls: string[]): IWebHost;
+    static SuppressStatusMessages(hostBuilder: IWebHostBuilder, suppressStatusMessages: boolean): IWebHostBuilder;
+    static UseConfiguration(hostBuilder: IWebHostBuilder, configuration: IConfiguration): IWebHostBuilder;
+    static UseContentRoot(hostBuilder: IWebHostBuilder, contentRoot: string): IWebHostBuilder;
+    static UseEnvironment(hostBuilder: IWebHostBuilder, environment: string): IWebHostBuilder;
+    static UseServer(hostBuilder: IWebHostBuilder, server: IServer): IWebHostBuilder;
+    static UseShutdownTimeout(hostBuilder: IWebHostBuilder, timeout: TimeSpan): IWebHostBuilder;
+    static UseStartup(hostBuilder: IWebHostBuilder, startupAssemblyName: string): IWebHostBuilder;
+    static UseUrls(hostBuilder: IWebHostBuilder, ...urls: string[]): IWebHostBuilder;
+    static UseWebRoot(hostBuilder: IWebHostBuilder, webRoot: string): IWebHostBuilder;
 }
 
 
 export type HostingAbstractionsWebHostBuilderExtensions = HostingAbstractionsWebHostBuilderExtensions$instance;
 
 export abstract class HostingEnvironmentExtensions$instance {
-    static isDevelopment(hostingEnvironment: IHostingEnvironment): boolean;
-    static isEnvironment(hostingEnvironment: IHostingEnvironment, environmentName: string): boolean;
-    static isProduction(hostingEnvironment: IHostingEnvironment): boolean;
-    static isStaging(hostingEnvironment: IHostingEnvironment): boolean;
+    static IsDevelopment(hostingEnvironment: IHostingEnvironment): boolean;
+    static IsEnvironment(hostingEnvironment: IHostingEnvironment, environmentName: string): boolean;
+    static IsProduction(hostingEnvironment: IHostingEnvironment): boolean;
+    static IsStaging(hostingEnvironment: IHostingEnvironment): boolean;
 }
 
 
 export type HostingEnvironmentExtensions = HostingEnvironmentExtensions$instance;
 
 export abstract class KestrelServerOptionsSystemdExtensions$instance {
-    static useSystemd(options: KestrelServerOptions, configure: Action<ListenOptions>): KestrelServerOptions;
-    static useSystemd(options: KestrelServerOptions): KestrelServerOptions;
+    static UseSystemd(options: KestrelServerOptions, configure: Action<ListenOptions>): KestrelServerOptions;
+    static UseSystemd(options: KestrelServerOptions): KestrelServerOptions;
 }
 
 
 export type KestrelServerOptionsSystemdExtensions = KestrelServerOptionsSystemdExtensions$instance;
 
 export abstract class ListenOptionsConnectionLoggingExtensions$instance {
-    static useConnectionLogging(listenOptions: ListenOptions, loggerName: string): ListenOptions;
-    static useConnectionLogging(listenOptions: ListenOptions): ListenOptions;
+    static UseConnectionLogging(listenOptions: ListenOptions, loggerName: string): ListenOptions;
+    static UseConnectionLogging(listenOptions: ListenOptions): ListenOptions;
 }
 
 
 export type ListenOptionsConnectionLoggingExtensions = ListenOptionsConnectionLoggingExtensions$instance;
 
 export abstract class ListenOptionsHttpsExtensions$instance {
-    static useHttps(listenOptions: ListenOptions, httpsOptions: HttpsConnectionAdapterOptions): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, callbackOptions: TlsHandshakeCallbackOptions): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown, handshakeTimeout: TimeSpan): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, fileName: string, password: string, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, fileName: string, password: string): ListenOptions;
-    static useHttps(listenOptions: ListenOptions, fileName: string): ListenOptions;
-    static useHttps(listenOptions: ListenOptions): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, httpsOptions: HttpsConnectionAdapterOptions): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, callbackOptions: TlsHandshakeCallbackOptions): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown, handshakeTimeout: TimeSpan): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, fileName: string): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions): ListenOptions;
 }
 
 
 export type ListenOptionsHttpsExtensions = ListenOptionsHttpsExtensions$instance;
 
 export abstract class WebHostBuilderExtensions$instance {
-    static configure(hostBuilder: IWebHostBuilder, configureApp: Action<IApplicationBuilder>): IWebHostBuilder;
-    static configure(hostBuilder: IWebHostBuilder, configureApp: Action<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
-    static configureAppConfiguration(hostBuilder: IWebHostBuilder, configureDelegate: Action<IConfigurationBuilder>): IWebHostBuilder;
-    static configureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action<ILoggingBuilder>): IWebHostBuilder;
-    static configureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action<WebHostBuilderContext, ILoggingBuilder>): IWebHostBuilder;
-    static useDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action<ServiceProviderOptions>): IWebHostBuilder;
-    static useDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action<WebHostBuilderContext, ServiceProviderOptions>): IWebHostBuilder;
-    static useStartup<TStartup>(hostBuilder: IWebHostBuilder, startupFactory: Func<WebHostBuilderContext, TStartup>): IWebHostBuilder;
-    static useStartup(hostBuilder: IWebHostBuilder, startupType: Type): IWebHostBuilder;
-    static useStartup<TStartup>(hostBuilder: IWebHostBuilder): IWebHostBuilder;
-    static useStaticWebAssets(builder: IWebHostBuilder): IWebHostBuilder;
+    static Configure(hostBuilder: IWebHostBuilder, configureApp: Action<IApplicationBuilder>): IWebHostBuilder;
+    static Configure(hostBuilder: IWebHostBuilder, configureApp: Action<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
+    static ConfigureAppConfiguration(hostBuilder: IWebHostBuilder, configureDelegate: Action<IConfigurationBuilder>): IWebHostBuilder;
+    static ConfigureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action<ILoggingBuilder>): IWebHostBuilder;
+    static ConfigureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action<WebHostBuilderContext, ILoggingBuilder>): IWebHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action<ServiceProviderOptions>): IWebHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action<WebHostBuilderContext, ServiceProviderOptions>): IWebHostBuilder;
+    static UseStartup<TStartup>(hostBuilder: IWebHostBuilder, startupFactory: Func<WebHostBuilderContext, TStartup>): IWebHostBuilder;
+    static UseStartup(hostBuilder: IWebHostBuilder, startupType: Type): IWebHostBuilder;
+    static UseStartup<TStartup>(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseStaticWebAssets(builder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderExtensions = WebHostBuilderExtensions$instance;
 
 export abstract class WebHostBuilderHttpSysExtensions$instance {
-    static useHttpSys(hostBuilder: IWebHostBuilder, options: Action<HttpSysOptions>): IWebHostBuilder;
-    static useHttpSys(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseHttpSys(hostBuilder: IWebHostBuilder, options: Action<HttpSysOptions>): IWebHostBuilder;
+    static UseHttpSys(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderHttpSysExtensions = WebHostBuilderHttpSysExtensions$instance;
 
 export abstract class WebHostBuilderIISExtensions$instance {
-    static useIIS(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseIIS(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderIISExtensions = WebHostBuilderIISExtensions$instance;
 
 export abstract class WebHostBuilderIISExtensions2$instance {
-    static useIISIntegration(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseIISIntegration(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderIISExtensions2 = WebHostBuilderIISExtensions2$instance;
 
 export abstract class WebHostBuilderKestrelExtensions$instance {
-    static configureKestrel(hostBuilder: IWebHostBuilder, options: Action<KestrelServerOptions>): IWebHostBuilder;
-    static configureKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
-    static useKestrel(hostBuilder: IWebHostBuilder, options: Action<KestrelServerOptions>): IWebHostBuilder;
-    static useKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
-    static useKestrel(hostBuilder: IWebHostBuilder): IWebHostBuilder;
-    static useKestrelCore(hostBuilder: IWebHostBuilder): IWebHostBuilder;
-    static useKestrelHttpsConfiguration(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static ConfigureKestrel(hostBuilder: IWebHostBuilder, options: Action<KestrelServerOptions>): IWebHostBuilder;
+    static ConfigureKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
+    static UseKestrel(hostBuilder: IWebHostBuilder, options: Action<KestrelServerOptions>): IWebHostBuilder;
+    static UseKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
+    static UseKestrel(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseKestrelCore(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseKestrelHttpsConfiguration(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderKestrelExtensions = WebHostBuilderKestrelExtensions$instance;
 
 export abstract class WebHostBuilderNamedPipeExtensions$instance {
-    static useNamedPipes(hostBuilder: IWebHostBuilder, configureOptions: Action<NamedPipeTransportOptions>): IWebHostBuilder;
-    static useNamedPipes(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseNamedPipes(hostBuilder: IWebHostBuilder, configureOptions: Action<NamedPipeTransportOptions>): IWebHostBuilder;
+    static UseNamedPipes(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderNamedPipeExtensions = WebHostBuilderNamedPipeExtensions$instance;
 
 export abstract class WebHostBuilderQuicExtensions$instance {
-    static useQuic(hostBuilder: IWebHostBuilder, configureOptions: Action<QuicTransportOptions>): IWebHostBuilder;
-    static useQuic(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseQuic(hostBuilder: IWebHostBuilder, configureOptions: Action<QuicTransportOptions>): IWebHostBuilder;
+    static UseQuic(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderQuicExtensions = WebHostBuilderQuicExtensions$instance;
 
 export abstract class WebHostBuilderSocketExtensions$instance {
-    static useSockets(hostBuilder: IWebHostBuilder, configureOptions: Action<SocketTransportOptions>): IWebHostBuilder;
-    static useSockets(hostBuilder: IWebHostBuilder): IWebHostBuilder;
+    static UseSockets(hostBuilder: IWebHostBuilder, configureOptions: Action<SocketTransportOptions>): IWebHostBuilder;
+    static UseSockets(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
 
 export type WebHostBuilderSocketExtensions = WebHostBuilderSocketExtensions$instance;
 
 export abstract class WebHostDefaults$instance {
-    static readonly applicationKey: string;
-    static readonly startupAssemblyKey: string;
-    static readonly hostingStartupAssembliesKey: string;
-    static readonly hostingStartupExcludeAssembliesKey: string;
-    static readonly detailedErrorsKey: string;
-    static readonly environmentKey: string;
-    static readonly webRootKey: string;
-    static readonly captureStartupErrorsKey: string;
-    static readonly serverUrlsKey: string;
-    static readonly httpPortsKey: string;
-    static readonly httpsPortsKey: string;
-    static readonly contentRootKey: string;
-    static readonly preferHostingUrlsKey: string;
-    static readonly preventHostingStartupKey: string;
-    static readonly suppressStatusMessagesKey: string;
-    static readonly shutdownTimeoutKey: string;
-    static readonly staticWebAssetsKey: string;
+    static readonly ApplicationKey: string;
+    static readonly StartupAssemblyKey: string;
+    static readonly HostingStartupAssembliesKey: string;
+    static readonly HostingStartupExcludeAssembliesKey: string;
+    static readonly DetailedErrorsKey: string;
+    static readonly EnvironmentKey: string;
+    static readonly WebRootKey: string;
+    static readonly CaptureStartupErrorsKey: string;
+    static readonly ServerUrlsKey: string;
+    static readonly HttpPortsKey: string;
+    static readonly HttpsPortsKey: string;
+    static readonly ContentRootKey: string;
+    static readonly PreferHostingUrlsKey: string;
+    static readonly PreventHostingStartupKey: string;
+    static readonly SuppressStatusMessagesKey: string;
+    static readonly ShutdownTimeoutKey: string;
+    static readonly StaticWebAssetsKey: string;
 }
 
 
 export type WebHostDefaults = WebHostDefaults$instance;
 
 export abstract class WebHostExtensions$instance {
-    static run(host: IWebHost): void;
-    static runAsync(host: IWebHost, token?: CancellationToken): Task;
-    static stopAsync(host: IWebHost, timeout: TimeSpan): Task;
-    static waitForShutdown(host: IWebHost): void;
-    static waitForShutdownAsync(host: IWebHost, token?: CancellationToken): Task;
+    static Run(host: IWebHost): void;
+    static RunAsync(host: IWebHost, token?: CancellationToken): Task;
+    static StopAsync(host: IWebHost, timeout: TimeSpan): Task;
+    static WaitForShutdown(host: IWebHost): void;
+    static WaitForShutdownAsync(host: IWebHost, token?: CancellationToken): Task;
 }
 
 

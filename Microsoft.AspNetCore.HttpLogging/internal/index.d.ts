@@ -15,68 +15,68 @@ import type { Encoding } from "@tsonic/dotnet/System.Text.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum HttpLoggingFields {
-    none = 0,
-    requestPath = 1,
-    requestQuery = 2,
-    requestProtocol = 4,
-    requestMethod = 8,
-    requestScheme = 16,
-    responseStatusCode = 32,
-    requestHeaders = 64,
-    responseHeaders = 128,
-    requestTrailers = 256,
-    responseTrailers = 512,
-    requestBody = 1024,
-    responseBody = 2048,
-    duration = 4096,
-    requestProperties = 29,
-    requestPropertiesAndHeaders = 93,
-    responsePropertiesAndHeaders = 160,
-    request = 1117,
-    response = 2208,
-    all = 7421
+    None = 0,
+    RequestPath = 1,
+    RequestQuery = 2,
+    RequestProtocol = 4,
+    RequestMethod = 8,
+    RequestScheme = 16,
+    ResponseStatusCode = 32,
+    RequestHeaders = 64,
+    ResponseHeaders = 128,
+    RequestTrailers = 256,
+    ResponseTrailers = 512,
+    RequestBody = 1024,
+    ResponseBody = 2048,
+    Duration = 4096,
+    RequestProperties = 29,
+    RequestPropertiesAndHeaders = 93,
+    ResponsePropertiesAndHeaders = 160,
+    Request = 1117,
+    Response = 2208,
+    All = 7421
 }
 
 
 export enum W3CLoggingFields {
-    none = 0,
-    date = 1,
-    time = 2,
-    clientIpAddress = 4,
-    userName = 8,
-    serverName = 16,
-    serverIpAddress = 32,
-    serverPort = 64,
-    method = 128,
-    uriStem = 256,
-    uriQuery = 512,
-    protocolStatus = 1024,
-    timeTaken = 2048,
-    protocolVersion = 4096,
-    host = 8192,
-    userAgent = 16384,
-    cookie = 32768,
-    referer = 65536,
-    connectionInfoFields = 100,
-    requestHeaders = 90112,
-    request = 95104,
-    all = 131071
+    None = 0,
+    Date = 1,
+    Time = 2,
+    ClientIpAddress = 4,
+    UserName = 8,
+    ServerName = 16,
+    ServerIpAddress = 32,
+    ServerPort = 64,
+    Method = 128,
+    UriStem = 256,
+    UriQuery = 512,
+    ProtocolStatus = 1024,
+    TimeTaken = 2048,
+    ProtocolVersion = 4096,
+    Host = 8192,
+    UserAgent = 16384,
+    Cookie = 32768,
+    Referer = 65536,
+    ConnectionInfoFields = 100,
+    RequestHeaders = 90112,
+    Request = 95104,
+    All = 131071
 }
 
 
 export interface IHttpLoggingInterceptor$instance {
-    onRequestAsync(logContext: HttpLoggingInterceptorContext): ValueTask;
+    OnRequestAsync(logContext: HttpLoggingInterceptorContext): ValueTask;
 }
 
 
 export type IHttpLoggingInterceptor = IHttpLoggingInterceptor$instance;
 
 export interface HttpLoggingAttribute$instance extends Attribute {
-    readonly isRequestBodyLogLimitSet: boolean;
-    readonly isResponseBodyLogLimitSet: boolean;
-    readonly loggingFields: HttpLoggingFields;
-    requestBodyLogLimit: int;
-    responseBodyLogLimit: int;
+    readonly IsRequestBodyLogLimitSet: boolean;
+    readonly IsResponseBodyLogLimitSet: boolean;
+    readonly LoggingFields: HttpLoggingFields;
+    RequestBodyLogLimit: int;
+    ResponseBodyLogLimit: int;
 }
 
 
@@ -88,16 +88,16 @@ export const HttpLoggingAttribute: {
 export type HttpLoggingAttribute = HttpLoggingAttribute$instance;
 
 export interface HttpLoggingInterceptorContext$instance {
-    httpContext: HttpContext;
-    loggingFields: HttpLoggingFields;
-    readonly parameters: IList<KeyValuePair<System_Internal.String, unknown>>;
-    requestBodyLogLimit: int;
-    responseBodyLogLimit: int;
-    addParameter(key: string, value: unknown): void;
-    disable(fields: HttpLoggingFields): void;
-    enable(fields: HttpLoggingFields): void;
-    isAnyEnabled(fields: HttpLoggingFields): boolean;
-    tryDisable(fields: HttpLoggingFields): boolean;
+    HttpContext: HttpContext;
+    LoggingFields: HttpLoggingFields;
+    readonly Parameters: IList<KeyValuePair<System_Internal.String, unknown>>;
+    RequestBodyLogLimit: int;
+    ResponseBodyLogLimit: int;
+    AddParameter(key: string, value: unknown): void;
+    Disable(fields: HttpLoggingFields): void;
+    Enable(fields: HttpLoggingFields): void;
+    IsAnyEnabled(fields: HttpLoggingFields): boolean;
+    TryDisable(fields: HttpLoggingFields): boolean;
 }
 
 
@@ -109,13 +109,13 @@ export const HttpLoggingInterceptorContext: {
 export type HttpLoggingInterceptorContext = HttpLoggingInterceptorContext$instance;
 
 export interface HttpLoggingOptions$instance {
-    combineLogs: boolean;
-    loggingFields: HttpLoggingFields;
-    readonly mediaTypeOptions: MediaTypeOptions;
-    requestBodyLogLimit: int;
-    readonly requestHeaders: ISet<System_Internal.String>;
-    responseBodyLogLimit: int;
-    readonly responseHeaders: ISet<System_Internal.String>;
+    CombineLogs: boolean;
+    LoggingFields: HttpLoggingFields;
+    readonly MediaTypeOptions: MediaTypeOptions;
+    RequestBodyLogLimit: int;
+    readonly RequestHeaders: ISet<System_Internal.String>;
+    ResponseBodyLogLimit: int;
+    readonly ResponseHeaders: ISet<System_Internal.String>;
 }
 
 
@@ -127,11 +127,11 @@ export const HttpLoggingOptions: {
 export type HttpLoggingOptions = HttpLoggingOptions$instance;
 
 export interface MediaTypeOptions$instance {
-    addBinary(mediaType: MediaTypeHeaderValue): void;
-    addBinary(contentType: string): void;
-    addText(contentType: string): void;
-    addText(contentType: string, encoding: Encoding): void;
-    clear(): void;
+    AddBinary(mediaType: MediaTypeHeaderValue): void;
+    AddBinary(contentType: string): void;
+    AddText(contentType: string): void;
+    AddText(contentType: string, encoding: Encoding): void;
+    Clear(): void;
 }
 
 
@@ -143,13 +143,13 @@ export const MediaTypeOptions: {
 export type MediaTypeOptions = MediaTypeOptions$instance;
 
 export interface W3CLoggerOptions$instance {
-    readonly additionalRequestHeaders: ISet<System_Internal.String>;
-    fileName: string;
-    fileSizeLimit: Nullable<System_Internal.Int32>;
-    flushInterval: TimeSpan;
-    logDirectory: string;
-    loggingFields: W3CLoggingFields;
-    retainedFileCountLimit: Nullable<System_Internal.Int32>;
+    readonly AdditionalRequestHeaders: ISet<System_Internal.String>;
+    FileName: string;
+    FileSizeLimit: Nullable<System_Internal.Int32>;
+    FlushInterval: TimeSpan;
+    LogDirectory: string;
+    LoggingFields: W3CLoggingFields;
+    RetainedFileCountLimit: Nullable<System_Internal.Int32>;
 }
 
 

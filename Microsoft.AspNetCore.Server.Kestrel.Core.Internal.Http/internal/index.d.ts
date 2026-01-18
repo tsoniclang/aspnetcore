@@ -14,57 +14,57 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan, SByte, Span, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export enum HttpMethod {
-    get = 0,
-    put = 1,
-    delete = 2,
-    post = 3,
-    head = 4,
-    trace = 5,
-    patch = 6,
-    connect = 7,
-    options = 8,
-    custom = 9,
-    none = 255
+    Get = 0,
+    Put = 1,
+    Delete = 2,
+    Post = 3,
+    Head = 4,
+    Trace = 5,
+    Patch = 6,
+    Connect = 7,
+    Options = 8,
+    Custom = 9,
+    None = 255
 }
 
 
 export enum HttpScheme {
-    unknown = -1,
-    http = 0,
-    https = 1
+    Unknown = -1,
+    Http = 0,
+    Https = 1
 }
 
 
 export enum HttpVersion {
-    unknown = -1,
-    http10 = 0,
-    http11 = 1,
-    http2 = 2,
-    http3 = 3
+    Unknown = -1,
+    Http10 = 0,
+    Http11 = 1,
+    Http2 = 2,
+    Http3 = 3
 }
 
 
 export interface IHttpHeadersHandler$instance {
-    onHeader(name: ReadOnlySpan<System_Internal.Byte>, value: ReadOnlySpan<System_Internal.Byte>): void;
-    onHeadersComplete(endStream: boolean): void;
-    onStaticIndexedHeader(index: int, value: ReadOnlySpan<System_Internal.Byte>): void;
-    onStaticIndexedHeader(index: int): void;
+    OnHeader(name: ReadOnlySpan<System_Internal.Byte>, value: ReadOnlySpan<System_Internal.Byte>): void;
+    OnHeadersComplete(endStream: boolean): void;
+    OnStaticIndexedHeader(index: int, value: ReadOnlySpan<System_Internal.Byte>): void;
+    OnStaticIndexedHeader(index: int): void;
 }
 
 
 export type IHttpHeadersHandler = IHttpHeadersHandler$instance;
 
 export interface IHttpRequestLineHandler$instance {
-    onStartLine(versionAndMethod: HttpVersionAndMethod, targetPath: TargetOffsetPathLength, startLine: Span<System_Internal.Byte>): void;
+    OnStartLine(versionAndMethod: HttpVersionAndMethod, targetPath: TargetOffsetPathLength, startLine: Span<System_Internal.Byte>): void;
 }
 
 
 export type IHttpRequestLineHandler = IHttpRequestLineHandler$instance;
 
 export interface HttpVersionAndMethod$instance {
-    readonly method: HttpMethod;
-    readonly methodEnd: int;
-    version: HttpVersion;
+    readonly Method: HttpMethod;
+    readonly MethodEnd: int;
+    Version: HttpVersion;
 }
 
 
@@ -76,9 +76,9 @@ export const HttpVersionAndMethod: {
 export type HttpVersionAndMethod = HttpVersionAndMethod$instance;
 
 export interface TargetOffsetPathLength$instance {
-    readonly isEncoded: boolean;
-    readonly length: int;
-    readonly offset: int;
+    readonly IsEncoded: boolean;
+    readonly Length: int;
+    readonly Offset: int;
 }
 
 
@@ -90,8 +90,8 @@ export const TargetOffsetPathLength: {
 export type TargetOffsetPathLength = TargetOffsetPathLength$instance;
 
 export interface HttpParser_1$instance<TRequestHandler extends IHttpHeadersHandler & IHttpRequestLineHandler> {
-    parseHeaders(handler: TRequestHandler, reader: SequenceReader<System_Internal.Byte>): boolean;
-    parseRequestLine(handler: TRequestHandler, reader: SequenceReader<System_Internal.Byte>): boolean;
+    ParseHeaders(handler: TRequestHandler, reader: SequenceReader<System_Internal.Byte>): boolean;
+    ParseRequestLine(handler: TRequestHandler, reader: SequenceReader<System_Internal.Byte>): boolean;
 }
 
 

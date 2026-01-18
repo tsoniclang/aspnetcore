@@ -12,15 +12,15 @@ import type { Action, Func, Object as ClrObject, Void } from "@tsonic/dotnet/Sys
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export abstract class RuntimeHelpers$instance {
-    static createInferredBindSetter<T>(callback: Action<T>, value: T): Func<T, Task>;
-    static createInferredBindSetter<T>(callback: Func<T, Task>, value: T): Func<T, Task>;
-    static createInferredEventCallback<T>(receiver: unknown, callback: Action<T>, value: T): EventCallback_1<T>;
-    static createInferredEventCallback<T>(receiver: unknown, callback: EventCallback_1<T>, value: T): EventCallback_1<T>;
-    static createInferredEventCallback<T>(receiver: unknown, callback: Func<T, Task>, value: T): EventCallback_1<T>;
-    static invokeAsynchronousDelegate(callback: Action): Task;
-    static invokeAsynchronousDelegate(callback: Func<Task>): Task;
-    static invokeSynchronousDelegate(callback: Action): void;
-    static typeCheck<T>(value: T): T;
+    static CreateInferredBindSetter<T>(callback: Action<T>, value: T): Func<T, Task>;
+    static CreateInferredBindSetter<T>(callback: Func<T, Task>, value: T): Func<T, Task>;
+    static CreateInferredEventCallback<T>(receiver: unknown, callback: Action<T>, value: T): EventCallback_1<T>;
+    static CreateInferredEventCallback<T>(receiver: unknown, callback: EventCallback_1<T>, value: T): EventCallback_1<T>;
+    static CreateInferredEventCallback<T>(receiver: unknown, callback: Func<T, Task>, value: T): EventCallback_1<T>;
+    static InvokeAsynchronousDelegate(callback: Action): Task;
+    static InvokeAsynchronousDelegate(callback: Func<Task>): Task;
+    static InvokeSynchronousDelegate(callback: Action): void;
+    static TypeCheck<T>(value: T): T;
 }
 
 

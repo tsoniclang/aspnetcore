@@ -17,7 +17,7 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface HstsMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -30,10 +30,10 @@ export const HstsMiddleware: {
 export type HstsMiddleware = HstsMiddleware$instance;
 
 export interface HstsOptions$instance {
-    readonly excludedHosts: IList<System_Internal.String>;
-    includeSubDomains: boolean;
-    maxAge: TimeSpan;
-    preload: boolean;
+    readonly ExcludedHosts: IList<System_Internal.String>;
+    IncludeSubDomains: boolean;
+    MaxAge: TimeSpan;
+    Preload: boolean;
 }
 
 
@@ -45,7 +45,7 @@ export const HstsOptions: {
 export type HstsOptions = HstsOptions$instance;
 
 export interface HttpsRedirectionMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -58,8 +58,8 @@ export const HttpsRedirectionMiddleware: {
 export type HttpsRedirectionMiddleware = HttpsRedirectionMiddleware$instance;
 
 export interface HttpsRedirectionOptions$instance {
-    httpsPort: Nullable<System_Internal.Int32>;
-    redirectStatusCode: int;
+    HttpsPort: Nullable<System_Internal.Int32>;
+    RedirectStatusCode: int;
 }
 
 

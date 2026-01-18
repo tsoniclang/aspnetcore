@@ -13,21 +13,21 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IDecompressionProvider$instance {
-    getDecompressionStream(stream: Stream): Stream;
+    GetDecompressionStream(stream: Stream): Stream;
 }
 
 
 export type IDecompressionProvider = IDecompressionProvider$instance;
 
 export interface IRequestDecompressionProvider$instance {
-    getDecompressionStream(context: HttpContext): Stream | undefined;
+    GetDecompressionStream(context: HttpContext): Stream | undefined;
 }
 
 
 export type IRequestDecompressionProvider = IRequestDecompressionProvider$instance;
 
 export interface RequestDecompressionOptions$instance {
-    readonly decompressionProviders: IDictionary<System_Internal.String, IDecompressionProvider>;
+    readonly DecompressionProviders: IDictionary<System_Internal.String, IDecompressionProvider>;
 }
 
 

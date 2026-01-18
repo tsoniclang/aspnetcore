@@ -14,18 +14,18 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface TagHelperExecutionContext$instance {
-    readonly childContentRetrieved: boolean;
-    readonly context: TagHelperContext;
-    readonly items: IDictionary<unknown, unknown>;
-    readonly output: TagHelperOutput;
-    readonly tagHelpers: IList<ITagHelper>;
-    add(tagHelper: ITagHelper): void;
-    addHtmlAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
-    addHtmlAttribute(attribute: TagHelperAttribute): void;
-    addTagHelperAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
-    addTagHelperAttribute(attribute: TagHelperAttribute): void;
-    reinitialize(tagName: string, tagMode: TagMode, items: IDictionary<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func<Task>): void;
-    setOutputContentAsync(): Task;
+    readonly ChildContentRetrieved: boolean;
+    readonly Context: TagHelperContext;
+    readonly Items: IDictionary<unknown, unknown>;
+    readonly Output: TagHelperOutput;
+    readonly TagHelpers: IList<ITagHelper>;
+    Add(tagHelper: ITagHelper): void;
+    AddHtmlAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
+    AddHtmlAttribute(attribute: TagHelperAttribute): void;
+    AddTagHelperAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
+    AddTagHelperAttribute(attribute: TagHelperAttribute): void;
+    Reinitialize(tagName: string, tagMode: TagMode, items: IDictionary<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func<Task>): void;
+    SetOutputContentAsync(): Task;
 }
 
 
@@ -37,7 +37,7 @@ export const TagHelperExecutionContext: {
 export type TagHelperExecutionContext = TagHelperExecutionContext$instance;
 
 export interface TagHelperRunner$instance {
-    runAsync(executionContext: TagHelperExecutionContext): Task;
+    RunAsync(executionContext: TagHelperExecutionContext): Task;
 }
 
 
@@ -49,8 +49,8 @@ export const TagHelperRunner: {
 export type TagHelperRunner = TagHelperRunner$instance;
 
 export interface TagHelperScopeManager$instance {
-    begin(tagName: string, tagMode: TagMode, uniqueId: string, executeChildContentAsync: Func<Task>): TagHelperExecutionContext;
-    end(): TagHelperExecutionContext;
+    Begin(tagName: string, tagMode: TagMode, uniqueId: string, executeChildContentAsync: Func<Task>): TagHelperExecutionContext;
+    End(): TagHelperExecutionContext;
 }
 
 

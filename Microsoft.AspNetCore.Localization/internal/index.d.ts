@@ -18,23 +18,23 @@ import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions
 import type { StringSegment } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IRequestCultureFeature$instance {
-    readonly requestCulture: RequestCulture;
-    readonly provider: IRequestCultureProvider | undefined;
+    readonly RequestCulture: RequestCulture;
+    readonly Provider: IRequestCultureProvider | undefined;
 }
 
 
 export type IRequestCultureFeature = IRequestCultureFeature$instance;
 
 export interface IRequestCultureProvider$instance {
-    determineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 
 export type IRequestCultureProvider = IRequestCultureProvider$instance;
 
 export interface AcceptLanguageHeaderRequestCultureProvider$instance extends RequestCultureProvider$instance {
-    maximumAcceptLanguageHeaderValuesToTry: int;
-    determineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    MaximumAcceptLanguageHeaderValuesToTry: int;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 
@@ -51,16 +51,16 @@ export type AcceptLanguageHeaderRequestCultureProvider = AcceptLanguageHeaderReq
 
 
 export interface CookieRequestCultureProvider$instance extends RequestCultureProvider$instance {
-    cookieName: string;
-    determineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    CookieName: string;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 
 export const CookieRequestCultureProvider: {
     new(): CookieRequestCultureProvider;
-    readonly defaultCookieName: string;
-    makeCookieValue(requestCulture: RequestCulture): string;
-    parseCookieValue(value: string): ProviderCultureResult | undefined;
+    readonly DefaultCookieName: string;
+    MakeCookieValue(requestCulture: RequestCulture): string;
+    ParseCookieValue(value: string): ProviderCultureResult | undefined;
 };
 
 
@@ -72,7 +72,7 @@ export type CookieRequestCultureProvider = CookieRequestCultureProvider$instance
 
 
 export interface CustomRequestCultureProvider$instance extends RequestCultureProvider$instance {
-    determineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 
@@ -89,8 +89,8 @@ export type CustomRequestCultureProvider = CustomRequestCultureProvider$instance
 
 
 export interface ProviderCultureResult$instance {
-    readonly cultures: IList<StringSegment>;
-    readonly uiCultures: IList<StringSegment>;
+    readonly Cultures: IList<StringSegment>;
+    readonly UICultures: IList<StringSegment>;
 }
 
 
@@ -105,9 +105,9 @@ export const ProviderCultureResult: {
 export type ProviderCultureResult = ProviderCultureResult$instance;
 
 export interface QueryStringRequestCultureProvider$instance extends RequestCultureProvider$instance {
-    queryStringKey: string;
-    uiQueryStringKey: string;
-    determineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    QueryStringKey: string;
+    UIQueryStringKey: string;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 
@@ -124,8 +124,8 @@ export type QueryStringRequestCultureProvider = QueryStringRequestCultureProvide
 
 
 export interface RequestCulture$instance {
-    readonly culture: CultureInfo;
-    readonly uiCulture: CultureInfo;
+    readonly Culture: CultureInfo;
+    readonly UICulture: CultureInfo;
 }
 
 
@@ -140,8 +140,8 @@ export const RequestCulture: {
 export type RequestCulture = RequestCulture$instance;
 
 export interface RequestCultureFeature$instance {
-    readonly provider: IRequestCultureProvider | undefined;
-    readonly requestCulture: RequestCulture;
+    readonly Provider: IRequestCultureProvider | undefined;
+    readonly RequestCulture: RequestCulture;
 }
 
 
@@ -160,8 +160,8 @@ export type RequestCultureFeature = RequestCultureFeature$instance & __RequestCu
 
 
 export interface RequestCultureProvider$instance {
-    options: RequestLocalizationOptions;
-    determineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    Options: RequestLocalizationOptions;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 
@@ -179,7 +179,7 @@ export type RequestCultureProvider = RequestCultureProvider$instance & __Request
 
 
 export interface RequestLocalizationMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 

@@ -15,17 +15,17 @@ import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IDeletableElement$instance {
-    readonly element: XElement;
-    deletionOrder: Nullable<System_Internal.Int32>;
+    readonly Element: XElement;
+    DeletionOrder: Nullable<System_Internal.Int32>;
 }
 
 
 export type IDeletableElement = IDeletableElement$instance;
 
 export interface IDeletableXmlRepository$instance extends IXmlRepository {
-    deleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
-    getAllElements(): IReadOnlyCollection<XElement>;
-    storeElement(element: XElement, friendlyName: string): void;
+    DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
+    GetAllElements(): IReadOnlyCollection<XElement>;
+    StoreElement(element: XElement, friendlyName: string): void;
 }
 
 
@@ -34,24 +34,24 @@ export interface IDeletableXmlRepository$instance extends IXmlRepository$instanc
 export type IDeletableXmlRepository = IDeletableXmlRepository$instance;
 
 export interface IXmlRepository$instance {
-    getAllElements(): IReadOnlyCollection<XElement>;
-    storeElement(element: XElement, friendlyName: string): void;
+    GetAllElements(): IReadOnlyCollection<XElement>;
+    StoreElement(element: XElement, friendlyName: string): void;
 }
 
 
 export type IXmlRepository = IXmlRepository$instance;
 
 export interface FileSystemXmlRepository$instance {
-    readonly directory: DirectoryInfo;
-    deleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
-    getAllElements(): IReadOnlyCollection<XElement>;
-    storeElement(element: XElement, friendlyName: string): void;
+    readonly Directory: DirectoryInfo;
+    DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
+    GetAllElements(): IReadOnlyCollection<XElement>;
+    StoreElement(element: XElement, friendlyName: string): void;
 }
 
 
 export const FileSystemXmlRepository: {
     new(directory: DirectoryInfo, loggerFactory: ILoggerFactory): FileSystemXmlRepository;
-    readonly defaultKeyStorageDirectory: DirectoryInfo | undefined;
+    readonly DefaultKeyStorageDirectory: DirectoryInfo | undefined;
 };
 
 
@@ -64,16 +64,16 @@ export type FileSystemXmlRepository = FileSystemXmlRepository$instance & __FileS
 
 
 export interface RegistryXmlRepository$instance {
-    readonly registryKey: RegistryKey;
-    deleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
-    getAllElements(): IReadOnlyCollection<XElement>;
-    storeElement(element: XElement, friendlyName: string): void;
+    readonly RegistryKey: RegistryKey;
+    DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
+    GetAllElements(): IReadOnlyCollection<XElement>;
+    StoreElement(element: XElement, friendlyName: string): void;
 }
 
 
 export const RegistryXmlRepository: {
     new(registryKey: RegistryKey, loggerFactory: ILoggerFactory): RegistryXmlRepository;
-    readonly defaultRegistryKey: RegistryKey | undefined;
+    readonly DefaultRegistryKey: RegistryKey | undefined;
 };
 
 

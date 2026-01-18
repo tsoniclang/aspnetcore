@@ -1,23 +1,38 @@
 {
   "namespace": "Microsoft.AspNetCore.Antiforgery",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Antiforgery",
+    "Microsoft.AspNetCore.Http.Abstractions",
+    "Microsoft.AspNetCore.Http.Features"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgery",
       "clrName": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
-      "tsEmitName": "IAntiforgery",
       "assemblyName": "Microsoft.AspNetCore.Antiforgery",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgery::GetAndStoreTokens(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "clrName": "GetAndStoreTokens",
-          "tsEmitName": "getAndStoreTokens",
           "metadataToken": 100663322,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "normalizedSignature": "GetAndStoreTokens|(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -25,13 +40,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgery::IsRequestValidAsync(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "IsRequestValidAsync",
-          "tsEmitName": "isRequestValidAsync",
           "metadataToken": 100663324,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsRequestValidAsync|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -39,13 +59,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgery::ValidateRequestAsync(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "clrName": "ValidateRequestAsync",
-          "tsEmitName": "validateRequestAsync",
           "metadataToken": 100663325,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateRequestAsync|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -53,13 +78,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgery::SetCookieTokenAndHeader(Microsoft.AspNetCore.Http.HttpContext):System.Void",
           "clrName": "SetCookieTokenAndHeader",
-          "tsEmitName": "setCookieTokenAndHeader",
           "metadataToken": 100663326,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Void",
           "normalizedSignature": "SetCookieTokenAndHeader|(Microsoft.AspNetCore.Http.HttpContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -68,67 +98,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getAndStoreTokens",
-          "isStatic": false,
-          "tsSignatureId": "GetAndStoreTokens|(Microsoft.AspNetCore.Http.HttpContext):Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663322
-          }
-        },
-        {
-          "tsName": "isRequestValidAsync",
-          "isStatic": false,
-          "tsSignatureId": "IsRequestValidAsync|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663324
-          }
-        },
-        {
-          "tsName": "validateRequestAsync",
-          "isStatic": false,
-          "tsSignatureId": "ValidateRequestAsync|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663325
-          }
-        },
-        {
-          "tsName": "setCookieTokenAndHeader",
-          "isStatic": false,
-          "tsSignatureId": "SetCookieTokenAndHeader|(Microsoft.AspNetCore.Http.HttpContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663326
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
       "clrName": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
-      "tsEmitName": "IAntiforgeryAdditionalDataProvider",
       "assemblyName": "Microsoft.AspNetCore.Antiforgery",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider::GetAdditionalData(Microsoft.AspNetCore.Http.HttpContext):System.String",
           "clrName": "GetAdditionalData",
-          "tsEmitName": "getAdditionalData",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.String",
           "normalizedSignature": "GetAdditionalData|(Microsoft.AspNetCore.Http.HttpContext):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -136,13 +134,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider::ValidateAdditionalData(Microsoft.AspNetCore.Http.HttpContext,System.String):System.Boolean",
           "clrName": "ValidateAdditionalData",
-          "tsEmitName": "validateAdditionalData",
           "metadataToken": 100663328,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String):System.Boolean",
           "normalizedSignature": "ValidateAdditionalData|(Microsoft.AspNetCore.Http.HttpContext,System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -151,207 +154,198 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getAdditionalData",
-          "isStatic": false,
-          "tsSignatureId": "GetAdditionalData|(Microsoft.AspNetCore.Http.HttpContext):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663327
-          }
-        },
-        {
-          "tsName": "validateAdditionalData",
-          "isStatic": false,
-          "tsSignatureId": "ValidateAdditionalData|(Microsoft.AspNetCore.Http.HttpContext,System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663328
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
       "clrName": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
-      "tsEmitName": "IAntiforgeryMetadata",
       "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata::RequiresValidation:System.Boolean",
           "clrName": "RequiresValidation",
-          "tsEmitName": "requiresValidation",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "RequiresValidation|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "requiresValidation",
-          "isStatic": false,
-          "tsSignatureId": "RequiresValidation|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
-            "metadataToken": 385875991
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
       "clrName": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
-      "tsEmitName": "IAntiforgeryValidationFeature",
       "assemblyName": "Microsoft.AspNetCore.Http.Features",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature::IsValid:System.Boolean",
           "clrName": "IsValid",
-          "tsEmitName": "isValid",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsValid|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature::Error:System.Exception",
           "clrName": "Error",
-          "tsEmitName": "error",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Exception",
           "normalizedSignature": "Error|:System.Exception|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "isValid",
-          "isStatic": false,
-          "tsSignatureId": "IsValid|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
-            "metadataToken": 385875969
-          }
-        },
-        {
-          "tsName": "error",
-          "isStatic": false,
-          "tsSignatureId": "Error|:System.Exception|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
-            "metadataToken": 385875970
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
       "clrName": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-      "tsEmitName": "AntiforgeryOptions",
       "assemblyName": "Microsoft.AspNetCore.Antiforgery",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions::Cookie:Microsoft.AspNetCore.Http.CookieBuilder",
           "clrName": "Cookie",
-          "tsEmitName": "cookie",
           "metadataToken": 385875969,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.CookieBuilder",
           "normalizedSignature": "Cookie|:Microsoft.AspNetCore.Http.CookieBuilder|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions::FormFieldName:System.String",
           "clrName": "FormFieldName",
-          "tsEmitName": "formFieldName",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FormFieldName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions::HeaderName:System.String",
           "clrName": "HeaderName",
-          "tsEmitName": "headerName",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HeaderName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions::SuppressXFrameOptionsHeader:System.Boolean",
           "clrName": "SuppressXFrameOptionsHeader",
-          "tsEmitName": "suppressXFrameOptionsHeader",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "SuppressXFrameOptionsHeader|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions::SuppressReadingTokenFromFormBody:System.Boolean",
           "clrName": "SuppressReadingTokenFromFormBody",
-          "tsEmitName": "suppressReadingTokenFromFormBody",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "SuppressReadingTokenFromFormBody|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -360,11 +354,11 @@
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions::DefaultCookiePrefixSystem.String",
           "clrName": "DefaultCookiePrefix",
-          "tsEmitName": "defaultCookiePrefix",
           "metadataToken": 67108872,
           "normalizedSignature": "DefaultCookiePrefix|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -381,144 +375,90 @@
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "cookie",
-          "isStatic": false,
-          "tsSignatureId": "Cookie|:Microsoft.AspNetCore.Http.CookieBuilder|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875969
-          }
-        },
-        {
-          "tsName": "formFieldName",
-          "isStatic": false,
-          "tsSignatureId": "FormFieldName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875970
-          }
-        },
-        {
-          "tsName": "headerName",
-          "isStatic": false,
-          "tsSignatureId": "HeaderName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875971
-          }
-        },
-        {
-          "tsName": "suppressXFrameOptionsHeader",
-          "isStatic": false,
-          "tsSignatureId": "SuppressXFrameOptionsHeader|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875972
-          }
-        },
-        {
-          "tsName": "suppressReadingTokenFromFormBody",
-          "isStatic": false,
-          "tsSignatureId": "SuppressReadingTokenFromFormBody|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875973
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "defaultCookiePrefix",
-          "isStatic": true,
-          "tsSignatureId": "DefaultCookiePrefix|System.String|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 67108872
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663313
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
       "clrName": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
-      "tsEmitName": "AntiforgeryTokenSet",
       "assemblyName": "Microsoft.AspNetCore.Antiforgery",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet::RequestToken:System.String",
           "clrName": "RequestToken",
-          "tsEmitName": "requestToken",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "RequestToken|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet::FormFieldName:System.String",
           "clrName": "FormFieldName",
-          "tsEmitName": "formFieldName",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FormFieldName|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet::HeaderName:System.String",
           "clrName": "HeaderName",
-          "tsEmitName": "headerName",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HeaderName|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet::CookieToken:System.String",
           "clrName": "CookieToken",
-          "tsEmitName": "cookieToken",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CookieToken|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -536,67 +476,19 @@
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "requestToken",
-          "isStatic": false,
-          "tsSignatureId": "RequestToken|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875974
-          }
-        },
-        {
-          "tsName": "formFieldName",
-          "isStatic": false,
-          "tsSignatureId": "FormFieldName|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875975
-          }
-        },
-        {
-          "tsName": "headerName",
-          "isStatic": false,
-          "tsSignatureId": "HeaderName|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875976
-          }
-        },
-        {
-          "tsName": "cookieToken",
-          "isStatic": false,
-          "tsSignatureId": "CookieToken|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385875977
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663315
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException",
       "clrName": "Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException",
-      "tsEmitName": "AntiforgeryValidationException",
       "assemblyName": "Microsoft.AspNetCore.Antiforgery",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -622,61 +514,55 @@
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Exception):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663321
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
       "clrName": "Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
-      "tsEmitName": "RequireAntiforgeryTokenAttribute",
       "assemblyName": "Microsoft.AspNetCore.Antiforgery",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute::RequiresValidation:System.Boolean",
           "clrName": "RequiresValidation",
-          "tsEmitName": "requiresValidation",
           "metadataToken": 385876010,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "RequiresValidation|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata::RequiresValidation:System.Boolean",
           "clrName": "RequiresValidation",
-          "tsEmitName": "requiresValidation$view",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "RequiresValidation|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -693,39 +579,6 @@
           "parameterCount": 1,
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "requiresValidation",
-          "isStatic": false,
-          "tsSignatureId": "RequiresValidation|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 385876010
-          }
-        },
-        {
-          "tsName": "requiresValidation$view",
-          "isStatic": false,
-          "tsSignatureId": "RequiresValidation|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
-            "metadataToken": 385875991
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Boolean):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
-            "metadataToken": 100663469
-          }
         }
       ]
     }

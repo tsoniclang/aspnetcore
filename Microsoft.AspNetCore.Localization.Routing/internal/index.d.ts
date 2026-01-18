@@ -15,9 +15,9 @@ import type { String as ClrString } from "@tsonic/dotnet/System.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface RouteDataRequestCultureProvider$instance extends RequestCultureProvider {
-    routeDataStringKey: string;
-    uiRouteDataStringKey: string;
-    determineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    RouteDataStringKey: string;
+    UIRouteDataStringKey: string;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 

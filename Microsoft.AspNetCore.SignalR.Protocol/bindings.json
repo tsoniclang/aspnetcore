@@ -1,23 +1,37 @@
 {
   "namespace": "Microsoft.AspNetCore.SignalR.Protocol",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.SignalR.Common",
+    "Microsoft.AspNetCore.SignalR.Protocols.Json"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-      "tsEmitName": "IHubProtocol",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::TryParseMessage(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean",
           "clrName": "TryParseMessage",
-          "tsEmitName": "tryParseMessage",
           "metadataToken": 100663430,
           "canonicalSignature": "(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean",
           "normalizedSignature": "TryParseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -35,13 +49,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::WriteMessage(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteMessage",
-          "tsEmitName": "writeMessage",
           "metadataToken": 100663431,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteMessage|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -49,13 +68,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::GetMessageBytes(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetMessageBytes",
-          "tsEmitName": "getMessageBytes",
           "metadataToken": 100663432,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -63,13 +87,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::IsVersionSupported(System.Int32):System.Boolean",
           "clrName": "IsVersionSupported",
-          "tsEmitName": "isVersionSupported",
           "metadataToken": 100663433,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "IsVersionSupported|(System.Int32):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -79,143 +108,90 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::Version:System.Int32",
           "clrName": "Version",
-          "tsEmitName": "version",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::TransferFormat:Microsoft.AspNetCore.Connections.TransferFormat",
           "clrName": "TransferFormat",
-          "tsEmitName": "transferFormat",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.AspNetCore.Connections.TransferFormat",
           "normalizedSignature": "TransferFormat|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "tryParseMessage",
-          "isStatic": false,
-          "tsSignatureId": "TryParseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663430
-          }
-        },
-        {
-          "tsName": "writeMessage",
-          "isStatic": false,
-          "tsSignatureId": "WriteMessage|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663431
-          }
-        },
-        {
-          "tsName": "getMessageBytes",
-          "isStatic": false,
-          "tsSignatureId": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663432
-          }
-        },
-        {
-          "tsName": "isVersionSupported",
-          "isStatic": false,
-          "tsSignatureId": "IsVersionSupported|(System.Int32):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663433
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875990
-          }
-        },
-        {
-          "tsName": "version",
-          "isStatic": false,
-          "tsSignatureId": "Version|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875991
-          }
-        },
-        {
-          "tsName": "transferFormat",
-          "isStatic": false,
-          "tsSignatureId": "TransferFormat|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875992
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
-      "tsEmitName": "AckMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.AckMessage::SequenceId:System.Int64",
           "clrName": "SequenceId",
-          "tsEmitName": "sequenceId",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "SequenceId|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -233,37 +209,19 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "sequenceId",
-          "isStatic": false,
-          "tsSignatureId": "SequenceId|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875976
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Int64):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663378
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CancelInvocationMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.CancelInvocationMessage",
-      "tsEmitName": "CancelInvocationMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -279,74 +237,54 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CancelInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CancelInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663381
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
-      "tsEmitName": "CloseMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CloseMessage::Error:System.String",
           "clrName": "Error",
-          "tsEmitName": "error",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Error|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CloseMessage::AllowReconnect:System.Boolean",
           "clrName": "AllowReconnect",
-          "tsEmitName": "allowReconnect",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowReconnect|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -355,11 +293,11 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CloseMessage::EmptyMicrosoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "clrName": "Empty",
-          "tsEmitName": "empty",
           "metadataToken": 67108885,
           "normalizedSignature": "Empty|Microsoft.AspNetCore.SignalR.Protocol.CloseMessage|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -386,79 +324,35 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "error",
-          "isStatic": false,
-          "tsSignatureId": "Error|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875977
-          }
-        },
-        {
-          "tsName": "allowReconnect",
-          "isStatic": false,
-          "tsSignatureId": "AllowReconnect|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875978
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "empty",
-          "isStatic": true,
-          "tsSignatureId": "Empty|Microsoft.AspNetCore.SignalR.Protocol.CloseMessage|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108885
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663384
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Boolean):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663385
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-      "tsEmitName": "CompletionMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100663391,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -466,13 +360,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::WithError(System.String,System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "clrName": "WithError",
-          "tsEmitName": "withError",
           "metadataToken": 100663392,
           "canonicalSignature": "(System.String,System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "normalizedSignature": "WithError|(System.String,System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -480,13 +379,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::WithResult(System.String,System.Object):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "clrName": "WithResult",
-          "tsEmitName": "withResult",
           "metadataToken": 100663393,
           "canonicalSignature": "(System.String,System.Object):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "normalizedSignature": "WithResult|(System.String,System.Object):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -494,13 +398,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::Empty(System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "clrName": "Empty",
-          "tsEmitName": "empty",
           "metadataToken": 100663394,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "normalizedSignature": "Empty|(System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -510,42 +419,54 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::Error:System.String",
           "clrName": "Error",
-          "tsEmitName": "error",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Error|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::Result:System.Object",
           "clrName": "Result",
-          "tsEmitName": "result",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Result|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::HasResult:System.Boolean",
           "clrName": "HasResult",
-          "tsEmitName": "hasResult",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasResult|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -563,146 +484,54 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663391
-          }
-        },
-        {
-          "tsName": "withError",
-          "isStatic": true,
-          "tsSignatureId": "WithError|(System.String,System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663392
-          }
-        },
-        {
-          "tsName": "withResult",
-          "isStatic": true,
-          "tsSignatureId": "WithResult|(System.String,System.Object):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663393
-          }
-        },
-        {
-          "tsName": "empty",
-          "isStatic": true,
-          "tsSignatureId": "Empty|(System.String):Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663394
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "error",
-          "isStatic": false,
-          "tsSignatureId": "Error|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "result",
-          "isStatic": false,
-          "tsSignatureId": "Result|:System.Object|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875980
-          }
-        },
-        {
-          "tsName": "hasResult",
-          "isStatic": false,
-          "tsSignatureId": "HasResult|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875981
-          }
-        },
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String,System.Object,System.Boolean):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663390
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
-      "tsEmitName": "HandshakeRequestMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage::Protocol:System.String",
           "clrName": "Protocol",
-          "tsEmitName": "protocol",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Protocol|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage::Version:System.Int32",
           "clrName": "Version",
-          "tsEmitName": "version",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -720,60 +549,36 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "protocol",
-          "isStatic": false,
-          "tsSignatureId": "Protocol|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875982
-          }
-        },
-        {
-          "tsName": "version",
-          "isStatic": false,
-          "tsSignatureId": "Version|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875983
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Int32):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663403
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
-      "tsEmitName": "HandshakeResponseMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage::Error:System.String",
           "clrName": "Error",
-          "tsEmitName": "error",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Error|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -782,11 +587,11 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage::EmptyMicrosoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
           "clrName": "Empty",
-          "tsEmitName": "empty",
           "metadataToken": 67108902,
           "normalizedSignature": "Empty|Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -803,112 +608,73 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "error",
-          "isStatic": false,
-          "tsSignatureId": "Error|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875984
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "empty",
-          "isStatic": true,
-          "tsSignatureId": "Empty|Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108902
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663407
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-      "tsEmitName": "HubInvocationMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage::Headers:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Headers",
-          "tsEmitName": "headers",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage::InvocationId:System.String",
           "clrName": "InvocationId",
-          "tsEmitName": "invocationId",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "InvocationId|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
-      "tsEmitName": "HubMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -918,143 +684,121 @@
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-      "tsEmitName": "HubMethodInvocationMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage::Target:System.String",
           "clrName": "Target",
-          "tsEmitName": "target",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Target|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage::Arguments:System.Object[]",
           "clrName": "Arguments",
-          "tsEmitName": "arguments",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Object[]",
           "normalizedSignature": "Arguments|:System.Object[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage::StreamIds:System.String[]",
           "clrName": "StreamIds",
-          "tsEmitName": "streamIds",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.String[]",
           "normalizedSignature": "StreamIds|:System.String[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "target",
-          "isStatic": false,
-          "tsSignatureId": "Target|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "arguments",
-          "isStatic": false,
-          "tsSignatureId": "Arguments|:System.Object[]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875988
-          }
-        },
-        {
-          "tsName": "streamIds",
-          "isStatic": false,
-          "tsSignatureId": "StreamIds|:System.String[]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875989
-          }
-        },
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
-      "tsEmitName": "InvocationBindingFailureMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage::BindingFailure:System.Runtime.ExceptionServices.ExceptionDispatchInfo",
           "clrName": "BindingFailure",
-          "tsEmitName": "bindingFailure",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.Runtime.ExceptionServices.ExceptionDispatchInfo",
           "normalizedSignature": "BindingFailure|:System.Runtime.ExceptionServices.ExceptionDispatchInfo|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage::Target:System.String",
           "clrName": "Target",
-          "tsEmitName": "target",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Target|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1072,78 +816,35 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "bindingFailure",
-          "isStatic": false,
-          "tsSignatureId": "BindingFailure|:System.Runtime.ExceptionServices.ExceptionDispatchInfo|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875993
-          }
-        },
-        {
-          "tsName": "target",
-          "isStatic": false,
-          "tsSignatureId": "Target|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875994
-          }
-        },
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String,System.Runtime.ExceptionServices.ExceptionDispatchInfo):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663436
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
-      "tsEmitName": "InvocationMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100663422,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -1183,118 +884,35 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663422
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "target",
-          "isStatic": false,
-          "tsSignatureId": "Target|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "arguments",
-          "isStatic": false,
-          "tsSignatureId": "Arguments|:System.Object[]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875988
-          }
-        },
-        {
-          "tsName": "streamIds",
-          "isStatic": false,
-          "tsSignatureId": "StreamIds|:System.String[]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875989
-          }
-        },
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Object[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663419
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String,System.Object[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663420
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String,System.Object[],System.String[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663421
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-      "tsEmitName": "JsonHubProtocol",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::IsVersionSupported(System.Int32):System.Boolean",
           "clrName": "IsVersionSupported",
-          "tsEmitName": "isVersionSupported",
           "metadataToken": 100663345,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "IsVersionSupported|(System.Int32):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false
@@ -1302,13 +920,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::TryParseMessage(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean",
           "clrName": "TryParseMessage",
-          "tsEmitName": "tryParseMessage",
           "metadataToken": 100663346,
           "canonicalSignature": "(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean",
           "normalizedSignature": "TryParseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false,
@@ -1326,13 +949,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::WriteMessage(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteMessage",
-          "tsEmitName": "writeMessage",
           "metadataToken": 100663347,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteMessage|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false
@@ -1340,13 +968,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::GetMessageBytes(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetMessageBytes",
-          "tsEmitName": "getMessageBytes",
           "metadataToken": 100663348,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false
@@ -1354,16 +987,22 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::TryParseMessage(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean",
           "clrName": "TryParseMessage",
-          "tsEmitName": "tryParseMessage$view",
           "metadataToken": 100663430,
           "canonicalSignature": "(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean",
           "normalizedSignature": "TryParseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "parameterModifiers": [
             {
               "index": 0,
@@ -1378,128 +1017,173 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::WriteMessage(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteMessage",
-          "tsEmitName": "writeMessage$view",
           "metadataToken": 100663431,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteMessage|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::GetMessageBytes(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetMessageBytes",
-          "tsEmitName": "getMessageBytes$view",
           "metadataToken": 100663432,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::IsVersionSupported(System.Int32):System.Boolean",
           "clrName": "IsVersionSupported",
-          "tsEmitName": "isVersionSupported$view",
           "metadataToken": 100663433,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "IsVersionSupported|(System.Int32):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::Version:System.Int32",
           "clrName": "Version",
-          "tsEmitName": "version",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::TransferFormat:Microsoft.AspNetCore.Connections.TransferFormat",
           "clrName": "TransferFormat",
-          "tsEmitName": "transferFormat",
           "metadataToken": 385875973,
           "canonicalSignature": ":Microsoft.AspNetCore.Connections.TransferFormat",
           "normalizedSignature": "TransferFormat|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name$view",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::Version:System.Int32",
           "clrName": "Version",
-          "tsEmitName": "version$view",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol::TransferFormat:Microsoft.AspNetCore.Connections.TransferFormat",
           "clrName": "TransferFormat",
-          "tsEmitName": "transferFormat$view",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.AspNetCore.Connections.TransferFormat",
           "normalizedSignature": "TransferFormat|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1527,227 +1211,65 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "isVersionSupported",
-          "isStatic": false,
-          "tsSignatureId": "IsVersionSupported|(System.Int32):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 100663345
-          }
-        },
-        {
-          "tsName": "tryParseMessage",
-          "isStatic": false,
-          "tsSignatureId": "TryParseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 100663346
-          }
-        },
-        {
-          "tsName": "writeMessage",
-          "isStatic": false,
-          "tsSignatureId": "WriteMessage|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 100663347
-          }
-        },
-        {
-          "tsName": "getMessageBytes",
-          "isStatic": false,
-          "tsSignatureId": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 100663348
-          }
-        },
-        {
-          "tsName": "tryParseMessage$view",
-          "isStatic": false,
-          "tsSignatureId": "TryParseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663430
-          }
-        },
-        {
-          "tsName": "writeMessage$view",
-          "isStatic": false,
-          "tsSignatureId": "WriteMessage|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663431
-          }
-        },
-        {
-          "tsName": "getMessageBytes$view",
-          "isStatic": false,
-          "tsSignatureId": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663432
-          }
-        },
-        {
-          "tsName": "isVersionSupported$view",
-          "isStatic": false,
-          "tsSignatureId": "IsVersionSupported|(System.Int32):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663433
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 385875971
-          }
-        },
-        {
-          "tsName": "version",
-          "isStatic": false,
-          "tsSignatureId": "Version|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 385875972
-          }
-        },
-        {
-          "tsName": "transferFormat",
-          "isStatic": false,
-          "tsSignatureId": "TransferFormat|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 385875973
-          }
-        },
-        {
-          "tsName": "name$view",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875990
-          }
-        },
-        {
-          "tsName": "version$view",
-          "isStatic": false,
-          "tsSignatureId": "Version|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875991
-          }
-        },
-        {
-          "tsName": "transferFormat$view",
-          "isStatic": false,
-          "tsSignatureId": "TransferFormat|:Microsoft.AspNetCore.Connections.TransferFormat|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875992
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 100663340
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.JsonHubProtocolOptions,Microsoft.AspNetCore.SignalR.Protocols.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
-            "metadataToken": 100663341
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.PingMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.PingMessage",
-      "tsEmitName": "PingMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.PingMessage::InstanceMicrosoft.AspNetCore.SignalR.Protocol.PingMessage",
           "clrName": "Instance",
-          "tsEmitName": "instance",
           "metadataToken": 67108920,
           "normalizedSignature": "Instance|Microsoft.AspNetCore.SignalR.Protocol.PingMessage|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.PingMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "instance",
-          "isStatic": true,
-          "tsSignatureId": "Instance|Microsoft.AspNetCore.SignalR.Protocol.PingMessage|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.PingMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108920
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.RawResult",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.RawResult",
-      "tsEmitName": "RawResult",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.RawResult::RawSerializedData:System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "RawSerializedData",
-          "tsEmitName": "rawSerializedData",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "RawSerializedData|:System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.RawResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1765,50 +1287,36 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.RawResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "rawSerializedData",
-          "isStatic": false,
-          "tsSignatureId": "RawSerializedData|:System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.RawResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875995
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.RawResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663439
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
-      "tsEmitName": "SequenceMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage::SequenceId:System.Int64",
           "clrName": "SequenceId",
-          "tsEmitName": "sequenceId",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "SequenceId|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1826,64 +1334,54 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "sequenceId",
-          "isStatic": false,
-          "tsSignatureId": "SequenceId|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875996
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Int64):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663442
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
-      "tsEmitName": "StreamBindingFailureMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage::Id:System.String",
           "clrName": "Id",
-          "tsEmitName": "id",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage::BindingFailure:System.Runtime.ExceptionServices.ExceptionDispatchInfo",
           "clrName": "BindingFailure",
-          "tsEmitName": "bindingFailure",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Runtime.ExceptionServices.ExceptionDispatchInfo",
           "normalizedSignature": "BindingFailure|:System.Runtime.ExceptionServices.ExceptionDispatchInfo|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1901,58 +1399,35 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "id",
-          "isStatic": false,
-          "tsSignatureId": "Id|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875997
-          }
-        },
-        {
-          "tsName": "bindingFailure",
-          "isStatic": false,
-          "tsSignatureId": "BindingFailure|:System.Runtime.ExceptionServices.ExceptionDispatchInfo|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875998
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Runtime.ExceptionServices.ExceptionDispatchInfo):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663447
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
-      "tsEmitName": "StreamInvocationMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100663425,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -1982,109 +1457,35 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663425
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "target",
-          "isStatic": false,
-          "tsSignatureId": "Target|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "arguments",
-          "isStatic": false,
-          "tsSignatureId": "Arguments|:System.Object[]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875988
-          }
-        },
-        {
-          "tsName": "streamIds",
-          "isStatic": false,
-          "tsSignatureId": "StreamIds|:System.String[]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875989
-          }
-        },
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String,System.Object[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663423
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String,System.Object[],System.String[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663424
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
-      "tsEmitName": "StreamItemMessage",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100663451,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -2094,14 +1495,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage::Item:System.Object",
           "clrName": "Item",
-          "tsEmitName": "item",
           "metadataToken": 385875999,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Item|:System.Object|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -2119,80 +1524,35 @@
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663451
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "item",
-          "isStatic": false,
-          "tsSignatureId": "Item|:System.Object|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875999
-          }
-        },
-        {
-          "tsName": "headers",
-          "isStatic": false,
-          "tsSignatureId": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "invocationId",
-          "isStatic": false,
-          "tsSignatureId": "InvocationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Object):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663450
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
-      "tsEmitName": "HandshakeProtocol",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol::GetSuccessfulHandshake(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetSuccessfulHandshake",
-          "tsEmitName": "getSuccessfulHandshake",
           "metadataToken": 100663396,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetSuccessfulHandshake|(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -2200,13 +1560,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol::WriteRequestMessage(Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteRequestMessage",
-          "tsEmitName": "writeRequestMessage",
           "metadataToken": 100663397,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteRequestMessage|(Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -2214,13 +1579,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol::WriteResponseMessage(Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteResponseMessage",
-          "tsEmitName": "writeResponseMessage",
           "metadataToken": 100663398,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteResponseMessage|(Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -2228,13 +1598,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol::TryParseResponseMessage(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage\u0026):System.Boolean",
           "clrName": "TryParseResponseMessage",
-          "tsEmitName": "tryParseResponseMessage",
           "metadataToken": 100663399,
           "canonicalSignature": "(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage\u0026):System.Boolean",
           "normalizedSignature": "TryParseResponseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage\u0026):System.Boolean|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -2252,13 +1627,18 @@
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol::TryParseRequestMessage(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage\u0026):System.Boolean",
           "clrName": "TryParseRequestMessage",
-          "tsEmitName": "tryParseRequestMessage",
           "metadataToken": 100663400,
           "canonicalSignature": "(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage\u0026):System.Boolean",
           "normalizedSignature": "TryParseRequestMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage\u0026):System.Boolean|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -2277,281 +1657,152 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getSuccessfulHandshake",
-          "isStatic": true,
-          "tsSignatureId": "GetSuccessfulHandshake|(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663396
-          }
-        },
-        {
-          "tsName": "writeRequestMessage",
-          "isStatic": true,
-          "tsSignatureId": "WriteRequestMessage|(Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663397
-          }
-        },
-        {
-          "tsName": "writeResponseMessage",
-          "isStatic": true,
-          "tsSignatureId": "WriteResponseMessage|(Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663398
-          }
-        },
-        {
-          "tsName": "tryParseResponseMessage",
-          "isStatic": true,
-          "tsSignatureId": "TryParseResponseMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage\u0026):System.Boolean|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663399
-          }
-        },
-        {
-          "tsName": "tryParseRequestMessage",
-          "isStatic": true,
-          "tsSignatureId": "TryParseRequestMessage|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026,Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage\u0026):System.Boolean|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663400
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-      "tsEmitName": "HubProtocolConstants",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::InvocationMessageTypeSystem.Int32",
           "clrName": "InvocationMessageType",
-          "tsEmitName": "invocationMessageType",
           "metadataToken": 67108909,
           "normalizedSignature": "InvocationMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::StreamItemMessageTypeSystem.Int32",
           "clrName": "StreamItemMessageType",
-          "tsEmitName": "streamItemMessageType",
           "metadataToken": 67108910,
           "normalizedSignature": "StreamItemMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::CompletionMessageTypeSystem.Int32",
           "clrName": "CompletionMessageType",
-          "tsEmitName": "completionMessageType",
           "metadataToken": 67108911,
           "normalizedSignature": "CompletionMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::StreamInvocationMessageTypeSystem.Int32",
           "clrName": "StreamInvocationMessageType",
-          "tsEmitName": "streamInvocationMessageType",
           "metadataToken": 67108912,
           "normalizedSignature": "StreamInvocationMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::CancelInvocationMessageTypeSystem.Int32",
           "clrName": "CancelInvocationMessageType",
-          "tsEmitName": "cancelInvocationMessageType",
           "metadataToken": 67108913,
           "normalizedSignature": "CancelInvocationMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::PingMessageTypeSystem.Int32",
           "clrName": "PingMessageType",
-          "tsEmitName": "pingMessageType",
           "metadataToken": 67108914,
           "normalizedSignature": "PingMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::CloseMessageTypeSystem.Int32",
           "clrName": "CloseMessageType",
-          "tsEmitName": "closeMessageType",
           "metadataToken": 67108915,
           "normalizedSignature": "CloseMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::AckMessageTypeSystem.Int32",
           "clrName": "AckMessageType",
-          "tsEmitName": "ackMessageType",
           "metadataToken": 67108916,
           "normalizedSignature": "AckMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants::SequenceMessageTypeSystem.Int32",
           "clrName": "SequenceMessageType",
-          "tsEmitName": "sequenceMessageType",
           "metadataToken": 67108917,
           "normalizedSignature": "SequenceMessageType|System.Int32|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "invocationMessageType",
-          "isStatic": true,
-          "tsSignatureId": "InvocationMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108909
-          }
-        },
-        {
-          "tsName": "streamItemMessageType",
-          "isStatic": true,
-          "tsSignatureId": "StreamItemMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108910
-          }
-        },
-        {
-          "tsName": "completionMessageType",
-          "isStatic": true,
-          "tsSignatureId": "CompletionMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108911
-          }
-        },
-        {
-          "tsName": "streamInvocationMessageType",
-          "isStatic": true,
-          "tsSignatureId": "StreamInvocationMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108912
-          }
-        },
-        {
-          "tsName": "cancelInvocationMessageType",
-          "isStatic": true,
-          "tsSignatureId": "CancelInvocationMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108913
-          }
-        },
-        {
-          "tsName": "pingMessageType",
-          "isStatic": true,
-          "tsSignatureId": "PingMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108914
-          }
-        },
-        {
-          "tsName": "closeMessageType",
-          "isStatic": true,
-          "tsSignatureId": "CloseMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108915
-          }
-        },
-        {
-          "tsName": "ackMessageType",
-          "isStatic": true,
-          "tsSignatureId": "AckMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108916
-          }
-        },
-        {
-          "tsName": "sequenceMessageType",
-          "isStatic": true,
-          "tsSignatureId": "SequenceMessageType|System.Int32|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 67108917
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions",
       "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions",
-      "tsEmitName": "HubProtocolExtensions",
       "assemblyName": "Microsoft.AspNetCore.SignalR.Common",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions::GetMessageBytes(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.Byte[]",
           "clrName": "GetMessageBytes",
-          "tsEmitName": "getMessageBytes",
           "metadataToken": 100663426,
           "canonicalSignature": "(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.Byte[]",
           "normalizedSignature": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.Byte[]|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": true
@@ -2560,19 +1811,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getMessageBytes",
-          "isStatic": true,
-          "tsSignatureId": "GetMessageBytes|(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.Byte[]|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
-            "metadataToken": 100663426
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

@@ -1,86 +1,90 @@
 {
   "namespace": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components.Server"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
       "clrName": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
-      "tsEmitName": "ProtectedBrowserStorageResult_1",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 1,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601::Success:System.Boolean",
           "clrName": "Success",
-          "tsEmitName": "success",
           "metadataToken": 385876083,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Success|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601::Value:TValue",
           "clrName": "Value",
-          "tsEmitName": "value",
           "metadataToken": 385876084,
           "canonicalSignature": ":TValue",
           "normalizedSignature": "Value|:TValue|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "success",
-          "isStatic": false,
-          "tsSignatureId": "Success|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876083
-          }
-        },
-        {
-          "tsName": "value",
-          "isStatic": false,
-          "tsSignatureId": "Value|:TValue|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876084
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
       "clrName": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-      "tsEmitName": "ProtectedBrowserStorage",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::SetAsync(System.String,System.Object):System.Threading.Tasks.ValueTask",
           "clrName": "SetAsync",
-          "tsEmitName": "setAsync",
           "metadataToken": 100663908,
           "canonicalSignature": "(System.String,System.Object):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "SetAsync|(System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -88,13 +92,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::SetAsync(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask",
           "clrName": "SetAsync",
-          "tsEmitName": "setAsync",
           "metadataToken": 100663909,
           "canonicalSignature": "(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "SetAsync|(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -102,13 +111,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::GetAsync(System.String):ValueTask_1",
           "clrName": "GetAsync",
-          "tsEmitName": "getAsync",
           "metadataToken": 100663910,
           "canonicalSignature": "(System.String):ValueTask_1",
           "normalizedSignature": "GetAsync|(System.String):ValueTask_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -116,13 +130,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::GetAsync(System.String,System.String):ValueTask_1",
           "clrName": "GetAsync",
-          "tsEmitName": "getAsync",
           "metadataToken": 100663911,
           "canonicalSignature": "(System.String,System.String):ValueTask_1",
           "normalizedSignature": "GetAsync|(System.String,System.String):ValueTask_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -130,13 +149,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::DeleteAsync(System.String):System.Threading.Tasks.ValueTask",
           "clrName": "DeleteAsync",
-          "tsEmitName": "deleteAsync",
           "metadataToken": 100663912,
           "canonicalSignature": "(System.String):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "DeleteAsync|(System.String):System.Threading.Tasks.ValueTask|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -145,66 +169,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663908
-          }
-        },
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663909
-          }
-        },
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String):ValueTask_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663910
-          }
-        },
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String,System.String):ValueTask_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663911
-          }
-        },
-        {
-          "tsName": "deleteAsync",
-          "isStatic": false,
-          "tsSignatureId": "DeleteAsync|(System.String):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663912
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage",
       "clrName": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage",
-      "tsEmitName": "ProtectedLocalStorage",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -220,77 +197,19 @@
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663908
-          }
-        },
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663909
-          }
-        },
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String):ValueTask_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663910
-          }
-        },
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String,System.String):ValueTask_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663911
-          }
-        },
-        {
-          "tsName": "deleteAsync",
-          "isStatic": false,
-          "tsSignatureId": "DeleteAsync|(System.String):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663912
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663922
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedSessionStorage",
       "clrName": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedSessionStorage",
-      "tsEmitName": "ProtectedSessionStorage",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -305,69 +224,6 @@
           "parameterCount": 2,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedSessionStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663908
-          }
-        },
-        {
-          "tsName": "setAsync",
-          "isStatic": false,
-          "tsSignatureId": "SetAsync|(System.String,System.String,System.Object):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663909
-          }
-        },
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String):ValueTask_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663910
-          }
-        },
-        {
-          "tsName": "getAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAsync|(System.String,System.String):ValueTask_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663911
-          }
-        },
-        {
-          "tsName": "deleteAsync",
-          "isStatic": false,
-          "tsSignatureId": "DeleteAsync|(System.String):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663912
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedSessionStorage",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663923
-          }
         }
       ]
     }

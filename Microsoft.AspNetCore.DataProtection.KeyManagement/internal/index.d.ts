@@ -20,13 +20,13 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IDeletableKeyManager$instance extends IKeyManager {
-    readonly canDeleteKeys: boolean;
-    createNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
-    deleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;
-    getAllKeys(): IReadOnlyCollection<IKey>;
-    getCacheExpirationToken(): CancellationToken;
-    revokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
-    revokeKey(keyId: Guid, reason?: string): void;
+    readonly CanDeleteKeys: boolean;
+    CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
+    DeleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;
+    GetAllKeys(): IReadOnlyCollection<IKey>;
+    GetCacheExpirationToken(): CancellationToken;
+    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
+    RevokeKey(keyId: Guid, reason?: string): void;
 }
 
 
@@ -35,47 +35,47 @@ export interface IDeletableKeyManager$instance extends IKeyManager$instance {}
 export type IDeletableKeyManager = IDeletableKeyManager$instance;
 
 export interface IKey$instance {
-    readonly activationDate: DateTimeOffset;
-    readonly creationDate: DateTimeOffset;
-    readonly expirationDate: DateTimeOffset;
-    readonly isRevoked: boolean;
-    readonly keyId: Guid;
-    readonly descriptor: IAuthenticatedEncryptorDescriptor;
-    createEncryptor(): IAuthenticatedEncryptor | undefined;
+    readonly ActivationDate: DateTimeOffset;
+    readonly CreationDate: DateTimeOffset;
+    readonly ExpirationDate: DateTimeOffset;
+    readonly IsRevoked: boolean;
+    readonly KeyId: Guid;
+    readonly Descriptor: IAuthenticatedEncryptorDescriptor;
+    CreateEncryptor(): IAuthenticatedEncryptor | undefined;
 }
 
 
 export type IKey = IKey$instance;
 
 export interface IKeyEscrowSink$instance {
-    store(keyId: Guid, element: XElement): void;
+    Store(keyId: Guid, element: XElement): void;
 }
 
 
 export type IKeyEscrowSink = IKeyEscrowSink$instance;
 
 export interface IKeyManager$instance {
-    createNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
-    getAllKeys(): IReadOnlyCollection<IKey>;
-    getCacheExpirationToken(): CancellationToken;
-    revokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
-    revokeKey(keyId: Guid, reason?: string): void;
+    CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
+    GetAllKeys(): IReadOnlyCollection<IKey>;
+    GetCacheExpirationToken(): CancellationToken;
+    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
+    RevokeKey(keyId: Guid, reason?: string): void;
 }
 
 
 export type IKeyManager = IKeyManager$instance;
 
 export interface KeyManagementOptions$instance {
-    get authenticatedEncryptorConfiguration(): AlgorithmConfiguration | undefined;
-    set authenticatedEncryptorConfiguration(value: AlgorithmConfiguration);
-    readonly authenticatedEncryptorFactories: IList<IAuthenticatedEncryptorFactory>;
-    autoGenerateKeys: boolean;
-    readonly keyEscrowSinks: IList<IKeyEscrowSink>;
-    newKeyLifetime: TimeSpan;
-    get xmlEncryptor(): IXmlEncryptor | undefined;
-    set xmlEncryptor(value: IXmlEncryptor);
-    get xmlRepository(): IXmlRepository | undefined;
-    set xmlRepository(value: IXmlRepository);
+    get AuthenticatedEncryptorConfiguration(): AlgorithmConfiguration | undefined;
+    set AuthenticatedEncryptorConfiguration(value: AlgorithmConfiguration);
+    readonly AuthenticatedEncryptorFactories: IList<IAuthenticatedEncryptorFactory>;
+    AutoGenerateKeys: boolean;
+    readonly KeyEscrowSinks: IList<IKeyEscrowSink>;
+    NewKeyLifetime: TimeSpan;
+    get XmlEncryptor(): IXmlEncryptor | undefined;
+    set XmlEncryptor(value: IXmlEncryptor);
+    get XmlRepository(): IXmlRepository | undefined;
+    set XmlRepository(value: IXmlRepository);
 }
 
 
@@ -87,13 +87,13 @@ export const KeyManagementOptions: {
 export type KeyManagementOptions = KeyManagementOptions$instance;
 
 export interface XmlKeyManager$instance {
-    readonly canDeleteKeys: boolean;
-    createNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
-    deleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;
-    getAllKeys(): IReadOnlyCollection<IKey>;
-    getCacheExpirationToken(): CancellationToken;
-    revokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
-    revokeKey(keyId: Guid, reason?: string): void;
+    readonly CanDeleteKeys: boolean;
+    CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
+    DeleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;
+    GetAllKeys(): IReadOnlyCollection<IKey>;
+    GetCacheExpirationToken(): CancellationToken;
+    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
+    RevokeKey(keyId: Guid, reason?: string): void;
 }
 
 

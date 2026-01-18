@@ -16,21 +16,21 @@ import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IErrorBoundaryLogger$instance {
-    logErrorAsync(exception: Exception): ValueTask;
+    LogErrorAsync(exception: Exception): ValueTask;
 }
 
 
 export type IErrorBoundaryLogger = IErrorBoundaryLogger$instance;
 
 export interface IJSComponentConfiguration$instance {
-    readonly jsComponents: JSComponentConfigurationStore;
+    readonly JSComponents: JSComponentConfigurationStore;
 }
 
 
 export type IJSComponentConfiguration = IJSComponentConfiguration$instance;
 
 export interface ClipboardEventArgs$instance extends EventArgs {
-    type: string;
+    Type: string;
 }
 
 
@@ -42,12 +42,12 @@ export const ClipboardEventArgs: {
 export type ClipboardEventArgs = ClipboardEventArgs$instance;
 
 export interface DataTransfer$instance {
-    dropEffect: string;
-    get effectAllowed(): string | undefined;
-    set effectAllowed(value: string);
-    files: string[];
-    items: DataTransferItem[];
-    types: string[];
+    DropEffect: string;
+    get EffectAllowed(): string | undefined;
+    set EffectAllowed(value: string);
+    Files: string[];
+    Items: DataTransferItem[];
+    Types: string[];
 }
 
 
@@ -59,8 +59,8 @@ export const DataTransfer: {
 export type DataTransfer = DataTransfer$instance;
 
 export interface DataTransferItem$instance {
-    kind: string;
-    type: string;
+    Kind: string;
+    Type: string;
 }
 
 
@@ -72,7 +72,7 @@ export const DataTransferItem: {
 export type DataTransferItem = DataTransferItem$instance;
 
 export interface DragEventArgs$instance extends MouseEventArgs {
-    dataTransfer: DataTransfer;
+    DataTransfer: DataTransfer;
 }
 
 
@@ -84,10 +84,10 @@ export const DragEventArgs: {
 export type DragEventArgs = DragEventArgs$instance;
 
 export interface ErrorBoundary$instance extends ErrorBoundaryBase {
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -106,13 +106,13 @@ export type ErrorBoundary = ErrorBoundary$instance & __ErrorBoundary$views;
 
 
 export interface ErrorEventArgs$instance extends EventArgs {
-    colno: int;
-    get filename(): string | undefined;
-    set filename(value: string);
-    lineno: int;
-    get message(): string | undefined;
-    set message(value: string);
-    type: string;
+    Colno: int;
+    get Filename(): string | undefined;
+    set Filename(value: string);
+    Lineno: int;
+    get Message(): string | undefined;
+    set Message(value: string);
+    Type: string;
 }
 
 
@@ -124,7 +124,7 @@ export const ErrorEventArgs: {
 export type ErrorEventArgs = ErrorEventArgs$instance;
 
 export interface FocusEventArgs$instance extends EventArgs {
-    type: string;
+    Type: string;
 }
 
 
@@ -136,11 +136,11 @@ export const FocusEventArgs: {
 export type FocusEventArgs = FocusEventArgs$instance;
 
 export interface HeadContent$instance extends ComponentBase {
-    childContent: RenderFragment;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    ChildContent: RenderFragment;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -161,10 +161,10 @@ export type HeadContent = HeadContent$instance & __HeadContent$views;
 
 
 export interface HeadOutlet$instance extends ComponentBase {
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -185,17 +185,17 @@ export type HeadOutlet = HeadOutlet$instance & __HeadOutlet$views;
 
 
 export interface HtmlRenderer$instance {
-    readonly dispatcher: Dispatcher;
-    beginRenderingComponent<TComponent extends IComponent>(): HtmlRootComponent;
-    beginRenderingComponent<TComponent extends IComponent>(parameters: ParameterView): HtmlRootComponent;
-    beginRenderingComponent(componentType: Type): HtmlRootComponent;
-    beginRenderingComponent(componentType: Type, parameters: ParameterView): HtmlRootComponent;
-    dispose(): void;
-    disposeAsync(): ValueTask;
-    renderComponentAsync<TComponent extends IComponent>(): Task<HtmlRootComponent>;
-    renderComponentAsync(componentType: Type): Task<HtmlRootComponent>;
-    renderComponentAsync<TComponent extends IComponent>(parameters: ParameterView): Task<HtmlRootComponent>;
-    renderComponentAsync(componentType: Type, parameters: ParameterView): Task<HtmlRootComponent>;
+    readonly Dispatcher: Dispatcher;
+    BeginRenderingComponent<TComponent extends IComponent>(): HtmlRootComponent;
+    BeginRenderingComponent<TComponent extends IComponent>(parameters: ParameterView): HtmlRootComponent;
+    BeginRenderingComponent(componentType: Type): HtmlRootComponent;
+    BeginRenderingComponent(componentType: Type, parameters: ParameterView): HtmlRootComponent;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
+    RenderComponentAsync<TComponent extends IComponent>(): Task<HtmlRootComponent>;
+    RenderComponentAsync(componentType: Type): Task<HtmlRootComponent>;
+    RenderComponentAsync<TComponent extends IComponent>(parameters: ParameterView): Task<HtmlRootComponent>;
+    RenderComponentAsync(componentType: Type, parameters: ParameterView): Task<HtmlRootComponent>;
 }
 
 
@@ -207,7 +207,7 @@ export const HtmlRenderer: {
 export type HtmlRenderer = HtmlRenderer$instance;
 
 export interface InteractiveAutoRenderMode$instance extends IComponentRenderMode {
-    readonly prerender: boolean;
+    readonly Prerender: boolean;
 }
 
 
@@ -220,7 +220,7 @@ export const InteractiveAutoRenderMode: {
 export type InteractiveAutoRenderMode = InteractiveAutoRenderMode$instance;
 
 export interface InteractiveServerRenderMode$instance extends IComponentRenderMode {
-    readonly prerender: boolean;
+    readonly Prerender: boolean;
 }
 
 
@@ -233,7 +233,7 @@ export const InteractiveServerRenderMode: {
 export type InteractiveServerRenderMode = InteractiveServerRenderMode$instance;
 
 export interface InteractiveWebAssemblyRenderMode$instance extends IComponentRenderMode {
-    readonly prerender: boolean;
+    readonly Prerender: boolean;
 }
 
 
@@ -257,16 +257,16 @@ export const JSComponentConfigurationStore: {
 export type JSComponentConfigurationStore = JSComponentConfigurationStore$instance;
 
 export interface KeyboardEventArgs$instance extends EventArgs {
-    altKey: boolean;
-    code: string;
-    ctrlKey: boolean;
-    isComposing: boolean;
-    key: string;
-    location: float;
-    metaKey: boolean;
-    repeat: boolean;
-    shiftKey: boolean;
-    type: string;
+    AltKey: boolean;
+    Code: string;
+    CtrlKey: boolean;
+    IsComposing: boolean;
+    Key: string;
+    Location: float;
+    MetaKey: boolean;
+    Repeat: boolean;
+    ShiftKey: boolean;
+    Type: string;
 }
 
 
@@ -278,24 +278,24 @@ export const KeyboardEventArgs: {
 export type KeyboardEventArgs = KeyboardEventArgs$instance;
 
 export interface MouseEventArgs$instance extends EventArgs {
-    altKey: boolean;
-    button: long;
-    buttons: long;
-    clientX: double;
-    clientY: double;
-    ctrlKey: boolean;
-    detail: long;
-    metaKey: boolean;
-    movementX: double;
-    movementY: double;
-    offsetX: double;
-    offsetY: double;
-    pageX: double;
-    pageY: double;
-    screenX: double;
-    screenY: double;
-    shiftKey: boolean;
-    type: string;
+    AltKey: boolean;
+    Button: long;
+    Buttons: long;
+    ClientX: double;
+    ClientY: double;
+    CtrlKey: boolean;
+    Detail: long;
+    MetaKey: boolean;
+    MovementX: double;
+    MovementY: double;
+    OffsetX: double;
+    OffsetY: double;
+    PageX: double;
+    PageY: double;
+    ScreenX: double;
+    ScreenY: double;
+    ShiftKey: boolean;
+    Type: string;
 }
 
 
@@ -307,11 +307,11 @@ export const MouseEventArgs: {
 export type MouseEventArgs = MouseEventArgs$instance;
 
 export interface PageTitle$instance extends ComponentBase {
-    childContent: RenderFragment;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    ChildContent: RenderFragment;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -332,14 +332,14 @@ export type PageTitle = PageTitle$instance & __PageTitle$views;
 
 
 export interface PointerEventArgs$instance extends MouseEventArgs {
-    height: float;
-    isPrimary: boolean;
-    pointerId: long;
-    pointerType: string;
-    pressure: float;
-    tiltX: float;
-    tiltY: float;
-    width: float;
+    Height: float;
+    IsPrimary: boolean;
+    PointerId: long;
+    PointerType: string;
+    Pressure: float;
+    TiltX: float;
+    TiltY: float;
+    Width: float;
 }
 
 
@@ -351,10 +351,10 @@ export const PointerEventArgs: {
 export type PointerEventArgs = PointerEventArgs$instance;
 
 export interface ProgressEventArgs$instance extends EventArgs {
-    lengthComputable: boolean;
-    loaded: long;
-    total: long;
-    type: string;
+    LengthComputable: boolean;
+    Loaded: long;
+    Total: long;
+    Type: string;
 }
 
 
@@ -366,15 +366,15 @@ export const ProgressEventArgs: {
 export type ProgressEventArgs = ProgressEventArgs$instance;
 
 export interface TouchEventArgs$instance extends EventArgs {
-    altKey: boolean;
-    changedTouches: TouchPoint[];
-    ctrlKey: boolean;
-    detail: long;
-    metaKey: boolean;
-    shiftKey: boolean;
-    targetTouches: TouchPoint[];
-    touches: TouchPoint[];
-    type: string;
+    AltKey: boolean;
+    ChangedTouches: TouchPoint[];
+    CtrlKey: boolean;
+    Detail: long;
+    MetaKey: boolean;
+    ShiftKey: boolean;
+    TargetTouches: TouchPoint[];
+    Touches: TouchPoint[];
+    Type: string;
 }
 
 
@@ -386,13 +386,13 @@ export const TouchEventArgs: {
 export type TouchEventArgs = TouchEventArgs$instance;
 
 export interface TouchPoint$instance {
-    clientX: double;
-    clientY: double;
-    identifier: long;
-    pageX: double;
-    pageY: double;
-    screenX: double;
-    screenY: double;
+    ClientX: double;
+    ClientY: double;
+    Identifier: long;
+    PageX: double;
+    PageY: double;
+    ScreenX: double;
+    ScreenY: double;
 }
 
 
@@ -404,10 +404,10 @@ export const TouchPoint: {
 export type TouchPoint = TouchPoint$instance;
 
 export interface WheelEventArgs$instance extends MouseEventArgs {
-    deltaMode: long;
-    deltaX: double;
-    deltaY: double;
-    deltaZ: double;
+    DeltaMode: long;
+    DeltaX: double;
+    DeltaY: double;
+    DeltaZ: double;
 }
 
 
@@ -431,53 +431,53 @@ export abstract class EventHandlers$instance {
 export type EventHandlers = EventHandlers$instance;
 
 export abstract class JSComponentConfigurationExtensions$instance {
-    static registerForJavaScript<TComponent extends IComponent>(configuration: IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): void;
-    static registerForJavaScript<TComponent extends IComponent>(configuration: IJSComponentConfiguration, identifier: string): void;
-    static registerForJavaScript(configuration: IJSComponentConfiguration, componentType: Type, identifier: string, javaScriptInitializer: string): void;
-    static registerForJavaScript(configuration: IJSComponentConfiguration, componentType: Type, identifier: string): void;
+    static RegisterForJavaScript<TComponent extends IComponent>(configuration: IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): void;
+    static RegisterForJavaScript<TComponent extends IComponent>(configuration: IJSComponentConfiguration, identifier: string): void;
+    static RegisterForJavaScript(configuration: IJSComponentConfiguration, componentType: Type, identifier: string, javaScriptInitializer: string): void;
+    static RegisterForJavaScript(configuration: IJSComponentConfiguration, componentType: Type, identifier: string): void;
 }
 
 
 export type JSComponentConfigurationExtensions = JSComponentConfigurationExtensions$instance;
 
 export abstract class RenderMode$instance {
-    static readonly interactiveServer: InteractiveServerRenderMode;
-    static readonly interactiveWebAssembly: InteractiveWebAssemblyRenderMode;
-    static readonly interactiveAuto: InteractiveAutoRenderMode;
+    static readonly InteractiveServer: InteractiveServerRenderMode;
+    static readonly InteractiveWebAssembly: InteractiveWebAssemblyRenderMode;
+    static readonly InteractiveAuto: InteractiveAutoRenderMode;
 }
 
 
 export type RenderMode = RenderMode$instance;
 
 export abstract class WebEventCallbackFactoryEventArgsExtensions$instance {
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<ClipboardEventArgs>): EventCallback_1<ClipboardEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<DragEventArgs>): EventCallback_1<DragEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<ErrorEventArgs>): EventCallback_1<ErrorEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<FocusEventArgs>): EventCallback_1<FocusEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<KeyboardEventArgs>): EventCallback_1<KeyboardEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<MouseEventArgs>): EventCallback_1<MouseEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<PointerEventArgs>): EventCallback_1<PointerEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<ProgressEventArgs>): EventCallback_1<ProgressEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<TouchEventArgs>): EventCallback_1<TouchEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Action<WheelEventArgs>): EventCallback_1<WheelEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<ClipboardEventArgs, Task>): EventCallback_1<ClipboardEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<DragEventArgs, Task>): EventCallback_1<DragEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<ErrorEventArgs, Task>): EventCallback_1<ErrorEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<FocusEventArgs, Task>): EventCallback_1<FocusEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<KeyboardEventArgs, Task>): EventCallback_1<KeyboardEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<MouseEventArgs, Task>): EventCallback_1<MouseEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<PointerEventArgs, Task>): EventCallback_1<PointerEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<ProgressEventArgs, Task>): EventCallback_1<ProgressEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<TouchEventArgs, Task>): EventCallback_1<TouchEventArgs>;
-    static create(factory: EventCallbackFactory, receiver: unknown, callback: Func<WheelEventArgs, Task>): EventCallback_1<WheelEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<ClipboardEventArgs>): EventCallback_1<ClipboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<DragEventArgs>): EventCallback_1<DragEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<ErrorEventArgs>): EventCallback_1<ErrorEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<FocusEventArgs>): EventCallback_1<FocusEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<KeyboardEventArgs>): EventCallback_1<KeyboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<MouseEventArgs>): EventCallback_1<MouseEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<PointerEventArgs>): EventCallback_1<PointerEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<ProgressEventArgs>): EventCallback_1<ProgressEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<TouchEventArgs>): EventCallback_1<TouchEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action<WheelEventArgs>): EventCallback_1<WheelEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<ClipboardEventArgs, Task>): EventCallback_1<ClipboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<DragEventArgs, Task>): EventCallback_1<DragEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<ErrorEventArgs, Task>): EventCallback_1<ErrorEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<FocusEventArgs, Task>): EventCallback_1<FocusEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<KeyboardEventArgs, Task>): EventCallback_1<KeyboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<MouseEventArgs, Task>): EventCallback_1<MouseEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<PointerEventArgs, Task>): EventCallback_1<PointerEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<ProgressEventArgs, Task>): EventCallback_1<ProgressEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<TouchEventArgs, Task>): EventCallback_1<TouchEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func<WheelEventArgs, Task>): EventCallback_1<WheelEventArgs>;
 }
 
 
 export type WebEventCallbackFactoryEventArgsExtensions = WebEventCallbackFactoryEventArgsExtensions$instance;
 
 export abstract class WebRenderTreeBuilderExtensions$instance {
-    static addEventPreventDefaultAttribute(builder: RenderTreeBuilder, sequence: int, eventName: string, value: boolean): void;
-    static addEventStopPropagationAttribute(builder: RenderTreeBuilder, sequence: int, eventName: string, value: boolean): void;
+    static AddEventPreventDefaultAttribute(builder: RenderTreeBuilder, sequence: int, eventName: string, value: boolean): void;
+    static AddEventStopPropagationAttribute(builder: RenderTreeBuilder, sequence: int, eventName: string, value: boolean): void;
 }
 
 

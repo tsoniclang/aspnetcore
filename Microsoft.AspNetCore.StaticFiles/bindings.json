@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.StaticFiles",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.StaticFiles"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.IContentTypeProvider",
       "clrName": "Microsoft.AspNetCore.StaticFiles.IContentTypeProvider",
-      "tsEmitName": "IContentTypeProvider",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.IContentTypeProvider::TryGetContentType(System.String,System.String\u0026):System.Boolean",
           "clrName": "TryGetContentType",
-          "tsEmitName": "tryGetContentType",
           "metadataToken": 100663374,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGetContentType|(System.String,System.String\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IContentTypeProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false,
@@ -32,37 +45,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "tryGetContentType",
-          "isStatic": false,
-          "tsSignatureId": "TryGetContentType|(System.String,System.String\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IContentTypeProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663374
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter",
       "clrName": "Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter",
-      "tsEmitName": "IDirectoryFormatter",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter::GenerateContentAsync(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "clrName": "GenerateContentAsync",
-          "tsEmitName": "generateContentAsync",
           "metadataToken": 100663375,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "normalizedSignature": "GenerateContentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false
@@ -71,37 +82,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "generateContentAsync",
-          "isStatic": false,
-          "tsSignatureId": "GenerateContentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663375
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware",
       "clrName": "Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware",
-      "tsEmitName": "DefaultFilesMiddleware",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "clrName": "Invoke",
-          "tsEmitName": "invoke",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false
@@ -121,48 +130,35 @@
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "invoke",
-          "isStatic": false,
-          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663354
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.DefaultFilesOptions,Microsoft.AspNetCore.StaticFiles,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663353
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware",
       "clrName": "Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware",
-      "tsEmitName": "DirectoryBrowserMiddleware",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "clrName": "Invoke",
-          "tsEmitName": "invoke",
           "metadataToken": 100663357,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false
@@ -192,57 +188,35 @@
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "invoke",
-          "isStatic": false,
-          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663357
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.DirectoryBrowserOptions,Microsoft.AspNetCore.StaticFiles,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663355
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,System.Text.Encodings.Web.HtmlEncoder,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.DirectoryBrowserOptions,Microsoft.AspNetCore.StaticFiles,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.DirectoryBrowserMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663356
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
       "clrName": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
-      "tsEmitName": "FileExtensionContentTypeProvider",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider::TryGetContentType(System.String,System.String\u0026):System.Boolean",
           "clrName": "TryGetContentType",
-          "tsEmitName": "tryGetContentType",
           "metadataToken": 100663363,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGetContentType|(System.String,System.String\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false,
@@ -256,16 +230,22 @@
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.IContentTypeProvider::TryGetContentType(System.String,System.String\u0026):System.Boolean",
           "clrName": "TryGetContentType",
-          "tsEmitName": "tryGetContentType$view",
           "metadataToken": 100663374,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGetContentType|(System.String,System.String\u0026):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IContentTypeProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.StaticFiles.IContentTypeProvider",
           "parameterModifiers": [
             {
               "index": 1,
@@ -278,14 +258,18 @@
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider::Mappings:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Mappings",
-          "tsEmitName": "mappings",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Mappings|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
@@ -313,79 +297,35 @@
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "tryGetContentType",
-          "isStatic": false,
-          "tsSignatureId": "TryGetContentType|(System.String,System.String\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663363
-          }
-        },
-        {
-          "tsName": "tryGetContentType$view",
-          "isStatic": false,
-          "tsSignatureId": "TryGetContentType|(System.String,System.String\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IContentTypeProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663374
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "mappings",
-          "isStatic": false,
-          "tsSignatureId": "Mappings|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385875982
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663359
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663360
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.HtmlDirectoryFormatter",
       "clrName": "Microsoft.AspNetCore.StaticFiles.HtmlDirectoryFormatter",
-      "tsEmitName": "HtmlDirectoryFormatter",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.HtmlDirectoryFormatter::GenerateContentAsync(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "clrName": "GenerateContentAsync",
-          "tsEmitName": "generateContentAsync",
           "metadataToken": 100663372,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "normalizedSignature": "GenerateContentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.HtmlDirectoryFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false
@@ -393,16 +333,22 @@
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter::GenerateContentAsync(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "clrName": "GenerateContentAsync",
-          "tsEmitName": "generateContentAsync$view",
           "metadataToken": 100663375,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task",
           "normalizedSignature": "GenerateContentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter"
         }
       ],
       "properties": [],
@@ -419,58 +365,35 @@
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.HtmlDirectoryFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "generateContentAsync",
-          "isStatic": false,
-          "tsSignatureId": "GenerateContentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.HtmlDirectoryFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663372
-          }
-        },
-        {
-          "tsName": "generateContentAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "GenerateContentAsync|(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.IDirectoryFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663375
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Text.Encodings.Web.HtmlEncoder):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.HtmlDirectoryFormatter",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663371
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware",
       "clrName": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware",
-      "tsEmitName": "StaticFileMiddleware",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "clrName": "Invoke",
-          "tsEmitName": "invoke",
           "metadataToken": 100663417,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": false
@@ -490,64 +413,54 @@
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "invoke",
-          "isStatic": false,
-          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663417
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.StaticFileOptions,Microsoft.AspNetCore.StaticFiles,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663416
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
       "clrName": "Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
-      "tsEmitName": "StaticFileResponseContext",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext::Context:Microsoft.AspNetCore.Http.HttpContext",
           "clrName": "Context",
-          "tsEmitName": "context",
           "metadataToken": 385875990,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "Context|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext::File:Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "File",
-          "tsEmitName": "file",
           "metadataToken": 385875991,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "File|:Microsoft.Extensions.FileProviders.IFileInfo|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
@@ -564,39 +477,6 @@
           "parameterCount": 2,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "context",
-          "isStatic": false,
-          "tsSignatureId": "Context|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385875990
-          }
-        },
-        {
-          "tsName": "file",
-          "isStatic": false,
-          "tsSignatureId": "File|:Microsoft.Extensions.FileProviders.IFileInfo|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385875991
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.FileProviders.IFileInfo):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663423
-          }
         }
       ]
     }

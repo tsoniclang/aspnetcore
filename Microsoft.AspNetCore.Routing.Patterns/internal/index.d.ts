@@ -14,43 +14,43 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export enum RoutePatternParameterKind {
-    standard = 0,
-    optional = 1,
-    catchAll = 2
+    Standard = 0,
+    Optional = 1,
+    CatchAll = 2
 }
 
 
 export enum RoutePatternPartKind {
-    literal = 0,
-    parameter = 1,
-    separator = 2
+    Literal = 0,
+    Parameter = 1,
+    Separator = 2
 }
 
 
 export interface RoutePattern$instance {
-    readonly defaults: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
-    readonly inboundPrecedence: decimal;
-    readonly outboundPrecedence: decimal;
-    readonly parameterPolicies: IReadOnlyDictionary<System_Internal.String, IReadOnlyList<RoutePatternParameterPolicyReference>>;
-    readonly parameters: IReadOnlyList<RoutePatternParameterPart>;
-    readonly pathSegments: IReadOnlyList<RoutePatternPathSegment>;
-    readonly rawText: string | undefined;
-    readonly requiredValues: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
-    getParameter(name: string): RoutePatternParameterPart | undefined;
+    readonly Defaults: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly InboundPrecedence: decimal;
+    readonly OutboundPrecedence: decimal;
+    readonly ParameterPolicies: IReadOnlyDictionary<System_Internal.String, IReadOnlyList<RoutePatternParameterPolicyReference>>;
+    readonly Parameters: IReadOnlyList<RoutePatternParameterPart>;
+    readonly PathSegments: IReadOnlyList<RoutePatternPathSegment>;
+    readonly RawText: string | undefined;
+    readonly RequiredValues: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    GetParameter(name: string): RoutePatternParameterPart | undefined;
 }
 
 
 export const RoutePattern: {
     new(): RoutePattern;
-    readonly requiredValueAny: unknown;
+    readonly RequiredValueAny: unknown;
 };
 
 
 export type RoutePattern = RoutePattern$instance;
 
 export interface RoutePatternException$instance extends Exception {
-    readonly pattern: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    readonly Pattern: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -62,7 +62,7 @@ export const RoutePatternException: {
 export type RoutePatternException = RoutePatternException$instance;
 
 export interface RoutePatternLiteralPart$instance extends RoutePatternPart {
-    readonly content: string;
+    readonly Content: string;
 }
 
 
@@ -74,13 +74,13 @@ export const RoutePatternLiteralPart: {
 export type RoutePatternLiteralPart = RoutePatternLiteralPart$instance;
 
 export interface RoutePatternParameterPart$instance extends RoutePatternPart {
-    readonly default: unknown | undefined;
-    readonly encodeSlashes: boolean;
-    readonly isCatchAll: boolean;
-    readonly isOptional: boolean;
-    readonly name: string;
-    readonly parameterKind: RoutePatternParameterKind;
-    readonly parameterPolicies: IReadOnlyList<RoutePatternParameterPolicyReference>;
+    readonly Default: unknown | undefined;
+    readonly EncodeSlashes: boolean;
+    readonly IsCatchAll: boolean;
+    readonly IsOptional: boolean;
+    readonly Name: string;
+    readonly ParameterKind: RoutePatternParameterKind;
+    readonly ParameterPolicies: IReadOnlyList<RoutePatternParameterPolicyReference>;
 }
 
 
@@ -92,8 +92,8 @@ export const RoutePatternParameterPart: {
 export type RoutePatternParameterPart = RoutePatternParameterPart$instance;
 
 export interface RoutePatternParameterPolicyReference$instance {
-    readonly content: string;
-    readonly parameterPolicy: IParameterPolicy | undefined;
+    readonly Content: string;
+    readonly ParameterPolicy: IParameterPolicy | undefined;
 }
 
 
@@ -105,10 +105,10 @@ export const RoutePatternParameterPolicyReference: {
 export type RoutePatternParameterPolicyReference = RoutePatternParameterPolicyReference$instance;
 
 export interface RoutePatternPart$instance {
-    readonly isLiteral: boolean;
-    readonly isParameter: boolean;
-    readonly isSeparator: boolean;
-    readonly partKind: RoutePatternPartKind;
+    readonly IsLiteral: boolean;
+    readonly IsParameter: boolean;
+    readonly IsSeparator: boolean;
+    readonly PartKind: RoutePatternPartKind;
 }
 
 
@@ -119,8 +119,8 @@ export const RoutePatternPart: {
 export type RoutePatternPart = RoutePatternPart$instance;
 
 export interface RoutePatternPathSegment$instance {
-    readonly isSimple: boolean;
-    readonly parts: IReadOnlyList<RoutePatternPart>;
+    readonly IsSimple: boolean;
+    readonly Parts: IReadOnlyList<RoutePatternPart>;
 }
 
 
@@ -132,7 +132,7 @@ export const RoutePatternPathSegment: {
 export type RoutePatternPathSegment = RoutePatternPathSegment$instance;
 
 export interface RoutePatternSeparatorPart$instance extends RoutePatternPart {
-    readonly content: string;
+    readonly Content: string;
 }
 
 
@@ -144,8 +144,8 @@ export const RoutePatternSeparatorPart: {
 export type RoutePatternSeparatorPart = RoutePatternSeparatorPart$instance;
 
 export interface RoutePatternTransformer$instance {
-    substituteRequiredValues(original: RoutePattern, requiredValues: unknown): RoutePattern | undefined;
-    substituteRequiredValues(original: RoutePattern, requiredValues: RouteValueDictionary): RoutePattern | undefined;
+    SubstituteRequiredValues(original: RoutePattern, requiredValues: unknown): RoutePattern | undefined;
+    SubstituteRequiredValues(original: RoutePattern, requiredValues: RouteValueDictionary): RoutePattern | undefined;
 }
 
 
@@ -156,38 +156,38 @@ export const RoutePatternTransformer: {
 export type RoutePatternTransformer = RoutePatternTransformer$instance;
 
 export abstract class RoutePatternFactory$instance {
-    static combine(left: RoutePattern, right: RoutePattern): RoutePattern;
-    static constraint(constraint: IRouteConstraint): RoutePatternParameterPolicyReference;
-    static constraint(constraint: unknown): RoutePatternParameterPolicyReference;
-    static constraint(constraint: string): RoutePatternParameterPolicyReference;
-    static literalPart(content: string): RoutePatternLiteralPart;
-    static parameterPart(parameterName: string, default_: unknown, parameterKind: RoutePatternParameterKind, ...parameterPolicies: RoutePatternParameterPolicyReference[]): RoutePatternParameterPart;
-    static parameterPart(parameterName: string, default_: unknown, parameterKind: RoutePatternParameterKind, parameterPolicies: IEnumerable<RoutePatternParameterPolicyReference>): RoutePatternParameterPart;
-    static parameterPart(parameterName: string, default_: unknown, parameterKind: RoutePatternParameterKind): RoutePatternParameterPart;
-    static parameterPart(parameterName: string, default_: unknown): RoutePatternParameterPart;
-    static parameterPart(parameterName: string): RoutePatternParameterPart;
-    static parameterPolicy(parameterPolicy: IParameterPolicy): RoutePatternParameterPolicyReference;
-    static parameterPolicy(parameterPolicy: string): RoutePatternParameterPolicyReference;
-    static parse(pattern: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, requiredValues: RouteValueDictionary): RoutePattern;
-    static parse(pattern: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary): RoutePattern;
-    static parse(pattern: string, defaults: unknown, parameterPolicies: unknown, requiredValues: unknown): RoutePattern;
-    static parse(pattern: string, defaults: unknown, parameterPolicies: unknown): RoutePattern;
-    static parse(pattern: string): RoutePattern;
-    static pattern(...segments: RoutePatternPathSegment[]): RoutePattern;
-    static pattern(defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, ...segments: RoutePatternPathSegment[]): RoutePattern;
-    static pattern(defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
-    static pattern(segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
-    static pattern(defaults: unknown, parameterPolicies: unknown, ...segments: RoutePatternPathSegment[]): RoutePattern;
-    static pattern(defaults: unknown, parameterPolicies: unknown, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
-    static pattern(rawText: string, ...segments: RoutePatternPathSegment[]): RoutePattern;
-    static pattern(rawText: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, ...segments: RoutePatternPathSegment[]): RoutePattern;
-    static pattern(rawText: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
-    static pattern(rawText: string, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
-    static pattern(rawText: string, defaults: unknown, parameterPolicies: unknown, ...segments: RoutePatternPathSegment[]): RoutePattern;
-    static pattern(rawText: string, defaults: unknown, parameterPolicies: unknown, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
-    static segment(...parts: RoutePatternPart[]): RoutePatternPathSegment;
-    static segment(parts: IEnumerable<RoutePatternPart>): RoutePatternPathSegment;
-    static separatorPart(content: string): RoutePatternSeparatorPart;
+    static Combine(left: RoutePattern, right: RoutePattern): RoutePattern;
+    static Constraint(constraint: IRouteConstraint): RoutePatternParameterPolicyReference;
+    static Constraint(constraint: unknown): RoutePatternParameterPolicyReference;
+    static Constraint(constraint: string): RoutePatternParameterPolicyReference;
+    static LiteralPart(content: string): RoutePatternLiteralPart;
+    static ParameterPart(parameterName: string, default_: unknown, parameterKind: RoutePatternParameterKind, ...parameterPolicies: RoutePatternParameterPolicyReference[]): RoutePatternParameterPart;
+    static ParameterPart(parameterName: string, default_: unknown, parameterKind: RoutePatternParameterKind, parameterPolicies: IEnumerable<RoutePatternParameterPolicyReference>): RoutePatternParameterPart;
+    static ParameterPart(parameterName: string, default_: unknown, parameterKind: RoutePatternParameterKind): RoutePatternParameterPart;
+    static ParameterPart(parameterName: string, default_: unknown): RoutePatternParameterPart;
+    static ParameterPart(parameterName: string): RoutePatternParameterPart;
+    static ParameterPolicy(parameterPolicy: IParameterPolicy): RoutePatternParameterPolicyReference;
+    static ParameterPolicy(parameterPolicy: string): RoutePatternParameterPolicyReference;
+    static Parse(pattern: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, requiredValues: RouteValueDictionary): RoutePattern;
+    static Parse(pattern: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary): RoutePattern;
+    static Parse(pattern: string, defaults: unknown, parameterPolicies: unknown, requiredValues: unknown): RoutePattern;
+    static Parse(pattern: string, defaults: unknown, parameterPolicies: unknown): RoutePattern;
+    static Parse(pattern: string): RoutePattern;
+    static Pattern(...segments: RoutePatternPathSegment[]): RoutePattern;
+    static Pattern(defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, ...segments: RoutePatternPathSegment[]): RoutePattern;
+    static Pattern(defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
+    static Pattern(segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
+    static Pattern(defaults: unknown, parameterPolicies: unknown, ...segments: RoutePatternPathSegment[]): RoutePattern;
+    static Pattern(defaults: unknown, parameterPolicies: unknown, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
+    static Pattern(rawText: string, ...segments: RoutePatternPathSegment[]): RoutePattern;
+    static Pattern(rawText: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, ...segments: RoutePatternPathSegment[]): RoutePattern;
+    static Pattern(rawText: string, defaults: RouteValueDictionary, parameterPolicies: RouteValueDictionary, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
+    static Pattern(rawText: string, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
+    static Pattern(rawText: string, defaults: unknown, parameterPolicies: unknown, ...segments: RoutePatternPathSegment[]): RoutePattern;
+    static Pattern(rawText: string, defaults: unknown, parameterPolicies: unknown, segments: IEnumerable<RoutePatternPathSegment>): RoutePattern;
+    static Segment(...parts: RoutePatternPart[]): RoutePatternPathSegment;
+    static Segment(parts: IEnumerable<RoutePatternPart>): RoutePatternPathSegment;
+    static SeparatorPart(content: string): RoutePatternSeparatorPart;
 }
 
 

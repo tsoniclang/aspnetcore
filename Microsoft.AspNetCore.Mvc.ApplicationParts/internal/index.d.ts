@@ -19,7 +19,7 @@ export interface IApplicationFeatureProvider$instance {
 export type IApplicationFeatureProvider = IApplicationFeatureProvider$instance;
 
 export interface IApplicationFeatureProvider_1$instance<TFeature> extends IApplicationFeatureProvider {
-    populateFeature(parts: IEnumerable<ApplicationPart>, feature: TFeature): void;
+    PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: TFeature): void;
 }
 
 
@@ -28,28 +28,28 @@ export interface IApplicationFeatureProvider_1$instance<TFeature> extends IAppli
 export type IApplicationFeatureProvider_1<TFeature> = IApplicationFeatureProvider_1$instance<TFeature>;
 
 export interface IApplicationPartTypeProvider$instance {
-    readonly types: IEnumerable<TypeInfo>;
+    readonly Types: IEnumerable<TypeInfo>;
 }
 
 
 export type IApplicationPartTypeProvider = IApplicationPartTypeProvider$instance;
 
 export interface ICompilationReferencesProvider$instance {
-    getReferencePaths(): IEnumerable<System_Internal.String>;
+    GetReferencePaths(): IEnumerable<System_Internal.String>;
 }
 
 
 export type ICompilationReferencesProvider = ICompilationReferencesProvider$instance;
 
 export interface IRazorCompiledItemProvider$instance {
-    readonly compiledItems: IEnumerable<RazorCompiledItem>;
+    readonly CompiledItems: IEnumerable<RazorCompiledItem>;
 }
 
 
 export type IRazorCompiledItemProvider = IRazorCompiledItemProvider$instance;
 
 export interface ApplicationPart$instance {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
@@ -60,7 +60,7 @@ export const ApplicationPart: {
 export type ApplicationPart = ApplicationPart$instance;
 
 export interface ApplicationPartAttribute$instance extends Attribute {
-    readonly assemblyName: string;
+    readonly AssemblyName: string;
 }
 
 
@@ -72,21 +72,21 @@ export const ApplicationPartAttribute: {
 export type ApplicationPartAttribute = ApplicationPartAttribute$instance;
 
 export interface ApplicationPartFactory$instance {
-    getApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
 }
 
 
 export const ApplicationPartFactory: {
-    getApplicationPartFactory(assembly: Assembly): ApplicationPartFactory;
+    GetApplicationPartFactory(assembly: Assembly): ApplicationPartFactory;
 };
 
 
 export type ApplicationPartFactory = ApplicationPartFactory$instance;
 
 export interface ApplicationPartManager$instance {
-    readonly applicationParts: IList<ApplicationPart>;
-    readonly featureProviders: IList<IApplicationFeatureProvider>;
-    populateFeature<TFeature>(feature: TFeature): void;
+    readonly ApplicationParts: IList<ApplicationPart>;
+    readonly FeatureProviders: IList<IApplicationFeatureProvider>;
+    PopulateFeature<TFeature>(feature: TFeature): void;
 }
 
 
@@ -98,9 +98,9 @@ export const ApplicationPartManager: {
 export type ApplicationPartManager = ApplicationPartManager$instance;
 
 export interface AssemblyPart$instance extends ApplicationPart {
-    readonly assembly: Assembly;
-    readonly name: string;
-    readonly types: IEnumerable<TypeInfo>;
+    readonly Assembly: Assembly;
+    readonly Name: string;
+    readonly Types: IEnumerable<TypeInfo>;
 }
 
 
@@ -119,21 +119,21 @@ export type AssemblyPart = AssemblyPart$instance & __AssemblyPart$views;
 
 
 export interface CompiledRazorAssemblyApplicationPartFactory$instance extends ApplicationPartFactory {
-    getApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
 }
 
 
 export const CompiledRazorAssemblyApplicationPartFactory: {
     new(): CompiledRazorAssemblyApplicationPartFactory;
-    getDefaultApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetDefaultApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
 };
 
 
 export type CompiledRazorAssemblyApplicationPartFactory = CompiledRazorAssemblyApplicationPartFactory$instance;
 
 export interface CompiledRazorAssemblyPart$instance extends ApplicationPart {
-    readonly assembly: Assembly;
-    readonly name: string;
+    readonly Assembly: Assembly;
+    readonly Name: string;
 }
 
 
@@ -152,7 +152,7 @@ export type CompiledRazorAssemblyPart = CompiledRazorAssemblyPart$instance & __C
 
 
 export interface ConsolidatedAssemblyApplicationPartFactory$instance extends ApplicationPartFactory {
-    getApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
 }
 
 
@@ -164,21 +164,21 @@ export const ConsolidatedAssemblyApplicationPartFactory: {
 export type ConsolidatedAssemblyApplicationPartFactory = ConsolidatedAssemblyApplicationPartFactory$instance;
 
 export interface DefaultApplicationPartFactory$instance extends ApplicationPartFactory {
-    getApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
 }
 
 
 export const DefaultApplicationPartFactory: {
     new(): DefaultApplicationPartFactory;
-    readonly instance: DefaultApplicationPartFactory;
-    getDefaultApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    readonly Instance: DefaultApplicationPartFactory;
+    GetDefaultApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
 };
 
 
 export type DefaultApplicationPartFactory = DefaultApplicationPartFactory$instance;
 
 export interface NullApplicationPartFactory$instance extends ApplicationPartFactory {
-    getApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
 }
 
 
@@ -190,7 +190,7 @@ export const NullApplicationPartFactory: {
 export type NullApplicationPartFactory = NullApplicationPartFactory$instance;
 
 export interface ProvideApplicationPartFactoryAttribute$instance extends Attribute {
-    getFactoryType(): Type;
+    GetFactoryType(): Type;
 }
 
 
@@ -203,13 +203,13 @@ export const ProvideApplicationPartFactoryAttribute: {
 export type ProvideApplicationPartFactoryAttribute = ProvideApplicationPartFactoryAttribute$instance;
 
 export interface RelatedAssemblyAttribute$instance extends Attribute {
-    readonly assemblyFileName: string;
+    readonly AssemblyFileName: string;
 }
 
 
 export const RelatedAssemblyAttribute: {
     new(assemblyFileName: string): RelatedAssemblyAttribute;
-    getRelatedAssemblies(assembly: Assembly, throwOnError: boolean): IReadOnlyList<Assembly>;
+    GetRelatedAssemblies(assembly: Assembly, throwOnError: boolean): IReadOnlyList<Assembly>;
 };
 
 

@@ -1,62 +1,72 @@
 {
   "namespace": "Microsoft.AspNetCore.Routing.Matching",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Routing"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
-      "tsEmitName": "IEndpointComparerPolicy",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy::Comparer:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Comparer",
-          "tsEmitName": "comparer",
           "metadataToken": 385876247,
           "canonicalSignature": ":System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "comparer",
-          "isStatic": false,
-          "tsSignatureId": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876247
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
-      "tsEmitName": "IEndpointSelectorPolicy",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy::AppliesToEndpoints(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "clrName": "AppliesToEndpoints",
-          "tsEmitName": "appliesToEndpoints",
           "metadataToken": 100664451,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "normalizedSignature": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -64,13 +74,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy::ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "clrName": "ApplyAsync",
-          "tsEmitName": "applyAsync",
           "metadataToken": 100664452,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "normalizedSignature": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -79,47 +94,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "appliesToEndpoints",
-          "isStatic": false,
-          "tsSignatureId": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664451
-          }
-        },
-        {
-          "tsName": "applyAsync",
-          "isStatic": false,
-          "tsSignatureId": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664452
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-      "tsEmitName": "INodeBuilderPolicy",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::AppliesToEndpoints(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "clrName": "AppliesToEndpoints",
-          "tsEmitName": "appliesToEndpoints",
           "metadataToken": 100664471,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "normalizedSignature": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -127,13 +130,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::GetEdges(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetEdges",
-          "tsEmitName": "getEdges",
           "metadataToken": 100664472,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -141,13 +149,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::BuildJumpTable(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "clrName": "BuildJumpTable",
-          "tsEmitName": "buildJumpTable",
           "metadataToken": 100664473,
           "canonicalSignature": "(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "normalizedSignature": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -156,57 +169,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "appliesToEndpoints",
-          "isStatic": false,
-          "tsSignatureId": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664471
-          }
-        },
-        {
-          "tsName": "getEdges",
-          "isStatic": false,
-          "tsSignatureId": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664472
-          }
-        },
-        {
-          "tsName": "buildJumpTable",
-          "isStatic": false,
-          "tsSignatureId": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664473
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-      "tsEmitName": "IParameterLiteralNodeMatchingPolicy",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
           "clrName": "MatchesLiteral",
-          "tsEmitName": "matchesLiteral",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -215,140 +206,126 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "matchesLiteral",
-          "isStatic": false,
-          "tsSignatureId": "MatchesLiteral|(System.String,System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664474
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateState",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
-      "tsEmitName": "CandidateState",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateState::Endpoint:Microsoft.AspNetCore.Http.Endpoint",
           "clrName": "Endpoint",
-          "tsEmitName": "endpoint",
           "metadataToken": 385876228,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.Endpoint",
           "normalizedSignature": "Endpoint|:Microsoft.AspNetCore.Http.Endpoint|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateState::Score:System.Int32",
           "clrName": "Score",
-          "tsEmitName": "score",
           "metadataToken": 385876229,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Score|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateState::Values:Microsoft.AspNetCore.Routing.RouteValueDictionary",
           "clrName": "Values",
-          "tsEmitName": "values",
           "metadataToken": 385876230,
           "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
           "normalizedSignature": "Values|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "endpoint",
-          "isStatic": false,
-          "tsSignatureId": "Endpoint|:Microsoft.AspNetCore.Http.Endpoint|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876228
-          }
-        },
-        {
-          "tsName": "score",
-          "isStatic": false,
-          "tsSignatureId": "Score|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876229
-          }
-        },
-        {
-          "tsName": "values",
-          "isStatic": false,
-          "tsSignatureId": "Values|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876230
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
-      "tsEmitName": "PolicyJumpTableEdge",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge::State:System.Object",
           "clrName": "State",
-          "tsEmitName": "state",
           "metadataToken": 385876252,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "State|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge::Destination:System.Int32",
           "clrName": "Destination",
-          "tsEmitName": "destination",
           "metadataToken": 385876253,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Destination|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -366,74 +343,54 @@
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "state",
-          "isStatic": false,
-          "tsSignatureId": "State|:System.Object|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876252
-          }
-        },
-        {
-          "tsName": "destination",
-          "isStatic": false,
-          "tsSignatureId": "Destination|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876253
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Object,System.Int32):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664517
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
-      "tsEmitName": "PolicyNodeEdge",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge::Endpoints:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Endpoints",
-          "tsEmitName": "endpoints",
           "metadataToken": 385876254,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Endpoints|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge::State:System.Object",
           "clrName": "State",
-          "tsEmitName": "state",
           "metadataToken": 385876255,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "State|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -451,58 +408,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "endpoints",
-          "isStatic": false,
-          "tsSignatureId": "Endpoints|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876254
-          }
-        },
-        {
-          "tsName": "state",
-          "isStatic": false,
-          "tsSignatureId": "State|:System.Object|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876255
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Object,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664520
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-      "tsEmitName": "CandidateSet",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet::IsValidCandidate(System.Int32):System.Boolean",
           "clrName": "IsValidCandidate",
-          "tsEmitName": "isValidCandidate",
           "metadataToken": 100664309,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "IsValidCandidate|(System.Int32):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -510,13 +444,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet::SetValidity(System.Int32,System.Boolean):System.Void",
           "clrName": "SetValidity",
-          "tsEmitName": "setValidity",
           "metadataToken": 100664311,
           "canonicalSignature": "(System.Int32,System.Boolean):System.Void",
           "normalizedSignature": "SetValidity|(System.Int32,System.Boolean):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -524,13 +463,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet::ReplaceEndpoint(System.Int32,Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Void",
           "clrName": "ReplaceEndpoint",
-          "tsEmitName": "replaceEndpoint",
           "metadataToken": 100664313,
           "canonicalSignature": "(System.Int32,Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Void",
           "normalizedSignature": "ReplaceEndpoint|(System.Int32,Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -538,13 +482,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet::ExpandEndpoint(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "ExpandEndpoint",
-          "tsEmitName": "expandEndpoint",
           "metadataToken": 100664314,
           "canonicalSignature": "(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "ExpandEndpoint|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -554,28 +503,36 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet::Count:System.Int32",
           "clrName": "Count",
-          "tsEmitName": "count",
           "metadataToken": 385876226,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet::Item[System.Int32]:Microsoft.AspNetCore.Routing.Matching.CandidateState\u0026",
           "clrName": "Item",
-          "tsEmitName": "item",
           "metadataToken": 385876227,
           "canonicalSignature": "[System.Int32]:Microsoft.AspNetCore.Routing.Matching.CandidateState\u0026",
           "normalizedSignature": "Item|[System.Int32]:Microsoft.AspNetCore.Routing.Matching.CandidateState\u0026|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": true,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -593,89 +550,19 @@
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "isValidCandidate",
-          "isStatic": false,
-          "tsSignatureId": "IsValidCandidate|(System.Int32):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664309
-          }
-        },
-        {
-          "tsName": "setValidity",
-          "isStatic": false,
-          "tsSignatureId": "SetValidity|(System.Int32,System.Boolean):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664311
-          }
-        },
-        {
-          "tsName": "replaceEndpoint",
-          "isStatic": false,
-          "tsSignatureId": "ReplaceEndpoint|(System.Int32,Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Routing.RouteValueDictionary):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664313
-          }
-        },
-        {
-          "tsName": "expandEndpoint",
-          "isStatic": false,
-          "tsSignatureId": "ExpandEndpoint|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664314
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "count",
-          "isStatic": false,
-          "tsSignatureId": "Count|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876226
-          }
-        },
-        {
-          "tsName": "item",
-          "isStatic": false,
-          "tsSignatureId": "Item|[System.Int32]:Microsoft.AspNetCore.Routing.Matching.CandidateState\u0026|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876227
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.Endpoint[],Microsoft.AspNetCore.Routing.RouteValueDictionary[],System.Int32[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664304
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer",
-      "tsEmitName": "EndpointMetadataComparer",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [],
@@ -685,20 +572,30 @@
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
-      "tsEmitName": "EndpointMetadataComparer_1",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::Compare(Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Endpoint):System.Int32",
           "clrName": "Compare",
-          "tsEmitName": "compare",
           "metadataToken": 100664408,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Endpoint):System.Int32",
           "normalizedSignature": "Compare|(Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Endpoint):System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -709,59 +606,45 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::DefaultEndpointMetadataComparer\u00601",
           "clrName": "Default",
-          "tsEmitName": "default",
           "metadataToken": 67109283,
           "normalizedSignature": "Default|EndpointMetadataComparer\u00601|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "compare",
-          "isStatic": false,
-          "tsSignatureId": "Compare|(Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Endpoint):System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664408
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "default",
-          "isStatic": true,
-          "tsSignatureId": "Default|EndpointMetadataComparer\u00601|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 67109283
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointSelector",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.EndpointSelector",
-      "tsEmitName": "EndpointSelector",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointSelector::SelectAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "clrName": "SelectAsync",
-          "tsEmitName": "selectAsync",
           "metadataToken": 100664413,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "normalizedSignature": "SelectAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -770,37 +653,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "selectAsync",
-          "isStatic": false,
-          "tsSignatureId": "SelectAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointSelector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664413
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
-      "tsEmitName": "HostMatcherPolicy",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy::ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "clrName": "ApplyAsync",
-          "tsEmitName": "applyAsync",
           "metadataToken": 100664421,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "normalizedSignature": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -808,13 +689,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy::GetEdges(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetEdges",
-          "tsEmitName": "getEdges",
           "metadataToken": 100664423,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -822,13 +708,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy::BuildJumpTable(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "clrName": "BuildJumpTable",
-          "tsEmitName": "buildJumpTable",
           "metadataToken": 100664425,
           "canonicalSignature": "(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "normalizedSignature": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -836,114 +727,157 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::AppliesToEndpoints(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "clrName": "AppliesToEndpoints",
-          "tsEmitName": "appliesToEndpoints",
           "metadataToken": 100664471,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "normalizedSignature": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::GetEdges(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetEdges",
-          "tsEmitName": "getEdges$view",
           "metadataToken": 100664472,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::BuildJumpTable(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "clrName": "BuildJumpTable",
-          "tsEmitName": "buildJumpTable$view",
           "metadataToken": 100664473,
           "canonicalSignature": "(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "normalizedSignature": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy::AppliesToEndpoints(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "clrName": "AppliesToEndpoints",
-          "tsEmitName": "appliesToEndpoints",
           "metadataToken": 100664451,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "normalizedSignature": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy::ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "clrName": "ApplyAsync",
-          "tsEmitName": "applyAsync$view",
           "metadataToken": 100664452,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "normalizedSignature": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385876243,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy::Comparer:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Comparer",
-          "tsEmitName": "comparer",
           "metadataToken": 385876244,
           "canonicalSignature": ":System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy::Comparer:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Comparer",
-          "tsEmitName": "comparer$view",
           "metadataToken": 385876247,
           "canonicalSignature": ":System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -961,150 +895,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "applyAsync",
-          "isStatic": false,
-          "tsSignatureId": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664421
-          }
-        },
-        {
-          "tsName": "getEdges",
-          "isStatic": false,
-          "tsSignatureId": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664423
-          }
-        },
-        {
-          "tsName": "buildJumpTable",
-          "isStatic": false,
-          "tsSignatureId": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664425
-          }
-        },
-        {
-          "tsName": "appliesToEndpoints",
-          "isStatic": false,
-          "tsSignatureId": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664471
-          }
-        },
-        {
-          "tsName": "getEdges$view",
-          "isStatic": false,
-          "tsSignatureId": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664472
-          }
-        },
-        {
-          "tsName": "buildJumpTable$view",
-          "isStatic": false,
-          "tsSignatureId": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664473
-          }
-        },
-        {
-          "tsName": "appliesToEndpoints",
-          "isStatic": false,
-          "tsSignatureId": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664451
-          }
-        },
-        {
-          "tsName": "applyAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664452
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876243
-          }
-        },
-        {
-          "tsName": "comparer",
-          "isStatic": false,
-          "tsSignatureId": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876244
-          }
-        },
-        {
-          "tsName": "comparer$view",
-          "isStatic": false,
-          "tsSignatureId": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876247
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664428
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
-      "tsEmitName": "HttpMethodMatcherPolicy",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy::ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "clrName": "ApplyAsync",
-          "tsEmitName": "applyAsync",
           "metadataToken": 100664438,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "normalizedSignature": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -1112,13 +931,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy::GetEdges(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetEdges",
-          "tsEmitName": "getEdges",
           "metadataToken": 100664439,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -1126,13 +950,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy::BuildJumpTable(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "clrName": "BuildJumpTable",
-          "tsEmitName": "buildJumpTable",
           "metadataToken": 100664440,
           "canonicalSignature": "(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "normalizedSignature": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -1140,114 +969,157 @@
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::AppliesToEndpoints(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "clrName": "AppliesToEndpoints",
-          "tsEmitName": "appliesToEndpoints",
           "metadataToken": 100664471,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "normalizedSignature": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::GetEdges(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetEdges",
-          "tsEmitName": "getEdges$view",
           "metadataToken": 100664472,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy::BuildJumpTable(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "clrName": "BuildJumpTable",
-          "tsEmitName": "buildJumpTable$view",
           "metadataToken": 100664473,
           "canonicalSignature": "(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "normalizedSignature": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy::AppliesToEndpoints(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "clrName": "AppliesToEndpoints",
-          "tsEmitName": "appliesToEndpoints",
           "metadataToken": 100664451,
           "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean",
           "normalizedSignature": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy::ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "clrName": "ApplyAsync",
-          "tsEmitName": "applyAsync$view",
           "metadataToken": 100664452,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
           "normalizedSignature": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy::Comparer:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Comparer",
-          "tsEmitName": "comparer",
           "metadataToken": 385876245,
           "canonicalSignature": ":System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385876246,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy::Comparer:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Comparer",
-          "tsEmitName": "comparer$view",
           "metadataToken": 385876247,
           "canonicalSignature": ":System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -1265,150 +1137,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "applyAsync",
-          "isStatic": false,
-          "tsSignatureId": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664438
-          }
-        },
-        {
-          "tsName": "getEdges",
-          "isStatic": false,
-          "tsSignatureId": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664439
-          }
-        },
-        {
-          "tsName": "buildJumpTable",
-          "isStatic": false,
-          "tsSignatureId": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664440
-          }
-        },
-        {
-          "tsName": "appliesToEndpoints",
-          "isStatic": false,
-          "tsSignatureId": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664471
-          }
-        },
-        {
-          "tsName": "getEdges$view",
-          "isStatic": false,
-          "tsSignatureId": "GetEdges|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664472
-          }
-        },
-        {
-          "tsName": "buildJumpTable$view",
-          "isStatic": false,
-          "tsSignatureId": "BuildJumpTable|(System.Int32,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664473
-          }
-        },
-        {
-          "tsName": "appliesToEndpoints",
-          "isStatic": false,
-          "tsSignatureId": "AppliesToEndpoints|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664451
-          }
-        },
-        {
-          "tsName": "applyAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ApplyAsync|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664452
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "comparer",
-          "isStatic": false,
-          "tsSignatureId": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876245
-          }
-        },
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876246
-          }
-        },
-        {
-          "tsName": "comparer$view",
-          "isStatic": false,
-          "tsSignatureId": "Comparer|:System.Collections.Generic.IComparer_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 385876247
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664444
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
       "clrName": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
-      "tsEmitName": "PolicyJumpTable",
       "assemblyName": "Microsoft.AspNetCore.Routing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable::GetDestination(Microsoft.AspNetCore.Http.HttpContext):System.Int32",
           "clrName": "GetDestination",
-          "tsEmitName": "getDestination",
           "metadataToken": 100664514,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Int32",
           "normalizedSignature": "GetDestination|(Microsoft.AspNetCore.Http.HttpContext):System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -1417,19 +1174,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getDestination",
-          "isStatic": false,
-          "tsSignatureId": "GetDestination|(Microsoft.AspNetCore.Http.HttpContext):System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
-            "metadataToken": 100664514
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

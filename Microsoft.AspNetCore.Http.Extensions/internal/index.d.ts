@@ -22,13 +22,13 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface QueryBuilder$instance {
-    add(key: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): void;
-    add(key: string, value: string): void;
-    equals(obj: unknown): boolean;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
-    getHashCode(): int;
-    toQueryString(): QueryString;
-    toString(): string;
+    Add(key: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): void;
+    Add(key: string, value: string): void;
+    Equals(obj: unknown): boolean;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    GetHashCode(): int;
+    ToQueryString(): QueryString;
+    ToString(): string;
 }
 
 
@@ -42,28 +42,28 @@ export const QueryBuilder: {
 export type QueryBuilder = QueryBuilder$instance;
 
 export abstract class HttpRequestMultipartExtensions$instance {
-    static getMultipartBoundary(request: HttpRequest): string;
+    static GetMultipartBoundary(request: HttpRequest): string;
 }
 
 
 export type HttpRequestMultipartExtensions = HttpRequestMultipartExtensions$instance;
 
 export abstract class StreamCopyOperation$instance {
-    static copyToAsync(source: Stream, destination: Stream, count: Nullable<System_Internal.Int64>, bufferSize: int, cancel: CancellationToken): Task;
-    static copyToAsync(source: Stream, destination: Stream, count: Nullable<System_Internal.Int64>, cancel: CancellationToken): Task;
+    static CopyToAsync(source: Stream, destination: Stream, count: Nullable<System_Internal.Int64>, bufferSize: int, cancel: CancellationToken): Task;
+    static CopyToAsync(source: Stream, destination: Stream, count: Nullable<System_Internal.Int64>, cancel: CancellationToken): Task;
 }
 
 
 export type StreamCopyOperation = StreamCopyOperation$instance;
 
 export abstract class UriHelper$instance {
-    static buildAbsolute(scheme: string, host: HostString, pathBase?: PathString, path?: PathString, query?: QueryString, fragment?: FragmentString): string;
-    static buildRelative(pathBase?: PathString, path?: PathString, query?: QueryString, fragment?: FragmentString): string;
-    static encode(uri: Uri): string;
-    static fromAbsolute(uri: string, scheme: string, host: HostString, path: PathString, query: QueryString, fragment: FragmentString): void;
-    static getDisplayUrl(request: HttpRequest): string;
-    static getEncodedPathAndQuery(request: HttpRequest): string;
-    static getEncodedUrl(request: HttpRequest): string;
+    static BuildAbsolute(scheme: string, host: HostString, pathBase?: PathString, path?: PathString, query?: QueryString, fragment?: FragmentString): string;
+    static BuildRelative(pathBase?: PathString, path?: PathString, query?: QueryString, fragment?: FragmentString): string;
+    static Encode(uri: Uri): string;
+    static FromAbsolute(uri: string, scheme: string, host: HostString, path: PathString, query: QueryString, fragment: FragmentString): void;
+    static GetDisplayUrl(request: HttpRequest): string;
+    static GetEncodedPathAndQuery(request: HttpRequest): string;
+    static GetEncodedUrl(request: HttpRequest): string;
 }
 
 

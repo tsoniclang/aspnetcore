@@ -12,16 +12,16 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IViewBufferScope$instance {
-    createWriter(writer: TextWriter): TextWriter;
-    getPage(pageSize: int): ViewBufferValue[];
-    returnSegment(segment: ViewBufferValue[]): void;
+    CreateWriter(writer: TextWriter): TextWriter;
+    GetPage(pageSize: int): ViewBufferValue[];
+    ReturnSegment(segment: ViewBufferValue[]): void;
 }
 
 
 export type IViewBufferScope = IViewBufferScope$instance;
 
 export interface ViewBufferValue$instance {
-    readonly value: unknown;
+    readonly Value: unknown;
 }
 
 

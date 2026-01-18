@@ -27,9 +27,9 @@ import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface Accepted$instance {
-    readonly location: string | undefined;
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Location: string | undefined;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -50,10 +50,10 @@ export type Accepted = Accepted$instance & __Accepted$views;
 
 
 export interface Accepted_1$instance<TValue> {
-    readonly location: string | undefined;
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Location: string | undefined;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -76,10 +76,10 @@ export type Accepted_1<TValue> = Accepted_1$instance<TValue> & __Accepted_1$view
 
 
 export interface AcceptedAtRoute$instance {
-    readonly routeName: string | undefined;
-    readonly routeValues: RouteValueDictionary;
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly RouteName: string | undefined;
+    readonly RouteValues: RouteValueDictionary;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -100,11 +100,11 @@ export type AcceptedAtRoute = AcceptedAtRoute$instance & __AcceptedAtRoute$views
 
 
 export interface AcceptedAtRoute_1$instance<TValue> {
-    readonly routeName: string | undefined;
-    readonly routeValues: RouteValueDictionary;
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly RouteName: string | undefined;
+    readonly RouteValues: RouteValueDictionary;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -127,8 +127,8 @@ export type AcceptedAtRoute_1<TValue> = AcceptedAtRoute_1$instance<TValue> & __A
 
 
 export interface BadRequest$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -149,9 +149,9 @@ export type BadRequest = BadRequest$instance & __BadRequest$views;
 
 
 export interface BadRequest_1$instance<TValue> {
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -174,9 +174,9 @@ export type BadRequest_1<TValue> = BadRequest_1$instance<TValue> & __BadRequest_
 
 
 export interface ChallengeHttpResult$instance {
-    readonly authenticationSchemes: IReadOnlyList<System_Internal.String>;
-    readonly properties: AuthenticationProperties;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    readonly Properties: AuthenticationProperties;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -195,8 +195,8 @@ export type ChallengeHttpResult = ChallengeHttpResult$instance & __ChallengeHttp
 
 
 export interface Conflict$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -217,9 +217,9 @@ export type Conflict = Conflict$instance & __Conflict$views;
 
 
 export interface Conflict_1$instance<TValue> {
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -242,10 +242,10 @@ export type Conflict_1<TValue> = Conflict_1$instance<TValue> & __Conflict_1$view
 
 
 export interface ContentHttpResult$instance {
-    readonly contentType: string;
-    readonly responseContent: string | undefined;
-    readonly statusCode: Nullable<System_Internal.Int32>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly ResponseContent: string | undefined;
+    readonly StatusCode: Nullable<System_Internal.Int32>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -266,9 +266,9 @@ export type ContentHttpResult = ContentHttpResult$instance & __ContentHttpResult
 
 
 export interface Created$instance {
-    readonly location: string | undefined;
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Location: string | undefined;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -289,10 +289,10 @@ export type Created = Created$instance & __Created$views;
 
 
 export interface Created_1$instance<TValue> {
-    readonly location: string | undefined;
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Location: string | undefined;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -315,10 +315,10 @@ export type Created_1<TValue> = Created_1$instance<TValue> & __Created_1$views<T
 
 
 export interface CreatedAtRoute$instance {
-    readonly routeName: string | undefined;
-    readonly routeValues: RouteValueDictionary;
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly RouteName: string | undefined;
+    readonly RouteValues: RouteValueDictionary;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -339,11 +339,11 @@ export type CreatedAtRoute = CreatedAtRoute$instance & __CreatedAtRoute$views;
 
 
 export interface CreatedAtRoute_1$instance<TValue> {
-    readonly routeName: string | undefined;
-    readonly routeValues: RouteValueDictionary;
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly RouteName: string | undefined;
+    readonly RouteValues: RouteValueDictionary;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -366,13 +366,13 @@ export type CreatedAtRoute_1<TValue> = CreatedAtRoute_1$instance<TValue> & __Cre
 
 
 export interface EmptyHttpResult$instance {
-    executeAsync(httpContext: HttpContext): Task;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const EmptyHttpResult: {
     new(): EmptyHttpResult;
-    readonly instance: EmptyHttpResult;
+    readonly Instance: EmptyHttpResult;
 };
 
 
@@ -386,14 +386,14 @@ export type EmptyHttpResult = EmptyHttpResult$instance & __EmptyHttpResult$views
 
 
 export interface FileContentHttpResult$instance {
-    readonly contentType: string;
-    readonly enableRangeProcessing: boolean;
-    readonly entityTag: EntityTagHeaderValue | undefined;
-    readonly fileContents: ReadOnlyMemory<System_Internal.Byte>;
-    readonly fileDownloadName: string;
-    readonly fileLength: Nullable<System_Internal.Int64>;
-    readonly lastModified: Nullable<DateTimeOffset>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly EnableRangeProcessing: boolean;
+    readonly EntityTag: EntityTagHeaderValue | undefined;
+    readonly FileContents: ReadOnlyMemory<System_Internal.Byte>;
+    readonly FileDownloadName: string;
+    readonly FileLength: Nullable<System_Internal.Int64>;
+    readonly LastModified: Nullable<DateTimeOffset>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -414,14 +414,14 @@ export type FileContentHttpResult = FileContentHttpResult$instance & __FileConte
 
 
 export interface FileStreamHttpResult$instance {
-    readonly contentType: string;
-    readonly enableRangeProcessing: boolean;
-    readonly entityTag: EntityTagHeaderValue | undefined;
-    readonly fileDownloadName: string;
-    readonly fileLength: Nullable<System_Internal.Int64>;
-    readonly fileStream: Stream;
-    readonly lastModified: Nullable<DateTimeOffset>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly EnableRangeProcessing: boolean;
+    readonly EntityTag: EntityTagHeaderValue | undefined;
+    readonly FileDownloadName: string;
+    readonly FileLength: Nullable<System_Internal.Int64>;
+    readonly FileStream: Stream;
+    readonly LastModified: Nullable<DateTimeOffset>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -442,9 +442,9 @@ export type FileStreamHttpResult = FileStreamHttpResult$instance & __FileStreamH
 
 
 export interface ForbidHttpResult$instance {
-    readonly authenticationSchemes: IReadOnlyList<System_Internal.String>;
-    readonly properties: AuthenticationProperties;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    readonly Properties: AuthenticationProperties;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -463,8 +463,8 @@ export type ForbidHttpResult = ForbidHttpResult$instance & __ForbidHttpResult$vi
 
 
 export interface InternalServerError$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -485,9 +485,9 @@ export type InternalServerError = InternalServerError$instance & __InternalServe
 
 
 export interface InternalServerError_1$instance<TValue> {
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -510,11 +510,11 @@ export type InternalServerError_1<TValue> = InternalServerError_1$instance<TValu
 
 
 export interface JsonHttpResult_1$instance<TValue> {
-    readonly contentType: string;
-    readonly jsonSerializerOptions: JsonSerializerOptions;
-    readonly statusCode: Nullable<System_Internal.Int32>;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly JsonSerializerOptions: JsonSerializerOptions;
+    readonly StatusCode: Nullable<System_Internal.Int32>;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -538,8 +538,8 @@ export type JsonHttpResult_1<TValue> = JsonHttpResult_1$instance<TValue> & __Jso
 
 
 export interface NoContent$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -560,8 +560,8 @@ export type NoContent = NoContent$instance & __NoContent$views;
 
 
 export interface NotFound$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -582,9 +582,9 @@ export type NotFound = NotFound$instance & __NotFound$views;
 
 
 export interface NotFound_1$instance<TValue> {
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -607,8 +607,8 @@ export type NotFound_1<TValue> = NotFound_1$instance<TValue> & __NotFound_1$view
 
 
 export interface Ok$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -629,9 +629,9 @@ export type Ok = Ok$instance & __Ok$views;
 
 
 export interface Ok_1$instance<TValue> {
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -654,14 +654,14 @@ export type Ok_1<TValue> = Ok_1$instance<TValue> & __Ok_1$views<TValue>;
 
 
 export interface PhysicalFileHttpResult$instance {
-    readonly contentType: string;
-    readonly enableRangeProcessing: boolean;
-    readonly entityTag: EntityTagHeaderValue | undefined;
-    readonly fileDownloadName: string;
-    readonly fileLength: Nullable<System_Internal.Int64>;
-    readonly fileName: string;
-    readonly lastModified: Nullable<DateTimeOffset>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly EnableRangeProcessing: boolean;
+    readonly EntityTag: EntityTagHeaderValue | undefined;
+    readonly FileDownloadName: string;
+    readonly FileLength: Nullable<System_Internal.Int64>;
+    readonly FileName: string;
+    readonly LastModified: Nullable<DateTimeOffset>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -682,10 +682,10 @@ export type PhysicalFileHttpResult = PhysicalFileHttpResult$instance & __Physica
 
 
 export interface ProblemHttpResult$instance {
-    readonly contentType: string;
-    readonly problemDetails: ProblemDetails;
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly ProblemDetails: ProblemDetails;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -709,13 +709,13 @@ export type ProblemHttpResult = ProblemHttpResult$instance & __ProblemHttpResult
 
 
 export interface PushStreamHttpResult$instance {
-    readonly contentType: string;
-    readonly enableRangeProcessing: boolean;
-    readonly entityTag: EntityTagHeaderValue | undefined;
-    readonly fileDownloadName: string;
-    readonly fileLength: Nullable<System_Internal.Int64>;
-    readonly lastModified: Nullable<DateTimeOffset>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly EnableRangeProcessing: boolean;
+    readonly EntityTag: EntityTagHeaderValue | undefined;
+    readonly FileDownloadName: string;
+    readonly FileLength: Nullable<System_Internal.Int64>;
+    readonly LastModified: Nullable<DateTimeOffset>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -736,12 +736,12 @@ export type PushStreamHttpResult = PushStreamHttpResult$instance & __PushStreamH
 
 
 export interface RazorComponentResult$instance {
-    readonly componentType: Type;
-    contentType: string;
-    readonly parameters: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
-    preventStreamingRendering: boolean;
-    statusCode: Nullable<System_Internal.Int32>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ComponentType: Type;
+    ContentType: string;
+    readonly Parameters: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    PreventStreamingRendering: boolean;
+    StatusCode: Nullable<System_Internal.Int32>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -764,7 +764,7 @@ export type RazorComponentResult = RazorComponentResult$instance & __RazorCompon
 
 
 export interface RazorComponentResult_1$instance<TComponent extends IComponent> extends RazorComponentResult$instance {
-    executeAsync(httpContext: HttpContext): Task;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -785,17 +785,17 @@ export type RazorComponentResult_1<TComponent extends IComponent> = RazorCompone
 
 
 export interface RedirectHttpResult$instance {
-    readonly acceptLocalUrlOnly: boolean;
-    readonly permanent: boolean;
-    readonly preserveMethod: boolean;
-    readonly url: string;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly AcceptLocalUrlOnly: boolean;
+    readonly Permanent: boolean;
+    readonly PreserveMethod: boolean;
+    readonly Url: string;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const RedirectHttpResult: {
     new(): RedirectHttpResult;
-    isLocalUrl(url: string): boolean;
+    IsLocalUrl(url: string): boolean;
 };
 
 
@@ -809,12 +809,12 @@ export type RedirectHttpResult = RedirectHttpResult$instance & __RedirectHttpRes
 
 
 export interface RedirectToRouteHttpResult$instance {
-    readonly fragment: string | undefined;
-    readonly permanent: boolean;
-    readonly preserveMethod: boolean;
-    readonly routeName: string | undefined;
-    readonly routeValues: RouteValueDictionary;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Fragment: string | undefined;
+    readonly Permanent: boolean;
+    readonly PreserveMethod: boolean;
+    readonly RouteName: string | undefined;
+    readonly RouteValues: RouteValueDictionary;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -833,8 +833,8 @@ export type RedirectToRouteHttpResult = RedirectToRouteHttpResult$instance & __R
 
 
 export interface Results_2$instance<TResult1 extends IResult, TResult2 extends IResult> {
-    readonly result: IResult;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Result: IResult;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -855,8 +855,8 @@ export type Results_2<TResult1 extends IResult, TResult2 extends IResult> = Resu
 
 
 export interface Results_3$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult> {
-    readonly result: IResult;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Result: IResult;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -877,8 +877,8 @@ export type Results_3<TResult1 extends IResult, TResult2 extends IResult, TResul
 
 
 export interface Results_4$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult> {
-    readonly result: IResult;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Result: IResult;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -899,8 +899,8 @@ export type Results_4<TResult1 extends IResult, TResult2 extends IResult, TResul
 
 
 export interface Results_5$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult> {
-    readonly result: IResult;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Result: IResult;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -921,8 +921,8 @@ export type Results_5<TResult1 extends IResult, TResult2 extends IResult, TResul
 
 
 export interface Results_6$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult, TResult6 extends IResult> {
-    readonly result: IResult;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly Result: IResult;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -943,8 +943,8 @@ export type Results_6<TResult1 extends IResult, TResult2 extends IResult, TResul
 
 
 export interface ServerSentEventsResult_1$instance<T> {
-    readonly statusCode: Nullable<System_Internal.Int32>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: Nullable<System_Internal.Int32>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -965,10 +965,10 @@ export type ServerSentEventsResult_1<T> = ServerSentEventsResult_1$instance<T> &
 
 
 export interface SignInHttpResult$instance {
-    readonly authenticationScheme: string;
-    readonly principal: ClaimsPrincipal;
-    readonly properties: AuthenticationProperties;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly AuthenticationScheme: string;
+    readonly Principal: ClaimsPrincipal;
+    readonly Properties: AuthenticationProperties;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -987,9 +987,9 @@ export type SignInHttpResult = SignInHttpResult$instance & __SignInHttpResult$vi
 
 
 export interface SignOutHttpResult$instance {
-    readonly authenticationSchemes: IReadOnlyList<System_Internal.String>;
-    readonly properties: AuthenticationProperties;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    readonly Properties: AuthenticationProperties;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -1008,8 +1008,8 @@ export type SignOutHttpResult = SignOutHttpResult$instance & __SignOutHttpResult
 
 
 export interface StatusCodeHttpResult$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -1029,8 +1029,8 @@ export type StatusCodeHttpResult = StatusCodeHttpResult$instance & __StatusCodeH
 
 
 export interface UnauthorizedHttpResult$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -1050,8 +1050,8 @@ export type UnauthorizedHttpResult = UnauthorizedHttpResult$instance & __Unautho
 
 
 export interface UnprocessableEntity$instance {
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -1072,9 +1072,9 @@ export type UnprocessableEntity = UnprocessableEntity$instance & __Unprocessable
 
 
 export interface UnprocessableEntity_1$instance<TValue> {
-    readonly statusCode: int;
-    readonly value: TValue;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly StatusCode: int;
+    readonly Value: TValue;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -1097,10 +1097,10 @@ export type UnprocessableEntity_1<TValue> = UnprocessableEntity_1$instance<TValu
 
 
 export interface Utf8ContentHttpResult$instance {
-    readonly contentType: string;
-    readonly responseContent: ReadOnlyMemory<System_Internal.Byte>;
-    readonly statusCode: Nullable<System_Internal.Int32>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly ResponseContent: ReadOnlyMemory<System_Internal.Byte>;
+    readonly StatusCode: Nullable<System_Internal.Int32>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -1121,10 +1121,10 @@ export type Utf8ContentHttpResult = Utf8ContentHttpResult$instance & __Utf8Conte
 
 
 export interface ValidationProblem$instance {
-    readonly contentType: string;
-    readonly problemDetails: HttpValidationProblemDetails;
-    readonly statusCode: int;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly ProblemDetails: HttpValidationProblemDetails;
+    readonly StatusCode: int;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -1148,14 +1148,14 @@ export type ValidationProblem = ValidationProblem$instance & __ValidationProblem
 
 
 export interface VirtualFileHttpResult$instance {
-    readonly contentType: string;
-    readonly enableRangeProcessing: boolean;
-    readonly entityTag: EntityTagHeaderValue | undefined;
-    readonly fileDownloadName: string;
-    readonly fileLength: Nullable<System_Internal.Int64>;
-    readonly fileName: string;
-    readonly lastModified: Nullable<DateTimeOffset>;
-    executeAsync(httpContext: HttpContext): Task;
+    readonly ContentType: string;
+    readonly EnableRangeProcessing: boolean;
+    readonly EntityTag: EntityTagHeaderValue | undefined;
+    readonly FileDownloadName: string;
+    readonly FileLength: Nullable<System_Internal.Int64>;
+    readonly FileName: string;
+    readonly LastModified: Nullable<DateTimeOffset>;
+    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 

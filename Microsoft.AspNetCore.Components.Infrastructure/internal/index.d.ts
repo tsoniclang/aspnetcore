@@ -15,11 +15,11 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 import type { ILogger } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface ComponentStatePersistenceManager$instance {
-    readonly state: PersistentComponentState;
-    persistStateAsync(store: IPersistentComponentStateStore, renderer: Renderer): Task;
-    restoreStateAsync(store: IPersistentComponentStateStore): Task;
-    restoreStateAsync(store: IPersistentComponentStateStore, context: RestoreContext): Task;
-    setPlatformRenderMode(renderMode: IComponentRenderMode): void;
+    readonly State: PersistentComponentState;
+    PersistStateAsync(store: IPersistentComponentStateStore, renderer: Renderer): Task;
+    RestoreStateAsync(store: IPersistentComponentStateStore): Task;
+    RestoreStateAsync(store: IPersistentComponentStateStore, context: RestoreContext): Task;
+    SetPlatformRenderMode(renderMode: IComponentRenderMode): void;
 }
 
 
@@ -32,22 +32,22 @@ export const ComponentStatePersistenceManager: {
 export type ComponentStatePersistenceManager = ComponentStatePersistenceManager$instance;
 
 export abstract class ComponentsMetricsServiceCollectionExtensions$instance {
-    static addComponentsMetrics(services: IServiceCollection): IServiceCollection;
-    static addComponentsTracing(services: IServiceCollection): IServiceCollection;
+    static AddComponentsMetrics(services: IServiceCollection): IServiceCollection;
+    static AddComponentsTracing(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type ComponentsMetricsServiceCollectionExtensions = ComponentsMetricsServiceCollectionExtensions$instance;
 
 export abstract class PersistentStateProviderServiceCollectionExtensions$instance {
-    static addSupplyValueFromPersistentComponentStateProvider(services: IServiceCollection): IServiceCollection;
+    static AddSupplyValueFromPersistentComponentStateProvider(services: IServiceCollection): IServiceCollection;
 }
 
 
 export type PersistentStateProviderServiceCollectionExtensions = PersistentStateProviderServiceCollectionExtensions$instance;
 
 export abstract class RegisterPersistentComponentStateServiceCollectionExtensions$instance {
-    static addPersistentServiceRegistration<TService>(services: IServiceCollection, componentRenderMode: IComponentRenderMode): IServiceCollection;
+    static AddPersistentServiceRegistration<TService>(services: IServiceCollection, componentRenderMode: IComponentRenderMode): IServiceCollection;
 }
 
 

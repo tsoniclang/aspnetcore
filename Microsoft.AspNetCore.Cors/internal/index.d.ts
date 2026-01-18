@@ -12,7 +12,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface CorsPolicyMetadata$instance extends ICorsMetadata {
-    readonly policy: CorsPolicy;
+    readonly Policy: CorsPolicy;
 }
 
 
@@ -31,7 +31,7 @@ export type CorsPolicyMetadata = CorsPolicyMetadata$instance & __CorsPolicyMetad
 
 
 export interface DisableCorsAttribute$instance extends Attribute, IDisableCorsAttribute, ICorsMetadata {
-    toString(): string;
+    ToString(): string;
 }
 
 
@@ -43,9 +43,9 @@ export const DisableCorsAttribute: {
 export type DisableCorsAttribute = DisableCorsAttribute$instance;
 
 export interface EnableCorsAttribute$instance extends Attribute, ICorsMetadata {
-    get policyName(): string | undefined;
-    set policyName(value: string);
-    toString(): string;
+    get PolicyName(): string | undefined;
+    set PolicyName(value: string);
+    ToString(): string;
 }
 
 

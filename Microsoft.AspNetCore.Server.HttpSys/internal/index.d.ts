@@ -22,115 +22,115 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.
 import type { GenericSecurityDescriptor } from "@tsonic/dotnet/System.Security.AccessControl.js";
 
 export enum AuthenticationSchemes {
-    none = 0,
-    basic = 1,
+    None = 0,
+    Basic = 1,
     NTLM = 4,
-    negotiate = 8,
-    kerberos = 16
+    Negotiate = 8,
+    Kerberos = 16
 }
 
 
 export enum ClientCertificateMethod {
-    noCertificate = 0,
-    allowCertificate = 1,
-    allowRenegotation = 2
+    NoCertificate = 0,
+    AllowCertificate = 1,
+    AllowRenegotation = 2
 }
 
 
 export enum Http503VerbosityLevel {
-    basic = 0,
-    limited = 1,
-    full = 2
+    Basic = 0,
+    Limited = 1,
+    Full = 2
 }
 
 
 export enum HttpSysRequestTimingType {
-    connectionStart = 0,
-    dataStart = 1,
-    tlsCertificateLoadStart = 2,
-    tlsCertificateLoadEnd = 3,
-    tlsHandshakeLeg1Start = 4,
-    tlsHandshakeLeg1End = 5,
-    tlsHandshakeLeg2Start = 6,
-    tlsHandshakeLeg2End = 7,
-    tlsAttributesQueryStart = 8,
-    tlsAttributesQueryEnd = 9,
-    tlsClientCertQueryStart = 10,
-    tlsClientCertQueryEnd = 11,
-    http2StreamStart = 12,
-    http2HeaderDecodeStart = 13,
-    http2HeaderDecodeEnd = 14,
-    requestHeaderParseStart = 15,
-    requestHeaderParseEnd = 16,
-    requestRoutingStart = 17,
-    requestRoutingEnd = 18,
-    requestQueuedForInspection = 19,
-    requestDeliveredForInspection = 20,
-    requestReturnedAfterInspection = 21,
-    requestQueuedForDelegation = 22,
-    requestDeliveredForDelegation = 23,
-    requestReturnedAfterDelegation = 24,
-    requestQueuedForIO = 25,
-    requestDeliveredForIO = 26,
-    http3StreamStart = 27,
-    http3HeaderDecodeStart = 28,
-    http3HeaderDecodeEnd = 29
+    ConnectionStart = 0,
+    DataStart = 1,
+    TlsCertificateLoadStart = 2,
+    TlsCertificateLoadEnd = 3,
+    TlsHandshakeLeg1Start = 4,
+    TlsHandshakeLeg1End = 5,
+    TlsHandshakeLeg2Start = 6,
+    TlsHandshakeLeg2End = 7,
+    TlsAttributesQueryStart = 8,
+    TlsAttributesQueryEnd = 9,
+    TlsClientCertQueryStart = 10,
+    TlsClientCertQueryEnd = 11,
+    Http2StreamStart = 12,
+    Http2HeaderDecodeStart = 13,
+    Http2HeaderDecodeEnd = 14,
+    RequestHeaderParseStart = 15,
+    RequestHeaderParseEnd = 16,
+    RequestRoutingStart = 17,
+    RequestRoutingEnd = 18,
+    RequestQueuedForInspection = 19,
+    RequestDeliveredForInspection = 20,
+    RequestReturnedAfterInspection = 21,
+    RequestQueuedForDelegation = 22,
+    RequestDeliveredForDelegation = 23,
+    RequestReturnedAfterDelegation = 24,
+    RequestQueuedForIO = 25,
+    RequestDeliveredForIO = 26,
+    Http3StreamStart = 27,
+    Http3HeaderDecodeStart = 28,
+    Http3HeaderDecodeEnd = 29
 }
 
 
 export enum RequestQueueMode {
-    create = 0,
-    attach = 1,
-    createOrAttach = 2
+    Create = 0,
+    Attach = 1,
+    CreateOrAttach = 2
 }
 
 
 export interface IHttpSysRequestDelegationFeature$instance {
-    readonly canDelegate: boolean;
-    delegateRequest(destination: DelegationRule): void;
+    readonly CanDelegate: boolean;
+    DelegateRequest(destination: DelegationRule): void;
 }
 
 
 export type IHttpSysRequestDelegationFeature = IHttpSysRequestDelegationFeature$instance;
 
 export interface IHttpSysRequestInfoFeature$instance {
-    readonly requestInfo: IReadOnlyDictionary<System_Internal.Int32, ReadOnlyMemory<System_Internal.Byte>>;
+    readonly RequestInfo: IReadOnlyDictionary<System_Internal.Int32, ReadOnlyMemory<System_Internal.Byte>>;
 }
 
 
 export type IHttpSysRequestInfoFeature = IHttpSysRequestInfoFeature$instance;
 
 export interface IHttpSysRequestPropertyFeature$instance {
-    tryGetTlsClientHello(tlsClientHelloBytesDestination: Span<System_Internal.Byte>, bytesReturned: int): boolean;
+    TryGetTlsClientHello(tlsClientHelloBytesDestination: Span<System_Internal.Byte>, bytesReturned: int): boolean;
 }
 
 
 export type IHttpSysRequestPropertyFeature = IHttpSysRequestPropertyFeature$instance;
 
 export interface IHttpSysRequestTimingFeature$instance {
-    readonly timestamps: ReadOnlySpan<System_Internal.Int64>;
-    tryGetElapsedTime(startingTimestampType: HttpSysRequestTimingType, endingTimestampType: HttpSysRequestTimingType, elapsed: TimeSpan): boolean;
-    tryGetTimestamp(timestampType: HttpSysRequestTimingType, timestamp: long): boolean;
+    readonly Timestamps: ReadOnlySpan<System_Internal.Int64>;
+    TryGetElapsedTime(startingTimestampType: HttpSysRequestTimingType, endingTimestampType: HttpSysRequestTimingType, elapsed: TimeSpan): boolean;
+    TryGetTimestamp(timestampType: HttpSysRequestTimingType, timestamp: long): boolean;
 }
 
 
 export type IHttpSysRequestTimingFeature = IHttpSysRequestTimingFeature$instance;
 
 export interface IServerDelegationFeature$instance {
-    createDelegationRule(queueName: string, urlPrefix: string): DelegationRule;
+    CreateDelegationRule(queueName: string, urlPrefix: string): DelegationRule;
 }
 
 
 export type IServerDelegationFeature = IServerDelegationFeature$instance;
 
 export interface AuthenticationManager$instance {
-    allowAnonymous: boolean;
-    get authenticationDisplayName(): string | undefined;
-    set authenticationDisplayName(value: string);
-    automaticAuthentication: boolean;
-    captureCredentials: boolean;
-    enableKerberosCredentialCaching: boolean;
-    schemes: AuthenticationSchemes;
+    AllowAnonymous: boolean;
+    get AuthenticationDisplayName(): string | undefined;
+    set AuthenticationDisplayName(value: string);
+    AutomaticAuthentication: boolean;
+    CaptureCredentials: boolean;
+    EnableKerberosCredentialCaching: boolean;
+    Schemes: AuthenticationSchemes;
 }
 
 
@@ -142,9 +142,9 @@ export const AuthenticationManager: {
 export type AuthenticationManager = AuthenticationManager$instance;
 
 export interface DelegationRule$instance {
-    readonly queueName: string;
-    readonly urlPrefix: string;
-    dispose(): void;
+    readonly QueueName: string;
+    readonly UrlPrefix: string;
+    Dispose(): void;
 }
 
 
@@ -156,7 +156,7 @@ export const DelegationRule: {
 export type DelegationRule = DelegationRule$instance;
 
 export interface HttpSysException$instance extends Win32Exception {
-    readonly errorCode: int;
+    readonly ErrorCode: int;
 }
 
 
@@ -168,26 +168,26 @@ export const HttpSysException: {
 export type HttpSysException = HttpSysException$instance;
 
 export interface HttpSysOptions$instance {
-    allowSynchronousIO: boolean;
-    readonly authentication: AuthenticationManager;
-    clientCertificateMethod: ClientCertificateMethod;
-    enableKernelResponseBuffering: boolean;
-    enableResponseCaching: boolean;
-    http503Verbosity: Http503VerbosityLevel;
-    maxAccepts: int;
-    maxConnections: Nullable<System_Internal.Int64>;
-    maxRequestBodySize: Nullable<System_Internal.Int64>;
-    requestQueueLimit: long;
-    requestQueueMode: RequestQueueMode;
-    get requestQueueName(): string | undefined;
-    set requestQueueName(value: string);
-    get requestQueueSecurityDescriptor(): GenericSecurityDescriptor | undefined;
-    set requestQueueSecurityDescriptor(value: GenericSecurityDescriptor);
-    throwWriteExceptions: boolean;
-    readonly timeouts: TimeoutManager;
-    unsafePreferInlineScheduling: boolean;
-    readonly urlPrefixes: UrlPrefixCollection;
-    useLatin1RequestHeaders: boolean;
+    AllowSynchronousIO: boolean;
+    readonly Authentication: AuthenticationManager;
+    ClientCertificateMethod: ClientCertificateMethod;
+    EnableKernelResponseBuffering: boolean;
+    EnableResponseCaching: boolean;
+    Http503Verbosity: Http503VerbosityLevel;
+    MaxAccepts: int;
+    MaxConnections: Nullable<System_Internal.Int64>;
+    MaxRequestBodySize: Nullable<System_Internal.Int64>;
+    RequestQueueLimit: long;
+    RequestQueueMode: RequestQueueMode;
+    get RequestQueueName(): string | undefined;
+    set RequestQueueName(value: string);
+    get RequestQueueSecurityDescriptor(): GenericSecurityDescriptor | undefined;
+    set RequestQueueSecurityDescriptor(value: GenericSecurityDescriptor);
+    ThrowWriteExceptions: boolean;
+    readonly Timeouts: TimeoutManager;
+    UnsafePreferInlineScheduling: boolean;
+    readonly UrlPrefixes: UrlPrefixCollection;
+    UseLatin1RequestHeaders: boolean;
 }
 
 
@@ -199,12 +199,12 @@ export const HttpSysOptions: {
 export type HttpSysOptions = HttpSysOptions$instance;
 
 export interface TimeoutManager$instance {
-    drainEntityBody: TimeSpan;
-    entityBody: TimeSpan;
-    headerWait: TimeSpan;
-    idleConnection: TimeSpan;
-    minSendBytesPerSecond: long;
-    requestQueue: TimeSpan;
+    DrainEntityBody: TimeSpan;
+    EntityBody: TimeSpan;
+    HeaderWait: TimeSpan;
+    IdleConnection: TimeSpan;
+    MinSendBytesPerSecond: long;
+    RequestQueue: TimeSpan;
 }
 
 
@@ -216,40 +216,40 @@ export const TimeoutManager: {
 export type TimeoutManager = TimeoutManager$instance;
 
 export interface UrlPrefix$instance {
-    readonly fullPrefix: string;
-    readonly host: string;
-    readonly isHttps: boolean;
-    readonly path: string;
-    readonly port: string;
-    readonly portValue: int;
-    readonly scheme: string;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly FullPrefix: string;
+    readonly Host: string;
+    readonly IsHttps: boolean;
+    readonly Path: string;
+    readonly Port: string;
+    readonly PortValue: int;
+    readonly Scheme: string;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const UrlPrefix: {
     new(): UrlPrefix;
-    create(scheme: string, host: string, portValue: Nullable<System_Internal.Int32>, path: string): UrlPrefix;
-    create(scheme: string, host: string, port: string, path: string): UrlPrefix;
-    create(prefix: string): UrlPrefix;
+    Create(scheme: string, host: string, portValue: Nullable<System_Internal.Int32>, path: string): UrlPrefix;
+    Create(scheme: string, host: string, port: string, path: string): UrlPrefix;
+    Create(prefix: string): UrlPrefix;
 };
 
 
 export type UrlPrefix = UrlPrefix$instance;
 
 export interface UrlPrefixCollection$instance {
-    readonly count: int;
-    readonly isReadOnly: boolean;
-    add(prefix: string): void;
-    add(item: UrlPrefix): void;
-    clear(): void;
-    contains(item: UrlPrefix): boolean;
-    copyTo(array: UrlPrefix[], arrayIndex: int): void;
-    getEnumerator(): IEnumerator<UrlPrefix>;
-    remove(prefix: string): boolean;
-    remove(item: UrlPrefix): boolean;
+    readonly Count: int;
+    readonly IsReadOnly: boolean;
+    Add(prefix: string): void;
+    Add(item: UrlPrefix): void;
+    Clear(): void;
+    Contains(item: UrlPrefix): boolean;
+    CopyTo(array: UrlPrefix[], arrayIndex: int): void;
+    GetEnumerator(): IEnumerator<UrlPrefix>;
+    Remove(prefix: string): boolean;
+    Remove(item: UrlPrefix): boolean;
 }
 
 
@@ -261,7 +261,7 @@ export const UrlPrefixCollection: {
 export type UrlPrefixCollection = UrlPrefixCollection$instance;
 
 export abstract class HttpSysDefaults$instance {
-    static readonly authenticationScheme: string;
+    static readonly AuthenticationScheme: string;
 }
 
 

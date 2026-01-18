@@ -21,22 +21,22 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface ITagHelperComponentManager$instance {
-    readonly components: ICollection<ITagHelperComponent>;
+    readonly Components: ICollection<ITagHelperComponent>;
 }
 
 
 export type ITagHelperComponentManager = ITagHelperComponentManager$instance;
 
 export interface ITagHelperComponentPropertyActivator$instance {
-    activate(context: ViewContext, tagHelperComponent: ITagHelperComponent): void;
+    Activate(context: ViewContext, tagHelperComponent: ITagHelperComponent): void;
 }
 
 
 export type ITagHelperComponentPropertyActivator = ITagHelperComponentPropertyActivator$instance;
 
 export interface BodyTagHelper$instance extends TagHelperComponentTagHelper$instance {
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -53,8 +53,8 @@ export type BodyTagHelper = BodyTagHelper$instance & __BodyTagHelper$views;
 
 
 export interface HeadTagHelper$instance extends TagHelperComponentTagHelper$instance {
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -71,10 +71,10 @@ export type HeadTagHelper = HeadTagHelper$instance & __HeadTagHelper$views;
 
 
 export interface TagHelperComponentTagHelper$instance extends TagHelper {
-    propertyActivator: ITagHelperComponentPropertyActivator;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    PropertyActivator: ITagHelperComponentPropertyActivator;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 
@@ -93,7 +93,7 @@ export type TagHelperComponentTagHelper = TagHelperComponentTagHelper$instance &
 
 
 export interface TagHelperFeature$instance {
-    readonly tagHelpers: IList<TypeInfo>;
+    readonly TagHelpers: IList<TypeInfo>;
 }
 
 
@@ -105,7 +105,7 @@ export const TagHelperFeature: {
 export type TagHelperFeature = TagHelperFeature$instance;
 
 export interface TagHelperFeatureProvider$instance extends IApplicationFeatureProvider {
-    populateFeature(parts: IEnumerable<ApplicationPart>, feature: TagHelperFeature): void;
+    PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: TagHelperFeature): void;
 }
 
 
@@ -124,11 +124,11 @@ export type TagHelperFeatureProvider = TagHelperFeatureProvider$instance & __Tag
 
 
 export interface UrlResolutionTagHelper$instance extends TagHelper, ITagHelper {
-    readonly order: int;
-    viewContext: ViewContext;
-    init(context: TagHelperContext): void;
-    process(context: TagHelperContext, output: TagHelperOutput): void;
-    processAsync(context: TagHelperContext, output: TagHelperOutput): Task;
+    readonly Order: int;
+    ViewContext: ViewContext;
+    Init(context: TagHelperContext): void;
+    Process(context: TagHelperContext, output: TagHelperOutput): void;
+    ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
 

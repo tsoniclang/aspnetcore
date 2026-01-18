@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Components.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
       "clrName": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-      "tsEmitName": "ComponentStatePersistenceManager",
       "assemblyName": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager::RestoreStateAsync(Microsoft.AspNetCore.Components.IPersistentComponentStateStore):System.Threading.Tasks.Task",
           "clrName": "RestoreStateAsync",
-          "tsEmitName": "restoreStateAsync",
           "metadataToken": 100665019,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.IPersistentComponentStateStore):System.Threading.Tasks.Task",
           "normalizedSignature": "RestoreStateAsync|(Microsoft.AspNetCore.Components.IPersistentComponentStateStore):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager::RestoreStateAsync(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RestoreContext):System.Threading.Tasks.Task",
           "clrName": "RestoreStateAsync",
-          "tsEmitName": "restoreStateAsync",
           "metadataToken": 100665020,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RestoreContext):System.Threading.Tasks.Task",
           "normalizedSignature": "RestoreStateAsync|(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RestoreContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -39,13 +57,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager::PersistStateAsync(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RenderTree.Renderer):System.Threading.Tasks.Task",
           "clrName": "PersistStateAsync",
-          "tsEmitName": "persistStateAsync",
           "metadataToken": 100665021,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RenderTree.Renderer):System.Threading.Tasks.Task",
           "normalizedSignature": "PersistStateAsync|(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RenderTree.Renderer):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -53,13 +76,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager::SetPlatformRenderMode(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void",
           "clrName": "SetPlatformRenderMode",
-          "tsEmitName": "setPlatformRenderMode",
           "metadataToken": 100665022,
           "canonicalSignature": "(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void",
           "normalizedSignature": "SetPlatformRenderMode|(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -69,14 +97,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager::State:Microsoft.AspNetCore.Components.PersistentComponentState",
           "clrName": "State",
-          "tsEmitName": "state",
           "metadataToken": 385876323,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.PersistentComponentState",
           "normalizedSignature": "State|:Microsoft.AspNetCore.Components.PersistentComponentState|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -104,99 +136,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "restoreStateAsync",
-          "isStatic": false,
-          "tsSignatureId": "RestoreStateAsync|(Microsoft.AspNetCore.Components.IPersistentComponentStateStore):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665019
-          }
-        },
-        {
-          "tsName": "restoreStateAsync",
-          "isStatic": false,
-          "tsSignatureId": "RestoreStateAsync|(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RestoreContext):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665020
-          }
-        },
-        {
-          "tsName": "persistStateAsync",
-          "isStatic": false,
-          "tsSignatureId": "PersistStateAsync|(Microsoft.AspNetCore.Components.IPersistentComponentStateStore,Microsoft.AspNetCore.Components.RenderTree.Renderer):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665021
-          }
-        },
-        {
-          "tsName": "setPlatformRenderMode",
-          "isStatic": false,
-          "tsSignatureId": "SetPlatformRenderMode|(Microsoft.AspNetCore.Components.IComponentRenderMode):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665022
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "state",
-          "isStatic": false,
-          "tsSignatureId": "State|:Microsoft.AspNetCore.Components.PersistentComponentState|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 385876323
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665014
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager,Microsoft.AspNetCore.Components,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.IServiceProvider):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665015
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions",
       "clrName": "Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions",
-      "tsEmitName": "ComponentsMetricsServiceCollectionExtensions",
       "assemblyName": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions::AddComponentsMetrics(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "AddComponentsMetrics",
-          "tsEmitName": "addComponentsMetrics",
           "metadataToken": 100665075,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "AddComponentsMetrics|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -204,13 +172,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions::AddComponentsTracing(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "AddComponentsTracing",
-          "tsEmitName": "addComponentsTracing",
           "metadataToken": 100665076,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "AddComponentsTracing|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -219,47 +192,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "addComponentsMetrics",
-          "isStatic": true,
-          "tsSignatureId": "AddComponentsMetrics|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665075
-          }
-        },
-        {
-          "tsName": "addComponentsTracing",
-          "isStatic": true,
-          "tsSignatureId": "AddComponentsTracing|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.ComponentsMetricsServiceCollectionExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665076
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.PersistentStateProviderServiceCollectionExtensions",
       "clrName": "Microsoft.AspNetCore.Components.Infrastructure.PersistentStateProviderServiceCollectionExtensions",
-      "tsEmitName": "PersistentStateProviderServiceCollectionExtensions",
       "assemblyName": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.PersistentStateProviderServiceCollectionExtensions::AddSupplyValueFromPersistentComponentStateProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "AddSupplyValueFromPersistentComponentStateProvider",
-          "tsEmitName": "addSupplyValueFromPersistentComponentStateProvider",
           "metadataToken": 100665039,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "AddSupplyValueFromPersistentComponentStateProvider|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.PersistentStateProviderServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": true
@@ -268,37 +229,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "addSupplyValueFromPersistentComponentStateProvider",
-          "isStatic": true,
-          "tsSignatureId": "AddSupplyValueFromPersistentComponentStateProvider|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.PersistentStateProviderServiceCollectionExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665039
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.RegisterPersistentComponentStateServiceCollectionExtensions",
       "clrName": "Microsoft.AspNetCore.Components.Infrastructure.RegisterPersistentComponentStateServiceCollectionExtensions",
-      "tsEmitName": "RegisterPersistentComponentStateServiceCollectionExtensions",
       "assemblyName": "Microsoft.AspNetCore.Components",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Infrastructure.RegisterPersistentComponentStateServiceCollectionExtensions::AddPersistentServiceRegistration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Components.IComponentRenderMode):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "AddPersistentServiceRegistration",
-          "tsEmitName": "addPersistentServiceRegistration",
           "metadataToken": 100665074,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Components.IComponentRenderMode):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "AddPersistentServiceRegistration|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Components.IComponentRenderMode):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.RegisterPersistentComponentStateServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -307,19 +266,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "addPersistentServiceRegistration",
-          "isStatic": true,
-          "tsSignatureId": "AddPersistentServiceRegistration|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Components.IComponentRenderMode):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Infrastructure.RegisterPersistentComponentStateServiceCollectionExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components",
-            "metadataToken": 100665074
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

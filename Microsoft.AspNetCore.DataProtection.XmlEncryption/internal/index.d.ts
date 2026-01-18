@@ -13,35 +13,35 @@ import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export enum DpapiNGProtectionDescriptorFlags {
-    none = 0,
-    namedDescriptor = 1,
-    machineKey = 32
+    None = 0,
+    NamedDescriptor = 1,
+    MachineKey = 32
 }
 
 
 export interface ICertificateResolver$instance {
-    resolveCertificate(thumbprint: string): X509Certificate2 | undefined;
+    ResolveCertificate(thumbprint: string): X509Certificate2 | undefined;
 }
 
 
 export type ICertificateResolver = ICertificateResolver$instance;
 
 export interface IXmlDecryptor$instance {
-    decrypt(encryptedElement: XElement): XElement;
+    Decrypt(encryptedElement: XElement): XElement;
 }
 
 
 export type IXmlDecryptor = IXmlDecryptor$instance;
 
 export interface IXmlEncryptor$instance {
-    encrypt(plaintextElement: XElement): EncryptedXmlInfo;
+    Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
 
 export type IXmlEncryptor = IXmlEncryptor$instance;
 
 export interface CertificateResolver$instance {
-    resolveCertificate(thumbprint: string): X509Certificate2 | undefined;
+    ResolveCertificate(thumbprint: string): X509Certificate2 | undefined;
 }
 
 
@@ -60,7 +60,7 @@ export type CertificateResolver = CertificateResolver$instance & __CertificateRe
 
 
 export interface CertificateXmlEncryptor$instance {
-    encrypt(plaintextElement: XElement): EncryptedXmlInfo;
+    Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
 
@@ -80,7 +80,7 @@ export type CertificateXmlEncryptor = CertificateXmlEncryptor$instance & __Certi
 
 
 export interface DpapiNGXmlDecryptor$instance {
-    decrypt(encryptedElement: XElement): XElement;
+    Decrypt(encryptedElement: XElement): XElement;
 }
 
 
@@ -100,7 +100,7 @@ export type DpapiNGXmlDecryptor = DpapiNGXmlDecryptor$instance & __DpapiNGXmlDec
 
 
 export interface DpapiNGXmlEncryptor$instance {
-    encrypt(plaintextElement: XElement): EncryptedXmlInfo;
+    Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
 
@@ -119,7 +119,7 @@ export type DpapiNGXmlEncryptor = DpapiNGXmlEncryptor$instance & __DpapiNGXmlEnc
 
 
 export interface DpapiXmlDecryptor$instance {
-    decrypt(encryptedElement: XElement): XElement;
+    Decrypt(encryptedElement: XElement): XElement;
 }
 
 
@@ -139,7 +139,7 @@ export type DpapiXmlDecryptor = DpapiXmlDecryptor$instance & __DpapiXmlDecryptor
 
 
 export interface DpapiXmlEncryptor$instance {
-    encrypt(plaintextElement: XElement): EncryptedXmlInfo;
+    Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
 
@@ -158,7 +158,7 @@ export type DpapiXmlEncryptor = DpapiXmlEncryptor$instance & __DpapiXmlEncryptor
 
 
 export interface EncryptedXmlDecryptor$instance {
-    decrypt(encryptedElement: XElement): XElement;
+    Decrypt(encryptedElement: XElement): XElement;
 }
 
 
@@ -178,8 +178,8 @@ export type EncryptedXmlDecryptor = EncryptedXmlDecryptor$instance & __Encrypted
 
 
 export interface EncryptedXmlInfo$instance {
-    readonly decryptorType: Type;
-    readonly encryptedElement: XElement;
+    readonly DecryptorType: Type;
+    readonly EncryptedElement: XElement;
 }
 
 
@@ -191,7 +191,7 @@ export const EncryptedXmlInfo: {
 export type EncryptedXmlInfo = EncryptedXmlInfo$instance;
 
 export interface NullXmlDecryptor$instance {
-    decrypt(encryptedElement: XElement): XElement;
+    Decrypt(encryptedElement: XElement): XElement;
 }
 
 
@@ -210,7 +210,7 @@ export type NullXmlDecryptor = NullXmlDecryptor$instance & __NullXmlDecryptor$vi
 
 
 export interface NullXmlEncryptor$instance {
-    encrypt(plaintextElement: XElement): EncryptedXmlInfo;
+    Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
 

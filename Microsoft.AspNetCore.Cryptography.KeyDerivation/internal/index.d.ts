@@ -17,7 +17,7 @@ export enum KeyDerivationPrf {
 
 
 export abstract class KeyDerivation$instance {
-    static pbkdf2(password: string, salt: byte[], prf: KeyDerivationPrf, iterationCount: int, numBytesRequested: int): byte[];
+    static Pbkdf2(password: string, salt: byte[], prf: KeyDerivationPrf, iterationCount: int, numBytesRequested: int): byte[];
 }
 
 

@@ -11,7 +11,7 @@ import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/Sy
 import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
 
 export abstract class PrincipalExtensions$instance {
-    static findFirstValue(principal: ClaimsPrincipal, claimType: string): string | undefined;
+    static FindFirstValue(principal: ClaimsPrincipal, claimType: string): string | undefined;
 }
 
 

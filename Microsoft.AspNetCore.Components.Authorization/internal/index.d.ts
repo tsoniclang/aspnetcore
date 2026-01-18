@@ -20,15 +20,15 @@ export type AuthenticationStateChangedHandler = (task: Task<AuthenticationState>
 
 
 export interface IHostEnvironmentAuthenticationStateProvider$instance {
-    setAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
+    SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
 }
 
 
 export type IHostEnvironmentAuthenticationStateProvider = IHostEnvironmentAuthenticationStateProvider$instance;
 
 export interface ClaimData$instance {
-    readonly type: string;
-    readonly value: string;
+    readonly Type: string;
+    readonly Value: string;
 }
 
 
@@ -41,7 +41,7 @@ export const ClaimData: {
 export type ClaimData = ClaimData$instance;
 
 export interface AuthenticationState$instance {
-    readonly user: ClaimsPrincipal;
+    readonly User: ClaimsPrincipal;
 }
 
 
@@ -53,9 +53,9 @@ export const AuthenticationState: {
 export type AuthenticationState = AuthenticationState$instance;
 
 export interface AuthenticationStateData$instance {
-    claims: IList<ClaimData>;
-    nameClaimType: string;
-    roleClaimType: string;
+    Claims: IList<ClaimData>;
+    NameClaimType: string;
+    RoleClaimType: string;
 }
 
 
@@ -67,7 +67,7 @@ export const AuthenticationStateData: {
 export type AuthenticationStateData = AuthenticationStateData$instance;
 
 export interface AuthenticationStateProvider$instance {
-    getAuthenticationStateAsync(): Task<AuthenticationState>;
+    GetAuthenticationStateAsync(): Task<AuthenticationState>;
 }
 
 
@@ -78,14 +78,14 @@ export const AuthenticationStateProvider: {
 export type AuthenticationStateProvider = AuthenticationStateProvider$instance;
 
 export interface AuthorizeRouteView$instance extends RouteView {
-    get authorizing(): RenderFragment | undefined;
-    set authorizing(value: RenderFragment);
-    get notAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set notAuthorized(value: RenderFragment_1<AuthenticationState>);
-    get resource(): unknown | undefined;
-    set resource(value: unknown);
-    attach(renderHandle: RenderHandle): void;
-    setParametersAsync(parameters: ParameterView): Task;
+    get Authorizing(): RenderFragment | undefined;
+    set Authorizing(value: RenderFragment);
+    get NotAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
+    set NotAuthorized(value: RenderFragment_1<AuthenticationState>);
+    get Resource(): unknown | undefined;
+    set Resource(value: unknown);
+    Attach(renderHandle: RenderHandle): void;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -102,12 +102,12 @@ export type AuthorizeRouteView = AuthorizeRouteView$instance & __AuthorizeRouteV
 
 
 export interface AuthorizeView$instance extends AuthorizeViewCore$instance {
-    policy: string;
-    roles: string;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    Policy: string;
+    Roles: string;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -126,19 +126,19 @@ export type AuthorizeView = AuthorizeView$instance & __AuthorizeView$views;
 
 
 export interface AuthorizeViewCore$instance extends ComponentBase {
-    get authorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set authorized(value: RenderFragment_1<AuthenticationState>);
-    get authorizing(): RenderFragment | undefined;
-    set authorizing(value: RenderFragment);
-    childContent: RenderFragment_1<AuthenticationState>;
-    get notAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set notAuthorized(value: RenderFragment_1<AuthenticationState>);
-    get resource(): unknown | undefined;
-    set resource(value: unknown);
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get Authorized(): RenderFragment_1<AuthenticationState> | undefined;
+    set Authorized(value: RenderFragment_1<AuthenticationState>);
+    get Authorizing(): RenderFragment | undefined;
+    set Authorizing(value: RenderFragment);
+    ChildContent: RenderFragment_1<AuthenticationState>;
+    get NotAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
+    set NotAuthorized(value: RenderFragment_1<AuthenticationState>);
+    get Resource(): unknown | undefined;
+    set Resource(value: unknown);
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -158,11 +158,11 @@ export type AuthorizeViewCore = AuthorizeViewCore$instance & __AuthorizeViewCore
 
 
 export interface CascadingAuthenticationState$instance extends ComponentBase {
-    childContent: RenderFragment;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    ChildContent: RenderFragment;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 

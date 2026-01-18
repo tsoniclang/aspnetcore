@@ -17,40 +17,40 @@ import type { Int32, Object as ClrObject, String as ClrString, Type, Void } from
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IActionDescriptorProvider$instance {
-    readonly order: int;
-    onProvidersExecuting(context: ActionDescriptorProviderContext): void;
+    readonly Order: int;
+    OnProvidersExecuting(context: ActionDescriptorProviderContext): void;
 }
 
 
 export type IActionDescriptorProvider = IActionDescriptorProvider$instance;
 
 export interface IActionInvoker$instance {
-    invokeAsync(): Task;
+    InvokeAsync(): Task;
 }
 
 
 export type IActionInvoker = IActionInvoker$instance;
 
 export interface IActionInvokerProvider$instance {
-    readonly order: int;
-    onProvidersExecuting(context: ActionInvokerProviderContext): void;
+    readonly Order: int;
+    OnProvidersExecuting(context: ActionInvokerProviderContext): void;
 }
 
 
 export type IActionInvokerProvider = IActionInvokerProvider$instance;
 
 export interface ActionDescriptor$instance {
-    actionConstraints: IList<IActionConstraintMetadata>;
-    get attributeRouteInfo(): AttributeRouteInfo | undefined;
-    set attributeRouteInfo(value: AttributeRouteInfo);
-    boundProperties: IList<ParameterDescriptor>;
-    displayName: string;
-    endpointMetadata: IList<unknown>;
-    filterDescriptors: IList<FilterDescriptor>;
-    readonly id: string;
-    parameters: IList<ParameterDescriptor>;
-    properties: IDictionary<unknown, unknown | undefined>;
-    routeValues: IDictionary<System_Internal.String, string | undefined>;
+    ActionConstraints: IList<IActionConstraintMetadata>;
+    get AttributeRouteInfo(): AttributeRouteInfo | undefined;
+    set AttributeRouteInfo(value: AttributeRouteInfo);
+    BoundProperties: IList<ParameterDescriptor>;
+    DisplayName: string;
+    EndpointMetadata: IList<unknown>;
+    FilterDescriptors: IList<FilterDescriptor>;
+    readonly Id: string;
+    Parameters: IList<ParameterDescriptor>;
+    Properties: IDictionary<unknown, unknown | undefined>;
+    RouteValues: IDictionary<System_Internal.String, string | undefined>;
 }
 
 
@@ -62,7 +62,7 @@ export const ActionDescriptor: {
 export type ActionDescriptor = ActionDescriptor$instance;
 
 export interface ActionDescriptorProviderContext$instance {
-    readonly results: IList<ActionDescriptor>;
+    readonly Results: IList<ActionDescriptor>;
 }
 
 
@@ -74,8 +74,8 @@ export const ActionDescriptorProviderContext: {
 export type ActionDescriptorProviderContext = ActionDescriptorProviderContext$instance;
 
 export interface ActionInvokerProviderContext$instance {
-    readonly actionContext: ActionContext;
-    result: IActionInvoker;
+    readonly ActionContext: ActionContext;
+    Result: IActionInvoker;
 }
 
 
@@ -87,9 +87,9 @@ export const ActionInvokerProviderContext: {
 export type ActionInvokerProviderContext = ActionInvokerProviderContext$instance;
 
 export interface ParameterDescriptor$instance {
-    bindingInfo: BindingInfo;
-    name: string;
-    parameterType: Type;
+    BindingInfo: BindingInfo;
+    Name: string;
+    ParameterType: Type;
 }
 
 
@@ -101,8 +101,8 @@ export const ParameterDescriptor: {
 export type ParameterDescriptor = ParameterDescriptor$instance;
 
 export abstract class ActionDescriptorExtensions$instance {
-    static getProperty<T>(actionDescriptor: ActionDescriptor): T | undefined;
-    static setProperty<T>(actionDescriptor: ActionDescriptor, value: T): void;
+    static GetProperty<T>(actionDescriptor: ActionDescriptor): T | undefined;
+    static SetProperty<T>(actionDescriptor: ActionDescriptor, value: T): void;
 }
 
 

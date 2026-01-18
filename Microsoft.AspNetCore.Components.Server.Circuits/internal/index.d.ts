@@ -12,7 +12,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface Circuit$instance {
-    readonly id: string;
+    readonly Id: string;
 }
 
 
@@ -24,12 +24,12 @@ export const Circuit: {
 export type Circuit = Circuit$instance;
 
 export interface CircuitHandler$instance {
-    readonly order: int;
-    createInboundActivityHandler(next: Func<CircuitInboundActivityContext, Task>): Func<CircuitInboundActivityContext, Task>;
-    onCircuitClosedAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
-    onCircuitOpenedAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
-    onConnectionDownAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
-    onConnectionUpAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
+    readonly Order: int;
+    CreateInboundActivityHandler(next: Func<CircuitInboundActivityContext, Task>): Func<CircuitInboundActivityContext, Task>;
+    OnCircuitClosedAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
+    OnCircuitOpenedAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
+    OnConnectionDownAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
+    OnConnectionUpAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -40,7 +40,7 @@ export const CircuitHandler: {
 export type CircuitHandler = CircuitHandler$instance;
 
 export interface CircuitInboundActivityContext$instance {
-    readonly circuit: Circuit;
+    readonly Circuit: Circuit;
 }
 
 

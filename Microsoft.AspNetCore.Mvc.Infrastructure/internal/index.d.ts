@@ -32,51 +32,51 @@ import type { IOptions, IPostConfigureOptions } from "@tsonic/microsoft-extensio
 import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IActionContextAccessor$instance {
-    actionContext: ActionContext;
+    ActionContext: ActionContext;
 }
 
 
 export type IActionContextAccessor = IActionContextAccessor$instance;
 
 export interface IActionDescriptorChangeProvider$instance {
-    getChangeToken(): IChangeToken;
+    GetChangeToken(): IChangeToken;
 }
 
 
 export type IActionDescriptorChangeProvider = IActionDescriptorChangeProvider$instance;
 
 export interface IActionDescriptorCollectionProvider$instance {
-    readonly actionDescriptors: ActionDescriptorCollection;
+    readonly ActionDescriptors: ActionDescriptorCollection;
 }
 
 
 export type IActionDescriptorCollectionProvider = IActionDescriptorCollectionProvider$instance;
 
 export interface IActionInvokerFactory$instance {
-    createInvoker(actionContext: ActionContext): IActionInvoker | undefined;
+    CreateInvoker(actionContext: ActionContext): IActionInvoker | undefined;
 }
 
 
 export type IActionInvokerFactory = IActionInvokerFactory$instance;
 
 export interface IActionResultExecutor_1$instance<TResult extends IActionResult> {
-    executeAsync(context: ActionContext, result: TResult): Task;
+    ExecuteAsync(context: ActionContext, result: TResult): Task;
 }
 
 
 export type IActionResultExecutor_1<TResult extends IActionResult> = IActionResultExecutor_1$instance<TResult>;
 
 export interface IActionResultTypeMapper$instance {
-    convert(value: unknown, returnType: Type): IActionResult;
-    getResultDataType(returnType: Type): Type;
+    Convert(value: unknown, returnType: Type): IActionResult;
+    GetResultDataType(returnType: Type): Type;
 }
 
 
 export type IActionResultTypeMapper = IActionResultTypeMapper$instance;
 
 export interface IActionSelector$instance {
-    selectBestCandidate(context: RouteContext, candidates: IReadOnlyList<ActionDescriptor>): ActionDescriptor | undefined;
-    selectCandidates(context: RouteContext): IReadOnlyList<ActionDescriptor> | undefined;
+    SelectBestCandidate(context: RouteContext, candidates: IReadOnlyList<ActionDescriptor>): ActionDescriptor | undefined;
+    SelectCandidates(context: RouteContext): IReadOnlyList<ActionDescriptor> | undefined;
 }
 
 
@@ -91,67 +91,67 @@ export interface IApiBehaviorMetadata$instance extends Microsoft_AspNetCore_Mvc_
 export type IApiBehaviorMetadata = IApiBehaviorMetadata$instance;
 
 export interface IClientErrorActionResult$instance extends IStatusCodeActionResult, IActionResult {
-    readonly statusCode: Nullable<System_Internal.Int32>;
-    executeResultAsync(context: ActionContext): Task;
+    readonly StatusCode: Nullable<System_Internal.Int32>;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
 export type IClientErrorActionResult = IClientErrorActionResult$instance;
 
 export interface IClientErrorFactory$instance {
-    getClientError(actionContext: ActionContext, clientError: IClientErrorActionResult): IActionResult | undefined;
+    GetClientError(actionContext: ActionContext, clientError: IClientErrorActionResult): IActionResult | undefined;
 }
 
 
 export type IClientErrorFactory = IClientErrorFactory$instance;
 
 export interface ICompatibilitySwitch$instance {
-    readonly isValueSet: boolean;
-    readonly name: string;
-    value: unknown;
+    readonly IsValueSet: boolean;
+    readonly Name: string;
+    Value: unknown;
 }
 
 
 export type ICompatibilitySwitch = ICompatibilitySwitch$instance;
 
 export interface IConvertToActionResult$instance {
-    convert(): IActionResult;
+    Convert(): IActionResult;
 }
 
 
 export type IConvertToActionResult = IConvertToActionResult$instance;
 
 export interface IHttpRequestStreamReaderFactory$instance {
-    createReader(stream: Stream, encoding: Encoding): TextReader;
+    CreateReader(stream: Stream, encoding: Encoding): TextReader;
 }
 
 
 export type IHttpRequestStreamReaderFactory = IHttpRequestStreamReaderFactory$instance;
 
 export interface IHttpResponseStreamWriterFactory$instance {
-    createWriter(stream: Stream, encoding: Encoding): TextWriter;
+    CreateWriter(stream: Stream, encoding: Encoding): TextWriter;
 }
 
 
 export type IHttpResponseStreamWriterFactory = IHttpResponseStreamWriterFactory$instance;
 
 export interface IParameterInfoParameterDescriptor$instance {
-    readonly parameterInfo: ParameterInfo;
+    readonly ParameterInfo: ParameterInfo;
 }
 
 
 export type IParameterInfoParameterDescriptor = IParameterInfoParameterDescriptor$instance;
 
 export interface IPropertyInfoParameterDescriptor$instance {
-    readonly propertyInfo: PropertyInfo;
+    readonly PropertyInfo: PropertyInfo;
 }
 
 
 export type IPropertyInfoParameterDescriptor = IPropertyInfoParameterDescriptor$instance;
 
 export interface IStatusCodeActionResult$instance extends IActionResult {
-    readonly statusCode: Nullable<System_Internal.Int32>;
-    executeResultAsync(context: ActionContext): Task;
+    readonly StatusCode: Nullable<System_Internal.Int32>;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -160,7 +160,7 @@ export interface IStatusCodeActionResult$instance extends Microsoft_AspNetCore_M
 export type IStatusCodeActionResult = IStatusCodeActionResult$instance;
 
 export interface ActionContextAccessor$instance {
-    actionContext: ActionContext;
+    ActionContext: ActionContext;
 }
 
 
@@ -179,8 +179,8 @@ export type ActionContextAccessor = ActionContextAccessor$instance & __ActionCon
 
 
 export interface ActionDescriptorCollection$instance {
-    readonly items: IReadOnlyList<ActionDescriptor>;
-    readonly version: int;
+    readonly Items: IReadOnlyList<ActionDescriptor>;
+    readonly Version: int;
 }
 
 
@@ -192,8 +192,8 @@ export const ActionDescriptorCollection: {
 export type ActionDescriptorCollection = ActionDescriptorCollection$instance;
 
 export interface ActionDescriptorCollectionProvider$instance {
-    readonly actionDescriptors: ActionDescriptorCollection;
-    getChangeToken(): IChangeToken;
+    readonly ActionDescriptors: ActionDescriptorCollection;
+    GetChangeToken(): IChangeToken;
 }
 
 
@@ -244,9 +244,9 @@ export const AmbiguousActionException: {
 export type AmbiguousActionException = AmbiguousActionException$instance;
 
 export interface CompatibilitySwitch_1$instance<TValue extends unknown> {
-    readonly isValueSet: boolean;
-    readonly name: string;
-    value: TValue;
+    readonly IsValueSet: boolean;
+    readonly Name: string;
+    Value: TValue;
 }
 
 
@@ -264,7 +264,7 @@ export type CompatibilitySwitch_1<TValue> = CompatibilitySwitch_1$instance<TValu
 
 
 export interface ConfigureCompatibilityOptions_1$instance<TOptions extends IEnumerable<ICompatibilitySwitch>> {
-    postConfigure(name: string, options: TOptions): void;
+    PostConfigure(name: string, options: TOptions): void;
 }
 
 
@@ -275,7 +275,7 @@ export const ConfigureCompatibilityOptions_1: {
 export type ConfigureCompatibilityOptions_1<TOptions extends IEnumerable<ICompatibilitySwitch>> = ConfigureCompatibilityOptions_1$instance<TOptions>;
 
 export interface ContentResultExecutor$instance {
-    executeAsync(context: ActionContext, result: ContentResult): Task;
+    ExecuteAsync(context: ActionContext, result: ContentResult): Task;
 }
 
 
@@ -294,7 +294,7 @@ export type ContentResultExecutor = ContentResultExecutor$instance & __ContentRe
 
 
 export interface DefaultOutputFormatterSelector$instance extends OutputFormatterSelector {
-    selectFormatter(context: OutputFormatterCanWriteContext, formatters: IList<IOutputFormatter>, contentTypes: MediaTypeCollection): IOutputFormatter | undefined;
+    SelectFormatter(context: OutputFormatterCanWriteContext, formatters: IList<IOutputFormatter>, contentTypes: MediaTypeCollection): IOutputFormatter | undefined;
 }
 
 
@@ -306,8 +306,8 @@ export const DefaultOutputFormatterSelector: {
 export type DefaultOutputFormatterSelector = DefaultOutputFormatterSelector$instance;
 
 export interface DefaultProblemDetailsFactory$instance extends ProblemDetailsFactory {
-    createProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
-    createValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
+    CreateProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
+    CreateValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
 }
 
 
@@ -319,7 +319,7 @@ export const DefaultProblemDetailsFactory: {
 export type DefaultProblemDetailsFactory = DefaultProblemDetailsFactory$instance;
 
 export interface DefaultStatusCodeAttribute$instance extends Attribute {
-    readonly statusCode: int;
+    readonly StatusCode: int;
 }
 
 
@@ -331,7 +331,7 @@ export const DefaultStatusCodeAttribute: {
 export type DefaultStatusCodeAttribute = DefaultStatusCodeAttribute$instance;
 
 export interface FileContentResultExecutor$instance extends FileResultExecutorBase {
-    executeAsync(context: ActionContext, result: FileContentResult): Task;
+    ExecuteAsync(context: ActionContext, result: FileContentResult): Task;
 }
 
 
@@ -361,7 +361,7 @@ export const FileResultExecutorBase: {
 export type FileResultExecutorBase = FileResultExecutorBase$instance;
 
 export interface FileStreamResultExecutor$instance extends FileResultExecutorBase {
-    executeAsync(context: ActionContext, result: FileStreamResult): Task;
+    ExecuteAsync(context: ActionContext, result: FileStreamResult): Task;
 }
 
 
@@ -380,7 +380,7 @@ export type FileStreamResultExecutor = FileStreamResultExecutor$instance & __Fil
 
 
 export interface LocalRedirectResultExecutor$instance {
-    executeAsync(context: ActionContext, result: LocalRedirectResult): Task;
+    ExecuteAsync(context: ActionContext, result: LocalRedirectResult): Task;
 }
 
 
@@ -399,10 +399,10 @@ export type LocalRedirectResultExecutor = LocalRedirectResultExecutor$instance &
 
 
 export interface ModelStateInvalidFilter$instance extends IFilterMetadata {
-    readonly isReusable: boolean;
-    readonly order: int;
-    onActionExecuted(context: ActionExecutedContext): void;
-    onActionExecuting(context: ActionExecutingContext): void;
+    readonly IsReusable: boolean;
+    readonly Order: int;
+    OnActionExecuted(context: ActionExecutedContext): void;
+    OnActionExecuting(context: ActionExecutingContext): void;
 }
 
 
@@ -422,7 +422,7 @@ export type ModelStateInvalidFilter = ModelStateInvalidFilter$instance & __Model
 
 
 export interface MvcCompatibilityOptions$instance {
-    compatibilityVersion: CompatibilityVersion;
+    CompatibilityVersion: CompatibilityVersion;
 }
 
 
@@ -434,7 +434,7 @@ export const MvcCompatibilityOptions: {
 export type MvcCompatibilityOptions = MvcCompatibilityOptions$instance;
 
 export interface ObjectResultExecutor$instance {
-    executeAsync(context: ActionContext, result: ObjectResult): Task;
+    ExecuteAsync(context: ActionContext, result: ObjectResult): Task;
 }
 
 
@@ -453,7 +453,7 @@ export type ObjectResultExecutor = ObjectResultExecutor$instance & __ObjectResul
 
 
 export interface OutputFormatterSelector$instance {
-    selectFormatter(context: OutputFormatterCanWriteContext, formatters: IList<IOutputFormatter>, mediaTypes: MediaTypeCollection): IOutputFormatter | undefined;
+    SelectFormatter(context: OutputFormatterCanWriteContext, formatters: IList<IOutputFormatter>, mediaTypes: MediaTypeCollection): IOutputFormatter | undefined;
 }
 
 
@@ -464,7 +464,7 @@ export const OutputFormatterSelector: {
 export type OutputFormatterSelector = OutputFormatterSelector$instance;
 
 export interface PhysicalFileResultExecutor$instance extends FileResultExecutorBase {
-    executeAsync(context: ActionContext, result: PhysicalFileResult): Task;
+    ExecuteAsync(context: ActionContext, result: PhysicalFileResult): Task;
 }
 
 
@@ -483,8 +483,8 @@ export type PhysicalFileResultExecutor = PhysicalFileResultExecutor$instance & _
 
 
 export interface ProblemDetailsFactory$instance {
-    createProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
-    createValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
+    CreateProblemDetails(httpContext: HttpContext, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
+    CreateValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
 }
 
 
@@ -495,7 +495,7 @@ export const ProblemDetailsFactory: {
 export type ProblemDetailsFactory = ProblemDetailsFactory$instance;
 
 export interface RedirectResultExecutor$instance {
-    executeAsync(context: ActionContext, result: RedirectResult): Task;
+    ExecuteAsync(context: ActionContext, result: RedirectResult): Task;
 }
 
 
@@ -514,7 +514,7 @@ export type RedirectResultExecutor = RedirectResultExecutor$instance & __Redirec
 
 
 export interface RedirectToActionResultExecutor$instance {
-    executeAsync(context: ActionContext, result: RedirectToActionResult): Task;
+    ExecuteAsync(context: ActionContext, result: RedirectToActionResult): Task;
 }
 
 
@@ -533,7 +533,7 @@ export type RedirectToActionResultExecutor = RedirectToActionResultExecutor$inst
 
 
 export interface RedirectToPageResultExecutor$instance {
-    executeAsync(context: ActionContext, result: RedirectToPageResult): Task;
+    ExecuteAsync(context: ActionContext, result: RedirectToPageResult): Task;
 }
 
 
@@ -552,7 +552,7 @@ export type RedirectToPageResultExecutor = RedirectToPageResultExecutor$instance
 
 
 export interface RedirectToRouteResultExecutor$instance {
-    executeAsync(context: ActionContext, result: RedirectToRouteResult): Task;
+    ExecuteAsync(context: ActionContext, result: RedirectToRouteResult): Task;
 }
 
 
@@ -571,7 +571,7 @@ export type RedirectToRouteResultExecutor = RedirectToRouteResultExecutor$instan
 
 
 export interface VirtualFileResultExecutor$instance extends FileResultExecutorBase {
-    executeAsync(context: ActionContext, result: VirtualFileResult): Task;
+    ExecuteAsync(context: ActionContext, result: VirtualFileResult): Task;
 }
 
 

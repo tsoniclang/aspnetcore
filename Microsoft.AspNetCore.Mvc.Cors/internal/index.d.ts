@@ -15,10 +15,10 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface CorsAuthorizationFilter$instance extends IFilterMetadata {
-    readonly order: int;
-    get policyName(): string | undefined;
-    set policyName(value: string);
-    onAuthorizationAsync(context: AuthorizationFilterContext): Task;
+    readonly Order: int;
+    get PolicyName(): string | undefined;
+    set PolicyName(value: string);
+    OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
 }
 
 

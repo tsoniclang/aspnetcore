@@ -1,293 +1,247 @@
 {
   "namespace": "Microsoft.AspNetCore.Server.IIS",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Server.IIS"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
       "clrName": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-      "tsEmitName": "IIISEnvironmentFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.IIS",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::IISVersion:System.Version",
           "clrName": "IISVersion",
-          "tsEmitName": "iisVersion",
           "metadataToken": 385876147,
           "canonicalSignature": ":System.Version",
           "normalizedSignature": "IISVersion|:System.Version|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::AppPoolId:System.String",
           "clrName": "AppPoolId",
-          "tsEmitName": "appPoolId",
           "metadataToken": 385876148,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AppPoolId|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::AppPoolConfigFile:System.String",
           "clrName": "AppPoolConfigFile",
-          "tsEmitName": "appPoolConfigFile",
           "metadataToken": 385876149,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AppPoolConfigFile|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::AppConfigPath:System.String",
           "clrName": "AppConfigPath",
-          "tsEmitName": "appConfigPath",
           "metadataToken": 385876150,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AppConfigPath|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::ApplicationPhysicalPath:System.String",
           "clrName": "ApplicationPhysicalPath",
-          "tsEmitName": "applicationPhysicalPath",
           "metadataToken": 385876151,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationPhysicalPath|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::ApplicationVirtualPath:System.String",
           "clrName": "ApplicationVirtualPath",
-          "tsEmitName": "applicationVirtualPath",
           "metadataToken": 385876152,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationVirtualPath|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::ApplicationId:System.String",
           "clrName": "ApplicationId",
-          "tsEmitName": "applicationId",
           "metadataToken": 385876153,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationId|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::SiteName:System.String",
           "clrName": "SiteName",
-          "tsEmitName": "siteName",
           "metadataToken": 385876154,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SiteName|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature::SiteId:System.UInt32",
           "clrName": "SiteId",
-          "tsEmitName": "siteId",
           "metadataToken": 385876155,
           "canonicalSignature": ":System.UInt32",
           "normalizedSignature": "SiteId|:System.UInt32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "iisVersion",
-          "isStatic": false,
-          "tsSignatureId": "IISVersion|:System.Version|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876147
-          }
-        },
-        {
-          "tsName": "appPoolId",
-          "isStatic": false,
-          "tsSignatureId": "AppPoolId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876148
-          }
-        },
-        {
-          "tsName": "appPoolConfigFile",
-          "isStatic": false,
-          "tsSignatureId": "AppPoolConfigFile|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876149
-          }
-        },
-        {
-          "tsName": "appConfigPath",
-          "isStatic": false,
-          "tsSignatureId": "AppConfigPath|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876150
-          }
-        },
-        {
-          "tsName": "applicationPhysicalPath",
-          "isStatic": false,
-          "tsSignatureId": "ApplicationPhysicalPath|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876151
-          }
-        },
-        {
-          "tsName": "applicationVirtualPath",
-          "isStatic": false,
-          "tsSignatureId": "ApplicationVirtualPath|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876152
-          }
-        },
-        {
-          "tsName": "applicationId",
-          "isStatic": false,
-          "tsSignatureId": "ApplicationId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876153
-          }
-        },
-        {
-          "tsName": "siteName",
-          "isStatic": false,
-          "tsSignatureId": "SiteName|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876154
-          }
-        },
-        {
-          "tsName": "siteId",
-          "isStatic": false,
-          "tsSignatureId": "SiteId|:System.UInt32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876155
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.BadHttpRequestException",
       "clrName": "Microsoft.AspNetCore.Server.IIS.BadHttpRequestException",
-      "tsEmitName": "BadHttpRequestException",
       "assemblyName": "Microsoft.AspNetCore.Server.IIS",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.BadHttpRequestException::StatusCode:System.Int32",
           "clrName": "StatusCode",
-          "tsEmitName": "statusCode",
           "metadataToken": 385876145,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "StatusCode|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.BadHttpRequestException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "statusCode",
-          "isStatic": false,
-          "tsSignatureId": "StatusCode|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.BadHttpRequestException",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 385876145
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
       "clrName": "Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
-      "tsEmitName": "IISServerDefaults",
       "assemblyName": "Microsoft.AspNetCore.Server.IIS",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.IISServerDefaults::AuthenticationSchemeSystem.String",
           "clrName": "AuthenticationScheme",
-          "tsEmitName": "authenticationScheme",
           "metadataToken": 67109448,
           "normalizedSignature": "AuthenticationScheme|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
@@ -304,48 +258,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "authenticationScheme",
-          "isStatic": true,
-          "tsSignatureId": "AuthenticationScheme|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 67109448
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 100664020
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.HttpContextExtensions",
       "clrName": "Microsoft.AspNetCore.Server.IIS.HttpContextExtensions",
-      "tsEmitName": "HttpContextExtensions",
       "assemblyName": "Microsoft.AspNetCore.Server.IIS",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.HttpContextExtensions::GetIISServerVariable(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
           "clrName": "GetIISServerVariable",
-          "tsEmitName": "getIISServerVariable",
           "metadataToken": 100664008,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
           "normalizedSignature": "GetIISServerVariable|(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.HttpContextExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
           "isExtensionMethod": true
@@ -354,19 +295,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getIISServerVariable",
-          "isStatic": true,
-          "tsSignatureId": "GetIISServerVariable|(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.IIS.HttpContextExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
-            "metadataToken": 100664008
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

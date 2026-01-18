@@ -15,9 +15,9 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface AssertionRequirement$instance extends IAuthorizationRequirement {
-    readonly handler: Func<AuthorizationHandlerContext, Task<System_Internal.Boolean>>;
-    handleAsync(context: AuthorizationHandlerContext): Task;
-    toString(): string;
+    readonly Handler: Func<AuthorizationHandlerContext, Task<System_Internal.Boolean>>;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
+    ToString(): string;
 }
 
 
@@ -37,10 +37,10 @@ export type AssertionRequirement = AssertionRequirement$instance & __AssertionRe
 
 
 export interface ClaimsAuthorizationRequirement$instance extends AuthorizationHandler_1<ClaimsAuthorizationRequirement>, IAuthorizationRequirement {
-    readonly allowedValues: IEnumerable<System_Internal.String> | undefined;
-    readonly claimType: string;
-    handleAsync(context: AuthorizationHandlerContext): Task;
-    toString(): string;
+    readonly AllowedValues: IEnumerable<System_Internal.String> | undefined;
+    readonly ClaimType: string;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
+    ToString(): string;
 }
 
 
@@ -59,8 +59,8 @@ export type ClaimsAuthorizationRequirement = ClaimsAuthorizationRequirement$inst
 
 
 export interface DenyAnonymousAuthorizationRequirement$instance extends AuthorizationHandler_1<DenyAnonymousAuthorizationRequirement>, IAuthorizationRequirement {
-    handleAsync(context: AuthorizationHandlerContext): Task;
-    toString(): string;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
+    ToString(): string;
 }
 
 
@@ -79,9 +79,9 @@ export type DenyAnonymousAuthorizationRequirement = DenyAnonymousAuthorizationRe
 
 
 export interface NameAuthorizationRequirement$instance extends AuthorizationHandler_1<NameAuthorizationRequirement>, IAuthorizationRequirement {
-    readonly requiredName: string;
-    handleAsync(context: AuthorizationHandlerContext): Task;
-    toString(): string;
+    readonly RequiredName: string;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
+    ToString(): string;
 }
 
 
@@ -100,8 +100,8 @@ export type NameAuthorizationRequirement = NameAuthorizationRequirement$instance
 
 
 export interface OperationAuthorizationRequirement$instance extends IAuthorizationRequirement {
-    name: string;
-    toString(): string;
+    Name: string;
+    ToString(): string;
 }
 
 
@@ -113,7 +113,7 @@ export const OperationAuthorizationRequirement: {
 export type OperationAuthorizationRequirement = OperationAuthorizationRequirement$instance;
 
 export interface PassThroughAuthorizationHandler$instance {
-    handleAsync(context: AuthorizationHandlerContext): Task;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
 }
 
 
@@ -133,9 +133,9 @@ export type PassThroughAuthorizationHandler = PassThroughAuthorizationHandler$in
 
 
 export interface RolesAuthorizationRequirement$instance extends AuthorizationHandler_1<RolesAuthorizationRequirement>, IAuthorizationRequirement {
-    readonly allowedRoles: IEnumerable<System_Internal.String>;
-    handleAsync(context: AuthorizationHandlerContext): Task;
-    toString(): string;
+    readonly AllowedRoles: IEnumerable<System_Internal.String>;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
+    ToString(): string;
 }
 
 

@@ -20,17 +20,17 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum ForwardedHeaders {
-    none = 0,
-    xForwardedFor = 1,
-    xForwardedHost = 2,
-    xForwardedProto = 4,
-    xForwardedPrefix = 8,
-    all = 15
+    None = 0,
+    XForwardedFor = 1,
+    XForwardedHost = 2,
+    XForwardedProto = 4,
+    XForwardedPrefix = 8,
+    All = 15
 }
 
 
 export interface CertificateForwardingMiddleware$instance {
-    invoke(httpContext: HttpContext): Task;
+    Invoke(httpContext: HttpContext): Task;
 }
 
 
@@ -42,8 +42,8 @@ export const CertificateForwardingMiddleware: {
 export type CertificateForwardingMiddleware = CertificateForwardingMiddleware$instance;
 
 export interface CertificateForwardingOptions$instance {
-    headerConverter: Func<System_Internal.String, X509Certificate2>;
-    certificateHeader: string;
+    HeaderConverter: Func<System_Internal.String, X509Certificate2>;
+    CertificateHeader: string;
 }
 
 
@@ -55,8 +55,8 @@ export const CertificateForwardingOptions: {
 export type CertificateForwardingOptions = CertificateForwardingOptions$instance;
 
 export interface ForwardedHeadersMiddleware$instance {
-    applyForwarders(context: HttpContext): void;
-    invoke(context: HttpContext): Task;
+    ApplyForwarders(context: HttpContext): void;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -68,7 +68,7 @@ export const ForwardedHeadersMiddleware: {
 export type ForwardedHeadersMiddleware = ForwardedHeadersMiddleware$instance;
 
 export interface HttpMethodOverrideMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -80,30 +80,30 @@ export const HttpMethodOverrideMiddleware: {
 export type HttpMethodOverrideMiddleware = HttpMethodOverrideMiddleware$instance;
 
 export interface IPNetwork$instance {
-    readonly prefix: IPAddress;
-    readonly prefixLength: int;
-    contains(address: IPAddress): boolean;
+    readonly Prefix: IPAddress;
+    readonly PrefixLength: int;
+    Contains(address: IPAddress): boolean;
 }
 
 
 export const IPNetwork: {
     new(prefix: IPAddress, prefixLength: int): IPNetwork;
-    parse(networkSpan: ReadOnlySpan<System_Internal.Char>): IPNetwork;
-    tryParse(networkSpan: ReadOnlySpan<System_Internal.Char>, network: IPNetwork): boolean;
+    Parse(networkSpan: ReadOnlySpan<System_Internal.Char>): IPNetwork;
+    TryParse(networkSpan: ReadOnlySpan<System_Internal.Char>, network: IPNetwork): boolean;
 };
 
 
 export type IPNetwork = IPNetwork$instance;
 
 export abstract class ForwardedHeadersDefaults$instance {
-    static readonly xForwardedForHeaderName: string;
-    static readonly xForwardedHostHeaderName: string;
-    static readonly xForwardedProtoHeaderName: string;
-    static readonly xForwardedPrefixHeaderName: string;
-    static readonly xOriginalForHeaderName: string;
-    static readonly xOriginalHostHeaderName: string;
-    static readonly xOriginalProtoHeaderName: string;
-    static readonly xOriginalPrefixHeaderName: string;
+    static readonly XForwardedForHeaderName: string;
+    static readonly XForwardedHostHeaderName: string;
+    static readonly XForwardedProtoHeaderName: string;
+    static readonly XForwardedPrefixHeaderName: string;
+    static readonly XOriginalForHeaderName: string;
+    static readonly XOriginalHostHeaderName: string;
+    static readonly XOriginalProtoHeaderName: string;
+    static readonly XOriginalPrefixHeaderName: string;
 }
 
 
