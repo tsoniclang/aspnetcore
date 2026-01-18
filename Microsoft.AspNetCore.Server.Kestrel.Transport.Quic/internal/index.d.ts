@@ -10,13 +10,13 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Int32, Int64, Nullable, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface QuicTransportOptions$instance {
-    backlog: int;
-    defaultCloseErrorCode: long;
-    defaultStreamErrorCode: long;
-    maxBidirectionalStreamCount: int;
-    maxReadBufferSize: Nullable<System_Internal.Int64>;
-    maxUnidirectionalStreamCount: int;
-    maxWriteBufferSize: Nullable<System_Internal.Int64>;
+    Backlog: int;
+    DefaultCloseErrorCode: long;
+    DefaultStreamErrorCode: long;
+    MaxBidirectionalStreamCount: int;
+    MaxReadBufferSize: Nullable<System_Internal.Int64>;
+    MaxUnidirectionalStreamCount: int;
+    MaxWriteBufferSize: Nullable<System_Internal.Int64>;
 }
 
 

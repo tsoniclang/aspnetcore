@@ -13,34 +13,34 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IHttpApplication_1$instance<TContext> {
-    createContext(contextFeatures: IFeatureCollection): TContext;
-    disposeContext(context: TContext, exception: Exception): void;
-    processRequestAsync(context: TContext): Task;
+    CreateContext(contextFeatures: IFeatureCollection): TContext;
+    DisposeContext(context: TContext, exception: Exception): void;
+    ProcessRequestAsync(context: TContext): Task;
 }
 
 
 export type IHttpApplication_1<TContext> = IHttpApplication_1$instance<TContext>;
 
 export interface IServer$instance extends IDisposable {
-    readonly features: IFeatureCollection;
-    startAsync<TContext>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
-    stopAsync(cancellationToken: CancellationToken): Task;
+    readonly Features: IFeatureCollection;
+    StartAsync<TContext>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
+    StopAsync(cancellationToken: CancellationToken): Task;
 }
 
 
 export type IServer = IServer$instance;
 
 export interface IServerIntegratedAuth$instance {
-    readonly isEnabled: boolean;
-    readonly authenticationScheme: string;
+    readonly IsEnabled: boolean;
+    readonly AuthenticationScheme: string;
 }
 
 
 export type IServerIntegratedAuth = IServerIntegratedAuth$instance;
 
 export interface ServerIntegratedAuth$instance {
-    authenticationScheme: string;
-    isEnabled: boolean;
+    AuthenticationScheme: string;
+    IsEnabled: boolean;
 }
 
 

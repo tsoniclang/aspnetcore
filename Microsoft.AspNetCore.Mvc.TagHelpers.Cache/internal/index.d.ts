@@ -17,34 +17,34 @@ import type { DistributedCacheEntryOptions, IDistributedCache } from "@tsonic/mi
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IDistributedCacheTagHelperFormatter$instance {
-    deserializeAsync(value: byte[]): Task<HtmlString>;
-    serializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
+    DeserializeAsync(value: byte[]): Task<HtmlString>;
+    SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
 }
 
 
 export type IDistributedCacheTagHelperFormatter = IDistributedCacheTagHelperFormatter$instance;
 
 export interface IDistributedCacheTagHelperService$instance {
-    processContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
+    ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
 }
 
 
 export type IDistributedCacheTagHelperService = IDistributedCacheTagHelperService$instance;
 
 export interface IDistributedCacheTagHelperStorage$instance {
-    getAsync(key: string): Task<byte[]>;
-    setAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
+    GetAsync(key: string): Task<byte[]>;
+    SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
 }
 
 
 export type IDistributedCacheTagHelperStorage = IDistributedCacheTagHelperStorage$instance;
 
 export interface CacheTagKey$instance {
-    equals(obj: unknown): boolean;
-    equals(other: CacheTagKey): boolean;
-    generateHashedKey(): string;
-    generateKey(): string;
-    getHashCode(): int;
+    Equals(obj: unknown): boolean;
+    Equals(other: CacheTagKey): boolean;
+    GenerateHashedKey(): string;
+    GenerateKey(): string;
+    GetHashCode(): int;
 }
 
 
@@ -57,8 +57,8 @@ export const CacheTagKey: {
 export type CacheTagKey = CacheTagKey$instance;
 
 export interface DistributedCacheTagHelperFormatter$instance {
-    deserializeAsync(value: byte[]): Task<HtmlString>;
-    serializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
+    DeserializeAsync(value: byte[]): Task<HtmlString>;
+    SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
 }
 
 
@@ -77,7 +77,7 @@ export type DistributedCacheTagHelperFormatter = DistributedCacheTagHelperFormat
 
 
 export interface DistributedCacheTagHelperFormattingContext$instance {
-    html: HtmlString;
+    Html: HtmlString;
 }
 
 
@@ -89,7 +89,7 @@ export const DistributedCacheTagHelperFormattingContext: {
 export type DistributedCacheTagHelperFormattingContext = DistributedCacheTagHelperFormattingContext$instance;
 
 export interface DistributedCacheTagHelperService$instance {
-    processContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
+    ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
 }
 
 
@@ -108,8 +108,8 @@ export type DistributedCacheTagHelperService = DistributedCacheTagHelperService$
 
 
 export interface DistributedCacheTagHelperStorage$instance {
-    getAsync(key: string): Task<byte[]>;
-    setAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
+    GetAsync(key: string): Task<byte[]>;
+    SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
 }
 
 

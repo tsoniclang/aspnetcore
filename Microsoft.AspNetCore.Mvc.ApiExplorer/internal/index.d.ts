@@ -20,24 +20,24 @@ import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible,
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum ApiConventionNameMatchBehavior {
-    any = 0,
-    exact = 1,
-    prefix = 2,
-    suffix = 3
+    Any = 0,
+    Exact = 1,
+    Prefix = 2,
+    Suffix = 3
 }
 
 
 export enum ApiConventionTypeMatchBehavior {
-    any = 0,
-    assignableFrom = 1
+    Any = 0,
+    AssignableFrom = 1
 }
 
 
 export interface IApiDefaultResponseMetadataProvider$instance extends IApiResponseMetadataProvider, IFilterMetadata {
-    readonly type: Type;
-    readonly description: string;
-    readonly statusCode: int;
-    setContentTypes(contentTypes: MediaTypeCollection): void;
+    readonly Type: Type;
+    readonly Description: string;
+    readonly StatusCode: int;
+    SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
 
@@ -46,43 +46,43 @@ export interface IApiDefaultResponseMetadataProvider$instance extends IApiRespon
 export type IApiDefaultResponseMetadataProvider = IApiDefaultResponseMetadataProvider$instance;
 
 export interface IApiDescriptionGroupCollectionProvider$instance {
-    readonly apiDescriptionGroups: ApiDescriptionGroupCollection;
+    readonly ApiDescriptionGroups: ApiDescriptionGroupCollection;
 }
 
 
 export type IApiDescriptionGroupCollectionProvider = IApiDescriptionGroupCollectionProvider$instance;
 
 export interface IApiDescriptionGroupNameProvider$instance {
-    readonly groupName: string | undefined;
+    readonly GroupName: string | undefined;
 }
 
 
 export type IApiDescriptionGroupNameProvider = IApiDescriptionGroupNameProvider$instance;
 
 export interface IApiDescriptionProvider$instance {
-    readonly order: int;
-    onProvidersExecuting(context: ApiDescriptionProviderContext): void;
+    readonly Order: int;
+    OnProvidersExecuting(context: ApiDescriptionProviderContext): void;
 }
 
 
 export type IApiDescriptionProvider = IApiDescriptionProvider$instance;
 
 export interface IApiDescriptionVisibilityProvider$instance {
-    readonly ignoreApi: boolean;
+    readonly IgnoreApi: boolean;
 }
 
 
 export type IApiDescriptionVisibilityProvider = IApiDescriptionVisibilityProvider$instance;
 
 export interface IApiRequestFormatMetadataProvider$instance {
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
 }
 
 
 export type IApiRequestFormatMetadataProvider = IApiRequestFormatMetadataProvider$instance;
 
 export interface IApiRequestMetadataProvider$instance extends IFilterMetadata {
-    setContentTypes(contentTypes: MediaTypeCollection): void;
+    SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
 
@@ -91,10 +91,10 @@ export interface IApiRequestMetadataProvider$instance extends Microsoft_AspNetCo
 export type IApiRequestMetadataProvider = IApiRequestMetadataProvider$instance;
 
 export interface IApiResponseMetadataProvider$instance extends IFilterMetadata {
-    readonly type: Type;
-    readonly description: string;
-    readonly statusCode: int;
-    setContentTypes(contentTypes: MediaTypeCollection): void;
+    readonly Type: Type;
+    readonly Description: string;
+    readonly StatusCode: int;
+    SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
 
@@ -103,14 +103,14 @@ export interface IApiResponseMetadataProvider$instance extends Microsoft_AspNetC
 export type IApiResponseMetadataProvider = IApiResponseMetadataProvider$instance;
 
 export interface IApiResponseTypeMetadataProvider$instance {
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
 }
 
 
 export type IApiResponseTypeMetadataProvider = IApiResponseTypeMetadataProvider$instance;
 
 export interface ApiConventionNameMatchAttribute$instance extends Attribute {
-    readonly matchBehavior: ApiConventionNameMatchBehavior;
+    readonly MatchBehavior: ApiConventionNameMatchBehavior;
 }
 
 
@@ -122,7 +122,7 @@ export const ApiConventionNameMatchAttribute: {
 export type ApiConventionNameMatchAttribute = ApiConventionNameMatchAttribute$instance;
 
 export interface ApiConventionResult$instance {
-    readonly responseMetadataProviders: IReadOnlyList<IApiResponseMetadataProvider>;
+    readonly ResponseMetadataProviders: IReadOnlyList<IApiResponseMetadataProvider>;
 }
 
 
@@ -134,7 +134,7 @@ export const ApiConventionResult: {
 export type ApiConventionResult = ApiConventionResult$instance;
 
 export interface ApiConventionTypeMatchAttribute$instance extends Attribute {
-    readonly matchBehavior: ApiConventionTypeMatchBehavior;
+    readonly MatchBehavior: ApiConventionTypeMatchBehavior;
 }
 
 
@@ -146,15 +146,15 @@ export const ApiConventionTypeMatchAttribute: {
 export type ApiConventionTypeMatchAttribute = ApiConventionTypeMatchAttribute$instance;
 
 export interface ApiDescription$instance {
-    actionDescriptor: ActionDescriptor;
-    get groupName(): string | undefined;
-    set groupName(value: string);
-    httpMethod: string;
-    readonly parameterDescriptions: IList<ApiParameterDescription>;
-    readonly properties: IDictionary<unknown, unknown>;
-    relativePath: string;
-    readonly supportedRequestFormats: IList<ApiRequestFormat>;
-    readonly supportedResponseTypes: IList<ApiResponseType>;
+    ActionDescriptor: ActionDescriptor;
+    get GroupName(): string | undefined;
+    set GroupName(value: string);
+    HttpMethod: string;
+    readonly ParameterDescriptions: IList<ApiParameterDescription>;
+    readonly Properties: IDictionary<unknown, unknown>;
+    RelativePath: string;
+    readonly SupportedRequestFormats: IList<ApiRequestFormat>;
+    readonly SupportedResponseTypes: IList<ApiResponseType>;
 }
 
 
@@ -166,8 +166,8 @@ export const ApiDescription: {
 export type ApiDescription = ApiDescription$instance;
 
 export interface ApiDescriptionGroup$instance {
-    readonly groupName: string | undefined;
-    readonly items: IReadOnlyList<ApiDescription>;
+    readonly GroupName: string | undefined;
+    readonly Items: IReadOnlyList<ApiDescription>;
 }
 
 
@@ -179,8 +179,8 @@ export const ApiDescriptionGroup: {
 export type ApiDescriptionGroup = ApiDescriptionGroup$instance;
 
 export interface ApiDescriptionGroupCollection$instance {
-    readonly items: IReadOnlyList<ApiDescriptionGroup>;
-    readonly version: int;
+    readonly Items: IReadOnlyList<ApiDescriptionGroup>;
+    readonly Version: int;
 }
 
 
@@ -192,7 +192,7 @@ export const ApiDescriptionGroupCollection: {
 export type ApiDescriptionGroupCollection = ApiDescriptionGroupCollection$instance;
 
 export interface ApiDescriptionGroupCollectionProvider$instance {
-    readonly apiDescriptionGroups: ApiDescriptionGroupCollection;
+    readonly ApiDescriptionGroups: ApiDescriptionGroupCollection;
 }
 
 
@@ -211,8 +211,8 @@ export type ApiDescriptionGroupCollectionProvider = ApiDescriptionGroupCollectio
 
 
 export interface ApiDescriptionProviderContext$instance {
-    readonly actions: IReadOnlyList<ActionDescriptor>;
-    readonly results: IList<ApiDescription>;
+    readonly Actions: IReadOnlyList<ActionDescriptor>;
+    readonly Results: IList<ApiDescription>;
 }
 
 
@@ -224,17 +224,17 @@ export const ApiDescriptionProviderContext: {
 export type ApiDescriptionProviderContext = ApiDescriptionProviderContext$instance;
 
 export interface ApiParameterDescription$instance {
-    bindingInfo: BindingInfo;
-    get defaultValue(): unknown | undefined;
-    set defaultValue(value: unknown);
-    isRequired: boolean;
-    modelMetadata: ModelMetadata;
-    name: string;
-    parameterDescriptor: ParameterDescriptor;
-    get routeInfo(): ApiParameterRouteInfo | undefined;
-    set routeInfo(value: ApiParameterRouteInfo);
-    source: BindingSource;
-    type: Type;
+    BindingInfo: BindingInfo;
+    get DefaultValue(): unknown | undefined;
+    set DefaultValue(value: unknown);
+    IsRequired: boolean;
+    ModelMetadata: ModelMetadata;
+    Name: string;
+    ParameterDescriptor: ParameterDescriptor;
+    get RouteInfo(): ApiParameterRouteInfo | undefined;
+    set RouteInfo(value: ApiParameterRouteInfo);
+    Source: BindingSource;
+    Type: Type;
 }
 
 
@@ -246,10 +246,10 @@ export const ApiParameterDescription: {
 export type ApiParameterDescription = ApiParameterDescription$instance;
 
 export interface ApiParameterRouteInfo$instance {
-    constraints: IEnumerable<IRouteConstraint>;
-    get defaultValue(): unknown | undefined;
-    set defaultValue(value: unknown);
-    isOptional: boolean;
+    Constraints: IEnumerable<IRouteConstraint>;
+    get DefaultValue(): unknown | undefined;
+    set DefaultValue(value: unknown);
+    IsOptional: boolean;
 }
 
 
@@ -261,8 +261,8 @@ export const ApiParameterRouteInfo: {
 export type ApiParameterRouteInfo = ApiParameterRouteInfo$instance;
 
 export interface ApiRequestFormat$instance {
-    formatter: IInputFormatter;
-    mediaType: string;
+    Formatter: IInputFormatter;
+    MediaType: string;
 }
 
 
@@ -274,8 +274,8 @@ export const ApiRequestFormat: {
 export type ApiRequestFormat = ApiRequestFormat$instance;
 
 export interface ApiResponseFormat$instance {
-    formatter: IOutputFormatter;
-    mediaType: string;
+    Formatter: IOutputFormatter;
+    MediaType: string;
 }
 
 
@@ -287,12 +287,12 @@ export const ApiResponseFormat: {
 export type ApiResponseFormat = ApiResponseFormat$instance;
 
 export interface ApiResponseType$instance {
-    apiResponseFormats: IList<ApiResponseFormat>;
-    description: string;
-    isDefaultResponse: boolean;
-    modelMetadata: ModelMetadata;
-    statusCode: int;
-    type: Type;
+    ApiResponseFormats: IList<ApiResponseFormat>;
+    Description: string;
+    IsDefaultResponse: boolean;
+    ModelMetadata: ModelMetadata;
+    StatusCode: int;
+    Type: Type;
 }
 
 
@@ -304,9 +304,9 @@ export const ApiResponseType: {
 export type ApiResponseType = ApiResponseType$instance;
 
 export interface DefaultApiDescriptionProvider$instance {
-    readonly order: int;
-    onProvidersExecuted(context: ApiDescriptionProviderContext): void;
-    onProvidersExecuting(context: ApiDescriptionProviderContext): void;
+    readonly Order: int;
+    OnProvidersExecuted(context: ApiDescriptionProviderContext): void;
+    OnProvidersExecuting(context: ApiDescriptionProviderContext): void;
 }
 
 
@@ -325,8 +325,8 @@ export type DefaultApiDescriptionProvider = DefaultApiDescriptionProvider$instan
 
 
 export abstract class ApiDescriptionExtensions$instance {
-    static getProperty<T>(apiDescription: ApiDescription): T | undefined;
-    static setProperty<T>(apiDescription: ApiDescription, value: T): void;
+    static GetProperty<T>(apiDescription: ApiDescription): T | undefined;
+    static SetProperty<T>(apiDescription: ApiDescription, value: T): void;
 }
 
 

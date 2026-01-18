@@ -21,30 +21,30 @@ import * as System_Xml_Serialization_Internal from "@tsonic/dotnet/System.Xml.Se
 import type { IXmlSerializable } from "@tsonic/dotnet/System.Xml.Serialization.js";
 
 export interface IUnwrappable$instance {
-    unwrap(declaredType: Type): unknown;
+    Unwrap(declaredType: Type): unknown;
 }
 
 
 export type IUnwrappable = IUnwrappable$instance;
 
 export interface IWrapperProvider$instance {
-    readonly wrappingType: Type;
-    wrap(original: unknown): unknown | undefined;
+    readonly WrappingType: Type;
+    Wrap(original: unknown): unknown | undefined;
 }
 
 
 export type IWrapperProvider = IWrapperProvider$instance;
 
 export interface IWrapperProviderFactory$instance {
-    getProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
+    GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
 }
 
 
 export type IWrapperProviderFactory = IWrapperProviderFactory$instance;
 
 export interface DelegatingEnumerable_2$instance<TWrapped, TDeclared> {
-    add(item: unknown): void;
-    getEnumerator(): IEnumerator__System_Collections_Generic<TWrapped>;
+    Add(item: unknown): void;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<TWrapped>;
 }
 
 
@@ -57,10 +57,10 @@ export const DelegatingEnumerable_2: {
 export type DelegatingEnumerable_2<TWrapped, TDeclared> = DelegatingEnumerable_2$instance<TWrapped, TDeclared>;
 
 export interface DelegatingEnumerator_2$instance<TWrapped, TDeclared> {
-    readonly current: TWrapped;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: TWrapped;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -72,8 +72,8 @@ export const DelegatingEnumerator_2: {
 export type DelegatingEnumerator_2<TWrapped, TDeclared> = DelegatingEnumerator_2$instance<TWrapped, TDeclared>;
 
 export interface EnumerableWrapperProvider$instance {
-    readonly wrappingType: Type;
-    wrap(original: unknown): unknown | undefined;
+    readonly WrappingType: Type;
+    Wrap(original: unknown): unknown | undefined;
 }
 
 
@@ -92,7 +92,7 @@ export type EnumerableWrapperProvider = EnumerableWrapperProvider$instance & __E
 
 
 export interface EnumerableWrapperProviderFactory$instance {
-    getProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
+    GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
 }
 
 
@@ -122,9 +122,9 @@ export const MvcXmlOptions: {
 export type MvcXmlOptions = MvcXmlOptions$instance;
 
 export interface ProblemDetailsWrapper$instance {
-    getSchema(): XmlSchema | undefined;
-    readXml(reader: XmlReader): void;
-    writeXml(writer: XmlWriter): void;
+    GetSchema(): XmlSchema | undefined;
+    ReadXml(reader: XmlReader): void;
+    WriteXml(writer: XmlWriter): void;
 }
 
 
@@ -144,11 +144,11 @@ export type ProblemDetailsWrapper = ProblemDetailsWrapper$instance & __ProblemDe
 
 
 export interface SerializableErrorWrapper$instance {
-    readonly serializableError: SerializableError;
-    getSchema(): XmlSchema | undefined;
-    readXml(reader: XmlReader): void;
-    unwrap(declaredType: Type): unknown;
-    writeXml(writer: XmlWriter): void;
+    readonly SerializableError: SerializableError;
+    GetSchema(): XmlSchema | undefined;
+    ReadXml(reader: XmlReader): void;
+    Unwrap(declaredType: Type): unknown;
+    WriteXml(writer: XmlWriter): void;
 }
 
 
@@ -168,8 +168,8 @@ export type SerializableErrorWrapper = SerializableErrorWrapper$instance & __Ser
 
 
 export interface SerializableErrorWrapperProvider$instance {
-    readonly wrappingType: Type;
-    wrap(original: unknown): unknown | undefined;
+    readonly WrappingType: Type;
+    Wrap(original: unknown): unknown | undefined;
 }
 
 
@@ -188,7 +188,7 @@ export type SerializableErrorWrapperProvider = SerializableErrorWrapperProvider$
 
 
 export interface SerializableErrorWrapperProviderFactory$instance {
-    getProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
+    GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
 }
 
 
@@ -207,8 +207,8 @@ export type SerializableErrorWrapperProviderFactory = SerializableErrorWrapperPr
 
 
 export interface ValidationProblemDetailsWrapper$instance extends ProblemDetailsWrapper$instance {
-    unwrap(declaredType: Type): unknown;
-    writeXml(writer: XmlWriter): void;
+    Unwrap(declaredType: Type): unknown;
+    WriteXml(writer: XmlWriter): void;
 }
 
 
@@ -228,8 +228,8 @@ export type ValidationProblemDetailsWrapper = ValidationProblemDetailsWrapper$in
 
 
 export interface WrapperProviderContext$instance {
-    readonly declaredType: Type;
-    readonly isSerialization: boolean;
+    readonly DeclaredType: Type;
+    readonly IsSerialization: boolean;
 }
 
 
@@ -241,7 +241,7 @@ export const WrapperProviderContext: {
 export type WrapperProviderContext = WrapperProviderContext$instance;
 
 export abstract class WrapperProviderFactoriesExtensions$instance {
-    static getWrapperProvider(wrapperProviderFactories: IEnumerable__System_Collections_Generic<IWrapperProviderFactory>, wrapperProviderContext: WrapperProviderContext): IWrapperProvider | undefined;
+    static GetWrapperProvider(wrapperProviderFactories: IEnumerable__System_Collections_Generic<IWrapperProviderFactory>, wrapperProviderContext: WrapperProviderContext): IWrapperProvider | undefined;
 }
 
 

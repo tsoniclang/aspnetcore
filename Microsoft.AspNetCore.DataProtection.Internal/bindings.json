@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.DataProtection.Internal",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.DataProtection"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator",
       "clrName": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
-      "tsEmitName": "IActivator",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Internal.IActivator::CreateInstance(System.Type,System.String):System.Object",
           "clrName": "CreateInstance",
-          "tsEmitName": "createInstance",
           "metadataToken": 100663833,
           "canonicalSignature": "(System.Type,System.String):System.Object",
           "normalizedSignature": "CreateInstance|(System.Type,System.String):System.Object|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -26,19 +39,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createInstance",
-          "isStatic": false,
-          "tsSignatureId": "CreateInstance|(System.Type,System.String):System.Object|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Internal.IActivator",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663833
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

@@ -17,47 +17,47 @@ import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IOutputCacheBufferStore$instance extends IOutputCacheStore {
-    evictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
-    getAsync(key: string, cancellationToken: CancellationToken): ValueTask<byte[]>;
-    setAsync(key: string, value: ReadOnlySequence<System_Internal.Byte>, tags: ReadOnlyMemory<System_Internal.String>, validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
-    setAsync(key: string, value: byte[], tags: string[], validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
-    tryGetAsync(key: string, destination: PipeWriter, cancellationToken: CancellationToken): ValueTask<System_Internal.Boolean>;
+    EvictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
+    GetAsync(key: string, cancellationToken: CancellationToken): ValueTask<byte[]>;
+    SetAsync(key: string, value: ReadOnlySequence<System_Internal.Byte>, tags: ReadOnlyMemory<System_Internal.String>, validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
+    SetAsync(key: string, value: byte[], tags: string[], validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
+    TryGetAsync(key: string, destination: PipeWriter, cancellationToken: CancellationToken): ValueTask<System_Internal.Boolean>;
 }
 
 
 export type IOutputCacheBufferStore = IOutputCacheBufferStore$instance;
 
 export interface IOutputCacheFeature$instance {
-    readonly context: OutputCacheContext;
+    readonly Context: OutputCacheContext;
 }
 
 
 export type IOutputCacheFeature = IOutputCacheFeature$instance;
 
 export interface IOutputCachePolicy$instance {
-    cacheRequestAsync(context: OutputCacheContext, cancellation: CancellationToken): ValueTask;
+    CacheRequestAsync(context: OutputCacheContext, cancellation: CancellationToken): ValueTask;
 }
 
 
 export type IOutputCachePolicy = IOutputCachePolicy$instance;
 
 export interface IOutputCacheStore$instance {
-    evictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
-    getAsync(key: string, cancellationToken: CancellationToken): ValueTask<byte[]>;
-    setAsync(key: string, value: byte[], tags: string[], validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
+    EvictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
+    GetAsync(key: string, cancellationToken: CancellationToken): ValueTask<byte[]>;
+    SetAsync(key: string, value: byte[], tags: string[], validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
 }
 
 
 export type IOutputCacheStore = IOutputCacheStore$instance;
 
 export interface CacheVaryByRules$instance {
-    get cacheKeyPrefix(): string | undefined;
-    set cacheKeyPrefix(value: string);
-    headerNames: StringValues;
-    queryKeys: StringValues;
-    routeValueNames: StringValues;
-    varyByHost: boolean;
-    readonly varyByValues: IDictionary<System_Internal.String, System_Internal.String>;
+    get CacheKeyPrefix(): string | undefined;
+    set CacheKeyPrefix(value: string);
+    HeaderNames: StringValues;
+    QueryKeys: StringValues;
+    RouteValueNames: StringValues;
+    VaryByHost: boolean;
+    readonly VaryByValues: IDictionary<System_Internal.String, System_Internal.String>;
 }
 
 
@@ -69,17 +69,17 @@ export const CacheVaryByRules: {
 export type CacheVaryByRules = CacheVaryByRules$instance;
 
 export interface OutputCacheAttribute$instance extends Attribute {
-    duration: int;
-    noStore: boolean;
-    get policyName(): string | undefined;
-    set policyName(value: string);
-    tags: string[];
-    get varyByHeaderNames(): string[] | undefined;
-    set varyByHeaderNames(value: string[]);
-    get varyByQueryKeys(): string[] | undefined;
-    set varyByQueryKeys(value: string[]);
-    get varyByRouteValueNames(): string[] | undefined;
-    set varyByRouteValueNames(value: string[]);
+    Duration: int;
+    NoStore: boolean;
+    get PolicyName(): string | undefined;
+    set PolicyName(value: string);
+    Tags: string[];
+    get VaryByHeaderNames(): string[] | undefined;
+    set VaryByHeaderNames(value: string[]);
+    get VaryByQueryKeys(): string[] | undefined;
+    set VaryByQueryKeys(value: string[]);
+    get VaryByRouteValueNames(): string[] | undefined;
+    set VaryByRouteValueNames(value: string[]);
 }
 
 
@@ -91,15 +91,15 @@ export const OutputCacheAttribute: {
 export type OutputCacheAttribute = OutputCacheAttribute$instance;
 
 export interface OutputCacheContext$instance {
-    allowCacheLookup: boolean;
-    allowCacheStorage: boolean;
-    allowLocking: boolean;
-    readonly cacheVaryByRules: CacheVaryByRules;
-    enableOutputCaching: boolean;
-    httpContext: HttpContext;
-    responseExpirationTimeSpan: Nullable<TimeSpan>;
-    responseTime: Nullable<DateTimeOffset>;
-    readonly tags: HashSet<System_Internal.String>;
+    AllowCacheLookup: boolean;
+    AllowCacheStorage: boolean;
+    AllowLocking: boolean;
+    readonly CacheVaryByRules: CacheVaryByRules;
+    EnableOutputCaching: boolean;
+    HttpContext: HttpContext;
+    ResponseExpirationTimeSpan: Nullable<TimeSpan>;
+    ResponseTime: Nullable<DateTimeOffset>;
+    readonly Tags: HashSet<System_Internal.String>;
 }
 
 
@@ -111,17 +111,17 @@ export const OutputCacheContext: {
 export type OutputCacheContext = OutputCacheContext$instance;
 
 export interface OutputCacheOptions$instance {
-    readonly applicationServices: IServiceProvider;
-    defaultExpirationTimeSpan: TimeSpan;
-    maximumBodySize: long;
-    sizeLimit: long;
-    useCaseSensitivePaths: boolean;
-    addBasePolicy(policy: IOutputCachePolicy): void;
-    addBasePolicy(build: Action<OutputCachePolicyBuilder>): void;
-    addBasePolicy(build: Action<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): void;
-    addPolicy(name: string, policy: IOutputCachePolicy): void;
-    addPolicy(name: string, build: Action<OutputCachePolicyBuilder>): void;
-    addPolicy(name: string, build: Action<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): void;
+    readonly ApplicationServices: IServiceProvider;
+    DefaultExpirationTimeSpan: TimeSpan;
+    MaximumBodySize: long;
+    SizeLimit: long;
+    UseCaseSensitivePaths: boolean;
+    AddBasePolicy(policy: IOutputCachePolicy): void;
+    AddBasePolicy(build: Action<OutputCachePolicyBuilder>): void;
+    AddBasePolicy(build: Action<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): void;
+    AddPolicy(name: string, policy: IOutputCachePolicy): void;
+    AddPolicy(name: string, build: Action<OutputCachePolicyBuilder>): void;
+    AddPolicy(name: string, build: Action<OutputCachePolicyBuilder>, excludeDefaultPolicy: boolean): void;
 }
 
 
@@ -133,28 +133,28 @@ export const OutputCacheOptions: {
 export type OutputCacheOptions = OutputCacheOptions$instance;
 
 export interface OutputCachePolicyBuilder$instance {
-    addPolicy(policyType: Type): OutputCachePolicyBuilder;
-    addPolicy<T extends IOutputCachePolicy>(): OutputCachePolicyBuilder;
-    cache(): OutputCachePolicyBuilder;
-    expire(expiration: TimeSpan): OutputCachePolicyBuilder;
-    noCache(): OutputCachePolicyBuilder;
-    setCacheKeyPrefix(keyPrefix: string): OutputCachePolicyBuilder;
-    setCacheKeyPrefix(keyPrefix: Func<HttpContext, System_Internal.String>): OutputCachePolicyBuilder;
-    setCacheKeyPrefix(keyPrefix: Func<HttpContext, CancellationToken, ValueTask<System_Internal.String>>): OutputCachePolicyBuilder;
-    setLocking(enabled: boolean): OutputCachePolicyBuilder;
-    setVaryByHeader(headerName: string, ...headerNames: string[]): OutputCachePolicyBuilder;
-    setVaryByHeader(headerNames: string[]): OutputCachePolicyBuilder;
-    setVaryByHost(enabled: boolean): OutputCachePolicyBuilder;
-    setVaryByQuery(queryKey: string, ...queryKeys: string[]): OutputCachePolicyBuilder;
-    setVaryByQuery(queryKeys: string[]): OutputCachePolicyBuilder;
-    setVaryByRouteValue(routeValueName: string, ...routeValueNames: string[]): OutputCachePolicyBuilder;
-    setVaryByRouteValue(routeValueNames: string[]): OutputCachePolicyBuilder;
-    tag(...tags: string[]): OutputCachePolicyBuilder;
-    varyByValue(key: string, value: string): OutputCachePolicyBuilder;
-    varyByValue(varyBy: Func<HttpContext, KeyValuePair<System_Internal.String, System_Internal.String>>): OutputCachePolicyBuilder;
-    varyByValue(varyBy: Func<HttpContext, CancellationToken, ValueTask<KeyValuePair<System_Internal.String, System_Internal.String>>>): OutputCachePolicyBuilder;
-    with(predicate: Func<OutputCacheContext, CancellationToken, ValueTask<System_Internal.Boolean>>): OutputCachePolicyBuilder;
-    with(predicate: Func<OutputCacheContext, System_Internal.Boolean>): OutputCachePolicyBuilder;
+    AddPolicy(policyType: Type): OutputCachePolicyBuilder;
+    AddPolicy<T extends IOutputCachePolicy>(): OutputCachePolicyBuilder;
+    Cache(): OutputCachePolicyBuilder;
+    Expire(expiration: TimeSpan): OutputCachePolicyBuilder;
+    NoCache(): OutputCachePolicyBuilder;
+    SetCacheKeyPrefix(keyPrefix: string): OutputCachePolicyBuilder;
+    SetCacheKeyPrefix(keyPrefix: Func<HttpContext, System_Internal.String>): OutputCachePolicyBuilder;
+    SetCacheKeyPrefix(keyPrefix: Func<HttpContext, CancellationToken, ValueTask<System_Internal.String>>): OutputCachePolicyBuilder;
+    SetLocking(enabled: boolean): OutputCachePolicyBuilder;
+    SetVaryByHeader(headerName: string, ...headerNames: string[]): OutputCachePolicyBuilder;
+    SetVaryByHeader(headerNames: string[]): OutputCachePolicyBuilder;
+    SetVaryByHost(enabled: boolean): OutputCachePolicyBuilder;
+    SetVaryByQuery(queryKey: string, ...queryKeys: string[]): OutputCachePolicyBuilder;
+    SetVaryByQuery(queryKeys: string[]): OutputCachePolicyBuilder;
+    SetVaryByRouteValue(routeValueName: string, ...routeValueNames: string[]): OutputCachePolicyBuilder;
+    SetVaryByRouteValue(routeValueNames: string[]): OutputCachePolicyBuilder;
+    Tag(...tags: string[]): OutputCachePolicyBuilder;
+    VaryByValue(key: string, value: string): OutputCachePolicyBuilder;
+    VaryByValue(varyBy: Func<HttpContext, KeyValuePair<System_Internal.String, System_Internal.String>>): OutputCachePolicyBuilder;
+    VaryByValue(varyBy: Func<HttpContext, CancellationToken, ValueTask<KeyValuePair<System_Internal.String, System_Internal.String>>>): OutputCachePolicyBuilder;
+    With(predicate: Func<OutputCacheContext, CancellationToken, ValueTask<System_Internal.Boolean>>): OutputCachePolicyBuilder;
+    With(predicate: Func<OutputCacheContext, System_Internal.Boolean>): OutputCachePolicyBuilder;
 }
 
 

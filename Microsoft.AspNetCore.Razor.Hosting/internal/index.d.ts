@@ -12,19 +12,19 @@ import type { Attribute, Object as ClrObject, String as ClrString, Type } from "
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IRazorSourceChecksumMetadata$instance {
-    readonly checksum: string;
-    readonly checksumAlgorithm: string;
-    readonly identifier: string | undefined;
+    readonly Checksum: string;
+    readonly ChecksumAlgorithm: string;
+    readonly Identifier: string | undefined;
 }
 
 
 export type IRazorSourceChecksumMetadata = IRazorSourceChecksumMetadata$instance;
 
 export interface RazorCompiledItem$instance {
-    readonly identifier: string;
-    readonly kind: string;
-    readonly metadata: IReadOnlyList<unknown>;
-    readonly type: Type;
+    readonly Identifier: string;
+    readonly Kind: string;
+    readonly Metadata: IReadOnlyList<unknown>;
+    readonly Type: Type;
 }
 
 
@@ -35,9 +35,9 @@ export const RazorCompiledItem: {
 export type RazorCompiledItem = RazorCompiledItem$instance;
 
 export interface RazorCompiledItemAttribute$instance extends Attribute {
-    readonly identifier: string | undefined;
-    readonly kind: string;
-    readonly type: Type;
+    readonly Identifier: string | undefined;
+    readonly Kind: string;
+    readonly Type: Type;
 }
 
 
@@ -49,7 +49,7 @@ export const RazorCompiledItemAttribute: {
 export type RazorCompiledItemAttribute = RazorCompiledItemAttribute$instance;
 
 export interface RazorCompiledItemLoader$instance {
-    loadItems(assembly: Assembly): IReadOnlyList<RazorCompiledItem>;
+    LoadItems(assembly: Assembly): IReadOnlyList<RazorCompiledItem>;
 }
 
 
@@ -61,8 +61,8 @@ export const RazorCompiledItemLoader: {
 export type RazorCompiledItemLoader = RazorCompiledItemLoader$instance;
 
 export interface RazorCompiledItemMetadataAttribute$instance extends Attribute {
-    readonly key: string | undefined;
-    readonly value: string;
+    readonly Key: string | undefined;
+    readonly Value: string;
 }
 
 
@@ -74,7 +74,7 @@ export const RazorCompiledItemMetadataAttribute: {
 export type RazorCompiledItemMetadataAttribute = RazorCompiledItemMetadataAttribute$instance;
 
 export interface RazorConfigurationNameAttribute$instance extends Attribute {
-    readonly configurationName: string;
+    readonly ConfigurationName: string;
 }
 
 
@@ -86,8 +86,8 @@ export const RazorConfigurationNameAttribute: {
 export type RazorConfigurationNameAttribute = RazorConfigurationNameAttribute$instance;
 
 export interface RazorExtensionAssemblyNameAttribute$instance extends Attribute {
-    readonly assemblyName: string;
-    readonly extensionName: string;
+    readonly AssemblyName: string;
+    readonly ExtensionName: string;
 }
 
 
@@ -99,7 +99,7 @@ export const RazorExtensionAssemblyNameAttribute: {
 export type RazorExtensionAssemblyNameAttribute = RazorExtensionAssemblyNameAttribute$instance;
 
 export interface RazorLanguageVersionAttribute$instance extends Attribute {
-    readonly languageVersion: string;
+    readonly LanguageVersion: string;
 }
 
 
@@ -111,9 +111,9 @@ export const RazorLanguageVersionAttribute: {
 export type RazorLanguageVersionAttribute = RazorLanguageVersionAttribute$instance;
 
 export interface RazorSourceChecksumAttribute$instance extends Attribute {
-    readonly checksum: string;
-    readonly checksumAlgorithm: string;
-    readonly identifier: string | undefined;
+    readonly Checksum: string;
+    readonly ChecksumAlgorithm: string;
+    readonly Identifier: string | undefined;
 }
 
 
@@ -132,7 +132,7 @@ export type RazorSourceChecksumAttribute = RazorSourceChecksumAttribute$instance
 
 
 export abstract class RazorCompiledItemExtensions$instance {
-    static getChecksumMetadata(item: RazorCompiledItem): IReadOnlyList<IRazorSourceChecksumMetadata>;
+    static GetChecksumMetadata(item: RazorCompiledItem): IReadOnlyList<IRazorSourceChecksumMetadata>;
 }
 
 

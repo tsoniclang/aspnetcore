@@ -31,338 +31,338 @@ import type { IServiceScopeFactory } from "@tsonic/microsoft-extensions/Microsof
 import type { ObjectPool } from "@tsonic/microsoft-extensions/Microsoft.Extensions.ObjectPool.js";
 
 export enum HttpsCompressionMode {
-    default = 0,
-    doNotCompress = 1,
-    compress = 2
+    Default = 0,
+    DoNotCompress = 1,
+    Compress = 2
 }
 
 
 export interface IBadRequestExceptionFeature$instance {
-    readonly error: Exception | undefined;
+    readonly Error: Exception | undefined;
 }
 
 
 export type IBadRequestExceptionFeature = IBadRequestExceptionFeature$instance;
 
 export interface IEndpointFeature$instance {
-    get endpoint(): Endpoint | undefined;
-    set endpoint(value: Endpoint);
+    get Endpoint(): Endpoint | undefined;
+    set Endpoint(value: Endpoint);
 }
 
 
 export type IEndpointFeature = IEndpointFeature$instance;
 
 export interface IFeatureCollection$instance extends IEnumerable__System_Collections_Generic<KeyValuePair<Type, unknown>>, IEnumerable {
-    readonly isReadOnly: boolean;
-    readonly revision: int;
-    get item(): unknown | undefined;
-    set item(value: unknown);
-    get<TFeature>(): TFeature | undefined;
-    set<TFeature>(instance: TFeature): void;
+    readonly IsReadOnly: boolean;
+    readonly Revision: int;
+    get Item(): unknown | undefined;
+    set Item(value: unknown);
+    Get<TFeature>(): TFeature | undefined;
+    Set<TFeature>(instance: TFeature): void;
 }
 
 
 export type IFeatureCollection = IFeatureCollection$instance;
 
 export interface IFormFeature$instance {
-    readonly hasFormContentType: boolean;
-    form: IFormCollection;
-    readForm(): IFormCollection;
-    readFormAsync(cancellationToken: CancellationToken): Task<IFormCollection>;
+    readonly HasFormContentType: boolean;
+    Form: IFormCollection;
+    ReadForm(): IFormCollection;
+    ReadFormAsync(cancellationToken: CancellationToken): Task<IFormCollection>;
 }
 
 
 export type IFormFeature = IFormFeature$instance;
 
 export interface IHttpActivityFeature$instance {
-    activity: Activity;
+    Activity: Activity;
 }
 
 
 export type IHttpActivityFeature = IHttpActivityFeature$instance;
 
 export interface IHttpBodyControlFeature$instance {
-    allowSynchronousIO: boolean;
+    AllowSynchronousIO: boolean;
 }
 
 
 export type IHttpBodyControlFeature = IHttpBodyControlFeature$instance;
 
 export interface IHttpConnectionFeature$instance {
-    connectionId: string;
-    get remoteIpAddress(): IPAddress | undefined;
-    set remoteIpAddress(value: IPAddress);
-    get localIpAddress(): IPAddress | undefined;
-    set localIpAddress(value: IPAddress);
-    remotePort: int;
-    localPort: int;
+    ConnectionId: string;
+    get RemoteIpAddress(): IPAddress | undefined;
+    set RemoteIpAddress(value: IPAddress);
+    get LocalIpAddress(): IPAddress | undefined;
+    set LocalIpAddress(value: IPAddress);
+    RemotePort: int;
+    LocalPort: int;
 }
 
 
 export type IHttpConnectionFeature = IHttpConnectionFeature$instance;
 
 export interface IHttpExtendedConnectFeature$instance {
-    readonly isExtendedConnect: boolean;
-    readonly protocol: string | undefined;
-    acceptAsync(): ValueTask<Stream>;
+    readonly IsExtendedConnect: boolean;
+    readonly Protocol: string | undefined;
+    AcceptAsync(): ValueTask<Stream>;
 }
 
 
 export type IHttpExtendedConnectFeature = IHttpExtendedConnectFeature$instance;
 
 export interface IHttpMaxRequestBodySizeFeature$instance {
-    readonly isReadOnly: boolean;
-    maxRequestBodySize: Nullable<System_Internal.Int64>;
+    readonly IsReadOnly: boolean;
+    MaxRequestBodySize: Nullable<System_Internal.Int64>;
 }
 
 
 export type IHttpMaxRequestBodySizeFeature = IHttpMaxRequestBodySizeFeature$instance;
 
 export interface IHttpMetricsTagsFeature$instance {
-    readonly tags: ICollection<KeyValuePair<System_Internal.String, unknown>>;
-    metricsDisabled: boolean;
+    readonly Tags: ICollection<KeyValuePair<System_Internal.String, unknown>>;
+    MetricsDisabled: boolean;
 }
 
 
 export type IHttpMetricsTagsFeature = IHttpMetricsTagsFeature$instance;
 
 export interface IHttpRequestBodyDetectionFeature$instance {
-    readonly canHaveBody: boolean;
+    readonly CanHaveBody: boolean;
 }
 
 
 export type IHttpRequestBodyDetectionFeature = IHttpRequestBodyDetectionFeature$instance;
 
 export interface IHttpRequestFeature$instance {
-    protocol: string;
-    scheme: string;
-    method: string;
-    pathBase: string;
-    path: string;
-    queryString: string;
-    rawTarget: string;
-    headers: IHeaderDictionary;
-    body: Stream;
+    Protocol: string;
+    Scheme: string;
+    Method: string;
+    PathBase: string;
+    Path: string;
+    QueryString: string;
+    RawTarget: string;
+    Headers: IHeaderDictionary;
+    Body: Stream;
 }
 
 
 export type IHttpRequestFeature = IHttpRequestFeature$instance;
 
 export interface IHttpRequestIdentifierFeature$instance {
-    traceIdentifier: string;
+    TraceIdentifier: string;
 }
 
 
 export type IHttpRequestIdentifierFeature = IHttpRequestIdentifierFeature$instance;
 
 export interface IHttpRequestLifetimeFeature$instance {
-    requestAborted: CancellationToken;
-    abort(): void;
+    RequestAborted: CancellationToken;
+    Abort(): void;
 }
 
 
 export type IHttpRequestLifetimeFeature = IHttpRequestLifetimeFeature$instance;
 
 export interface IHttpRequestTrailersFeature$instance {
-    readonly available: boolean;
-    readonly trailers: IHeaderDictionary;
+    readonly Available: boolean;
+    readonly Trailers: IHeaderDictionary;
 }
 
 
 export type IHttpRequestTrailersFeature = IHttpRequestTrailersFeature$instance;
 
 export interface IHttpResetFeature$instance {
-    reset(errorCode: int): void;
+    Reset(errorCode: int): void;
 }
 
 
 export type IHttpResetFeature = IHttpResetFeature$instance;
 
 export interface IHttpResponseBodyFeature$instance {
-    readonly stream: Stream;
-    readonly writer: PipeWriter;
-    completeAsync(): Task;
-    disableBuffering(): void;
-    sendFileAsync(path: string, offset: long, count: Nullable<System_Internal.Int64>, cancellationToken?: CancellationToken): Task;
-    startAsync(cancellationToken?: CancellationToken): Task;
+    readonly Stream: Stream;
+    readonly Writer: PipeWriter;
+    CompleteAsync(): Task;
+    DisableBuffering(): void;
+    SendFileAsync(path: string, offset: long, count: Nullable<System_Internal.Int64>, cancellationToken?: CancellationToken): Task;
+    StartAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
 export type IHttpResponseBodyFeature = IHttpResponseBodyFeature$instance;
 
 export interface IHttpResponseFeature$instance {
-    statusCode: int;
-    get reasonPhrase(): string | undefined;
-    set reasonPhrase(value: string);
-    headers: IHeaderDictionary;
-    body: Stream;
-    readonly hasStarted: boolean;
-    onStarting(callback: Func<unknown, Task>, state: unknown): void;
+    StatusCode: int;
+    get ReasonPhrase(): string | undefined;
+    set ReasonPhrase(value: string);
+    Headers: IHeaderDictionary;
+    Body: Stream;
+    readonly HasStarted: boolean;
+    OnStarting(callback: Func<unknown, Task>, state: unknown): void;
 }
 
 
 export type IHttpResponseFeature = IHttpResponseFeature$instance;
 
 export interface IHttpResponseTrailersFeature$instance {
-    trailers: IHeaderDictionary;
+    Trailers: IHeaderDictionary;
 }
 
 
 export type IHttpResponseTrailersFeature = IHttpResponseTrailersFeature$instance;
 
 export interface IHttpsCompressionFeature$instance {
-    mode: HttpsCompressionMode;
+    Mode: HttpsCompressionMode;
 }
 
 
 export type IHttpsCompressionFeature = IHttpsCompressionFeature$instance;
 
 export interface IHttpUpgradeFeature$instance {
-    readonly isUpgradableRequest: boolean;
-    upgradeAsync(): Task<Stream>;
+    readonly IsUpgradableRequest: boolean;
+    UpgradeAsync(): Task<Stream>;
 }
 
 
 export type IHttpUpgradeFeature = IHttpUpgradeFeature$instance;
 
 export interface IHttpWebSocketFeature$instance {
-    readonly isWebSocketRequest: boolean;
-    acceptAsync(context: WebSocketAcceptContext): Task<WebSocket>;
+    readonly IsWebSocketRequest: boolean;
+    AcceptAsync(context: WebSocketAcceptContext): Task<WebSocket>;
 }
 
 
 export type IHttpWebSocketFeature = IHttpWebSocketFeature$instance;
 
 export interface IHttpWebTransportFeature$instance {
-    readonly isWebTransportRequest: boolean;
-    acceptAsync(cancellationToken?: CancellationToken): ValueTask<IWebTransportSession>;
+    readonly IsWebTransportRequest: boolean;
+    AcceptAsync(cancellationToken?: CancellationToken): ValueTask<IWebTransportSession>;
 }
 
 
 export type IHttpWebTransportFeature = IHttpWebTransportFeature$instance;
 
 export interface IItemsFeature$instance {
-    items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary<unknown, unknown | undefined>;
 }
 
 
 export type IItemsFeature = IItemsFeature$instance;
 
 export interface IQueryFeature$instance {
-    query: IQueryCollection;
+    Query: IQueryCollection;
 }
 
 
 export type IQueryFeature = IQueryFeature$instance;
 
 export interface IRequestBodyPipeFeature$instance {
-    readonly reader: PipeReader;
+    readonly Reader: PipeReader;
 }
 
 
 export type IRequestBodyPipeFeature = IRequestBodyPipeFeature$instance;
 
 export interface IRequestCookiesFeature$instance {
-    cookies: IRequestCookieCollection;
+    Cookies: IRequestCookieCollection;
 }
 
 
 export type IRequestCookiesFeature = IRequestCookiesFeature$instance;
 
 export interface IResponseCookiesFeature$instance {
-    readonly cookies: IResponseCookies;
+    readonly Cookies: IResponseCookies;
 }
 
 
 export type IResponseCookiesFeature = IResponseCookiesFeature$instance;
 
 export interface IRouteValuesFeature$instance {
-    routeValues: RouteValueDictionary;
+    RouteValues: RouteValueDictionary;
 }
 
 
 export type IRouteValuesFeature = IRouteValuesFeature$instance;
 
 export interface IServerVariablesFeature$instance {
-    get item(): string | undefined;
-    set item(value: string);
+    get Item(): string | undefined;
+    set Item(value: string);
 }
 
 
 export type IServerVariablesFeature = IServerVariablesFeature$instance;
 
 export interface IServiceProvidersFeature$instance {
-    requestServices: IServiceProvider;
+    RequestServices: IServiceProvider;
 }
 
 
 export type IServiceProvidersFeature = IServiceProvidersFeature$instance;
 
 export interface ISessionFeature$instance {
-    session: ISession;
+    Session: ISession;
 }
 
 
 export type ISessionFeature = ISessionFeature$instance;
 
 export interface ITlsConnectionFeature$instance {
-    get clientCertificate(): X509Certificate2 | undefined;
-    set clientCertificate(value: X509Certificate2);
-    getClientCertificateAsync(cancellationToken: CancellationToken): Task<X509Certificate2 | undefined>;
+    get ClientCertificate(): X509Certificate2 | undefined;
+    set ClientCertificate(value: X509Certificate2);
+    GetClientCertificateAsync(cancellationToken: CancellationToken): Task<X509Certificate2 | undefined>;
 }
 
 
 export type ITlsConnectionFeature = ITlsConnectionFeature$instance;
 
 export interface ITlsTokenBindingFeature$instance {
-    getProvidedTokenBindingId(): byte[];
+    GetProvidedTokenBindingId(): byte[];
 }
 
 
 export type ITlsTokenBindingFeature = ITlsTokenBindingFeature$instance;
 
 export interface ITrackingConsentFeature$instance {
-    readonly isConsentNeeded: boolean;
-    readonly hasConsent: boolean;
-    readonly canTrack: boolean;
-    createConsentCookie(): string;
-    grantConsent(): void;
+    readonly IsConsentNeeded: boolean;
+    readonly HasConsent: boolean;
+    readonly CanTrack: boolean;
+    CreateConsentCookie(): string;
+    GrantConsent(): void;
 }
 
 
 export type ITrackingConsentFeature = ITrackingConsentFeature$instance;
 
 export interface IWebTransportSession$instance {
-    readonly sessionId: long;
-    abort(errorCode: int): void;
-    acceptStreamAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    readonly SessionId: long;
+    Abort(errorCode: int): void;
+    AcceptStreamAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
 }
 
 
 export type IWebTransportSession = IWebTransportSession$instance;
 
 export interface FeatureReference_1$instance<T> {
-    fetch(features: IFeatureCollection): T | undefined;
-    update(features: IFeatureCollection, feature: T): T;
+    Fetch(features: IFeatureCollection): T | undefined;
+    Update(features: IFeatureCollection, feature: T): T;
 }
 
 
 export const FeatureReference_1: {
     new<T>(): FeatureReference_1<T>;
-    readonly default: unknown;
+    readonly Default: unknown;
 };
 
 
 export type FeatureReference_1<T> = FeatureReference_1$instance<T>;
 
 export interface FeatureReferences_1$instance<TCache> {
-    cache: TCache | undefined;
-    readonly collection: IFeatureCollection;
-    readonly revision: int;
-    fetch<TFeature, TState>(cached: TFeature, state: TState, factory: Func<TState, TFeature>): TFeature | undefined;
-    fetch<TFeature>(cached: TFeature, factory: Func<IFeatureCollection, TFeature>): TFeature | undefined;
-    initalize(collection: IFeatureCollection): void;
-    initalize(collection: IFeatureCollection, revision: int): void;
+    Cache: TCache | undefined;
+    readonly Collection: IFeatureCollection;
+    readonly Revision: int;
+    Fetch<TFeature, TState>(cached: TFeature, state: TState, factory: Func<TState, TFeature>): TFeature | undefined;
+    Fetch<TFeature>(cached: TFeature, factory: Func<IFeatureCollection, TFeature>): TFeature | undefined;
+    Initalize(collection: IFeatureCollection): void;
+    Initalize(collection: IFeatureCollection, revision: int): void;
 }
 
 
@@ -374,7 +374,7 @@ export const FeatureReferences_1: {
 export type FeatureReferences_1<TCache> = FeatureReferences_1$instance<TCache>;
 
 export interface DefaultSessionFeature$instance {
-    session: ISession;
+    Session: ISession;
 }
 
 
@@ -393,13 +393,13 @@ export type DefaultSessionFeature = DefaultSessionFeature$instance & __DefaultSe
 
 
 export interface FeatureCollection$instance {
-    readonly isReadOnly: boolean;
-    get item(): unknown | undefined;
-    set item(value: unknown);
-    readonly revision: int;
-    get<TFeature>(): TFeature | undefined;
-    getEnumerator(): IEnumerator<KeyValuePair<Type, unknown>>;
-    set<TFeature>(instance: TFeature): void;
+    readonly IsReadOnly: boolean;
+    get Item(): unknown | undefined;
+    set Item(value: unknown);
+    readonly Revision: int;
+    Get<TFeature>(): TFeature | undefined;
+    GetEnumerator(): IEnumerator<KeyValuePair<Type, unknown>>;
+    Set<TFeature>(instance: TFeature): void;
 }
 
 
@@ -420,11 +420,11 @@ export type FeatureCollection = FeatureCollection$instance & __FeatureCollection
 
 
 export interface FormFeature$instance {
-    form: IFormCollection;
-    readonly hasFormContentType: boolean;
-    readForm(): IFormCollection;
-    readFormAsync(): Task<IFormCollection>;
-    readFormAsync(cancellationToken: CancellationToken): Task<IFormCollection>;
+    Form: IFormCollection;
+    readonly HasFormContentType: boolean;
+    ReadForm(): IFormCollection;
+    ReadFormAsync(): Task<IFormCollection>;
+    ReadFormAsync(cancellationToken: CancellationToken): Task<IFormCollection>;
 }
 
 
@@ -443,38 +443,38 @@ export type FormFeature = FormFeature$instance & __FormFeature$views;
 
 
 export interface FormOptions$instance {
-    bufferBody: boolean;
-    bufferBodyLengthLimit: long;
-    keyLengthLimit: int;
-    memoryBufferThreshold: int;
-    multipartBodyLengthLimit: long;
-    multipartBoundaryLengthLimit: int;
-    multipartHeadersCountLimit: int;
-    multipartHeadersLengthLimit: int;
-    valueCountLimit: int;
-    valueLengthLimit: int;
+    BufferBody: boolean;
+    BufferBodyLengthLimit: long;
+    KeyLengthLimit: int;
+    MemoryBufferThreshold: int;
+    MultipartBodyLengthLimit: long;
+    MultipartBoundaryLengthLimit: int;
+    MultipartHeadersCountLimit: int;
+    MultipartHeadersLengthLimit: int;
+    ValueCountLimit: int;
+    ValueLengthLimit: int;
 }
 
 
 export const FormOptions: {
     new(): FormOptions;
-    readonly defaultMemoryBufferThreshold: int;
-    readonly defaultBufferBodyLengthLimit: int;
-    readonly defaultMultipartBoundaryLengthLimit: int;
-    readonly defaultMultipartBodyLengthLimit: long;
+    readonly DefaultMemoryBufferThreshold: int;
+    readonly DefaultBufferBodyLengthLimit: int;
+    readonly DefaultMultipartBoundaryLengthLimit: int;
+    readonly DefaultMultipartBodyLengthLimit: long;
 };
 
 
 export type FormOptions = FormOptions$instance;
 
 export interface HttpConnectionFeature$instance {
-    connectionId: string;
-    get localIpAddress(): IPAddress | undefined;
-    set localIpAddress(value: IPAddress);
-    localPort: int;
-    get remoteIpAddress(): IPAddress | undefined;
-    set remoteIpAddress(value: IPAddress);
-    remotePort: int;
+    ConnectionId: string;
+    get LocalIpAddress(): IPAddress | undefined;
+    set LocalIpAddress(value: IPAddress);
+    LocalPort: int;
+    get RemoteIpAddress(): IPAddress | undefined;
+    set RemoteIpAddress(value: IPAddress);
+    RemotePort: int;
 }
 
 
@@ -493,15 +493,15 @@ export type HttpConnectionFeature = HttpConnectionFeature$instance & __HttpConne
 
 
 export interface HttpRequestFeature$instance {
-    body: Stream;
-    headers: IHeaderDictionary;
-    method: string;
-    path: string;
-    pathBase: string;
-    protocol: string;
-    queryString: string;
-    rawTarget: string;
-    scheme: string;
+    Body: Stream;
+    Headers: IHeaderDictionary;
+    Method: string;
+    Path: string;
+    PathBase: string;
+    Protocol: string;
+    QueryString: string;
+    RawTarget: string;
+    Scheme: string;
 }
 
 
@@ -520,7 +520,7 @@ export type HttpRequestFeature = HttpRequestFeature$instance & __HttpRequestFeat
 
 
 export interface HttpRequestIdentifierFeature$instance {
-    traceIdentifier: string;
+    TraceIdentifier: string;
 }
 
 
@@ -539,8 +539,8 @@ export type HttpRequestIdentifierFeature = HttpRequestIdentifierFeature$instance
 
 
 export interface HttpRequestLifetimeFeature$instance {
-    requestAborted: CancellationToken;
-    abort(): void;
+    RequestAborted: CancellationToken;
+    Abort(): void;
 }
 
 
@@ -559,14 +559,14 @@ export type HttpRequestLifetimeFeature = HttpRequestLifetimeFeature$instance & _
 
 
 export interface HttpResponseFeature$instance {
-    body: Stream;
-    readonly hasStarted: boolean;
-    headers: IHeaderDictionary;
-    get reasonPhrase(): string | undefined;
-    set reasonPhrase(value: string);
-    statusCode: int;
-    onCompleted(callback: Func<unknown, Task>, state: unknown): void;
-    onStarting(callback: Func<unknown, Task>, state: unknown): void;
+    Body: Stream;
+    readonly HasStarted: boolean;
+    Headers: IHeaderDictionary;
+    get ReasonPhrase(): string | undefined;
+    set ReasonPhrase(value: string);
+    StatusCode: int;
+    OnCompleted(callback: Func<unknown, Task>, state: unknown): void;
+    OnStarting(callback: Func<unknown, Task>, state: unknown): void;
 }
 
 
@@ -585,7 +585,7 @@ export type HttpResponseFeature = HttpResponseFeature$instance & __HttpResponseF
 
 
 export interface ItemsFeature$instance {
-    items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary<unknown, unknown | undefined>;
 }
 
 
@@ -604,7 +604,7 @@ export type ItemsFeature = ItemsFeature$instance & __ItemsFeature$views;
 
 
 export interface QueryFeature$instance {
-    query: IQueryCollection;
+    Query: IQueryCollection;
 }
 
 
@@ -624,7 +624,7 @@ export type QueryFeature = QueryFeature$instance & __QueryFeature$views;
 
 
 export interface RequestBodyPipeFeature$instance {
-    readonly reader: PipeReader;
+    readonly Reader: PipeReader;
 }
 
 
@@ -643,7 +643,7 @@ export type RequestBodyPipeFeature = RequestBodyPipeFeature$instance & __Request
 
 
 export interface RequestCookiesFeature$instance {
-    cookies: IRequestCookieCollection;
+    Cookies: IRequestCookieCollection;
 }
 
 
@@ -663,9 +663,9 @@ export type RequestCookiesFeature = RequestCookiesFeature$instance & __RequestCo
 
 
 export interface RequestServicesFeature$instance {
-    requestServices: IServiceProvider;
-    dispose(): void;
-    disposeAsync(): ValueTask;
+    RequestServices: IServiceProvider;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
 }
 
 
@@ -684,7 +684,7 @@ export type RequestServicesFeature = RequestServicesFeature$instance & __Request
 
 
 export interface ResponseCookiesFeature$instance {
-    readonly cookies: IResponseCookies;
+    readonly Cookies: IResponseCookies;
 }
 
 
@@ -704,7 +704,7 @@ export type ResponseCookiesFeature = ResponseCookiesFeature$instance & __Respons
 
 
 export interface RouteValuesFeature$instance {
-    routeValues: RouteValueDictionary;
+    RouteValues: RouteValueDictionary;
 }
 
 
@@ -723,7 +723,7 @@ export type RouteValuesFeature = RouteValuesFeature$instance & __RouteValuesFeat
 
 
 export interface ServiceProvidersFeature$instance {
-    requestServices: IServiceProvider;
+    RequestServices: IServiceProvider;
 }
 
 
@@ -742,9 +742,9 @@ export type ServiceProvidersFeature = ServiceProvidersFeature$instance & __Servi
 
 
 export interface TlsConnectionFeature$instance {
-    get clientCertificate(): X509Certificate2 | undefined;
-    set clientCertificate(value: X509Certificate2);
-    getClientCertificateAsync(cancellationToken: CancellationToken): Task<X509Certificate2 | undefined>;
+    get ClientCertificate(): X509Certificate2 | undefined;
+    set ClientCertificate(value: X509Certificate2);
+    GetClientCertificateAsync(cancellationToken: CancellationToken): Task<X509Certificate2 | undefined>;
 }
 
 
@@ -763,8 +763,8 @@ export type TlsConnectionFeature = TlsConnectionFeature$instance & __TlsConnecti
 
 
 export abstract class FeatureCollectionExtensions$instance {
-    static getRequiredFeature(featureCollection: IFeatureCollection, key: Type): unknown;
-    static getRequiredFeature<TFeature>(featureCollection: IFeatureCollection): TFeature;
+    static GetRequiredFeature(featureCollection: IFeatureCollection, key: Type): unknown;
+    static GetRequiredFeature<TFeature>(featureCollection: IFeatureCollection): TFeature;
 }
 
 

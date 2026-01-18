@@ -13,8 +13,8 @@ import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, V
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ProtectedBrowserStorageResult_1$instance<TValue> {
-    readonly success: boolean;
-    readonly value: TValue;
+    readonly Success: boolean;
+    readonly Value: TValue;
 }
 
 
@@ -26,11 +26,11 @@ export const ProtectedBrowserStorageResult_1: {
 export type ProtectedBrowserStorageResult_1<TValue> = ProtectedBrowserStorageResult_1$instance<TValue>;
 
 export interface ProtectedBrowserStorage$instance {
-    deleteAsync(key: string): ValueTask;
-    getAsync<TValue>(key: string): ValueTask<ProtectedBrowserStorageResult_1<TValue>>;
-    getAsync<TValue>(purpose: string, key: string): ValueTask<ProtectedBrowserStorageResult_1<TValue>>;
-    setAsync(key: string, value: unknown): ValueTask;
-    setAsync(purpose: string, key: string, value: unknown): ValueTask;
+    DeleteAsync(key: string): ValueTask;
+    GetAsync<TValue>(key: string): ValueTask<ProtectedBrowserStorageResult_1<TValue>>;
+    GetAsync<TValue>(purpose: string, key: string): ValueTask<ProtectedBrowserStorageResult_1<TValue>>;
+    SetAsync(key: string, value: unknown): ValueTask;
+    SetAsync(purpose: string, key: string, value: unknown): ValueTask;
 }
 
 

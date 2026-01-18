@@ -1,53 +1,73 @@
 {
   "namespace": "Microsoft.AspNetCore.StaticFiles.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.StaticFiles"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
       "clrName": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
-      "tsEmitName": "SharedOptions",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions::RequestPath:Microsoft.AspNetCore.Http.PathString",
           "clrName": "RequestPath",
-          "tsEmitName": "requestPath",
           "metadataToken": 385876001,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.PathString",
           "normalizedSignature": "RequestPath|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions::FileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
           "clrName": "FileProvider",
-          "tsEmitName": "fileProvider",
           "metadataToken": 385876002,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "FileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions::RedirectToAppendTrailingSlash:System.Boolean",
           "clrName": "RedirectToAppendTrailingSlash",
-          "tsEmitName": "redirectToAppendTrailingSlash",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "RedirectToAppendTrailingSlash|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
@@ -65,137 +85,79 @@
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "requestPath",
-          "isStatic": false,
-          "tsSignatureId": "RequestPath|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385876001
-          }
-        },
-        {
-          "tsName": "fileProvider",
-          "isStatic": false,
-          "tsSignatureId": "FileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385876002
-          }
-        },
-        {
-          "tsName": "redirectToAppendTrailingSlash",
-          "isStatic": false,
-          "tsSignatureId": "RedirectToAppendTrailingSlash|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385876003
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 100663438
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
       "clrName": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
-      "tsEmitName": "SharedOptionsBase",
       "assemblyName": "Microsoft.AspNetCore.StaticFiles",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase::RequestPath:Microsoft.AspNetCore.Http.PathString",
           "clrName": "RequestPath",
-          "tsEmitName": "requestPath",
           "metadataToken": 385876005,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.PathString",
           "normalizedSignature": "RequestPath|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase::FileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
           "clrName": "FileProvider",
-          "tsEmitName": "fileProvider",
           "metadataToken": 385876006,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "FileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         },
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase::RedirectToAppendTrailingSlash:System.Boolean",
           "clrName": "RedirectToAppendTrailingSlash",
-          "tsEmitName": "redirectToAppendTrailingSlash",
           "metadataToken": 385876007,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "RedirectToAppendTrailingSlash|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "requestPath",
-          "isStatic": false,
-          "tsSignatureId": "RequestPath|:Microsoft.AspNetCore.Http.PathString|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385876005
-          }
-        },
-        {
-          "tsName": "fileProvider",
-          "isStatic": false,
-          "tsSignatureId": "FileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385876006
-          }
-        },
-        {
-          "tsName": "redirectToAppendTrailingSlash",
-          "isStatic": false,
-          "tsSignatureId": "RedirectToAppendTrailingSlash|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.StaticFiles.Infrastructure.SharedOptionsBase",
-            "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
-            "metadataToken": 385876007
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

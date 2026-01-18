@@ -14,61 +14,61 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IAntiforgery$instance {
-    getAndStoreTokens(httpContext: HttpContext): AntiforgeryTokenSet;
-    isRequestValidAsync(httpContext: HttpContext): Task<System_Internal.Boolean>;
-    setCookieTokenAndHeader(httpContext: HttpContext): void;
-    validateRequestAsync(httpContext: HttpContext): Task;
+    GetAndStoreTokens(httpContext: HttpContext): AntiforgeryTokenSet;
+    IsRequestValidAsync(httpContext: HttpContext): Task<System_Internal.Boolean>;
+    SetCookieTokenAndHeader(httpContext: HttpContext): void;
+    ValidateRequestAsync(httpContext: HttpContext): Task;
 }
 
 
 export type IAntiforgery = IAntiforgery$instance;
 
 export interface IAntiforgeryAdditionalDataProvider$instance {
-    getAdditionalData(context: HttpContext): string;
-    validateAdditionalData(context: HttpContext, additionalData: string): boolean;
+    GetAdditionalData(context: HttpContext): string;
+    ValidateAdditionalData(context: HttpContext, additionalData: string): boolean;
 }
 
 
 export type IAntiforgeryAdditionalDataProvider = IAntiforgeryAdditionalDataProvider$instance;
 
 export interface IAntiforgeryMetadata$instance {
-    readonly requiresValidation: boolean;
+    readonly RequiresValidation: boolean;
 }
 
 
 export type IAntiforgeryMetadata = IAntiforgeryMetadata$instance;
 
 export interface IAntiforgeryValidationFeature$instance {
-    readonly isValid: boolean;
-    readonly error: Exception | undefined;
+    readonly IsValid: boolean;
+    readonly Error: Exception | undefined;
 }
 
 
 export type IAntiforgeryValidationFeature = IAntiforgeryValidationFeature$instance;
 
 export interface AntiforgeryOptions$instance {
-    cookie: CookieBuilder;
-    formFieldName: string;
-    get headerName(): string | undefined;
-    set headerName(value: string);
-    suppressReadingTokenFromFormBody: boolean;
-    suppressXFrameOptionsHeader: boolean;
+    Cookie: CookieBuilder;
+    FormFieldName: string;
+    get HeaderName(): string | undefined;
+    set HeaderName(value: string);
+    SuppressReadingTokenFromFormBody: boolean;
+    SuppressXFrameOptionsHeader: boolean;
 }
 
 
 export const AntiforgeryOptions: {
     new(): AntiforgeryOptions;
-    readonly defaultCookiePrefix: string;
+    readonly DefaultCookiePrefix: string;
 };
 
 
 export type AntiforgeryOptions = AntiforgeryOptions$instance;
 
 export interface AntiforgeryTokenSet$instance {
-    readonly cookieToken: string | undefined;
-    readonly formFieldName: string;
-    readonly headerName: string | undefined;
-    readonly requestToken: string | undefined;
+    readonly CookieToken: string | undefined;
+    readonly FormFieldName: string;
+    readonly HeaderName: string | undefined;
+    readonly RequestToken: string | undefined;
 }
 
 
@@ -92,7 +92,7 @@ export const AntiforgeryValidationException: {
 export type AntiforgeryValidationException = AntiforgeryValidationException$instance;
 
 export interface RequireAntiforgeryTokenAttribute$instance extends Attribute {
-    readonly requiresValidation: boolean;
+    readonly RequiresValidation: boolean;
 }
 
 

@@ -1,62 +1,74 @@
 {
   "namespace": "Microsoft.AspNetCore.DataProtection",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.DataProtection",
+    "Microsoft.AspNetCore.DataProtection.Abstractions",
+    "Microsoft.AspNetCore.DataProtection.Extensions"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
       "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
-      "tsEmitName": "IDataProtectionBuilder",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder::Services:Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "Services",
-          "tsEmitName": "services",
           "metadataToken": 385875970,
           "canonicalSignature": ":Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Services|:Microsoft.Extensions.DependencyInjection.IServiceCollection|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "services",
-          "isStatic": false,
-          "tsSignatureId": "Services|:Microsoft.Extensions.DependencyInjection.IServiceCollection|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 385875970
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
       "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
-      "tsEmitName": "IDataProtectionProvider",
       "assemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -65,37 +77,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createProtector",
-          "isStatic": false,
-          "tsSignatureId": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663333
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtector",
       "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtector",
-      "tsEmitName": "IDataProtector",
       "assemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtector::Protect(System.Byte[]):System.Byte[]",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663334,
           "canonicalSignature": "(System.Byte[]):System.Byte[]",
           "normalizedSignature": "Protect|(System.Byte[]):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -103,13 +113,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -118,47 +133,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "protect",
-          "isStatic": false,
-          "tsSignatureId": "Protect|(System.Byte[]):System.Byte[]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663334
-          }
-        },
-        {
-          "tsName": "createProtector",
-          "isStatic": false,
-          "tsSignatureId": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663333
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.IPersistedDataProtector",
       "clrName": "Microsoft.AspNetCore.DataProtection.IPersistedDataProtector",
-      "tsEmitName": "IPersistedDataProtector",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.IPersistedDataProtector::DangerousUnprotect(System.Byte[],System.Boolean,System.Boolean\u0026,System.Boolean\u0026):System.Byte[]",
           "clrName": "DangerousUnprotect",
-          "tsEmitName": "dangerousUnprotect",
           "metadataToken": 100663448,
           "canonicalSignature": "(System.Byte[],System.Boolean,System.Boolean\u0026,System.Boolean\u0026):System.Byte[]",
           "normalizedSignature": "DangerousUnprotect|(System.Byte[],System.Boolean,System.Boolean\u0026,System.Boolean\u0026):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IPersistedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -176,13 +179,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtector::Protect(System.Byte[]):System.Byte[]",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663334,
           "canonicalSignature": "(System.Byte[]):System.Byte[]",
           "normalizedSignature": "Protect|(System.Byte[]):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -190,13 +198,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -205,57 +218,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "dangerousUnprotect",
-          "isStatic": false,
-          "tsSignatureId": "DangerousUnprotect|(System.Byte[],System.Boolean,System.Boolean\u0026,System.Boolean\u0026):System.Byte[]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IPersistedDataProtector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663448
-          }
-        },
-        {
-          "tsName": "protect",
-          "isStatic": false,
-          "tsSignatureId": "Protect|(System.Byte[]):System.Byte[]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663334
-          }
-        },
-        {
-          "tsName": "createProtector",
-          "isStatic": false,
-          "tsSignatureId": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663333
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.ISecret",
       "clrName": "Microsoft.AspNetCore.DataProtection.ISecret",
-      "tsEmitName": "ISecret",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.ISecret::WriteSecretIntoBuffer(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteSecretIntoBuffer",
-          "tsEmitName": "writeSecretIntoBuffer",
           "metadataToken": 100663451,
           "canonicalSignature": "(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteSecretIntoBuffer|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -265,63 +256,53 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.ISecret::Length:System.Int32",
           "clrName": "Length",
-          "tsEmitName": "length",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Length|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "writeSecretIntoBuffer",
-          "isStatic": false,
-          "tsSignatureId": "WriteSecretIntoBuffer|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663451
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "length",
-          "isStatic": false,
-          "tsSignatureId": "Length|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 385875971
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
       "clrName": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
-      "tsEmitName": "ITimeLimitedDataProtector",
       "assemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector2",
           "metadataToken": 100663315,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "normalizedSignature": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -329,13 +310,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector::Protect(System.Byte[],System.DateTimeOffset):System.Byte[]",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663316,
           "canonicalSignature": "(System.Byte[],System.DateTimeOffset):System.Byte[]",
           "normalizedSignature": "Protect|(System.Byte[],System.DateTimeOffset):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -343,13 +329,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector::Unprotect(System.Byte[],System.DateTimeOffset\u0026):System.Byte[]",
           "clrName": "Unprotect",
-          "tsEmitName": "unprotect",
           "metadataToken": 100663317,
           "canonicalSignature": "(System.Byte[],System.DateTimeOffset\u0026):System.Byte[]",
           "normalizedSignature": "Unprotect|(System.Byte[],System.DateTimeOffset\u0026):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false,
@@ -363,13 +354,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtector::Protect(System.Byte[]):System.Byte[]",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663334,
           "canonicalSignature": "(System.Byte[]):System.Byte[]",
           "normalizedSignature": "Protect|(System.Byte[]):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -377,13 +373,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -392,79 +393,36 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createProtector2",
-          "isStatic": false,
-          "tsSignatureId": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663315
-          }
-        },
-        {
-          "tsName": "protect",
-          "isStatic": false,
-          "tsSignatureId": "Protect|(System.Byte[],System.DateTimeOffset):System.Byte[]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663316
-          }
-        },
-        {
-          "tsName": "unprotect",
-          "isStatic": false,
-          "tsSignatureId": "Unprotect|(System.Byte[],System.DateTimeOffset\u0026):System.Byte[]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663317
-          }
-        },
-        {
-          "tsName": "protect",
-          "isStatic": false,
-          "tsSignatureId": "Protect|(System.Byte[]):System.Byte[]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663334
-          }
-        },
-        {
-          "tsName": "createProtector",
-          "isStatic": false,
-          "tsSignatureId": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663333
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
       "clrName": "Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
-      "tsEmitName": "DataProtectionOptions",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionOptions::ApplicationDiscriminator:System.String",
           "clrName": "ApplicationDiscriminator",
-          "tsEmitName": "applicationDiscriminator",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationDiscriminator|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -482,48 +440,35 @@
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "applicationDiscriminator",
-          "isStatic": false,
-          "tsSignatureId": "ApplicationDiscriminator|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 385875969
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663424
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
       "clrName": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
-      "tsEmitName": "EphemeralDataProtectionProvider",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector",
           "metadataToken": 100663428,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -531,16 +476,22 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector$view",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider"
         }
       ],
       "properties": [],
@@ -567,67 +518,35 @@
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "createProtector",
-          "isStatic": false,
-          "tsSignatureId": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663428
-          }
-        },
-        {
-          "tsName": "createProtector$view",
-          "isStatic": false,
-          "tsSignatureId": "CreateProtector|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663333
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663426
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663427
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Secret",
       "clrName": "Microsoft.AspNetCore.DataProtection.Secret",
-      "tsEmitName": "Secret",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Secret::Dispose():System.Void",
           "clrName": "Dispose",
-          "tsEmitName": "dispose",
           "metadataToken": 100663472,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -635,13 +554,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Secret::Random(System.Int32):Microsoft.AspNetCore.DataProtection.Secret",
           "clrName": "Random",
-          "tsEmitName": "random",
           "metadataToken": 100663475,
           "canonicalSignature": "(System.Int32):Microsoft.AspNetCore.DataProtection.Secret",
           "normalizedSignature": "Random|(System.Int32):Microsoft.AspNetCore.DataProtection.Secret|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -649,13 +573,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Secret::WriteSecretIntoBuffer(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteSecretIntoBuffer",
-          "tsEmitName": "writeSecretIntoBuffer",
           "metadataToken": 100663477,
           "canonicalSignature": "(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteSecretIntoBuffer|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -663,13 +592,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Secret::WriteSecretIntoBuffer(System.Byte*,System.Int32):System.Void",
           "clrName": "WriteSecretIntoBuffer",
-          "tsEmitName": "writeSecretIntoBuffer",
           "metadataToken": 100663478,
           "canonicalSignature": "(System.Byte*,System.Int32):System.Void",
           "normalizedSignature": "WriteSecretIntoBuffer|(System.Byte*,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -677,44 +611,59 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.ISecret::WriteSecretIntoBuffer(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "WriteSecretIntoBuffer",
-          "tsEmitName": "writeSecretIntoBuffer$view",
           "metadataToken": 100663451,
           "canonicalSignature": "(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "WriteSecretIntoBuffer|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.DataProtection.ISecret"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Secret::Length:System.Int32",
           "clrName": "Length",
-          "tsEmitName": "length",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Length|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.ISecret::Length:System.Int32",
           "clrName": "Length",
-          "tsEmitName": "length$view",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Length|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -762,137 +711,35 @@
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "dispose",
-          "isStatic": false,
-          "tsSignatureId": "Dispose|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663472
-          }
-        },
-        {
-          "tsName": "random",
-          "isStatic": true,
-          "tsSignatureId": "Random|(System.Int32):Microsoft.AspNetCore.DataProtection.Secret|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663475
-          }
-        },
-        {
-          "tsName": "writeSecretIntoBuffer",
-          "isStatic": false,
-          "tsSignatureId": "WriteSecretIntoBuffer|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663477
-          }
-        },
-        {
-          "tsName": "writeSecretIntoBuffer",
-          "isStatic": false,
-          "tsSignatureId": "WriteSecretIntoBuffer|(System.Byte*,System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663478
-          }
-        },
-        {
-          "tsName": "writeSecretIntoBuffer$view",
-          "isStatic": false,
-          "tsSignatureId": "WriteSecretIntoBuffer|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663451
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "length",
-          "isStatic": false,
-          "tsSignatureId": "Length|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 385875975
-          }
-        },
-        {
-          "tsName": "length$view",
-          "isStatic": false,
-          "tsSignatureId": "Length|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 385875971
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663467
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Byte[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663468
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Byte*,System.Int32):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663469
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.DataProtection.ISecret):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663470
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
       "clrName": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
-      "tsEmitName": "DataProtectionAdvancedExtensions",
       "assemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions::Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.Byte[],System.TimeSpan):System.Byte[]",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663303,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.Byte[],System.TimeSpan):System.Byte[]",
           "normalizedSignature": "Protect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.Byte[],System.TimeSpan):System.Byte[]|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -900,13 +747,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions::Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset):System.String",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663304,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset):System.String",
           "normalizedSignature": "Protect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -914,13 +766,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions::Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.TimeSpan):System.String",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663305,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.TimeSpan):System.String",
           "normalizedSignature": "Protect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.TimeSpan):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -928,13 +785,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions::ToTimeLimitedDataProtector(Microsoft.AspNetCore.DataProtection.IDataProtector):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "clrName": "ToTimeLimitedDataProtector",
-          "tsEmitName": "toTimeLimitedDataProtector",
           "metadataToken": 100663306,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtector):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "normalizedSignature": "ToTimeLimitedDataProtector|(Microsoft.AspNetCore.DataProtection.IDataProtector):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -942,13 +804,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions::Unprotect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset\u0026):System.String",
           "clrName": "Unprotect",
-          "tsEmitName": "unprotect",
           "metadataToken": 100663307,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset\u0026):System.String",
           "normalizedSignature": "Unprotect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset\u0026):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true,
@@ -963,77 +830,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "protect",
-          "isStatic": true,
-          "tsSignatureId": "Protect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.Byte[],System.TimeSpan):System.Byte[]|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663303
-          }
-        },
-        {
-          "tsName": "protect",
-          "isStatic": true,
-          "tsSignatureId": "Protect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663304
-          }
-        },
-        {
-          "tsName": "protect",
-          "isStatic": true,
-          "tsSignatureId": "Protect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.TimeSpan):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663305
-          }
-        },
-        {
-          "tsName": "toTimeLimitedDataProtector",
-          "isStatic": true,
-          "tsSignatureId": "ToTimeLimitedDataProtector|(Microsoft.AspNetCore.DataProtection.IDataProtector):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663306
-          }
-        },
-        {
-          "tsName": "unprotect",
-          "isStatic": true,
-          "tsSignatureId": "Unprotect|(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset\u0026):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663307
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
       "clrName": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-      "tsEmitName": "DataProtectionBuilderExtensions",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::SetApplicationName(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "SetApplicationName",
-          "tsEmitName": "setApplicationName",
           "metadataToken": 100663400,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "SetApplicationName|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1041,13 +866,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::AddKeyEscrowSink(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "AddKeyEscrowSink",
-          "tsEmitName": "addKeyEscrowSink",
           "metadataToken": 100663401,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "AddKeyEscrowSink|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1055,13 +885,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::AddKeyEscrowSink(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "AddKeyEscrowSink",
-          "tsEmitName": "addKeyEscrowSink",
           "metadataToken": 100663402,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "AddKeyEscrowSink|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1069,13 +904,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::AddKeyEscrowSink(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "AddKeyEscrowSink",
-          "tsEmitName": "addKeyEscrowSink",
           "metadataToken": 100663403,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "AddKeyEscrowSink|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1083,13 +923,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::AddKeyManagementOptions(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Action_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "AddKeyManagementOptions",
-          "tsEmitName": "addKeyManagementOptions",
           "metadataToken": 100663404,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Action_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "AddKeyManagementOptions|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Action_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1097,13 +942,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::DisableAutomaticKeyGeneration(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "DisableAutomaticKeyGeneration",
-          "tsEmitName": "disableAutomaticKeyGeneration",
           "metadataToken": 100663405,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "DisableAutomaticKeyGeneration|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1111,13 +961,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::PersistKeysToFileSystem(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "PersistKeysToFileSystem",
-          "tsEmitName": "persistKeysToFileSystem",
           "metadataToken": 100663406,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "PersistKeysToFileSystem|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1125,13 +980,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::PersistKeysToRegistry(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.Win32.RegistryKey):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "PersistKeysToRegistry",
-          "tsEmitName": "persistKeysToRegistry",
           "metadataToken": 100663407,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.Win32.RegistryKey):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "PersistKeysToRegistry|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.Win32.RegistryKey):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1139,13 +999,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::ProtectKeysWithCertificate(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "ProtectKeysWithCertificate",
-          "tsEmitName": "protectKeysWithCertificate",
           "metadataToken": 100663408,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "ProtectKeysWithCertificate|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1153,13 +1018,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::ProtectKeysWithCertificate(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "ProtectKeysWithCertificate",
-          "tsEmitName": "protectKeysWithCertificate",
           "metadataToken": 100663409,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "ProtectKeysWithCertificate|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1167,13 +1037,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::UnprotectKeysWithAnyCertificate(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2[]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "UnprotectKeysWithAnyCertificate",
-          "tsEmitName": "unprotectKeysWithAnyCertificate",
           "metadataToken": 100663410,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2[]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "UnprotectKeysWithAnyCertificate|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2[]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1181,13 +1056,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::ProtectKeysWithDpapi(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "ProtectKeysWithDpapi",
-          "tsEmitName": "protectKeysWithDpapi",
           "metadataToken": 100663411,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "ProtectKeysWithDpapi|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1195,13 +1075,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::ProtectKeysWithDpapi(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Boolean):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "ProtectKeysWithDpapi",
-          "tsEmitName": "protectKeysWithDpapi",
           "metadataToken": 100663412,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Boolean):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "ProtectKeysWithDpapi|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Boolean):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1209,13 +1094,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::ProtectKeysWithDpapiNG(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "ProtectKeysWithDpapiNG",
-          "tsEmitName": "protectKeysWithDpapiNG",
           "metadataToken": 100663413,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "ProtectKeysWithDpapiNG|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1223,13 +1113,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::ProtectKeysWithDpapiNG(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String,Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "ProtectKeysWithDpapiNG",
-          "tsEmitName": "protectKeysWithDpapiNG",
           "metadataToken": 100663414,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String,Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "ProtectKeysWithDpapiNG|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String,Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1237,13 +1132,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::SetDefaultKeyLifetime(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.TimeSpan):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "SetDefaultKeyLifetime",
-          "tsEmitName": "setDefaultKeyLifetime",
           "metadataToken": 100663415,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.TimeSpan):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "SetDefaultKeyLifetime|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.TimeSpan):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1251,13 +1151,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::UseCryptographicAlgorithms(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "UseCryptographicAlgorithms",
-          "tsEmitName": "useCryptographicAlgorithms",
           "metadataToken": 100663416,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "UseCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1265,13 +1170,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::UseCustomCryptographicAlgorithms(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "UseCustomCryptographicAlgorithms",
-          "tsEmitName": "useCustomCryptographicAlgorithms",
           "metadataToken": 100663417,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "UseCustomCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1279,13 +1189,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::UseCustomCryptographicAlgorithms(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngGcmAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "UseCustomCryptographicAlgorithms",
-          "tsEmitName": "useCustomCryptographicAlgorithms",
           "metadataToken": 100663418,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngGcmAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "UseCustomCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngGcmAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1293,13 +1208,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::UseCustomCryptographicAlgorithms(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.ManagedAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "UseCustomCryptographicAlgorithms",
-          "tsEmitName": "useCustomCryptographicAlgorithms",
           "metadataToken": 100663419,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.ManagedAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "UseCustomCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.ManagedAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1307,13 +1227,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::UseEphemeralDataProtectionProvider(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "clrName": "UseEphemeralDataProtectionProvider",
-          "tsEmitName": "useEphemeralDataProtectionProvider",
           "metadataToken": 100663421,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "normalizedSignature": "UseEphemeralDataProtectionProvider|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1322,237 +1247,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "setApplicationName",
-          "isStatic": true,
-          "tsSignatureId": "SetApplicationName|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663400
-          }
-        },
-        {
-          "tsName": "addKeyEscrowSink",
-          "isStatic": true,
-          "tsSignatureId": "AddKeyEscrowSink|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663401
-          }
-        },
-        {
-          "tsName": "addKeyEscrowSink",
-          "isStatic": true,
-          "tsSignatureId": "AddKeyEscrowSink|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663402
-          }
-        },
-        {
-          "tsName": "addKeyEscrowSink",
-          "isStatic": true,
-          "tsSignatureId": "AddKeyEscrowSink|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663403
-          }
-        },
-        {
-          "tsName": "addKeyManagementOptions",
-          "isStatic": true,
-          "tsSignatureId": "AddKeyManagementOptions|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Action_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663404
-          }
-        },
-        {
-          "tsName": "disableAutomaticKeyGeneration",
-          "isStatic": true,
-          "tsSignatureId": "DisableAutomaticKeyGeneration|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663405
-          }
-        },
-        {
-          "tsName": "persistKeysToFileSystem",
-          "isStatic": true,
-          "tsSignatureId": "PersistKeysToFileSystem|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663406
-          }
-        },
-        {
-          "tsName": "persistKeysToRegistry",
-          "isStatic": true,
-          "tsSignatureId": "PersistKeysToRegistry|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.Win32.RegistryKey):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663407
-          }
-        },
-        {
-          "tsName": "protectKeysWithCertificate",
-          "isStatic": true,
-          "tsSignatureId": "ProtectKeysWithCertificate|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663408
-          }
-        },
-        {
-          "tsName": "protectKeysWithCertificate",
-          "isStatic": true,
-          "tsSignatureId": "ProtectKeysWithCertificate|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663409
-          }
-        },
-        {
-          "tsName": "unprotectKeysWithAnyCertificate",
-          "isStatic": true,
-          "tsSignatureId": "UnprotectKeysWithAnyCertificate|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2[]):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663410
-          }
-        },
-        {
-          "tsName": "protectKeysWithDpapi",
-          "isStatic": true,
-          "tsSignatureId": "ProtectKeysWithDpapi|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663411
-          }
-        },
-        {
-          "tsName": "protectKeysWithDpapi",
-          "isStatic": true,
-          "tsSignatureId": "ProtectKeysWithDpapi|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.Boolean):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663412
-          }
-        },
-        {
-          "tsName": "protectKeysWithDpapiNG",
-          "isStatic": true,
-          "tsSignatureId": "ProtectKeysWithDpapiNG|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663413
-          }
-        },
-        {
-          "tsName": "protectKeysWithDpapiNG",
-          "isStatic": true,
-          "tsSignatureId": "ProtectKeysWithDpapiNG|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String,Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663414
-          }
-        },
-        {
-          "tsName": "setDefaultKeyLifetime",
-          "isStatic": true,
-          "tsSignatureId": "SetDefaultKeyLifetime|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.TimeSpan):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663415
-          }
-        },
-        {
-          "tsName": "useCryptographicAlgorithms",
-          "isStatic": true,
-          "tsSignatureId": "UseCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663416
-          }
-        },
-        {
-          "tsName": "useCustomCryptographicAlgorithms",
-          "isStatic": true,
-          "tsSignatureId": "UseCustomCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663417
-          }
-        },
-        {
-          "tsName": "useCustomCryptographicAlgorithms",
-          "isStatic": true,
-          "tsSignatureId": "UseCustomCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngGcmAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663418
-          }
-        },
-        {
-          "tsName": "useCustomCryptographicAlgorithms",
-          "isStatic": true,
-          "tsSignatureId": "UseCustomCryptographicAlgorithms|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.ManagedAuthenticatedEncryptorConfiguration):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663419
-          }
-        },
-        {
-          "tsName": "useEphemeralDataProtectionProvider",
-          "isStatic": true,
-          "tsSignatureId": "UseEphemeralDataProtectionProvider|(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663421
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
       "clrName": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-      "tsEmitName": "DataProtectionCommonExtensions",
       "assemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::CreateProtector(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector",
           "metadataToken": 100663324,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1560,13 +1283,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::CreateProtector(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "CreateProtector",
-          "tsEmitName": "createProtector",
           "metadataToken": 100663325,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "CreateProtector|(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1574,13 +1302,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::GetDataProtectionProvider(System.IServiceProvider):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "clrName": "GetDataProtectionProvider",
-          "tsEmitName": "getDataProtectionProvider",
           "metadataToken": 100663326,
           "canonicalSignature": "(System.IServiceProvider):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "GetDataProtectionProvider|(System.IServiceProvider):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1588,13 +1321,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::GetDataProtector(System.IServiceProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "GetDataProtector",
-          "tsEmitName": "getDataProtector",
           "metadataToken": 100663327,
           "canonicalSignature": "(System.IServiceProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "GetDataProtector|(System.IServiceProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1602,13 +1340,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::GetDataProtector(System.IServiceProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "clrName": "GetDataProtector",
-          "tsEmitName": "getDataProtector",
           "metadataToken": 100663328,
           "canonicalSignature": "(System.IServiceProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector",
           "normalizedSignature": "GetDataProtector|(System.IServiceProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1616,13 +1359,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::Protect(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String",
           "clrName": "Protect",
-          "tsEmitName": "protect",
           "metadataToken": 100663329,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String",
           "normalizedSignature": "Protect|(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1630,13 +1378,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::Unprotect(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String",
           "clrName": "Unprotect",
-          "tsEmitName": "unprotect",
           "metadataToken": 100663330,
           "canonicalSignature": "(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String",
           "normalizedSignature": "Unprotect|(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1645,97 +1398,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createProtector",
-          "isStatic": true,
-          "tsSignatureId": "CreateProtector|(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663324
-          }
-        },
-        {
-          "tsName": "createProtector",
-          "isStatic": true,
-          "tsSignatureId": "CreateProtector|(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663325
-          }
-        },
-        {
-          "tsName": "getDataProtectionProvider",
-          "isStatic": true,
-          "tsSignatureId": "GetDataProtectionProvider|(System.IServiceProvider):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663326
-          }
-        },
-        {
-          "tsName": "getDataProtector",
-          "isStatic": true,
-          "tsSignatureId": "GetDataProtector|(System.IServiceProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663327
-          }
-        },
-        {
-          "tsName": "getDataProtector",
-          "isStatic": true,
-          "tsSignatureId": "GetDataProtector|(System.IServiceProvider,System.String,System.String[]):Microsoft.AspNetCore.DataProtection.IDataProtector|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663328
-          }
-        },
-        {
-          "tsName": "protect",
-          "isStatic": true,
-          "tsSignatureId": "Protect|(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663329
-          }
-        },
-        {
-          "tsName": "unprotect",
-          "isStatic": true,
-          "tsSignatureId": "Unprotect|(Microsoft.AspNetCore.DataProtection.IDataProtector,System.String):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
-            "metadataToken": 100663330
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
       "clrName": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
-      "tsEmitName": "DataProtectionProvider",
       "assemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider::Create(System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663308,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "Create|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1743,13 +1434,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider::Create(System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663309,
           "canonicalSignature": "(System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "Create|(System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1757,13 +1453,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider::Create(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663310,
           "canonicalSignature": "(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "Create|(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1771,13 +1472,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider::Create(System.String,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663311,
           "canonicalSignature": "(System.String,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "Create|(System.String,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1785,13 +1491,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider::Create(System.IO.DirectoryInfo,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663312,
           "canonicalSignature": "(System.IO.DirectoryInfo,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "Create|(System.IO.DirectoryInfo,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1799,13 +1510,18 @@
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider::Create(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663313,
           "canonicalSignature": "(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "normalizedSignature": "Create|(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1814,87 +1530,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663308
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.IO.DirectoryInfo):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663309
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663310
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.String,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663311
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.IO.DirectoryInfo,System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663312
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.IO.DirectoryInfo,System.Action_1[[Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Security.Cryptography.X509Certificates.X509Certificate2):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
-            "metadataToken": 100663313
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionUtilityExtensions",
       "clrName": "Microsoft.AspNetCore.DataProtection.DataProtectionUtilityExtensions",
-      "tsEmitName": "DataProtectionUtilityExtensions",
       "assemblyName": "Microsoft.AspNetCore.DataProtection",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionUtilityExtensions::GetApplicationUniqueIdentifier(System.IServiceProvider):System.String",
           "clrName": "GetApplicationUniqueIdentifier",
-          "tsEmitName": "getApplicationUniqueIdentifier",
           "metadataToken": 100663425,
           "canonicalSignature": "(System.IServiceProvider):System.String",
           "normalizedSignature": "GetApplicationUniqueIdentifier|(System.IServiceProvider):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionUtilityExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1903,19 +1567,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getApplicationUniqueIdentifier",
-          "isStatic": true,
-          "tsSignatureId": "GetApplicationUniqueIdentifier|(System.IServiceProvider):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionUtilityExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
-            "metadataToken": 100663425
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

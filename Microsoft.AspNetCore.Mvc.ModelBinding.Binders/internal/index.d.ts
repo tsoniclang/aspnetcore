@@ -20,8 +20,8 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface ArrayModelBinder_1$instance<TElement> extends CollectionModelBinder_1$instance<TElement> {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
-    canCreateInstance(targetType: Type): boolean;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
+    CanCreateInstance(targetType: Type): boolean;
 }
 
 
@@ -41,7 +41,7 @@ export type ArrayModelBinder_1<TElement> = ArrayModelBinder_1$instance<TElement>
 
 
 export interface ArrayModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -60,7 +60,7 @@ export type ArrayModelBinderProvider = ArrayModelBinderProvider$instance & __Arr
 
 
 export interface BinderTypeModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -79,7 +79,7 @@ export type BinderTypeModelBinder = BinderTypeModelBinder$instance & __BinderTyp
 
 
 export interface BinderTypeModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -98,7 +98,7 @@ export type BinderTypeModelBinderProvider = BinderTypeModelBinderProvider$instan
 
 
 export interface BodyModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -119,7 +119,7 @@ export type BodyModelBinder = BodyModelBinder$instance & __BodyModelBinder$views
 
 
 export interface BodyModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -140,7 +140,7 @@ export type BodyModelBinderProvider = BodyModelBinderProvider$instance & __BodyM
 
 
 export interface ByteArrayModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -159,7 +159,7 @@ export type ByteArrayModelBinder = ByteArrayModelBinder$instance & __ByteArrayMo
 
 
 export interface ByteArrayModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -178,7 +178,7 @@ export type ByteArrayModelBinderProvider = ByteArrayModelBinderProvider$instance
 
 
 export interface CancellationTokenModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -197,7 +197,7 @@ export type CancellationTokenModelBinder = CancellationTokenModelBinder$instance
 
 
 export interface CancellationTokenModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -216,8 +216,8 @@ export type CancellationTokenModelBinderProvider = CancellationTokenModelBinderP
 
 
 export interface CollectionModelBinder_1$instance<TElement> {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
-    canCreateInstance(targetType: Type): boolean;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
+    CanCreateInstance(targetType: Type): boolean;
 }
 
 
@@ -237,7 +237,7 @@ export type CollectionModelBinder_1<TElement> = CollectionModelBinder_1$instance
 
 
 export interface CollectionModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -256,7 +256,7 @@ export type CollectionModelBinderProvider = CollectionModelBinderProvider$instan
 
 
 export interface ComplexObjectModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -275,7 +275,7 @@ export type ComplexObjectModelBinder = ComplexObjectModelBinder$instance & __Com
 
 
 export interface ComplexObjectModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -294,7 +294,7 @@ export type ComplexObjectModelBinderProvider = ComplexObjectModelBinderProvider$
 
 
 export interface ComplexTypeModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -314,7 +314,7 @@ export type ComplexTypeModelBinder = ComplexTypeModelBinder$instance & __Complex
 
 
 export interface ComplexTypeModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -333,7 +333,7 @@ export type ComplexTypeModelBinderProvider = ComplexTypeModelBinderProvider$inst
 
 
 export interface DateTimeModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -352,7 +352,7 @@ export type DateTimeModelBinder = DateTimeModelBinder$instance & __DateTimeModel
 
 
 export interface DateTimeModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -371,7 +371,7 @@ export type DateTimeModelBinderProvider = DateTimeModelBinderProvider$instance &
 
 
 export interface DecimalModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -390,8 +390,8 @@ export type DecimalModelBinder = DecimalModelBinder$instance & __DecimalModelBin
 
 
 export interface DictionaryModelBinder_2$instance<TKey, TValue> extends CollectionModelBinder_1$instance<KeyValuePair<TKey, TValue>> {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
-    canCreateInstance(targetType: Type): boolean;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
+    CanCreateInstance(targetType: Type): boolean;
 }
 
 
@@ -411,7 +411,7 @@ export type DictionaryModelBinder_2<TKey, TValue> = DictionaryModelBinder_2$inst
 
 
 export interface DictionaryModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -430,7 +430,7 @@ export type DictionaryModelBinderProvider = DictionaryModelBinderProvider$instan
 
 
 export interface DoubleModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -449,7 +449,7 @@ export type DoubleModelBinder = DoubleModelBinder$instance & __DoubleModelBinder
 
 
 export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -466,7 +466,7 @@ export type EnumTypeModelBinder = EnumTypeModelBinder$instance & __EnumTypeModel
 
 
 export interface EnumTypeModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -485,7 +485,7 @@ export type EnumTypeModelBinderProvider = EnumTypeModelBinderProvider$instance &
 
 
 export interface FloatingPointTypeModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -504,7 +504,7 @@ export type FloatingPointTypeModelBinderProvider = FloatingPointTypeModelBinderP
 
 
 export interface FloatModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -523,7 +523,7 @@ export type FloatModelBinder = FloatModelBinder$instance & __FloatModelBinder$vi
 
 
 export interface FormCollectionModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -542,7 +542,7 @@ export type FormCollectionModelBinder = FormCollectionModelBinder$instance & __F
 
 
 export interface FormCollectionModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -561,7 +561,7 @@ export type FormCollectionModelBinderProvider = FormCollectionModelBinderProvide
 
 
 export interface FormFileModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -580,7 +580,7 @@ export type FormFileModelBinder = FormFileModelBinder$instance & __FormFileModel
 
 
 export interface FormFileModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -599,7 +599,7 @@ export type FormFileModelBinderProvider = FormFileModelBinderProvider$instance &
 
 
 export interface HeaderModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -619,7 +619,7 @@ export type HeaderModelBinder = HeaderModelBinder$instance & __HeaderModelBinder
 
 
 export interface HeaderModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -638,7 +638,7 @@ export type HeaderModelBinderProvider = HeaderModelBinderProvider$instance & __H
 
 
 export interface KeyValuePairModelBinder_2$instance<TKey, TValue> {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -657,7 +657,7 @@ export type KeyValuePairModelBinder_2<TKey, TValue> = KeyValuePairModelBinder_2$
 
 
 export interface KeyValuePairModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -676,7 +676,7 @@ export type KeyValuePairModelBinderProvider = KeyValuePairModelBinderProvider$in
 
 
 export interface ServicesModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -695,7 +695,7 @@ export type ServicesModelBinder = ServicesModelBinder$instance & __ServicesModel
 
 
 export interface ServicesModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -714,7 +714,7 @@ export type ServicesModelBinderProvider = ServicesModelBinderProvider$instance &
 
 
 export interface SimpleTypeModelBinder$instance {
-    bindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
 
@@ -733,7 +733,7 @@ export type SimpleTypeModelBinder = SimpleTypeModelBinder$instance & __SimpleTyp
 
 
 export interface SimpleTypeModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 
@@ -752,7 +752,7 @@ export type SimpleTypeModelBinderProvider = SimpleTypeModelBinderProvider$instan
 
 
 export interface TryParseModelBinderProvider$instance {
-    getBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
+    GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
 

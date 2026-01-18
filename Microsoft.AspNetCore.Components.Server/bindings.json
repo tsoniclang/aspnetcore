@@ -1,151 +1,200 @@
 {
   "namespace": "Microsoft.AspNetCore.Components.Server",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components.Endpoints",
+    "Microsoft.AspNetCore.Components.Server"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions",
       "clrName": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-      "tsEmitName": "CircuitOptions",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::DisconnectedCircuitMaxRetained:System.Int32",
           "clrName": "DisconnectedCircuitMaxRetained",
-          "tsEmitName": "disconnectedCircuitMaxRetained",
           "metadataToken": 385876064,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "DisconnectedCircuitMaxRetained|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::DisconnectedCircuitRetentionPeriod:System.TimeSpan",
           "clrName": "DisconnectedCircuitRetentionPeriod",
-          "tsEmitName": "disconnectedCircuitRetentionPeriod",
           "metadataToken": 385876065,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "DisconnectedCircuitRetentionPeriod|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::PersistedCircuitInMemoryMaxRetained:System.Int32",
           "clrName": "PersistedCircuitInMemoryMaxRetained",
-          "tsEmitName": "persistedCircuitInMemoryMaxRetained",
           "metadataToken": 385876066,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "PersistedCircuitInMemoryMaxRetained|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::PersistedCircuitInMemoryRetentionPeriod:System.TimeSpan",
           "clrName": "PersistedCircuitInMemoryRetentionPeriod",
-          "tsEmitName": "persistedCircuitInMemoryRetentionPeriod",
           "metadataToken": 385876067,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "PersistedCircuitInMemoryRetentionPeriod|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::PersistedCircuitDistributedRetentionPeriod:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "PersistedCircuitDistributedRetentionPeriod",
-          "tsEmitName": "persistedCircuitDistributedRetentionPeriod",
           "metadataToken": 385876068,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "PersistedCircuitDistributedRetentionPeriod|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::HybridPersistenceCache:Microsoft.Extensions.Caching.Hybrid.HybridCache",
           "clrName": "HybridPersistenceCache",
-          "tsEmitName": "hybridPersistenceCache",
           "metadataToken": 385876069,
           "canonicalSignature": ":Microsoft.Extensions.Caching.Hybrid.HybridCache",
           "normalizedSignature": "HybridPersistenceCache|:Microsoft.Extensions.Caching.Hybrid.HybridCache|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::DetailedErrors:System.Boolean",
           "clrName": "DetailedErrors",
-          "tsEmitName": "detailedErrors",
           "metadataToken": 385876070,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "DetailedErrors|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::JSInteropDefaultCallTimeout:System.TimeSpan",
           "clrName": "JSInteropDefaultCallTimeout",
-          "tsEmitName": "jsInteropDefaultCallTimeout",
           "metadataToken": 385876071,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "JSInteropDefaultCallTimeout|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::MaxBufferedUnacknowledgedRenderBatches:System.Int32",
           "clrName": "MaxBufferedUnacknowledgedRenderBatches",
-          "tsEmitName": "maxBufferedUnacknowledgedRenderBatches",
           "metadataToken": 385876072,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxBufferedUnacknowledgedRenderBatches|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitOptions::RootComponents:Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "clrName": "RootComponents",
-          "tsEmitName": "rootComponents",
           "metadataToken": 385876073,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "normalizedSignature": "RootComponents|:Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -163,168 +212,73 @@
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "disconnectedCircuitMaxRetained",
-          "isStatic": false,
-          "tsSignatureId": "DisconnectedCircuitMaxRetained|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876064
-          }
-        },
-        {
-          "tsName": "disconnectedCircuitRetentionPeriod",
-          "isStatic": false,
-          "tsSignatureId": "DisconnectedCircuitRetentionPeriod|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876065
-          }
-        },
-        {
-          "tsName": "persistedCircuitInMemoryMaxRetained",
-          "isStatic": false,
-          "tsSignatureId": "PersistedCircuitInMemoryMaxRetained|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876066
-          }
-        },
-        {
-          "tsName": "persistedCircuitInMemoryRetentionPeriod",
-          "isStatic": false,
-          "tsSignatureId": "PersistedCircuitInMemoryRetentionPeriod|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876067
-          }
-        },
-        {
-          "tsName": "persistedCircuitDistributedRetentionPeriod",
-          "isStatic": false,
-          "tsSignatureId": "PersistedCircuitDistributedRetentionPeriod|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876068
-          }
-        },
-        {
-          "tsName": "hybridPersistenceCache",
-          "isStatic": false,
-          "tsSignatureId": "HybridPersistenceCache|:Microsoft.Extensions.Caching.Hybrid.HybridCache|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876069
-          }
-        },
-        {
-          "tsName": "detailedErrors",
-          "isStatic": false,
-          "tsSignatureId": "DetailedErrors|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876070
-          }
-        },
-        {
-          "tsName": "jsInteropDefaultCallTimeout",
-          "isStatic": false,
-          "tsSignatureId": "JSInteropDefaultCallTimeout|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876071
-          }
-        },
-        {
-          "tsName": "maxBufferedUnacknowledgedRenderBatches",
-          "isStatic": false,
-          "tsSignatureId": "MaxBufferedUnacknowledgedRenderBatches|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876072
-          }
-        },
-        {
-          "tsName": "rootComponents",
-          "isStatic": false,
-          "tsSignatureId": "RootComponents|:Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876073
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663851
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
       "clrName": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
-      "tsEmitName": "CircuitRootComponentOptions",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions::JSComponents:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore",
           "clrName": "JSComponents",
-          "tsEmitName": "jsComponents",
           "metadataToken": 385876075,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore",
           "normalizedSignature": "JSComponents|:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions::MaxJSRootComponents:System.Int32",
           "clrName": "MaxJSRootComponents",
-          "tsEmitName": "maxJSRootComponents",
           "metadataToken": 385876076,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxJSRootComponents|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration::JSComponents:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore",
           "clrName": "JSComponents",
-          "tsEmitName": "jsComponents$view",
           "metadataToken": 385876015,
           "canonicalSignature": ":Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore",
           "normalizedSignature": "JSComponents|:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -342,82 +296,55 @@
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "jsComponents",
-          "isStatic": false,
-          "tsSignatureId": "JSComponents|:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876075
-          }
-        },
-        {
-          "tsName": "maxJSRootComponents",
-          "isStatic": false,
-          "tsSignatureId": "MaxJSRootComponents|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876076
-          }
-        },
-        {
-          "tsName": "jsComponents$view",
-          "isStatic": false,
-          "tsSignatureId": "JSComponents|:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 385876015
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663855
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
       "clrName": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
-      "tsEmitName": "RevalidatingServerAuthenticationStateProvider",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider::SetAuthenticationState(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "SetAuthenticationState",
-          "tsEmitName": "setAuthenticationState$view",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "SetAuthenticationState|(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::SetAuthenticationState(System.Threading.Tasks.Task_1):System.Void",
           "clrName": "SetAuthenticationState",
-          "tsEmitName": "setAuthenticationState",
           "metadataToken": 0,
           "canonicalSignature": "(System.Threading.Tasks.Task_1):System.Void",
           "normalizedSignature": "SetAuthenticationState|(System.Threading.Tasks.Task_1):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -437,90 +364,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "setAuthenticationState$view",
-          "isStatic": false,
-          "tsSignatureId": "SetAuthenticationState|(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
-            "metadataToken": 100663386
-          }
-        },
-        {
-          "tsName": "setAuthenticationState",
-          "isStatic": false,
-          "tsSignatureId": "SetAuthenticationState|(System.Threading.Tasks.Task_1):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "getAuthenticationStateAsync2",
-          "isStatic": false,
-          "tsSignatureId": "GetAuthenticationStateAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-            "metadataToken": 100663620
-          }
-        },
-        {
-          "tsName": "getAuthenticationStateAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAuthenticationStateAsync|():System.Threading.Tasks.Task_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedEvents": [
-        {
-          "tsName": "authenticationStateChanged",
-          "isStatic": false,
-          "tsSignatureId": "AuthenticationStateChanged|Microsoft.AspNetCore.Components.Authorization.AuthenticationStateChangedHandler|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
-            "metadataToken": 335544322
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663872
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
       "clrName": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-      "tsEmitName": "ServerAuthenticationStateProvider",
       "assemblyName": "Microsoft.AspNetCore.Components.Endpoints",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider::GetAuthenticationStateAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetAuthenticationStateAsync",
-          "tsEmitName": "getAuthenticationStateAsync2",
           "metadataToken": 100663620,
           "canonicalSignature": "():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetAuthenticationStateAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
@@ -528,13 +400,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider::SetAuthenticationState(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "SetAuthenticationState",
-          "tsEmitName": "setAuthenticationState",
           "metadataToken": 100663621,
           "canonicalSignature": "(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "SetAuthenticationState|(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
@@ -542,27 +419,38 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider::SetAuthenticationState(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "SetAuthenticationState",
-          "tsEmitName": "setAuthenticationState$view",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "SetAuthenticationState|(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider::GetAuthenticationStateAsync():System.Threading.Tasks.Task_1",
           "clrName": "GetAuthenticationStateAsync",
-          "tsEmitName": "getAuthenticationStateAsync",
           "metadataToken": 0,
           "canonicalSignature": "():System.Threading.Tasks.Task_1",
           "normalizedSignature": "GetAuthenticationStateAsync|():System.Threading.Tasks.Task_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
@@ -582,120 +470,72 @@
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getAuthenticationStateAsync2",
-          "isStatic": false,
-          "tsSignatureId": "GetAuthenticationStateAsync|():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-            "metadataToken": 100663620
-          }
-        },
-        {
-          "tsName": "setAuthenticationState",
-          "isStatic": false,
-          "tsSignatureId": "SetAuthenticationState|(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-            "metadataToken": 100663621
-          }
-        },
-        {
-          "tsName": "setAuthenticationState$view",
-          "isStatic": false,
-          "tsSignatureId": "SetAuthenticationState|(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
-            "metadataToken": 100663386
-          }
-        },
-        {
-          "tsName": "getAuthenticationStateAsync",
-          "isStatic": false,
-          "tsSignatureId": "GetAuthenticationStateAsync|():System.Threading.Tasks.Task_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedEvents": [
-        {
-          "tsName": "authenticationStateChanged",
-          "isStatic": false,
-          "tsSignatureId": "AuthenticationStateChanged|Microsoft.AspNetCore.Components.Authorization.AuthenticationStateChangedHandler|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
-            "metadataToken": 335544322
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-            "metadataToken": 100663622
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
       "clrName": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
-      "tsEmitName": "ServerComponentsEndpointOptions",
       "assemblyName": "Microsoft.AspNetCore.Components.Server",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions::ContentSecurityFrameAncestorsPolicy:System.String",
           "clrName": "ContentSecurityFrameAncestorsPolicy",
-          "tsEmitName": "contentSecurityFrameAncestorsPolicy",
           "metadataToken": 385876057,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ContentSecurityFrameAncestorsPolicy|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions::DisableWebSocketCompression:System.Boolean",
           "clrName": "DisableWebSocketCompression",
-          "tsEmitName": "disableWebSocketCompression",
           "metadataToken": 385876058,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "DisableWebSocketCompression|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions::ConfigureWebSocketAcceptContext:System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Http.WebSocketAcceptContext,Microsoft.AspNetCore.Http.Features,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "ConfigureWebSocketAcceptContext",
-          "tsEmitName": "configureWebSocketAcceptContext",
           "metadataToken": 385876059,
           "canonicalSignature": ":System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Http.WebSocketAcceptContext,Microsoft.AspNetCore.Http.Features,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ConfigureWebSocketAcceptContext|:System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Http.WebSocketAcceptContext,Microsoft.AspNetCore.Http.Features,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -712,49 +552,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "contentSecurityFrameAncestorsPolicy",
-          "isStatic": false,
-          "tsSignatureId": "ContentSecurityFrameAncestorsPolicy|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876057
-          }
-        },
-        {
-          "tsName": "disableWebSocketCompression",
-          "isStatic": false,
-          "tsSignatureId": "DisableWebSocketCompression|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876058
-          }
-        },
-        {
-          "tsName": "configureWebSocketAcceptContext",
-          "isStatic": false,
-          "tsSignatureId": "ConfigureWebSocketAcceptContext|:System.Func_3[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Http.WebSocketAcceptContext,Microsoft.AspNetCore.Http.Features,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 385876059
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-            "metadataToken": 100663822
-          }
         }
       ]
     }

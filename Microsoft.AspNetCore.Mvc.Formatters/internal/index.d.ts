@@ -35,48 +35,48 @@ import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions
 import type { StringSegment } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export enum InputFormatterExceptionPolicy {
-    allExceptions = 0,
-    malformedInputExceptions = 1
+    AllExceptions = 0,
+    MalformedInputExceptions = 1
 }
 
 
 export interface IInputFormatter$instance {
-    canRead(context: InputFormatterContext): boolean;
-    readAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    CanRead(context: InputFormatterContext): boolean;
+    ReadAsync(context: InputFormatterContext): Task<InputFormatterResult>;
 }
 
 
 export type IInputFormatter = IInputFormatter$instance;
 
 export interface IInputFormatterExceptionPolicy$instance {
-    readonly exceptionPolicy: InputFormatterExceptionPolicy;
+    readonly ExceptionPolicy: InputFormatterExceptionPolicy;
 }
 
 
 export type IInputFormatterExceptionPolicy = IInputFormatterExceptionPolicy$instance;
 
 export interface IOutputFormatter$instance {
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    writeAsync(context: OutputFormatterWriteContext): Task;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
 }
 
 
 export type IOutputFormatter = IOutputFormatter$instance;
 
 export interface MediaType$instance {
-    readonly charset: StringSegment;
-    readonly encoding: Encoding | undefined;
-    readonly hasWildcard: boolean;
-    readonly matchesAllSubTypes: boolean;
-    readonly matchesAllSubTypesWithoutSuffix: boolean;
-    readonly matchesAllTypes: boolean;
-    readonly subType: StringSegment;
-    readonly subTypeSuffix: StringSegment;
-    readonly subTypeWithoutSuffix: StringSegment;
-    readonly type: StringSegment;
-    getParameter(parameterName: string): StringSegment;
-    getParameter(parameterName: StringSegment): StringSegment;
-    isSubsetOf(set: MediaType): boolean;
+    readonly Charset: StringSegment;
+    readonly Encoding: Encoding | undefined;
+    readonly HasWildcard: boolean;
+    readonly MatchesAllSubTypes: boolean;
+    readonly MatchesAllSubTypesWithoutSuffix: boolean;
+    readonly MatchesAllTypes: boolean;
+    readonly SubType: StringSegment;
+    readonly SubTypeSuffix: StringSegment;
+    readonly SubTypeWithoutSuffix: StringSegment;
+    readonly Type: StringSegment;
+    GetParameter(parameterName: string): StringSegment;
+    GetParameter(parameterName: StringSegment): StringSegment;
+    IsSubsetOf(set: MediaType): boolean;
 }
 
 
@@ -84,20 +84,20 @@ export const MediaType: {
     new(mediaType: string): MediaType;
     new(mediaType: StringSegment): MediaType;
     new(mediaType: string, offset: int, length: Nullable<System_Internal.Int32>): MediaType;
-    createMediaTypeSegmentWithQuality(mediaType: string, start: int): MediaTypeSegmentWithQuality;
-    getEncoding(mediaType: StringSegment): Encoding | undefined;
-    getEncoding(mediaType: string): Encoding | undefined;
-    replaceEncoding(mediaType: StringSegment, encoding: Encoding): string;
-    replaceEncoding(mediaType: string, encoding: Encoding): string;
+    CreateMediaTypeSegmentWithQuality(mediaType: string, start: int): MediaTypeSegmentWithQuality;
+    GetEncoding(mediaType: StringSegment): Encoding | undefined;
+    GetEncoding(mediaType: string): Encoding | undefined;
+    ReplaceEncoding(mediaType: StringSegment, encoding: Encoding): string;
+    ReplaceEncoding(mediaType: string, encoding: Encoding): string;
 };
 
 
 export type MediaType = MediaType$instance;
 
 export interface MediaTypeSegmentWithQuality$instance {
-    readonly mediaType: StringSegment;
-    readonly quality: double;
-    toString(): string;
+    readonly MediaType: StringSegment;
+    readonly Quality: double;
+    ToString(): string;
 }
 
 
@@ -109,11 +109,11 @@ export const MediaTypeSegmentWithQuality: {
 export type MediaTypeSegmentWithQuality = MediaTypeSegmentWithQuality$instance;
 
 export interface FormatFilter$instance extends IFilterMetadata {
-    getFormat(context: ActionContext): string | undefined;
-    onResourceExecuted(context: ResourceExecutedContext): void;
-    onResourceExecuting(context: ResourceExecutingContext): void;
-    onResultExecuted(context: ResultExecutedContext): void;
-    onResultExecuting(context: ResultExecutingContext): void;
+    GetFormat(context: ActionContext): string | undefined;
+    OnResourceExecuted(context: ResourceExecutedContext): void;
+    OnResourceExecuting(context: ResourceExecutingContext): void;
+    OnResultExecuted(context: ResultExecutedContext): void;
+    OnResultExecuting(context: ResultExecutingContext): void;
 }
 
 
@@ -133,8 +133,8 @@ export type FormatFilter = FormatFilter$instance & __FormatFilter$views;
 
 
 export interface FormatterCollection_1$instance<TFormatter> extends Collection<TFormatter> {
-    removeType<T extends TFormatter>(): void;
-    removeType(formatterType: Type): void;
+    RemoveType<T extends TFormatter>(): void;
+    RemoveType(formatterType: Type): void;
 }
 
 
@@ -147,10 +147,10 @@ export const FormatterCollection_1: {
 export type FormatterCollection_1<TFormatter> = FormatterCollection_1$instance<TFormatter>;
 
 export interface FormatterMappings$instance {
-    clearMediaTypeMappingForFormat(format: string): boolean;
-    getMediaTypeMappingForFormat(format: string): string | undefined;
-    setMediaTypeMappingForFormat(format: string, contentType: string): void;
-    setMediaTypeMappingForFormat(format: string, contentType: MediaTypeHeaderValue): void;
+    ClearMediaTypeMappingForFormat(format: string): boolean;
+    GetMediaTypeMappingForFormat(format: string): string | undefined;
+    SetMediaTypeMappingForFormat(format: string, contentType: string): void;
+    SetMediaTypeMappingForFormat(format: string, contentType: MediaTypeHeaderValue): void;
 }
 
 
@@ -162,9 +162,9 @@ export const FormatterMappings: {
 export type FormatterMappings = FormatterMappings$instance;
 
 export interface HttpNoContentOutputFormatter$instance {
-    treatNullValueAsNoContent: boolean;
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    writeAsync(context: OutputFormatterWriteContext): Task;
+    TreatNullValueAsNoContent: boolean;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
 }
 
 
@@ -183,11 +183,11 @@ export type HttpNoContentOutputFormatter = HttpNoContentOutputFormatter$instance
 
 
 export interface InputFormatter$instance {
-    readonly supportedMediaTypes: MediaTypeCollection;
-    canRead(context: InputFormatterContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    readAsync(context: InputFormatterContext): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    readonly SupportedMediaTypes: MediaTypeCollection;
+    CanRead(context: InputFormatterContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    ReadAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
 }
 
 
@@ -206,13 +206,13 @@ export type InputFormatter = InputFormatter$instance & __InputFormatter$views;
 
 
 export interface InputFormatterContext$instance {
-    readonly httpContext: HttpContext;
-    readonly metadata: ModelMetadata;
-    readonly modelName: string;
-    readonly modelState: ModelStateDictionary;
-    readonly modelType: Type;
-    readonly readerFactory: Func<Stream, Encoding, TextReader>;
-    readonly treatEmptyInputAsDefaultValue: boolean;
+    readonly HttpContext: HttpContext;
+    readonly Metadata: ModelMetadata;
+    readonly ModelName: string;
+    readonly ModelState: ModelStateDictionary;
+    readonly ModelType: Type;
+    readonly ReaderFactory: Func<Stream, Encoding, TextReader>;
+    readonly TreatEmptyInputAsDefaultValue: boolean;
 }
 
 
@@ -238,29 +238,29 @@ export const InputFormatterException: {
 export type InputFormatterException = InputFormatterException$instance;
 
 export interface InputFormatterResult$instance {
-    readonly hasError: boolean;
-    readonly isModelSet: boolean;
-    readonly model: unknown;
+    readonly HasError: boolean;
+    readonly IsModelSet: boolean;
+    readonly Model: unknown;
 }
 
 
 export const InputFormatterResult: {
     new(): InputFormatterResult;
-    failure(): InputFormatterResult;
-    failureAsync(): Task<InputFormatterResult>;
-    noValue(): InputFormatterResult;
-    noValueAsync(): Task<InputFormatterResult>;
-    success(model: unknown): InputFormatterResult;
-    successAsync(model: unknown): Task<InputFormatterResult>;
+    Failure(): InputFormatterResult;
+    FailureAsync(): Task<InputFormatterResult>;
+    NoValue(): InputFormatterResult;
+    NoValueAsync(): Task<InputFormatterResult>;
+    Success(model: unknown): InputFormatterResult;
+    SuccessAsync(model: unknown): Task<InputFormatterResult>;
 };
 
 
 export type InputFormatterResult = InputFormatterResult$instance;
 
 export interface MediaTypeCollection$instance extends Collection<System_Internal.String> {
-    add(item: MediaTypeHeaderValue): void;
-    insert(index: int, item: MediaTypeHeaderValue): void;
-    remove(item: MediaTypeHeaderValue): boolean;
+    Add(item: MediaTypeHeaderValue): void;
+    Insert(index: int, item: MediaTypeHeaderValue): void;
+    Remove(item: MediaTypeHeaderValue): boolean;
 }
 
 
@@ -272,12 +272,12 @@ export const MediaTypeCollection: {
 export type MediaTypeCollection = MediaTypeCollection$instance;
 
 export interface OutputFormatter$instance {
-    readonly supportedMediaTypes: MediaTypeCollection;
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    writeAsync(context: OutputFormatterWriteContext): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext): Task;
-    writeResponseHeaders(context: OutputFormatterWriteContext): void;
+    readonly SupportedMediaTypes: MediaTypeCollection;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseHeaders(context: OutputFormatterWriteContext): void;
 }
 
 
@@ -296,11 +296,11 @@ export type OutputFormatter = OutputFormatter$instance & __OutputFormatter$views
 
 
 export interface OutputFormatterCanWriteContext$instance {
-    contentType: StringSegment;
-    contentTypeIsServerDefined: boolean;
-    readonly httpContext: HttpContext;
-    readonly object: unknown | undefined;
-    readonly objectType: Type | undefined;
+    ContentType: StringSegment;
+    ContentTypeIsServerDefined: boolean;
+    readonly HttpContext: HttpContext;
+    readonly Object: unknown | undefined;
+    readonly ObjectType: Type | undefined;
 }
 
 
@@ -311,7 +311,7 @@ export const OutputFormatterCanWriteContext: {
 export type OutputFormatterCanWriteContext = OutputFormatterCanWriteContext$instance;
 
 export interface OutputFormatterWriteContext$instance extends OutputFormatterCanWriteContext {
-    readonly writerFactory: Func<Stream, Encoding, TextWriter>;
+    readonly WriterFactory: Func<Stream, Encoding, TextWriter>;
 }
 
 
@@ -323,8 +323,8 @@ export const OutputFormatterWriteContext: {
 export type OutputFormatterWriteContext = OutputFormatterWriteContext$instance;
 
 export interface StreamOutputFormatter$instance {
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    writeAsync(context: OutputFormatterWriteContext): Task;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
 }
 
 
@@ -343,11 +343,11 @@ export type StreamOutputFormatter = StreamOutputFormatter$instance & __StreamOut
 
 
 export interface StringOutputFormatter$instance extends TextOutputFormatter$instance {
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    writeAsync(context: OutputFormatterWriteContext): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext, encoding: Encoding): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext, encoding: Encoding): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
 }
 
 
@@ -365,12 +365,12 @@ export type StringOutputFormatter = StringOutputFormatter$instance & __StringOut
 
 
 export interface SystemTextJsonInputFormatter$instance extends TextInputFormatter$instance {
-    readonly serializerOptions: JsonSerializerOptions;
-    canRead(context: InputFormatterContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    readAsync(context: InputFormatterContext): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    readonly SerializerOptions: JsonSerializerOptions;
+    CanRead(context: InputFormatterContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    ReadAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
 }
 
 
@@ -391,12 +391,12 @@ export type SystemTextJsonInputFormatter = SystemTextJsonInputFormatter$instance
 
 
 export interface SystemTextJsonOutputFormatter$instance extends TextOutputFormatter$instance {
-    readonly serializerOptions: JsonSerializerOptions;
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    writeAsync(context: OutputFormatterWriteContext): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    readonly SerializerOptions: JsonSerializerOptions;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
 }
 
 
@@ -414,12 +414,12 @@ export type SystemTextJsonOutputFormatter = SystemTextJsonOutputFormatter$instan
 
 
 export interface TextInputFormatter$instance extends InputFormatter$instance {
-    readonly supportedEncodings: IList__System_Collections_Generic<Encoding>;
-    canRead(context: InputFormatterContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    readAsync(context: InputFormatterContext): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    readonly SupportedEncodings: IList__System_Collections_Generic<Encoding>;
+    CanRead(context: InputFormatterContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    ReadAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
 }
 
 
@@ -436,12 +436,12 @@ export type TextInputFormatter = TextInputFormatter$instance & __TextInputFormat
 
 
 export interface TextOutputFormatter$instance extends OutputFormatter$instance {
-    readonly supportedEncodings: IList__System_Collections_Generic<Encoding>;
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    selectCharacterEncoding(context: OutputFormatterWriteContext): Encoding;
-    writeAsync(context: OutputFormatterWriteContext): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    readonly SupportedEncodings: IList__System_Collections_Generic<Encoding>;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    SelectCharacterEncoding(context: OutputFormatterWriteContext): Encoding;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
 }
 
 
@@ -458,16 +458,16 @@ export type TextOutputFormatter = TextOutputFormatter$instance & __TextOutputFor
 
 
 export interface XmlDataContractSerializerInputFormatter$instance extends TextInputFormatter$instance {
-    readonly exceptionPolicy: InputFormatterExceptionPolicy;
-    maxDepth: int;
-    serializerSettings: DataContractSerializerSettings;
-    readonly wrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
-    readonly xmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
-    canRead(context: InputFormatterContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    readAsync(context: InputFormatterContext): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    readonly ExceptionPolicy: InputFormatterExceptionPolicy;
+    MaxDepth: int;
+    SerializerSettings: DataContractSerializerSettings;
+    readonly WrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
+    readonly XmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
+    CanRead(context: InputFormatterContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    ReadAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
 }
 
 
@@ -488,16 +488,16 @@ export type XmlDataContractSerializerInputFormatter = XmlDataContractSerializerI
 
 
 export interface XmlDataContractSerializerOutputFormatter$instance extends TextOutputFormatter$instance {
-    serializerSettings: DataContractSerializerSettings;
-    readonly wrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
-    readonly writerSettings: XmlWriterSettings;
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    createXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
-    createXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    writeAsync(context: OutputFormatterWriteContext): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    SerializerSettings: DataContractSerializerSettings;
+    readonly WrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
+    readonly WriterSettings: XmlWriterSettings;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
+    CreateXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
 }
 
 
@@ -518,15 +518,15 @@ export type XmlDataContractSerializerOutputFormatter = XmlDataContractSerializer
 
 
 export interface XmlSerializerInputFormatter$instance extends TextInputFormatter$instance {
-    readonly exceptionPolicy: InputFormatterExceptionPolicy;
-    maxDepth: int;
-    readonly wrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
-    readonly xmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
-    canRead(context: InputFormatterContext): boolean;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    readAsync(context: InputFormatterContext): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task<InputFormatterResult>;
-    readRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    readonly ExceptionPolicy: InputFormatterExceptionPolicy;
+    MaxDepth: int;
+    readonly WrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
+    readonly XmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
+    CanRead(context: InputFormatterContext): boolean;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    ReadAsync(context: InputFormatterContext): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext, encoding: Encoding): Task<InputFormatterResult>;
+    ReadRequestBodyAsync(context: InputFormatterContext): Task<InputFormatterResult>;
 }
 
 
@@ -547,15 +547,15 @@ export type XmlSerializerInputFormatter = XmlSerializerInputFormatter$instance &
 
 
 export interface XmlSerializerOutputFormatter$instance extends TextOutputFormatter$instance {
-    readonly wrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
-    readonly writerSettings: XmlWriterSettings;
-    canWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    createXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
-    createXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
-    getSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
-    writeAsync(context: OutputFormatterWriteContext): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
-    writeResponseBodyAsync(context: OutputFormatterWriteContext): Task;
+    readonly WrapperProviderFactories: IList__System_Collections_Generic<IWrapperProviderFactory>;
+    readonly WriterSettings: XmlWriterSettings;
+    CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
+    CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
+    CreateXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    WriteAsync(context: OutputFormatterWriteContext): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
+    WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
 }
 
 

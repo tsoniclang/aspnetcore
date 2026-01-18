@@ -19,22 +19,22 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Boolean as ClrBoolean, Func, Int32, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IClientModelValidator$instance {
-    addValidation(context: ClientModelValidationContext): void;
+    AddValidation(context: ClientModelValidationContext): void;
 }
 
 
 export type IClientModelValidator = IClientModelValidator$instance;
 
 export interface IClientModelValidatorProvider$instance {
-    createValidators(context: ClientValidatorProviderContext): void;
+    CreateValidators(context: ClientValidatorProviderContext): void;
 }
 
 
 export type IClientModelValidatorProvider = IClientModelValidatorProvider$instance;
 
 export interface IMetadataBasedModelValidatorProvider$instance extends IModelValidatorProvider {
-    createValidators(context: ModelValidatorProviderContext): void;
-    hasValidators(modelType: Type, validatorMetadata: IList<unknown>): boolean;
+    CreateValidators(context: ModelValidatorProviderContext): void;
+    HasValidators(modelType: Type, validatorMetadata: IList<unknown>): boolean;
 }
 
 
@@ -43,44 +43,44 @@ export interface IMetadataBasedModelValidatorProvider$instance extends IModelVal
 export type IMetadataBasedModelValidatorProvider = IMetadataBasedModelValidatorProvider$instance;
 
 export interface IModelValidator$instance {
-    validate(context: ModelValidationContext): IEnumerable__System_Collections_Generic<ModelValidationResult>;
+    Validate(context: ModelValidationContext): IEnumerable__System_Collections_Generic<ModelValidationResult>;
 }
 
 
 export type IModelValidator = IModelValidator$instance;
 
 export interface IModelValidatorProvider$instance {
-    createValidators(context: ModelValidatorProviderContext): void;
+    CreateValidators(context: ModelValidatorProviderContext): void;
 }
 
 
 export type IModelValidatorProvider = IModelValidatorProvider$instance;
 
 export interface IObjectModelValidator$instance {
-    validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown): void;
+    Validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown): void;
 }
 
 
 export type IObjectModelValidator = IObjectModelValidator$instance;
 
 export interface IPropertyValidationFilter$instance {
-    shouldValidateEntry(entry: ValidationEntry, parentEntry: ValidationEntry): boolean;
+    ShouldValidateEntry(entry: ValidationEntry, parentEntry: ValidationEntry): boolean;
 }
 
 
 export type IPropertyValidationFilter = IPropertyValidationFilter$instance;
 
 export interface IValidationStrategy$instance {
-    getChildren(metadata: ModelMetadata, key: string, model: unknown): IEnumerator<ValidationEntry>;
+    GetChildren(metadata: ModelMetadata, key: string, model: unknown): IEnumerator<ValidationEntry>;
 }
 
 
 export type IValidationStrategy = IValidationStrategy$instance;
 
 export interface ValidationEntry$instance {
-    readonly key: string;
-    readonly metadata: ModelMetadata;
-    readonly model: unknown;
+    readonly Key: string;
+    readonly Metadata: ModelMetadata;
+    readonly Model: unknown;
 }
 
 
@@ -93,7 +93,7 @@ export const ValidationEntry: {
 export type ValidationEntry = ValidationEntry$instance;
 
 export interface ClientModelValidationContext$instance extends ModelValidationContextBase {
-    readonly attributes: IDictionary<System_Internal.String, System_Internal.String>;
+    readonly Attributes: IDictionary<System_Internal.String, System_Internal.String>;
 }
 
 
@@ -105,7 +105,7 @@ export const ClientModelValidationContext: {
 export type ClientModelValidationContext = ClientModelValidationContext$instance;
 
 export interface ClientValidatorCache$instance {
-    getValidators(metadata: ModelMetadata, validatorProvider: IClientModelValidatorProvider): IReadOnlyList<IClientModelValidator>;
+    GetValidators(metadata: ModelMetadata, validatorProvider: IClientModelValidatorProvider): IReadOnlyList<IClientModelValidator>;
 }
 
 
@@ -117,10 +117,10 @@ export const ClientValidatorCache: {
 export type ClientValidatorCache = ClientValidatorCache$instance;
 
 export interface ClientValidatorItem$instance {
-    isReusable: boolean;
-    get validator(): IClientModelValidator | undefined;
-    set validator(value: IClientModelValidator);
-    readonly validatorMetadata: unknown;
+    IsReusable: boolean;
+    get Validator(): IClientModelValidator | undefined;
+    set Validator(value: IClientModelValidator);
+    readonly ValidatorMetadata: unknown;
 }
 
 
@@ -133,9 +133,9 @@ export const ClientValidatorItem: {
 export type ClientValidatorItem = ClientValidatorItem$instance;
 
 export interface ClientValidatorProviderContext$instance {
-    readonly modelMetadata: ModelMetadata;
-    readonly results: IList<ClientValidatorItem>;
-    readonly validatorMetadata: IReadOnlyList<unknown>;
+    readonly ModelMetadata: ModelMetadata;
+    readonly Results: IList<ClientValidatorItem>;
+    readonly ValidatorMetadata: IReadOnlyList<unknown>;
 }
 
 
@@ -147,8 +147,8 @@ export const ClientValidatorProviderContext: {
 export type ClientValidatorProviderContext = ClientValidatorProviderContext$instance;
 
 export interface CompositeClientModelValidatorProvider$instance {
-    readonly validatorProviders: IReadOnlyList<IClientModelValidatorProvider>;
-    createValidators(context: ClientValidatorProviderContext): void;
+    readonly ValidatorProviders: IReadOnlyList<IClientModelValidatorProvider>;
+    CreateValidators(context: ClientValidatorProviderContext): void;
 }
 
 
@@ -167,8 +167,8 @@ export type CompositeClientModelValidatorProvider = CompositeClientModelValidato
 
 
 export interface CompositeModelValidatorProvider$instance {
-    readonly validatorProviders: IList<IModelValidatorProvider>;
-    createValidators(context: ModelValidatorProviderContext): void;
+    readonly ValidatorProviders: IList<IModelValidatorProvider>;
+    CreateValidators(context: ModelValidatorProviderContext): void;
 }
 
 
@@ -187,8 +187,8 @@ export type CompositeModelValidatorProvider = CompositeModelValidatorProvider$in
 
 
 export interface ModelValidationContext$instance extends ModelValidationContextBase {
-    readonly container: unknown;
-    readonly model: unknown;
+    readonly Container: unknown;
+    readonly Model: unknown;
 }
 
 
@@ -200,9 +200,9 @@ export const ModelValidationContext: {
 export type ModelValidationContext = ModelValidationContext$instance;
 
 export interface ModelValidationContextBase$instance {
-    readonly actionContext: ActionContext;
-    readonly metadataProvider: IModelMetadataProvider;
-    readonly modelMetadata: ModelMetadata;
+    readonly ActionContext: ActionContext;
+    readonly MetadataProvider: IModelMetadataProvider;
+    readonly ModelMetadata: ModelMetadata;
 }
 
 
@@ -214,8 +214,8 @@ export const ModelValidationContextBase: {
 export type ModelValidationContextBase = ModelValidationContextBase$instance;
 
 export interface ModelValidationResult$instance {
-    readonly memberName: string;
-    readonly message: string;
+    readonly MemberName: string;
+    readonly Message: string;
 }
 
 
@@ -227,9 +227,9 @@ export const ModelValidationResult: {
 export type ModelValidationResult = ModelValidationResult$instance;
 
 export interface ModelValidatorProviderContext$instance {
-    modelMetadata: ModelMetadata;
-    readonly results: IList<ValidatorItem>;
-    readonly validatorMetadata: IReadOnlyList<unknown>;
+    ModelMetadata: ModelMetadata;
+    readonly Results: IList<ValidatorItem>;
+    readonly ValidatorMetadata: IReadOnlyList<unknown>;
 }
 
 
@@ -241,7 +241,7 @@ export const ModelValidatorProviderContext: {
 export type ModelValidatorProviderContext = ModelValidatorProviderContext$instance;
 
 export interface ValidateNeverAttribute$instance extends Attribute {
-    shouldValidateEntry(entry: ValidationEntry, parentEntry: ValidationEntry): boolean;
+    ShouldValidateEntry(entry: ValidationEntry, parentEntry: ValidationEntry): boolean;
 }
 
 
@@ -260,21 +260,21 @@ export type ValidateNeverAttribute = ValidateNeverAttribute$instance & __Validat
 
 
 export interface ValidationStateDictionary$instance {
-    readonly count: int;
-    readonly isReadOnly: boolean;
-    item: ValidationStateEntry;
-    readonly keys: ICollection<unknown>;
-    readonly values: ICollection<ValidationStateEntry>;
-    add(item: KeyValuePair<unknown, ValidationStateEntry>): void;
-    add(key: unknown, value: ValidationStateEntry): void;
-    clear(): void;
-    contains(item: KeyValuePair<unknown, ValidationStateEntry>): boolean;
-    containsKey(key: unknown): boolean;
-    copyTo(array: KeyValuePair<unknown, ValidationStateEntry>[], arrayIndex: int): void;
-    getEnumerator(): IEnumerator<KeyValuePair<unknown, ValidationStateEntry>>;
-    remove(item: KeyValuePair<unknown, ValidationStateEntry>): boolean;
-    remove(key: unknown): boolean;
-    tryGetValue(key: unknown, value: ValidationStateEntry): boolean;
+    readonly Count: int;
+    readonly IsReadOnly: boolean;
+    Item: ValidationStateEntry;
+    readonly Keys: ICollection<unknown>;
+    readonly Values: ICollection<ValidationStateEntry>;
+    Add(item: KeyValuePair<unknown, ValidationStateEntry>): void;
+    Add(key: unknown, value: ValidationStateEntry): void;
+    Clear(): void;
+    Contains(item: KeyValuePair<unknown, ValidationStateEntry>): boolean;
+    ContainsKey(key: unknown): boolean;
+    CopyTo(array: KeyValuePair<unknown, ValidationStateEntry>[], arrayIndex: int): void;
+    GetEnumerator(): IEnumerator<KeyValuePair<unknown, ValidationStateEntry>>;
+    Remove(item: KeyValuePair<unknown, ValidationStateEntry>): boolean;
+    Remove(key: unknown): boolean;
+    TryGetValue(key: unknown, value: ValidationStateEntry): boolean;
 }
 
 
@@ -286,10 +286,10 @@ export const ValidationStateDictionary: {
 export type ValidationStateDictionary = ValidationStateDictionary$instance;
 
 export interface ValidationStateEntry$instance {
-    key: string;
-    metadata: ModelMetadata;
-    strategy: IValidationStrategy;
-    suppressValidation: boolean;
+    Key: string;
+    Metadata: ModelMetadata;
+    Strategy: IValidationStrategy;
+    SuppressValidation: boolean;
 }
 
 
@@ -301,11 +301,11 @@ export const ValidationStateEntry: {
 export type ValidationStateEntry = ValidationStateEntry$instance;
 
 export interface ValidationVisitor$instance {
-    maxValidationDepth: Nullable<System_Internal.Int32>;
-    validateComplexTypesIfChildValidationFails: boolean;
-    validate(metadata: ModelMetadata, key: string, model: unknown): boolean;
-    validate(metadata: ModelMetadata, key: string, model: unknown, alwaysValidateAtTopLevel: boolean): boolean;
-    validate(metadata: ModelMetadata, key: string, model: unknown, alwaysValidateAtTopLevel: boolean, container: unknown): boolean;
+    MaxValidationDepth: Nullable<System_Internal.Int32>;
+    ValidateComplexTypesIfChildValidationFails: boolean;
+    Validate(metadata: ModelMetadata, key: string, model: unknown): boolean;
+    Validate(metadata: ModelMetadata, key: string, model: unknown, alwaysValidateAtTopLevel: boolean): boolean;
+    Validate(metadata: ModelMetadata, key: string, model: unknown, alwaysValidateAtTopLevel: boolean, container: unknown): boolean;
 }
 
 
@@ -317,7 +317,7 @@ export const ValidationVisitor: {
 export type ValidationVisitor = ValidationVisitor$instance;
 
 export interface ValidatorCache$instance {
-    getValidators(metadata: ModelMetadata, validatorProvider: IModelValidatorProvider): IReadOnlyList<IModelValidator>;
+    GetValidators(metadata: ModelMetadata, validatorProvider: IModelValidatorProvider): IReadOnlyList<IModelValidator>;
 }
 
 
@@ -329,10 +329,10 @@ export const ValidatorCache: {
 export type ValidatorCache = ValidatorCache$instance;
 
 export interface ValidatorItem$instance {
-    isReusable: boolean;
-    get validator(): IModelValidator | undefined;
-    set validator(value: IModelValidator);
-    readonly validatorMetadata: unknown;
+    IsReusable: boolean;
+    get Validator(): IModelValidator | undefined;
+    set Validator(value: IModelValidator);
+    readonly ValidatorMetadata: unknown;
 }
 
 
@@ -345,8 +345,8 @@ export const ValidatorItem: {
 export type ValidatorItem = ValidatorItem$instance;
 
 export abstract class ModelValidatorProviderExtensions$instance {
-    static removeType(list: IList<IModelValidatorProvider>, type: Type): void;
-    static removeType<TModelValidatorProvider extends IModelValidatorProvider>(list: IList<IModelValidatorProvider>): void;
+    static RemoveType(list: IList<IModelValidatorProvider>, type: Type): void;
+    static RemoveType<TModelValidatorProvider extends IModelValidatorProvider>(list: IList<IModelValidatorProvider>): void;
 }
 
 

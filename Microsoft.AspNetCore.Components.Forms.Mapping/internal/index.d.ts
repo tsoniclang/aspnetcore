@@ -12,19 +12,19 @@ import type { Action, Boolean as ClrBoolean, FormattableString, Object as ClrObj
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface IFormValueMapper$instance {
-    canMap(valueType: Type, scopeName: string, formName: string): boolean;
-    map(context: FormValueMappingContext): void;
+    CanMap(valueType: Type, scopeName: string, formName: string): boolean;
+    Map(context: FormValueMappingContext): void;
 }
 
 
 export type IFormValueMapper = IFormValueMapper$instance;
 
 export interface FormMappingError$instance {
-    readonly attemptedValue: string | undefined;
-    readonly container: unknown;
-    readonly errorMessages: IReadOnlyList<FormattableString>;
-    readonly name: string;
-    readonly path: string;
+    readonly AttemptedValue: string | undefined;
+    readonly Container: unknown;
+    readonly ErrorMessages: IReadOnlyList<FormattableString>;
+    readonly Name: string;
+    readonly Path: string;
 }
 
 
@@ -36,16 +36,16 @@ export const FormMappingError: {
 export type FormMappingError = FormMappingError$instance;
 
 export interface FormValueMappingContext$instance {
-    readonly acceptFormName: string | undefined;
-    readonly acceptMappingScopeName: string;
-    get mapErrorToContainer(): Action<System_Internal.String, unknown> | undefined;
-    set mapErrorToContainer(value: Action<System_Internal.String, unknown>);
-    get onError(): Action<System_Internal.String, FormattableString, string | undefined> | undefined;
-    set onError(value: Action<System_Internal.String, FormattableString, string | undefined>);
-    readonly parameterName: string;
-    readonly result: unknown;
-    readonly valueType: Type;
-    setResult(result: unknown): void;
+    readonly AcceptFormName: string | undefined;
+    readonly AcceptMappingScopeName: string;
+    get MapErrorToContainer(): Action<System_Internal.String, unknown> | undefined;
+    set MapErrorToContainer(value: Action<System_Internal.String, unknown>);
+    get OnError(): Action<System_Internal.String, FormattableString, string | undefined> | undefined;
+    set OnError(value: Action<System_Internal.String, FormattableString, string | undefined>);
+    readonly ParameterName: string;
+    readonly Result: unknown;
+    readonly ValueType: Type;
+    SetResult(result: unknown): void;
 }
 
 
@@ -57,7 +57,7 @@ export const FormValueMappingContext: {
 export type FormValueMappingContext = FormValueMappingContext$instance;
 
 export abstract class SupplyParameterFromFormServiceCollectionExtensions$instance {
-    static addSupplyValueFromFormProvider(serviceCollection: IServiceCollection): IServiceCollection;
+    static AddSupplyValueFromFormProvider(serviceCollection: IServiceCollection): IServiceCollection;
 }
 
 

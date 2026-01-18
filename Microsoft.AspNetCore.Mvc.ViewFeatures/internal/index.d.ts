@@ -47,11 +47,11 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum InputType {
-    checkBox = 0,
-    hidden = 1,
-    password = 2,
-    radio = 3,
-    text = 4
+    CheckBox = 0,
+    Hidden = 1,
+    Password = 2,
+    Radio = 3,
+    Text = 4
 }
 
 
@@ -67,44 +67,44 @@ export interface IAntiforgeryPolicy$instance extends Microsoft_AspNetCore_Mvc_Fi
 export type IAntiforgeryPolicy = IAntiforgeryPolicy$instance;
 
 export interface IFileVersionProvider$instance {
-    addFileVersionToPath(requestPathBase: PathString, path: string): string;
+    AddFileVersionToPath(requestPathBase: PathString, path: string): string;
 }
 
 
 export type IFileVersionProvider = IFileVersionProvider$instance;
 
 export interface IHtmlGenerator$instance {
-    readonly idAttributeDotReplacement: string;
-    encode(value: unknown): string;
-    encode(value: string): string;
-    formatValue(value: unknown, format: string): string;
-    generateActionLink(viewContext: ViewContext, linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
-    generateAntiforgery(viewContext: ViewContext): IHtmlContent;
-    generateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
-    generateForm(viewContext: ViewContext, actionName: string, controllerName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
-    generateGroupsAndOptions(optionLabel: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
-    generateHidden(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, htmlAttributes: unknown): TagBuilder;
-    generateHiddenForCheckbox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string): TagBuilder;
-    generateLabel(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, labelText: string, htmlAttributes: unknown): TagBuilder;
-    generatePageForm(viewContext: ViewContext, pageName: string, pageHandler: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
-    generatePassword(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, htmlAttributes: unknown): TagBuilder;
-    generateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
-    generateRouteForm(viewContext: ViewContext, routeName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
-    generateRouteLink(viewContext: ViewContext, linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
-    generateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
-    generateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, currentValues: ICollection<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
-    generateTextArea(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, rows: int, columns: int, htmlAttributes: unknown): TagBuilder;
-    generateTextBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, format: string, htmlAttributes: unknown): TagBuilder;
-    generateValidationMessage(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, message: string, tag: string, htmlAttributes: unknown): TagBuilder;
-    generateValidationSummary(viewContext: ViewContext, excludePropertyErrors: boolean, message: string, headerTag: string, htmlAttributes: unknown): TagBuilder;
-    getCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection<System_Internal.String>;
+    readonly IdAttributeDotReplacement: string;
+    Encode(value: unknown): string;
+    Encode(value: string): string;
+    FormatValue(value: unknown, format: string): string;
+    GenerateActionLink(viewContext: ViewContext, linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
+    GenerateAntiforgery(viewContext: ViewContext): IHtmlContent;
+    GenerateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateForm(viewContext: ViewContext, actionName: string, controllerName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
+    GenerateGroupsAndOptions(optionLabel: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
+    GenerateHidden(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateHiddenForCheckbox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string): TagBuilder;
+    GenerateLabel(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, labelText: string, htmlAttributes: unknown): TagBuilder;
+    GeneratePageForm(viewContext: ViewContext, pageName: string, pageHandler: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
+    GeneratePassword(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, htmlAttributes: unknown): TagBuilder;
+    GenerateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateRouteForm(viewContext: ViewContext, routeName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
+    GenerateRouteLink(viewContext: ViewContext, linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, currentValues: ICollection<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateTextArea(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, rows: int, columns: int, htmlAttributes: unknown): TagBuilder;
+    GenerateTextBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, format: string, htmlAttributes: unknown): TagBuilder;
+    GenerateValidationMessage(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, message: string, tag: string, htmlAttributes: unknown): TagBuilder;
+    GenerateValidationSummary(viewContext: ViewContext, excludePropertyErrors: boolean, message: string, headerTag: string, htmlAttributes: unknown): TagBuilder;
+    GetCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection<System_Internal.String>;
 }
 
 
 export type IHtmlGenerator = IHtmlGenerator$instance;
 
 export interface IKeepTempDataResult$instance extends IActionResult {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -113,48 +113,48 @@ export interface IKeepTempDataResult$instance extends Microsoft_AspNetCore_Mvc_I
 export type IKeepTempDataResult = IKeepTempDataResult$instance;
 
 export interface IModelExpressionProvider$instance {
-    createModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression<Func<TModel, TValue>>): ModelExpression;
+    CreateModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression<Func<TModel, TValue>>): ModelExpression;
 }
 
 
 export type IModelExpressionProvider = IModelExpressionProvider$instance;
 
 export interface ITempDataDictionary$instance extends IDictionary<System_Internal.String, unknown>, ICollection<KeyValuePair<System_Internal.String, unknown>>, IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>, IEnumerable {
-    keep(key: string): void;
-    load(): void;
-    peek(key: string): unknown | undefined;
+    Keep(key: string): void;
+    Load(): void;
+    Peek(key: string): unknown | undefined;
 }
 
 
 export type ITempDataDictionary = ITempDataDictionary$instance;
 
 export interface ITempDataDictionaryFactory$instance {
-    getTempData(context: HttpContext): ITempDataDictionary;
+    GetTempData(context: HttpContext): ITempDataDictionary;
 }
 
 
 export type ITempDataDictionaryFactory = ITempDataDictionaryFactory$instance;
 
 export interface ITempDataProvider$instance {
-    loadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
-    saveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
+    LoadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
+    SaveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
 }
 
 
 export type ITempDataProvider = ITempDataProvider$instance;
 
 export interface IViewContextAware$instance {
-    contextualize(viewContext: ViewContext): void;
+    Contextualize(viewContext: ViewContext): void;
 }
 
 
 export type IViewContextAware = IViewContextAware$instance;
 
 export interface AttributeDictionary_Enumerator$instance {
-    readonly current: KeyValuePair<System_Internal.String, System_Internal.String>;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: KeyValuePair<System_Internal.String, System_Internal.String>;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -166,21 +166,21 @@ export const AttributeDictionary_Enumerator: {
 export type AttributeDictionary_Enumerator = AttributeDictionary_Enumerator$instance;
 
 export interface AttributeDictionary$instance {
-    readonly count: int;
-    readonly isReadOnly: boolean;
-    item: string;
-    readonly keys: ICollection<System_Internal.String>;
-    readonly values: ICollection<string | undefined>;
-    add(item: KeyValuePair<System_Internal.String, System_Internal.String>): void;
-    add(key: string, value: string): void;
-    clear(): void;
-    contains(item: KeyValuePair<System_Internal.String, System_Internal.String>): boolean;
-    containsKey(key: string): boolean;
-    copyTo(array: KeyValuePair<System_Internal.String, System_Internal.String>[], arrayIndex: int): void;
-    getEnumerator(): AttributeDictionary_Enumerator;
-    remove(item: KeyValuePair<System_Internal.String, System_Internal.String>): boolean;
-    remove(key: string): boolean;
-    tryGetValue(key: string, value: string): boolean;
+    readonly Count: int;
+    readonly IsReadOnly: boolean;
+    Item: string;
+    readonly Keys: ICollection<System_Internal.String>;
+    readonly Values: ICollection<string | undefined>;
+    Add(item: KeyValuePair<System_Internal.String, System_Internal.String>): void;
+    Add(key: string, value: string): void;
+    Clear(): void;
+    Contains(item: KeyValuePair<System_Internal.String, System_Internal.String>): boolean;
+    ContainsKey(key: string): boolean;
+    CopyTo(array: KeyValuePair<System_Internal.String, System_Internal.String>[], arrayIndex: int): void;
+    GetEnumerator(): AttributeDictionary_Enumerator;
+    Remove(item: KeyValuePair<System_Internal.String, System_Internal.String>): boolean;
+    Remove(key: string): boolean;
+    TryGetValue(key: string, value: string): boolean;
 }
 
 
@@ -192,14 +192,14 @@ export const AttributeDictionary: {
 export type AttributeDictionary = AttributeDictionary$instance;
 
 export interface CookieTempDataProvider$instance {
-    loadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
-    saveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
+    LoadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
+    SaveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
 }
 
 
 export const CookieTempDataProvider: {
     new(dataProtectionProvider: IDataProtectionProvider, loggerFactory: ILoggerFactory, options: IOptions<CookieTempDataProviderOptions>, tempDataSerializer: TempDataSerializer): CookieTempDataProvider;
-    readonly cookieName: string;
+    readonly CookieName: string;
 };
 
 
@@ -213,31 +213,31 @@ export type CookieTempDataProvider = CookieTempDataProvider$instance & __CookieT
 
 
 export interface DefaultHtmlGenerator$instance {
-    readonly idAttributeDotReplacement: string;
-    encode(value: string): string;
-    encode(value: unknown): string;
-    formatValue(value: unknown, format: string): string;
-    generateActionLink(viewContext: ViewContext, linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
-    generateAntiforgery(viewContext: ViewContext): IHtmlContent;
-    generateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
-    generateForm(viewContext: ViewContext, actionName: string, controllerName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
-    generateGroupsAndOptions(optionLabel: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
-    generateHidden(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, htmlAttributes: unknown): TagBuilder;
-    generateHiddenForCheckbox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string): TagBuilder;
-    generateLabel(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, labelText: string, htmlAttributes: unknown): TagBuilder;
-    generatePageForm(viewContext: ViewContext, pageName: string, pageHandler: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
-    generatePageLink(viewContext: ViewContext, linkText: string, pageName: string, pageHandler: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
-    generatePassword(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, htmlAttributes: unknown): TagBuilder;
-    generateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
-    generateRouteForm(viewContext: ViewContext, routeName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
-    generateRouteLink(viewContext: ViewContext, linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
-    generateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
-    generateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, currentValues: ICollection<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
-    generateTextArea(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, rows: int, columns: int, htmlAttributes: unknown): TagBuilder;
-    generateTextBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, format: string, htmlAttributes: unknown): TagBuilder;
-    generateValidationMessage(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, message: string, tag: string, htmlAttributes: unknown): TagBuilder;
-    generateValidationSummary(viewContext: ViewContext, excludePropertyErrors: boolean, message: string, headerTag: string, htmlAttributes: unknown): TagBuilder;
-    getCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection<System_Internal.String>;
+    readonly IdAttributeDotReplacement: string;
+    Encode(value: string): string;
+    Encode(value: unknown): string;
+    FormatValue(value: unknown, format: string): string;
+    GenerateActionLink(viewContext: ViewContext, linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
+    GenerateAntiforgery(viewContext: ViewContext): IHtmlContent;
+    GenerateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateForm(viewContext: ViewContext, actionName: string, controllerName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
+    GenerateGroupsAndOptions(optionLabel: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
+    GenerateHidden(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateHiddenForCheckbox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string): TagBuilder;
+    GenerateLabel(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, labelText: string, htmlAttributes: unknown): TagBuilder;
+    GeneratePageForm(viewContext: ViewContext, pageName: string, pageHandler: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
+    GeneratePageLink(viewContext: ViewContext, linkText: string, pageName: string, pageHandler: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
+    GeneratePassword(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, htmlAttributes: unknown): TagBuilder;
+    GenerateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateRouteForm(viewContext: ViewContext, routeName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
+    GenerateRouteLink(viewContext: ViewContext, linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, currentValues: ICollection<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateTextArea(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, rows: int, columns: int, htmlAttributes: unknown): TagBuilder;
+    GenerateTextBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, format: string, htmlAttributes: unknown): TagBuilder;
+    GenerateValidationMessage(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, message: string, tag: string, htmlAttributes: unknown): TagBuilder;
+    GenerateValidationSummary(viewContext: ViewContext, excludePropertyErrors: boolean, message: string, headerTag: string, htmlAttributes: unknown): TagBuilder;
+    GetCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection<System_Internal.String>;
 }
 
 
@@ -254,7 +254,7 @@ export type DefaultHtmlGenerator = DefaultHtmlGenerator$instance & __DefaultHtml
 
 
 export interface DefaultValidationHtmlAttributeProvider$instance extends ValidationHtmlAttributeProvider {
-    addValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
+    AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
 }
 
 
@@ -266,14 +266,14 @@ export const DefaultValidationHtmlAttributeProvider: {
 export type DefaultValidationHtmlAttributeProvider = DefaultValidationHtmlAttributeProvider$instance;
 
 export interface FormContext$instance {
-    canRenderAtEndOfForm: boolean;
-    readonly endOfFormContent: IList<IHtmlContent>;
-    readonly formData: IDictionary<System_Internal.String, unknown>;
-    hasAntiforgeryToken: boolean;
-    readonly hasEndOfFormContent: boolean;
-    readonly hasFormData: boolean;
-    renderedField(fieldName: string): boolean;
-    renderedField(fieldName: string, value: boolean): void;
+    CanRenderAtEndOfForm: boolean;
+    readonly EndOfFormContent: IList<IHtmlContent>;
+    readonly FormData: IDictionary<System_Internal.String, unknown>;
+    HasAntiforgeryToken: boolean;
+    readonly HasEndOfFormContent: boolean;
+    readonly HasFormData: boolean;
+    RenderedField(fieldName: string): boolean;
+    RenderedField(fieldName: string, value: boolean): void;
 }
 
 
@@ -285,63 +285,63 @@ export const FormContext: {
 export type FormContext = FormContext$instance;
 
 export interface HtmlHelper$instance {
-    html5DateRenderingMode: Html5DateRenderingMode;
-    readonly idAttributeDotReplacement: string;
-    readonly metadataProvider: IModelMetadataProvider;
-    readonly tempData: ITempDataDictionary;
-    readonly urlEncoder: UrlEncoder;
-    readonly viewBag: unknown;
-    readonly viewContext: ViewContext;
-    readonly viewData: ViewDataDictionary | ViewDataDictionary_1<TModel>;
-    actionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
-    antiForgeryToken(): IHtmlContent;
-    beginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    beginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    checkBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    contextualize(viewContext: ViewContext): void;
-    display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    displayName(expression: string): string;
-    displayText(expression: string): string;
-    dropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
-    editor(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    encode(value: string): string;
-    encode(value: unknown): string;
-    endForm(): void;
-    formatValue(value: unknown, format: string): string;
-    generateIdFromName(fullName: string): string;
-    getEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
-    getEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
-    hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    id(expression: string): string;
-    label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    listBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    name(expression: string): string;
-    partialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
-    password(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    radioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    raw(value: string): IHtmlContent;
-    raw(value: unknown): IHtmlContent;
-    renderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
-    routeLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
-    textArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
-    textBox(expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
-    validationMessage(expression: string, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    validationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    value(expression: string, format: string): string;
+    Html5DateRenderingMode: Html5DateRenderingMode;
+    readonly IdAttributeDotReplacement: string;
+    readonly MetadataProvider: IModelMetadataProvider;
+    readonly TempData: ITempDataDictionary;
+    readonly UrlEncoder: UrlEncoder;
+    readonly ViewBag: unknown;
+    readonly ViewContext: ViewContext;
+    readonly ViewData: ViewDataDictionary | ViewDataDictionary_1<TModel>;
+    ActionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
+    AntiForgeryToken(): IHtmlContent;
+    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    CheckBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    Contextualize(viewContext: ViewContext): void;
+    Display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    DisplayName(expression: string): string;
+    DisplayText(expression: string): string;
+    DropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    Editor(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    Encode(value: string): string;
+    Encode(value: unknown): string;
+    EndForm(): void;
+    FormatValue(value: unknown, format: string): string;
+    GenerateIdFromName(fullName: string): string;
+    GetEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
+    GetEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
+    Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
+    Id(expression: string): string;
+    Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
+    ListBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    Name(expression: string): string;
+    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
+    Password(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
+    RadioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    Raw(value: string): IHtmlContent;
+    Raw(value: unknown): IHtmlContent;
+    RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
+    RouteLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
+    TextArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
+    TextBox(expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
+    ValidationMessage(expression: string, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
+    ValidationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
+    Value(expression: string, format: string): string;
 }
 
 
 export const HtmlHelper: {
     new(htmlGenerator: IHtmlGenerator, viewEngine: ICompositeViewEngine, metadataProvider: IModelMetadataProvider, bufferScope: IViewBufferScope, htmlEncoder: HtmlEncoder, urlEncoder: UrlEncoder): HtmlHelper;
-    readonly validationInputCssClassName: string;
-    readonly validationInputValidCssClassName: string;
-    readonly validationMessageCssClassName: string;
-    readonly validationMessageValidCssClassName: string;
-    readonly validationSummaryCssClassName: string;
-    readonly validationSummaryValidCssClassName: string;
-    anonymousObjectToHtmlAttributes(htmlAttributes: unknown): IDictionary<System_Internal.String, unknown>;
-    getFormMethodString(method: FormMethod): string;
-    objectToDictionary(value: unknown): IDictionary<System_Internal.String, unknown>;
+    readonly ValidationInputCssClassName: string;
+    readonly ValidationInputValidCssClassName: string;
+    readonly ValidationMessageCssClassName: string;
+    readonly ValidationMessageValidCssClassName: string;
+    readonly ValidationSummaryCssClassName: string;
+    readonly ValidationSummaryValidCssClassName: string;
+    AnonymousObjectToHtmlAttributes(htmlAttributes: unknown): IDictionary<System_Internal.String, unknown>;
+    GetFormMethodString(method: FormMethod): string;
+    ObjectToDictionary(value: unknown): IDictionary<System_Internal.String, unknown>;
 };
 
 
@@ -356,53 +356,53 @@ export type HtmlHelper = HtmlHelper$instance & __HtmlHelper$views;
 
 
 export interface HtmlHelper_1$instance<TModel> extends HtmlHelper$instance {
-    actionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
-    antiForgeryToken(): IHtmlContent;
-    beginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    beginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    checkBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    checkBoxFor(expression: Expression<Func<TModel, System_Internal.Boolean>>, htmlAttributes: unknown): IHtmlContent;
-    contextualize(viewContext: ViewContext): void;
-    display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    displayFor<TResult>(expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    displayName(expression: string): string;
-    displayNameFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    displayNameForInnerType<TModelItem, TResult>(expression: Expression<Func<TModelItem, TResult>>): string;
-    displayTextFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    dropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
-    dropDownListFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
-    editorFor<TResult>(expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    encode(value: string): string;
-    encode(value: unknown): string;
-    endForm(): void;
-    formatValue(value: unknown, format: string): string;
-    getEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
-    getEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
-    hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    hiddenFor<TResult>(expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    idFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    labelFor<TResult>(expression: Expression<Func<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    listBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    listBoxFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    nameFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    partialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
-    passwordFor<TResult>(expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    radioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    radioButtonFor<TResult>(expression: Expression<Func<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    raw(value: string): IHtmlContent;
-    raw(value: unknown): IHtmlContent;
-    renderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
-    routeLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
-    textArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
-    textAreaFor<TResult>(expression: Expression<Func<TModel, TResult>>, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
-    textBox(expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
-    textBoxFor<TResult>(expression: Expression<Func<TModel, TResult>>, format: string, htmlAttributes: unknown): IHtmlContent;
-    validationMessage(expression: string, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    validationMessageFor<TResult>(expression: Expression<Func<TModel, TResult>>, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    validationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    value(expression: string, format: string): string;
-    valueFor<TResult>(expression: Expression<Func<TModel, TResult>>, format: string): string;
+    ActionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
+    AntiForgeryToken(): IHtmlContent;
+    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    CheckBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    CheckBoxFor(expression: Expression<Func<TModel, System_Internal.Boolean>>, htmlAttributes: unknown): IHtmlContent;
+    Contextualize(viewContext: ViewContext): void;
+    Display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    DisplayFor<TResult>(expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    DisplayName(expression: string): string;
+    DisplayNameFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
+    DisplayNameForInnerType<TModelItem, TResult>(expression: Expression<Func<TModelItem, TResult>>): string;
+    DisplayTextFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
+    DropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    DropDownListFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    EditorFor<TResult>(expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    Encode(value: string): string;
+    Encode(value: unknown): string;
+    EndForm(): void;
+    FormatValue(value: unknown, format: string): string;
+    GetEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
+    GetEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
+    Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
+    HiddenFor<TResult>(expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
+    IdFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
+    Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
+    LabelFor<TResult>(expression: Expression<Func<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
+    ListBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    ListBoxFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    NameFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
+    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
+    PasswordFor<TResult>(expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
+    RadioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    RadioButtonFor<TResult>(expression: Expression<Func<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
+    Raw(value: string): IHtmlContent;
+    Raw(value: unknown): IHtmlContent;
+    RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
+    RouteLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
+    TextArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
+    TextAreaFor<TResult>(expression: Expression<Func<TModel, TResult>>, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
+    TextBox(expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
+    TextBoxFor<TResult>(expression: Expression<Func<TModel, TResult>>, format: string, htmlAttributes: unknown): IHtmlContent;
+    ValidationMessage(expression: string, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
+    ValidationMessageFor<TResult>(expression: Expression<Func<TModel, TResult>>, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
+    ValidationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
+    Value(expression: string, format: string): string;
+    ValueFor<TResult>(expression: Expression<Func<TModel, TResult>>, format: string): string;
 }
 
 
@@ -421,13 +421,13 @@ export type HtmlHelper_1<TModel> = HtmlHelper_1$instance<TModel> & __HtmlHelper_
 
 
 export interface HtmlHelperOptions$instance {
-    checkBoxHiddenInputRenderMode: CheckBoxHiddenInputRenderMode;
-    clientValidationEnabled: boolean;
-    formInputRenderMode: FormInputRenderMode;
-    html5DateRenderingMode: Html5DateRenderingMode;
-    idAttributeDotReplacement: string;
-    validationMessageElement: string;
-    validationSummaryMessageElement: string;
+    CheckBoxHiddenInputRenderMode: CheckBoxHiddenInputRenderMode;
+    ClientValidationEnabled: boolean;
+    FormInputRenderMode: FormInputRenderMode;
+    Html5DateRenderingMode: Html5DateRenderingMode;
+    IdAttributeDotReplacement: string;
+    ValidationMessageElement: string;
+    ValidationSummaryMessageElement: string;
 }
 
 
@@ -439,19 +439,19 @@ export const HtmlHelperOptions: {
 export type HtmlHelperOptions = HtmlHelperOptions$instance;
 
 export interface ModelExplorer$instance {
-    readonly container: ModelExplorer;
-    readonly metadata: ModelMetadata;
-    readonly model: unknown;
-    readonly modelType: Type;
-    readonly properties: IEnumerable__System_Collections_Generic<ModelExplorer>;
-    getExplorerForExpression(modelType: Type, model: unknown): ModelExplorer;
-    getExplorerForExpression(metadata: ModelMetadata, model: unknown): ModelExplorer;
-    getExplorerForExpression(modelType: Type, modelAccessor: Func<unknown, unknown>): ModelExplorer;
-    getExplorerForExpression(metadata: ModelMetadata, modelAccessor: Func<unknown, unknown>): ModelExplorer;
-    getExplorerForModel(model: unknown): ModelExplorer;
-    getExplorerForProperty(name: string): ModelExplorer;
-    getExplorerForProperty(name: string, modelAccessor: Func<unknown, unknown>): ModelExplorer;
-    getExplorerForProperty(name: string, model: unknown): ModelExplorer;
+    readonly Container: ModelExplorer;
+    readonly Metadata: ModelMetadata;
+    readonly Model: unknown;
+    readonly ModelType: Type;
+    readonly Properties: IEnumerable__System_Collections_Generic<ModelExplorer>;
+    GetExplorerForExpression(modelType: Type, model: unknown): ModelExplorer;
+    GetExplorerForExpression(metadata: ModelMetadata, model: unknown): ModelExplorer;
+    GetExplorerForExpression(modelType: Type, modelAccessor: Func<unknown, unknown>): ModelExplorer;
+    GetExplorerForExpression(metadata: ModelMetadata, modelAccessor: Func<unknown, unknown>): ModelExplorer;
+    GetExplorerForModel(model: unknown): ModelExplorer;
+    GetExplorerForProperty(name: string): ModelExplorer;
+    GetExplorerForProperty(name: string, modelAccessor: Func<unknown, unknown>): ModelExplorer;
+    GetExplorerForProperty(name: string, model: unknown): ModelExplorer;
 }
 
 
@@ -465,10 +465,10 @@ export const ModelExplorer: {
 export type ModelExplorer = ModelExplorer$instance;
 
 export interface ModelExpression$instance {
-    readonly metadata: ModelMetadata;
-    readonly model: unknown;
-    readonly modelExplorer: ModelExplorer;
-    readonly name: string;
+    readonly Metadata: ModelMetadata;
+    readonly Model: unknown;
+    readonly ModelExplorer: ModelExplorer;
+    readonly Name: string;
 }
 
 
@@ -480,9 +480,9 @@ export const ModelExpression: {
 export type ModelExpression = ModelExpression$instance;
 
 export interface ModelExpressionProvider$instance {
-    createModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression<Func<TModel, TValue>>): ModelExpression;
-    createModelExpression<TModel>(viewData: ViewDataDictionary_1<TModel>, expression: string): ModelExpression;
-    getExpressionText<TModel, TValue>(expression: Expression<Func<TModel, TValue>>): string;
+    CreateModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression<Func<TModel, TValue>>): ModelExpression;
+    CreateModelExpression<TModel>(viewData: ViewDataDictionary_1<TModel>, expression: string): ModelExpression;
+    GetExpressionText<TModel, TValue>(expression: Expression<Func<TModel, TValue>>): string;
 }
 
 
@@ -499,8 +499,8 @@ export type ModelExpressionProvider = ModelExpressionProvider$instance & __Model
 
 
 export interface PartialViewResultExecutor$instance extends ViewExecutor {
-    executeAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
-    findView(actionContext: ActionContext, viewResult: PartialViewResult): ViewEngineResult;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    FindView(actionContext: ActionContext, viewResult: PartialViewResult): ViewEngineResult;
 }
 
 
@@ -517,9 +517,9 @@ export type PartialViewResultExecutor = PartialViewResultExecutor$instance & __P
 
 
 export interface SaveTempDataAttribute$instance extends Attribute, IFilterMetadata {
-    readonly isReusable: boolean;
-    order: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    readonly IsReusable: boolean;
+    Order: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -539,8 +539,8 @@ export type SaveTempDataAttribute = SaveTempDataAttribute$instance & __SaveTempD
 
 
 export interface SessionStateTempDataProvider$instance {
-    loadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
-    saveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
+    LoadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
+    SaveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
 }
 
 
@@ -559,7 +559,7 @@ export type SessionStateTempDataProvider = SessionStateTempDataProvider$instance
 
 
 export interface StringHtmlContent$instance {
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -578,22 +578,22 @@ export type StringHtmlContent = StringHtmlContent$instance & __StringHtmlContent
 
 
 export interface TempDataDictionary$instance {
-    readonly count: int;
-    item: unknown;
-    readonly keys: ICollection<System_Internal.String>;
-    readonly values: ICollection<unknown | undefined>;
-    add(key: string, value: unknown): void;
-    clear(): void;
-    containsKey(key: string): boolean;
-    containsValue(value: unknown): boolean;
-    getEnumerator(): IEnumerator__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>;
-    keep(): void;
-    keep(key: string): void;
-    load(): void;
-    peek(key: string): unknown | undefined;
-    remove(key: string): boolean;
-    save(): void;
-    tryGetValue(key: string, value: unknown): boolean;
+    readonly Count: int;
+    Item: unknown;
+    readonly Keys: ICollection<System_Internal.String>;
+    readonly Values: ICollection<unknown | undefined>;
+    Add(key: string, value: unknown): void;
+    Clear(): void;
+    ContainsKey(key: string): boolean;
+    ContainsValue(value: unknown): boolean;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>;
+    Keep(): void;
+    Keep(key: string): void;
+    Load(): void;
+    Peek(key: string): unknown | undefined;
+    Remove(key: string): boolean;
+    Save(): void;
+    TryGetValue(key: string, value: unknown): boolean;
 }
 
 
@@ -610,7 +610,7 @@ export type TempDataDictionary = TempDataDictionary$instance & __TempDataDiction
 
 
 export interface TempDataDictionaryFactory$instance {
-    getTempData(context: HttpContext): ITempDataDictionary;
+    GetTempData(context: HttpContext): ITempDataDictionary;
 }
 
 
@@ -629,12 +629,12 @@ export type TempDataDictionaryFactory = TempDataDictionaryFactory$instance & __T
 
 
 export interface TemplateInfo$instance {
-    formattedModelValue: unknown;
-    htmlFieldPrefix: string;
-    readonly templateDepth: int;
-    addVisited(value: unknown): boolean;
-    getFullHtmlFieldName(partialFieldName: string): string;
-    visited(modelExplorer: ModelExplorer): boolean;
+    FormattedModelValue: unknown;
+    HtmlFieldPrefix: string;
+    readonly TemplateDepth: int;
+    AddVisited(value: unknown): boolean;
+    GetFullHtmlFieldName(partialFieldName: string): string;
+    Visited(modelExplorer: ModelExplorer): boolean;
 }
 
 
@@ -647,8 +647,8 @@ export const TemplateInfo: {
 export type TemplateInfo = TemplateInfo$instance;
 
 export interface ValidationHtmlAttributeProvider$instance {
-    addAndTrackValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
-    addValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
+    AddAndTrackValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
+    AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
 }
 
 
@@ -659,7 +659,7 @@ export const ValidationHtmlAttributeProvider: {
 export type ValidationHtmlAttributeProvider = ValidationHtmlAttributeProvider$instance;
 
 export interface ViewComponentResultExecutor$instance {
-    executeAsync(context: ActionContext, result: ViewComponentResult): Task;
+    ExecuteAsync(context: ActionContext, result: ViewComponentResult): Task;
 }
 
 
@@ -689,42 +689,42 @@ export const ViewContextAttribute: {
 export type ViewContextAttribute = ViewContextAttribute$instance;
 
 export interface ViewDataDictionary$instance {
-    readonly count: int;
-    readonly isReadOnly: boolean;
-    item: unknown;
-    readonly keys: ICollection<System_Internal.String>;
-    model: TModel | unknown;
-    modelExplorer: ModelExplorer;
-    readonly modelMetadata: ModelMetadata;
-    readonly modelState: ModelStateDictionary;
-    readonly templateInfo: TemplateInfo;
-    readonly values: ICollection<unknown | undefined>;
-    add(key: string, value: unknown): void;
-    add(item: KeyValuePair<System_Internal.String, unknown>): void;
-    clear(): void;
-    contains(item: KeyValuePair<System_Internal.String, unknown>): boolean;
-    containsKey(key: string): boolean;
-    copyTo(array: KeyValuePair<System_Internal.String, unknown>[], arrayIndex: int): void;
-    eval(expression: string): unknown | undefined;
-    eval(expression: string, format: string): string | undefined;
-    getViewDataInfo(expression: string): ViewDataInfo | undefined;
-    remove(key: string): boolean;
-    remove(item: KeyValuePair<System_Internal.String, unknown>): boolean;
-    tryGetValue(key: string, value: unknown): boolean;
+    readonly Count: int;
+    readonly IsReadOnly: boolean;
+    Item: unknown;
+    readonly Keys: ICollection<System_Internal.String>;
+    Model: TModel | unknown;
+    ModelExplorer: ModelExplorer;
+    readonly ModelMetadata: ModelMetadata;
+    readonly ModelState: ModelStateDictionary;
+    readonly TemplateInfo: TemplateInfo;
+    readonly Values: ICollection<unknown | undefined>;
+    Add(key: string, value: unknown): void;
+    Add(item: KeyValuePair<System_Internal.String, unknown>): void;
+    Clear(): void;
+    Contains(item: KeyValuePair<System_Internal.String, unknown>): boolean;
+    ContainsKey(key: string): boolean;
+    CopyTo(array: KeyValuePair<System_Internal.String, unknown>[], arrayIndex: int): void;
+    Eval(expression: string): unknown | undefined;
+    Eval(expression: string, format: string): string | undefined;
+    GetViewDataInfo(expression: string): ViewDataInfo | undefined;
+    Remove(key: string): boolean;
+    Remove(item: KeyValuePair<System_Internal.String, unknown>): boolean;
+    TryGetValue(key: string, value: unknown): boolean;
 }
 
 
 export const ViewDataDictionary: {
     new(metadataProvider: IModelMetadataProvider, modelState: ModelStateDictionary): ViewDataDictionary;
     new(source: ViewDataDictionary): ViewDataDictionary;
-    formatValue(value: unknown, format: string): string | undefined;
+    FormatValue(value: unknown, format: string): string | undefined;
 };
 
 
 export type ViewDataDictionary = ViewDataDictionary$instance;
 
 export interface ViewDataDictionary_1$instance<TModel> extends ViewDataDictionary {
-    model: TModel | unknown;
+    Model: TModel | unknown;
 }
 
 
@@ -749,8 +749,8 @@ export const ViewDataDictionaryAttribute: {
 export type ViewDataDictionaryAttribute = ViewDataDictionaryAttribute$instance;
 
 export interface ViewDataDictionaryControllerPropertyActivator$instance {
-    activate(actionContext: ControllerContext, controller: unknown): void;
-    getActivatorDelegate(actionDescriptor: ControllerActionDescriptor): Action<ControllerContext, unknown>;
+    Activate(actionContext: ControllerContext, controller: unknown): void;
+    GetActivatorDelegate(actionDescriptor: ControllerActionDescriptor): Action<ControllerContext, unknown>;
 }
 
 
@@ -762,9 +762,9 @@ export const ViewDataDictionaryControllerPropertyActivator: {
 export type ViewDataDictionaryControllerPropertyActivator = ViewDataDictionaryControllerPropertyActivator$instance;
 
 export interface ViewDataInfo$instance {
-    readonly container: unknown;
-    readonly propertyInfo: PropertyInfo;
-    value: unknown;
+    readonly Container: unknown;
+    readonly PropertyInfo: PropertyInfo;
+    Value: unknown;
 }
 
 
@@ -778,21 +778,21 @@ export const ViewDataInfo: {
 export type ViewDataInfo = ViewDataInfo$instance;
 
 export interface ViewExecutor$instance {
-    executeAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
 }
 
 
 export const ViewExecutor: {
     new(viewOptions: IOptions<MvcViewOptions>, writerFactory: IHttpResponseStreamWriterFactory, viewEngine: ICompositeViewEngine, tempDataFactory: ITempDataDictionaryFactory, diagnosticListener: DiagnosticListener, modelMetadataProvider: IModelMetadataProvider): ViewExecutor;
-    readonly defaultContentType: string;
+    readonly DefaultContentType: string;
 };
 
 
 export type ViewExecutor = ViewExecutor$instance;
 
 export interface ViewResultExecutor$instance extends ViewExecutor {
-    executeAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
-    findView(actionContext: ActionContext, viewResult: ViewResult): ViewEngineResult;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    FindView(actionContext: ActionContext, viewResult: ViewResult): ViewEngineResult;
 }
 
 
@@ -809,44 +809,44 @@ export type ViewResultExecutor = ViewResultExecutor$instance & __ViewResultExecu
 
 
 export abstract class AntiforgeryExtensions$instance {
-    static getHtml(antiforgery: IAntiforgery, httpContext: HttpContext): IHtmlContent;
+    static GetHtml(antiforgery: IAntiforgery, httpContext: HttpContext): IHtmlContent;
 }
 
 
 export type AntiforgeryExtensions = AntiforgeryExtensions$instance;
 
 export abstract class DefaultHtmlGeneratorExtensions$instance {
-    static generateForm(generator: IHtmlGenerator, viewContext: ViewContext, actionName: string, controllerName: string, fragment: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
-    static generateRouteForm(generator: IHtmlGenerator, viewContext: ViewContext, routeName: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
+    static GenerateForm(generator: IHtmlGenerator, viewContext: ViewContext, actionName: string, controllerName: string, fragment: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
+    static GenerateRouteForm(generator: IHtmlGenerator, viewContext: ViewContext, routeName: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
 }
 
 
 export type DefaultHtmlGeneratorExtensions = DefaultHtmlGeneratorExtensions$instance;
 
 export abstract class ModelExplorerExtensions$instance {
-    static getSimpleDisplayText(modelExplorer: ModelExplorer): string;
+    static GetSimpleDisplayText(modelExplorer: ModelExplorer): string;
 }
 
 
 export type ModelExplorerExtensions = ModelExplorerExtensions$instance;
 
 export abstract class ModelMetadataProviderExtensions$instance {
-    static getModelExplorerForType(provider: IModelMetadataProvider, modelType: Type, model: unknown): ModelExplorer;
+    static GetModelExplorerForType(provider: IModelMetadataProvider, modelType: Type, model: unknown): ModelExplorer;
 }
 
 
 export type ModelMetadataProviderExtensions = ModelMetadataProviderExtensions$instance;
 
 export abstract class TryGetValueProvider$instance {
-    static createInstance(targetType: Type): TryGetValueDelegate;
+    static CreateInstance(targetType: Type): TryGetValueDelegate;
 }
 
 
 export type TryGetValueProvider = TryGetValueProvider$instance;
 
 export abstract class ViewDataEvaluator$instance {
-    static eval(viewData: ViewDataDictionary, expression: string): ViewDataInfo;
-    static eval(indexableObject: unknown, expression: string): ViewDataInfo;
+    static Eval(viewData: ViewDataDictionary, expression: string): ViewDataInfo;
+    static Eval(indexableObject: unknown, expression: string): ViewDataInfo;
 }
 
 

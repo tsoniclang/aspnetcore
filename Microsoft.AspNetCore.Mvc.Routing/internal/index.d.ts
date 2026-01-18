@@ -18,42 +18,42 @@ import type { Attribute, Boolean as ClrBoolean, Int32, Nullable, Object as ClrOb
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IActionHttpMethodProvider$instance {
-    readonly httpMethods: IEnumerable<System_Internal.String>;
+    readonly HttpMethods: IEnumerable<System_Internal.String>;
 }
 
 
 export type IActionHttpMethodProvider = IActionHttpMethodProvider$instance;
 
 export interface IRouteTemplateProvider$instance {
-    readonly template: string;
-    readonly order: Nullable<System_Internal.Int32>;
-    readonly name: string;
+    readonly Template: string;
+    readonly Order: Nullable<System_Internal.Int32>;
+    readonly Name: string;
 }
 
 
 export type IRouteTemplateProvider = IRouteTemplateProvider$instance;
 
 export interface IRouteValueProvider$instance {
-    readonly routeKey: string;
-    readonly routeValue: string;
+    readonly RouteKey: string;
+    readonly RouteValue: string;
 }
 
 
 export type IRouteValueProvider = IRouteValueProvider$instance;
 
 export interface IUrlHelperFactory$instance {
-    getUrlHelper(context: ActionContext): IUrlHelper;
+    GetUrlHelper(context: ActionContext): IUrlHelper;
 }
 
 
 export type IUrlHelperFactory = IUrlHelperFactory$instance;
 
 export interface AttributeRouteInfo$instance {
-    name: string;
-    order: int;
-    suppressLinkGeneration: boolean;
-    suppressPathMatching: boolean;
-    template: string;
+    Name: string;
+    Order: int;
+    SuppressLinkGeneration: boolean;
+    SuppressPathMatching: boolean;
+    Template: string;
 }
 
 
@@ -65,9 +65,9 @@ export const AttributeRouteInfo: {
 export type AttributeRouteInfo = AttributeRouteInfo$instance;
 
 export interface DynamicRouteValueTransformer$instance {
-    state: unknown;
-    filterAsync(httpContext: HttpContext, values: RouteValueDictionary, endpoints: IReadOnlyList<Endpoint>): ValueTask<IReadOnlyList<Endpoint>>;
-    transformAsync(httpContext: HttpContext, values: RouteValueDictionary): ValueTask<RouteValueDictionary>;
+    State: unknown;
+    FilterAsync(httpContext: HttpContext, values: RouteValueDictionary, endpoints: IReadOnlyList<Endpoint>): ValueTask<IReadOnlyList<Endpoint>>;
+    TransformAsync(httpContext: HttpContext, values: RouteValueDictionary): ValueTask<RouteValueDictionary>;
 }
 
 
@@ -78,10 +78,10 @@ export const DynamicRouteValueTransformer: {
 export type DynamicRouteValueTransformer = DynamicRouteValueTransformer$instance;
 
 export interface HttpMethodAttribute$instance extends Attribute {
-    readonly httpMethods: IEnumerable<System_Internal.String>;
-    name: string;
-    order: int;
-    readonly template: string;
+    readonly HttpMethods: IEnumerable<System_Internal.String>;
+    Name: string;
+    Order: int;
+    readonly Template: string;
 }
 
 
@@ -102,7 +102,7 @@ export type HttpMethodAttribute = HttpMethodAttribute$instance & __HttpMethodAtt
 
 
 export interface KnownRouteValueConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -121,8 +121,8 @@ export type KnownRouteValueConstraint = KnownRouteValueConstraint$instance & __K
 
 
 export interface RouteValueAttribute$instance extends Attribute {
-    readonly routeKey: string;
-    readonly routeValue: string;
+    readonly RouteKey: string;
+    readonly RouteValue: string;
 }
 
 
@@ -140,13 +140,13 @@ export type RouteValueAttribute = RouteValueAttribute$instance & __RouteValueAtt
 
 
 export interface UrlActionContext$instance {
-    action: string;
-    controller: string;
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    host: string;
-    protocol: string;
-    values: unknown;
+    Action: string;
+    Controller: string;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    Host: string;
+    Protocol: string;
+    Values: unknown;
 }
 
 
@@ -158,11 +158,11 @@ export const UrlActionContext: {
 export type UrlActionContext = UrlActionContext$instance;
 
 export interface UrlHelper$instance extends UrlHelperBase$instance {
-    action(actionContext: UrlActionContext): string | undefined;
-    content(contentPath: string): string;
-    isLocalUrl(url: string): boolean;
-    link(routeName: string, values: unknown): string | undefined;
-    routeUrl(routeContext: UrlRouteContext): string | undefined;
+    Action(actionContext: UrlActionContext): string | undefined;
+    Content(contentPath: string): string;
+    IsLocalUrl(url: string): boolean;
+    Link(routeName: string, values: unknown): string | undefined;
+    RouteUrl(routeContext: UrlRouteContext): string | undefined;
 }
 
 
@@ -179,12 +179,12 @@ export type UrlHelper = UrlHelper$instance & __UrlHelper$views;
 
 
 export interface UrlHelperBase$instance {
-    readonly actionContext: ActionContext;
-    action(actionContext: UrlActionContext): string | undefined;
-    content(contentPath: string): string;
-    isLocalUrl(url: string): boolean;
-    link(routeName: string, values: unknown): string | undefined;
-    routeUrl(routeContext: UrlRouteContext): string | undefined;
+    readonly ActionContext: ActionContext;
+    Action(actionContext: UrlActionContext): string | undefined;
+    Content(contentPath: string): string;
+    IsLocalUrl(url: string): boolean;
+    Link(routeName: string, values: unknown): string | undefined;
+    RouteUrl(routeContext: UrlRouteContext): string | undefined;
 }
 
 
@@ -202,7 +202,7 @@ export type UrlHelperBase = UrlHelperBase$instance & __UrlHelperBase$views;
 
 
 export interface UrlHelperFactory$instance {
-    getUrlHelper(context: ActionContext): IUrlHelper;
+    GetUrlHelper(context: ActionContext): IUrlHelper;
 }
 
 
@@ -221,13 +221,13 @@ export type UrlHelperFactory = UrlHelperFactory$instance & __UrlHelperFactory$vi
 
 
 export interface UrlRouteContext$instance {
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    host: string;
-    protocol: string;
-    get routeName(): string | undefined;
-    set routeName(value: string);
-    values: unknown;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    Host: string;
+    Protocol: string;
+    get RouteName(): string | undefined;
+    set RouteName(value: string);
+    Values: unknown;
 }
 
 

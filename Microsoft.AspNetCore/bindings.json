@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost",
       "clrName": "Microsoft.AspNetCore.WebHost",
-      "tsEmitName": "WebHost",
       "assemblyName": "Microsoft.AspNetCore",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::Start(Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost",
           "clrName": "Start",
-          "tsEmitName": "start",
           "metadataToken": 100663309,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Start|(Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::Start(System.String,Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost",
           "clrName": "Start",
-          "tsEmitName": "start",
           "metadataToken": 100663310,
           "canonicalSignature": "(System.String,Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Start|(System.String,Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -39,13 +57,18 @@
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::Start(System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "clrName": "Start",
-          "tsEmitName": "start",
           "metadataToken": 100663311,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Start|(System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -53,13 +76,18 @@
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::Start(System.String,System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "clrName": "Start",
-          "tsEmitName": "start",
           "metadataToken": 100663312,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "Start|(System.String,System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -67,13 +95,18 @@
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::StartWith(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "clrName": "StartWith",
-          "tsEmitName": "startWith",
           "metadataToken": 100663313,
           "canonicalSignature": "(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "StartWith|(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -81,13 +114,18 @@
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::StartWith(System.String,System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "clrName": "StartWith",
-          "tsEmitName": "startWith",
           "metadataToken": 100663314,
           "canonicalSignature": "(System.String,System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost",
           "normalizedSignature": "StartWith|(System.String,System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -95,13 +133,18 @@
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::CreateDefaultBuilder():Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "clrName": "CreateDefaultBuilder",
-          "tsEmitName": "createDefaultBuilder",
           "metadataToken": 100663316,
           "canonicalSignature": "():Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "CreateDefaultBuilder|():Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -109,13 +152,18 @@
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.AspNetCore.WebHost::CreateDefaultBuilder(System.String[]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "clrName": "CreateDefaultBuilder",
-          "tsEmitName": "createDefaultBuilder",
           "metadataToken": 100663317,
           "canonicalSignature": "(System.String[]):Microsoft.AspNetCore.Hosting.IWebHostBuilder",
           "normalizedSignature": "CreateDefaultBuilder|(System.String[]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.WebHost",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": false
@@ -124,89 +172,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "start",
-          "isStatic": true,
-          "tsSignatureId": "Start|(Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663309
-          }
-        },
-        {
-          "tsName": "start",
-          "isStatic": true,
-          "tsSignatureId": "Start|(System.String,Microsoft.AspNetCore.Http.RequestDelegate):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663310
-          }
-        },
-        {
-          "tsName": "start",
-          "isStatic": true,
-          "tsSignatureId": "Start|(System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663311
-          }
-        },
-        {
-          "tsName": "start",
-          "isStatic": true,
-          "tsSignatureId": "Start|(System.String,System.Action_1[[Microsoft.AspNetCore.Routing.IRouteBuilder,Microsoft.AspNetCore.Routing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663312
-          }
-        },
-        {
-          "tsName": "startWith",
-          "isStatic": true,
-          "tsSignatureId": "StartWith|(System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663313
-          }
-        },
-        {
-          "tsName": "startWith",
-          "isStatic": true,
-          "tsSignatureId": "StartWith|(System.String,System.Action_1[[Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Hosting.IWebHost|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663314
-          }
-        },
-        {
-          "tsName": "createDefaultBuilder",
-          "isStatic": true,
-          "tsSignatureId": "CreateDefaultBuilder|():Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663316
-          }
-        },
-        {
-          "tsName": "createDefaultBuilder",
-          "isStatic": true,
-          "tsSignatureId": "CreateDefaultBuilder|(System.String[]):Microsoft.AspNetCore.Hosting.IWebHostBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.WebHost",
-            "declaringAssemblyName": "Microsoft.AspNetCore",
-            "metadataToken": 100663317
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

@@ -21,7 +21,7 @@ export interface ICorsMetadata$instance {
 export type ICorsMetadata = ICorsMetadata$instance;
 
 export interface ICorsPolicyMetadata$instance extends ICorsMetadata {
-    readonly policy: CorsPolicy;
+    readonly Policy: CorsPolicy;
 }
 
 
@@ -30,15 +30,15 @@ export interface ICorsPolicyMetadata$instance extends ICorsMetadata$instance {}
 export type ICorsPolicyMetadata = ICorsPolicyMetadata$instance;
 
 export interface ICorsPolicyProvider$instance {
-    getPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
+    GetPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
 }
 
 
 export type ICorsPolicyProvider = ICorsPolicyProvider$instance;
 
 export interface ICorsService$instance {
-    applyResult(result: CorsResult, response: HttpResponse): void;
-    evaluatePolicy(context: HttpContext, policy: CorsPolicy): CorsResult;
+    ApplyResult(result: CorsResult, response: HttpResponse): void;
+    EvaluatePolicy(context: HttpContext, policy: CorsPolicy): CorsResult;
 }
 
 
@@ -53,8 +53,8 @@ export interface IDisableCorsAttribute$instance extends ICorsMetadata$instance {
 export type IDisableCorsAttribute = IDisableCorsAttribute$instance;
 
 export interface IEnableCorsAttribute$instance extends ICorsMetadata {
-    get policyName(): string | undefined;
-    set policyName(value: string);
+    get PolicyName(): string | undefined;
+    set PolicyName(value: string);
 }
 
 
@@ -63,7 +63,7 @@ export interface IEnableCorsAttribute$instance extends ICorsMetadata$instance {}
 export type IEnableCorsAttribute = IEnableCorsAttribute$instance;
 
 export interface CorsMiddleware$instance {
-    invoke(context: HttpContext, corsPolicyProvider: ICorsPolicyProvider): Task;
+    Invoke(context: HttpContext, corsPolicyProvider: ICorsPolicyProvider): Task;
 }
 
 
@@ -77,12 +77,12 @@ export const CorsMiddleware: {
 export type CorsMiddleware = CorsMiddleware$instance;
 
 export interface CorsOptions$instance {
-    defaultPolicyName: string;
-    addDefaultPolicy(policy: CorsPolicy): void;
-    addDefaultPolicy(configurePolicy: Action<CorsPolicyBuilder>): void;
-    addPolicy(name: string, policy: CorsPolicy): void;
-    addPolicy(name: string, configurePolicy: Action<CorsPolicyBuilder>): void;
-    getPolicy(name: string): CorsPolicy | undefined;
+    DefaultPolicyName: string;
+    AddDefaultPolicy(policy: CorsPolicy): void;
+    AddDefaultPolicy(configurePolicy: Action<CorsPolicyBuilder>): void;
+    AddPolicy(name: string, policy: CorsPolicy): void;
+    AddPolicy(name: string, configurePolicy: Action<CorsPolicyBuilder>): void;
+    GetPolicy(name: string): CorsPolicy | undefined;
 }
 
 
@@ -94,17 +94,17 @@ export const CorsOptions: {
 export type CorsOptions = CorsOptions$instance;
 
 export interface CorsPolicy$instance {
-    readonly allowAnyHeader: boolean;
-    readonly allowAnyMethod: boolean;
-    readonly allowAnyOrigin: boolean;
-    readonly exposedHeaders: IList<System_Internal.String>;
-    readonly headers: IList<System_Internal.String>;
-    isOriginAllowed: Func<System_Internal.String, System_Internal.Boolean>;
-    readonly methods: IList<System_Internal.String>;
-    readonly origins: IList<System_Internal.String>;
-    preflightMaxAge: Nullable<TimeSpan>;
-    supportsCredentials: boolean;
-    toString(): string;
+    readonly AllowAnyHeader: boolean;
+    readonly AllowAnyMethod: boolean;
+    readonly AllowAnyOrigin: boolean;
+    readonly ExposedHeaders: IList<System_Internal.String>;
+    readonly Headers: IList<System_Internal.String>;
+    IsOriginAllowed: Func<System_Internal.String, System_Internal.Boolean>;
+    readonly Methods: IList<System_Internal.String>;
+    readonly Origins: IList<System_Internal.String>;
+    PreflightMaxAge: Nullable<TimeSpan>;
+    SupportsCredentials: boolean;
+    ToString(): string;
 }
 
 
@@ -116,19 +116,19 @@ export const CorsPolicy: {
 export type CorsPolicy = CorsPolicy$instance;
 
 export interface CorsPolicyBuilder$instance {
-    allowAnyHeader(): CorsPolicyBuilder;
-    allowAnyMethod(): CorsPolicyBuilder;
-    allowAnyOrigin(): CorsPolicyBuilder;
-    allowCredentials(): CorsPolicyBuilder;
-    build(): CorsPolicy;
-    disallowCredentials(): CorsPolicyBuilder;
-    setIsOriginAllowed(isOriginAllowed: Func<System_Internal.String, System_Internal.Boolean>): CorsPolicyBuilder;
-    setIsOriginAllowedToAllowWildcardSubdomains(): CorsPolicyBuilder;
-    setPreflightMaxAge(preflightMaxAge: TimeSpan): CorsPolicyBuilder;
-    withExposedHeaders(...exposedHeaders: string[]): CorsPolicyBuilder;
-    withHeaders(...headers: string[]): CorsPolicyBuilder;
-    withMethods(...methods: string[]): CorsPolicyBuilder;
-    withOrigins(...origins: string[]): CorsPolicyBuilder;
+    AllowAnyHeader(): CorsPolicyBuilder;
+    AllowAnyMethod(): CorsPolicyBuilder;
+    AllowAnyOrigin(): CorsPolicyBuilder;
+    AllowCredentials(): CorsPolicyBuilder;
+    Build(): CorsPolicy;
+    DisallowCredentials(): CorsPolicyBuilder;
+    SetIsOriginAllowed(isOriginAllowed: Func<System_Internal.String, System_Internal.Boolean>): CorsPolicyBuilder;
+    SetIsOriginAllowedToAllowWildcardSubdomains(): CorsPolicyBuilder;
+    SetPreflightMaxAge(preflightMaxAge: TimeSpan): CorsPolicyBuilder;
+    WithExposedHeaders(...exposedHeaders: string[]): CorsPolicyBuilder;
+    WithHeaders(...headers: string[]): CorsPolicyBuilder;
+    WithMethods(...methods: string[]): CorsPolicyBuilder;
+    WithOrigins(...origins: string[]): CorsPolicyBuilder;
 }
 
 
@@ -141,17 +141,17 @@ export const CorsPolicyBuilder: {
 export type CorsPolicyBuilder = CorsPolicyBuilder$instance;
 
 export interface CorsResult$instance {
-    readonly allowedExposedHeaders: IList<System_Internal.String>;
-    readonly allowedHeaders: IList<System_Internal.String>;
-    readonly allowedMethods: IList<System_Internal.String>;
-    get allowedOrigin(): string | undefined;
-    set allowedOrigin(value: string);
-    isOriginAllowed: boolean;
-    isPreflightRequest: boolean;
-    preflightMaxAge: Nullable<TimeSpan>;
-    supportsCredentials: boolean;
-    varyByOrigin: boolean;
-    toString(): string;
+    readonly AllowedExposedHeaders: IList<System_Internal.String>;
+    readonly AllowedHeaders: IList<System_Internal.String>;
+    readonly AllowedMethods: IList<System_Internal.String>;
+    get AllowedOrigin(): string | undefined;
+    set AllowedOrigin(value: string);
+    IsOriginAllowed: boolean;
+    IsPreflightRequest: boolean;
+    PreflightMaxAge: Nullable<TimeSpan>;
+    SupportsCredentials: boolean;
+    VaryByOrigin: boolean;
+    ToString(): string;
 }
 
 
@@ -163,11 +163,11 @@ export const CorsResult: {
 export type CorsResult = CorsResult$instance;
 
 export interface CorsService$instance {
-    applyResult(result: CorsResult, response: HttpResponse): void;
-    evaluatePolicy(context: HttpContext, policyName: string): CorsResult;
-    evaluatePolicy(context: HttpContext, policy: CorsPolicy): CorsResult;
-    evaluatePreflightRequest(context: HttpContext, policy: CorsPolicy, result: CorsResult): void;
-    evaluateRequest(context: HttpContext, policy: CorsPolicy, result: CorsResult): void;
+    ApplyResult(result: CorsResult, response: HttpResponse): void;
+    EvaluatePolicy(context: HttpContext, policyName: string): CorsResult;
+    EvaluatePolicy(context: HttpContext, policy: CorsPolicy): CorsResult;
+    EvaluatePreflightRequest(context: HttpContext, policy: CorsPolicy, result: CorsResult): void;
+    EvaluateRequest(context: HttpContext, policy: CorsPolicy, result: CorsResult): void;
 }
 
 
@@ -186,7 +186,7 @@ export type CorsService = CorsService$instance & __CorsService$views;
 
 
 export interface DefaultCorsPolicyProvider$instance {
-    getPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
+    GetPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
 }
 
 
@@ -205,19 +205,19 @@ export type DefaultCorsPolicyProvider = DefaultCorsPolicyProvider$instance & __D
 
 
 export abstract class CorsConstants$instance {
-    static readonly preflightHttpMethod: string;
-    static readonly origin: string;
-    static readonly anyOrigin: string;
-    static readonly anyHeader: string;
-    static readonly anyMethod: string;
-    static readonly accessControlRequestMethod: string;
-    static readonly accessControlRequestHeaders: string;
-    static readonly accessControlAllowOrigin: string;
-    static readonly accessControlAllowHeaders: string;
-    static readonly accessControlExposeHeaders: string;
-    static readonly accessControlAllowMethods: string;
-    static readonly accessControlAllowCredentials: string;
-    static readonly accessControlMaxAge: string;
+    static readonly PreflightHttpMethod: string;
+    static readonly Origin: string;
+    static readonly AnyOrigin: string;
+    static readonly AnyHeader: string;
+    static readonly AnyMethod: string;
+    static readonly AccessControlRequestMethod: string;
+    static readonly AccessControlRequestHeaders: string;
+    static readonly AccessControlAllowOrigin: string;
+    static readonly AccessControlAllowHeaders: string;
+    static readonly AccessControlExposeHeaders: string;
+    static readonly AccessControlAllowMethods: string;
+    static readonly AccessControlAllowCredentials: string;
+    static readonly AccessControlMaxAge: string;
 }
 
 

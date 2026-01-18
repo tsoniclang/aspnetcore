@@ -1,86 +1,90 @@
 {
   "namespace": "Microsoft.AspNetCore.Localization",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Localization"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureFeature",
       "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
-      "tsEmitName": "IRequestCultureFeature",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureFeature::RequestCulture:Microsoft.AspNetCore.Localization.RequestCulture",
           "clrName": "RequestCulture",
-          "tsEmitName": "requestCulture",
           "metadataToken": 385875979,
           "canonicalSignature": ":Microsoft.AspNetCore.Localization.RequestCulture",
           "normalizedSignature": "RequestCulture|:Microsoft.AspNetCore.Localization.RequestCulture|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureFeature::Provider:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "clrName": "Provider",
-          "tsEmitName": "provider",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "normalizedSignature": "Provider|:Microsoft.AspNetCore.Localization.IRequestCultureProvider|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "requestCulture",
-          "isStatic": false,
-          "tsSignatureId": "RequestCulture|:Microsoft.AspNetCore.Localization.RequestCulture|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "provider",
-          "isStatic": false,
-          "tsSignatureId": "Provider|:Microsoft.AspNetCore.Localization.IRequestCultureProvider|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875980
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
       "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-      "tsEmitName": "IRequestCultureProvider",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -89,37 +93,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "determineProviderCultureResult",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663339
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
       "clrName": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
-      "tsEmitName": "AcceptLanguageHeaderRequestCultureProvider",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult2",
           "metadataToken": 100663326,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -127,27 +129,38 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult$view",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -157,14 +170,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider::MaximumAcceptLanguageHeaderValuesToTry:System.Int32",
           "clrName": "MaximumAcceptLanguageHeaderValuesToTry",
-          "tsEmitName": "maximumAcceptLanguageHeaderValuesToTry",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaximumAcceptLanguageHeaderValuesToTry|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -182,90 +199,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "determineProviderCultureResult2",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663326
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult$view",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663339
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "maximumAcceptLanguageHeaderValuesToTry",
-          "isStatic": false,
-          "tsSignatureId": "MaximumAcceptLanguageHeaderValuesToTry|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875977
-          }
-        },
-        {
-          "tsName": "options",
-          "isStatic": false,
-          "tsSignatureId": "Options|:Microsoft.AspNetCore.Builder.RequestLocalizationOptions|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875989
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663327
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
       "clrName": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-      "tsEmitName": "CookieRequestCultureProvider",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult2",
           "metadataToken": 100663330,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -273,13 +235,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider::MakeCookieValue(Microsoft.AspNetCore.Localization.RequestCulture):System.String",
           "clrName": "MakeCookieValue",
-          "tsEmitName": "makeCookieValue",
           "metadataToken": 100663331,
           "canonicalSignature": "(Microsoft.AspNetCore.Localization.RequestCulture):System.String",
           "normalizedSignature": "MakeCookieValue|(Microsoft.AspNetCore.Localization.RequestCulture):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -287,13 +254,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider::ParseCookieValue(System.String):Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "clrName": "ParseCookieValue",
-          "tsEmitName": "parseCookieValue",
           "metadataToken": 100663332,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "normalizedSignature": "ParseCookieValue|(System.String):Microsoft.AspNetCore.Localization.ProviderCultureResult|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -301,27 +273,38 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult$view",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -331,14 +314,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider::CookieName:System.String",
           "clrName": "CookieName",
-          "tsEmitName": "cookieName",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CookieName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -347,11 +334,11 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider::DefaultCookieNameSystem.String",
           "clrName": "DefaultCookieName",
-          "tsEmitName": "defaultCookieName",
           "metadataToken": 67108877,
           "normalizedSignature": "DefaultCookieName|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -368,122 +355,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "determineProviderCultureResult2",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663330
-          }
-        },
-        {
-          "tsName": "makeCookieValue",
-          "isStatic": true,
-          "tsSignatureId": "MakeCookieValue|(Microsoft.AspNetCore.Localization.RequestCulture):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663331
-          }
-        },
-        {
-          "tsName": "parseCookieValue",
-          "isStatic": true,
-          "tsSignatureId": "ParseCookieValue|(System.String):Microsoft.AspNetCore.Localization.ProviderCultureResult|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663332
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult$view",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663339
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "cookieName",
-          "isStatic": false,
-          "tsSignatureId": "CookieName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875978
-          }
-        },
-        {
-          "tsName": "options",
-          "isStatic": false,
-          "tsSignatureId": "Options|:Microsoft.AspNetCore.Builder.RequestLocalizationOptions|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875989
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "defaultCookieName",
-          "isStatic": true,
-          "tsSignatureId": "DefaultCookieName|System.String|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 67108877
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663333
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
       "clrName": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
-      "tsEmitName": "CustomRequestCultureProvider",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CustomRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult2",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -491,27 +391,38 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult$view",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CustomRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -531,96 +442,54 @@
           "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "determineProviderCultureResult2",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult$view",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663339
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "options",
-          "isStatic": false,
-          "tsSignatureId": "Options|:Microsoft.AspNetCore.Builder.RequestLocalizationOptions|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875989
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663335
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.ProviderCultureResult",
       "clrName": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
-      "tsEmitName": "ProviderCultureResult",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.ProviderCultureResult::Cultures:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Cultures",
-          "tsEmitName": "cultures",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Cultures|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.ProviderCultureResult::UICultures:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "UICultures",
-          "tsEmitName": "uiCultures",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "UICultures|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -668,85 +537,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "cultures",
-          "isStatic": false,
-          "tsSignatureId": "Cultures|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875981
-          }
-        },
-        {
-          "tsName": "uiCultures",
-          "isStatic": false,
-          "tsSignatureId": "UICultures|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875982
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Primitives.StringSegment):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663340
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663341
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663342
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663343
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
       "clrName": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
-      "tsEmitName": "QueryStringRequestCultureProvider",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult2",
           "metadataToken": 100663350,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -754,27 +573,38 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult$view",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -784,28 +614,36 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider::QueryStringKey:System.String",
           "clrName": "QueryStringKey",
-          "tsEmitName": "queryStringKey",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "QueryStringKey|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider::UIQueryStringKey:System.String",
           "clrName": "UIQueryStringKey",
-          "tsEmitName": "uiQueryStringKey",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UIQueryStringKey|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -823,116 +661,54 @@
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "determineProviderCultureResult2",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663350
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult$view",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663339
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "queryStringKey",
-          "isStatic": false,
-          "tsSignatureId": "QueryStringKey|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875983
-          }
-        },
-        {
-          "tsName": "uiQueryStringKey",
-          "isStatic": false,
-          "tsSignatureId": "UIQueryStringKey|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875984
-          }
-        },
-        {
-          "tsName": "options",
-          "isStatic": false,
-          "tsSignatureId": "Options|:Microsoft.AspNetCore.Builder.RequestLocalizationOptions|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875989
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663351
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCulture",
       "clrName": "Microsoft.AspNetCore.Localization.RequestCulture",
-      "tsEmitName": "RequestCulture",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCulture::Culture:System.Globalization.CultureInfo",
           "clrName": "Culture",
-          "tsEmitName": "culture",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Globalization.CultureInfo",
           "normalizedSignature": "Culture|:System.Globalization.CultureInfo|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCulture::UICulture:System.Globalization.CultureInfo",
           "clrName": "UICulture",
-          "tsEmitName": "uiCulture",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Globalization.CultureInfo",
           "normalizedSignature": "UICulture|:System.Globalization.CultureInfo|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -980,129 +756,92 @@
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "culture",
-          "isStatic": false,
-          "tsSignatureId": "Culture|:System.Globalization.CultureInfo|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "uiCulture",
-          "isStatic": false,
-          "tsSignatureId": "UICulture|:System.Globalization.CultureInfo|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Globalization.CultureInfo):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663352
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663353
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663354
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Globalization.CultureInfo,System.Globalization.CultureInfo):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663355
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureFeature",
       "clrName": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
-      "tsEmitName": "RequestCultureFeature",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureFeature::RequestCulture:Microsoft.AspNetCore.Localization.RequestCulture",
           "clrName": "RequestCulture",
-          "tsEmitName": "requestCulture",
           "metadataToken": 385875987,
           "canonicalSignature": ":Microsoft.AspNetCore.Localization.RequestCulture",
           "normalizedSignature": "RequestCulture|:Microsoft.AspNetCore.Localization.RequestCulture|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureFeature::Provider:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "clrName": "Provider",
-          "tsEmitName": "provider",
           "metadataToken": 385875988,
           "canonicalSignature": ":Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "normalizedSignature": "Provider|:Microsoft.AspNetCore.Localization.IRequestCultureProvider|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureFeature::RequestCulture:Microsoft.AspNetCore.Localization.RequestCulture",
           "clrName": "RequestCulture",
-          "tsEmitName": "requestCulture$view",
           "metadataToken": 385875979,
           "canonicalSignature": ":Microsoft.AspNetCore.Localization.RequestCulture",
           "normalizedSignature": "RequestCulture|:Microsoft.AspNetCore.Localization.RequestCulture|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureFeature::Provider:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "clrName": "Provider",
-          "tsEmitName": "provider$view",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "normalizedSignature": "Provider|:Microsoft.AspNetCore.Localization.IRequestCultureProvider|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -1120,78 +859,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "requestCulture",
-          "isStatic": false,
-          "tsSignatureId": "RequestCulture|:Microsoft.AspNetCore.Localization.RequestCulture|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "provider",
-          "isStatic": false,
-          "tsSignatureId": "Provider|:Microsoft.AspNetCore.Localization.IRequestCultureProvider|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875988
-          }
-        },
-        {
-          "tsName": "requestCulture$view",
-          "isStatic": false,
-          "tsSignatureId": "RequestCulture|:Microsoft.AspNetCore.Localization.RequestCulture|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "provider$view",
-          "isStatic": false,
-          "tsSignatureId": "Provider|:Microsoft.AspNetCore.Localization.IRequestCultureProvider|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875980
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Localization.RequestCulture,Microsoft.AspNetCore.Localization.IRequestCultureProvider):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663358
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider",
       "clrName": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-      "tsEmitName": "RequestCultureProvider",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult",
           "metadataToken": 100663363,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -1199,89 +895,75 @@
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "DetermineProviderCultureResult",
-          "tsEmitName": "determineProviderCultureResult$view",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider::Options:Microsoft.AspNetCore.Builder.RequestLocalizationOptions",
           "clrName": "Options",
-          "tsEmitName": "options",
           "metadataToken": 385875989,
           "canonicalSignature": ":Microsoft.AspNetCore.Builder.RequestLocalizationOptions",
           "normalizedSignature": "Options|:Microsoft.AspNetCore.Builder.RequestLocalizationOptions|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "determineProviderCultureResult",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663363
-          }
-        },
-        {
-          "tsName": "determineProviderCultureResult$view",
-          "isStatic": false,
-          "tsSignatureId": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663339
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "options",
-          "isStatic": false,
-          "tsSignatureId": "Options|:Microsoft.AspNetCore.Builder.RequestLocalizationOptions|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 385875989
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
       "clrName": "Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
-      "tsEmitName": "RequestLocalizationMiddleware",
       "assemblyName": "Microsoft.AspNetCore.Localization",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "clrName": "Invoke",
-          "tsEmitName": "invoke",
           "metadataToken": 100663370,
           "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
           "normalizedSignature": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -1300,29 +982,6 @@
           "parameterCount": 3,
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "invoke",
-          "isStatic": false,
-          "tsSignatureId": "Invoke|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663370
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.RequestLocalizationOptions,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
-            "metadataToken": 100663369
-          }
         }
       ]
     }

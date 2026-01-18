@@ -65,26 +65,26 @@ export enum CompatibilityVersion {
     Version_2_1 = 1,
     Version_2_2 = 2,
     Version_3_0 = 3,
-    latest = 2147483647
+    Latest = 2147483647
 }
 
 
 export enum ResponseCacheLocation {
-    any = 0,
-    client = 1,
-    none = 2
+    Any = 0,
+    Client = 1,
+    None = 2
 }
 
 
 export interface IActionResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
 export type IActionResult = IActionResult$instance;
 
 export interface IDesignTimeMvcBuilderConfiguration$instance {
-    configureMvc(builder: IMvcBuilder): void;
+    ConfigureMvc(builder: IMvcBuilder): void;
 }
 
 
@@ -107,41 +107,41 @@ export interface IRequestSizePolicy$instance extends Microsoft_AspNetCore_Mvc_Fi
 export type IRequestSizePolicy = IRequestSizePolicy$instance;
 
 export interface IUrlHelper$instance {
-    readonly actionContext: ActionContext;
-    action(actionContext: UrlActionContext): string | undefined;
-    content(contentPath: string): string;
-    isLocalUrl(url: string): boolean;
-    link(routeName: string, values: unknown): string | undefined;
-    routeUrl(routeContext: UrlRouteContext): string | undefined;
+    readonly ActionContext: ActionContext;
+    Action(actionContext: UrlActionContext): string | undefined;
+    Content(contentPath: string): string;
+    IsLocalUrl(url: string): boolean;
+    Link(routeName: string, values: unknown): string | undefined;
+    RouteUrl(routeContext: UrlRouteContext): string | undefined;
 }
 
 
 export type IUrlHelper = IUrlHelper$instance;
 
 export interface IViewComponentHelper$instance {
-    invokeAsync(name: string, arguments: unknown): Task<IHtmlContent>;
-    invokeAsync(componentType: Type, arguments: unknown): Task<IHtmlContent>;
+    InvokeAsync(name: string, arguments: unknown): Task<IHtmlContent>;
+    InvokeAsync(componentType: Type, arguments: unknown): Task<IHtmlContent>;
 }
 
 
 export type IViewComponentHelper = IViewComponentHelper$instance;
 
 export interface IViewComponentResult$instance {
-    execute(context: ViewComponentContext): void;
-    executeAsync(context: ViewComponentContext): Task;
+    Execute(context: ViewComponentContext): void;
+    ExecuteAsync(context: ViewComponentContext): Task;
 }
 
 
 export type IViewComponentResult = IViewComponentResult$instance;
 
 export interface AcceptedAtActionResult$instance extends ObjectResult$instance {
-    actionName: string;
-    controllerName: string;
-    routeValues: RouteValueDictionary;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
-    onFormatting(context: ActionContext): void;
+    ActionName: string;
+    ControllerName: string;
+    RouteValues: RouteValueDictionary;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
+    OnFormatting(context: ActionContext): void;
 }
 
 
@@ -159,13 +159,13 @@ export type AcceptedAtActionResult = AcceptedAtActionResult$instance & __Accepte
 
 
 export interface AcceptedAtRouteResult$instance extends ObjectResult$instance {
-    get routeName(): string | undefined;
-    set routeName(value: string);
-    routeValues: RouteValueDictionary;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
-    onFormatting(context: ActionContext): void;
+    get RouteName(): string | undefined;
+    set RouteName(value: string);
+    RouteValues: RouteValueDictionary;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
+    OnFormatting(context: ActionContext): void;
 }
 
 
@@ -184,10 +184,10 @@ export type AcceptedAtRouteResult = AcceptedAtRouteResult$instance & __AcceptedA
 
 
 export interface AcceptedResult$instance extends ObjectResult$instance {
-    get location(): string | undefined;
-    set location(value: string);
-    executeResultAsync(context: ActionContext): Task;
-    onFormatting(context: ActionContext): void;
+    get Location(): string | undefined;
+    set Location(value: string);
+    ExecuteResultAsync(context: ActionContext): Task;
+    OnFormatting(context: ActionContext): void;
 }
 
 
@@ -207,11 +207,11 @@ export type AcceptedResult = AcceptedResult$instance & __AcceptedResult$views;
 
 
 export interface AcceptVerbsAttribute$instance extends Attribute {
-    readonly httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    name: string;
-    order: int;
-    get route(): string | undefined;
-    set route(value: string);
+    readonly HttpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    Name: string;
+    Order: int;
+    get Route(): string | undefined;
+    set Route(value: string);
 }
 
 
@@ -232,10 +232,10 @@ export type AcceptVerbsAttribute = AcceptVerbsAttribute$instance & __AcceptVerbs
 
 
 export interface ActionContext$instance {
-    actionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
-    httpContext: HttpContext;
-    readonly modelState: ModelStateDictionary;
-    routeData: RouteData;
+    ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
+    HttpContext: HttpContext;
+    readonly ModelState: ModelStateDictionary;
+    RouteData: RouteData;
 }
 
 
@@ -261,7 +261,7 @@ export const ActionContextAttribute: {
 export type ActionContextAttribute = ActionContextAttribute$instance;
 
 export interface ActionNameAttribute$instance extends Attribute {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
@@ -273,8 +273,8 @@ export const ActionNameAttribute: {
 export type ActionNameAttribute = ActionNameAttribute$instance;
 
 export interface ActionResult$instance {
-    executeResult(context: ActionContext): void;
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResult(context: ActionContext): void;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -292,8 +292,8 @@ export type ActionResult = ActionResult$instance & __ActionResult$views;
 
 
 export interface ActionResult_1$instance<TValue> {
-    readonly result: ActionResult;
-    readonly value: TValue;
+    readonly Result: ActionResult;
+    readonly Value: TValue;
 }
 
 
@@ -313,7 +313,7 @@ export type ActionResult_1<TValue> = ActionResult_1$instance<TValue> & __ActionR
 
 
 export interface AntiforgeryValidationFailedResult$instance extends BadRequestResult$instance, IAntiforgeryValidationFailedResult {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -331,13 +331,13 @@ export type AntiforgeryValidationFailedResult = AntiforgeryValidationFailedResul
 
 
 export interface ApiBehaviorOptions$instance {
-    readonly clientErrorMapping: IDictionary__System_Collections_Generic<System_Internal.Int32, ClientErrorData>;
-    disableImplicitFromServicesParameters: boolean;
-    invalidModelStateResponseFactory: Func<ActionContext, IActionResult>;
-    suppressConsumesConstraintForFormFileParameters: boolean;
-    suppressInferBindingSourcesForParameters: boolean;
-    suppressMapClientErrors: boolean;
-    suppressModelStateInvalidFilter: boolean;
+    readonly ClientErrorMapping: IDictionary__System_Collections_Generic<System_Internal.Int32, ClientErrorData>;
+    DisableImplicitFromServicesParameters: boolean;
+    InvalidModelStateResponseFactory: Func<ActionContext, IActionResult>;
+    SuppressConsumesConstraintForFormFileParameters: boolean;
+    SuppressInferBindingSourcesForParameters: boolean;
+    SuppressMapClientErrors: boolean;
+    SuppressModelStateInvalidFilter: boolean;
 }
 
 
@@ -360,7 +360,7 @@ export const ApiControllerAttribute: {
 export type ApiControllerAttribute = ApiControllerAttribute$instance;
 
 export interface ApiConventionMethodAttribute$instance extends Attribute {
-    readonly conventionType: Type;
+    readonly ConventionType: Type;
 }
 
 
@@ -372,7 +372,7 @@ export const ApiConventionMethodAttribute: {
 export type ApiConventionMethodAttribute = ApiConventionMethodAttribute$instance;
 
 export interface ApiConventionTypeAttribute$instance extends Attribute {
-    readonly conventionType: Type;
+    readonly ConventionType: Type;
 }
 
 
@@ -384,8 +384,8 @@ export const ApiConventionTypeAttribute: {
 export type ApiConventionTypeAttribute = ApiConventionTypeAttribute$instance;
 
 export interface ApiDescriptionActionData$instance {
-    get groupName(): string | undefined;
-    set groupName(value: string);
+    get GroupName(): string | undefined;
+    set GroupName(value: string);
 }
 
 
@@ -397,9 +397,9 @@ export const ApiDescriptionActionData: {
 export type ApiDescriptionActionData = ApiDescriptionActionData$instance;
 
 export interface ApiExplorerSettingsAttribute$instance extends Attribute {
-    get groupName(): string | undefined;
-    set groupName(value: string);
-    ignoreApi: boolean;
+    get GroupName(): string | undefined;
+    set GroupName(value: string);
+    IgnoreApi: boolean;
 }
 
 
@@ -435,9 +435,9 @@ export type AreaAttribute = AreaAttribute$instance & __AreaAttribute$views;
 
 
 export interface AutoValidateAntiforgeryTokenAttribute$instance extends Attribute, IFilterMetadata {
-    readonly isReusable: boolean;
-    order: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    readonly IsReusable: boolean;
+    Order: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -457,7 +457,7 @@ export type AutoValidateAntiforgeryTokenAttribute = AutoValidateAntiforgeryToken
 
 
 export interface BadRequestObjectResult$instance extends ObjectResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -476,7 +476,7 @@ export type BadRequestObjectResult = BadRequestObjectResult$instance & __BadRequ
 
 
 export interface BadRequestResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -494,9 +494,9 @@ export type BadRequestResult = BadRequestResult$instance & __BadRequestResult$vi
 
 
 export interface BindAttribute$instance extends Attribute {
-    readonly include: string[];
-    prefix: string;
-    readonly propertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
+    readonly Include: string[];
+    Prefix: string;
+    readonly PropertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
 }
 
 
@@ -516,7 +516,7 @@ export type BindAttribute = BindAttribute$instance & __BindAttribute$views;
 
 
 export interface BindPropertiesAttribute$instance extends Attribute {
-    supportsGet: boolean;
+    SupportsGet: boolean;
 }
 
 
@@ -528,11 +528,11 @@ export const BindPropertiesAttribute: {
 export type BindPropertiesAttribute = BindPropertiesAttribute$instance;
 
 export interface BindPropertyAttribute$instance extends Attribute {
-    get binderType(): Type | undefined;
-    set binderType(value: Type);
-    readonly bindingSource: BindingSource;
-    name: string;
-    supportsGet: boolean;
+    get BinderType(): Type | undefined;
+    set BinderType(value: Type);
+    readonly BindingSource: BindingSource;
+    Name: string;
+    SupportsGet: boolean;
 }
 
 
@@ -554,13 +554,13 @@ export type BindPropertyAttribute = BindPropertyAttribute$instance & __BindPrope
 
 
 export interface CacheProfile$instance {
-    duration: Nullable<System_Internal.Int32>;
-    location: Nullable<ResponseCacheLocation>;
-    noStore: Nullable<System_Internal.Boolean>;
-    get varyByHeader(): string | undefined;
-    set varyByHeader(value: string);
-    get varyByQueryKeys(): string[] | undefined;
-    set varyByQueryKeys(value: string[]);
+    Duration: Nullable<System_Internal.Int32>;
+    Location: Nullable<ResponseCacheLocation>;
+    NoStore: Nullable<System_Internal.Boolean>;
+    get VaryByHeader(): string | undefined;
+    set VaryByHeader(value: string);
+    get VaryByQueryKeys(): string[] | undefined;
+    set VaryByQueryKeys(value: string[]);
 }
 
 
@@ -572,9 +572,9 @@ export const CacheProfile: {
 export type CacheProfile = CacheProfile$instance;
 
 export interface ChallengeResult$instance extends ActionResult$instance {
-    authenticationSchemes: IList<System_Internal.String>;
-    properties: AuthenticationProperties;
-    executeResultAsync(context: ActionContext): Task;
+    AuthenticationSchemes: IList<System_Internal.String>;
+    Properties: AuthenticationProperties;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -596,10 +596,10 @@ export type ChallengeResult = ChallengeResult$instance & __ChallengeResult$views
 
 
 export interface ClientErrorData$instance {
-    get link(): string | undefined;
-    set link(value: string);
-    get title(): string | undefined;
-    set title(value: string);
+    get Link(): string | undefined;
+    set Link(value: string);
+    get Title(): string | undefined;
+    set Title(value: string);
 }
 
 
@@ -611,7 +611,7 @@ export const ClientErrorData: {
 export type ClientErrorData = ClientErrorData$instance;
 
 export interface ConflictObjectResult$instance extends ObjectResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -630,7 +630,7 @@ export type ConflictObjectResult = ConflictObjectResult$instance & __ConflictObj
 
 
 export interface ConflictResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -648,19 +648,19 @@ export type ConflictResult = ConflictResult$instance & __ConflictResult$views;
 
 
 export interface ConsumesAttribute$instance extends Attribute, IFilterMetadata, IActionConstraintMetadata {
-    contentTypes: MediaTypeCollection;
-    isOptional: boolean;
-    accept(context: ActionConstraintContext): boolean;
-    onResourceExecuted(context: ResourceExecutedContext): void;
-    onResourceExecuting(context: ResourceExecutingContext): void;
-    setContentTypes(contentTypes: MediaTypeCollection): void;
+    ContentTypes: MediaTypeCollection;
+    IsOptional: boolean;
+    Accept(context: ActionConstraintContext): boolean;
+    OnResourceExecuted(context: ResourceExecutedContext): void;
+    OnResourceExecuting(context: ResourceExecutingContext): void;
+    SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
 
 export const ConsumesAttribute: {
     new(contentType: string, otherContentTypes: string[]): ConsumesAttribute;
     new(requestType: Type, contentType: string, otherContentTypes: string[]): ConsumesAttribute;
-    readonly consumesActionConstraintOrder: int;
+    readonly ConsumesActionConstraintOrder: int;
 };
 
 
@@ -677,10 +677,10 @@ export type ConsumesAttribute = ConsumesAttribute$instance & __ConsumesAttribute
 
 
 export interface ContentResult$instance extends ActionResult$instance {
-    content: string;
-    contentType: string;
-    statusCode: Nullable<System_Internal.Int32>;
-    executeResultAsync(context: ActionContext): Task;
+    Content: string;
+    ContentType: string;
+    StatusCode: Nullable<System_Internal.Int32>;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -698,27 +698,27 @@ export type ContentResult = ContentResult$instance & __ContentResult$views;
 
 
 export interface Controller$instance extends ControllerBase, IFilterMetadata {
-    tempData: ITempDataDictionary;
-    readonly viewBag: unknown;
-    viewData: ViewDataDictionary;
-    dispose(): void;
-    json(data: unknown): JsonResult;
-    json(data: unknown, serializerSettings: unknown): JsonResult;
-    onActionExecuted(context: ActionExecutedContext): void;
-    onActionExecuting(context: ActionExecutingContext): void;
-    onActionExecutionAsync(context: ActionExecutingContext, next: ActionExecutionDelegate): Task;
-    partialView(): PartialViewResult;
-    partialView(viewName: string): PartialViewResult;
-    partialView(model: unknown): PartialViewResult;
-    partialView(viewName: string, model: unknown): PartialViewResult;
-    view(): ViewResult;
-    view(viewName: string): ViewResult;
-    view(model: unknown): ViewResult;
-    view(viewName: string, model: unknown): ViewResult;
-    viewComponent(componentName: string): ViewComponentResult;
-    viewComponent(componentType: Type): ViewComponentResult;
-    viewComponent(componentName: string, arguments: unknown): ViewComponentResult;
-    viewComponent(componentType: Type, arguments: unknown): ViewComponentResult;
+    TempData: ITempDataDictionary;
+    readonly ViewBag: unknown;
+    ViewData: ViewDataDictionary;
+    Dispose(): void;
+    Json(data: unknown): JsonResult;
+    Json(data: unknown, serializerSettings: unknown): JsonResult;
+    OnActionExecuted(context: ActionExecutedContext): void;
+    OnActionExecuting(context: ActionExecutingContext): void;
+    OnActionExecutionAsync(context: ActionExecutingContext, next: ActionExecutionDelegate): Task;
+    PartialView(): PartialViewResult;
+    PartialView(viewName: string): PartialViewResult;
+    PartialView(model: unknown): PartialViewResult;
+    PartialView(viewName: string, model: unknown): PartialViewResult;
+    View(): ViewResult;
+    View(viewName: string): ViewResult;
+    View(model: unknown): ViewResult;
+    View(viewName: string, model: unknown): ViewResult;
+    ViewComponent(componentName: string): ViewComponentResult;
+    ViewComponent(componentType: Type): ViewComponentResult;
+    ViewComponent(componentName: string, arguments: unknown): ViewComponentResult;
+    ViewComponent(componentType: Type, arguments: unknown): ViewComponentResult;
 }
 
 
@@ -748,193 +748,193 @@ export const ControllerAttribute: {
 export type ControllerAttribute = ControllerAttribute$instance;
 
 export interface ControllerBase$instance {
-    controllerContext: ControllerContext;
-    readonly httpContext: HttpContext;
-    metadataProvider: IModelMetadataProvider;
-    modelBinderFactory: IModelBinderFactory;
-    readonly modelState: ModelStateDictionary;
-    objectValidator: IObjectModelValidator;
-    problemDetailsFactory: ProblemDetailsFactory;
-    readonly request: HttpRequest;
-    readonly response: HttpResponse;
-    readonly routeData: RouteData;
-    url: IUrlHelper;
-    readonly user: ClaimsPrincipal;
-    accepted(): AcceptedResult;
-    accepted(value: unknown): AcceptedResult;
-    accepted(uri: Uri): AcceptedResult;
-    accepted(uri: string): AcceptedResult;
-    accepted(uri: string, value: unknown): AcceptedResult;
-    accepted(uri: Uri, value: unknown): AcceptedResult;
-    acceptedAtAction(actionName: string): AcceptedAtActionResult;
-    acceptedAtAction(actionName: string, controllerName: string): AcceptedAtActionResult;
-    acceptedAtAction(actionName: string, value: unknown): AcceptedAtActionResult;
-    acceptedAtAction(actionName: string, controllerName: string, routeValues: unknown): AcceptedAtActionResult;
-    acceptedAtAction(actionName: string, routeValues: unknown, value: unknown): AcceptedAtActionResult;
-    acceptedAtAction(actionName: string, controllerName: string, routeValues: unknown, value: unknown): AcceptedAtActionResult;
-    acceptedAtRoute(routeValues: unknown): AcceptedAtRouteResult;
-    acceptedAtRoute(routeName: string): AcceptedAtRouteResult;
-    acceptedAtRoute(routeName: string, routeValues: unknown): AcceptedAtRouteResult;
-    acceptedAtRoute(routeValues: unknown, value: unknown): AcceptedAtRouteResult;
-    acceptedAtRoute(routeName: string, routeValues: unknown, value: unknown): AcceptedAtRouteResult;
-    badRequest(): BadRequestResult;
-    badRequest(error: unknown): BadRequestObjectResult;
-    badRequest(modelState: ModelStateDictionary): BadRequestObjectResult;
-    challenge(): ChallengeResult;
-    challenge(...authenticationSchemes: string[]): ChallengeResult;
-    challenge(properties: AuthenticationProperties): ChallengeResult;
-    challenge(properties: AuthenticationProperties, ...authenticationSchemes: string[]): ChallengeResult;
-    conflict(): ConflictResult;
-    conflict(error: unknown): ConflictObjectResult;
-    conflict(modelState: ModelStateDictionary): ConflictObjectResult;
-    content(content: string): ContentResult;
-    content(content: string, contentType: string): ContentResult;
-    content(content: string, contentType: string, contentEncoding: Encoding): ContentResult;
-    content(content: string, contentType: MediaTypeHeaderValue): ContentResult;
-    created(): CreatedResult;
-    created(uri: string, value: unknown): CreatedResult;
-    created(uri: Uri, value: unknown): CreatedResult;
-    createdAtAction(actionName: string, value: unknown): CreatedAtActionResult;
-    createdAtAction(actionName: string, routeValues: unknown, value: unknown): CreatedAtActionResult;
-    createdAtAction(actionName: string, controllerName: string, routeValues: unknown, value: unknown): CreatedAtActionResult;
-    createdAtRoute(routeName: string, value: unknown): CreatedAtRouteResult;
-    createdAtRoute(routeValues: unknown, value: unknown): CreatedAtRouteResult;
-    createdAtRoute(routeName: string, routeValues: unknown, value: unknown): CreatedAtRouteResult;
-    file(fileContents: byte[], contentType: string): FileContentResult;
-    file(fileContents: byte[], contentType: string, enableRangeProcessing: boolean): FileContentResult;
-    file(fileContents: byte[], contentType: string, fileDownloadName: string): FileContentResult;
-    file(fileContents: byte[], contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): FileContentResult;
-    file(fileContents: byte[], contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileContentResult;
-    file(fileContents: byte[], contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileContentResult;
-    file(fileContents: byte[], contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileContentResult;
-    file(fileContents: byte[], contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileContentResult;
-    file(fileStream: Stream, contentType: string): FileStreamResult;
-    file(fileStream: Stream, contentType: string, enableRangeProcessing: boolean): FileStreamResult;
-    file(fileStream: Stream, contentType: string, fileDownloadName: string): FileStreamResult;
-    file(fileStream: Stream, contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): FileStreamResult;
-    file(fileStream: Stream, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileStreamResult;
-    file(fileStream: Stream, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileStreamResult;
-    file(fileStream: Stream, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileStreamResult;
-    file(fileStream: Stream, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileStreamResult;
-    file(virtualPath: string, contentType: string): VirtualFileResult;
-    file(virtualPath: string, contentType: string, enableRangeProcessing: boolean): VirtualFileResult;
-    file(virtualPath: string, contentType: string, fileDownloadName: string): VirtualFileResult;
-    file(virtualPath: string, contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): VirtualFileResult;
-    file(virtualPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): VirtualFileResult;
-    file(virtualPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): VirtualFileResult;
-    file(virtualPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): VirtualFileResult;
-    file(virtualPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): VirtualFileResult;
-    forbid(): ForbidResult;
-    forbid(...authenticationSchemes: string[]): ForbidResult;
-    forbid(properties: AuthenticationProperties): ForbidResult;
-    forbid(properties: AuthenticationProperties, ...authenticationSchemes: string[]): ForbidResult;
-    localRedirect(localUrl: string): LocalRedirectResult;
-    localRedirectPermanent(localUrl: string): LocalRedirectResult;
-    localRedirectPermanentPreserveMethod(localUrl: string): LocalRedirectResult;
-    localRedirectPreserveMethod(localUrl: string): LocalRedirectResult;
-    noContent(): NoContentResult;
-    notFound(): NotFoundResult;
-    notFound(value: unknown): NotFoundObjectResult;
-    ok(): OkResult;
-    ok(value: unknown): OkObjectResult;
-    physicalFile(physicalPath: string, contentType: string): PhysicalFileResult;
-    physicalFile(physicalPath: string, contentType: string, enableRangeProcessing: boolean): PhysicalFileResult;
-    physicalFile(physicalPath: string, contentType: string, fileDownloadName: string): PhysicalFileResult;
-    physicalFile(physicalPath: string, contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): PhysicalFileResult;
-    physicalFile(physicalPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): PhysicalFileResult;
-    physicalFile(physicalPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): PhysicalFileResult;
-    physicalFile(physicalPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): PhysicalFileResult;
-    physicalFile(physicalPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): PhysicalFileResult;
-    problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string): ObjectResult;
-    problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ObjectResult;
-    redirect(url: string): RedirectResult;
-    redirectPermanent(url: string): RedirectResult;
-    redirectPermanentPreserveMethod(url: string): RedirectResult;
-    redirectPreserveMethod(url: string): RedirectResult;
-    redirectToAction(): RedirectToActionResult;
-    redirectToAction(actionName: string): RedirectToActionResult;
-    redirectToAction(actionName: string, routeValues: unknown): RedirectToActionResult;
-    redirectToAction(actionName: string, controllerName: string): RedirectToActionResult;
-    redirectToAction(actionName: string, controllerName: string, routeValues: unknown): RedirectToActionResult;
-    redirectToAction(actionName: string, controllerName: string, fragment: string): RedirectToActionResult;
-    redirectToAction(actionName: string, controllerName: string, routeValues: unknown, fragment: string): RedirectToActionResult;
-    redirectToActionPermanent(actionName: string): RedirectToActionResult;
-    redirectToActionPermanent(actionName: string, routeValues: unknown): RedirectToActionResult;
-    redirectToActionPermanent(actionName: string, controllerName: string): RedirectToActionResult;
-    redirectToActionPermanent(actionName: string, controllerName: string, fragment: string): RedirectToActionResult;
-    redirectToActionPermanent(actionName: string, controllerName: string, routeValues: unknown): RedirectToActionResult;
-    redirectToActionPermanent(actionName: string, controllerName: string, routeValues: unknown, fragment: string): RedirectToActionResult;
-    redirectToActionPermanentPreserveMethod(actionName?: string, controllerName?: string, routeValues?: unknown, fragment?: string): RedirectToActionResult;
-    redirectToActionPreserveMethod(actionName?: string, controllerName?: string, routeValues?: unknown, fragment?: string): RedirectToActionResult;
-    redirectToPage(pageName: string): RedirectToPageResult;
-    redirectToPage(pageName: string, routeValues: unknown): RedirectToPageResult;
-    redirectToPage(pageName: string, pageHandler: string): RedirectToPageResult;
-    redirectToPage(pageName: string, pageHandler: string, routeValues: unknown): RedirectToPageResult;
-    redirectToPage(pageName: string, pageHandler: string, fragment: string): RedirectToPageResult;
-    redirectToPage(pageName: string, pageHandler: string, routeValues: unknown, fragment: string): RedirectToPageResult;
-    redirectToPagePermanent(pageName: string): RedirectToPageResult;
-    redirectToPagePermanent(pageName: string, routeValues: unknown): RedirectToPageResult;
-    redirectToPagePermanent(pageName: string, pageHandler: string): RedirectToPageResult;
-    redirectToPagePermanent(pageName: string, pageHandler: string, fragment: string): RedirectToPageResult;
-    redirectToPagePermanent(pageName: string, pageHandler: string, routeValues: unknown, fragment: string): RedirectToPageResult;
-    redirectToPagePermanentPreserveMethod(pageName: string, pageHandler?: string, routeValues?: unknown, fragment?: string): RedirectToPageResult;
-    redirectToPagePreserveMethod(pageName: string, pageHandler?: string, routeValues?: unknown, fragment?: string): RedirectToPageResult;
-    redirectToRoute(routeName: string): RedirectToRouteResult;
-    redirectToRoute(routeValues: unknown): RedirectToRouteResult;
-    redirectToRoute(routeName: string, routeValues: unknown): RedirectToRouteResult;
-    redirectToRoute(routeName: string, fragment: string): RedirectToRouteResult;
-    redirectToRoute(routeName: string, routeValues: unknown, fragment: string): RedirectToRouteResult;
-    redirectToRoutePermanent(routeName: string): RedirectToRouteResult;
-    redirectToRoutePermanent(routeValues: unknown): RedirectToRouteResult;
-    redirectToRoutePermanent(routeName: string, routeValues: unknown): RedirectToRouteResult;
-    redirectToRoutePermanent(routeName: string, fragment: string): RedirectToRouteResult;
-    redirectToRoutePermanent(routeName: string, routeValues: unknown, fragment: string): RedirectToRouteResult;
-    redirectToRoutePermanentPreserveMethod(routeName?: string, routeValues?: unknown, fragment?: string): RedirectToRouteResult;
-    redirectToRoutePreserveMethod(routeName?: string, routeValues?: unknown, fragment?: string): RedirectToRouteResult;
-    signIn(principal: ClaimsPrincipal): SignInResult;
-    signIn(principal: ClaimsPrincipal, authenticationScheme: string): SignInResult;
-    signIn(principal: ClaimsPrincipal, properties: AuthenticationProperties): SignInResult;
-    signIn(principal: ClaimsPrincipal, properties: AuthenticationProperties, authenticationScheme: string): SignInResult;
-    signOut(): SignOutResult;
-    signOut(properties: AuthenticationProperties): SignOutResult;
-    signOut(...authenticationSchemes: string[]): SignOutResult;
-    signOut(properties: AuthenticationProperties, ...authenticationSchemes: string[]): SignOutResult;
-    statusCode(statusCode: int): StatusCodeResult;
-    statusCode(statusCode: int, value: unknown): ObjectResult;
-    tryUpdateModelAsync<TModel>(model: TModel): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync<TModel>(model: TModel, prefix: string): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync<TModel>(model: TModel, prefix: string, ...includeExpressions: Expression<Func<TModel, unknown>>[]): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync<TModel>(model: TModel, prefix: string, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression<Func<TModel, unknown>>[]): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync(model: unknown, modelType: Type, prefix: string): Task<System_Internal.Boolean>;
-    tryUpdateModelAsync(model: unknown, modelType: Type, prefix: string, valueProvider: IValueProvider, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
-    tryValidateModel(model: unknown): boolean;
-    tryValidateModel(model: unknown, prefix: string): boolean;
-    unauthorized(): UnauthorizedResult;
-    unauthorized(value: unknown): UnauthorizedObjectResult;
-    unprocessableEntity(): UnprocessableEntityResult;
-    unprocessableEntity(error: unknown): UnprocessableEntityObjectResult;
-    unprocessableEntity(modelState: ModelStateDictionary): UnprocessableEntityObjectResult;
-    validationProblem(descriptor: ValidationProblemDetails): ActionResult;
-    validationProblem(modelStateDictionary: ModelStateDictionary): ActionResult;
-    validationProblem(): ActionResult;
-    validationProblem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, modelStateDictionary: ModelStateDictionary): ActionResult;
-    validationProblem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, modelStateDictionary?: ModelStateDictionary, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ActionResult;
+    ControllerContext: ControllerContext;
+    readonly HttpContext: HttpContext;
+    MetadataProvider: IModelMetadataProvider;
+    ModelBinderFactory: IModelBinderFactory;
+    readonly ModelState: ModelStateDictionary;
+    ObjectValidator: IObjectModelValidator;
+    ProblemDetailsFactory: ProblemDetailsFactory;
+    readonly Request: HttpRequest;
+    readonly Response: HttpResponse;
+    readonly RouteData: RouteData;
+    Url: IUrlHelper;
+    readonly User: ClaimsPrincipal;
+    Accepted(): AcceptedResult;
+    Accepted(value: unknown): AcceptedResult;
+    Accepted(uri: Uri): AcceptedResult;
+    Accepted(uri: string): AcceptedResult;
+    Accepted(uri: string, value: unknown): AcceptedResult;
+    Accepted(uri: Uri, value: unknown): AcceptedResult;
+    AcceptedAtAction(actionName: string): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string, controllerName: string): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string, value: unknown): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string, controllerName: string, routeValues: unknown): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string, routeValues: unknown, value: unknown): AcceptedAtActionResult;
+    AcceptedAtAction(actionName: string, controllerName: string, routeValues: unknown, value: unknown): AcceptedAtActionResult;
+    AcceptedAtRoute(routeValues: unknown): AcceptedAtRouteResult;
+    AcceptedAtRoute(routeName: string): AcceptedAtRouteResult;
+    AcceptedAtRoute(routeName: string, routeValues: unknown): AcceptedAtRouteResult;
+    AcceptedAtRoute(routeValues: unknown, value: unknown): AcceptedAtRouteResult;
+    AcceptedAtRoute(routeName: string, routeValues: unknown, value: unknown): AcceptedAtRouteResult;
+    BadRequest(): BadRequestResult;
+    BadRequest(error: unknown): BadRequestObjectResult;
+    BadRequest(modelState: ModelStateDictionary): BadRequestObjectResult;
+    Challenge(): ChallengeResult;
+    Challenge(...authenticationSchemes: string[]): ChallengeResult;
+    Challenge(properties: AuthenticationProperties): ChallengeResult;
+    Challenge(properties: AuthenticationProperties, ...authenticationSchemes: string[]): ChallengeResult;
+    Conflict(): ConflictResult;
+    Conflict(error: unknown): ConflictObjectResult;
+    Conflict(modelState: ModelStateDictionary): ConflictObjectResult;
+    Content(content: string): ContentResult;
+    Content(content: string, contentType: string): ContentResult;
+    Content(content: string, contentType: string, contentEncoding: Encoding): ContentResult;
+    Content(content: string, contentType: MediaTypeHeaderValue): ContentResult;
+    Created(): CreatedResult;
+    Created(uri: string, value: unknown): CreatedResult;
+    Created(uri: Uri, value: unknown): CreatedResult;
+    CreatedAtAction(actionName: string, value: unknown): CreatedAtActionResult;
+    CreatedAtAction(actionName: string, routeValues: unknown, value: unknown): CreatedAtActionResult;
+    CreatedAtAction(actionName: string, controllerName: string, routeValues: unknown, value: unknown): CreatedAtActionResult;
+    CreatedAtRoute(routeName: string, value: unknown): CreatedAtRouteResult;
+    CreatedAtRoute(routeValues: unknown, value: unknown): CreatedAtRouteResult;
+    CreatedAtRoute(routeName: string, routeValues: unknown, value: unknown): CreatedAtRouteResult;
+    File(fileContents: byte[], contentType: string): FileContentResult;
+    File(fileContents: byte[], contentType: string, enableRangeProcessing: boolean): FileContentResult;
+    File(fileContents: byte[], contentType: string, fileDownloadName: string): FileContentResult;
+    File(fileContents: byte[], contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): FileContentResult;
+    File(fileContents: byte[], contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileContentResult;
+    File(fileContents: byte[], contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileContentResult;
+    File(fileContents: byte[], contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileContentResult;
+    File(fileContents: byte[], contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileContentResult;
+    File(fileStream: Stream, contentType: string): FileStreamResult;
+    File(fileStream: Stream, contentType: string, enableRangeProcessing: boolean): FileStreamResult;
+    File(fileStream: Stream, contentType: string, fileDownloadName: string): FileStreamResult;
+    File(fileStream: Stream, contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): FileStreamResult;
+    File(fileStream: Stream, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileStreamResult;
+    File(fileStream: Stream, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileStreamResult;
+    File(fileStream: Stream, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): FileStreamResult;
+    File(fileStream: Stream, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): FileStreamResult;
+    File(virtualPath: string, contentType: string): VirtualFileResult;
+    File(virtualPath: string, contentType: string, enableRangeProcessing: boolean): VirtualFileResult;
+    File(virtualPath: string, contentType: string, fileDownloadName: string): VirtualFileResult;
+    File(virtualPath: string, contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): VirtualFileResult;
+    File(virtualPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): VirtualFileResult;
+    File(virtualPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): VirtualFileResult;
+    File(virtualPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): VirtualFileResult;
+    File(virtualPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): VirtualFileResult;
+    Forbid(): ForbidResult;
+    Forbid(...authenticationSchemes: string[]): ForbidResult;
+    Forbid(properties: AuthenticationProperties): ForbidResult;
+    Forbid(properties: AuthenticationProperties, ...authenticationSchemes: string[]): ForbidResult;
+    LocalRedirect(localUrl: string): LocalRedirectResult;
+    LocalRedirectPermanent(localUrl: string): LocalRedirectResult;
+    LocalRedirectPermanentPreserveMethod(localUrl: string): LocalRedirectResult;
+    LocalRedirectPreserveMethod(localUrl: string): LocalRedirectResult;
+    NoContent(): NoContentResult;
+    NotFound(): NotFoundResult;
+    NotFound(value: unknown): NotFoundObjectResult;
+    Ok(): OkResult;
+    Ok(value: unknown): OkObjectResult;
+    PhysicalFile(physicalPath: string, contentType: string): PhysicalFileResult;
+    PhysicalFile(physicalPath: string, contentType: string, enableRangeProcessing: boolean): PhysicalFileResult;
+    PhysicalFile(physicalPath: string, contentType: string, fileDownloadName: string): PhysicalFileResult;
+    PhysicalFile(physicalPath: string, contentType: string, fileDownloadName: string, enableRangeProcessing: boolean): PhysicalFileResult;
+    PhysicalFile(physicalPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): PhysicalFileResult;
+    PhysicalFile(physicalPath: string, contentType: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): PhysicalFileResult;
+    PhysicalFile(physicalPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue): PhysicalFileResult;
+    PhysicalFile(physicalPath: string, contentType: string, fileDownloadName: string, lastModified: Nullable<DateTimeOffset>, entityTag: EntityTagHeaderValue, enableRangeProcessing: boolean): PhysicalFileResult;
+    Problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string): ObjectResult;
+    Problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ObjectResult;
+    Redirect(url: string): RedirectResult;
+    RedirectPermanent(url: string): RedirectResult;
+    RedirectPermanentPreserveMethod(url: string): RedirectResult;
+    RedirectPreserveMethod(url: string): RedirectResult;
+    RedirectToAction(): RedirectToActionResult;
+    RedirectToAction(actionName: string): RedirectToActionResult;
+    RedirectToAction(actionName: string, routeValues: unknown): RedirectToActionResult;
+    RedirectToAction(actionName: string, controllerName: string): RedirectToActionResult;
+    RedirectToAction(actionName: string, controllerName: string, routeValues: unknown): RedirectToActionResult;
+    RedirectToAction(actionName: string, controllerName: string, fragment: string): RedirectToActionResult;
+    RedirectToAction(actionName: string, controllerName: string, routeValues: unknown, fragment: string): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string, routeValues: unknown): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string, controllerName: string): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string, controllerName: string, fragment: string): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string, controllerName: string, routeValues: unknown): RedirectToActionResult;
+    RedirectToActionPermanent(actionName: string, controllerName: string, routeValues: unknown, fragment: string): RedirectToActionResult;
+    RedirectToActionPermanentPreserveMethod(actionName?: string, controllerName?: string, routeValues?: unknown, fragment?: string): RedirectToActionResult;
+    RedirectToActionPreserveMethod(actionName?: string, controllerName?: string, routeValues?: unknown, fragment?: string): RedirectToActionResult;
+    RedirectToPage(pageName: string): RedirectToPageResult;
+    RedirectToPage(pageName: string, routeValues: unknown): RedirectToPageResult;
+    RedirectToPage(pageName: string, pageHandler: string): RedirectToPageResult;
+    RedirectToPage(pageName: string, pageHandler: string, routeValues: unknown): RedirectToPageResult;
+    RedirectToPage(pageName: string, pageHandler: string, fragment: string): RedirectToPageResult;
+    RedirectToPage(pageName: string, pageHandler: string, routeValues: unknown, fragment: string): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string, routeValues: unknown): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string, pageHandler: string): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string, pageHandler: string, fragment: string): RedirectToPageResult;
+    RedirectToPagePermanent(pageName: string, pageHandler: string, routeValues: unknown, fragment: string): RedirectToPageResult;
+    RedirectToPagePermanentPreserveMethod(pageName: string, pageHandler?: string, routeValues?: unknown, fragment?: string): RedirectToPageResult;
+    RedirectToPagePreserveMethod(pageName: string, pageHandler?: string, routeValues?: unknown, fragment?: string): RedirectToPageResult;
+    RedirectToRoute(routeName: string): RedirectToRouteResult;
+    RedirectToRoute(routeValues: unknown): RedirectToRouteResult;
+    RedirectToRoute(routeName: string, routeValues: unknown): RedirectToRouteResult;
+    RedirectToRoute(routeName: string, fragment: string): RedirectToRouteResult;
+    RedirectToRoute(routeName: string, routeValues: unknown, fragment: string): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeValues: unknown): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string, routeValues: unknown): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string, fragment: string): RedirectToRouteResult;
+    RedirectToRoutePermanent(routeName: string, routeValues: unknown, fragment: string): RedirectToRouteResult;
+    RedirectToRoutePermanentPreserveMethod(routeName?: string, routeValues?: unknown, fragment?: string): RedirectToRouteResult;
+    RedirectToRoutePreserveMethod(routeName?: string, routeValues?: unknown, fragment?: string): RedirectToRouteResult;
+    SignIn(principal: ClaimsPrincipal): SignInResult;
+    SignIn(principal: ClaimsPrincipal, authenticationScheme: string): SignInResult;
+    SignIn(principal: ClaimsPrincipal, properties: AuthenticationProperties): SignInResult;
+    SignIn(principal: ClaimsPrincipal, properties: AuthenticationProperties, authenticationScheme: string): SignInResult;
+    SignOut(): SignOutResult;
+    SignOut(properties: AuthenticationProperties): SignOutResult;
+    SignOut(...authenticationSchemes: string[]): SignOutResult;
+    SignOut(properties: AuthenticationProperties, ...authenticationSchemes: string[]): SignOutResult;
+    StatusCode(statusCode: int): StatusCodeResult;
+    StatusCode(statusCode: int, value: unknown): ObjectResult;
+    TryUpdateModelAsync<TModel>(model: TModel): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, ...includeExpressions: Expression<Func<TModel, unknown>>[]): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression<Func<TModel, unknown>>[]): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string, valueProvider: IValueProvider, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
+    TryValidateModel(model: unknown): boolean;
+    TryValidateModel(model: unknown, prefix: string): boolean;
+    Unauthorized(): UnauthorizedResult;
+    Unauthorized(value: unknown): UnauthorizedObjectResult;
+    UnprocessableEntity(): UnprocessableEntityResult;
+    UnprocessableEntity(error: unknown): UnprocessableEntityObjectResult;
+    UnprocessableEntity(modelState: ModelStateDictionary): UnprocessableEntityObjectResult;
+    ValidationProblem(descriptor: ValidationProblemDetails): ActionResult;
+    ValidationProblem(modelStateDictionary: ModelStateDictionary): ActionResult;
+    ValidationProblem(): ActionResult;
+    ValidationProblem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, modelStateDictionary: ModelStateDictionary): ActionResult;
+    ValidationProblem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, modelStateDictionary?: ModelStateDictionary, extensions?: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): ActionResult;
 }
 
 
 export const ControllerBase: {
-    readonly empty: EmptyResult;
+    readonly Empty: EmptyResult;
 };
 
 
 export type ControllerBase = ControllerBase$instance;
 
 export interface ControllerContext$instance extends ActionContext {
-    actionDescriptor: ActionDescriptor | ControllerActionDescriptor;
-    valueProviderFactories: IList<IValueProviderFactory>;
+    ActionDescriptor: ActionDescriptor | ControllerActionDescriptor;
+    ValueProviderFactories: IList<IValueProviderFactory>;
 }
 
 
@@ -958,7 +958,7 @@ export const ControllerContextAttribute: {
 export type ControllerContextAttribute = ControllerContextAttribute$instance;
 
 export interface CookieTempDataProviderOptions$instance {
-    cookie: CookieBuilder;
+    Cookie: CookieBuilder;
 }
 
 
@@ -970,13 +970,13 @@ export const CookieTempDataProviderOptions: {
 export type CookieTempDataProviderOptions = CookieTempDataProviderOptions$instance;
 
 export interface CreatedAtActionResult$instance extends ObjectResult$instance {
-    actionName: string;
-    controllerName: string;
-    routeValues: RouteValueDictionary;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
-    onFormatting(context: ActionContext): void;
+    ActionName: string;
+    ControllerName: string;
+    RouteValues: RouteValueDictionary;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
+    OnFormatting(context: ActionContext): void;
 }
 
 
@@ -994,13 +994,13 @@ export type CreatedAtActionResult = CreatedAtActionResult$instance & __CreatedAt
 
 
 export interface CreatedAtRouteResult$instance extends ObjectResult$instance {
-    get routeName(): string | undefined;
-    set routeName(value: string);
-    routeValues: RouteValueDictionary;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
-    onFormatting(context: ActionContext): void;
+    get RouteName(): string | undefined;
+    set RouteName(value: string);
+    RouteValues: RouteValueDictionary;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
+    OnFormatting(context: ActionContext): void;
 }
 
 
@@ -1019,10 +1019,10 @@ export type CreatedAtRouteResult = CreatedAtRouteResult$instance & __CreatedAtRo
 
 
 export interface CreatedResult$instance extends ObjectResult$instance {
-    get location(): string | undefined;
-    set location(value: string);
-    executeResultAsync(context: ActionContext): Task;
-    onFormatting(context: ActionContext): void;
+    get Location(): string | undefined;
+    set Location(value: string);
+    ExecuteResultAsync(context: ActionContext): Task;
+    OnFormatting(context: ActionContext): void;
 }
 
 
@@ -1042,9 +1042,9 @@ export type CreatedResult = CreatedResult$instance & __CreatedResult$views;
 
 
 export interface DisableRequestSizeLimitAttribute$instance extends Attribute, IFilterMetadata {
-    readonly isReusable: boolean;
-    order: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    readonly IsReusable: boolean;
+    Order: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -1065,8 +1065,8 @@ export type DisableRequestSizeLimitAttribute = DisableRequestSizeLimitAttribute$
 
 
 export interface EmptyResult$instance extends ActionResult$instance {
-    executeResult(context: ActionContext): void;
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResult(context: ActionContext): void;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1083,8 +1083,8 @@ export type EmptyResult = EmptyResult$instance & __EmptyResult$views;
 
 
 export interface FileContentResult$instance extends FileResult$instance {
-    fileContents: byte[];
-    executeResultAsync(context: ActionContext): Task;
+    FileContents: byte[];
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1102,13 +1102,13 @@ export type FileContentResult = FileContentResult$instance & __FileContentResult
 
 
 export interface FileResult$instance extends ActionResult$instance {
-    readonly contentType: string;
-    enableRangeProcessing: boolean;
-    get entityTag(): EntityTagHeaderValue | undefined;
-    set entityTag(value: EntityTagHeaderValue);
-    fileDownloadName: string;
-    lastModified: Nullable<DateTimeOffset>;
-    executeResultAsync(context: ActionContext): Task;
+    readonly ContentType: string;
+    EnableRangeProcessing: boolean;
+    get EntityTag(): EntityTagHeaderValue | undefined;
+    set EntityTag(value: EntityTagHeaderValue);
+    FileDownloadName: string;
+    LastModified: Nullable<DateTimeOffset>;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1124,8 +1124,8 @@ export type FileResult = FileResult$instance & __FileResult$views;
 
 
 export interface FileStreamResult$instance extends FileResult$instance {
-    fileStream: Stream;
-    executeResultAsync(context: ActionContext): Task;
+    FileStream: Stream;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1143,9 +1143,9 @@ export type FileStreamResult = FileStreamResult$instance & __FileStreamResult$vi
 
 
 export interface ForbidResult$instance extends ActionResult$instance {
-    authenticationSchemes: IList<System_Internal.String>;
-    properties: AuthenticationProperties;
-    executeResultAsync(context: ActionContext): Task;
+    AuthenticationSchemes: IList<System_Internal.String>;
+    Properties: AuthenticationProperties;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1167,8 +1167,8 @@ export type ForbidResult = ForbidResult$instance & __ForbidResult$views;
 
 
 export interface FormatFilterAttribute$instance extends Attribute, IFilterMetadata {
-    readonly isReusable: boolean;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    readonly IsReusable: boolean;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -1187,8 +1187,8 @@ export type FormatFilterAttribute = FormatFilterAttribute$instance & __FormatFil
 
 
 export interface FromBodyAttribute$instance extends Attribute {
-    readonly bindingSource: BindingSource;
-    emptyBodyBehavior: EmptyBodyBehavior;
+    readonly BindingSource: BindingSource;
+    EmptyBodyBehavior: EmptyBodyBehavior;
 }
 
 
@@ -1208,8 +1208,8 @@ export type FromBodyAttribute = FromBodyAttribute$instance & __FromBodyAttribute
 
 
 export interface FromFormAttribute$instance extends Attribute {
-    readonly bindingSource: BindingSource;
-    name: string;
+    readonly BindingSource: BindingSource;
+    Name: string;
 }
 
 
@@ -1230,8 +1230,8 @@ export type FromFormAttribute = FromFormAttribute$instance & __FromFormAttribute
 
 
 export interface FromHeaderAttribute$instance extends Attribute {
-    readonly bindingSource: BindingSource;
-    name: string;
+    readonly BindingSource: BindingSource;
+    Name: string;
 }
 
 
@@ -1252,8 +1252,8 @@ export type FromHeaderAttribute = FromHeaderAttribute$instance & __FromHeaderAtt
 
 
 export interface FromQueryAttribute$instance extends Attribute {
-    readonly bindingSource: BindingSource;
-    name: string;
+    readonly BindingSource: BindingSource;
+    Name: string;
 }
 
 
@@ -1274,8 +1274,8 @@ export type FromQueryAttribute = FromQueryAttribute$instance & __FromQueryAttrib
 
 
 export interface FromRouteAttribute$instance extends Attribute {
-    readonly bindingSource: BindingSource;
-    name: string;
+    readonly BindingSource: BindingSource;
+    Name: string;
 }
 
 
@@ -1296,7 +1296,7 @@ export type FromRouteAttribute = FromRouteAttribute$instance & __FromRouteAttrib
 
 
 export interface FromServicesAttribute$instance extends Attribute, IFromServiceMetadata {
-    readonly bindingSource: BindingSource;
+    readonly BindingSource: BindingSource;
 }
 
 
@@ -1315,7 +1315,7 @@ export type FromServicesAttribute = FromServicesAttribute$instance & __FromServi
 
 
 export interface HiddenInputAttribute$instance extends Attribute {
-    displayValue: boolean;
+    DisplayValue: boolean;
 }
 
 
@@ -1467,7 +1467,7 @@ export type HttpPutAttribute = HttpPutAttribute$instance & __HttpPutAttribute$vi
 
 
 export interface IgnoreAntiforgeryTokenAttribute$instance extends Attribute, IAntiforgeryPolicy, IFilterMetadata {
-    order: int;
+    Order: int;
 }
 
 
@@ -1486,8 +1486,8 @@ export type IgnoreAntiforgeryTokenAttribute = IgnoreAntiforgeryTokenAttribute$in
 
 
 export interface JsonOptions$instance {
-    allowInputFormatterExceptionMessages: boolean;
-    readonly jsonSerializerOptions: JsonSerializerOptions;
+    AllowInputFormatterExceptionMessages: boolean;
+    readonly JsonSerializerOptions: JsonSerializerOptions;
 }
 
 
@@ -1499,11 +1499,11 @@ export const JsonOptions: {
 export type JsonOptions = JsonOptions$instance;
 
 export interface JsonResult$instance extends ActionResult$instance {
-    contentType: string;
-    serializerSettings: unknown;
-    statusCode: Nullable<System_Internal.Int32>;
-    value: unknown;
-    executeResultAsync(context: ActionContext): Task;
+    ContentType: string;
+    SerializerSettings: unknown;
+    StatusCode: Nullable<System_Internal.Int32>;
+    Value: unknown;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1522,12 +1522,12 @@ export type JsonResult = JsonResult$instance & __JsonResult$views;
 
 
 export interface LocalRedirectResult$instance extends ActionResult$instance {
-    permanent: boolean;
-    preserveMethod: boolean;
-    url: string;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
+    Permanent: boolean;
+    PreserveMethod: boolean;
+    Url: string;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1546,10 +1546,10 @@ export type LocalRedirectResult = LocalRedirectResult$instance & __LocalRedirect
 
 
 export interface MiddlewareFilterAttribute$instance extends Attribute, IFilterMetadata {
-    readonly configurationType: Type;
-    readonly isReusable: boolean;
-    order: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    readonly ConfigurationType: Type;
+    readonly IsReusable: boolean;
+    Order: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -1569,7 +1569,7 @@ export type MiddlewareFilterAttribute = MiddlewareFilterAttribute$instance & __M
 
 
 export interface MiddlewareFilterAttribute_1$instance<T> extends MiddlewareFilterAttribute$instance, IFilterMetadata {
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -1587,10 +1587,10 @@ export type MiddlewareFilterAttribute_1<T> = MiddlewareFilterAttribute_1$instanc
 
 
 export interface ModelBinderAttribute$instance extends Attribute {
-    get binderType(): Type | undefined;
-    set binderType(value: Type);
-    readonly bindingSource: BindingSource;
-    name: string;
+    get BinderType(): Type | undefined;
+    set BinderType(value: Type);
+    readonly BindingSource: BindingSource;
+    Name: string;
 }
 
 
@@ -1628,7 +1628,7 @@ export type ModelBinderAttribute_1<TBinder extends IModelBinder> = ModelBinderAt
 
 
 export interface ModelMetadataTypeAttribute$instance extends Attribute {
-    readonly metadataType: Type;
+    readonly MetadataType: Type;
 }
 
 
@@ -1651,34 +1651,34 @@ export const ModelMetadataTypeAttribute_1: {
 export type ModelMetadataTypeAttribute_1<T> = ModelMetadataTypeAttribute_1$instance<T>;
 
 export interface MvcOptions$instance {
-    allowEmptyInputInBodyModelBinding: boolean;
-    readonly cacheProfiles: IDictionary__System_Collections_Generic<System_Internal.String, CacheProfile>;
-    readonly conventions: IList<IApplicationModelConvention>;
-    enableActionInvokers: boolean;
-    enableEndpointRouting: boolean;
-    readonly filters: FilterCollection;
-    readonly formatterMappings: FormatterMappings;
-    readonly inputFormatters: FormatterCollection_1<IInputFormatter>;
-    maxIAsyncEnumerableBufferLimit: int;
-    maxModelBindingCollectionSize: int;
-    maxModelBindingRecursionDepth: int;
-    maxModelValidationErrors: int;
-    maxValidationDepth: Nullable<System_Internal.Int32>;
-    readonly modelBinderProviders: IList<IModelBinderProvider>;
-    readonly modelBindingMessageProvider: DefaultModelBindingMessageProvider;
-    readonly modelMetadataDetailsProviders: IList<IMetadataDetailsProvider>;
-    readonly modelValidatorProviders: IList<IModelValidatorProvider>;
-    readonly outputFormatters: FormatterCollection_1<IOutputFormatter>;
-    requireHttpsPermanent: boolean;
-    respectBrowserAcceptHeader: boolean;
-    returnHttpNotAcceptable: boolean;
-    sslPort: Nullable<System_Internal.Int32>;
-    suppressAsyncSuffixInActionNames: boolean;
-    suppressImplicitRequiredAttributeForNonNullableReferenceTypes: boolean;
-    suppressInputFormatterBuffering: boolean;
-    suppressOutputFormatterBuffering: boolean;
-    validateComplexTypesIfChildValidationFails: boolean;
-    readonly valueProviderFactories: IList<IValueProviderFactory>;
+    AllowEmptyInputInBodyModelBinding: boolean;
+    readonly CacheProfiles: IDictionary__System_Collections_Generic<System_Internal.String, CacheProfile>;
+    readonly Conventions: IList<IApplicationModelConvention>;
+    EnableActionInvokers: boolean;
+    EnableEndpointRouting: boolean;
+    readonly Filters: FilterCollection;
+    readonly FormatterMappings: FormatterMappings;
+    readonly InputFormatters: FormatterCollection_1<IInputFormatter>;
+    MaxIAsyncEnumerableBufferLimit: int;
+    MaxModelBindingCollectionSize: int;
+    MaxModelBindingRecursionDepth: int;
+    MaxModelValidationErrors: int;
+    MaxValidationDepth: Nullable<System_Internal.Int32>;
+    readonly ModelBinderProviders: IList<IModelBinderProvider>;
+    readonly ModelBindingMessageProvider: DefaultModelBindingMessageProvider;
+    readonly ModelMetadataDetailsProviders: IList<IMetadataDetailsProvider>;
+    readonly ModelValidatorProviders: IList<IModelValidatorProvider>;
+    readonly OutputFormatters: FormatterCollection_1<IOutputFormatter>;
+    RequireHttpsPermanent: boolean;
+    RespectBrowserAcceptHeader: boolean;
+    ReturnHttpNotAcceptable: boolean;
+    SslPort: Nullable<System_Internal.Int32>;
+    SuppressAsyncSuffixInActionNames: boolean;
+    SuppressImplicitRequiredAttributeForNonNullableReferenceTypes: boolean;
+    SuppressInputFormatterBuffering: boolean;
+    SuppressOutputFormatterBuffering: boolean;
+    ValidateComplexTypesIfChildValidationFails: boolean;
+    readonly ValueProviderFactories: IList<IValueProviderFactory>;
 }
 
 
@@ -1690,9 +1690,9 @@ export const MvcOptions: {
 export type MvcOptions = MvcOptions$instance;
 
 export interface MvcViewOptions$instance {
-    readonly clientModelValidatorProviders: IList<IClientModelValidatorProvider>;
-    htmlHelperOptions: HtmlHelperOptions;
-    readonly viewEngines: IList<IViewEngine>;
+    readonly ClientModelValidatorProviders: IList<IClientModelValidatorProvider>;
+    HtmlHelperOptions: HtmlHelperOptions;
+    readonly ViewEngines: IList<IViewEngine>;
 }
 
 
@@ -1704,7 +1704,7 @@ export const MvcViewOptions: {
 export type MvcViewOptions = MvcViewOptions$instance;
 
 export interface NoContentResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1755,7 +1755,7 @@ export const NonViewComponentAttribute: {
 export type NonViewComponentAttribute = NonViewComponentAttribute$instance;
 
 export interface NotFoundObjectResult$instance extends ObjectResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1773,7 +1773,7 @@ export type NotFoundObjectResult = NotFoundObjectResult$instance & __NotFoundObj
 
 
 export interface NotFoundResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1791,13 +1791,13 @@ export type NotFoundResult = NotFoundResult$instance & __NotFoundResult$views;
 
 
 export interface ObjectResult$instance extends ActionResult$instance {
-    contentTypes: MediaTypeCollection;
-    declaredType: Type;
-    formatters: FormatterCollection_1<IOutputFormatter>;
-    statusCode: Nullable<System_Internal.Int32>;
-    value: unknown;
-    executeResultAsync(context: ActionContext): Task;
-    onFormatting(context: ActionContext): void;
+    ContentTypes: MediaTypeCollection;
+    DeclaredType: Type;
+    Formatters: FormatterCollection_1<IOutputFormatter>;
+    StatusCode: Nullable<System_Internal.Int32>;
+    Value: unknown;
+    ExecuteResultAsync(context: ActionContext): Task;
+    OnFormatting(context: ActionContext): void;
 }
 
 
@@ -1815,7 +1815,7 @@ export type ObjectResult = ObjectResult$instance & __ObjectResult$views;
 
 
 export interface OkObjectResult$instance extends ObjectResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1833,7 +1833,7 @@ export type OkObjectResult = OkObjectResult$instance & __OkObjectResult$views;
 
 
 export interface OkResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1851,11 +1851,11 @@ export type OkResult = OkResult$instance & __OkResult$views;
 
 
 export interface PageRemoteAttribute$instance extends RemoteAttributeBase$instance {
-    get pageHandler(): string | undefined;
-    set pageHandler(value: string);
-    get pageName(): string | undefined;
-    set pageName(value: string);
-    addValidation(context: ClientModelValidationContext): void;
+    get PageHandler(): string | undefined;
+    set PageHandler(value: string);
+    get PageName(): string | undefined;
+    set PageName(value: string);
+    AddValidation(context: ClientModelValidationContext): void;
 }
 
 
@@ -1872,14 +1872,14 @@ export type PageRemoteAttribute = PageRemoteAttribute$instance & __PageRemoteAtt
 
 
 export interface PartialViewResult$instance extends ActionResult$instance {
-    contentType: string;
-    readonly model: unknown;
-    statusCode: Nullable<System_Internal.Int32>;
-    tempData: ITempDataDictionary;
-    viewData: ViewDataDictionary;
-    viewEngine: IViewEngine;
-    viewName: string;
-    executeResultAsync(context: ActionContext): Task;
+    ContentType: string;
+    readonly Model: unknown;
+    StatusCode: Nullable<System_Internal.Int32>;
+    TempData: ITempDataDictionary;
+    ViewData: ViewDataDictionary;
+    ViewEngine: IViewEngine;
+    ViewName: string;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1897,8 +1897,8 @@ export type PartialViewResult = PartialViewResult$instance & __PartialViewResult
 
 
 export interface PhysicalFileResult$instance extends FileResult$instance {
-    fileName: string;
-    executeResultAsync(context: ActionContext): Task;
+    FileName: string;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -1916,14 +1916,14 @@ export type PhysicalFileResult = PhysicalFileResult$instance & __PhysicalFileRes
 
 
 export interface ProblemDetails$instance {
-    get detail(): string | undefined;
-    set detail(value: string);
-    extensions: IDictionary__System_Collections_Generic<System_Internal.String, unknown | undefined>;
-    instance: string;
-    status: Nullable<System_Internal.Int32>;
-    get title(): string | undefined;
-    set title(value: string);
-    type: string;
+    get Detail(): string | undefined;
+    set Detail(value: string);
+    Extensions: IDictionary__System_Collections_Generic<System_Internal.String, unknown | undefined>;
+    Instance: string;
+    Status: Nullable<System_Internal.Int32>;
+    get Title(): string | undefined;
+    set Title(value: string);
+    Type: string;
 }
 
 
@@ -1935,14 +1935,14 @@ export const ProblemDetails: {
 export type ProblemDetails = ProblemDetails$instance;
 
 export interface ProducesAttribute$instance extends Attribute, IFilterMetadata {
-    contentTypes: MediaTypeCollection;
-    description: string;
-    order: int;
-    readonly statusCode: int;
-    type: Type;
-    onResultExecuted(context: ResultExecutedContext): void;
-    onResultExecuting(context: ResultExecutingContext): void;
-    setContentTypes(contentTypes: MediaTypeCollection): void;
+    ContentTypes: MediaTypeCollection;
+    Description: string;
+    Order: int;
+    readonly StatusCode: int;
+    Type: Type;
+    OnResultExecuted(context: ResultExecutedContext): void;
+    OnResultExecuting(context: ResultExecutingContext): void;
+    SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
 
@@ -1964,9 +1964,9 @@ export type ProducesAttribute = ProducesAttribute$instance & __ProducesAttribute
 
 
 export interface ProducesAttribute_1$instance<T> extends ProducesAttribute$instance, IFilterMetadata {
-    onResultExecuted(context: ResultExecutedContext): void;
-    onResultExecuting(context: ResultExecutingContext): void;
-    setContentTypes(contentTypes: MediaTypeCollection): void;
+    OnResultExecuted(context: ResultExecutedContext): void;
+    OnResultExecuting(context: ResultExecutingContext): void;
+    SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
 
@@ -1985,9 +1985,9 @@ export type ProducesAttribute_1<T> = ProducesAttribute_1$instance<T> & __Produce
 
 
 export interface ProducesDefaultResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
-    description: string;
-    readonly statusCode: int;
-    readonly type: Type;
+    Description: string;
+    readonly StatusCode: int;
+    readonly Type: Type;
 }
 
 
@@ -2005,7 +2005,7 @@ export type ProducesDefaultResponseTypeAttribute = ProducesDefaultResponseTypeAt
 
 
 export interface ProducesErrorResponseTypeAttribute$instance extends Attribute {
-    readonly type: Type;
+    readonly Type: Type;
 }
 
 
@@ -2017,9 +2017,9 @@ export const ProducesErrorResponseTypeAttribute: {
 export type ProducesErrorResponseTypeAttribute = ProducesErrorResponseTypeAttribute$instance;
 
 export interface ProducesResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
-    description: string;
-    statusCode: int;
-    type: Type;
+    Description: string;
+    StatusCode: int;
+    Type: Type;
 }
 
 
@@ -2038,7 +2038,7 @@ export type ProducesResponseTypeAttribute = ProducesResponseTypeAttribute$instan
 
 
 export interface ProducesResponseTypeAttribute_1$instance<T> extends ProducesResponseTypeAttribute$instance, IFilterMetadata {
-    setContentTypes(contentTypes: MediaTypeCollection): void;
+    SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
 
@@ -2056,12 +2056,12 @@ export type ProducesResponseTypeAttribute_1<T> = ProducesResponseTypeAttribute_1
 
 
 export interface RedirectResult$instance extends ActionResult$instance, IKeepTempDataResult {
-    permanent: boolean;
-    preserveMethod: boolean;
-    url: string;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
+    Permanent: boolean;
+    PreserveMethod: boolean;
+    Url: string;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2082,16 +2082,16 @@ export type RedirectResult = RedirectResult$instance & __RedirectResult$views;
 
 
 export interface RedirectToActionResult$instance extends ActionResult$instance, IKeepTempDataResult {
-    actionName: string;
-    controllerName: string;
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    permanent: boolean;
-    preserveMethod: boolean;
-    routeValues: RouteValueDictionary;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
+    ActionName: string;
+    ControllerName: string;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    Permanent: boolean;
+    PreserveMethod: boolean;
+    RouteValues: RouteValueDictionary;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2115,20 +2115,20 @@ export type RedirectToActionResult = RedirectToActionResult$instance & __Redirec
 
 
 export interface RedirectToPageResult$instance extends ActionResult$instance, IKeepTempDataResult {
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    host: string;
-    get pageHandler(): string | undefined;
-    set pageHandler(value: string);
-    get pageName(): string | undefined;
-    set pageName(value: string);
-    permanent: boolean;
-    preserveMethod: boolean;
-    protocol: string;
-    routeValues: RouteValueDictionary;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    Host: string;
+    get PageHandler(): string | undefined;
+    set PageHandler(value: string);
+    get PageName(): string | undefined;
+    set PageName(value: string);
+    Permanent: boolean;
+    PreserveMethod: boolean;
+    Protocol: string;
+    RouteValues: RouteValueDictionary;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2155,16 +2155,16 @@ export type RedirectToPageResult = RedirectToPageResult$instance & __RedirectToP
 
 
 export interface RedirectToRouteResult$instance extends ActionResult$instance, IKeepTempDataResult {
-    get fragment(): string | undefined;
-    set fragment(value: string);
-    permanent: boolean;
-    preserveMethod: boolean;
-    get routeName(): string | undefined;
-    set routeName(value: string);
-    routeValues: RouteValueDictionary;
-    get urlHelper(): IUrlHelper | undefined;
-    set urlHelper(value: IUrlHelper);
-    executeResultAsync(context: ActionContext): Task;
+    get Fragment(): string | undefined;
+    set Fragment(value: string);
+    Permanent: boolean;
+    PreserveMethod: boolean;
+    get RouteName(): string | undefined;
+    set RouteName(value: string);
+    RouteValues: RouteValueDictionary;
+    get UrlHelper(): IUrlHelper | undefined;
+    set UrlHelper(value: IUrlHelper);
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2189,7 +2189,7 @@ export type RedirectToRouteResult = RedirectToRouteResult$instance & __RedirectT
 
 
 export interface RemoteAttribute$instance extends RemoteAttributeBase$instance {
-    addValidation(context: ClientModelValidationContext): void;
+    AddValidation(context: ClientModelValidationContext): void;
 }
 
 
@@ -2208,18 +2208,18 @@ export type RemoteAttribute = RemoteAttribute$instance & __RemoteAttribute$views
 
 
 export interface RemoteAttributeBase$instance extends ValidationAttribute {
-    additionalFields: string;
-    get httpMethod(): string | undefined;
-    set httpMethod(value: string);
-    addValidation(context: ClientModelValidationContext): void;
-    formatAdditionalFieldsForClientValidation(property: string): string;
-    formatErrorMessage(name: string): string;
-    isValid(value: unknown): boolean;
+    AdditionalFields: string;
+    get HttpMethod(): string | undefined;
+    set HttpMethod(value: string);
+    AddValidation(context: ClientModelValidationContext): void;
+    FormatAdditionalFieldsForClientValidation(property: string): string;
+    FormatErrorMessage(name: string): string;
+    IsValid(value: unknown): boolean;
 }
 
 
 export const RemoteAttributeBase: {
-    formatPropertyForClientValidation(property: string): string;
+    FormatPropertyForClientValidation(property: string): string;
 };
 
 
@@ -2233,19 +2233,19 @@ export type RemoteAttributeBase = RemoteAttributeBase$instance & __RemoteAttribu
 
 
 export interface RequestFormLimitsAttribute$instance extends Attribute, IFilterMetadata {
-    bufferBody: boolean;
-    bufferBodyLengthLimit: long;
-    readonly isReusable: boolean;
-    keyLengthLimit: int;
-    memoryBufferThreshold: int;
-    multipartBodyLengthLimit: long;
-    multipartBoundaryLengthLimit: int;
-    multipartHeadersCountLimit: int;
-    multipartHeadersLengthLimit: int;
-    order: int;
-    valueCountLimit: int;
-    valueLengthLimit: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    BufferBody: boolean;
+    BufferBodyLengthLimit: long;
+    readonly IsReusable: boolean;
+    KeyLengthLimit: int;
+    MemoryBufferThreshold: int;
+    MultipartBodyLengthLimit: long;
+    MultipartBoundaryLengthLimit: int;
+    MultipartHeadersCountLimit: int;
+    MultipartHeadersLengthLimit: int;
+    Order: int;
+    ValueCountLimit: int;
+    ValueLengthLimit: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -2266,9 +2266,9 @@ export type RequestFormLimitsAttribute = RequestFormLimitsAttribute$instance & _
 
 
 export interface RequestSizeLimitAttribute$instance extends Attribute, IFilterMetadata {
-    readonly isReusable: boolean;
-    order: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    readonly IsReusable: boolean;
+    Order: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -2289,9 +2289,9 @@ export type RequestSizeLimitAttribute = RequestSizeLimitAttribute$instance & __R
 
 
 export interface RequireHttpsAttribute$instance extends Attribute, IFilterMetadata {
-    order: int;
-    permanent: boolean;
-    onAuthorization(filterContext: AuthorizationFilterContext): void;
+    Order: int;
+    Permanent: boolean;
+    OnAuthorization(filterContext: AuthorizationFilterContext): void;
 }
 
 
@@ -2311,19 +2311,19 @@ export type RequireHttpsAttribute = RequireHttpsAttribute$instance & __RequireHt
 
 
 export interface ResponseCacheAttribute$instance extends Attribute, IFilterMetadata {
-    get cacheProfileName(): string | undefined;
-    set cacheProfileName(value: string);
-    duration: int;
-    readonly isReusable: boolean;
-    location: ResponseCacheLocation;
-    noStore: boolean;
-    order: int;
-    get varyByHeader(): string | undefined;
-    set varyByHeader(value: string);
-    get varyByQueryKeys(): string[] | undefined;
-    set varyByQueryKeys(value: string[]);
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
-    getCacheProfile(options: MvcOptions): CacheProfile;
+    get CacheProfileName(): string | undefined;
+    set CacheProfileName(value: string);
+    Duration: int;
+    readonly IsReusable: boolean;
+    Location: ResponseCacheLocation;
+    NoStore: boolean;
+    Order: int;
+    get VaryByHeader(): string | undefined;
+    set VaryByHeader(value: string);
+    get VaryByQueryKeys(): string[] | undefined;
+    set VaryByQueryKeys(value: string[]);
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    GetCacheProfile(options: MvcOptions): CacheProfile;
 }
 
 
@@ -2343,9 +2343,9 @@ export type ResponseCacheAttribute = ResponseCacheAttribute$instance & __Respons
 
 
 export interface RouteAttribute$instance extends Attribute {
-    name: string;
-    order: int;
-    readonly template: string;
+    Name: string;
+    Order: int;
+    readonly Template: string;
 }
 
 
@@ -2374,10 +2374,10 @@ export const SerializableError: {
 export type SerializableError = SerializableError$instance;
 
 export interface ServiceFilterAttribute$instance extends Attribute, IFilterMetadata {
-    isReusable: boolean;
-    order: int;
-    readonly serviceType: Type;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    IsReusable: boolean;
+    Order: int;
+    readonly ServiceType: Type;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -2395,7 +2395,7 @@ export type ServiceFilterAttribute = ServiceFilterAttribute$instance & __Service
 
 
 export interface ServiceFilterAttribute_1$instance<TFilter extends IFilterMetadata> extends ServiceFilterAttribute$instance, IFilterMetadata {
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -2413,10 +2413,10 @@ export type ServiceFilterAttribute_1<TFilter extends IFilterMetadata> = ServiceF
 
 
 export interface SignInResult$instance extends ActionResult$instance {
-    authenticationScheme: string;
-    principal: ClaimsPrincipal;
-    properties: AuthenticationProperties;
-    executeResultAsync(context: ActionContext): Task;
+    AuthenticationScheme: string;
+    Principal: ClaimsPrincipal;
+    Properties: AuthenticationProperties;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2436,9 +2436,9 @@ export type SignInResult = SignInResult$instance & __SignInResult$views;
 
 
 export interface SignOutResult$instance extends ActionResult$instance {
-    authenticationSchemes: IList<System_Internal.String>;
-    properties: AuthenticationProperties;
-    executeResultAsync(context: ActionContext): Task;
+    AuthenticationSchemes: IList<System_Internal.String>;
+    Properties: AuthenticationProperties;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2463,8 +2463,8 @@ export type SignOutResult = SignOutResult$instance & __SignOutResult$views;
 
 
 export interface SkipStatusCodePagesAttribute$instance extends Attribute, IFilterMetadata, ISkipStatusCodePagesMetadata {
-    onResourceExecuted(context: ResourceExecutedContext): void;
-    onResourceExecuting(context: ResourceExecutingContext): void;
+    OnResourceExecuted(context: ResourceExecutedContext): void;
+    OnResourceExecuting(context: ResourceExecutingContext): void;
 }
 
 
@@ -2483,9 +2483,9 @@ export type SkipStatusCodePagesAttribute = SkipStatusCodePagesAttribute$instance
 
 
 export interface StatusCodeResult$instance extends ActionResult$instance, IClientErrorActionResult {
-    readonly statusCode: int;
-    executeResult(context: ActionContext): void;
-    executeResultAsync(context: ActionContext): Task;
+    readonly StatusCode: int;
+    ExecuteResult(context: ActionContext): void;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2503,8 +2503,8 @@ export type StatusCodeResult = StatusCodeResult$instance & __StatusCodeResult$vi
 
 
 export interface TempDataAttribute$instance extends Attribute {
-    get key(): string | undefined;
-    set key(value: string);
+    get Key(): string | undefined;
+    set Key(value: string);
 }
 
 
@@ -2516,12 +2516,12 @@ export const TempDataAttribute: {
 export type TempDataAttribute = TempDataAttribute$instance;
 
 export interface TypeFilterAttribute$instance extends Attribute, IFilterMetadata {
-    get arguments(): unknown[] | undefined;
-    set arguments(value: unknown[]);
-    readonly implementationType: Type;
-    isReusable: boolean;
-    order: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    get Arguments(): unknown[] | undefined;
+    set Arguments(value: unknown[]);
+    readonly ImplementationType: Type;
+    IsReusable: boolean;
+    Order: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -2539,7 +2539,7 @@ export type TypeFilterAttribute = TypeFilterAttribute$instance & __TypeFilterAtt
 
 
 export interface TypeFilterAttribute_1$instance<TFilter extends IFilterMetadata> extends TypeFilterAttribute$instance, IFilterMetadata {
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -2557,7 +2557,7 @@ export type TypeFilterAttribute_1<TFilter extends IFilterMetadata> = TypeFilterA
 
 
 export interface UnauthorizedObjectResult$instance extends ObjectResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2575,7 +2575,7 @@ export type UnauthorizedObjectResult = UnauthorizedObjectResult$instance & __Una
 
 
 export interface UnauthorizedResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2593,7 +2593,7 @@ export type UnauthorizedResult = UnauthorizedResult$instance & __UnauthorizedRes
 
 
 export interface UnprocessableEntityObjectResult$instance extends ObjectResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2612,7 +2612,7 @@ export type UnprocessableEntityObjectResult = UnprocessableEntityObjectResult$in
 
 
 export interface UnprocessableEntityResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2630,7 +2630,7 @@ export type UnprocessableEntityResult = UnprocessableEntityResult$instance & __U
 
 
 export interface UnsupportedMediaTypeResult$instance extends StatusCodeResult$instance {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2648,9 +2648,9 @@ export type UnsupportedMediaTypeResult = UnsupportedMediaTypeResult$instance & _
 
 
 export interface ValidateAntiForgeryTokenAttribute$instance extends Attribute, IFilterMetadata {
-    readonly isReusable: boolean;
-    order: int;
-    createInstance(serviceProvider: IServiceProvider): IFilterMetadata;
+    readonly IsReusable: boolean;
+    Order: int;
+    CreateInstance(serviceProvider: IServiceProvider): IFilterMetadata;
 }
 
 
@@ -2670,7 +2670,7 @@ export type ValidateAntiForgeryTokenAttribute = ValidateAntiForgeryTokenAttribut
 
 
 export interface ValidationProblemDetails$instance extends HttpValidationProblemDetails {
-    errors: IDictionary__System_Collections_Generic<System_Internal.String, string[]>;
+    Errors: IDictionary__System_Collections_Generic<System_Internal.String, string[]>;
 }
 
 
@@ -2684,24 +2684,24 @@ export const ValidationProblemDetails: {
 export type ValidationProblemDetails = ValidationProblemDetails$instance;
 
 export interface ViewComponent$instance {
-    readonly httpContext: HttpContext;
-    readonly modelState: ModelStateDictionary;
-    readonly request: HttpRequest;
-    readonly routeData: RouteData;
-    readonly tempData: ITempDataDictionary;
-    url: IUrlHelper;
-    readonly user: IPrincipal;
-    readonly userClaimsPrincipal: ClaimsPrincipal;
-    readonly viewBag: unknown;
-    viewComponentContext: ViewComponentContext;
-    readonly viewContext: ViewContext;
-    readonly viewData: ViewDataDictionary;
-    viewEngine: ICompositeViewEngine;
-    content(content: string): ContentViewComponentResult;
-    view(): ViewViewComponentResult;
-    view(viewName: string): ViewViewComponentResult;
-    view<TModel>(model: TModel): ViewViewComponentResult;
-    view<TModel>(viewName: string, model: TModel): ViewViewComponentResult;
+    readonly HttpContext: HttpContext;
+    readonly ModelState: ModelStateDictionary;
+    readonly Request: HttpRequest;
+    readonly RouteData: RouteData;
+    readonly TempData: ITempDataDictionary;
+    Url: IUrlHelper;
+    readonly User: IPrincipal;
+    readonly UserClaimsPrincipal: ClaimsPrincipal;
+    readonly ViewBag: unknown;
+    ViewComponentContext: ViewComponentContext;
+    readonly ViewContext: ViewContext;
+    readonly ViewData: ViewDataDictionary;
+    ViewEngine: ICompositeViewEngine;
+    Content(content: string): ContentViewComponentResult;
+    View(): ViewViewComponentResult;
+    View(viewName: string): ViewViewComponentResult;
+    View<TModel>(model: TModel): ViewViewComponentResult;
+    View<TModel>(viewName: string, model: TModel): ViewViewComponentResult;
 }
 
 
@@ -2712,7 +2712,7 @@ export const ViewComponent: {
 export type ViewComponent = ViewComponent$instance;
 
 export interface ViewComponentAttribute$instance extends Attribute {
-    name: string;
+    Name: string;
 }
 
 
@@ -2724,17 +2724,17 @@ export const ViewComponentAttribute: {
 export type ViewComponentAttribute = ViewComponentAttribute$instance;
 
 export interface ViewComponentResult$instance extends ActionResult$instance {
-    arguments: unknown;
-    contentType: string;
-    readonly model: unknown;
-    statusCode: Nullable<System_Internal.Int32>;
-    tempData: ITempDataDictionary;
-    get viewComponentName(): string | undefined;
-    set viewComponentName(value: string);
-    get viewComponentType(): Type | undefined;
-    set viewComponentType(value: Type);
-    viewData: ViewDataDictionary;
-    executeResultAsync(context: ActionContext): Task;
+    Arguments: unknown;
+    ContentType: string;
+    readonly Model: unknown;
+    StatusCode: Nullable<System_Internal.Int32>;
+    TempData: ITempDataDictionary;
+    get ViewComponentName(): string | undefined;
+    set ViewComponentName(value: string);
+    get ViewComponentType(): Type | undefined;
+    set ViewComponentType(value: Type);
+    ViewData: ViewDataDictionary;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2752,8 +2752,8 @@ export type ViewComponentResult = ViewComponentResult$instance & __ViewComponent
 
 
 export interface ViewDataAttribute$instance extends Attribute {
-    get key(): string | undefined;
-    set key(value: string);
+    get Key(): string | undefined;
+    set Key(value: string);
 }
 
 
@@ -2765,14 +2765,14 @@ export const ViewDataAttribute: {
 export type ViewDataAttribute = ViewDataAttribute$instance;
 
 export interface ViewResult$instance extends ActionResult$instance {
-    contentType: string;
-    readonly model: unknown;
-    statusCode: Nullable<System_Internal.Int32>;
-    tempData: ITempDataDictionary;
-    viewData: ViewDataDictionary;
-    viewEngine: IViewEngine;
-    viewName: string;
-    executeResultAsync(context: ActionContext): Task;
+    ContentType: string;
+    readonly Model: unknown;
+    StatusCode: Nullable<System_Internal.Int32>;
+    TempData: ITempDataDictionary;
+    ViewData: ViewDataDictionary;
+    ViewEngine: IViewEngine;
+    ViewName: string;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2790,10 +2790,10 @@ export type ViewResult = ViewResult$instance & __ViewResult$views;
 
 
 export interface VirtualFileResult$instance extends FileResult$instance {
-    fileName: string;
-    get fileProvider(): IFileProvider | undefined;
-    set fileProvider(value: IFileProvider);
-    executeResultAsync(context: ActionContext): Task;
+    FileName: string;
+    get FileProvider(): IFileProvider | undefined;
+    set FileProvider(value: IFileProvider);
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 
@@ -2811,43 +2811,43 @@ export type VirtualFileResult = VirtualFileResult$instance & __VirtualFileResult
 
 
 export abstract class DefaultApiConventions$instance {
-    static create(model: unknown): void;
-    static delete(id: unknown): void;
-    static edit(id: unknown, model: unknown): void;
-    static find(id: unknown): void;
-    static get(id: unknown): void;
-    static post(model: unknown): void;
-    static put(id: unknown, model: unknown): void;
-    static update(id: unknown, model: unknown): void;
+    static Create(model: unknown): void;
+    static Delete(id: unknown): void;
+    static Edit(id: unknown, model: unknown): void;
+    static Find(id: unknown): void;
+    static Get(id: unknown): void;
+    static Post(model: unknown): void;
+    static Put(id: unknown, model: unknown): void;
+    static Update(id: unknown, model: unknown): void;
 }
 
 
 export type DefaultApiConventions = DefaultApiConventions$instance;
 
 export abstract class UrlHelperExtensions$instance {
-    static action(helper: IUrlHelper, action: string, values: unknown): string | undefined;
-    static action(helper: IUrlHelper, action: string, controller: string, values: unknown, protocol: string, host: string, fragment: string): string | undefined;
-    static action(helper: IUrlHelper, action: string, controller: string, values: unknown, protocol: string, host: string): string | undefined;
-    static action(helper: IUrlHelper, action: string, controller: string, values: unknown, protocol: string): string | undefined;
-    static action(helper: IUrlHelper, action: string, controller: string, values: unknown): string | undefined;
-    static action(helper: IUrlHelper, action: string, controller: string): string | undefined;
-    static action(helper: IUrlHelper, action: string): string | undefined;
-    static action(helper: IUrlHelper): string | undefined;
-    static actionLink(helper: IUrlHelper, action?: string, controller?: string, values?: unknown, protocol?: string, host?: string, fragment?: string): string | undefined;
-    static page(urlHelper: IUrlHelper, pageName: string, values: unknown): string | undefined;
-    static page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown, protocol: string, host: string, fragment: string): string | undefined;
-    static page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown, protocol: string, host: string): string | undefined;
-    static page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown, protocol: string): string | undefined;
-    static page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown): string | undefined;
-    static page(urlHelper: IUrlHelper, pageName: string, pageHandler: string): string | undefined;
-    static page(urlHelper: IUrlHelper, pageName: string): string | undefined;
-    static pageLink(urlHelper: IUrlHelper, pageName?: string, pageHandler?: string, values?: unknown, protocol?: string, host?: string, fragment?: string): string | undefined;
-    static routeUrl(helper: IUrlHelper, values: unknown): string | undefined;
-    static routeUrl(helper: IUrlHelper, routeName: string, values: unknown, protocol: string, host: string, fragment: string): string | undefined;
-    static routeUrl(helper: IUrlHelper, routeName: string, values: unknown, protocol: string, host: string): string | undefined;
-    static routeUrl(helper: IUrlHelper, routeName: string, values: unknown, protocol: string): string | undefined;
-    static routeUrl(helper: IUrlHelper, routeName: string, values: unknown): string | undefined;
-    static routeUrl(helper: IUrlHelper, routeName: string): string | undefined;
+    static Action(helper: IUrlHelper, action: string, values: unknown): string | undefined;
+    static Action(helper: IUrlHelper, action: string, controller: string, values: unknown, protocol: string, host: string, fragment: string): string | undefined;
+    static Action(helper: IUrlHelper, action: string, controller: string, values: unknown, protocol: string, host: string): string | undefined;
+    static Action(helper: IUrlHelper, action: string, controller: string, values: unknown, protocol: string): string | undefined;
+    static Action(helper: IUrlHelper, action: string, controller: string, values: unknown): string | undefined;
+    static Action(helper: IUrlHelper, action: string, controller: string): string | undefined;
+    static Action(helper: IUrlHelper, action: string): string | undefined;
+    static Action(helper: IUrlHelper): string | undefined;
+    static ActionLink(helper: IUrlHelper, action?: string, controller?: string, values?: unknown, protocol?: string, host?: string, fragment?: string): string | undefined;
+    static Page(urlHelper: IUrlHelper, pageName: string, values: unknown): string | undefined;
+    static Page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown, protocol: string, host: string, fragment: string): string | undefined;
+    static Page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown, protocol: string, host: string): string | undefined;
+    static Page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown, protocol: string): string | undefined;
+    static Page(urlHelper: IUrlHelper, pageName: string, pageHandler: string, values: unknown): string | undefined;
+    static Page(urlHelper: IUrlHelper, pageName: string, pageHandler: string): string | undefined;
+    static Page(urlHelper: IUrlHelper, pageName: string): string | undefined;
+    static PageLink(urlHelper: IUrlHelper, pageName?: string, pageHandler?: string, values?: unknown, protocol?: string, host?: string, fragment?: string): string | undefined;
+    static RouteUrl(helper: IUrlHelper, values: unknown): string | undefined;
+    static RouteUrl(helper: IUrlHelper, routeName: string, values: unknown, protocol: string, host: string, fragment: string): string | undefined;
+    static RouteUrl(helper: IUrlHelper, routeName: string, values: unknown, protocol: string, host: string): string | undefined;
+    static RouteUrl(helper: IUrlHelper, routeName: string, values: unknown, protocol: string): string | undefined;
+    static RouteUrl(helper: IUrlHelper, routeName: string, values: unknown): string | undefined;
+    static RouteUrl(helper: IUrlHelper, routeName: string): string | undefined;
 }
 
 

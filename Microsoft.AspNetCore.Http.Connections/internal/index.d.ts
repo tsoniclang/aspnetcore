@@ -17,17 +17,17 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum HttpTransportType {
-    none = 0,
-    webSockets = 1,
-    serverSentEvents = 2,
-    longPolling = 4
+    None = 0,
+    WebSockets = 1,
+    ServerSentEvents = 2,
+    LongPolling = 4
 }
 
 
 export interface AvailableTransport$instance {
-    get transferFormats(): IList<System_Internal.String> | undefined;
-    set transferFormats(value: IList<System_Internal.String>);
-    transport: string;
+    get TransferFormats(): IList<System_Internal.String> | undefined;
+    set TransferFormats(value: IList<System_Internal.String>);
+    Transport: string;
 }
 
 
@@ -39,7 +39,7 @@ export const AvailableTransport: {
 export type AvailableTransport = AvailableTransport$instance;
 
 export interface ConnectionOptions$instance {
-    disconnectTimeout: Nullable<TimeSpan>;
+    DisconnectTimeout: Nullable<TimeSpan>;
 }
 
 
@@ -51,29 +51,29 @@ export const ConnectionOptions: {
 export type ConnectionOptions = ConnectionOptions$instance;
 
 export interface ConnectionOptionsSetup$instance {
-    configure(options: ConnectionOptions): void;
+    Configure(options: ConnectionOptions): void;
 }
 
 
 export const ConnectionOptionsSetup: {
     new(): ConnectionOptionsSetup;
-    defaultDisconectTimeout: TimeSpan;
+    DefaultDisconectTimeout: TimeSpan;
 };
 
 
 export type ConnectionOptionsSetup = ConnectionOptionsSetup$instance;
 
 export interface HttpConnectionDispatcherOptions$instance {
-    allowStatefulReconnects: boolean;
-    applicationMaxBufferSize: long;
-    readonly authorizationData: IList<IAuthorizeData>;
-    closeOnAuthenticationExpiration: boolean;
-    readonly longPolling: LongPollingOptions;
-    minimumProtocolVersion: int;
-    transportMaxBufferSize: long;
-    transports: HttpTransportType;
-    transportSendTimeout: TimeSpan;
-    readonly webSockets: WebSocketOptions;
+    AllowStatefulReconnects: boolean;
+    ApplicationMaxBufferSize: long;
+    readonly AuthorizationData: IList<IAuthorizeData>;
+    CloseOnAuthenticationExpiration: boolean;
+    readonly LongPolling: LongPollingOptions;
+    MinimumProtocolVersion: int;
+    TransportMaxBufferSize: long;
+    Transports: HttpTransportType;
+    TransportSendTimeout: TimeSpan;
+    readonly WebSockets: WebSocketOptions;
 }
 
 
@@ -85,7 +85,7 @@ export const HttpConnectionDispatcherOptions: {
 export type HttpConnectionDispatcherOptions = HttpConnectionDispatcherOptions$instance;
 
 export interface LongPollingOptions$instance {
-    pollTimeout: TimeSpan;
+    PollTimeout: TimeSpan;
 }
 
 
@@ -108,16 +108,16 @@ export const NegotiateMetadata: {
 export type NegotiateMetadata = NegotiateMetadata$instance;
 
 export interface NegotiationResponse$instance {
-    accessToken: string;
-    get availableTransports(): IList<AvailableTransport> | undefined;
-    set availableTransports(value: IList<AvailableTransport>);
-    connectionId: string;
-    get connectionToken(): string | undefined;
-    set connectionToken(value: string);
-    error: string;
-    url: string;
-    useStatefulReconnect: boolean;
-    version: int;
+    AccessToken: string;
+    get AvailableTransports(): IList<AvailableTransport> | undefined;
+    set AvailableTransports(value: IList<AvailableTransport>);
+    ConnectionId: string;
+    get ConnectionToken(): string | undefined;
+    set ConnectionToken(value: string);
+    Error: string;
+    Url: string;
+    UseStatefulReconnect: boolean;
+    Version: int;
 }
 
 
@@ -129,9 +129,9 @@ export const NegotiationResponse: {
 export type NegotiationResponse = NegotiationResponse$instance;
 
 export interface WebSocketOptions$instance {
-    closeTimeout: TimeSpan;
-    get subProtocolSelector(): Func<IList<System_Internal.String>, System_Internal.String> | undefined;
-    set subProtocolSelector(value: Func<IList<System_Internal.String>, System_Internal.String>);
+    CloseTimeout: TimeSpan;
+    get SubProtocolSelector(): Func<IList<System_Internal.String>, System_Internal.String> | undefined;
+    set SubProtocolSelector(value: Func<IList<System_Internal.String>, System_Internal.String>);
 }
 
 
@@ -143,22 +143,22 @@ export const WebSocketOptions: {
 export type WebSocketOptions = WebSocketOptions$instance;
 
 export abstract class HttpConnectionContextExtensions$instance {
-    static getHttpContext(connection: ConnectionContext): HttpContext | undefined;
+    static GetHttpContext(connection: ConnectionContext): HttpContext | undefined;
 }
 
 
 export type HttpConnectionContextExtensions = HttpConnectionContextExtensions$instance;
 
 export abstract class HttpTransports$instance {
-    static readonly all: HttpTransportType;
+    static readonly All: HttpTransportType;
 }
 
 
 export type HttpTransports = HttpTransports$instance;
 
 export abstract class NegotiateProtocol$instance {
-    static parseResponse(content: ReadOnlySpan<System_Internal.Byte>): NegotiationResponse;
-    static writeResponse(response: NegotiationResponse, output: IBufferWriter<System_Internal.Byte>): void;
+    static ParseResponse(content: ReadOnlySpan<System_Internal.Byte>): NegotiationResponse;
+    static WriteResponse(response: NegotiationResponse, output: IBufferWriter<System_Internal.Byte>): void;
 }
 
 

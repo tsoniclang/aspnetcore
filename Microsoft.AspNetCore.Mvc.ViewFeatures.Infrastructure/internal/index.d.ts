@@ -11,9 +11,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Byte, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
 
 export interface TempDataSerializer$instance {
-    canSerializeType(type: Type): boolean;
-    deserialize(unprotectedData: byte[]): IDictionary<System_Internal.String, unknown> | undefined;
-    serialize(values: IDictionary<System_Internal.String, unknown>): byte[];
+    CanSerializeType(type: Type): boolean;
+    Deserialize(unprotectedData: byte[]): IDictionary<System_Internal.String, unknown> | undefined;
+    Serialize(values: IDictionary<System_Internal.String, unknown>): byte[];
 }
 
 

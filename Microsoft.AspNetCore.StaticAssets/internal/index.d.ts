@@ -13,11 +13,11 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface StaticAssetDescriptor$instance {
-    assetPath: string;
-    properties: IReadOnlyList<StaticAssetProperty>;
-    responseHeaders: IReadOnlyList<StaticAssetResponseHeader>;
-    route: string;
-    selectors: IReadOnlyList<StaticAssetSelector>;
+    AssetPath: string;
+    Properties: IReadOnlyList<StaticAssetProperty>;
+    ResponseHeaders: IReadOnlyList<StaticAssetResponseHeader>;
+    Route: string;
+    Selectors: IReadOnlyList<StaticAssetSelector>;
 }
 
 
@@ -29,8 +29,8 @@ export const StaticAssetDescriptor: {
 export type StaticAssetDescriptor = StaticAssetDescriptor$instance;
 
 export interface StaticAssetProperty$instance {
-    readonly name: string;
-    readonly value: string;
+    readonly Name: string;
+    readonly Value: string;
 }
 
 
@@ -42,8 +42,8 @@ export const StaticAssetProperty: {
 export type StaticAssetProperty = StaticAssetProperty$instance;
 
 export interface StaticAssetResponseHeader$instance {
-    readonly name: string;
-    readonly value: string;
+    readonly Name: string;
+    readonly Value: string;
 }
 
 
@@ -55,9 +55,9 @@ export const StaticAssetResponseHeader: {
 export type StaticAssetResponseHeader = StaticAssetResponseHeader$instance;
 
 export interface StaticAssetSelector$instance {
-    readonly name: string;
-    readonly quality: string;
-    readonly value: string;
+    readonly Name: string;
+    readonly Quality: string;
+    readonly Value: string;
 }
 
 
@@ -69,8 +69,8 @@ export const StaticAssetSelector: {
 export type StaticAssetSelector = StaticAssetSelector$instance;
 
 export interface StaticAssetsEndpointConventionBuilder$instance {
-    add(convention: Action<EndpointBuilder>): void;
-    finally(convention: Action<EndpointBuilder>): void;
+    Add(convention: Action<EndpointBuilder>): void;
+    Finally(convention: Action<EndpointBuilder>): void;
 }
 
 

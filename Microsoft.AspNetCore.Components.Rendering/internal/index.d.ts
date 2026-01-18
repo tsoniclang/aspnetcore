@@ -14,11 +14,11 @@ import type { Action, Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int3
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ComponentState$instance {
-    readonly component: IComponent;
-    readonly componentId: int;
-    readonly logicalParentComponentState: ComponentState | undefined;
-    readonly parentComponentState: ComponentState | undefined;
-    disposeAsync(): ValueTask;
+    readonly Component: IComponent;
+    readonly ComponentId: int;
+    readonly LogicalParentComponentState: ComponentState | undefined;
+    readonly ParentComponentState: ComponentState | undefined;
+    DisposeAsync(): ValueTask;
 }
 
 
@@ -30,39 +30,39 @@ export const ComponentState: {
 export type ComponentState = ComponentState$instance;
 
 export interface RenderTreeBuilder$instance {
-    addAttribute(sequence: int, name: string): void;
-    addAttribute(sequence: int, name: string, value: boolean): void;
-    addAttribute(sequence: int, name: string, value: string): void;
-    addAttribute(sequence: int, name: string, value: Function): void;
-    addAttribute(sequence: int, name: string, value: EventCallback): void;
-    addAttribute<TArgument>(sequence: int, name: string, value: EventCallback_1<TArgument>): void;
-    addAttribute(sequence: int, name: string, value: unknown): void;
-    addAttribute(sequence: int, frame: RenderTreeFrame): void;
-    addComponentParameter(sequence: int, name: string, value: unknown): void;
-    addComponentReferenceCapture(sequence: int, componentReferenceCaptureAction: Action<unknown>): void;
-    addComponentRenderMode(renderMode: IComponentRenderMode): void;
-    addContent(sequence: int, textContent: string): void;
-    addContent(sequence: int, fragment: RenderFragment): void;
-    addContent<TValue>(sequence: int, fragment: RenderFragment_1<TValue>, value: TValue): void;
-    addContent(sequence: int, markupContent: Nullable<MarkupString>): void;
-    addContent(sequence: int, markupContent: MarkupString): void;
-    addContent(sequence: int, textContent: unknown): void;
-    addElementReferenceCapture(sequence: int, elementReferenceCaptureAction: Action<ElementReference>): void;
-    addMarkupContent(sequence: int, markupContent: string): void;
-    addMultipleAttributes(sequence: int, attributes: IEnumerable<KeyValuePair<System_Internal.String, unknown>>): void;
-    addNamedEvent(eventType: string, assignedName: string): void;
-    clear(): void;
-    closeComponent(): void;
-    closeElement(): void;
-    closeRegion(): void;
-    dispose(): void;
-    getFrames(): ArrayRange_1<RenderTreeFrame>;
-    openComponent<TComponent extends IComponent>(sequence: int): void;
-    openComponent(sequence: int, componentType: Type): void;
-    openElement(sequence: int, elementName: string): void;
-    openRegion(sequence: int): void;
-    setKey(value: unknown): void;
-    setUpdatesAttributeName(updatesAttributeName: string): void;
+    AddAttribute(sequence: int, name: string): void;
+    AddAttribute(sequence: int, name: string, value: boolean): void;
+    AddAttribute(sequence: int, name: string, value: string): void;
+    AddAttribute(sequence: int, name: string, value: Function): void;
+    AddAttribute(sequence: int, name: string, value: EventCallback): void;
+    AddAttribute<TArgument>(sequence: int, name: string, value: EventCallback_1<TArgument>): void;
+    AddAttribute(sequence: int, name: string, value: unknown): void;
+    AddAttribute(sequence: int, frame: RenderTreeFrame): void;
+    AddComponentParameter(sequence: int, name: string, value: unknown): void;
+    AddComponentReferenceCapture(sequence: int, componentReferenceCaptureAction: Action<unknown>): void;
+    AddComponentRenderMode(renderMode: IComponentRenderMode): void;
+    AddContent(sequence: int, textContent: string): void;
+    AddContent(sequence: int, fragment: RenderFragment): void;
+    AddContent<TValue>(sequence: int, fragment: RenderFragment_1<TValue>, value: TValue): void;
+    AddContent(sequence: int, markupContent: Nullable<MarkupString>): void;
+    AddContent(sequence: int, markupContent: MarkupString): void;
+    AddContent(sequence: int, textContent: unknown): void;
+    AddElementReferenceCapture(sequence: int, elementReferenceCaptureAction: Action<ElementReference>): void;
+    AddMarkupContent(sequence: int, markupContent: string): void;
+    AddMultipleAttributes(sequence: int, attributes: IEnumerable<KeyValuePair<System_Internal.String, unknown>>): void;
+    AddNamedEvent(eventType: string, assignedName: string): void;
+    Clear(): void;
+    CloseComponent(): void;
+    CloseElement(): void;
+    CloseRegion(): void;
+    Dispose(): void;
+    GetFrames(): ArrayRange_1<RenderTreeFrame>;
+    OpenComponent<TComponent extends IComponent>(sequence: int): void;
+    OpenComponent(sequence: int, componentType: Type): void;
+    OpenElement(sequence: int, elementName: string): void;
+    OpenRegion(sequence: int): void;
+    SetKey(value: unknown): void;
+    SetUpdatesAttributeName(updatesAttributeName: string): void;
 }
 
 

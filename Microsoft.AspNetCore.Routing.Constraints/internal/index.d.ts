@@ -17,8 +17,8 @@ import type { Boolean as ClrBoolean, Int32, Int64, Object as ClrObject, String a
 import type { Regex } from "@tsonic/dotnet/System.Text.RegularExpressions.js";
 
 export interface AlphaRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
-    matchesLiteral(parameterName: string, literal: string): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    MatchesLiteral(parameterName: string, literal: string): boolean;
 }
 
 
@@ -38,7 +38,7 @@ export type AlphaRouteConstraint = AlphaRouteConstraint$instance & __AlphaRouteC
 
 
 export interface BoolRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -58,8 +58,8 @@ export type BoolRouteConstraint = BoolRouteConstraint$instance & __BoolRouteCons
 
 
 export interface CompositeRouteConstraint$instance extends IParameterPolicy {
-    readonly constraints: IEnumerable<IRouteConstraint>;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly Constraints: IEnumerable<IRouteConstraint>;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -79,7 +79,7 @@ export type CompositeRouteConstraint = CompositeRouteConstraint$instance & __Com
 
 
 export interface DateTimeRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -99,7 +99,7 @@ export type DateTimeRouteConstraint = DateTimeRouteConstraint$instance & __DateT
 
 
 export interface DecimalRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -119,7 +119,7 @@ export type DecimalRouteConstraint = DecimalRouteConstraint$instance & __Decimal
 
 
 export interface DoubleRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -139,7 +139,7 @@ export type DoubleRouteConstraint = DoubleRouteConstraint$instance & __DoubleRou
 
 
 export interface FileNameRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -159,7 +159,7 @@ export type FileNameRouteConstraint = FileNameRouteConstraint$instance & __FileN
 
 
 export interface FloatRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -179,7 +179,7 @@ export type FloatRouteConstraint = FloatRouteConstraint$instance & __FloatRouteC
 
 
 export interface GuidRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -199,8 +199,8 @@ export type GuidRouteConstraint = GuidRouteConstraint$instance & __GuidRouteCons
 
 
 export interface HttpMethodRouteConstraint$instance extends IParameterPolicy {
-    readonly allowedMethods: IList<System_Internal.String>;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly AllowedMethods: IList<System_Internal.String>;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -219,7 +219,7 @@ export type HttpMethodRouteConstraint = HttpMethodRouteConstraint$instance & __H
 
 
 export interface IntRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -239,9 +239,9 @@ export type IntRouteConstraint = IntRouteConstraint$instance & __IntRouteConstra
 
 
 export interface LengthRouteConstraint$instance extends IParameterPolicy {
-    readonly maxLength: int;
-    readonly minLength: int;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly MaxLength: int;
+    readonly MinLength: int;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -262,7 +262,7 @@ export type LengthRouteConstraint = LengthRouteConstraint$instance & __LengthRou
 
 
 export interface LongRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -282,8 +282,8 @@ export type LongRouteConstraint = LongRouteConstraint$instance & __LongRouteCons
 
 
 export interface MaxLengthRouteConstraint$instance extends IParameterPolicy {
-    readonly maxLength: int;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly MaxLength: int;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -303,8 +303,8 @@ export type MaxLengthRouteConstraint = MaxLengthRouteConstraint$instance & __Max
 
 
 export interface MaxRouteConstraint$instance extends IParameterPolicy {
-    readonly max: long;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly Max: long;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -324,8 +324,8 @@ export type MaxRouteConstraint = MaxRouteConstraint$instance & __MaxRouteConstra
 
 
 export interface MinLengthRouteConstraint$instance extends IParameterPolicy {
-    readonly minLength: int;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly MinLength: int;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -345,8 +345,8 @@ export type MinLengthRouteConstraint = MinLengthRouteConstraint$instance & __Min
 
 
 export interface MinRouteConstraint$instance extends IParameterPolicy {
-    readonly min: long;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly Min: long;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -366,7 +366,7 @@ export type MinRouteConstraint = MinRouteConstraint$instance & __MinRouteConstra
 
 
 export interface NonFileNameRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -386,8 +386,8 @@ export type NonFileNameRouteConstraint = NonFileNameRouteConstraint$instance & _
 
 
 export interface OptionalRouteConstraint$instance extends IParameterPolicy {
-    readonly innerConstraint: IRouteConstraint;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly InnerConstraint: IRouteConstraint;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -406,9 +406,9 @@ export type OptionalRouteConstraint = OptionalRouteConstraint$instance & __Optio
 
 
 export interface RangeRouteConstraint$instance extends IParameterPolicy {
-    readonly max: long;
-    readonly min: long;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly Max: long;
+    readonly Min: long;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -428,8 +428,8 @@ export type RangeRouteConstraint = RangeRouteConstraint$instance & __RangeRouteC
 
 
 export interface RegexInlineRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
-    matchesLiteral(parameterName: string, literal: string): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    MatchesLiteral(parameterName: string, literal: string): boolean;
 }
 
 
@@ -449,8 +449,8 @@ export type RegexInlineRouteConstraint = RegexInlineRouteConstraint$instance & _
 
 
 export interface RegexRouteConstraint$instance extends IParameterPolicy {
-    readonly constraint: Regex;
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    readonly Constraint: Regex;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -471,7 +471,7 @@ export type RegexRouteConstraint = RegexRouteConstraint$instance & __RegexRouteC
 
 
 export interface RequiredRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -490,7 +490,7 @@ export type RequiredRouteConstraint = RequiredRouteConstraint$instance & __Requi
 
 
 export interface StringRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 

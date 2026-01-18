@@ -18,17 +18,17 @@ import type { HybridCache } from "@tsonic/microsoft-extensions/Microsoft.Extensi
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface CircuitOptions$instance {
-    detailedErrors: boolean;
-    disconnectedCircuitMaxRetained: int;
-    disconnectedCircuitRetentionPeriod: TimeSpan;
-    get hybridPersistenceCache(): HybridCache | undefined;
-    set hybridPersistenceCache(value: HybridCache);
-    jsInteropDefaultCallTimeout: TimeSpan;
-    maxBufferedUnacknowledgedRenderBatches: int;
-    persistedCircuitDistributedRetentionPeriod: Nullable<TimeSpan>;
-    persistedCircuitInMemoryMaxRetained: int;
-    persistedCircuitInMemoryRetentionPeriod: TimeSpan;
-    readonly rootComponents: CircuitRootComponentOptions;
+    DetailedErrors: boolean;
+    DisconnectedCircuitMaxRetained: int;
+    DisconnectedCircuitRetentionPeriod: TimeSpan;
+    get HybridPersistenceCache(): HybridCache | undefined;
+    set HybridPersistenceCache(value: HybridCache);
+    JSInteropDefaultCallTimeout: TimeSpan;
+    MaxBufferedUnacknowledgedRenderBatches: int;
+    PersistedCircuitDistributedRetentionPeriod: Nullable<TimeSpan>;
+    PersistedCircuitInMemoryMaxRetained: int;
+    PersistedCircuitInMemoryRetentionPeriod: TimeSpan;
+    readonly RootComponents: CircuitRootComponentOptions;
 }
 
 
@@ -40,8 +40,8 @@ export const CircuitOptions: {
 export type CircuitOptions = CircuitOptions$instance;
 
 export interface CircuitRootComponentOptions$instance {
-    readonly jsComponents: JSComponentConfigurationStore;
-    maxJSRootComponents: int;
+    readonly JSComponents: JSComponentConfigurationStore;
+    MaxJSRootComponents: int;
 }
 
 
@@ -60,7 +60,7 @@ export type CircuitRootComponentOptions = CircuitRootComponentOptions$instance &
 
 
 export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance {
-    setAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
+    SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
 }
 
 
@@ -77,8 +77,8 @@ export type RevalidatingServerAuthenticationStateProvider = RevalidatingServerAu
 
 
 export interface ServerAuthenticationStateProvider$instance extends AuthenticationStateProvider {
-    getAuthenticationStateAsync(): Task<AuthenticationState>;
-    setAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
+    GetAuthenticationStateAsync(): Task<AuthenticationState>;
+    SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
 }
 
 
@@ -97,11 +97,11 @@ export type ServerAuthenticationStateProvider = ServerAuthenticationStateProvide
 
 
 export interface ServerComponentsEndpointOptions$instance {
-    get configureWebSocketAcceptContext(): Func<HttpContext, WebSocketAcceptContext, Task> | undefined;
-    set configureWebSocketAcceptContext(value: Func<HttpContext, WebSocketAcceptContext, Task>);
-    get contentSecurityFrameAncestorsPolicy(): string | undefined;
-    set contentSecurityFrameAncestorsPolicy(value: string);
-    disableWebSocketCompression: boolean;
+    get ConfigureWebSocketAcceptContext(): Func<HttpContext, WebSocketAcceptContext, Task> | undefined;
+    set ConfigureWebSocketAcceptContext(value: Func<HttpContext, WebSocketAcceptContext, Task>);
+    get ContentSecurityFrameAncestorsPolicy(): string | undefined;
+    set ContentSecurityFrameAncestorsPolicy(value: string);
+    DisableWebSocketCompression: boolean;
 }
 
 

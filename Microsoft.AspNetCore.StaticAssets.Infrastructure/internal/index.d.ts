@@ -13,8 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export abstract class StaticAssetsEndpointDataSourceHelper$instance {
-    static hasStaticAssetsDataSource(builder: IEndpointRouteBuilder, staticAssetsManifestPath?: string): boolean;
-    static resolveStaticAssetDescriptors(endpointRouteBuilder: IEndpointRouteBuilder, manifestPath: string): IReadOnlyList<StaticAssetDescriptor>;
+    static HasStaticAssetsDataSource(builder: IEndpointRouteBuilder, staticAssetsManifestPath?: string): boolean;
+    static ResolveStaticAssetDescriptors(endpointRouteBuilder: IEndpointRouteBuilder, manifestPath: string): IReadOnlyList<StaticAssetDescriptor>;
 }
 
 

@@ -20,50 +20,50 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum ExceptionHandledType {
-    unhandled = 0,
-    exceptionHandlerService = 1,
-    problemDetailsService = 2,
-    exceptionHandlerDelegate = 3,
-    exceptionHandlingPath = 4
+    Unhandled = 0,
+    ExceptionHandlerService = 1,
+    ProblemDetailsService = 2,
+    ExceptionHandlerDelegate = 3,
+    ExceptionHandlingPath = 4
 }
 
 
 export interface ICompilationException$instance {
-    readonly compilationFailures: IEnumerable<CompilationFailure | undefined> | undefined;
+    readonly CompilationFailures: IEnumerable<CompilationFailure | undefined> | undefined;
 }
 
 
 export type ICompilationException = ICompilationException$instance;
 
 export interface IDeveloperPageExceptionFilter$instance {
-    handleExceptionAsync(errorContext: ErrorContext, next: Func<ErrorContext, Task>): Task;
+    HandleExceptionAsync(errorContext: ErrorContext, next: Func<ErrorContext, Task>): Task;
 }
 
 
 export type IDeveloperPageExceptionFilter = IDeveloperPageExceptionFilter$instance;
 
 export interface IExceptionHandler$instance {
-    tryHandleAsync(httpContext: HttpContext, exception: Exception, cancellationToken: CancellationToken): ValueTask<System_Internal.Boolean>;
+    TryHandleAsync(httpContext: HttpContext, exception: Exception, cancellationToken: CancellationToken): ValueTask<System_Internal.Boolean>;
 }
 
 
 export type IExceptionHandler = IExceptionHandler$instance;
 
 export interface IExceptionHandlerFeature$instance {
-    readonly error: Exception;
-    readonly path: string;
-    readonly endpoint: Endpoint | undefined;
-    readonly routeValues: RouteValueDictionary;
+    readonly Error: Exception;
+    readonly Path: string;
+    readonly Endpoint: Endpoint | undefined;
+    readonly RouteValues: RouteValueDictionary;
 }
 
 
 export type IExceptionHandlerFeature = IExceptionHandlerFeature$instance;
 
 export interface IExceptionHandlerPathFeature$instance extends IExceptionHandlerFeature {
-    readonly path: string;
-    readonly error: Exception;
-    readonly endpoint: Endpoint | undefined;
-    readonly routeValues: RouteValueDictionary;
+    readonly Path: string;
+    readonly Error: Exception;
+    readonly Endpoint: Endpoint | undefined;
+    readonly RouteValues: RouteValueDictionary;
 }
 
 
@@ -72,31 +72,31 @@ export interface IExceptionHandlerPathFeature$instance extends IExceptionHandler
 export type IExceptionHandlerPathFeature = IExceptionHandlerPathFeature$instance;
 
 export interface IStatusCodePagesFeature$instance {
-    enabled: boolean;
+    Enabled: boolean;
 }
 
 
 export type IStatusCodePagesFeature = IStatusCodePagesFeature$instance;
 
 export interface IStatusCodeReExecuteFeature$instance {
-    originalPathBase: string;
-    originalPath: string;
-    get originalQueryString(): string | undefined;
-    set originalQueryString(value: string);
-    readonly originalStatusCode: int;
-    readonly endpoint: Endpoint | undefined;
-    readonly routeValues: RouteValueDictionary;
+    OriginalPathBase: string;
+    OriginalPath: string;
+    get OriginalQueryString(): string | undefined;
+    set OriginalQueryString(value: string);
+    readonly OriginalStatusCode: int;
+    readonly Endpoint: Endpoint | undefined;
+    readonly RouteValues: RouteValueDictionary;
 }
 
 
 export type IStatusCodeReExecuteFeature = IStatusCodeReExecuteFeature$instance;
 
 export interface CompilationFailure$instance {
-    readonly compiledContent: string | undefined;
-    readonly failureSummary: string | undefined;
-    readonly messages: IEnumerable<DiagnosticMessage | undefined> | undefined;
-    readonly sourceFileContent: string | undefined;
-    readonly sourceFilePath: string | undefined;
+    readonly CompiledContent: string | undefined;
+    readonly FailureSummary: string | undefined;
+    readonly Messages: IEnumerable<DiagnosticMessage | undefined> | undefined;
+    readonly SourceFileContent: string | undefined;
+    readonly SourceFilePath: string | undefined;
 }
 
 
@@ -109,7 +109,7 @@ export const CompilationFailure: {
 export type CompilationFailure = CompilationFailure$instance;
 
 export interface DeveloperExceptionPageMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -121,13 +121,13 @@ export const DeveloperExceptionPageMiddleware: {
 export type DeveloperExceptionPageMiddleware = DeveloperExceptionPageMiddleware$instance;
 
 export interface DiagnosticMessage$instance {
-    readonly endColumn: int;
-    readonly endLine: int;
-    readonly formattedMessage: string | undefined;
-    readonly message: string;
-    readonly sourceFilePath: string | undefined;
-    readonly startColumn: int;
-    readonly startLine: int;
+    readonly EndColumn: int;
+    readonly EndLine: int;
+    readonly FormattedMessage: string | undefined;
+    readonly Message: string;
+    readonly SourceFilePath: string | undefined;
+    readonly StartColumn: int;
+    readonly StartLine: int;
 }
 
 
@@ -139,8 +139,8 @@ export const DiagnosticMessage: {
 export type DiagnosticMessage = DiagnosticMessage$instance;
 
 export interface ErrorContext$instance {
-    readonly exception: Exception;
-    readonly httpContext: HttpContext;
+    readonly Exception: Exception;
+    readonly HttpContext: HttpContext;
 }
 
 
@@ -152,11 +152,11 @@ export const ErrorContext: {
 export type ErrorContext = ErrorContext$instance;
 
 export interface ExceptionHandlerFeature$instance extends IExceptionHandlerPathFeature {
-    get endpoint(): Endpoint | undefined;
-    set endpoint(value: Endpoint);
-    error: Exception;
-    path: string;
-    routeValues: RouteValueDictionary;
+    get Endpoint(): Endpoint | undefined;
+    set Endpoint(value: Endpoint);
+    Error: Exception;
+    Path: string;
+    RouteValues: RouteValueDictionary;
 }
 
 
@@ -173,7 +173,7 @@ export type ExceptionHandlerFeature = ExceptionHandlerFeature$instance & __Excep
 
 
 export interface ExceptionHandlerMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -185,9 +185,9 @@ export const ExceptionHandlerMiddleware: {
 export type ExceptionHandlerMiddleware = ExceptionHandlerMiddleware$instance;
 
 export interface ExceptionHandlerSuppressDiagnosticsContext$instance {
-    exception: Exception;
-    exceptionHandledBy: ExceptionHandledType;
-    httpContext: HttpContext;
+    Exception: Exception;
+    ExceptionHandledBy: ExceptionHandledType;
+    HttpContext: HttpContext;
 }
 
 
@@ -199,9 +199,9 @@ export const ExceptionHandlerSuppressDiagnosticsContext: {
 export type ExceptionHandlerSuppressDiagnosticsContext = ExceptionHandlerSuppressDiagnosticsContext$instance;
 
 export interface StatusCodeContext$instance {
-    readonly httpContext: HttpContext;
-    readonly next: RequestDelegate;
-    readonly options: StatusCodePagesOptions;
+    readonly HttpContext: HttpContext;
+    readonly Next: RequestDelegate;
+    readonly Options: StatusCodePagesOptions;
 }
 
 
@@ -213,7 +213,7 @@ export const StatusCodeContext: {
 export type StatusCodeContext = StatusCodeContext$instance;
 
 export interface StatusCodePagesFeature$instance {
-    enabled: boolean;
+    Enabled: boolean;
 }
 
 
@@ -232,7 +232,7 @@ export type StatusCodePagesFeature = StatusCodePagesFeature$instance & __StatusC
 
 
 export interface StatusCodePagesMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -244,14 +244,14 @@ export const StatusCodePagesMiddleware: {
 export type StatusCodePagesMiddleware = StatusCodePagesMiddleware$instance;
 
 export interface StatusCodeReExecuteFeature$instance {
-    get endpoint(): Endpoint | undefined;
-    set endpoint(value: Endpoint);
-    originalPath: string;
-    originalPathBase: string;
-    get originalQueryString(): string | undefined;
-    set originalQueryString(value: string);
-    readonly originalStatusCode: int;
-    routeValues: RouteValueDictionary;
+    get Endpoint(): Endpoint | undefined;
+    set Endpoint(value: Endpoint);
+    OriginalPath: string;
+    OriginalPathBase: string;
+    get OriginalQueryString(): string | undefined;
+    set OriginalQueryString(value: string);
+    readonly OriginalStatusCode: int;
+    RouteValues: RouteValueDictionary;
 }
 
 
@@ -268,7 +268,7 @@ export type StatusCodeReExecuteFeature = StatusCodeReExecuteFeature$instance & _
 
 
 export interface WelcomePageMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 

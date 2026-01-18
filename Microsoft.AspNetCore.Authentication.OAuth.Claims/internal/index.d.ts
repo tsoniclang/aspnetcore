@@ -16,9 +16,9 @@ import type { ClaimsIdentity } from "@tsonic/dotnet/System.Security.Claims.js";
 import type { JsonElement } from "@tsonic/dotnet/System.Text.Json.js";
 
 export interface ClaimAction$instance {
-    readonly claimType: string;
-    readonly valueType: string;
-    run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    readonly ClaimType: string;
+    readonly ValueType: string;
+    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 
@@ -30,10 +30,10 @@ export const ClaimAction: {
 export type ClaimAction = ClaimAction$instance;
 
 export interface ClaimActionCollection$instance {
-    add(action: ClaimAction): void;
-    clear(): void;
-    getEnumerator(): IEnumerator<ClaimAction>;
-    remove(claimType: string): void;
+    Add(action: ClaimAction): void;
+    Clear(): void;
+    GetEnumerator(): IEnumerator<ClaimAction>;
+    Remove(claimType: string): void;
 }
 
 
@@ -45,8 +45,8 @@ export const ClaimActionCollection: {
 export type ClaimActionCollection = ClaimActionCollection$instance;
 
 export interface CustomJsonClaimAction$instance extends ClaimAction {
-    readonly resolver: Func<JsonElement, string | undefined>;
-    run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    readonly Resolver: Func<JsonElement, string | undefined>;
+    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 
@@ -58,7 +58,7 @@ export const CustomJsonClaimAction: {
 export type CustomJsonClaimAction = CustomJsonClaimAction$instance;
 
 export interface DeleteClaimAction$instance extends ClaimAction {
-    run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 
@@ -70,8 +70,8 @@ export const DeleteClaimAction: {
 export type DeleteClaimAction = DeleteClaimAction$instance;
 
 export interface JsonKeyClaimAction$instance extends ClaimAction {
-    readonly jsonKey: string;
-    run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    readonly JsonKey: string;
+    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 
@@ -83,8 +83,8 @@ export const JsonKeyClaimAction: {
 export type JsonKeyClaimAction = JsonKeyClaimAction$instance;
 
 export interface JsonSubKeyClaimAction$instance extends JsonKeyClaimAction {
-    readonly subKey: string;
-    run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    readonly SubKey: string;
+    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 
@@ -96,7 +96,7 @@ export const JsonSubKeyClaimAction: {
 export type JsonSubKeyClaimAction = JsonSubKeyClaimAction$instance;
 
 export interface MapAllClaimsAction$instance extends ClaimAction {
-    run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
+    Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 

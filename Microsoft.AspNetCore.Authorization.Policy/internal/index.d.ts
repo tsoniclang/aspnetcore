@@ -15,15 +15,15 @@ import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IPolicyEvaluator$instance {
-    authenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
-    authorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
+    AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
 }
 
 
 export type IPolicyEvaluator = IPolicyEvaluator$instance;
 
 export interface AuthorizationMiddlewareResultHandler$instance {
-    handleAsync(next: RequestDelegate, context: HttpContext, policy: AuthorizationPolicy, authorizeResult: PolicyAuthorizationResult): Task;
+    HandleAsync(next: RequestDelegate, context: HttpContext, policy: AuthorizationPolicy, authorizeResult: PolicyAuthorizationResult): Task;
 }
 
 
@@ -42,27 +42,27 @@ export type AuthorizationMiddlewareResultHandler = AuthorizationMiddlewareResult
 
 
 export interface PolicyAuthorizationResult$instance {
-    readonly authorizationFailure: AuthorizationFailure | undefined;
-    readonly challenged: boolean;
-    readonly forbidden: boolean;
-    readonly succeeded: boolean;
+    readonly AuthorizationFailure: AuthorizationFailure | undefined;
+    readonly Challenged: boolean;
+    readonly Forbidden: boolean;
+    readonly Succeeded: boolean;
 }
 
 
 export const PolicyAuthorizationResult: {
     new(): PolicyAuthorizationResult;
-    challenge(): PolicyAuthorizationResult;
-    forbid(): PolicyAuthorizationResult;
-    forbid(authorizationFailure: AuthorizationFailure): PolicyAuthorizationResult;
-    success(): PolicyAuthorizationResult;
+    Challenge(): PolicyAuthorizationResult;
+    Forbid(): PolicyAuthorizationResult;
+    Forbid(authorizationFailure: AuthorizationFailure): PolicyAuthorizationResult;
+    Success(): PolicyAuthorizationResult;
 };
 
 
 export type PolicyAuthorizationResult = PolicyAuthorizationResult$instance;
 
 export interface PolicyEvaluator$instance {
-    authenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
-    authorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
+    AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
 }
 
 

@@ -12,7 +12,7 @@ import type { Action, Boolean as ClrBoolean, Object as ClrObject } from "@tsonic
 import type { IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
 
 export interface WebHostBuilderOptions$instance {
-    suppressEnvironmentConfiguration: boolean;
+    SuppressEnvironmentConfiguration: boolean;
 }
 
 
@@ -24,17 +24,17 @@ export const WebHostBuilderOptions: {
 export type WebHostBuilderOptions = WebHostBuilderOptions$instance;
 
 export abstract class GenericHostBuilderExtensions$instance {
-    static configureWebHostDefaults(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureOptions: Action<WebHostBuilderOptions>): IHostBuilder;
-    static configureWebHostDefaults(builder: IHostBuilder, configure: Action<IWebHostBuilder>): IHostBuilder;
+    static ConfigureWebHostDefaults(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureOptions: Action<WebHostBuilderOptions>): IHostBuilder;
+    static ConfigureWebHostDefaults(builder: IHostBuilder, configure: Action<IWebHostBuilder>): IHostBuilder;
 }
 
 
 export type GenericHostBuilderExtensions = GenericHostBuilderExtensions$instance;
 
 export abstract class GenericHostWebHostBuilderExtensions$instance {
-    static configureSlimWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureWebHostBuilder: Action<WebHostBuilderOptions>): IHostBuilder;
-    static configureWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureWebHostBuilder: Action<WebHostBuilderOptions>): IHostBuilder;
-    static configureWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>): IHostBuilder;
+    static ConfigureSlimWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureWebHostBuilder: Action<WebHostBuilderOptions>): IHostBuilder;
+    static ConfigureWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureWebHostBuilder: Action<WebHostBuilderOptions>): IHostBuilder;
+    static ConfigureWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>): IHostBuilder;
 }
 
 

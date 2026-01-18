@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Server.Kestrel.Core.Features",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Server.Kestrel.Core"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
       "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
-      "tsEmitName": "IConnectionTimeoutFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature::SetTimeout(System.TimeSpan):System.Void",
           "clrName": "SetTimeout",
-          "tsEmitName": "setTimeout",
           "metadataToken": 100667493,
           "canonicalSignature": "(System.TimeSpan):System.Void",
           "normalizedSignature": "SetTimeout|(System.TimeSpan):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature::CancelTimeout():System.Void",
           "clrName": "CancelTimeout",
-          "tsEmitName": "cancelTimeout",
           "metadataToken": 100667495,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "CancelTimeout|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -40,47 +58,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "setTimeout",
-          "isStatic": false,
-          "tsSignatureId": "SetTimeout|(System.TimeSpan):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 100667493
-          }
-        },
-        {
-          "tsName": "cancelTimeout",
-          "isStatic": false,
-          "tsSignatureId": "CancelTimeout|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 100667495
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
       "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
-      "tsEmitName": "IDecrementConcurrentConnectionCountFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature::ReleaseConnection():System.Void",
           "clrName": "ReleaseConnection",
-          "tsEmitName": "releaseConnection",
           "metadataToken": 100667496,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ReleaseConnection|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -89,214 +95,187 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "releaseConnection",
-          "isStatic": false,
-          "tsSignatureId": "ReleaseConnection|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 100667496
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
       "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
-      "tsEmitName": "IHttp2StreamIdFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature::StreamId:System.Int32",
           "clrName": "StreamId",
-          "tsEmitName": "streamId",
           "metadataToken": 385877200,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "StreamId|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "streamId",
-          "isStatic": false,
-          "tsSignatureId": "StreamId|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 385877200
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
       "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
-      "tsEmitName": "IHttpMinRequestBodyDataRateFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature::MinDataRate:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "clrName": "MinDataRate",
-          "tsEmitName": "minDataRate",
           "metadataToken": 385877201,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "normalizedSignature": "MinDataRate|:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "minDataRate",
-          "isStatic": false,
-          "tsSignatureId": "MinDataRate|:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 385877201
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
       "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
-      "tsEmitName": "IHttpMinResponseDataRateFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature::MinDataRate:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "clrName": "MinDataRate",
-          "tsEmitName": "minDataRate",
           "metadataToken": 385877202,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "normalizedSignature": "MinDataRate|:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "minDataRate",
-          "isStatic": false,
-          "tsSignatureId": "MinDataRate|:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 385877202
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
       "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
-      "tsEmitName": "ISslStreamFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature::SslStream:System.Net.Security.SslStream",
           "clrName": "SslStream",
-          "tsEmitName": "sslStream",
           "metadataToken": 385877203,
           "canonicalSignature": ":System.Net.Security.SslStream",
           "normalizedSignature": "SslStream|:System.Net.Security.SslStream|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "sslStream",
-          "isStatic": false,
-          "tsSignatureId": "SslStream|:System.Net.Security.SslStream|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ISslStreamFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 385877203
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
       "clrName": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
-      "tsEmitName": "ITlsApplicationProtocolFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature::ApplicationProtocol:System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "ApplicationProtocol",
-          "tsEmitName": "applicationProtocol",
           "metadataToken": 385877204,
           "canonicalSignature": ":System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ApplicationProtocol|:System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "applicationProtocol",
-          "isStatic": false,
-          "tsSignatureId": "ApplicationProtocol|:System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
-            "metadataToken": 385877204
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

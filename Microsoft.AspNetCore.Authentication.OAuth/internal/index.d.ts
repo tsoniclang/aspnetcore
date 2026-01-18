@@ -23,8 +23,8 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptionsMonitor } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface OAuthChallengeProperties$instance extends AuthenticationProperties {
-    scope: ICollection<System_Internal.String>;
-    setScope(...scopes: string[]): void;
+    Scope: ICollection<System_Internal.String>;
+    SetScope(...scopes: string[]): void;
 }
 
 
@@ -32,16 +32,16 @@ export const OAuthChallengeProperties: {
     new(): OAuthChallengeProperties;
     new(items: IDictionary<System_Internal.String, System_Internal.String>): OAuthChallengeProperties;
     new(items: IDictionary<System_Internal.String, System_Internal.String>, parameters: IDictionary<System_Internal.String, unknown>): OAuthChallengeProperties;
-    readonly scopeKey: string;
+    readonly ScopeKey: string;
 };
 
 
 export type OAuthChallengeProperties = OAuthChallengeProperties$instance;
 
 export interface OAuthCodeExchangeContext$instance {
-    readonly code: string;
-    readonly properties: AuthenticationProperties;
-    readonly redirectUri: string;
+    readonly Code: string;
+    readonly Properties: AuthenticationProperties;
+    readonly RedirectUri: string;
 }
 
 
@@ -53,16 +53,16 @@ export const OAuthCodeExchangeContext: {
 export type OAuthCodeExchangeContext = OAuthCodeExchangeContext$instance;
 
 export interface OAuthCreatingTicketContext$instance extends ResultContext_1<OAuthOptions> {
-    readonly accessToken: string;
-    readonly backchannel: HttpClient;
-    readonly expiresIn: Nullable<TimeSpan>;
-    readonly identity: ClaimsIdentity | undefined;
-    readonly refreshToken: string;
-    readonly tokenResponse: OAuthTokenResponse;
-    readonly tokenType: string;
-    readonly user: JsonElement;
-    runClaimActions(): void;
-    runClaimActions(userData: JsonElement): void;
+    readonly AccessToken: string;
+    readonly Backchannel: HttpClient;
+    readonly ExpiresIn: Nullable<TimeSpan>;
+    readonly Identity: ClaimsIdentity | undefined;
+    readonly RefreshToken: string;
+    readonly TokenResponse: OAuthTokenResponse;
+    readonly TokenType: string;
+    readonly User: JsonElement;
+    RunClaimActions(): void;
+    RunClaimActions(userData: JsonElement): void;
 }
 
 
@@ -74,10 +74,10 @@ export const OAuthCreatingTicketContext: {
 export type OAuthCreatingTicketContext = OAuthCreatingTicketContext$instance;
 
 export interface OAuthEvents$instance extends RemoteAuthenticationEvents {
-    onCreatingTicket: Func<OAuthCreatingTicketContext, Task>;
-    onRedirectToAuthorizationEndpoint: Func<RedirectContext_1<OAuthOptions>, Task>;
-    creatingTicket(context: OAuthCreatingTicketContext): Task;
-    redirectToAuthorizationEndpoint(context: RedirectContext_1<OAuthOptions>): Task;
+    OnCreatingTicket: Func<OAuthCreatingTicketContext, Task>;
+    OnRedirectToAuthorizationEndpoint: Func<RedirectContext_1<OAuthOptions>, Task>;
+    CreatingTicket(context: OAuthCreatingTicketContext): Task;
+    RedirectToAuthorizationEndpoint(context: RedirectContext_1<OAuthOptions>): Task;
 }
 
 
@@ -89,10 +89,10 @@ export const OAuthEvents: {
 export type OAuthEvents = OAuthEvents$instance;
 
 export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions>, IAuthenticationRequestHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    handleRequestAsync(): Task<System_Internal.Boolean>;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    HandleRequestAsync(): Task<System_Internal.Boolean>;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
 }
 
 
@@ -110,19 +110,19 @@ export type OAuthHandler_1<TOptions extends OAuthOptions> = OAuthHandler_1$insta
 
 
 export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
-    readonly additionalAuthorizationParameters: IDictionary<System_Internal.String, System_Internal.String>;
-    authorizationEndpoint: string;
-    readonly claimActions: ClaimActionCollection;
-    clientId: string;
-    clientSecret: string;
-    events: OAuthEvents | RemoteAuthenticationEvents | unknown;
-    readonly scope: ICollection<System_Internal.String>;
-    stateDataFormat: ISecureDataFormat_1<AuthenticationProperties>;
-    tokenEndpoint: string;
-    usePkce: boolean;
-    userInformationEndpoint: string;
-    validate(): void;
-    validate(scheme: string): void;
+    readonly AdditionalAuthorizationParameters: IDictionary<System_Internal.String, System_Internal.String>;
+    AuthorizationEndpoint: string;
+    readonly ClaimActions: ClaimActionCollection;
+    ClientId: string;
+    ClientSecret: string;
+    Events: OAuthEvents | RemoteAuthenticationEvents | unknown;
+    readonly Scope: ICollection<System_Internal.String>;
+    StateDataFormat: ISecureDataFormat_1<AuthenticationProperties>;
+    TokenEndpoint: string;
+    UsePkce: boolean;
+    UserInformationEndpoint: string;
+    Validate(): void;
+    Validate(scheme: string): void;
 }
 
 
@@ -134,38 +134,38 @@ export const OAuthOptions: {
 export type OAuthOptions = OAuthOptions$instance;
 
 export interface OAuthTokenResponse$instance {
-    accessToken: string;
-    error: Exception;
-    get expiresIn(): string | undefined;
-    set expiresIn(value: string);
-    refreshToken: string;
-    response: JsonDocument;
-    tokenType: string;
-    dispose(): void;
+    AccessToken: string;
+    Error: Exception;
+    get ExpiresIn(): string | undefined;
+    set ExpiresIn(value: string);
+    RefreshToken: string;
+    Response: JsonDocument;
+    TokenType: string;
+    Dispose(): void;
 }
 
 
 export const OAuthTokenResponse: {
     new(): OAuthTokenResponse;
-    failed(error: Exception): OAuthTokenResponse;
-    success(response: JsonDocument): OAuthTokenResponse;
+    Failed(error: Exception): OAuthTokenResponse;
+    Success(response: JsonDocument): OAuthTokenResponse;
 };
 
 
 export type OAuthTokenResponse = OAuthTokenResponse$instance;
 
 export abstract class OAuthConstants$instance {
-    static readonly codeVerifierKey: string;
-    static readonly codeChallengeKey: string;
-    static readonly codeChallengeMethodKey: string;
-    static readonly codeChallengeMethodS256: string;
+    static readonly CodeVerifierKey: string;
+    static readonly CodeChallengeKey: string;
+    static readonly CodeChallengeMethodKey: string;
+    static readonly CodeChallengeMethodS256: string;
 }
 
 
 export type OAuthConstants = OAuthConstants$instance;
 
 export abstract class OAuthDefaults$instance {
-    static readonly displayName: string;
+    static readonly DisplayName: string;
 }
 
 

@@ -24,44 +24,44 @@ export interface IAllowAnonymous$instance {
 export type IAllowAnonymous = IAllowAnonymous$instance;
 
 export interface IAuthorizationEvaluator$instance {
-    evaluate(context: AuthorizationHandlerContext): AuthorizationResult;
+    Evaluate(context: AuthorizationHandlerContext): AuthorizationResult;
 }
 
 
 export type IAuthorizationEvaluator = IAuthorizationEvaluator$instance;
 
 export interface IAuthorizationHandler$instance {
-    handleAsync(context: AuthorizationHandlerContext): Task;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
 }
 
 
 export type IAuthorizationHandler = IAuthorizationHandler$instance;
 
 export interface IAuthorizationHandlerContextFactory$instance {
-    createContext(requirements: IEnumerable<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: unknown): AuthorizationHandlerContext;
+    CreateContext(requirements: IEnumerable<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: unknown): AuthorizationHandlerContext;
 }
 
 
 export type IAuthorizationHandlerContextFactory = IAuthorizationHandlerContextFactory$instance;
 
 export interface IAuthorizationHandlerProvider$instance {
-    getHandlersAsync(context: AuthorizationHandlerContext): Task<IEnumerable<IAuthorizationHandler>>;
+    GetHandlersAsync(context: AuthorizationHandlerContext): Task<IEnumerable<IAuthorizationHandler>>;
 }
 
 
 export type IAuthorizationHandlerProvider = IAuthorizationHandlerProvider$instance;
 
 export interface IAuthorizationMiddlewareResultHandler$instance {
-    handleAsync(next: RequestDelegate, context: HttpContext, policy: AuthorizationPolicy, authorizeResult: PolicyAuthorizationResult): Task;
+    HandleAsync(next: RequestDelegate, context: HttpContext, policy: AuthorizationPolicy, authorizeResult: PolicyAuthorizationResult): Task;
 }
 
 
 export type IAuthorizationMiddlewareResultHandler = IAuthorizationMiddlewareResultHandler$instance;
 
 export interface IAuthorizationPolicyProvider$instance {
-    readonly allowsCachingPolicies: boolean;
-    getDefaultPolicyAsync(): Task<AuthorizationPolicy>;
-    getPolicyAsync(policyName: string): Task<AuthorizationPolicy | undefined>;
+    readonly AllowsCachingPolicies: boolean;
+    GetDefaultPolicyAsync(): Task<AuthorizationPolicy>;
+    GetPolicyAsync(policyName: string): Task<AuthorizationPolicy | undefined>;
 }
 
 
@@ -74,34 +74,34 @@ export interface IAuthorizationRequirement$instance {
 export type IAuthorizationRequirement = IAuthorizationRequirement$instance;
 
 export interface IAuthorizationRequirementData$instance {
-    getRequirements(): IEnumerable<IAuthorizationRequirement>;
+    GetRequirements(): IEnumerable<IAuthorizationRequirement>;
 }
 
 
 export type IAuthorizationRequirementData = IAuthorizationRequirementData$instance;
 
 export interface IAuthorizationService$instance {
-    authorizeAsync(user: ClaimsPrincipal, resource: unknown, requirements: IEnumerable<IAuthorizationRequirement>): Task<AuthorizationResult>;
-    authorizeAsync(user: ClaimsPrincipal, resource: unknown, policyName: string): Task<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown, requirements: IEnumerable<IAuthorizationRequirement>): Task<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown, policyName: string): Task<AuthorizationResult>;
 }
 
 
 export type IAuthorizationService = IAuthorizationService$instance;
 
 export interface IAuthorizeData$instance {
-    get policy(): string | undefined;
-    set policy(value: string);
-    get roles(): string | undefined;
-    set roles(value: string);
-    get authenticationSchemes(): string | undefined;
-    set authenticationSchemes(value: string);
+    get Policy(): string | undefined;
+    set Policy(value: string);
+    get Roles(): string | undefined;
+    set Roles(value: string);
+    get AuthenticationSchemes(): string | undefined;
+    set AuthenticationSchemes(value: string);
 }
 
 
 export type IAuthorizeData = IAuthorizeData$instance;
 
 export interface AllowAnonymousAttribute$instance extends Attribute, IAllowAnonymous {
-    toString(): string;
+    ToString(): string;
 }
 
 
@@ -113,16 +113,16 @@ export const AllowAnonymousAttribute: {
 export type AllowAnonymousAttribute = AllowAnonymousAttribute$instance;
 
 export interface AuthorizationBuilder$instance {
-    readonly services: IServiceCollection;
-    addDefaultPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
-    addDefaultPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): AuthorizationBuilder;
-    addFallbackPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
-    addFallbackPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): AuthorizationBuilder;
-    addPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
-    addPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): AuthorizationBuilder;
-    setDefaultPolicy(policy: AuthorizationPolicy): AuthorizationBuilder;
-    setFallbackPolicy(policy: AuthorizationPolicy): AuthorizationBuilder;
-    setInvokeHandlersAfterFailure(invoke: boolean): AuthorizationBuilder;
+    readonly Services: IServiceCollection;
+    AddDefaultPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
+    AddDefaultPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): AuthorizationBuilder;
+    AddFallbackPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
+    AddFallbackPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): AuthorizationBuilder;
+    AddPolicy(name: string, policy: AuthorizationPolicy): AuthorizationBuilder;
+    AddPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): AuthorizationBuilder;
+    SetDefaultPolicy(policy: AuthorizationPolicy): AuthorizationBuilder;
+    SetFallbackPolicy(policy: AuthorizationPolicy): AuthorizationBuilder;
+    SetInvokeHandlersAfterFailure(invoke: boolean): AuthorizationBuilder;
 }
 
 
@@ -134,25 +134,25 @@ export const AuthorizationBuilder: {
 export type AuthorizationBuilder = AuthorizationBuilder$instance;
 
 export interface AuthorizationFailure$instance {
-    readonly failCalled: boolean;
-    readonly failedRequirements: IEnumerable<IAuthorizationRequirement>;
-    readonly failureReasons: IEnumerable<AuthorizationFailureReason>;
+    readonly FailCalled: boolean;
+    readonly FailedRequirements: IEnumerable<IAuthorizationRequirement>;
+    readonly FailureReasons: IEnumerable<AuthorizationFailureReason>;
 }
 
 
 export const AuthorizationFailure: {
     new(): AuthorizationFailure;
-    explicitFail(): AuthorizationFailure;
-    failed(reasons: IEnumerable<AuthorizationFailureReason>): AuthorizationFailure;
-    failed(failed: IEnumerable<IAuthorizationRequirement>): AuthorizationFailure;
+    ExplicitFail(): AuthorizationFailure;
+    Failed(reasons: IEnumerable<AuthorizationFailureReason>): AuthorizationFailure;
+    Failed(failed: IEnumerable<IAuthorizationRequirement>): AuthorizationFailure;
 };
 
 
 export type AuthorizationFailure = AuthorizationFailure$instance;
 
 export interface AuthorizationFailureReason$instance {
-    readonly handler: IAuthorizationHandler;
-    readonly message: string;
+    readonly Handler: IAuthorizationHandler;
+    readonly Message: string;
 }
 
 
@@ -164,7 +164,7 @@ export const AuthorizationFailureReason: {
 export type AuthorizationFailureReason = AuthorizationFailureReason$instance;
 
 export interface AuthorizationHandler_1$instance<TRequirement extends IAuthorizationRequirement> {
-    handleAsync(context: AuthorizationHandlerContext): Task;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
 }
 
 
@@ -182,7 +182,7 @@ export type AuthorizationHandler_1<TRequirement extends IAuthorizationRequiremen
 
 
 export interface AuthorizationHandler_2$instance<TRequirement extends IAuthorizationRequirement, TResource> {
-    handleAsync(context: AuthorizationHandlerContext): Task;
+    HandleAsync(context: AuthorizationHandlerContext): Task;
 }
 
 
@@ -200,16 +200,16 @@ export type AuthorizationHandler_2<TRequirement extends IAuthorizationRequiremen
 
 
 export interface AuthorizationHandlerContext$instance {
-    readonly failureReasons: IEnumerable<AuthorizationFailureReason>;
-    readonly hasFailed: boolean;
-    readonly hasSucceeded: boolean;
-    readonly pendingRequirements: IEnumerable<IAuthorizationRequirement>;
-    readonly requirements: IEnumerable<IAuthorizationRequirement>;
-    readonly resource: unknown | undefined;
-    readonly user: ClaimsPrincipal;
-    fail(): void;
-    fail(reason: AuthorizationFailureReason): void;
-    succeed(requirement: IAuthorizationRequirement): void;
+    readonly FailureReasons: IEnumerable<AuthorizationFailureReason>;
+    readonly HasFailed: boolean;
+    readonly HasSucceeded: boolean;
+    readonly PendingRequirements: IEnumerable<IAuthorizationRequirement>;
+    readonly Requirements: IEnumerable<IAuthorizationRequirement>;
+    readonly Resource: unknown | undefined;
+    readonly User: ClaimsPrincipal;
+    Fail(): void;
+    Fail(reason: AuthorizationFailureReason): void;
+    Succeed(requirement: IAuthorizationRequirement): void;
 }
 
 
@@ -221,7 +221,7 @@ export const AuthorizationHandlerContext: {
 export type AuthorizationHandlerContext = AuthorizationHandlerContext$instance;
 
 export interface AuthorizationMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -235,13 +235,13 @@ export const AuthorizationMiddleware: {
 export type AuthorizationMiddleware = AuthorizationMiddleware$instance;
 
 export interface AuthorizationOptions$instance {
-    defaultPolicy: AuthorizationPolicy;
-    get fallbackPolicy(): AuthorizationPolicy | undefined;
-    set fallbackPolicy(value: AuthorizationPolicy);
-    invokeHandlersAfterFailure: boolean;
-    addPolicy(name: string, policy: AuthorizationPolicy): void;
-    addPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): void;
-    getPolicy(name: string): AuthorizationPolicy | undefined;
+    DefaultPolicy: AuthorizationPolicy;
+    get FallbackPolicy(): AuthorizationPolicy | undefined;
+    set FallbackPolicy(value: AuthorizationPolicy);
+    InvokeHandlersAfterFailure: boolean;
+    AddPolicy(name: string, policy: AuthorizationPolicy): void;
+    AddPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): void;
+    GetPolicy(name: string): AuthorizationPolicy | undefined;
 }
 
 
@@ -253,38 +253,38 @@ export const AuthorizationOptions: {
 export type AuthorizationOptions = AuthorizationOptions$instance;
 
 export interface AuthorizationPolicy$instance {
-    readonly authenticationSchemes: IReadOnlyList<System_Internal.String>;
-    readonly requirements: IReadOnlyList<IAuthorizationRequirement>;
+    readonly AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    readonly Requirements: IReadOnlyList<IAuthorizationRequirement>;
 }
 
 
 export const AuthorizationPolicy: {
     new(requirements: IEnumerable<IAuthorizationRequirement>, authenticationSchemes: IEnumerable<System_Internal.String>): AuthorizationPolicy;
-    combine(...policies: AuthorizationPolicy[]): AuthorizationPolicy;
-    combine(policies: IEnumerable<AuthorizationPolicy>): AuthorizationPolicy;
-    combineAsync(policyProvider: IAuthorizationPolicyProvider, authorizeData: IEnumerable<IAuthorizeData>, policies: IEnumerable<AuthorizationPolicy>): Task<AuthorizationPolicy | undefined>;
-    combineAsync(policyProvider: IAuthorizationPolicyProvider, authorizeData: IEnumerable<IAuthorizeData>): Task<AuthorizationPolicy | undefined>;
+    Combine(...policies: AuthorizationPolicy[]): AuthorizationPolicy;
+    Combine(policies: IEnumerable<AuthorizationPolicy>): AuthorizationPolicy;
+    CombineAsync(policyProvider: IAuthorizationPolicyProvider, authorizeData: IEnumerable<IAuthorizeData>, policies: IEnumerable<AuthorizationPolicy>): Task<AuthorizationPolicy | undefined>;
+    CombineAsync(policyProvider: IAuthorizationPolicyProvider, authorizeData: IEnumerable<IAuthorizeData>): Task<AuthorizationPolicy | undefined>;
 };
 
 
 export type AuthorizationPolicy = AuthorizationPolicy$instance;
 
 export interface AuthorizationPolicyBuilder$instance {
-    authenticationSchemes: IList<System_Internal.String>;
-    requirements: IList<IAuthorizationRequirement>;
-    addAuthenticationSchemes(...schemes: string[]): AuthorizationPolicyBuilder;
-    addRequirements(...requirements: IAuthorizationRequirement[]): AuthorizationPolicyBuilder;
-    build(): AuthorizationPolicy;
-    combine(policy: AuthorizationPolicy): AuthorizationPolicyBuilder;
-    requireAssertion(handler: Func<AuthorizationHandlerContext, System_Internal.Boolean>): AuthorizationPolicyBuilder;
-    requireAssertion(handler: Func<AuthorizationHandlerContext, Task<System_Internal.Boolean>>): AuthorizationPolicyBuilder;
-    requireAuthenticatedUser(): AuthorizationPolicyBuilder;
-    requireClaim(claimType: string, ...allowedValues: string[]): AuthorizationPolicyBuilder;
-    requireClaim(claimType: string, allowedValues: IEnumerable<System_Internal.String>): AuthorizationPolicyBuilder;
-    requireClaim(claimType: string): AuthorizationPolicyBuilder;
-    requireRole(...roles: string[]): AuthorizationPolicyBuilder;
-    requireRole(roles: IEnumerable<System_Internal.String>): AuthorizationPolicyBuilder;
-    requireUserName(userName: string): AuthorizationPolicyBuilder;
+    AuthenticationSchemes: IList<System_Internal.String>;
+    Requirements: IList<IAuthorizationRequirement>;
+    AddAuthenticationSchemes(...schemes: string[]): AuthorizationPolicyBuilder;
+    AddRequirements(...requirements: IAuthorizationRequirement[]): AuthorizationPolicyBuilder;
+    Build(): AuthorizationPolicy;
+    Combine(policy: AuthorizationPolicy): AuthorizationPolicyBuilder;
+    RequireAssertion(handler: Func<AuthorizationHandlerContext, System_Internal.Boolean>): AuthorizationPolicyBuilder;
+    RequireAssertion(handler: Func<AuthorizationHandlerContext, Task<System_Internal.Boolean>>): AuthorizationPolicyBuilder;
+    RequireAuthenticatedUser(): AuthorizationPolicyBuilder;
+    RequireClaim(claimType: string, ...allowedValues: string[]): AuthorizationPolicyBuilder;
+    RequireClaim(claimType: string, allowedValues: IEnumerable<System_Internal.String>): AuthorizationPolicyBuilder;
+    RequireClaim(claimType: string): AuthorizationPolicyBuilder;
+    RequireRole(...roles: string[]): AuthorizationPolicyBuilder;
+    RequireRole(roles: IEnumerable<System_Internal.String>): AuthorizationPolicyBuilder;
+    RequireUserName(userName: string): AuthorizationPolicyBuilder;
 }
 
 
@@ -297,29 +297,29 @@ export const AuthorizationPolicyBuilder: {
 export type AuthorizationPolicyBuilder = AuthorizationPolicyBuilder$instance;
 
 export interface AuthorizationResult$instance {
-    readonly failure: AuthorizationFailure | undefined;
-    readonly succeeded: boolean;
+    readonly Failure: AuthorizationFailure | undefined;
+    readonly Succeeded: boolean;
 }
 
 
 export const AuthorizationResult: {
     new(): AuthorizationResult;
-    failed(): AuthorizationResult;
-    failed(failure: AuthorizationFailure): AuthorizationResult;
-    success(): AuthorizationResult;
+    Failed(): AuthorizationResult;
+    Failed(failure: AuthorizationFailure): AuthorizationResult;
+    Success(): AuthorizationResult;
 };
 
 
 export type AuthorizationResult = AuthorizationResult$instance;
 
 export interface AuthorizeAttribute$instance extends Attribute {
-    get authenticationSchemes(): string | undefined;
-    set authenticationSchemes(value: string);
-    get policy(): string | undefined;
-    set policy(value: string);
-    get roles(): string | undefined;
-    set roles(value: string);
-    toString(): string;
+    get AuthenticationSchemes(): string | undefined;
+    set AuthenticationSchemes(value: string);
+    get Policy(): string | undefined;
+    set Policy(value: string);
+    get Roles(): string | undefined;
+    set Roles(value: string);
+    ToString(): string;
 }
 
 
@@ -339,7 +339,7 @@ export type AuthorizeAttribute = AuthorizeAttribute$instance & __AuthorizeAttrib
 
 
 export interface DefaultAuthorizationEvaluator$instance {
-    evaluate(context: AuthorizationHandlerContext): AuthorizationResult;
+    Evaluate(context: AuthorizationHandlerContext): AuthorizationResult;
 }
 
 
@@ -358,7 +358,7 @@ export type DefaultAuthorizationEvaluator = DefaultAuthorizationEvaluator$instan
 
 
 export interface DefaultAuthorizationHandlerContextFactory$instance {
-    createContext(requirements: IEnumerable<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: unknown): AuthorizationHandlerContext;
+    CreateContext(requirements: IEnumerable<IAuthorizationRequirement>, user: ClaimsPrincipal, resource: unknown): AuthorizationHandlerContext;
 }
 
 
@@ -377,7 +377,7 @@ export type DefaultAuthorizationHandlerContextFactory = DefaultAuthorizationHand
 
 
 export interface DefaultAuthorizationHandlerProvider$instance {
-    getHandlersAsync(context: AuthorizationHandlerContext): Task<IEnumerable<IAuthorizationHandler>>;
+    GetHandlersAsync(context: AuthorizationHandlerContext): Task<IEnumerable<IAuthorizationHandler>>;
 }
 
 
@@ -396,10 +396,10 @@ export type DefaultAuthorizationHandlerProvider = DefaultAuthorizationHandlerPro
 
 
 export interface DefaultAuthorizationPolicyProvider$instance {
-    readonly allowsCachingPolicies: boolean;
-    getDefaultPolicyAsync(): Task<AuthorizationPolicy>;
-    getFallbackPolicyAsync(): Task<AuthorizationPolicy | undefined>;
-    getPolicyAsync(policyName: string): Task<AuthorizationPolicy | undefined>;
+    readonly AllowsCachingPolicies: boolean;
+    GetDefaultPolicyAsync(): Task<AuthorizationPolicy>;
+    GetFallbackPolicyAsync(): Task<AuthorizationPolicy | undefined>;
+    GetPolicyAsync(policyName: string): Task<AuthorizationPolicy | undefined>;
 }
 
 
@@ -418,8 +418,8 @@ export type DefaultAuthorizationPolicyProvider = DefaultAuthorizationPolicyProvi
 
 
 export interface DefaultAuthorizationService$instance {
-    authorizeAsync(user: ClaimsPrincipal, resource: unknown, requirements: IEnumerable<IAuthorizationRequirement>): Task<AuthorizationResult>;
-    authorizeAsync(user: ClaimsPrincipal, resource: unknown, policyName: string): Task<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown, requirements: IEnumerable<IAuthorizationRequirement>): Task<AuthorizationResult>;
+    AuthorizeAsync(user: ClaimsPrincipal, resource: unknown, policyName: string): Task<AuthorizationResult>;
 }
 
 
@@ -436,10 +436,10 @@ export type DefaultAuthorizationService = DefaultAuthorizationService$instance &
 
 
 export abstract class AuthorizationServiceExtensions$instance {
-    static authorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, policy: AuthorizationPolicy): Task<AuthorizationResult>;
-    static authorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: unknown, policy: AuthorizationPolicy): Task<AuthorizationResult>;
-    static authorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: unknown, requirement: IAuthorizationRequirement): Task<AuthorizationResult>;
-    static authorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, policyName: string): Task<AuthorizationResult>;
+    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, policy: AuthorizationPolicy): Task<AuthorizationResult>;
+    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: unknown, policy: AuthorizationPolicy): Task<AuthorizationResult>;
+    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, resource: unknown, requirement: IAuthorizationRequirement): Task<AuthorizationResult>;
+    static AuthorizeAsync(service: IAuthorizationService, user: ClaimsPrincipal, policyName: string): Task<AuthorizationResult>;
 }
 
 

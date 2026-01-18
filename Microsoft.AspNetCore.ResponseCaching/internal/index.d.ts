@@ -15,16 +15,16 @@ import type { ObjectPoolProvider } from "@tsonic/microsoft-extensions/Microsoft.
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IResponseCachingFeature$instance {
-    get varyByQueryKeys(): string[] | undefined;
-    set varyByQueryKeys(value: string[]);
+    get VaryByQueryKeys(): string[] | undefined;
+    set VaryByQueryKeys(value: string[]);
 }
 
 
 export type IResponseCachingFeature = IResponseCachingFeature$instance;
 
 export interface ResponseCachingFeature$instance {
-    get varyByQueryKeys(): string[] | undefined;
-    set varyByQueryKeys(value: string[]);
+    get VaryByQueryKeys(): string[] | undefined;
+    set VaryByQueryKeys(value: string[]);
 }
 
 
@@ -43,7 +43,7 @@ export type ResponseCachingFeature = ResponseCachingFeature$instance & __Respons
 
 
 export interface ResponseCachingMiddleware$instance {
-    invoke(httpContext: HttpContext): Task;
+    Invoke(httpContext: HttpContext): Task;
 }
 
 
@@ -55,9 +55,9 @@ export const ResponseCachingMiddleware: {
 export type ResponseCachingMiddleware = ResponseCachingMiddleware$instance;
 
 export interface ResponseCachingOptions$instance {
-    maximumBodySize: long;
-    sizeLimit: long;
-    useCaseSensitivePaths: boolean;
+    MaximumBodySize: long;
+    SizeLimit: long;
+    UseCaseSensitivePaths: boolean;
 }
 
 

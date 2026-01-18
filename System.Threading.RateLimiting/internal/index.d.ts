@@ -16,14 +16,14 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum QueueProcessingOrder {
-    oldestFirst = 0,
-    newestFirst = 1
+    OldestFirst = 0,
+    NewestFirst = 1
 }
 
 
 export interface RateLimitPartition_1$instance<TKey> {
-    readonly factory: Func<TKey, RateLimiter>;
-    readonly partitionKey: TKey;
+    readonly Factory: Func<TKey, RateLimiter>;
+    readonly PartitionKey: TKey;
 }
 
 
@@ -35,8 +35,8 @@ export const RateLimitPartition_1: {
 export type RateLimitPartition_1<TKey> = RateLimitPartition_1$instance<TKey>;
 
 export interface ConcurrencyLimiter$instance extends RateLimiter {
-    readonly idleDuration: Nullable<TimeSpan>;
-    getStatistics(): RateLimiterStatistics | undefined;
+    readonly IdleDuration: Nullable<TimeSpan>;
+    GetStatistics(): RateLimiterStatistics | undefined;
 }
 
 
@@ -48,9 +48,9 @@ export const ConcurrencyLimiter: {
 export type ConcurrencyLimiter = ConcurrencyLimiter$instance;
 
 export interface ConcurrencyLimiterOptions$instance {
-    permitLimit: int;
-    queueLimit: int;
-    queueProcessingOrder: QueueProcessingOrder;
+    PermitLimit: int;
+    QueueLimit: int;
+    QueueProcessingOrder: QueueProcessingOrder;
 }
 
 
@@ -62,11 +62,11 @@ export const ConcurrencyLimiterOptions: {
 export type ConcurrencyLimiterOptions = ConcurrencyLimiterOptions$instance;
 
 export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter {
-    readonly idleDuration: Nullable<TimeSpan>;
-    readonly isAutoReplenishing: boolean;
-    readonly replenishmentPeriod: TimeSpan;
-    getStatistics(): RateLimiterStatistics | undefined;
-    tryReplenish(): boolean;
+    readonly IdleDuration: Nullable<TimeSpan>;
+    readonly IsAutoReplenishing: boolean;
+    readonly ReplenishmentPeriod: TimeSpan;
+    GetStatistics(): RateLimiterStatistics | undefined;
+    TryReplenish(): boolean;
 }
 
 
@@ -78,11 +78,11 @@ export const FixedWindowRateLimiter: {
 export type FixedWindowRateLimiter = FixedWindowRateLimiter$instance;
 
 export interface FixedWindowRateLimiterOptions$instance {
-    autoReplenishment: boolean;
-    permitLimit: int;
-    queueLimit: int;
-    queueProcessingOrder: QueueProcessingOrder;
-    window: TimeSpan;
+    AutoReplenishment: boolean;
+    PermitLimit: int;
+    QueueLimit: int;
+    QueueProcessingOrder: QueueProcessingOrder;
+    Window: TimeSpan;
 }
 
 
@@ -94,11 +94,11 @@ export const FixedWindowRateLimiterOptions: {
 export type FixedWindowRateLimiterOptions = FixedWindowRateLimiterOptions$instance;
 
 export interface MetadataName_1$instance<T> {
-    readonly name: string;
-    equals(obj: unknown): boolean;
-    equals(other: MetadataName_1<T>): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Name: string;
+    Equals(obj: unknown): boolean;
+    Equals(other: MetadataName_1<T>): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -110,12 +110,12 @@ export const MetadataName_1: {
 export type MetadataName_1<T> = MetadataName_1$instance<T>;
 
 export interface PartitionedRateLimiter_1$instance<TResource> {
-    acquireAsync(resource: TResource, permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
-    attemptAcquire(resource: TResource, permitCount?: int): RateLimitLease;
-    dispose(): void;
-    disposeAsync(): ValueTask;
-    getStatistics(resource: TResource): RateLimiterStatistics | undefined;
-    withTranslatedKey<TOuter>(keyAdapter: Func<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
+    AcquireAsync(resource: TResource, permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AttemptAcquire(resource: TResource, permitCount?: int): RateLimitLease;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
+    GetStatistics(resource: TResource): RateLimiterStatistics | undefined;
+    WithTranslatedKey<TOuter>(keyAdapter: Func<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
 }
 
 
@@ -126,27 +126,27 @@ export const PartitionedRateLimiter_1: {
 export type PartitionedRateLimiter_1<TResource> = PartitionedRateLimiter_1$instance<TResource>;
 
 export interface RateLimiter$instance {
-    readonly idleDuration: Nullable<TimeSpan>;
-    acquireAsync(permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
-    attemptAcquire(permitCount?: int): RateLimitLease;
-    dispose(): void;
-    disposeAsync(): ValueTask;
-    getStatistics(): RateLimiterStatistics | undefined;
+    readonly IdleDuration: Nullable<TimeSpan>;
+    AcquireAsync(permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AttemptAcquire(permitCount?: int): RateLimitLease;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
+    GetStatistics(): RateLimiterStatistics | undefined;
 }
 
 
 export const RateLimiter: {
-    createChained(...limiters: RateLimiter[]): RateLimiter;
+    CreateChained(...limiters: RateLimiter[]): RateLimiter;
 };
 
 
 export type RateLimiter = RateLimiter$instance;
 
 export interface RateLimiterStatistics$instance {
-    currentAvailablePermits: long;
-    currentQueuedCount: long;
-    totalFailedLeases: long;
-    totalSuccessfulLeases: long;
+    CurrentAvailablePermits: long;
+    CurrentQueuedCount: long;
+    TotalFailedLeases: long;
+    TotalSuccessfulLeases: long;
 }
 
 
@@ -158,12 +158,12 @@ export const RateLimiterStatistics: {
 export type RateLimiterStatistics = RateLimiterStatistics$instance;
 
 export interface RateLimitLease$instance {
-    readonly isAcquired: boolean;
-    readonly metadataNames: IEnumerable<System_Internal.String>;
-    dispose(): void;
-    getAllMetadata(): IEnumerable<KeyValuePair<System_Internal.String, unknown>>;
-    tryGetMetadata(metadataName: string, metadata: unknown): boolean;
-    tryGetMetadata<T>(metadataName: MetadataName_1<T>, metadata: T): boolean;
+    readonly IsAcquired: boolean;
+    readonly MetadataNames: IEnumerable<System_Internal.String>;
+    Dispose(): void;
+    GetAllMetadata(): IEnumerable<KeyValuePair<System_Internal.String, unknown>>;
+    TryGetMetadata(metadataName: string, metadata: unknown): boolean;
+    TryGetMetadata<T>(metadataName: MetadataName_1<T>, metadata: T): boolean;
 }
 
 
@@ -174,9 +174,9 @@ export const RateLimitLease: {
 export type RateLimitLease = RateLimitLease$instance;
 
 export interface ReplenishingRateLimiter$instance extends RateLimiter {
-    readonly isAutoReplenishing: boolean;
-    readonly replenishmentPeriod: TimeSpan;
-    tryReplenish(): boolean;
+    readonly IsAutoReplenishing: boolean;
+    readonly ReplenishmentPeriod: TimeSpan;
+    TryReplenish(): boolean;
 }
 
 
@@ -187,11 +187,11 @@ export const ReplenishingRateLimiter: {
 export type ReplenishingRateLimiter = ReplenishingRateLimiter$instance;
 
 export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimiter {
-    readonly idleDuration: Nullable<TimeSpan>;
-    readonly isAutoReplenishing: boolean;
-    readonly replenishmentPeriod: TimeSpan;
-    getStatistics(): RateLimiterStatistics | undefined;
-    tryReplenish(): boolean;
+    readonly IdleDuration: Nullable<TimeSpan>;
+    readonly IsAutoReplenishing: boolean;
+    readonly ReplenishmentPeriod: TimeSpan;
+    GetStatistics(): RateLimiterStatistics | undefined;
+    TryReplenish(): boolean;
 }
 
 
@@ -203,12 +203,12 @@ export const SlidingWindowRateLimiter: {
 export type SlidingWindowRateLimiter = SlidingWindowRateLimiter$instance;
 
 export interface SlidingWindowRateLimiterOptions$instance {
-    autoReplenishment: boolean;
-    permitLimit: int;
-    queueLimit: int;
-    queueProcessingOrder: QueueProcessingOrder;
-    segmentsPerWindow: int;
-    window: TimeSpan;
+    AutoReplenishment: boolean;
+    PermitLimit: int;
+    QueueLimit: int;
+    QueueProcessingOrder: QueueProcessingOrder;
+    SegmentsPerWindow: int;
+    Window: TimeSpan;
 }
 
 
@@ -220,11 +220,11 @@ export const SlidingWindowRateLimiterOptions: {
 export type SlidingWindowRateLimiterOptions = SlidingWindowRateLimiterOptions$instance;
 
 export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter {
-    readonly idleDuration: Nullable<TimeSpan>;
-    readonly isAutoReplenishing: boolean;
-    readonly replenishmentPeriod: TimeSpan;
-    getStatistics(): RateLimiterStatistics | undefined;
-    tryReplenish(): boolean;
+    readonly IdleDuration: Nullable<TimeSpan>;
+    readonly IsAutoReplenishing: boolean;
+    readonly ReplenishmentPeriod: TimeSpan;
+    GetStatistics(): RateLimiterStatistics | undefined;
+    TryReplenish(): boolean;
 }
 
 
@@ -236,12 +236,12 @@ export const TokenBucketRateLimiter: {
 export type TokenBucketRateLimiter = TokenBucketRateLimiter$instance;
 
 export interface TokenBucketRateLimiterOptions$instance {
-    autoReplenishment: boolean;
-    queueLimit: int;
-    queueProcessingOrder: QueueProcessingOrder;
-    replenishmentPeriod: TimeSpan;
-    tokenLimit: int;
-    tokensPerPeriod: int;
+    AutoReplenishment: boolean;
+    QueueLimit: int;
+    QueueProcessingOrder: QueueProcessingOrder;
+    ReplenishmentPeriod: TimeSpan;
+    TokenLimit: int;
+    TokensPerPeriod: int;
 }
 
 
@@ -253,29 +253,29 @@ export const TokenBucketRateLimiterOptions: {
 export type TokenBucketRateLimiterOptions = TokenBucketRateLimiterOptions$instance;
 
 export abstract class MetadataName$instance {
-    static readonly retryAfter: MetadataName_1<TimeSpan>;
-    static readonly reasonPhrase: MetadataName_1<System_Internal.String>;
-    static create<T>(name: string): MetadataName_1<T>;
+    static readonly RetryAfter: MetadataName_1<TimeSpan>;
+    static readonly ReasonPhrase: MetadataName_1<System_Internal.String>;
+    static Create<T>(name: string): MetadataName_1<T>;
 }
 
 
 export type MetadataName = MetadataName$instance;
 
 export abstract class PartitionedRateLimiter$instance {
-    static create<TResource, TPartitionKey>(partitioner: Func<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer<TPartitionKey>): PartitionedRateLimiter_1<TResource>;
-    static createChained<TResource>(...limiters: PartitionedRateLimiter_1<TResource>[]): PartitionedRateLimiter_1<TResource>;
+    static Create<TResource, TPartitionKey>(partitioner: Func<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer<TPartitionKey>): PartitionedRateLimiter_1<TResource>;
+    static CreateChained<TResource>(...limiters: PartitionedRateLimiter_1<TResource>[]): PartitionedRateLimiter_1<TResource>;
 }
 
 
 export type PartitionedRateLimiter = PartitionedRateLimiter$instance;
 
 export abstract class RateLimitPartition$instance {
-    static get<TKey>(partitionKey: TKey, factory: Func<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
-    static getConcurrencyLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, ConcurrencyLimiterOptions>): RateLimitPartition_1<TKey>;
-    static getFixedWindowLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, FixedWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
-    static getNoLimiter<TKey>(partitionKey: TKey): RateLimitPartition_1<TKey>;
-    static getSlidingWindowLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, SlidingWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
-    static getTokenBucketLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, TokenBucketRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static Get<TKey>(partitionKey: TKey, factory: Func<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
+    static GetConcurrencyLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, ConcurrencyLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetFixedWindowLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, FixedWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetNoLimiter<TKey>(partitionKey: TKey): RateLimitPartition_1<TKey>;
+    static GetSlidingWindowLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, SlidingWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetTokenBucketLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, TokenBucketRateLimiterOptions>): RateLimitPartition_1<TKey>;
 }
 
 

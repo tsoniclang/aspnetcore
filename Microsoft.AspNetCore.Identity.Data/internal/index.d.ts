@@ -10,7 +10,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Int32, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface ForgotPasswordRequest$instance {
-    email: string;
+    Email: string;
 }
 
 
@@ -22,11 +22,11 @@ export const ForgotPasswordRequest: {
 export type ForgotPasswordRequest = ForgotPasswordRequest$instance;
 
 export interface InfoRequest$instance {
-    get newEmail(): string | undefined;
-    set newEmail(value: string);
-    newPassword: string;
-    get oldPassword(): string | undefined;
-    set oldPassword(value: string);
+    get NewEmail(): string | undefined;
+    set NewEmail(value: string);
+    NewPassword: string;
+    get OldPassword(): string | undefined;
+    set OldPassword(value: string);
 }
 
 
@@ -38,8 +38,8 @@ export const InfoRequest: {
 export type InfoRequest = InfoRequest$instance;
 
 export interface InfoResponse$instance {
-    email: string;
-    isEmailConfirmed: boolean;
+    Email: string;
+    IsEmailConfirmed: boolean;
 }
 
 
@@ -51,12 +51,12 @@ export const InfoResponse: {
 export type InfoResponse = InfoResponse$instance;
 
 export interface LoginRequest$instance {
-    email: string;
-    password: string;
-    get twoFactorCode(): string | undefined;
-    set twoFactorCode(value: string);
-    get twoFactorRecoveryCode(): string | undefined;
-    set twoFactorRecoveryCode(value: string);
+    Email: string;
+    Password: string;
+    get TwoFactorCode(): string | undefined;
+    set TwoFactorCode(value: string);
+    get TwoFactorRecoveryCode(): string | undefined;
+    set TwoFactorRecoveryCode(value: string);
 }
 
 
@@ -68,7 +68,7 @@ export const LoginRequest: {
 export type LoginRequest = LoginRequest$instance;
 
 export interface RefreshRequest$instance {
-    refreshToken: string;
+    RefreshToken: string;
 }
 
 
@@ -80,8 +80,8 @@ export const RefreshRequest: {
 export type RefreshRequest = RefreshRequest$instance;
 
 export interface RegisterRequest$instance {
-    email: string;
-    password: string;
+    Email: string;
+    Password: string;
 }
 
 
@@ -93,7 +93,7 @@ export const RegisterRequest: {
 export type RegisterRequest = RegisterRequest$instance;
 
 export interface ResendConfirmationEmailRequest$instance {
-    email: string;
+    Email: string;
 }
 
 
@@ -105,9 +105,9 @@ export const ResendConfirmationEmailRequest: {
 export type ResendConfirmationEmailRequest = ResendConfirmationEmailRequest$instance;
 
 export interface ResetPasswordRequest$instance {
-    email: string;
-    newPassword: string;
-    resetCode: string;
+    Email: string;
+    NewPassword: string;
+    ResetCode: string;
 }
 
 
@@ -119,12 +119,12 @@ export const ResetPasswordRequest: {
 export type ResetPasswordRequest = ResetPasswordRequest$instance;
 
 export interface TwoFactorRequest$instance {
-    enable: Nullable<System_Internal.Boolean>;
-    forgetMachine: boolean;
-    resetRecoveryCodes: boolean;
-    resetSharedKey: boolean;
-    get twoFactorCode(): string | undefined;
-    set twoFactorCode(value: string);
+    Enable: Nullable<System_Internal.Boolean>;
+    ForgetMachine: boolean;
+    ResetRecoveryCodes: boolean;
+    ResetSharedKey: boolean;
+    get TwoFactorCode(): string | undefined;
+    set TwoFactorCode(value: string);
 }
 
 
@@ -136,12 +136,12 @@ export const TwoFactorRequest: {
 export type TwoFactorRequest = TwoFactorRequest$instance;
 
 export interface TwoFactorResponse$instance {
-    isMachineRemembered: boolean;
-    isTwoFactorEnabled: boolean;
-    get recoveryCodes(): string[] | undefined;
-    set recoveryCodes(value: string[]);
-    recoveryCodesLeft: int;
-    sharedKey: string;
+    IsMachineRemembered: boolean;
+    IsTwoFactorEnabled: boolean;
+    get RecoveryCodes(): string[] | undefined;
+    set RecoveryCodes(value: string[]);
+    RecoveryCodesLeft: int;
+    SharedKey: string;
 }
 
 

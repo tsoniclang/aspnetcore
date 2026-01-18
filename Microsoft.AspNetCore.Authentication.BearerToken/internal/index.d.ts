@@ -15,10 +15,10 @@ import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface AccessTokenResponse$instance {
-    accessToken: string;
-    expiresIn: long;
-    refreshToken: string;
-    readonly tokenType: string;
+    AccessToken: string;
+    ExpiresIn: long;
+    RefreshToken: string;
+    readonly TokenType: string;
 }
 
 
@@ -30,8 +30,8 @@ export const AccessTokenResponse: {
 export type AccessTokenResponse = AccessTokenResponse$instance;
 
 export interface BearerTokenEvents$instance {
-    onMessageReceived: Func<MessageReceivedContext, Task>;
-    messageReceivedAsync(context: MessageReceivedContext): Task;
+    OnMessageReceived: Func<MessageReceivedContext, Task>;
+    MessageReceivedAsync(context: MessageReceivedContext): Task;
 }
 
 
@@ -43,11 +43,11 @@ export const BearerTokenEvents: {
 export type BearerTokenEvents = BearerTokenEvents$instance;
 
 export interface BearerTokenOptions$instance extends AuthenticationSchemeOptions {
-    bearerTokenExpiration: TimeSpan;
-    bearerTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
-    events: BearerTokenEvents | unknown;
-    refreshTokenExpiration: TimeSpan;
-    refreshTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
+    BearerTokenExpiration: TimeSpan;
+    BearerTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
+    Events: BearerTokenEvents | unknown;
+    RefreshTokenExpiration: TimeSpan;
+    RefreshTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
 }
 
 
@@ -59,8 +59,8 @@ export const BearerTokenOptions: {
 export type BearerTokenOptions = BearerTokenOptions$instance;
 
 export interface MessageReceivedContext$instance extends ResultContext_1<BearerTokenOptions> {
-    get token(): string | undefined;
-    set token(value: string);
+    get Token(): string | undefined;
+    set Token(value: string);
 }
 
 
@@ -72,7 +72,7 @@ export const MessageReceivedContext: {
 export type MessageReceivedContext = MessageReceivedContext$instance;
 
 export abstract class BearerTokenDefaults$instance {
-    static readonly authenticationScheme: string;
+    static readonly AuthenticationScheme: string;
 }
 
 

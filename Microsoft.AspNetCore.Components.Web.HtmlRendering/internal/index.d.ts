@@ -12,9 +12,9 @@ import type { String as ClrString, ValueType, Void } from "@tsonic/dotnet/System
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface HtmlRootComponent$instance {
-    readonly quiescenceTask: Task;
-    toHtmlString(): string;
-    writeHtmlTo(output: TextWriter): void;
+    readonly QuiescenceTask: Task;
+    ToHtmlString(): string;
+    WriteHtmlTo(output: TextWriter): void;
 }
 
 

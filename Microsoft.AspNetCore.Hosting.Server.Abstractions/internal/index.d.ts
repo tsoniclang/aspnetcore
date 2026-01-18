@@ -9,7 +9,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as System_Internal from "@tsonic/dotnet/System.js";
 
 export interface IHostContextContainer_1$instance<TContext> {
-    hostContext: TContext | undefined;
+    HostContext: TContext | undefined;
 }
 
 

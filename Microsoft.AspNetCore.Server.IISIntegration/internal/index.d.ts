@@ -24,16 +24,16 @@ export interface IISDefaults$instance {
 
 export const IISDefaults: {
     new(): IISDefaults;
-    readonly authenticationScheme: string;
-    readonly negotiate: string;
-    readonly ntlm: string;
+    readonly AuthenticationScheme: string;
+    readonly Negotiate: string;
+    readonly Ntlm: string;
 };
 
 
 export type IISDefaults = IISDefaults$instance;
 
 export interface IISHostingStartup$instance {
-    configure(builder: IWebHostBuilder): void;
+    Configure(builder: IWebHostBuilder): void;
 }
 
 
@@ -52,7 +52,7 @@ export type IISHostingStartup = IISHostingStartup$instance & __IISHostingStartup
 
 
 export interface IISMiddleware$instance {
-    invoke(httpContext: HttpContext): Task;
+    Invoke(httpContext: HttpContext): Task;
 }
 
 

@@ -12,7 +12,7 @@ import type { ActionContext, IActionResult } from "../../Microsoft.AspNetCore.Mv
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IAntiforgeryValidationFailedResult$instance extends IActionResult {
-    executeResultAsync(context: ActionContext): Task;
+    ExecuteResultAsync(context: ActionContext): Task;
 }
 
 

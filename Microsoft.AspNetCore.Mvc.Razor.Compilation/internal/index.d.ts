@@ -14,28 +14,28 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IViewCompiler$instance {
-    compileAsync(relativePath: string): Task<CompiledViewDescriptor>;
+    CompileAsync(relativePath: string): Task<CompiledViewDescriptor>;
 }
 
 
 export type IViewCompiler = IViewCompiler$instance;
 
 export interface IViewCompilerProvider$instance {
-    getCompiler(): IViewCompiler;
+    GetCompiler(): IViewCompiler;
 }
 
 
 export type IViewCompilerProvider = IViewCompilerProvider$instance;
 
 export interface CompiledViewDescriptor$instance {
-    get expirationTokens(): IList<IChangeToken> | undefined;
-    set expirationTokens(value: IList<IChangeToken>);
-    get item(): RazorCompiledItem | undefined;
-    set item(value: RazorCompiledItem);
-    relativePath: string;
-    readonly type: Type;
-    get viewAttribute(): RazorViewAttribute | undefined;
-    set viewAttribute(value: RazorViewAttribute);
+    get ExpirationTokens(): IList<IChangeToken> | undefined;
+    set ExpirationTokens(value: IList<IChangeToken>);
+    get Item(): RazorCompiledItem | undefined;
+    set Item(value: RazorCompiledItem);
+    RelativePath: string;
+    readonly Type: Type;
+    get ViewAttribute(): RazorViewAttribute | undefined;
+    set ViewAttribute(value: RazorViewAttribute);
 }
 
 
@@ -49,8 +49,8 @@ export const CompiledViewDescriptor: {
 export type CompiledViewDescriptor = CompiledViewDescriptor$instance;
 
 export interface RazorViewAttribute$instance extends Attribute {
-    readonly path: string;
-    readonly viewType: Type;
+    readonly Path: string;
+    readonly ViewType: Type;
 }
 
 
@@ -62,7 +62,7 @@ export const RazorViewAttribute: {
 export type RazorViewAttribute = RazorViewAttribute$instance;
 
 export interface ViewsFeature$instance {
-    readonly viewDescriptors: IList<CompiledViewDescriptor>;
+    readonly ViewDescriptors: IList<CompiledViewDescriptor>;
 }
 
 

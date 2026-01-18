@@ -25,62 +25,62 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IViewComponentActivator$instance {
-    create(context: ViewComponentContext): unknown;
-    release(context: ViewComponentContext, viewComponent: unknown): void;
-    releaseAsync(context: ViewComponentContext, viewComponent: unknown): ValueTask;
+    Create(context: ViewComponentContext): unknown;
+    Release(context: ViewComponentContext, viewComponent: unknown): void;
+    ReleaseAsync(context: ViewComponentContext, viewComponent: unknown): ValueTask;
 }
 
 
 export type IViewComponentActivator = IViewComponentActivator$instance;
 
 export interface IViewComponentDescriptorCollectionProvider$instance {
-    readonly viewComponents: ViewComponentDescriptorCollection;
+    readonly ViewComponents: ViewComponentDescriptorCollection;
 }
 
 
 export type IViewComponentDescriptorCollectionProvider = IViewComponentDescriptorCollectionProvider$instance;
 
 export interface IViewComponentDescriptorProvider$instance {
-    getViewComponents(): IEnumerable<ViewComponentDescriptor>;
+    GetViewComponents(): IEnumerable<ViewComponentDescriptor>;
 }
 
 
 export type IViewComponentDescriptorProvider = IViewComponentDescriptorProvider$instance;
 
 export interface IViewComponentFactory$instance {
-    createViewComponent(context: ViewComponentContext): unknown;
-    releaseViewComponent(context: ViewComponentContext, component: unknown): void;
-    releaseViewComponentAsync(context: ViewComponentContext, component: unknown): ValueTask;
+    CreateViewComponent(context: ViewComponentContext): unknown;
+    ReleaseViewComponent(context: ViewComponentContext, component: unknown): void;
+    ReleaseViewComponentAsync(context: ViewComponentContext, component: unknown): ValueTask;
 }
 
 
 export type IViewComponentFactory = IViewComponentFactory$instance;
 
 export interface IViewComponentInvoker$instance {
-    invokeAsync(context: ViewComponentContext): Task;
+    InvokeAsync(context: ViewComponentContext): Task;
 }
 
 
 export type IViewComponentInvoker = IViewComponentInvoker$instance;
 
 export interface IViewComponentInvokerFactory$instance {
-    createInstance(context: ViewComponentContext): IViewComponentInvoker;
+    CreateInstance(context: ViewComponentContext): IViewComponentInvoker;
 }
 
 
 export type IViewComponentInvokerFactory = IViewComponentInvokerFactory$instance;
 
 export interface IViewComponentSelector$instance {
-    selectComponent(componentName: string): ViewComponentDescriptor;
+    SelectComponent(componentName: string): ViewComponentDescriptor;
 }
 
 
 export type IViewComponentSelector = IViewComponentSelector$instance;
 
 export interface ContentViewComponentResult$instance {
-    readonly content: string;
-    execute(context: ViewComponentContext): void;
-    executeAsync(context: ViewComponentContext): Task;
+    readonly Content: string;
+    Execute(context: ViewComponentContext): void;
+    ExecuteAsync(context: ViewComponentContext): Task;
 }
 
 
@@ -99,7 +99,7 @@ export type ContentViewComponentResult = ContentViewComponentResult$instance & _
 
 
 export interface DefaultViewComponentDescriptorCollectionProvider$instance {
-    readonly viewComponents: ViewComponentDescriptorCollection;
+    readonly ViewComponents: ViewComponentDescriptorCollection;
 }
 
 
@@ -118,7 +118,7 @@ export type DefaultViewComponentDescriptorCollectionProvider = DefaultViewCompon
 
 
 export interface DefaultViewComponentDescriptorProvider$instance {
-    getViewComponents(): IEnumerable<ViewComponentDescriptor>;
+    GetViewComponents(): IEnumerable<ViewComponentDescriptor>;
 }
 
 
@@ -137,9 +137,9 @@ export type DefaultViewComponentDescriptorProvider = DefaultViewComponentDescrip
 
 
 export interface DefaultViewComponentFactory$instance {
-    createViewComponent(context: ViewComponentContext): unknown;
-    releaseViewComponent(context: ViewComponentContext, component: unknown): void;
-    releaseViewComponentAsync(context: ViewComponentContext, component: unknown): ValueTask;
+    CreateViewComponent(context: ViewComponentContext): unknown;
+    ReleaseViewComponent(context: ViewComponentContext, component: unknown): void;
+    ReleaseViewComponentAsync(context: ViewComponentContext, component: unknown): ValueTask;
 }
 
 
@@ -158,9 +158,9 @@ export type DefaultViewComponentFactory = DefaultViewComponentFactory$instance &
 
 
 export interface DefaultViewComponentHelper$instance {
-    contextualize(viewContext: ViewContext): void;
-    invokeAsync(name: string, arguments: unknown): Task<IHtmlContent>;
-    invokeAsync(componentType: Type, arguments: unknown): Task<IHtmlContent>;
+    Contextualize(viewContext: ViewContext): void;
+    InvokeAsync(name: string, arguments: unknown): Task<IHtmlContent>;
+    InvokeAsync(componentType: Type, arguments: unknown): Task<IHtmlContent>;
 }
 
 
@@ -180,7 +180,7 @@ export type DefaultViewComponentHelper = DefaultViewComponentHelper$instance & _
 
 
 export interface DefaultViewComponentSelector$instance {
-    selectComponent(componentName: string): ViewComponentDescriptor;
+    SelectComponent(componentName: string): ViewComponentDescriptor;
 }
 
 
@@ -199,9 +199,9 @@ export type DefaultViewComponentSelector = DefaultViewComponentSelector$instance
 
 
 export interface HtmlContentViewComponentResult$instance {
-    readonly encodedContent: IHtmlContent;
-    execute(context: ViewComponentContext): void;
-    executeAsync(context: ViewComponentContext): Task;
+    readonly EncodedContent: IHtmlContent;
+    Execute(context: ViewComponentContext): void;
+    ExecuteAsync(context: ViewComponentContext): Task;
 }
 
 
@@ -220,8 +220,8 @@ export type HtmlContentViewComponentResult = HtmlContentViewComponentResult$inst
 
 
 export interface ServiceBasedViewComponentActivator$instance {
-    create(context: ViewComponentContext): unknown;
-    release(context: ViewComponentContext, viewComponent: unknown): void;
+    Create(context: ViewComponentContext): unknown;
+    Release(context: ViewComponentContext, viewComponent: unknown): void;
 }
 
 
@@ -240,13 +240,13 @@ export type ServiceBasedViewComponentActivator = ServiceBasedViewComponentActiva
 
 
 export interface ViewComponentContext$instance {
-    arguments: IDictionary<System_Internal.String, unknown | undefined>;
-    htmlEncoder: HtmlEncoder;
-    readonly tempData: ITempDataDictionary;
-    viewComponentDescriptor: ViewComponentDescriptor;
-    viewContext: ViewContext;
-    readonly viewData: ViewDataDictionary;
-    readonly writer: TextWriter;
+    Arguments: IDictionary<System_Internal.String, unknown | undefined>;
+    HtmlEncoder: HtmlEncoder;
+    readonly TempData: ITempDataDictionary;
+    ViewComponentDescriptor: ViewComponentDescriptor;
+    ViewContext: ViewContext;
+    readonly ViewData: ViewDataDictionary;
+    readonly Writer: TextWriter;
 }
 
 
@@ -270,13 +270,13 @@ export const ViewComponentContextAttribute: {
 export type ViewComponentContextAttribute = ViewComponentContextAttribute$instance;
 
 export interface ViewComponentDescriptor$instance {
-    displayName: string;
-    fullName: string;
-    id: string;
-    methodInfo: MethodInfo;
-    parameters: IReadOnlyList<ParameterInfo>;
-    shortName: string;
-    typeInfo: TypeInfo;
+    DisplayName: string;
+    FullName: string;
+    Id: string;
+    MethodInfo: MethodInfo;
+    Parameters: IReadOnlyList<ParameterInfo>;
+    ShortName: string;
+    TypeInfo: TypeInfo;
 }
 
 
@@ -288,8 +288,8 @@ export const ViewComponentDescriptor: {
 export type ViewComponentDescriptor = ViewComponentDescriptor$instance;
 
 export interface ViewComponentDescriptorCollection$instance {
-    readonly items: IReadOnlyList<ViewComponentDescriptor>;
-    readonly version: int;
+    readonly Items: IReadOnlyList<ViewComponentDescriptor>;
+    readonly Version: int;
 }
 
 
@@ -301,7 +301,7 @@ export const ViewComponentDescriptorCollection: {
 export type ViewComponentDescriptorCollection = ViewComponentDescriptorCollection$instance;
 
 export interface ViewComponentFeature$instance {
-    readonly viewComponents: IList<TypeInfo>;
+    readonly ViewComponents: IList<TypeInfo>;
 }
 
 
@@ -313,7 +313,7 @@ export const ViewComponentFeature: {
 export type ViewComponentFeature = ViewComponentFeature$instance;
 
 export interface ViewComponentFeatureProvider$instance extends IApplicationFeatureProvider {
-    populateFeature(parts: IEnumerable<ApplicationPart>, feature: ViewComponentFeature): void;
+    PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: ViewComponentFeature): void;
 }
 
 
@@ -332,12 +332,12 @@ export type ViewComponentFeatureProvider = ViewComponentFeatureProvider$instance
 
 
 export interface ViewViewComponentResult$instance {
-    tempData: ITempDataDictionary;
-    viewData: ViewDataDictionary;
-    viewEngine: IViewEngine;
-    viewName: string;
-    execute(context: ViewComponentContext): void;
-    executeAsync(context: ViewComponentContext): Task;
+    TempData: ITempDataDictionary;
+    ViewData: ViewDataDictionary;
+    ViewEngine: IViewEngine;
+    ViewName: string;
+    Execute(context: ViewComponentContext): void;
+    ExecuteAsync(context: ViewComponentContext): Task;
 }
 
 
@@ -356,10 +356,10 @@ export type ViewViewComponentResult = ViewViewComponentResult$instance & __ViewV
 
 
 export abstract class ViewComponentConventions$instance {
-    static readonly viewComponentSuffix: string;
-    static getComponentFullName(componentType: TypeInfo): string;
-    static getComponentName(componentType: TypeInfo): string;
-    static isComponent(typeInfo: TypeInfo): boolean;
+    static readonly ViewComponentSuffix: string;
+    static GetComponentFullName(componentType: TypeInfo): string;
+    static GetComponentName(componentType: TypeInfo): string;
+    static IsComponent(typeInfo: TypeInfo): boolean;
 }
 
 

@@ -12,14 +12,14 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IServiceProvider, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface IApplicationBuilderFactory$instance {
-    createBuilder(serverFeatures: IFeatureCollection): IApplicationBuilder;
+    CreateBuilder(serverFeatures: IFeatureCollection): IApplicationBuilder;
 }
 
 
 export type IApplicationBuilderFactory = IApplicationBuilderFactory$instance;
 
 export interface ApplicationBuilderFactory$instance {
-    createBuilder(serverFeatures: IFeatureCollection): IApplicationBuilder;
+    CreateBuilder(serverFeatures: IFeatureCollection): IApplicationBuilder;
 }
 
 

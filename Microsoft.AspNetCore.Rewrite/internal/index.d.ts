@@ -18,24 +18,24 @@ import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Micro
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum RuleResult {
-    continueRules = 0,
-    endResponse = 1,
-    skipRemainingRules = 2
+    ContinueRules = 0,
+    EndResponse = 1,
+    SkipRemainingRules = 2
 }
 
 
 export interface IRule$instance {
-    applyRule(context: RewriteContext): void;
+    ApplyRule(context: RewriteContext): void;
 }
 
 
 export type IRule = IRule$instance;
 
 export interface RewriteContext$instance {
-    httpContext: HttpContext;
-    logger: ILogger;
-    result: RuleResult;
-    staticFileProvider: IFileProvider;
+    HttpContext: HttpContext;
+    Logger: ILogger;
+    Result: RuleResult;
+    StaticFileProvider: IFileProvider;
 }
 
 
@@ -47,7 +47,7 @@ export const RewriteContext: {
 export type RewriteContext = RewriteContext$instance;
 
 export interface RewriteMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -59,8 +59,8 @@ export const RewriteMiddleware: {
 export type RewriteMiddleware = RewriteMiddleware$instance;
 
 export interface RewriteOptions$instance {
-    readonly rules: IList<IRule>;
-    staticFileProvider: IFileProvider;
+    readonly Rules: IList<IRule>;
+    StaticFileProvider: IFileProvider;
 }
 
 
@@ -72,43 +72,43 @@ export const RewriteOptions: {
 export type RewriteOptions = RewriteOptions$instance;
 
 export abstract class ApacheModRewriteOptionsExtensions$instance {
-    static addApacheModRewrite(options: RewriteOptions, fileProvider: IFileProvider, filePath: string): RewriteOptions;
-    static addApacheModRewrite(options: RewriteOptions, reader: TextReader): RewriteOptions;
+    static AddApacheModRewrite(options: RewriteOptions, fileProvider: IFileProvider, filePath: string): RewriteOptions;
+    static AddApacheModRewrite(options: RewriteOptions, reader: TextReader): RewriteOptions;
 }
 
 
 export type ApacheModRewriteOptionsExtensions = ApacheModRewriteOptionsExtensions$instance;
 
 export abstract class IISUrlRewriteOptionsExtensions$instance {
-    static addIISUrlRewrite(options: RewriteOptions, fileProvider: IFileProvider, filePath: string, alwaysUseManagedServerVariables?: boolean): RewriteOptions;
-    static addIISUrlRewrite(options: RewriteOptions, reader: TextReader, alwaysUseManagedServerVariables?: boolean): RewriteOptions;
+    static AddIISUrlRewrite(options: RewriteOptions, fileProvider: IFileProvider, filePath: string, alwaysUseManagedServerVariables?: boolean): RewriteOptions;
+    static AddIISUrlRewrite(options: RewriteOptions, reader: TextReader, alwaysUseManagedServerVariables?: boolean): RewriteOptions;
 }
 
 
 export type IISUrlRewriteOptionsExtensions = IISUrlRewriteOptionsExtensions$instance;
 
 export abstract class RewriteOptionsExtensions$instance {
-    static add(options: RewriteOptions, rule: IRule): RewriteOptions;
-    static add(options: RewriteOptions, applyRule: Action<RewriteContext>): RewriteOptions;
-    static addRedirect(options: RewriteOptions, regex: string, replacement: string, statusCode: int): RewriteOptions;
-    static addRedirect(options: RewriteOptions, regex: string, replacement: string): RewriteOptions;
-    static addRedirectToHttps(options: RewriteOptions, statusCode: int, sslPort: Nullable<System_Internal.Int32>): RewriteOptions;
-    static addRedirectToHttps(options: RewriteOptions, statusCode: int): RewriteOptions;
-    static addRedirectToHttps(options: RewriteOptions): RewriteOptions;
-    static addRedirectToHttpsPermanent(options: RewriteOptions): RewriteOptions;
-    static addRedirectToNonWww(options: RewriteOptions, statusCode: int, ...domains: string[]): RewriteOptions;
-    static addRedirectToNonWww(options: RewriteOptions, statusCode: int): RewriteOptions;
-    static addRedirectToNonWww(options: RewriteOptions, ...domains: string[]): RewriteOptions;
-    static addRedirectToNonWww(options: RewriteOptions): RewriteOptions;
-    static addRedirectToNonWwwPermanent(options: RewriteOptions, ...domains: string[]): RewriteOptions;
-    static addRedirectToNonWwwPermanent(options: RewriteOptions): RewriteOptions;
-    static addRedirectToWww(options: RewriteOptions, statusCode: int, ...domains: string[]): RewriteOptions;
-    static addRedirectToWww(options: RewriteOptions, statusCode: int): RewriteOptions;
-    static addRedirectToWww(options: RewriteOptions, ...domains: string[]): RewriteOptions;
-    static addRedirectToWww(options: RewriteOptions): RewriteOptions;
-    static addRedirectToWwwPermanent(options: RewriteOptions, ...domains: string[]): RewriteOptions;
-    static addRedirectToWwwPermanent(options: RewriteOptions): RewriteOptions;
-    static addRewrite(options: RewriteOptions, regex: string, replacement: string, skipRemainingRules: boolean): RewriteOptions;
+    static Add(options: RewriteOptions, rule: IRule): RewriteOptions;
+    static Add(options: RewriteOptions, applyRule: Action<RewriteContext>): RewriteOptions;
+    static AddRedirect(options: RewriteOptions, regex: string, replacement: string, statusCode: int): RewriteOptions;
+    static AddRedirect(options: RewriteOptions, regex: string, replacement: string): RewriteOptions;
+    static AddRedirectToHttps(options: RewriteOptions, statusCode: int, sslPort: Nullable<System_Internal.Int32>): RewriteOptions;
+    static AddRedirectToHttps(options: RewriteOptions, statusCode: int): RewriteOptions;
+    static AddRedirectToHttps(options: RewriteOptions): RewriteOptions;
+    static AddRedirectToHttpsPermanent(options: RewriteOptions): RewriteOptions;
+    static AddRedirectToNonWww(options: RewriteOptions, statusCode: int, ...domains: string[]): RewriteOptions;
+    static AddRedirectToNonWww(options: RewriteOptions, statusCode: int): RewriteOptions;
+    static AddRedirectToNonWww(options: RewriteOptions, ...domains: string[]): RewriteOptions;
+    static AddRedirectToNonWww(options: RewriteOptions): RewriteOptions;
+    static AddRedirectToNonWwwPermanent(options: RewriteOptions, ...domains: string[]): RewriteOptions;
+    static AddRedirectToNonWwwPermanent(options: RewriteOptions): RewriteOptions;
+    static AddRedirectToWww(options: RewriteOptions, statusCode: int, ...domains: string[]): RewriteOptions;
+    static AddRedirectToWww(options: RewriteOptions, statusCode: int): RewriteOptions;
+    static AddRedirectToWww(options: RewriteOptions, ...domains: string[]): RewriteOptions;
+    static AddRedirectToWww(options: RewriteOptions): RewriteOptions;
+    static AddRedirectToWwwPermanent(options: RewriteOptions, ...domains: string[]): RewriteOptions;
+    static AddRedirectToWwwPermanent(options: RewriteOptions): RewriteOptions;
+    static AddRewrite(options: RewriteOptions, regex: string, replacement: string, skipRemainingRules: boolean): RewriteOptions;
 }
 
 

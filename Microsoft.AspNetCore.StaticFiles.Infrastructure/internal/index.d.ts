@@ -12,10 +12,10 @@ import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/
 import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders.js";
 
 export interface SharedOptions$instance {
-    get fileProvider(): IFileProvider | undefined;
-    set fileProvider(value: IFileProvider);
-    redirectToAppendTrailingSlash: boolean;
-    requestPath: PathString;
+    get FileProvider(): IFileProvider | undefined;
+    set FileProvider(value: IFileProvider);
+    RedirectToAppendTrailingSlash: boolean;
+    RequestPath: PathString;
 }
 
 
@@ -27,10 +27,10 @@ export const SharedOptions: {
 export type SharedOptions = SharedOptions$instance;
 
 export interface SharedOptionsBase$instance {
-    get fileProvider(): IFileProvider | undefined;
-    set fileProvider(value: IFileProvider);
-    redirectToAppendTrailingSlash: boolean;
-    requestPath: PathString;
+    get FileProvider(): IFileProvider | undefined;
+    set FileProvider(value: IFileProvider);
+    RedirectToAppendTrailingSlash: boolean;
+    RequestPath: PathString;
 }
 
 

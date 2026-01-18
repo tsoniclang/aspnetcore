@@ -1,25 +1,37 @@
 {
   "namespace": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Mvc.Razor"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
-      "tsEmitName": "TagHelperMemoryCacheProvider",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider::Cache:Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "clrName": "Cache",
-          "tsEmitName": "cache",
           "metadataToken": 385876086,
           "canonicalSignature": ":Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "normalizedSignature": "Cache|:Microsoft.Extensions.Caching.Memory.IMemoryCache|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -36,29 +48,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "cache",
-          "isStatic": false,
-          "tsSignatureId": "Cache|:Microsoft.Extensions.Caching.Memory.IMemoryCache|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876086
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663648
-          }
         }
       ]
     }

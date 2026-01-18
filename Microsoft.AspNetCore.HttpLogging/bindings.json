@@ -1,977 +1,556 @@
 {
   "namespace": "Microsoft.AspNetCore.HttpLogging",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.HttpLogging"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
       "clrName": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-      "tsEmitName": "HttpLoggingFields",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::value__System.Int64",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67108921,
           "normalizedSignature": "value__|System.Int64|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::NoneMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "None",
-          "tsEmitName": "none",
           "metadataToken": 67108922,
           "normalizedSignature": "None|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestPathMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestPath",
-          "tsEmitName": "requestPath",
           "metadataToken": 67108923,
           "normalizedSignature": "RequestPath|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestQueryMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestQuery",
-          "tsEmitName": "requestQuery",
           "metadataToken": 67108924,
           "normalizedSignature": "RequestQuery|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestProtocolMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestProtocol",
-          "tsEmitName": "requestProtocol",
           "metadataToken": 67108925,
           "normalizedSignature": "RequestProtocol|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestMethodMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestMethod",
-          "tsEmitName": "requestMethod",
           "metadataToken": 67108926,
           "normalizedSignature": "RequestMethod|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestSchemeMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestScheme",
-          "tsEmitName": "requestScheme",
           "metadataToken": 67108927,
           "normalizedSignature": "RequestScheme|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::ResponseStatusCodeMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "ResponseStatusCode",
-          "tsEmitName": "responseStatusCode",
           "metadataToken": 67108928,
           "normalizedSignature": "ResponseStatusCode|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestHeadersMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestHeaders",
-          "tsEmitName": "requestHeaders",
           "metadataToken": 67108929,
           "normalizedSignature": "RequestHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::ResponseHeadersMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "ResponseHeaders",
-          "tsEmitName": "responseHeaders",
           "metadataToken": 67108930,
           "normalizedSignature": "ResponseHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestTrailersMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestTrailers",
-          "tsEmitName": "requestTrailers",
           "metadataToken": 67108931,
           "normalizedSignature": "RequestTrailers|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::ResponseTrailersMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "ResponseTrailers",
-          "tsEmitName": "responseTrailers",
           "metadataToken": 67108932,
           "normalizedSignature": "ResponseTrailers|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestBodyMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestBody",
-          "tsEmitName": "requestBody",
           "metadataToken": 67108933,
           "normalizedSignature": "RequestBody|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::ResponseBodyMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "ResponseBody",
-          "tsEmitName": "responseBody",
           "metadataToken": 67108934,
           "normalizedSignature": "ResponseBody|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::DurationMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "Duration",
-          "tsEmitName": "duration",
           "metadataToken": 67108935,
           "normalizedSignature": "Duration|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestPropertiesMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestProperties",
-          "tsEmitName": "requestProperties",
           "metadataToken": 67108936,
           "normalizedSignature": "RequestProperties|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestPropertiesAndHeadersMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "RequestPropertiesAndHeaders",
-          "tsEmitName": "requestPropertiesAndHeaders",
           "metadataToken": 67108937,
           "normalizedSignature": "RequestPropertiesAndHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::ResponsePropertiesAndHeadersMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "ResponsePropertiesAndHeaders",
-          "tsEmitName": "responsePropertiesAndHeaders",
           "metadataToken": 67108938,
           "normalizedSignature": "ResponsePropertiesAndHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::RequestMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "Request",
-          "tsEmitName": "request",
           "metadataToken": 67108939,
           "normalizedSignature": "Request|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::ResponseMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "Response",
-          "tsEmitName": "response",
           "metadataToken": 67108940,
           "normalizedSignature": "Response|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields::AllMicrosoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "All",
-          "tsEmitName": "all",
           "metadataToken": 67108941,
           "normalizedSignature": "All|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int64|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108921
-          }
-        },
-        {
-          "tsName": "none",
-          "isStatic": true,
-          "tsSignatureId": "None|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108922
-          }
-        },
-        {
-          "tsName": "requestPath",
-          "isStatic": true,
-          "tsSignatureId": "RequestPath|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108923
-          }
-        },
-        {
-          "tsName": "requestQuery",
-          "isStatic": true,
-          "tsSignatureId": "RequestQuery|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108924
-          }
-        },
-        {
-          "tsName": "requestProtocol",
-          "isStatic": true,
-          "tsSignatureId": "RequestProtocol|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108925
-          }
-        },
-        {
-          "tsName": "requestMethod",
-          "isStatic": true,
-          "tsSignatureId": "RequestMethod|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108926
-          }
-        },
-        {
-          "tsName": "requestScheme",
-          "isStatic": true,
-          "tsSignatureId": "RequestScheme|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108927
-          }
-        },
-        {
-          "tsName": "responseStatusCode",
-          "isStatic": true,
-          "tsSignatureId": "ResponseStatusCode|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108928
-          }
-        },
-        {
-          "tsName": "requestHeaders",
-          "isStatic": true,
-          "tsSignatureId": "RequestHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108929
-          }
-        },
-        {
-          "tsName": "responseHeaders",
-          "isStatic": true,
-          "tsSignatureId": "ResponseHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108930
-          }
-        },
-        {
-          "tsName": "requestTrailers",
-          "isStatic": true,
-          "tsSignatureId": "RequestTrailers|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108931
-          }
-        },
-        {
-          "tsName": "responseTrailers",
-          "isStatic": true,
-          "tsSignatureId": "ResponseTrailers|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108932
-          }
-        },
-        {
-          "tsName": "requestBody",
-          "isStatic": true,
-          "tsSignatureId": "RequestBody|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108933
-          }
-        },
-        {
-          "tsName": "responseBody",
-          "isStatic": true,
-          "tsSignatureId": "ResponseBody|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108934
-          }
-        },
-        {
-          "tsName": "duration",
-          "isStatic": true,
-          "tsSignatureId": "Duration|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108935
-          }
-        },
-        {
-          "tsName": "requestProperties",
-          "isStatic": true,
-          "tsSignatureId": "RequestProperties|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108936
-          }
-        },
-        {
-          "tsName": "requestPropertiesAndHeaders",
-          "isStatic": true,
-          "tsSignatureId": "RequestPropertiesAndHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108937
-          }
-        },
-        {
-          "tsName": "responsePropertiesAndHeaders",
-          "isStatic": true,
-          "tsSignatureId": "ResponsePropertiesAndHeaders|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108938
-          }
-        },
-        {
-          "tsName": "request",
-          "isStatic": true,
-          "tsSignatureId": "Request|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108939
-          }
-        },
-        {
-          "tsName": "response",
-          "isStatic": true,
-          "tsSignatureId": "Response|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108940
-          }
-        },
-        {
-          "tsName": "all",
-          "isStatic": true,
-          "tsSignatureId": "All|Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67108941
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
       "clrName": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-      "tsEmitName": "W3CLoggingFields",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::value__System.Int64",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67109002,
           "normalizedSignature": "value__|System.Int64|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::NoneMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "None",
-          "tsEmitName": "none",
           "metadataToken": 67109003,
           "normalizedSignature": "None|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::DateMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "Date",
-          "tsEmitName": "date",
           "metadataToken": 67109004,
           "normalizedSignature": "Date|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::TimeMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "Time",
-          "tsEmitName": "time",
           "metadataToken": 67109005,
           "normalizedSignature": "Time|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::ClientIpAddressMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "ClientIpAddress",
-          "tsEmitName": "clientIpAddress",
           "metadataToken": 67109006,
           "normalizedSignature": "ClientIpAddress|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::UserNameMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "UserName",
-          "tsEmitName": "userName",
           "metadataToken": 67109007,
           "normalizedSignature": "UserName|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::ServerNameMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "ServerName",
-          "tsEmitName": "serverName",
           "metadataToken": 67109008,
           "normalizedSignature": "ServerName|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::ServerIpAddressMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "ServerIpAddress",
-          "tsEmitName": "serverIpAddress",
           "metadataToken": 67109009,
           "normalizedSignature": "ServerIpAddress|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::ServerPortMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "ServerPort",
-          "tsEmitName": "serverPort",
           "metadataToken": 67109010,
           "normalizedSignature": "ServerPort|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::MethodMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "Method",
-          "tsEmitName": "method",
           "metadataToken": 67109011,
           "normalizedSignature": "Method|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::UriStemMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "UriStem",
-          "tsEmitName": "uriStem",
           "metadataToken": 67109012,
           "normalizedSignature": "UriStem|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::UriQueryMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "UriQuery",
-          "tsEmitName": "uriQuery",
           "metadataToken": 67109013,
           "normalizedSignature": "UriQuery|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::ProtocolStatusMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "ProtocolStatus",
-          "tsEmitName": "protocolStatus",
           "metadataToken": 67109014,
           "normalizedSignature": "ProtocolStatus|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::TimeTakenMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "TimeTaken",
-          "tsEmitName": "timeTaken",
           "metadataToken": 67109015,
           "normalizedSignature": "TimeTaken|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::ProtocolVersionMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "ProtocolVersion",
-          "tsEmitName": "protocolVersion",
           "metadataToken": 67109016,
           "normalizedSignature": "ProtocolVersion|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::HostMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "Host",
-          "tsEmitName": "host",
           "metadataToken": 67109017,
           "normalizedSignature": "Host|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::UserAgentMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "UserAgent",
-          "tsEmitName": "userAgent",
           "metadataToken": 67109018,
           "normalizedSignature": "UserAgent|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::CookieMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "Cookie",
-          "tsEmitName": "cookie",
           "metadataToken": 67109019,
           "normalizedSignature": "Cookie|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::RefererMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "Referer",
-          "tsEmitName": "referer",
           "metadataToken": 67109020,
           "normalizedSignature": "Referer|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::ConnectionInfoFieldsMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "ConnectionInfoFields",
-          "tsEmitName": "connectionInfoFields",
           "metadataToken": 67109021,
           "normalizedSignature": "ConnectionInfoFields|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::RequestHeadersMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "RequestHeaders",
-          "tsEmitName": "requestHeaders",
           "metadataToken": 67109022,
           "normalizedSignature": "RequestHeaders|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::RequestMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "Request",
-          "tsEmitName": "request",
           "metadataToken": 67109023,
           "normalizedSignature": "Request|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields::AllMicrosoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "All",
-          "tsEmitName": "all",
           "metadataToken": 67109024,
           "normalizedSignature": "All|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int64|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109002
-          }
-        },
-        {
-          "tsName": "none",
-          "isStatic": true,
-          "tsSignatureId": "None|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109003
-          }
-        },
-        {
-          "tsName": "date",
-          "isStatic": true,
-          "tsSignatureId": "Date|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109004
-          }
-        },
-        {
-          "tsName": "time",
-          "isStatic": true,
-          "tsSignatureId": "Time|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109005
-          }
-        },
-        {
-          "tsName": "clientIpAddress",
-          "isStatic": true,
-          "tsSignatureId": "ClientIpAddress|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109006
-          }
-        },
-        {
-          "tsName": "userName",
-          "isStatic": true,
-          "tsSignatureId": "UserName|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109007
-          }
-        },
-        {
-          "tsName": "serverName",
-          "isStatic": true,
-          "tsSignatureId": "ServerName|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109008
-          }
-        },
-        {
-          "tsName": "serverIpAddress",
-          "isStatic": true,
-          "tsSignatureId": "ServerIpAddress|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109009
-          }
-        },
-        {
-          "tsName": "serverPort",
-          "isStatic": true,
-          "tsSignatureId": "ServerPort|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109010
-          }
-        },
-        {
-          "tsName": "method",
-          "isStatic": true,
-          "tsSignatureId": "Method|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109011
-          }
-        },
-        {
-          "tsName": "uriStem",
-          "isStatic": true,
-          "tsSignatureId": "UriStem|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109012
-          }
-        },
-        {
-          "tsName": "uriQuery",
-          "isStatic": true,
-          "tsSignatureId": "UriQuery|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109013
-          }
-        },
-        {
-          "tsName": "protocolStatus",
-          "isStatic": true,
-          "tsSignatureId": "ProtocolStatus|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109014
-          }
-        },
-        {
-          "tsName": "timeTaken",
-          "isStatic": true,
-          "tsSignatureId": "TimeTaken|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109015
-          }
-        },
-        {
-          "tsName": "protocolVersion",
-          "isStatic": true,
-          "tsSignatureId": "ProtocolVersion|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109016
-          }
-        },
-        {
-          "tsName": "host",
-          "isStatic": true,
-          "tsSignatureId": "Host|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109017
-          }
-        },
-        {
-          "tsName": "userAgent",
-          "isStatic": true,
-          "tsSignatureId": "UserAgent|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109018
-          }
-        },
-        {
-          "tsName": "cookie",
-          "isStatic": true,
-          "tsSignatureId": "Cookie|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109019
-          }
-        },
-        {
-          "tsName": "referer",
-          "isStatic": true,
-          "tsSignatureId": "Referer|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109020
-          }
-        },
-        {
-          "tsName": "connectionInfoFields",
-          "isStatic": true,
-          "tsSignatureId": "ConnectionInfoFields|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109021
-          }
-        },
-        {
-          "tsName": "requestHeaders",
-          "isStatic": true,
-          "tsSignatureId": "RequestHeaders|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109022
-          }
-        },
-        {
-          "tsName": "request",
-          "isStatic": true,
-          "tsSignatureId": "Request|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109023
-          }
-        },
-        {
-          "tsName": "all",
-          "isStatic": true,
-          "tsSignatureId": "All|Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 67109024
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.IHttpLoggingInterceptor",
       "clrName": "Microsoft.AspNetCore.HttpLogging.IHttpLoggingInterceptor",
-      "tsEmitName": "IHttpLoggingInterceptor",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.IHttpLoggingInterceptor::OnRequestAsync(Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext):System.Threading.Tasks.ValueTask",
           "clrName": "OnRequestAsync",
-          "tsEmitName": "onRequestAsync",
           "metadataToken": 100663492,
           "canonicalSignature": "(Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "OnRequestAsync|(Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext):System.Threading.Tasks.ValueTask|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.IHttpLoggingInterceptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -980,95 +559,108 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "onRequestAsync",
-          "isStatic": false,
-          "tsSignatureId": "OnRequestAsync|(Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.IHttpLoggingInterceptor",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663492
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
       "clrName": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
-      "tsEmitName": "HttpLoggingAttribute",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute::LoggingFields:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "LoggingFields",
-          "tsEmitName": "loggingFields",
           "metadataToken": 385875990,
           "canonicalSignature": ":Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "normalizedSignature": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute::IsRequestBodyLogLimitSet:System.Boolean",
           "clrName": "IsRequestBodyLogLimitSet",
-          "tsEmitName": "isRequestBodyLogLimitSet",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsRequestBodyLogLimitSet|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute::RequestBodyLogLimit:System.Int32",
           "clrName": "RequestBodyLogLimit",
-          "tsEmitName": "requestBodyLogLimit",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "RequestBodyLogLimit|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute::IsResponseBodyLogLimitSet:System.Boolean",
           "clrName": "IsResponseBodyLogLimitSet",
-          "tsEmitName": "isResponseBodyLogLimitSet",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsResponseBodyLogLimitSet|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute::ResponseBodyLogLimit:System.Int32",
           "clrName": "ResponseBodyLogLimit",
-          "tsEmitName": "responseBodyLogLimit",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "ResponseBodyLogLimit|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -1086,88 +678,35 @@
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "loggingFields",
-          "isStatic": false,
-          "tsSignatureId": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875990
-          }
-        },
-        {
-          "tsName": "isRequestBodyLogLimitSet",
-          "isStatic": false,
-          "tsSignatureId": "IsRequestBodyLogLimitSet|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875991
-          }
-        },
-        {
-          "tsName": "requestBodyLogLimit",
-          "isStatic": false,
-          "tsSignatureId": "RequestBodyLogLimit|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875992
-          }
-        },
-        {
-          "tsName": "isResponseBodyLogLimitSet",
-          "isStatic": false,
-          "tsSignatureId": "IsResponseBodyLogLimitSet|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875993
-          }
-        },
-        {
-          "tsName": "responseBodyLogLimit",
-          "isStatic": false,
-          "tsSignatureId": "ResponseBodyLogLimit|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875994
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663427
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
       "clrName": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-      "tsEmitName": "HttpLoggingInterceptorContext",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::AddParameter(System.String,System.Object):System.Void",
           "clrName": "AddParameter",
-          "tsEmitName": "addParameter",
           "metadataToken": 100663462,
           "canonicalSignature": "(System.String,System.Object):System.Void",
           "normalizedSignature": "AddParameter|(System.String,System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1175,13 +714,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::Enable(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void",
           "clrName": "Enable",
-          "tsEmitName": "enable",
           "metadataToken": 100663463,
           "canonicalSignature": "(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void",
           "normalizedSignature": "Enable|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1189,13 +733,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::IsAnyEnabled(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean",
           "clrName": "IsAnyEnabled",
-          "tsEmitName": "isAnyEnabled",
           "metadataToken": 100663464,
           "canonicalSignature": "(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean",
           "normalizedSignature": "IsAnyEnabled|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1203,13 +752,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::Disable(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void",
           "clrName": "Disable",
-          "tsEmitName": "disable",
           "metadataToken": 100663465,
           "canonicalSignature": "(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void",
           "normalizedSignature": "Disable|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1217,13 +771,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::TryDisable(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean",
           "clrName": "TryDisable",
-          "tsEmitName": "tryDisable",
           "metadataToken": 100663466,
           "canonicalSignature": "(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean",
           "normalizedSignature": "TryDisable|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1233,70 +792,90 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::HttpContext:Microsoft.AspNetCore.Http.HttpContext",
           "clrName": "HttpContext",
-          "tsEmitName": "httpContext",
           "metadataToken": 385875995,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
           "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::LoggingFields:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "LoggingFields",
-          "tsEmitName": "loggingFields",
           "metadataToken": 385875996,
           "canonicalSignature": ":Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "normalizedSignature": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::RequestBodyLogLimit:System.Int32",
           "clrName": "RequestBodyLogLimit",
-          "tsEmitName": "requestBodyLogLimit",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "RequestBodyLogLimit|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::ResponseBodyLogLimit:System.Int32",
           "clrName": "ResponseBodyLogLimit",
-          "tsEmitName": "responseBodyLogLimit",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "ResponseBodyLogLimit|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::Parameters:System.Collections.Generic.IList_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Parameters",
-          "tsEmitName": "parameters",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Parameters|:System.Collections.Generic.IList_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -1314,226 +893,144 @@
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "addParameter",
-          "isStatic": false,
-          "tsSignatureId": "AddParameter|(System.String,System.Object):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663462
-          }
-        },
-        {
-          "tsName": "enable",
-          "isStatic": false,
-          "tsSignatureId": "Enable|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663463
-          }
-        },
-        {
-          "tsName": "isAnyEnabled",
-          "isStatic": false,
-          "tsSignatureId": "IsAnyEnabled|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663464
-          }
-        },
-        {
-          "tsName": "disable",
-          "isStatic": false,
-          "tsSignatureId": "Disable|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663465
-          }
-        },
-        {
-          "tsName": "tryDisable",
-          "isStatic": false,
-          "tsSignatureId": "TryDisable|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663466
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "httpContext",
-          "isStatic": false,
-          "tsSignatureId": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875995
-          }
-        },
-        {
-          "tsName": "loggingFields",
-          "isStatic": false,
-          "tsSignatureId": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875996
-          }
-        },
-        {
-          "tsName": "requestBodyLogLimit",
-          "isStatic": false,
-          "tsSignatureId": "RequestBodyLogLimit|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875997
-          }
-        },
-        {
-          "tsName": "responseBodyLogLimit",
-          "isStatic": false,
-          "tsSignatureId": "ResponseBodyLogLimit|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385875998
-          }
-        },
-        {
-          "tsName": "parameters",
-          "isStatic": false,
-          "tsSignatureId": "Parameters|:System.Collections.Generic.IList_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876002
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663469
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
       "clrName": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-      "tsEmitName": "HttpLoggingOptions",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions::LoggingFields:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "clrName": "LoggingFields",
-          "tsEmitName": "loggingFields",
           "metadataToken": 385876003,
           "canonicalSignature": ":Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "normalizedSignature": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions::RequestHeaders:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "RequestHeaders",
-          "tsEmitName": "requestHeaders",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "RequestHeaders|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions::ResponseHeaders:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "ResponseHeaders",
-          "tsEmitName": "responseHeaders",
           "metadataToken": 385876005,
           "canonicalSignature": ":System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ResponseHeaders|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions::MediaTypeOptions:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "clrName": "MediaTypeOptions",
-          "tsEmitName": "mediaTypeOptions",
           "metadataToken": 385876006,
           "canonicalSignature": ":Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "normalizedSignature": "MediaTypeOptions|:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions::RequestBodyLogLimit:System.Int32",
           "clrName": "RequestBodyLogLimit",
-          "tsEmitName": "requestBodyLogLimit",
           "metadataToken": 385876007,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "RequestBodyLogLimit|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions::ResponseBodyLogLimit:System.Int32",
           "clrName": "ResponseBodyLogLimit",
-          "tsEmitName": "responseBodyLogLimit",
           "metadataToken": 385876008,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "ResponseBodyLogLimit|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions::CombineLogs:System.Boolean",
           "clrName": "CombineLogs",
-          "tsEmitName": "combineLogs",
           "metadataToken": 385876009,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CombineLogs|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -1551,108 +1048,35 @@
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "loggingFields",
-          "isStatic": false,
-          "tsSignatureId": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.HttpLoggingFields|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876003
-          }
-        },
-        {
-          "tsName": "requestHeaders",
-          "isStatic": false,
-          "tsSignatureId": "RequestHeaders|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876004
-          }
-        },
-        {
-          "tsName": "responseHeaders",
-          "isStatic": false,
-          "tsSignatureId": "ResponseHeaders|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876005
-          }
-        },
-        {
-          "tsName": "mediaTypeOptions",
-          "isStatic": false,
-          "tsSignatureId": "MediaTypeOptions|:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876006
-          }
-        },
-        {
-          "tsName": "requestBodyLogLimit",
-          "isStatic": false,
-          "tsSignatureId": "RequestBodyLogLimit|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876007
-          }
-        },
-        {
-          "tsName": "responseBodyLogLimit",
-          "isStatic": false,
-          "tsSignatureId": "ResponseBodyLogLimit|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876008
-          }
-        },
-        {
-          "tsName": "combineLogs",
-          "isStatic": false,
-          "tsSignatureId": "CombineLogs|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876009
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663491
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
       "clrName": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
-      "tsEmitName": "MediaTypeOptions",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions::AddText(System.String):System.Void",
           "clrName": "AddText",
-          "tsEmitName": "addText",
           "metadataToken": 100663501,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "AddText|(System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1660,13 +1084,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions::AddText(System.String,System.Text.Encoding):System.Void",
           "clrName": "AddText",
-          "tsEmitName": "addText",
           "metadataToken": 100663502,
           "canonicalSignature": "(System.String,System.Text.Encoding):System.Void",
           "normalizedSignature": "AddText|(System.String,System.Text.Encoding):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1674,13 +1103,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions::AddBinary(Microsoft.Net.Http.Headers.MediaTypeHeaderValue):System.Void",
           "clrName": "AddBinary",
-          "tsEmitName": "addBinary",
           "metadataToken": 100663503,
           "canonicalSignature": "(Microsoft.Net.Http.Headers.MediaTypeHeaderValue):System.Void",
           "normalizedSignature": "AddBinary|(Microsoft.Net.Http.Headers.MediaTypeHeaderValue):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1688,13 +1122,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions::AddBinary(System.String):System.Void",
           "clrName": "AddBinary",
-          "tsEmitName": "addBinary",
           "metadataToken": 100663504,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "AddBinary|(System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1702,13 +1141,18 @@
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions::Clear():System.Void",
           "clrName": "Clear",
-          "tsEmitName": "clear",
           "metadataToken": 100663505,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1717,163 +1161,144 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "addText",
-          "isStatic": false,
-          "tsSignatureId": "AddText|(System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663501
-          }
-        },
-        {
-          "tsName": "addText",
-          "isStatic": false,
-          "tsSignatureId": "AddText|(System.String,System.Text.Encoding):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663502
-          }
-        },
-        {
-          "tsName": "addBinary",
-          "isStatic": false,
-          "tsSignatureId": "AddBinary|(Microsoft.Net.Http.Headers.MediaTypeHeaderValue):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663503
-          }
-        },
-        {
-          "tsName": "addBinary",
-          "isStatic": false,
-          "tsSignatureId": "AddBinary|(System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663504
-          }
-        },
-        {
-          "tsName": "clear",
-          "isStatic": false,
-          "tsSignatureId": "Clear|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663505
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
       "clrName": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-      "tsEmitName": "W3CLoggerOptions",
       "assemblyName": "Microsoft.AspNetCore.HttpLogging",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions::FileSizeLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "FileSizeLimit",
-          "tsEmitName": "fileSizeLimit",
           "metadataToken": 385876019,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "FileSizeLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions::RetainedFileCountLimit:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "RetainedFileCountLimit",
-          "tsEmitName": "retainedFileCountLimit",
           "metadataToken": 385876020,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "RetainedFileCountLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions::FileName:System.String",
           "clrName": "FileName",
-          "tsEmitName": "fileName",
           "metadataToken": 385876021,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FileName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions::LogDirectory:System.String",
           "clrName": "LogDirectory",
-          "tsEmitName": "logDirectory",
           "metadataToken": 385876022,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "LogDirectory|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions::FlushInterval:System.TimeSpan",
           "clrName": "FlushInterval",
-          "tsEmitName": "flushInterval",
           "metadataToken": 385876023,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "FlushInterval|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions::AdditionalRequestHeaders:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "AdditionalRequestHeaders",
-          "tsEmitName": "additionalRequestHeaders",
           "metadataToken": 385876024,
           "canonicalSignature": ":System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AdditionalRequestHeaders|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions::LoggingFields:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "clrName": "LoggingFields",
-          "tsEmitName": "loggingFields",
           "metadataToken": 385876025,
           "canonicalSignature": ":Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "normalizedSignature": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -1890,89 +1315,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "fileSizeLimit",
-          "isStatic": false,
-          "tsSignatureId": "FileSizeLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876019
-          }
-        },
-        {
-          "tsName": "retainedFileCountLimit",
-          "isStatic": false,
-          "tsSignatureId": "RetainedFileCountLimit|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876020
-          }
-        },
-        {
-          "tsName": "fileName",
-          "isStatic": false,
-          "tsSignatureId": "FileName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876021
-          }
-        },
-        {
-          "tsName": "logDirectory",
-          "isStatic": false,
-          "tsSignatureId": "LogDirectory|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876022
-          }
-        },
-        {
-          "tsName": "flushInterval",
-          "isStatic": false,
-          "tsSignatureId": "FlushInterval|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876023
-          }
-        },
-        {
-          "tsName": "additionalRequestHeaders",
-          "isStatic": false,
-          "tsSignatureId": "AdditionalRequestHeaders|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876024
-          }
-        },
-        {
-          "tsName": "loggingFields",
-          "isStatic": false,
-          "tsSignatureId": "LoggingFields|:Microsoft.AspNetCore.HttpLogging.W3CLoggingFields|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 385876025
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
-            "metadataToken": 100663573
-          }
         }
       ]
     }

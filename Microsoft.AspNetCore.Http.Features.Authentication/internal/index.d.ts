@@ -11,14 +11,14 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
 import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
 
 export interface IHttpAuthenticationFeature$instance {
-    user: ClaimsPrincipal;
+    User: ClaimsPrincipal;
 }
 
 
 export type IHttpAuthenticationFeature = IHttpAuthenticationFeature$instance;
 
 export interface HttpAuthenticationFeature$instance {
-    user: ClaimsPrincipal;
+    User: ClaimsPrincipal;
 }
 
 

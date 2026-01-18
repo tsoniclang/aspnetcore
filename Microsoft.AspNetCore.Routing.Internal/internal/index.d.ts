@@ -12,7 +12,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IServiceProvider, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
 
 export interface DfaGraphWriter$instance {
-    write(dataSource: EndpointDataSource, writer: TextWriter): void;
+    Write(dataSource: EndpointDataSource, writer: TextWriter): void;
 }
 
 

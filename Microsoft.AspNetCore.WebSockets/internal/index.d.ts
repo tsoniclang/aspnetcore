@@ -17,10 +17,10 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ExtendedWebSocketAcceptContext$instance extends WebSocketAcceptContext {
-    keepAliveInterval: Nullable<TimeSpan>;
-    receiveBufferSize: Nullable<System_Internal.Int32>;
-    get subProtocol(): string | undefined;
-    set subProtocol(value: string);
+    KeepAliveInterval: Nullable<TimeSpan>;
+    ReceiveBufferSize: Nullable<System_Internal.Int32>;
+    get SubProtocol(): string | undefined;
+    set SubProtocol(value: string);
 }
 
 
@@ -32,7 +32,7 @@ export const ExtendedWebSocketAcceptContext: {
 export type ExtendedWebSocketAcceptContext = ExtendedWebSocketAcceptContext$instance;
 
 export interface WebSocketMiddleware$instance {
-    invoke(context: HttpContext): Task;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -44,7 +44,7 @@ export const WebSocketMiddleware: {
 export type WebSocketMiddleware = WebSocketMiddleware$instance;
 
 export abstract class WebSocketsDependencyInjectionExtensions$instance {
-    static addWebSockets(services: IServiceCollection, configure: Action<WebSocketOptions>): IServiceCollection;
+    static AddWebSockets(services: IServiceCollection, configure: Action<WebSocketOptions>): IServiceCollection;
 }
 
 

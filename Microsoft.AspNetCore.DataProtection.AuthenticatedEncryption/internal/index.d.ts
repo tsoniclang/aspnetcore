@@ -28,21 +28,21 @@ export enum ValidationAlgorithm {
 
 
 export interface IAuthenticatedEncryptor$instance {
-    decrypt(ciphertext: ArraySegment<System_Internal.Byte>, additionalAuthenticatedData: ArraySegment<System_Internal.Byte>): byte[];
+    Decrypt(ciphertext: ArraySegment<System_Internal.Byte>, additionalAuthenticatedData: ArraySegment<System_Internal.Byte>): byte[];
 }
 
 
 export type IAuthenticatedEncryptor = IAuthenticatedEncryptor$instance;
 
 export interface IAuthenticatedEncryptorFactory$instance {
-    createEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
 
 export type IAuthenticatedEncryptorFactory = IAuthenticatedEncryptorFactory$instance;
 
 export interface AuthenticatedEncryptorFactory$instance {
-    createEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
 
@@ -61,7 +61,7 @@ export type AuthenticatedEncryptorFactory = AuthenticatedEncryptorFactory$instan
 
 
 export interface CngCbcAuthenticatedEncryptorFactory$instance {
-    createEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
 
@@ -80,7 +80,7 @@ export type CngCbcAuthenticatedEncryptorFactory = CngCbcAuthenticatedEncryptorFa
 
 
 export interface CngGcmAuthenticatedEncryptorFactory$instance {
-    createEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
 
@@ -99,7 +99,7 @@ export type CngGcmAuthenticatedEncryptorFactory = CngGcmAuthenticatedEncryptorFa
 
 
 export interface ManagedAuthenticatedEncryptorFactory$instance {
-    createEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
 

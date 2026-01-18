@@ -21,44 +21,44 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IOptionsMonitor, IPostConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ICookieManager$instance {
-    appendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
-    deleteCookie(context: HttpContext, key: string, options: CookieOptions): void;
-    getRequestCookie(context: HttpContext, key: string): string | undefined;
+    AppendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
+    DeleteCookie(context: HttpContext, key: string, options: CookieOptions): void;
+    GetRequestCookie(context: HttpContext, key: string): string | undefined;
 }
 
 
 export type ICookieManager = ICookieManager$instance;
 
 export interface ITicketStore$instance {
-    removeAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
-    removeAsync(key: string, cancellationToken: CancellationToken): Task;
-    removeAsync(key: string): Task;
-    renewAsync(key: string, ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
-    renewAsync(key: string, ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task;
-    renewAsync(key: string, ticket: AuthenticationTicket): Task;
-    retrieveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task<AuthenticationTicket | undefined>;
-    retrieveAsync(key: string, cancellationToken: CancellationToken): Task<AuthenticationTicket | undefined>;
-    retrieveAsync(key: string): Task<AuthenticationTicket | undefined>;
-    storeAsync(ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task<System_Internal.String>;
-    storeAsync(ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task<System_Internal.String>;
-    storeAsync(ticket: AuthenticationTicket): Task<System_Internal.String>;
+    RemoveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
+    RemoveAsync(key: string, cancellationToken: CancellationToken): Task;
+    RemoveAsync(key: string): Task;
+    RenewAsync(key: string, ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
+    RenewAsync(key: string, ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task;
+    RenewAsync(key: string, ticket: AuthenticationTicket): Task;
+    RetrieveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task<AuthenticationTicket | undefined>;
+    RetrieveAsync(key: string, cancellationToken: CancellationToken): Task<AuthenticationTicket | undefined>;
+    RetrieveAsync(key: string): Task<AuthenticationTicket | undefined>;
+    StoreAsync(ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task<System_Internal.String>;
+    StoreAsync(ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task<System_Internal.String>;
+    StoreAsync(ticket: AuthenticationTicket): Task<System_Internal.String>;
 }
 
 
 export type ITicketStore = ITicketStore$instance;
 
 export interface ChunkingCookieManager$instance {
-    chunkSize: Nullable<System_Internal.Int32>;
-    throwForPartialCookies: boolean;
-    appendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
-    deleteCookie(context: HttpContext, key: string, options: CookieOptions): void;
-    getRequestCookie(context: HttpContext, key: string): string | undefined;
+    ChunkSize: Nullable<System_Internal.Int32>;
+    ThrowForPartialCookies: boolean;
+    AppendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
+    DeleteCookie(context: HttpContext, key: string, options: CookieOptions): void;
+    GetRequestCookie(context: HttpContext, key: string): string | undefined;
 }
 
 
 export const ChunkingCookieManager: {
     new(): ChunkingCookieManager;
-    readonly defaultChunkSize: int;
+    readonly DefaultChunkSize: int;
 };
 
 
@@ -72,24 +72,24 @@ export type ChunkingCookieManager = ChunkingCookieManager$instance & __ChunkingC
 
 
 export interface CookieAuthenticationEvents$instance {
-    onCheckSlidingExpiration: Func<CookieSlidingExpirationContext, Task>;
-    onRedirectToAccessDenied: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
-    onRedirectToLogin: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
-    onRedirectToLogout: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
-    onRedirectToReturnUrl: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
-    onSignedIn: Func<CookieSignedInContext, Task>;
-    onSigningIn: Func<CookieSigningInContext, Task>;
-    onSigningOut: Func<CookieSigningOutContext, Task>;
-    onValidatePrincipal: Func<CookieValidatePrincipalContext, Task>;
-    checkSlidingExpiration(context: CookieSlidingExpirationContext): Task;
-    redirectToAccessDenied(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
-    redirectToLogin(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
-    redirectToLogout(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
-    redirectToReturnUrl(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
-    signedIn(context: CookieSignedInContext): Task;
-    signingIn(context: CookieSigningInContext): Task;
-    signingOut(context: CookieSigningOutContext): Task;
-    validatePrincipal(context: CookieValidatePrincipalContext): Task;
+    OnCheckSlidingExpiration: Func<CookieSlidingExpirationContext, Task>;
+    OnRedirectToAccessDenied: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
+    OnRedirectToLogin: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
+    OnRedirectToLogout: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
+    OnRedirectToReturnUrl: Func<RedirectContext_1<CookieAuthenticationOptions>, Task>;
+    OnSignedIn: Func<CookieSignedInContext, Task>;
+    OnSigningIn: Func<CookieSigningInContext, Task>;
+    OnSigningOut: Func<CookieSigningOutContext, Task>;
+    OnValidatePrincipal: Func<CookieValidatePrincipalContext, Task>;
+    CheckSlidingExpiration(context: CookieSlidingExpirationContext): Task;
+    RedirectToAccessDenied(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
+    RedirectToLogin(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
+    RedirectToLogout(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
+    RedirectToReturnUrl(context: RedirectContext_1<CookieAuthenticationOptions>): Task;
+    SignedIn(context: CookieSignedInContext): Task;
+    SigningIn(context: CookieSigningInContext): Task;
+    SigningOut(context: CookieSigningOutContext): Task;
+    ValidatePrincipal(context: CookieValidatePrincipalContext): Task;
 }
 
 
@@ -101,11 +101,11 @@ export const CookieAuthenticationEvents: {
 export type CookieAuthenticationEvents = CookieAuthenticationEvents$instance;
 
 export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions>, IAuthenticationSignOutHandler {
-    authenticateAsync(): Task<AuthenticateResult>;
-    challengeAsync(properties: AuthenticationProperties): Task;
-    initializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    signInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    signOutAsync(properties: AuthenticationProperties): Task;
+    AuthenticateAsync(): Task<AuthenticateResult>;
+    ChallengeAsync(properties: AuthenticationProperties): Task;
+    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    SignOutAsync(properties: AuthenticationProperties): Task;
 }
 
 
@@ -124,20 +124,20 @@ export type CookieAuthenticationHandler = CookieAuthenticationHandler$instance &
 
 
 export interface CookieAuthenticationOptions$instance extends AuthenticationSchemeOptions {
-    accessDeniedPath: PathString;
-    cookie: CookieBuilder;
-    cookieManager: ICookieManager;
-    get dataProtectionProvider(): IDataProtectionProvider | undefined;
-    set dataProtectionProvider(value: IDataProtectionProvider);
-    events: CookieAuthenticationEvents | unknown;
-    expireTimeSpan: TimeSpan;
-    loginPath: PathString;
-    logoutPath: PathString;
-    returnUrlParameter: string;
-    get sessionStore(): ITicketStore | undefined;
-    set sessionStore(value: ITicketStore);
-    slidingExpiration: boolean;
-    ticketDataFormat: ISecureDataFormat_1<AuthenticationTicket>;
+    AccessDeniedPath: PathString;
+    Cookie: CookieBuilder;
+    CookieManager: ICookieManager;
+    get DataProtectionProvider(): IDataProtectionProvider | undefined;
+    set DataProtectionProvider(value: IDataProtectionProvider);
+    Events: CookieAuthenticationEvents | unknown;
+    ExpireTimeSpan: TimeSpan;
+    LoginPath: PathString;
+    LogoutPath: PathString;
+    ReturnUrlParameter: string;
+    get SessionStore(): ITicketStore | undefined;
+    set SessionStore(value: ITicketStore);
+    SlidingExpiration: boolean;
+    TicketDataFormat: ISecureDataFormat_1<AuthenticationTicket>;
 }
 
 
@@ -160,7 +160,7 @@ export const CookieSignedInContext: {
 export type CookieSignedInContext = CookieSignedInContext$instance;
 
 export interface CookieSigningInContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
-    cookieOptions: CookieOptions;
+    CookieOptions: CookieOptions;
 }
 
 
@@ -172,7 +172,7 @@ export const CookieSigningInContext: {
 export type CookieSigningInContext = CookieSigningInContext$instance;
 
 export interface CookieSigningOutContext$instance extends PropertiesContext_1<CookieAuthenticationOptions> {
-    cookieOptions: CookieOptions;
+    CookieOptions: CookieOptions;
 }
 
 
@@ -184,9 +184,9 @@ export const CookieSigningOutContext: {
 export type CookieSigningOutContext = CookieSigningOutContext$instance;
 
 export interface CookieSlidingExpirationContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
-    readonly elapsedTime: TimeSpan;
-    readonly remainingTime: TimeSpan;
-    shouldRenew: boolean;
+    readonly ElapsedTime: TimeSpan;
+    readonly RemainingTime: TimeSpan;
+    ShouldRenew: boolean;
 }
 
 
@@ -198,9 +198,9 @@ export const CookieSlidingExpirationContext: {
 export type CookieSlidingExpirationContext = CookieSlidingExpirationContext$instance;
 
 export interface CookieValidatePrincipalContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
-    shouldRenew: boolean;
-    rejectPrincipal(): void;
-    replacePrincipal(principal: ClaimsPrincipal): void;
+    ShouldRenew: boolean;
+    RejectPrincipal(): void;
+    ReplacePrincipal(principal: ClaimsPrincipal): void;
 }
 
 
@@ -212,7 +212,7 @@ export const CookieValidatePrincipalContext: {
 export type CookieValidatePrincipalContext = CookieValidatePrincipalContext$instance;
 
 export interface PostConfigureCookieAuthenticationOptions$instance {
-    postConfigure(name: string, options: CookieAuthenticationOptions): void;
+    PostConfigure(name: string, options: CookieAuthenticationOptions): void;
 }
 
 
@@ -224,12 +224,12 @@ export const PostConfigureCookieAuthenticationOptions: {
 export type PostConfigureCookieAuthenticationOptions = PostConfigureCookieAuthenticationOptions$instance;
 
 export abstract class CookieAuthenticationDefaults$instance {
-    static readonly cookiePrefix: string;
-    static readonly loginPath: PathString;
-    static readonly logoutPath: PathString;
-    static readonly accessDeniedPath: PathString;
-    static readonly returnUrlParameter: string;
-    static readonly authenticationScheme: string;
+    static readonly CookiePrefix: string;
+    static readonly LoginPath: PathString;
+    static readonly LogoutPath: PathString;
+    static readonly AccessDeniedPath: PathString;
+    static readonly ReturnUrlParameter: string;
+    static readonly AuthenticationScheme: string;
 }
 
 

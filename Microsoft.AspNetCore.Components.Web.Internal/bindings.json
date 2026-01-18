@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Components.Web.Internal",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Components.Web"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime",
       "clrName": "Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime",
-      "tsEmitName": "IInternalWebJSInProcessRuntime",
       "assemblyName": "Microsoft.AspNetCore.Components.Web",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime::InvokeJS(System.String,System.String,Microsoft.JSInterop.JSCallResultType,System.Int64):System.String",
           "clrName": "InvokeJS",
-          "tsEmitName": "invokeJS",
           "metadataToken": 100663802,
           "canonicalSignature": "(System.String,System.String,Microsoft.JSInterop.JSCallResultType,System.Int64):System.String",
           "normalizedSignature": "InvokeJS|(System.String,System.String,Microsoft.JSInterop.JSCallResultType,System.Int64):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime::InvokeJS(Microsoft.JSInterop.Infrastructure.JSInvocationInfo\u0026):System.String",
           "clrName": "InvokeJS",
-          "tsEmitName": "invokeJS",
           "metadataToken": 100663803,
           "canonicalSignature": "(Microsoft.JSInterop.Infrastructure.JSInvocationInfo\u0026):System.String",
           "normalizedSignature": "InvokeJS|(Microsoft.JSInterop.Infrastructure.JSInvocationInfo\u0026):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false,
@@ -46,29 +64,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "invokeJS",
-          "isStatic": false,
-          "tsSignatureId": "InvokeJS|(System.String,System.String,Microsoft.JSInterop.JSCallResultType,System.Int64):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 100663802
-          }
-        },
-        {
-          "tsName": "invokeJS",
-          "isStatic": false,
-          "tsSignatureId": "InvokeJS|(Microsoft.JSInterop.Infrastructure.JSInvocationInfo\u0026):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Components.Web.Internal.IInternalWebJSInProcessRuntime",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
-            "metadataToken": 100663803
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

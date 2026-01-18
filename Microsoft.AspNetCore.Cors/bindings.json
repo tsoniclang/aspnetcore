@@ -1,39 +1,56 @@
 {
   "namespace": "Microsoft.AspNetCore.Cors",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Cors"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.CorsPolicyMetadata",
       "clrName": "Microsoft.AspNetCore.Cors.CorsPolicyMetadata",
-      "tsEmitName": "CorsPolicyMetadata",
       "assemblyName": "Microsoft.AspNetCore.Cors",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.CorsPolicyMetadata::Policy:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "clrName": "Policy",
-          "tsEmitName": "policy",
           "metadataToken": 385875969,
           "canonicalSignature": ":Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "normalizedSignature": "Policy|:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Cors.CorsPolicyMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyMetadata::Policy:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "clrName": "Policy",
-          "tsEmitName": "policy$view",
           "metadataToken": 385876000,
           "canonicalSignature": ":Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "normalizedSignature": "Policy|:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -51,58 +68,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Cors.CorsPolicyMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "policy",
-          "isStatic": false,
-          "tsSignatureId": "Policy|:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.CorsPolicyMetadata",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 385875969
-          }
-        },
-        {
-          "tsName": "policy$view",
-          "isStatic": false,
-          "tsSignatureId": "Policy|:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyMetadata",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 385876000
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.CorsPolicyMetadata",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 100663323
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.DisableCorsAttribute",
       "clrName": "Microsoft.AspNetCore.Cors.DisableCorsAttribute",
-      "tsEmitName": "DisableCorsAttribute",
       "assemblyName": "Microsoft.AspNetCore.Cors",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.DisableCorsAttribute::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100663325,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Cors.DisableCorsAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -122,48 +116,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Cors.DisableCorsAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.DisableCorsAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 100663325
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.DisableCorsAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 100663326
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.EnableCorsAttribute",
       "clrName": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
-      "tsEmitName": "EnableCorsAttribute",
       "assemblyName": "Microsoft.AspNetCore.Cors",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.EnableCorsAttribute::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100663331,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -173,28 +154,37 @@
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.EnableCorsAttribute::PolicyName:System.String",
           "clrName": "PolicyName",
-          "tsEmitName": "policyName",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PolicyName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.IEnableCorsAttribute::PolicyName:System.String",
           "clrName": "PolicyName",
-          "tsEmitName": "policyName$view",
           "metadataToken": 385876001,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PolicyName|:System.String|static=false|accessor=getset",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Cors.Infrastructure.IEnableCorsAttribute",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.IEnableCorsAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -221,60 +211,6 @@
           "parameterCount": 1,
           "declaringClrType": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 100663331
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "policyName",
-          "isStatic": false,
-          "tsSignatureId": "PolicyName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 385875970
-          }
-        },
-        {
-          "tsName": "policyName$view",
-          "isStatic": false,
-          "tsSignatureId": "PolicyName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.IEnableCorsAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 385876001
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 100663327
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Cors.EnableCorsAttribute",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
-            "metadataToken": 100663328
-          }
         }
       ]
     }

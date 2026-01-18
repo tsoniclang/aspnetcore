@@ -1,62 +1,72 @@
 {
   "namespace": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Mvc.Razor"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager",
-      "tsEmitName": "ITagHelperComponentManager",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager::Components:System.Collections.Generic.ICollection_1[[Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "Components",
-          "tsEmitName": "components",
           "metadataToken": 385876075,
           "canonicalSignature": ":System.Collections.Generic.ICollection_1[[Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Components|:System.Collections.Generic.ICollection_1[[Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "components",
-          "isStatic": false,
-          "tsSignatureId": "Components|:System.Collections.Generic.ICollection_1[[Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent,Microsoft.AspNetCore.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876075
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator",
-      "tsEmitName": "ITagHelperComponentPropertyActivator",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator::Activate(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent):System.Void",
           "clrName": "Activate",
-          "tsEmitName": "activate",
           "metadataToken": 100663601,
           "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent):System.Void",
           "normalizedSignature": "Activate|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -65,65 +75,75 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "activate",
-          "isStatic": false,
-          "tsSignatureId": "Activate|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663601
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
-      "tsEmitName": "BodyTagHelper",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init$view",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync$view",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -131,13 +151,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -147,14 +172,19 @@
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
         }
@@ -172,148 +202,75 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "init$view",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663335
-          }
-        },
-        {
-          "tsName": "processAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "init",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "processAsync",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "process",
-          "isStatic": false,
-          "tsSignatureId": "Process|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663361
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "propertyActivator",
-          "isStatic": false,
-          "tsSignatureId": "PropertyActivator|:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876076
-          }
-        },
-        {
-          "tsName": "viewContext",
-          "isStatic": false,
-          "tsSignatureId": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876077
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663598
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
-      "tsEmitName": "HeadTagHelper",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init$view",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync$view",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -321,13 +278,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -337,14 +299,19 @@
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
         }
@@ -362,120 +329,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "init$view",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663335
-          }
-        },
-        {
-          "tsName": "processAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "init",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "processAsync",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "process",
-          "isStatic": false,
-          "tsSignatureId": "Process|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663361
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "propertyActivator",
-          "isStatic": false,
-          "tsSignatureId": "PropertyActivator|:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876076
-          }
-        },
-        {
-          "tsName": "viewContext",
-          "isStatic": false,
-          "tsSignatureId": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876077
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663599
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-      "tsEmitName": "TagHelperComponentTagHelper",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init",
           "metadataToken": 100663613,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -483,13 +365,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync",
           "metadataToken": 100663614,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -497,72 +384,97 @@
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init$view",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync$view",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper::PropertyActivator:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator",
           "clrName": "PropertyActivator",
-          "tsEmitName": "propertyActivator",
           "metadataToken": 385876076,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator",
           "normalizedSignature": "PropertyActivator|:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper::ViewContext:Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "clrName": "ViewContext",
-          "tsEmitName": "viewContext",
           "metadataToken": 385876077,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "normalizedSignature": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
         }
@@ -580,122 +492,36 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "init",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663613
-          }
-        },
-        {
-          "tsName": "processAsync",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663614
-          }
-        },
-        {
-          "tsName": "init$view",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663335
-          }
-        },
-        {
-          "tsName": "processAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "process",
-          "isStatic": false,
-          "tsSignatureId": "Process|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.TagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663361
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "propertyActivator",
-          "isStatic": false,
-          "tsSignatureId": "PropertyActivator|:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876076
-          }
-        },
-        {
-          "tsName": "viewContext",
-          "isStatic": false,
-          "tsSignatureId": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876077
-          }
-        },
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 385875979
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663608
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature",
-      "tsEmitName": "TagHelperFeature",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature::TagHelpers:System.Collections.Generic.IList_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "TagHelpers",
-          "tsEmitName": "tagHelpers",
           "metadataToken": 385876078,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "TagHelpers|:System.Collections.Generic.IList_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -713,48 +539,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "tagHelpers",
-          "isStatic": false,
-          "tsSignatureId": "TagHelpers|:System.Collections.Generic.IList_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876078
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663616
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider",
-      "tsEmitName": "TagHelperFeatureProvider",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider::PopulateFeature(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature):System.Void",
           "clrName": "PopulateFeature",
-          "tsEmitName": "populateFeature",
           "metadataToken": 100663617,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature):System.Void",
           "normalizedSignature": "PopulateFeature|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -762,16 +575,22 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601::PopulateFeature(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void",
           "clrName": "PopulateFeature",
-          "tsEmitName": "populateFeature$view",
           "metadataToken": 100666587,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void",
           "normalizedSignature": "PopulateFeature|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601"
         }
       ],
       "properties": [],
@@ -788,58 +607,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "populateFeature",
-          "isStatic": false,
-          "tsSignatureId": "PopulateFeature|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663617
-          }
-        },
-        {
-          "tsName": "populateFeature$view",
-          "isStatic": false,
-          "tsSignatureId": "PopulateFeature|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],TFeature):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-            "metadataToken": 100666587
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663620
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
       "clrName": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
-      "tsEmitName": "UrlResolutionTagHelper",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Razor",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper::Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void",
           "clrName": "Process",
-          "tsEmitName": "process",
           "metadataToken": 100663627,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void",
           "normalizedSignature": "Process|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -847,41 +643,58 @@
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init$view",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync$view",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper::Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "clrName": "Init",
-          "tsEmitName": "init",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void",
           "normalizedSignature": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -889,13 +702,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper::ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "clrName": "ProcessAsync",
-          "tsEmitName": "processAsync",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task",
           "normalizedSignature": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -905,42 +723,55 @@
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order",
           "metadataToken": 385876079,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper::ViewContext:Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "clrName": "ViewContext",
-          "tsEmitName": "viewContext",
           "metadataToken": 385876082,
           "canonicalSignature": ":Microsoft.AspNetCore.Mvc.Rendering.ViewContext",
           "normalizedSignature": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
         {
           "stableId": "Microsoft.AspNetCore.Razor:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent::Order:System.Int32",
           "clrName": "Order",
-          "tsEmitName": "order$view",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Order|:System.Int32|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor"
         }
@@ -957,101 +788,6 @@
           "parameterCount": 2,
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "process",
-          "isStatic": false,
-          "tsSignatureId": "Process|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663627
-          }
-        },
-        {
-          "tsName": "init$view",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663335
-          }
-        },
-        {
-          "tsName": "processAsync$view",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "init",
-          "isStatic": false,
-          "tsSignatureId": "Init|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "processAsync",
-          "isStatic": false,
-          "tsSignatureId": "ProcessAsync|(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput):System.Threading.Tasks.Task|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "order",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876079
-          }
-        },
-        {
-          "tsName": "viewContext",
-          "isStatic": false,
-          "tsSignatureId": "ViewContext|:Microsoft.AspNetCore.Mvc.Rendering.ViewContext|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 385876082
-          }
-        },
-        {
-          "tsName": "order$view",
-          "isStatic": false,
-          "tsSignatureId": "Order|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Razor",
-            "metadataToken": 385875979
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory,System.Text.Encodings.Web.HtmlEncoder):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-            "metadataToken": 100663621
-          }
         }
       ]
     }

@@ -30,88 +30,88 @@ import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions
 import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export enum RouteDirection {
-    incomingRequest = 0,
-    urlGeneration = 1
+    IncomingRequest = 0,
+    UrlGeneration = 1
 }
 
 
 export interface IDataTokensMetadata$instance {
-    readonly dataTokens: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly DataTokens: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
 }
 
 
 export type IDataTokensMetadata = IDataTokensMetadata$instance;
 
 export interface IDynamicEndpointMetadata$instance {
-    readonly isDynamic: boolean;
+    readonly IsDynamic: boolean;
 }
 
 
 export type IDynamicEndpointMetadata = IDynamicEndpointMetadata$instance;
 
 export interface IEndpointAddressScheme_1$instance<TAddress> {
-    findEndpoints(address: TAddress): IEnumerable__System_Collections_Generic<Endpoint>;
+    FindEndpoints(address: TAddress): IEnumerable__System_Collections_Generic<Endpoint>;
 }
 
 
 export type IEndpointAddressScheme_1<TAddress> = IEndpointAddressScheme_1$instance<TAddress>;
 
 export interface IEndpointGroupNameMetadata$instance {
-    readonly endpointGroupName: string;
+    readonly EndpointGroupName: string;
 }
 
 
 export type IEndpointGroupNameMetadata = IEndpointGroupNameMetadata$instance;
 
 export interface IEndpointNameMetadata$instance {
-    readonly endpointName: string;
+    readonly EndpointName: string;
 }
 
 
 export type IEndpointNameMetadata = IEndpointNameMetadata$instance;
 
 export interface IEndpointRouteBuilder$instance {
-    readonly serviceProvider: IServiceProvider;
-    readonly dataSources: ICollection<EndpointDataSource>;
-    createApplicationBuilder(): IApplicationBuilder;
+    readonly ServiceProvider: IServiceProvider;
+    readonly DataSources: ICollection<EndpointDataSource>;
+    CreateApplicationBuilder(): IApplicationBuilder;
 }
 
 
 export type IEndpointRouteBuilder = IEndpointRouteBuilder$instance;
 
 export interface IExcludeFromDescriptionMetadata$instance {
-    readonly excludeFromDescription: boolean;
+    readonly ExcludeFromDescription: boolean;
 }
 
 
 export type IExcludeFromDescriptionMetadata = IExcludeFromDescriptionMetadata$instance;
 
 export interface IHostMetadata$instance {
-    readonly hosts: IReadOnlyList<System_Internal.String>;
+    readonly Hosts: IReadOnlyList<System_Internal.String>;
 }
 
 
 export type IHostMetadata = IHostMetadata$instance;
 
 export interface IHttpMethodMetadata$instance {
-    acceptCorsPreflight: boolean;
-    readonly httpMethods: IReadOnlyList<System_Internal.String>;
+    AcceptCorsPreflight: boolean;
+    readonly HttpMethods: IReadOnlyList<System_Internal.String>;
 }
 
 
 export type IHttpMethodMetadata = IHttpMethodMetadata$instance;
 
 export interface IInlineConstraintResolver$instance {
-    resolveConstraint(inlineConstraint: string): IRouteConstraint | undefined;
+    ResolveConstraint(inlineConstraint: string): IRouteConstraint | undefined;
 }
 
 
 export type IInlineConstraintResolver = IInlineConstraintResolver$instance;
 
 export interface INamedRouter$instance extends IRouter {
-    readonly name: string;
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
+    readonly Name: string;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
 }
 
 
@@ -120,7 +120,7 @@ export interface INamedRouter$instance extends IRouter$instance {}
 export type INamedRouter = INamedRouter$instance;
 
 export interface IOutboundParameterTransformer$instance extends IParameterPolicy {
-    transformOutbound(value: unknown): string | undefined;
+    TransformOutbound(value: unknown): string | undefined;
 }
 
 
@@ -135,21 +135,21 @@ export interface IParameterPolicy$instance {
 export type IParameterPolicy = IParameterPolicy$instance;
 
 export interface IRouteBuilder$instance {
-    readonly applicationBuilder: IApplicationBuilder;
-    get defaultHandler(): IRouter | undefined;
-    set defaultHandler(value: IRouter);
-    readonly serviceProvider: IServiceProvider;
-    readonly routes: IList<IRouter>;
-    build(): IRouter;
+    readonly ApplicationBuilder: IApplicationBuilder;
+    get DefaultHandler(): IRouter | undefined;
+    set DefaultHandler(value: IRouter);
+    readonly ServiceProvider: IServiceProvider;
+    readonly Routes: IList<IRouter>;
+    Build(): IRouter;
 }
 
 
 export type IRouteBuilder = IRouteBuilder$instance;
 
 export interface IRouteCollection$instance extends IRouter {
-    add(router: IRouter): void;
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
+    Add(router: IRouter): void;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
 }
 
 
@@ -158,7 +158,7 @@ export interface IRouteCollection$instance extends IRouter$instance {}
 export type IRouteCollection = IRouteCollection$instance;
 
 export interface IRouteConstraint$instance extends IParameterPolicy {
-    match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -167,50 +167,50 @@ export interface IRouteConstraint$instance extends IParameterPolicy$instance {}
 export type IRouteConstraint = IRouteConstraint$instance;
 
 export interface IRouteHandler$instance {
-    getRequestHandler(httpContext: HttpContext, routeData: RouteData): RequestDelegate;
+    GetRequestHandler(httpContext: HttpContext, routeData: RouteData): RequestDelegate;
 }
 
 
 export type IRouteHandler = IRouteHandler$instance;
 
 export interface IRouteNameMetadata$instance {
-    readonly routeName: string | undefined;
+    readonly RouteName: string | undefined;
 }
 
 
 export type IRouteNameMetadata = IRouteNameMetadata$instance;
 
 export interface IRouter$instance {
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
 }
 
 
 export type IRouter = IRouter$instance;
 
 export interface IRoutingFeature$instance {
-    routeData: RouteData;
+    RouteData: RouteData;
 }
 
 
 export type IRoutingFeature = IRoutingFeature$instance;
 
 export interface ISuppressLinkGenerationMetadata$instance {
-    readonly suppressLinkGeneration: boolean;
+    readonly SuppressLinkGeneration: boolean;
 }
 
 
 export type ISuppressLinkGenerationMetadata = ISuppressLinkGenerationMetadata$instance;
 
 export interface ISuppressMatchingMetadata$instance {
-    readonly suppressMatching: boolean;
+    readonly SuppressMatching: boolean;
 }
 
 
 export type ISuppressMatchingMetadata = ISuppressMatchingMetadata$instance;
 
 export interface RouteData_RouteDataSnapshot$instance {
-    restore(): void;
+    Restore(): void;
 }
 
 
@@ -222,10 +222,10 @@ export const RouteData_RouteDataSnapshot: {
 export type RouteData_RouteDataSnapshot = RouteData_RouteDataSnapshot$instance;
 
 export interface RouteValueDictionary_Enumerator$instance {
-    readonly current: KeyValuePair<System_Internal.String, unknown>;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: KeyValuePair<System_Internal.String, unknown>;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -237,12 +237,12 @@ export const RouteValueDictionary_Enumerator: {
 export type RouteValueDictionary_Enumerator = RouteValueDictionary_Enumerator$instance;
 
 export interface CompositeEndpointDataSource$instance extends EndpointDataSource {
-    readonly dataSources: IEnumerable__System_Collections_Generic<EndpointDataSource>;
-    readonly endpoints: IReadOnlyList<Endpoint>;
-    dispose(): void;
-    getChangeToken(): IChangeToken;
-    getGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
-    getGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
+    readonly DataSources: IEnumerable__System_Collections_Generic<EndpointDataSource>;
+    readonly Endpoints: IReadOnlyList<Endpoint>;
+    Dispose(): void;
+    GetChangeToken(): IChangeToken;
+    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
+    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
 }
 
 
@@ -254,8 +254,8 @@ export const CompositeEndpointDataSource: {
 export type CompositeEndpointDataSource = CompositeEndpointDataSource$instance;
 
 export interface ContentEncodingMetadata$instance {
-    readonly quality: double;
-    readonly value: string;
+    readonly Quality: double;
+    readonly Value: string;
 }
 
 
@@ -267,8 +267,8 @@ export const ContentEncodingMetadata: {
 export type ContentEncodingMetadata = ContentEncodingMetadata$instance;
 
 export interface DataTokensMetadata$instance {
-    readonly dataTokens: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
-    toString(): string;
+    readonly DataTokens: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    ToString(): string;
 }
 
 
@@ -287,8 +287,8 @@ export type DataTokensMetadata = DataTokensMetadata$instance & __DataTokensMetad
 
 
 export interface DefaultEndpointDataSource$instance extends EndpointDataSource {
-    readonly endpoints: IReadOnlyList<Endpoint>;
-    getChangeToken(): IChangeToken;
+    readonly Endpoints: IReadOnlyList<Endpoint>;
+    GetChangeToken(): IChangeToken;
 }
 
 
@@ -301,7 +301,7 @@ export const DefaultEndpointDataSource: {
 export type DefaultEndpointDataSource = DefaultEndpointDataSource$instance;
 
 export interface DefaultInlineConstraintResolver$instance {
-    resolveConstraint(inlineConstraint: string): IRouteConstraint | undefined;
+    ResolveConstraint(inlineConstraint: string): IRouteConstraint | undefined;
 }
 
 
@@ -320,9 +320,9 @@ export type DefaultInlineConstraintResolver = DefaultInlineConstraintResolver$in
 
 
 export interface EndpointDataSource$instance {
-    readonly endpoints: IReadOnlyList<Endpoint>;
-    getChangeToken(): IChangeToken;
-    getGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
+    readonly Endpoints: IReadOnlyList<Endpoint>;
+    GetChangeToken(): IChangeToken;
+    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
 }
 
 
@@ -333,7 +333,7 @@ export const EndpointDataSource: {
 export type EndpointDataSource = EndpointDataSource$instance;
 
 export interface EndpointGroupNameAttribute$instance extends Attribute {
-    readonly endpointGroupName: string;
+    readonly EndpointGroupName: string;
 }
 
 
@@ -352,7 +352,7 @@ export type EndpointGroupNameAttribute = EndpointGroupNameAttribute$instance & _
 
 
 export interface EndpointNameAttribute$instance extends Attribute {
-    readonly endpointName: string;
+    readonly EndpointName: string;
 }
 
 
@@ -371,8 +371,8 @@ export type EndpointNameAttribute = EndpointNameAttribute$instance & __EndpointN
 
 
 export interface EndpointNameMetadata$instance {
-    readonly endpointName: string;
-    toString(): string;
+    readonly EndpointName: string;
+    ToString(): string;
 }
 
 
@@ -391,8 +391,8 @@ export type EndpointNameMetadata = EndpointNameMetadata$instance & __EndpointNam
 
 
 export interface ExcludeFromDescriptionAttribute$instance extends Attribute {
-    readonly excludeFromDescription: boolean;
-    toString(): string;
+    readonly ExcludeFromDescription: boolean;
+    ToString(): string;
 }
 
 
@@ -411,8 +411,8 @@ export type ExcludeFromDescriptionAttribute = ExcludeFromDescriptionAttribute$in
 
 
 export interface HostAttribute$instance extends Attribute {
-    readonly hosts: IReadOnlyList<System_Internal.String>;
-    toString(): string;
+    readonly Hosts: IReadOnlyList<System_Internal.String>;
+    ToString(): string;
 }
 
 
@@ -432,9 +432,9 @@ export type HostAttribute = HostAttribute$instance & __HostAttribute$views;
 
 
 export interface HttpMethodMetadata$instance {
-    acceptCorsPreflight: boolean;
-    readonly httpMethods: IReadOnlyList<System_Internal.String>;
-    toString(): string;
+    AcceptCorsPreflight: boolean;
+    readonly HttpMethods: IReadOnlyList<System_Internal.String>;
+    ToString(): string;
 }
 
 
@@ -454,10 +454,10 @@ export type HttpMethodMetadata = HttpMethodMetadata$instance & __HttpMethodMetad
 
 
 export interface LinkGenerator$instance {
-    getPathByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    getPathByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    getUriByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    getUriByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    GetPathByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    GetPathByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    GetUriByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    GetUriByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
 
@@ -468,9 +468,9 @@ export const LinkGenerator: {
 export type LinkGenerator = LinkGenerator$instance;
 
 export interface LinkOptions$instance {
-    appendTrailingSlash: Nullable<System_Internal.Boolean>;
-    lowercaseQueryStrings: Nullable<System_Internal.Boolean>;
-    lowercaseUrls: Nullable<System_Internal.Boolean>;
+    AppendTrailingSlash: Nullable<System_Internal.Boolean>;
+    LowercaseQueryStrings: Nullable<System_Internal.Boolean>;
+    LowercaseUrls: Nullable<System_Internal.Boolean>;
 }
 
 
@@ -482,7 +482,7 @@ export const LinkOptions: {
 export type LinkOptions = LinkOptions$instance;
 
 export interface LinkParser$instance {
-    parsePathByAddress<TAddress>(address: TAddress, path: PathString): RouteValueDictionary | undefined;
+    ParsePathByAddress<TAddress>(address: TAddress, path: PathString): RouteValueDictionary | undefined;
 }
 
 
@@ -493,7 +493,7 @@ export const LinkParser: {
 export type LinkParser = LinkParser$instance;
 
 export interface MatcherPolicy$instance {
-    readonly order: int;
+    readonly Order: int;
 }
 
 
@@ -504,9 +504,9 @@ export const MatcherPolicy: {
 export type MatcherPolicy = MatcherPolicy$instance;
 
 export interface ParameterPolicyFactory$instance {
-    create(parameter: RoutePatternParameterPart, inlineText: string): IParameterPolicy;
-    create(parameter: RoutePatternParameterPart, parameterPolicy: IParameterPolicy): IParameterPolicy;
-    create(parameter: RoutePatternParameterPart, reference: RoutePatternParameterPolicyReference): IParameterPolicy;
+    Create(parameter: RoutePatternParameterPart, inlineText: string): IParameterPolicy;
+    Create(parameter: RoutePatternParameterPart, parameterPolicy: IParameterPolicy): IParameterPolicy;
+    Create(parameter: RoutePatternParameterPart, reference: RoutePatternParameterPolicyReference): IParameterPolicy;
 }
 
 
@@ -517,9 +517,9 @@ export const ParameterPolicyFactory: {
 export type ParameterPolicyFactory = ParameterPolicyFactory$instance;
 
 export interface Route$instance extends RouteBase$instance {
-    readonly routeTemplate: string | undefined;
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
+    readonly RouteTemplate: string | undefined;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
 }
 
 
@@ -541,14 +541,14 @@ export type Route = Route$instance & __Route$views;
 
 
 export interface RouteBase$instance {
-    readonly constraints: IDictionary<System_Internal.String, IRouteConstraint>;
-    readonly dataTokens: RouteValueDictionary;
-    readonly defaults: RouteValueDictionary;
-    readonly name: string;
-    readonly parsedTemplate: RouteTemplate;
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
-    toString(): string;
+    readonly Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
+    readonly DataTokens: RouteValueDictionary;
+    readonly Defaults: RouteValueDictionary;
+    readonly Name: string;
+    readonly ParsedTemplate: RouteTemplate;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
+    ToString(): string;
 }
 
 
@@ -566,12 +566,12 @@ export type RouteBase = RouteBase$instance & __RouteBase$views;
 
 
 export interface RouteBuilder$instance {
-    readonly applicationBuilder: IApplicationBuilder;
-    get defaultHandler(): IRouter | undefined;
-    set defaultHandler(value: IRouter);
-    readonly routes: IList<IRouter>;
-    readonly serviceProvider: IServiceProvider;
-    build(): IRouter;
+    readonly ApplicationBuilder: IApplicationBuilder;
+    get DefaultHandler(): IRouter | undefined;
+    set DefaultHandler(value: IRouter);
+    readonly Routes: IList<IRouter>;
+    readonly ServiceProvider: IServiceProvider;
+    Build(): IRouter;
 }
 
 
@@ -591,11 +591,11 @@ export type RouteBuilder = RouteBuilder$instance & __RouteBuilder$views;
 
 
 export interface RouteCollection$instance {
-    readonly count: int;
-    readonly item: IRouter;
-    add(router: IRouter): void;
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
+    readonly Count: int;
+    readonly Item: IRouter;
+    Add(router: IRouter): void;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
 }
 
 
@@ -613,10 +613,10 @@ export type RouteCollection = RouteCollection$instance & __RouteCollection$views
 
 
 export interface RouteConstraintBuilder$instance {
-    addConstraint(key: string, value: unknown): void;
-    addResolvedConstraint(key: string, constraintText: string): void;
-    build(): IDictionary<System_Internal.String, IRouteConstraint>;
-    setOptional(key: string): void;
+    AddConstraint(key: string, value: unknown): void;
+    AddResolvedConstraint(key: string, constraintText: string): void;
+    Build(): IDictionary<System_Internal.String, IRouteConstraint>;
+    SetOptional(key: string): void;
 }
 
 
@@ -628,9 +628,9 @@ export const RouteConstraintBuilder: {
 export type RouteConstraintBuilder = RouteConstraintBuilder$instance;
 
 export interface RouteContext$instance {
-    handler: RequestDelegate;
-    readonly httpContext: HttpContext;
-    routeData: RouteData;
+    Handler: RequestDelegate;
+    readonly HttpContext: HttpContext;
+    RouteData: RouteData;
 }
 
 
@@ -654,10 +654,10 @@ export const RouteCreationException: {
 export type RouteCreationException = RouteCreationException$instance;
 
 export interface RouteData$instance {
-    readonly dataTokens: RouteValueDictionary;
-    readonly routers: IList<IRouter>;
-    readonly values: RouteValueDictionary;
-    pushState(router: IRouter, values: RouteValueDictionary, dataTokens: RouteValueDictionary): RouteData_RouteDataSnapshot;
+    readonly DataTokens: RouteValueDictionary;
+    readonly Routers: IList<IRouter>;
+    readonly Values: RouteValueDictionary;
+    PushState(router: IRouter, values: RouteValueDictionary, dataTokens: RouteValueDictionary): RouteData_RouteDataSnapshot;
 }
 
 
@@ -671,8 +671,8 @@ export const RouteData: {
 export type RouteData = RouteData$instance;
 
 export interface RouteEndpoint$instance extends Endpoint {
-    readonly order: int;
-    readonly routePattern: RoutePattern;
+    readonly Order: int;
+    readonly RoutePattern: RoutePattern;
 }
 
 
@@ -684,9 +684,9 @@ export const RouteEndpoint: {
 export type RouteEndpoint = RouteEndpoint$instance;
 
 export interface RouteEndpointBuilder$instance extends EndpointBuilder {
-    order: int;
-    routePattern: RoutePattern;
-    build(): Endpoint;
+    Order: int;
+    RoutePattern: RoutePattern;
+    Build(): Endpoint;
 }
 
 
@@ -717,10 +717,10 @@ export type RouteGroupBuilder = RouteGroupBuilder$instance & __RouteGroupBuilder
 
 
 export interface RouteGroupContext$instance {
-    applicationServices: IServiceProvider;
-    conventions: IReadOnlyList<Action<EndpointBuilder>>;
-    finallyConventions: IReadOnlyList<Action<EndpointBuilder>>;
-    prefix: RoutePattern;
+    ApplicationServices: IServiceProvider;
+    Conventions: IReadOnlyList<Action<EndpointBuilder>>;
+    FinallyConventions: IReadOnlyList<Action<EndpointBuilder>>;
+    Prefix: RoutePattern;
 }
 
 
@@ -732,9 +732,9 @@ export const RouteGroupContext: {
 export type RouteGroupContext = RouteGroupContext$instance;
 
 export interface RouteHandler$instance {
-    getRequestHandler(httpContext: HttpContext, routeData: RouteData): RequestDelegate;
-    getVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
-    routeAsync(context: RouteContext): Task;
+    GetRequestHandler(httpContext: HttpContext, routeData: RouteData): RequestDelegate;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    RouteAsync(context: RouteContext): Task;
 }
 
 
@@ -754,7 +754,7 @@ export type RouteHandler = RouteHandler$instance & __RouteHandler$views;
 
 
 export interface RouteHandlerOptions$instance {
-    throwOnBadRequest: boolean;
+    ThrowOnBadRequest: boolean;
 }
 
 
@@ -766,8 +766,8 @@ export const RouteHandlerOptions: {
 export type RouteHandlerOptions = RouteHandlerOptions$instance;
 
 export interface RouteNameMetadata$instance {
-    readonly routeName: string | undefined;
-    toString(): string;
+    readonly RouteName: string | undefined;
+    ToString(): string;
 }
 
 
@@ -786,13 +786,13 @@ export type RouteNameMetadata = RouteNameMetadata$instance & __RouteNameMetadata
 
 
 export interface RouteOptions$instance {
-    appendTrailingSlash: boolean;
-    constraintMap: IDictionary<System_Internal.String, Type>;
-    lowercaseQueryStrings: boolean;
-    lowercaseUrls: boolean;
-    suppressCheckForUnhandledSecurityMetadata: boolean;
-    setParameterPolicy<T extends IParameterPolicy>(token: string): void;
-    setParameterPolicy(token: string, type: Type): void;
+    AppendTrailingSlash: boolean;
+    ConstraintMap: IDictionary<System_Internal.String, Type>;
+    LowercaseQueryStrings: boolean;
+    LowercaseUrls: boolean;
+    SuppressCheckForUnhandledSecurityMetadata: boolean;
+    SetParameterPolicy<T extends IParameterPolicy>(token: string): void;
+    SetParameterPolicy(token: string, type: Type): void;
 }
 
 
@@ -804,19 +804,19 @@ export const RouteOptions: {
 export type RouteOptions = RouteOptions$instance;
 
 export interface RouteValueDictionary$instance {
-    readonly comparer: IEqualityComparer<System_Internal.String>;
-    readonly count: int;
-    item: unknown;
-    readonly keys: ICollection<System_Internal.String>;
-    readonly values: ICollection<unknown | undefined>;
-    add(key: string, value: unknown): void;
-    clear(): void;
-    containsKey(key: string): boolean;
-    getEnumerator(): RouteValueDictionary_Enumerator;
-    remove(key: string): boolean;
-    remove(key: string, value: unknown): boolean;
-    tryAdd(key: string, value: unknown): boolean;
-    tryGetValue(key: string, value: unknown): boolean;
+    readonly Comparer: IEqualityComparer<System_Internal.String>;
+    readonly Count: int;
+    Item: unknown;
+    readonly Keys: ICollection<System_Internal.String>;
+    readonly Values: ICollection<unknown | undefined>;
+    Add(key: string, value: unknown): void;
+    Clear(): void;
+    ContainsKey(key: string): boolean;
+    GetEnumerator(): RouteValueDictionary_Enumerator;
+    Remove(key: string): boolean;
+    Remove(key: string, value: unknown): boolean;
+    TryAdd(key: string, value: unknown): boolean;
+    TryGetValue(key: string, value: unknown): boolean;
 }
 
 
@@ -826,32 +826,32 @@ export const RouteValueDictionary: {
     new(values: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): RouteValueDictionary;
     new(values: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>): RouteValueDictionary;
     new(dictionary: RouteValueDictionary): RouteValueDictionary;
-    fromArray(items: KeyValuePair<System_Internal.String, unknown>[]): RouteValueDictionary;
+    FromArray(items: KeyValuePair<System_Internal.String, unknown>[]): RouteValueDictionary;
 };
 
 
 export type RouteValueDictionary = RouteValueDictionary$instance;
 
 export interface RouteValueEqualityComparer$instance {
-    equals(x: unknown, y: unknown): boolean;
-    getHashCode(obj: unknown): int;
+    Equals(x: unknown, y: unknown): boolean;
+    GetHashCode(obj: unknown): int;
 }
 
 
 export const RouteValueEqualityComparer: {
     new(): RouteValueEqualityComparer;
-    readonly default: RouteValueEqualityComparer;
+    readonly Default: RouteValueEqualityComparer;
 };
 
 
 export type RouteValueEqualityComparer = RouteValueEqualityComparer$instance;
 
 export interface RouteValuesAddress$instance {
-    ambientValues: RouteValueDictionary;
-    explicitValues: RouteValueDictionary;
-    get routeName(): string | undefined;
-    set routeName(value: string);
-    toString(): string | undefined;
+    AmbientValues: RouteValueDictionary;
+    ExplicitValues: RouteValueDictionary;
+    get RouteName(): string | undefined;
+    set RouteName(value: string);
+    ToString(): string | undefined;
 }
 
 
@@ -863,7 +863,7 @@ export const RouteValuesAddress: {
 export type RouteValuesAddress = RouteValuesAddress$instance;
 
 export interface RoutingFeature$instance {
-    routeData: RouteData;
+    RouteData: RouteData;
 }
 
 
@@ -882,8 +882,8 @@ export type RoutingFeature = RoutingFeature$instance & __RoutingFeature$views;
 
 
 export interface SuppressLinkGenerationMetadata$instance {
-    readonly suppressLinkGeneration: boolean;
-    toString(): string;
+    readonly SuppressLinkGeneration: boolean;
+    ToString(): string;
 }
 
 
@@ -902,8 +902,8 @@ export type SuppressLinkGenerationMetadata = SuppressLinkGenerationMetadata$inst
 
 
 export interface SuppressMatchingMetadata$instance {
-    readonly suppressMatching: boolean;
-    toString(): string;
+    readonly SuppressMatching: boolean;
+    ToString(): string;
 }
 
 
@@ -922,10 +922,10 @@ export type SuppressMatchingMetadata = SuppressMatchingMetadata$instance & __Sup
 
 
 export interface VirtualPathContext$instance {
-    readonly ambientValues: RouteValueDictionary;
-    readonly httpContext: HttpContext;
-    readonly routeName: string | undefined;
-    values: RouteValueDictionary;
+    readonly AmbientValues: RouteValueDictionary;
+    readonly HttpContext: HttpContext;
+    readonly RouteName: string | undefined;
+    Values: RouteValueDictionary;
 }
 
 
@@ -938,9 +938,9 @@ export const VirtualPathContext: {
 export type VirtualPathContext = VirtualPathContext$instance;
 
 export interface VirtualPathData$instance {
-    readonly dataTokens: RouteValueDictionary;
-    router: IRouter;
-    virtualPath: string;
+    readonly DataTokens: RouteValueDictionary;
+    Router: IRouter;
+    VirtualPath: string;
 }
 
 
@@ -953,122 +953,122 @@ export const VirtualPathData: {
 export type VirtualPathData = VirtualPathData$instance;
 
 export abstract class ControllerLinkGeneratorExtensions$instance {
-    static getPathByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByAction(generator: LinkGenerator, action: string, controller: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByAction(generator: LinkGenerator, action: string, controller: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByAction(generator: LinkGenerator, action: string, controller: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByAction(generator: LinkGenerator, action: string, controller: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
 
 export type ControllerLinkGeneratorExtensions = ControllerLinkGeneratorExtensions$instance;
 
 export abstract class IdentityApiEndpointRouteBuilderExtensions$instance {
-    static mapIdentityApi<TUser>(endpoints: IEndpointRouteBuilder): IEndpointConventionBuilder;
+    static MapIdentityApi<TUser>(endpoints: IEndpointRouteBuilder): IEndpointConventionBuilder;
 }
 
 
 export type IdentityApiEndpointRouteBuilderExtensions = IdentityApiEndpointRouteBuilderExtensions$instance;
 
 export abstract class InlineRouteParameterParser$instance {
-    static parseRouteParameter(routeParameter: string): TemplatePart;
+    static ParseRouteParameter(routeParameter: string): TemplatePart;
 }
 
 
 export type InlineRouteParameterParser = InlineRouteParameterParser$instance;
 
 export abstract class LinkGeneratorEndpointNameAddressExtensions$instance {
-    static getPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByName(generator: LinkGenerator, endpointName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByName(generator: LinkGenerator, endpointName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByName(generator: LinkGenerator, endpointName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByName(generator: LinkGenerator, endpointName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByName(generator: LinkGenerator, endpointName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByName(generator: LinkGenerator, endpointName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByName(generator: LinkGenerator, endpointName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByName(generator: LinkGenerator, endpointName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
 
 export type LinkGeneratorEndpointNameAddressExtensions = LinkGeneratorEndpointNameAddressExtensions$instance;
 
 export abstract class LinkGeneratorRouteValuesAddressExtensions$instance {
-    static getPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByRouteValues(generator: LinkGenerator, routeName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByRouteValues(generator: LinkGenerator, routeName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByRouteValues(generator: LinkGenerator, routeName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByRouteValues(generator: LinkGenerator, routeName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
 
 export type LinkGeneratorRouteValuesAddressExtensions = LinkGeneratorRouteValuesAddressExtensions$instance;
 
 export abstract class LinkParserEndpointNameAddressExtensions$instance {
-    static parsePathByEndpointName(parser: LinkParser, endpointName: string, path: PathString): RouteValueDictionary | undefined;
+    static ParsePathByEndpointName(parser: LinkParser, endpointName: string, path: PathString): RouteValueDictionary | undefined;
 }
 
 
 export type LinkParserEndpointNameAddressExtensions = LinkParserEndpointNameAddressExtensions$instance;
 
 export abstract class PageLinkGeneratorExtensions$instance {
-    static getPathByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getPathByPage(generator: LinkGenerator, page: string, handler?: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static getUriByPage(generator: LinkGenerator, page: string, handler: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByPage(generator: LinkGenerator, page: string, handler?: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByPage(generator: LinkGenerator, page: string, handler: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
 
 export type PageLinkGeneratorExtensions = PageLinkGeneratorExtensions$instance;
 
 export abstract class RequestDelegateRouteBuilderExtensions$instance {
-    static mapDelete(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static mapDelete(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
-    static mapGet(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static mapGet(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
-    static mapMiddlewareDelete(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static mapMiddlewareGet(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static mapMiddlewarePost(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static mapMiddlewarePut(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static mapMiddlewareRoute(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static mapMiddlewareVerb(builder: IRouteBuilder, verb: string, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static mapPost(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static mapPost(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
-    static mapPut(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static mapPut(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
-    static mapRoute(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static mapVerb(builder: IRouteBuilder, verb: string, template: string, handler: RequestDelegate): IRouteBuilder;
-    static mapVerb(builder: IRouteBuilder, verb: string, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapDelete(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
+    static MapDelete(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapGet(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
+    static MapGet(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapMiddlewareDelete(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewareGet(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewarePost(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewarePut(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewareRoute(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewareVerb(builder: IRouteBuilder, verb: string, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
+    static MapPost(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
+    static MapPost(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapPut(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
+    static MapPut(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapRoute(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
+    static MapVerb(builder: IRouteBuilder, verb: string, template: string, handler: RequestDelegate): IRouteBuilder;
+    static MapVerb(builder: IRouteBuilder, verb: string, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
 }
 
 
 export type RequestDelegateRouteBuilderExtensions = RequestDelegateRouteBuilderExtensions$instance;
 
 export abstract class RouteConstraintMatcher$instance {
-    static match(constraints: IDictionary<System_Internal.String, IRouteConstraint>, routeValues: RouteValueDictionary, httpContext: HttpContext, route: IRouter, routeDirection: RouteDirection, logger: ILogger): boolean;
+    static Match(constraints: IDictionary<System_Internal.String, IRouteConstraint>, routeValues: RouteValueDictionary, httpContext: HttpContext, route: IRouter, routeDirection: RouteDirection, logger: ILogger): boolean;
 }
 
 
 export type RouteConstraintMatcher = RouteConstraintMatcher$instance;
 
 export abstract class RouteHandlerServices$instance {
-    static map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>, populateMetadata: Func<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>, methodInfo: MethodInfo): RouteHandlerBuilder;
-    static map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>, populateMetadata: Func<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>): RouteHandlerBuilder;
+    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>, populateMetadata: Func<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>, methodInfo: MethodInfo): RouteHandlerBuilder;
+    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>, populateMetadata: Func<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>): RouteHandlerBuilder;
 }
 
 
 export type RouteHandlerServices = RouteHandlerServices$instance;
 
 export abstract class RouteShortCircuitEndpointRouteBuilderExtensions$instance {
-    static mapShortCircuit(builder: IEndpointRouteBuilder, statusCode: int, ...routePrefixes: string[]): IEndpointConventionBuilder;
+    static MapShortCircuit(builder: IEndpointRouteBuilder, statusCode: int, ...routePrefixes: string[]): IEndpointConventionBuilder;
 }
 
 
 export type RouteShortCircuitEndpointRouteBuilderExtensions = RouteShortCircuitEndpointRouteBuilderExtensions$instance;
 
 export abstract class RoutingHttpContextExtensions$instance {
-    static getRouteData(httpContext: HttpContext): RouteData;
-    static getRouteValue(httpContext: HttpContext, key: string): unknown | undefined;
+    static GetRouteData(httpContext: HttpContext): RouteData;
+    static GetRouteValue(httpContext: HttpContext, key: string): unknown | undefined;
 }
 
 

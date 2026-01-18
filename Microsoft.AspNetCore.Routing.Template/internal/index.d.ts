@@ -17,7 +17,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface InlineConstraint$instance {
-    readonly constraint: string;
+    readonly Constraint: string;
 }
 
 
@@ -30,12 +30,12 @@ export const InlineConstraint: {
 export type InlineConstraint = InlineConstraint$instance;
 
 export interface RouteTemplate$instance {
-    readonly parameters: IList<TemplatePart>;
-    readonly segments: IList<TemplateSegment>;
-    readonly templateText: string | undefined;
-    getParameter(name: string): TemplatePart | undefined;
-    getSegment(index: int): TemplateSegment | undefined;
-    toRoutePattern(): RoutePattern;
+    readonly Parameters: IList<TemplatePart>;
+    readonly Segments: IList<TemplateSegment>;
+    readonly TemplateText: string | undefined;
+    GetParameter(name: string): TemplatePart | undefined;
+    GetSegment(index: int): TemplateSegment | undefined;
+    ToRoutePattern(): RoutePattern;
 }
 
 
@@ -48,23 +48,23 @@ export const RouteTemplate: {
 export type RouteTemplate = RouteTemplate$instance;
 
 export interface TemplateBinder$instance {
-    bindValues(acceptedValues: RouteValueDictionary): string | undefined;
-    getValues(ambientValues: RouteValueDictionary, values: RouteValueDictionary): TemplateValuesResult | undefined;
-    tryProcessConstraints(httpContext: HttpContext, combinedValues: RouteValueDictionary, parameterName: string, constraint: IRouteConstraint): boolean;
+    BindValues(acceptedValues: RouteValueDictionary): string | undefined;
+    GetValues(ambientValues: RouteValueDictionary, values: RouteValueDictionary): TemplateValuesResult | undefined;
+    TryProcessConstraints(httpContext: HttpContext, combinedValues: RouteValueDictionary, parameterName: string, constraint: IRouteConstraint): boolean;
 }
 
 
 export const TemplateBinder: {
     new(): TemplateBinder;
-    routePartsEqual(a: unknown, b: unknown): boolean;
+    RoutePartsEqual(a: unknown, b: unknown): boolean;
 };
 
 
 export type TemplateBinder = TemplateBinder$instance;
 
 export interface TemplateBinderFactory$instance {
-    create(template: RouteTemplate, defaults: RouteValueDictionary): TemplateBinder;
-    create(pattern: RoutePattern): TemplateBinder;
+    Create(template: RouteTemplate, defaults: RouteValueDictionary): TemplateBinder;
+    Create(pattern: RoutePattern): TemplateBinder;
 }
 
 
@@ -75,9 +75,9 @@ export const TemplateBinderFactory: {
 export type TemplateBinderFactory = TemplateBinderFactory$instance;
 
 export interface TemplateMatcher$instance {
-    readonly defaults: RouteValueDictionary;
-    readonly template: RouteTemplate;
-    tryMatch(path: PathString, values: RouteValueDictionary): boolean;
+    readonly Defaults: RouteValueDictionary;
+    readonly Template: RouteTemplate;
+    TryMatch(path: PathString, values: RouteValueDictionary): boolean;
 }
 
 
@@ -89,33 +89,33 @@ export const TemplateMatcher: {
 export type TemplateMatcher = TemplateMatcher$instance;
 
 export interface TemplatePart$instance {
-    readonly defaultValue: unknown | undefined;
-    readonly inlineConstraints: IEnumerable<InlineConstraint>;
-    readonly isCatchAll: boolean;
-    readonly isLiteral: boolean;
-    readonly isOptional: boolean;
-    isOptionalSeperator: boolean;
-    readonly isParameter: boolean;
-    readonly name: string;
-    readonly text: string | undefined;
-    toRoutePatternPart(): RoutePatternPart;
+    readonly DefaultValue: unknown | undefined;
+    readonly InlineConstraints: IEnumerable<InlineConstraint>;
+    readonly IsCatchAll: boolean;
+    readonly IsLiteral: boolean;
+    readonly IsOptional: boolean;
+    IsOptionalSeperator: boolean;
+    readonly IsParameter: boolean;
+    readonly Name: string;
+    readonly Text: string | undefined;
+    ToRoutePatternPart(): RoutePatternPart;
 }
 
 
 export const TemplatePart: {
     new(): TemplatePart;
     new(other: RoutePatternPart): TemplatePart;
-    createLiteral(text: string): TemplatePart;
-    createParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: unknown, inlineConstraints: IEnumerable<InlineConstraint>): TemplatePart;
+    CreateLiteral(text: string): TemplatePart;
+    CreateParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: unknown, inlineConstraints: IEnumerable<InlineConstraint>): TemplatePart;
 };
 
 
 export type TemplatePart = TemplatePart$instance;
 
 export interface TemplateSegment$instance {
-    readonly isSimple: boolean;
-    readonly parts: List<TemplatePart>;
-    toRoutePatternPathSegment(): RoutePatternPathSegment;
+    readonly IsSimple: boolean;
+    readonly Parts: List<TemplatePart>;
+    ToRoutePatternPathSegment(): RoutePatternPathSegment;
 }
 
 
@@ -128,8 +128,8 @@ export const TemplateSegment: {
 export type TemplateSegment = TemplateSegment$instance;
 
 export interface TemplateValuesResult$instance {
-    acceptedValues: RouteValueDictionary;
-    combinedValues: RouteValueDictionary;
+    AcceptedValues: RouteValueDictionary;
+    CombinedValues: RouteValueDictionary;
 }
 
 
@@ -141,15 +141,15 @@ export const TemplateValuesResult: {
 export type TemplateValuesResult = TemplateValuesResult$instance;
 
 export abstract class RoutePrecedence$instance {
-    static computeInbound(template: RouteTemplate): decimal;
-    static computeOutbound(template: RouteTemplate): decimal;
+    static ComputeInbound(template: RouteTemplate): decimal;
+    static ComputeOutbound(template: RouteTemplate): decimal;
 }
 
 
 export type RoutePrecedence = RoutePrecedence$instance;
 
 export abstract class TemplateParser$instance {
-    static parse(routeTemplate: string): RouteTemplate;
+    static Parse(routeTemplate: string): RouteTemplate;
 }
 
 

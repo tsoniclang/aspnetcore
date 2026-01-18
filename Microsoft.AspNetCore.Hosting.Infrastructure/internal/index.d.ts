@@ -14,17 +14,17 @@ import type { Action, Func, Type } from "@tsonic/dotnet/System.js";
 import type { IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
 
 export interface ISupportsConfigureWebHost$instance {
-    configureWebHost(configure: Action<IWebHostBuilder>, configureOptions: Action<WebHostBuilderOptions>): IHostBuilder;
+    ConfigureWebHost(configure: Action<IWebHostBuilder>, configureOptions: Action<WebHostBuilderOptions>): IHostBuilder;
 }
 
 
 export type ISupportsConfigureWebHost = ISupportsConfigureWebHost$instance;
 
 export interface ISupportsStartup$instance {
-    configure(configure: Action<IApplicationBuilder>): IWebHostBuilder;
-    configure(configure: Action<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
-    useStartup<TStartup>(startupFactory: Func<WebHostBuilderContext, TStartup>): IWebHostBuilder;
-    useStartup(startupType: Type): IWebHostBuilder;
+    Configure(configure: Action<IApplicationBuilder>): IWebHostBuilder;
+    Configure(configure: Action<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
+    UseStartup<TStartup>(startupFactory: Func<WebHostBuilderContext, TStartup>): IWebHostBuilder;
+    UseStartup(startupType: Type): IWebHostBuilder;
 }
 
 

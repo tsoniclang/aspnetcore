@@ -21,44 +21,44 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum InputDateType {
-    date = 0,
-    dateTimeLocal = 1,
-    month = 2,
-    time = 3
+    Date = 0,
+    DateTimeLocal = 1,
+    Month = 2,
+    Time = 3
 }
 
 
 export interface IBrowserFile$instance {
-    readonly name: string;
-    readonly lastModified: DateTimeOffset;
-    readonly size: long;
-    readonly contentType: string;
-    openReadStream(maxAllowedSize?: long, cancellationToken?: CancellationToken): Stream;
+    readonly Name: string;
+    readonly LastModified: DateTimeOffset;
+    readonly Size: long;
+    readonly ContentType: string;
+    OpenReadStream(maxAllowedSize?: long, cancellationToken?: CancellationToken): Stream;
 }
 
 
 export type IBrowserFile = IBrowserFile$instance;
 
 export interface FieldIdentifier$instance {
-    readonly fieldName: string;
-    readonly model: unknown;
-    equals(obj: unknown): boolean;
-    equals(otherIdentifier: FieldIdentifier): boolean;
-    getHashCode(): int;
+    readonly FieldName: string;
+    readonly Model: unknown;
+    Equals(obj: unknown): boolean;
+    Equals(otherIdentifier: FieldIdentifier): boolean;
+    GetHashCode(): int;
 }
 
 
 export const FieldIdentifier: {
     new(model: unknown, fieldName: string): FieldIdentifier;
-    create<TField>(accessor: Expression<Func<TField>>): FieldIdentifier;
+    Create<TField>(accessor: Expression<Func<TField>>): FieldIdentifier;
 };
 
 
 export type FieldIdentifier = FieldIdentifier$instance;
 
 export interface AntiforgeryRequestToken$instance {
-    readonly formFieldName: string;
-    readonly value: string;
+    readonly FormFieldName: string;
+    readonly Value: string;
 }
 
 
@@ -70,7 +70,7 @@ export const AntiforgeryRequestToken: {
 export type AntiforgeryRequestToken = AntiforgeryRequestToken$instance;
 
 export interface AntiforgeryStateProvider$instance {
-    getAntiforgeryToken(): AntiforgeryRequestToken | undefined;
+    GetAntiforgeryToken(): AntiforgeryRequestToken | undefined;
 }
 
 
@@ -99,10 +99,10 @@ export type AntiforgeryToken = AntiforgeryToken$instance & __AntiforgeryToken$vi
 
 
 export interface DataAnnotationsValidator$instance extends ComponentBase {
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -123,23 +123,23 @@ export type DataAnnotationsValidator = DataAnnotationsValidator$instance & __Dat
 
 
 export interface EditContext$instance {
-    readonly model: unknown;
-    readonly properties: EditContextProperties;
-    shouldUseFieldIdentifiers: boolean;
-    field(fieldName: string): FieldIdentifier;
-    getValidationMessages(): IEnumerable<System_Internal.String>;
-    getValidationMessages(fieldIdentifier: FieldIdentifier): IEnumerable<System_Internal.String>;
-    getValidationMessages(accessor: Expression<Func<unknown>>): IEnumerable<System_Internal.String>;
-    isModified(): boolean;
-    isModified(fieldIdentifier: FieldIdentifier): boolean;
-    isModified(accessor: Expression<Func<unknown>>): boolean;
-    isValid(fieldIdentifier: FieldIdentifier): boolean;
-    isValid(accessor: Expression<Func<unknown>>): boolean;
-    markAsUnmodified(fieldIdentifier: FieldIdentifier): void;
-    markAsUnmodified(): void;
-    notifyFieldChanged(fieldIdentifier: FieldIdentifier): void;
-    notifyValidationStateChanged(): void;
-    validate(): boolean;
+    readonly Model: unknown;
+    readonly Properties: EditContextProperties;
+    ShouldUseFieldIdentifiers: boolean;
+    Field(fieldName: string): FieldIdentifier;
+    GetValidationMessages(): IEnumerable<System_Internal.String>;
+    GetValidationMessages(fieldIdentifier: FieldIdentifier): IEnumerable<System_Internal.String>;
+    GetValidationMessages(accessor: Expression<Func<unknown>>): IEnumerable<System_Internal.String>;
+    IsModified(): boolean;
+    IsModified(fieldIdentifier: FieldIdentifier): boolean;
+    IsModified(accessor: Expression<Func<unknown>>): boolean;
+    IsValid(fieldIdentifier: FieldIdentifier): boolean;
+    IsValid(accessor: Expression<Func<unknown>>): boolean;
+    MarkAsUnmodified(fieldIdentifier: FieldIdentifier): void;
+    MarkAsUnmodified(): void;
+    NotifyFieldChanged(fieldIdentifier: FieldIdentifier): void;
+    NotifyValidationStateChanged(): void;
+    Validate(): boolean;
 }
 
 
@@ -151,9 +151,9 @@ export const EditContext: {
 export type EditContext = EditContext$instance;
 
 export interface EditContextProperties$instance {
-    item: unknown;
-    remove(key: unknown): boolean;
-    tryGetValue(key: unknown, value: unknown): boolean;
+    Item: unknown;
+    Remove(key: unknown): boolean;
+    TryGetValue(key: unknown, value: unknown): boolean;
 }
 
 
@@ -165,22 +165,22 @@ export const EditContextProperties: {
 export type EditContextProperties = EditContextProperties$instance;
 
 export interface EditForm$instance extends ComponentBase {
-    get additionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set additionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    childContent: RenderFragment_1<EditContext>;
-    get editContext(): EditContext | undefined;
-    set editContext(value: EditContext);
-    enhance: boolean;
-    get formName(): string | undefined;
-    set formName(value: string);
-    model: unknown;
-    onInvalidSubmit: EventCallback_1<EditContext>;
-    onSubmit: EventCallback_1<EditContext>;
-    onValidSubmit: EventCallback_1<EditContext>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
+    ChildContent: RenderFragment_1<EditContext>;
+    get EditContext(): EditContext | undefined;
+    set EditContext(value: EditContext);
+    Enhance: boolean;
+    get FormName(): string | undefined;
+    set FormName(value: string);
+    Model: unknown;
+    OnInvalidSubmit: EventCallback_1<EditContext>;
+    OnSubmit: EventCallback_1<EditContext>;
+    OnValidSubmit: EventCallback_1<EditContext>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -201,13 +201,13 @@ export type EditForm = EditForm$instance & __EditForm$views;
 
 
 export interface Editor_1$instance<T> extends ComponentBase {
-    value: T;
-    valueChanged: EventCallback_1<T>;
-    valueExpression: Expression<Func<T>>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    Value: T;
+    ValueChanged: EventCallback_1<T>;
+    ValueExpression: Expression<Func<T>>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -227,7 +227,7 @@ export type Editor_1<T> = Editor_1$instance<T> & __Editor_1$views<T>;
 
 
 export interface FieldChangedEventArgs$instance extends EventArgs {
-    readonly fieldIdentifier: FieldIdentifier;
+    readonly FieldIdentifier: FieldIdentifier;
 }
 
 
@@ -239,7 +239,7 @@ export const FieldChangedEventArgs: {
 export type FieldChangedEventArgs = FieldChangedEventArgs$instance;
 
 export interface FieldCssClassProvider$instance {
-    getFieldCssClass(editContext: EditContext, fieldIdentifier: FieldIdentifier): string;
+    GetFieldCssClass(editContext: EditContext, fieldIdentifier: FieldIdentifier): string;
 }
 
 
@@ -251,13 +251,13 @@ export const FieldCssClassProvider: {
 export type FieldCssClassProvider = FieldCssClassProvider$instance;
 
 export interface FormMappingContext$instance {
-    readonly mappingScopeName: string;
-    getAllErrors(): IEnumerable<FormMappingError>;
-    getAllErrors(formName: string): IEnumerable<FormMappingError>;
-    getAttemptedValue(key: string): string | undefined;
-    getAttemptedValue(formName: string, key: string): string | undefined;
-    getErrors(key: string): FormMappingError | undefined;
-    getErrors(formName: string, key: string): FormMappingError | undefined;
+    readonly MappingScopeName: string;
+    GetAllErrors(): IEnumerable<FormMappingError>;
+    GetAllErrors(formName: string): IEnumerable<FormMappingError>;
+    GetAttemptedValue(key: string): string | undefined;
+    GetAttemptedValue(formName: string, key: string): string | undefined;
+    GetErrors(key: string): FormMappingError | undefined;
+    GetErrors(formName: string, key: string): FormMappingError | undefined;
 }
 
 
@@ -269,8 +269,8 @@ export const FormMappingContext: {
 export type FormMappingContext = FormMappingContext$instance;
 
 export interface FormMappingScope$instance {
-    childContent: RenderFragment_1<FormMappingContext>;
-    name: string;
+    ChildContent: RenderFragment_1<FormMappingContext>;
+    Name: string;
 }
 
 
@@ -289,16 +289,16 @@ export type FormMappingScope = FormMappingScope$instance & __FormMappingScope$vi
 
 
 export interface InputBase_1$instance<TValue> extends ComponentBase {
-    get additionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set additionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    displayName: string;
-    value: TValue;
-    valueChanged: EventCallback_1<TValue>;
-    valueExpression: Expression<Func<TValue>>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
+    DisplayName: string;
+    Value: TValue;
+    ValueChanged: EventCallback_1<TValue>;
+    ValueExpression: Expression<Func<TValue>>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -318,11 +318,11 @@ export type InputBase_1<TValue> = InputBase_1$instance<TValue> & __InputBase_1$v
 
 
 export interface InputCheckbox$instance extends InputBase_1$instance<System_Internal.Boolean> {
-    readonly element: Nullable<ElementReference>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    readonly Element: Nullable<ElementReference>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -341,13 +341,13 @@ export type InputCheckbox = InputCheckbox$instance & __InputCheckbox$views;
 
 
 export interface InputDate_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    readonly element: Nullable<ElementReference>;
-    parsingErrorMessage: string;
-    type: InputDateType;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    readonly Element: Nullable<ElementReference>;
+    ParsingErrorMessage: string;
+    Type: InputDateType;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -366,14 +366,14 @@ export type InputDate_1<TValue> = InputDate_1$instance<TValue> & __InputDate_1$v
 
 
 export interface InputFile$instance extends ComponentBase {
-    get additionalAttributes(): IDictionary<System_Internal.String, unknown> | undefined;
-    set additionalAttributes(value: IDictionary<System_Internal.String, unknown>);
-    readonly element: Nullable<ElementReference>;
-    onChange: EventCallback_1<InputFileChangeEventArgs>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get AdditionalAttributes(): IDictionary<System_Internal.String, unknown> | undefined;
+    set AdditionalAttributes(value: IDictionary<System_Internal.String, unknown>);
+    readonly Element: Nullable<ElementReference>;
+    OnChange: EventCallback_1<InputFileChangeEventArgs>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -394,9 +394,9 @@ export type InputFile = InputFile$instance & __InputFile$views;
 
 
 export interface InputFileChangeEventArgs$instance extends EventArgs {
-    readonly file: IBrowserFile;
-    readonly fileCount: int;
-    getMultipleFiles(maximumFileCount?: int): IReadOnlyList<IBrowserFile>;
+    readonly File: IBrowserFile;
+    readonly FileCount: int;
+    GetMultipleFiles(maximumFileCount?: int): IReadOnlyList<IBrowserFile>;
 }
 
 
@@ -408,11 +408,11 @@ export const InputFileChangeEventArgs: {
 export type InputFileChangeEventArgs = InputFileChangeEventArgs$instance;
 
 export interface InputHidden$instance extends InputBase_1$instance<System_Internal.String> {
-    readonly element: Nullable<ElementReference>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    readonly Element: Nullable<ElementReference>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -431,12 +431,12 @@ export type InputHidden = InputHidden$instance & __InputHidden$views;
 
 
 export interface InputNumber_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    readonly element: Nullable<ElementReference>;
-    parsingErrorMessage: string;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    readonly Element: Nullable<ElementReference>;
+    ParsingErrorMessage: string;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -455,15 +455,15 @@ export type InputNumber_1<TValue> = InputNumber_1$instance<TValue> & __InputNumb
 
 
 export interface InputRadio_1$instance<TValue> extends ComponentBase {
-    get additionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set additionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    readonly element: Nullable<ElementReference>;
-    name: string;
-    value: TValue;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
+    readonly Element: Nullable<ElementReference>;
+    Name: string;
+    Value: TValue;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -484,12 +484,12 @@ export type InputRadio_1<TValue> = InputRadio_1$instance<TValue> & __InputRadio_
 
 
 export interface InputRadioGroup_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    childContent: RenderFragment;
-    name: string;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    ChildContent: RenderFragment;
+    Name: string;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -508,12 +508,12 @@ export type InputRadioGroup_1<TValue> = InputRadioGroup_1$instance<TValue> & __I
 
 
 export interface InputSelect_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    childContent: RenderFragment;
-    readonly element: Nullable<ElementReference>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    ChildContent: RenderFragment;
+    readonly Element: Nullable<ElementReference>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -532,11 +532,11 @@ export type InputSelect_1<TValue> = InputSelect_1$instance<TValue> & __InputSele
 
 
 export interface InputText$instance extends InputBase_1$instance<System_Internal.String> {
-    readonly element: Nullable<ElementReference>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    readonly Element: Nullable<ElementReference>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -555,11 +555,11 @@ export type InputText = InputText$instance & __InputText$views;
 
 
 export interface InputTextArea$instance extends InputBase_1$instance<System_Internal.String> {
-    readonly element: Nullable<ElementReference>;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    readonly Element: Nullable<ElementReference>;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -578,9 +578,9 @@ export type InputTextArea = InputTextArea$instance & __InputTextArea$views;
 
 
 export interface RemoteBrowserFileStreamOptions$instance {
-    maxBufferSize: int;
-    maxSegmentSize: int;
-    segmentFetchTimeout: TimeSpan;
+    MaxBufferSize: int;
+    MaxSegmentSize: int;
+    SegmentFetchTimeout: TimeSpan;
 }
 
 
@@ -592,14 +592,14 @@ export const RemoteBrowserFileStreamOptions: {
 export type RemoteBrowserFileStreamOptions = RemoteBrowserFileStreamOptions$instance;
 
 export interface ValidationMessage_1$instance<TValue> extends ComponentBase {
-    get additionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set additionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    get for(): Expression<Func<TValue>> | undefined;
-    set for(value: Expression<Func<TValue>>);
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
+    get For(): Expression<Func<TValue>> | undefined;
+    set For(value: Expression<Func<TValue>>);
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -620,13 +620,13 @@ export type ValidationMessage_1<TValue> = ValidationMessage_1$instance<TValue> &
 
 
 export interface ValidationMessageStore$instance {
-    add(fieldIdentifier: FieldIdentifier, message: string): void;
-    add(accessor: Expression<Func<unknown>>, message: string): void;
-    add(fieldIdentifier: FieldIdentifier, messages: IEnumerable<System_Internal.String>): void;
-    add(accessor: Expression<Func<unknown>>, messages: IEnumerable<System_Internal.String>): void;
-    clear(): void;
-    clear(accessor: Expression<Func<unknown>>): void;
-    clear(fieldIdentifier: FieldIdentifier): void;
+    Add(fieldIdentifier: FieldIdentifier, message: string): void;
+    Add(accessor: Expression<Func<unknown>>, message: string): void;
+    Add(fieldIdentifier: FieldIdentifier, messages: IEnumerable<System_Internal.String>): void;
+    Add(accessor: Expression<Func<unknown>>, messages: IEnumerable<System_Internal.String>): void;
+    Clear(): void;
+    Clear(accessor: Expression<Func<unknown>>): void;
+    Clear(fieldIdentifier: FieldIdentifier): void;
     get_Item(fieldIdentifier: FieldIdentifier): IEnumerable<System_Internal.String>;
     get_Item(accessor: Expression<Func<unknown>>): IEnumerable<System_Internal.String>;
 }
@@ -645,7 +645,7 @@ export interface ValidationRequestedEventArgs$instance extends EventArgs {
 
 export const ValidationRequestedEventArgs: {
     new(): ValidationRequestedEventArgs;
-    readonly empty: ValidationRequestedEventArgs;
+    readonly Empty: ValidationRequestedEventArgs;
 };
 
 
@@ -657,20 +657,20 @@ export interface ValidationStateChangedEventArgs$instance extends EventArgs {
 
 export const ValidationStateChangedEventArgs: {
     new(): ValidationStateChangedEventArgs;
-    readonly empty: ValidationStateChangedEventArgs;
+    readonly Empty: ValidationStateChangedEventArgs;
 };
 
 
 export type ValidationStateChangedEventArgs = ValidationStateChangedEventArgs$instance;
 
 export interface ValidationSummary$instance extends ComponentBase {
-    get additionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set additionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    model: unknown;
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
+    Model: unknown;
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -691,25 +691,25 @@ export type ValidationSummary = ValidationSummary$instance & __ValidationSummary
 
 
 export abstract class BrowserFileExtensions$instance {
-    static requestImageFileAsync(browserFile: IBrowserFile, format: string, maxWidth: int, maxHeight: int): ValueTask<IBrowserFile>;
+    static RequestImageFileAsync(browserFile: IBrowserFile, format: string, maxWidth: int, maxHeight: int): ValueTask<IBrowserFile>;
 }
 
 
 export type BrowserFileExtensions = BrowserFileExtensions$instance;
 
 export abstract class EditContextDataAnnotationsExtensions$instance {
-    static addDataAnnotationsValidation(editContext: EditContext): EditContext;
-    static enableDataAnnotationsValidation(editContext: EditContext, serviceProvider: IServiceProvider): IDisposable;
-    static enableDataAnnotationsValidation(editContext: EditContext): IDisposable;
+    static AddDataAnnotationsValidation(editContext: EditContext): EditContext;
+    static EnableDataAnnotationsValidation(editContext: EditContext, serviceProvider: IServiceProvider): IDisposable;
+    static EnableDataAnnotationsValidation(editContext: EditContext): IDisposable;
 }
 
 
 export type EditContextDataAnnotationsExtensions = EditContextDataAnnotationsExtensions$instance;
 
 export abstract class EditContextFieldClassExtensions$instance {
-    static fieldCssClass<TField>(editContext: EditContext, accessor: Expression<Func<TField>>): string;
-    static fieldCssClass(editContext: EditContext, fieldIdentifier: FieldIdentifier): string;
-    static setFieldCssClassProvider(editContext: EditContext, fieldCssClassProvider: FieldCssClassProvider): void;
+    static FieldCssClass<TField>(editContext: EditContext, accessor: Expression<Func<TField>>): string;
+    static FieldCssClass(editContext: EditContext, fieldIdentifier: FieldIdentifier): string;
+    static SetFieldCssClassProvider(editContext: EditContext, fieldCssClassProvider: FieldCssClassProvider): void;
 }
 
 

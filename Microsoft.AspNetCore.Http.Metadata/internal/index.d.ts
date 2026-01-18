@@ -13,9 +13,9 @@ import type { Boolean as ClrBoolean, Int32, Int64, Nullable, Object as ClrObject
 import type { MethodInfo, ParameterInfo } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IAcceptsMetadata$instance {
-    readonly contentTypes: IReadOnlyList<System_Internal.String>;
-    readonly requestType: Type | undefined;
-    readonly isOptional: boolean;
+    readonly ContentTypes: IReadOnlyList<System_Internal.String>;
+    readonly RequestType: Type | undefined;
+    readonly IsOptional: boolean;
 }
 
 
@@ -46,7 +46,7 @@ export interface IDisableValidationMetadata$instance {
 export type IDisableValidationMetadata = IDisableValidationMetadata$instance;
 
 export interface IEndpointDescriptionMetadata$instance {
-    readonly description: string;
+    readonly Description: string;
 }
 
 
@@ -65,58 +65,58 @@ export interface IEndpointParameterMetadataProvider$instance {
 export type IEndpointParameterMetadataProvider = IEndpointParameterMetadataProvider$instance;
 
 export interface IEndpointSummaryMetadata$instance {
-    readonly summary: string;
+    readonly Summary: string;
 }
 
 
 export type IEndpointSummaryMetadata = IEndpointSummaryMetadata$instance;
 
 export interface IFormOptionsMetadata$instance {
-    readonly bufferBody: Nullable<System_Internal.Boolean>;
-    readonly memoryBufferThreshold: Nullable<System_Internal.Int32>;
-    readonly bufferBodyLengthLimit: Nullable<System_Internal.Int64>;
-    readonly valueCountLimit: Nullable<System_Internal.Int32>;
-    readonly keyLengthLimit: Nullable<System_Internal.Int32>;
-    readonly valueLengthLimit: Nullable<System_Internal.Int32>;
-    readonly multipartBoundaryLengthLimit: Nullable<System_Internal.Int32>;
-    readonly multipartHeadersCountLimit: Nullable<System_Internal.Int32>;
-    readonly multipartHeadersLengthLimit: Nullable<System_Internal.Int32>;
-    readonly multipartBodyLengthLimit: Nullable<System_Internal.Int64>;
+    readonly BufferBody: Nullable<System_Internal.Boolean>;
+    readonly MemoryBufferThreshold: Nullable<System_Internal.Int32>;
+    readonly BufferBodyLengthLimit: Nullable<System_Internal.Int64>;
+    readonly ValueCountLimit: Nullable<System_Internal.Int32>;
+    readonly KeyLengthLimit: Nullable<System_Internal.Int32>;
+    readonly ValueLengthLimit: Nullable<System_Internal.Int32>;
+    readonly MultipartBoundaryLengthLimit: Nullable<System_Internal.Int32>;
+    readonly MultipartHeadersCountLimit: Nullable<System_Internal.Int32>;
+    readonly MultipartHeadersLengthLimit: Nullable<System_Internal.Int32>;
+    readonly MultipartBodyLengthLimit: Nullable<System_Internal.Int64>;
 }
 
 
 export type IFormOptionsMetadata = IFormOptionsMetadata$instance;
 
 export interface IFromBodyMetadata$instance {
-    readonly allowEmpty: boolean;
+    readonly AllowEmpty: boolean;
 }
 
 
 export type IFromBodyMetadata = IFromBodyMetadata$instance;
 
 export interface IFromFormMetadata$instance {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
 export type IFromFormMetadata = IFromFormMetadata$instance;
 
 export interface IFromHeaderMetadata$instance {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
 export type IFromHeaderMetadata = IFromHeaderMetadata$instance;
 
 export interface IFromQueryMetadata$instance {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
 export type IFromQueryMetadata = IFromQueryMetadata$instance;
 
 export interface IFromRouteMetadata$instance {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
@@ -129,35 +129,35 @@ export interface IFromServiceMetadata$instance {
 export type IFromServiceMetadata = IFromServiceMetadata$instance;
 
 export interface IParameterBindingMetadata$instance {
-    readonly name: string;
-    readonly hasTryParse: boolean;
-    readonly hasBindAsync: boolean;
-    readonly parameterInfo: ParameterInfo;
-    readonly isOptional: boolean;
+    readonly Name: string;
+    readonly HasTryParse: boolean;
+    readonly HasBindAsync: boolean;
+    readonly ParameterInfo: ParameterInfo;
+    readonly IsOptional: boolean;
 }
 
 
 export type IParameterBindingMetadata = IParameterBindingMetadata$instance;
 
 export interface IProducesResponseTypeMetadata$instance {
-    readonly type: Type;
-    readonly statusCode: int;
-    readonly description: string;
-    readonly contentTypes: IEnumerable<System_Internal.String>;
+    readonly Type: Type;
+    readonly StatusCode: int;
+    readonly Description: string;
+    readonly ContentTypes: IEnumerable<System_Internal.String>;
 }
 
 
 export type IProducesResponseTypeMetadata = IProducesResponseTypeMetadata$instance;
 
 export interface IRequestSizeLimitMetadata$instance {
-    readonly maxRequestBodySize: Nullable<System_Internal.Int64>;
+    readonly MaxRequestBodySize: Nullable<System_Internal.Int64>;
 }
 
 
 export type IRequestSizeLimitMetadata = IRequestSizeLimitMetadata$instance;
 
 export interface IRouteDiagnosticsMetadata$instance {
-    readonly route: string;
+    readonly Route: string;
 }
 
 
@@ -170,17 +170,17 @@ export interface ISkipStatusCodePagesMetadata$instance {
 export type ISkipStatusCodePagesMetadata = ISkipStatusCodePagesMetadata$instance;
 
 export interface ITagsMetadata$instance {
-    readonly tags: IReadOnlyList<System_Internal.String>;
+    readonly Tags: IReadOnlyList<System_Internal.String>;
 }
 
 
 export type ITagsMetadata = ITagsMetadata$instance;
 
 export interface AcceptsMetadata$instance {
-    readonly contentTypes: IReadOnlyList<System_Internal.String>;
-    readonly isOptional: boolean;
-    readonly requestType: Type | undefined;
-    toString(): string;
+    readonly ContentTypes: IReadOnlyList<System_Internal.String>;
+    readonly IsOptional: boolean;
+    readonly RequestType: Type | undefined;
+    ToString(): string;
 }
 
 
@@ -199,9 +199,9 @@ export type AcceptsMetadata = AcceptsMetadata$instance & __AcceptsMetadata$views
 
 
 export interface FormMappingOptionsMetadata$instance {
-    readonly maxCollectionSize: Nullable<System_Internal.Int32>;
-    readonly maxKeySize: Nullable<System_Internal.Int32>;
-    readonly maxRecursionDepth: Nullable<System_Internal.Int32>;
+    readonly MaxCollectionSize: Nullable<System_Internal.Int32>;
+    readonly MaxKeySize: Nullable<System_Internal.Int32>;
+    readonly MaxRecursionDepth: Nullable<System_Internal.Int32>;
 }
 
 

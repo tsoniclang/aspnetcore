@@ -15,7 +15,7 @@ import type { HealthCheckRegistration, HealthCheckService, HealthReport, HealthS
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface HealthCheckMiddleware$instance {
-    invokeAsync(httpContext: HttpContext): Task;
+    InvokeAsync(httpContext: HttpContext): Task;
 }
 
 
@@ -27,11 +27,11 @@ export const HealthCheckMiddleware: {
 export type HealthCheckMiddleware = HealthCheckMiddleware$instance;
 
 export interface HealthCheckOptions$instance {
-    allowCachingResponses: boolean;
-    get predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean>);
-    responseWriter: Func<HttpContext, HealthReport, Task>;
-    resultStatusCodes: IDictionary<HealthStatus, System_Internal.Int32>;
+    AllowCachingResponses: boolean;
+    get Predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
+    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean>);
+    ResponseWriter: Func<HttpContext, HealthReport, Task>;
+    ResultStatusCodes: IDictionary<HealthStatus, System_Internal.Int32>;
 }
 
 

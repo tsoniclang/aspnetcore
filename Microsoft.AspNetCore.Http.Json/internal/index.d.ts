@@ -11,7 +11,7 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
 import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
 
 export interface JsonOptions$instance {
-    readonly serializerOptions: JsonSerializerOptions;
+    readonly SerializerOptions: JsonSerializerOptions;
 }
 
 

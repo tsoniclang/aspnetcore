@@ -12,52 +12,52 @@ import type { Byte, Int32, ReadOnlyMemory, TimeSpan, Void } from "@tsonic/dotnet
 import type { SslStream } from "@tsonic/dotnet/System.Net.Security.js";
 
 export interface IConnectionTimeoutFeature$instance {
-    cancelTimeout(): void;
-    setTimeout(timeSpan: TimeSpan): void;
+    CancelTimeout(): void;
+    SetTimeout(timeSpan: TimeSpan): void;
 }
 
 
 export type IConnectionTimeoutFeature = IConnectionTimeoutFeature$instance;
 
 export interface IDecrementConcurrentConnectionCountFeature$instance {
-    releaseConnection(): void;
+    ReleaseConnection(): void;
 }
 
 
 export type IDecrementConcurrentConnectionCountFeature = IDecrementConcurrentConnectionCountFeature$instance;
 
 export interface IHttp2StreamIdFeature$instance {
-    readonly streamId: int;
+    readonly StreamId: int;
 }
 
 
 export type IHttp2StreamIdFeature = IHttp2StreamIdFeature$instance;
 
 export interface IHttpMinRequestBodyDataRateFeature$instance {
-    get minDataRate(): MinDataRate | undefined;
-    set minDataRate(value: MinDataRate);
+    get MinDataRate(): MinDataRate | undefined;
+    set MinDataRate(value: MinDataRate);
 }
 
 
 export type IHttpMinRequestBodyDataRateFeature = IHttpMinRequestBodyDataRateFeature$instance;
 
 export interface IHttpMinResponseDataRateFeature$instance {
-    get minDataRate(): MinDataRate | undefined;
-    set minDataRate(value: MinDataRate);
+    get MinDataRate(): MinDataRate | undefined;
+    set MinDataRate(value: MinDataRate);
 }
 
 
 export type IHttpMinResponseDataRateFeature = IHttpMinResponseDataRateFeature$instance;
 
 export interface ISslStreamFeature$instance {
-    readonly sslStream: SslStream;
+    readonly SslStream: SslStream;
 }
 
 
 export type ISslStreamFeature = ISslStreamFeature$instance;
 
 export interface ITlsApplicationProtocolFeature$instance {
-    readonly applicationProtocol: ReadOnlyMemory<System_Internal.Byte>;
+    readonly ApplicationProtocol: ReadOnlyMemory<System_Internal.Byte>;
 }
 
 

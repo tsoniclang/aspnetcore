@@ -18,48 +18,48 @@ import type { Boolean as ClrBoolean, DateTimeOffset, Guid, Object as ClrObject, 
 import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
 
 export interface ICacheableKeyRingProvider$instance {
-    getCacheableKeyRing(now: DateTimeOffset): CacheableKeyRing;
+    GetCacheableKeyRing(now: DateTimeOffset): CacheableKeyRing;
 }
 
 
 export type ICacheableKeyRingProvider = ICacheableKeyRingProvider$instance;
 
 export interface IDefaultKeyResolver$instance {
-    resolveDefaultKeyPolicy(now: DateTimeOffset, allKeys: IEnumerable<IKey>): DefaultKeyResolution;
+    ResolveDefaultKeyPolicy(now: DateTimeOffset, allKeys: IEnumerable<IKey>): DefaultKeyResolution;
 }
 
 
 export type IDefaultKeyResolver = IDefaultKeyResolver$instance;
 
 export interface IInternalXmlKeyManager$instance {
-    createNewKey(keyId: Guid, creationDate: DateTimeOffset, activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
-    deserializeDescriptorFromKeyElement(keyElement: XElement): IAuthenticatedEncryptorDescriptor;
-    revokeSingleKey(keyId: Guid, revocationDate: DateTimeOffset, reason: string): void;
+    CreateNewKey(keyId: Guid, creationDate: DateTimeOffset, activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
+    DeserializeDescriptorFromKeyElement(keyElement: XElement): IAuthenticatedEncryptorDescriptor;
+    RevokeSingleKey(keyId: Guid, revocationDate: DateTimeOffset, reason: string): void;
 }
 
 
 export type IInternalXmlKeyManager = IInternalXmlKeyManager$instance;
 
 export interface IKeyRing$instance {
-    readonly defaultAuthenticatedEncryptor: IAuthenticatedEncryptor | undefined;
-    readonly defaultKeyId: Guid;
-    getAuthenticatedEncryptorByKeyId(keyId: Guid, isRevoked: boolean): IAuthenticatedEncryptor | undefined;
+    readonly DefaultAuthenticatedEncryptor: IAuthenticatedEncryptor | undefined;
+    readonly DefaultKeyId: Guid;
+    GetAuthenticatedEncryptorByKeyId(keyId: Guid, isRevoked: boolean): IAuthenticatedEncryptor | undefined;
 }
 
 
 export type IKeyRing = IKeyRing$instance;
 
 export interface IKeyRingProvider$instance {
-    getCurrentKeyRing(): IKeyRing;
+    GetCurrentKeyRing(): IKeyRing;
 }
 
 
 export type IKeyRingProvider = IKeyRingProvider$instance;
 
 export interface DefaultKeyResolution$instance {
-    defaultKey: IKey | undefined;
-    fallbackKey: IKey | undefined;
-    shouldGenerateNewKey: boolean;
+    DefaultKey: IKey | undefined;
+    FallbackKey: IKey | undefined;
+    ShouldGenerateNewKey: boolean;
 }
 
 

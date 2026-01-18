@@ -22,9 +22,9 @@ import type { IStringLocalizer, IStringLocalizerFactory, LocalizedString } from 
 export interface IHtmlLocalizer$instance {
     get_Item2(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     get_Item2(name: string): LocalizedHtmlString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
-    getString(name: string, ...arguments: unknown[]): LocalizedString;
-    getString(name: string): LocalizedString;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetString(name: string, ...arguments: unknown[]): LocalizedString;
+    GetString(name: string): LocalizedString;
 }
 
 
@@ -33,9 +33,9 @@ export type IHtmlLocalizer = IHtmlLocalizer$instance;
 export interface IHtmlLocalizer_1$instance<TResource> extends IHtmlLocalizer {
     get_Item2(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     get_Item2(name: string): LocalizedHtmlString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
-    getString(name: string, ...arguments: unknown[]): LocalizedString;
-    getString(name: string): LocalizedString;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetString(name: string, ...arguments: unknown[]): LocalizedString;
+    GetString(name: string): LocalizedString;
     get_Item(name: string): LocalizedHtmlString;
 }
 
@@ -45,8 +45,8 @@ export interface IHtmlLocalizer_1$instance<TResource> extends IHtmlLocalizer$ins
 export type IHtmlLocalizer_1<TResource> = IHtmlLocalizer_1$instance<TResource>;
 
 export interface IHtmlLocalizerFactory$instance {
-    create(baseName: string, location: string): IHtmlLocalizer;
-    create(resourceSource: Type): IHtmlLocalizer;
+    Create(baseName: string, location: string): IHtmlLocalizer;
+    Create(resourceSource: Type): IHtmlLocalizer;
 }
 
 
@@ -55,9 +55,9 @@ export type IHtmlLocalizerFactory = IHtmlLocalizerFactory$instance;
 export interface IViewLocalizer$instance extends IHtmlLocalizer {
     get_Item2(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     get_Item2(name: string): LocalizedHtmlString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
-    getString(name: string, ...arguments: unknown[]): LocalizedString;
-    getString(name: string): LocalizedString;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetString(name: string, ...arguments: unknown[]): LocalizedString;
+    GetString(name: string): LocalizedString;
     get_Item(name: string): LocalizedHtmlString;
 }
 
@@ -69,9 +69,9 @@ export type IViewLocalizer = IViewLocalizer$instance;
 export interface HtmlLocalizer$instance {
     get_Item(name: string): LocalizedHtmlString;
     get_Item(name: string, ...arguments: unknown[]): LocalizedHtmlString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
-    getString(name: string): LocalizedString;
-    getString(name: string, ...arguments: unknown[]): LocalizedString;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetString(name: string): LocalizedString;
+    GetString(name: string, ...arguments: unknown[]): LocalizedString;
 }
 
 
@@ -92,9 +92,9 @@ export type HtmlLocalizer = HtmlLocalizer$instance & __HtmlLocalizer$views;
 export interface HtmlLocalizer_1$instance<TResource> extends IHtmlLocalizer_1<TResource> {
     get_Item(name: string): LocalizedHtmlString;
     get_Item(name: string, ...arguments: unknown[]): LocalizedHtmlString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
-    getString(name: string): LocalizedString;
-    getString(name: string, ...arguments: unknown[]): LocalizedString;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetString(name: string): LocalizedString;
+    GetString(name: string, ...arguments: unknown[]): LocalizedString;
 }
 
 
@@ -111,8 +111,8 @@ export type HtmlLocalizer_1<TResource> = HtmlLocalizer_1$instance<TResource> & _
 
 
 export interface HtmlLocalizerFactory$instance {
-    create(resourceSource: Type): IHtmlLocalizer;
-    create(baseName: string, location: string): IHtmlLocalizer;
+    Create(resourceSource: Type): IHtmlLocalizer;
+    Create(baseName: string, location: string): IHtmlLocalizer;
 }
 
 
@@ -131,10 +131,10 @@ export type HtmlLocalizerFactory = HtmlLocalizerFactory$instance & __HtmlLocaliz
 
 
 export interface LocalizedHtmlString$instance {
-    readonly isResourceNotFound: boolean;
-    readonly name: string;
-    readonly value: string;
-    writeTo(writer: TextWriter, encoder: HtmlEncoder): void;
+    readonly IsResourceNotFound: boolean;
+    readonly Name: string;
+    readonly Value: string;
+    WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
@@ -155,12 +155,12 @@ export type LocalizedHtmlString = LocalizedHtmlString$instance & __LocalizedHtml
 
 
 export interface ViewLocalizer$instance extends IViewLocalizer {
-    contextualize(viewContext: ViewContext): void;
+    Contextualize(viewContext: ViewContext): void;
     get_Item(key: string): LocalizedHtmlString;
     get_Item(key: string, ...arguments: unknown[]): LocalizedHtmlString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
-    getString(name: string): LocalizedString;
-    getString(name: string, ...values: unknown[]): LocalizedString;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetString(name: string): LocalizedString;
+    GetString(name: string, ...values: unknown[]): LocalizedString;
 }
 
 
@@ -180,9 +180,9 @@ export type ViewLocalizer = ViewLocalizer$instance & __ViewLocalizer$views;
 
 
 export abstract class HtmlLocalizerExtensions$instance {
-    static getAllStrings(htmlLocalizer: IHtmlLocalizer): IEnumerable<LocalizedString>;
-    static getHtml(htmlLocalizer: IHtmlLocalizer, name: string, ...arguments: unknown[]): LocalizedHtmlString;
-    static getHtml(htmlLocalizer: IHtmlLocalizer, name: string): LocalizedHtmlString;
+    static GetAllStrings(htmlLocalizer: IHtmlLocalizer): IEnumerable<LocalizedString>;
+    static GetHtml(htmlLocalizer: IHtmlLocalizer, name: string, ...arguments: unknown[]): LocalizedHtmlString;
+    static GetHtml(htmlLocalizer: IHtmlLocalizer, name: string): LocalizedHtmlString;
 }
 
 

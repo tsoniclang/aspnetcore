@@ -18,8 +18,8 @@ import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Micro
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface SocketConnectionContextFactory$instance {
-    create(socket: Socket): ConnectionContext;
-    dispose(): void;
+    Create(socket: Socket): ConnectionContext;
+    Dispose(): void;
 }
 
 
@@ -31,11 +31,11 @@ export const SocketConnectionContextFactory: {
 export type SocketConnectionContextFactory = SocketConnectionContextFactory$instance;
 
 export interface SocketConnectionFactoryOptions$instance {
-    ioQueueCount: int;
-    maxReadBufferSize: Nullable<System_Internal.Int64>;
-    maxWriteBufferSize: Nullable<System_Internal.Int64>;
-    unsafePreferInlineScheduling: boolean;
-    waitForDataBeforeAllocatingBuffer: boolean;
+    IOQueueCount: int;
+    MaxReadBufferSize: Nullable<System_Internal.Int64>;
+    MaxWriteBufferSize: Nullable<System_Internal.Int64>;
+    UnsafePreferInlineScheduling: boolean;
+    WaitForDataBeforeAllocatingBuffer: boolean;
 }
 
 
@@ -47,8 +47,8 @@ export const SocketConnectionFactoryOptions: {
 export type SocketConnectionFactoryOptions = SocketConnectionFactoryOptions$instance;
 
 export interface SocketTransportFactory$instance {
-    bindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
-    canBind(endpoint: EndPoint): boolean;
+    BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
+    CanBind(endpoint: EndPoint): boolean;
 }
 
 
@@ -68,20 +68,20 @@ export type SocketTransportFactory = SocketTransportFactory$instance & __SocketT
 
 
 export interface SocketTransportOptions$instance {
-    backlog: int;
-    createBoundListenSocket: Func<EndPoint, Socket>;
-    ioQueueCount: int;
-    maxReadBufferSize: Nullable<System_Internal.Int64>;
-    maxWriteBufferSize: Nullable<System_Internal.Int64>;
-    noDelay: boolean;
-    unsafePreferInlineScheduling: boolean;
-    waitForDataBeforeAllocatingBuffer: boolean;
+    Backlog: int;
+    CreateBoundListenSocket: Func<EndPoint, Socket>;
+    IOQueueCount: int;
+    MaxReadBufferSize: Nullable<System_Internal.Int64>;
+    MaxWriteBufferSize: Nullable<System_Internal.Int64>;
+    NoDelay: boolean;
+    UnsafePreferInlineScheduling: boolean;
+    WaitForDataBeforeAllocatingBuffer: boolean;
 }
 
 
 export const SocketTransportOptions: {
     new(): SocketTransportOptions;
-    createDefaultBoundListenSocket(endpoint: EndPoint): Socket;
+    CreateDefaultBoundListenSocket(endpoint: EndPoint): Socket;
 };
 
 

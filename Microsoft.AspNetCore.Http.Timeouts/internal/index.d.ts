@@ -13,15 +13,15 @@ import type { Attribute, Int32, Nullable, Object as ClrObject, String as ClrStri
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 
 export interface IHttpRequestTimeoutFeature$instance {
-    readonly requestTimeoutToken: CancellationToken;
-    disableTimeout(): void;
+    readonly RequestTimeoutToken: CancellationToken;
+    DisableTimeout(): void;
 }
 
 
 export type IHttpRequestTimeoutFeature = IHttpRequestTimeoutFeature$instance;
 
 export interface DisableRequestTimeoutAttribute$instance extends Attribute {
-    toString(): string;
+    ToString(): string;
 }
 
 
@@ -33,8 +33,8 @@ export const DisableRequestTimeoutAttribute: {
 export type DisableRequestTimeoutAttribute = DisableRequestTimeoutAttribute$instance;
 
 export interface RequestTimeoutAttribute$instance extends Attribute {
-    readonly policyName: string | undefined;
-    readonly timeout: Nullable<TimeSpan>;
+    readonly PolicyName: string | undefined;
+    readonly Timeout: Nullable<TimeSpan>;
 }
 
 
@@ -47,10 +47,10 @@ export const RequestTimeoutAttribute: {
 export type RequestTimeoutAttribute = RequestTimeoutAttribute$instance;
 
 export interface RequestTimeoutOptions$instance {
-    defaultPolicy: RequestTimeoutPolicy;
-    readonly policies: IDictionary<System_Internal.String, RequestTimeoutPolicy>;
-    addPolicy(policyName: string, timeout: TimeSpan): RequestTimeoutOptions;
-    addPolicy(policyName: string, policy: RequestTimeoutPolicy): RequestTimeoutOptions;
+    DefaultPolicy: RequestTimeoutPolicy;
+    readonly Policies: IDictionary<System_Internal.String, RequestTimeoutPolicy>;
+    AddPolicy(policyName: string, timeout: TimeSpan): RequestTimeoutOptions;
+    AddPolicy(policyName: string, policy: RequestTimeoutPolicy): RequestTimeoutOptions;
 }
 
 
@@ -62,10 +62,10 @@ export const RequestTimeoutOptions: {
 export type RequestTimeoutOptions = RequestTimeoutOptions$instance;
 
 export interface RequestTimeoutPolicy$instance {
-    timeout: Nullable<TimeSpan>;
-    timeoutStatusCode: Nullable<System_Internal.Int32>;
-    get writeTimeoutResponse(): RequestDelegate | undefined;
-    set writeTimeoutResponse(value: RequestDelegate);
+    Timeout: Nullable<TimeSpan>;
+    TimeoutStatusCode: Nullable<System_Internal.Int32>;
+    get WriteTimeoutResponse(): RequestDelegate | undefined;
+    set WriteTimeoutResponse(value: RequestDelegate);
 }
 
 

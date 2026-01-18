@@ -13,12 +13,12 @@ import type { IDisposable, Object as ClrObject, String as ClrString, Void } from
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface SectionContent$instance {
-    childContent: RenderFragment;
-    get sectionId(): unknown | undefined;
-    set sectionId(value: unknown);
-    get sectionName(): string | undefined;
-    set sectionName(value: string);
-    dispose(): void;
+    ChildContent: RenderFragment;
+    get SectionId(): unknown | undefined;
+    set SectionId(value: unknown);
+    get SectionName(): string | undefined;
+    set SectionName(value: string);
+    Dispose(): void;
 }
 
 
@@ -37,11 +37,11 @@ export type SectionContent = SectionContent$instance & __SectionContent$views;
 
 
 export interface SectionOutlet$instance {
-    get sectionId(): unknown | undefined;
-    set sectionId(value: unknown);
-    get sectionName(): string | undefined;
-    set sectionName(value: string);
-    dispose(): void;
+    get SectionId(): unknown | undefined;
+    set SectionId(value: unknown);
+    get SectionName(): string | undefined;
+    set SectionName(value: string);
+    Dispose(): void;
 }
 
 

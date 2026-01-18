@@ -1,25 +1,37 @@
 {
   "namespace": "Microsoft.AspNetCore.Identity.Data",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Identity"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
-      "tsEmitName": "ForgotPasswordRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest::Email:System.String",
           "clrName": "Email",
-          "tsEmitName": "email",
           "metadataToken": 385876158,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Email|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -37,78 +49,72 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "email",
-          "isStatic": false,
-          "tsSignatureId": "Email|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876158
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664023
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.InfoRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
-      "tsEmitName": "InfoRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.InfoRequest::NewEmail:System.String",
           "clrName": "NewEmail",
-          "tsEmitName": "newEmail",
           "metadataToken": 385876176,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "NewEmail|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.InfoRequest::NewPassword:System.String",
           "clrName": "NewPassword",
-          "tsEmitName": "newPassword",
           "metadataToken": 385876177,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "NewPassword|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.InfoRequest::OldPassword:System.String",
           "clrName": "OldPassword",
-          "tsEmitName": "oldPassword",
           "metadataToken": 385876178,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "OldPassword|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -126,84 +132,54 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "newEmail",
-          "isStatic": false,
-          "tsSignatureId": "NewEmail|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876176
-          }
-        },
-        {
-          "tsName": "newPassword",
-          "isStatic": false,
-          "tsSignatureId": "NewPassword|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876177
-          }
-        },
-        {
-          "tsName": "oldPassword",
-          "isStatic": false,
-          "tsSignatureId": "OldPassword|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876178
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664101
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.InfoResponse",
       "clrName": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
-      "tsEmitName": "InfoResponse",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.InfoResponse::Email:System.String",
           "clrName": "Email",
-          "tsEmitName": "email",
           "metadataToken": 385876179,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Email|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.InfoResponse::IsEmailConfirmed:System.Boolean",
           "clrName": "IsEmailConfirmed",
-          "tsEmitName": "isEmailConfirmed",
           "metadataToken": 385876180,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsEmailConfirmed|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -221,102 +197,90 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "email",
-          "isStatic": false,
-          "tsSignatureId": "Email|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876179
-          }
-        },
-        {
-          "tsName": "isEmailConfirmed",
-          "isStatic": false,
-          "tsSignatureId": "IsEmailConfirmed|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876180
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.InfoResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664106
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.LoginRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
-      "tsEmitName": "LoginRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.LoginRequest::Email:System.String",
           "clrName": "Email",
-          "tsEmitName": "email",
           "metadataToken": 385876181,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Email|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.LoginRequest::Password:System.String",
           "clrName": "Password",
-          "tsEmitName": "password",
           "metadataToken": 385876182,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Password|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.LoginRequest::TwoFactorCode:System.String",
           "clrName": "TwoFactorCode",
-          "tsEmitName": "twoFactorCode",
           "metadataToken": 385876183,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TwoFactorCode|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.LoginRequest::TwoFactorRecoveryCode:System.String",
           "clrName": "TwoFactorRecoveryCode",
-          "tsEmitName": "twoFactorRecoveryCode",
           "metadataToken": 385876184,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TwoFactorRecoveryCode|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -334,80 +298,36 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "email",
-          "isStatic": false,
-          "tsSignatureId": "Email|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876181
-          }
-        },
-        {
-          "tsName": "password",
-          "isStatic": false,
-          "tsSignatureId": "Password|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876182
-          }
-        },
-        {
-          "tsName": "twoFactorCode",
-          "isStatic": false,
-          "tsSignatureId": "TwoFactorCode|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876183
-          }
-        },
-        {
-          "tsName": "twoFactorRecoveryCode",
-          "isStatic": false,
-          "tsSignatureId": "TwoFactorRecoveryCode|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876184
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664115
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.RefreshRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.RefreshRequest",
-      "tsEmitName": "RefreshRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.RefreshRequest::RefreshToken:System.String",
           "clrName": "RefreshToken",
-          "tsEmitName": "refreshToken",
           "metadataToken": 385876185,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "RefreshToken|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RefreshRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -425,64 +345,54 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RefreshRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "refreshToken",
-          "isStatic": false,
-          "tsSignatureId": "RefreshToken|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RefreshRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876185
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RefreshRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664118
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.RegisterRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
-      "tsEmitName": "RegisterRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.RegisterRequest::Email:System.String",
           "clrName": "Email",
-          "tsEmitName": "email",
           "metadataToken": 385876186,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Email|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.RegisterRequest::Password:System.String",
           "clrName": "Password",
-          "tsEmitName": "password",
           "metadataToken": 385876187,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Password|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -500,60 +410,36 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "email",
-          "isStatic": false,
-          "tsSignatureId": "Email|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876186
-          }
-        },
-        {
-          "tsName": "password",
-          "isStatic": false,
-          "tsSignatureId": "Password|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876187
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664123
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest",
-      "tsEmitName": "ResendConfirmationEmailRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest::Email:System.String",
           "clrName": "Email",
-          "tsEmitName": "email",
           "metadataToken": 385876188,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Email|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -571,78 +457,72 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "email",
-          "isStatic": false,
-          "tsSignatureId": "Email|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876188
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResendConfirmationEmailRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664126
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
-      "tsEmitName": "ResetPasswordRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest::Email:System.String",
           "clrName": "Email",
-          "tsEmitName": "email",
           "metadataToken": 385876189,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Email|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest::ResetCode:System.String",
           "clrName": "ResetCode",
-          "tsEmitName": "resetCode",
           "metadataToken": 385876190,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ResetCode|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest::NewPassword:System.String",
           "clrName": "NewPassword",
-          "tsEmitName": "newPassword",
           "metadataToken": 385876191,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "NewPassword|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -660,126 +540,108 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "email",
-          "isStatic": false,
-          "tsSignatureId": "Email|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876189
-          }
-        },
-        {
-          "tsName": "resetCode",
-          "isStatic": false,
-          "tsSignatureId": "ResetCode|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876190
-          }
-        },
-        {
-          "tsName": "newPassword",
-          "isStatic": false,
-          "tsSignatureId": "NewPassword|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876191
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.ResetPasswordRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664133
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
       "clrName": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
-      "tsEmitName": "TwoFactorRequest",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorRequest::Enable:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Enable",
-          "tsEmitName": "enable",
           "metadataToken": 385876192,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Enable|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorRequest::TwoFactorCode:System.String",
           "clrName": "TwoFactorCode",
-          "tsEmitName": "twoFactorCode",
           "metadataToken": 385876193,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TwoFactorCode|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorRequest::ResetSharedKey:System.Boolean",
           "clrName": "ResetSharedKey",
-          "tsEmitName": "resetSharedKey",
           "metadataToken": 385876194,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ResetSharedKey|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorRequest::ResetRecoveryCodes:System.Boolean",
           "clrName": "ResetRecoveryCodes",
-          "tsEmitName": "resetRecoveryCodes",
           "metadataToken": 385876195,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ResetRecoveryCodes|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorRequest::ForgetMachine:System.Boolean",
           "clrName": "ForgetMachine",
-          "tsEmitName": "forgetMachine",
           "metadataToken": 385876196,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ForgetMachine|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -797,146 +659,108 @@
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "enable",
-          "isStatic": false,
-          "tsSignatureId": "Enable|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876192
-          }
-        },
-        {
-          "tsName": "twoFactorCode",
-          "isStatic": false,
-          "tsSignatureId": "TwoFactorCode|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876193
-          }
-        },
-        {
-          "tsName": "resetSharedKey",
-          "isStatic": false,
-          "tsSignatureId": "ResetSharedKey|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876194
-          }
-        },
-        {
-          "tsName": "resetRecoveryCodes",
-          "isStatic": false,
-          "tsSignatureId": "ResetRecoveryCodes|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876195
-          }
-        },
-        {
-          "tsName": "forgetMachine",
-          "isStatic": false,
-          "tsSignatureId": "ForgetMachine|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876196
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorRequest",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664144
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
       "clrName": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
-      "tsEmitName": "TwoFactorResponse",
       "assemblyName": "Microsoft.AspNetCore.Identity",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorResponse::SharedKey:System.String",
           "clrName": "SharedKey",
-          "tsEmitName": "sharedKey",
           "metadataToken": 385876197,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SharedKey|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorResponse::RecoveryCodesLeft:System.Int32",
           "clrName": "RecoveryCodesLeft",
-          "tsEmitName": "recoveryCodesLeft",
           "metadataToken": 385876198,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "RecoveryCodesLeft|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorResponse::RecoveryCodes:System.String[]",
           "clrName": "RecoveryCodes",
-          "tsEmitName": "recoveryCodes",
           "metadataToken": 385876199,
           "canonicalSignature": ":System.String[]",
           "normalizedSignature": "RecoveryCodes|:System.String[]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorResponse::IsTwoFactorEnabled:System.Boolean",
           "clrName": "IsTwoFactorEnabled",
-          "tsEmitName": "isTwoFactorEnabled",
           "metadataToken": 385876200,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsTwoFactorEnabled|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         },
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.Data.TwoFactorResponse::IsMachineRemembered:System.Boolean",
           "clrName": "IsMachineRemembered",
-          "tsEmitName": "isMachineRemembered",
           "metadataToken": 385876201,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsMachineRemembered|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }
@@ -953,69 +777,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "sharedKey",
-          "isStatic": false,
-          "tsSignatureId": "SharedKey|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876197
-          }
-        },
-        {
-          "tsName": "recoveryCodesLeft",
-          "isStatic": false,
-          "tsSignatureId": "RecoveryCodesLeft|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876198
-          }
-        },
-        {
-          "tsName": "recoveryCodes",
-          "isStatic": false,
-          "tsSignatureId": "RecoveryCodes|:System.String[]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876199
-          }
-        },
-        {
-          "tsName": "isTwoFactorEnabled",
-          "isStatic": false,
-          "tsSignatureId": "IsTwoFactorEnabled|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876200
-          }
-        },
-        {
-          "tsName": "isMachineRemembered",
-          "isStatic": false,
-          "tsSignatureId": "IsMachineRemembered|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 385876201
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Identity.Data.TwoFactorResponse",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
-            "metadataToken": 100664155
-          }
         }
       ]
     }

@@ -15,8 +15,8 @@ import type { JSCallResultType } from "../../Microsoft.JSInterop/internal/index.
 import type { Int64, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IInternalWebJSInProcessRuntime$instance {
-    invokeJS(invocationInfo: JSInvocationInfo): string;
-    invokeJS(identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): string;
+    InvokeJS(invocationInfo: JSInvocationInfo): string;
+    InvokeJS(identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): string;
 }
 
 

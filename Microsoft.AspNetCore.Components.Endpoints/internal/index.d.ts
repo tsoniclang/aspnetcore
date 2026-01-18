@@ -14,23 +14,23 @@ import type { Boolean as ClrBoolean, Int32, Object as ClrObject, TimeSpan, Type 
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IComponentPrerenderer$instance {
-    readonly dispatcher: Dispatcher;
-    prerenderComponentAsync(httpContext: HttpContext, componentType: Type, renderMode: IComponentRenderMode, parameters: ParameterView): ValueTask<IHtmlAsyncContent>;
-    prerenderPersistedStateAsync(httpContext: HttpContext, serializationMode: PersistedStateSerializationMode): ValueTask<IHtmlContent>;
+    readonly Dispatcher: Dispatcher;
+    PrerenderComponentAsync(httpContext: HttpContext, componentType: Type, renderMode: IComponentRenderMode, parameters: ParameterView): ValueTask<IHtmlAsyncContent>;
+    PrerenderPersistedStateAsync(httpContext: HttpContext, serializationMode: PersistedStateSerializationMode): ValueTask<IHtmlContent>;
 }
 
 
 export type IComponentPrerenderer = IComponentPrerenderer$instance;
 
 export interface IRazorComponentEndpointInvoker$instance {
-    render(context: HttpContext): Task;
+    Render(context: HttpContext): Task;
 }
 
 
 export type IRazorComponentEndpointInvoker = IRazorComponentEndpointInvoker$instance;
 
 export interface ComponentTypeMetadata$instance {
-    readonly type: Type;
+    readonly Type: Type;
 }
 
 
@@ -42,12 +42,12 @@ export const ComponentTypeMetadata: {
 export type ComponentTypeMetadata = ComponentTypeMetadata$instance;
 
 export interface RazorComponentsServiceOptions$instance {
-    detailedErrors: boolean;
-    maxFormMappingCollectionSize: int;
-    maxFormMappingErrorCount: int;
-    maxFormMappingKeySize: int;
-    maxFormMappingRecursionDepth: int;
-    temporaryRedirectionUrlValidityDuration: TimeSpan;
+    DetailedErrors: boolean;
+    MaxFormMappingCollectionSize: int;
+    MaxFormMappingErrorCount: int;
+    MaxFormMappingKeySize: int;
+    MaxFormMappingRecursionDepth: int;
+    TemporaryRedirectionUrlValidityDuration: TimeSpan;
 }
 
 
@@ -59,7 +59,7 @@ export const RazorComponentsServiceOptions: {
 export type RazorComponentsServiceOptions = RazorComponentsServiceOptions$instance;
 
 export interface RootComponentMetadata$instance {
-    readonly type: Type;
+    readonly Type: Type;
 }
 
 

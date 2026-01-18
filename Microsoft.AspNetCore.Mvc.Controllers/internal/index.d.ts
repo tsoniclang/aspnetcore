@@ -24,47 +24,47 @@ import type { MethodInfo, ParameterInfo, PropertyInfo, TypeInfo } from "@tsonic/
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IControllerActivator$instance {
-    create(context: ControllerContext): unknown;
-    release(context: ControllerContext, controller: unknown): void;
-    releaseAsync(context: ControllerContext, controller: unknown): ValueTask;
+    Create(context: ControllerContext): unknown;
+    Release(context: ControllerContext, controller: unknown): void;
+    ReleaseAsync(context: ControllerContext, controller: unknown): ValueTask;
 }
 
 
 export type IControllerActivator = IControllerActivator$instance;
 
 export interface IControllerActivatorProvider$instance {
-    createActivator(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
-    createAsyncReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
-    createReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
+    CreateActivator(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
+    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
+    CreateReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
 }
 
 
 export type IControllerActivatorProvider = IControllerActivatorProvider$instance;
 
 export interface IControllerFactory$instance {
-    createController(context: ControllerContext): unknown;
-    releaseController(context: ControllerContext, controller: unknown): void;
-    releaseControllerAsync(context: ControllerContext, controller: unknown): ValueTask;
+    CreateController(context: ControllerContext): unknown;
+    ReleaseController(context: ControllerContext, controller: unknown): void;
+    ReleaseControllerAsync(context: ControllerContext, controller: unknown): ValueTask;
 }
 
 
 export type IControllerFactory = IControllerFactory$instance;
 
 export interface IControllerFactoryProvider$instance {
-    createAsyncControllerReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
-    createControllerFactory(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
-    createControllerReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
+    CreateAsyncControllerReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
+    CreateControllerFactory(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
+    CreateControllerReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
 }
 
 
 export type IControllerFactoryProvider = IControllerFactoryProvider$instance;
 
 export interface ControllerActionDescriptor$instance extends ActionDescriptor {
-    actionName: string;
-    controllerName: string;
-    controllerTypeInfo: TypeInfo;
-    displayName: string;
-    methodInfo: MethodInfo;
+    ActionName: string;
+    ControllerName: string;
+    ControllerTypeInfo: TypeInfo;
+    DisplayName: string;
+    MethodInfo: MethodInfo;
 }
 
 
@@ -76,9 +76,9 @@ export const ControllerActionDescriptor: {
 export type ControllerActionDescriptor = ControllerActionDescriptor$instance;
 
 export interface ControllerActivatorProvider$instance {
-    createActivator(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
-    createAsyncReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
-    createReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
+    CreateActivator(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
+    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
+    CreateReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
 }
 
 
@@ -97,7 +97,7 @@ export type ControllerActivatorProvider = ControllerActivatorProvider$instance &
 
 
 export interface ControllerBoundPropertyDescriptor$instance extends ParameterDescriptor {
-    propertyInfo: PropertyInfo;
+    PropertyInfo: PropertyInfo;
 }
 
 
@@ -114,7 +114,7 @@ export type ControllerBoundPropertyDescriptor = ControllerBoundPropertyDescripto
 
 
 export interface ControllerFeature$instance {
-    readonly controllers: IList<TypeInfo>;
+    readonly Controllers: IList<TypeInfo>;
 }
 
 
@@ -126,7 +126,7 @@ export const ControllerFeature: {
 export type ControllerFeature = ControllerFeature$instance;
 
 export interface ControllerFeatureProvider$instance extends IApplicationFeatureProvider {
-    populateFeature(parts: IEnumerable<ApplicationPart>, feature: ControllerFeature): void;
+    PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: ControllerFeature): void;
 }
 
 
@@ -145,7 +145,7 @@ export type ControllerFeatureProvider = ControllerFeatureProvider$instance & __C
 
 
 export interface ControllerParameterDescriptor$instance extends ParameterDescriptor {
-    parameterInfo: ParameterInfo;
+    ParameterInfo: ParameterInfo;
 }
 
 
@@ -162,8 +162,8 @@ export type ControllerParameterDescriptor = ControllerParameterDescriptor$instan
 
 
 export interface ServiceBasedControllerActivator$instance {
-    create(actionContext: ControllerContext): unknown;
-    release(context: ControllerContext, controller: unknown): void;
+    Create(actionContext: ControllerContext): unknown;
+    Release(context: ControllerContext, controller: unknown): void;
 }
 
 

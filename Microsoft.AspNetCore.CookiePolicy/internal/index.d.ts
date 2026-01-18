@@ -15,19 +15,19 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export enum HttpOnlyPolicy {
-    none = 0,
-    always = 1
+    None = 0,
+    Always = 1
 }
 
 
 export interface AppendCookieContext$instance {
-    readonly context: HttpContext;
-    cookieName: string;
-    readonly cookieOptions: CookieOptions;
-    cookieValue: string;
-    readonly hasConsent: boolean;
-    readonly isConsentNeeded: boolean;
-    issueCookie: boolean;
+    readonly Context: HttpContext;
+    CookieName: string;
+    readonly CookieOptions: CookieOptions;
+    CookieValue: string;
+    readonly HasConsent: boolean;
+    readonly IsConsentNeeded: boolean;
+    IssueCookie: boolean;
 }
 
 
@@ -39,8 +39,8 @@ export const AppendCookieContext: {
 export type AppendCookieContext = AppendCookieContext$instance;
 
 export interface CookiePolicyMiddleware$instance {
-    options: CookiePolicyOptions;
-    invoke(context: HttpContext): Task;
+    Options: CookiePolicyOptions;
+    Invoke(context: HttpContext): Task;
 }
 
 
@@ -53,12 +53,12 @@ export const CookiePolicyMiddleware: {
 export type CookiePolicyMiddleware = CookiePolicyMiddleware$instance;
 
 export interface DeleteCookieContext$instance {
-    readonly context: HttpContext;
-    cookieName: string;
-    readonly cookieOptions: CookieOptions;
-    readonly hasConsent: boolean;
-    readonly isConsentNeeded: boolean;
-    issueCookie: boolean;
+    readonly Context: HttpContext;
+    CookieName: string;
+    readonly CookieOptions: CookieOptions;
+    readonly HasConsent: boolean;
+    readonly IsConsentNeeded: boolean;
+    IssueCookie: boolean;
 }
 
 

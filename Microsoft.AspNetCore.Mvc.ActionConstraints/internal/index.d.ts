@@ -14,8 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Boolean as ClrBoolean, Int32, IServiceProvider, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IActionConstraint$instance extends IActionConstraintMetadata {
-    readonly order: int;
-    accept(context: ActionConstraintContext): boolean;
+    readonly Order: int;
+    Accept(context: ActionConstraintContext): boolean;
 }
 
 
@@ -24,8 +24,8 @@ export interface IActionConstraint$instance extends IActionConstraintMetadata$in
 export type IActionConstraint = IActionConstraint$instance;
 
 export interface IActionConstraintFactory$instance extends IActionConstraintMetadata {
-    readonly isReusable: boolean;
-    createInstance(services: IServiceProvider): IActionConstraint;
+    readonly IsReusable: boolean;
+    CreateInstance(services: IServiceProvider): IActionConstraint;
 }
 
 
@@ -40,16 +40,16 @@ export interface IActionConstraintMetadata$instance {
 export type IActionConstraintMetadata = IActionConstraintMetadata$instance;
 
 export interface IActionConstraintProvider$instance {
-    readonly order: int;
-    onProvidersExecuting(context: ActionConstraintProviderContext): void;
+    readonly Order: int;
+    OnProvidersExecuting(context: ActionConstraintProviderContext): void;
 }
 
 
 export type IActionConstraintProvider = IActionConstraintProvider$instance;
 
 export interface ActionSelectorCandidate$instance {
-    readonly action: ActionDescriptor;
-    readonly constraints: IReadOnlyList<IActionConstraint> | undefined;
+    readonly Action: ActionDescriptor;
+    readonly Constraints: IReadOnlyList<IActionConstraint> | undefined;
 }
 
 
@@ -61,9 +61,9 @@ export const ActionSelectorCandidate: {
 export type ActionSelectorCandidate = ActionSelectorCandidate$instance;
 
 export interface ActionConstraintContext$instance {
-    candidates: IReadOnlyList<ActionSelectorCandidate>;
-    currentCandidate: ActionSelectorCandidate;
-    routeContext: RouteContext;
+    Candidates: IReadOnlyList<ActionSelectorCandidate>;
+    CurrentCandidate: ActionSelectorCandidate;
+    RouteContext: RouteContext;
 }
 
 
@@ -75,9 +75,9 @@ export const ActionConstraintContext: {
 export type ActionConstraintContext = ActionConstraintContext$instance;
 
 export interface ActionConstraintItem$instance {
-    constraint: IActionConstraint;
-    isReusable: boolean;
-    readonly metadata: IActionConstraintMetadata;
+    Constraint: IActionConstraint;
+    IsReusable: boolean;
+    readonly Metadata: IActionConstraintMetadata;
 }
 
 
@@ -89,9 +89,9 @@ export const ActionConstraintItem: {
 export type ActionConstraintItem = ActionConstraintItem$instance;
 
 export interface ActionConstraintProviderContext$instance {
-    readonly action: ActionDescriptor;
-    readonly httpContext: HttpContext;
-    readonly results: IList<ActionConstraintItem>;
+    readonly Action: ActionDescriptor;
+    readonly HttpContext: HttpContext;
+    readonly Results: IList<ActionConstraintItem>;
 }
 
 
@@ -103,9 +103,9 @@ export const ActionConstraintProviderContext: {
 export type ActionConstraintProviderContext = ActionConstraintProviderContext$instance;
 
 export interface ActionMethodSelectorAttribute$instance extends Attribute, IActionConstraintMetadata {
-    order: int;
-    accept(context: ActionConstraintContext): boolean;
-    isValidForRequest(routeContext: RouteContext, action: ActionDescriptor): boolean;
+    Order: int;
+    Accept(context: ActionConstraintContext): boolean;
+    IsValidForRequest(routeContext: RouteContext, action: ActionDescriptor): boolean;
 }
 
 
@@ -121,15 +121,15 @@ export type ActionMethodSelectorAttribute = ActionMethodSelectorAttribute$instan
 
 
 export interface HttpMethodActionConstraint$instance extends IActionConstraintMetadata {
-    readonly httpMethods: IEnumerable<System_Internal.String>;
-    readonly order: int;
-    accept(context: ActionConstraintContext): boolean;
+    readonly HttpMethods: IEnumerable<System_Internal.String>;
+    readonly Order: int;
+    Accept(context: ActionConstraintContext): boolean;
 }
 
 
 export const HttpMethodActionConstraint: {
     new(httpMethods: IEnumerable<System_Internal.String>): HttpMethodActionConstraint;
-    readonly httpMethodConstraintOrder: int;
+    readonly HttpMethodConstraintOrder: int;
 };
 
 

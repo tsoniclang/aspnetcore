@@ -11,14 +11,14 @@ import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/Sy
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IEmailSender$instance {
-    sendEmailAsync(email: string, subject: string, htmlMessage: string): Task;
+    SendEmailAsync(email: string, subject: string, htmlMessage: string): Task;
 }
 
 
 export type IEmailSender = IEmailSender$instance;
 
 export interface NoOpEmailSender$instance {
-    sendEmailAsync(email: string, subject: string, htmlMessage: string): Task;
+    SendEmailAsync(email: string, subject: string, htmlMessage: string): Task;
 }
 
 

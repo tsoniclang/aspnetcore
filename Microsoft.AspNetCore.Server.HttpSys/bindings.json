@@ -1,1127 +1,665 @@
 {
   "namespace": "Microsoft.AspNetCore.Server.HttpSys",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Server.HttpSys"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
-      "tsEmitName": "AuthenticationSchemes",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67112866,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes::NoneMicrosoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "clrName": "None",
-          "tsEmitName": "none",
           "metadataToken": 67112867,
           "normalizedSignature": "None|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes::BasicMicrosoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "clrName": "Basic",
-          "tsEmitName": "basic",
           "metadataToken": 67112868,
           "normalizedSignature": "Basic|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes::NTLMMicrosoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "clrName": "NTLM",
-          "tsEmitName": "NTLM",
           "metadataToken": 67112869,
           "normalizedSignature": "NTLM|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes::NegotiateMicrosoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "clrName": "Negotiate",
-          "tsEmitName": "negotiate",
           "metadataToken": 67112870,
           "normalizedSignature": "Negotiate|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes::KerberosMicrosoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "clrName": "Kerberos",
-          "tsEmitName": "kerberos",
           "metadataToken": 67112871,
           "normalizedSignature": "Kerberos|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112866
-          }
-        },
-        {
-          "tsName": "none",
-          "isStatic": true,
-          "tsSignatureId": "None|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112867
-          }
-        },
-        {
-          "tsName": "basic",
-          "isStatic": true,
-          "tsSignatureId": "Basic|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112868
-          }
-        },
-        {
-          "tsName": "NTLM",
-          "isStatic": true,
-          "tsSignatureId": "NTLM|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112869
-          }
-        },
-        {
-          "tsName": "negotiate",
-          "isStatic": true,
-          "tsSignatureId": "Negotiate|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112870
-          }
-        },
-        {
-          "tsName": "kerberos",
-          "isStatic": true,
-          "tsSignatureId": "Kerberos|Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112871
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
-      "tsEmitName": "ClientCertificateMethod",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67112872,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod::NoCertificateMicrosoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "clrName": "NoCertificate",
-          "tsEmitName": "noCertificate",
           "metadataToken": 67112873,
           "normalizedSignature": "NoCertificate|Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod::AllowCertificateMicrosoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "clrName": "AllowCertificate",
-          "tsEmitName": "allowCertificate",
           "metadataToken": 67112874,
           "normalizedSignature": "AllowCertificate|Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod::AllowRenegotationMicrosoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "clrName": "AllowRenegotation",
-          "tsEmitName": "allowRenegotation",
           "metadataToken": 67112875,
           "normalizedSignature": "AllowRenegotation|Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112872
-          }
-        },
-        {
-          "tsName": "noCertificate",
-          "isStatic": true,
-          "tsSignatureId": "NoCertificate|Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112873
-          }
-        },
-        {
-          "tsName": "allowCertificate",
-          "isStatic": true,
-          "tsSignatureId": "AllowCertificate|Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112874
-          }
-        },
-        {
-          "tsName": "allowRenegotation",
-          "isStatic": true,
-          "tsSignatureId": "AllowRenegotation|Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112875
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
-      "tsEmitName": "Http503VerbosityLevel",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel::value__System.Int64",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67112882,
           "normalizedSignature": "value__|System.Int64|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel::BasicMicrosoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "clrName": "Basic",
-          "tsEmitName": "basic",
           "metadataToken": 67112883,
           "normalizedSignature": "Basic|Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel::LimitedMicrosoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "clrName": "Limited",
-          "tsEmitName": "limited",
           "metadataToken": 67112884,
           "normalizedSignature": "Limited|Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel::FullMicrosoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "clrName": "Full",
-          "tsEmitName": "full",
           "metadataToken": 67112885,
           "normalizedSignature": "Full|Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int64|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112882
-          }
-        },
-        {
-          "tsName": "basic",
-          "isStatic": true,
-          "tsSignatureId": "Basic|Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112883
-          }
-        },
-        {
-          "tsName": "limited",
-          "isStatic": true,
-          "tsSignatureId": "Limited|Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112884
-          }
-        },
-        {
-          "tsName": "full",
-          "isStatic": true,
-          "tsSignatureId": "Full|Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112885
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-      "tsEmitName": "HttpSysRequestTimingType",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67112923,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::ConnectionStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "ConnectionStart",
-          "tsEmitName": "connectionStart",
           "metadataToken": 67112924,
           "normalizedSignature": "ConnectionStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::DataStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "DataStart",
-          "tsEmitName": "dataStart",
           "metadataToken": 67112925,
           "normalizedSignature": "DataStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsCertificateLoadStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsCertificateLoadStart",
-          "tsEmitName": "tlsCertificateLoadStart",
           "metadataToken": 67112926,
           "normalizedSignature": "TlsCertificateLoadStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsCertificateLoadEndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsCertificateLoadEnd",
-          "tsEmitName": "tlsCertificateLoadEnd",
           "metadataToken": 67112927,
           "normalizedSignature": "TlsCertificateLoadEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsHandshakeLeg1StartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsHandshakeLeg1Start",
-          "tsEmitName": "tlsHandshakeLeg1Start",
           "metadataToken": 67112928,
           "normalizedSignature": "TlsHandshakeLeg1Start|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsHandshakeLeg1EndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsHandshakeLeg1End",
-          "tsEmitName": "tlsHandshakeLeg1End",
           "metadataToken": 67112929,
           "normalizedSignature": "TlsHandshakeLeg1End|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsHandshakeLeg2StartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsHandshakeLeg2Start",
-          "tsEmitName": "tlsHandshakeLeg2Start",
           "metadataToken": 67112930,
           "normalizedSignature": "TlsHandshakeLeg2Start|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsHandshakeLeg2EndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsHandshakeLeg2End",
-          "tsEmitName": "tlsHandshakeLeg2End",
           "metadataToken": 67112931,
           "normalizedSignature": "TlsHandshakeLeg2End|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsAttributesQueryStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsAttributesQueryStart",
-          "tsEmitName": "tlsAttributesQueryStart",
           "metadataToken": 67112932,
           "normalizedSignature": "TlsAttributesQueryStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsAttributesQueryEndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsAttributesQueryEnd",
-          "tsEmitName": "tlsAttributesQueryEnd",
           "metadataToken": 67112933,
           "normalizedSignature": "TlsAttributesQueryEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsClientCertQueryStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsClientCertQueryStart",
-          "tsEmitName": "tlsClientCertQueryStart",
           "metadataToken": 67112934,
           "normalizedSignature": "TlsClientCertQueryStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::TlsClientCertQueryEndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "TlsClientCertQueryEnd",
-          "tsEmitName": "tlsClientCertQueryEnd",
           "metadataToken": 67112935,
           "normalizedSignature": "TlsClientCertQueryEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::Http2StreamStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "Http2StreamStart",
-          "tsEmitName": "http2StreamStart",
           "metadataToken": 67112936,
           "normalizedSignature": "Http2StreamStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::Http2HeaderDecodeStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "Http2HeaderDecodeStart",
-          "tsEmitName": "http2HeaderDecodeStart",
           "metadataToken": 67112937,
           "normalizedSignature": "Http2HeaderDecodeStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::Http2HeaderDecodeEndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "Http2HeaderDecodeEnd",
-          "tsEmitName": "http2HeaderDecodeEnd",
           "metadataToken": 67112938,
           "normalizedSignature": "Http2HeaderDecodeEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestHeaderParseStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestHeaderParseStart",
-          "tsEmitName": "requestHeaderParseStart",
           "metadataToken": 67112939,
           "normalizedSignature": "RequestHeaderParseStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestHeaderParseEndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestHeaderParseEnd",
-          "tsEmitName": "requestHeaderParseEnd",
           "metadataToken": 67112940,
           "normalizedSignature": "RequestHeaderParseEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestRoutingStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestRoutingStart",
-          "tsEmitName": "requestRoutingStart",
           "metadataToken": 67112941,
           "normalizedSignature": "RequestRoutingStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestRoutingEndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestRoutingEnd",
-          "tsEmitName": "requestRoutingEnd",
           "metadataToken": 67112942,
           "normalizedSignature": "RequestRoutingEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestQueuedForInspectionMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestQueuedForInspection",
-          "tsEmitName": "requestQueuedForInspection",
           "metadataToken": 67112943,
           "normalizedSignature": "RequestQueuedForInspection|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestDeliveredForInspectionMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestDeliveredForInspection",
-          "tsEmitName": "requestDeliveredForInspection",
           "metadataToken": 67112944,
           "normalizedSignature": "RequestDeliveredForInspection|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestReturnedAfterInspectionMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestReturnedAfterInspection",
-          "tsEmitName": "requestReturnedAfterInspection",
           "metadataToken": 67112945,
           "normalizedSignature": "RequestReturnedAfterInspection|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestQueuedForDelegationMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestQueuedForDelegation",
-          "tsEmitName": "requestQueuedForDelegation",
           "metadataToken": 67112946,
           "normalizedSignature": "RequestQueuedForDelegation|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestDeliveredForDelegationMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestDeliveredForDelegation",
-          "tsEmitName": "requestDeliveredForDelegation",
           "metadataToken": 67112947,
           "normalizedSignature": "RequestDeliveredForDelegation|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestReturnedAfterDelegationMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestReturnedAfterDelegation",
-          "tsEmitName": "requestReturnedAfterDelegation",
           "metadataToken": 67112948,
           "normalizedSignature": "RequestReturnedAfterDelegation|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestQueuedForIOMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestQueuedForIO",
-          "tsEmitName": "requestQueuedForIO",
           "metadataToken": 67112949,
           "normalizedSignature": "RequestQueuedForIO|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::RequestDeliveredForIOMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "RequestDeliveredForIO",
-          "tsEmitName": "requestDeliveredForIO",
           "metadataToken": 67112950,
           "normalizedSignature": "RequestDeliveredForIO|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::Http3StreamStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "Http3StreamStart",
-          "tsEmitName": "http3StreamStart",
           "metadataToken": 67112951,
           "normalizedSignature": "Http3StreamStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::Http3HeaderDecodeStartMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "Http3HeaderDecodeStart",
-          "tsEmitName": "http3HeaderDecodeStart",
           "metadataToken": 67112952,
           "normalizedSignature": "Http3HeaderDecodeStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType::Http3HeaderDecodeEndMicrosoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "clrName": "Http3HeaderDecodeEnd",
-          "tsEmitName": "http3HeaderDecodeEnd",
           "metadataToken": 67112953,
           "normalizedSignature": "Http3HeaderDecodeEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112923
-          }
-        },
-        {
-          "tsName": "connectionStart",
-          "isStatic": true,
-          "tsSignatureId": "ConnectionStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112924
-          }
-        },
-        {
-          "tsName": "dataStart",
-          "isStatic": true,
-          "tsSignatureId": "DataStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112925
-          }
-        },
-        {
-          "tsName": "tlsCertificateLoadStart",
-          "isStatic": true,
-          "tsSignatureId": "TlsCertificateLoadStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112926
-          }
-        },
-        {
-          "tsName": "tlsCertificateLoadEnd",
-          "isStatic": true,
-          "tsSignatureId": "TlsCertificateLoadEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112927
-          }
-        },
-        {
-          "tsName": "tlsHandshakeLeg1Start",
-          "isStatic": true,
-          "tsSignatureId": "TlsHandshakeLeg1Start|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112928
-          }
-        },
-        {
-          "tsName": "tlsHandshakeLeg1End",
-          "isStatic": true,
-          "tsSignatureId": "TlsHandshakeLeg1End|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112929
-          }
-        },
-        {
-          "tsName": "tlsHandshakeLeg2Start",
-          "isStatic": true,
-          "tsSignatureId": "TlsHandshakeLeg2Start|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112930
-          }
-        },
-        {
-          "tsName": "tlsHandshakeLeg2End",
-          "isStatic": true,
-          "tsSignatureId": "TlsHandshakeLeg2End|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112931
-          }
-        },
-        {
-          "tsName": "tlsAttributesQueryStart",
-          "isStatic": true,
-          "tsSignatureId": "TlsAttributesQueryStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112932
-          }
-        },
-        {
-          "tsName": "tlsAttributesQueryEnd",
-          "isStatic": true,
-          "tsSignatureId": "TlsAttributesQueryEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112933
-          }
-        },
-        {
-          "tsName": "tlsClientCertQueryStart",
-          "isStatic": true,
-          "tsSignatureId": "TlsClientCertQueryStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112934
-          }
-        },
-        {
-          "tsName": "tlsClientCertQueryEnd",
-          "isStatic": true,
-          "tsSignatureId": "TlsClientCertQueryEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112935
-          }
-        },
-        {
-          "tsName": "http2StreamStart",
-          "isStatic": true,
-          "tsSignatureId": "Http2StreamStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112936
-          }
-        },
-        {
-          "tsName": "http2HeaderDecodeStart",
-          "isStatic": true,
-          "tsSignatureId": "Http2HeaderDecodeStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112937
-          }
-        },
-        {
-          "tsName": "http2HeaderDecodeEnd",
-          "isStatic": true,
-          "tsSignatureId": "Http2HeaderDecodeEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112938
-          }
-        },
-        {
-          "tsName": "requestHeaderParseStart",
-          "isStatic": true,
-          "tsSignatureId": "RequestHeaderParseStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112939
-          }
-        },
-        {
-          "tsName": "requestHeaderParseEnd",
-          "isStatic": true,
-          "tsSignatureId": "RequestHeaderParseEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112940
-          }
-        },
-        {
-          "tsName": "requestRoutingStart",
-          "isStatic": true,
-          "tsSignatureId": "RequestRoutingStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112941
-          }
-        },
-        {
-          "tsName": "requestRoutingEnd",
-          "isStatic": true,
-          "tsSignatureId": "RequestRoutingEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112942
-          }
-        },
-        {
-          "tsName": "requestQueuedForInspection",
-          "isStatic": true,
-          "tsSignatureId": "RequestQueuedForInspection|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112943
-          }
-        },
-        {
-          "tsName": "requestDeliveredForInspection",
-          "isStatic": true,
-          "tsSignatureId": "RequestDeliveredForInspection|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112944
-          }
-        },
-        {
-          "tsName": "requestReturnedAfterInspection",
-          "isStatic": true,
-          "tsSignatureId": "RequestReturnedAfterInspection|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112945
-          }
-        },
-        {
-          "tsName": "requestQueuedForDelegation",
-          "isStatic": true,
-          "tsSignatureId": "RequestQueuedForDelegation|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112946
-          }
-        },
-        {
-          "tsName": "requestDeliveredForDelegation",
-          "isStatic": true,
-          "tsSignatureId": "RequestDeliveredForDelegation|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112947
-          }
-        },
-        {
-          "tsName": "requestReturnedAfterDelegation",
-          "isStatic": true,
-          "tsSignatureId": "RequestReturnedAfterDelegation|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112948
-          }
-        },
-        {
-          "tsName": "requestQueuedForIO",
-          "isStatic": true,
-          "tsSignatureId": "RequestQueuedForIO|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112949
-          }
-        },
-        {
-          "tsName": "requestDeliveredForIO",
-          "isStatic": true,
-          "tsSignatureId": "RequestDeliveredForIO|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112950
-          }
-        },
-        {
-          "tsName": "http3StreamStart",
-          "isStatic": true,
-          "tsSignatureId": "Http3StreamStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112951
-          }
-        },
-        {
-          "tsName": "http3HeaderDecodeStart",
-          "isStatic": true,
-          "tsSignatureId": "Http3HeaderDecodeStart|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112952
-          }
-        },
-        {
-          "tsName": "http3HeaderDecodeEnd",
-          "isStatic": true,
-          "tsSignatureId": "Http3HeaderDecodeEnd|Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112953
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
-      "tsEmitName": "RequestQueueMode",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67113218,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode::CreateMicrosoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 67113219,
           "normalizedSignature": "Create|Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode::AttachMicrosoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "clrName": "Attach",
-          "tsEmitName": "attach",
           "metadataToken": 67113220,
           "normalizedSignature": "Attach|Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode::CreateOrAttachMicrosoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "clrName": "CreateOrAttach",
-          "tsEmitName": "createOrAttach",
           "metadataToken": 67113221,
           "normalizedSignature": "CreateOrAttach|Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67113218
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67113219
-          }
-        },
-        {
-          "tsName": "attach",
-          "isStatic": true,
-          "tsSignatureId": "Attach|Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67113220
-          }
-        },
-        {
-          "tsName": "createOrAttach",
-          "isStatic": true,
-          "tsSignatureId": "CreateOrAttach|Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67113221
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
-      "tsEmitName": "IHttpSysRequestDelegationFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature::DelegateRequest(Microsoft.AspNetCore.Server.HttpSys.DelegationRule):System.Void",
           "clrName": "DelegateRequest",
-          "tsEmitName": "delegateRequest",
           "metadataToken": 100663977,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.HttpSys.DelegationRule):System.Void",
           "normalizedSignature": "DelegateRequest|(Microsoft.AspNetCore.Server.HttpSys.DelegationRule):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1131,102 +669,89 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature::CanDelegate:System.Boolean",
           "clrName": "CanDelegate",
-          "tsEmitName": "canDelegate",
           "metadataToken": 385876119,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanDelegate|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "delegateRequest",
-          "isStatic": false,
-          "tsSignatureId": "DelegateRequest|(Microsoft.AspNetCore.Server.HttpSys.DelegationRule):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100663977
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "canDelegate",
-          "isStatic": false,
-          "tsSignatureId": "CanDelegate|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876119
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestInfoFeature",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestInfoFeature",
-      "tsEmitName": "IHttpSysRequestInfoFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestInfoFeature::RequestInfo:System.Collections.Generic.IReadOnlyDictionary_2[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "RequestInfo",
-          "tsEmitName": "requestInfo",
           "metadataToken": 385876120,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyDictionary_2[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "RequestInfo|:System.Collections.Generic.IReadOnlyDictionary_2[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestInfoFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "requestInfo",
-          "isStatic": false,
-          "tsSignatureId": "RequestInfo|:System.Collections.Generic.IReadOnlyDictionary_2[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestInfoFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876120
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestPropertyFeature",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestPropertyFeature",
-      "tsEmitName": "IHttpSysRequestPropertyFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestPropertyFeature::TryGetTlsClientHello(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
           "clrName": "TryGetTlsClientHello",
-          "tsEmitName": "tryGetTlsClientHello",
           "metadataToken": 100663979,
           "canonicalSignature": "(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean",
           "normalizedSignature": "TryGetTlsClientHello|(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestPropertyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false,
@@ -1241,37 +766,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "tryGetTlsClientHello",
-          "isStatic": false,
-          "tsSignatureId": "TryGetTlsClientHello|(System.Span_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Int32\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestPropertyFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100663979
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
-      "tsEmitName": "IHttpSysRequestTimingFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature::TryGetTimestamp(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.Int64\u0026):System.Boolean",
           "clrName": "TryGetTimestamp",
-          "tsEmitName": "tryGetTimestamp",
           "metadataToken": 100663981,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.Int64\u0026):System.Boolean",
           "normalizedSignature": "TryGetTimestamp|(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.Int64\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false,
@@ -1285,13 +808,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature::TryGetElapsedTime(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.TimeSpan\u0026):System.Boolean",
           "clrName": "TryGetElapsedTime",
-          "tsEmitName": "tryGetElapsedTime",
           "metadataToken": 100663982,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.TimeSpan\u0026):System.Boolean",
           "normalizedSignature": "TryGetElapsedTime|(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.TimeSpan\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false,
@@ -1307,73 +835,53 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature::Timestamps:System.ReadOnlySpan_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Timestamps",
-          "tsEmitName": "timestamps",
           "metadataToken": 385876121,
           "canonicalSignature": ":System.ReadOnlySpan_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Timestamps|:System.ReadOnlySpan_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "tryGetTimestamp",
-          "isStatic": false,
-          "tsSignatureId": "TryGetTimestamp|(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.Int64\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100663981
-          }
-        },
-        {
-          "tsName": "tryGetElapsedTime",
-          "isStatic": false,
-          "tsSignatureId": "TryGetElapsedTime|(Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType,System.TimeSpan\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100663982
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "timestamps",
-          "isStatic": false,
-          "tsSignatureId": "Timestamps|:System.ReadOnlySpan_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876121
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IServerDelegationFeature",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.IServerDelegationFeature",
-      "tsEmitName": "IServerDelegationFeature",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.IServerDelegationFeature::CreateDelegationRule(System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "clrName": "CreateDelegationRule",
-          "tsEmitName": "createDelegationRule",
           "metadataToken": 100663984,
           "canonicalSignature": "(System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "normalizedSignature": "CreateDelegationRule|(System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.DelegationRule|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IServerDelegationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1382,196 +890,161 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createDelegationRule",
-          "isStatic": false,
-          "tsSignatureId": "CreateDelegationRule|(System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.DelegationRule|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IServerDelegationFeature",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100663984
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
-      "tsEmitName": "AuthenticationManager",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager::Schemes:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "clrName": "Schemes",
-          "tsEmitName": "schemes",
           "metadataToken": 385876082,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "normalizedSignature": "Schemes|:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager::AllowAnonymous:System.Boolean",
           "clrName": "AllowAnonymous",
-          "tsEmitName": "allowAnonymous",
           "metadataToken": 385876083,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowAnonymous|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager::AutomaticAuthentication:System.Boolean",
           "clrName": "AutomaticAuthentication",
-          "tsEmitName": "automaticAuthentication",
           "metadataToken": 385876084,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AutomaticAuthentication|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager::AuthenticationDisplayName:System.String",
           "clrName": "AuthenticationDisplayName",
-          "tsEmitName": "authenticationDisplayName",
           "metadataToken": 385876085,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AuthenticationDisplayName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager::EnableKerberosCredentialCaching:System.Boolean",
           "clrName": "EnableKerberosCredentialCaching",
-          "tsEmitName": "enableKerberosCredentialCaching",
           "metadataToken": 385876086,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "EnableKerberosCredentialCaching|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager::CaptureCredentials:System.Boolean",
           "clrName": "CaptureCredentials",
-          "tsEmitName": "captureCredentials",
           "metadataToken": 385876087,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CaptureCredentials|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "schemes",
-          "isStatic": false,
-          "tsSignatureId": "Schemes|:Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876082
-          }
-        },
-        {
-          "tsName": "allowAnonymous",
-          "isStatic": false,
-          "tsSignatureId": "AllowAnonymous|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876083
-          }
-        },
-        {
-          "tsName": "automaticAuthentication",
-          "isStatic": false,
-          "tsSignatureId": "AutomaticAuthentication|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876084
-          }
-        },
-        {
-          "tsName": "authenticationDisplayName",
-          "isStatic": false,
-          "tsSignatureId": "AuthenticationDisplayName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876085
-          }
-        },
-        {
-          "tsName": "enableKerberosCredentialCaching",
-          "isStatic": false,
-          "tsSignatureId": "EnableKerberosCredentialCaching|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876086
-          }
-        },
-        {
-          "tsName": "captureCredentials",
-          "isStatic": false,
-          "tsSignatureId": "CaptureCredentials|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876087
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
-      "tsEmitName": "DelegationRule",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.DelegationRule::Dispose():System.Void",
           "clrName": "Dispose",
-          "tsEmitName": "dispose",
           "metadataToken": 100663912,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1581,366 +1054,414 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.DelegationRule::QueueName:System.String",
           "clrName": "QueueName",
-          "tsEmitName": "queueName",
           "metadataToken": 385876088,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "QueueName|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.DelegationRule::UrlPrefix:System.String",
           "clrName": "UrlPrefix",
-          "tsEmitName": "urlPrefix",
           "metadataToken": 385876089,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UrlPrefix|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "dispose",
-          "isStatic": false,
-          "tsSignatureId": "Dispose|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100663912
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "queueName",
-          "isStatic": false,
-          "tsSignatureId": "QueueName|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876088
-          }
-        },
-        {
-          "tsName": "urlPrefix",
-          "isStatic": false,
-          "tsSignatureId": "UrlPrefix|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876089
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysException",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.HttpSysException",
-      "tsEmitName": "HttpSysException",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysException::ErrorCode:System.Int32",
           "clrName": "ErrorCode",
-          "tsEmitName": "errorCode",
           "metadataToken": 385876093,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "ErrorCode|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "errorCode",
-          "isStatic": false,
-          "tsSignatureId": "ErrorCode|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysException",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876093
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-      "tsEmitName": "HttpSysOptions",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::RequestQueueName:System.String",
           "clrName": "RequestQueueName",
-          "tsEmitName": "requestQueueName",
           "metadataToken": 385876101,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "RequestQueueName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::RequestQueueMode:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "clrName": "RequestQueueMode",
-          "tsEmitName": "requestQueueMode",
           "metadataToken": 385876102,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "normalizedSignature": "RequestQueueMode|:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::ClientCertificateMethod:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "clrName": "ClientCertificateMethod",
-          "tsEmitName": "clientCertificateMethod",
           "metadataToken": 385876103,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "normalizedSignature": "ClientCertificateMethod|:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::MaxAccepts:System.Int32",
           "clrName": "MaxAccepts",
-          "tsEmitName": "maxAccepts",
           "metadataToken": 385876104,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxAccepts|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::EnableResponseCaching:System.Boolean",
           "clrName": "EnableResponseCaching",
-          "tsEmitName": "enableResponseCaching",
           "metadataToken": 385876105,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "EnableResponseCaching|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::UrlPrefixes:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "clrName": "UrlPrefixes",
-          "tsEmitName": "urlPrefixes",
           "metadataToken": 385876106,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "normalizedSignature": "UrlPrefixes|:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::Authentication:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "clrName": "Authentication",
-          "tsEmitName": "authentication",
           "metadataToken": 385876107,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "normalizedSignature": "Authentication|:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::Timeouts:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "clrName": "Timeouts",
-          "tsEmitName": "timeouts",
           "metadataToken": 385876108,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "normalizedSignature": "Timeouts|:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::ThrowWriteExceptions:System.Boolean",
           "clrName": "ThrowWriteExceptions",
-          "tsEmitName": "throwWriteExceptions",
           "metadataToken": 385876109,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ThrowWriteExceptions|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::EnableKernelResponseBuffering:System.Boolean",
           "clrName": "EnableKernelResponseBuffering",
-          "tsEmitName": "enableKernelResponseBuffering",
           "metadataToken": 385876110,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "EnableKernelResponseBuffering|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::MaxConnections:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "MaxConnections",
-          "tsEmitName": "maxConnections",
           "metadataToken": 385876111,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxConnections|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::RequestQueueLimit:System.Int64",
           "clrName": "RequestQueueLimit",
-          "tsEmitName": "requestQueueLimit",
           "metadataToken": 385876112,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "RequestQueueLimit|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::RequestQueueSecurityDescriptor:System.Security.AccessControl.GenericSecurityDescriptor",
           "clrName": "RequestQueueSecurityDescriptor",
-          "tsEmitName": "requestQueueSecurityDescriptor",
           "metadataToken": 385876113,
           "canonicalSignature": ":System.Security.AccessControl.GenericSecurityDescriptor",
           "normalizedSignature": "RequestQueueSecurityDescriptor|:System.Security.AccessControl.GenericSecurityDescriptor|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::MaxRequestBodySize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "MaxRequestBodySize",
-          "tsEmitName": "maxRequestBodySize",
           "metadataToken": 385876114,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxRequestBodySize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::AllowSynchronousIO:System.Boolean",
           "clrName": "AllowSynchronousIO",
-          "tsEmitName": "allowSynchronousIO",
           "metadataToken": 385876115,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "AllowSynchronousIO|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::Http503Verbosity:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "clrName": "Http503Verbosity",
-          "tsEmitName": "http503Verbosity",
           "metadataToken": 385876116,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "normalizedSignature": "Http503Verbosity|:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::UnsafePreferInlineScheduling:System.Boolean",
           "clrName": "UnsafePreferInlineScheduling",
-          "tsEmitName": "unsafePreferInlineScheduling",
           "metadataToken": 385876117,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UnsafePreferInlineScheduling|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions::UseLatin1RequestHeaders:System.Boolean",
           "clrName": "UseLatin1RequestHeaders",
-          "tsEmitName": "useLatin1RequestHeaders",
           "metadataToken": 385876118,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UseLatin1RequestHeaders|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1958,377 +1479,161 @@
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "requestQueueName",
-          "isStatic": false,
-          "tsSignatureId": "RequestQueueName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876101
-          }
-        },
-        {
-          "tsName": "requestQueueMode",
-          "isStatic": false,
-          "tsSignatureId": "RequestQueueMode|:Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876102
-          }
-        },
-        {
-          "tsName": "clientCertificateMethod",
-          "isStatic": false,
-          "tsSignatureId": "ClientCertificateMethod|:Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876103
-          }
-        },
-        {
-          "tsName": "maxAccepts",
-          "isStatic": false,
-          "tsSignatureId": "MaxAccepts|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876104
-          }
-        },
-        {
-          "tsName": "enableResponseCaching",
-          "isStatic": false,
-          "tsSignatureId": "EnableResponseCaching|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876105
-          }
-        },
-        {
-          "tsName": "urlPrefixes",
-          "isStatic": false,
-          "tsSignatureId": "UrlPrefixes|:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876106
-          }
-        },
-        {
-          "tsName": "authentication",
-          "isStatic": false,
-          "tsSignatureId": "Authentication|:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876107
-          }
-        },
-        {
-          "tsName": "timeouts",
-          "isStatic": false,
-          "tsSignatureId": "Timeouts|:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876108
-          }
-        },
-        {
-          "tsName": "throwWriteExceptions",
-          "isStatic": false,
-          "tsSignatureId": "ThrowWriteExceptions|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876109
-          }
-        },
-        {
-          "tsName": "enableKernelResponseBuffering",
-          "isStatic": false,
-          "tsSignatureId": "EnableKernelResponseBuffering|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876110
-          }
-        },
-        {
-          "tsName": "maxConnections",
-          "isStatic": false,
-          "tsSignatureId": "MaxConnections|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876111
-          }
-        },
-        {
-          "tsName": "requestQueueLimit",
-          "isStatic": false,
-          "tsSignatureId": "RequestQueueLimit|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876112
-          }
-        },
-        {
-          "tsName": "requestQueueSecurityDescriptor",
-          "isStatic": false,
-          "tsSignatureId": "RequestQueueSecurityDescriptor|:System.Security.AccessControl.GenericSecurityDescriptor|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876113
-          }
-        },
-        {
-          "tsName": "maxRequestBodySize",
-          "isStatic": false,
-          "tsSignatureId": "MaxRequestBodySize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876114
-          }
-        },
-        {
-          "tsName": "allowSynchronousIO",
-          "isStatic": false,
-          "tsSignatureId": "AllowSynchronousIO|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876115
-          }
-        },
-        {
-          "tsName": "http503Verbosity",
-          "isStatic": false,
-          "tsSignatureId": "Http503Verbosity|:Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876116
-          }
-        },
-        {
-          "tsName": "unsafePreferInlineScheduling",
-          "isStatic": false,
-          "tsSignatureId": "UnsafePreferInlineScheduling|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876117
-          }
-        },
-        {
-          "tsName": "useLatin1RequestHeaders",
-          "isStatic": false,
-          "tsSignatureId": "UseLatin1RequestHeaders|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876118
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100663940
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
-      "tsEmitName": "TimeoutManager",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager::EntityBody:System.TimeSpan",
           "clrName": "EntityBody",
-          "tsEmitName": "entityBody",
           "metadataToken": 385876326,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "EntityBody|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager::DrainEntityBody:System.TimeSpan",
           "clrName": "DrainEntityBody",
-          "tsEmitName": "drainEntityBody",
           "metadataToken": 385876327,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "DrainEntityBody|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager::RequestQueue:System.TimeSpan",
           "clrName": "RequestQueue",
-          "tsEmitName": "requestQueue",
           "metadataToken": 385876328,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "RequestQueue|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager::IdleConnection:System.TimeSpan",
           "clrName": "IdleConnection",
-          "tsEmitName": "idleConnection",
           "metadataToken": 385876329,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "IdleConnection|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager::HeaderWait:System.TimeSpan",
           "clrName": "HeaderWait",
-          "tsEmitName": "headerWait",
           "metadataToken": 385876330,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "HeaderWait|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager::MinSendBytesPerSecond:System.Int64",
           "clrName": "MinSendBytesPerSecond",
-          "tsEmitName": "minSendBytesPerSecond",
           "metadataToken": 385876331,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "MinSendBytesPerSecond|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "entityBody",
-          "isStatic": false,
-          "tsSignatureId": "EntityBody|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876326
-          }
-        },
-        {
-          "tsName": "drainEntityBody",
-          "isStatic": false,
-          "tsSignatureId": "DrainEntityBody|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876327
-          }
-        },
-        {
-          "tsName": "requestQueue",
-          "isStatic": false,
-          "tsSignatureId": "RequestQueue|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876328
-          }
-        },
-        {
-          "tsName": "idleConnection",
-          "isStatic": false,
-          "tsSignatureId": "IdleConnection|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876329
-          }
-        },
-        {
-          "tsName": "headerWait",
-          "isStatic": false,
-          "tsSignatureId": "HeaderWait|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876330
-          }
-        },
-        {
-          "tsName": "minSendBytesPerSecond",
-          "isStatic": false,
-          "tsSignatureId": "MinSendBytesPerSecond|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876331
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-      "tsEmitName": "UrlPrefix",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Create(System.String,System.String,System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100664533,
           "canonicalSignature": "(System.String,System.String,System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "normalizedSignature": "Create|(System.String,System.String,System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2336,13 +1641,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Create(System.String,System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100664534,
           "canonicalSignature": "(System.String,System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "normalizedSignature": "Create|(System.String,System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2350,13 +1660,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Create(System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100664535,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "normalizedSignature": "Create|(System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2364,13 +1679,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100664545,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2378,13 +1698,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
-          "tsEmitName": "getHashCode",
           "metadataToken": 100664546,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2392,13 +1717,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100664547,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2408,257 +1738,161 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::IsHttps:System.Boolean",
           "clrName": "IsHttps",
-          "tsEmitName": "isHttps",
           "metadataToken": 385876332,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsHttps|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Scheme:System.String",
           "clrName": "Scheme",
-          "tsEmitName": "scheme",
           "metadataToken": 385876333,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Scheme|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Host:System.String",
           "clrName": "Host",
-          "tsEmitName": "host",
           "metadataToken": 385876334,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Host|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Port:System.String",
           "clrName": "Port",
-          "tsEmitName": "port",
           "metadataToken": 385876335,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Port|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::PortValue:System.Int32",
           "clrName": "PortValue",
-          "tsEmitName": "portValue",
           "metadataToken": 385876337,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "PortValue|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Path:System.String",
           "clrName": "Path",
-          "tsEmitName": "path",
           "metadataToken": 385876338,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::FullPrefix:System.String",
           "clrName": "FullPrefix",
-          "tsEmitName": "fullPrefix",
           "metadataToken": 385876340,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FullPrefix|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.String,System.String,System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664533
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.String,System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664534
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664535
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664545
-          }
-        },
-        {
-          "tsName": "getHashCode",
-          "isStatic": false,
-          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664546
-          }
-        },
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664547
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "isHttps",
-          "isStatic": false,
-          "tsSignatureId": "IsHttps|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876332
-          }
-        },
-        {
-          "tsName": "scheme",
-          "isStatic": false,
-          "tsSignatureId": "Scheme|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876333
-          }
-        },
-        {
-          "tsName": "host",
-          "isStatic": false,
-          "tsSignatureId": "Host|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876334
-          }
-        },
-        {
-          "tsName": "port",
-          "isStatic": false,
-          "tsSignatureId": "Port|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876335
-          }
-        },
-        {
-          "tsName": "portValue",
-          "isStatic": false,
-          "tsSignatureId": "PortValue|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876337
-          }
-        },
-        {
-          "tsName": "path",
-          "isStatic": false,
-          "tsSignatureId": "Path|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876338
-          }
-        },
-        {
-          "tsName": "fullPrefix",
-          "isStatic": false,
-          "tsSignatureId": "FullPrefix|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876340
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-      "tsEmitName": "UrlPrefixCollection",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Add(System.String):System.Void",
           "clrName": "Add",
-          "tsEmitName": "add",
           "metadataToken": 100664551,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Add|(System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2666,13 +1900,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Add(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Void",
           "clrName": "Add",
-          "tsEmitName": "add",
           "metadataToken": 100664552,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Void",
           "normalizedSignature": "Add|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2680,13 +1919,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Clear():System.Void",
           "clrName": "Clear",
-          "tsEmitName": "clear",
           "metadataToken": 100664555,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2694,13 +1938,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Contains(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean",
           "clrName": "Contains",
-          "tsEmitName": "contains",
           "metadataToken": 100664556,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean",
           "normalizedSignature": "Contains|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2708,13 +1957,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::CopyTo(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix[],System.Int32):System.Void",
           "clrName": "CopyTo",
-          "tsEmitName": "copyTo",
           "metadataToken": 100664557,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix[],System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix[],System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2722,13 +1976,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Remove(System.String):System.Boolean",
           "clrName": "Remove",
-          "tsEmitName": "remove",
           "metadataToken": 100664558,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Remove|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2736,13 +1995,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Remove(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean",
           "clrName": "Remove",
-          "tsEmitName": "remove",
           "metadataToken": 100664559,
           "canonicalSignature": "(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean",
           "normalizedSignature": "Remove|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2750,13 +2014,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Server.HttpSys.UrlPrefix,Microsoft.AspNetCore.Server.HttpSys,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetEnumerator",
-          "tsEmitName": "getEnumerator",
           "metadataToken": 100664560,
           "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Server.HttpSys.UrlPrefix,Microsoft.AspNetCore.Server.HttpSys,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Server.HttpSys.UrlPrefix,Microsoft.AspNetCore.Server.HttpSys,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2766,175 +2035,72 @@
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Count:System.Int32",
           "clrName": "Count",
-          "tsEmitName": "count",
           "metadataToken": 385876341,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::IsReadOnly:System.Boolean",
           "clrName": "IsReadOnly",
-          "tsEmitName": "isReadOnly",
           "metadataToken": 385876342,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsReadOnly|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "add",
-          "isStatic": false,
-          "tsSignatureId": "Add|(System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664551
-          }
-        },
-        {
-          "tsName": "add",
-          "isStatic": false,
-          "tsSignatureId": "Add|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664552
-          }
-        },
-        {
-          "tsName": "clear",
-          "isStatic": false,
-          "tsSignatureId": "Clear|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664555
-          }
-        },
-        {
-          "tsName": "contains",
-          "isStatic": false,
-          "tsSignatureId": "Contains|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664556
-          }
-        },
-        {
-          "tsName": "copyTo",
-          "isStatic": false,
-          "tsSignatureId": "CopyTo|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix[],System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664557
-          }
-        },
-        {
-          "tsName": "remove",
-          "isStatic": false,
-          "tsSignatureId": "Remove|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664558
-          }
-        },
-        {
-          "tsName": "remove",
-          "isStatic": false,
-          "tsSignatureId": "Remove|(Microsoft.AspNetCore.Server.HttpSys.UrlPrefix):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664559
-          }
-        },
-        {
-          "tsName": "getEnumerator",
-          "isStatic": false,
-          "tsSignatureId": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.AspNetCore.Server.HttpSys.UrlPrefix,Microsoft.AspNetCore.Server.HttpSys,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 100664560
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "count",
-          "isStatic": false,
-          "tsSignatureId": "Count|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876341
-          }
-        },
-        {
-          "tsName": "isReadOnly",
-          "isStatic": false,
-          "tsSignatureId": "IsReadOnly|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 385876342
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysDefaults",
       "clrName": "Microsoft.AspNetCore.Server.HttpSys.HttpSysDefaults",
-      "tsEmitName": "HttpSysDefaults",
       "assemblyName": "Microsoft.AspNetCore.Server.HttpSys",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.HttpSysDefaults::AuthenticationSchemeSystem.String",
           "clrName": "AuthenticationScheme",
-          "tsEmitName": "authenticationScheme",
           "metadataToken": 67112886,
           "normalizedSignature": "AuthenticationScheme|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "authenticationScheme",
-          "isStatic": true,
-          "tsSignatureId": "AuthenticationScheme|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysDefaults",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
-            "metadataToken": 67112886
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

@@ -19,50 +19,50 @@ import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export enum ComponentFrameFlags {
-    hasCallerSpecifiedRenderMode = 1
+    HasCallerSpecifiedRenderMode = 1
 }
 
 
 export enum NamedEventChangeType {
-    added = 0,
-    removed = 1
+    Added = 0,
+    Removed = 1
 }
 
 
 export enum RenderTreeEditType {
-    prependFrame = 1,
-    removeFrame = 2,
-    setAttribute = 3,
-    removeAttribute = 4,
-    updateText = 5,
-    stepIn = 6,
-    stepOut = 7,
-    updateMarkup = 8,
-    permutationListEntry = 9,
-    permutationListEnd = 10
+    PrependFrame = 1,
+    RemoveFrame = 2,
+    SetAttribute = 3,
+    RemoveAttribute = 4,
+    UpdateText = 5,
+    StepIn = 6,
+    StepOut = 7,
+    UpdateMarkup = 8,
+    PermutationListEntry = 9,
+    PermutationListEnd = 10
 }
 
 
 export enum RenderTreeFrameType {
-    none = 0,
-    element = 1,
-    text = 2,
-    attribute = 3,
-    component = 4,
-    region = 5,
-    elementReferenceCapture = 6,
-    componentReferenceCapture = 7,
-    markup = 8,
-    componentRenderMode = 9,
-    namedEvent = 10
+    None = 0,
+    Element = 1,
+    Text = 2,
+    Attribute = 3,
+    Component = 4,
+    Region = 5,
+    ElementReferenceCapture = 6,
+    ComponentReferenceCapture = 7,
+    Markup = 8,
+    ComponentRenderMode = 9,
+    NamedEvent = 10
 }
 
 
 export interface ArrayBuilderSegment_1$instance<T> {
-    readonly array: T[];
-    readonly count: int;
-    readonly item: T;
-    readonly offset: int;
+    readonly Array: T[];
+    readonly Count: int;
+    readonly Item: T;
+    readonly Offset: int;
 }
 
 
@@ -74,9 +74,9 @@ export const ArrayBuilderSegment_1: {
 export type ArrayBuilderSegment_1<T> = ArrayBuilderSegment_1$instance<T>;
 
 export interface ArrayRange_1$instance<T> {
-    readonly array: T[];
-    readonly count: int;
-    clone(): ArrayRange_1<T>;
+    readonly Array: T[];
+    readonly Count: int;
+    Clone(): ArrayRange_1<T>;
 }
 
 
@@ -88,11 +88,11 @@ export const ArrayRange_1: {
 export type ArrayRange_1<T> = ArrayRange_1$instance<T>;
 
 export interface NamedEventChange$instance {
-    readonly assignedName: string;
-    readonly changeType: NamedEventChangeType;
-    readonly componentId: int;
-    readonly eventType: string;
-    readonly frameIndex: int;
+    readonly AssignedName: string;
+    readonly ChangeType: NamedEventChangeType;
+    readonly ComponentId: int;
+    readonly EventType: string;
+    readonly FrameIndex: int;
 }
 
 
@@ -104,11 +104,11 @@ export const NamedEventChange: {
 export type NamedEventChange = NamedEventChange$instance;
 
 export interface RenderBatch$instance {
-    readonly disposedComponentIDs: ArrayRange_1<System_Internal.Int32>;
-    readonly disposedEventHandlerIDs: ArrayRange_1<System_Internal.UInt64>;
-    readonly namedEventChanges: Nullable<ArrayRange_1<NamedEventChange>>;
-    readonly referenceFrames: ArrayRange_1<RenderTreeFrame>;
-    readonly updatedComponents: ArrayRange_1<RenderTreeDiff>;
+    readonly DisposedComponentIDs: ArrayRange_1<System_Internal.Int32>;
+    readonly DisposedEventHandlerIDs: ArrayRange_1<System_Internal.UInt64>;
+    readonly NamedEventChanges: Nullable<ArrayRange_1<NamedEventChange>>;
+    readonly ReferenceFrames: ArrayRange_1<RenderTreeFrame>;
+    readonly UpdatedComponents: ArrayRange_1<RenderTreeDiff>;
 }
 
 
@@ -120,8 +120,8 @@ export const RenderBatch: {
 export type RenderBatch = RenderBatch$instance;
 
 export interface RenderTreeDiff$instance {
-    readonly componentId: int;
-    readonly edits: ArrayBuilderSegment_1<RenderTreeEdit>;
+    readonly ComponentId: int;
+    readonly Edits: ArrayBuilderSegment_1<RenderTreeEdit>;
 }
 
 
@@ -133,11 +133,11 @@ export const RenderTreeDiff: {
 export type RenderTreeDiff = RenderTreeDiff$instance;
 
 export interface RenderTreeEdit$instance {
-    readonly type: RenderTreeEditType;
-    readonly siblingIndex: int;
-    readonly referenceFrameIndex: int;
-    readonly moveToSiblingIndex: int;
-    readonly removedAttributeName: string | undefined;
+    readonly Type: RenderTreeEditType;
+    readonly SiblingIndex: int;
+    readonly ReferenceFrameIndex: int;
+    readonly MoveToSiblingIndex: int;
+    readonly RemovedAttributeName: string | undefined;
 }
 
 
@@ -149,32 +149,32 @@ export const RenderTreeEdit: {
 export type RenderTreeEdit = RenderTreeEdit$instance;
 
 export interface RenderTreeFrame$instance {
-    readonly attributeEventHandlerId: ulong;
-    readonly attributeEventUpdatesAttributeName: string;
-    readonly attributeName: string;
-    readonly attributeValue: unknown;
-    readonly component: IComponent;
-    readonly componentFrameFlags: ComponentFrameFlags;
-    readonly componentId: int;
-    readonly componentKey: unknown;
-    readonly componentReferenceCaptureAction: Action<unknown>;
-    readonly componentReferenceCaptureParentFrameIndex: int;
-    readonly componentRenderMode: IComponentRenderMode;
-    readonly componentSubtreeLength: int;
-    readonly componentType: Type;
-    readonly elementKey: unknown;
-    readonly elementName: string;
-    readonly elementReferenceCaptureAction: Action<ElementReference>;
-    readonly elementReferenceCaptureId: string;
-    readonly elementSubtreeLength: int;
-    readonly frameType: RenderTreeFrameType;
-    readonly markupContent: string;
-    readonly namedEventAssignedName: string;
-    readonly namedEventType: string;
-    readonly regionSubtreeLength: int;
-    readonly sequence: int;
-    readonly textContent: string;
-    toString(): string | undefined;
+    readonly AttributeEventHandlerId: ulong;
+    readonly AttributeEventUpdatesAttributeName: string;
+    readonly AttributeName: string;
+    readonly AttributeValue: unknown;
+    readonly Component: IComponent;
+    readonly ComponentFrameFlags: ComponentFrameFlags;
+    readonly ComponentId: int;
+    readonly ComponentKey: unknown;
+    readonly ComponentReferenceCaptureAction: Action<unknown>;
+    readonly ComponentReferenceCaptureParentFrameIndex: int;
+    readonly ComponentRenderMode: IComponentRenderMode;
+    readonly ComponentSubtreeLength: int;
+    readonly ComponentType: Type;
+    readonly ElementKey: unknown;
+    readonly ElementName: string;
+    readonly ElementReferenceCaptureAction: Action<ElementReference>;
+    readonly ElementReferenceCaptureId: string;
+    readonly ElementSubtreeLength: int;
+    readonly FrameType: RenderTreeFrameType;
+    readonly MarkupContent: string;
+    readonly NamedEventAssignedName: string;
+    readonly NamedEventType: string;
+    readonly RegionSubtreeLength: int;
+    readonly Sequence: int;
+    readonly TextContent: string;
+    ToString(): string | undefined;
 }
 
 
@@ -186,8 +186,8 @@ export const RenderTreeFrame: {
 export type RenderTreeFrame = RenderTreeFrame$instance;
 
 export interface EventFieldInfo$instance {
-    componentId: int;
-    fieldValue: unknown;
+    ComponentId: int;
+    FieldValue: unknown;
 }
 
 
@@ -199,12 +199,12 @@ export const EventFieldInfo: {
 export type EventFieldInfo = EventFieldInfo$instance;
 
 export interface Renderer$instance {
-    readonly dispatcher: Dispatcher;
-    dispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs): Task;
-    dispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs, waitForQuiescence: boolean): Task;
-    dispose(): void;
-    disposeAsync(): ValueTask;
-    getEventArgsType(eventHandlerId: ulong): Type;
+    readonly Dispatcher: Dispatcher;
+    DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs): Task;
+    DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs, waitForQuiescence: boolean): Task;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
+    GetEventArgsType(eventHandlerId: ulong): Type;
 }
 
 
@@ -217,10 +217,10 @@ export const Renderer: {
 export type Renderer = Renderer$instance;
 
 export interface WebEventDescriptor$instance {
-    get eventFieldInfo(): EventFieldInfo | undefined;
-    set eventFieldInfo(value: EventFieldInfo);
-    eventHandlerId: ulong;
-    eventName: string;
+    get EventFieldInfo(): EventFieldInfo | undefined;
+    set EventFieldInfo(value: EventFieldInfo);
+    EventHandlerId: ulong;
+    EventName: string;
 }
 
 

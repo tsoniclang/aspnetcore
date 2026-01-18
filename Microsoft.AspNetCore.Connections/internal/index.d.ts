@@ -29,15 +29,15 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum FileHandleType {
-    auto = 0,
-    tcp = 1,
-    pipe = 2
+    Auto = 0,
+    Tcp = 1,
+    Pipe = 2
 }
 
 
 export enum TransferFormat {
-    binary = 1,
-    text = 2
+    Binary = 1,
+    Text = 2
 }
 
 
@@ -48,78 +48,78 @@ export type MultiplexedConnectionDelegate = (connection: MultiplexedConnectionCo
 
 
 export interface IConnectionBuilder$instance {
-    readonly applicationServices: IServiceProvider;
-    build(): ConnectionDelegate;
-    use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
+    readonly ApplicationServices: IServiceProvider;
+    Build(): ConnectionDelegate;
+    Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
 }
 
 
 export type IConnectionBuilder = IConnectionBuilder$instance;
 
 export interface IConnectionFactory$instance {
-    connectAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    ConnectAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
 }
 
 
 export type IConnectionFactory = IConnectionFactory$instance;
 
 export interface IConnectionListener$instance extends IAsyncDisposable {
-    readonly endPoint: EndPoint;
-    acceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
-    unbindAsync(cancellationToken?: CancellationToken): ValueTask;
+    readonly EndPoint: EndPoint;
+    AcceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    UnbindAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
 
 export type IConnectionListener = IConnectionListener$instance;
 
 export interface IConnectionListenerFactory$instance {
-    bindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
+    BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
 }
 
 
 export type IConnectionListenerFactory = IConnectionListenerFactory$instance;
 
 export interface IConnectionListenerFactorySelector$instance {
-    canBind(endpoint: EndPoint): boolean;
+    CanBind(endpoint: EndPoint): boolean;
 }
 
 
 export type IConnectionListenerFactorySelector = IConnectionListenerFactorySelector$instance;
 
 export interface IMemoryPoolFactory_1$instance<T> {
-    create(options?: MemoryPoolOptions): MemoryPool<T>;
+    Create(options?: MemoryPoolOptions): MemoryPool<T>;
 }
 
 
 export type IMemoryPoolFactory_1<T> = IMemoryPoolFactory_1$instance<T>;
 
 export interface IMultiplexedConnectionBuilder$instance {
-    readonly applicationServices: IServiceProvider;
-    build(): MultiplexedConnectionDelegate;
-    use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
+    readonly ApplicationServices: IServiceProvider;
+    Build(): MultiplexedConnectionDelegate;
+    Use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
 }
 
 
 export type IMultiplexedConnectionBuilder = IMultiplexedConnectionBuilder$instance;
 
 export interface IMultiplexedConnectionFactory$instance {
-    connectAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
+    ConnectAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
 }
 
 
 export type IMultiplexedConnectionFactory = IMultiplexedConnectionFactory$instance;
 
 export interface IMultiplexedConnectionListener$instance extends IAsyncDisposable {
-    readonly endPoint: EndPoint;
-    acceptAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
-    unbindAsync(cancellationToken?: CancellationToken): ValueTask;
+    readonly EndPoint: EndPoint;
+    AcceptAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
+    UnbindAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
 
 export type IMultiplexedConnectionListener = IMultiplexedConnectionListener$instance;
 
 export interface IMultiplexedConnectionListenerFactory$instance {
-    bindAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<IMultiplexedConnectionListener>;
+    BindAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<IMultiplexedConnectionListener>;
 }
 
 
@@ -138,17 +138,17 @@ export const AddressInUseException: {
 export type AddressInUseException = AddressInUseException$instance;
 
 export interface BaseConnectionContext$instance {
-    connectionClosed: CancellationToken;
-    connectionId: string;
-    readonly features: IFeatureCollection;
-    items: IDictionary<unknown, unknown | undefined>;
-    get localEndPoint(): EndPoint | undefined;
-    set localEndPoint(value: EndPoint);
-    get remoteEndPoint(): EndPoint | undefined;
-    set remoteEndPoint(value: EndPoint);
-    abort(): void;
-    abort(abortReason: ConnectionAbortedException): void;
-    disposeAsync(): ValueTask;
+    ConnectionClosed: CancellationToken;
+    ConnectionId: string;
+    readonly Features: IFeatureCollection;
+    Items: IDictionary<unknown, unknown | undefined>;
+    get LocalEndPoint(): EndPoint | undefined;
+    set LocalEndPoint(value: EndPoint);
+    get RemoteEndPoint(): EndPoint | undefined;
+    set RemoteEndPoint(value: EndPoint);
+    Abort(): void;
+    Abort(abortReason: ConnectionAbortedException): void;
+    DisposeAsync(): ValueTask;
 }
 
 
@@ -172,9 +172,9 @@ export const ConnectionAbortedException: {
 export type ConnectionAbortedException = ConnectionAbortedException$instance;
 
 export interface ConnectionBuilder$instance {
-    readonly applicationServices: IServiceProvider;
-    build(): ConnectionDelegate;
-    use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
+    readonly ApplicationServices: IServiceProvider;
+    Build(): ConnectionDelegate;
+    Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
 }
 
 
@@ -193,9 +193,9 @@ export type ConnectionBuilder = ConnectionBuilder$instance & __ConnectionBuilder
 
 
 export interface ConnectionContext$instance extends BaseConnectionContext {
-    transport: IDuplexPipe;
-    abort(abortReason: ConnectionAbortedException): void;
-    abort(): void;
+    Transport: IDuplexPipe;
+    Abort(abortReason: ConnectionAbortedException): void;
+    Abort(): void;
 }
 
 
@@ -206,7 +206,7 @@ export const ConnectionContext: {
 export type ConnectionContext = ConnectionContext$instance;
 
 export interface ConnectionHandler$instance {
-    onConnectedAsync(connection: ConnectionContext): Task;
+    OnConnectedAsync(connection: ConnectionContext): Task;
 }
 
 
@@ -217,7 +217,7 @@ export const ConnectionHandler: {
 export type ConnectionHandler = ConnectionHandler$instance;
 
 export interface ConnectionItems$instance {
-    readonly items: IDictionary<unknown, unknown | undefined>;
+    readonly Items: IDictionary<unknown, unknown | undefined>;
 }
 
 
@@ -242,21 +242,21 @@ export const ConnectionResetException: {
 export type ConnectionResetException = ConnectionResetException$instance;
 
 export interface DefaultConnectionContext$instance extends ConnectionContext {
-    get application(): IDuplexPipe | undefined;
-    set application(value: IDuplexPipe);
-    connectionClosed: CancellationToken;
-    connectionId: string;
-    readonly features: IFeatureCollection;
-    items: IDictionary<unknown, unknown | undefined>;
-    get localEndPoint(): EndPoint | undefined;
-    set localEndPoint(value: EndPoint);
-    get remoteEndPoint(): EndPoint | undefined;
-    set remoteEndPoint(value: EndPoint);
-    transport: IDuplexPipe;
-    user: ClaimsPrincipal;
-    abort(abortReason: ConnectionAbortedException): void;
-    abort(): void;
-    disposeAsync(): ValueTask;
+    get Application(): IDuplexPipe | undefined;
+    set Application(value: IDuplexPipe);
+    ConnectionClosed: CancellationToken;
+    ConnectionId: string;
+    readonly Features: IFeatureCollection;
+    Items: IDictionary<unknown, unknown | undefined>;
+    get LocalEndPoint(): EndPoint | undefined;
+    set LocalEndPoint(value: EndPoint);
+    get RemoteEndPoint(): EndPoint | undefined;
+    set RemoteEndPoint(value: EndPoint);
+    Transport: IDuplexPipe;
+    User: ClaimsPrincipal;
+    Abort(abortReason: ConnectionAbortedException): void;
+    Abort(): void;
+    DisposeAsync(): ValueTask;
 }
 
 
@@ -282,8 +282,8 @@ export type DefaultConnectionContext = DefaultConnectionContext$instance & __Def
 
 
 export interface FileHandleEndPoint$instance extends EndPoint {
-    readonly fileHandle: ulong;
-    readonly fileHandleType: FileHandleType;
+    readonly FileHandle: ulong;
+    readonly FileHandleType: FileHandleType;
 }
 
 
@@ -295,8 +295,8 @@ export const FileHandleEndPoint: {
 export type FileHandleEndPoint = FileHandleEndPoint$instance;
 
 export interface MemoryPoolOptions$instance {
-    get owner(): string | undefined;
-    set owner(value: string);
+    get Owner(): string | undefined;
+    set Owner(value: string);
 }
 
 
@@ -308,9 +308,9 @@ export const MemoryPoolOptions: {
 export type MemoryPoolOptions = MemoryPoolOptions$instance;
 
 export interface MultiplexedConnectionBuilder$instance {
-    readonly applicationServices: IServiceProvider;
-    build(): MultiplexedConnectionDelegate;
-    use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
+    readonly ApplicationServices: IServiceProvider;
+    Build(): MultiplexedConnectionDelegate;
+    Use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
 }
 
 
@@ -329,8 +329,8 @@ export type MultiplexedConnectionBuilder = MultiplexedConnectionBuilder$instance
 
 
 export interface MultiplexedConnectionContext$instance extends BaseConnectionContext {
-    acceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
-    connectAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    AcceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    ConnectAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
 }
 
 
@@ -341,11 +341,11 @@ export const MultiplexedConnectionContext: {
 export type MultiplexedConnectionContext = MultiplexedConnectionContext$instance;
 
 export interface NamedPipeEndPoint$instance extends EndPoint {
-    readonly pipeName: string;
-    readonly serverName: string;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly PipeName: string;
+    readonly ServerName: string;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -358,9 +358,9 @@ export const NamedPipeEndPoint: {
 export type NamedPipeEndPoint = NamedPipeEndPoint$instance;
 
 export interface TlsConnectionCallbackContext$instance {
-    clientHelloInfo: SslClientHelloInfo;
-    connection: BaseConnectionContext;
-    state: unknown;
+    ClientHelloInfo: SslClientHelloInfo;
+    Connection: BaseConnectionContext;
+    State: unknown;
 }
 
 
@@ -372,10 +372,10 @@ export const TlsConnectionCallbackContext: {
 export type TlsConnectionCallbackContext = TlsConnectionCallbackContext$instance;
 
 export interface TlsConnectionCallbackOptions$instance {
-    applicationProtocols: List<SslApplicationProtocol>;
-    onConnection: Func<TlsConnectionCallbackContext, CancellationToken, ValueTask<SslServerAuthenticationOptions>>;
-    get onConnectionState(): unknown | undefined;
-    set onConnectionState(value: unknown);
+    ApplicationProtocols: List<SslApplicationProtocol>;
+    OnConnection: Func<TlsConnectionCallbackContext, CancellationToken, ValueTask<SslServerAuthenticationOptions>>;
+    get OnConnectionState(): unknown | undefined;
+    set OnConnectionState(value: unknown);
 }
 
 
@@ -387,8 +387,8 @@ export const TlsConnectionCallbackOptions: {
 export type TlsConnectionCallbackOptions = TlsConnectionCallbackOptions$instance;
 
 export interface UriEndPoint$instance extends EndPoint {
-    readonly uri: Uri;
-    toString(): string;
+    readonly Uri: Uri;
+    ToString(): string;
 }
 
 
@@ -400,10 +400,10 @@ export const UriEndPoint: {
 export type UriEndPoint = UriEndPoint$instance;
 
 export abstract class ConnectionBuilderExtensions$instance {
-    static run(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, Task>): IConnectionBuilder;
-    static use(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, ConnectionDelegate, Task>): IConnectionBuilder;
-    static use(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, Func<Task>, Task>): IConnectionBuilder;
-    static useConnectionHandler<TConnectionHandler extends ConnectionHandler>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
+    static Run(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, Task>): IConnectionBuilder;
+    static Use(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, ConnectionDelegate, Task>): IConnectionBuilder;
+    static Use(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, Func<Task>, Task>): IConnectionBuilder;
+    static UseConnectionHandler<TConnectionHandler extends ConnectionHandler>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
 }
 
 

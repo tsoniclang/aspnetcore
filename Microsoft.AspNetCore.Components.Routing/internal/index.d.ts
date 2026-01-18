@@ -17,48 +17,48 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum NavLinkMatch {
-    prefix = 0,
-    all = 1
+    Prefix = 0,
+    All = 1
 }
 
 
 export interface IHostEnvironmentNavigationManager$instance {
-    initialize(baseUri: string, uri: string, onNavigateTo: Func<System_Internal.String, Task>): void;
-    initialize(baseUri: string, uri: string): void;
+    Initialize(baseUri: string, uri: string, onNavigateTo: Func<System_Internal.String, Task>): void;
+    Initialize(baseUri: string, uri: string): void;
 }
 
 
 export type IHostEnvironmentNavigationManager = IHostEnvironmentNavigationManager$instance;
 
 export interface INavigationInterception$instance {
-    enableNavigationInterceptionAsync(): Task;
+    EnableNavigationInterceptionAsync(): Task;
 }
 
 
 export type INavigationInterception = INavigationInterception$instance;
 
 export interface IRoutingStateProvider$instance {
-    readonly routeData: RouteData | undefined;
+    readonly RouteData: RouteData | undefined;
 }
 
 
 export type IRoutingStateProvider = IRoutingStateProvider$instance;
 
 export interface IScrollToLocationHash$instance {
-    refreshScrollPositionForHash(locationAbsolute: string): Task;
+    RefreshScrollPositionForHash(locationAbsolute: string): Task;
 }
 
 
 export type IScrollToLocationHash = IScrollToLocationHash$instance;
 
 export interface FocusOnNavigate$instance extends ComponentBase {
-    routeData: RouteData;
-    get selector(): string | undefined;
-    set selector(value: string);
-    attach(renderHandle: RenderHandle): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    RouteData: RouteData;
+    get Selector(): string | undefined;
+    set Selector(value: string);
+    Attach(renderHandle: RenderHandle): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -79,9 +79,9 @@ export type FocusOnNavigate = FocusOnNavigate$instance & __FocusOnNavigate$views
 
 
 export interface LocationChangedEventArgs$instance extends EventArgs {
-    readonly historyEntryState: string | undefined;
-    readonly isNavigationIntercepted: boolean;
-    readonly location: string;
+    readonly HistoryEntryState: string | undefined;
+    readonly IsNavigationIntercepted: boolean;
+    readonly Location: string;
 }
 
 
@@ -93,12 +93,12 @@ export const LocationChangedEventArgs: {
 export type LocationChangedEventArgs = LocationChangedEventArgs$instance;
 
 export interface LocationChangingContext$instance {
-    cancellationToken: CancellationToken;
-    get historyEntryState(): string | undefined;
-    set historyEntryState(value: string);
-    isNavigationIntercepted: boolean;
-    targetLocation: string;
-    preventNavigation(): void;
+    CancellationToken: CancellationToken;
+    get HistoryEntryState(): string | undefined;
+    set HistoryEntryState(value: string);
+    IsNavigationIntercepted: boolean;
+    TargetLocation: string;
+    PreventNavigation(): void;
 }
 
 
@@ -110,8 +110,8 @@ export const LocationChangingContext: {
 export type LocationChangingContext = LocationChangingContext$instance;
 
 export interface NavigationContext$instance {
-    readonly cancellationToken: CancellationToken;
-    readonly path: string;
+    readonly CancellationToken: CancellationToken;
+    readonly Path: string;
 }
 
 
@@ -123,8 +123,8 @@ export const NavigationContext: {
 export type NavigationContext = NavigationContext$instance;
 
 export interface NavigationLock$instance {
-    confirmExternalNavigation: boolean;
-    onBeforeInternalNavigation: EventCallback_1<LocationChangingContext>;
+    ConfirmExternalNavigation: boolean;
+    OnBeforeInternalNavigation: EventCallback_1<LocationChangingContext>;
 }
 
 
@@ -144,17 +144,17 @@ export type NavigationLock = NavigationLock$instance & __NavigationLock$views;
 
 
 export interface NavLink$instance extends ComponentBase {
-    get activeClass(): string | undefined;
-    set activeClass(value: string);
-    get additionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set additionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    childContent: RenderFragment;
-    match: NavLinkMatch;
-    attach(renderHandle: RenderHandle): void;
-    dispose(): void;
-    handleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    onAfterRenderAsync(): Task;
-    setParametersAsync(parameters: ParameterView): Task;
+    get ActiveClass(): string | undefined;
+    set ActiveClass(value: string);
+    get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
+    ChildContent: RenderFragment;
+    Match: NavLinkMatch;
+    Attach(renderHandle: RenderHandle): void;
+    Dispose(): void;
+    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(): Task;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -175,8 +175,8 @@ export type NavLink = NavLink$instance & __NavLink$views;
 
 
 export interface NotFoundEventArgs$instance extends EventArgs {
-    get path(): string | undefined;
-    set path(value: string);
+    get Path(): string | undefined;
+    set Path(value: string);
 }
 
 
@@ -188,19 +188,19 @@ export const NotFoundEventArgs: {
 export type NotFoundEventArgs = NotFoundEventArgs$instance;
 
 export interface Router$instance {
-    additionalAssemblies: IEnumerable<Assembly>;
-    appAssembly: Assembly;
-    found: RenderFragment_1<RouteData>;
-    get navigating(): RenderFragment | undefined;
-    set navigating(value: RenderFragment);
-    notFound: RenderFragment;
-    get notFoundPage(): Type | undefined;
-    set notFoundPage(value: Type);
-    onNavigateAsync: EventCallback_1<NavigationContext>;
-    preferExactMatches: boolean;
-    attach(renderHandle: RenderHandle): void;
-    dispose(): void;
-    setParametersAsync(parameters: ParameterView): Task;
+    AdditionalAssemblies: IEnumerable<Assembly>;
+    AppAssembly: Assembly;
+    Found: RenderFragment_1<RouteData>;
+    get Navigating(): RenderFragment | undefined;
+    set Navigating(value: RenderFragment);
+    NotFound: RenderFragment;
+    get NotFoundPage(): Type | undefined;
+    set NotFoundPage(value: Type);
+    OnNavigateAsync: EventCallback_1<NavigationContext>;
+    PreferExactMatches: boolean;
+    Attach(renderHandle: RenderHandle): void;
+    Dispose(): void;
+    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -220,7 +220,7 @@ export type Router = Router$instance & __Router$views;
 
 
 export abstract class RazorComponentsEndpointHttpContextExtensions$instance {
-    static acceptsInteractiveRouting(context: HttpContext): boolean;
+    static AcceptsInteractiveRouting(context: HttpContext): boolean;
 }
 
 

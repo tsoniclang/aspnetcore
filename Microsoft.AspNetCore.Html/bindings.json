@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.AspNetCore.Html",
+  "contributingAssemblies": [
+    "Microsoft.AspNetCore.Html.Abstractions"
+  ],
   "types": [
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlAsyncContent",
       "clrName": "Microsoft.AspNetCore.Html.IHtmlAsyncContent",
-      "tsEmitName": "IHtmlAsyncContent",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlAsyncContent::WriteToAsync(System.IO.TextWriter):System.Threading.Tasks.ValueTask",
           "clrName": "WriteToAsync",
-          "tsEmitName": "writeToAsync",
           "metadataToken": 100663328,
           "canonicalSignature": "(System.IO.TextWriter):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "WriteToAsync|(System.IO.TextWriter):System.Threading.Tasks.ValueTask|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlAsyncContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -40,47 +58,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "writeToAsync",
-          "isStatic": false,
-          "tsSignatureId": "WriteToAsync|(System.IO.TextWriter):System.Threading.Tasks.ValueTask|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlAsyncContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663328
-          }
-        },
-        {
-          "tsName": "writeTo",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
       "clrName": "Microsoft.AspNetCore.Html.IHtmlContent",
-      "tsEmitName": "IHtmlContent",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -89,37 +95,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "writeTo",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder",
       "clrName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-      "tsEmitName": "IHtmlContentBuilder",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendHtml",
-          "tsEmitName": "appendHtml",
           "metadataToken": 100663330,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -127,13 +131,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Append(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "Append",
-          "tsEmitName": "append",
           "metadataToken": 100663331,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -141,13 +150,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Clear():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "Clear",
-          "tsEmitName": "clear",
           "metadataToken": 100663333,
           "canonicalSignature": "():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -155,13 +169,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "clrName": "CopyTo",
-          "tsEmitName": "copyTo",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -169,13 +188,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -184,77 +208,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "appendHtml",
-          "isStatic": false,
-          "tsSignatureId": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663330
-          }
-        },
-        {
-          "tsName": "append",
-          "isStatic": false,
-          "tsSignatureId": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663331
-          }
-        },
-        {
-          "tsName": "clear",
-          "isStatic": false,
-          "tsSignatureId": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663333
-          }
-        },
-        {
-          "tsName": "copyTo",
-          "isStatic": false,
-          "tsSignatureId": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663334
-          }
-        },
-        {
-          "tsName": "writeTo",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer",
       "clrName": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-      "tsEmitName": "IHtmlContentContainer",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "clrName": "CopyTo",
-          "tsEmitName": "copyTo",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -262,13 +244,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -277,47 +264,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "copyTo",
-          "isStatic": false,
-          "tsSignatureId": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663334
-          }
-        },
-        {
-          "tsName": "writeTo",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder",
       "clrName": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-      "tsEmitName": "HtmlContentBuilder",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::Append(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "Append",
-          "tsEmitName": "append",
           "metadataToken": 100663302,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -325,13 +300,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendHtml",
-          "tsEmitName": "appendHtml",
           "metadataToken": 100663303,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -339,13 +319,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::AppendHtml(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendHtml",
-          "tsEmitName": "appendHtml",
           "metadataToken": 100663304,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendHtml|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -353,13 +338,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::Clear():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "Clear",
-          "tsEmitName": "clear",
           "metadataToken": 100663305,
           "canonicalSignature": "():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -367,13 +357,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "clrName": "CopyTo",
-          "tsEmitName": "copyTo",
           "metadataToken": 100663306,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -381,13 +376,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::MoveTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "clrName": "MoveTo",
-          "tsEmitName": "moveTo",
           "metadataToken": 100663307,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "MoveTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -395,13 +395,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo",
           "metadataToken": 100663308,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -409,86 +414,120 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendHtml",
-          "tsEmitName": "appendHtml$view",
           "metadataToken": 100663330,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Append(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "Append",
-          "tsEmitName": "append$view",
           "metadataToken": 100663331,
           "canonicalSignature": "(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::Clear():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "Clear",
-          "tsEmitName": "clear$view",
           "metadataToken": 100663333,
           "canonicalSignature": "():Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "clrName": "CopyTo",
-          "tsEmitName": "copyTo$view",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
           "normalizedSignature": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo$view",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::Count:System.Int32",
           "clrName": "Count",
-          "tsEmitName": "count",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -526,188 +565,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "append",
-          "isStatic": false,
-          "tsSignatureId": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663302
-          }
-        },
-        {
-          "tsName": "appendHtml",
-          "isStatic": false,
-          "tsSignatureId": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663303
-          }
-        },
-        {
-          "tsName": "appendHtml",
-          "isStatic": false,
-          "tsSignatureId": "AppendHtml|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663304
-          }
-        },
-        {
-          "tsName": "clear",
-          "isStatic": false,
-          "tsSignatureId": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663305
-          }
-        },
-        {
-          "tsName": "copyTo",
-          "isStatic": false,
-          "tsSignatureId": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663306
-          }
-        },
-        {
-          "tsName": "moveTo",
-          "isStatic": false,
-          "tsSignatureId": "MoveTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663307
-          }
-        },
-        {
-          "tsName": "writeTo",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663308
-          }
-        },
-        {
-          "tsName": "appendHtml$view",
-          "isStatic": false,
-          "tsSignatureId": "AppendHtml|(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663330
-          }
-        },
-        {
-          "tsName": "append$view",
-          "isStatic": false,
-          "tsSignatureId": "Append|(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663331
-          }
-        },
-        {
-          "tsName": "clear$view",
-          "isStatic": false,
-          "tsSignatureId": "Clear|():Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663333
-          }
-        },
-        {
-          "tsName": "copyTo$view",
-          "isStatic": false,
-          "tsSignatureId": "CopyTo|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663334
-          }
-        },
-        {
-          "tsName": "writeTo$view",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "count",
-          "isStatic": false,
-          "tsSignatureId": "Count|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 385875969
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663297
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Int32):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663298
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Collections.Generic.IList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663300
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlFormattableString",
       "clrName": "Microsoft.AspNetCore.Html.HtmlFormattableString",
-      "tsEmitName": "HtmlFormattableString",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlFormattableString::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -715,16 +601,22 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo$view",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
       ],
       "properties": [],
@@ -751,67 +643,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "writeTo",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "writeTo$view",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Object[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663319
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.IFormatProvider,System.String,System.Object[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663320
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlString",
       "clrName": "Microsoft.AspNetCore.Html.HtmlString",
-      "tsEmitName": "HtmlString",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlString::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo",
           "metadataToken": 100663325,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -819,13 +679,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlString::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100663326,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -833,30 +698,40 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "clrName": "WriteTo",
-          "tsEmitName": "writeTo$view",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
           "normalizedSignature": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.AspNetCore.Html.IHtmlContent"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlString::Value:System.String",
           "clrName": "Value",
-          "tsEmitName": "value",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -865,22 +740,22 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlString::NewLineMicrosoft.AspNetCore.Html.HtmlString",
           "clrName": "NewLine",
-          "tsEmitName": "newLine",
           "metadataToken": 67108869,
           "normalizedSignature": "NewLine|Microsoft.AspNetCore.Html.HtmlString|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         },
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlString::EmptyMicrosoft.AspNetCore.Html.HtmlString",
           "clrName": "Empty",
-          "tsEmitName": "empty",
           "metadataToken": 67108870,
           "normalizedSignature": "Empty|Microsoft.AspNetCore.Html.HtmlString|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -897,102 +772,35 @@
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "writeTo",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663325
-          }
-        },
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663326
-          }
-        },
-        {
-          "tsName": "writeTo$view",
-          "isStatic": false,
-          "tsSignatureId": "WriteTo|(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "value",
-          "isStatic": false,
-          "tsSignatureId": "Value|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 385875971
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "newLine",
-          "isStatic": true,
-          "tsSignatureId": "NewLine|Microsoft.AspNetCore.Html.HtmlString|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 67108869
-          }
-        },
-        {
-          "tsName": "empty",
-          "isStatic": true,
-          "tsSignatureId": "Empty|Microsoft.AspNetCore.Html.HtmlString|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 67108870
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663323
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
       "clrName": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-      "tsEmitName": "HtmlContentBuilderExtensions",
       "assemblyName": "Microsoft.AspNetCore.Html.Abstractions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::AppendFormat(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendFormat",
-          "tsEmitName": "appendFormat",
           "metadataToken": 100663310,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendFormat|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1000,13 +808,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::AppendFormat(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.IFormatProvider,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendFormat",
-          "tsEmitName": "appendFormat",
           "metadataToken": 100663311,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.IFormatProvider,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendFormat|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.IFormatProvider,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1014,13 +827,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::AppendLine(Microsoft.AspNetCore.Html.IHtmlContentBuilder):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendLine",
-          "tsEmitName": "appendLine",
           "metadataToken": 100663312,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1028,13 +846,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::AppendLine(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendLine",
-          "tsEmitName": "appendLine",
           "metadataToken": 100663313,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1042,13 +865,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::AppendLine(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendLine",
-          "tsEmitName": "appendLine",
           "metadataToken": 100663314,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1056,13 +884,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::AppendHtmlLine(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "AppendHtmlLine",
-          "tsEmitName": "appendHtmlLine",
           "metadataToken": 100663315,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "AppendHtmlLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1070,13 +903,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::SetContent(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "SetContent",
-          "tsEmitName": "setContent",
           "metadataToken": 100663316,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "SetContent|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1084,13 +922,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::SetHtmlContent(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "SetHtmlContent",
-          "tsEmitName": "setHtmlContent",
           "metadataToken": 100663317,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "SetHtmlContent|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1098,13 +941,18 @@
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::SetHtmlContent(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "clrName": "SetHtmlContent",
-          "tsEmitName": "setHtmlContent",
           "metadataToken": 100663318,
           "canonicalSignature": "(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "normalizedSignature": "SetHtmlContent|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -1113,99 +961,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "appendFormat",
-          "isStatic": true,
-          "tsSignatureId": "AppendFormat|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663310
-          }
-        },
-        {
-          "tsName": "appendFormat",
-          "isStatic": true,
-          "tsSignatureId": "AppendFormat|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.IFormatProvider,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663311
-          }
-        },
-        {
-          "tsName": "appendLine",
-          "isStatic": true,
-          "tsSignatureId": "AppendLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663312
-          }
-        },
-        {
-          "tsName": "appendLine",
-          "isStatic": true,
-          "tsSignatureId": "AppendLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663313
-          }
-        },
-        {
-          "tsName": "appendLine",
-          "isStatic": true,
-          "tsSignatureId": "AppendLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663314
-          }
-        },
-        {
-          "tsName": "appendHtmlLine",
-          "isStatic": true,
-          "tsSignatureId": "AppendHtmlLine|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663315
-          }
-        },
-        {
-          "tsName": "setContent",
-          "isStatic": true,
-          "tsSignatureId": "SetContent|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663316
-          }
-        },
-        {
-          "tsName": "setHtmlContent",
-          "isStatic": true,
-          "tsSignatureId": "SetHtmlContent|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663317
-          }
-        },
-        {
-          "tsName": "setHtmlContent",
-          "isStatic": true,
-          "tsSignatureId": "SetHtmlContent|(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
-            "metadataToken": 100663318
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

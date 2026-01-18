@@ -10,8 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface RazorInjectAttribute$instance extends Attribute {
-    get key(): unknown | undefined;
-    set key(value: unknown);
+    get Key(): unknown | undefined;
+    set Key(value: unknown);
 }
 
 

@@ -19,20 +19,20 @@ import type { ExceptionDispatchInfo } from "@tsonic/dotnet/System.Runtime.Except
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IHubProtocol$instance {
-    readonly name: string;
-    readonly version: int;
-    readonly transferFormat: TransferFormat;
-    getMessageBytes(message: HubMessage): ReadOnlyMemory<System_Internal.Byte>;
-    isVersionSupported(version: int): boolean;
-    tryParseMessage(input: ReadOnlySequence<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
-    writeMessage(message: HubMessage, output: IBufferWriter<System_Internal.Byte>): void;
+    readonly Name: string;
+    readonly Version: int;
+    readonly TransferFormat: TransferFormat;
+    GetMessageBytes(message: HubMessage): ReadOnlyMemory<System_Internal.Byte>;
+    IsVersionSupported(version: int): boolean;
+    TryParseMessage(input: ReadOnlySequence<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
+    WriteMessage(message: HubMessage, output: IBufferWriter<System_Internal.Byte>): void;
 }
 
 
 export type IHubProtocol = IHubProtocol$instance;
 
 export interface AckMessage$instance extends HubMessage {
-    sequenceId: long;
+    SequenceId: long;
 }
 
 
@@ -55,41 +55,41 @@ export const CancelInvocationMessage: {
 export type CancelInvocationMessage = CancelInvocationMessage$instance;
 
 export interface CloseMessage$instance extends HubMessage {
-    readonly allowReconnect: boolean;
-    readonly error: string;
+    readonly AllowReconnect: boolean;
+    readonly Error: string;
 }
 
 
 export const CloseMessage: {
     new(error: string): CloseMessage;
     new(error: string, allowReconnect: boolean): CloseMessage;
-    readonly empty: CloseMessage;
+    readonly Empty: CloseMessage;
 };
 
 
 export type CloseMessage = CloseMessage$instance;
 
 export interface CompletionMessage$instance extends HubInvocationMessage {
-    readonly error: string;
-    readonly hasResult: boolean;
-    readonly result: unknown;
-    toString(): string;
+    readonly Error: string;
+    readonly HasResult: boolean;
+    readonly Result: unknown;
+    ToString(): string;
 }
 
 
 export const CompletionMessage: {
     new(invocationId: string, error: string, result: unknown, hasResult: boolean): CompletionMessage;
-    empty(invocationId: string): CompletionMessage;
-    withError(invocationId: string, error: string): CompletionMessage;
-    withResult(invocationId: string, payload: unknown): CompletionMessage;
+    Empty(invocationId: string): CompletionMessage;
+    WithError(invocationId: string, error: string): CompletionMessage;
+    WithResult(invocationId: string, payload: unknown): CompletionMessage;
 };
 
 
 export type CompletionMessage = CompletionMessage$instance;
 
 export interface HandshakeRequestMessage$instance extends HubMessage {
-    readonly protocol: string;
-    readonly version: int;
+    readonly Protocol: string;
+    readonly Version: int;
 }
 
 
@@ -101,21 +101,21 @@ export const HandshakeRequestMessage: {
 export type HandshakeRequestMessage = HandshakeRequestMessage$instance;
 
 export interface HandshakeResponseMessage$instance extends HubMessage {
-    readonly error: string;
+    readonly Error: string;
 }
 
 
 export const HandshakeResponseMessage: {
     new(error: string): HandshakeResponseMessage;
-    readonly empty: HandshakeResponseMessage;
+    readonly Empty: HandshakeResponseMessage;
 };
 
 
 export type HandshakeResponseMessage = HandshakeResponseMessage$instance;
 
 export interface HubInvocationMessage$instance extends HubMessage {
-    headers: IDictionary<System_Internal.String, System_Internal.String>;
-    readonly invocationId: string | undefined;
+    Headers: IDictionary<System_Internal.String, System_Internal.String>;
+    readonly InvocationId: string | undefined;
 }
 
 
@@ -136,9 +136,9 @@ export const HubMessage: {
 export type HubMessage = HubMessage$instance;
 
 export interface HubMethodInvocationMessage$instance extends HubInvocationMessage {
-    readonly arguments: (unknown | undefined)[];
-    readonly streamIds: string[] | undefined;
-    readonly target: string;
+    readonly Arguments: (unknown | undefined)[];
+    readonly StreamIds: string[] | undefined;
+    readonly Target: string;
 }
 
 
@@ -149,8 +149,8 @@ export const HubMethodInvocationMessage: {
 export type HubMethodInvocationMessage = HubMethodInvocationMessage$instance;
 
 export interface InvocationBindingFailureMessage$instance extends HubInvocationMessage {
-    readonly bindingFailure: ExceptionDispatchInfo;
-    readonly target: string;
+    readonly BindingFailure: ExceptionDispatchInfo;
+    readonly Target: string;
 }
 
 
@@ -162,7 +162,7 @@ export const InvocationBindingFailureMessage: {
 export type InvocationBindingFailureMessage = InvocationBindingFailureMessage$instance;
 
 export interface InvocationMessage$instance extends HubMethodInvocationMessage {
-    toString(): string;
+    ToString(): string;
 }
 
 
@@ -176,13 +176,13 @@ export const InvocationMessage: {
 export type InvocationMessage = InvocationMessage$instance;
 
 export interface JsonHubProtocol$instance {
-    readonly name: string;
-    readonly transferFormat: TransferFormat;
-    readonly version: int;
-    getMessageBytes(message: HubMessage): ReadOnlyMemory<System_Internal.Byte>;
-    isVersionSupported(version: int): boolean;
-    tryParseMessage(input: ReadOnlySequence<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
-    writeMessage(message: HubMessage, output: IBufferWriter<System_Internal.Byte>): void;
+    readonly Name: string;
+    readonly TransferFormat: TransferFormat;
+    readonly Version: int;
+    GetMessageBytes(message: HubMessage): ReadOnlyMemory<System_Internal.Byte>;
+    IsVersionSupported(version: int): boolean;
+    TryParseMessage(input: ReadOnlySequence<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
+    WriteMessage(message: HubMessage, output: IBufferWriter<System_Internal.Byte>): void;
 }
 
 
@@ -207,14 +207,14 @@ export interface PingMessage$instance extends HubMessage {
 
 export const PingMessage: {
     new(): PingMessage;
-    readonly instance: PingMessage;
+    readonly Instance: PingMessage;
 };
 
 
 export type PingMessage = PingMessage$instance;
 
 export interface RawResult$instance {
-    readonly rawSerializedData: ReadOnlySequence<System_Internal.Byte>;
+    readonly RawSerializedData: ReadOnlySequence<System_Internal.Byte>;
 }
 
 
@@ -226,7 +226,7 @@ export const RawResult: {
 export type RawResult = RawResult$instance;
 
 export interface SequenceMessage$instance extends HubMessage {
-    sequenceId: long;
+    SequenceId: long;
 }
 
 
@@ -238,8 +238,8 @@ export const SequenceMessage: {
 export type SequenceMessage = SequenceMessage$instance;
 
 export interface StreamBindingFailureMessage$instance extends HubMessage {
-    readonly bindingFailure: ExceptionDispatchInfo;
-    readonly id: string;
+    readonly BindingFailure: ExceptionDispatchInfo;
+    readonly Id: string;
 }
 
 
@@ -251,7 +251,7 @@ export const StreamBindingFailureMessage: {
 export type StreamBindingFailureMessage = StreamBindingFailureMessage$instance;
 
 export interface StreamInvocationMessage$instance extends HubMethodInvocationMessage {
-    toString(): string;
+    ToString(): string;
 }
 
 
@@ -264,9 +264,9 @@ export const StreamInvocationMessage: {
 export type StreamInvocationMessage = StreamInvocationMessage$instance;
 
 export interface StreamItemMessage$instance extends HubInvocationMessage {
-    get item(): unknown | undefined;
-    set item(value: unknown);
-    toString(): string;
+    get Item(): unknown | undefined;
+    set Item(value: unknown);
+    ToString(): string;
 }
 
 
@@ -278,33 +278,33 @@ export const StreamItemMessage: {
 export type StreamItemMessage = StreamItemMessage$instance;
 
 export abstract class HandshakeProtocol$instance {
-    static getSuccessfulHandshake(protocol: IHubProtocol): ReadOnlySpan<System_Internal.Byte>;
-    static tryParseRequestMessage(buffer: ReadOnlySequence<System_Internal.Byte>, requestMessage: HandshakeRequestMessage): boolean;
-    static tryParseResponseMessage(buffer: ReadOnlySequence<System_Internal.Byte>, responseMessage: HandshakeResponseMessage): boolean;
-    static writeRequestMessage(requestMessage: HandshakeRequestMessage, output: IBufferWriter<System_Internal.Byte>): void;
-    static writeResponseMessage(responseMessage: HandshakeResponseMessage, output: IBufferWriter<System_Internal.Byte>): void;
+    static GetSuccessfulHandshake(protocol: IHubProtocol): ReadOnlySpan<System_Internal.Byte>;
+    static TryParseRequestMessage(buffer: ReadOnlySequence<System_Internal.Byte>, requestMessage: HandshakeRequestMessage): boolean;
+    static TryParseResponseMessage(buffer: ReadOnlySequence<System_Internal.Byte>, responseMessage: HandshakeResponseMessage): boolean;
+    static WriteRequestMessage(requestMessage: HandshakeRequestMessage, output: IBufferWriter<System_Internal.Byte>): void;
+    static WriteResponseMessage(responseMessage: HandshakeResponseMessage, output: IBufferWriter<System_Internal.Byte>): void;
 }
 
 
 export type HandshakeProtocol = HandshakeProtocol$instance;
 
 export abstract class HubProtocolConstants$instance {
-    static readonly invocationMessageType: int;
-    static readonly streamItemMessageType: int;
-    static readonly completionMessageType: int;
-    static readonly streamInvocationMessageType: int;
-    static readonly cancelInvocationMessageType: int;
-    static readonly pingMessageType: int;
-    static readonly closeMessageType: int;
-    static readonly ackMessageType: int;
-    static readonly sequenceMessageType: int;
+    static readonly InvocationMessageType: int;
+    static readonly StreamItemMessageType: int;
+    static readonly CompletionMessageType: int;
+    static readonly StreamInvocationMessageType: int;
+    static readonly CancelInvocationMessageType: int;
+    static readonly PingMessageType: int;
+    static readonly CloseMessageType: int;
+    static readonly AckMessageType: int;
+    static readonly SequenceMessageType: int;
 }
 
 
 export type HubProtocolConstants = HubProtocolConstants$instance;
 
 export abstract class HubProtocolExtensions$instance {
-    static getMessageBytes(hubProtocol: IHubProtocol, message: HubMessage): byte[];
+    static GetMessageBytes(hubProtocol: IHubProtocol, message: HubMessage): byte[];
 }
 
 
