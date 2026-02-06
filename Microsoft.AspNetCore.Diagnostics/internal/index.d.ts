@@ -53,7 +53,7 @@ export interface IExceptionHandlerFeature$instance {
     readonly Error: Exception;
     readonly Path: string;
     readonly Endpoint: Endpoint | undefined;
-    readonly RouteValues: RouteValueDictionary;
+    readonly RouteValues: RouteValueDictionary | undefined;
 }
 
 
@@ -63,7 +63,7 @@ export interface IExceptionHandlerPathFeature$instance extends IExceptionHandler
     readonly Path: string;
     readonly Error: Exception;
     readonly Endpoint: Endpoint | undefined;
-    readonly RouteValues: RouteValueDictionary;
+    readonly RouteValues: RouteValueDictionary | undefined;
 }
 
 
@@ -82,10 +82,10 @@ export interface IStatusCodeReExecuteFeature$instance {
     OriginalPathBase: string;
     OriginalPath: string;
     get OriginalQueryString(): string | undefined;
-    set OriginalQueryString(value: string);
+    set OriginalQueryString(value: string | undefined);
     readonly OriginalStatusCode: int;
     readonly Endpoint: Endpoint | undefined;
-    readonly RouteValues: RouteValueDictionary;
+    readonly RouteValues: RouteValueDictionary | undefined;
 }
 
 
@@ -124,7 +124,7 @@ export interface DiagnosticMessage$instance {
     readonly EndColumn: int;
     readonly EndLine: int;
     readonly FormattedMessage: string | undefined;
-    readonly Message: string;
+    readonly Message: string | undefined;
     readonly SourceFilePath: string | undefined;
     readonly StartColumn: int;
     readonly StartLine: int;
@@ -153,10 +153,11 @@ export type ErrorContext = ErrorContext$instance;
 
 export interface ExceptionHandlerFeature$instance extends IExceptionHandlerPathFeature {
     get Endpoint(): Endpoint | undefined;
-    set Endpoint(value: Endpoint);
+    set Endpoint(value: Endpoint | undefined);
     Error: Exception;
     Path: string;
-    RouteValues: RouteValueDictionary;
+    get RouteValues(): RouteValueDictionary | undefined;
+    set RouteValues(value: RouteValueDictionary | undefined);
 }
 
 
@@ -199,9 +200,9 @@ export const ExceptionHandlerSuppressDiagnosticsContext: {
 export type ExceptionHandlerSuppressDiagnosticsContext = ExceptionHandlerSuppressDiagnosticsContext$instance;
 
 export interface StatusCodeContext$instance {
-    readonly HttpContext: HttpContext;
-    readonly Next: RequestDelegate;
-    readonly Options: StatusCodePagesOptions;
+    HttpContext: HttpContext;
+    Next: RequestDelegate;
+    Options: StatusCodePagesOptions;
 }
 
 
@@ -245,13 +246,14 @@ export type StatusCodePagesMiddleware = StatusCodePagesMiddleware$instance;
 
 export interface StatusCodeReExecuteFeature$instance {
     get Endpoint(): Endpoint | undefined;
-    set Endpoint(value: Endpoint);
+    set Endpoint(value: Endpoint | undefined);
     OriginalPath: string;
     OriginalPathBase: string;
     get OriginalQueryString(): string | undefined;
-    set OriginalQueryString(value: string);
-    readonly OriginalStatusCode: int;
-    RouteValues: RouteValueDictionary;
+    set OriginalQueryString(value: string | undefined);
+    OriginalStatusCode: int;
+    get RouteValues(): RouteValueDictionary | undefined;
+    set RouteValues(value: RouteValueDictionary | undefined);
 }
 
 

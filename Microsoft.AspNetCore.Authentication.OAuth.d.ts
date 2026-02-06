@@ -7,17 +7,17 @@ import * as Internal from './Microsoft.AspNetCore.Authentication.OAuth/internal/
 
 // Cross-namespace type imports for constraints
 import type { ClaimActionCollection } from './Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js';
-import type { AccessDeniedContext, AuthenticateResult, AuthenticationProperties, AuthenticationScheme, IAuthenticationHandler, IAuthenticationRequestHandler, ISecureDataFormat_1, ISystemClock, RedirectContext_1, RemoteAuthenticationEvents, RemoteAuthenticationHandler_1, RemoteAuthenticationOptions, RemoteFailureContext, ResultContext_1, TicketReceivedContext } from './Microsoft.AspNetCore.Authentication/internal/index.js';
+import type { AccessDeniedContext, AuthenticateResult, AuthenticationProperties, AuthenticationScheme, AuthenticationTicket, HandleRequestResult, IAuthenticationHandler, IAuthenticationRequestHandler, ISecureDataFormat_1, ISystemClock, RedirectContext_1, RemoteAuthenticationEvents, RemoteAuthenticationHandler_1, RemoteAuthenticationOptions, RemoteFailureContext, ResultContext_1, TicketReceivedContext } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 import type { IDataProtectionProvider } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
 import type { CookieBuilder, HttpContext, HttpRequest, HttpResponse, PathString } from './Microsoft.AspNetCore.Http/internal/index.js';
-import type { ICollection, IDictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { ICollection, IDictionary, IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func, IDisposable, Nullable, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from '@tsonic/dotnet/System.js';
 import type { HttpClient, HttpMessageHandler } from '@tsonic/dotnet/System.Net.Http.js';
 import type { ClaimsIdentity, ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { UrlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { JsonDocument, JsonElement } from '@tsonic/dotnet/System.Text.Json.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptionsMonitor } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

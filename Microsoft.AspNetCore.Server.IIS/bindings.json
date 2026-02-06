@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -50,6 +51,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -68,6 +70,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -86,6 +89,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -104,6 +108,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -122,6 +127,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -140,6 +146,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -158,6 +165,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         },
@@ -176,6 +184,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IIISEnvironmentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
@@ -195,6 +204,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.BadHttpRequestException",
+        "clrName": "Microsoft.AspNetCore.Http.BadHttpRequestException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -212,6 +231,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.BadHttpRequestException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
@@ -231,6 +251,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -242,6 +266,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
@@ -255,6 +280,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.IISServerDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS"
         }
@@ -271,6 +297,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.IIS:Microsoft.AspNetCore.Server.IIS.HttpContextExtensions::GetIISServerVariable(Microsoft.AspNetCore.Http.HttpContext,System.String):System.String",
@@ -287,6 +317,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.IIS.HttpContextExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.IIS",
           "isExtensionMethod": true

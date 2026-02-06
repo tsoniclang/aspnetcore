@@ -100,7 +100,7 @@ export type HtmlFormattableString = HtmlFormattableString$instance & __HtmlForma
 
 
 export interface HtmlString$instance {
-    readonly Value: string;
+    readonly Value: string | undefined;
     ToString(): string;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }

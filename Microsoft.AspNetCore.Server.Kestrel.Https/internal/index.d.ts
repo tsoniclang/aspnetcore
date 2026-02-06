@@ -28,19 +28,19 @@ export interface HttpsConnectionAdapterOptions$instance {
     CheckCertificateRevocation: boolean;
     ClientCertificateMode: ClientCertificateMode;
     get ClientCertificateValidation(): Func<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined;
-    set ClientCertificateValidation(value: Func<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean>);
+    set ClientCertificateValidation(value: Func<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined);
     HandshakeTimeout: TimeSpan;
     get OnAuthenticate(): Action<ConnectionContext, SslServerAuthenticationOptions> | undefined;
-    set OnAuthenticate(value: Action<ConnectionContext, SslServerAuthenticationOptions>);
+    set OnAuthenticate(value: Action<ConnectionContext, SslServerAuthenticationOptions> | undefined);
     get ServerCertificate(): X509Certificate2 | undefined;
-    set ServerCertificate(value: X509Certificate2);
+    set ServerCertificate(value: X509Certificate2 | undefined);
     get ServerCertificateChain(): X509Certificate2Collection | undefined;
-    set ServerCertificateChain(value: X509Certificate2Collection);
+    set ServerCertificateChain(value: X509Certificate2Collection | undefined);
     get ServerCertificateSelector(): Func<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined;
-    set ServerCertificateSelector(value: Func<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined>);
+    set ServerCertificateSelector(value: Func<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined);
     SslProtocols: SslProtocols;
     get TlsClientHelloBytesCallback(): Action<ConnectionContext | undefined, ReadOnlySequence<System_Internal.Byte>> | undefined;
-    set TlsClientHelloBytesCallback(value: Action<ConnectionContext | undefined, ReadOnlySequence<System_Internal.Byte>>);
+    set TlsClientHelloBytesCallback(value: Action<ConnectionContext | undefined, ReadOnlySequence<System_Internal.Byte>> | undefined);
     AllowAnyClientCertificate(): void;
 }
 
@@ -54,11 +54,12 @@ export type HttpsConnectionAdapterOptions = HttpsConnectionAdapterOptions$instan
 
 export interface TlsHandshakeCallbackContext$instance {
     AllowDelayedClientCertificateNegotation: boolean;
-    readonly CancellationToken: CancellationToken;
-    readonly ClientHelloInfo: SslClientHelloInfo;
-    readonly Connection: ConnectionContext;
-    readonly SslStream: SslStream;
-    readonly State: unknown;
+    CancellationToken: CancellationToken;
+    ClientHelloInfo: SslClientHelloInfo;
+    Connection: ConnectionContext;
+    SslStream: SslStream;
+    get State(): unknown | undefined;
+    set State(value: unknown | undefined);
 }
 
 
@@ -73,7 +74,7 @@ export interface TlsHandshakeCallbackOptions$instance {
     HandshakeTimeout: TimeSpan;
     OnConnection: Func<TlsHandshakeCallbackContext, ValueTask<SslServerAuthenticationOptions>>;
     get OnConnectionState(): unknown | undefined;
-    set OnConnectionState(value: unknown);
+    set OnConnectionState(value: unknown | undefined);
 }
 
 

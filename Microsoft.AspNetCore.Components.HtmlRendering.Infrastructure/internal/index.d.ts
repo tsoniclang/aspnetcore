@@ -5,20 +5,30 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
+import type { ComponentState } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_RenderTree_Internal from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
-import type { EventFieldInfo, Renderer } from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
+import type { ArrayRange_1, EventFieldInfo, RenderBatch, Renderer, RenderTreeFrame } from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
 import type { HtmlRootComponent } from "../../Microsoft.AspNetCore.Components.Web.HtmlRendering/internal/index.js";
-import type { Dispatcher, IComponent, ParameterView } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { Dispatcher, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, EventArgs, IAsyncDisposable, IDisposable, IServiceProvider, Type, UInt64, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, EventArgs, Exception, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable, String as ClrString, Type, UInt64, Void } from "@tsonic/dotnet/System.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface StaticHtmlRenderer$instance extends Renderer {
     readonly Dispatcher: Dispatcher;
+    readonly RendererInfo: RendererInfo;
     BeginRenderingComponent(componentType: Type, initialParameters: ParameterView): HtmlRootComponent;
     BeginRenderingComponent(component: IComponent, initialParameters: ParameterView): HtmlRootComponent;
+    HandleException(exception: Exception): void;
+    RenderChildComponent(output: TextWriter, componentFrame: RenderTreeFrame): void;
+    UpdateDisplayAsync(renderBatch: RenderBatch): Task;
+    WriteComponentHtml(componentId: int, output: TextWriter): void;
 }
 
 

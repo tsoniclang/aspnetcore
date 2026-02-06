@@ -17,6 +17,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate::Invoke():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -33,6 +47,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -52,6 +67,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -71,6 +87,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -87,6 +104,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -103,6 +121,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate::Invoke():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -119,6 +151,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -138,6 +171,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -157,6 +191,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -173,6 +208,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -189,6 +225,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate::Invoke():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -205,6 +255,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -224,6 +275,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -243,6 +295,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -259,6 +312,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -275,6 +329,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate::Invoke():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -291,6 +359,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -310,6 +379,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -329,6 +399,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -345,6 +416,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -361,6 +433,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IActionFilter::OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext):System.Void",
@@ -377,6 +455,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IActionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -396,6 +475,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IActionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -417,6 +497,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResultFilter::OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext):System.Void",
@@ -433,6 +523,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -452,6 +543,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -473,6 +565,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter::OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate):System.Threading.Tasks.Task",
@@ -489,6 +587,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -510,6 +609,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter::OnResultExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate):System.Threading.Tasks.Task",
@@ -526,6 +635,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -547,6 +657,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
@@ -563,6 +679,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -584,6 +701,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncExceptionFilter::OnExceptionAsync(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext):System.Threading.Tasks.Task",
@@ -600,6 +723,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncExceptionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -621,6 +745,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.Filters.IAsyncPageFilter::OnPageHandlerSelectionAsync(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext):System.Threading.Tasks.Task",
@@ -637,6 +767,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncPageFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -656,6 +787,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncPageFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -677,6 +809,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncResourceFilter::OnResourceExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate):System.Threading.Tasks.Task",
@@ -693,6 +831,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResourceFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -714,6 +853,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter::OnResultExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate):System.Threading.Tasks.Task",
@@ -730,6 +875,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -751,6 +897,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter::OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Void",
@@ -767,6 +919,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -788,6 +941,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter::OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext):System.Void",
@@ -804,6 +963,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -842,6 +1002,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IFilterContainer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -861,6 +1022,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory::CreateInstance(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
@@ -877,6 +1044,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -898,6 +1066,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -950,6 +1119,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IFilterProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -971,6 +1141,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IFilterProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -990,6 +1161,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1007,6 +1184,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1026,6 +1204,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.Filters.IPageFilter::OnPageHandlerSelected(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext):System.Void",
@@ -1042,6 +1226,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IPageFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1061,6 +1246,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IPageFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1080,6 +1266,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IPageFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1101,6 +1288,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResourceFilter::OnResourceExecuting(Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext):System.Void",
@@ -1117,6 +1310,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResourceFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1136,6 +1330,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResourceFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1157,6 +1352,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResultFilter::OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext):System.Void",
@@ -1173,6 +1374,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1192,6 +1394,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1213,6 +1416,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -1230,6 +1437,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1248,6 +1456,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1266,6 +1475,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1284,6 +1494,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1302,6 +1513,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1320,6 +1532,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1334,6 +1547,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1350,6 +1564,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -1367,6 +1585,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1385,6 +1604,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1403,6 +1623,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1417,6 +1638,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1433,6 +1655,36 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IActionFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IActionFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute::OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext):System.Void",
@@ -1449,6 +1701,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1468,6 +1721,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1487,6 +1741,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1506,6 +1761,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1525,6 +1781,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1544,6 +1801,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1563,6 +1821,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IActionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1583,6 +1842,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IActionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1603,6 +1863,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1623,6 +1884,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1643,6 +1905,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1663,6 +1926,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1685,6 +1949,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1703,6 +1968,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -1710,7 +1976,19 @@
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute::.ctor():void",
+          "metadataToken": 100666183,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext",
@@ -1723,6 +2001,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -1740,6 +2022,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1754,6 +2037,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1770,6 +2054,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -1787,6 +2075,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1805,6 +2094,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1823,6 +2113,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1841,6 +2132,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1855,6 +2147,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1871,6 +2164,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncExceptionFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncExceptionFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.ExceptionFilterAttribute::OnExceptionAsync(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext):System.Threading.Tasks.Task",
@@ -1887,6 +2202,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1906,6 +2222,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1925,6 +2242,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncExceptionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1945,6 +2263,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1967,6 +2286,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1985,6 +2305,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -1992,7 +2313,19 @@
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.ExceptionFilterAttribute::.ctor():void",
+          "metadataToken": 100666206,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ExceptionFilterAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
@@ -2005,6 +2338,62 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Collections.ObjectModel.Collection\u00601",
+        "clrName": "System.Collections.ObjectModel.Collection\u00601",
+        "typeArguments": [
+          "IFilterMetadata"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
+          "clrName": "System.Collections.Generic.IList\u00601",
+          "typeArguments": [
+            "IFilterMetadata"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "IFilterMetadata"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "IFilterMetadata"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "IFilterMetadata"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "IFilterMetadata"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.FilterCollection::Add():Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
@@ -2021,6 +2410,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2040,6 +2430,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2059,6 +2450,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2078,6 +2470,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2097,6 +2490,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2116,6 +2510,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2135,6 +2530,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2154,6 +2550,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2170,6 +2567,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2186,6 +2584,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.ActionContext"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext::IsEffectivePolicy(TMetadata):System.Boolean",
@@ -2202,6 +2604,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -2221,6 +2624,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -2242,6 +2646,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2256,6 +2661,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2272,6 +2678,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2289,6 +2699,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2307,6 +2718,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2325,6 +2737,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2339,6 +2752,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2355,6 +2769,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2372,6 +2790,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2390,6 +2809,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2408,6 +2828,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2422,6 +2843,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Filters.FilterDescriptor):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2432,6 +2854,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Filters.FilterDescriptor,Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2448,6 +2871,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2465,6 +2892,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2483,6 +2911,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2497,6 +2926,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.FilterItem,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2513,6 +2943,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -2530,6 +2964,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2548,6 +2983,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2566,6 +3002,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2584,6 +3021,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2602,6 +3040,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2620,6 +3059,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2638,6 +3078,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2656,6 +3097,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2670,6 +3112,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2686,6 +3129,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -2703,6 +3150,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2721,6 +3169,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2739,6 +3188,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2757,6 +3207,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2775,6 +3226,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2789,6 +3241,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2805,6 +3258,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -2822,6 +3279,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2840,6 +3298,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2858,6 +3317,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2872,6 +3332,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2888,6 +3349,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -2905,6 +3370,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2923,6 +3389,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2941,6 +3408,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2959,6 +3427,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2977,6 +3446,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2991,6 +3461,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -3007,6 +3478,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -3024,6 +3499,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3042,6 +3518,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -3056,6 +3533,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.IValueProviderFactory,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -3072,6 +3550,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -3089,6 +3571,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3107,6 +3590,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3125,6 +3609,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3143,6 +3628,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3161,6 +3647,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3179,6 +3666,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -3193,6 +3681,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.IActionResult,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -3209,6 +3698,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.FilterContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Filters.FilterContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -3226,6 +3719,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3244,6 +3738,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3262,6 +3757,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -3276,6 +3772,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.IActionResult,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -3292,6 +3789,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.ResultFilterAttribute::OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext):System.Void",
@@ -3308,6 +3827,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3327,6 +3847,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3346,6 +3867,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3365,6 +3887,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3385,6 +3908,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3405,6 +3929,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3427,6 +3952,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultFilterAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3445,6 +3971,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -3452,7 +3979,19 @@
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.ResultFilterAttribute::.ctor():void",
+          "metadataToken": 100666296,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.ResultFilterAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Filters.FilterScope",
@@ -3465,6 +4004,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -3476,6 +4019,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterScope",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3487,6 +4031,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterScope",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3498,6 +4043,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterScope",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3509,6 +4055,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterScope",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3520,6 +4067,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.FilterScope",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }

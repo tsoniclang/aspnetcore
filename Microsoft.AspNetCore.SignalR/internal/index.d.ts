@@ -267,7 +267,7 @@ export interface DynamicHub$instance extends Hub {
 }
 
 
-export const DynamicHub: {
+export const DynamicHub: (abstract new() => DynamicHub) & {
 };
 
 
@@ -300,13 +300,14 @@ export interface Hub$instance {
     Clients: DynamicHubClients | IHubCallerClients;
     Context: HubCallerContext;
     Groups: IGroupManager;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
     OnConnectedAsync(): Task;
     OnDisconnectedAsync(exception: Exception): Task;
 }
 
 
-export const Hub: {
+export const Hub: (abstract new() => Hub) & {
 };
 
 
@@ -317,7 +318,7 @@ export interface Hub_1$instance<T> extends Hub {
 }
 
 
-export const Hub_1: {
+export const Hub_1: (abstract new<T>() => Hub_1<T>) & {
 };
 
 
@@ -328,13 +329,13 @@ export interface HubCallerContext$instance {
     readonly ConnectionId: string;
     readonly Features: IFeatureCollection;
     readonly Items: IDictionary<unknown, unknown | undefined>;
-    readonly User: ClaimsPrincipal;
+    readonly User: ClaimsPrincipal | undefined;
     readonly UserIdentifier: string | undefined;
     Abort(): void;
 }
 
 
-export const HubCallerContext: {
+export const HubCallerContext: (abstract new() => HubCallerContext) & {
 };
 
 
@@ -348,7 +349,7 @@ export interface HubConnectionContext$instance {
     Protocol: IHubProtocol;
     readonly User: ClaimsPrincipal;
     get UserIdentifier(): string | undefined;
-    set UserIdentifier(value: string);
+    set UserIdentifier(value: string | undefined);
     Abort(): void;
     WriteAsync(message: HubMessage, cancellationToken?: CancellationToken): ValueTask;
     WriteAsync(message: SerializedHubMessage, cancellationToken?: CancellationToken): ValueTask;
@@ -392,7 +393,7 @@ export type HubConnectionHandler_1<THub extends Hub> = HubConnectionHandler_1$in
 
 export interface HubConnectionStore$instance {
     readonly Count: int;
-    readonly Item: HubConnectionContext;
+    readonly [connectionId: string]: HubConnectionContext | undefined;
     Add(connection: HubConnectionContext): void;
     GetEnumerator(): HubConnectionStore_Enumerator;
     Remove(connection: HubConnectionContext): void;
@@ -471,7 +472,7 @@ export interface HubLifetimeManager_1$instance<THub extends Hub> {
 }
 
 
-export const HubLifetimeManager_1: {
+export const HubLifetimeManager_1: (abstract new<THub extends Hub>() => HubLifetimeManager_1<THub>) & {
 };
 
 
@@ -512,7 +513,7 @@ export interface HubOptions$instance {
     StatefulReconnectBufferSize: long;
     StreamBufferCapacity: Nullable<System_Internal.Int32>;
     get SupportedProtocols(): IList<System_Internal.String> | undefined;
-    set SupportedProtocols(value: IList<System_Internal.String>);
+    set SupportedProtocols(value: IList<System_Internal.String> | undefined);
 }
 
 
@@ -571,7 +572,7 @@ export const JsonHubProtocolOptions: {
 export type JsonHubProtocolOptions = JsonHubProtocolOptions$instance;
 
 export interface SerializedHubMessage$instance {
-    readonly Message: HubMessage;
+    readonly Message: HubMessage | undefined;
     GetSerializedMessage(protocol: IHubProtocol): ReadOnlyMemory<System_Internal.Byte>;
 }
 

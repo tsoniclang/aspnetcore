@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -50,6 +51,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -69,6 +71,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -88,6 +91,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -107,6 +111,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -128,6 +133,15 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer"
+        }
+      ],
+      "typeParameters": [
+        "TResource"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer::GetString(System.String):Microsoft.Extensions.Localization.LocalizedString",
@@ -144,6 +158,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -163,6 +178,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -182,6 +198,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -201,6 +218,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -220,6 +238,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -257,6 +276,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -276,6 +296,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -297,6 +318,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer::GetString(System.String):Microsoft.Extensions.Localization.LocalizedString",
@@ -313,6 +340,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -332,6 +360,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -351,6 +380,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -370,6 +400,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -389,6 +420,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -410,6 +442,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer::GetString(System.String):Microsoft.Extensions.Localization.LocalizedString",
@@ -426,6 +468,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -445,6 +488,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -464,6 +508,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer::ToHtmlString(Microsoft.Extensions.Localization.LocalizedString):Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
+          "clrName": "ToHtmlString",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(Microsoft.Extensions.Localization.LocalizedString):Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
+          "normalizedSignature": "ToHtmlString|(Microsoft.Extensions.Localization.LocalizedString):Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer::ToHtmlString(Microsoft.Extensions.Localization.LocalizedString,System.Object[]):Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
+          "clrName": "ToHtmlString",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(Microsoft.Extensions.Localization.LocalizedString,System.Object[]):Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
+          "normalizedSignature": "ToHtmlString|(Microsoft.Extensions.Localization.LocalizedString,System.Object[]):Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -483,6 +568,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -503,6 +589,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -523,6 +610,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -543,6 +631,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -562,6 +651,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -578,6 +668,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Localization.IStringLocalizer):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         }
@@ -594,6 +685,26 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer\u00601",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer\u00601",
+          "typeArguments": [
+            "TResource"
+          ]
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer"
+        }
+      ],
+      "typeParameters": [
+        "TResource"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer\u00601::GetString(System.String):Microsoft.Extensions.Localization.LocalizedString",
@@ -610,6 +721,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -629,6 +741,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -648,6 +761,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -667,6 +781,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -687,6 +802,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -707,6 +823,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -727,6 +844,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -746,6 +864,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -762,6 +881,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         }
@@ -778,6 +898,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerFactory::Create(System.Type):Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
@@ -794,6 +924,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -813,6 +944,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -832,6 +964,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -852,6 +985,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -869,6 +1003,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Localization.IStringLocalizerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         }
@@ -885,6 +1020,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
@@ -901,6 +1046,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -920,6 +1066,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -942,6 +1089,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         },
@@ -960,6 +1108,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         },
@@ -978,6 +1127,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         }
@@ -992,6 +1142,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         },
@@ -1002,6 +1153,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         },
@@ -1012,6 +1164,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Boolean,System.Object[]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         }
@@ -1028,6 +1181,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
+          "clrName": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware",
+          "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer::GetString(System.String):Microsoft.Extensions.Localization.LocalizedString",
@@ -1044,6 +1215,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -1063,6 +1235,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -1082,6 +1255,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -1101,6 +1275,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -1120,6 +1295,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -1140,6 +1316,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -1160,6 +1337,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false,
@@ -1180,6 +1358,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1200,6 +1379,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -1219,6 +1399,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": false
@@ -1235,6 +1416,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory,Microsoft.AspNetCore.Hosting.IWebHostEnvironment):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization"
         }
@@ -1251,6 +1433,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerExtensions::GetHtml(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer,System.String):Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString",
@@ -1267,6 +1453,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -1286,6 +1473,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -1305,6 +1493,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true

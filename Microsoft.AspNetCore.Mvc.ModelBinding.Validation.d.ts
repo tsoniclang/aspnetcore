@@ -6,7 +6,7 @@
 import * as Internal from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { IModelMetadataProvider, ModelMetadata } from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js';
+import type { IModelMetadataProvider, ModelMetadata, ModelStateDictionary } from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js';
 import type { ActionContext } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';

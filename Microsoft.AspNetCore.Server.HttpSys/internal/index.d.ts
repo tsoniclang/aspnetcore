@@ -126,7 +126,7 @@ export type IServerDelegationFeature = IServerDelegationFeature$instance;
 export interface AuthenticationManager$instance {
     AllowAnonymous: boolean;
     get AuthenticationDisplayName(): string | undefined;
-    set AuthenticationDisplayName(value: string);
+    set AuthenticationDisplayName(value: string | undefined);
     AutomaticAuthentication: boolean;
     CaptureCredentials: boolean;
     EnableKerberosCredentialCaching: boolean;
@@ -135,7 +135,6 @@ export interface AuthenticationManager$instance {
 
 
 export const AuthenticationManager: {
-    new(): AuthenticationManager;
 };
 
 
@@ -149,7 +148,6 @@ export interface DelegationRule$instance {
 
 
 export const DelegationRule: {
-    new(): DelegationRule;
 };
 
 
@@ -161,7 +159,6 @@ export interface HttpSysException$instance extends Win32Exception {
 
 
 export const HttpSysException: {
-    new(): HttpSysException;
 };
 
 
@@ -180,9 +177,9 @@ export interface HttpSysOptions$instance {
     RequestQueueLimit: long;
     RequestQueueMode: RequestQueueMode;
     get RequestQueueName(): string | undefined;
-    set RequestQueueName(value: string);
+    set RequestQueueName(value: string | undefined);
     get RequestQueueSecurityDescriptor(): GenericSecurityDescriptor | undefined;
-    set RequestQueueSecurityDescriptor(value: GenericSecurityDescriptor);
+    set RequestQueueSecurityDescriptor(value: GenericSecurityDescriptor | undefined);
     ThrowWriteExceptions: boolean;
     readonly Timeouts: TimeoutManager;
     UnsafePreferInlineScheduling: boolean;
@@ -209,7 +206,6 @@ export interface TimeoutManager$instance {
 
 
 export const TimeoutManager: {
-    new(): TimeoutManager;
 };
 
 
@@ -230,7 +226,6 @@ export interface UrlPrefix$instance {
 
 
 export const UrlPrefix: {
-    new(): UrlPrefix;
     Create(scheme: string, host: string, portValue: Nullable<System_Internal.Int32>, path: string): UrlPrefix;
     Create(scheme: string, host: string, port: string, path: string): UrlPrefix;
     Create(prefix: string): UrlPrefix;
@@ -254,7 +249,6 @@ export interface UrlPrefixCollection$instance {
 
 
 export const UrlPrefixCollection: {
-    new(): UrlPrefixCollection;
 };
 
 

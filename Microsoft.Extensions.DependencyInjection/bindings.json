@@ -89,6 +89,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IMvcBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -107,6 +108,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IMvcBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -143,6 +145,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -161,6 +164,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -197,6 +201,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
         }
@@ -216,6 +221,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder",
+          "clrName": "Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -233,6 +244,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -252,6 +264,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 2,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IPostConfigureOptions\u00601",
+          "clrName": "Microsoft.Extensions.Options.IPostConfigureOptions\u00601",
+          "typeArguments": [
+            "TOptions"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "TOptions",
+        "THandler"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.Extensions.DependencyInjection.OAuthPostConfigureOptions\u00602::PostConfigure(System.String,TOptions):System.Void",
@@ -268,6 +297,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OAuthPostConfigureOptions\u00602",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.OAuth",
           "isExtensionMethod": false
@@ -284,6 +314,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OAuthPostConfigureOptions\u00602",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.OAuth"
         }
@@ -300,6 +331,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Antiforgery:Microsoft.Extensions.DependencyInjection.AntiforgeryServiceCollectionExtensions::AddAntiforgery(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -316,6 +351,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AntiforgeryServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": true
@@ -335,6 +371,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AntiforgeryServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": true
@@ -356,6 +393,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.Extensions.DependencyInjection.ApplicationModelConventionExtensions::RemoveType(System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IApplicationModelConvention,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -372,6 +413,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ApplicationModelConventionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -391,6 +433,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ApplicationModelConventionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -410,6 +453,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ApplicationModelConventionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -429,6 +473,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ApplicationModelConventionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -448,6 +493,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ApplicationModelConventionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -467,6 +513,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ApplicationModelConventionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -488,6 +535,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Core:Microsoft.Extensions.DependencyInjection.AuthenticationCoreServiceCollectionExtensions::AddAuthenticationCore(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -504,6 +555,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AuthenticationCoreServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Core",
           "isExtensionMethod": true
@@ -523,6 +575,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AuthenticationCoreServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Core",
           "isExtensionMethod": true
@@ -544,6 +597,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions::AddAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.AspNetCore.Authentication.AuthenticationBuilder",
@@ -560,6 +617,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication",
           "isExtensionMethod": true
@@ -579,6 +637,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication",
           "isExtensionMethod": true
@@ -598,6 +657,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication",
           "isExtensionMethod": true
@@ -619,6 +679,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization:Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions::AddAuthorizationCore(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -635,6 +699,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": true
@@ -654,6 +719,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authorization",
           "isExtensionMethod": true
@@ -675,6 +741,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.Extensions.DependencyInjection.BearerTokenExtensions::AddBearerToken(Microsoft.AspNetCore.Authentication.AuthenticationBuilder):Microsoft.AspNetCore.Authentication.AuthenticationBuilder",
@@ -691,6 +761,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.BearerTokenExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken",
           "isExtensionMethod": true
@@ -710,6 +781,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.BearerTokenExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken",
           "isExtensionMethod": true
@@ -729,6 +801,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.BearerTokenExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken",
           "isExtensionMethod": true
@@ -748,6 +821,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.BearerTokenExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken",
           "isExtensionMethod": true
@@ -769,6 +843,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.Extensions.DependencyInjection.CascadingAuthenticationStateServiceCollectionExtensions::AddCascadingAuthenticationState(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -785,6 +863,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CascadingAuthenticationStateServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
           "isExtensionMethod": true
@@ -806,6 +885,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.Extensions.DependencyInjection.CascadingValueServiceCollectionExtensions::AddCascadingValue(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -822,6 +905,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CascadingValueServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": true
@@ -841,6 +925,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CascadingValueServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": true
@@ -860,6 +945,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CascadingValueServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": true
@@ -879,6 +965,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CascadingValueServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": true
@@ -900,6 +987,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpOverrides:Microsoft.Extensions.DependencyInjection.CertificateForwardingServiceExtensions::AddCertificateForwarding(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions,Microsoft.AspNetCore.HttpOverrides,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -916,6 +1007,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CertificateForwardingServiceExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpOverrides",
           "isExtensionMethod": true
@@ -937,6 +1029,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.Extensions.DependencyInjection.ComponentServiceCollectionExtensions::AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
@@ -953,6 +1049,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ComponentServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": true
@@ -974,6 +1071,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.Extensions.DependencyInjection.ConnectionsDependencyInjectionExtensions::AddConnections(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -990,6 +1091,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ConnectionsDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
           "isExtensionMethod": true
@@ -1009,6 +1111,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ConnectionsDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
           "isExtensionMethod": true
@@ -1030,6 +1133,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.Cookies:Microsoft.Extensions.DependencyInjection.CookieExtensions::AddCookie(Microsoft.AspNetCore.Authentication.AuthenticationBuilder):Microsoft.AspNetCore.Authentication.AuthenticationBuilder",
@@ -1046,6 +1153,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CookieExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": true
@@ -1065,6 +1173,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CookieExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": true
@@ -1084,6 +1193,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CookieExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": true
@@ -1103,6 +1213,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CookieExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": true
@@ -1122,6 +1233,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CookieExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.Cookies",
           "isExtensionMethod": true
@@ -1143,6 +1255,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.Extensions.DependencyInjection.CookiePolicyServiceCollectionExtensions::AddCookiePolicy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.CookiePolicyOptions,Microsoft.AspNetCore.CookiePolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1159,6 +1275,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CookiePolicyServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy",
           "isExtensionMethod": true
@@ -1178,6 +1295,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CookiePolicyServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy",
           "isExtensionMethod": true
@@ -1199,6 +1317,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions::AddCors(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1215,6 +1337,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": true
@@ -1234,6 +1357,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": true
@@ -1255,6 +1379,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions::AddDataProtection(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
@@ -1271,6 +1399,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1290,6 +1419,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1311,6 +1441,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticFiles:Microsoft.Extensions.DependencyInjection.DirectoryBrowserServiceExtensions::AddDirectoryBrowser(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1327,6 +1461,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.DirectoryBrowserServiceExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticFiles",
           "isExtensionMethod": true
@@ -1348,6 +1483,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions::AddEndpointsApiExplorer(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1364,6 +1503,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.EndpointMetadataApiExplorerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
           "isExtensionMethod": true
@@ -1385,6 +1525,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Diagnostics:Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions::AddExceptionHandler(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.ExceptionHandlerOptions,Microsoft.AspNetCore.Diagnostics,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1401,6 +1545,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": true
@@ -1420,6 +1565,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": true
@@ -1439,6 +1585,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": true
@@ -1460,6 +1607,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.Extensions.DependencyInjection.HttpJsonServiceExtensions::ConfigureHttpJsonOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Http.Json.JsonOptions,Microsoft.AspNetCore.Http.Extensions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1476,6 +1627,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.HttpJsonServiceExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
@@ -1497,6 +1649,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions::AddHttpLogging(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1513,6 +1669,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": true
@@ -1532,6 +1689,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": true
@@ -1551,6 +1709,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": true
@@ -1570,6 +1729,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": true
@@ -1591,6 +1751,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.Extensions.DependencyInjection.HttpServiceCollectionExtensions::AddHttpContextAccessor(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -1607,6 +1771,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.HttpServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": true
@@ -1628,6 +1793,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions::AddIdentity(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.AspNetCore.Identity.IdentityBuilder",
@@ -1644,6 +1813,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": true
@@ -1663,6 +1833,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": true
@@ -1682,6 +1853,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": true
@@ -1701,6 +1873,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": true
@@ -1720,6 +1893,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": true
@@ -1739,6 +1913,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": true
@@ -1760,6 +1935,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Identity.Core:Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions::AddIdentityCore(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.AspNetCore.Identity.IdentityBuilder",
@@ -1776,6 +1955,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Identity.Core",
           "isExtensionMethod": true
@@ -1795,6 +1975,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.IdentityServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Identity.Core",
           "isExtensionMethod": true
@@ -1816,6 +1997,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.Extensions.DependencyInjection.JsonProtocolDependencyInjectionExtensions::AddJsonProtocol(TBuilder):TBuilder",
@@ -1832,6 +2017,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.JsonProtocolDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": true
@@ -1851,6 +2037,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.JsonProtocolDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": true
@@ -1872,6 +2059,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ApiExplorer:Microsoft.Extensions.DependencyInjection.MvcApiExplorerMvcCoreBuilderExtensions::AddApiExplorer(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -1888,6 +2079,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcApiExplorerMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ApiExplorer",
           "isExtensionMethod": true
@@ -1909,6 +2101,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions::AddMvcOptions(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Action_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -1925,6 +2121,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -1944,6 +2141,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -1963,6 +2161,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -1982,6 +2181,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2001,6 +2201,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2020,6 +2221,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2039,6 +2241,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2058,6 +2261,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2079,6 +2283,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions::AddMvcOptions(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder,System.Action_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -2095,6 +2303,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2114,6 +2323,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2133,6 +2343,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2152,6 +2363,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2171,6 +2383,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2190,6 +2403,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2209,6 +2423,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2228,6 +2443,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2247,6 +2463,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2266,6 +2483,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2285,6 +2503,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2306,6 +2525,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.Extensions.DependencyInjection.MvcCoreServiceCollectionExtensions::AddMvcCore(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -2322,6 +2545,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2341,6 +2565,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCoreServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -2362,6 +2587,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions::AddCors(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -2378,6 +2607,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors",
           "isExtensionMethod": true
@@ -2397,6 +2627,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors",
           "isExtensionMethod": true
@@ -2416,6 +2647,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors",
           "isExtensionMethod": true
@@ -2437,6 +2669,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcBuilderExtensions::AddDataAnnotationsLocalization(Microsoft.Extensions.DependencyInjection.IMvcBuilder):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -2453,6 +2689,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": true
@@ -2472,6 +2709,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": true
@@ -2493,6 +2731,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcCoreBuilderExtensions::AddDataAnnotations(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -2509,6 +2751,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": true
@@ -2528,6 +2771,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": true
@@ -2547,6 +2791,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
           "isExtensionMethod": true
@@ -2568,6 +2813,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions::AddViewLocalization(Microsoft.Extensions.DependencyInjection.IMvcBuilder):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -2584,6 +2833,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2603,6 +2853,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2622,6 +2873,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2641,6 +2893,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2660,6 +2913,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2679,6 +2933,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2698,6 +2953,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2717,6 +2973,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2736,6 +2993,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2755,6 +3013,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2774,6 +3033,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2793,6 +3053,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2814,6 +3075,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Localization:Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions::AddViewLocalization(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -2830,6 +3095,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2849,6 +3115,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2868,6 +3135,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2887,6 +3155,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2906,6 +3175,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2925,6 +3195,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2944,6 +3215,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2963,6 +3235,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -2982,6 +3255,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -3001,6 +3275,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -3020,6 +3295,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -3039,6 +3315,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Localization",
           "isExtensionMethod": true
@@ -3060,6 +3337,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions::AddRazorOptions(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Action_1[[Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions,Microsoft.AspNetCore.Mvc.Razor,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -3076,6 +3357,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": true
@@ -3095,6 +3377,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": true
@@ -3114,6 +3397,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": true
@@ -3135,6 +3419,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions::AddRazorViewEngine(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -3151,6 +3439,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": true
@@ -3170,6 +3459,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": true
@@ -3189,6 +3479,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": true
@@ -3208,6 +3499,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": true
@@ -3229,6 +3521,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcBuilderExtensions::AddRazorPagesOptions(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Action_1[[Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -3245,6 +3541,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -3264,6 +3561,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -3283,6 +3581,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -3304,6 +3603,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcCoreBuilderExtensions::AddRazorPages(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -3320,6 +3623,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -3339,6 +3643,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -3358,6 +3663,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -3379,6 +3685,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc:Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions::AddMvc(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -3395,6 +3705,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3414,6 +3725,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3433,6 +3745,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3452,6 +3765,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3471,6 +3785,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3490,6 +3805,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3509,6 +3825,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3528,6 +3845,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc",
           "isExtensionMethod": true
@@ -3549,6 +3867,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcBuilderExtensions::AddViewOptions(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Action_1[[Microsoft.AspNetCore.Mvc.MvcViewOptions,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -3565,6 +3887,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3584,6 +3907,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3603,6 +3927,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3622,6 +3947,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3641,6 +3967,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3662,6 +3989,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcCoreBuilderExtensions::AddViews(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -3678,6 +4009,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3697,6 +4029,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3716,6 +4049,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3735,6 +4069,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3754,6 +4089,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcViewFeaturesMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": true
@@ -3775,6 +4111,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions::AddXmlOptions(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Action_1[[Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions,Microsoft.AspNetCore.Mvc.Formatters.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IMvcBuilder",
@@ -3791,6 +4131,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3810,6 +4151,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3829,6 +4171,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3848,6 +4191,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3867,6 +4211,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3888,6 +4233,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions::AddXmlOptions(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder,System.Action_1[[Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions,Microsoft.AspNetCore.Mvc.Formatters.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -3904,6 +4253,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3923,6 +4273,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3942,6 +4293,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3961,6 +4313,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -3980,6 +4333,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": true
@@ -4001,6 +4355,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.OAuth:Microsoft.Extensions.DependencyInjection.OAuthExtensions::AddOAuth(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.Action_1[[Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions,Microsoft.AspNetCore.Authentication.OAuth,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Authentication.AuthenticationBuilder",
@@ -4017,6 +4375,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OAuthExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.OAuth",
           "isExtensionMethod": true
@@ -4036,6 +4395,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OAuthExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.OAuth",
           "isExtensionMethod": true
@@ -4055,6 +4415,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OAuthExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.OAuth",
           "isExtensionMethod": true
@@ -4074,6 +4435,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OAuthExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.OAuth",
           "isExtensionMethod": true
@@ -4095,6 +4457,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions::CacheOutput(TBuilder):TBuilder",
@@ -4111,6 +4477,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": true
@@ -4130,6 +4497,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": true
@@ -4149,6 +4517,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": true
@@ -4168,6 +4537,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": true
@@ -4187,6 +4557,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": true
@@ -4208,6 +4579,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.Extensions.DependencyInjection.OutputCacheServiceCollectionExtensions::AddOutputCache(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -4224,6 +4599,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OutputCacheServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": true
@@ -4243,6 +4619,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.OutputCacheServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": true
@@ -4264,6 +4641,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions::ConfigureFilter(Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection,System.Func_2[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention",
@@ -4280,6 +4661,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4299,6 +4681,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4318,6 +4701,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4337,6 +4721,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4356,6 +4741,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4375,6 +4761,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4394,6 +4781,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4413,6 +4801,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4432,6 +4821,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4451,6 +4841,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4470,6 +4861,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4489,6 +4881,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4508,6 +4901,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4527,6 +4921,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4546,6 +4941,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4565,6 +4961,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4584,6 +4981,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": true
@@ -4605,6 +5003,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authorization.Policy:Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions::AddAuthorizationBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.AspNetCore.Authorization.AuthorizationBuilder",
@@ -4621,6 +5023,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy",
           "isExtensionMethod": true
@@ -4640,6 +5043,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy",
           "isExtensionMethod": true
@@ -4659,6 +5063,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy",
           "isExtensionMethod": true
@@ -4678,6 +5083,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authorization.Policy",
           "isExtensionMethod": true
@@ -4699,6 +5105,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.Extensions.DependencyInjection.ProblemDetailsServiceCollectionExtensions::AddProblemDetails(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -4715,6 +5125,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ProblemDetailsServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
@@ -4734,6 +5145,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ProblemDetailsServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
@@ -4755,6 +5167,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.Extensions.DependencyInjection.RazorComponentsRazorComponentBuilderExtensions::RegisterPersistentService(Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder,Microsoft.AspNetCore.Components.IComponentRenderMode):Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder",
@@ -4771,6 +5187,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RazorComponentsRazorComponentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": true
@@ -4792,6 +5209,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.Extensions.DependencyInjection.RazorComponentsServiceCollectionExtensions::AddRazorComponents(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Components.Endpoints.RazorComponentsServiceOptions,Microsoft.AspNetCore.Components.Endpoints,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder",
@@ -4808,6 +5229,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RazorComponentsServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": true
@@ -4829,6 +5251,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.RequestDecompression:Microsoft.Extensions.DependencyInjection.RequestDecompressionServiceExtensions::AddRequestDecompression(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -4845,6 +5271,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RequestDecompressionServiceExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
           "isExtensionMethod": true
@@ -4864,6 +5291,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RequestDecompressionServiceExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RequestDecompression",
           "isExtensionMethod": true
@@ -4885,6 +5313,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.Extensions.DependencyInjection.RequestLocalizationServiceCollectionExtensions::AddRequestLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.RequestLocalizationOptions,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -4901,6 +5333,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RequestLocalizationServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": true
@@ -4920,6 +5353,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RequestLocalizationServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": true
@@ -4941,6 +5375,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.Extensions.DependencyInjection.RequestTimeoutsIServiceCollectionExtensions::AddRequestTimeouts(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -4957,6 +5395,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RequestTimeoutsIServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": true
@@ -4976,6 +5415,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RequestTimeoutsIServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": true
@@ -4997,6 +5437,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.Extensions.DependencyInjection.ResponseCachingServicesExtensions::AddResponseCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -5013,6 +5457,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ResponseCachingServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching",
           "isExtensionMethod": true
@@ -5032,6 +5477,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ResponseCachingServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching",
           "isExtensionMethod": true
@@ -5053,6 +5499,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.Extensions.DependencyInjection.RoutingServiceCollectionExtensions::AddRouting(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -5069,6 +5519,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RoutingServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": true
@@ -5088,6 +5539,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RoutingServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": true
@@ -5107,6 +5559,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.RoutingServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": true
@@ -5128,6 +5581,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.Extensions.DependencyInjection.ServerRazorComponentsBuilderExtensions::AddInteractiveServerComponents(Microsoft.Extensions.DependencyInjection.IRazorComponentsBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
@@ -5144,6 +5601,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ServerRazorComponentsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": true
@@ -5165,6 +5623,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions::AddCircuitOptions(Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder,System.Action_1[[Microsoft.AspNetCore.Components.Server.CircuitOptions,Microsoft.AspNetCore.Components.Server,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder",
@@ -5181,6 +5643,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": true
@@ -5200,6 +5663,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": true
@@ -5221,6 +5685,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Session:Microsoft.Extensions.DependencyInjection.SessionServiceCollectionExtensions::AddSession(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -5237,6 +5705,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SessionServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": true
@@ -5256,6 +5725,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SessionServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": true
@@ -5277,6 +5747,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR:Microsoft.Extensions.DependencyInjection.SignalRDependencyInjectionExtensions::AddHubOptions(Microsoft.AspNetCore.SignalR.ISignalRServerBuilder,Action_1):Microsoft.AspNetCore.SignalR.ISignalRServerBuilder",
@@ -5293,6 +5767,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SignalRDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR",
           "isExtensionMethod": true
@@ -5312,6 +5787,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SignalRDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR",
           "isExtensionMethod": true
@@ -5331,6 +5807,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SignalRDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR",
           "isExtensionMethod": true
@@ -5352,6 +5829,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Core:Microsoft.Extensions.DependencyInjection.SignalRDependencyInjectionExtensions::AddSignalRCore(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.AspNetCore.SignalR.ISignalRServerBuilder",
@@ -5368,6 +5849,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SignalRDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Core",
           "isExtensionMethod": true
@@ -5389,6 +5871,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.TagHelpers:Microsoft.Extensions.DependencyInjection.TagHelperServicesExtensions::AddCacheTagHelper(Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder):Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder",
@@ -5405,6 +5891,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.TagHelperServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": true
@@ -5424,6 +5911,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.TagHelperServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": true
@@ -5443,6 +5931,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.TagHelperServicesExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
           "isExtensionMethod": true

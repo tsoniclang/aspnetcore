@@ -15,6 +15,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "typeParameters": [
+        "TValue"
+      ],
       "methods": [],
       "properties": [
         {
@@ -32,6 +39,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -50,6 +58,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorageResult\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -69,6 +78,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage::SetAsync(System.String,System.Object):System.Threading.Tasks.ValueTask",
@@ -85,6 +98,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -104,6 +118,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -123,6 +138,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -142,6 +158,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -161,6 +178,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
@@ -182,6 +200,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
+        "clrName": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -194,6 +216,7 @@
           "normalizedSignature": "constructor|(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -210,6 +233,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage",
+        "clrName": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedBrowserStorage"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -222,6 +249,7 @@
           "normalizedSignature": "constructor|(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedSessionStorage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }

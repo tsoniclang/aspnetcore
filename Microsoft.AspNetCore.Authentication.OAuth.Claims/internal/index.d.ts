@@ -22,8 +22,7 @@ export interface ClaimAction$instance {
 }
 
 
-export const ClaimAction: {
-    new(claimType: string, valueType: string): ClaimAction;
+export const ClaimAction: (abstract new(claimType: string, valueType: string) => ClaimAction) & {
 };
 
 

@@ -6,11 +6,12 @@
 import * as Internal from './Microsoft.AspNetCore.Components.RenderTree/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { ComponentState } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
 import type { JSComponentInterop } from './Microsoft.AspNetCore.Components.Web.Infrastructure/internal/index.js';
-import type { Dispatcher, ElementReference, IComponent, IComponentActivator, IComponentRenderMode } from './Microsoft.AspNetCore.Components/internal/index.js';
+import type { Dispatcher, ElementReference, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from './Microsoft.AspNetCore.Components/internal/index.js';
 import type { IEnumerable as IEnumerable__System_Collections_Generic } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
-import type { Action, Boolean as ClrBoolean, Byte, Enum, EventArgs, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { Action, Boolean as ClrBoolean, Byte, Enum, EventArgs, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { JsonSerializerOptions } from '@tsonic/dotnet/System.Text.Json.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';

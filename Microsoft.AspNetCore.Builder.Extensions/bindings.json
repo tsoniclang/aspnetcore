@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
@@ -47,6 +52,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -63,6 +69,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -80,6 +90,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -98,6 +109,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -116,6 +128,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -130,6 +143,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -146,6 +160,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -162,6 +180,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
@@ -178,6 +197,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -194,6 +214,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -211,6 +235,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -229,6 +254,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -243,6 +269,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -259,6 +286,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -275,6 +306,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
@@ -291,6 +323,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.PathString):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }

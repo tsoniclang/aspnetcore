@@ -14,7 +14,7 @@ import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerato
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
 import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, Type, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
 import type { XmlSchema } from "@tsonic/dotnet/System.Xml.Schema.js";
 import * as System_Xml_Serialization_Internal from "@tsonic/dotnet/System.Xml.Serialization.js";
@@ -123,6 +123,7 @@ export type MvcXmlOptions = MvcXmlOptions$instance;
 
 export interface ProblemDetailsWrapper$instance {
     GetSchema(): XmlSchema | undefined;
+    ReadValue(reader: XmlReader, name: string): void;
     ReadXml(reader: XmlReader): void;
     WriteXml(writer: XmlWriter): void;
 }
@@ -131,6 +132,7 @@ export interface ProblemDetailsWrapper$instance {
 export const ProblemDetailsWrapper: {
     new(): ProblemDetailsWrapper;
     new(problemDetails: ProblemDetails): ProblemDetailsWrapper;
+    readonly EmptyKey: string;
 };
 
 
@@ -207,6 +209,7 @@ export type SerializableErrorWrapperProviderFactory = SerializableErrorWrapperPr
 
 
 export interface ValidationProblemDetailsWrapper$instance extends ProblemDetailsWrapper$instance {
+    ReadValue(reader: XmlReader, name: string): void;
     Unwrap(declaredType: Type): unknown;
     WriteXml(writer: XmlWriter): void;
 }

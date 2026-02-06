@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader::UseStaticWebAssets(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration):System.Void",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": false
@@ -47,6 +52,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.StaticWebAssets.StaticWebAssetsLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
         }

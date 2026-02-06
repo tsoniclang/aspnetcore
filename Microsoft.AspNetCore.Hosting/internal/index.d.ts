@@ -154,7 +154,7 @@ export interface StartupBase$instance {
 }
 
 
-export const StartupBase: {
+export const StartupBase: (abstract new() => StartupBase) & {
 };
 
 
@@ -174,8 +174,7 @@ export interface StartupBase_1$instance<TBuilder> extends StartupBase$instance {
 }
 
 
-export const StartupBase_1: {
-    new<TBuilder>(factory: IServiceProviderFactory<TBuilder>): StartupBase_1<TBuilder>;
+export const StartupBase_1: (abstract new<TBuilder>(factory: IServiceProviderFactory<TBuilder>) => StartupBase_1<TBuilder>) & {
 };
 
 

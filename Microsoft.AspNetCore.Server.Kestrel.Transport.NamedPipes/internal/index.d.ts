@@ -15,7 +15,7 @@ export interface CreateNamedPipeServerStreamContext$instance {
     NamedPipeEndPoint: NamedPipeEndPoint;
     PipeOptions: PipeOptions;
     get PipeSecurity(): PipeSecurity | undefined;
-    set PipeSecurity(value: PipeSecurity);
+    set PipeSecurity(value: PipeSecurity | undefined);
 }
 
 
@@ -33,7 +33,7 @@ export interface NamedPipeTransportOptions$instance {
     MaxReadBufferSize: Nullable<System_Internal.Int64>;
     MaxWriteBufferSize: Nullable<System_Internal.Int64>;
     get PipeSecurity(): PipeSecurity | undefined;
-    set PipeSecurity(value: PipeSecurity);
+    set PipeSecurity(value: PipeSecurity | undefined);
 }
 
 

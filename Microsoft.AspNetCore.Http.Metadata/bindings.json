@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -50,6 +51,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -68,6 +70,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -172,6 +175,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointDescriptionMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -207,6 +211,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
@@ -244,6 +249,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointParameterMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
@@ -282,6 +288,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IEndpointSummaryMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -318,6 +325,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -336,6 +344,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -354,6 +363,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -372,6 +382,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -390,6 +401,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -408,6 +420,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -426,6 +439,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -444,6 +458,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -462,6 +477,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -480,6 +496,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFormOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -516,6 +533,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromBodyMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -552,6 +570,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromFormMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -588,6 +607,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromHeaderMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -624,6 +644,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromQueryMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -660,6 +681,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IFromRouteMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -713,6 +735,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -731,6 +754,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -749,6 +773,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -767,6 +792,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -785,6 +811,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IParameterBindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -821,6 +848,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -839,6 +867,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -857,6 +886,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -875,6 +905,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -911,6 +942,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IRequestSizeLimitMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -947,6 +979,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IRouteDiagnosticsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -1000,6 +1033,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.ITagsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -1019,6 +1053,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
+          "clrName": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata::ToString():System.String",
@@ -1035,6 +1079,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false
@@ -1056,6 +1101,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -1074,6 +1120,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -1092,6 +1139,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -1110,6 +1158,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
@@ -1129,6 +1178,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
@@ -1148,6 +1198,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
@@ -1163,6 +1214,7 @@
           "normalizedSignature": "constructor|(System.String[],System.Type,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.AcceptsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -1179,6 +1231,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1196,6 +1252,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -1214,6 +1271,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         },
@@ -1232,6 +1290,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -1246,6 +1305,7 @@
           "normalizedSignature": "constructor|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Metadata.FormMappingOptionsMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }

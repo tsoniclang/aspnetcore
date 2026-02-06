@@ -19,7 +19,7 @@ import type { ActionContext, ActionResult, IActionResult, IViewComponentResult }
 import type { RouteData } from './Microsoft.AspNetCore.Routing/internal/index.js';
 import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable, IEnumerator } from '@tsonic/dotnet/System.Collections.js';
-import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as ClrString, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { EventData as EventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';

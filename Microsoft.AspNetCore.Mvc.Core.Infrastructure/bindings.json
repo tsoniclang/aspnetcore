@@ -15,6 +15,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IActionResult",
+          "clrName": "Microsoft.AspNetCore.Mvc.IActionResult"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.IActionResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
@@ -31,6 +37,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IActionResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false

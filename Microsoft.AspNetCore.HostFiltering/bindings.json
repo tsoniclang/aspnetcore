@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HostFiltering:Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering",
           "isExtensionMethod": false
@@ -47,6 +52,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.AspNetCore.HostFiltering.HostFilteringOptions,Microsoft.AspNetCore.HostFiltering,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
         }
@@ -63,6 +69,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -80,6 +90,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
         },
@@ -98,6 +109,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
         },
@@ -116,6 +128,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
         }
@@ -130,6 +143,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HostFiltering.HostFilteringOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HostFiltering"
         }

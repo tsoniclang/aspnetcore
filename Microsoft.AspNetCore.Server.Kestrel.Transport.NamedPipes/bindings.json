@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
@@ -68,6 +74,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }
@@ -82,6 +89,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }
@@ -98,6 +106,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes:Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions::CreateDefaultNamedPipeServerStream(Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.CreateNamedPipeServerStreamContext):System.IO.Pipes.NamedPipeServerStream",
@@ -114,6 +126,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes",
           "isExtensionMethod": false
@@ -135,6 +148,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
@@ -153,6 +167,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
@@ -171,6 +186,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
@@ -189,6 +205,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
@@ -207,6 +224,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         },
@@ -225,6 +243,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }
@@ -239,6 +258,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.NamedPipeTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes"
         }

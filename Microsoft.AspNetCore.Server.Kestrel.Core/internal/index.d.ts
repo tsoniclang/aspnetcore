@@ -43,7 +43,6 @@ export interface BadHttpRequestException$instance extends BadHttpRequestExceptio
 
 
 export const BadHttpRequestException: {
-    new(): BadHttpRequestException;
 };
 
 
@@ -116,9 +115,9 @@ export interface KestrelServerLimits$instance {
     MaxRequestLineSize: int;
     MaxResponseBufferSize: Nullable<System_Internal.Int64>;
     get MinRequestBodyDataRate(): MinDataRate | undefined;
-    set MinRequestBodyDataRate(value: MinDataRate);
+    set MinRequestBodyDataRate(value: MinDataRate | undefined);
     get MinResponseDataRate(): MinDataRate | undefined;
-    set MinResponseDataRate(value: MinDataRate);
+    set MinResponseDataRate(value: MinDataRate | undefined);
     RequestHeadersTimeout: TimeSpan;
 }
 
@@ -138,7 +137,7 @@ export interface KestrelServerOptions$instance {
     AllowSynchronousIO: boolean;
     ApplicationServices: IServiceProvider;
     get ConfigurationLoader(): KestrelConfigurationLoader | undefined;
-    set ConfigurationLoader(value: KestrelConfigurationLoader);
+    set ConfigurationLoader(value: KestrelConfigurationLoader | undefined);
     DisableStringReuse: boolean;
     EnableAltSvc: boolean;
     readonly Limits: KestrelServerLimits;
@@ -178,10 +177,10 @@ export type KestrelServerOptions = KestrelServerOptions$instance;
 export interface ListenOptions$instance {
     readonly ApplicationServices: IServiceProvider;
     DisableAltSvcHeader: boolean;
-    readonly EndPoint: EndPoint;
+    EndPoint: EndPoint;
     readonly FileHandle: ulong;
     readonly IPEndPoint: IPEndPoint | undefined;
-    readonly KestrelServerOptions: KestrelServerOptions;
+    KestrelServerOptions: KestrelServerOptions;
     readonly PipeName: string | undefined;
     Protocols: HttpProtocols;
     readonly SocketPath: string | undefined;
@@ -192,7 +191,6 @@ export interface ListenOptions$instance {
 
 
 export const ListenOptions: {
-    new(): ListenOptions;
 };
 
 

@@ -16,7 +16,7 @@ import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
 import type { UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 import type { IOptionsMonitor, IPostConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
@@ -103,7 +103,16 @@ export type CookieAuthenticationEvents = CookieAuthenticationEvents$instance;
 export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions>, IAuthenticationSignOutHandler {
     AuthenticateAsync(): Task<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties): Task;
+    CreateEventsAsync(): Task<unknown>;
+    CreateEventsAsync(): Task<unknown>;
+    FinishResponseAsync(): Task;
+    HandleAuthenticateAsync(): Task<AuthenticateResult>;
+    HandleChallengeAsync(properties: AuthenticationProperties): Task;
+    HandleForbiddenAsync(properties: AuthenticationProperties): Task;
+    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    HandleSignOutAsync(properties: AuthenticationProperties): Task;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
+    InitializeHandlerAsync(): Task;
     SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
     SignOutAsync(properties: AuthenticationProperties): Task;
 }
@@ -128,14 +137,14 @@ export interface CookieAuthenticationOptions$instance extends AuthenticationSche
     Cookie: CookieBuilder;
     CookieManager: ICookieManager;
     get DataProtectionProvider(): IDataProtectionProvider | undefined;
-    set DataProtectionProvider(value: IDataProtectionProvider);
+    set DataProtectionProvider(value: IDataProtectionProvider | undefined);
     Events: CookieAuthenticationEvents | unknown;
     ExpireTimeSpan: TimeSpan;
     LoginPath: PathString;
     LogoutPath: PathString;
     ReturnUrlParameter: string;
     get SessionStore(): ITicketStore | undefined;
-    set SessionStore(value: ITicketStore);
+    set SessionStore(value: ITicketStore | undefined);
     SlidingExpiration: boolean;
     TicketDataFormat: ISecureDataFormat_1<AuthenticationTicket>;
 }

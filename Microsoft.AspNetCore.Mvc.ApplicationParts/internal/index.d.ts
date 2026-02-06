@@ -53,7 +53,7 @@ export interface ApplicationPart$instance {
 }
 
 
-export const ApplicationPart: {
+export const ApplicationPart: (abstract new() => ApplicationPart) & {
 };
 
 
@@ -76,7 +76,7 @@ export interface ApplicationPartFactory$instance {
 }
 
 
-export const ApplicationPartFactory: {
+export const ApplicationPartFactory: (abstract new() => ApplicationPartFactory) & {
     GetApplicationPartFactory(assembly: Assembly): ApplicationPartFactory;
 };
 

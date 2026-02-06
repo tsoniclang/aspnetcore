@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -50,6 +51,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.IFormValueMapper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -71,6 +73,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -78,16 +84,17 @@
           "clrName": "Container",
           "metadataToken": 385876221,
           "canonicalSignature": ":System.Object",
-          "normalizedSignature": "Container|:System.Object|static=false|accessor=get",
+          "normalizedSignature": "Container|:System.Object|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -106,6 +113,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -124,6 +132,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -142,6 +151,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -160,6 +170,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingError",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -179,6 +190,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext::SetResult(System.Object):System.Void",
@@ -195,6 +210,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -216,6 +232,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -234,6 +251,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -252,6 +270,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -270,6 +289,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -288,6 +308,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -306,6 +327,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -314,16 +336,17 @@
           "clrName": "Result",
           "metadataToken": 385876234,
           "canonicalSignature": ":System.Object",
-          "normalizedSignature": "Result|:System.Object|static=false|accessor=get",
+          "normalizedSignature": "Result|:System.Object|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.FormValueMappingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -343,6 +366,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions::AddSupplyValueFromFormProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -359,6 +386,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Forms.Mapping.SupplyParameterFromFormServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true

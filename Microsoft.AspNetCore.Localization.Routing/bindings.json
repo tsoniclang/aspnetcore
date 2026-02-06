@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider",
+        "clrName": "Microsoft.AspNetCore.Localization.RequestCultureProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
+          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization.Routing:Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -31,6 +41,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing",
           "isExtensionMethod": false
@@ -50,6 +61,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
@@ -70,6 +82,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing",
           "isExtensionMethod": false
@@ -91,6 +104,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing"
         },
@@ -109,6 +123,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing"
         }
@@ -123,6 +138,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing"
         }

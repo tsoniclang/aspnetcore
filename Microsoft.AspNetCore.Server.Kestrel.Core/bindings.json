@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -92,6 +120,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -110,6 +139,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.BadHttpRequestException",
+        "clrName": "Microsoft.AspNetCore.Http.BadHttpRequestException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -127,6 +166,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -146,6 +186,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -163,6 +207,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -181,6 +226,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -199,6 +245,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -217,6 +264,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -235,6 +283,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -253,6 +302,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -271,6 +321,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -289,6 +340,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -303,6 +355,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -319,6 +372,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -336,6 +393,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http3Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -350,6 +408,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.Http3Limits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -366,6 +425,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.IServer",
+          "clrName": "Microsoft.AspNetCore.Hosting.Server.IServer"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer::StartAsync(IHttpApplication_1,System.Threading.CancellationToken):System.Threading.Tasks.Task",
@@ -382,6 +455,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -401,6 +475,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -420,6 +495,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -439,6 +515,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
           "isExtensionMethod": false,
@@ -459,6 +536,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
           "isExtensionMethod": false,
@@ -481,6 +559,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -499,6 +578,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -517,6 +597,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.IServer",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
@@ -532,6 +613,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Connections.IConnectionListenerFactory,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -548,6 +630,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -565,6 +651,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -583,6 +670,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -601,6 +689,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -619,6 +708,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -637,6 +727,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -655,6 +746,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -673,6 +765,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -691,6 +784,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -709,6 +803,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -727,6 +822,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -745,6 +841,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -763,6 +860,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -781,6 +879,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -799,6 +898,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -813,6 +913,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -829,6 +930,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions::ConfigureEndpointDefaults(System.Action_1[[Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -845,6 +950,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -864,6 +970,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -883,6 +990,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -902,6 +1010,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -921,6 +1030,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -940,6 +1050,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -959,6 +1070,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -978,6 +1090,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -997,6 +1110,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1016,6 +1130,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1035,6 +1150,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1054,6 +1170,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1073,6 +1190,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1092,6 +1210,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1111,6 +1230,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1130,6 +1250,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1149,6 +1270,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1168,6 +1290,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1187,6 +1310,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1206,6 +1330,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1225,6 +1350,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1246,6 +1372,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1264,6 +1391,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1282,6 +1410,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1300,6 +1429,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1318,6 +1448,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1336,6 +1467,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1354,6 +1486,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1372,6 +1505,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1390,6 +1524,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1408,6 +1543,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1426,6 +1562,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1444,6 +1581,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -1458,6 +1596,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -1474,6 +1613,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IConnectionBuilder",
+          "clrName": "Microsoft.AspNetCore.Connections.IConnectionBuilder"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
+          "clrName": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions::ToString():System.String",
@@ -1490,6 +1643,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1509,6 +1663,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1528,6 +1683,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions::Clone(System.Net.IPAddress):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
+          "clrName": "Clone",
+          "metadataToken": 100664222,
+          "canonicalSignature": "(System.Net.IPAddress):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
+          "normalizedSignature": "Clone|(System.Net.IPAddress):Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1547,6 +1723,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -1567,6 +1744,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -1587,6 +1765,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -1607,6 +1786,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -1619,16 +1799,17 @@
           "clrName": "EndPoint",
           "metadataToken": 385876141,
           "canonicalSignature": ":System.Net.EndPoint",
-          "normalizedSignature": "EndPoint|:System.Net.EndPoint|static=false|accessor=get",
+          "normalizedSignature": "EndPoint|:System.Net.EndPoint|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1647,6 +1828,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1665,6 +1847,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1683,6 +1866,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1701,6 +1885,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1709,16 +1894,17 @@
           "clrName": "KestrelServerOptions",
           "metadataToken": 385876147,
           "canonicalSignature": ":Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions",
-          "normalizedSignature": "KestrelServerOptions|:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions|static=false|accessor=get",
+          "normalizedSignature": "KestrelServerOptions|:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1737,6 +1923,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1755,6 +1942,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1773,6 +1961,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1791,6 +1980,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1810,6 +2000,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1830,6 +2021,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate::ToString():System.String",
@@ -1846,6 +2041,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -1867,6 +2063,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -1885,6 +2082,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -1899,6 +2097,7 @@
           "normalizedSignature": "constructor|(System.Double,System.TimeSpan):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }

@@ -17,6 +17,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -28,6 +50,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -39,6 +62,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -50,6 +74,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLinkMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -84,6 +109,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -103,6 +129,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IHostEnvironmentNavigationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -140,6 +167,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.INavigationInterception",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -178,6 +206,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IRoutingStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -213,6 +242,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.IScrollToLocationHash",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -234,7 +264,85 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
+        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::OnParametersSet():System.Void",
+          "clrName": "OnParametersSet",
+          "metadataToken": 100663374,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "OnParametersSet|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "clrName": "BuildRenderTree",
+          "metadataToken": 100663375,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.FocusOnNavigate::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "clrName": "OnAfterRenderAsync",
+          "metadataToken": 100663376,
+          "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "clrName": "Attach",
@@ -250,6 +358,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -270,6 +379,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -290,6 +400,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -310,6 +421,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -330,6 +442,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -349,6 +462,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -368,6 +482,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -387,6 +502,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -408,6 +524,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -426,6 +543,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -440,6 +558,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -456,6 +575,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -473,6 +596,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -491,6 +615,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -499,16 +624,17 @@
           "clrName": "HistoryEntryState",
           "metadataToken": 385876171,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "HistoryEntryState|:System.String|static=false|accessor=get",
+          "normalizedSignature": "HistoryEntryState|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -523,6 +649,7 @@
           "normalizedSignature": "constructor|(System.String,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -539,6 +666,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.LocationChangingContext::PreventNavigation():System.Void",
@@ -555,6 +686,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -576,6 +708,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -594,6 +727,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -612,6 +746,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -630,6 +765,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -644,6 +780,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.LocationChangingContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -660,6 +797,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -677,6 +818,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -695,6 +837,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -714,6 +857,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
@@ -730,6 +891,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -750,6 +912,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -770,6 +933,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -792,6 +956,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -810,6 +975,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -824,6 +990,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -840,7 +1007,69 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
+        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::OnInitialized():System.Void",
+          "clrName": "OnInitialized",
+          "metadataToken": 100663406,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "OnInitialized|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::OnParametersSet():System.Void",
+          "clrName": "OnParametersSet",
+          "metadataToken": 100663407,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "OnParametersSet|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::Dispose():System.Void",
           "clrName": "Dispose",
@@ -856,6 +1085,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::ShouldMatch(System.String):System.Boolean",
+          "clrName": "ShouldMatch",
+          "metadataToken": 100663411,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "ShouldMatch|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "clrName": "BuildRenderTree",
+          "metadataToken": 100663414,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -875,6 +1145,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -895,6 +1166,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -915,6 +1187,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -935,6 +1208,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -955,6 +1229,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -974,6 +1249,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "clrName": "OnAfterRenderAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -993,6 +1289,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1012,6 +1309,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1033,6 +1331,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1051,6 +1350,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Routing.NavLink::CssClass:System.String",
+          "clrName": "CssClass",
+          "metadataToken": 385876005,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "CssClass|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1069,6 +1388,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1087,6 +1407,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1101,6 +1422,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NavLink",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1117,6 +1439,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -1134,6 +1460,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -1148,6 +1475,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.NotFoundEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -1164,6 +1492,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Routing.Router::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
@@ -1180,6 +1526,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -1199,6 +1546,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -1218,6 +1566,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -1237,6 +1586,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -1257,6 +1607,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -1277,6 +1628,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -1299,6 +1651,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -1317,6 +1670,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -1335,6 +1689,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -1353,6 +1708,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -1371,6 +1727,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -1389,6 +1746,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -1407,6 +1765,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -1425,6 +1784,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -1439,6 +1799,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.Router",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -1455,6 +1816,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions::AcceptsInteractiveRouting(Microsoft.AspNetCore.Http.HttpContext):System.Boolean",
@@ -1471,6 +1836,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Routing.RazorComponentsEndpointHttpContextExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": true

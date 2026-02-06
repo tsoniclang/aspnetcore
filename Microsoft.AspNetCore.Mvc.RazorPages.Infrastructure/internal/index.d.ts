@@ -10,11 +10,11 @@ import type { IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/inde
 import type { EndpointMetadataCollection } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Abstractions_Internal from "../../Microsoft.AspNetCore.Mvc.Abstractions/internal/index.js";
 import type { ActionDescriptorProviderContext, IActionDescriptorProvider, ParameterDescriptor } from "../../Microsoft.AspNetCore.Mvc.Abstractions/internal/index.js";
-import type { IPageApplicationModelProvider, IPageRouteModelProvider } from "../../Microsoft.AspNetCore.Mvc.ApplicationModels/internal/index.js";
+import type { IPageApplicationModelProvider, IPageRouteModelProvider, PageRouteModel } from "../../Microsoft.AspNetCore.Mvc.ApplicationModels/internal/index.js";
 import type { ApplicationPartManager } from "../../Microsoft.AspNetCore.Mvc.ApplicationParts/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Infrastructure_Internal from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
 import type { IHttpResponseStreamWriterFactory, IParameterInfoParameterDescriptor, IPropertyInfoParameterDescriptor } from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
-import type { BindingInfo } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
+import type { BindingInfo, IModelMetadataProvider } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Razor_Compilation_Internal from "../../Microsoft.AspNetCore.Mvc.Razor.Compilation/internal/index.js";
 import type { RazorViewAttribute } from "../../Microsoft.AspNetCore.Mvc.Razor.Compilation/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Razor_Internal from "../../Microsoft.AspNetCore.Mvc.Razor/internal/index.js";
@@ -22,10 +22,10 @@ import type { IRazorPage, IRazorPageActivator, IRazorViewEngine, IViewLocationEx
 import * as Microsoft_AspNetCore_Mvc_RazorPages_Internal from "../../Microsoft.AspNetCore.Mvc.RazorPages/internal/index.js";
 import type { CompiledPageActionDescriptor, IPageModelActivatorProvider, PageActionDescriptor, PageContext, PageResult, RazorPagesOptions } from "../../Microsoft.AspNetCore.Mvc.RazorPages/internal/index.js";
 import type { ViewContext } from "../../Microsoft.AspNetCore.Mvc.Rendering/internal/index.js";
-import type { ICompositeViewEngine, IView } from "../../Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js";
+import type { ICompositeViewEngine, IView, IViewEngine } from "../../Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ViewFeatures_Internal from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
-import type { ITempDataDictionary, ViewDataDictionary, ViewExecutor } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
-import type { ActionContext, MvcOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
+import type { ITempDataDictionary, ITempDataDictionaryFactory, ViewDataDictionary, ViewExecutor } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
+import type { ActionContext, MvcOptions, MvcViewOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { IDictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { DiagnosticListener } from "@tsonic/dotnet/System.Diagnostics.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
@@ -73,7 +73,8 @@ export type CompiledPageActionDescriptorProvider = CompiledPageActionDescriptorP
 export interface HandlerMethodDescriptor$instance {
     HttpMethod: string;
     MethodInfo: MethodInfo;
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     Parameters: IList<HandlerParameterDescriptor>;
 }
 
@@ -146,7 +147,7 @@ export interface PageLoader$instance {
 }
 
 
-export const PageLoader: {
+export const PageLoader: (abstract new() => PageLoader) & {
 };
 
 
@@ -205,9 +206,10 @@ export type PageViewLocationExpander = PageViewLocationExpander$instance & __Pag
 
 export interface RazorPageAdapter$instance {
     get BodyContent(): IHtmlContent | undefined;
-    set BodyContent(value: IHtmlContent);
+    set BodyContent(value: IHtmlContent | undefined);
     IsLayoutBeingRendered: boolean;
-    Layout: string;
+    get Layout(): string | undefined;
+    set Layout(value: string | undefined);
     Path: string;
     PreviousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
     readonly SectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;

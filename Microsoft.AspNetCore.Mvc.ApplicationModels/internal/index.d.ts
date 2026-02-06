@@ -54,7 +54,8 @@ export interface IApplicationModelProvider$instance {
 export type IApplicationModelProvider = IApplicationModelProvider$instance;
 
 export interface IBindingModel$instance {
-    BindingInfo: BindingInfo;
+    get BindingInfo(): BindingInfo | undefined;
+    set BindingInfo(value: BindingInfo | undefined);
 }
 
 
@@ -177,7 +178,7 @@ export interface ActionModel$instance {
     readonly Parameters: IList__System_Collections_Generic<ParameterModel>;
     readonly Properties: IDictionary<unknown, unknown | undefined>;
     get RouteParameterTransformer(): IOutboundParameterTransformer | undefined;
-    set RouteParameterTransformer(value: IOutboundParameterTransformer);
+    set RouteParameterTransformer(value: IOutboundParameterTransformer | undefined);
     readonly RouteValues: IDictionary<System_Internal.String, string | undefined>;
     readonly Selectors: IList__System_Collections_Generic<SelectorModel>;
 }
@@ -204,6 +205,7 @@ export type ActionModel = ActionModel$instance & __ActionModel$views;
 export interface ApiConventionApplicationModelConvention$instance {
     readonly DefaultErrorResponseType: ProducesErrorResponseTypeAttribute;
     Apply(action: ActionModel): void;
+    ShouldApply(action: ActionModel): boolean;
 }
 
 
@@ -223,7 +225,7 @@ export type ApiConventionApplicationModelConvention = ApiConventionApplicationMo
 
 export interface ApiExplorerModel$instance {
     get GroupName(): string | undefined;
-    set GroupName(value: string);
+    set GroupName(value: string | undefined);
     IsVisible: Nullable<System_Internal.Boolean>;
 }
 
@@ -238,6 +240,7 @@ export type ApiExplorerModel = ApiExplorerModel$instance;
 
 export interface ApiVisibilityConvention$instance {
     Apply(action: ActionModel): void;
+    ShouldApply(action: ActionModel): boolean;
 }
 
 
@@ -293,13 +296,15 @@ export const ApplicationModelProviderContext: {
 export type ApplicationModelProviderContext = ApplicationModelProviderContext$instance;
 
 export interface AttributeRouteModel$instance {
-    readonly Attribute: IRouteTemplateProvider;
+    readonly Attribute: IRouteTemplateProvider | undefined;
     readonly IsAbsoluteTemplate: boolean;
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     Order: Nullable<System_Internal.Int32>;
     SuppressLinkGeneration: boolean;
     SuppressPathMatching: boolean;
-    Template: string;
+    get Template(): string | undefined;
+    set Template(value: string | undefined);
 }
 
 
@@ -319,6 +324,7 @@ export type AttributeRouteModel = AttributeRouteModel$instance;
 
 export interface ClientErrorResultFilterConvention$instance {
     Apply(action: ActionModel): void;
+    ShouldApply(action: ActionModel): boolean;
 }
 
 
@@ -338,6 +344,7 @@ export type ClientErrorResultFilterConvention = ClientErrorResultFilterConventio
 
 export interface ConsumesConstraintForFormFileParameterConvention$instance {
     Apply(action: ActionModel): void;
+    ShouldApply(action: ActionModel): boolean;
 }
 
 
@@ -359,7 +366,7 @@ export interface ControllerModel$instance {
     readonly Actions: IList__System_Collections_Generic<ActionModel>;
     ApiExplorer: ApiExplorerModel;
     get Application(): ApplicationModel | undefined;
-    set Application(value: ApplicationModel);
+    set Application(value: ApplicationModel | undefined);
     readonly Attributes: IReadOnlyList<unknown>;
     ControllerName: string;
     readonly ControllerProperties: IList__System_Collections_Generic<PropertyModel>;
@@ -392,6 +399,7 @@ export type ControllerModel = ControllerModel$instance & __ControllerModel$views
 
 export interface InferParameterBindingInfoConvention$instance {
     Apply(action: ActionModel): void;
+    ShouldApply(action: ActionModel): boolean;
 }
 
 
@@ -412,6 +420,7 @@ export type InferParameterBindingInfoConvention = InferParameterBindingInfoConve
 
 export interface InvalidModelStateFilterConvention$instance {
     Apply(action: ActionModel): void;
+    ShouldApply(action: ActionModel): boolean;
 }
 
 
@@ -439,7 +448,8 @@ export interface PageApplicationModel$instance {
     readonly HandlerProperties: IList__System_Collections_Generic<PagePropertyModel>;
     readonly HandlerType: TypeInfo;
     readonly HandlerTypeAttributes: IReadOnlyList<unknown>;
-    ModelType: TypeInfo;
+    get ModelType(): TypeInfo | undefined;
+    set ModelType(value: TypeInfo | undefined);
     PageType: TypeInfo;
     readonly Properties: IDictionary<unknown, unknown | undefined>;
     readonly RelativePath: string;
@@ -496,7 +506,7 @@ export type PageConventionCollection = PageConventionCollection$instance;
 export interface PageHandlerModel$instance {
     readonly Attributes: IReadOnlyList<unknown>;
     get HandlerName(): string | undefined;
-    set HandlerName(value: string);
+    set HandlerName(value: string | undefined);
     HttpMethod: string;
     readonly MethodInfo: MethodInfo;
     Name: string;
@@ -539,7 +549,7 @@ export interface __PageParameterModel$views {
     As_IPropertyModel(): IPropertyModel$instance;
 }
 
-export interface PageParameterModel$instance extends IBindingModel$instance, ICommonModel$instance {}
+export interface PageParameterModel$instance extends IBindingModel$instance {}
 
 export type PageParameterModel = PageParameterModel$instance & __PageParameterModel$views;
 
@@ -563,7 +573,7 @@ export interface __PagePropertyModel$views {
     As_IPropertyModel(): IPropertyModel$instance;
 }
 
-export interface PagePropertyModel$instance extends IBindingModel$instance, ICommonModel$instance {}
+export interface PagePropertyModel$instance extends IBindingModel$instance {}
 
 export type PagePropertyModel = PagePropertyModel$instance & __PagePropertyModel$views;
 
@@ -586,7 +596,7 @@ export interface PageRouteModel$instance {
     readonly Properties: IDictionary<unknown, unknown | undefined>;
     readonly RelativePath: string;
     get RouteParameterTransformer(): IOutboundParameterTransformer | undefined;
-    set RouteParameterTransformer(value: IOutboundParameterTransformer);
+    set RouteParameterTransformer(value: IOutboundParameterTransformer | undefined);
     readonly RouteValues: IDictionary<System_Internal.String, System_Internal.String>;
     readonly Selectors: IList__System_Collections_Generic<SelectorModel>;
     readonly ViewEnginePath: string;
@@ -616,6 +626,7 @@ export type PageRouteModelProviderContext = PageRouteModelProviderContext$instan
 
 export interface PageRouteTransformerConvention$instance extends IPageConvention {
     Apply(model: PageRouteModel): void;
+    ShouldApply(action: PageRouteModel): boolean;
 }
 
 
@@ -655,21 +666,22 @@ export interface __ParameterModel$views {
     As_IPropertyModel(): IPropertyModel$instance;
 }
 
-export interface ParameterModel$instance extends IBindingModel$instance, ICommonModel$instance {}
+export interface ParameterModel$instance extends IBindingModel$instance {}
 
 export type ParameterModel = ParameterModel$instance & __ParameterModel$views;
 
 
 export interface ParameterModelBase$instance {
     readonly Attributes: IReadOnlyList<unknown>;
-    BindingInfo: BindingInfo;
-    readonly Name: string;
+    get BindingInfo(): BindingInfo | undefined;
+    set BindingInfo(value: BindingInfo | undefined);
+    Name: string;
     readonly ParameterType: Type;
     readonly Properties: IDictionary<unknown, unknown | undefined>;
 }
 
 
-export const ParameterModelBase: {
+export const ParameterModelBase: (abstract new(parameterType: Type, attributes: IReadOnlyList<unknown>) => ParameterModelBase) & (abstract new(other: ParameterModelBase) => ParameterModelBase) & {
 };
 
 
@@ -703,13 +715,14 @@ export interface __PropertyModel$views {
     As_IPropertyModel(): IPropertyModel$instance;
 }
 
-export interface PropertyModel$instance extends IBindingModel$instance, ICommonModel$instance {}
+export interface PropertyModel$instance extends IBindingModel$instance {}
 
 export type PropertyModel = PropertyModel$instance & __PropertyModel$views;
 
 
 export interface RouteTokenTransformerConvention$instance {
     Apply(action: ActionModel): void;
+    ShouldApply(action: ActionModel): boolean;
 }
 
 
@@ -730,7 +743,7 @@ export type RouteTokenTransformerConvention = RouteTokenTransformerConvention$in
 export interface SelectorModel$instance {
     readonly ActionConstraints: IList__System_Collections_Generic<IActionConstraintMetadata>;
     get AttributeRouteModel(): AttributeRouteModel | undefined;
-    set AttributeRouteModel(value: AttributeRouteModel);
+    set AttributeRouteModel(value: AttributeRouteModel | undefined);
     readonly EndpointMetadata: IList__System_Collections_Generic<unknown>;
 }
 

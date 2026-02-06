@@ -16,8 +16,8 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 export interface TagHelperExecutionContext$instance {
     readonly ChildContentRetrieved: boolean;
     readonly Context: TagHelperContext;
-    readonly Items: IDictionary<unknown, unknown>;
-    readonly Output: TagHelperOutput;
+    Items: IDictionary<unknown, unknown>;
+    Output: TagHelperOutput;
     readonly TagHelpers: IList<ITagHelper>;
     Add(tagHelper: ITagHelper): void;
     AddHtmlAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;

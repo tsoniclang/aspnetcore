@@ -9,19 +9,24 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { IInputFormatter } from "../../Microsoft.AspNetCore.Mvc.Formatters/internal/index.js";
 import type { IHttpRequestStreamReaderFactory } from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
-import type { ICollectionModelBinder, IModelBinder, IModelBinderProvider, ModelBinderProviderContext, ModelBindingContext, ModelMetadata } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
+import type { ICollectionModelBinder, IModelBinder, IModelBinderProvider, ModelBinderProviderContext, ModelBindingContext, ModelBindingResult, ModelMetadata, ValueProviderResult } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { MvcOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IDictionary, IList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { IDictionary, IEnumerable, IList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { DateTimeStyles, NumberStyles } from "@tsonic/dotnet/System.Globalization.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, Type } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface ArrayModelBinder_1$instance<TElement> extends CollectionModelBinder_1$instance<TElement> {
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
+    ConvertToCollectionType(targetType: Type, collection: IEnumerable<TElement>): unknown | undefined;
+    ConvertToCollectionType(targetType: Type, collection: IEnumerable<TElement>): unknown | undefined;
+    CopyToModel(target: unknown, sourceCollection: IEnumerable<TElement>): void;
+    CopyToModel(target: unknown, sourceCollection: IEnumerable<TElement>): void;
+    CreateEmptyCollection(targetType: Type): unknown;
 }
 
 
@@ -218,6 +223,9 @@ export type CancellationTokenModelBinderProvider = CancellationTokenModelBinderP
 export interface CollectionModelBinder_1$instance<TElement> {
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
+    ConvertToCollectionType(targetType: Type, collection: IEnumerable<TElement>): unknown | undefined;
+    CopyToModel(target: unknown, sourceCollection: IEnumerable<TElement>): void;
+    CreateEmptyCollection(targetType: Type): unknown;
 }
 
 
@@ -261,7 +269,6 @@ export interface ComplexObjectModelBinder$instance {
 
 
 export const ComplexObjectModelBinder: {
-    new(): ComplexObjectModelBinder;
 };
 
 
@@ -295,6 +302,10 @@ export type ComplexObjectModelBinderProvider = ComplexObjectModelBinderProvider$
 
 export interface ComplexTypeModelBinder$instance {
     BindModelAsync(bindingContext: ModelBindingContext): Task;
+    BindProperty(bindingContext: ModelBindingContext): Task;
+    CanBindProperty(bindingContext: ModelBindingContext, propertyMetadata: ModelMetadata): boolean;
+    CreateModel(bindingContext: ModelBindingContext): unknown;
+    SetProperty(bindingContext: ModelBindingContext, modelName: string, propertyMetadata: ModelMetadata, result: ModelBindingResult): void;
 }
 
 
@@ -392,6 +403,8 @@ export type DecimalModelBinder = DecimalModelBinder$instance & __DecimalModelBin
 export interface DictionaryModelBinder_2$instance<TKey, TValue> extends CollectionModelBinder_1$instance<KeyValuePair<TKey, TValue>> {
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
+    ConvertToCollectionType(targetType: Type, collection: IEnumerable<KeyValuePair<TKey, TValue>>): unknown | undefined;
+    CreateEmptyCollection(targetType: Type): unknown;
 }
 
 
@@ -450,6 +463,7 @@ export type DoubleModelBinder = DoubleModelBinder$instance & __DoubleModelBinder
 
 export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$instance {
     BindModelAsync(bindingContext: ModelBindingContext): Task;
+    CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown): void;
 }
 
 
@@ -715,6 +729,7 @@ export type ServicesModelBinderProvider = ServicesModelBinderProvider$instance &
 
 export interface SimpleTypeModelBinder$instance {
     BindModelAsync(bindingContext: ModelBindingContext): Task;
+    CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown): void;
 }
 
 

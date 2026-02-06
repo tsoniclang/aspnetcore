@@ -54,7 +54,7 @@ export type IDisableCorsAttribute = IDisableCorsAttribute$instance;
 
 export interface IEnableCorsAttribute$instance extends ICorsMetadata {
     get PolicyName(): string | undefined;
-    set PolicyName(value: string);
+    set PolicyName(value: string | undefined);
 }
 
 
@@ -145,7 +145,7 @@ export interface CorsResult$instance {
     readonly AllowedHeaders: IList<System_Internal.String>;
     readonly AllowedMethods: IList<System_Internal.String>;
     get AllowedOrigin(): string | undefined;
-    set AllowedOrigin(value: string);
+    set AllowedOrigin(value: string | undefined);
     IsOriginAllowed: boolean;
     IsPreflightRequest: boolean;
     PreflightMaxAge: Nullable<TimeSpan>;

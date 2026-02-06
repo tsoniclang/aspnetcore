@@ -62,16 +62,16 @@ export type CompositeViewEngine = CompositeViewEngine$instance & __CompositeView
 
 
 export interface ViewEngineResult$instance {
-    readonly SearchedLocations: IEnumerable<System_Internal.String>;
+    SearchedLocations: IEnumerable<System_Internal.String>;
     readonly Success: boolean;
-    readonly View: IView;
-    readonly ViewName: string;
+    get View(): IView | undefined;
+    set View(value: IView | undefined);
+    ViewName: string;
     EnsureSuccessful(originalLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
 }
 
 
 export const ViewEngineResult: {
-    new(): ViewEngineResult;
     Found(viewName: string, view: IView): ViewEngineResult;
     NotFound(viewName: string, searchedLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
 };

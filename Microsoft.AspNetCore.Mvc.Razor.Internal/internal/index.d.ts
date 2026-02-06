@@ -11,7 +11,7 @@ import type { Attribute, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface RazorInjectAttribute$instance extends Attribute {
     get Key(): unknown | undefined;
-    set Key(value: unknown);
+    set Key(value: unknown | undefined);
 }
 
 

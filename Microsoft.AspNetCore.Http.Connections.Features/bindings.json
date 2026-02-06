@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpContextFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -68,6 +69,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.Features.IHttpTransportFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }

@@ -55,7 +55,8 @@ export type IParameterLiteralNodeMatchingPolicy = IParameterLiteralNodeMatchingP
 export interface CandidateState$instance {
     readonly Endpoint: Endpoint;
     readonly Score: int;
-    readonly Values: RouteValueDictionary;
+    get Values(): RouteValueDictionary | undefined;
+    set Values(value: RouteValueDictionary | undefined);
 }
 
 
@@ -94,7 +95,7 @@ export type PolicyNodeEdge = PolicyNodeEdge$instance;
 
 export interface CandidateSet$instance {
     readonly Count: int;
-    readonly Item: CandidateState;
+    readonly [index: number]: CandidateState;
     ExpandEndpoint(index: int, endpoints: IReadOnlyList<Endpoint>, comparer: IComparer<Endpoint>): void;
     IsValidCandidate(index: int): boolean;
     ReplaceEndpoint(index: int, endpoint: Endpoint, values: RouteValueDictionary): void;
@@ -114,7 +115,6 @@ export interface EndpointMetadataComparer$instance {
 
 
 export const EndpointMetadataComparer: {
-    new(): EndpointMetadataComparer;
 };
 
 
@@ -122,10 +122,12 @@ export type EndpointMetadataComparer = EndpointMetadataComparer$instance;
 
 export interface EndpointMetadataComparer_1$instance<TMetadata> {
     Compare(x: Endpoint, y: Endpoint): int;
+    CompareMetadata(x: TMetadata, y: TMetadata): int;
+    GetMetadata(endpoint: Endpoint): TMetadata | undefined;
 }
 
 
-export const EndpointMetadataComparer_1: {
+export const EndpointMetadataComparer_1: (abstract new<TMetadata>() => EndpointMetadataComparer_1<TMetadata>) & {
     readonly Default: unknown;
 };
 
@@ -137,7 +139,7 @@ export interface EndpointSelector$instance {
 }
 
 
-export const EndpointSelector: {
+export const EndpointSelector: (abstract new() => EndpointSelector) & {
 };
 
 
@@ -198,7 +200,7 @@ export interface PolicyJumpTable$instance {
 }
 
 
-export const PolicyJumpTable: {
+export const PolicyJumpTable: (abstract new() => PolicyJumpTable) & {
 };
 
 

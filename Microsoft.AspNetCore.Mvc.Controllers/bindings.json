@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -50,6 +51,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -69,6 +71,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -106,6 +109,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -125,6 +129,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -144,6 +149,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -181,6 +187,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -200,6 +207,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -219,6 +227,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -256,6 +265,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerFactoryProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -275,6 +285,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerFactoryProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -294,6 +305,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerFactoryProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -315,6 +327,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor",
+        "clrName": "Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor"
+      },
       "methods": [],
       "properties": [
         {
@@ -332,6 +348,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -350,6 +367,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -368,6 +386,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -386,6 +405,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -404,6 +424,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -418,6 +439,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -434,6 +456,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider::CreateActivator(Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.ControllerContext,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -450,6 +482,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -469,6 +502,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -488,6 +522,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -507,6 +542,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -527,6 +563,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -547,6 +584,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -564,6 +602,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -580,6 +619,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
+        "clrName": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
+          "clrName": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -597,6 +646,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerBoundPropertyDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -615,6 +665,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -630,6 +681,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerBoundPropertyDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -646,6 +698,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -663,6 +719,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -677,6 +734,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -693,6 +751,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
+          "typeArguments": [
+            "ControllerFeature"
+          ]
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Controllers.ControllerFeatureProvider::PopulateFeature(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.Controllers.ControllerFeature):System.Void",
@@ -709,6 +784,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerFeatureProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Controllers.ControllerFeatureProvider::IsController(System.Reflection.TypeInfo):System.Boolean",
+          "clrName": "IsController",
+          "metadataToken": 100666513,
+          "canonicalSignature": "(System.Reflection.TypeInfo):System.Boolean",
+          "normalizedSignature": "IsController|(System.Reflection.TypeInfo):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerFeatureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -728,6 +824,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -745,6 +842,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerFeatureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -761,6 +859,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
+        "clrName": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
+          "clrName": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -778,6 +886,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -796,6 +905,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -811,6 +921,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ControllerParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -827,6 +938,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator",
+          "clrName": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator::Create(Microsoft.AspNetCore.Mvc.ControllerContext):System.Object",
@@ -843,6 +964,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -862,6 +984,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -881,6 +1004,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -901,6 +1025,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -921,6 +1046,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.IControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -938,6 +1064,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }

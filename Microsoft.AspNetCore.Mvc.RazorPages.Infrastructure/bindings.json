@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageHandlerMethodSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -68,6 +69,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -89,6 +91,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
@@ -105,6 +117,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -124,6 +137,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -143,6 +157,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -165,6 +180,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -183,6 +199,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -198,6 +215,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -214,6 +232,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -231,6 +253,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -249,6 +272,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -267,6 +291,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -285,6 +310,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -299,6 +325,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -315,6 +342,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
+        "clrName": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
+          "clrName": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -332,6 +369,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -350,6 +388,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IParameterInfoParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -365,6 +404,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -381,6 +421,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider::OnProvidersExecuting(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptorProviderContext):System.Void",
@@ -397,6 +447,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider::BuildModel():System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "BuildModel",
+          "metadataToken": 100663982,
+          "canonicalSignature": "():System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "BuildModel|():System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -416,6 +487,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -435,6 +507,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -457,6 +530,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -475,6 +549,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Abstractions.IActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -490,6 +565,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -506,6 +582,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor",
+        "clrName": "Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
+          "clrName": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -523,6 +609,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -541,6 +628,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.IPropertyInfoParameterDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -556,6 +644,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -572,6 +661,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
+          "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader::LoadAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -588,6 +687,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -607,6 +707,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -626,6 +727,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false,
@@ -635,7 +737,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader::.ctor():void",
+          "metadataToken": 100664057,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute",
@@ -648,6 +762,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -660,6 +778,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -676,6 +795,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor",
+        "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages.PageResult):System.Threading.Tasks.Task",
@@ -692,6 +815,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -711,6 +835,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1):System.Threading.Tasks.Task",
+          "clrName": "ExecuteAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1):System.Threading.Tasks.Task",
+          "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -727,6 +872,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory,Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine,Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine,Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator,System.Diagnostics.DiagnosticListener,System.Text.Encodings.Web.HtmlEncoder):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -743,6 +889,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander",
+          "clrName": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander::ExpandViewLocations(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -759,6 +915,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -778,6 +935,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -797,6 +955,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false,
@@ -817,6 +976,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false,
@@ -834,6 +994,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -850,6 +1011,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
+          "clrName": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.IModelTypeProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.Razor.IModelTypeProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter::EnsureRenderedBodyOrSections():System.Void",
@@ -866,6 +1041,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -885,6 +1061,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -904,6 +1081,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false,
@@ -924,6 +1102,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false,
@@ -946,6 +1125,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -964,6 +1144,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -982,6 +1163,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -1000,6 +1182,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -1018,6 +1201,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -1036,6 +1220,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -1054,6 +1239,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -1072,6 +1258,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
@@ -1091,6 +1278,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
@@ -1110,6 +1298,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
@@ -1129,6 +1318,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
@@ -1148,6 +1338,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
@@ -1167,6 +1358,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
@@ -1186,6 +1378,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
@@ -1201,6 +1394,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Razor.RazorPageBase,System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -1217,6 +1411,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Razor:Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
+        "clrName": "Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -1234,6 +1432,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -1248,6 +1447,7 @@
           "normalizedSignature": "constructor|(System.String,System.Type,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -1264,6 +1464,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider::CreateActivator(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor):System.Func_2[[Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1280,6 +1490,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1299,6 +1510,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -1318,6 +1530,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false,
@@ -1338,6 +1551,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false,
@@ -1358,6 +1572,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false,
@@ -1375,6 +1590,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }

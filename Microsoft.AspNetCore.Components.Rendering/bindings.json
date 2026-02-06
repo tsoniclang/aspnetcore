@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::DisposeAsync():System.Threading.Tasks.ValueTask",
@@ -31,6 +41,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::GetComponentKey():System.Object",
+          "clrName": "GetComponentKey",
+          "metadataToken": 100664878,
+          "canonicalSignature": "():System.Object",
+          "normalizedSignature": "GetComponentKey|():System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -52,6 +83,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -70,6 +102,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -88,6 +121,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         },
@@ -106,6 +140,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.ComponentState::Renderer:Microsoft.AspNetCore.Components.RenderTree.Renderer",
+          "clrName": "Renderer",
+          "metadataToken": 385876305,
+          "canonicalSignature": ":Microsoft.AspNetCore.Components.RenderTree.Renderer",
+          "normalizedSignature": "Renderer|:Microsoft.AspNetCore.Components.RenderTree.Renderer|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -120,6 +174,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Components.RenderTree.Renderer,System.Int32,Microsoft.AspNetCore.Components.IComponent,Microsoft.AspNetCore.Components.Rendering.ComponentState):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.ComponentState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }
@@ -136,6 +191,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder::OpenElement(System.Int32,System.String):System.Void",
@@ -152,6 +217,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -171,6 +237,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -190,6 +257,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -209,6 +277,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -228,6 +297,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -247,6 +317,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -266,6 +337,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -285,6 +357,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -304,6 +377,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -323,6 +397,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -342,6 +417,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -361,6 +437,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -380,6 +457,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -399,6 +477,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -418,6 +497,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -437,6 +517,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -456,6 +537,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -475,6 +557,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -494,6 +577,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -513,6 +597,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -532,6 +617,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -551,6 +637,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -570,6 +657,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -589,6 +677,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -608,6 +697,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -627,6 +717,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -646,6 +737,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -665,6 +757,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -684,6 +777,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -703,6 +797,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -722,6 +817,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -741,6 +837,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -760,6 +857,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false
@@ -776,6 +874,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components"
         }

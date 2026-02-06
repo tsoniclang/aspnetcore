@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.IErrorBoundaryLogger",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -69,6 +70,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -88,6 +90,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -105,6 +111,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ClipboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -119,6 +126,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ClipboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -135,6 +143,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -152,6 +164,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransfer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -170,6 +183,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransfer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -188,6 +202,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransfer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -206,6 +221,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransfer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -224,6 +240,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransfer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -238,6 +255,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransfer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -254,6 +272,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -271,6 +293,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransferItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -289,6 +312,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransferItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -303,6 +327,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DataTransferItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -319,6 +344,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.MouseEventArgs",
+        "clrName": "Microsoft.AspNetCore.Components.Web.MouseEventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -336,6 +365,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DragEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -350,6 +380,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.DragEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -366,7 +397,69 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ErrorBoundaryBase",
+        "clrName": "Microsoft.AspNetCore.Components.ErrorBoundaryBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IErrorBoundary",
+          "clrName": "Microsoft.AspNetCore.Components.IErrorBoundary"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.ErrorBoundary::OnErrorAsync(System.Exception):System.Threading.Tasks.Task",
+          "clrName": "OnErrorAsync",
+          "metadataToken": 100663520,
+          "canonicalSignature": "(System.Exception):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnErrorAsync|(System.Exception):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.ErrorBoundary::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "clrName": "BuildRenderTree",
+          "metadataToken": 100663521,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "clrName": "Attach",
@@ -382,6 +475,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -402,6 +496,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -422,6 +517,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -442,6 +538,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -462,6 +559,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -481,6 +579,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -500,6 +599,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.ErrorBoundary::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "clrName": "OnAfterRenderAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -519,6 +639,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -535,6 +656,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -551,6 +673,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -568,6 +694,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -586,6 +713,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -604,6 +732,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -622,6 +751,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -640,6 +770,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -654,6 +785,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ErrorEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -670,6 +802,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -687,6 +823,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.FocusEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -701,6 +838,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.FocusEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -717,7 +855,45 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
+        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HeadContent::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "clrName": "BuildRenderTree",
+          "metadataToken": 100663446,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "clrName": "Attach",
@@ -733,6 +909,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -753,6 +930,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -773,6 +951,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -793,6 +972,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -813,6 +993,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -832,6 +1013,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HeadContent::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "clrName": "OnAfterRenderAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -851,6 +1053,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -870,6 +1073,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -891,6 +1095,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -905,6 +1110,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -921,7 +1127,65 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
+        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HeadOutlet::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "clrName": "OnAfterRenderAsync",
+          "metadataToken": 100663450,
+          "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HeadOutlet::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "clrName": "BuildRenderTree",
+          "metadataToken": 100663451,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "clrName": "Attach",
@@ -937,6 +1201,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -957,6 +1222,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -977,6 +1243,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -997,6 +1264,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -1017,6 +1285,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1036,6 +1305,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1055,6 +1325,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1074,6 +1345,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1090,6 +1362,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1106,6 +1379,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.HtmlRenderer::Dispose():System.Void",
@@ -1122,6 +1409,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1141,6 +1429,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1160,6 +1449,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1179,6 +1469,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1198,6 +1489,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1217,6 +1509,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1236,6 +1529,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1255,6 +1549,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1274,6 +1569,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1293,6 +1589,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -1314,6 +1611,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1328,6 +1626,7 @@
           "normalizedSignature": "constructor|(System.IServiceProvider,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.HtmlRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1344,6 +1643,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponentRenderMode",
+          "clrName": "Microsoft.AspNetCore.Components.IComponentRenderMode"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1361,6 +1670,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveAutoRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1375,6 +1685,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveAutoRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1385,6 +1696,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveAutoRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1401,6 +1713,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponentRenderMode",
+          "clrName": "Microsoft.AspNetCore.Components.IComponentRenderMode"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1418,6 +1740,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveServerRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1432,6 +1755,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveServerRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1442,6 +1766,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveServerRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1458,6 +1783,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponentRenderMode",
+          "clrName": "Microsoft.AspNetCore.Components.IComponentRenderMode"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1475,6 +1810,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveWebAssemblyRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1489,6 +1825,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveWebAssemblyRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1499,6 +1836,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.InteractiveWebAssemblyRenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1515,6 +1853,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1527,6 +1869,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1543,6 +1886,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -1560,6 +1907,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1578,6 +1926,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1596,6 +1945,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1614,6 +1964,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1632,6 +1983,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1650,6 +2002,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1668,6 +2021,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1686,6 +2040,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1704,6 +2059,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1722,6 +2078,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1736,6 +2093,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.KeyboardEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -1752,6 +2110,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -1769,6 +2131,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1787,6 +2150,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1805,6 +2169,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1823,6 +2188,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1841,6 +2207,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1859,6 +2226,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1877,6 +2245,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1895,6 +2264,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1913,6 +2283,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1931,6 +2302,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1949,6 +2321,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1967,6 +2340,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -1985,6 +2359,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2003,6 +2378,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2021,6 +2397,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2039,6 +2416,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2057,6 +2435,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2075,6 +2454,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2089,6 +2469,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.MouseEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2105,7 +2486,45 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
+        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.PageTitle::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "clrName": "BuildRenderTree",
+          "metadataToken": 100663457,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent::Attach(Microsoft.AspNetCore.Components.RenderHandle):System.Void",
           "clrName": "Attach",
@@ -2121,6 +2540,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -2141,6 +2561,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -2161,6 +2582,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -2181,6 +2603,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -2201,6 +2624,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -2220,6 +2644,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.PageTitle::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "clrName": "OnAfterRenderAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -2239,6 +2684,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -2258,6 +2704,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -2279,6 +2726,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2293,6 +2741,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PageTitle",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2309,6 +2758,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.MouseEventArgs",
+        "clrName": "Microsoft.AspNetCore.Components.Web.MouseEventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -2326,6 +2779,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2344,6 +2798,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2362,6 +2817,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2380,6 +2836,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2398,6 +2855,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2416,6 +2874,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2434,6 +2893,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2452,6 +2912,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2466,6 +2927,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.PointerEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2482,6 +2944,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -2499,6 +2965,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ProgressEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2517,6 +2984,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ProgressEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2535,6 +3003,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ProgressEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2553,6 +3022,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ProgressEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2567,6 +3037,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.ProgressEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2583,6 +3054,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -2600,6 +3075,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2618,6 +3094,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2636,6 +3113,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2654,6 +3132,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2672,6 +3151,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2690,6 +3170,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2708,6 +3189,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2726,6 +3208,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2744,6 +3227,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2758,6 +3242,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2774,6 +3259,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2791,6 +3280,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2809,6 +3299,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2827,6 +3318,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2845,6 +3337,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2863,6 +3356,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2881,6 +3375,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2899,6 +3394,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2913,6 +3409,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.TouchPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -2929,6 +3426,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.MouseEventArgs",
+        "clrName": "Microsoft.AspNetCore.Components.Web.MouseEventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -2946,6 +3447,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WheelEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2964,6 +3466,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WheelEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -2982,6 +3485,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WheelEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -3000,6 +3504,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WheelEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -3014,6 +3519,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WheelEventArgs",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -3030,6 +3536,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -3047,6 +3557,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -3064,6 +3578,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationExtensions::RegisterForJavaScript(Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration,System.String):System.Void",
@@ -3080,6 +3598,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.JSComponentConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3099,6 +3618,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.JSComponentConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3118,6 +3638,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.JSComponentConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3137,6 +3658,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.JSComponentConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3158,6 +3680,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3175,6 +3701,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.RenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -3193,6 +3720,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.RenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -3211,6 +3739,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.RenderMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -3230,6 +3759,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions::Create(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action_1[[Microsoft.AspNetCore.Components.Web.ClipboardEventArgs,Microsoft.AspNetCore.Components.Web,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Components.EventCallback_1[[Microsoft.AspNetCore.Components.Web.ClipboardEventArgs,Microsoft.AspNetCore.Components.Web,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -3246,6 +3779,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3265,6 +3799,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3284,6 +3819,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3303,6 +3839,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3322,6 +3859,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3341,6 +3879,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3360,6 +3899,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3379,6 +3919,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3398,6 +3939,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3417,6 +3959,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3436,6 +3979,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3455,6 +3999,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3474,6 +4019,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3493,6 +4039,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3512,6 +4059,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3531,6 +4079,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3550,6 +4099,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3569,6 +4119,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3588,6 +4139,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3607,6 +4159,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3628,6 +4181,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.WebRenderTreeBuilderExtensions::AddEventPreventDefaultAttribute(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.String,System.Boolean):System.Void",
@@ -3644,6 +4201,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebRenderTreeBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true
@@ -3663,6 +4221,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.WebRenderTreeBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": true

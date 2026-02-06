@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -92,6 +120,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -103,6 +132,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -114,6 +144,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -125,6 +156,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -136,6 +168,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -147,6 +180,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -158,6 +192,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -169,6 +204,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -180,6 +216,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -191,6 +228,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -202,6 +240,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -213,6 +252,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -224,6 +264,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -235,6 +276,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -246,6 +288,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -264,6 +307,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -275,6 +340,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -286,6 +352,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -297,6 +364,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -308,6 +376,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -319,6 +388,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -330,6 +400,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -341,6 +412,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -352,6 +424,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -363,6 +436,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -374,6 +448,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -385,6 +460,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -396,6 +472,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -407,6 +484,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -418,6 +496,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -429,6 +508,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -440,6 +520,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -451,6 +532,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -462,6 +544,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -473,6 +556,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -484,6 +568,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -495,6 +580,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -506,6 +592,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -517,6 +604,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggingFields",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -551,6 +639,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.IHttpLoggingInterceptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -572,6 +661,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -589,6 +682,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -597,16 +691,17 @@
           "clrName": "IsRequestBodyLogLimitSet",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsRequestBodyLogLimitSet|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "IsRequestBodyLogLimitSet|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -625,6 +720,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -633,16 +729,17 @@
           "clrName": "IsResponseBodyLogLimitSet",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsResponseBodyLogLimitSet|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "IsResponseBodyLogLimitSet|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -661,6 +758,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -675,6 +773,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.HttpLogging.HttpLoggingFields):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -691,6 +790,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext::AddParameter(System.String,System.Object):System.Void",
@@ -707,6 +810,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -726,6 +830,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -745,6 +850,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -764,6 +870,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -783,6 +890,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -804,6 +912,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -822,6 +931,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -840,6 +950,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -858,6 +969,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -876,6 +988,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -890,6 +1003,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -906,6 +1020,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -923,6 +1041,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -941,6 +1060,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -959,6 +1079,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -977,6 +1098,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -995,6 +1117,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1013,6 +1136,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1031,6 +1155,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -1045,6 +1170,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -1061,6 +1187,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.HttpLogging:Microsoft.AspNetCore.HttpLogging.MediaTypeOptions::AddText(System.String):System.Void",
@@ -1077,6 +1207,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1096,6 +1227,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1115,6 +1247,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1134,6 +1267,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1153,6 +1287,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.MediaTypeOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging",
           "isExtensionMethod": false
@@ -1174,6 +1309,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1191,6 +1330,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1209,6 +1349,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1227,6 +1368,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1245,6 +1387,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1263,6 +1406,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1281,6 +1425,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         },
@@ -1299,6 +1444,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }
@@ -1313,6 +1459,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.HttpLogging"
         }

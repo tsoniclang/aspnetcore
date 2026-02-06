@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.ClientCertificateMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.ClientCertificateMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.ClientCertificateMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.ClientCertificateMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.ClientCertificateMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -88,6 +115,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions::AllowAnyClientCertificate():System.Void",
@@ -104,6 +135,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false
@@ -125,6 +157,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -143,6 +176,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -161,6 +195,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -179,6 +214,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -197,6 +233,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -215,6 +252,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -233,6 +271,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -251,6 +290,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -269,6 +309,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -287,6 +328,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -301,6 +343,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -317,6 +360,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -324,16 +371,17 @@
           "clrName": "SslStream",
           "metadataToken": 385876072,
           "canonicalSignature": ":System.Net.Security.SslStream",
-          "normalizedSignature": "SslStream|:System.Net.Security.SslStream|static=false|accessor=get",
+          "normalizedSignature": "SslStream|:System.Net.Security.SslStream|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -342,16 +390,17 @@
           "clrName": "ClientHelloInfo",
           "metadataToken": 385876073,
           "canonicalSignature": ":System.Net.Security.SslClientHelloInfo",
-          "normalizedSignature": "ClientHelloInfo|:System.Net.Security.SslClientHelloInfo|static=false|accessor=get",
+          "normalizedSignature": "ClientHelloInfo|:System.Net.Security.SslClientHelloInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -360,16 +409,17 @@
           "clrName": "State",
           "metadataToken": 385876074,
           "canonicalSignature": ":System.Object",
-          "normalizedSignature": "State|:System.Object|static=false|accessor=get",
+          "normalizedSignature": "State|:System.Object|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -378,16 +428,17 @@
           "clrName": "CancellationToken",
           "metadataToken": 385876075,
           "canonicalSignature": ":System.Threading.CancellationToken",
-          "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
+          "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -396,16 +447,17 @@
           "clrName": "Connection",
           "metadataToken": 385876076,
           "canonicalSignature": ":Microsoft.AspNetCore.Connections.ConnectionContext",
-          "normalizedSignature": "Connection|:Microsoft.AspNetCore.Connections.ConnectionContext|static=false|accessor=get",
+          "normalizedSignature": "Connection|:Microsoft.AspNetCore.Connections.ConnectionContext|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -424,6 +476,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -438,6 +491,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -454,6 +508,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -471,6 +529,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -489,6 +548,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         },
@@ -507,6 +567,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -521,6 +582,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core"
         }
@@ -537,6 +599,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.Kestrel.Core:Microsoft.AspNetCore.Server.Kestrel.Https.CertificateLoader::LoadFromStoreCert(System.String,System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Boolean):System.Security.Cryptography.X509Certificates.X509Certificate2",
@@ -553,6 +619,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Https.CertificateLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Core",
           "isExtensionMethod": false

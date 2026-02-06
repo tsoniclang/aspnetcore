@@ -30,9 +30,9 @@ export type IConnectionCompleteFeature = IConnectionCompleteFeature$instance;
 
 export interface IConnectionEndPointFeature$instance {
     get LocalEndPoint(): EndPoint | undefined;
-    set LocalEndPoint(value: EndPoint);
+    set LocalEndPoint(value: EndPoint | undefined);
     get RemoteEndPoint(): EndPoint | undefined;
-    set RemoteEndPoint(value: EndPoint);
+    set RemoteEndPoint(value: EndPoint | undefined);
 }
 
 
@@ -111,7 +111,8 @@ export interface IConnectionTransportFeature$instance {
 export type IConnectionTransportFeature = IConnectionTransportFeature$instance;
 
 export interface IConnectionUserFeature$instance {
-    User: ClaimsPrincipal;
+    get User(): ClaimsPrincipal | undefined;
+    set User(value: ClaimsPrincipal | undefined);
 }
 
 

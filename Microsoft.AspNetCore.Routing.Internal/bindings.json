@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter::Write(Microsoft.AspNetCore.Routing.EndpointDataSource,System.IO.TextWriter):System.Void",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -47,6 +52,7 @@
           "normalizedSignature": "constructor|(System.IServiceProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }

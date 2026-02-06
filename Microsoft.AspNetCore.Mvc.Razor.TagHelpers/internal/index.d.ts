@@ -5,7 +5,11 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
+import type { IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ApplicationParts_Internal from "../../Microsoft.AspNetCore.Mvc.ApplicationParts/internal/index.js";
 import type { ApplicationPart, IApplicationFeatureProvider, IApplicationFeatureProvider_1 } from "../../Microsoft.AspNetCore.Mvc.ApplicationParts/internal/index.js";
 import type { ViewContext } from "../../Microsoft.AspNetCore.Mvc.Rendering/internal/index.js";
@@ -14,7 +18,7 @@ import * as Microsoft_AspNetCore_Razor_TagHelpers_Internal from "../../Microsoft
 import type { ITagHelper, ITagHelperComponent, TagHelper, TagHelperContext, TagHelperOutput } from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
 import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Int32, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { TypeInfo } from "@tsonic/dotnet/System.Reflection.js";
 import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
@@ -78,8 +82,7 @@ export interface TagHelperComponentTagHelper$instance extends TagHelper {
 }
 
 
-export const TagHelperComponentTagHelper: {
-    new(manager: ITagHelperComponentManager, loggerFactory: ILoggerFactory): TagHelperComponentTagHelper;
+export const TagHelperComponentTagHelper: (abstract new(manager: ITagHelperComponentManager, loggerFactory: ILoggerFactory) => TagHelperComponentTagHelper) & {
 };
 
 
@@ -105,6 +108,8 @@ export const TagHelperFeature: {
 export type TagHelperFeature = TagHelperFeature$instance;
 
 export interface TagHelperFeatureProvider$instance extends IApplicationFeatureProvider {
+    IncludePart(part: ApplicationPart): boolean;
+    IncludeType(type: TypeInfo): boolean;
     PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: TagHelperFeature): void;
 }
 

@@ -15,7 +15,7 @@ import type { BindingInfo } from './Microsoft.AspNetCore.Mvc.ModelBinding/intern
 import type { AttributeRouteInfo } from './Microsoft.AspNetCore.Mvc.Routing/internal/index.js';
 import type { ControllerContext } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 import type { IDictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Action, Func, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
+import type { Action, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 import type { MethodInfo, ParameterInfo, PropertyInfo, TypeInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 

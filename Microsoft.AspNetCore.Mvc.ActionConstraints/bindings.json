@@ -16,6 +16,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint::Accept(Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintContext):System.Boolean",
@@ -32,6 +38,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -53,6 +60,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -72,6 +80,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintFactory::CreateInstance(System.IServiceProvider):Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
@@ -88,6 +102,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -109,6 +124,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -161,6 +177,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -182,6 +199,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -201,6 +219,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -218,6 +240,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionSelectorCandidate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -236,6 +259,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionSelectorCandidate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -250,6 +274,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionSelectorCandidate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -266,6 +291,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -283,6 +312,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -301,6 +331,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -319,6 +350,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -333,6 +365,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -349,6 +382,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -366,6 +403,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -384,6 +422,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -402,6 +441,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -416,6 +456,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -432,6 +473,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -449,6 +494,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -467,6 +513,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -485,6 +532,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -499,6 +547,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintItem,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -515,6 +564,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
+          "clrName": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ActionConstraints.ActionMethodSelectorAttribute::Accept(Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintContext):System.Boolean",
@@ -531,6 +594,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionMethodSelectorAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -550,6 +614,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionMethodSelectorAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -569,6 +634,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -591,6 +657,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionMethodSelectorAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -609,6 +676,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -616,7 +684,19 @@
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ActionConstraints.ActionMethodSelectorAttribute::.ctor():void",
+          "metadataToken": 100666871,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.ActionMethodSelectorAttribute",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint",
@@ -629,6 +709,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
+          "clrName": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint::Accept(Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintContext):System.Boolean",
@@ -645,6 +739,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -664,6 +759,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -686,6 +782,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -704,6 +801,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -722,6 +820,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -736,6 +835,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -749,6 +849,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ActionConstraints.HttpMethodActionConstraint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }

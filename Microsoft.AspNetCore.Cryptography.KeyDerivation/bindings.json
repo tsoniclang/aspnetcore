@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation"
         }
@@ -77,6 +103,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cryptography.KeyDerivation:Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation::Pbkdf2(System.String,System.Byte[],Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivationPrf,System.Int32,System.Int32):System.Byte[]",
@@ -93,6 +123,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cryptography.KeyDerivation.KeyDerivation",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
           "isExtensionMethod": false

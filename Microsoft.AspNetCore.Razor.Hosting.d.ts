@@ -6,7 +6,7 @@
 import * as Internal from './Microsoft.AspNetCore.Razor.Hosting/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { IEnumerable, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Attribute, Object as ClrObject, String as ClrString, Type } from '@tsonic/dotnet/System.js';
 import type { Assembly } from '@tsonic/dotnet/System.Reflection.js';
 

@@ -58,7 +58,7 @@ export type BoolRouteConstraint = BoolRouteConstraint$instance & __BoolRouteCons
 
 
 export interface CompositeRouteConstraint$instance extends IParameterPolicy {
-    readonly Constraints: IEnumerable<IRouteConstraint>;
+    Constraints: IEnumerable<IRouteConstraint>;
     Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
@@ -303,7 +303,7 @@ export type MaxLengthRouteConstraint = MaxLengthRouteConstraint$instance & __Max
 
 
 export interface MaxRouteConstraint$instance extends IParameterPolicy {
-    readonly Max: long;
+    Max: long;
     Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
@@ -324,7 +324,7 @@ export type MaxRouteConstraint = MaxRouteConstraint$instance & __MaxRouteConstra
 
 
 export interface MinLengthRouteConstraint$instance extends IParameterPolicy {
-    readonly MinLength: int;
+    MinLength: int;
     Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
@@ -406,8 +406,8 @@ export type OptionalRouteConstraint = OptionalRouteConstraint$instance & __Optio
 
 
 export interface RangeRouteConstraint$instance extends IParameterPolicy {
-    readonly Max: long;
-    readonly Min: long;
+    Max: long;
+    Min: long;
     Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 

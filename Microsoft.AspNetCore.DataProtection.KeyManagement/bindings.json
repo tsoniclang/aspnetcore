@@ -15,6 +15,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
+          "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.IDeletableKeyManager::DeleteKeys(System.Func_2[[Microsoft.AspNetCore.DataProtection.KeyManagement.IKey,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
@@ -31,6 +37,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IDeletableKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -50,6 +57,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -69,6 +77,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -88,6 +97,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -107,6 +117,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -126,6 +137,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -147,6 +159,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IDeletableKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -182,6 +195,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -203,6 +217,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -221,6 +236,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -239,6 +255,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -257,6 +274,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -275,6 +293,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -293,6 +312,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -328,6 +348,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -365,6 +386,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -384,6 +406,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -403,6 +426,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -422,6 +446,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -441,6 +466,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -462,6 +488,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -479,6 +509,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -497,6 +528,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -515,6 +547,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -533,6 +566,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -551,6 +585,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -569,6 +604,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -587,6 +623,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -601,6 +638,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -617,6 +655,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
+          "clrName": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager::CreateNewKey(System.DateTimeOffset,System.DateTimeOffset):Microsoft.AspNetCore.DataProtection.KeyManagement.IKey",
@@ -633,6 +681,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -652,6 +701,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -671,6 +721,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -690,6 +741,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -709,6 +761,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -728,6 +781,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -747,6 +801,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -767,6 +822,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -787,6 +843,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -807,6 +864,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -827,6 +885,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -847,6 +906,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -867,6 +927,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -887,6 +948,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -909,6 +971,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -923,6 +986,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.DataProtection.Internal.IActivator):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -933,6 +997,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions,Microsoft.AspNetCore.DataProtection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.DataProtection.Internal.IActivator,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }

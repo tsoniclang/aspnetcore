@@ -8,13 +8,13 @@ import * as Internal from './Microsoft.AspNetCore.Identity/internal/index.js';
 // Cross-namespace type imports for constraints
 import type { CookieAuthenticationOptions, CookieValidatePrincipalContext } from './Microsoft.AspNetCore.Authentication.Cookies/internal/index.js';
 import type { AuthenticationBuilder, AuthenticationProperties, AuthenticationScheme, AuthenticationToken, IAuthenticationSchemeProvider, ISystemClock } from './Microsoft.AspNetCore.Authentication/internal/index.js';
-import type { IDataProtectionProvider } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
+import type { IDataProtectionProvider, IDataProtector } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
 import type { HttpContext, IHttpContextAccessor } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { Dictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Action, Attribute, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Enum, Exception, Func, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, String as ClrString, TimeProvider, TimeSpan, Type, UInt32, Version, Void } from '@tsonic/dotnet/System.js';
 import type { IQueryable } from '@tsonic/dotnet/System.Linq.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
-import type { Claim, ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
+import type { Claim, ClaimsIdentity, ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';

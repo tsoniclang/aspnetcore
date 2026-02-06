@@ -29,6 +29,7 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.
 import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
 import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IMemoryCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Memory.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
@@ -44,10 +45,11 @@ export type RenderAsyncDelegate = () => Task;
 export interface IRazorPage$instance {
     ViewContext: ViewContext;
     get BodyContent(): IHtmlContent | undefined;
-    set BodyContent(value: IHtmlContent);
+    set BodyContent(value: IHtmlContent | undefined);
     IsLayoutBeingRendered: boolean;
     Path: string;
-    Layout: string;
+    get Layout(): string | undefined;
+    set Layout(value: string | undefined);
     PreviousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
     readonly SectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
     EnsureRenderedBodyOrSections(): void;
@@ -186,13 +188,14 @@ export type LanguageViewLocationExpander = LanguageViewLocationExpander$instance
 export interface RazorPage$instance extends RazorPageBase$instance {
     readonly Context: HttpContext;
     BeginContext(position: int, length: int, isLiteral: boolean): void;
-    DefineSection(name: string, section: RenderAsyncDelegate): void;
+    DefineSection2(name: string, section: RenderAsyncDelegate): void;
     EndContext(): void;
     EnsureRenderedBodyOrSections(): void;
     ExecuteAsync(): Task;
     IgnoreBody(): void;
     IgnoreSection(sectionName: string): void;
     IsSectionDefined(name: string): boolean;
+    RenderBody(): IHtmlContent;
     RenderSection(name: string): HtmlString | undefined;
     RenderSection(name: string, required: boolean): HtmlString | undefined;
     RenderSectionAsync(name: string): Task<HtmlString | undefined>;
@@ -200,7 +203,7 @@ export interface RazorPage$instance extends RazorPageBase$instance {
 }
 
 
-export const RazorPage: {
+export const RazorPage: (abstract new() => RazorPage) & {
 };
 
 
@@ -219,7 +222,7 @@ export interface RazorPage_1$instance<TModel> extends RazorPage$instance {
 }
 
 
-export const RazorPage_1: {
+export const RazorPage_1: (abstract new<TModel>() => RazorPage_1<TModel>) & {
 };
 
 
@@ -251,11 +254,12 @@ export type RazorPageActivator = RazorPageActivator$instance & __RazorPageActiva
 
 export interface RazorPageBase$instance {
     get BodyContent(): IHtmlContent | undefined;
-    set BodyContent(value: IHtmlContent);
+    set BodyContent(value: IHtmlContent | undefined);
     DiagnosticSource: DiagnosticSource;
     HtmlEncoder: HtmlEncoder;
     IsLayoutBeingRendered: boolean;
-    Layout: string;
+    get Layout(): string | undefined;
+    set Layout(value: string | undefined);
     readonly Output: TextWriter;
     Path: string;
     PreviousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
@@ -281,6 +285,8 @@ export interface RazorPageBase$instance {
     FlushAsync(): Task<HtmlString>;
     Href(contentPath: string): string;
     InvalidTagHelperIndexerAssignment(attributeName: string, tagHelperTypeName: string, propertyName: string): string;
+    PopWriter(): TextWriter;
+    PushWriter(writer: TextWriter): void;
     SetAntiforgeryCookieAndHeader(): HtmlString;
     StartTagHelperWritingScope(encoder: HtmlEncoder): void;
     Write(value: unknown): void;
@@ -291,7 +297,7 @@ export interface RazorPageBase$instance {
 }
 
 
-export const RazorPageBase: {
+export const RazorPageBase: (abstract new() => RazorPageBase) & {
 };
 
 
@@ -388,7 +394,7 @@ export type TagHelperInitializer_1<TTagHelper extends ITagHelper> = TagHelperIni
 export interface ViewLocationExpanderContext$instance {
     readonly ActionContext: ActionContext;
     readonly AreaName: string | undefined;
-    readonly ControllerName: string;
+    readonly ControllerName: string | undefined;
     readonly IsMainPage: boolean;
     readonly PageName: string | undefined;
     Values: IDictionary<System_Internal.String, string | undefined>;

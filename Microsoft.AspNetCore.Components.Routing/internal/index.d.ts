@@ -6,12 +6,13 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
+import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, EventCallback_1, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle, RouteData } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, EventCallback_1, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { IEnumerable, IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, EventArgs, Func, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
+import type { Action, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
@@ -52,12 +53,16 @@ export interface IScrollToLocationHash$instance {
 export type IScrollToLocationHash = IScrollToLocationHash$instance;
 
 export interface FocusOnNavigate$instance extends ComponentBase {
-    RouteData: RouteData;
+    get RouteData(): RouteData | undefined;
+    set RouteData(value: RouteData | undefined);
     get Selector(): string | undefined;
-    set Selector(value: string);
+    set Selector(value: string | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -73,13 +78,14 @@ export interface __FocusOnNavigate$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface FocusOnNavigate$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface FocusOnNavigate$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type FocusOnNavigate = FocusOnNavigate$instance & __FocusOnNavigate$views;
 
 
 export interface LocationChangedEventArgs$instance extends EventArgs {
-    readonly HistoryEntryState: string | undefined;
+    get HistoryEntryState(): string | undefined;
+    set HistoryEntryState(value: string | undefined);
     readonly IsNavigationIntercepted: boolean;
     readonly Location: string;
 }
@@ -95,7 +101,7 @@ export type LocationChangedEventArgs = LocationChangedEventArgs$instance;
 export interface LocationChangingContext$instance {
     CancellationToken: CancellationToken;
     get HistoryEntryState(): string | undefined;
-    set HistoryEntryState(value: string);
+    set HistoryEntryState(value: string | undefined);
     IsNavigationIntercepted: boolean;
     TargetLocation: string;
     PreventNavigation(): void;
@@ -116,7 +122,6 @@ export interface NavigationContext$instance {
 
 
 export const NavigationContext: {
-    new(): NavigationContext;
 };
 
 
@@ -145,16 +150,22 @@ export type NavigationLock = NavigationLock$instance & __NavigationLock$views;
 
 export interface NavLink$instance extends ComponentBase {
     get ActiveClass(): string | undefined;
-    set ActiveClass(value: string);
+    set ActiveClass(value: string | undefined);
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    ChildContent: RenderFragment;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
     Match: NavLinkMatch;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     Dispose(): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnInitialized(): void;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
+    ShouldMatch(uriAbsolute: string): boolean;
 }
 
 
@@ -169,14 +180,14 @@ export interface __NavLink$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface NavLink$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface NavLink$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type NavLink = NavLink$instance & __NavLink$views;
 
 
 export interface NotFoundEventArgs$instance extends EventArgs {
     get Path(): string | undefined;
-    set Path(value: string);
+    set Path(value: string | undefined);
 }
 
 
@@ -192,10 +203,10 @@ export interface Router$instance {
     AppAssembly: Assembly;
     Found: RenderFragment_1<RouteData>;
     get Navigating(): RenderFragment | undefined;
-    set Navigating(value: RenderFragment);
+    set Navigating(value: RenderFragment | undefined);
     NotFound: RenderFragment;
     get NotFoundPage(): Type | undefined;
-    set NotFoundPage(value: Type);
+    set NotFoundPage(value: Type | undefined);
     OnNavigateAsync: EventCallback_1<NavigationContext>;
     PreferExactMatches: boolean;
     Attach(renderHandle: RenderHandle): void;

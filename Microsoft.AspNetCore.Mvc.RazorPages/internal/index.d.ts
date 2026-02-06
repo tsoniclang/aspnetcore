@@ -83,13 +83,13 @@ export type IPageModelFactoryProvider = IPageModelFactoryProvider$instance;
 
 export interface CompiledPageActionDescriptor$instance extends PageActionDescriptor {
     get DeclaredModelTypeInfo(): TypeInfo | undefined;
-    set DeclaredModelTypeInfo(value: TypeInfo);
+    set DeclaredModelTypeInfo(value: TypeInfo | undefined);
     get Endpoint(): Endpoint | undefined;
-    set Endpoint(value: Endpoint);
+    set Endpoint(value: Endpoint | undefined);
     HandlerMethods: IList<HandlerMethodDescriptor>;
     HandlerTypeInfo: TypeInfo;
     get ModelTypeInfo(): TypeInfo | undefined;
-    set ModelTypeInfo(value: TypeInfo);
+    set ModelTypeInfo(value: TypeInfo | undefined);
     PageTypeInfo: TypeInfo;
 }
 
@@ -119,7 +119,7 @@ export interface Page$instance extends PageBase$instance {
 }
 
 
-export const Page: {
+export const Page: (abstract new() => Page) & {
 };
 
 
@@ -132,8 +132,9 @@ export type Page = Page$instance & __Page$views;
 
 export interface PageActionDescriptor$instance extends ActionDescriptor {
     get AreaName(): string | undefined;
-    set AreaName(value: string);
-    DisplayName: string;
+    set AreaName(value: string | undefined);
+    get DisplayName(): string | undefined;
+    set DisplayName(value: string | undefined);
     RelativePath: string;
     ViewEnginePath: string;
 }
@@ -262,7 +263,7 @@ export interface PageBase$instance extends RazorPageBase {
 }
 
 
-export const PageBase: {
+export const PageBase: (abstract new() => PageBase) & {
 };
 
 
@@ -411,7 +412,7 @@ export interface PageModel$instance extends IFilterMetadata {
 }
 
 
-export const PageModel: {
+export const PageModel: (abstract new() => PageModel) & {
 };
 
 
@@ -426,7 +427,8 @@ export type PageModel = PageModel$instance & __PageModel$views;
 
 
 export interface PageResult$instance extends ActionResult {
-    ContentType: string;
+    get ContentType(): string | undefined;
+    set ContentType(value: string | undefined);
     readonly Model: unknown;
     Page: PageBase;
     StatusCode: Nullable<System_Internal.Int32>;
@@ -448,7 +450,7 @@ export type PageResult = PageResult$instance & __PageResult$views;
 
 
 export interface RazorPagesOptions$instance {
-    readonly Conventions: PageConventionCollection;
+    Conventions: PageConventionCollection;
     RootDirectory: string;
 }
 

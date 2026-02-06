@@ -10,7 +10,7 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as Microsoft_JSInterop_Internal from "../../Microsoft.JSInterop/internal/index.js";
-import type { IJSInProcessObjectReference, IJSObjectReference, IJSStreamReference } from "../../Microsoft.JSInterop/internal/index.js";
+import type { IJSInProcessObjectReference, IJSObjectReference, IJSStreamReference, JSInProcessRuntime, JSRuntime } from "../../Microsoft.JSInterop/internal/index.js";
 import type { Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IAsyncDisposable, IDisposable, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
@@ -33,8 +33,7 @@ export interface JSInProcessObjectReference$instance extends JSObjectReference$i
 }
 
 
-export const JSInProcessObjectReference: {
-    new(): JSInProcessObjectReference;
+export const JSInProcessObjectReference: (abstract new(jsRuntime: JSInProcessRuntime, id: long) => JSInProcessObjectReference) & {
 };
 
 
@@ -59,8 +58,7 @@ export interface JSObjectReference$instance {
 }
 
 
-export const JSObjectReference: {
-    new(): JSObjectReference;
+export const JSObjectReference: (abstract new(jsRuntime: JSRuntime, id: long) => JSObjectReference) & {
 };
 
 
@@ -85,7 +83,6 @@ export interface JSStreamReference$instance extends JSObjectReference$instance {
 
 
 export const JSStreamReference: {
-    new(): JSStreamReference;
 };
 
 

@@ -34,6 +34,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -69,6 +70,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -90,6 +92,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
+          "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtector::Protect(System.Byte[]):System.Byte[]",
@@ -106,6 +114,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -125,6 +134,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -146,6 +156,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtector",
+          "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtector"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
+          "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.IPersistedDataProtector::DangerousUnprotect(System.Byte[],System.Boolean,System.Boolean\u0026,System.Boolean\u0026):System.Byte[]",
@@ -162,6 +182,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IPersistedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -191,6 +212,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -210,6 +232,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -231,6 +254,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.ISecret::WriteSecretIntoBuffer(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
@@ -247,6 +276,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -268,6 +298,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -287,6 +318,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtector",
+          "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtector"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
+          "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
@@ -303,6 +344,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -322,6 +364,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -341,6 +384,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false,
@@ -366,6 +410,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtector",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -385,6 +430,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false
@@ -406,6 +452,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -423,6 +473,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -437,6 +488,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -453,6 +505,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
+          "clrName": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider::CreateProtector(System.String):Microsoft.AspNetCore.DataProtection.IDataProtector",
@@ -469,6 +531,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -488,6 +551,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": false,
@@ -505,6 +569,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -515,6 +580,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -531,6 +597,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.ISecret",
+          "clrName": "Microsoft.AspNetCore.DataProtection.ISecret"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.Secret::Dispose():System.Void",
@@ -547,6 +627,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -566,6 +647,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -585,6 +667,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -604,6 +687,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false
@@ -623,6 +707,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": false,
@@ -645,6 +730,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -663,6 +749,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.ISecret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
@@ -678,6 +765,7 @@
           "normalizedSignature": "constructor|(System.ArraySegment_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -688,6 +776,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -698,6 +787,7 @@
           "normalizedSignature": "constructor|(System.Byte*,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         },
@@ -708,6 +798,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.DataProtection.ISecret):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Secret",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection"
         }
@@ -724,6 +815,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions::Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.Byte[],System.TimeSpan):System.Byte[]",
@@ -740,6 +835,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -759,6 +855,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -778,6 +875,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -797,6 +895,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true
@@ -816,6 +915,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": true,
@@ -843,6 +943,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions::SetApplicationName(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder",
@@ -859,6 +963,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -878,6 +983,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -897,6 +1003,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -916,6 +1023,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -935,6 +1043,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -954,6 +1063,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -973,6 +1083,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -992,6 +1103,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1011,6 +1123,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1030,6 +1143,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1049,6 +1163,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1068,6 +1183,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1087,6 +1203,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1106,6 +1223,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1125,6 +1243,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1144,6 +1263,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1163,6 +1283,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1182,6 +1303,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1201,6 +1323,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1220,6 +1343,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1239,6 +1363,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true
@@ -1260,6 +1385,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Abstractions:Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions::CreateProtector(Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.AspNetCore.DataProtection.IDataProtector",
@@ -1276,6 +1405,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1295,6 +1425,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1314,6 +1445,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1333,6 +1465,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1352,6 +1485,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1371,6 +1505,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1390,6 +1525,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionCommonExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions",
           "isExtensionMethod": true
@@ -1411,6 +1547,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection.Extensions:Microsoft.AspNetCore.DataProtection.DataProtectionProvider::Create(System.String):Microsoft.AspNetCore.DataProtection.IDataProtectionProvider",
@@ -1427,6 +1567,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1446,6 +1587,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1465,6 +1607,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1484,6 +1627,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1503,6 +1647,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1522,6 +1667,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Extensions",
           "isExtensionMethod": false
@@ -1543,6 +1689,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.DataProtection:Microsoft.AspNetCore.DataProtection.DataProtectionUtilityExtensions::GetApplicationUniqueIdentifier(System.IServiceProvider):System.String",
@@ -1559,6 +1709,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.DataProtectionUtilityExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection",
           "isExtensionMethod": true

@@ -35,7 +35,7 @@ export type AllowAnonymousFilter = AllowAnonymousFilter$instance;
 
 export interface AuthorizeFilter$instance extends IFilterMetadata {
     readonly AuthorizeData: IEnumerable<IAuthorizeData> | undefined;
-    readonly Policy: AuthorizationPolicy;
+    readonly Policy: AuthorizationPolicy | undefined;
     readonly PolicyProvider: IAuthorizationPolicyProvider | undefined;
     OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
 }

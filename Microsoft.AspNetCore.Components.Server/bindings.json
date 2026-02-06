@@ -16,6 +16,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -33,6 +37,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -51,6 +56,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -69,6 +75,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -87,6 +94,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -105,6 +113,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -123,6 +132,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -141,6 +151,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -159,6 +170,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -177,6 +189,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -195,6 +208,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -209,6 +223,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -225,6 +240,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration",
+          "clrName": "Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -242,6 +267,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -260,6 +286,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -278,6 +305,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.IJSComponentConfiguration",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
@@ -293,6 +321,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.CircuitRootComponentOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -309,7 +338,61 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
+        "clrName": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
+          "clrName": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::ValidateAuthenticationStateAsync(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ValidateAuthenticationStateAsync",
+          "metadataToken": 100663874,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ValidateAuthenticationStateAsync|(Microsoft.AspNetCore.Components.Authorization.AuthenticationState,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663878,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider::SetAuthenticationState(System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "SetAuthenticationState",
@@ -325,6 +408,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
           "isExtensionMethod": false,
@@ -345,12 +429,33 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::RevalidationInterval:System.TimeSpan",
+          "clrName": "RevalidationInterval",
+          "metadataToken": 385876081,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "RevalidationInterval|:System.TimeSpan|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -361,6 +466,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -377,6 +483,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider",
+        "clrName": "Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Authorization:Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
+          "clrName": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider::GetAuthenticationStateAsync():System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Components.Authorization.AuthenticationState,Microsoft.AspNetCore.Components.Authorization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -393,6 +509,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
@@ -412,6 +529,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
@@ -431,6 +549,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
           "isExtensionMethod": false,
@@ -451,6 +570,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
           "isExtensionMethod": false
@@ -467,6 +587,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints"
         }
@@ -483,6 +604,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -500,6 +625,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -518,6 +644,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         },
@@ -536,6 +663,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }
@@ -550,6 +678,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerComponentsEndpointOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server"
         }

@@ -74,7 +74,7 @@ export interface ModelMetadataIdentity$instance {
     readonly ContainerType: Type | undefined;
     readonly MetadataKind: ModelMetadataKind;
     readonly ModelType: Type;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly ParameterInfo: ParameterInfo | undefined;
     readonly PropertyInfo: PropertyInfo | undefined;
     Equals(other: ModelMetadataIdentity): boolean;
@@ -98,19 +98,20 @@ export type ModelMetadataIdentity = ModelMetadataIdentity$instance;
 
 export interface BindingMetadata$instance {
     get BinderModelName(): string | undefined;
-    set BinderModelName(value: string);
+    set BinderModelName(value: string | undefined);
     get BinderType(): Type | undefined;
-    set BinderType(value: Type);
+    set BinderType(value: Type | undefined);
     get BindingSource(): BindingSource | undefined;
-    set BindingSource(value: BindingSource);
+    set BindingSource(value: BindingSource | undefined);
     get BoundConstructor(): ConstructorInfo | undefined;
-    set BoundConstructor(value: ConstructorInfo);
+    set BoundConstructor(value: ConstructorInfo | undefined);
     IsBindingAllowed: boolean;
     IsBindingRequired: boolean;
     IsReadOnly: Nullable<System_Internal.Boolean>;
-    ModelBindingMessageProvider: DefaultModelBindingMessageProvider;
+    get ModelBindingMessageProvider(): DefaultModelBindingMessageProvider | undefined;
+    set ModelBindingMessageProvider(value: DefaultModelBindingMessageProvider | undefined);
     get PropertyFilterProvider(): IPropertyFilterProvider | undefined;
-    set PropertyFilterProvider(value: IPropertyFilterProvider);
+    set PropertyFilterProvider(value: IPropertyFilterProvider | undefined);
 }
 
 
@@ -179,22 +180,26 @@ export type DataMemberRequiredBindingMetadataProvider = DataMemberRequiredBindin
 
 
 export interface DefaultMetadataDetails$instance {
-    BindingMetadata: BindingMetadata;
+    get BindingMetadata(): BindingMetadata | undefined;
+    set BindingMetadata(value: BindingMetadata | undefined);
     get BoundConstructorInvoker(): Func<(unknown | undefined)[], unknown> | undefined;
-    set BoundConstructorInvoker(value: Func<(unknown | undefined)[], unknown>);
+    set BoundConstructorInvoker(value: Func<(unknown | undefined)[], unknown> | undefined);
     get BoundConstructorParameters(): ModelMetadata[] | undefined;
-    set BoundConstructorParameters(value: ModelMetadata[]);
+    set BoundConstructorParameters(value: ModelMetadata[] | undefined);
     get ContainerMetadata(): ModelMetadata | undefined;
-    set ContainerMetadata(value: ModelMetadata);
-    DisplayMetadata: DisplayMetadata;
+    set ContainerMetadata(value: ModelMetadata | undefined);
+    get DisplayMetadata(): DisplayMetadata | undefined;
+    set DisplayMetadata(value: DisplayMetadata | undefined);
     readonly Key: ModelMetadataIdentity;
     readonly ModelAttributes: ModelAttributes;
-    Properties: ModelMetadata[];
+    get Properties(): ModelMetadata[] | undefined;
+    set Properties(value: ModelMetadata[] | undefined);
     get PropertyGetter(): Func<unknown, unknown | undefined> | undefined;
-    set PropertyGetter(value: Func<unknown, unknown | undefined>);
+    set PropertyGetter(value: Func<unknown, unknown | undefined> | undefined);
     get PropertySetter(): Action<unknown, unknown | undefined> | undefined;
-    set PropertySetter(value: Action<unknown, unknown | undefined>);
-    ValidationMetadata: ValidationMetadata;
+    set PropertySetter(value: Action<unknown, unknown | undefined> | undefined);
+    get ValidationMetadata(): ValidationMetadata | undefined;
+    set ValidationMetadata(value: ValidationMetadata | undefined);
 }
 
 
@@ -252,10 +257,10 @@ export interface DefaultModelMetadata$instance extends ModelMetadata {
     readonly ContainerMetadata: ModelMetadata | undefined;
     readonly ConvertEmptyStringToNull: boolean;
     readonly DataTypeName: string | undefined;
-    readonly Description: string;
+    readonly Description: string | undefined;
     readonly DisplayFormatString: string | undefined;
     readonly DisplayMetadata: DisplayMetadata;
-    readonly DisplayName: string;
+    readonly DisplayName: string | undefined;
     readonly EditFormatString: string | undefined;
     readonly ElementMetadata: ModelMetadata | undefined;
     readonly EnumGroupedDisplayNamesAndValues: IEnumerable<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined;
@@ -306,6 +311,10 @@ export type DefaultModelMetadata = DefaultModelMetadata$instance & __DefaultMode
 
 
 export interface DefaultModelMetadataProvider$instance extends ModelMetadataProvider {
+    CreateModelMetadata(entry: DefaultMetadataDetails): ModelMetadata;
+    CreateParameterDetails(key: ModelMetadataIdentity): DefaultMetadataDetails;
+    CreatePropertyDetails(key: ModelMetadataIdentity): DefaultMetadataDetails[];
+    CreateTypeDetails(key: ModelMetadataIdentity): DefaultMetadataDetails;
     GetMetadataForConstructor(constructorInfo: ConstructorInfo, modelType: Type): ModelMetadata;
     GetMetadataForParameter(parameter: ParameterInfo): ModelMetadata;
     GetMetadataForParameter(parameter: ParameterInfo, modelType: Type): ModelMetadata;
@@ -332,36 +341,38 @@ export interface DisplayMetadata$instance {
     readonly AdditionalValues: IDictionary<unknown, unknown>;
     ConvertEmptyStringToNull: boolean;
     get DataTypeName(): string | undefined;
-    set DataTypeName(value: string);
-    Description: Func<string | undefined>;
+    set DataTypeName(value: string | undefined);
+    get Description(): Func<string | undefined> | undefined;
+    set Description(value: Func<string | undefined> | undefined);
     get DisplayFormatString(): string | undefined;
-    set DisplayFormatString(value: string);
+    set DisplayFormatString(value: string | undefined);
     DisplayFormatStringProvider: Func<string | undefined>;
-    DisplayName: Func<string | undefined>;
+    get DisplayName(): Func<string | undefined> | undefined;
+    set DisplayName(value: Func<string | undefined> | undefined);
     get EditFormatString(): string | undefined;
-    set EditFormatString(value: string);
+    set EditFormatString(value: string | undefined);
     EditFormatStringProvider: Func<string | undefined>;
     get EnumGroupedDisplayNamesAndValues(): IEnumerable<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined;
-    set EnumGroupedDisplayNamesAndValues(value: IEnumerable<KeyValuePair<EnumGroupAndName, System_Internal.String>>);
+    set EnumGroupedDisplayNamesAndValues(value: IEnumerable<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined);
     get EnumNamesAndValues(): IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined;
-    set EnumNamesAndValues(value: IReadOnlyDictionary<System_Internal.String, System_Internal.String>);
+    set EnumNamesAndValues(value: IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined);
     HasNonDefaultEditFormat: boolean;
     HideSurroundingHtml: boolean;
     HtmlEncode: boolean;
     IsEnum: boolean;
     IsFlagsEnum: boolean;
     get NullDisplayText(): string | undefined;
-    set NullDisplayText(value: string);
+    set NullDisplayText(value: string | undefined);
     NullDisplayTextProvider: Func<string | undefined>;
     Order: int;
     get Placeholder(): Func<string | undefined> | undefined;
-    set Placeholder(value: Func<string | undefined>);
+    set Placeholder(value: Func<string | undefined> | undefined);
     ShowForDisplay: boolean;
     ShowForEdit: boolean;
     get SimpleDisplayProperty(): string | undefined;
-    set SimpleDisplayProperty(value: string);
+    set SimpleDisplayProperty(value: string | undefined);
     get TemplateHint(): string | undefined;
-    set TemplateHint(value: string);
+    set TemplateHint(value: string | undefined);
 }
 
 
@@ -422,7 +433,7 @@ export interface ModelBindingMessageProvider$instance {
 }
 
 
-export const ModelBindingMessageProvider: {
+export const ModelBindingMessageProvider: (abstract new() => ModelBindingMessageProvider) & {
 };
 
 
@@ -454,10 +465,10 @@ export interface ValidationMetadata$instance {
     HasValidators: Nullable<System_Internal.Boolean>;
     IsRequired: Nullable<System_Internal.Boolean>;
     get PropertyValidationFilter(): IPropertyValidationFilter | undefined;
-    set PropertyValidationFilter(value: IPropertyValidationFilter);
+    set PropertyValidationFilter(value: IPropertyValidationFilter | undefined);
     ValidateChildren: Nullable<System_Internal.Boolean>;
     get ValidationModelName(): string | undefined;
-    set ValidationModelName(value: string);
+    set ValidationModelName(value: string | undefined);
     readonly ValidatorMetadata: IList<unknown>;
 }
 

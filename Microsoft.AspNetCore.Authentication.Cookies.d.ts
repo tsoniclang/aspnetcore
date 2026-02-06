@@ -14,7 +14,7 @@ import type { ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { UrlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptionsMonitor, IPostConfigureOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

@@ -26,8 +26,9 @@ export enum HttpTransportType {
 
 export interface AvailableTransport$instance {
     get TransferFormats(): IList<System_Internal.String> | undefined;
-    set TransferFormats(value: IList<System_Internal.String>);
-    Transport: string;
+    set TransferFormats(value: IList<System_Internal.String> | undefined);
+    get Transport(): string | undefined;
+    set Transport(value: string | undefined);
 }
 
 
@@ -108,14 +109,18 @@ export const NegotiateMetadata: {
 export type NegotiateMetadata = NegotiateMetadata$instance;
 
 export interface NegotiationResponse$instance {
-    AccessToken: string;
+    get AccessToken(): string | undefined;
+    set AccessToken(value: string | undefined);
     get AvailableTransports(): IList<AvailableTransport> | undefined;
-    set AvailableTransports(value: IList<AvailableTransport>);
-    ConnectionId: string;
+    set AvailableTransports(value: IList<AvailableTransport> | undefined);
+    get ConnectionId(): string | undefined;
+    set ConnectionId(value: string | undefined);
     get ConnectionToken(): string | undefined;
-    set ConnectionToken(value: string);
-    Error: string;
-    Url: string;
+    set ConnectionToken(value: string | undefined);
+    get Error(): string | undefined;
+    set Error(value: string | undefined);
+    get Url(): string | undefined;
+    set Url(value: string | undefined);
     UseStatefulReconnect: boolean;
     Version: int;
 }
@@ -131,7 +136,7 @@ export type NegotiationResponse = NegotiationResponse$instance;
 export interface WebSocketOptions$instance {
     CloseTimeout: TimeSpan;
     get SubProtocolSelector(): Func<IList<System_Internal.String>, System_Internal.String> | undefined;
-    set SubProtocolSelector(value: Func<IList<System_Internal.String>, System_Internal.String>);
+    set SubProtocolSelector(value: Func<IList<System_Internal.String>, System_Internal.String> | undefined);
 }
 
 

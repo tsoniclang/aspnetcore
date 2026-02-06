@@ -72,6 +72,8 @@ export interface HtmlLocalizer$instance {
     GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
     GetString(name: string): LocalizedString;
     GetString(name: string, ...arguments: unknown[]): LocalizedString;
+    ToHtmlString(result: LocalizedString): LocalizedHtmlString;
+    ToHtmlString(result: LocalizedString, arguments: unknown[]): LocalizedHtmlString;
 }
 
 

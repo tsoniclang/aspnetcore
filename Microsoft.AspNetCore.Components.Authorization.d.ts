@@ -6,9 +6,11 @@
 import * as Internal from './Microsoft.AspNetCore.Components.Authorization/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { ComponentBase, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle, RouteData, RouteView } from './Microsoft.AspNetCore.Components/internal/index.js';
+import type { IAuthorizeData } from './Microsoft.AspNetCore.Authorization/internal/index.js';
+import type { RenderTreeBuilder } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
+import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData, RouteView } from './Microsoft.AspNetCore.Components/internal/index.js';
 import type { IList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { AsyncCallback, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Claim, ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';

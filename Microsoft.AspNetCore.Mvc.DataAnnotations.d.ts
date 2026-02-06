@@ -8,10 +8,11 @@ import * as Internal from './Microsoft.AspNetCore.Mvc.DataAnnotations/internal/i
 // Cross-namespace type imports for constraints
 import type { ICompatibilitySwitch } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 import type { ClientModelValidationContext, IClientModelValidator, ModelValidationContextBase } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
-import type { IEnumerable as IEnumerable__System_Collections_Generic } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { ModelMetadata } from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js';
+import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
 import type { RequiredAttribute, ValidationAttribute } from '@tsonic/dotnet/System.ComponentModel.DataAnnotations.js';
-import type { Attribute, Func, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
+import type { Attribute, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 import type { IStringLocalizer, IStringLocalizerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Localization.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

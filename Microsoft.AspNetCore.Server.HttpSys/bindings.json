@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -99,6 +127,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -110,6 +160,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -121,6 +172,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -132,6 +184,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -143,6 +196,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.ClientCertificateMethod",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -161,6 +215,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -172,6 +248,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -183,6 +260,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -194,6 +272,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -205,6 +284,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.Http503VerbosityLevel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -223,6 +303,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -234,6 +336,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -245,6 +348,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -256,6 +360,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -267,6 +372,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -278,6 +384,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -289,6 +396,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -300,6 +408,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -311,6 +420,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -322,6 +432,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -333,6 +444,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -344,6 +456,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -355,6 +468,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -366,6 +480,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -377,6 +492,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -388,6 +504,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -399,6 +516,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -410,6 +528,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -421,6 +540,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -432,6 +552,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -443,6 +564,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -454,6 +576,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -465,6 +588,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -476,6 +600,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -487,6 +612,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -498,6 +624,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -509,6 +636,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -520,6 +648,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -531,6 +660,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -542,6 +672,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -553,6 +684,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -564,6 +696,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysRequestTimingType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -582,6 +715,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -593,6 +748,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -604,6 +760,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -615,6 +772,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -626,6 +784,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.RequestQueueMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -660,6 +819,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -681,6 +841,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -717,6 +878,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestInfoFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -752,6 +914,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestPropertyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false,
@@ -795,6 +958,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false,
@@ -820,6 +984,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false,
@@ -847,6 +1012,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestTimingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -882,6 +1048,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.IServerDelegationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -903,6 +1070,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -920,6 +1091,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -938,6 +1110,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -956,6 +1129,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -974,6 +1148,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -992,6 +1167,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1010,6 +1186,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1029,6 +1206,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.DelegationRule::Dispose():System.Void",
@@ -1045,6 +1232,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1066,6 +1254,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1084,6 +1273,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.DelegationRule",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1103,6 +1293,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ComponentModel.Win32Exception",
+        "clrName": "System.ComponentModel.Win32Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1120,6 +1320,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1139,6 +1340,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1156,6 +1361,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1174,6 +1380,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1192,6 +1399,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1210,6 +1418,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1228,6 +1437,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1246,6 +1456,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1264,6 +1475,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1282,6 +1494,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1300,6 +1513,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1318,6 +1532,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1336,6 +1551,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1354,6 +1570,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1372,6 +1589,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1390,6 +1608,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1408,6 +1627,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1426,6 +1646,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1444,6 +1665,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1462,6 +1684,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1476,6 +1699,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1492,6 +1716,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1509,6 +1737,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1527,6 +1756,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1545,6 +1775,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1563,6 +1794,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1581,6 +1813,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1599,6 +1832,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.TimeoutManager",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1618,6 +1852,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix::Create(System.String,System.String,System.String,System.String):Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
@@ -1634,6 +1872,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1653,6 +1892,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1672,6 +1912,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1691,6 +1932,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1710,6 +1952,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1729,6 +1972,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1750,6 +1994,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1768,6 +2013,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1786,6 +2032,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1804,6 +2051,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1822,6 +2070,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1840,6 +2089,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -1858,6 +2108,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefix",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -1877,6 +2128,30 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "UrlPrefix"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "UrlPrefix"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Server.HttpSys:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection::Add(System.String):System.Void",
@@ -1893,6 +2168,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1912,6 +2188,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1931,6 +2208,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1950,6 +2228,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1969,6 +2248,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -1988,6 +2268,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2007,6 +2288,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2026,6 +2308,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys",
           "isExtensionMethod": false
@@ -2047,6 +2330,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         },
@@ -2065,6 +2349,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }
@@ -2084,6 +2369,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -2095,6 +2384,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.HttpSys.HttpSysDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.HttpSys"
         }

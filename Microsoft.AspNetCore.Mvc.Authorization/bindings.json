@@ -16,6 +16,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -33,6 +39,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Authorization.IAllowAnonymousFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -45,6 +65,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AllowAnonymousFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -61,6 +82,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
@@ -77,6 +116,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -96,6 +136,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -116,6 +157,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -138,6 +180,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -156,6 +199,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -174,6 +218,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -192,6 +237,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -207,6 +253,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -217,6 +264,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Authorization.AuthorizationPolicy):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -227,6 +275,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -237,6 +286,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Authorization.IAuthorizeData,Microsoft.AspNetCore.Metadata,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -247,6 +297,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }

@@ -18,11 +18,12 @@ import type { ICollection, IEnumerable, IList } from '@tsonic/dotnet/System.Coll
 import type { Collection } from '@tsonic/dotnet/System.Collections.ObjectModel.js';
 import type { Stream, TextReader, TextWriter } from '@tsonic/dotnet/System.IO.js';
 import type { Boolean as ClrBoolean, Double, Enum, Exception, Func, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
-import type { DataContractSerializerSettings, ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { DataContractSerializer, DataContractSerializerSettings, ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Encoding } from '@tsonic/dotnet/System.Text.js';
 import type { JsonSerializerOptions } from '@tsonic/dotnet/System.Text.Json.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { XmlDictionaryReaderQuotas, XmlWriter, XmlWriterSettings } from '@tsonic/dotnet/System.Xml.js';
+import type { XmlDictionaryReaderQuotas, XmlReader, XmlWriter, XmlWriterSettings } from '@tsonic/dotnet/System.Xml.js';
+import type { XmlSerializer } from '@tsonic/dotnet/System.Xml.Serialization.js';
 import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 import type { StringSegment } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js';

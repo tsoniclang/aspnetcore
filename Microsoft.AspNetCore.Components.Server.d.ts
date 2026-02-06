@@ -10,6 +10,7 @@ import type { AuthenticationState, AuthenticationStateProvider, IHostEnvironment
 import type { IJSComponentConfiguration, JSComponentConfigurationStore } from './Microsoft.AspNetCore.Components.Web/internal/index.js';
 import type { HttpContext, WebSocketAcceptContext } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from '@tsonic/dotnet/System.js';
+import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { HybridCache } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Hybrid.js';
 import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';

@@ -6,10 +6,12 @@
 import * as Internal from './Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { EventFieldInfo, Renderer } from './Microsoft.AspNetCore.Components.RenderTree/internal/index.js';
+import type { ComponentState } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
+import type { ArrayRange_1, EventFieldInfo, RenderBatch, Renderer, RenderTreeFrame } from './Microsoft.AspNetCore.Components.RenderTree/internal/index.js';
 import type { HtmlRootComponent } from './Microsoft.AspNetCore.Components.Web.HtmlRendering/internal/index.js';
-import type { Dispatcher, IComponent, ParameterView } from './Microsoft.AspNetCore.Components/internal/index.js';
-import type { Boolean as ClrBoolean, EventArgs, IAsyncDisposable, IDisposable, IServiceProvider, Type, UInt64, Void } from '@tsonic/dotnet/System.js';
+import type { Dispatcher, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from './Microsoft.AspNetCore.Components/internal/index.js';
+import type { TextWriter } from '@tsonic/dotnet/System.IO.js';
+import type { Boolean as ClrBoolean, EventArgs, Exception, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable, String as ClrString, Type, UInt64, Void } from '@tsonic/dotnet/System.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 

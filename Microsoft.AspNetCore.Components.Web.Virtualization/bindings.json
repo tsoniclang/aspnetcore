@@ -15,6 +15,23 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
+      "typeParameters": [
+        "TItem"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601::Invoke(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest):ValueTask_1",
@@ -31,6 +48,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -50,6 +68,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -69,6 +88,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -85,6 +105,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -101,6 +122,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -118,6 +143,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -136,6 +162,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -154,6 +181,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -168,6 +196,7 @@
           "normalizedSignature": "constructor|(System.Int32,System.Int32,System.Threading.CancellationToken):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -184,6 +213,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "typeParameters": [
+        "TItem"
+      ],
       "methods": [],
       "properties": [
         {
@@ -201,6 +237,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -219,6 +256,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -233,6 +271,7 @@
           "normalizedSignature": "constructor|(IEnumerable_1,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -249,6 +288,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -266,6 +309,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -284,6 +328,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -298,6 +343,7 @@
           "normalizedSignature": "constructor|(System.Int32,System.Single):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -314,6 +360,35 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.ComponentBase",
+        "clrName": "Microsoft.AspNetCore.Components.ComponentBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IComponent",
+          "clrName": "Microsoft.AspNetCore.Components.IComponent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleEvent",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleEvent"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components:Microsoft.AspNetCore.Components.IHandleAfterRender",
+          "clrName": "Microsoft.AspNetCore.Components.IHandleAfterRender"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.IVirtualizeJsCallbacks",
+          "clrName": "Microsoft.AspNetCore.Components.Web.Virtualization.IVirtualizeJsCallbacks"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
+      "typeParameters": [
+        "TItem"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::RefreshDataAsync():System.Threading.Tasks.Task",
@@ -330,6 +405,67 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::OnParametersSet():System.Void",
+          "clrName": "OnParametersSet",
+          "metadataToken": 100663766,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "OnParametersSet|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::OnAfterRenderAsync(System.Boolean):System.Threading.Tasks.Task",
+          "clrName": "OnAfterRenderAsync",
+          "metadataToken": 100663767,
+          "canonicalSignature": "(System.Boolean):System.Threading.Tasks.Task",
+          "normalizedSignature": "OnAfterRenderAsync|(System.Boolean):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Components.Web:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601::BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "clrName": "BuildRenderTree",
+          "metadataToken": 100663768,
+          "canonicalSignature": "(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void",
+          "normalizedSignature": "BuildRenderTree|(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -349,6 +485,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -368,6 +505,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -388,6 +526,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IComponent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -408,6 +547,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleEvent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -428,6 +568,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.IHandleAfterRender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components",
           "isExtensionMethod": false,
@@ -448,6 +589,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -467,6 +609,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -486,6 +629,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -505,6 +649,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",
           "isExtensionMethod": false
@@ -526,6 +671,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -544,6 +690,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -562,6 +709,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -580,6 +728,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -598,6 +747,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -616,6 +766,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -634,6 +785,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -652,6 +804,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -670,6 +823,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         },
@@ -688,6 +842,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }
@@ -702,6 +857,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web"
         }

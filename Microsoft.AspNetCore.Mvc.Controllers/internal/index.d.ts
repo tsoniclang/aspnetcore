@@ -19,7 +19,7 @@ import type { AttributeRouteInfo } from "../../Microsoft.AspNetCore.Mvc.Routing/
 import type { ControllerContext } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { IDictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Func, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
+import type { Action, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 import type { MethodInfo, ParameterInfo, PropertyInfo, TypeInfo } from "@tsonic/dotnet/System.Reflection.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
@@ -63,7 +63,8 @@ export interface ControllerActionDescriptor$instance extends ActionDescriptor {
     ActionName: string;
     ControllerName: string;
     ControllerTypeInfo: TypeInfo;
-    DisplayName: string;
+    get DisplayName(): string | undefined;
+    set DisplayName(value: string | undefined);
     MethodInfo: MethodInfo;
 }
 
@@ -126,6 +127,7 @@ export const ControllerFeature: {
 export type ControllerFeature = ControllerFeature$instance;
 
 export interface ControllerFeatureProvider$instance extends IApplicationFeatureProvider {
+    IsController(typeInfo: TypeInfo): boolean;
     PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: ControllerFeature): void;
 }
 

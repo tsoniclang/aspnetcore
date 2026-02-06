@@ -41,7 +41,6 @@ export interface RoutePattern$instance {
 
 
 export const RoutePattern: {
-    new(): RoutePattern;
     readonly RequiredValueAny: unknown;
 };
 
@@ -67,7 +66,6 @@ export interface RoutePatternLiteralPart$instance extends RoutePatternPart {
 
 
 export const RoutePatternLiteralPart: {
-    new(): RoutePatternLiteralPart;
 };
 
 
@@ -85,20 +83,18 @@ export interface RoutePatternParameterPart$instance extends RoutePatternPart {
 
 
 export const RoutePatternParameterPart: {
-    new(): RoutePatternParameterPart;
 };
 
 
 export type RoutePatternParameterPart = RoutePatternParameterPart$instance;
 
 export interface RoutePatternParameterPolicyReference$instance {
-    readonly Content: string;
+    readonly Content: string | undefined;
     readonly ParameterPolicy: IParameterPolicy | undefined;
 }
 
 
 export const RoutePatternParameterPolicyReference: {
-    new(): RoutePatternParameterPolicyReference;
 };
 
 
@@ -125,7 +121,6 @@ export interface RoutePatternPathSegment$instance {
 
 
 export const RoutePatternPathSegment: {
-    new(): RoutePatternPathSegment;
 };
 
 
@@ -137,7 +132,6 @@ export interface RoutePatternSeparatorPart$instance extends RoutePatternPart {
 
 
 export const RoutePatternSeparatorPart: {
-    new(): RoutePatternSeparatorPart;
 };
 
 
@@ -149,7 +143,7 @@ export interface RoutePatternTransformer$instance {
 }
 
 
-export const RoutePatternTransformer: {
+export const RoutePatternTransformer: (abstract new() => RoutePatternTransformer) & {
 };
 
 

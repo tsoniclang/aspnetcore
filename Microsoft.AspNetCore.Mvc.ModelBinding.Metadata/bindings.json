@@ -17,6 +17,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -28,6 +50,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -39,6 +62,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -50,6 +74,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -61,6 +86,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -72,6 +98,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataKind",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -90,6 +117,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider::CreateBindingMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext):System.Void",
@@ -106,6 +139,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -127,6 +161,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider::CreateBindingMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext):System.Void",
@@ -143,6 +195,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -162,6 +215,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -181,6 +235,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -202,6 +257,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider::CreateDisplayMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext):System.Void",
@@ -218,6 +279,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -256,6 +318,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider::CreateValidationMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext):System.Void",
@@ -272,6 +340,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -293,6 +362,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "ModelMetadataIdentity"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity::ForType(System.Type):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
@@ -309,6 +391,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -328,6 +411,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -347,6 +431,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -366,6 +451,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -385,6 +471,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -404,6 +491,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -423,6 +511,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -442,6 +531,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -461,6 +551,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -482,6 +573,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -500,6 +592,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -518,6 +611,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -536,6 +630,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -554,6 +649,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -572,6 +668,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -590,6 +687,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -609,6 +707,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -626,6 +728,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -644,6 +747,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -662,6 +766,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -680,6 +785,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -698,6 +804,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -716,6 +823,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -734,6 +842,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -752,6 +861,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -770,6 +880,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -784,6 +895,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -800,6 +912,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -817,6 +933,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -835,6 +952,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -853,6 +971,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -871,6 +990,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -889,6 +1009,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -907,6 +1028,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -921,6 +1043,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity,Microsoft.AspNetCore.Mvc.ModelBinding.ModelAttributes):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -937,6 +1060,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingSourceMetadataProvider::CreateBindingMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext):System.Void",
@@ -953,6 +1090,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingSourceMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -972,6 +1110,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -994,6 +1133,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingSourceMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1012,6 +1152,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingSourceMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1026,6 +1167,7 @@
           "normalizedSignature": "constructor|(System.Type,Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingSourceMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1042,6 +1184,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DataMemberRequiredBindingMetadataProvider::CreateBindingMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext):System.Void",
@@ -1058,6 +1214,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DataMemberRequiredBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -1077,6 +1234,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -1094,6 +1252,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DataMemberRequiredBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
@@ -1110,6 +1269,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1127,6 +1290,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1145,6 +1309,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1163,6 +1328,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1181,6 +1347,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1199,6 +1366,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1217,6 +1385,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1235,6 +1404,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1253,6 +1423,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1271,6 +1442,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1289,6 +1461,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1307,6 +1480,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1321,6 +1495,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity,Microsoft.AspNetCore.Mvc.ModelBinding.ModelAttributes):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1337,6 +1512,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
+        "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider::SetMissingBindRequiredValueAccessor(System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
@@ -1353,6 +1532,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1372,6 +1552,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1391,6 +1572,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1410,6 +1592,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1429,6 +1612,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1448,6 +1632,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1467,6 +1652,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1486,6 +1672,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1505,6 +1692,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1524,6 +1712,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1543,6 +1732,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1564,6 +1754,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1582,6 +1773,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1600,6 +1792,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1618,6 +1811,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1636,6 +1830,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1654,6 +1849,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1672,6 +1868,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1690,6 +1887,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1708,6 +1906,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1726,6 +1925,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1744,6 +1944,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1758,6 +1959,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1768,6 +1970,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1784,6 +1987,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
+        "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "ModelMetadata"
+          ]
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata::GetMetadataForType(System.Type):Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
@@ -1800,6 +2020,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1819,6 +2040,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1838,6 +2060,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1858,6 +2081,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1878,6 +2102,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1899,6 +2124,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1917,6 +2143,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1935,6 +2162,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1953,6 +2181,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1971,6 +2200,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1989,6 +2219,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2007,6 +2238,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2025,6 +2257,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2043,6 +2276,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2061,6 +2295,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2079,6 +2314,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2097,6 +2333,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2115,6 +2352,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2133,6 +2371,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2151,6 +2390,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2169,6 +2409,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2187,6 +2428,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2205,6 +2447,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2223,6 +2466,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2241,6 +2485,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2259,6 +2504,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2277,6 +2523,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2295,6 +2542,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2313,6 +2561,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2331,6 +2580,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2349,6 +2599,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2367,6 +2618,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2385,6 +2637,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2403,6 +2656,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2421,6 +2675,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2439,6 +2694,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2457,6 +2713,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2475,6 +2732,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2493,6 +2751,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2511,6 +2770,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2529,6 +2789,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2547,6 +2808,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2565,6 +2827,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2583,6 +2846,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2601,6 +2865,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2619,6 +2884,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2637,6 +2903,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2655,6 +2922,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2673,6 +2941,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2691,6 +2960,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2709,6 +2979,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2723,6 +2994,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider,Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2733,6 +3005,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider,Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails,Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2749,6 +3022,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProvider",
+        "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::GetMetadataForProperties(System.Type):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -2765,6 +3048,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2784,6 +3068,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2803,6 +3088,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2822,6 +3108,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2841,6 +3128,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2860,6 +3148,87 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::CreateModelMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails):Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
+          "clrName": "CreateModelMetadata",
+          "metadataToken": 100665247,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails):Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
+          "normalizedSignature": "CreateModelMetadata|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails):Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::CreatePropertyDetails(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails[]",
+          "clrName": "CreatePropertyDetails",
+          "metadataToken": 100665248,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails[]",
+          "normalizedSignature": "CreatePropertyDetails|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails[]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::CreateTypeDetails(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
+          "clrName": "CreateTypeDetails",
+          "metadataToken": 100665250,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
+          "normalizedSignature": "CreateTypeDetails|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::CreateParameterDetails(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
+          "clrName": "CreateParameterDetails",
+          "metadataToken": 100665251,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails",
+          "normalizedSignature": "CreateParameterDetails|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity):Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultMetadataDetails|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2879,6 +3248,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2899,6 +3269,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2919,12 +3290,52 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::DetailsProvider:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider",
+          "clrName": "DetailsProvider",
+          "metadataToken": 385876480,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider",
+          "normalizedSignature": "DetailsProvider|:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::ModelBindingMessageProvider:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
+          "clrName": "ModelBindingMessageProvider",
+          "metadataToken": 385876481,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider",
+          "normalizedSignature": "ModelBindingMessageProvider|:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -2935,6 +3346,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2945,6 +3357,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ICompositeMetadataDetailsProvider,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2961,6 +3374,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2978,6 +3395,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2996,6 +3414,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3014,6 +3433,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3032,6 +3452,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3050,6 +3471,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3068,6 +3490,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3086,6 +3509,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3104,6 +3528,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3122,6 +3547,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3140,6 +3566,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3158,6 +3585,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3176,6 +3604,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3194,6 +3623,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3212,6 +3642,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3230,6 +3661,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3248,6 +3680,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3266,6 +3699,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3284,6 +3718,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3302,6 +3737,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3320,6 +3756,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3338,6 +3775,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3356,6 +3794,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3374,6 +3813,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3392,6 +3832,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -3406,6 +3847,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -3422,6 +3864,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3439,6 +3885,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3457,6 +3904,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3475,6 +3923,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3493,6 +3942,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3511,6 +3961,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -3525,6 +3976,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity,Microsoft.AspNetCore.Mvc.ModelBinding.ModelAttributes):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -3541,6 +3993,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ExcludeBindingMetadataProvider::CreateBindingMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.BindingMetadataProviderContext):System.Void",
@@ -3557,6 +4023,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ExcludeBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3576,6 +4043,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -3593,6 +4061,7 @@
           "normalizedSignature": "constructor|(System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ExcludeBindingMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -3609,6 +4078,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3626,6 +4099,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3644,6 +4118,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3662,6 +4137,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3680,6 +4156,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3698,6 +4175,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3716,6 +4194,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3734,6 +4213,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3752,6 +4232,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3770,6 +4251,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3788,6 +4270,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -3806,13 +4289,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider::.ctor():void",
+          "metadataToken": 100663782,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelBindingMessageProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.SystemTextJsonValidationMetadataProvider",
@@ -3825,6 +4321,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.SystemTextJsonValidationMetadataProvider::CreateDisplayMetadata(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DisplayMetadataProviderContext):System.Void",
@@ -3841,6 +4355,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.SystemTextJsonValidationMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3860,6 +4375,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.SystemTextJsonValidationMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3879,6 +4395,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IDisplayMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -3899,6 +4416,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IValidationMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -3916,6 +4434,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.SystemTextJsonValidationMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3926,6 +4445,7 @@
           "normalizedSignature": "constructor|(System.Text.Json.JsonNamingPolicy):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.SystemTextJsonValidationMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -3942,6 +4462,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3959,6 +4483,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3977,6 +4502,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -3995,6 +4521,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4013,6 +4540,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4031,6 +4559,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4049,6 +4578,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4063,6 +4593,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4079,6 +4610,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -4096,6 +4631,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4114,6 +4650,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4132,6 +4669,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4150,6 +4688,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4168,6 +4707,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4186,6 +4726,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4200,6 +4741,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ModelMetadataIdentity,Microsoft.AspNetCore.Mvc.ModelBinding.ModelAttributes):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.ValidationMetadataProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4216,6 +4758,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.MetadataDetailsProviderExtensions::RemoveType(System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.IMetadataDetailsProvider,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -4232,6 +4778,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.MetadataDetailsProviderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -4251,6 +4798,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.MetadataDetailsProviderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true

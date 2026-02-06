@@ -56,7 +56,7 @@ export type CancelInvocationMessage = CancelInvocationMessage$instance;
 
 export interface CloseMessage$instance extends HubMessage {
     readonly AllowReconnect: boolean;
-    readonly Error: string;
+    readonly Error: string | undefined;
 }
 
 
@@ -70,9 +70,9 @@ export const CloseMessage: {
 export type CloseMessage = CloseMessage$instance;
 
 export interface CompletionMessage$instance extends HubInvocationMessage {
-    readonly Error: string;
+    readonly Error: string | undefined;
     readonly HasResult: boolean;
-    readonly Result: unknown;
+    readonly Result: unknown | undefined;
     ToString(): string;
 }
 
@@ -101,7 +101,7 @@ export const HandshakeRequestMessage: {
 export type HandshakeRequestMessage = HandshakeRequestMessage$instance;
 
 export interface HandshakeResponseMessage$instance extends HubMessage {
-    readonly Error: string;
+    readonly Error: string | undefined;
 }
 
 
@@ -114,12 +114,13 @@ export const HandshakeResponseMessage: {
 export type HandshakeResponseMessage = HandshakeResponseMessage$instance;
 
 export interface HubInvocationMessage$instance extends HubMessage {
-    Headers: IDictionary<System_Internal.String, System_Internal.String>;
+    get Headers(): IDictionary<System_Internal.String, System_Internal.String> | undefined;
+    set Headers(value: IDictionary<System_Internal.String, System_Internal.String> | undefined);
     readonly InvocationId: string | undefined;
 }
 
 
-export const HubInvocationMessage: {
+export const HubInvocationMessage: (abstract new(invocationId: string) => HubInvocationMessage) & {
 };
 
 
@@ -129,7 +130,7 @@ export interface HubMessage$instance {
 }
 
 
-export const HubMessage: {
+export const HubMessage: (abstract new() => HubMessage) & {
 };
 
 
@@ -142,7 +143,7 @@ export interface HubMethodInvocationMessage$instance extends HubInvocationMessag
 }
 
 
-export const HubMethodInvocationMessage: {
+export const HubMethodInvocationMessage: (abstract new(invocationId: string, target: string, arguments: unknown[], streamIds: string[]) => HubMethodInvocationMessage) & (abstract new(invocationId: string, target: string, arguments: unknown[]) => HubMethodInvocationMessage) & {
 };
 
 
@@ -206,7 +207,6 @@ export interface PingMessage$instance extends HubMessage {
 
 
 export const PingMessage: {
-    new(): PingMessage;
     readonly Instance: PingMessage;
 };
 
@@ -214,7 +214,7 @@ export const PingMessage: {
 export type PingMessage = PingMessage$instance;
 
 export interface RawResult$instance {
-    readonly RawSerializedData: ReadOnlySequence<System_Internal.Byte>;
+    RawSerializedData: ReadOnlySequence<System_Internal.Byte>;
 }
 
 
@@ -265,7 +265,7 @@ export type StreamInvocationMessage = StreamInvocationMessage$instance;
 
 export interface StreamItemMessage$instance extends HubInvocationMessage {
     get Item(): unknown | undefined;
-    set Item(value: unknown);
+    set Item(value: unknown | undefined);
     ToString(): string;
 }
 

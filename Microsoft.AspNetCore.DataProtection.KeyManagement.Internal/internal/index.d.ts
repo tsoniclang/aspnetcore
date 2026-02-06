@@ -75,7 +75,6 @@ export interface CacheableKeyRing$instance {
 
 
 export const CacheableKeyRing: {
-    new(): CacheableKeyRing;
 };
 
 

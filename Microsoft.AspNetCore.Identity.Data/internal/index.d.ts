@@ -23,10 +23,11 @@ export type ForgotPasswordRequest = ForgotPasswordRequest$instance;
 
 export interface InfoRequest$instance {
     get NewEmail(): string | undefined;
-    set NewEmail(value: string);
-    NewPassword: string;
+    set NewEmail(value: string | undefined);
+    get NewPassword(): string | undefined;
+    set NewPassword(value: string | undefined);
     get OldPassword(): string | undefined;
-    set OldPassword(value: string);
+    set OldPassword(value: string | undefined);
 }
 
 
@@ -54,9 +55,9 @@ export interface LoginRequest$instance {
     Email: string;
     Password: string;
     get TwoFactorCode(): string | undefined;
-    set TwoFactorCode(value: string);
+    set TwoFactorCode(value: string | undefined);
     get TwoFactorRecoveryCode(): string | undefined;
-    set TwoFactorRecoveryCode(value: string);
+    set TwoFactorRecoveryCode(value: string | undefined);
 }
 
 
@@ -124,7 +125,7 @@ export interface TwoFactorRequest$instance {
     ResetRecoveryCodes: boolean;
     ResetSharedKey: boolean;
     get TwoFactorCode(): string | undefined;
-    set TwoFactorCode(value: string);
+    set TwoFactorCode(value: string | undefined);
 }
 
 
@@ -139,7 +140,7 @@ export interface TwoFactorResponse$instance {
     IsMachineRemembered: boolean;
     IsTwoFactorEnabled: boolean;
     get RecoveryCodes(): string[] | undefined;
-    set RecoveryCodes(value: string[]);
+    set RecoveryCodes(value: string[] | undefined);
     RecoveryCodesLeft: int;
     SharedKey: string;
 }

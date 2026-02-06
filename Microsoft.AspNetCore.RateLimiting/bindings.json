@@ -15,6 +15,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "TPartitionKey"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601::GetPartition(Microsoft.AspNetCore.Http.HttpContext):RateLimitPartition_1",
@@ -31,6 +34,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
@@ -52,6 +56,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.IRateLimiterPolicy\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -71,6 +76,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -83,6 +92,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.DisableRateLimitingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -99,6 +109,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -116,6 +130,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -130,6 +145,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.EnableRateLimitingAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -146,6 +162,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -163,6 +183,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         },
@@ -181,6 +202,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -195,6 +217,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.OnRejectedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -211,6 +234,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptions::AddPolicy(System.String,Func_2):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
@@ -227,6 +254,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
@@ -246,6 +274,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
@@ -265,6 +294,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": false
@@ -286,6 +316,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         },
@@ -304,6 +335,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         },
@@ -322,6 +354,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -336,6 +369,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting"
         }
@@ -352,6 +386,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.RateLimiting:Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions::AddTokenBucketLimiter(Microsoft.AspNetCore.RateLimiting.RateLimiterOptions,System.String,System.Action_1[[System.Threading.RateLimiting.TokenBucketRateLimiterOptions,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]):Microsoft.AspNetCore.RateLimiting.RateLimiterOptions",
@@ -368,6 +406,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true
@@ -387,6 +426,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true
@@ -406,6 +446,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true
@@ -425,6 +466,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.RateLimiting.RateLimiterOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.RateLimiting",
           "isExtensionMethod": true

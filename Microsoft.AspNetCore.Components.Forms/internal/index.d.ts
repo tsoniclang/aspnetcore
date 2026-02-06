@@ -10,13 +10,14 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { FormMappingError } from "../../Microsoft.AspNetCore.Components.Forms.Mapping/internal/index.js";
+import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, ElementReference, EventCallback_1, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, ElementReference, EventCallback_1, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IDictionary, IEnumerable, IReadOnlyDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Enum, EventArgs, EventHandler, Func, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
+import type { Action, Boolean as ClrBoolean, DateTimeOffset, Enum, EventArgs, EventHandler, Exception, Func, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { Expression, LambdaExpression } from "@tsonic/dotnet/System.Linq.Expressions.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
@@ -74,7 +75,7 @@ export interface AntiforgeryStateProvider$instance {
 }
 
 
-export const AntiforgeryStateProvider: {
+export const AntiforgeryStateProvider: (abstract new() => AntiforgeryStateProvider) & {
 };
 
 
@@ -100,8 +101,12 @@ export type AntiforgeryToken = AntiforgeryToken$instance & __AntiforgeryToken$vi
 
 export interface DataAnnotationsValidator$instance extends ComponentBase {
     Attach(renderHandle: RenderHandle): void;
+    Dispose(disposing: boolean): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnInitialized(): void;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -117,7 +122,7 @@ export interface __DataAnnotationsValidator$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface DataAnnotationsValidator$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface DataAnnotationsValidator$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type DataAnnotationsValidator = DataAnnotationsValidator$instance & __DataAnnotationsValidator$views;
 
@@ -166,20 +171,25 @@ export type EditContextProperties = EditContextProperties$instance;
 
 export interface EditForm$instance extends ComponentBase {
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    ChildContent: RenderFragment_1<EditContext>;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
+    get ChildContent(): RenderFragment_1<EditContext> | undefined;
+    set ChildContent(value: RenderFragment_1<EditContext> | undefined);
     get EditContext(): EditContext | undefined;
-    set EditContext(value: EditContext);
+    set EditContext(value: EditContext | undefined);
     Enhance: boolean;
     get FormName(): string | undefined;
-    set FormName(value: string);
-    Model: unknown;
+    set FormName(value: string | undefined);
+    get Model(): unknown | undefined;
+    set Model(value: unknown | undefined);
     OnInvalidSubmit: EventCallback_1<EditContext>;
     OnSubmit: EventCallback_1<EditContext>;
     OnValidSubmit: EventCallback_1<EditContext>;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -195,7 +205,7 @@ export interface __EditForm$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface EditForm$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface EditForm$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type EditForm = EditForm$instance & __EditForm$views;
 
@@ -206,12 +216,14 @@ export interface Editor_1$instance<T> extends ComponentBase {
     ValueExpression: Expression<Func<T>>;
     Attach(renderHandle: RenderHandle): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
-export const Editor_1: {
+export const Editor_1: (abstract new<T>() => Editor_1<T>) & {
 };
 
 
@@ -221,7 +233,7 @@ export interface __Editor_1$views<T> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface Editor_1$instance<T> extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface Editor_1$instance<T> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type Editor_1<T> = Editor_1$instance<T> & __Editor_1$views<T>;
 
@@ -262,7 +274,6 @@ export interface FormMappingContext$instance {
 
 
 export const FormMappingContext: {
-    new(): FormMappingContext;
 };
 
 
@@ -290,19 +301,25 @@ export type FormMappingScope = FormMappingScope$instance & __FormMappingScope$vi
 
 export interface InputBase_1$instance<TValue> extends ComponentBase {
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    DisplayName: string;
-    Value: TValue;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
+    get DisplayName(): string | undefined;
+    set DisplayName(value: string | undefined);
+    Value: TValue | undefined;
     ValueChanged: EventCallback_1<TValue>;
-    ValueExpression: Expression<Func<TValue>>;
+    get ValueExpression(): Expression<Func<TValue>> | undefined;
+    set ValueExpression(value: Expression<Func<TValue>> | undefined);
     Attach(renderHandle: RenderHandle): void;
+    Dispose(disposing: boolean): void;
+    FormatValueAsString(value: TValue): string | undefined;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
+    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
 }
 
 
-export const InputBase_1: {
+export const InputBase_1: (abstract new<TValue>() => InputBase_1<TValue>) & {
 };
 
 
@@ -312,16 +329,18 @@ export interface __InputBase_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface InputBase_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface InputBase_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type InputBase_1<TValue> = InputBase_1$instance<TValue> & __InputBase_1$views<TValue>;
 
 
 export interface InputCheckbox$instance extends InputBase_1$instance<System_Internal.Boolean> {
-    readonly Element: Nullable<ElementReference>;
+    Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -341,13 +360,18 @@ export type InputCheckbox = InputCheckbox$instance & __InputCheckbox$views;
 
 
 export interface InputDate_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    readonly Element: Nullable<ElementReference>;
+    Element: Nullable<ElementReference>;
     ParsingErrorMessage: string;
     Type: InputDateType;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
+    FormatValueAsString(value: TValue): string;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
+    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
 }
 
 
@@ -367,11 +391,13 @@ export type InputDate_1<TValue> = InputDate_1$instance<TValue> & __InputDate_1$v
 
 export interface InputFile$instance extends ComponentBase {
     get AdditionalAttributes(): IDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IDictionary<System_Internal.String, unknown>);
-    readonly Element: Nullable<ElementReference>;
+    set AdditionalAttributes(value: IDictionary<System_Internal.String, unknown> | undefined);
+    Element: Nullable<ElementReference>;
     OnChange: EventCallback_1<InputFileChangeEventArgs>;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
@@ -388,7 +414,7 @@ export interface __InputFile$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface InputFile$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface InputFile$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type InputFile = InputFile$instance & __InputFile$views;
 
@@ -408,10 +434,12 @@ export const InputFileChangeEventArgs: {
 export type InputFileChangeEventArgs = InputFileChangeEventArgs$instance;
 
 export interface InputHidden$instance extends InputBase_1$instance<System_Internal.String> {
-    readonly Element: Nullable<ElementReference>;
+    Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -431,12 +459,16 @@ export type InputHidden = InputHidden$instance & __InputHidden$views;
 
 
 export interface InputNumber_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    readonly Element: Nullable<ElementReference>;
+    Element: Nullable<ElementReference>;
     ParsingErrorMessage: string;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
+    FormatValueAsString(value: TValue): string | undefined;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
+    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
 }
 
 
@@ -456,13 +488,17 @@ export type InputNumber_1<TValue> = InputNumber_1$instance<TValue> & __InputNumb
 
 export interface InputRadio_1$instance<TValue> extends ComponentBase {
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    readonly Element: Nullable<ElementReference>;
-    Name: string;
-    Value: TValue;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
+    Element: Nullable<ElementReference>;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
+    Value: TValue | undefined;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -478,18 +514,24 @@ export interface __InputRadio_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface InputRadio_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface InputRadio_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type InputRadio_1<TValue> = InputRadio_1$instance<TValue> & __InputRadio_1$views<TValue>;
 
 
 export interface InputRadioGroup_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    ChildContent: RenderFragment;
-    Name: string;
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
+    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
 }
 
 
@@ -508,12 +550,17 @@ export type InputRadioGroup_1<TValue> = InputRadioGroup_1$instance<TValue> & __I
 
 
 export interface InputSelect_1$instance<TValue> extends InputBase_1$instance<TValue> {
-    ChildContent: RenderFragment;
-    readonly Element: Nullable<ElementReference>;
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
+    Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
+    FormatValueAsString(value: TValue): string | undefined;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
+    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
 }
 
 
@@ -532,10 +579,12 @@ export type InputSelect_1<TValue> = InputSelect_1$instance<TValue> & __InputSele
 
 
 export interface InputText$instance extends InputBase_1$instance<System_Internal.String> {
-    readonly Element: Nullable<ElementReference>;
+    Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -555,10 +604,12 @@ export type InputText = InputText$instance & __InputText$views;
 
 
 export interface InputTextArea$instance extends InputBase_1$instance<System_Internal.String> {
-    readonly Element: Nullable<ElementReference>;
+    Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -593,12 +644,16 @@ export type RemoteBrowserFileStreamOptions = RemoteBrowserFileStreamOptions$inst
 
 export interface ValidationMessage_1$instance<TValue> extends ComponentBase {
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
     get For(): Expression<Func<TValue>> | undefined;
-    set For(value: Expression<Func<TValue>>);
+    set For(value: Expression<Func<TValue>> | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
+    Dispose(disposing: boolean): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -614,7 +669,7 @@ export interface __ValidationMessage_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface ValidationMessage_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface ValidationMessage_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type ValidationMessage_1<TValue> = ValidationMessage_1$instance<TValue> & __ValidationMessage_1$views<TValue>;
 
@@ -665,11 +720,16 @@ export type ValidationStateChangedEventArgs = ValidationStateChangedEventArgs$in
 
 export interface ValidationSummary$instance extends ComponentBase {
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    Model: unknown;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
+    get Model(): unknown | undefined;
+    set Model(value: unknown | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
+    Dispose(disposing: boolean): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSet(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -685,7 +745,7 @@ export interface __ValidationSummary$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface ValidationSummary$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface ValidationSummary$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type ValidationSummary = ValidationSummary$instance & __ValidationSummary$views;
 

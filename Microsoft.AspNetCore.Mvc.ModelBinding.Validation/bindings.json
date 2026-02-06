@@ -32,6 +32,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -69,6 +70,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -90,6 +92,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IMetadataBasedModelValidatorProvider::HasValidators(System.Type,System.Collections.Generic.IList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
@@ -106,6 +114,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IMetadataBasedModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -125,6 +134,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -162,6 +172,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -199,6 +210,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -236,6 +248,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IObjectModelValidator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -273,6 +286,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IPropertyValidationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -310,6 +324,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -331,6 +346,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -348,6 +367,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -366,6 +386,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -384,6 +405,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -398,6 +420,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.String,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -408,6 +431,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.String,System.Func_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -424,6 +448,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase",
+        "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase"
+      },
       "methods": [],
       "properties": [
         {
@@ -441,6 +469,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -455,6 +484,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -471,6 +501,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorCache::GetValidators(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidatorProvider):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -487,6 +521,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorCache",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -503,6 +538,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorCache",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -519,6 +555,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -536,6 +576,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -554,6 +595,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -572,6 +614,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -586,6 +629,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -596,6 +640,7 @@
           "normalizedSignature": "constructor|(System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -612,6 +657,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -629,6 +678,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -647,6 +697,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -665,6 +716,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -679,6 +731,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorItem,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -695,6 +748,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidatorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidatorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeClientModelValidatorProvider::CreateValidators(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorProviderContext):System.Void",
@@ -711,6 +774,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeClientModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -730,6 +794,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -752,6 +817,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeClientModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -766,6 +832,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidatorProvider,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeClientModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -782,6 +849,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeModelValidatorProvider::CreateValidators(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderContext):System.Void",
@@ -798,6 +875,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -817,6 +895,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -839,6 +918,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -853,6 +933,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.CompositeModelValidatorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -869,6 +950,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase",
+        "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase"
+      },
       "methods": [],
       "properties": [
         {
@@ -886,6 +971,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -904,6 +990,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -918,6 +1005,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,System.Object,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -934,6 +1022,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -951,6 +1043,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -969,6 +1062,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -987,6 +1081,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1001,6 +1096,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1017,6 +1113,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1034,6 +1134,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1052,6 +1153,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1066,6 +1168,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1082,6 +1185,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1099,6 +1206,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1117,6 +1225,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1135,6 +1244,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1149,6 +1259,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorItem,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1165,6 +1276,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IPropertyValidationFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IPropertyValidationFilter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidateNeverAttribute::ShouldValidateEntry(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry):System.Boolean",
@@ -1181,6 +1302,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidateNeverAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1200,6 +1322,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IPropertyValidationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1217,6 +1340,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidateNeverAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1233,6 +1357,53 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IDictionary\u00602",
+          "clrName": "System.Collections.Generic.IDictionary\u00602",
+          "typeArguments": [
+            "Object",
+            "ValidationStateEntry"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[Object,ValidationStateEntry]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[Object,ValidationStateEntry]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyDictionary\u00602",
+          "clrName": "System.Collections.Generic.IReadOnlyDictionary\u00602",
+          "typeArguments": [
+            "Object",
+            "ValidationStateEntry"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[Object,ValidationStateEntry]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary::Add(System.Collections.Generic.KeyValuePair_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -1249,6 +1420,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1268,6 +1440,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1287,6 +1460,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1306,6 +1480,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1325,6 +1500,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1344,6 +1520,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1363,6 +1540,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1382,6 +1560,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1401,6 +1580,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1420,6 +1600,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1447,6 +1628,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1465,6 +1647,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1483,6 +1666,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1501,6 +1685,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1519,6 +1704,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1533,6 +1719,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1549,6 +1736,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1566,6 +1757,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1584,6 +1776,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1602,6 +1795,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1620,6 +1814,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1634,6 +1829,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1650,6 +1846,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Validate(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.String,System.Object):System.Boolean",
@@ -1666,6 +1866,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1685,6 +1886,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1704,12 +1906,362 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::ValidateNode():System.Boolean",
+          "clrName": "ValidateNode",
+          "metadataToken": 100665073,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "ValidateNode|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Visit(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.String,System.Object):System.Boolean",
+          "clrName": "Visit",
+          "metadataToken": 100665074,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.String,System.Object):System.Boolean",
+          "normalizedSignature": "Visit|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.String,System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::VisitComplexType(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):System.Boolean",
+          "clrName": "VisitComplexType",
+          "metadataToken": 100665076,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):System.Boolean",
+          "normalizedSignature": "VisitComplexType|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::VisitSimpleType():System.Boolean",
+          "clrName": "VisitSimpleType",
+          "metadataToken": 100665077,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "VisitSimpleType|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::VisitChildren(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):System.Boolean",
+          "clrName": "VisitChildren",
+          "metadataToken": 100665078,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):System.Boolean",
+          "normalizedSignature": "VisitChildren|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::SuppressValidation(System.String):System.Void",
+          "clrName": "SuppressValidation",
+          "metadataToken": 100665079,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "SuppressValidation|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::GetValidationEntry(System.Object):Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry",
+          "clrName": "GetValidationEntry",
+          "metadataToken": 100665080,
+          "canonicalSignature": "(System.Object):Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry",
+          "normalizedSignature": "GetValidationEntry|(System.Object):Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::ValidatorProvider:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider",
+          "clrName": "ValidatorProvider",
+          "metadataToken": 385876379,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider",
+          "normalizedSignature": "ValidatorProvider|:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::MetadataProvider:Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
+          "clrName": "MetadataProvider",
+          "metadataToken": 385876380,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider",
+          "normalizedSignature": "MetadataProvider|:Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Cache:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache",
+          "clrName": "Cache",
+          "metadataToken": 385876381,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache",
+          "normalizedSignature": "Cache|:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Context:Microsoft.AspNetCore.Mvc.ActionContext",
+          "clrName": "Context",
+          "metadataToken": 385876382,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ActionContext",
+          "normalizedSignature": "Context|:Microsoft.AspNetCore.Mvc.ActionContext|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::ModelState:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary",
+          "clrName": "ModelState",
+          "metadataToken": 385876383,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary",
+          "normalizedSignature": "ModelState|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::ValidationState:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
+          "clrName": "ValidationState",
+          "metadataToken": 385876384,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary",
+          "normalizedSignature": "ValidationState|:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Container:System.Object",
+          "clrName": "Container",
+          "metadataToken": 385876385,
+          "canonicalSignature": ":System.Object",
+          "normalizedSignature": "Container|:System.Object|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Key:System.String",
+          "clrName": "Key",
+          "metadataToken": 385876386,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Key|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Model:System.Object",
+          "clrName": "Model",
+          "metadataToken": 385876387,
+          "canonicalSignature": ":System.Object",
+          "normalizedSignature": "Model|:System.Object|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Metadata:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
+          "clrName": "Metadata",
+          "metadataToken": 385876388,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata",
+          "normalizedSignature": "Metadata|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::Strategy:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy",
+          "clrName": "Strategy",
+          "metadataToken": 385876389,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy",
+          "normalizedSignature": "Strategy|:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor::MaxValidationDepth:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "MaxValidationDepth",
@@ -1725,6 +2277,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1743,6 +2296,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1757,6 +2311,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1773,6 +2328,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache::GetValidators(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidator,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -1789,6 +2348,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1805,6 +2365,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1821,6 +2382,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1838,6 +2403,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1856,6 +2422,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1874,6 +2441,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1888,6 +2456,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1898,6 +2467,7 @@
           "normalizedSignature": "constructor|(System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1914,6 +2484,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderExtensions::RemoveType(System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IModelValidatorProvider,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -1930,6 +2504,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true
@@ -1949,6 +2524,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidatorProviderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": true

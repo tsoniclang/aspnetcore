@@ -13,6 +13,7 @@ import type { IJSComponentConfiguration, JSComponentConfigurationStore } from ".
 import type { HttpContext, WebSocketAcceptContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { HybridCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Hybrid.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
@@ -22,7 +23,7 @@ export interface CircuitOptions$instance {
     DisconnectedCircuitMaxRetained: int;
     DisconnectedCircuitRetentionPeriod: TimeSpan;
     get HybridPersistenceCache(): HybridCache | undefined;
-    set HybridPersistenceCache(value: HybridCache);
+    set HybridPersistenceCache(value: HybridCache | undefined);
     JSInteropDefaultCallTimeout: TimeSpan;
     MaxBufferedUnacknowledgedRenderBatches: int;
     PersistedCircuitDistributedRetentionPeriod: Nullable<TimeSpan>;
@@ -60,12 +61,14 @@ export type CircuitRootComponentOptions = CircuitRootComponentOptions$instance &
 
 
 export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance {
+    readonly RevalidationInterval: TimeSpan;
+    Dispose(disposing: boolean): void;
     SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
+    ValidateAuthenticationStateAsync(authenticationState: AuthenticationState, cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
 }
 
 
-export const RevalidatingServerAuthenticationStateProvider: {
-    new(loggerFactory: ILoggerFactory): RevalidatingServerAuthenticationStateProvider;
+export const RevalidatingServerAuthenticationStateProvider: (abstract new(loggerFactory: ILoggerFactory) => RevalidatingServerAuthenticationStateProvider) & {
 };
 
 
@@ -98,9 +101,9 @@ export type ServerAuthenticationStateProvider = ServerAuthenticationStateProvide
 
 export interface ServerComponentsEndpointOptions$instance {
     get ConfigureWebSocketAcceptContext(): Func<HttpContext, WebSocketAcceptContext, Task> | undefined;
-    set ConfigureWebSocketAcceptContext(value: Func<HttpContext, WebSocketAcceptContext, Task>);
+    set ConfigureWebSocketAcceptContext(value: Func<HttpContext, WebSocketAcceptContext, Task> | undefined);
     get ContentSecurityFrameAncestorsPolicy(): string | undefined;
-    set ContentSecurityFrameAncestorsPolicy(value: string);
+    set ContentSecurityFrameAncestorsPolicy(value: string | undefined);
     DisableWebSocketCompression: boolean;
 }
 

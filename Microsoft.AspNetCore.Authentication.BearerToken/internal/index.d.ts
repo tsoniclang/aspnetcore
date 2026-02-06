@@ -60,7 +60,7 @@ export type BearerTokenOptions = BearerTokenOptions$instance;
 
 export interface MessageReceivedContext$instance extends ResultContext_1<BearerTokenOptions> {
     get Token(): string | undefined;
-    set Token(value: string);
+    set Token(value: string | undefined);
 }
 
 

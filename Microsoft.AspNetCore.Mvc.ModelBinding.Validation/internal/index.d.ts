@@ -9,7 +9,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { IModelMetadataProvider, ModelMetadata } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
+import type { IModelMetadataProvider, ModelMetadata, ModelStateDictionary } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { ActionContext } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
@@ -80,7 +80,7 @@ export type IValidationStrategy = IValidationStrategy$instance;
 export interface ValidationEntry$instance {
     readonly Key: string;
     readonly Metadata: ModelMetadata;
-    readonly Model: unknown;
+    readonly Model: unknown | undefined;
 }
 
 
@@ -119,8 +119,8 @@ export type ClientValidatorCache = ClientValidatorCache$instance;
 export interface ClientValidatorItem$instance {
     IsReusable: boolean;
     get Validator(): IClientModelValidator | undefined;
-    set Validator(value: IClientModelValidator);
-    readonly ValidatorMetadata: unknown;
+    set Validator(value: IClientModelValidator | undefined);
+    readonly ValidatorMetadata: unknown | undefined;
 }
 
 
@@ -187,8 +187,8 @@ export type CompositeModelValidatorProvider = CompositeModelValidatorProvider$in
 
 
 export interface ModelValidationContext$instance extends ModelValidationContextBase {
-    readonly Container: unknown;
-    readonly Model: unknown;
+    readonly Container: unknown | undefined;
+    readonly Model: unknown | undefined;
 }
 
 
@@ -262,7 +262,8 @@ export type ValidateNeverAttribute = ValidateNeverAttribute$instance & __Validat
 export interface ValidationStateDictionary$instance {
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    Item: ValidationStateEntry;
+    get Item(): ValidationStateEntry | undefined;
+    set Item(value: ValidationStateEntry | undefined);
     readonly Keys: ICollection<unknown>;
     readonly Values: ICollection<ValidationStateEntry>;
     Add(item: KeyValuePair<unknown, ValidationStateEntry>): void;
@@ -303,9 +304,16 @@ export type ValidationStateEntry = ValidationStateEntry$instance;
 export interface ValidationVisitor$instance {
     MaxValidationDepth: Nullable<System_Internal.Int32>;
     ValidateComplexTypesIfChildValidationFails: boolean;
+    GetValidationEntry(model: unknown): ValidationStateEntry | undefined;
+    SuppressValidation(key: string): void;
     Validate(metadata: ModelMetadata, key: string, model: unknown): boolean;
     Validate(metadata: ModelMetadata, key: string, model: unknown, alwaysValidateAtTopLevel: boolean): boolean;
     Validate(metadata: ModelMetadata, key: string, model: unknown, alwaysValidateAtTopLevel: boolean, container: unknown): boolean;
+    ValidateNode(): boolean;
+    Visit(metadata: ModelMetadata, key: string, model: unknown): boolean;
+    VisitChildren(strategy: IValidationStrategy): boolean;
+    VisitComplexType(defaultStrategy: IValidationStrategy): boolean;
+    VisitSimpleType(): boolean;
 }
 
 
@@ -331,7 +339,7 @@ export type ValidatorCache = ValidatorCache$instance;
 export interface ValidatorItem$instance {
     IsReusable: boolean;
     get Validator(): IModelValidator | undefined;
-    set Validator(value: IModelValidator);
+    set Validator(value: IModelValidator | undefined);
     readonly ValidatorMetadata: unknown;
 }
 

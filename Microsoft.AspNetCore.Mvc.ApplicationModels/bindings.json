@@ -32,6 +32,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -70,6 +71,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -105,6 +107,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApplicationModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -142,6 +145,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApplicationModelProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -163,6 +167,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApplicationModelProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -199,6 +204,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -218,6 +224,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -235,6 +247,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -253,6 +266,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -271,6 +285,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -289,6 +304,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -324,6 +340,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IControllerModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -362,6 +379,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -381,6 +399,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel):System.Void",
@@ -397,6 +421,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -434,6 +459,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelPartsProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -453,6 +479,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelPartsProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -472,6 +499,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelPartsProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -491,6 +519,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelPartsProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -528,6 +557,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -549,6 +579,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -585,6 +616,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageHandlerModelConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel):System.Void",
@@ -601,6 +638,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageHandlerModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -622,6 +660,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel):System.Void",
@@ -638,6 +682,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -675,6 +720,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -696,6 +742,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -731,6 +778,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IParameterModelBaseConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -768,6 +816,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IParameterModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -806,6 +855,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -825,6 +875,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -842,6 +914,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -860,6 +933,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -878,6 +952,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -896,6 +971,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -914,6 +990,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -932,6 +1009,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -950,6 +1028,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -968,6 +1047,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -986,6 +1066,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1004,6 +1085,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1022,6 +1104,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1040,6 +1123,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1058,6 +1142,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1077,6 +1162,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1096,6 +1182,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1115,6 +1202,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1134,6 +1222,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1153,6 +1242,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1168,6 +1258,7 @@
           "normalizedSignature": "constructor|(System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1178,6 +1269,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1194,6 +1286,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ApiConventionApplicationModelConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Void",
@@ -1210,6 +1312,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiConventionApplicationModelConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ApiConventionApplicationModelConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100666635,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiConventionApplicationModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1229,6 +1352,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -1251,6 +1375,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiConventionApplicationModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1265,6 +1390,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ProducesErrorResponseTypeAttribute):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiConventionApplicationModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1281,6 +1407,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1298,6 +1428,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1316,6 +1447,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1330,6 +1462,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1340,6 +1473,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.ApiExplorerModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1356,6 +1490,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ApiVisibilityConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Void",
@@ -1372,6 +1516,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiVisibilityConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ApiVisibilityConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100666645,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiVisibilityConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1391,6 +1556,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -1408,6 +1574,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApiVisibilityConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1424,6 +1591,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1441,6 +1626,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1459,6 +1645,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1477,6 +1664,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1495,6 +1683,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1513,6 +1702,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1532,6 +1722,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1551,6 +1742,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -1566,6 +1758,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1582,6 +1775,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1599,6 +1796,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1617,6 +1815,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1631,6 +1830,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1647,6 +1847,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel::CombineAttributeRouteModel(Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel,Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel):Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
@@ -1663,6 +1867,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1682,6 +1887,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1701,6 +1907,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1720,6 +1927,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1739,6 +1947,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1760,6 +1969,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1778,6 +1988,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1796,6 +2007,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1814,6 +2026,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1832,6 +2045,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1850,6 +2064,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1868,6 +2083,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1882,6 +2098,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1892,6 +2109,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -1902,6 +2120,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.AttributeRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1918,6 +2137,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ClientErrorResultFilterConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Void",
@@ -1934,6 +2163,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ClientErrorResultFilterConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ClientErrorResultFilterConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100666700,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ClientErrorResultFilterConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1953,6 +2203,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -1970,6 +2221,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ClientErrorResultFilterConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1986,6 +2238,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ConsumesConstraintForFormFileParameterConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Void",
@@ -2002,6 +2264,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ConsumesConstraintForFormFileParameterConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ConsumesConstraintForFormFileParameterConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100666703,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ConsumesConstraintForFormFileParameterConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2021,6 +2304,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -2038,6 +2322,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ConsumesConstraintForFormFileParameterConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2054,6 +2339,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -2071,6 +2378,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2089,6 +2397,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2107,6 +2416,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2125,6 +2435,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2143,6 +2454,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2161,6 +2473,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2179,6 +2492,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2197,6 +2511,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2215,6 +2530,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2233,6 +2549,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2251,6 +2568,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2269,6 +2587,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2287,6 +2606,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -2306,6 +2626,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -2325,6 +2646,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -2344,6 +2666,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -2363,6 +2686,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IFilterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -2382,6 +2706,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IApiExplorerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -2397,6 +2722,7 @@
           "normalizedSignature": "constructor|(System.Reflection.TypeInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2407,6 +2733,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2423,7 +2750,37 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100666781,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Void",
           "clrName": "Apply",
@@ -2439,6 +2796,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2458,6 +2816,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -2475,6 +2834,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2485,6 +2845,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.Extensions.DependencyInjection.IServiceProviderIsService):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2501,6 +2862,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.InvalidModelStateFilterConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Void",
@@ -2517,6 +2888,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.InvalidModelStateFilterConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.InvalidModelStateFilterConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100666790,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.InvalidModelStateFilterConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2536,6 +2928,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -2553,6 +2946,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.InvalidModelStateFilterConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2569,6 +2963,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2586,6 +2984,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2604,6 +3003,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2622,6 +3022,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2640,6 +3041,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2658,6 +3060,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2676,6 +3079,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2694,6 +3098,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2712,6 +3117,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2730,6 +3136,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2748,6 +3155,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2766,6 +3174,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2784,6 +3193,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2802,6 +3212,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2820,6 +3231,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2838,6 +3250,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2852,6 +3265,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,System.Reflection.TypeInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2862,6 +3276,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,System.Reflection.TypeInfo,System.Reflection.TypeInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2872,6 +3287,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2888,6 +3304,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2905,6 +3325,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2923,6 +3344,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -2941,6 +3363,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2955,6 +3378,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,System.Reflection.TypeInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -2971,6 +3395,62 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Collections.ObjectModel.Collection\u00601",
+        "clrName": "System.Collections.ObjectModel.Collection\u00601",
+        "typeArguments": [
+          "IPageConvention"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
+          "clrName": "System.Collections.Generic.IList\u00601",
+          "typeArguments": [
+            "IPageConvention"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "IPageConvention"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "IPageConvention"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "IPageConvention"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "IPageConvention"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection::AddPageApplicationModelConvention(System.String,System.Action_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention",
@@ -2987,6 +3467,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3006,6 +3487,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3025,6 +3507,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3044,6 +3527,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3063,6 +3547,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3082,6 +3567,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3101,6 +3587,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3120,6 +3607,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3139,6 +3627,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3158,6 +3647,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -3174,6 +3664,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3184,6 +3675,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention,Microsoft.AspNetCore.Mvc.RazorPages,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -3200,6 +3692,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3217,6 +3723,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3235,6 +3742,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3253,6 +3761,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3271,6 +3780,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3289,6 +3799,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3307,6 +3818,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3325,6 +3837,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3343,6 +3856,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3361,6 +3875,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3380,6 +3895,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3399,6 +3915,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3418,6 +3935,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3433,6 +3951,7 @@
           "normalizedSignature": "constructor|(System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3443,6 +3962,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -3459,6 +3979,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
+        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3476,6 +4014,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3494,6 +4033,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3512,6 +4052,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3530,6 +4071,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3549,6 +4091,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3568,6 +4111,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3587,6 +4131,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3606,6 +4151,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3621,6 +4167,7 @@
           "normalizedSignature": "constructor|(System.Reflection.ParameterInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3631,6 +4178,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.PageParameterModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -3647,6 +4195,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
+        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3664,6 +4230,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PagePropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3682,6 +4249,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PagePropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3700,6 +4268,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PagePropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3718,6 +4287,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3737,6 +4307,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3756,6 +4327,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3775,6 +4347,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3794,6 +4367,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -3809,6 +4383,7 @@
           "normalizedSignature": "constructor|(System.Reflection.PropertyInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PagePropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3819,6 +4394,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.PagePropertyModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PagePropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -3835,6 +4411,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3852,6 +4432,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3870,6 +4451,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -3884,6 +4466,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -3900,6 +4483,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3917,6 +4504,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3935,6 +4523,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3953,6 +4542,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3971,6 +4561,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -3989,6 +4580,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -4007,6 +4599,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -4025,6 +4618,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -4039,6 +4633,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -4049,6 +4644,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         },
@@ -4059,6 +4655,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -4075,6 +4672,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -4092,6 +4693,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -4106,6 +4708,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModelProviderContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -4122,6 +4725,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteTransformerConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel):System.Void",
@@ -4138,6 +4755,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteTransformerConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteTransformerConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100664246,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteTransformerConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false
@@ -4157,6 +4795,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
           "isExtensionMethod": false,
@@ -4174,6 +4813,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.IOutboundParameterTransformer):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteTransformerConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages"
         }
@@ -4190,6 +4830,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
+        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4207,6 +4865,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4225,6 +4884,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4243,6 +4903,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4261,6 +4922,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4279,6 +4941,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4297,6 +4960,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4315,6 +4979,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4334,6 +4999,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4353,6 +5019,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4372,6 +5039,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4391,6 +5059,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4406,6 +5075,7 @@
           "normalizedSignature": "constructor|(System.Reflection.ParameterInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4416,6 +5086,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4432,6 +5103,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4449,6 +5130,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4467,6 +5149,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4485,6 +5168,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4493,16 +5177,17 @@
           "clrName": "Name",
           "metadataToken": 385877011,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4521,6 +5206,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4539,6 +5225,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4546,7 +5233,30 @@
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase::.ctor(System.Type,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100666806,
+          "canonicalSignature": "(System.Type,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.Type,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase::.ctor(Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase):void",
+          "metadataToken": 100666807,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
@@ -4559,6 +5269,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase",
+        "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ParameterModelBase"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4576,6 +5304,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4594,6 +5323,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4612,6 +5342,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4630,6 +5361,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4648,6 +5380,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4666,6 +5399,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IBindingModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4685,6 +5419,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4704,6 +5439,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4723,6 +5459,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.ICommonModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4742,6 +5479,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IPropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
@@ -4757,6 +5495,7 @@
           "normalizedSignature": "constructor|(System.Reflection.PropertyInfo,System.Collections.Generic.IReadOnlyList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4767,6 +5506,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.PropertyModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4783,6 +5523,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.RouteTokenTransformerConvention::Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Void",
@@ -4799,6 +5549,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.RouteTokenTransformerConvention",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationModels.RouteTokenTransformerConvention::ShouldApply(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "clrName": "ShouldApply",
+          "metadataToken": 100666827,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean",
+          "normalizedSignature": "ShouldApply|(Microsoft.AspNetCore.Mvc.ApplicationModels.ActionModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.RouteTokenTransformerConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -4818,6 +5589,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.IActionModelConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -4835,6 +5607,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Routing.IOutboundParameterTransformer):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.RouteTokenTransformerConvention",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4851,6 +5624,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -4868,6 +5645,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.SelectorModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4886,6 +5664,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.SelectorModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4904,6 +5683,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.SelectorModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -4918,6 +5698,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.SelectorModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -4928,6 +5709,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationModels.SelectorModel):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationModels.SelectorModel",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }

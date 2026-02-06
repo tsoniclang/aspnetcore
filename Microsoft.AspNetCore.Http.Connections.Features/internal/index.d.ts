@@ -12,7 +12,7 @@ import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index
 
 export interface IHttpContextFeature$instance {
     get HttpContext(): HttpContext | undefined;
-    set HttpContext(value: HttpContext);
+    set HttpContext(value: HttpContext | undefined);
 }
 
 

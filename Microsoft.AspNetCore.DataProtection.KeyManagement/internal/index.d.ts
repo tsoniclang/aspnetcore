@@ -67,15 +67,15 @@ export type IKeyManager = IKeyManager$instance;
 
 export interface KeyManagementOptions$instance {
     get AuthenticatedEncryptorConfiguration(): AlgorithmConfiguration | undefined;
-    set AuthenticatedEncryptorConfiguration(value: AlgorithmConfiguration);
+    set AuthenticatedEncryptorConfiguration(value: AlgorithmConfiguration | undefined);
     readonly AuthenticatedEncryptorFactories: IList<IAuthenticatedEncryptorFactory>;
     AutoGenerateKeys: boolean;
     readonly KeyEscrowSinks: IList<IKeyEscrowSink>;
     NewKeyLifetime: TimeSpan;
     get XmlEncryptor(): IXmlEncryptor | undefined;
-    set XmlEncryptor(value: IXmlEncryptor);
+    set XmlEncryptor(value: IXmlEncryptor | undefined);
     get XmlRepository(): IXmlRepository | undefined;
-    set XmlRepository(value: IXmlRepository);
+    set XmlRepository(value: IXmlRepository | undefined);
 }
 
 
