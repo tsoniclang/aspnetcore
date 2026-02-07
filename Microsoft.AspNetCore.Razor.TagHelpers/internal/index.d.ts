@@ -101,7 +101,7 @@ export type DefaultTagHelperContent = DefaultTagHelperContent$instance & __Defau
 
 export interface HtmlAttributeNameAttribute$instance extends Attribute {
     DictionaryAttributePrefix: string;
-    readonly DictionaryAttributePrefixSet: boolean;
+    DictionaryAttributePrefixSet: boolean;
     readonly Name: string;
 }
 
@@ -154,7 +154,6 @@ export interface NullHtmlEncoder$instance extends HtmlEncoder {
 
 
 export const NullHtmlEncoder: {
-    new(): NullHtmlEncoder;
     readonly Default: NullHtmlEncoder;
 };
 
@@ -174,7 +173,7 @@ export const OutputElementHintAttribute: {
 export type OutputElementHintAttribute = OutputElementHintAttribute$instance;
 
 export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollection<TagHelperAttribute> {
-    readonly Item: TagHelperAttribute;
+    readonly [name: string]: TagHelperAttribute;
     ContainsName(name: string): boolean;
     IndexOfName(name: string): int;
     TryGetAttribute(name: string, attribute: TagHelperAttribute): boolean;
@@ -182,8 +181,8 @@ export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollect
 }
 
 
-export const ReadOnlyTagHelperAttributeList: {
-    new(attributes: IList__System_Collections_Generic<TagHelperAttribute>): ReadOnlyTagHelperAttributeList;
+export const ReadOnlyTagHelperAttributeList: (abstract new() => ReadOnlyTagHelperAttributeList) & (abstract new(attributes: IList__System_Collections_Generic<TagHelperAttribute>) => ReadOnlyTagHelperAttributeList) & {
+    NameEquals(name: string, attribute: TagHelperAttribute): boolean;
 };
 
 
@@ -209,7 +208,7 @@ export interface TagHelper$instance extends ITagHelper {
 }
 
 
-export const TagHelper: {
+export const TagHelper: (abstract new() => TagHelper) & {
 };
 
 
@@ -249,7 +248,7 @@ export type TagHelperAttribute = TagHelperAttribute$instance & __TagHelperAttrib
 
 
 export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttributeList {
-    Item: TagHelperAttribute;
+    [index: number]: TagHelperAttribute;
     Add(name: string, value: unknown): void;
     Add(attribute: TagHelperAttribute): void;
     Clear(): void;
@@ -279,7 +278,7 @@ export interface TagHelperComponent$instance {
 }
 
 
-export const TagHelperComponent: {
+export const TagHelperComponent: (abstract new() => TagHelperComponent) & {
 };
 
 
@@ -313,7 +312,7 @@ export interface TagHelperContent$instance {
 }
 
 
-export const TagHelperContent: {
+export const TagHelperContent: (abstract new() => TagHelperContent) & {
 };
 
 
@@ -328,9 +327,9 @@ export type TagHelperContent = TagHelperContent$instance & __TagHelperContent$vi
 
 export interface TagHelperContext$instance {
     readonly AllAttributes: ReadOnlyTagHelperAttributeList;
-    readonly Items: IDictionary<unknown, unknown>;
-    readonly TagName: string;
-    readonly UniqueId: string;
+    Items: IDictionary<unknown, unknown>;
+    TagName: string;
+    UniqueId: string;
     Reinitialize(tagName: string, items: IDictionary<unknown, unknown>, uniqueId: string): void;
     Reinitialize(items: IDictionary<unknown, unknown>, uniqueId: string): void;
 }

@@ -61,7 +61,7 @@ export const DirectoryBrowserMiddleware: {
 export type DirectoryBrowserMiddleware = DirectoryBrowserMiddleware$instance;
 
 export interface FileExtensionContentTypeProvider$instance {
-    readonly Mappings: IDictionary<System_Internal.String, System_Internal.String>;
+    Mappings: IDictionary<System_Internal.String, System_Internal.String>;
     TryGetContentType(subpath: string, contentType: string): boolean;
 }
 

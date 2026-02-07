@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.QueueProcessingOrder",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -66,6 +91,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "typeParameters": [
+        "TKey"
+      ],
       "methods": [],
       "properties": [
         {
@@ -83,6 +115,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -101,6 +134,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -115,6 +149,7 @@
           "normalizedSignature": "constructor|(TKey,Func_2):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -131,6 +166,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter",
+        "clrName": "System.Threading.RateLimiting.RateLimiter"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
@@ -147,6 +196,127 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::AttemptAcquireCore(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquireCore",
+          "metadataToken": 100663351,
+          "canonicalSignature": "(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquireCore|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 100663352,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663355,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::DisposeAsyncCore():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsyncCore",
+          "metadataToken": 100663356,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsyncCore|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ConcurrencyLimiter::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -168,6 +338,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -182,6 +353,7 @@
           "normalizedSignature": "constructor|(System.Threading.RateLimiting.ConcurrencyLimiterOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -198,6 +370,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -215,6 +391,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -233,6 +410,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -251,6 +429,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -265,6 +444,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ConcurrencyLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -281,6 +461,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter",
+        "clrName": "System.Threading.RateLimiting.ReplenishingRateLimiter"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
@@ -297,6 +491,47 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::AttemptAcquireCore(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquireCore",
+          "metadataToken": 100663386,
+          "canonicalSignature": "(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquireCore|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 100663387,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -316,6 +551,87 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663393,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::DisposeAsyncCore():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsyncCore",
+          "metadataToken": 100663394,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsyncCore|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.FixedWindowRateLimiter::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -337,6 +653,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -355,6 +672,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -373,6 +691,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -387,6 +706,7 @@
           "normalizedSignature": "constructor|(System.Threading.RateLimiting.FixedWindowRateLimiterOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -403,6 +723,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -420,6 +744,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -438,6 +763,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -456,6 +782,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -474,6 +801,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -492,6 +820,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -506,6 +835,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.FixedWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -522,6 +852,22 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "MetadataName_1[[T]]"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName\u00601::ToString():System.String",
@@ -538,6 +884,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -557,6 +904,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -576,6 +924,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -595,6 +944,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -616,6 +966,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -630,6 +981,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -646,6 +998,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "typeParameters": [
+        "TResource"
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::GetStatistics(TResource):System.Threading.RateLimiting.RateLimiterStatistics",
@@ -662,6 +1031,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -681,6 +1051,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::AttemptAcquireCore(TResource,System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquireCore",
+          "metadataToken": 100663430,
+          "canonicalSignature": "(TResource,System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquireCore|(TResource,System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -700,6 +1091,47 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::AcquireAsyncCore(TResource,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 100663432,
+          "canonicalSignature": "(TResource,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsyncCore|(TResource,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663433,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -719,6 +1151,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::DisposeAsyncCore():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsyncCore",
+          "metadataToken": 100663435,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsyncCore|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -738,6 +1191,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -757,6 +1211,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -765,7 +1220,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter\u00601::.ctor():void",
+          "metadataToken": 100663438,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter\u00601",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ]
     },
     {
       "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter",
@@ -778,6 +1245,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::CreateChained(System.Threading.RateLimiting.RateLimiter[]):System.Threading.RateLimiting.RateLimiter",
@@ -794,6 +1275,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -813,6 +1295,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -832,6 +1315,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::AttemptAcquireCore(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquireCore",
+          "metadataToken": 100663443,
+          "canonicalSignature": "(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquireCore|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -851,6 +1355,47 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 100663445,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663446,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -870,6 +1415,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::DisposeAsyncCore():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsyncCore",
+          "metadataToken": 100663448,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsyncCore|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -889,6 +1455,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -910,13 +1477,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter::.ctor():void",
+          "metadataToken": 100663450,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.RateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ]
     },
     {
       "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiterStatistics",
@@ -929,6 +1509,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -946,6 +1530,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -964,6 +1549,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -982,6 +1568,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1000,6 +1587,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1014,6 +1602,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimiterStatistics",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1030,6 +1619,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::TryGetMetadata(System.String,System.Object\u0026):System.Boolean",
@@ -1046,6 +1645,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false,
@@ -1071,6 +1671,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false,
@@ -1096,6 +1697,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1115,6 +1717,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663468,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1136,6 +1759,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1154,13 +1778,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitLease::.ctor():void",
+          "metadataToken": 100663469,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.RateLimitLease",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ]
     },
     {
       "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter",
@@ -1173,6 +1810,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimiter",
+        "clrName": "System.Threading.RateLimiting.RateLimiter"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter::TryReplenish():System.Boolean",
@@ -1189,6 +1840,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1210,6 +1862,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1228,13 +1881,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter::.ctor():void",
+          "metadataToken": 100663482,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.ReplenishingRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting"
+        }
+      ]
     },
     {
       "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter",
@@ -1247,6 +1913,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter",
+        "clrName": "System.Threading.RateLimiting.ReplenishingRateLimiter"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
@@ -1263,6 +1943,47 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::AttemptAcquireCore(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquireCore",
+          "metadataToken": 100663489,
+          "canonicalSignature": "(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquireCore|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 100663490,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1282,6 +2003,87 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663495,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::DisposeAsyncCore():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsyncCore",
+          "metadataToken": 100663496,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsyncCore|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.SlidingWindowRateLimiter::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1303,6 +2105,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1321,6 +2124,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1339,6 +2143,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1353,6 +2158,7 @@
           "normalizedSignature": "constructor|(System.Threading.RateLimiting.SlidingWindowRateLimiterOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1369,6 +2175,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1386,6 +2196,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1404,6 +2215,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1422,6 +2234,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1440,6 +2253,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1458,6 +2272,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1476,6 +2291,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1490,6 +2306,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.SlidingWindowRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1506,6 +2323,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.ReplenishingRateLimiter",
+        "clrName": "System.Threading.RateLimiting.ReplenishingRateLimiter"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::GetStatistics():System.Threading.RateLimiting.RateLimiterStatistics",
@@ -1522,6 +2353,47 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::AttemptAcquireCore(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "clrName": "AttemptAcquireCore",
+          "metadataToken": 100663529,
+          "canonicalSignature": "(System.Int32):System.Threading.RateLimiting.RateLimitLease",
+          "normalizedSignature": "AttemptAcquireCore|(System.Int32):System.Threading.RateLimiting.RateLimitLease|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 100663530,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Threading.RateLimiting.RateLimitLease,System.Threading.RateLimiting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1541,6 +2413,87 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663536,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::DisposeAsyncCore():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsyncCore",
+          "metadataToken": 100663537,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsyncCore|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::AcquireAsyncCore(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "clrName": "AcquireAsyncCore",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "normalizedSignature": "AcquireAsyncCore|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
+          "declaringAssemblyName": "System.Threading.RateLimiting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.TokenBucketRateLimiter::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1562,6 +2515,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1580,6 +2534,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1598,6 +2553,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1612,6 +2568,7 @@
           "normalizedSignature": "constructor|(System.Threading.RateLimiting.TokenBucketRateLimiterOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1628,6 +2585,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1645,6 +2606,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1663,6 +2625,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1681,6 +2644,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1699,6 +2663,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1717,6 +2682,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1735,6 +2701,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1749,6 +2716,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.TokenBucketRateLimiterOptions",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1765,6 +2733,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.MetadataName::Create(System.String):MetadataName_1",
@@ -1781,6 +2753,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1802,6 +2775,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         },
@@ -1820,6 +2794,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.MetadataName",
           "declaringAssemblyName": "System.Threading.RateLimiting"
         }
@@ -1839,6 +2814,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.PartitionedRateLimiter::Create(Func_2,IEqualityComparer_1):PartitionedRateLimiter_1",
@@ -1855,6 +2834,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1874,6 +2854,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.PartitionedRateLimiter",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1895,6 +2876,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Threading.RateLimiting:System.Threading.RateLimiting.RateLimitPartition::Get(TKey,Func_2):RateLimitPartition_1",
@@ -1911,6 +2896,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1930,6 +2916,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1949,6 +2936,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1968,6 +2956,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -1987,6 +2976,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false
@@ -2006,6 +2996,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Threading.RateLimiting.RateLimitPartition",
           "declaringAssemblyName": "System.Threading.RateLimiting",
           "isExtensionMethod": false

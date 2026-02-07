@@ -59,9 +59,9 @@ export type OnRejectedContext = OnRejectedContext$instance;
 
 export interface RateLimiterOptions$instance {
     get GlobalLimiter(): PartitionedRateLimiter_1<HttpContext> | undefined;
-    set GlobalLimiter(value: PartitionedRateLimiter_1<HttpContext>);
+    set GlobalLimiter(value: PartitionedRateLimiter_1<HttpContext> | undefined);
     get OnRejected(): Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
-    set OnRejected(value: Func<OnRejectedContext, CancellationToken, ValueTask>);
+    set OnRejected(value: Func<OnRejectedContext, CancellationToken, ValueTask> | undefined);
     RejectionStatusCode: int;
     AddPolicy<TPartitionKey>(policyName: string, partitioner: Func<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
     AddPolicy<TPartitionKey, TPolicy extends IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;

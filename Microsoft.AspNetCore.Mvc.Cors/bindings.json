@@ -15,6 +15,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.ICorsAuthorizationFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Cors.ICorsAuthorizationFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Cors:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter::OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext):System.Threading.Tasks.Task",
@@ -31,6 +53,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors",
           "isExtensionMethod": false
@@ -50,6 +73,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IAsyncAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -72,6 +96,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors"
         },
@@ -90,6 +115,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors"
         },
@@ -108,6 +134,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IOrderedFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -123,6 +150,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors"
         },
@@ -133,6 +161,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Cors"
         }

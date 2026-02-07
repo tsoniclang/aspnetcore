@@ -35,7 +35,7 @@ export enum ApiConventionTypeMatchBehavior {
 
 export interface IApiDefaultResponseMetadataProvider$instance extends IApiResponseMetadataProvider, IFilterMetadata {
     readonly Type: Type;
-    readonly Description: string;
+    readonly Description: string | undefined;
     readonly StatusCode: int;
     SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
@@ -92,7 +92,7 @@ export type IApiRequestMetadataProvider = IApiRequestMetadataProvider$instance;
 
 export interface IApiResponseMetadataProvider$instance extends IFilterMetadata {
     readonly Type: Type;
-    readonly Description: string;
+    readonly Description: string | undefined;
     readonly StatusCode: int;
     SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
@@ -148,11 +148,13 @@ export type ApiConventionTypeMatchAttribute = ApiConventionTypeMatchAttribute$in
 export interface ApiDescription$instance {
     ActionDescriptor: ActionDescriptor;
     get GroupName(): string | undefined;
-    set GroupName(value: string);
-    HttpMethod: string;
+    set GroupName(value: string | undefined);
+    get HttpMethod(): string | undefined;
+    set HttpMethod(value: string | undefined);
     readonly ParameterDescriptions: IList<ApiParameterDescription>;
     readonly Properties: IDictionary<unknown, unknown>;
-    RelativePath: string;
+    get RelativePath(): string | undefined;
+    set RelativePath(value: string | undefined);
     readonly SupportedRequestFormats: IList<ApiRequestFormat>;
     readonly SupportedResponseTypes: IList<ApiResponseType>;
 }
@@ -224,15 +226,16 @@ export const ApiDescriptionProviderContext: {
 export type ApiDescriptionProviderContext = ApiDescriptionProviderContext$instance;
 
 export interface ApiParameterDescription$instance {
-    BindingInfo: BindingInfo;
+    get BindingInfo(): BindingInfo | undefined;
+    set BindingInfo(value: BindingInfo | undefined);
     get DefaultValue(): unknown | undefined;
-    set DefaultValue(value: unknown);
+    set DefaultValue(value: unknown | undefined);
     IsRequired: boolean;
     ModelMetadata: ModelMetadata;
     Name: string;
     ParameterDescriptor: ParameterDescriptor;
     get RouteInfo(): ApiParameterRouteInfo | undefined;
-    set RouteInfo(value: ApiParameterRouteInfo);
+    set RouteInfo(value: ApiParameterRouteInfo | undefined);
     Source: BindingSource;
     Type: Type;
 }
@@ -246,9 +249,10 @@ export const ApiParameterDescription: {
 export type ApiParameterDescription = ApiParameterDescription$instance;
 
 export interface ApiParameterRouteInfo$instance {
-    Constraints: IEnumerable<IRouteConstraint>;
+    get Constraints(): IEnumerable<IRouteConstraint> | undefined;
+    set Constraints(value: IEnumerable<IRouteConstraint> | undefined);
     get DefaultValue(): unknown | undefined;
-    set DefaultValue(value: unknown);
+    set DefaultValue(value: unknown | undefined);
     IsOptional: boolean;
 }
 
@@ -288,11 +292,14 @@ export type ApiResponseFormat = ApiResponseFormat$instance;
 
 export interface ApiResponseType$instance {
     ApiResponseFormats: IList<ApiResponseFormat>;
-    Description: string;
+    get Description(): string | undefined;
+    set Description(value: string | undefined);
     IsDefaultResponse: boolean;
-    ModelMetadata: ModelMetadata;
+    get ModelMetadata(): ModelMetadata | undefined;
+    set ModelMetadata(value: ModelMetadata | undefined);
     StatusCode: int;
-    Type: Type;
+    get Type(): Type | undefined;
+    set Type(value: Type | undefined);
 }
 
 

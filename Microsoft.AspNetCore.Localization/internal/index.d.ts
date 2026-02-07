@@ -160,12 +160,14 @@ export type RequestCultureFeature = RequestCultureFeature$instance & __RequestCu
 
 
 export interface RequestCultureProvider$instance {
-    Options: RequestLocalizationOptions;
+    get Options(): RequestLocalizationOptions | undefined;
+    set Options(value: RequestLocalizationOptions | undefined);
     DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
 }
 
 
-export const RequestCultureProvider: {
+export const RequestCultureProvider: (abstract new() => RequestCultureProvider) & {
+    readonly NullProviderCultureResult: Task<ProviderCultureResult | undefined>;
 };
 
 

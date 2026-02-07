@@ -96,11 +96,11 @@ export const ContentDispositionHeaderValue: {
 export type ContentDispositionHeaderValue = ContentDispositionHeaderValue$instance;
 
 export interface ContentRangeHeaderValue$instance {
-    readonly From: Nullable<System_Internal.Int64>;
+    From: Nullable<System_Internal.Int64>;
     readonly HasLength: boolean;
     readonly HasRange: boolean;
-    readonly Length: Nullable<System_Internal.Int64>;
-    readonly To: Nullable<System_Internal.Int64>;
+    Length: Nullable<System_Internal.Int64>;
+    To: Nullable<System_Internal.Int64>;
     Unit: StringSegment;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -171,7 +171,7 @@ export interface MediaTypeHeaderValue$instance {
     Boundary: StringSegment;
     Charset: StringSegment;
     get Encoding(): Encoding | undefined;
-    set Encoding(value: Encoding);
+    set Encoding(value: Encoding | undefined);
     readonly Facets: IEnumerable<StringSegment>;
     readonly IsReadOnly: boolean;
     readonly MatchesAllSubTypes: boolean;
@@ -214,7 +214,6 @@ export interface MediaTypeHeaderValueComparer$instance {
 
 
 export const MediaTypeHeaderValueComparer: {
-    new(): MediaTypeHeaderValueComparer;
     readonly QualityComparer: MediaTypeHeaderValueComparer;
 };
 
@@ -366,7 +365,6 @@ export interface StringWithQualityHeaderValueComparer$instance {
 
 
 export const StringWithQualityHeaderValueComparer: {
-    new(): StringWithQualityHeaderValueComparer;
     readonly QualityComparer: StringWithQualityHeaderValueComparer;
 };
 

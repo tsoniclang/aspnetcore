@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -22,16 +26,17 @@
           "clrName": "Cache",
           "metadataToken": 385876086,
           "canonicalSignature": ":Microsoft.Extensions.Caching.Memory.IMemoryCache",
-          "normalizedSignature": "Cache|:Microsoft.Extensions.Caching.Memory.IMemoryCache|static=false|accessor=get",
+          "normalizedSignature": "Cache|:Microsoft.Extensions.Caching.Memory.IMemoryCache|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -46,6 +51,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }

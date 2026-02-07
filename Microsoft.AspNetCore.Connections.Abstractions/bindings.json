@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -50,6 +51,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Abstractions.IStatefulReconnectFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false

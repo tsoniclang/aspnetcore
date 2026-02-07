@@ -12,12 +12,12 @@ import type { Boolean as ClrBoolean, Byte, Object as ClrObject, String as ClrStr
 
 export interface TempDataSerializer$instance {
     CanSerializeType(type: Type): boolean;
-    Deserialize(unprotectedData: byte[]): IDictionary<System_Internal.String, unknown> | undefined;
+    Deserialize(unprotectedData: byte[]): IDictionary<System_Internal.String, unknown>;
     Serialize(values: IDictionary<System_Internal.String, unknown>): byte[];
 }
 
 
-export const TempDataSerializer: {
+export const TempDataSerializer: (abstract new() => TempDataSerializer) & {
 };
 
 

@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -50,6 +51,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -85,6 +87,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -106,6 +109,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider",
+        "clrName": "Microsoft.AspNetCore.Localization.RequestCultureProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
+          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -122,6 +135,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -141,6 +155,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
@@ -161,6 +176,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -182,6 +198,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -196,6 +213,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.AcceptLanguageHeaderRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -212,6 +230,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider",
+        "clrName": "Microsoft.AspNetCore.Localization.RequestCultureProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
+          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CookieRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -228,6 +256,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -247,6 +276,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -266,6 +296,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -285,6 +316,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
@@ -305,6 +337,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -326,6 +359,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -339,6 +373,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -352,6 +387,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CookieRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -368,6 +404,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider",
+        "clrName": "Microsoft.AspNetCore.Localization.RequestCultureProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
+          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.CustomRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -384,6 +430,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -403,6 +450,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
@@ -423,6 +471,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -439,6 +488,7 @@
           "normalizedSignature": "constructor|(System.Func_2[[Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.CustomRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -455,6 +505,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -472,6 +526,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -490,6 +545,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -504,6 +560,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringSegment):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -514,6 +571,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -524,6 +582,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -534,6 +593,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.ProviderCultureResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -550,6 +610,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider",
+        "clrName": "Microsoft.AspNetCore.Localization.RequestCultureProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
+          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -566,6 +636,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -585,6 +656,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
@@ -605,6 +677,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -626,6 +699,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -644,6 +718,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -658,6 +733,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.QueryStringRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -674,6 +750,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -691,6 +771,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -709,6 +790,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -723,6 +805,7 @@
           "normalizedSignature": "constructor|(System.Globalization.CultureInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -733,6 +816,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -743,6 +827,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -753,6 +838,7 @@
           "normalizedSignature": "constructor|(System.Globalization.CultureInfo,System.Globalization.CultureInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCulture",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -769,6 +855,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureFeature",
+          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -786,6 +882,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -804,6 +901,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         },
@@ -822,6 +920,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
@@ -841,6 +940,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
@@ -856,6 +956,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Localization.RequestCulture,Microsoft.AspNetCore.Localization.IRequestCultureProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
@@ -872,6 +973,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.IRequestCultureProvider",
+          "clrName": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Localization.ProviderCultureResult,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -888,6 +999,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -907,6 +1019,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.IRequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
@@ -929,13 +1042,39 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }
       ],
-      "fields": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider::NullProviderCultureResultSystem.Threading.Tasks.Task\u00601[[Microsoft.AspNetCore.Localization.ProviderCultureResult, Microsoft.AspNetCore.Localization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "NullProviderCultureResult",
+          "metadataToken": 67108888,
+          "normalizedSignature": "NullProviderCultureResult|System.Threading.Tasks.Task\u00601[[Microsoft.AspNetCore.Localization.ProviderCultureResult, Microsoft.AspNetCore.Localization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
+        }
+      ],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestCultureProvider::.ctor():void",
+          "metadataToken": 100663364,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Localization.RequestCultureProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
@@ -948,6 +1087,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Localization:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -964,6 +1107,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false
@@ -980,6 +1124,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.RequestLocalizationOptions,Microsoft.AspNetCore.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization"
         }

@@ -15,6 +15,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,String]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.QueryBuilder::Add(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
@@ -31,6 +48,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -50,6 +68,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -69,6 +88,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -88,6 +108,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -107,6 +128,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -126,6 +148,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -145,6 +168,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -161,6 +185,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -171,6 +196,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -181,6 +207,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.QueryBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         }
@@ -197,6 +224,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions::GetMultipartBoundary(Microsoft.AspNetCore.Http.HttpRequest):System.String",
@@ -213,6 +244,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.HttpRequestMultipartExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
@@ -234,6 +266,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation::CopyToAsync(System.IO.Stream,System.IO.Stream,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
@@ -250,6 +286,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -269,6 +306,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.StreamCopyOperation",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -290,6 +328,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Extensions.UriHelper::BuildRelative(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.FragmentString):System.String",
@@ -306,6 +348,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -325,6 +368,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -344,6 +388,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false,
@@ -385,6 +430,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -404,6 +450,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
@@ -423,6 +470,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true
@@ -442,6 +490,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Extensions.UriHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": true

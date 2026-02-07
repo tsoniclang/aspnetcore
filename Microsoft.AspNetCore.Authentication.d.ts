@@ -14,13 +14,13 @@ import type { BinaryReader, BinaryWriter } from '@tsonic/dotnet/System.IO.js';
 import type { Action, Boolean as ClrBoolean, Byte, DateTimeOffset, Exception, Func, Nullable, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from '@tsonic/dotnet/System.js';
 import type { HttpClient, HttpMessageHandler } from '@tsonic/dotnet/System.Net.Http.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
-import type { ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
+import type { Claim, ClaimsIdentity, ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { UrlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { JsonElement } from '@tsonic/dotnet/System.Text.Json.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IConfiguration } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';
-import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptions, IOptionsMonitor } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

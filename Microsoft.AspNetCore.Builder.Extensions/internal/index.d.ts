@@ -25,7 +25,7 @@ export type MapMiddleware = MapMiddleware$instance;
 
 export interface MapOptions$instance {
     get Branch(): RequestDelegate | undefined;
-    set Branch(value: RequestDelegate);
+    set Branch(value: RequestDelegate | undefined);
     PathMatch: PathString;
     PreserveMatchedPathSegment: boolean;
 }
@@ -52,9 +52,9 @@ export type MapWhenMiddleware = MapWhenMiddleware$instance;
 
 export interface MapWhenOptions$instance {
     get Branch(): RequestDelegate | undefined;
-    set Branch(value: RequestDelegate);
+    set Branch(value: RequestDelegate | undefined);
     get Predicate(): Func<HttpContext, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func<HttpContext, System_Internal.Boolean>);
+    set Predicate(value: Func<HttpContext, System_Internal.Boolean> | undefined);
 }
 
 

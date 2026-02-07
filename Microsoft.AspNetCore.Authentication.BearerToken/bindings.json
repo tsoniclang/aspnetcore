@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         },
@@ -68,6 +74,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         },
@@ -86,6 +93,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -100,6 +108,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -116,6 +125,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Authentication.BearerToken:Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents::MessageReceivedAsync(Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext):System.Threading.Tasks.Task",
@@ -132,6 +145,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken",
           "isExtensionMethod": false
@@ -153,6 +167,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -167,6 +182,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenEvents",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -183,6 +199,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions",
+        "clrName": "Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions"
+      },
       "methods": [],
       "properties": [
         {
@@ -200,6 +220,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         },
@@ -218,6 +239,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         },
@@ -236,6 +258,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         },
@@ -254,6 +277,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         },
@@ -272,6 +296,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -286,6 +311,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -302,6 +328,13 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Authentication:Microsoft.AspNetCore.Authentication.ResultContext\u00601",
+        "clrName": "Microsoft.AspNetCore.Authentication.ResultContext\u00601",
+        "typeArguments": [
+          "BearerTokenOptions"
+        ]
+      },
       "methods": [],
       "properties": [
         {
@@ -319,6 +352,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -333,6 +367,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.MessageReceivedContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }
@@ -349,6 +384,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -360,6 +399,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Authentication.BearerToken.BearerTokenDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Authentication.BearerToken"
         }

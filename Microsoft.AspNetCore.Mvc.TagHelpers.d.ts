@@ -8,6 +8,7 @@ import * as Internal from './Microsoft.AspNetCore.Mvc.TagHelpers/internal/index.
 // Cross-namespace type imports for constraints
 import type { ImportMapDefinition } from './Microsoft.AspNetCore.Components/internal/index.js';
 import type { IWebHostEnvironment } from './Microsoft.AspNetCore.Hosting/internal/index.js';
+import type { IHtmlContent } from './Microsoft.AspNetCore.Html/internal/index.js';
 import type { PathString } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { TagHelperMemoryCacheProvider } from './Microsoft.AspNetCore.Mvc.Razor.Infrastructure/internal/index.js';
 import type { UrlResolutionTagHelper } from './Microsoft.AspNetCore.Mvc.Razor.TagHelpers/internal/index.js';
@@ -16,7 +17,7 @@ import type { IUrlHelperFactory } from './Microsoft.AspNetCore.Mvc.Routing/inter
 import type { IDistributedCacheTagHelperService } from './Microsoft.AspNetCore.Mvc.TagHelpers.Cache/internal/index.js';
 import type { ICompositeViewEngine } from './Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js';
 import type { IViewBufferScope } from './Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers/internal/index.js';
-import type { IFileVersionProvider, IHtmlGenerator, ModelExpression, ViewDataDictionary } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
+import type { IFileVersionProvider, IHtmlGenerator, ModelExplorer, ModelExpression, ViewDataDictionary } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 import type { ITagHelper, ITagHelperComponent, TagHelper, TagHelperAttribute, TagHelperContext, TagHelperOutput } from './Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js';
 import type { IDictionary, IEnumerable, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from '@tsonic/dotnet/System.js';

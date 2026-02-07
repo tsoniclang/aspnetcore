@@ -6,7 +6,7 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
@@ -14,7 +14,7 @@ import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 export interface IRazorSourceChecksumMetadata$instance {
     readonly Checksum: string;
     readonly ChecksumAlgorithm: string;
-    readonly Identifier: string | undefined;
+    readonly Identifier: string;
 }
 
 
@@ -28,14 +28,14 @@ export interface RazorCompiledItem$instance {
 }
 
 
-export const RazorCompiledItem: {
+export const RazorCompiledItem: (abstract new() => RazorCompiledItem) & {
 };
 
 
 export type RazorCompiledItem = RazorCompiledItem$instance;
 
 export interface RazorCompiledItemAttribute$instance extends Attribute {
-    readonly Identifier: string | undefined;
+    readonly Identifier: string;
     readonly Kind: string;
     readonly Type: Type;
 }
@@ -49,6 +49,7 @@ export const RazorCompiledItemAttribute: {
 export type RazorCompiledItemAttribute = RazorCompiledItemAttribute$instance;
 
 export interface RazorCompiledItemLoader$instance {
+    CreateItem(attribute: RazorCompiledItemAttribute): RazorCompiledItem;
     LoadItems(assembly: Assembly): IReadOnlyList<RazorCompiledItem>;
 }
 
@@ -61,7 +62,7 @@ export const RazorCompiledItemLoader: {
 export type RazorCompiledItemLoader = RazorCompiledItemLoader$instance;
 
 export interface RazorCompiledItemMetadataAttribute$instance extends Attribute {
-    readonly Key: string | undefined;
+    readonly Key: string;
     readonly Value: string;
 }
 
@@ -113,7 +114,7 @@ export type RazorLanguageVersionAttribute = RazorLanguageVersionAttribute$instan
 export interface RazorSourceChecksumAttribute$instance extends Attribute {
     readonly Checksum: string;
     readonly ChecksumAlgorithm: string;
-    readonly Identifier: string | undefined;
+    readonly Identifier: string;
 }
 
 

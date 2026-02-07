@@ -17,7 +17,6 @@ export interface Circuit$instance {
 
 
 export const Circuit: {
-    new(): Circuit;
 };
 
 
@@ -33,7 +32,7 @@ export interface CircuitHandler$instance {
 }
 
 
-export const CircuitHandler: {
+export const CircuitHandler: (abstract new() => CircuitHandler) & {
 };
 
 
@@ -45,7 +44,6 @@ export interface CircuitInboundActivityContext$instance {
 
 
 export const CircuitInboundActivityContext: {
-    new(): CircuitInboundActivityContext;
 };
 
 

@@ -5,15 +5,19 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
+import type { ComponentState } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import type { JSComponentInterop } from "../../Microsoft.AspNetCore.Components.Web.Infrastructure/internal/index.js";
-import type { Dispatcher, ElementReference, IComponent, IComponentActivator, IComponentRenderMode } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { Dispatcher, ElementReference, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { IEnumerable as IEnumerable__System_Collections_Generic } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
 import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Byte, Enum, EventArgs, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { Action, Boolean as ClrBoolean, Byte, Enum, EventArgs, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from "@tsonic/dotnet/System.js";
 import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
@@ -61,7 +65,7 @@ export enum RenderTreeFrameType {
 export interface ArrayBuilderSegment_1$instance<T> {
     readonly Array: T[];
     readonly Count: int;
-    readonly Item: T;
+    readonly [index: number]: T;
     readonly Offset: int;
 }
 
@@ -174,7 +178,7 @@ export interface RenderTreeFrame$instance {
     readonly RegionSubtreeLength: int;
     readonly Sequence: int;
     readonly TextContent: string;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 
@@ -199,18 +203,26 @@ export const EventFieldInfo: {
 export type EventFieldInfo = EventFieldInfo$instance;
 
 export interface Renderer$instance {
+    readonly Assets: ResourceAssetCollection;
     readonly Dispatcher: Dispatcher;
+    readonly RendererInfo: RendererInfo;
+    AddPendingTask(componentState: ComponentState, task: Task): void;
+    CreateComponentState(componentId: int, component: IComponent, parentComponentState: ComponentState): ComponentState;
     DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs): Task;
     DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs, waitForQuiescence: boolean): Task;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsync(): ValueTask;
+    GetComponentRenderMode(component: IComponent): IComponentRenderMode | undefined;
     GetEventArgsType(eventHandlerId: ulong): Type;
+    HandleException(exception: Exception): void;
+    ProcessPendingRender(): void;
+    ResolveComponentForRenderMode(componentType: Type, parentComponentId: Nullable<System_Internal.Int32>, componentActivator: IComponentActivator, renderMode: IComponentRenderMode): IComponent;
+    UpdateDisplayAsync(renderBatch: RenderBatch): Task;
 }
 
 
-export const Renderer: {
-    new(serviceProvider: IServiceProvider, loggerFactory: ILoggerFactory): Renderer;
-    new(serviceProvider: IServiceProvider, loggerFactory: ILoggerFactory, componentActivator: IComponentActivator): Renderer;
+export const Renderer: (abstract new(serviceProvider: IServiceProvider, loggerFactory: ILoggerFactory) => Renderer) & (abstract new(serviceProvider: IServiceProvider, loggerFactory: ILoggerFactory, componentActivator: IComponentActivator) => Renderer) & {
 };
 
 
@@ -218,7 +230,7 @@ export type Renderer = Renderer$instance;
 
 export interface WebEventDescriptor$instance {
     get EventFieldInfo(): EventFieldInfo | undefined;
-    set EventFieldInfo(value: EventFieldInfo);
+    set EventFieldInfo(value: EventFieldInfo | undefined);
     EventHandlerId: ulong;
     EventName: string;
 }
@@ -232,11 +244,14 @@ export const WebEventDescriptor: {
 export type WebEventDescriptor = WebEventDescriptor$instance;
 
 export interface WebRenderer$instance extends Renderer {
+    AttachRootComponentToBrowser(componentId: int, domElementSelector: string): void;
+    Dispose(disposing: boolean): void;
+    Dispose(): void;
+    GetWebRendererId(): int;
 }
 
 
-export const WebRenderer: {
-    new(serviceProvider: IServiceProvider, loggerFactory: ILoggerFactory, jsonOptions: JsonSerializerOptions, jsComponentInterop: JSComponentInterop): WebRenderer;
+export const WebRenderer: (abstract new(serviceProvider: IServiceProvider, loggerFactory: ILoggerFactory, jsonOptions: JsonSerializerOptions, jsComponentInterop: JSComponentInterop) => WebRenderer) & {
 };
 
 

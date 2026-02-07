@@ -19,7 +19,7 @@ export interface RenderModeEndpointProvider$instance {
 }
 
 
-export const RenderModeEndpointProvider: {
+export const RenderModeEndpointProvider: (abstract new() => RenderModeEndpointProvider) & {
 };
 
 

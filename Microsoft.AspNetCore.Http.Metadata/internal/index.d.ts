@@ -95,28 +95,28 @@ export interface IFromBodyMetadata$instance {
 export type IFromBodyMetadata = IFromBodyMetadata$instance;
 
 export interface IFromFormMetadata$instance {
-    readonly Name: string;
+    readonly Name: string | undefined;
 }
 
 
 export type IFromFormMetadata = IFromFormMetadata$instance;
 
 export interface IFromHeaderMetadata$instance {
-    readonly Name: string;
+    readonly Name: string | undefined;
 }
 
 
 export type IFromHeaderMetadata = IFromHeaderMetadata$instance;
 
 export interface IFromQueryMetadata$instance {
-    readonly Name: string;
+    readonly Name: string | undefined;
 }
 
 
 export type IFromQueryMetadata = IFromQueryMetadata$instance;
 
 export interface IFromRouteMetadata$instance {
-    readonly Name: string;
+    readonly Name: string | undefined;
 }
 
 
@@ -140,9 +140,9 @@ export interface IParameterBindingMetadata$instance {
 export type IParameterBindingMetadata = IParameterBindingMetadata$instance;
 
 export interface IProducesResponseTypeMetadata$instance {
-    readonly Type: Type;
+    readonly Type: Type | undefined;
     readonly StatusCode: int;
-    readonly Description: string;
+    readonly Description: string | undefined;
     readonly ContentTypes: IEnumerable<System_Internal.String>;
 }
 

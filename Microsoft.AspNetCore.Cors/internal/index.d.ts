@@ -44,7 +44,7 @@ export type DisableCorsAttribute = DisableCorsAttribute$instance;
 
 export interface EnableCorsAttribute$instance extends Attribute, ICorsMetadata {
     get PolicyName(): string | undefined;
-    set PolicyName(value: string);
+    set PolicyName(value: string | undefined);
     ToString(): string;
 }
 

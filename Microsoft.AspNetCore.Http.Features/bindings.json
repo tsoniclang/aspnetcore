@@ -18,6 +18,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -29,6 +51,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpsCompressionMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -40,6 +63,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpsCompressionMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -51,6 +75,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpsCompressionMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -62,6 +87,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpsCompressionMode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -97,6 +123,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IBadRequestExceptionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -133,6 +160,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IEndpointFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -152,6 +180,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[Type,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.IFeatureCollection::Get():TFeature",
@@ -168,6 +209,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -187,6 +229,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -208,6 +251,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -226,6 +270,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -244,6 +289,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         }
@@ -279,6 +325,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -298,6 +345,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -319,6 +367,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -337,6 +386,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -373,6 +423,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpActivityFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -409,6 +460,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpBodyControlFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -445,6 +497,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -463,6 +516,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -481,6 +535,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -499,6 +554,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -517,6 +573,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -552,6 +609,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpExtendedConnectFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -573,6 +631,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpExtendedConnectFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -591,6 +650,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpExtendedConnectFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -627,6 +687,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpMaxRequestBodySizeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -645,6 +706,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpMaxRequestBodySizeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -681,6 +743,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpMetricsTagsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -699,6 +762,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpMetricsTagsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -735,6 +799,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestBodyDetectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -771,6 +836,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -789,6 +855,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -807,6 +874,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -825,6 +893,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -843,6 +912,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -861,6 +931,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -879,6 +950,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -897,6 +969,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -915,6 +988,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -951,6 +1025,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestIdentifierFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -986,6 +1061,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1007,6 +1083,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1043,6 +1120,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestTrailersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -1061,6 +1139,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestTrailersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1096,6 +1175,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResetFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1133,6 +1213,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1152,6 +1233,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1171,6 +1253,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1190,6 +1273,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1211,6 +1295,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -1229,6 +1314,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1264,6 +1350,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1285,6 +1372,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -1303,6 +1391,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -1321,6 +1410,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -1339,6 +1429,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -1357,6 +1448,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1393,6 +1485,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseTrailersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1429,6 +1522,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpsCompressionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1464,6 +1558,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpUpgradeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1485,6 +1580,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpUpgradeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1520,6 +1616,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpWebSocketFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1541,6 +1638,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpWebSocketFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1576,6 +1674,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpWebTransportFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1597,6 +1696,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpWebTransportFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1633,6 +1733,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IItemsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1669,6 +1770,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IQueryFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1705,6 +1807,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IRequestBodyPipeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1741,6 +1844,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IRequestCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1777,6 +1881,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IResponseCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1813,6 +1918,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IRouteValuesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -1849,6 +1955,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IServerVariablesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1885,6 +1992,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1921,6 +2029,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ISessionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -1956,6 +2065,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -1977,6 +2087,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -2012,6 +2123,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITlsTokenBindingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -2049,6 +2161,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITrackingConsentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -2068,6 +2181,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITrackingConsentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -2089,6 +2203,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITrackingConsentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -2107,6 +2222,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITrackingConsentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -2125,6 +2241,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITrackingConsentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -2160,6 +2277,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IWebTransportSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -2179,6 +2297,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IWebTransportSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false
@@ -2200,6 +2319,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IWebTransportSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -2219,6 +2339,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureReference\u00601::Fetch(Microsoft.AspNetCore.Http.Features.IFeatureCollection):T",
@@ -2235,6 +2362,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReference\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -2254,6 +2382,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReference\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -2269,6 +2398,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReference\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         }
@@ -2287,6 +2417,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "typeParameters": [
+        "TCache"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601::Initalize(Microsoft.AspNetCore.Http.Features.IFeatureCollection):System.Void",
@@ -2303,6 +2440,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -2322,6 +2460,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -2341,6 +2480,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false,
@@ -2366,6 +2506,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false,
@@ -2383,16 +2524,17 @@
           "clrName": "Collection",
           "metadataToken": 385875974,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.Features.IFeatureCollection",
-          "normalizedSignature": "Collection|:Microsoft.AspNetCore.Http.Features.IFeatureCollection|static=false|accessor=get",
+          "normalizedSignature": "Collection|:Microsoft.AspNetCore.Http.Features.IFeatureCollection|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -2401,16 +2543,17 @@
           "clrName": "Revision",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Revision|:System.Int32|static=false|accessor=get",
+          "normalizedSignature": "Revision|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         }
@@ -2424,6 +2567,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         }
@@ -2437,6 +2581,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReferences\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         }
@@ -2453,6 +2598,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.ISessionFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.ISessionFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -2470,6 +2625,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.DefaultSessionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -2488,6 +2644,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.ISessionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ISessionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -2503,6 +2660,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.DefaultSessionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -2519,6 +2677,27 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.IFeatureCollection",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IFeatureCollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[Type,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.Type,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -2535,6 +2714,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -2554,6 +2734,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -2573,6 +2754,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false
@@ -2592,6 +2774,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false,
@@ -2612,6 +2795,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": false,
@@ -2634,6 +2818,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -2652,6 +2837,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -2670,6 +2856,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -2688,6 +2875,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
@@ -2707,6 +2895,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
@@ -2722,6 +2911,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -2732,6 +2922,7 @@
           "normalizedSignature": "constructor|(System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         },
@@ -2742,6 +2933,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollection",
           "declaringAssemblyName": "Microsoft.Extensions.Features"
         }
@@ -2758,6 +2950,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IFormFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IFormFeature"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Features.FormFeature::ReadForm():Microsoft.AspNetCore.Http.IFormCollection",
@@ -2774,6 +2976,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -2793,6 +2996,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -2812,6 +3016,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -2831,6 +3036,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -2851,6 +3057,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -2873,6 +3080,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -2891,6 +3099,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -2909,6 +3118,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -2928,6 +3138,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IFormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -2943,6 +3154,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.IFormCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -2953,6 +3165,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpRequest):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -2963,6 +3176,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.Features.FormOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -2979,6 +3193,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2996,6 +3214,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3014,6 +3233,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3032,6 +3252,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3050,6 +3271,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3068,6 +3290,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3086,6 +3309,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3104,6 +3328,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3122,6 +3347,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3140,6 +3366,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3158,6 +3385,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -3171,6 +3399,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3182,6 +3411,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3193,6 +3423,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3204,6 +3435,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -3217,6 +3449,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FormOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -3233,6 +3466,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3250,6 +3493,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3268,6 +3512,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3286,6 +3531,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3304,6 +3550,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3322,6 +3569,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3340,6 +3588,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3359,6 +3608,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3378,6 +3628,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3397,6 +3648,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3416,6 +3668,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3431,6 +3684,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -3447,6 +3701,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3464,6 +3728,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3482,6 +3747,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3500,6 +3766,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3518,6 +3785,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3536,6 +3804,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3554,6 +3823,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3572,6 +3842,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3590,6 +3861,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3608,6 +3880,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3626,6 +3899,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3645,6 +3919,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3664,6 +3939,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3683,6 +3959,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3702,6 +3979,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3721,6 +3999,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3740,6 +4019,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3759,6 +4039,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3778,6 +4059,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3793,6 +4075,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -3809,6 +4092,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IHttpRequestIdentifierFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IHttpRequestIdentifierFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3826,6 +4119,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestIdentifierFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3844,6 +4138,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestIdentifierFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestIdentifierFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3859,6 +4154,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestIdentifierFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -3875,6 +4171,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Features.HttpRequestLifetimeFeature::Abort():System.Void",
@@ -3891,6 +4197,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -3910,6 +4217,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -3932,6 +4240,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -3950,6 +4259,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -3965,6 +4275,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpRequestLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -3981,6 +4292,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Features.HttpResponseFeature::OnStarting(System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.Void",
@@ -3997,6 +4318,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -4016,6 +4338,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -4035,6 +4358,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -4057,6 +4381,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4075,6 +4400,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4093,6 +4419,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4111,6 +4438,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4129,6 +4457,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4147,6 +4476,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4166,6 +4496,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4185,6 +4516,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4204,6 +4536,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4223,6 +4556,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IHttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4238,6 +4572,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.HttpResponseFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4254,6 +4589,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IItemsFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IItemsFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4271,6 +4616,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ItemsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4289,6 +4635,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IItemsFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IItemsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4304,6 +4651,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ItemsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4320,6 +4668,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IQueryFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IQueryFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4337,6 +4695,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.QueryFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4355,6 +4714,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IQueryFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IQueryFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4370,6 +4730,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.IQueryCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.QueryFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4380,6 +4741,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.QueryFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4396,6 +4758,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IRequestBodyPipeFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IRequestBodyPipeFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4413,6 +4785,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestBodyPipeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4431,6 +4804,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IRequestBodyPipeFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IRequestBodyPipeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4446,6 +4820,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestBodyPipeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4462,6 +4837,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IRequestCookiesFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IRequestCookiesFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4479,6 +4864,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4497,6 +4883,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IRequestCookiesFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IRequestCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4512,6 +4899,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.IRequestCookieCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4522,6 +4910,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4538,6 +4927,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Features.RequestServicesFeature::DisposeAsync():System.Threading.Tasks.ValueTask",
@@ -4554,6 +4961,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestServicesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -4573,6 +4981,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestServicesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -4594,6 +5003,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestServicesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4612,6 +5022,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4627,6 +5038,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RequestServicesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4643,6 +5055,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IResponseCookiesFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IResponseCookiesFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4660,6 +5082,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ResponseCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4678,6 +5101,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IResponseCookiesFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IResponseCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4693,6 +5117,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.Features.IFeatureCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ResponseCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4703,6 +5128,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.Features.IFeatureCollection,Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ResponseCookiesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4719,6 +5145,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.Features.IRouteValuesFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IRouteValuesFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4736,6 +5172,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RouteValuesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4754,6 +5191,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IRouteValuesFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IRouteValuesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
@@ -4769,6 +5207,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.RouteValuesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4785,6 +5224,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4802,6 +5251,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ServiceProvidersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4820,6 +5270,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4835,6 +5286,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ServiceProvidersFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4851,6 +5303,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.Features.TlsConnectionFeature::GetClientCertificateAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
@@ -4867,6 +5329,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.TlsConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http",
           "isExtensionMethod": false
@@ -4886,6 +5349,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -4908,6 +5372,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.TlsConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -4926,6 +5391,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -4941,6 +5407,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.TlsConnectionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
@@ -4957,6 +5424,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Features:Microsoft.AspNetCore.Http.Features.FeatureCollectionExtensions::GetRequiredFeature(Microsoft.AspNetCore.Http.Features.IFeatureCollection):TFeature",
@@ -4973,6 +5444,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": true
@@ -4992,6 +5464,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureCollectionExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Features",
           "isExtensionMethod": true

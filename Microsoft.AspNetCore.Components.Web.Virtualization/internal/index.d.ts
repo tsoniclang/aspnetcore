@@ -6,11 +6,12 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
+import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { ICollection, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
@@ -60,24 +61,29 @@ export const PlaceholderContext: {
 export type PlaceholderContext = PlaceholderContext$instance;
 
 export interface Virtualize_1$instance<TItem> extends ComponentBase {
-    ChildContent: RenderFragment_1<TItem>;
+    get ChildContent(): RenderFragment_1<TItem> | undefined;
+    set ChildContent(value: RenderFragment_1<TItem> | undefined);
     get EmptyContent(): RenderFragment | undefined;
-    set EmptyContent(value: RenderFragment);
+    set EmptyContent(value: RenderFragment | undefined);
     get ItemContent(): RenderFragment_1<TItem> | undefined;
-    set ItemContent(value: RenderFragment_1<TItem>);
-    Items: ICollection<TItem>;
+    set ItemContent(value: RenderFragment_1<TItem> | undefined);
+    get Items(): ICollection<TItem> | undefined;
+    set Items(value: ICollection<TItem> | undefined);
     ItemSize: float;
     get ItemsProvider(): ItemsProviderDelegate_1<TItem> | undefined;
-    set ItemsProvider(value: ItemsProviderDelegate_1<TItem>);
+    set ItemsProvider(value: ItemsProviderDelegate_1<TItem> | undefined);
     MaxItemCount: int;
     OverscanCount: int;
     get Placeholder(): RenderFragment_1<PlaceholderContext> | undefined;
-    set Placeholder(value: RenderFragment_1<PlaceholderContext>);
+    set Placeholder(value: RenderFragment_1<PlaceholderContext> | undefined);
     SpacerElement: string;
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     DisposeAsync(): ValueTask;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSet(): void;
     RefreshDataAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
@@ -94,7 +100,7 @@ export interface __Virtualize_1$views<TItem> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface Virtualize_1$instance<TItem> extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface Virtualize_1$instance<TItem> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type Virtualize_1<TItem> = Virtualize_1$instance<TItem> & __Virtualize_1$views<TItem>;
 

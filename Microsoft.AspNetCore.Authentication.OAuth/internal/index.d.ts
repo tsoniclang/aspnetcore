@@ -8,10 +8,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { ClaimActionCollection } from "../../Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js";
 import * as Microsoft_AspNetCore_Authentication_Internal from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
-import type { AccessDeniedContext, AuthenticateResult, AuthenticationProperties, AuthenticationScheme, IAuthenticationHandler, IAuthenticationRequestHandler, ISecureDataFormat_1, ISystemClock, RedirectContext_1, RemoteAuthenticationEvents, RemoteAuthenticationHandler_1, RemoteAuthenticationOptions, RemoteFailureContext, ResultContext_1, TicketReceivedContext } from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
+import type { AccessDeniedContext, AuthenticateResult, AuthenticationProperties, AuthenticationScheme, AuthenticationTicket, HandleRequestResult, IAuthenticationHandler, IAuthenticationRequestHandler, ISecureDataFormat_1, ISystemClock, RedirectContext_1, RemoteAuthenticationEvents, RemoteAuthenticationHandler_1, RemoteAuthenticationOptions, RemoteFailureContext, ResultContext_1, TicketReceivedContext } from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
 import type { IDataProtectionProvider } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
 import type { CookieBuilder, HttpContext, HttpRequest, HttpResponse, PathString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { ICollection, IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { ICollection, IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func, IDisposable, Nullable, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
 import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
@@ -19,7 +19,7 @@ import type { ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Secu
 import type { UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { JsonDocument, JsonElement } from "@tsonic/dotnet/System.Text.Json.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 import type { IOptionsMonitor } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface OAuthChallengeProperties$instance extends AuthenticationProperties {
@@ -53,13 +53,13 @@ export const OAuthCodeExchangeContext: {
 export type OAuthCodeExchangeContext = OAuthCodeExchangeContext$instance;
 
 export interface OAuthCreatingTicketContext$instance extends ResultContext_1<OAuthOptions> {
-    readonly AccessToken: string;
+    readonly AccessToken: string | undefined;
     readonly Backchannel: HttpClient;
     readonly ExpiresIn: Nullable<TimeSpan>;
     readonly Identity: ClaimsIdentity | undefined;
-    readonly RefreshToken: string;
+    readonly RefreshToken: string | undefined;
     readonly TokenResponse: OAuthTokenResponse;
-    readonly TokenType: string;
+    readonly TokenType: string | undefined;
     readonly User: JsonElement;
     RunClaimActions(): void;
     RunClaimActions(userData: JsonElement): void;
@@ -90,7 +90,16 @@ export type OAuthEvents = OAuthEvents$instance;
 
 export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions>, IAuthenticationRequestHandler {
     AuthenticateAsync(): Task<AuthenticateResult>;
+    BuildChallengeUrl(properties: AuthenticationProperties, redirectUri: string): string;
     ChallengeAsync(properties: AuthenticationProperties): Task;
+    CreateEventsAsync(): Task<unknown>;
+    CreateEventsAsync(): Task<unknown>;
+    CreateTicketAsync(identity: ClaimsIdentity, properties: AuthenticationProperties, tokens: OAuthTokenResponse): Task<AuthenticationTicket>;
+    ExchangeCodeAsync(context: OAuthCodeExchangeContext): Task<OAuthTokenResponse>;
+    FormatScope(scopes: IEnumerable<System_Internal.String>): string;
+    FormatScope(): string;
+    HandleChallengeAsync(properties: AuthenticationProperties): Task;
+    HandleRemoteAuthenticateAsync(): Task<HandleRequestResult>;
     HandleRequestAsync(): Task<System_Internal.Boolean>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
 }
@@ -134,19 +143,23 @@ export const OAuthOptions: {
 export type OAuthOptions = OAuthOptions$instance;
 
 export interface OAuthTokenResponse$instance {
-    AccessToken: string;
-    Error: Exception;
+    get AccessToken(): string | undefined;
+    set AccessToken(value: string | undefined);
+    get Error(): Exception | undefined;
+    set Error(value: Exception | undefined);
     get ExpiresIn(): string | undefined;
-    set ExpiresIn(value: string);
-    RefreshToken: string;
-    Response: JsonDocument;
-    TokenType: string;
+    set ExpiresIn(value: string | undefined);
+    get RefreshToken(): string | undefined;
+    set RefreshToken(value: string | undefined);
+    get Response(): JsonDocument | undefined;
+    set Response(value: JsonDocument | undefined);
+    get TokenType(): string | undefined;
+    set TokenType(value: string | undefined);
     Dispose(): void;
 }
 
 
 export const OAuthTokenResponse: {
-    new(): OAuthTokenResponse;
     Failed(error: Exception): OAuthTokenResponse;
     Success(response: JsonDocument): OAuthTokenResponse;
 };

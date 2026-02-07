@@ -9,7 +9,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import type { HtmlRootComponent } from "../../Microsoft.AspNetCore.Components.Web.HtmlRendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, Dispatcher, ErrorBoundaryBase, EventCallback_1, EventCallbackFactory, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, Dispatcher, ErrorBoundaryBase, EventCallback_1, EventCallbackFactory, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, Double, EventArgs, Exception, Func, IAsyncDisposable, IDisposable, Int32, Int64, IServiceProvider, Object as ClrObject, Single, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
@@ -44,7 +44,7 @@ export type ClipboardEventArgs = ClipboardEventArgs$instance;
 export interface DataTransfer$instance {
     DropEffect: string;
     get EffectAllowed(): string | undefined;
-    set EffectAllowed(value: string);
+    set EffectAllowed(value: string | undefined);
     Files: string[];
     Items: DataTransferItem[];
     Types: string[];
@@ -85,8 +85,11 @@ export type DragEventArgs = DragEventArgs$instance;
 
 export interface ErrorBoundary$instance extends ErrorBoundaryBase {
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
+    OnErrorAsync(exception: Exception): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -108,11 +111,12 @@ export type ErrorBoundary = ErrorBoundary$instance & __ErrorBoundary$views;
 export interface ErrorEventArgs$instance extends EventArgs {
     Colno: int;
     get Filename(): string | undefined;
-    set Filename(value: string);
+    set Filename(value: string | undefined);
     Lineno: int;
     get Message(): string | undefined;
-    set Message(value: string);
-    Type: string;
+    set Message(value: string | undefined);
+    get Type(): string | undefined;
+    set Type(value: string | undefined);
 }
 
 
@@ -124,7 +128,8 @@ export const ErrorEventArgs: {
 export type ErrorEventArgs = ErrorEventArgs$instance;
 
 export interface FocusEventArgs$instance extends EventArgs {
-    Type: string;
+    get Type(): string | undefined;
+    set Type(value: string | undefined);
 }
 
 
@@ -136,9 +141,12 @@ export const FocusEventArgs: {
 export type FocusEventArgs = FocusEventArgs$instance;
 
 export interface HeadContent$instance extends ComponentBase {
-    ChildContent: RenderFragment;
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
@@ -155,14 +163,16 @@ export interface __HeadContent$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface HeadContent$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface HeadContent$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type HeadContent = HeadContent$instance & __HeadContent$views;
 
 
 export interface HeadOutlet$instance extends ComponentBase {
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
@@ -179,7 +189,7 @@ export interface __HeadOutlet$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface HeadOutlet$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface HeadOutlet$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type HeadOutlet = HeadOutlet$instance & __HeadOutlet$views;
 
@@ -307,9 +317,12 @@ export const MouseEventArgs: {
 export type MouseEventArgs = MouseEventArgs$instance;
 
 export interface PageTitle$instance extends ComponentBase {
-    ChildContent: RenderFragment;
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
@@ -326,7 +339,7 @@ export interface __PageTitle$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface PageTitle$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface PageTitle$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type PageTitle = PageTitle$instance & __PageTitle$views;
 

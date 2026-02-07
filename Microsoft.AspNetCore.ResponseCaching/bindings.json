@@ -33,6 +33,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching.Abstractions"
         }
@@ -52,6 +53,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.ResponseCaching.Abstractions:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
+          "clrName": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -69,6 +80,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching"
         },
@@ -87,6 +99,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching.Abstractions"
@@ -102,6 +115,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching"
         }
@@ -118,6 +132,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.ResponseCaching:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -134,6 +152,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching",
           "isExtensionMethod": false
@@ -150,6 +169,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions,Microsoft.AspNetCore.ResponseCaching,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching"
         }
@@ -166,6 +186,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -183,6 +207,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching"
         },
@@ -201,6 +226,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching"
         },
@@ -219,6 +245,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching"
         }
@@ -233,6 +260,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.ResponseCaching"
         }

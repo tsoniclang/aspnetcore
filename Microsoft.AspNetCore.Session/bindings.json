@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.ISessionStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -52,6 +53,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.ISession",
+          "clrName": "Microsoft.AspNetCore.Http.ISession"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Session:Microsoft.AspNetCore.Session.DistributedSession::TryGetValue(System.String,System.Byte[]\u0026):System.Boolean",
@@ -68,6 +79,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false,
@@ -93,6 +105,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -112,6 +125,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -131,6 +145,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -150,6 +165,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -169,6 +185,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -188,6 +205,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -208,6 +226,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -234,6 +253,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -254,6 +274,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -274,6 +295,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features",
           "isExtensionMethod": false,
@@ -296,6 +318,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         },
@@ -314,6 +337,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         },
@@ -332,6 +356,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         },
@@ -350,6 +375,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.ISession",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -369,6 +395,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.ISession",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -388,6 +415,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.ISession",
           "declaringClrType": "Microsoft.AspNetCore.Http.ISession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -403,6 +431,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.TimeSpan,System.TimeSpan,System.Func_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Logging.ILoggerFactory,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 7,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSession",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         }
@@ -419,6 +448,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Session:Microsoft.AspNetCore.Session.ISessionStore",
+          "clrName": "Microsoft.AspNetCore.Session.ISessionStore"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Session:Microsoft.AspNetCore.Session.DistributedSessionStore::Create(System.String,System.TimeSpan,System.TimeSpan,System.Func_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):Microsoft.AspNetCore.Http.ISession",
@@ -435,6 +474,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSessionStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -454,6 +494,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.ISessionStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false,
@@ -471,6 +512,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.DistributedSessionStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         }
@@ -487,6 +529,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.ISessionFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.ISessionFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -504,6 +556,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.SessionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         },
@@ -522,6 +575,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.ISessionFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.ISessionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -537,6 +591,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.SessionFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         }
@@ -553,6 +608,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Session:Microsoft.AspNetCore.Session.SessionMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -569,6 +628,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.SessionMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session",
           "isExtensionMethod": false
@@ -585,6 +645,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.DataProtection.IDataProtectionProvider,Microsoft.AspNetCore.Session.ISessionStore,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.SessionOptions,Microsoft.AspNetCore.Session,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.SessionMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         }
@@ -601,6 +662,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -612,6 +677,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.SessionDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         },
@@ -623,6 +689,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Session.SessionDefaults",
           "declaringAssemblyName": "Microsoft.AspNetCore.Session"
         }

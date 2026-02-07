@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.WebSocketAcceptContext",
+        "clrName": "Microsoft.AspNetCore.Http.WebSocketAcceptContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
         },
@@ -68,6 +74,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
         }
@@ -82,6 +89,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.WebSockets.ExtendedWebSocketAcceptContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
         }
@@ -98,6 +106,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -114,6 +126,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
           "isExtensionMethod": false
@@ -130,6 +143,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets"
         }
@@ -146,6 +160,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.WebSockets:Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions::AddWebSockets(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action_1[[Microsoft.AspNetCore.Builder.WebSocketOptions,Microsoft.AspNetCore.WebSockets,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -162,6 +180,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.WebSockets",
           "isExtensionMethod": true

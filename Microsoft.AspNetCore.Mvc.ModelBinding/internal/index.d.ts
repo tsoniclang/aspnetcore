@@ -14,7 +14,7 @@ import type { ParameterDescriptor } from "../../Microsoft.AspNetCore.Mvc.Abstrac
 import * as Microsoft_AspNetCore_Mvc_Filters_Internal from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
 import type { ActionExecutedContext, ActionExecutingContext, IActionFilter, IFilterMetadata, IOrderedFilter } from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js";
-import type { DefaultModelMetadataProvider, IMetadataDetailsProvider, IValidationMetadataProvider, ModelBindingMessageProvider, ModelMetadataKind, ValidationMetadataProviderContext } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js";
+import type { DefaultMetadataDetails, DefaultModelBindingMessageProvider, DefaultModelMetadataProvider, ICompositeMetadataDetailsProvider, IMetadataDetailsProvider, IValidationMetadataProvider, ModelBindingMessageProvider, ModelMetadataIdentity, ModelMetadataKind, ValidationMetadataProviderContext } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import type { IModelValidatorProvider, IObjectModelValidator, IPropertyValidationFilter, ValidationStateDictionary, ValidationVisitor, ValidatorCache } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import type { ActionContext, ControllerContext, MvcOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
@@ -33,7 +33,7 @@ import type { ConstructorInfo, ParameterInfo, PropertyInfo } from "@tsonic/dotne
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
@@ -149,7 +149,7 @@ export interface IModelMetadataProvider$instance {
 export type IModelMetadataProvider = IModelMetadataProvider$instance;
 
 export interface IModelNameProvider$instance {
-    readonly Name: string;
+    readonly Name: string | undefined;
 }
 
 
@@ -212,7 +212,7 @@ export type ModelBindingContext_NestedScope = ModelBindingContext_NestedScope$in
 
 export interface ModelBindingResult$instance {
     readonly IsModelSet: boolean;
-    readonly Model: unknown;
+    readonly Model: unknown | undefined;
     Equals(obj: unknown): boolean;
     Equals(other: ModelBindingResult): boolean;
     GetHashCode(): int;
@@ -257,7 +257,7 @@ export const ModelStateDictionary_KeyEnumerable: {
 export type ModelStateDictionary_KeyEnumerable = ModelStateDictionary_KeyEnumerable$instance;
 
 export interface ModelStateDictionary_KeyEnumerator$instance {
-    readonly Current: string;
+    Current: string;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -296,7 +296,7 @@ export const ModelStateDictionary_ValueEnumerable: {
 export type ModelStateDictionary_ValueEnumerable = ModelStateDictionary_ValueEnumerable$instance;
 
 export interface ModelStateDictionary_ValueEnumerator$instance {
-    readonly Current: ModelStateEntry;
+    Current: ModelStateEntry;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -346,18 +346,18 @@ export type BindingBehaviorAttribute = BindingBehaviorAttribute$instance;
 
 export interface BindingInfo$instance {
     get BinderModelName(): string | undefined;
-    set BinderModelName(value: string);
+    set BinderModelName(value: string | undefined);
     get BinderType(): Type | undefined;
-    set BinderType(value: Type);
+    set BinderType(value: Type | undefined);
     get BindingSource(): BindingSource | undefined;
-    set BindingSource(value: BindingSource);
+    set BindingSource(value: BindingSource | undefined);
     EmptyBodyBehavior: EmptyBodyBehavior;
     get PropertyFilterProvider(): IPropertyFilterProvider | undefined;
-    set PropertyFilterProvider(value: IPropertyFilterProvider);
+    set PropertyFilterProvider(value: IPropertyFilterProvider | undefined);
     get RequestPredicate(): Func<ActionContext, System_Internal.Boolean> | undefined;
-    set RequestPredicate(value: Func<ActionContext, System_Internal.Boolean>);
+    set RequestPredicate(value: Func<ActionContext, System_Internal.Boolean> | undefined);
     get ServiceKey(): unknown | undefined;
-    set ServiceKey(value: unknown);
+    set ServiceKey(value: unknown | undefined);
     TryApplyBindingInfo(modelMetadata: ModelMetadata): boolean;
 }
 
@@ -408,8 +408,7 @@ export interface BindingSourceValueProvider$instance {
 }
 
 
-export const BindingSourceValueProvider: {
-    new(bindingSource: BindingSource): BindingSourceValueProvider;
+export const BindingSourceValueProvider: (abstract new(bindingSource: BindingSource) => BindingSourceValueProvider) & {
 };
 
 
@@ -450,7 +449,6 @@ export interface CompositeBindingSource$instance extends BindingSource {
 
 
 export const CompositeBindingSource: {
-    new(): CompositeBindingSource;
     Create(bindingSources: IEnumerable__System_Collections_Generic<BindingSource>, displayName: string): CompositeBindingSource;
 };
 
@@ -463,6 +461,8 @@ export interface CompositeValueProvider$instance extends Collection<IValueProvid
     Filter(): IValueProvider | undefined;
     GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
     GetValue(key: string): ValueProviderResult;
+    InsertItem(index: int, item: IValueProvider): void;
+    SetItem(index: int, item: IValueProvider): void;
 }
 
 
@@ -487,22 +487,25 @@ export type CompositeValueProvider = CompositeValueProvider$instance & __Composi
 export interface DefaultModelBindingContext$instance extends ModelBindingContext {
     ActionContext: ActionContext;
     get BinderModelName(): string | undefined;
-    set BinderModelName(value: string);
+    set BinderModelName(value: string | undefined);
     get BindingSource(): BindingSource | undefined;
-    set BindingSource(value: BindingSource);
+    set BindingSource(value: BindingSource | undefined);
     FieldName: string;
     IsTopLevelObject: boolean;
-    Model: unknown;
+    get Model(): unknown | undefined;
+    set Model(value: unknown | undefined);
     ModelMetadata: ModelMetadata;
     ModelName: string;
     ModelState: ModelStateDictionary;
     OriginalValueProvider: IValueProvider;
-    PropertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
+    get PropertyFilter(): Func<ModelMetadata, System_Internal.Boolean> | undefined;
+    set PropertyFilter(value: Func<ModelMetadata, System_Internal.Boolean> | undefined);
     Result: ModelBindingResult;
     ValidationState: ValidationStateDictionary;
     ValueProvider: IValueProvider;
     EnterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown): ModelBindingContext_NestedScope;
     EnterNestedScope(): ModelBindingContext_NestedScope;
+    ExitNestedScope(): void;
 }
 
 
@@ -593,7 +596,7 @@ export type FormFileValueProviderFactory = FormFileValueProviderFactory$instance
 
 
 export interface FormValueProvider$instance extends BindingSourceValueProvider$instance {
-    readonly Culture: CultureInfo;
+    readonly Culture: CultureInfo | undefined;
     ContainsPrefix(prefix: string): boolean;
     Filter(bindingSource: BindingSource): IValueProvider | undefined;
     GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
@@ -723,7 +726,7 @@ export type JQueryQueryStringValueProviderFactory = JQueryQueryStringValueProvid
 
 
 export interface JQueryValueProvider$instance extends BindingSourceValueProvider$instance {
-    readonly Culture: CultureInfo;
+    readonly Culture: CultureInfo | undefined;
     ContainsPrefix(prefix: string): boolean;
     Filter(bindingSource: BindingSource): IValueProvider | undefined;
     GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
@@ -731,7 +734,7 @@ export interface JQueryValueProvider$instance extends BindingSourceValueProvider
 }
 
 
-export const JQueryValueProvider: {
+export const JQueryValueProvider: (abstract new(bindingSource: BindingSource, values: IDictionary<System_Internal.String, StringValues>, culture: CultureInfo) => JQueryValueProvider) & {
 };
 
 
@@ -756,7 +759,6 @@ export interface ModelAttributes$instance {
 
 
 export const ModelAttributes: {
-    new(): ModelAttributes;
     GetAttributesForParameter(parameterInfo: ParameterInfo, modelType: Type): ModelAttributes;
     GetAttributesForParameter(parameterInfo: ParameterInfo): ModelAttributes;
     GetAttributesForProperty(containerType: Type, property: PropertyInfo, modelType: Type): ModelAttributes;
@@ -787,9 +789,10 @@ export type ModelBinderFactory = ModelBinderFactory$instance & __ModelBinderFact
 
 
 export interface ModelBinderFactoryContext$instance {
-    BindingInfo: BindingInfo;
+    get BindingInfo(): BindingInfo | undefined;
+    set BindingInfo(value: BindingInfo | undefined);
     get CacheToken(): unknown | undefined;
-    set CacheToken(value: unknown);
+    set CacheToken(value: unknown | undefined);
     Metadata: ModelMetadata;
 }
 
@@ -811,7 +814,7 @@ export interface ModelBinderProviderContext$instance {
 }
 
 
-export const ModelBinderProviderContext: {
+export const ModelBinderProviderContext: (abstract new() => ModelBinderProviderContext) & {
 };
 
 
@@ -820,28 +823,31 @@ export type ModelBinderProviderContext = ModelBinderProviderContext$instance;
 export interface ModelBindingContext$instance {
     ActionContext: ActionContext;
     get BinderModelName(): string | undefined;
-    set BinderModelName(value: string);
+    set BinderModelName(value: string | undefined);
     get BindingSource(): BindingSource | undefined;
-    set BindingSource(value: BindingSource);
+    set BindingSource(value: BindingSource | undefined);
     FieldName: string;
     readonly HttpContext: HttpContext;
     IsTopLevelObject: boolean;
-    Model: unknown;
+    get Model(): unknown | undefined;
+    set Model(value: unknown | undefined);
     ModelMetadata: ModelMetadata;
     ModelName: string;
     ModelState: ModelStateDictionary;
     readonly ModelType: Type;
-    readonly OriginalModelName: string;
-    PropertyFilter: Func<ModelMetadata, System_Internal.Boolean>;
+    OriginalModelName: string;
+    get PropertyFilter(): Func<ModelMetadata, System_Internal.Boolean> | undefined;
+    set PropertyFilter(value: Func<ModelMetadata, System_Internal.Boolean> | undefined);
     Result: ModelBindingResult;
     ValidationState: ValidationStateDictionary;
     ValueProvider: IValueProvider;
     EnterNestedScope(modelMetadata: ModelMetadata, fieldName: string, modelName: string, model: unknown): ModelBindingContext_NestedScope;
     EnterNestedScope(): ModelBindingContext_NestedScope;
+    ExitNestedScope(): void;
 }
 
 
-export const ModelBindingContext: {
+export const ModelBindingContext: (abstract new() => ModelBindingContext) & {
 };
 
 
@@ -849,7 +855,7 @@ export type ModelBindingContext = ModelBindingContext$instance;
 
 export interface ModelError$instance {
     readonly ErrorMessage: string;
-    readonly Exception: Exception;
+    readonly Exception: Exception | undefined;
 }
 
 
@@ -887,12 +893,13 @@ export interface ModelMetadata$instance {
     readonly ContainerType: Type | undefined;
     readonly ConvertEmptyStringToNull: boolean;
     readonly DataTypeName: string | undefined;
-    readonly Description: string;
+    readonly Description: string | undefined;
     readonly DisplayFormatString: string | undefined;
-    readonly DisplayName: string;
+    readonly DisplayName: string | undefined;
     readonly EditFormatString: string | undefined;
     readonly ElementMetadata: ModelMetadata | undefined;
-    readonly ElementType: Type | undefined;
+    get ElementType(): Type | undefined;
+    set ElementType(value: Type | undefined);
     readonly EnumGroupedDisplayNamesAndValues: IEnumerable__System_Collections_Generic<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined;
     readonly EnumNamesAndValues: IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined;
     readonly HasNonDefaultEditFormat: boolean;
@@ -901,34 +908,34 @@ export interface ModelMetadata$instance {
     readonly HtmlEncode: boolean;
     readonly IsBindingAllowed: boolean;
     readonly IsBindingRequired: boolean;
-    readonly IsCollectionType: boolean;
+    IsCollectionType: boolean;
     readonly IsComplexType: boolean;
     readonly IsEnum: boolean;
-    readonly IsEnumerableType: boolean;
+    IsEnumerableType: boolean;
     readonly IsFlagsEnum: boolean;
-    readonly IsNullableValueType: boolean;
+    IsNullableValueType: boolean;
     readonly IsReadOnly: boolean;
-    readonly IsReferenceOrNullableType: boolean;
+    IsReferenceOrNullableType: boolean;
     readonly IsRequired: boolean;
     readonly MetadataKind: ModelMetadataKind;
     readonly ModelBindingMessageProvider: ModelBindingMessageProvider;
     readonly ModelType: Type;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly NullDisplayText: string | undefined;
     readonly Order: int;
-    readonly ParameterName: string;
+    readonly ParameterName: string | undefined;
     readonly Placeholder: string | undefined;
     readonly Properties: ModelPropertyCollection;
     readonly PropertyFilterProvider: IPropertyFilterProvider | undefined;
     readonly PropertyGetter: Func<unknown, unknown | undefined> | undefined;
-    readonly PropertyName: string;
+    readonly PropertyName: string | undefined;
     readonly PropertySetter: Action<unknown, unknown | undefined> | undefined;
     readonly PropertyValidationFilter: IPropertyValidationFilter | undefined;
     readonly ShowForDisplay: boolean;
     readonly ShowForEdit: boolean;
     readonly SimpleDisplayProperty: string | undefined;
     readonly TemplateHint: string | undefined;
-    readonly UnderlyingOrModelType: Type;
+    UnderlyingOrModelType: Type;
     readonly ValidateChildren: boolean;
     readonly ValidatorMetadata: IReadOnlyList<unknown>;
     Equals(other: ModelMetadata): boolean;
@@ -940,7 +947,7 @@ export interface ModelMetadata$instance {
 }
 
 
-export const ModelMetadata: {
+export const ModelMetadata: (abstract new(identity: ModelMetadataIdentity) => ModelMetadata) & {
     readonly DefaultOrder: int;
 };
 
@@ -964,7 +971,7 @@ export interface ModelMetadataProvider$instance {
 }
 
 
-export const ModelMetadataProvider: {
+export const ModelMetadataProvider: (abstract new() => ModelMetadataProvider) & {
 };
 
 
@@ -978,7 +985,7 @@ export type ModelMetadataProvider = ModelMetadataProvider$instance & __ModelMeta
 
 
 export interface ModelPropertyCollection$instance extends ReadOnlyCollection<ModelMetadata> {
-    readonly Item: ModelMetadata;
+    readonly [propertyName: string]: ModelMetadata | undefined;
 }
 
 
@@ -990,11 +997,11 @@ export const ModelPropertyCollection: {
 export type ModelPropertyCollection = ModelPropertyCollection$instance;
 
 export interface ModelStateDictionary$instance {
-    readonly Count: int;
-    readonly ErrorCount: int;
+    Count: int;
+    ErrorCount: int;
     readonly HasReachedMaxErrors: boolean;
     readonly IsValid: boolean;
-    readonly Item: ModelStateEntry;
+    readonly [key: string]: ModelStateEntry | undefined;
     readonly Keys: ModelStateDictionary_KeyEnumerable;
     MaxAllowedErrors: int;
     readonly Root: ModelStateEntry;
@@ -1035,18 +1042,18 @@ export type ModelStateDictionary = ModelStateDictionary$instance;
 
 export interface ModelStateEntry$instance {
     get AttemptedValue(): string | undefined;
-    set AttemptedValue(value: string);
+    set AttemptedValue(value: string | undefined);
     readonly Children: IReadOnlyList<ModelStateEntry> | undefined;
     readonly Errors: ModelErrorCollection;
     readonly IsContainerNode: boolean;
     get RawValue(): unknown | undefined;
-    set RawValue(value: unknown);
+    set RawValue(value: unknown | undefined);
     ValidationState: ModelValidationState;
     GetModelStateForProperty(propertyName: string): ModelStateEntry | undefined;
 }
 
 
-export const ModelStateEntry: {
+export const ModelStateEntry: (abstract new() => ModelStateEntry) & {
 };
 
 
@@ -1060,8 +1067,7 @@ export interface ObjectModelValidator$instance {
 }
 
 
-export const ObjectModelValidator: {
-    new(modelMetadataProvider: IModelMetadataProvider, validatorProviders: IList__System_Collections_Generic<IModelValidatorProvider>): ObjectModelValidator;
+export const ObjectModelValidator: (abstract new(modelMetadataProvider: IModelMetadataProvider, validatorProviders: IList__System_Collections_Generic<IModelValidatorProvider>) => ObjectModelValidator) & {
 };
 
 
@@ -1099,7 +1105,7 @@ export const PrefixContainer: {
 export type PrefixContainer = PrefixContainer$instance;
 
 export interface QueryStringValueProvider$instance extends BindingSourceValueProvider$instance {
-    readonly Culture: CultureInfo;
+    readonly Culture: CultureInfo | undefined;
     ContainsPrefix(prefix: string): boolean;
     Filter(bindingSource: BindingSource): IValueProvider | undefined;
     GetKeysFromPrefix(prefix: string): IDictionary<System_Internal.String, System_Internal.String>;
@@ -1184,7 +1190,7 @@ export type RouteValueProviderFactory = RouteValueProviderFactory$instance & __R
 
 export interface SuppressChildValidationMetadataProvider$instance extends IMetadataDetailsProvider {
     readonly FullTypeName: string | undefined;
-    readonly Type: Type;
+    readonly Type: Type | undefined;
     CreateValidationMetadata(context: ValidationMetadataProviderContext): void;
 }
 

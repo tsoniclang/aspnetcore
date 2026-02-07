@@ -34,7 +34,6 @@ export interface BadHttpRequestException$instance extends BadHttpRequestExceptio
 
 
 export const BadHttpRequestException: {
-    new(): BadHttpRequestException;
 };
 
 

@@ -33,6 +33,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         },
@@ -51,6 +52,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         }
@@ -70,6 +72,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
+          "clrName": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -87,6 +99,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
         },
@@ -105,6 +118,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
         },
@@ -123,6 +137,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
@@ -142,6 +157,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
@@ -157,6 +173,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.Features.ServerAddressesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
         }

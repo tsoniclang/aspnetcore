@@ -109,7 +109,7 @@ export interface IInlineConstraintResolver$instance {
 export type IInlineConstraintResolver = IInlineConstraintResolver$instance;
 
 export interface INamedRouter$instance extends IRouter {
-    readonly Name: string;
+    readonly Name: string | undefined;
     GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
     RouteAsync(context: RouteContext): Task;
 }
@@ -137,7 +137,7 @@ export type IParameterPolicy = IParameterPolicy$instance;
 export interface IRouteBuilder$instance {
     readonly ApplicationBuilder: IApplicationBuilder;
     get DefaultHandler(): IRouter | undefined;
-    set DefaultHandler(value: IRouter);
+    set DefaultHandler(value: IRouter | undefined);
     readonly ServiceProvider: IServiceProvider;
     readonly Routes: IList<IRouter>;
     Build(): IRouter;
@@ -189,7 +189,8 @@ export interface IRouter$instance {
 export type IRouter = IRouter$instance;
 
 export interface IRoutingFeature$instance {
-    RouteData: RouteData;
+    get RouteData(): RouteData | undefined;
+    set RouteData(value: RouteData | undefined);
 }
 
 
@@ -222,7 +223,7 @@ export const RouteData_RouteDataSnapshot: {
 export type RouteData_RouteDataSnapshot = RouteData_RouteDataSnapshot$instance;
 
 export interface RouteValueDictionary_Enumerator$instance {
-    readonly Current: KeyValuePair<System_Internal.String, unknown>;
+    Current: KeyValuePair<System_Internal.String, unknown>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -326,7 +327,7 @@ export interface EndpointDataSource$instance {
 }
 
 
-export const EndpointDataSource: {
+export const EndpointDataSource: (abstract new() => EndpointDataSource) & {
 };
 
 
@@ -461,7 +462,7 @@ export interface LinkGenerator$instance {
 }
 
 
-export const LinkGenerator: {
+export const LinkGenerator: (abstract new() => LinkGenerator) & {
 };
 
 
@@ -486,7 +487,7 @@ export interface LinkParser$instance {
 }
 
 
-export const LinkParser: {
+export const LinkParser: (abstract new() => LinkParser) & {
 };
 
 
@@ -497,7 +498,8 @@ export interface MatcherPolicy$instance {
 }
 
 
-export const MatcherPolicy: {
+export const MatcherPolicy: (abstract new() => MatcherPolicy) & {
+    ContainsDynamicEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
 };
 
 
@@ -510,7 +512,7 @@ export interface ParameterPolicyFactory$instance {
 }
 
 
-export const ParameterPolicyFactory: {
+export const ParameterPolicyFactory: (abstract new() => ParameterPolicyFactory) & {
 };
 
 
@@ -519,6 +521,8 @@ export type ParameterPolicyFactory = ParameterPolicyFactory$instance;
 export interface Route$instance extends RouteBase$instance {
     readonly RouteTemplate: string | undefined;
     GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    OnRouteMatched(context: RouteContext): Task;
+    OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | undefined;
     RouteAsync(context: RouteContext): Task;
 }
 
@@ -535,25 +539,28 @@ export interface __Route$views {
     As_IRouter(): IRouter$instance;
 }
 
-export interface Route$instance extends INamedRouter$instance {}
-
 export type Route = Route$instance & __Route$views;
 
 
 export interface RouteBase$instance {
-    readonly Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
-    readonly DataTokens: RouteValueDictionary;
-    readonly Defaults: RouteValueDictionary;
-    readonly Name: string;
-    readonly ParsedTemplate: RouteTemplate;
+    ConstraintResolver: IInlineConstraintResolver;
+    Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
+    DataTokens: RouteValueDictionary;
+    Defaults: RouteValueDictionary;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
+    ParsedTemplate: RouteTemplate;
     GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    OnRouteMatched(context: RouteContext): Task;
+    OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | undefined;
     RouteAsync(context: RouteContext): Task;
     ToString(): string;
 }
 
 
-export const RouteBase: {
-    new(template: string, name: string, constraintResolver: IInlineConstraintResolver, defaults: RouteValueDictionary, constraints: IDictionary<System_Internal.String, unknown>, dataTokens: RouteValueDictionary): RouteBase;
+export const RouteBase: (abstract new(template: string, name: string, constraintResolver: IInlineConstraintResolver, defaults: RouteValueDictionary, constraints: IDictionary<System_Internal.String, unknown>, dataTokens: RouteValueDictionary) => RouteBase) & {
+    GetConstraints(inlineConstraintResolver: IInlineConstraintResolver, parsedTemplate: RouteTemplate, constraints: IDictionary<System_Internal.String, unknown>): IDictionary<System_Internal.String, IRouteConstraint>;
+    GetDefaults(parsedTemplate: RouteTemplate, defaults: RouteValueDictionary): RouteValueDictionary;
 };
 
 
@@ -568,7 +575,7 @@ export type RouteBase = RouteBase$instance & __RouteBase$views;
 export interface RouteBuilder$instance {
     readonly ApplicationBuilder: IApplicationBuilder;
     get DefaultHandler(): IRouter | undefined;
-    set DefaultHandler(value: IRouter);
+    set DefaultHandler(value: IRouter | undefined);
     readonly Routes: IList<IRouter>;
     readonly ServiceProvider: IServiceProvider;
     Build(): IRouter;
@@ -592,7 +599,7 @@ export type RouteBuilder = RouteBuilder$instance & __RouteBuilder$views;
 
 export interface RouteCollection$instance {
     readonly Count: int;
-    readonly Item: IRouter;
+    readonly [index: number]: IRouter;
     Add(router: IRouter): void;
     GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
     RouteAsync(context: RouteContext): Task;
@@ -628,7 +635,8 @@ export const RouteConstraintBuilder: {
 export type RouteConstraintBuilder = RouteConstraintBuilder$instance;
 
 export interface RouteContext$instance {
-    Handler: RequestDelegate;
+    get Handler(): RequestDelegate | undefined;
+    set Handler(value: RequestDelegate | undefined);
     readonly HttpContext: HttpContext;
     RouteData: RouteData;
 }
@@ -702,7 +710,6 @@ export interface RouteGroupBuilder$instance {
 
 
 export const RouteGroupBuilder: {
-    new(): RouteGroupBuilder;
 };
 
 
@@ -806,7 +813,7 @@ export type RouteOptions = RouteOptions$instance;
 export interface RouteValueDictionary$instance {
     readonly Comparer: IEqualityComparer<System_Internal.String>;
     readonly Count: int;
-    Item: unknown;
+    [key: string]: unknown | undefined;
     readonly Keys: ICollection<System_Internal.String>;
     readonly Values: ICollection<unknown | undefined>;
     Add(key: string, value: unknown): void;
@@ -847,10 +854,11 @@ export const RouteValueEqualityComparer: {
 export type RouteValueEqualityComparer = RouteValueEqualityComparer$instance;
 
 export interface RouteValuesAddress$instance {
-    AmbientValues: RouteValueDictionary;
+    get AmbientValues(): RouteValueDictionary | undefined;
+    set AmbientValues(value: RouteValueDictionary | undefined);
     ExplicitValues: RouteValueDictionary;
     get RouteName(): string | undefined;
-    set RouteName(value: string);
+    set RouteName(value: string | undefined);
     ToString(): string | undefined;
 }
 
@@ -863,7 +871,8 @@ export const RouteValuesAddress: {
 export type RouteValuesAddress = RouteValuesAddress$instance;
 
 export interface RoutingFeature$instance {
-    RouteData: RouteData;
+    get RouteData(): RouteData | undefined;
+    set RouteData(value: RouteData | undefined);
 }
 
 

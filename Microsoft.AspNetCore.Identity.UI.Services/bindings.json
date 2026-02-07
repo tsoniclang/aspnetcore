@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": false
@@ -52,6 +53,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
+          "clrName": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Identity:Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender::SendEmailAsync(System.String,System.String,System.String):System.Threading.Tasks.Task",
@@ -68,6 +79,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": false
@@ -87,6 +99,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.IEmailSender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity",
           "isExtensionMethod": false,
@@ -104,6 +117,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Identity.UI.Services.NoOpEmailSender",
           "declaringAssemblyName": "Microsoft.AspNetCore.Identity"
         }

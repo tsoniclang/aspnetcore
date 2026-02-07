@@ -16,6 +16,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -27,6 +49,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandledType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -38,6 +61,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandledType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -49,6 +73,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandledType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -60,6 +85,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandledType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -71,6 +97,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandledType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -82,6 +109,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandledType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -117,6 +145,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ICompilationException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -152,6 +181,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IDeveloperPageExceptionFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions",
           "isExtensionMethod": false
@@ -189,6 +219,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandler",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": false
@@ -227,6 +258,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -245,6 +277,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -263,6 +296,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -281,6 +315,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -300,6 +335,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.Abstractions:Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
+          "clrName": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -317,6 +358,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -335,6 +377,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -353,6 +396,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -371,6 +415,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -407,6 +452,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodePagesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -443,6 +489,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -461,6 +508,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -479,6 +527,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -497,6 +546,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -515,6 +565,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -533,6 +584,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -552,6 +604,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -569,6 +625,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.CompilationFailure",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -587,6 +644,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.CompilationFailure",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -605,6 +663,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.CompilationFailure",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -623,6 +682,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.CompilationFailure",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -641,6 +701,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.CompilationFailure",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -655,6 +716,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Diagnostics.DiagnosticMessage,Microsoft.AspNetCore.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.CompilationFailure",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -665,6 +727,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Diagnostics.DiagnosticMessage,Microsoft.AspNetCore.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.CompilationFailure",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -681,6 +744,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Diagnostics:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -697,6 +764,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": false
@@ -713,6 +781,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.DeveloperExceptionPageOptions,Microsoft.AspNetCore.Diagnostics,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,System.Diagnostics.DiagnosticSource,System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Diagnostics.IDeveloperPageExceptionFilter,Microsoft.AspNetCore.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -729,6 +798,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -746,6 +819,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -764,6 +838,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -782,6 +857,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -800,6 +876,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -818,6 +895,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -836,6 +914,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -854,6 +933,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -868,6 +948,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 7,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.DiagnosticMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -884,6 +965,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -901,6 +986,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ErrorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         },
@@ -919,6 +1005,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ErrorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -933,6 +1020,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ErrorContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
         }
@@ -949,6 +1037,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.Abstractions:Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature",
+          "clrName": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.Abstractions:Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
+          "clrName": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -966,6 +1068,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -984,6 +1087,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1002,6 +1106,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1020,6 +1125,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1038,6 +1144,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1057,6 +1164,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1076,6 +1184,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1095,6 +1204,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1114,6 +1224,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1129,6 +1240,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1145,6 +1257,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Diagnostics:Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -1161,6 +1277,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": false
@@ -1177,6 +1294,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.ExceptionHandlerOptions,Microsoft.AspNetCore.Diagnostics,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Diagnostics.DiagnosticListener):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1193,6 +1311,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1210,6 +1332,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerSuppressDiagnosticsContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1228,6 +1351,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerSuppressDiagnosticsContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1246,6 +1370,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerSuppressDiagnosticsContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1260,6 +1385,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerSuppressDiagnosticsContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1276,6 +1402,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1283,16 +1413,17 @@
           "clrName": "HttpContext",
           "metadataToken": 385876040,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
-          "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
+          "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1301,16 +1432,17 @@
           "clrName": "Options",
           "metadataToken": 385876041,
           "canonicalSignature": ":Microsoft.AspNetCore.Builder.StatusCodePagesOptions",
-          "normalizedSignature": "Options|:Microsoft.AspNetCore.Builder.StatusCodePagesOptions|static=false|accessor=get",
+          "normalizedSignature": "Options|:Microsoft.AspNetCore.Builder.StatusCodePagesOptions|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1319,16 +1451,17 @@
           "clrName": "Next",
           "metadataToken": 385876042,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.RequestDelegate",
-          "normalizedSignature": "Next|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=get",
+          "normalizedSignature": "Next|:Microsoft.AspNetCore.Http.RequestDelegate|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1343,6 +1476,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Builder.StatusCodePagesOptions,Microsoft.AspNetCore.Http.RequestDelegate):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1359,6 +1493,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.Abstractions:Microsoft.AspNetCore.Diagnostics.IStatusCodePagesFeature",
+          "clrName": "Microsoft.AspNetCore.Diagnostics.IStatusCodePagesFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1376,6 +1520,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodePagesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1394,6 +1539,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IStatusCodePagesFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodePagesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1409,6 +1555,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodePagesFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1425,6 +1572,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Diagnostics:Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -1441,6 +1592,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": false
@@ -1457,6 +1609,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.StatusCodePagesOptions,Microsoft.AspNetCore.Diagnostics,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1473,6 +1626,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Diagnostics.Abstractions:Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
+          "clrName": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1490,6 +1653,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1508,6 +1672,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1526,6 +1691,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1534,16 +1700,17 @@
           "clrName": "OriginalStatusCode",
           "metadataToken": 385876047,
           "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "OriginalStatusCode|:System.Int32|static=false|accessor=get",
+          "normalizedSignature": "OriginalStatusCode|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1562,6 +1729,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1580,6 +1748,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         },
@@ -1598,6 +1767,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1617,6 +1787,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1636,6 +1807,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1655,6 +1827,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1674,6 +1847,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1693,6 +1867,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics.Abstractions"
@@ -1708,6 +1883,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.StatusCodeReExecuteFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }
@@ -1724,6 +1900,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Diagnostics:Microsoft.AspNetCore.Diagnostics.WelcomePageMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -1740,6 +1920,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.WelcomePageMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics",
           "isExtensionMethod": false
@@ -1756,6 +1937,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.WelcomePageOptions,Microsoft.AspNetCore.Diagnostics,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Diagnostics.WelcomePageMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Diagnostics"
         }

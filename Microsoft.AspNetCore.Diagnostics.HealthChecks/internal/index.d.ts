@@ -29,7 +29,7 @@ export type HealthCheckMiddleware = HealthCheckMiddleware$instance;
 export interface HealthCheckOptions$instance {
     AllowCachingResponses: boolean;
     get Predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean>);
+    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean> | undefined);
     ResponseWriter: Func<HttpContext, HealthReport, Task>;
     ResultStatusCodes: IDictionary<HealthStatus, System_Internal.Int32>;
 }

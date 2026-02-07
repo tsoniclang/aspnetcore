@@ -17,6 +17,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -28,6 +50,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterExceptionPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -39,6 +62,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterExceptionPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -50,6 +74,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterExceptionPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -84,6 +109,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -103,6 +129,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -141,6 +168,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -176,6 +204,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -195,6 +224,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -216,6 +246,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.MediaType::IsSubsetOf(Microsoft.AspNetCore.Mvc.Formatters.MediaType):System.Boolean",
@@ -232,6 +266,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -251,6 +286,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -270,6 +306,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -289,6 +326,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -308,6 +346,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -327,6 +366,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -346,6 +386,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -365,6 +406,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -386,6 +428,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -404,6 +447,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -422,6 +466,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -440,6 +485,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -458,6 +504,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -476,6 +523,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -494,6 +542,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -512,6 +561,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -530,6 +580,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -548,6 +599,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -562,6 +614,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -572,6 +625,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringSegment):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -582,6 +636,7 @@
           "normalizedSignature": "constructor|(System.String,System.Int32,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -598,6 +653,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.MediaTypeSegmentWithQuality::ToString():System.String",
@@ -614,6 +673,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeSegmentWithQuality",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -635,6 +695,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeSegmentWithQuality",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -653,6 +714,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeSegmentWithQuality",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -667,6 +729,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringSegment,System.Double):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeSegmentWithQuality",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -683,6 +746,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.IFormatFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IFormatFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResourceFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IResourceFilter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.FormatFilter::GetFormat(Microsoft.AspNetCore.Mvc.ActionContext):System.String",
@@ -699,6 +784,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -718,6 +804,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -737,6 +824,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -756,6 +844,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -775,6 +864,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -794,6 +884,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResourceFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -814,6 +905,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResourceFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -834,6 +926,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -854,6 +947,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Filters.IResultFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -871,6 +965,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatFilter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -887,6 +982,65 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Collections.ObjectModel.Collection\u00601",
+        "clrName": "System.Collections.ObjectModel.Collection\u00601",
+        "typeArguments": [
+          "TFormatter"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
+          "clrName": "System.Collections.Generic.IList\u00601",
+          "typeArguments": [
+            "TFormatter"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "TFormatter"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "TFormatter"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "TFormatter"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "TFormatter"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "TFormatter"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.FormatterCollection\u00601::RemoveType():System.Void",
@@ -903,6 +1057,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterCollection\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -922,6 +1077,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterCollection\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -938,6 +1094,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterCollection\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -948,6 +1105,7 @@
           "normalizedSignature": "constructor|(IList_1):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterCollection\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -964,6 +1122,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.FormatterMappings::SetMediaTypeMappingForFormat(System.String,System.String):System.Void",
@@ -980,6 +1142,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterMappings",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -999,6 +1162,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterMappings",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1018,6 +1182,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterMappings",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1037,6 +1202,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterMappings",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1053,6 +1219,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.FormatterMappings",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1069,6 +1236,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter::CanWriteResult(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext):System.Boolean",
@@ -1085,6 +1262,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1104,6 +1282,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1123,6 +1302,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1143,6 +1323,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1165,6 +1346,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1179,6 +1361,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1195,7 +1378,41 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.InputFormatter::GetDefaultValueForType(System.Type):System.Object",
+          "clrName": "GetDefaultValueForType",
+          "metadataToken": 100666095,
+          "canonicalSignature": "(System.Type):System.Object",
+          "normalizedSignature": "GetDefaultValueForType|(System.Type):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.InputFormatter::CanRead(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Boolean",
           "clrName": "CanRead",
@@ -1211,6 +1428,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.InputFormatter::CanReadType(System.Type):System.Boolean",
+          "clrName": "CanReadType",
+          "metadataToken": 100666098,
+          "canonicalSignature": "(System.Type):System.Boolean",
+          "normalizedSignature": "CanReadType|(System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1230,6 +1468,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1249,6 +1488,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1268,6 +1508,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1287,6 +1528,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1307,6 +1549,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1327,6 +1570,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -1349,13 +1593,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.InputFormatter::.ctor():void",
+          "metadataToken": 100666102,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
@@ -1368,6 +1625,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1385,6 +1646,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1403,6 +1665,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1421,6 +1684,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1439,6 +1703,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1457,6 +1722,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1475,6 +1741,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1493,6 +1760,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1507,6 +1775,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextReader,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1517,6 +1786,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextReader,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1533,6 +1803,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1545,6 +1825,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1555,6 +1836,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1565,6 +1847,7 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1581,6 +1864,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult::Failure():Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
@@ -1597,6 +1884,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1616,6 +1904,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1635,6 +1924,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1654,6 +1944,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1673,6 +1964,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1692,6 +1984,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false
@@ -1713,6 +2006,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1731,6 +2025,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -1749,6 +2044,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -1768,6 +2064,62 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Collections.ObjectModel.Collection\u00601",
+        "clrName": "System.Collections.ObjectModel.Collection\u00601",
+        "typeArguments": [
+          "String"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
+          "clrName": "System.Collections.Generic.IList\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection::Add(Microsoft.Net.Http.Headers.MediaTypeHeaderValue):System.Void",
@@ -1784,6 +2136,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1803,6 +2156,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1822,6 +2176,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1838,6 +2193,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -1854,7 +2210,41 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter::CanWriteType(System.Type):System.Boolean",
+          "clrName": "CanWriteType",
+          "metadataToken": 100666136,
+          "canonicalSignature": "(System.Type):System.Boolean",
+          "normalizedSignature": "CanWriteType|(System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter::GetSupportedContentTypes(System.String,System.Type):System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetSupportedContentTypes",
@@ -1870,6 +2260,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1889,6 +2280,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1908,6 +2300,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1927,6 +2320,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1946,6 +2340,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -1965,6 +2360,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -1985,6 +2381,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2005,6 +2402,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -2027,13 +2425,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter::.ctor():void",
+          "metadataToken": 100666142,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
@@ -2046,6 +2457,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2053,16 +2468,17 @@
           "clrName": "HttpContext",
           "metadataToken": 385876197,
           "canonicalSignature": ":Microsoft.AspNetCore.Http.HttpContext",
-          "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=get",
+          "normalizedSignature": "HttpContext|:Microsoft.AspNetCore.Http.HttpContext|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2081,6 +2497,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2099,6 +2516,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2107,16 +2525,17 @@
           "clrName": "Object",
           "metadataToken": 385876200,
           "canonicalSignature": ":System.Object",
-          "normalizedSignature": "Object|:System.Object|static=false|accessor=get",
+          "normalizedSignature": "Object|:System.Object|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         },
@@ -2125,23 +2544,36 @@
           "clrName": "ObjectType",
           "metadataToken": 385876201,
           "canonicalSignature": ":System.Type",
-          "normalizedSignature": "ObjectType|:System.Type|static=false|accessor=get",
+          "normalizedSignature": "ObjectType|:System.Type|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext::.ctor(Microsoft.AspNetCore.Http.HttpContext):void",
+          "metadataToken": 100663834,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext",
@@ -2154,6 +2586,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext"
+      },
       "methods": [],
       "properties": [
         {
@@ -2161,16 +2597,17 @@
           "clrName": "WriterFactory",
           "metadataToken": 385876202,
           "canonicalSignature": ":System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextWriter,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "WriterFactory|:System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextWriter,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "WriterFactory|:System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextWriter,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2185,6 +2622,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,System.Func_3[[System.IO.Stream,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Text.Encoding,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.IO.TextWriter,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
@@ -2201,6 +2639,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter::CanWriteResult(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext):System.Boolean",
@@ -2217,6 +2665,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2236,6 +2685,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2255,6 +2705,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2275,6 +2726,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2292,6 +2744,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2308,6 +2761,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter::CanWriteResult(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterCanWriteContext):System.Boolean",
@@ -2324,6 +2791,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2343,6 +2811,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2362,6 +2831,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2382,6 +2852,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -2402,6 +2873,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2422,6 +2894,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2441,6 +2914,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2460,6 +2934,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2476,6 +2951,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2492,6 +2968,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter::ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext,System.Text.Encoding):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -2508,6 +3002,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2527,6 +3022,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2547,6 +3043,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2567,6 +3064,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -2587,6 +3085,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2606,6 +3105,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2625,6 +3125,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2644,6 +3145,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2663,6 +3165,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2684,6 +3187,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         },
@@ -2702,6 +3206,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -2717,6 +3222,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.JsonOptions,Microsoft.Extensions.Logging.ILogger_1[[Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2733,6 +3239,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter::WriteResponseBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext,System.Text.Encoding):System.Threading.Tasks.Task",
@@ -2749,6 +3269,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2768,6 +3289,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2788,6 +3310,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -2808,6 +3331,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -2828,6 +3352,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2847,6 +3372,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2866,6 +3392,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2885,6 +3412,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2906,6 +3434,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2920,6 +3449,7 @@
           "normalizedSignature": "constructor|(System.Text.Json.JsonSerializerOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
@@ -2936,6 +3466,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.InputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.InputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -2952,6 +3496,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2971,6 +3516,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::SelectCharacterEncoding(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Text.Encoding",
+          "clrName": "SelectCharacterEncoding",
+          "metadataToken": 100666161,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Text.Encoding",
+          "normalizedSignature": "SelectCharacterEncoding|(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext):System.Text.Encoding|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -2990,6 +3556,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3010,6 +3577,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3030,6 +3598,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -3050,6 +3619,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3069,6 +3639,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3088,6 +3659,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3107,6 +3679,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3128,13 +3701,51 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
-      "fields": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::UTF8EncodingWithoutBOMSystem.Text.Encoding",
+          "clrName": "UTF8EncodingWithoutBOM",
+          "metadataToken": 67109779,
+          "normalizedSignature": "UTF8EncodingWithoutBOM|System.Text.Encoding|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::UTF16EncodingLittleEndianSystem.Text.Encoding",
+          "clrName": "UTF16EncodingLittleEndian",
+          "metadataToken": 67109780,
+          "normalizedSignature": "UTF16EncodingLittleEndian|System.Text.Encoding|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter::.ctor():void",
+          "metadataToken": 100666162,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
@@ -3147,6 +3758,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.OutputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter::SelectCharacterEncoding(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext):System.Text.Encoding",
@@ -3163,6 +3788,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3182,6 +3808,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3201,6 +3828,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3220,6 +3848,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3239,6 +3868,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3259,6 +3889,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -3279,6 +3910,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3299,6 +3931,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3318,6 +3951,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false
@@ -3339,13 +3973,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter::.ctor():void",
+          "metadataToken": 100666164,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
@@ -3358,6 +4005,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter::ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext,System.Text.Encoding):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -3374,6 +4039,107 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter::CanReadType(System.Type):System.Boolean",
+          "clrName": "CanReadType",
+          "metadataToken": 100663326,
+          "canonicalSignature": "(System.Type):System.Boolean",
+          "normalizedSignature": "CanReadType|(System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter::CreateXmlReader(System.IO.Stream,System.Text.Encoding):System.Xml.XmlReader",
+          "clrName": "CreateXmlReader",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(System.IO.Stream,System.Text.Encoding):System.Xml.XmlReader",
+          "normalizedSignature": "CreateXmlReader|(System.IO.Stream,System.Text.Encoding):System.Xml.XmlReader|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter::GetSerializableType(System.Type):System.Type",
+          "clrName": "GetSerializableType",
+          "metadataToken": 100663328,
+          "canonicalSignature": "(System.Type):System.Type",
+          "normalizedSignature": "GetSerializableType|(System.Type):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter::CreateSerializer(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "clrName": "CreateSerializer",
+          "metadataToken": 100663329,
+          "canonicalSignature": "(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "normalizedSignature": "CreateSerializer|(System.Type):System.Runtime.Serialization.DataContractSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter::GetCachedSerializer(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "clrName": "GetCachedSerializer",
+          "metadataToken": 100663330,
+          "canonicalSignature": "(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "normalizedSignature": "GetCachedSerializer|(System.Type):System.Runtime.Serialization.DataContractSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3393,6 +4159,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3413,6 +4180,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3433,6 +4201,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -3453,6 +4222,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3472,6 +4242,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3491,6 +4262,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3510,6 +4282,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3529,6 +4302,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3550,6 +4324,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3568,6 +4343,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3586,6 +4362,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3604,6 +4381,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3622,6 +4400,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3640,6 +4419,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -3655,6 +4435,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.MvcOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
@@ -3671,7 +4452,81 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter::GetSerializableType(System.Type):System.Type",
+          "clrName": "GetSerializableType",
+          "metadataToken": 100663339,
+          "canonicalSignature": "(System.Type):System.Type",
+          "normalizedSignature": "GetSerializableType|(System.Type):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter::CanWriteType(System.Type):System.Boolean",
+          "clrName": "CanWriteType",
+          "metadataToken": 100663340,
+          "canonicalSignature": "(System.Type):System.Boolean",
+          "normalizedSignature": "CanWriteType|(System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter::CreateSerializer(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "clrName": "CreateSerializer",
+          "metadataToken": 100663341,
+          "canonicalSignature": "(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "normalizedSignature": "CreateSerializer|(System.Type):System.Runtime.Serialization.DataContractSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter::CreateXmlWriter(System.IO.TextWriter,System.Xml.XmlWriterSettings):System.Xml.XmlWriter",
           "clrName": "CreateXmlWriter",
@@ -3687,6 +4542,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3706,6 +4562,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3725,6 +4582,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter::GetCachedSerializer(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "clrName": "GetCachedSerializer",
+          "metadataToken": 100663345,
+          "canonicalSignature": "(System.Type):System.Runtime.Serialization.DataContractSerializer",
+          "normalizedSignature": "GetCachedSerializer|(System.Type):System.Runtime.Serialization.DataContractSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3744,6 +4622,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3764,6 +4643,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -3784,6 +4664,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -3804,6 +4685,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3823,6 +4705,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3842,6 +4725,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3861,6 +4745,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -3882,6 +4767,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3900,6 +4786,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3918,6 +4805,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
@@ -3932,6 +4820,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3942,6 +4831,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3952,6 +4842,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlWriterSettings):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -3962,6 +4853,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlWriterSettings,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
@@ -3978,6 +4870,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.TextInputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter::ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext,System.Text.Encoding):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -3994,6 +4904,127 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter::CanReadType(System.Type):System.Boolean",
+          "clrName": "CanReadType",
+          "metadataToken": 100663353,
+          "canonicalSignature": "(System.Type):System.Boolean",
+          "normalizedSignature": "CanReadType|(System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter::GetSerializableType(System.Type):System.Type",
+          "clrName": "GetSerializableType",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(System.Type):System.Type",
+          "normalizedSignature": "GetSerializableType|(System.Type):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter::CreateXmlReader(System.IO.Stream,System.Text.Encoding,System.Type):System.Xml.XmlReader",
+          "clrName": "CreateXmlReader",
+          "metadataToken": 100663355,
+          "canonicalSignature": "(System.IO.Stream,System.Text.Encoding,System.Type):System.Xml.XmlReader",
+          "normalizedSignature": "CreateXmlReader|(System.IO.Stream,System.Text.Encoding,System.Type):System.Xml.XmlReader|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter::CreateXmlReader(System.IO.Stream,System.Text.Encoding):System.Xml.XmlReader",
+          "clrName": "CreateXmlReader",
+          "metadataToken": 100663356,
+          "canonicalSignature": "(System.IO.Stream,System.Text.Encoding):System.Xml.XmlReader",
+          "normalizedSignature": "CreateXmlReader|(System.IO.Stream,System.Text.Encoding):System.Xml.XmlReader|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter::CreateSerializer(System.Type):System.Xml.Serialization.XmlSerializer",
+          "clrName": "CreateSerializer",
+          "metadataToken": 100663357,
+          "canonicalSignature": "(System.Type):System.Xml.Serialization.XmlSerializer",
+          "normalizedSignature": "CreateSerializer|(System.Type):System.Xml.Serialization.XmlSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter::GetCachedSerializer(System.Type):System.Xml.Serialization.XmlSerializer",
+          "clrName": "GetCachedSerializer",
+          "metadataToken": 100663358,
+          "canonicalSignature": "(System.Type):System.Xml.Serialization.XmlSerializer",
+          "normalizedSignature": "GetCachedSerializer|(System.Type):System.Xml.Serialization.XmlSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4013,6 +5044,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -4033,6 +5065,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -4053,6 +5086,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiRequestFormatMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -4073,6 +5107,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4092,6 +5127,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4111,6 +5147,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4130,6 +5167,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4149,6 +5187,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4170,6 +5209,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4188,6 +5228,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4206,6 +5247,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4224,6 +5266,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4242,6 +5285,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IInputFormatterExceptionPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
@@ -4257,6 +5301,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.MvcOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
@@ -4273,7 +5318,81 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter",
+        "clrName": "Microsoft.AspNetCore.Mvc.Formatters.TextOutputFormatter"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
+          "clrName": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter::GetSerializableType(System.Type):System.Type",
+          "clrName": "GetSerializableType",
+          "metadataToken": 100663365,
+          "canonicalSignature": "(System.Type):System.Type",
+          "normalizedSignature": "GetSerializableType|(System.Type):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter::CanWriteType(System.Type):System.Boolean",
+          "clrName": "CanWriteType",
+          "metadataToken": 100663366,
+          "canonicalSignature": "(System.Type):System.Boolean",
+          "normalizedSignature": "CanWriteType|(System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter::CreateSerializer(System.Type):System.Xml.Serialization.XmlSerializer",
+          "clrName": "CreateSerializer",
+          "metadataToken": 100663367,
+          "canonicalSignature": "(System.Type):System.Xml.Serialization.XmlSerializer",
+          "normalizedSignature": "CreateSerializer|(System.Type):System.Xml.Serialization.XmlSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter::CreateXmlWriter(System.IO.TextWriter,System.Xml.XmlWriterSettings):System.Xml.XmlWriter",
           "clrName": "CreateXmlWriter",
@@ -4289,6 +5408,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4308,6 +5428,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4327,6 +5448,47 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter::Serialize(System.Xml.Serialization.XmlSerializer,System.Xml.XmlWriter,System.Object):System.Void",
+          "clrName": "Serialize",
+          "metadataToken": 100663371,
+          "canonicalSignature": "(System.Xml.Serialization.XmlSerializer,System.Xml.XmlWriter,System.Object):System.Void",
+          "normalizedSignature": "Serialize|(System.Xml.Serialization.XmlSerializer,System.Xml.XmlWriter,System.Object):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter::GetCachedSerializer(System.Type):System.Xml.Serialization.XmlSerializer",
+          "clrName": "GetCachedSerializer",
+          "metadataToken": 100663372,
+          "canonicalSignature": "(System.Type):System.Xml.Serialization.XmlSerializer",
+          "normalizedSignature": "GetCachedSerializer|(System.Type):System.Xml.Serialization.XmlSerializer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4346,6 +5508,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -4366,6 +5529,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.IOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
@@ -4386,6 +5550,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseTypeMetadataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -4406,6 +5571,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4425,6 +5591,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4444,6 +5611,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4463,6 +5631,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false
@@ -4484,6 +5653,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4502,6 +5672,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }
@@ -4516,6 +5687,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4526,6 +5698,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4536,6 +5709,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlWriterSettings):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         },
@@ -4546,6 +5720,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlWriterSettings,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml"
         }

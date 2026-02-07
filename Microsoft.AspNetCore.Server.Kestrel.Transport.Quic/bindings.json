@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
@@ -68,6 +74,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
@@ -86,6 +93,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
@@ -104,6 +112,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
@@ -122,6 +131,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         },
@@ -140,6 +150,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         }
@@ -154,6 +165,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.QuicTransportOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic"
         }

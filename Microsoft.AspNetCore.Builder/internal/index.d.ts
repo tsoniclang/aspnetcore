@@ -115,7 +115,6 @@ export interface ComponentEndpointConventionBuilder$instance extends IHubEndpoin
 
 
 export const ComponentEndpointConventionBuilder: {
-    new(): ComponentEndpointConventionBuilder;
 };
 
 
@@ -138,7 +137,6 @@ export interface ConfigureHostBuilder$instance {
 
 
 export const ConfigureHostBuilder: {
-    new(): ConfigureHostBuilder;
 };
 
 
@@ -161,7 +159,6 @@ export interface ConfigureWebHostBuilder$instance {
 
 
 export const ConfigureWebHostBuilder: {
-    new(): ConfigureWebHostBuilder;
 };
 
 
@@ -182,7 +179,6 @@ export interface ConnectionEndpointRouteBuilder$instance {
 
 
 export const ConnectionEndpointRouteBuilder: {
-    new(): ConnectionEndpointRouteBuilder;
 };
 
 
@@ -202,7 +198,6 @@ export interface ControllerActionEndpointConventionBuilder$instance {
 
 
 export const ControllerActionEndpointConventionBuilder: {
-    new(): ControllerActionEndpointConventionBuilder;
 };
 
 
@@ -217,15 +212,15 @@ export type ControllerActionEndpointConventionBuilder = ControllerActionEndpoint
 
 export interface CookiePolicyOptions$instance {
     get CheckConsentNeeded(): Func<HttpContext, System_Internal.Boolean> | undefined;
-    set CheckConsentNeeded(value: Func<HttpContext, System_Internal.Boolean>);
+    set CheckConsentNeeded(value: Func<HttpContext, System_Internal.Boolean> | undefined);
     ConsentCookie: CookieBuilder;
     ConsentCookieValue: string;
     HttpOnly: HttpOnlyPolicy;
     MinimumSameSitePolicy: SameSiteMode;
     get OnAppendCookie(): Action<AppendCookieContext> | undefined;
-    set OnAppendCookie(value: Action<AppendCookieContext>);
+    set OnAppendCookie(value: Action<AppendCookieContext> | undefined);
     get OnDeleteCookie(): Action<DeleteCookieContext> | undefined;
-    set OnDeleteCookie(value: Action<DeleteCookieContext>);
+    set OnDeleteCookie(value: Action<DeleteCookieContext> | undefined);
     Secure: CookieSecurePolicy;
 }
 
@@ -252,7 +247,7 @@ export type DefaultFilesOptions = DefaultFilesOptions$instance;
 
 export interface DeveloperExceptionPageOptions$instance {
     get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider);
+    set FileProvider(value: IFileProvider | undefined);
     SourceCodeLineCount: int;
 }
 
@@ -265,7 +260,8 @@ export const DeveloperExceptionPageOptions: {
 export type DeveloperExceptionPageOptions = DeveloperExceptionPageOptions$instance;
 
 export interface DirectoryBrowserOptions$instance extends SharedOptionsBase {
-    Formatter: IDirectoryFormatter;
+    get Formatter(): IDirectoryFormatter | undefined;
+    set Formatter(value: IDirectoryFormatter | undefined);
 }
 
 
@@ -279,15 +275,17 @@ export type DirectoryBrowserOptions = DirectoryBrowserOptions$instance;
 
 export interface EndpointBuilder$instance {
     ApplicationServices: IServiceProvider;
-    DisplayName: string;
+    get DisplayName(): string | undefined;
+    set DisplayName(value: string | undefined);
     readonly FilterFactories: IList<Func<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>>;
     readonly Metadata: IList<unknown>;
-    RequestDelegate: RequestDelegate;
+    get RequestDelegate(): RequestDelegate | undefined;
+    set RequestDelegate(value: RequestDelegate | undefined);
     Build(): Endpoint;
 }
 
 
-export const EndpointBuilder: {
+export const EndpointBuilder: (abstract new() => EndpointBuilder) & {
 };
 
 
@@ -297,12 +295,12 @@ export interface ExceptionHandlerOptions$instance {
     AllowStatusCode404Response: boolean;
     CreateScopeForErrors: boolean;
     get ExceptionHandler(): RequestDelegate | undefined;
-    set ExceptionHandler(value: RequestDelegate);
+    set ExceptionHandler(value: RequestDelegate | undefined);
     ExceptionHandlingPath: PathString;
     get StatusCodeSelector(): Func<Exception, System_Internal.Int32> | undefined;
-    set StatusCodeSelector(value: Func<Exception, System_Internal.Int32>);
+    set StatusCodeSelector(value: Func<Exception, System_Internal.Int32> | undefined);
     get SuppressDiagnosticsCallback(): Func<ExceptionHandlerSuppressDiagnosticsContext, System_Internal.Boolean> | undefined;
-    set SuppressDiagnosticsCallback(value: Func<ExceptionHandlerSuppressDiagnosticsContext, System_Internal.Boolean>);
+    set SuppressDiagnosticsCallback(value: Func<ExceptionHandlerSuppressDiagnosticsContext, System_Internal.Boolean> | undefined);
 }
 
 
@@ -314,11 +312,11 @@ export const ExceptionHandlerOptions: {
 export type ExceptionHandlerOptions = ExceptionHandlerOptions$instance;
 
 export interface FileServerOptions$instance extends SharedOptionsBase {
-    readonly DefaultFilesOptions: DefaultFilesOptions;
-    readonly DirectoryBrowserOptions: DirectoryBrowserOptions;
+    DefaultFilesOptions: DefaultFilesOptions;
+    DirectoryBrowserOptions: DirectoryBrowserOptions;
     EnableDefaultFiles: boolean;
     EnableDirectoryBrowsing: boolean;
-    readonly StaticFileOptions: StaticFileOptions;
+    StaticFileOptions: StaticFileOptions;
 }
 
 
@@ -356,7 +354,8 @@ export const ForwardedHeadersOptions: {
 export type ForwardedHeadersOptions = ForwardedHeadersOptions$instance;
 
 export interface HttpMethodOverrideOptions$instance {
-    FormFieldName: string;
+    get FormFieldName(): string | undefined;
+    set FormFieldName(value: string | undefined);
 }
 
 
@@ -374,7 +373,6 @@ export interface HubEndpointConventionBuilder$instance extends IHubEndpointConve
 
 
 export const HubEndpointConventionBuilder: {
-    new(): HubEndpointConventionBuilder;
 };
 
 
@@ -387,7 +385,7 @@ export type HubEndpointConventionBuilder = HubEndpointConventionBuilder$instance
 
 export interface IISOptions$instance {
     get AuthenticationDisplayName(): string | undefined;
-    set AuthenticationDisplayName(value: string);
+    set AuthenticationDisplayName(value: string | undefined);
     AutomaticAuthentication: boolean;
     ForwardClientCertificate: boolean;
 }
@@ -403,7 +401,7 @@ export type IISOptions = IISOptions$instance;
 export interface IISServerOptions$instance {
     AllowSynchronousIO: boolean;
     get AuthenticationDisplayName(): string | undefined;
-    set AuthenticationDisplayName(value: string);
+    set AuthenticationDisplayName(value: string | undefined);
     AutomaticAuthentication: boolean;
     MaxRequestBodyBufferSize: int;
     MaxRequestBodySize: Nullable<System_Internal.Int64>;
@@ -424,7 +422,6 @@ export interface PageActionEndpointConventionBuilder$instance {
 
 
 export const PageActionEndpointConventionBuilder: {
-    new(): PageActionEndpointConventionBuilder;
 };
 
 
@@ -444,7 +441,6 @@ export interface RazorComponentsEndpointConventionBuilder$instance {
 
 
 export const RazorComponentsEndpointConventionBuilder: {
-    new(): RazorComponentsEndpointConventionBuilder;
 };
 
 
@@ -465,9 +461,9 @@ export interface RequestLocalizationOptions$instance {
     FallBackToParentUICultures: boolean;
     RequestCultureProviders: IList<IRequestCultureProvider>;
     get SupportedCultures(): IList<CultureInfo> | undefined;
-    set SupportedCultures(value: IList<CultureInfo>);
+    set SupportedCultures(value: IList<CultureInfo> | undefined);
     get SupportedUICultures(): IList<CultureInfo> | undefined;
-    set SupportedUICultures(value: IList<CultureInfo>);
+    set SupportedUICultures(value: IList<CultureInfo> | undefined);
     AddSupportedCultures(...cultures: string[]): RequestLocalizationOptions;
     AddSupportedUICultures(...uiCultures: string[]): RequestLocalizationOptions;
     SetDefaultCulture(defaultCulture: string): RequestLocalizationOptions;
@@ -530,7 +526,7 @@ export type SessionOptions = SessionOptions$instance;
 export interface StaticFileOptions$instance extends SharedOptionsBase {
     ContentTypeProvider: IContentTypeProvider;
     get DefaultContentType(): string | undefined;
-    set DefaultContentType(value: string);
+    set DefaultContentType(value: string | undefined);
     HttpsCompression: HttpsCompressionMode;
     OnPrepareResponse: Action<StaticFileResponseContext>;
     OnPrepareResponseAsync: Func<StaticFileResponseContext, Task>;
@@ -576,7 +572,6 @@ export interface WebApplication$instance {
 
 
 export const WebApplication: {
-    new(): WebApplication;
     Create(args?: string[]): WebApplication;
     CreateBuilder(): WebApplicationBuilder;
     CreateBuilder(options: WebApplicationOptions): WebApplicationBuilder;
@@ -600,18 +595,17 @@ export type WebApplication = WebApplication$instance & __WebApplication$views;
 
 export interface WebApplicationBuilder$instance {
     readonly Configuration: ConfigurationManager;
-    readonly Environment: IWebHostEnvironment;
-    readonly Host: ConfigureHostBuilder;
+    Environment: IWebHostEnvironment;
+    Host: ConfigureHostBuilder;
     readonly Logging: ILoggingBuilder;
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
-    readonly WebHost: ConfigureWebHostBuilder;
+    WebHost: ConfigureWebHostBuilder;
     Build(): WebApplication;
 }
 
 
 export const WebApplicationBuilder: {
-    new(): WebApplicationBuilder;
 };
 
 
@@ -619,15 +613,15 @@ export type WebApplicationBuilder = WebApplicationBuilder$instance;
 
 export interface WebApplicationOptions$instance {
     get ApplicationName(): string | undefined;
-    set ApplicationName(value: string);
+    set ApplicationName(value: string | undefined);
     get Args(): string[] | undefined;
-    set Args(value: string[]);
+    set Args(value: string[] | undefined);
     get ContentRootPath(): string | undefined;
-    set ContentRootPath(value: string);
+    set ContentRootPath(value: string | undefined);
     get EnvironmentName(): string | undefined;
-    set EnvironmentName(value: string);
+    set EnvironmentName(value: string | undefined);
     get WebRootPath(): string | undefined;
-    set WebRootPath(value: string);
+    set WebRootPath(value: string | undefined);
 }
 
 

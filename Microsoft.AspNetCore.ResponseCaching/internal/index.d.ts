@@ -16,7 +16,7 @@ import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions
 
 export interface IResponseCachingFeature$instance {
     get VaryByQueryKeys(): string[] | undefined;
-    set VaryByQueryKeys(value: string[]);
+    set VaryByQueryKeys(value: string[] | undefined);
 }
 
 
@@ -24,7 +24,7 @@ export type IResponseCachingFeature = IResponseCachingFeature$instance;
 
 export interface ResponseCachingFeature$instance {
     get VaryByQueryKeys(): string[] | undefined;
-    set VaryByQueryKeys(value: string[]);
+    set VaryByQueryKeys(value: string[] | undefined);
 }
 
 

@@ -31,7 +31,7 @@ export interface AlgorithmConfiguration$instance {
 }
 
 
-export const AlgorithmConfiguration: {
+export const AlgorithmConfiguration: (abstract new() => AlgorithmConfiguration) & {
 };
 
 
@@ -93,10 +93,10 @@ export interface CngCbcAuthenticatedEncryptorConfiguration$instance extends Algo
     EncryptionAlgorithm: string;
     EncryptionAlgorithmKeySize: int;
     get EncryptionAlgorithmProvider(): string | undefined;
-    set EncryptionAlgorithmProvider(value: string);
+    set EncryptionAlgorithmProvider(value: string | undefined);
     HashAlgorithm: string;
     get HashAlgorithmProvider(): string | undefined;
-    set HashAlgorithmProvider(value: string);
+    set HashAlgorithmProvider(value: string | undefined);
     CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 
@@ -150,7 +150,7 @@ export interface CngGcmAuthenticatedEncryptorConfiguration$instance extends Algo
     EncryptionAlgorithm: string;
     EncryptionAlgorithmKeySize: int;
     get EncryptionAlgorithmProvider(): string | undefined;
-    set EncryptionAlgorithmProvider(value: string);
+    set EncryptionAlgorithmProvider(value: string | undefined);
     CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 

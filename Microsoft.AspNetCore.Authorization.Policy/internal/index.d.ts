@@ -42,15 +42,15 @@ export type AuthorizationMiddlewareResultHandler = AuthorizationMiddlewareResult
 
 
 export interface PolicyAuthorizationResult$instance {
-    readonly AuthorizationFailure: AuthorizationFailure | undefined;
-    readonly Challenged: boolean;
-    readonly Forbidden: boolean;
-    readonly Succeeded: boolean;
+    get AuthorizationFailure(): AuthorizationFailure | undefined;
+    set AuthorizationFailure(value: AuthorizationFailure | undefined);
+    Challenged: boolean;
+    Forbidden: boolean;
+    Succeeded: boolean;
 }
 
 
 export const PolicyAuthorizationResult: {
-    new(): PolicyAuthorizationResult;
     Challenge(): PolicyAuthorizationResult;
     Forbid(): PolicyAuthorizationResult;
     Forbid(authorizationFailure: AuthorizationFailure): PolicyAuthorizationResult;

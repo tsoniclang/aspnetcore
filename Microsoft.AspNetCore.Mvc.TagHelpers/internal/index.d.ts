@@ -5,9 +5,13 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import type { ImportMapDefinition } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IWebHostEnvironment } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
+import type { IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
 import type { PathString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { TagHelperMemoryCacheProvider } from "../../Microsoft.AspNetCore.Mvc.Razor.Infrastructure/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Razor_TagHelpers_Internal from "../../Microsoft.AspNetCore.Mvc.Razor.TagHelpers/internal/index.js";
@@ -17,7 +21,7 @@ import type { IUrlHelperFactory } from "../../Microsoft.AspNetCore.Mvc.Routing/i
 import type { IDistributedCacheTagHelperService } from "../../Microsoft.AspNetCore.Mvc.TagHelpers.Cache/internal/index.js";
 import type { ICompositeViewEngine } from "../../Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js";
 import type { IViewBufferScope } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers/internal/index.js";
-import type { IFileVersionProvider, IHtmlGenerator, ModelExpression, ViewDataDictionary } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
+import type { IFileVersionProvider, IHtmlGenerator, ModelExplorer, ModelExpression, ViewDataDictionary } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
 import * as Microsoft_AspNetCore_Razor_TagHelpers_Internal from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
 import type { ITagHelper, ITagHelperComponent, TagHelper, TagHelperAttribute, TagHelperContext, TagHelperOutput } from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
 import type { IDictionary, IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
@@ -39,13 +43,11 @@ export interface AnchorTagHelper$instance extends TagHelper, ITagHelper {
     Action: string;
     Area: string;
     Controller: string;
-    get Fragment(): string | undefined;
-    set Fragment(value: string);
+    Fragment: string;
     Host: string;
     readonly Order: int;
     Page: string;
-    get PageHandler(): string | undefined;
-    set PageHandler(value: string);
+    PageHandler: string;
     Protocol: string;
     Route: string;
     RouteValues: IDictionary<System_Internal.String, System_Internal.String>;
@@ -99,8 +101,7 @@ export interface CacheTagHelperBase$instance extends TagHelper, ITagHelper {
     VaryBy: string;
     VaryByCookie: string;
     VaryByCulture: boolean;
-    get VaryByHeader(): string | undefined;
-    set VaryByHeader(value: string);
+    VaryByHeader: string;
     VaryByQuery: string;
     VaryByRoute: string;
     VaryByUser: boolean;
@@ -110,8 +111,7 @@ export interface CacheTagHelperBase$instance extends TagHelper, ITagHelper {
 }
 
 
-export const CacheTagHelperBase: {
-    new(htmlEncoder: HtmlEncoder): CacheTagHelperBase;
+export const CacheTagHelperBase: (abstract new(htmlEncoder: HtmlEncoder) => CacheTagHelperBase) & {
     readonly DefaultExpiration: TimeSpan;
 };
 
@@ -222,12 +222,10 @@ export interface FormActionTagHelper$instance extends TagHelper, ITagHelper {
     Action: string;
     Area: string;
     Controller: string;
-    get Fragment(): string | undefined;
-    set Fragment(value: string);
+    Fragment: string;
     readonly Order: int;
     Page: string;
-    get PageHandler(): string | undefined;
-    set PageHandler(value: string);
+    PageHandler: string;
     Route: string;
     RouteValues: IDictionary<System_Internal.String, System_Internal.String>;
     ViewContext: ViewContext;
@@ -256,13 +254,11 @@ export interface FormTagHelper$instance extends TagHelper, ITagHelper {
     Antiforgery: Nullable<System_Internal.Boolean>;
     Area: string;
     Controller: string;
-    get Fragment(): string | undefined;
-    set Fragment(value: string);
+    Fragment: string;
     Method: string;
     readonly Order: int;
     Page: string;
-    get PageHandler(): string | undefined;
-    set PageHandler(value: string);
+    PageHandler: string;
     Route: string;
     RouteValues: IDictionary<System_Internal.String, System_Internal.String>;
     ViewContext: ViewContext;
@@ -288,7 +284,7 @@ export type FormTagHelper = FormTagHelper$instance & __FormTagHelper$views;
 
 export interface GlobbingUrlBuilder$instance {
     readonly Cache: IMemoryCache;
-    readonly FileProvider: IFileProvider | undefined;
+    readonly FileProvider: IFileProvider;
     readonly RequestPathBase: PathString;
     BuildUrlList(staticUrl: string, includePattern: string, excludePattern: string): IReadOnlyList<System_Internal.String>;
 }
@@ -325,11 +321,9 @@ export type ImageTagHelper = ImageTagHelper$instance & __ImageTagHelper$views;
 
 
 export interface InputTagHelper$instance extends TagHelper, ITagHelper {
-    get For(): ModelExpression | undefined;
-    set For(value: ModelExpression);
+    For: ModelExpression;
     Format: string;
-    get FormName(): string | undefined;
-    set FormName(value: string);
+    FormName: string;
     InputTypeName: string;
     Name: string;
     readonly Order: int;
@@ -356,8 +350,7 @@ export type InputTagHelper = InputTagHelper$instance & __InputTagHelper$views;
 
 
 export interface LabelTagHelper$instance extends TagHelper, ITagHelper {
-    get For(): ModelExpression | undefined;
-    set For(value: ModelExpression);
+    For: ModelExpression;
     readonly Order: int;
     ViewContext: ViewContext;
     Init(context: TagHelperContext): void;
@@ -435,8 +428,7 @@ export type OptionTagHelper = OptionTagHelper$instance & __OptionTagHelper$views
 
 export interface PartialTagHelper$instance extends TagHelper {
     FallbackName: string;
-    get For(): ModelExpression | undefined;
-    set For(value: ModelExpression);
+    For: ModelExpression;
     Model: unknown;
     Name: string;
     Optional: boolean;
@@ -536,8 +528,7 @@ export type ScriptTagHelper = ScriptTagHelper$instance & __ScriptTagHelper$views
 
 
 export interface SelectTagHelper$instance extends TagHelper, ITagHelper {
-    get For(): ModelExpression | undefined;
-    set For(value: ModelExpression);
+    For: ModelExpression;
     Items: IEnumerable<SelectListItem>;
     Name: string;
     readonly Order: int;
@@ -563,8 +554,7 @@ export type SelectTagHelper = SelectTagHelper$instance & __SelectTagHelper$views
 
 
 export interface TextAreaTagHelper$instance extends TagHelper, ITagHelper {
-    get For(): ModelExpression | undefined;
-    set For(value: ModelExpression);
+    For: ModelExpression;
     Name: string;
     readonly Order: int;
     ViewContext: ViewContext;
@@ -589,8 +579,7 @@ export type TextAreaTagHelper = TextAreaTagHelper$instance & __TextAreaTagHelper
 
 
 export interface ValidationMessageTagHelper$instance extends TagHelper, ITagHelper {
-    get For(): ModelExpression | undefined;
-    set For(value: ModelExpression);
+    For: ModelExpression;
     readonly Order: int;
     ViewContext: ViewContext;
     Init(context: TagHelperContext): void;

@@ -5,14 +5,19 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
+import type { DotNetInvocationInfo, DotNetInvocationResult, JSInvocationInfo } from "../../Microsoft.JSInterop.Infrastructure/internal/index.js";
 import type { Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Enum, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
+import type { Attribute, Boolean as ClrBoolean, Byte, Enum, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum JSCallResultType {
     Default = 0,
@@ -95,7 +100,6 @@ export interface DotNetObjectReference_1$instance<TValue> {
 
 
 export const DotNetObjectReference_1: {
-    new<TValue>(): DotNetObjectReference_1<TValue>;
 };
 
 
@@ -146,13 +150,16 @@ export interface JSInProcessRuntime$instance extends JSRuntime {
     InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask<TValue>;
     InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask<TValue>;
     InvokeConstructor(identifier: string, ...args: unknown[]): IJSInProcessObjectReference;
+    InvokeJS(identifier: string, argsJson: string): string | undefined;
+    InvokeJS(identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): string | undefined;
+    InvokeJS(invocationInfo: JSInvocationInfo): string | undefined;
     SetValue<TValue>(identifier: string, value: TValue): void;
     SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
     SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
 }
 
 
-export const JSInProcessRuntime: {
+export const JSInProcessRuntime: (abstract new() => JSInProcessRuntime) & {
 };
 
 
@@ -178,19 +185,27 @@ export const JSInvokableAttribute: {
 export type JSInvokableAttribute = JSInvokableAttribute$instance;
 
 export interface JSRuntime$instance {
+    BeginInvokeJS(taskId: long, identifier: string, argsJson: string): void;
+    BeginInvokeJS(taskId: long, identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): void;
+    BeginInvokeJS(invocationInfo: JSInvocationInfo): void;
     Dispose(): void;
+    EndInvokeDotNet(invocationInfo: DotNetInvocationInfo, invocationResult: DotNetInvocationResult): void;
     GetValueAsync<TValue>(identifier: string): ValueTask<TValue>;
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask<TValue>;
     InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask<TValue>;
     InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask<TValue>;
     InvokeConstructorAsync(identifier: string, args: unknown[]): ValueTask<IJSObjectReference>;
     InvokeConstructorAsync(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask<IJSObjectReference>;
+    ReadJSDataAsStreamAsync(jsStreamReference: IJSStreamReference, totalLength: long, cancellationToken?: CancellationToken): Task<Stream>;
+    ReceiveByteArray(id: int, data: byte[]): void;
+    SendByteArray(id: int, data: byte[]): void;
     SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
     SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
+    TransmitStreamAsync(streamId: long, dotNetStreamReference: DotNetStreamReference): Task;
 }
 
 
-export const JSRuntime: {
+export const JSRuntime: (abstract new() => JSRuntime) & {
 };
 
 

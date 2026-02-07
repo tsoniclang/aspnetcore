@@ -15,6 +15,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlAsyncContent::WriteToAsync(System.IO.TextWriter):System.Threading.Tasks.ValueTask",
@@ -31,6 +37,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlAsyncContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -50,6 +57,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -87,6 +95,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -108,6 +117,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder::AppendHtml(Microsoft.AspNetCore.Html.IHtmlContent):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
@@ -124,6 +143,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -143,6 +163,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -162,6 +183,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -181,6 +203,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -200,6 +223,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -221,6 +245,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer::CopyTo(Microsoft.AspNetCore.Html.IHtmlContentBuilder):System.Void",
@@ -237,6 +267,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -256,6 +287,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -277,6 +309,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentBuilder",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentBuilder"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContentContainer",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContentContainer"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilder::Append(System.String):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
@@ -293,6 +343,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -312,6 +363,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -331,6 +383,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -350,6 +403,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -369,6 +423,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -388,6 +443,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -407,6 +463,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -426,6 +483,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -446,6 +504,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -466,6 +525,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -486,6 +546,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContentContainer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -506,6 +567,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -528,6 +590,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -542,6 +605,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         },
@@ -552,6 +616,7 @@
           "normalizedSignature": "constructor|(System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         },
@@ -562,6 +627,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -578,6 +644,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlFormattableString::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
@@ -594,6 +670,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -613,6 +690,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -630,6 +708,7 @@
           "normalizedSignature": "constructor|(System.String,System.Object[]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         },
@@ -640,6 +719,7 @@
           "normalizedSignature": "constructor|(System.IFormatProvider,System.String,System.Object[]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlFormattableString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -656,6 +736,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.IHtmlContent",
+          "clrName": "Microsoft.AspNetCore.Html.IHtmlContent"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlString::WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder):System.Void",
@@ -672,6 +762,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -691,6 +782,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false
@@ -710,6 +802,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.IHtmlContent",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": false,
@@ -732,6 +825,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -745,6 +839,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         },
@@ -756,6 +851,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -769,6 +865,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlString",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions"
         }
@@ -785,6 +882,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Html.Abstractions:Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions::AppendFormat(Microsoft.AspNetCore.Html.IHtmlContentBuilder,System.String,System.Object[]):Microsoft.AspNetCore.Html.IHtmlContentBuilder",
@@ -801,6 +902,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -820,6 +922,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -839,6 +942,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -858,6 +962,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -877,6 +982,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -896,6 +1002,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -915,6 +1022,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -934,6 +1042,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true
@@ -953,6 +1062,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Html.HtmlContentBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Html.Abstractions",
           "isExtensionMethod": true

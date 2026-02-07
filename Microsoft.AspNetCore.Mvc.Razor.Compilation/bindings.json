@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.IViewCompiler",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -68,6 +69,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.IViewCompilerProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false
@@ -89,6 +91,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -106,6 +112,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
@@ -124,6 +131,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
@@ -142,6 +150,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
@@ -160,6 +169,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
@@ -178,6 +188,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -192,6 +203,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
@@ -202,6 +214,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
@@ -212,6 +225,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -228,6 +242,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -245,6 +263,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         },
@@ -263,6 +282,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -277,6 +297,7 @@
           "normalizedSignature": "constructor|(System.String,System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -293,6 +314,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -310,6 +335,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.ViewsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }
@@ -324,6 +350,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.Razor.Compilation.ViewsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor"
         }

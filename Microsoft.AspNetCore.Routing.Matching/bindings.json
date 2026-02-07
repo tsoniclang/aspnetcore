@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -67,6 +68,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -86,6 +88,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -123,6 +126,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -142,6 +146,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -161,6 +166,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -182,6 +188,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IParameterPolicy",
+          "clrName": "Microsoft.AspNetCore.Routing.IParameterPolicy"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy::MatchesLiteral(System.String,System.String):System.Boolean",
@@ -198,6 +210,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -219,6 +232,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -236,6 +253,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -254,6 +272,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -262,16 +281,17 @@
           "clrName": "Values",
           "metadataToken": 385876230,
           "canonicalSignature": ":Microsoft.AspNetCore.Routing.RouteValueDictionary",
-          "normalizedSignature": "Values|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=get",
+          "normalizedSignature": "Values|:Microsoft.AspNetCore.Routing.RouteValueDictionary|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateState",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -291,6 +311,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -308,6 +332,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -326,6 +351,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -340,6 +366,7 @@
           "normalizedSignature": "constructor|(System.Object,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTableEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -356,6 +383,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -373,6 +404,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -391,6 +423,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -405,6 +438,7 @@
           "normalizedSignature": "constructor|(System.Object,System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -421,6 +455,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.CandidateSet::IsValidCandidate(System.Int32):System.Boolean",
@@ -437,6 +475,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -456,6 +495,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -475,6 +515,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -494,6 +535,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -515,6 +557,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -533,6 +576,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -547,6 +591,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.Endpoint[],Microsoft.AspNetCore.Routing.RouteValueDictionary[],System.Int32[]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.CandidateSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -563,6 +608,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IComparer\u00601",
+          "clrName": "System.Collections.Generic.IComparer\u00601",
+          "typeArguments": [
+            "Endpoint"
+          ]
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -580,6 +638,22 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IComparer\u00601",
+          "clrName": "System.Collections.Generic.IComparer\u00601",
+          "typeArguments": [
+            "Endpoint"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "TMetadata"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::Compare(Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Endpoint):System.Int32",
@@ -596,6 +670,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::GetMetadata(Microsoft.AspNetCore.Http.Endpoint):TMetadata",
+          "clrName": "GetMetadata",
+          "metadataToken": 100664409,
+          "canonicalSignature": "(Microsoft.AspNetCore.Http.Endpoint):TMetadata",
+          "normalizedSignature": "GetMetadata|(Microsoft.AspNetCore.Http.Endpoint):TMetadata|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::CompareMetadata(TMetadata,TMetadata):System.Int32",
+          "clrName": "CompareMetadata",
+          "metadataToken": 100664410,
+          "canonicalSignature": "(TMetadata,TMetadata):System.Int32",
+          "normalizedSignature": "CompareMetadata|(TMetadata,TMetadata):System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -611,12 +726,25 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
       ],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601::.ctor():void",
+          "metadataToken": 100664411,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointSelector",
@@ -629,6 +757,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointSelector::SelectAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
@@ -645,6 +777,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -653,7 +786,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.EndpointSelector::.ctor():void",
+          "metadataToken": 100664414,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointSelector",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
@@ -666,6 +811,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.MatcherPolicy",
+        "clrName": "Microsoft.AspNetCore.Routing.MatcherPolicy"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
+          "clrName": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
+          "clrName": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
+          "clrName": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy::ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
@@ -682,6 +845,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -701,6 +865,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -720,6 +885,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -739,6 +905,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -759,6 +926,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -779,6 +947,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -799,6 +968,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -819,6 +989,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -841,6 +1012,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -859,6 +1031,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -877,6 +1050,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
@@ -892,6 +1066,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -908,6 +1083,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.MatcherPolicy",
+        "clrName": "Microsoft.AspNetCore.Routing.MatcherPolicy"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
+          "clrName": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
+          "clrName": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
+          "clrName": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy::ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet):System.Threading.Tasks.Task",
@@ -924,6 +1117,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -943,6 +1137,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -962,6 +1157,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -981,6 +1177,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -1001,6 +1198,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -1021,6 +1219,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -1041,6 +1240,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -1061,6 +1261,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false,
@@ -1083,6 +1284,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -1101,6 +1303,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -1119,6 +1322,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
@@ -1134,6 +1338,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -1150,6 +1355,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable::GetDestination(Microsoft.AspNetCore.Http.HttpContext):System.Int32",
@@ -1166,6 +1375,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -1174,7 +1384,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable::.ctor():void",
+          "metadataToken": 100664516,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+        }
+      ]
     }
   ]
 }

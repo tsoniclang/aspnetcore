@@ -33,6 +33,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -52,6 +53,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -71,6 +73,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -90,6 +93,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgery",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -127,6 +131,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -146,6 +151,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryAdditionalDataProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery",
           "isExtensionMethod": false
@@ -184,6 +190,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
@@ -220,6 +227,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         },
@@ -238,6 +246,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryValidationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -257,6 +266,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -274,6 +287,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -292,6 +306,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -310,6 +325,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -328,6 +344,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -346,6 +363,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -359,6 +377,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -372,6 +391,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -388,6 +408,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -405,6 +429,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -423,6 +448,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -441,6 +467,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -459,6 +486,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -473,6 +501,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryTokenSet",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -489,6 +518,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -501,6 +540,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -511,6 +551,7 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }
@@ -527,6 +568,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
+          "clrName": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -544,6 +595,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         },
@@ -562,6 +614,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.IAntiforgeryMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
@@ -577,6 +630,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Antiforgery.RequireAntiforgeryTokenAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Antiforgery"
         }

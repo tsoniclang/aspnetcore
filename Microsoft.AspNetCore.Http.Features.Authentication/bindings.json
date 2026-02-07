@@ -33,6 +33,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
         }
@@ -52,6 +53,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Features:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
+          "clrName": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -69,6 +80,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         },
@@ -87,6 +99,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Features"
@@ -102,6 +115,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.Authentication.HttpAuthenticationFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }

@@ -25,8 +25,8 @@ export interface AppendCookieContext$instance {
     CookieName: string;
     readonly CookieOptions: CookieOptions;
     CookieValue: string;
-    readonly HasConsent: boolean;
-    readonly IsConsentNeeded: boolean;
+    HasConsent: boolean;
+    IsConsentNeeded: boolean;
     IssueCookie: boolean;
 }
 
@@ -56,8 +56,8 @@ export interface DeleteCookieContext$instance {
     readonly Context: HttpContext;
     CookieName: string;
     readonly CookieOptions: CookieOptions;
-    readonly HasConsent: boolean;
-    readonly IsConsentNeeded: boolean;
+    HasConsent: boolean;
+    IsConsentNeeded: boolean;
     IssueCookie: boolean;
 }
 

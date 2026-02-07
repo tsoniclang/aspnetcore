@@ -17,7 +17,7 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 export interface CorsAuthorizationFilter$instance extends IFilterMetadata {
     readonly Order: int;
     get PolicyName(): string | undefined;
-    set PolicyName(value: string);
+    set PolicyName(value: string | undefined);
     OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
 }
 

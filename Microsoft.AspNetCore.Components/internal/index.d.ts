@@ -20,7 +20,7 @@ import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.
 import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
 import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, EventArgs, EventHandler, Exception, Func, Guid, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, Single, String as ClrString, TimeOnly, Type, Uri, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { Action, AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, EventArgs, EventHandler, Exception, Func, Guid, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, Single, String as ClrString, TimeOnly, Type, UnhandledExceptionEventArgs, Uri, ValueType, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
@@ -182,7 +182,7 @@ export type MarkupString = MarkupString$instance;
 export interface NavigationOptions$instance {
     ForceLoad: boolean;
     get HistoryEntryState(): string | undefined;
-    set HistoryEntryState(value: string);
+    set HistoryEntryState(value: string | undefined);
     ReplaceHistoryEntry: boolean;
 }
 
@@ -312,12 +312,12 @@ export const BindElementAttribute: {
 export type BindElementAttribute = BindElementAttribute$instance;
 
 export interface BindInputElementAttribute$instance extends Attribute {
-    readonly ChangeAttribute: string;
+    readonly ChangeAttribute: string | undefined;
     readonly Format: string | undefined;
     readonly IsInvariantCulture: boolean;
     readonly Suffix: string | undefined;
-    readonly Type: string;
-    readonly ValueAttribute: string;
+    readonly Type: string | undefined;
+    readonly ValueAttribute: string | undefined;
 }
 
 
@@ -329,7 +329,8 @@ export const BindInputElementAttribute: {
 export type BindInputElementAttribute = BindInputElementAttribute$instance;
 
 export interface CascadingParameterAttribute$instance extends CascadingParameterAttributeBase {
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
 }
 
 
@@ -344,7 +345,7 @@ export interface CascadingParameterAttributeBase$instance extends Attribute {
 }
 
 
-export const CascadingParameterAttributeBase: {
+export const CascadingParameterAttributeBase: (abstract new() => CascadingParameterAttributeBase) & {
 };
 
 
@@ -363,10 +364,12 @@ export const CascadingTypeParameterAttribute: {
 export type CascadingTypeParameterAttribute = CascadingTypeParameterAttribute$instance;
 
 export interface CascadingValue_1$instance<TValue> {
-    ChildContent: RenderFragment;
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
     IsFixed: boolean;
-    Name: string;
-    Value: TValue;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
+    Value: TValue | undefined;
     Attach(renderHandle: RenderHandle): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
@@ -404,7 +407,7 @@ export type CascadingValueSource_1<TValue> = CascadingValueSource_1$instance<TVa
 
 export interface ChangeEventArgs$instance extends EventArgs {
     get Value(): unknown | undefined;
-    set Value(value: unknown);
+    set Value(value: unknown | undefined);
 }
 
 
@@ -416,12 +419,19 @@ export const ChangeEventArgs: {
 export type ChangeEventArgs = ChangeEventArgs$instance;
 
 export interface ComponentBase$instance {
+    BuildRenderTree(builder: RenderTreeBuilder): void;
+    OnAfterRender(firstRender: boolean): void;
+    OnAfterRenderAsync(firstRender: boolean): Task;
+    OnInitialized(): void;
+    OnInitializedAsync(): Task;
+    OnParametersSet(): void;
+    OnParametersSetAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
+    ShouldRender(): boolean;
 }
 
 
-export const ComponentBase: {
-    new(): ComponentBase;
+export const ComponentBase: (abstract new() => ComponentBase) & {
 };
 
 
@@ -431,7 +441,7 @@ export interface __ComponentBase$views {
     As_IHandleEvent(): IHandleEvent$instance;
 }
 
-export interface ComponentBase$instance extends IComponent$instance, IHandleAfterRender$instance, IHandleEvent$instance {}
+export interface ComponentBase$instance extends IComponent$instance, IHandleEvent$instance {}
 
 export type ComponentBase = ComponentBase$instance & __ComponentBase$views;
 
@@ -445,7 +455,7 @@ export interface Dispatcher$instance {
 }
 
 
-export const Dispatcher: {
+export const Dispatcher: (abstract new() => Dispatcher) & {
     CreateDefault(): Dispatcher;
 };
 
@@ -453,8 +463,10 @@ export const Dispatcher: {
 export type Dispatcher = Dispatcher$instance;
 
 export interface DynamicComponent$instance {
-    readonly Instance: unknown;
-    Parameters: IDictionary<System_Internal.String, unknown>;
+    get Instance(): unknown | undefined;
+    set Instance(value: unknown | undefined);
+    get Parameters(): IDictionary<System_Internal.String, unknown> | undefined;
+    set Parameters(value: IDictionary<System_Internal.String, unknown> | undefined);
     Type: Type;
     Attach(renderHandle: RenderHandle): void;
     SetParametersAsync(parameters: ParameterView): Task;
@@ -490,26 +502,29 @@ export interface ElementReferenceContext$instance {
 }
 
 
-export const ElementReferenceContext: {
+export const ElementReferenceContext: (abstract new() => ElementReferenceContext) & {
 };
 
 
 export type ElementReferenceContext = ElementReferenceContext$instance;
 
 export interface ErrorBoundaryBase$instance extends ComponentBase$instance {
-    ChildContent: RenderFragment;
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
     get ErrorContent(): RenderFragment_1<Exception> | undefined;
-    set ErrorContent(value: RenderFragment_1<Exception>);
+    set ErrorContent(value: RenderFragment_1<Exception> | undefined);
     MaximumErrorCount: int;
     Attach(renderHandle: RenderHandle): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnErrorAsync(exception: Exception): Task;
     Recover(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
-export const ErrorBoundaryBase: {
+export const ErrorBoundaryBase: (abstract new() => ErrorBoundaryBase) & {
 };
 
 
@@ -519,7 +534,7 @@ export interface __ErrorBoundaryBase$views {
     As_IHandleEvent(): IHandleEvent$instance;
 }
 
-export interface ErrorBoundaryBase$instance extends IHandleAfterRender$instance, IHandleEvent$instance {}
+export interface ErrorBoundaryBase$instance extends IHandleEvent$instance {}
 
 export type ErrorBoundaryBase = ErrorBoundaryBase$instance & __ErrorBoundaryBase$views;
 
@@ -577,10 +592,11 @@ export type ExcludeFromInteractiveRoutingAttribute = ExcludeFromInteractiveRouti
 
 export interface ImportMap$instance {
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown>);
-    HttpContext: HttpContext;
+    set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
+    get HttpContext(): HttpContext | undefined;
+    set HttpContext(value: HttpContext | undefined);
     get ImportMapDefinition(): ImportMapDefinition | undefined;
-    set ImportMapDefinition(value: ImportMapDefinition);
+    set ImportMapDefinition(value: ImportMapDefinition | undefined);
 }
 
 
@@ -617,7 +633,7 @@ export type ImportMapDefinition = ImportMapDefinition$instance;
 
 export interface InjectAttribute$instance extends Attribute {
     get Key(): unknown | undefined;
-    set Key(value: unknown);
+    set Key(value: unknown | undefined);
 }
 
 
@@ -629,7 +645,7 @@ export const InjectAttribute: {
 export type InjectAttribute = InjectAttribute$instance;
 
 export interface LayoutAttribute$instance extends Attribute {
-    readonly LayoutType: Type;
+    LayoutType: Type;
 }
 
 
@@ -641,15 +657,17 @@ export const LayoutAttribute: {
 export type LayoutAttribute = LayoutAttribute$instance;
 
 export interface LayoutComponentBase$instance extends ComponentBase$instance {
-    Body: RenderFragment;
+    get Body(): RenderFragment | undefined;
+    set Body(value: RenderFragment | undefined);
     Attach(renderHandle: RenderHandle): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
-export const LayoutComponentBase: {
+export const LayoutComponentBase: (abstract new() => LayoutComponentBase) & {
 };
 
 
@@ -659,7 +677,7 @@ export interface __LayoutComponentBase$views {
     As_IHandleEvent(): IHandleEvent$instance;
 }
 
-export interface LayoutComponentBase$instance extends IHandleAfterRender$instance, IHandleEvent$instance {}
+export interface LayoutComponentBase$instance extends IHandleEvent$instance {}
 
 export type LayoutComponentBase = LayoutComponentBase$instance & __LayoutComponentBase$views;
 
@@ -710,21 +728,27 @@ export const NavigationException: {
 export type NavigationException = NavigationException$instance;
 
 export interface NavigationManager$instance {
-    readonly BaseUri: string;
-    readonly HistoryEntryState: string | undefined;
-    readonly Uri: string;
+    BaseUri: string;
+    get HistoryEntryState(): string | undefined;
+    set HistoryEntryState(value: string | undefined);
+    Uri: string;
+    EnsureInitialized(): void;
+    HandleLocationChangingHandlerException(ex: Exception, context: LocationChangingContext): void;
     NavigateTo(uri: string, forceLoad: boolean): void;
     NavigateTo(uri: string, forceLoad?: boolean, replace?: boolean): void;
     NavigateTo(uri: string, options: NavigationOptions): void;
+    NavigateToCore(uri: string, forceLoad: boolean): void;
+    NavigateToCore(uri: string, options: NavigationOptions): void;
     NotFound(): void;
     Refresh(forceReload?: boolean): void;
     RegisterLocationChangingHandler(locationChangingHandler: Func<LocationChangingContext, ValueTask>): IDisposable;
+    SetNavigationLockState(value: boolean): void;
     ToAbsoluteUri(relativeUri: string): Uri;
     ToBaseRelativePath(uri: string): string;
 }
 
 
-export const NavigationManager: {
+export const NavigationManager: (abstract new() => NavigationManager) & {
 };
 
 
@@ -732,13 +756,16 @@ export type NavigationManager = NavigationManager$instance;
 
 export interface OwningComponentBase$instance extends ComponentBase$instance {
     Attach(renderHandle: RenderHandle): void;
+    Dispose(disposing: boolean): void;
+    DisposeAsyncCore(): ValueTask;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
-export const OwningComponentBase: {
+export const OwningComponentBase: (abstract new() => OwningComponentBase) & {
 };
 
 
@@ -748,7 +775,7 @@ export interface __OwningComponentBase$views {
     As_IHandleEvent(): IHandleEvent$instance;
 }
 
-export interface OwningComponentBase$instance extends IHandleAfterRender$instance, IHandleEvent$instance {}
+export interface OwningComponentBase$instance extends IHandleEvent$instance {}
 
 export type OwningComponentBase = OwningComponentBase$instance & __OwningComponentBase$views;
 
@@ -757,11 +784,12 @@ export interface OwningComponentBase_1$instance<TService> extends OwningComponen
     Attach(renderHandle: RenderHandle): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
-export const OwningComponentBase_1: {
+export const OwningComponentBase_1: (abstract new<TService>() => OwningComponentBase_1<TService>) & {
 };
 
 
@@ -796,7 +824,6 @@ export interface PersistentComponentState$instance {
 
 
 export const PersistentComponentState: {
-    new(): PersistentComponentState;
 };
 
 
@@ -808,7 +835,7 @@ export interface PersistentComponentStateSerializer_1$instance<T> {
 }
 
 
-export const PersistentComponentStateSerializer_1: {
+export const PersistentComponentStateSerializer_1: (abstract new<T>() => PersistentComponentStateSerializer_1<T>) & {
 };
 
 
@@ -845,14 +872,14 @@ export interface RenderModeAttribute$instance extends Attribute {
 }
 
 
-export const RenderModeAttribute: {
+export const RenderModeAttribute: (abstract new() => RenderModeAttribute) & {
 };
 
 
 export type RenderModeAttribute = RenderModeAttribute$instance;
 
 export interface ResourceAsset$instance {
-    readonly Properties: IReadOnlyList<ResourceAssetProperty>;
+    readonly Properties: IReadOnlyList<ResourceAssetProperty> | undefined;
     readonly Url: string;
 }
 
@@ -865,7 +892,7 @@ export const ResourceAsset: {
 export type ResourceAsset = ResourceAsset$instance;
 
 export interface ResourceAssetCollection$instance {
-    readonly Item: string;
+    readonly [key: string]: string;
     IsContentSpecificUrl(path: string): boolean;
 }
 
@@ -914,7 +941,6 @@ export interface RestoreContext$instance {
 
 
 export const RestoreContext: {
-    new(): RestoreContext;
     readonly InitialValue: RestoreContext;
     readonly LastSnapshot: RestoreContext;
     readonly ValueUpdate: RestoreContext;
@@ -938,7 +964,8 @@ export type RouteAttribute = RouteAttribute$instance;
 export interface RouteData$instance {
     readonly PageType: Type;
     readonly RouteValues: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
-    Template: string;
+    get Template(): string | undefined;
+    set Template(value: string | undefined);
 }
 
 
@@ -953,6 +980,7 @@ export interface RouteView$instance {
     DefaultLayout: Type;
     RouteData: RouteData;
     Attach(renderHandle: RenderHandle): void;
+    Render(builder: RenderTreeBuilder): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -985,8 +1013,9 @@ export type StreamRenderingAttribute = StreamRenderingAttribute$instance;
 
 export interface SupplyParameterFromFormAttribute$instance extends CascadingParameterAttributeBase {
     get FormName(): string | undefined;
-    set FormName(value: string);
-    Name: string;
+    set FormName(value: string | undefined);
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
 }
 
 
@@ -998,7 +1027,8 @@ export const SupplyParameterFromFormAttribute: {
 export type SupplyParameterFromFormAttribute = SupplyParameterFromFormAttribute$instance;
 
 export interface SupplyParameterFromQueryAttribute$instance extends CascadingParameterAttributeBase {
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
 }
 
 

@@ -16,6 +16,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -27,6 +49,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -38,6 +61,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -49,6 +73,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -60,6 +85,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -71,6 +97,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransportType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         }
@@ -89,6 +116,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -106,6 +137,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -124,6 +156,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         }
@@ -138,6 +171,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.AvailableTransport",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         }
@@ -154,6 +188,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -171,6 +209,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -185,6 +224,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -201,6 +241,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IConfigureOptions\u00601",
+          "clrName": "Microsoft.Extensions.Options.IConfigureOptions\u00601",
+          "typeArguments": [
+            "ConnectionOptions"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup::Configure(Microsoft.AspNetCore.Http.Connections.ConnectionOptions):System.Void",
@@ -217,6 +270,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
           "isExtensionMethod": false
@@ -232,6 +286,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -245,6 +300,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.ConnectionOptionsSetup",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -261,6 +317,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -278,6 +338,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -296,6 +357,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -314,6 +376,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -332,6 +395,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -350,6 +414,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -368,6 +433,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -386,6 +452,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -404,6 +471,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -422,6 +490,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -440,6 +509,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -454,6 +524,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -470,6 +541,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -487,6 +562,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -501,6 +577,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.LongPollingOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -517,6 +594,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -529,6 +610,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiateMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -545,6 +627,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -562,6 +648,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -580,6 +667,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -598,6 +686,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -616,6 +705,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -634,6 +724,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -652,6 +743,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -670,6 +762,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         },
@@ -688,6 +781,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         }
@@ -702,6 +796,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiationResponse",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         }
@@ -718,6 +813,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -735,6 +834,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         },
@@ -753,6 +853,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -767,6 +868,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.WebSocketOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections"
         }
@@ -783,6 +885,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections:Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions::GetHttpContext(Microsoft.AspNetCore.Connections.ConnectionContext):Microsoft.AspNetCore.Http.HttpContext",
@@ -799,6 +905,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpConnectionContextExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections",
           "isExtensionMethod": true
@@ -820,6 +927,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -831,6 +942,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.HttpTransports",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common"
         }
@@ -849,6 +961,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Connections.Common:Microsoft.AspNetCore.Http.Connections.NegotiateProtocol::WriteResponse(Microsoft.AspNetCore.Http.Connections.NegotiationResponse,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
@@ -865,6 +981,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
           "isExtensionMethod": false
@@ -884,6 +1001,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Connections.NegotiateProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Connections.Common",
           "isExtensionMethod": false

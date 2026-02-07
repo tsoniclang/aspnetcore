@@ -22,7 +22,7 @@ import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extens
 export interface KeyValueAccumulator$instance {
     readonly HasValues: boolean;
     readonly KeyCount: int;
-    readonly ValueCount: int;
+    ValueCount: int;
     Append(key: string, value: string): void;
     GetResults(): Dictionary<System_Internal.String, StringValues>;
 }
@@ -64,7 +64,7 @@ export const QueryStringEnumerable_EncodedNameValuePair: {
 export type QueryStringEnumerable_EncodedNameValuePair = QueryStringEnumerable_EncodedNameValuePair$instance;
 
 export interface QueryStringEnumerable_Enumerator$instance {
-    readonly Current: QueryStringEnumerable_EncodedNameValuePair;
+    Current: QueryStringEnumerable_EncodedNameValuePair;
     MoveNext(): boolean;
 }
 
@@ -84,6 +84,7 @@ export interface BufferedReadStream$instance extends Stream {
     readonly CanWrite: boolean;
     readonly Length: long;
     Position: long;
+    Dispose(disposing: boolean): void;
     EnsureBuffered(): boolean;
     EnsureBuffered(minCount: int): boolean;
     EnsureBufferedAsync(cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
@@ -121,6 +122,7 @@ export interface FileBufferingReadStream$instance extends Stream {
     Position: long;
     readonly TempFileName: string | undefined;
     CopyToAsync(destination: Stream, bufferSize: int, cancellationToken: CancellationToken): Task;
+    Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
     Flush(): void;
     Read(buffer: Span<System_Internal.Byte>): int;
@@ -153,6 +155,7 @@ export interface FileBufferingWriteStream$instance extends Stream {
     readonly Length: long;
     readonly MemoryThreshold: int;
     Position: long;
+    Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
     DrainBufferAsync(destination: Stream, cancellationToken?: CancellationToken): Task;
     DrainBufferAsync(destination: PipeWriter, cancellationToken?: CancellationToken): Task;
@@ -178,7 +181,7 @@ export type FileBufferingWriteStream = FileBufferingWriteStream$instance;
 
 export interface FileMultipartSection$instance {
     readonly FileName: string;
-    readonly FileStream: Stream;
+    readonly FileStream: Stream | undefined;
     readonly Name: string;
     readonly Section: MultipartSection;
 }
@@ -251,6 +254,7 @@ export const FormReader: {
 export type FormReader = FormReader$instance;
 
 export interface HttpRequestStreamReader$instance extends TextReader {
+    Dispose(disposing: boolean): void;
     Peek(): int;
     Read(): int;
     Read(buffer: char[], index: int, count: int): int;
@@ -274,6 +278,7 @@ export type HttpRequestStreamReader = HttpRequestStreamReader$instance;
 
 export interface HttpResponseStreamWriter$instance extends TextWriter {
     readonly Encoding: Encoding;
+    Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
     Flush(): void;
     FlushAsync(): Task;
@@ -323,9 +328,10 @@ export type MultipartReader = MultipartReader$instance;
 export interface MultipartSection$instance {
     BaseStreamOffset: Nullable<System_Internal.Int64>;
     Body: Stream;
-    readonly ContentDisposition: string;
-    readonly ContentType: string;
-    Headers: Dictionary<System_Internal.String, StringValues>;
+    readonly ContentDisposition: string | undefined;
+    readonly ContentType: string | undefined;
+    get Headers(): Dictionary<System_Internal.String, StringValues> | undefined;
+    set Headers(value: Dictionary<System_Internal.String, StringValues> | undefined);
 }
 
 

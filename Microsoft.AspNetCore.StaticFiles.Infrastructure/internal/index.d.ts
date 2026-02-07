@@ -13,7 +13,7 @@ import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Exten
 
 export interface SharedOptions$instance {
     get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider);
+    set FileProvider(value: IFileProvider | undefined);
     RedirectToAppendTrailingSlash: boolean;
     RequestPath: PathString;
 }
@@ -28,13 +28,13 @@ export type SharedOptions = SharedOptions$instance;
 
 export interface SharedOptionsBase$instance {
     get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider);
+    set FileProvider(value: IFileProvider | undefined);
     RedirectToAppendTrailingSlash: boolean;
     RequestPath: PathString;
 }
 
 
-export const SharedOptionsBase: {
+export const SharedOptionsBase: (abstract new(sharedOptions: SharedOptions) => SharedOptionsBase) & {
 };
 
 

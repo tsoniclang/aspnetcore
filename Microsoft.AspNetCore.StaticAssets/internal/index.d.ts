@@ -75,7 +75,6 @@ export interface StaticAssetsEndpointConventionBuilder$instance {
 
 
 export const StaticAssetsEndpointConventionBuilder: {
-    new(): StaticAssetsEndpointConventionBuilder;
 };
 
 

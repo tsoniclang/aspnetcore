@@ -32,6 +32,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -61,6 +62,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -80,6 +82,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -99,6 +102,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -120,6 +124,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -138,6 +143,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -156,6 +162,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -175,6 +182,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -192,6 +203,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -206,6 +218,7 @@
           "normalizedSignature": "constructor|(System.Int64):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.AckMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -222,6 +235,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -234,6 +251,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CancelInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -250,6 +268,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -267,6 +289,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -285,6 +308,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -298,6 +322,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -311,6 +336,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -321,6 +347,7 @@
           "normalizedSignature": "constructor|(System.String,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CloseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -337,6 +364,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage::ToString():System.String",
@@ -353,6 +384,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -372,6 +404,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -391,6 +424,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -410,6 +444,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -431,6 +466,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -449,6 +485,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -467,6 +504,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -481,6 +519,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Object,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -497,6 +536,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -514,6 +557,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -532,6 +576,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -546,6 +591,7 @@
           "normalizedSignature": "constructor|(System.String,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -562,6 +608,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -579,6 +629,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -592,6 +643,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -605,6 +657,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -621,6 +674,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -638,6 +695,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -656,13 +714,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage::.ctor(System.String):void",
+          "metadataToken": 100663412,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
+          "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
@@ -675,11 +746,27 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage::.ctor():void",
+          "metadataToken": 100663413,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+          "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
@@ -692,6 +779,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -709,6 +800,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -727,6 +819,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -745,13 +838,37 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage::.ctor(System.String,System.String,System.Object[],System.String[]):void",
+          "metadataToken": 100663417,
+          "canonicalSignature": "(System.String,System.String,System.Object[],System.String[]):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.Object[],System.String[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
+          "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage::.ctor(System.String,System.String,System.Object[]):void",
+          "metadataToken": 100663418,
+          "canonicalSignature": "(System.String,System.String,System.Object[]):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.Object[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
+          "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
@@ -764,6 +881,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -781,6 +902,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -799,6 +921,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -813,6 +936,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Runtime.ExceptionServices.ExceptionDispatchInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -829,6 +953,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage::ToString():System.String",
@@ -845,6 +973,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -861,6 +990,7 @@
           "normalizedSignature": "constructor|(System.String,System.Object[]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -871,6 +1001,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Object[]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -881,6 +1012,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Object[],System.String[]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -897,6 +1029,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
+          "clrName": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Protocols.Json:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol::IsVersionSupported(System.Int32):System.Boolean",
@@ -913,6 +1055,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false
@@ -932,6 +1075,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false,
@@ -961,6 +1105,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false
@@ -980,6 +1125,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json",
           "isExtensionMethod": false
@@ -999,6 +1145,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -1029,6 +1176,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -1049,6 +1197,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -1069,6 +1218,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -1091,6 +1241,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         },
@@ -1109,6 +1260,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         },
@@ -1127,6 +1279,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         },
@@ -1145,6 +1298,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
@@ -1164,6 +1318,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
@@ -1183,6 +1338,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
@@ -1198,6 +1354,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         },
@@ -1208,6 +1365,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.SignalR.JsonHubProtocolOptions,Microsoft.AspNetCore.SignalR.Protocols.Json,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Protocols.Json"
         }
@@ -1224,6 +1382,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -1235,6 +1397,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.PingMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1253,6 +1416,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1260,16 +1427,17 @@
           "clrName": "RawSerializedData",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "RawSerializedData|:System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "RawSerializedData|:System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.RawResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1284,6 +1452,7 @@
           "normalizedSignature": "constructor|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.RawResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1300,6 +1469,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1317,6 +1490,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1331,6 +1505,7 @@
           "normalizedSignature": "constructor|(System.Int64):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.SequenceMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1347,6 +1522,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1364,6 +1543,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1382,6 +1562,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1396,6 +1577,7 @@
           "normalizedSignature": "constructor|(System.String,System.Runtime.ExceptionServices.ExceptionDispatchInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1412,6 +1594,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage::ToString():System.String",
@@ -1428,6 +1614,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -1444,6 +1631,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Object[]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1454,6 +1642,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Object[],System.String[]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1470,6 +1659,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage",
+        "clrName": "Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage::ToString():System.String",
@@ -1486,6 +1679,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -1507,6 +1701,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1521,6 +1716,7 @@
           "normalizedSignature": "constructor|(System.String,System.Object):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1537,6 +1733,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol::GetSuccessfulHandshake(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol):System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1553,6 +1753,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -1572,6 +1773,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -1591,6 +1793,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false
@@ -1610,6 +1813,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -1639,6 +1843,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": false,
@@ -1670,6 +1875,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -1681,6 +1890,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1692,6 +1902,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1703,6 +1914,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1714,6 +1926,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1725,6 +1938,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1736,6 +1950,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1747,6 +1962,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1758,6 +1974,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         },
@@ -1769,6 +1986,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common"
         }
@@ -1787,6 +2005,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.SignalR.Common:Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions::GetMessageBytes(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol,Microsoft.AspNetCore.SignalR.Protocol.HubMessage):System.Byte[]",
@@ -1803,6 +2025,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.SignalR.Common",
           "isExtensionMethod": true

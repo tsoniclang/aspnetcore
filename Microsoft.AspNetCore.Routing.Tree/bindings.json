@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -64,6 +70,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -80,6 +87,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -97,6 +108,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -115,6 +127,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -133,6 +146,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -151,6 +165,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -169,6 +184,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -187,6 +203,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -205,6 +222,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -219,6 +237,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -235,6 +254,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -252,6 +275,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -270,6 +294,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -284,6 +309,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundMatch",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -300,6 +326,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -317,6 +347,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -335,6 +366,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -353,6 +385,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -371,6 +404,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -389,6 +423,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -407,6 +442,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -425,6 +461,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -443,6 +480,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -461,6 +499,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -475,6 +514,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -491,6 +531,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder::MapInbound(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,System.String,System.Int32):Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry",
@@ -507,6 +551,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -526,6 +571,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -545,6 +591,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -564,6 +611,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -583,6 +631,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -604,6 +653,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -622,6 +672,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -641,6 +692,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Routing.Abstractions:Microsoft.AspNetCore.Routing.IRouter",
+          "clrName": "Microsoft.AspNetCore.Routing.IRouter"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Routing:Microsoft.AspNetCore.Routing.Tree.TreeRouter::GetVirtualPath(Microsoft.AspNetCore.Routing.VirtualPathContext):Microsoft.AspNetCore.Routing.VirtualPathData",
@@ -657,6 +718,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -676,6 +738,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
           "isExtensionMethod": false
@@ -695,6 +758,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.IRouter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
@@ -715,6 +779,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.IRouter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing.Abstractions",
           "isExtensionMethod": false,
@@ -737,6 +802,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -750,6 +816,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.TreeRouter",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -768,6 +835,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -785,6 +856,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -803,6 +875,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -821,6 +894,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -839,6 +913,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -857,6 +932,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -875,6 +951,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -893,6 +970,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -911,6 +989,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -925,6 +1004,7 @@
           "normalizedSignature": "constructor|(System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -941,6 +1021,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -958,6 +1042,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         },
@@ -976,6 +1061,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }
@@ -990,6 +1076,7 @@
           "normalizedSignature": "constructor|(System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree",
           "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
         }

@@ -215,11 +215,13 @@ export type IResultFilter = IResultFilter$instance;
 export interface ActionExecutedContext$instance extends FilterContext {
     Canceled: boolean;
     readonly Controller: unknown;
-    Exception: Exception;
+    get Exception(): Exception | undefined;
+    set Exception(value: Exception | undefined);
     get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo);
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
     ExceptionHandled: boolean;
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
 }
 
 
@@ -233,7 +235,8 @@ export type ActionExecutedContext = ActionExecutedContext$instance;
 export interface ActionExecutingContext$instance extends FilterContext {
     readonly ActionArguments: IDictionary<System_Internal.String, unknown | undefined>;
     readonly Controller: unknown;
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
 }
 
 
@@ -255,7 +258,7 @@ export interface ActionFilterAttribute$instance extends Attribute, IFilterMetada
 }
 
 
-export const ActionFilterAttribute: {
+export const ActionFilterAttribute: (abstract new() => ActionFilterAttribute) & {
 };
 
 
@@ -273,7 +276,8 @@ export type ActionFilterAttribute = ActionFilterAttribute$instance & __ActionFil
 
 
 export interface AuthorizationFilterContext$instance extends FilterContext {
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
 }
 
 
@@ -287,9 +291,10 @@ export type AuthorizationFilterContext = AuthorizationFilterContext$instance;
 export interface ExceptionContext$instance extends FilterContext {
     Exception: Exception;
     get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo);
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
     ExceptionHandled: boolean;
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
 }
 
 
@@ -307,7 +312,7 @@ export interface ExceptionFilterAttribute$instance extends Attribute, IFilterMet
 }
 
 
-export const ExceptionFilterAttribute: {
+export const ExceptionFilterAttribute: (abstract new() => ExceptionFilterAttribute) & {
 };
 
 
@@ -348,8 +353,7 @@ export interface FilterContext$instance extends ActionContext {
 }
 
 
-export const FilterContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>): FilterContext;
+export const FilterContext: (abstract new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>) => FilterContext) & {
 };
 
 
@@ -371,7 +375,8 @@ export type FilterDescriptor = FilterDescriptor$instance;
 
 export interface FilterItem$instance {
     readonly Descriptor: FilterDescriptor;
-    Filter: IFilterMetadata;
+    get Filter(): IFilterMetadata | undefined;
+    set Filter(value: IFilterMetadata | undefined);
     IsReusable: boolean;
 }
 
@@ -400,13 +405,15 @@ export type FilterProviderContext = FilterProviderContext$instance;
 export interface PageHandlerExecutedContext$instance extends FilterContext {
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
     Canceled: boolean;
-    Exception: Exception;
+    get Exception(): Exception | undefined;
+    set Exception(value: Exception | undefined);
     get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo);
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
     ExceptionHandled: boolean;
     readonly HandlerInstance: unknown;
     readonly HandlerMethod: HandlerMethodDescriptor | undefined;
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
 }
 
 
@@ -422,7 +429,8 @@ export interface PageHandlerExecutingContext$instance extends FilterContext {
     readonly HandlerArguments: IDictionary<System_Internal.String, unknown | undefined>;
     readonly HandlerInstance: unknown;
     readonly HandlerMethod: HandlerMethodDescriptor | undefined;
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
 }
 
 
@@ -437,7 +445,7 @@ export interface PageHandlerSelectedContext$instance extends FilterContext {
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
     readonly HandlerInstance: unknown;
     get HandlerMethod(): HandlerMethodDescriptor | undefined;
-    set HandlerMethod(value: HandlerMethodDescriptor);
+    set HandlerMethod(value: HandlerMethodDescriptor | undefined);
 }
 
 
@@ -450,11 +458,13 @@ export type PageHandlerSelectedContext = PageHandlerSelectedContext$instance;
 
 export interface ResourceExecutedContext$instance extends FilterContext {
     Canceled: boolean;
-    Exception: Exception;
+    get Exception(): Exception | undefined;
+    set Exception(value: Exception | undefined);
     get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo);
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
     ExceptionHandled: boolean;
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
 }
 
 
@@ -466,7 +476,8 @@ export const ResourceExecutedContext: {
 export type ResourceExecutedContext = ResourceExecutedContext$instance;
 
 export interface ResourceExecutingContext$instance extends FilterContext {
-    Result: IActionResult;
+    get Result(): IActionResult | undefined;
+    set Result(value: IActionResult | undefined);
     readonly ValueProviderFactories: IList__System_Collections_Generic<IValueProviderFactory>;
 }
 
@@ -481,9 +492,10 @@ export type ResourceExecutingContext = ResourceExecutingContext$instance;
 export interface ResultExecutedContext$instance extends FilterContext {
     Canceled: boolean;
     readonly Controller: unknown;
-    Exception: Exception;
+    get Exception(): Exception | undefined;
+    set Exception(value: Exception | undefined);
     get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo);
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
     ExceptionHandled: boolean;
     readonly Result: IActionResult;
 }
@@ -518,7 +530,7 @@ export interface ResultFilterAttribute$instance extends Attribute, IFilterMetada
 }
 
 
-export const ResultFilterAttribute: {
+export const ResultFilterAttribute: (abstract new() => ResultFilterAttribute) & {
 };
 
 

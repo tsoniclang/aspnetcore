@@ -9,7 +9,7 @@ import * as Internal from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/inde
 import type { HttpContext, IFormCollection, IFormFileCollection, IQueryCollection } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { ParameterDescriptor } from './Microsoft.AspNetCore.Mvc.Abstractions/internal/index.js';
 import type { ActionExecutedContext, ActionExecutingContext, IActionFilter, IFilterMetadata, IOrderedFilter } from './Microsoft.AspNetCore.Mvc.Filters/internal/index.js';
-import type { DefaultModelMetadataProvider, IMetadataDetailsProvider, IValidationMetadataProvider, ModelBindingMessageProvider, ModelMetadataKind, ValidationMetadataProviderContext } from './Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js';
+import type { DefaultMetadataDetails, DefaultModelBindingMessageProvider, DefaultModelMetadataProvider, ICompositeMetadataDetailsProvider, IMetadataDetailsProvider, IValidationMetadataProvider, ModelBindingMessageProvider, ModelMetadataIdentity, ModelMetadataKind, ValidationMetadataProviderContext } from './Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js';
 import type { IModelValidatorProvider, IObjectModelValidator, IPropertyValidationFilter, ValidationStateDictionary, ValidationVisitor, ValidatorCache } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 import type { ActionContext, ControllerContext, MvcOptions } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 import type { RouteValueDictionary } from './Microsoft.AspNetCore.Routing/internal/index.js';
@@ -22,7 +22,7 @@ import type { Expression } from '@tsonic/dotnet/System.Linq.Expressions.js';
 import type { ConstructorInfo, ParameterInfo, PropertyInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
-import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
+import type { ILogger, ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 import type { StringValues } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js';
 

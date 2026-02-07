@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -50,6 +51,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -68,6 +70,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -87,6 +90,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -104,6 +111,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -122,6 +130,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -140,6 +149,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -158,13 +168,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem::.ctor():void",
+          "metadataToken": 100663387,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute",
@@ -177,6 +200,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -194,6 +221,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -212,6 +240,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -230,6 +259,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -244,6 +274,7 @@
           "normalizedSignature": "constructor|(System.Type,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -260,6 +291,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader::LoadItems(System.Reflection.Assembly):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -276,6 +311,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader::CreateItem(Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute):Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
+          "clrName": "CreateItem",
+          "metadataToken": 100663394,
+          "canonicalSignature": "(Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute):Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem",
+          "normalizedSignature": "CreateItem|(Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute):Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader::LoadAttributes(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "LoadAttributes",
+          "metadataToken": 100663395,
+          "canonicalSignature": "(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "LoadAttributes|(System.Reflection.Assembly):System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime",
           "isExtensionMethod": false
@@ -292,6 +368,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -308,6 +385,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -325,6 +406,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -343,6 +425,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -357,6 +440,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -373,6 +457,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -390,6 +478,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorConfigurationNameAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -404,6 +493,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorConfigurationNameAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -420,6 +510,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -437,6 +531,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorExtensionAssemblyNameAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -455,6 +550,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorExtensionAssemblyNameAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -469,6 +565,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorExtensionAssemblyNameAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -485,6 +582,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -502,6 +603,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorLanguageVersionAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -516,6 +618,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorLanguageVersionAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -532,6 +635,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
+          "clrName": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -549,6 +662,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -567,6 +681,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -585,6 +700,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         },
@@ -603,6 +719,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
@@ -622,6 +739,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
@@ -641,6 +759,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
@@ -656,6 +775,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime"
         }
@@ -672,6 +792,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Razor.Runtime:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemExtensions::GetChecksumMetadata(Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem):System.Collections.Generic.IReadOnlyList_1[[Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata,Microsoft.AspNetCore.Razor.Runtime,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -688,6 +812,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Razor.Runtime",
           "isExtensionMethod": true

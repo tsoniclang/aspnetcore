@@ -10,7 +10,7 @@ import type { ICompatibilitySwitch } from './Microsoft.AspNetCore.Mvc.Infrastruc
 import type { ProblemDetails, SerializableError, ValidationProblemDetails } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable, IEnumerator } from '@tsonic/dotnet/System.Collections.js';
-import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, Type, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 import type { XmlReader, XmlWriter } from '@tsonic/dotnet/System.Xml.js';
 import type { XmlSchema } from '@tsonic/dotnet/System.Xml.Schema.js';
 import type { IXmlSerializable } from '@tsonic/dotnet/System.Xml.Serialization.js';

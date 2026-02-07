@@ -19,6 +19,7 @@ export interface ComponentState$instance {
     readonly LogicalParentComponentState: ComponentState | undefined;
     readonly ParentComponentState: ComponentState | undefined;
     DisposeAsync(): ValueTask;
+    GetComponentKey(): unknown | undefined;
 }
 
 

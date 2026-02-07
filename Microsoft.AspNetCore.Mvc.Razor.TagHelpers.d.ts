@@ -6,12 +6,13 @@
 import * as Internal from './Microsoft.AspNetCore.Mvc.Razor.TagHelpers/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { IHtmlContent } from './Microsoft.AspNetCore.Html/internal/index.js';
 import type { ApplicationPart, IApplicationFeatureProvider, IApplicationFeatureProvider_1 } from './Microsoft.AspNetCore.Mvc.ApplicationParts/internal/index.js';
 import type { ViewContext } from './Microsoft.AspNetCore.Mvc.Rendering/internal/index.js';
 import type { IUrlHelperFactory } from './Microsoft.AspNetCore.Mvc.Routing/internal/index.js';
 import type { ITagHelper, ITagHelperComponent, TagHelper, TagHelperContext, TagHelperOutput } from './Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js';
 import type { ICollection, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Int32, Object as ClrObject, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { TypeInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { HtmlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';

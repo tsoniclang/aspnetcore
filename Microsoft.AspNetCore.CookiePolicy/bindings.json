@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         }
@@ -66,6 +91,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -83,6 +112,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -101,6 +131,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -119,6 +150,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -137,6 +169,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -145,16 +178,17 @@
           "clrName": "IsConsentNeeded",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -163,16 +197,17 @@
           "clrName": "HasConsent",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -191,6 +226,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         }
@@ -205,6 +241,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.CookieOptions,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.AppendCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         }
@@ -221,6 +258,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.CookiePolicy:Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -237,6 +278,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy",
           "isExtensionMethod": false
@@ -258,6 +300,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         }
@@ -272,6 +315,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.CookiePolicyOptions,Microsoft.AspNetCore.CookiePolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -282,6 +326,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Builder.CookiePolicyOptions,Microsoft.AspNetCore.CookiePolicy,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         }
@@ -298,6 +343,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -315,6 +364,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -333,6 +383,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -351,6 +402,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -359,16 +411,17 @@
           "clrName": "IsConsentNeeded",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "IsConsentNeeded|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -377,16 +430,17 @@
           "clrName": "HasConsent",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "HasConsent|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         },
@@ -405,6 +459,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         }
@@ -419,6 +474,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.CookieOptions,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.CookiePolicy"
         }

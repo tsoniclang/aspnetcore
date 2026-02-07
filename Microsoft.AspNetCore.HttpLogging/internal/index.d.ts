@@ -72,8 +72,8 @@ export interface IHttpLoggingInterceptor$instance {
 export type IHttpLoggingInterceptor = IHttpLoggingInterceptor$instance;
 
 export interface HttpLoggingAttribute$instance extends Attribute {
-    readonly IsRequestBodyLogLimitSet: boolean;
-    readonly IsResponseBodyLogLimitSet: boolean;
+    IsRequestBodyLogLimitSet: boolean;
+    IsResponseBodyLogLimitSet: boolean;
     readonly LoggingFields: HttpLoggingFields;
     RequestBodyLogLimit: int;
     ResponseBodyLogLimit: int;
@@ -136,7 +136,6 @@ export interface MediaTypeOptions$instance {
 
 
 export const MediaTypeOptions: {
-    new(): MediaTypeOptions;
 };
 
 

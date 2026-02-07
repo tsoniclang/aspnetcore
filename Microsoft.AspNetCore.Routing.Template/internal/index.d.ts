@@ -55,7 +55,6 @@ export interface TemplateBinder$instance {
 
 
 export const TemplateBinder: {
-    new(): TemplateBinder;
     RoutePartsEqual(a: unknown, b: unknown): boolean;
 };
 
@@ -68,7 +67,7 @@ export interface TemplateBinderFactory$instance {
 }
 
 
-export const TemplateBinderFactory: {
+export const TemplateBinderFactory: (abstract new() => TemplateBinderFactory) & {
 };
 
 
@@ -89,15 +88,18 @@ export const TemplateMatcher: {
 export type TemplateMatcher = TemplateMatcher$instance;
 
 export interface TemplatePart$instance {
-    readonly DefaultValue: unknown | undefined;
-    readonly InlineConstraints: IEnumerable<InlineConstraint>;
-    readonly IsCatchAll: boolean;
-    readonly IsLiteral: boolean;
-    readonly IsOptional: boolean;
+    get DefaultValue(): unknown | undefined;
+    set DefaultValue(value: unknown | undefined);
+    InlineConstraints: IEnumerable<InlineConstraint>;
+    IsCatchAll: boolean;
+    IsLiteral: boolean;
+    IsOptional: boolean;
     IsOptionalSeperator: boolean;
-    readonly IsParameter: boolean;
-    readonly Name: string;
-    readonly Text: string | undefined;
+    IsParameter: boolean;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
+    get Text(): string | undefined;
+    set Text(value: string | undefined);
     ToRoutePatternPart(): RoutePatternPart;
 }
 

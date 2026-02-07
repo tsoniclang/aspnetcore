@@ -46,7 +46,7 @@ export type IBadRequestExceptionFeature = IBadRequestExceptionFeature$instance;
 
 export interface IEndpointFeature$instance {
     get Endpoint(): Endpoint | undefined;
-    set Endpoint(value: Endpoint);
+    set Endpoint(value: Endpoint | undefined);
 }
 
 
@@ -56,7 +56,7 @@ export interface IFeatureCollection$instance extends IEnumerable__System_Collect
     readonly IsReadOnly: boolean;
     readonly Revision: int;
     get Item(): unknown | undefined;
-    set Item(value: unknown);
+    set Item(value: unknown | undefined);
     Get<TFeature>(): TFeature | undefined;
     Set<TFeature>(instance: TFeature): void;
 }
@@ -66,7 +66,8 @@ export type IFeatureCollection = IFeatureCollection$instance;
 
 export interface IFormFeature$instance {
     readonly HasFormContentType: boolean;
-    Form: IFormCollection;
+    get Form(): IFormCollection | undefined;
+    set Form(value: IFormCollection | undefined);
     ReadForm(): IFormCollection;
     ReadFormAsync(cancellationToken: CancellationToken): Task<IFormCollection>;
 }
@@ -91,9 +92,9 @@ export type IHttpBodyControlFeature = IHttpBodyControlFeature$instance;
 export interface IHttpConnectionFeature$instance {
     ConnectionId: string;
     get RemoteIpAddress(): IPAddress | undefined;
-    set RemoteIpAddress(value: IPAddress);
+    set RemoteIpAddress(value: IPAddress | undefined);
     get LocalIpAddress(): IPAddress | undefined;
-    set LocalIpAddress(value: IPAddress);
+    set LocalIpAddress(value: IPAddress | undefined);
     RemotePort: int;
     LocalPort: int;
 }
@@ -193,7 +194,7 @@ export type IHttpResponseBodyFeature = IHttpResponseBodyFeature$instance;
 export interface IHttpResponseFeature$instance {
     StatusCode: int;
     get ReasonPhrase(): string | undefined;
-    set ReasonPhrase(value: string);
+    set ReasonPhrase(value: string | undefined);
     Headers: IHeaderDictionary;
     Body: Stream;
     readonly HasStarted: boolean;
@@ -284,8 +285,7 @@ export interface IRouteValuesFeature$instance {
 export type IRouteValuesFeature = IRouteValuesFeature$instance;
 
 export interface IServerVariablesFeature$instance {
-    get Item(): string | undefined;
-    set Item(value: string);
+    [variableName: string]: string | undefined;
 }
 
 
@@ -307,7 +307,7 @@ export type ISessionFeature = ISessionFeature$instance;
 
 export interface ITlsConnectionFeature$instance {
     get ClientCertificate(): X509Certificate2 | undefined;
-    set ClientCertificate(value: X509Certificate2);
+    set ClientCertificate(value: X509Certificate2 | undefined);
     GetClientCertificateAsync(cancellationToken: CancellationToken): Task<X509Certificate2 | undefined>;
 }
 
@@ -357,8 +357,8 @@ export type FeatureReference_1<T> = FeatureReference_1$instance<T>;
 
 export interface FeatureReferences_1$instance<TCache> {
     Cache: TCache | undefined;
-    readonly Collection: IFeatureCollection;
-    readonly Revision: int;
+    Collection: IFeatureCollection;
+    Revision: int;
     Fetch<TFeature, TState>(cached: TFeature, state: TState, factory: Func<TState, TFeature>): TFeature | undefined;
     Fetch<TFeature>(cached: TFeature, factory: Func<IFeatureCollection, TFeature>): TFeature | undefined;
     Initalize(collection: IFeatureCollection): void;
@@ -395,7 +395,7 @@ export type DefaultSessionFeature = DefaultSessionFeature$instance & __DefaultSe
 export interface FeatureCollection$instance {
     readonly IsReadOnly: boolean;
     get Item(): unknown | undefined;
-    set Item(value: unknown);
+    set Item(value: unknown | undefined);
     readonly Revision: int;
     Get<TFeature>(): TFeature | undefined;
     GetEnumerator(): IEnumerator<KeyValuePair<Type, unknown>>;
@@ -420,7 +420,8 @@ export type FeatureCollection = FeatureCollection$instance & __FeatureCollection
 
 
 export interface FormFeature$instance {
-    Form: IFormCollection;
+    get Form(): IFormCollection | undefined;
+    set Form(value: IFormCollection | undefined);
     readonly HasFormContentType: boolean;
     ReadForm(): IFormCollection;
     ReadFormAsync(): Task<IFormCollection>;
@@ -470,10 +471,10 @@ export type FormOptions = FormOptions$instance;
 export interface HttpConnectionFeature$instance {
     ConnectionId: string;
     get LocalIpAddress(): IPAddress | undefined;
-    set LocalIpAddress(value: IPAddress);
+    set LocalIpAddress(value: IPAddress | undefined);
     LocalPort: int;
     get RemoteIpAddress(): IPAddress | undefined;
-    set RemoteIpAddress(value: IPAddress);
+    set RemoteIpAddress(value: IPAddress | undefined);
     RemotePort: int;
 }
 
@@ -563,7 +564,7 @@ export interface HttpResponseFeature$instance {
     readonly HasStarted: boolean;
     Headers: IHeaderDictionary;
     get ReasonPhrase(): string | undefined;
-    set ReasonPhrase(value: string);
+    set ReasonPhrase(value: string | undefined);
     StatusCode: int;
     OnCompleted(callback: Func<unknown, Task>, state: unknown): void;
     OnStarting(callback: Func<unknown, Task>, state: unknown): void;
@@ -743,7 +744,7 @@ export type ServiceProvidersFeature = ServiceProvidersFeature$instance & __Servi
 
 export interface TlsConnectionFeature$instance {
     get ClientCertificate(): X509Certificate2 | undefined;
-    set ClientCertificate(value: X509Certificate2);
+    set ClientCertificate(value: X509Certificate2 | undefined);
     GetClientCertificateAsync(cancellationToken: CancellationToken): Task<X509Certificate2 | undefined>;
 }
 

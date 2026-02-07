@@ -36,6 +36,11 @@ export type RateLimitPartition_1<TKey> = RateLimitPartition_1$instance<TKey>;
 
 export interface ConcurrencyLimiter$instance extends RateLimiter {
     readonly IdleDuration: Nullable<TimeSpan>;
+    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AttemptAcquireCore(permitCount: int): RateLimitLease;
+    Dispose(disposing: boolean): void;
+    Dispose(): void;
+    DisposeAsyncCore(): ValueTask;
     GetStatistics(): RateLimiterStatistics | undefined;
 }
 
@@ -65,6 +70,11 @@ export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter
     readonly IdleDuration: Nullable<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
+    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AttemptAcquireCore(permitCount: int): RateLimitLease;
+    Dispose(disposing: boolean): void;
+    Dispose(): void;
+    DisposeAsyncCore(): ValueTask;
     GetStatistics(): RateLimiterStatistics | undefined;
     TryReplenish(): boolean;
 }
@@ -111,15 +121,19 @@ export type MetadataName_1<T> = MetadataName_1$instance<T>;
 
 export interface PartitionedRateLimiter_1$instance<TResource> {
     AcquireAsync(resource: TResource, permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AcquireAsyncCore(resource: TResource, permitCount: int, cancellationToken: CancellationToken): ValueTask<RateLimitLease>;
     AttemptAcquire(resource: TResource, permitCount?: int): RateLimitLease;
+    AttemptAcquireCore(resource: TResource, permitCount: int): RateLimitLease;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsync(): ValueTask;
+    DisposeAsyncCore(): ValueTask;
     GetStatistics(resource: TResource): RateLimiterStatistics | undefined;
     WithTranslatedKey<TOuter>(keyAdapter: Func<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
 }
 
 
-export const PartitionedRateLimiter_1: {
+export const PartitionedRateLimiter_1: (abstract new<TResource>() => PartitionedRateLimiter_1<TResource>) & {
 };
 
 
@@ -128,14 +142,18 @@ export type PartitionedRateLimiter_1<TResource> = PartitionedRateLimiter_1$insta
 export interface RateLimiter$instance {
     readonly IdleDuration: Nullable<TimeSpan>;
     AcquireAsync(permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AcquireAsyncCore(permitCount: int, cancellationToken: CancellationToken): ValueTask<RateLimitLease>;
     AttemptAcquire(permitCount?: int): RateLimitLease;
+    AttemptAcquireCore(permitCount: int): RateLimitLease;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsync(): ValueTask;
+    DisposeAsyncCore(): ValueTask;
     GetStatistics(): RateLimiterStatistics | undefined;
 }
 
 
-export const RateLimiter: {
+export const RateLimiter: (abstract new() => RateLimiter) & {
     CreateChained(...limiters: RateLimiter[]): RateLimiter;
 };
 
@@ -161,13 +179,14 @@ export interface RateLimitLease$instance {
     readonly IsAcquired: boolean;
     readonly MetadataNames: IEnumerable<System_Internal.String>;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     GetAllMetadata(): IEnumerable<KeyValuePair<System_Internal.String, unknown>>;
     TryGetMetadata(metadataName: string, metadata: unknown): boolean;
     TryGetMetadata<T>(metadataName: MetadataName_1<T>, metadata: T): boolean;
 }
 
 
-export const RateLimitLease: {
+export const RateLimitLease: (abstract new() => RateLimitLease) & {
 };
 
 
@@ -180,7 +199,7 @@ export interface ReplenishingRateLimiter$instance extends RateLimiter {
 }
 
 
-export const ReplenishingRateLimiter: {
+export const ReplenishingRateLimiter: (abstract new() => ReplenishingRateLimiter) & {
 };
 
 
@@ -190,6 +209,11 @@ export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimit
     readonly IdleDuration: Nullable<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
+    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AttemptAcquireCore(permitCount: int): RateLimitLease;
+    Dispose(disposing: boolean): void;
+    Dispose(): void;
+    DisposeAsyncCore(): ValueTask;
     GetStatistics(): RateLimiterStatistics | undefined;
     TryReplenish(): boolean;
 }
@@ -223,6 +247,11 @@ export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter
     readonly IdleDuration: Nullable<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
+    AcquireAsyncCore(tokenCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AttemptAcquireCore(tokenCount: int): RateLimitLease;
+    Dispose(disposing: boolean): void;
+    Dispose(): void;
+    DisposeAsyncCore(): ValueTask;
     GetStatistics(): RateLimiterStatistics | undefined;
     TryReplenish(): boolean;
 }

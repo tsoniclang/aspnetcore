@@ -15,24 +15,27 @@ import type { IOutputFormatter, MediaTypeCollection, OutputFormatterCanWriteCont
 import type { ModelStateDictionary } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { IUrlHelperFactory } from "../../Microsoft.AspNetCore.Mvc.Routing/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import type { ActionContext, ApiBehaviorOptions, CompatibilityVersion, ContentResult, FileContentResult, FileStreamResult, IActionResult, LocalRedirectResult, MvcOptions, ObjectResult, PhysicalFileResult, ProblemDetails, RedirectResult, RedirectToActionResult, RedirectToPageResult, RedirectToRouteResult, ValidationProblemDetails, VirtualFileResult } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
+import type { ActionContext, ApiBehaviorOptions, CompatibilityVersion, ContentResult, FileContentResult, FileResult, FileStreamResult, IActionResult, LocalRedirectResult, MvcOptions, ObjectResult, PhysicalFileResult, ProblemDetails, RedirectResult, RedirectToActionResult, RedirectToPageResult, RedirectToRouteResult, ValidationProblemDetails, VirtualFileResult } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { RouteContext } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { IEnumerable, IList, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { EntityTagHeaderValue, RangeItemHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
+import type { IEnumerable, IList, IReadOnlyDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { Stream, TextReader, TextWriter } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Int32, InvalidOperationException, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { Attribute, Boolean as ClrBoolean, DateTimeOffset, Func, Int32, Int64, InvalidOperationException, Nullable, Object as ClrObject, String as ClrString, Type, ValueTuple, ValueType, Void } from "@tsonic/dotnet/System.js";
 import type { ParameterInfo, PropertyInfo } from "@tsonic/dotnet/System.Reflection.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { Encoding } from "@tsonic/dotnet/System.Text.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IFileInfo } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders.js";
 import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 import type { IOptions, IPostConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IActionContextAccessor$instance {
-    ActionContext: ActionContext;
+    get ActionContext(): ActionContext | undefined;
+    set ActionContext(value: ActionContext | undefined);
 }
 
 
@@ -160,7 +163,8 @@ export interface IStatusCodeActionResult$instance extends Microsoft_AspNetCore_M
 export type IStatusCodeActionResult = IStatusCodeActionResult$instance;
 
 export interface ActionContextAccessor$instance {
-    ActionContext: ActionContext;
+    get ActionContext(): ActionContext | undefined;
+    set ActionContext(value: ActionContext | undefined);
 }
 
 
@@ -197,7 +201,7 @@ export interface ActionDescriptorCollectionProvider$instance {
 }
 
 
-export const ActionDescriptorCollectionProvider: {
+export const ActionDescriptorCollectionProvider: (abstract new() => ActionDescriptorCollectionProvider) & {
 };
 
 
@@ -244,7 +248,7 @@ export const AmbiguousActionException: {
 export type AmbiguousActionException = AmbiguousActionException$instance;
 
 export interface CompatibilitySwitch_1$instance<TValue extends unknown> {
-    readonly IsValueSet: boolean;
+    IsValueSet: boolean;
     readonly Name: string;
     Value: TValue;
 }
@@ -264,11 +268,12 @@ export type CompatibilitySwitch_1<TValue> = CompatibilitySwitch_1$instance<TValu
 
 
 export interface ConfigureCompatibilityOptions_1$instance<TOptions extends IEnumerable<ICompatibilitySwitch>> {
+    readonly DefaultValues: IReadOnlyDictionary<System_Internal.String, unknown>;
     PostConfigure(name: string, options: TOptions): void;
 }
 
 
-export const ConfigureCompatibilityOptions_1: {
+export const ConfigureCompatibilityOptions_1: (abstract new<TOptions extends IEnumerable<ICompatibilitySwitch>>(loggerFactory: ILoggerFactory, compatibilityOptions: IOptions<MvcCompatibilityOptions>) => ConfigureCompatibilityOptions_1<TOptions>) & {
 };
 
 
@@ -332,6 +337,7 @@ export type DefaultStatusCodeAttribute = DefaultStatusCodeAttribute$instance;
 
 export interface FileContentResultExecutor$instance extends FileResultExecutorBase {
     ExecuteAsync(context: ActionContext, result: FileContentResult): Task;
+    WriteFileAsync(context: ActionContext, result: FileContentResult, range: RangeItemHeaderValue, rangeLength: long): Task;
 }
 
 
@@ -350,11 +356,15 @@ export type FileContentResultExecutor = FileContentResultExecutor$instance & __F
 
 
 export interface FileResultExecutorBase$instance {
+    SetHeadersAndLog(context: ActionContext, result: FileResult, fileLength: Nullable<System_Internal.Int64>, enableRangeProcessing: boolean, lastModified?: Nullable<DateTimeOffset>, etag?: EntityTagHeaderValue): ValueTuple<RangeItemHeaderValue, System_Internal.Int64, System_Internal.Boolean>;
 }
 
 
 export const FileResultExecutorBase: {
     new(logger: ILogger): FileResultExecutorBase;
+    readonly BufferSize: int;
+    CreateLogger<T>(factory: ILoggerFactory): ILogger;
+    WriteFileAsync(context: HttpContext, fileStream: Stream, range: RangeItemHeaderValue, rangeLength: long): Task;
 };
 
 
@@ -362,6 +372,7 @@ export type FileResultExecutorBase = FileResultExecutorBase$instance;
 
 export interface FileStreamResultExecutor$instance extends FileResultExecutorBase {
     ExecuteAsync(context: ActionContext, result: FileStreamResult): Task;
+    WriteFileAsync(context: ActionContext, result: FileStreamResult, range: RangeItemHeaderValue, rangeLength: long): Task;
 }
 
 
@@ -457,7 +468,7 @@ export interface OutputFormatterSelector$instance {
 }
 
 
-export const OutputFormatterSelector: {
+export const OutputFormatterSelector: (abstract new() => OutputFormatterSelector) & {
 };
 
 
@@ -465,6 +476,9 @@ export type OutputFormatterSelector = OutputFormatterSelector$instance;
 
 export interface PhysicalFileResultExecutor$instance extends FileResultExecutorBase {
     ExecuteAsync(context: ActionContext, result: PhysicalFileResult): Task;
+    GetFileInfo(path: string): unknown;
+    GetFileStream(path: string): Stream;
+    WriteFileAsync(context: ActionContext, result: PhysicalFileResult, range: RangeItemHeaderValue, rangeLength: long): Task;
 }
 
 
@@ -488,7 +502,7 @@ export interface ProblemDetailsFactory$instance {
 }
 
 
-export const ProblemDetailsFactory: {
+export const ProblemDetailsFactory: (abstract new() => ProblemDetailsFactory) & {
 };
 
 
@@ -572,6 +586,8 @@ export type RedirectToRouteResultExecutor = RedirectToRouteResultExecutor$instan
 
 export interface VirtualFileResultExecutor$instance extends FileResultExecutorBase {
     ExecuteAsync(context: ActionContext, result: VirtualFileResult): Task;
+    GetFileStream(fileInfo: IFileInfo): Stream;
+    WriteFileAsync(context: ActionContext, result: VirtualFileResult, fileInfo: IFileInfo, range: RangeItemHeaderValue, rangeLength: long): Task;
 }
 
 

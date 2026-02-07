@@ -6,11 +6,13 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
+import type { IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
+import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ComponentBase, EventCallbackWorkItem, IComponent, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle, RouteData, RouteView } from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData, RouteView } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { Claim, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
@@ -71,7 +73,7 @@ export interface AuthenticationStateProvider$instance {
 }
 
 
-export const AuthenticationStateProvider: {
+export const AuthenticationStateProvider: (abstract new() => AuthenticationStateProvider) & {
 };
 
 
@@ -79,12 +81,13 @@ export type AuthenticationStateProvider = AuthenticationStateProvider$instance;
 
 export interface AuthorizeRouteView$instance extends RouteView {
     get Authorizing(): RenderFragment | undefined;
-    set Authorizing(value: RenderFragment);
+    set Authorizing(value: RenderFragment | undefined);
     get NotAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set NotAuthorized(value: RenderFragment_1<AuthenticationState>);
+    set NotAuthorized(value: RenderFragment_1<AuthenticationState> | undefined);
     get Resource(): unknown | undefined;
-    set Resource(value: unknown);
+    set Resource(value: unknown | undefined);
     Attach(renderHandle: RenderHandle): void;
+    Render(builder: RenderTreeBuilder): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -102,11 +105,15 @@ export type AuthorizeRouteView = AuthorizeRouteView$instance & __AuthorizeRouteV
 
 
 export interface AuthorizeView$instance extends AuthorizeViewCore$instance {
-    Policy: string;
-    Roles: string;
+    get Policy(): string | undefined;
+    set Policy(value: string | undefined);
+    get Roles(): string | undefined;
+    set Roles(value: string | undefined);
     Attach(renderHandle: RenderHandle): void;
+    GetAuthorizeData(): IAuthorizeData[];
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -127,22 +134,27 @@ export type AuthorizeView = AuthorizeView$instance & __AuthorizeView$views;
 
 export interface AuthorizeViewCore$instance extends ComponentBase {
     get Authorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set Authorized(value: RenderFragment_1<AuthenticationState>);
+    set Authorized(value: RenderFragment_1<AuthenticationState> | undefined);
     get Authorizing(): RenderFragment | undefined;
-    set Authorizing(value: RenderFragment);
-    ChildContent: RenderFragment_1<AuthenticationState>;
+    set Authorizing(value: RenderFragment | undefined);
+    get ChildContent(): RenderFragment_1<AuthenticationState> | undefined;
+    set ChildContent(value: RenderFragment_1<AuthenticationState> | undefined);
     get NotAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set NotAuthorized(value: RenderFragment_1<AuthenticationState>);
+    set NotAuthorized(value: RenderFragment_1<AuthenticationState> | undefined);
     get Resource(): unknown | undefined;
-    set Resource(value: unknown);
+    set Resource(value: unknown | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(builder: RenderTreeBuilder): void;
+    GetAuthorizeData(): IAuthorizeData[] | undefined;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnParametersSetAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
-export const AuthorizeViewCore: {
+export const AuthorizeViewCore: (abstract new() => AuthorizeViewCore) & {
 };
 
 
@@ -152,16 +164,20 @@ export interface __AuthorizeViewCore$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface AuthorizeViewCore$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface AuthorizeViewCore$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type AuthorizeViewCore = AuthorizeViewCore$instance & __AuthorizeViewCore$views;
 
 
 export interface CascadingAuthenticationState$instance extends ComponentBase {
-    ChildContent: RenderFragment;
+    get ChildContent(): RenderFragment | undefined;
+    set ChildContent(value: RenderFragment | undefined);
     Attach(renderHandle: RenderHandle): void;
+    BuildRenderTree(__builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
+    OnAfterRenderAsync(firstRender: boolean): Task;
     OnAfterRenderAsync(): Task;
+    OnInitialized(): void;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -177,7 +193,7 @@ export interface __CascadingAuthenticationState$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface CascadingAuthenticationState$instance extends Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface CascadingAuthenticationState$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
 
 export type CascadingAuthenticationState = CascadingAuthenticationState$instance & __CascadingAuthenticationState$views;
 

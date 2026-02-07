@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.RequestHeaders::Get(System.String):T",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -50,6 +55,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -69,6 +75,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -88,6 +95,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -107,6 +115,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -126,6 +135,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -147,6 +157,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -165,6 +176,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -183,6 +195,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -201,6 +214,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -219,6 +233,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -237,6 +252,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -255,6 +271,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -273,6 +290,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -291,6 +309,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -309,6 +328,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -327,6 +347,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -345,6 +366,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -363,6 +385,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -381,6 +404,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -399,6 +423,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -417,6 +442,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -435,6 +461,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -453,6 +480,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -471,6 +499,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -489,6 +518,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -507,6 +537,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -525,6 +556,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         }
@@ -539,6 +571,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.IHeaderDictionary):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.RequestHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         }
@@ -555,6 +588,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.Headers.ResponseHeaders::Get(System.String):T",
@@ -571,6 +608,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -590,6 +628,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -609,6 +648,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -628,6 +668,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -647,6 +688,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -666,6 +708,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions",
           "isExtensionMethod": false
@@ -687,6 +730,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -705,6 +749,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -723,6 +768,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -741,6 +787,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -759,6 +806,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -777,6 +825,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -795,6 +844,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -813,6 +863,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -831,6 +882,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -849,6 +901,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -867,6 +920,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         },
@@ -885,6 +939,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         }
@@ -899,6 +954,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.IHeaderDictionary):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Headers.ResponseHeaders",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Extensions"
         }

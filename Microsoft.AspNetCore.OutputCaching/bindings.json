@@ -15,6 +15,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
+          "clrName": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore::TryGetAsync(System.String,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -31,6 +37,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -50,6 +57,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheBufferStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -69,6 +77,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -88,6 +97,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -107,6 +117,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -145,6 +156,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -180,6 +192,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -217,6 +230,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -236,6 +250,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -255,6 +270,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.IOutputCacheStore",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -276,6 +292,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -293,6 +313,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -311,6 +332,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -329,6 +351,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -347,6 +370,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -365,6 +389,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -383,6 +408,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -397,6 +423,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.CacheVaryByRules",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -413,6 +440,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -430,6 +461,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -448,6 +480,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -466,6 +499,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -484,6 +518,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -502,6 +537,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -520,6 +556,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -538,6 +575,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -552,6 +590,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -568,6 +607,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -585,6 +628,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -603,6 +647,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -621,6 +666,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -639,6 +685,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -657,6 +704,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -675,6 +723,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -693,6 +742,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -711,6 +761,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -729,6 +780,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -743,6 +795,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -759,6 +812,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions::AddPolicy(System.String,Microsoft.AspNetCore.OutputCaching.IOutputCachePolicy):System.Void",
@@ -775,6 +832,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -794,6 +852,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -813,6 +872,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -832,6 +892,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -851,6 +912,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -870,6 +932,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -891,6 +954,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -909,6 +973,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -927,6 +992,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -945,6 +1011,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         },
@@ -953,16 +1020,17 @@
           "clrName": "ApplicationServices",
           "metadataToken": 385876012,
           "canonicalSignature": ":System.IServiceProvider",
-          "normalizedSignature": "ApplicationServices|:System.IServiceProvider|static=false|accessor=get",
+          "normalizedSignature": "ApplicationServices|:System.IServiceProvider|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -977,6 +1045,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCacheOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching"
         }
@@ -993,6 +1062,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.OutputCaching:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder::AddPolicy(System.Type):Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
@@ -1009,6 +1082,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1028,6 +1102,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1047,6 +1122,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1066,6 +1142,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1085,6 +1162,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1104,6 +1182,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1123,6 +1202,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1142,6 +1222,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1161,6 +1242,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1180,6 +1262,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1199,6 +1282,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1218,6 +1302,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1237,6 +1322,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1256,6 +1342,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1275,6 +1362,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1294,6 +1382,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1313,6 +1402,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1332,6 +1422,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1351,6 +1442,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1370,6 +1462,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1389,6 +1482,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false
@@ -1408,6 +1502,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.OutputCaching",
           "isExtensionMethod": false

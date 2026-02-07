@@ -20,7 +20,7 @@ export interface ExtendedWebSocketAcceptContext$instance extends WebSocketAccept
     KeepAliveInterval: Nullable<TimeSpan>;
     ReceiveBufferSize: Nullable<System_Internal.Int32>;
     get SubProtocol(): string | undefined;
-    set SubProtocol(value: string);
+    set SubProtocol(value: string | undefined);
 }
 
 

@@ -50,7 +50,7 @@ export interface AntiforgeryOptions$instance {
     Cookie: CookieBuilder;
     FormFieldName: string;
     get HeaderName(): string | undefined;
-    set HeaderName(value: string);
+    set HeaderName(value: string | undefined);
     SuppressReadingTokenFromFormBody: boolean;
     SuppressXFrameOptionsHeader: boolean;
 }

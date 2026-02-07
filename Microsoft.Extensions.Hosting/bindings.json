@@ -18,6 +18,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -35,6 +39,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.WebHostBuilderOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
         }
@@ -49,6 +54,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.WebHostBuilderOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting"
         }
@@ -65,6 +71,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions::ConfigureWebHostDefaults(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
@@ -81,6 +91,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.GenericHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": true
@@ -100,6 +111,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.GenericHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore",
           "isExtensionMethod": true
@@ -121,6 +133,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting:Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions::ConfigureWebHost(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.AspNetCore.Hosting.IWebHostBuilder,Microsoft.AspNetCore.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
@@ -137,6 +153,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
@@ -156,6 +173,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true
@@ -175,6 +193,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting",
           "isExtensionMethod": true

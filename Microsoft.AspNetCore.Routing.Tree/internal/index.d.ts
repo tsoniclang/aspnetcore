@@ -33,10 +33,8 @@ export interface InboundRouteEntry$instance {
     Handler: IRouter;
     Order: int;
     Precedence: decimal;
-    get RouteName(): string | undefined;
-    set RouteName(value: string);
-    get RouteTemplate(): RouteTemplate | undefined;
-    set RouteTemplate(value: RouteTemplate);
+    RouteName: string;
+    RouteTemplate: RouteTemplate;
 }
 
 
@@ -68,10 +66,8 @@ export interface OutboundRouteEntry$instance {
     Order: int;
     Precedence: decimal;
     RequiredLinkValues: RouteValueDictionary;
-    get RouteName(): string | undefined;
-    set RouteName(value: string);
-    get RouteTemplate(): RouteTemplate | undefined;
-    set RouteTemplate(value: RouteTemplate);
+    RouteName: string;
+    RouteTemplate: RouteTemplate;
 }
 
 
@@ -94,7 +90,6 @@ export interface TreeRouteBuilder$instance {
 
 
 export const TreeRouteBuilder: {
-    new(): TreeRouteBuilder;
 };
 
 
@@ -108,7 +103,6 @@ export interface TreeRouter$instance {
 
 
 export const TreeRouter: {
-    new(): TreeRouter;
     readonly RouteGroupKey: string;
 };
 

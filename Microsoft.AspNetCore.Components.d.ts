@@ -14,7 +14,7 @@ import type { IBufferWriter, ReadOnlySequence } from '@tsonic/dotnet/System.Buff
 import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
 import type { CultureInfo } from '@tsonic/dotnet/System.Globalization.js';
-import type { Action, AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, EventArgs, EventHandler, Exception, Func, Guid, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, Single, String as ClrString, TimeOnly, Type, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { Action, AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, EventArgs, EventHandler, Exception, Func, Guid, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, Single, String as ClrString, TimeOnly, Type, UnhandledExceptionEventArgs, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';

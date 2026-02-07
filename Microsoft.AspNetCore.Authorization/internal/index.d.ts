@@ -90,11 +90,11 @@ export type IAuthorizationService = IAuthorizationService$instance;
 
 export interface IAuthorizeData$instance {
     get Policy(): string | undefined;
-    set Policy(value: string);
+    set Policy(value: string | undefined);
     get Roles(): string | undefined;
-    set Roles(value: string);
+    set Roles(value: string | undefined);
     get AuthenticationSchemes(): string | undefined;
-    set AuthenticationSchemes(value: string);
+    set AuthenticationSchemes(value: string | undefined);
 }
 
 
@@ -134,14 +134,13 @@ export const AuthorizationBuilder: {
 export type AuthorizationBuilder = AuthorizationBuilder$instance;
 
 export interface AuthorizationFailure$instance {
-    readonly FailCalled: boolean;
-    readonly FailedRequirements: IEnumerable<IAuthorizationRequirement>;
-    readonly FailureReasons: IEnumerable<AuthorizationFailureReason>;
+    FailCalled: boolean;
+    FailedRequirements: IEnumerable<IAuthorizationRequirement>;
+    FailureReasons: IEnumerable<AuthorizationFailureReason>;
 }
 
 
 export const AuthorizationFailure: {
-    new(): AuthorizationFailure;
     ExplicitFail(): AuthorizationFailure;
     Failed(reasons: IEnumerable<AuthorizationFailureReason>): AuthorizationFailure;
     Failed(failed: IEnumerable<IAuthorizationRequirement>): AuthorizationFailure;
@@ -165,10 +164,11 @@ export type AuthorizationFailureReason = AuthorizationFailureReason$instance;
 
 export interface AuthorizationHandler_1$instance<TRequirement extends IAuthorizationRequirement> {
     HandleAsync(context: AuthorizationHandlerContext): Task;
+    HandleRequirementAsync(context: AuthorizationHandlerContext, requirement: TRequirement): Task;
 }
 
 
-export const AuthorizationHandler_1: {
+export const AuthorizationHandler_1: (abstract new<TRequirement extends IAuthorizationRequirement>() => AuthorizationHandler_1<TRequirement>) & {
 };
 
 
@@ -183,10 +183,11 @@ export type AuthorizationHandler_1<TRequirement extends IAuthorizationRequiremen
 
 export interface AuthorizationHandler_2$instance<TRequirement extends IAuthorizationRequirement, TResource> {
     HandleAsync(context: AuthorizationHandlerContext): Task;
+    HandleRequirementAsync(context: AuthorizationHandlerContext, requirement: TRequirement, resource: TResource): Task;
 }
 
 
-export const AuthorizationHandler_2: {
+export const AuthorizationHandler_2: (abstract new<TRequirement extends IAuthorizationRequirement, TResource>() => AuthorizationHandler_2<TRequirement, TResource>) & {
 };
 
 
@@ -237,7 +238,7 @@ export type AuthorizationMiddleware = AuthorizationMiddleware$instance;
 export interface AuthorizationOptions$instance {
     DefaultPolicy: AuthorizationPolicy;
     get FallbackPolicy(): AuthorizationPolicy | undefined;
-    set FallbackPolicy(value: AuthorizationPolicy);
+    set FallbackPolicy(value: AuthorizationPolicy | undefined);
     InvokeHandlersAfterFailure: boolean;
     AddPolicy(name: string, policy: AuthorizationPolicy): void;
     AddPolicy(name: string, configurePolicy: Action<AuthorizationPolicyBuilder>): void;
@@ -297,13 +298,13 @@ export const AuthorizationPolicyBuilder: {
 export type AuthorizationPolicyBuilder = AuthorizationPolicyBuilder$instance;
 
 export interface AuthorizationResult$instance {
-    readonly Failure: AuthorizationFailure | undefined;
-    readonly Succeeded: boolean;
+    get Failure(): AuthorizationFailure | undefined;
+    set Failure(value: AuthorizationFailure | undefined);
+    Succeeded: boolean;
 }
 
 
 export const AuthorizationResult: {
-    new(): AuthorizationResult;
     Failed(): AuthorizationResult;
     Failed(failure: AuthorizationFailure): AuthorizationResult;
     Success(): AuthorizationResult;
@@ -314,11 +315,11 @@ export type AuthorizationResult = AuthorizationResult$instance;
 
 export interface AuthorizeAttribute$instance extends Attribute {
     get AuthenticationSchemes(): string | undefined;
-    set AuthenticationSchemes(value: string);
+    set AuthenticationSchemes(value: string | undefined);
     get Policy(): string | undefined;
-    set Policy(value: string);
+    set Policy(value: string | undefined);
     get Roles(): string | undefined;
-    set Roles(value: string);
+    set Roles(value: string | undefined);
     ToString(): string;
 }
 

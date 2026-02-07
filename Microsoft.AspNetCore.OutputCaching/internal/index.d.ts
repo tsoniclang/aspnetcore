@@ -52,7 +52,7 @@ export type IOutputCacheStore = IOutputCacheStore$instance;
 
 export interface CacheVaryByRules$instance {
     get CacheKeyPrefix(): string | undefined;
-    set CacheKeyPrefix(value: string);
+    set CacheKeyPrefix(value: string | undefined);
     HeaderNames: StringValues;
     QueryKeys: StringValues;
     RouteValueNames: StringValues;
@@ -72,14 +72,15 @@ export interface OutputCacheAttribute$instance extends Attribute {
     Duration: int;
     NoStore: boolean;
     get PolicyName(): string | undefined;
-    set PolicyName(value: string);
-    Tags: string[];
+    set PolicyName(value: string | undefined);
+    get Tags(): string[] | undefined;
+    set Tags(value: string[] | undefined);
     get VaryByHeaderNames(): string[] | undefined;
-    set VaryByHeaderNames(value: string[]);
+    set VaryByHeaderNames(value: string[] | undefined);
     get VaryByQueryKeys(): string[] | undefined;
-    set VaryByQueryKeys(value: string[]);
+    set VaryByQueryKeys(value: string[] | undefined);
     get VaryByRouteValueNames(): string[] | undefined;
-    set VaryByRouteValueNames(value: string[]);
+    set VaryByRouteValueNames(value: string[] | undefined);
 }
 
 
@@ -111,7 +112,7 @@ export const OutputCacheContext: {
 export type OutputCacheContext = OutputCacheContext$instance;
 
 export interface OutputCacheOptions$instance {
-    readonly ApplicationServices: IServiceProvider;
+    ApplicationServices: IServiceProvider;
     DefaultExpirationTimeSpan: TimeSpan;
     MaximumBodySize: long;
     SizeLimit: long;
@@ -159,7 +160,6 @@ export interface OutputCachePolicyBuilder$instance {
 
 
 export const OutputCachePolicyBuilder: {
-    new(): OutputCachePolicyBuilder;
 };
 
 

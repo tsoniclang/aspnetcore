@@ -40,11 +40,13 @@ export interface IActionInvokerProvider$instance {
 export type IActionInvokerProvider = IActionInvokerProvider$instance;
 
 export interface ActionDescriptor$instance {
-    ActionConstraints: IList<IActionConstraintMetadata>;
+    get ActionConstraints(): IList<IActionConstraintMetadata> | undefined;
+    set ActionConstraints(value: IList<IActionConstraintMetadata> | undefined);
     get AttributeRouteInfo(): AttributeRouteInfo | undefined;
-    set AttributeRouteInfo(value: AttributeRouteInfo);
+    set AttributeRouteInfo(value: AttributeRouteInfo | undefined);
     BoundProperties: IList<ParameterDescriptor>;
-    DisplayName: string;
+    get DisplayName(): string | undefined;
+    set DisplayName(value: string | undefined);
     EndpointMetadata: IList<unknown>;
     FilterDescriptors: IList<FilterDescriptor>;
     readonly Id: string;
@@ -75,7 +77,8 @@ export type ActionDescriptorProviderContext = ActionDescriptorProviderContext$in
 
 export interface ActionInvokerProviderContext$instance {
     readonly ActionContext: ActionContext;
-    Result: IActionInvoker;
+    get Result(): IActionInvoker | undefined;
+    set Result(value: IActionInvoker | undefined);
 }
 
 
@@ -87,7 +90,8 @@ export const ActionInvokerProviderContext: {
 export type ActionInvokerProviderContext = ActionInvokerProviderContext$instance;
 
 export interface ParameterDescriptor$instance {
-    BindingInfo: BindingInfo;
+    get BindingInfo(): BindingInfo | undefined;
+    set BindingInfo(value: BindingInfo | undefined);
     Name: string;
     ParameterType: Type;
 }

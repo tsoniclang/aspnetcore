@@ -29,13 +29,13 @@ export type IViewCompilerProvider = IViewCompilerProvider$instance;
 
 export interface CompiledViewDescriptor$instance {
     get ExpirationTokens(): IList<IChangeToken> | undefined;
-    set ExpirationTokens(value: IList<IChangeToken>);
+    set ExpirationTokens(value: IList<IChangeToken> | undefined);
     get Item(): RazorCompiledItem | undefined;
-    set Item(value: RazorCompiledItem);
+    set Item(value: RazorCompiledItem | undefined);
     RelativePath: string;
-    readonly Type: Type;
+    readonly Type: Type | undefined;
     get ViewAttribute(): RazorViewAttribute | undefined;
-    set ViewAttribute(value: RazorViewAttribute);
+    set ViewAttribute(value: RazorViewAttribute | undefined);
 }
 
 

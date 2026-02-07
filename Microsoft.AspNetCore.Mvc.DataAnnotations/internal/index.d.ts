@@ -10,14 +10,15 @@ import * as Microsoft_AspNetCore_Mvc_Infrastructure_Internal from "../../Microso
 import type { ICompatibilitySwitch } from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import type { ClientModelValidationContext, IClientModelValidator, ModelValidationContextBase } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
+import type { ModelMetadata } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
 import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
 import * as System_ComponentModel_DataAnnotations_Internal from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
 import type { RequiredAttribute, ValidationAttribute } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Func, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
+import type { Attribute, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 import type { IStringLocalizer, IStringLocalizerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Localization.js";
 
 export interface IAttributeAdapter$instance extends IClientModelValidator {
@@ -39,12 +40,11 @@ export type IValidationAttributeAdapterProvider = IValidationAttributeAdapterPro
 
 export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAttribute> extends ValidationAttributeAdapter_1$instance<TAttribute> {
     AddValidation(context: ClientModelValidationContext): void;
-    GetErrorMessage(validationContext: ModelValidationContextBase): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
 
 
-export const AttributeAdapterBase_1: {
-    new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer): AttributeAdapterBase_1<TAttribute>;
+export const AttributeAdapterBase_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer) => AttributeAdapterBase_1<TAttribute>) & {
 };
 
 
@@ -52,8 +52,6 @@ export interface __AttributeAdapterBase_1$views<TAttribute extends ValidationAtt
     As_IClientModelValidator(): Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance;
     As_IAttributeAdapter(): IAttributeAdapter$instance;
 }
-
-export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAttribute> extends IAttributeAdapter$instance {}
 
 export type AttributeAdapterBase_1<TAttribute extends ValidationAttribute> = AttributeAdapterBase_1$instance<TAttribute> & __AttributeAdapterBase_1$views<TAttribute>;
 
@@ -73,6 +71,7 @@ export type MvcDataAnnotationsLocalizationOptions = MvcDataAnnotationsLocalizati
 export interface RequiredAttributeAdapter$instance extends AttributeAdapterBase_1$instance<RequiredAttribute> {
     AddValidation(context: ClientModelValidationContext): void;
     GetErrorMessage(validationContext: ModelValidationContextBase): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
 
 
@@ -92,11 +91,12 @@ export type RequiredAttributeAdapter = RequiredAttributeAdapter$instance & __Req
 export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> {
     readonly Attribute: TAttribute;
     AddValidation(context: ClientModelValidationContext): void;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
 
 
-export const ValidationAttributeAdapter_1: {
-    new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer): ValidationAttributeAdapter_1<TAttribute>;
+export const ValidationAttributeAdapter_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer) => ValidationAttributeAdapter_1<TAttribute>) & {
+    MergeAttribute<TAttribute extends ValidationAttribute>(attributes: IDictionary<System_Internal.String, System_Internal.String>, key: string, value: string): boolean;
 };
 
 
@@ -133,7 +133,7 @@ export interface ValidationProviderAttribute$instance extends Attribute {
 }
 
 
-export const ValidationProviderAttribute: {
+export const ValidationProviderAttribute: (abstract new() => ValidationProviderAttribute) & {
 };
 
 

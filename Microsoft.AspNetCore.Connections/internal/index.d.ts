@@ -143,16 +143,16 @@ export interface BaseConnectionContext$instance {
     readonly Features: IFeatureCollection;
     Items: IDictionary<unknown, unknown | undefined>;
     get LocalEndPoint(): EndPoint | undefined;
-    set LocalEndPoint(value: EndPoint);
+    set LocalEndPoint(value: EndPoint | undefined);
     get RemoteEndPoint(): EndPoint | undefined;
-    set RemoteEndPoint(value: EndPoint);
+    set RemoteEndPoint(value: EndPoint | undefined);
     Abort(): void;
     Abort(abortReason: ConnectionAbortedException): void;
     DisposeAsync(): ValueTask;
 }
 
 
-export const BaseConnectionContext: {
+export const BaseConnectionContext: (abstract new() => BaseConnectionContext) & {
 };
 
 
@@ -199,7 +199,7 @@ export interface ConnectionContext$instance extends BaseConnectionContext {
 }
 
 
-export const ConnectionContext: {
+export const ConnectionContext: (abstract new() => ConnectionContext) & {
 };
 
 
@@ -210,7 +210,7 @@ export interface ConnectionHandler$instance {
 }
 
 
-export const ConnectionHandler: {
+export const ConnectionHandler: (abstract new() => ConnectionHandler) & {
 };
 
 
@@ -243,17 +243,18 @@ export type ConnectionResetException = ConnectionResetException$instance;
 
 export interface DefaultConnectionContext$instance extends ConnectionContext {
     get Application(): IDuplexPipe | undefined;
-    set Application(value: IDuplexPipe);
+    set Application(value: IDuplexPipe | undefined);
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
     Items: IDictionary<unknown, unknown | undefined>;
     get LocalEndPoint(): EndPoint | undefined;
-    set LocalEndPoint(value: EndPoint);
+    set LocalEndPoint(value: EndPoint | undefined);
     get RemoteEndPoint(): EndPoint | undefined;
-    set RemoteEndPoint(value: EndPoint);
+    set RemoteEndPoint(value: EndPoint | undefined);
     Transport: IDuplexPipe;
-    User: ClaimsPrincipal;
+    get User(): ClaimsPrincipal | undefined;
+    set User(value: ClaimsPrincipal | undefined);
     Abort(abortReason: ConnectionAbortedException): void;
     Abort(): void;
     DisposeAsync(): ValueTask;
@@ -296,7 +297,7 @@ export type FileHandleEndPoint = FileHandleEndPoint$instance;
 
 export interface MemoryPoolOptions$instance {
     get Owner(): string | undefined;
-    set Owner(value: string);
+    set Owner(value: string | undefined);
 }
 
 
@@ -334,7 +335,7 @@ export interface MultiplexedConnectionContext$instance extends BaseConnectionCon
 }
 
 
-export const MultiplexedConnectionContext: {
+export const MultiplexedConnectionContext: (abstract new() => MultiplexedConnectionContext) & {
 };
 
 
@@ -360,7 +361,8 @@ export type NamedPipeEndPoint = NamedPipeEndPoint$instance;
 export interface TlsConnectionCallbackContext$instance {
     ClientHelloInfo: SslClientHelloInfo;
     Connection: BaseConnectionContext;
-    State: unknown;
+    get State(): unknown | undefined;
+    set State(value: unknown | undefined);
 }
 
 
@@ -375,7 +377,7 @@ export interface TlsConnectionCallbackOptions$instance {
     ApplicationProtocols: List<SslApplicationProtocol>;
     OnConnection: Func<TlsConnectionCallbackContext, CancellationToken, ValueTask<SslServerAuthenticationOptions>>;
     get OnConnectionState(): unknown | undefined;
-    set OnConnectionState(value: unknown);
+    set OnConnectionState(value: unknown | undefined);
 }
 
 

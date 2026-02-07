@@ -75,7 +75,7 @@ export type ITimeLimitedDataProtector = ITimeLimitedDataProtector$instance;
 
 export interface DataProtectionOptions$instance {
     get ApplicationDiscriminator(): string | undefined;
-    set ApplicationDiscriminator(value: string);
+    set ApplicationDiscriminator(value: string | undefined);
 }
 
 

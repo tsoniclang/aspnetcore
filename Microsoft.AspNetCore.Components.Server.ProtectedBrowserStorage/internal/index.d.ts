@@ -14,7 +14,7 @@ import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ProtectedBrowserStorageResult_1$instance<TValue> {
     readonly Success: boolean;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
 }
 
 

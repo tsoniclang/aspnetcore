@@ -11,7 +11,7 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
 import type { IMemoryCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Memory.js";
 
 export interface TagHelperMemoryCacheProvider$instance {
-    readonly Cache: IMemoryCache;
+    Cache: IMemoryCache;
 }
 
 

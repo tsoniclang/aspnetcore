@@ -34,7 +34,6 @@ export interface Accepted$instance {
 
 
 export const Accepted: {
-    new(): Accepted;
 };
 
 
@@ -52,13 +51,12 @@ export type Accepted = Accepted$instance & __Accepted$views;
 export interface Accepted_1$instance<TValue> {
     readonly Location: string | undefined;
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const Accepted_1: {
-    new<TValue>(): Accepted_1<TValue>;
 };
 
 
@@ -70,7 +68,7 @@ export interface __Accepted_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Accepted_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface Accepted_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type Accepted_1<TValue> = Accepted_1$instance<TValue> & __Accepted_1$views<TValue>;
 
@@ -84,7 +82,6 @@ export interface AcceptedAtRoute$instance {
 
 
 export const AcceptedAtRoute: {
-    new(): AcceptedAtRoute;
 };
 
 
@@ -103,13 +100,12 @@ export interface AcceptedAtRoute_1$instance<TValue> {
     readonly RouteName: string | undefined;
     readonly RouteValues: RouteValueDictionary;
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const AcceptedAtRoute_1: {
-    new<TValue>(): AcceptedAtRoute_1<TValue>;
 };
 
 
@@ -121,7 +117,7 @@ export interface __AcceptedAtRoute_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface AcceptedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface AcceptedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type AcceptedAtRoute_1<TValue> = AcceptedAtRoute_1$instance<TValue> & __AcceptedAtRoute_1$views<TValue>;
 
@@ -133,7 +129,6 @@ export interface BadRequest$instance {
 
 
 export const BadRequest: {
-    new(): BadRequest;
 };
 
 
@@ -150,13 +145,12 @@ export type BadRequest = BadRequest$instance & __BadRequest$views;
 
 export interface BadRequest_1$instance<TValue> {
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const BadRequest_1: {
-    new<TValue>(): BadRequest_1<TValue>;
 };
 
 
@@ -168,20 +162,20 @@ export interface __BadRequest_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface BadRequest_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface BadRequest_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type BadRequest_1<TValue> = BadRequest_1$instance<TValue> & __BadRequest_1$views<TValue>;
 
 
 export interface ChallengeHttpResult$instance {
-    readonly AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
-    readonly Properties: AuthenticationProperties;
+    AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    get Properties(): AuthenticationProperties | undefined;
+    set Properties(value: AuthenticationProperties | undefined);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const ChallengeHttpResult: {
-    new(): ChallengeHttpResult;
 };
 
 
@@ -201,7 +195,6 @@ export interface Conflict$instance {
 
 
 export const Conflict: {
-    new(): Conflict;
 };
 
 
@@ -218,13 +211,12 @@ export type Conflict = Conflict$instance & __Conflict$views;
 
 export interface Conflict_1$instance<TValue> {
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const Conflict_1: {
-    new<TValue>(): Conflict_1<TValue>;
 };
 
 
@@ -236,21 +228,21 @@ export interface __Conflict_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Conflict_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface Conflict_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type Conflict_1<TValue> = Conflict_1$instance<TValue> & __Conflict_1$views<TValue>;
 
 
 export interface ContentHttpResult$instance {
-    readonly ContentType: string;
-    readonly ResponseContent: string | undefined;
-    readonly StatusCode: Nullable<System_Internal.Int32>;
+    ContentType: string;
+    get ResponseContent(): string | undefined;
+    set ResponseContent(value: string | undefined);
+    StatusCode: Nullable<System_Internal.Int32>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const ContentHttpResult: {
-    new(): ContentHttpResult;
 };
 
 
@@ -260,7 +252,7 @@ export interface __ContentHttpResult$views {
     As_IStatusCodeHttpResult(): Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance;
 }
 
-export interface ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance {}
+export interface ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type ContentHttpResult = ContentHttpResult$instance & __ContentHttpResult$views;
 
@@ -273,7 +265,6 @@ export interface Created$instance {
 
 
 export const Created: {
-    new(): Created;
 };
 
 
@@ -291,13 +282,12 @@ export type Created = Created$instance & __Created$views;
 export interface Created_1$instance<TValue> {
     readonly Location: string | undefined;
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const Created_1: {
-    new<TValue>(): Created_1<TValue>;
 };
 
 
@@ -309,7 +299,7 @@ export interface __Created_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Created_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface Created_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type Created_1<TValue> = Created_1$instance<TValue> & __Created_1$views<TValue>;
 
@@ -323,7 +313,6 @@ export interface CreatedAtRoute$instance {
 
 
 export const CreatedAtRoute: {
-    new(): CreatedAtRoute;
 };
 
 
@@ -342,13 +331,12 @@ export interface CreatedAtRoute_1$instance<TValue> {
     readonly RouteName: string | undefined;
     readonly RouteValues: RouteValueDictionary;
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const CreatedAtRoute_1: {
-    new<TValue>(): CreatedAtRoute_1<TValue>;
 };
 
 
@@ -360,7 +348,7 @@ export interface __CreatedAtRoute_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface CreatedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface CreatedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type CreatedAtRoute_1<TValue> = CreatedAtRoute_1$instance<TValue> & __CreatedAtRoute_1$views<TValue>;
 
@@ -371,7 +359,6 @@ export interface EmptyHttpResult$instance {
 
 
 export const EmptyHttpResult: {
-    new(): EmptyHttpResult;
     readonly Instance: EmptyHttpResult;
 };
 
@@ -386,19 +373,20 @@ export type EmptyHttpResult = EmptyHttpResult$instance & __EmptyHttpResult$views
 
 
 export interface FileContentHttpResult$instance {
-    readonly ContentType: string;
-    readonly EnableRangeProcessing: boolean;
-    readonly EntityTag: EntityTagHeaderValue | undefined;
-    readonly FileContents: ReadOnlyMemory<System_Internal.Byte>;
-    readonly FileDownloadName: string;
-    readonly FileLength: Nullable<System_Internal.Int64>;
-    readonly LastModified: Nullable<DateTimeOffset>;
+    ContentType: string;
+    EnableRangeProcessing: boolean;
+    get EntityTag(): EntityTagHeaderValue | undefined;
+    set EntityTag(value: EntityTagHeaderValue | undefined);
+    FileContents: ReadOnlyMemory<System_Internal.Byte>;
+    get FileDownloadName(): string | undefined;
+    set FileDownloadName(value: string | undefined);
+    FileLength: Nullable<System_Internal.Int64>;
+    LastModified: Nullable<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const FileContentHttpResult: {
-    new(): FileContentHttpResult;
 };
 
 
@@ -408,25 +396,26 @@ export interface __FileContentHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface FileContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IFileHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {}
+export interface FileContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type FileContentHttpResult = FileContentHttpResult$instance & __FileContentHttpResult$views;
 
 
 export interface FileStreamHttpResult$instance {
-    readonly ContentType: string;
-    readonly EnableRangeProcessing: boolean;
-    readonly EntityTag: EntityTagHeaderValue | undefined;
-    readonly FileDownloadName: string;
-    readonly FileLength: Nullable<System_Internal.Int64>;
+    ContentType: string;
+    EnableRangeProcessing: boolean;
+    get EntityTag(): EntityTagHeaderValue | undefined;
+    set EntityTag(value: EntityTagHeaderValue | undefined);
+    get FileDownloadName(): string | undefined;
+    set FileDownloadName(value: string | undefined);
+    FileLength: Nullable<System_Internal.Int64>;
     readonly FileStream: Stream;
-    readonly LastModified: Nullable<DateTimeOffset>;
+    LastModified: Nullable<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const FileStreamHttpResult: {
-    new(): FileStreamHttpResult;
 };
 
 
@@ -436,20 +425,20 @@ export interface __FileStreamHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface FileStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IFileHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {}
+export interface FileStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type FileStreamHttpResult = FileStreamHttpResult$instance & __FileStreamHttpResult$views;
 
 
 export interface ForbidHttpResult$instance {
-    readonly AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
-    readonly Properties: AuthenticationProperties;
+    AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    get Properties(): AuthenticationProperties | undefined;
+    set Properties(value: AuthenticationProperties | undefined);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const ForbidHttpResult: {
-    new(): ForbidHttpResult;
 };
 
 
@@ -469,7 +458,6 @@ export interface InternalServerError$instance {
 
 
 export const InternalServerError: {
-    new(): InternalServerError;
 };
 
 
@@ -486,13 +474,12 @@ export type InternalServerError = InternalServerError$instance & __InternalServe
 
 export interface InternalServerError_1$instance<TValue> {
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const InternalServerError_1: {
-    new<TValue>(): InternalServerError_1<TValue>;
 };
 
 
@@ -504,22 +491,21 @@ export interface __InternalServerError_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface InternalServerError_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface InternalServerError_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type InternalServerError_1<TValue> = InternalServerError_1$instance<TValue> & __InternalServerError_1$views<TValue>;
 
 
 export interface JsonHttpResult_1$instance<TValue> {
     readonly ContentType: string;
-    readonly JsonSerializerOptions: JsonSerializerOptions;
+    readonly JsonSerializerOptions: JsonSerializerOptions | undefined;
     readonly StatusCode: Nullable<System_Internal.Int32>;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const JsonHttpResult_1: {
-    new<TValue>(): JsonHttpResult_1<TValue>;
 };
 
 
@@ -532,7 +518,7 @@ export interface __JsonHttpResult_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface JsonHttpResult_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface JsonHttpResult_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type JsonHttpResult_1<TValue> = JsonHttpResult_1$instance<TValue> & __JsonHttpResult_1$views<TValue>;
 
@@ -544,7 +530,6 @@ export interface NoContent$instance {
 
 
 export const NoContent: {
-    new(): NoContent;
 };
 
 
@@ -566,7 +551,6 @@ export interface NotFound$instance {
 
 
 export const NotFound: {
-    new(): NotFound;
 };
 
 
@@ -583,13 +567,12 @@ export type NotFound = NotFound$instance & __NotFound$views;
 
 export interface NotFound_1$instance<TValue> {
     readonly StatusCode: int;
-    readonly Value: TValue;
+    Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const NotFound_1: {
-    new<TValue>(): NotFound_1<TValue>;
 };
 
 
@@ -601,7 +584,7 @@ export interface __NotFound_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface NotFound_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface NotFound_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type NotFound_1<TValue> = NotFound_1$instance<TValue> & __NotFound_1$views<TValue>;
 
@@ -613,7 +596,6 @@ export interface Ok$instance {
 
 
 export const Ok: {
-    new(): Ok;
 };
 
 
@@ -630,13 +612,12 @@ export type Ok = Ok$instance & __Ok$views;
 
 export interface Ok_1$instance<TValue> {
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const Ok_1: {
-    new<TValue>(): Ok_1<TValue>;
 };
 
 
@@ -648,25 +629,26 @@ export interface __Ok_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Ok_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface Ok_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type Ok_1<TValue> = Ok_1$instance<TValue> & __Ok_1$views<TValue>;
 
 
 export interface PhysicalFileHttpResult$instance {
-    readonly ContentType: string;
-    readonly EnableRangeProcessing: boolean;
-    readonly EntityTag: EntityTagHeaderValue | undefined;
-    readonly FileDownloadName: string;
-    readonly FileLength: Nullable<System_Internal.Int64>;
+    ContentType: string;
+    EnableRangeProcessing: boolean;
+    get EntityTag(): EntityTagHeaderValue | undefined;
+    set EntityTag(value: EntityTagHeaderValue | undefined);
+    get FileDownloadName(): string | undefined;
+    set FileDownloadName(value: string | undefined);
+    FileLength: Nullable<System_Internal.Int64>;
     readonly FileName: string;
-    readonly LastModified: Nullable<DateTimeOffset>;
+    LastModified: Nullable<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const PhysicalFileHttpResult: {
-    new(): PhysicalFileHttpResult;
 };
 
 
@@ -676,7 +658,7 @@ export interface __PhysicalFileHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface PhysicalFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IFileHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {}
+export interface PhysicalFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type PhysicalFileHttpResult = PhysicalFileHttpResult$instance & __PhysicalFileHttpResult$views;
 
@@ -690,7 +672,6 @@ export interface ProblemHttpResult$instance {
 
 
 export const ProblemHttpResult: {
-    new(): ProblemHttpResult;
 };
 
 
@@ -709,18 +690,19 @@ export type ProblemHttpResult = ProblemHttpResult$instance & __ProblemHttpResult
 
 
 export interface PushStreamHttpResult$instance {
-    readonly ContentType: string;
-    readonly EnableRangeProcessing: boolean;
-    readonly EntityTag: EntityTagHeaderValue | undefined;
-    readonly FileDownloadName: string;
-    readonly FileLength: Nullable<System_Internal.Int64>;
-    readonly LastModified: Nullable<DateTimeOffset>;
+    ContentType: string;
+    EnableRangeProcessing: boolean;
+    get EntityTag(): EntityTagHeaderValue | undefined;
+    set EntityTag(value: EntityTagHeaderValue | undefined);
+    get FileDownloadName(): string | undefined;
+    set FileDownloadName(value: string | undefined);
+    FileLength: Nullable<System_Internal.Int64>;
+    LastModified: Nullable<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const PushStreamHttpResult: {
-    new(): PushStreamHttpResult;
 };
 
 
@@ -730,7 +712,7 @@ export interface __PushStreamHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface PushStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IFileHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {}
+export interface PushStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type PushStreamHttpResult = PushStreamHttpResult$instance & __PushStreamHttpResult$views;
 
@@ -794,7 +776,6 @@ export interface RedirectHttpResult$instance {
 
 
 export const RedirectHttpResult: {
-    new(): RedirectHttpResult;
     IsLocalUrl(url: string): boolean;
 };
 
@@ -819,7 +800,6 @@ export interface RedirectToRouteHttpResult$instance {
 
 
 export const RedirectToRouteHttpResult: {
-    new(): RedirectToRouteHttpResult;
 };
 
 
@@ -839,7 +819,6 @@ export interface Results_2$instance<TResult1 extends IResult, TResult2 extends I
 
 
 export const Results_2: {
-    new<TResult1 extends IResult, TResult2 extends IResult>(): Results_2<TResult1, TResult2>;
 };
 
 
@@ -861,7 +840,6 @@ export interface Results_3$instance<TResult1 extends IResult, TResult2 extends I
 
 
 export const Results_3: {
-    new<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult>(): Results_3<TResult1, TResult2, TResult3>;
 };
 
 
@@ -883,7 +861,6 @@ export interface Results_4$instance<TResult1 extends IResult, TResult2 extends I
 
 
 export const Results_4: {
-    new<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult>(): Results_4<TResult1, TResult2, TResult3, TResult4>;
 };
 
 
@@ -905,7 +882,6 @@ export interface Results_5$instance<TResult1 extends IResult, TResult2 extends I
 
 
 export const Results_5: {
-    new<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult>(): Results_5<TResult1, TResult2, TResult3, TResult4, TResult5>;
 };
 
 
@@ -927,7 +903,6 @@ export interface Results_6$instance<TResult1 extends IResult, TResult2 extends I
 
 
 export const Results_6: {
-    new<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult, TResult6 extends IResult>(): Results_6<TResult1, TResult2, TResult3, TResult4, TResult5, TResult6>;
 };
 
 
@@ -949,7 +924,6 @@ export interface ServerSentEventsResult_1$instance<T> {
 
 
 export const ServerSentEventsResult_1: {
-    new<T>(): ServerSentEventsResult_1<T>;
 };
 
 
@@ -965,15 +939,16 @@ export type ServerSentEventsResult_1<T> = ServerSentEventsResult_1$instance<T> &
 
 
 export interface SignInHttpResult$instance {
-    readonly AuthenticationScheme: string;
-    readonly Principal: ClaimsPrincipal;
-    readonly Properties: AuthenticationProperties;
+    get AuthenticationScheme(): string | undefined;
+    set AuthenticationScheme(value: string | undefined);
+    Principal: ClaimsPrincipal;
+    get Properties(): AuthenticationProperties | undefined;
+    set Properties(value: AuthenticationProperties | undefined);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const SignInHttpResult: {
-    new(): SignInHttpResult;
 };
 
 
@@ -987,14 +962,14 @@ export type SignInHttpResult = SignInHttpResult$instance & __SignInHttpResult$vi
 
 
 export interface SignOutHttpResult$instance {
-    readonly AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
-    readonly Properties: AuthenticationProperties;
+    AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    get Properties(): AuthenticationProperties | undefined;
+    set Properties(value: AuthenticationProperties | undefined);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const SignOutHttpResult: {
-    new(): SignOutHttpResult;
 };
 
 
@@ -1014,7 +989,6 @@ export interface StatusCodeHttpResult$instance {
 
 
 export const StatusCodeHttpResult: {
-    new(): StatusCodeHttpResult;
 };
 
 
@@ -1035,7 +1009,6 @@ export interface UnauthorizedHttpResult$instance {
 
 
 export const UnauthorizedHttpResult: {
-    new(): UnauthorizedHttpResult;
 };
 
 
@@ -1056,7 +1029,6 @@ export interface UnprocessableEntity$instance {
 
 
 export const UnprocessableEntity: {
-    new(): UnprocessableEntity;
 };
 
 
@@ -1073,13 +1045,12 @@ export type UnprocessableEntity = UnprocessableEntity$instance & __Unprocessable
 
 export interface UnprocessableEntity_1$instance<TValue> {
     readonly StatusCode: int;
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const UnprocessableEntity_1: {
-    new<TValue>(): UnprocessableEntity_1<TValue>;
 };
 
 
@@ -1091,21 +1062,20 @@ export interface __UnprocessableEntity_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface UnprocessableEntity_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<TValue>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
+export interface UnprocessableEntity_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
 
 export type UnprocessableEntity_1<TValue> = UnprocessableEntity_1$instance<TValue> & __UnprocessableEntity_1$views<TValue>;
 
 
 export interface Utf8ContentHttpResult$instance {
-    readonly ContentType: string;
-    readonly ResponseContent: ReadOnlyMemory<System_Internal.Byte>;
-    readonly StatusCode: Nullable<System_Internal.Int32>;
+    ContentType: string;
+    ResponseContent: ReadOnlyMemory<System_Internal.Byte>;
+    StatusCode: Nullable<System_Internal.Int32>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const Utf8ContentHttpResult: {
-    new(): Utf8ContentHttpResult;
 };
 
 
@@ -1115,7 +1085,7 @@ export interface __Utf8ContentHttpResult$views {
     As_IStatusCodeHttpResult(): Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance;
 }
 
-export interface Utf8ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance {}
+export interface Utf8ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type Utf8ContentHttpResult = Utf8ContentHttpResult$instance & __Utf8ContentHttpResult$views;
 
@@ -1129,7 +1099,6 @@ export interface ValidationProblem$instance {
 
 
 export const ValidationProblem: {
-    new(): ValidationProblem;
 };
 
 
@@ -1148,19 +1117,20 @@ export type ValidationProblem = ValidationProblem$instance & __ValidationProblem
 
 
 export interface VirtualFileHttpResult$instance {
-    readonly ContentType: string;
-    readonly EnableRangeProcessing: boolean;
-    readonly EntityTag: EntityTagHeaderValue | undefined;
-    readonly FileDownloadName: string;
-    readonly FileLength: Nullable<System_Internal.Int64>;
-    readonly FileName: string;
-    readonly LastModified: Nullable<DateTimeOffset>;
+    ContentType: string;
+    EnableRangeProcessing: boolean;
+    get EntityTag(): EntityTagHeaderValue | undefined;
+    set EntityTag(value: EntityTagHeaderValue | undefined);
+    get FileDownloadName(): string | undefined;
+    set FileDownloadName(value: string | undefined);
+    FileLength: Nullable<System_Internal.Int64>;
+    FileName: string;
+    LastModified: Nullable<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 
 export const VirtualFileHttpResult: {
-    new(): VirtualFileHttpResult;
 };
 
 
@@ -1170,7 +1140,7 @@ export interface __VirtualFileHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface VirtualFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IFileHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {}
+export interface VirtualFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type VirtualFileHttpResult = VirtualFileHttpResult$instance & __VirtualFileHttpResult$views;
 

@@ -47,7 +47,8 @@ export const RequestTimeoutAttribute: {
 export type RequestTimeoutAttribute = RequestTimeoutAttribute$instance;
 
 export interface RequestTimeoutOptions$instance {
-    DefaultPolicy: RequestTimeoutPolicy;
+    get DefaultPolicy(): RequestTimeoutPolicy | undefined;
+    set DefaultPolicy(value: RequestTimeoutPolicy | undefined);
     readonly Policies: IDictionary<System_Internal.String, RequestTimeoutPolicy>;
     AddPolicy(policyName: string, timeout: TimeSpan): RequestTimeoutOptions;
     AddPolicy(policyName: string, policy: RequestTimeoutPolicy): RequestTimeoutOptions;
@@ -65,7 +66,7 @@ export interface RequestTimeoutPolicy$instance {
     Timeout: Nullable<TimeSpan>;
     TimeoutStatusCode: Nullable<System_Internal.Int32>;
     get WriteTimeoutResponse(): RequestDelegate | undefined;
-    set WriteTimeoutResponse(value: RequestDelegate);
+    set WriteTimeoutResponse(value: RequestDelegate | undefined);
 }
 
 

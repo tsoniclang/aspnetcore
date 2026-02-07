@@ -15,6 +15,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference",
+        "clrName": "Microsoft.JSInterop.Implementation.JSObjectReference"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.IJSObjectReference",
+          "clrName": "Microsoft.JSInterop.IJSObjectReference"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.IJSInProcessObjectReference",
+          "clrName": "Microsoft.JSInterop.IJSInProcessObjectReference"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSInProcessObjectReference::Invoke(System.String,System.Object[]):TValue",
@@ -31,6 +53,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -50,6 +73,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -69,6 +93,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -88,6 +113,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -107,6 +133,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -126,6 +153,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -146,6 +174,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -166,6 +195,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -186,6 +216,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -206,6 +237,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -226,6 +258,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -246,6 +279,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -266,6 +300,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -286,6 +321,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -306,6 +342,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -326,6 +363,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -345,6 +383,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -364,6 +403,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -383,6 +423,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -402,6 +443,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -421,6 +463,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -429,7 +472,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSInProcessObjectReference::.ctor(Microsoft.JSInterop.JSInProcessRuntime,System.Int64):void",
+          "metadataToken": 100663500,
+          "canonicalSignature": "(Microsoft.JSInterop.JSInProcessRuntime,System.Int64):void",
+          "normalizedSignature": "constructor|(Microsoft.JSInterop.JSInProcessRuntime,System.Int64):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Microsoft.JSInterop.Implementation.JSInProcessObjectReference",
+          "declaringAssemblyName": "Microsoft.JSInterop"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference",
@@ -442,6 +497,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.IJSObjectReference",
+          "clrName": "Microsoft.JSInterop.IJSObjectReference"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference::InvokeAsync(System.String,System.Object[]):ValueTask_1",
@@ -458,6 +527,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -477,6 +547,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -496,6 +567,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -515,6 +587,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -534,6 +607,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -553,6 +627,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -572,6 +647,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -591,6 +667,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -610,6 +687,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
+          "declaringAssemblyName": "Microsoft.JSInterop",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference::ThrowIfDisposed():System.Void",
+          "clrName": "ThrowIfDisposed",
+          "metadataToken": 100663521,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "ThrowIfDisposed|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -629,6 +727,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -649,6 +748,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -669,6 +769,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -689,6 +790,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -709,6 +811,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -729,16 +832,49 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.JSInterop.IJSObjectReference"
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference::Id:System.Int64",
+          "clrName": "Id",
+          "metadataToken": 385876003,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "Id|:System.Int64|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
+          "declaringAssemblyName": "Microsoft.JSInterop"
+        }
+      ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference::.ctor(Microsoft.JSInterop.JSRuntime,System.Int64):void",
+          "metadataToken": 100663511,
+          "canonicalSignature": "(Microsoft.JSInterop.JSRuntime,System.Int64):void",
+          "normalizedSignature": "constructor|(Microsoft.JSInterop.JSRuntime,System.Int64):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReference",
+          "declaringAssemblyName": "Microsoft.JSInterop"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSStreamReference",
@@ -751,6 +887,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReference",
+        "clrName": "Microsoft.JSInterop.Implementation.JSObjectReference"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.IJSObjectReference",
+          "clrName": "Microsoft.JSInterop.IJSObjectReference"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.IJSStreamReference",
+          "clrName": "Microsoft.JSInterop.IJSStreamReference"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.IJSObjectReference::InvokeAsync(System.String,System.Object[]):ValueTask_1",
@@ -767,6 +921,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -787,6 +942,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -807,6 +963,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -827,6 +984,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -847,6 +1005,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -867,6 +1026,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSObjectReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -887,6 +1047,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.IJSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -907,6 +1068,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -926,6 +1088,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -945,6 +1108,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -964,6 +1128,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -983,6 +1148,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -1002,6 +1168,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false
@@ -1023,6 +1190,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop"
         },
@@ -1041,6 +1209,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.JSInterop.IJSStreamReference",
           "declaringClrType": "Microsoft.JSInterop.IJSStreamReference",
           "declaringAssemblyName": "Microsoft.JSInterop"
@@ -1061,6 +1230,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.JSInterop:Microsoft.JSInterop.Implementation.JSObjectReferenceJsonWorker::ReadJSObjectReferenceIdentifier(System.Text.Json.Utf8JsonReader\u0026):System.Int64",
@@ -1077,6 +1250,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReferenceJsonWorker",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false,
@@ -1102,6 +1276,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.JSInterop.Implementation.JSObjectReferenceJsonWorker",
           "declaringAssemblyName": "Microsoft.JSInterop",
           "isExtensionMethod": false

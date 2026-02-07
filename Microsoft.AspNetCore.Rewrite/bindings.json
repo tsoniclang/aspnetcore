@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RuleResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         }
@@ -93,6 +119,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.IRule",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": false
@@ -114,6 +141,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -131,6 +162,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         },
@@ -149,6 +181,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         },
@@ -167,6 +200,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         },
@@ -185,6 +219,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         }
@@ -199,6 +234,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         }
@@ -215,6 +251,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
@@ -231,6 +271,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": false
@@ -247,6 +288,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.AspNetCore.Rewrite,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         }
@@ -263,6 +305,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -280,6 +326,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         },
@@ -298,6 +345,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         }
@@ -312,6 +360,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite"
         }
@@ -328,6 +377,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions::AddApacheModRewrite(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String):Microsoft.AspNetCore.Rewrite.RewriteOptions",
@@ -344,6 +397,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -363,6 +417,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.ApacheModRewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -384,6 +439,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions::AddIISUrlRewrite(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.Extensions.FileProviders.IFileProvider,System.String,System.Boolean):Microsoft.AspNetCore.Rewrite.RewriteOptions",
@@ -400,6 +459,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -419,6 +479,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.IISUrlRewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -440,6 +501,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Rewrite:Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions::Add(Microsoft.AspNetCore.Rewrite.RewriteOptions,Microsoft.AspNetCore.Rewrite.IRule):Microsoft.AspNetCore.Rewrite.RewriteOptions",
@@ -456,6 +521,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -475,6 +541,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -494,6 +561,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -513,6 +581,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -532,6 +601,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -551,6 +621,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -570,6 +641,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -589,6 +661,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -608,6 +681,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -627,6 +701,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -646,6 +721,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -665,6 +741,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -684,6 +761,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -703,6 +781,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -722,6 +801,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -741,6 +821,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -760,6 +841,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -779,6 +861,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -798,6 +881,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -817,6 +901,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true
@@ -836,6 +921,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Rewrite",
           "isExtensionMethod": true

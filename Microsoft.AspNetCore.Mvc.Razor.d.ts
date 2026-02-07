@@ -25,6 +25,7 @@ import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.
 import type { ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { HtmlEncoder } from '@tsonic/dotnet/System.Text.Encodings.Web.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
+import type { IMemoryCache } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Memory.js';
 import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 import type { IOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js';
 

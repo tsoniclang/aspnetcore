@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -68,6 +74,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -86,6 +93,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -104,6 +112,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -118,6 +127,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -134,6 +144,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -151,6 +165,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -169,6 +184,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -183,6 +199,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetProperty",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -199,6 +216,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -216,6 +237,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -234,6 +256,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -248,6 +271,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetResponseHeader",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -264,6 +288,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -281,6 +309,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -299,6 +328,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         },
@@ -317,6 +347,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -331,6 +362,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets"
         }
@@ -347,6 +379,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Builder.IEndpointConventionBuilder",
+          "clrName": "Microsoft.AspNetCore.Builder.IEndpointConventionBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.StaticAssets:Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder::Add(System.Action_1[[Microsoft.AspNetCore.Builder.EndpointBuilder,Microsoft.AspNetCore.Http.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -363,6 +405,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
           "isExtensionMethod": false
@@ -382,6 +425,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.StaticAssets.StaticAssetsEndpointConventionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.StaticAssets",
           "isExtensionMethod": false
@@ -401,6 +445,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Builder.IEndpointConventionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false,

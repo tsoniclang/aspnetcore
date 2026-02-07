@@ -75,7 +75,8 @@ export const ActionConstraintContext: {
 export type ActionConstraintContext = ActionConstraintContext$instance;
 
 export interface ActionConstraintItem$instance {
-    Constraint: IActionConstraint;
+    get Constraint(): IActionConstraint | undefined;
+    set Constraint(value: IActionConstraint | undefined);
     IsReusable: boolean;
     readonly Metadata: IActionConstraintMetadata;
 }
@@ -109,7 +110,7 @@ export interface ActionMethodSelectorAttribute$instance extends Attribute, IActi
 }
 
 
-export const ActionMethodSelectorAttribute: {
+export const ActionMethodSelectorAttribute: (abstract new() => ActionMethodSelectorAttribute) & {
 };
 
 

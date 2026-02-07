@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -50,6 +51,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -69,6 +71,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -107,6 +110,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -142,6 +146,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -179,6 +184,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -198,6 +204,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -217,6 +224,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -254,6 +262,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvoker",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -291,6 +300,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvokerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -328,6 +338,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -349,6 +360,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.IViewComponentResult",
+          "clrName": "Microsoft.AspNetCore.Mvc.IViewComponentResult"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.ContentViewComponentResult::Execute(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext):System.Void",
@@ -365,6 +386,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -384,6 +406,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -403,6 +426,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -423,6 +447,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -445,6 +470,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -459,6 +485,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -475,6 +502,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -492,6 +529,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -510,6 +548,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
@@ -525,6 +564,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -541,6 +581,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider::GetViewComponents():System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -557,6 +607,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider::GetCandidateTypes():System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetCandidateTypes",
+          "metadataToken": 100663536,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetCandidateTypes|():System.Collections.Generic.IEnumerable_1[[System.Reflection.TypeInfo,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -576,6 +647,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -593,6 +665,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -609,6 +682,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory",
+          "clrName": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory::CreateViewComponent(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext):System.Object",
@@ -625,6 +708,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -644,6 +728,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -663,6 +748,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -682,6 +768,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -702,6 +789,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -722,6 +810,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -739,6 +828,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -755,6 +845,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.IViewComponentHelper",
+          "clrName": "Microsoft.AspNetCore.Mvc.IViewComponentHelper"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware",
+          "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper::Contextualize(Microsoft.AspNetCore.Mvc.Rendering.ViewContext):System.Void",
@@ -771,6 +875,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -790,6 +895,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -809,6 +915,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -828,6 +935,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -848,6 +956,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -868,6 +977,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -885,6 +995,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider,System.Text.Encodings.Web.HtmlEncoder,Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector,Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvokerFactory,Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -901,6 +1012,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector",
+          "clrName": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector::SelectComponent(System.String):Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
@@ -917,6 +1038,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -936,6 +1058,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -953,6 +1076,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -969,6 +1093,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.IViewComponentResult",
+          "clrName": "Microsoft.AspNetCore.Mvc.IViewComponentResult"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.HtmlContentViewComponentResult::Execute(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext):System.Void",
@@ -985,6 +1119,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.HtmlContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1004,6 +1139,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.HtmlContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1023,6 +1159,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1043,6 +1180,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1065,6 +1203,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.HtmlContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1079,6 +1218,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Html.IHtmlContent):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.HtmlContentViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1095,6 +1235,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator",
+          "clrName": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.ServiceBasedViewComponentActivator::Create(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext):System.Object",
@@ -1111,6 +1261,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ServiceBasedViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1130,6 +1281,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ServiceBasedViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1149,6 +1301,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1169,6 +1322,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1189,6 +1343,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1206,6 +1361,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ServiceBasedViewComponentActivator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1222,6 +1378,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1239,6 +1399,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1257,6 +1418,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1275,6 +1437,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1293,6 +1456,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1311,6 +1475,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1329,6 +1494,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1347,6 +1513,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1361,6 +1528,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1371,6 +1539,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Text.Encodings.Web.HtmlEncoder,Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.IO.TextWriter):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1387,6 +1556,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1399,6 +1572,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContextAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1415,6 +1589,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1432,6 +1610,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1450,6 +1629,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1468,6 +1648,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1486,6 +1667,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1504,6 +1686,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1522,6 +1705,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1540,6 +1724,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1554,6 +1739,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1570,6 +1756,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1587,6 +1777,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptorCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1605,6 +1796,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptorCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1619,6 +1811,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor,Microsoft.AspNetCore.Mvc.ViewFeatures,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptorCollection",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1635,6 +1828,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1652,6 +1849,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1666,6 +1864,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1682,6 +1881,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
+          "typeArguments": [
+            "ViewComponentFeature"
+          ]
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider",
+          "clrName": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeatureProvider::PopulateFeature(System.Collections.Generic.IEnumerable_1[[Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPart,Microsoft.AspNetCore.Mvc.Core,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeature):System.Void",
@@ -1698,6 +1914,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeatureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1717,6 +1934,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ApplicationParts.IApplicationFeatureProvider\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
@@ -1734,6 +1952,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeatureProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1750,6 +1969,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.IViewComponentResult",
+          "clrName": "Microsoft.AspNetCore.Mvc.IViewComponentResult"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult::Execute(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext):System.Void",
@@ -1766,6 +1995,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1785,6 +2015,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1804,6 +2035,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1824,6 +2056,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.IViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false,
@@ -1846,6 +2079,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1864,6 +2098,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1882,6 +2117,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         },
@@ -1900,6 +2136,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1914,6 +2151,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
@@ -1930,6 +2168,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentConventions::GetComponentName(System.Reflection.TypeInfo):System.String",
@@ -1946,6 +2188,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentConventions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1965,6 +2208,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentConventions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1984,6 +2228,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentConventions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
           "isExtensionMethod": false
@@ -1999,6 +2244,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentConventions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }

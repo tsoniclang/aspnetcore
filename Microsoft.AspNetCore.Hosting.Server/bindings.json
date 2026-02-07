@@ -15,6 +15,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "TContext"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.IHttpApplication\u00601::CreateContext(Microsoft.AspNetCore.Http.Features.IFeatureCollection):TContext",
@@ -31,6 +34,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IHttpApplication\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
           "isExtensionMethod": false
@@ -50,6 +54,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IHttpApplication\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
           "isExtensionMethod": false
@@ -69,6 +74,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IHttpApplication\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
           "isExtensionMethod": false
@@ -90,6 +96,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.IServer::StartAsync(IHttpApplication_1,System.Threading.CancellationToken):System.Threading.Tasks.Task",
@@ -106,6 +118,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
           "isExtensionMethod": false
@@ -125,6 +138,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
           "isExtensionMethod": false
@@ -146,6 +160,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         }
@@ -182,6 +197,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         },
@@ -200,6 +216,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         }
@@ -219,6 +236,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Hosting.Server.Abstractions:Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth",
+          "clrName": "Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -236,6 +263,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.ServerIntegratedAuth",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         },
@@ -254,6 +282,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.ServerIntegratedAuth",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         },
@@ -272,6 +301,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
@@ -291,6 +321,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
@@ -306,6 +337,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Hosting.Server.ServerIntegratedAuth",
           "declaringAssemblyName": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
         }

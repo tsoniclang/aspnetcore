@@ -33,6 +33,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Cors.Infrastructure.ICorsMetadata",
+          "clrName": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsMetadata"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -50,6 +56,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyMetadata",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -85,6 +92,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -122,6 +130,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -141,6 +150,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -162,6 +172,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Cors.Infrastructure.ICorsMetadata",
+          "clrName": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsMetadata"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -179,6 +195,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Cors.Infrastructure.ICorsMetadata",
+          "clrName": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsMetadata"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -196,6 +218,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.IEnableCorsAttribute",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -215,6 +238,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware::Invoke(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider):System.Threading.Tasks.Task",
@@ -231,6 +258,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -247,6 +275,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -257,6 +286,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.Extensions.Logging.ILoggerFactory,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -267,6 +297,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Cors.Infrastructure.ICorsService,Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -283,6 +314,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions::AddDefaultPolicy(Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy):System.Void",
@@ -299,6 +334,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -318,6 +354,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -337,6 +374,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -356,6 +394,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -375,6 +414,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -396,6 +436,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -410,6 +451,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -426,6 +468,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy::ToString():System.String",
@@ -442,6 +488,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -463,6 +510,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -481,6 +529,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -499,6 +548,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -517,6 +567,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -535,6 +586,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -553,6 +605,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -571,6 +624,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -589,6 +643,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -607,6 +662,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -625,6 +681,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -639,6 +696,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -655,6 +713,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder::WithOrigins(System.String[]):Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
@@ -671,6 +733,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -690,6 +753,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -709,6 +773,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -728,6 +793,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -747,6 +813,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -766,6 +833,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -785,6 +853,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -804,6 +873,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -823,6 +893,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -842,6 +913,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -861,6 +933,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -880,6 +953,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -899,6 +973,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -915,6 +990,7 @@
           "normalizedSignature": "constructor|(System.String[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -925,6 +1001,7 @@
           "normalizedSignature": "constructor|(Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -941,6 +1018,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.CorsResult::ToString():System.String",
@@ -957,6 +1038,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -978,6 +1060,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -996,6 +1079,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1014,6 +1098,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1032,6 +1117,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1050,6 +1136,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1068,6 +1155,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1086,6 +1174,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1104,6 +1193,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1122,6 +1212,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -1136,6 +1227,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -1152,6 +1244,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.ICorsService",
+          "clrName": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsService"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.CorsService::EvaluatePolicy(Microsoft.AspNetCore.Http.HttpContext,System.String):Microsoft.AspNetCore.Cors.Infrastructure.CorsResult",
@@ -1168,6 +1270,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -1187,6 +1290,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -1206,6 +1310,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -1225,6 +1330,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -1244,6 +1350,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -1263,6 +1370,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false,
@@ -1283,6 +1391,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false,
@@ -1300,6 +1409,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions,Microsoft.AspNetCore.Cors,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsService",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -1316,6 +1426,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider",
+          "clrName": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Cors:Microsoft.AspNetCore.Cors.Infrastructure.DefaultCorsPolicyProvider::GetPolicyAsync(Microsoft.AspNetCore.Http.HttpContext,System.String):System.Threading.Tasks.Task_1[[Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy,Microsoft.AspNetCore.Cors,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -1332,6 +1452,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.DefaultCorsPolicyProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false
@@ -1351,6 +1472,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors",
           "isExtensionMethod": false,
@@ -1368,6 +1490,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions,Microsoft.AspNetCore.Cors,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.DefaultCorsPolicyProvider",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }
@@ -1384,6 +1507,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -1395,6 +1522,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1406,6 +1534,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1417,6 +1546,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1428,6 +1558,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1439,6 +1570,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1450,6 +1582,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1461,6 +1594,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1472,6 +1606,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1483,6 +1618,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1494,6 +1630,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1505,6 +1642,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1516,6 +1654,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         },
@@ -1527,6 +1666,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Cors.Infrastructure.CorsConstants",
           "declaringAssemblyName": "Microsoft.AspNetCore.Cors"
         }

@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.FileHandleType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.FileHandleType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.FileHandleType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.FileHandleType",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -77,6 +103,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -88,6 +136,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TransferFormat",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -99,6 +148,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TransferFormat",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -110,6 +160,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TransferFormat",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -128,6 +179,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionDelegate::Invoke(Microsoft.AspNetCore.Connections.ConnectionContext):System.Threading.Tasks.Task",
@@ -144,6 +209,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -163,6 +229,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -182,6 +249,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -198,6 +266,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -214,6 +283,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate::Invoke(Microsoft.AspNetCore.Connections.MultiplexedConnectionContext):System.Threading.Tasks.Task",
@@ -230,6 +313,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -249,6 +333,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -268,6 +353,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -284,6 +370,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -316,6 +403,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -335,6 +423,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -356,6 +445,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -391,6 +481,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -412,6 +503,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IConnectionListener::AcceptAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.ConnectionContext,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -428,6 +525,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionListener",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -447,6 +545,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionListener",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -468,6 +567,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionListener",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -503,6 +603,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionListenerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -540,6 +641,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionListenerFactorySelector",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -561,6 +663,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IMemoryPoolFactory\u00601::Create(Microsoft.AspNetCore.Connections.MemoryPoolOptions):MemoryPool_1",
@@ -577,6 +682,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMemoryPoolFactory\u00601",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -614,6 +720,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -633,6 +740,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -654,6 +762,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -689,6 +798,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -710,6 +820,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IMultiplexedConnectionListener::UnbindAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
@@ -726,6 +842,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionListener",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -745,6 +862,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionListener",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -766,6 +884,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionListener",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -801,6 +920,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionListenerFactory",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -822,6 +942,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.InvalidOperationException",
+        "clrName": "System.InvalidOperationException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -834,6 +964,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.AddressInUseException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -844,6 +975,7 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.AddressInUseException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -860,6 +992,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.BaseConnectionContext::Abort():System.Void",
@@ -876,6 +1018,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -895,6 +1038,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -914,6 +1058,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -935,6 +1080,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -953,6 +1099,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -971,6 +1118,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -989,6 +1137,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1007,6 +1156,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1025,13 +1175,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.BaseConnectionContext::.ctor():void",
+          "metadataToken": 100663325,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Connections.BaseConnectionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionAbortedException",
@@ -1044,6 +1207,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.OperationCanceledException",
+        "clrName": "System.OperationCanceledException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1056,6 +1229,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionAbortedException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1066,6 +1240,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionAbortedException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1076,6 +1251,7 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionAbortedException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1092,6 +1268,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IConnectionBuilder",
+          "clrName": "Microsoft.AspNetCore.Connections.IConnectionBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionBuilder::Use(System.Func_2[[Microsoft.AspNetCore.Connections.ConnectionDelegate,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Connections.ConnectionDelegate,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Connections.IConnectionBuilder",
@@ -1108,6 +1294,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1127,6 +1314,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1146,6 +1334,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -1166,6 +1355,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -1188,6 +1378,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1206,6 +1397,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1221,6 +1413,7 @@
           "normalizedSignature": "constructor|(System.IServiceProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1237,6 +1430,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.BaseConnectionContext",
+        "clrName": "Microsoft.AspNetCore.Connections.BaseConnectionContext"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionContext::Abort(Microsoft.AspNetCore.Connections.ConnectionAbortedException):System.Void",
@@ -1253,6 +1456,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1272,6 +1476,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1293,13 +1498,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionContext::.ctor():void",
+          "metadataToken": 100663338,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionHandler",
@@ -1312,6 +1530,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionHandler::OnConnectedAsync(Microsoft.AspNetCore.Connections.ConnectionContext):System.Threading.Tasks.Task",
@@ -1328,6 +1550,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionHandler",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1336,7 +1559,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionHandler::.ctor():void",
+          "metadataToken": 100663344,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionHandler",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionItems",
@@ -1349,6 +1584,38 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IDictionary\u00602",
+          "clrName": "System.Collections.Generic.IDictionary\u00602",
+          "typeArguments": [
+            "Object",
+            "Object"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[Object,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[Object,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1366,6 +1633,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionItems",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1380,6 +1648,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionItems",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1390,6 +1659,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionItems",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1406,6 +1676,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.IO.IOException",
+        "clrName": "System.IO.IOException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1418,6 +1698,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionResetException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1428,6 +1709,7 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionResetException",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1444,6 +1726,40 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionContext",
+        "clrName": "Microsoft.AspNetCore.Connections.ConnectionContext"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
+          "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
+          "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
+          "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
+          "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
+          "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
+          "clrName": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.DefaultConnectionContext::Abort(Microsoft.AspNetCore.Connections.ConnectionAbortedException):System.Void",
@@ -1460,6 +1776,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1479,6 +1796,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1498,6 +1816,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -1518,6 +1837,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -1539,6 +1859,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1557,6 +1878,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1575,6 +1897,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1593,6 +1916,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1611,6 +1935,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1629,6 +1954,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1647,6 +1973,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1665,6 +1992,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1683,6 +2011,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1701,6 +2030,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1720,6 +2050,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1739,6 +2070,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1758,6 +2090,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1777,6 +2110,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1796,6 +2130,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1815,6 +2150,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
           "declaringClrType": "Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -1830,6 +2166,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1840,6 +2177,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1850,6 +2188,7 @@
           "normalizedSignature": "constructor|(System.String,System.IO.Pipelines.IDuplexPipe,System.IO.Pipelines.IDuplexPipe):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.DefaultConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1866,6 +2205,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Net.Primitives:System.Net.EndPoint",
+        "clrName": "System.Net.EndPoint"
+      },
       "methods": [],
       "properties": [
         {
@@ -1883,6 +2226,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.FileHandleEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -1901,6 +2245,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.FileHandleEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1915,6 +2260,7 @@
           "normalizedSignature": "constructor|(System.UInt64,Microsoft.AspNetCore.Connections.FileHandleType):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.FileHandleEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1931,6 +2277,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1948,6 +2298,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MemoryPoolOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1962,6 +2313,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MemoryPoolOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -1978,6 +2330,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
+          "clrName": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.MultiplexedConnectionBuilder::Use(System.Func_2[[Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
@@ -1994,6 +2356,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2013,6 +2376,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2032,6 +2396,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -2052,6 +2417,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false,
@@ -2074,6 +2440,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -2092,6 +2459,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringClrType": "Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
@@ -2107,6 +2475,7 @@
           "normalizedSignature": "constructor|(System.IServiceProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionBuilder",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2123,6 +2492,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.BaseConnectionContext",
+        "clrName": "Microsoft.AspNetCore.Connections.BaseConnectionContext"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.MultiplexedConnectionContext::AcceptAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Microsoft.AspNetCore.Connections.ConnectionContext,Microsoft.AspNetCore.Connections.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -2139,6 +2518,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2158,6 +2538,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2166,7 +2547,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.MultiplexedConnectionContext::.ctor():void",
+          "metadataToken": 100663424,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.AspNetCore.Connections.MultiplexedConnectionContext",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
@@ -2179,6 +2572,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Net.Primitives:System.Net.EndPoint",
+        "clrName": "System.Net.EndPoint"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.NamedPipeEndPoint::ToString():System.String",
@@ -2195,6 +2592,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2214,6 +2612,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2233,6 +2632,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2254,6 +2654,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -2272,6 +2673,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2286,6 +2688,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -2296,6 +2699,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.NamedPipeEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2312,6 +2716,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2329,6 +2737,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -2347,6 +2756,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -2365,6 +2775,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2379,6 +2790,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackContext",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2395,6 +2807,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2412,6 +2828,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -2430,6 +2847,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         },
@@ -2448,6 +2866,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2462,6 +2881,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.TlsConnectionCallbackOptions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2478,6 +2898,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Net.Primitives:System.Net.EndPoint",
+        "clrName": "System.Net.EndPoint"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.UriEndPoint::ToString():System.String",
@@ -2494,6 +2918,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.UriEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": false
@@ -2515,6 +2940,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.UriEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2529,6 +2955,7 @@
           "normalizedSignature": "constructor|(System.Uri):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.UriEndPoint",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions"
         }
@@ -2545,6 +2972,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.AspNetCore.Connections.Abstractions:Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions::UseConnectionHandler(Microsoft.AspNetCore.Connections.IConnectionBuilder):Microsoft.AspNetCore.Connections.IConnectionBuilder",
@@ -2561,6 +2992,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": true
@@ -2580,6 +3012,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": true
@@ -2599,6 +3032,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": true
@@ -2618,6 +3052,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions",
           "declaringAssemblyName": "Microsoft.AspNetCore.Connections.Abstractions",
           "isExtensionMethod": true

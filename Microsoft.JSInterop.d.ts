@@ -6,11 +6,13 @@
 import * as Internal from './Microsoft.JSInterop/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { DotNetInvocationInfo, DotNetInvocationResult, JSInvocationInfo } from './Microsoft.JSInterop.Infrastructure/internal/index.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
-import type { Attribute, Boolean as ClrBoolean, Enum, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from '@tsonic/dotnet/System.js';
+import type { Attribute, Boolean as ClrBoolean, Byte, Enum, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from '@tsonic/dotnet/System.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { JsonSerializerOptions } from '@tsonic/dotnet/System.Text.Json.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
-import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
+import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { DotNetStreamReference as DotNetStreamReference } from './Microsoft.JSInterop/internal/index.js';

@@ -118,6 +118,7 @@ export type DefaultViewComponentDescriptorCollectionProvider = DefaultViewCompon
 
 
 export interface DefaultViewComponentDescriptorProvider$instance {
+    GetCandidateTypes(): IEnumerable<TypeInfo>;
     GetViewComponents(): IEnumerable<ViewComponentDescriptor>;
 }
 
@@ -333,9 +334,12 @@ export type ViewComponentFeatureProvider = ViewComponentFeatureProvider$instance
 
 export interface ViewViewComponentResult$instance {
     TempData: ITempDataDictionary;
-    ViewData: ViewDataDictionary;
-    ViewEngine: IViewEngine;
-    ViewName: string;
+    get ViewData(): ViewDataDictionary | undefined;
+    set ViewData(value: ViewDataDictionary | undefined);
+    get ViewEngine(): IViewEngine | undefined;
+    set ViewEngine(value: IViewEngine | undefined);
+    get ViewName(): string | undefined;
+    set ViewName(value: string | undefined);
     Execute(context: ViewComponentContext): void;
     ExecuteAsync(context: ViewComponentContext): Task;
 }

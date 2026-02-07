@@ -203,6 +203,7 @@ export type MultiSelectList = MultiSelectList$instance;
 export interface MvcForm$instance {
     Dispose(): void;
     EndForm(): void;
+    GenerateEndForm(): void;
 }
 
 
@@ -246,8 +247,7 @@ export interface SelectListItem$instance {
     Disabled: boolean;
     Group: SelectListGroup;
     Selected: boolean;
-    get Text(): string | undefined;
-    set Text(value: string);
+    Text: string;
     Value: string;
 }
 
@@ -302,7 +302,7 @@ export interface ViewContext$instance extends ActionContext {
     CheckBoxHiddenInputRenderMode: CheckBoxHiddenInputRenderMode;
     ClientValidationEnabled: boolean;
     get ExecutingFilePath(): string | undefined;
-    set ExecutingFilePath(value: string);
+    set ExecutingFilePath(value: string | undefined);
     FormContext: FormContext;
     Html5DateRenderingMode: Html5DateRenderingMode;
     TempData: ITempDataDictionary;

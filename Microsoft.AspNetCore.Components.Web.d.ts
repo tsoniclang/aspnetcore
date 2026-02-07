@@ -8,7 +8,7 @@ import * as Internal from './Microsoft.AspNetCore.Components.Web/internal/index.
 // Cross-namespace type imports for constraints
 import type { RenderTreeBuilder } from './Microsoft.AspNetCore.Components.Rendering/internal/index.js';
 import type { HtmlRootComponent } from './Microsoft.AspNetCore.Components.Web.HtmlRendering/internal/index.js';
-import type { ComponentBase, Dispatcher, ErrorBoundaryBase, EventCallback_1, EventCallbackFactory, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RenderFragment, RenderFragment_1, RenderHandle } from './Microsoft.AspNetCore.Components/internal/index.js';
+import type { ComponentBase, Dispatcher, ErrorBoundaryBase, EventCallback_1, EventCallbackFactory, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from './Microsoft.AspNetCore.Components/internal/index.js';
 import type { Action, Boolean as ClrBoolean, Double, EventArgs, Exception, Func, IAsyncDisposable, IDisposable, Int32, Int64, IServiceProvider, Object as ClrObject, Single, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';

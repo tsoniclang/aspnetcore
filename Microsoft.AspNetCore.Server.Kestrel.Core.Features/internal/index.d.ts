@@ -35,7 +35,7 @@ export type IHttp2StreamIdFeature = IHttp2StreamIdFeature$instance;
 
 export interface IHttpMinRequestBodyDataRateFeature$instance {
     get MinDataRate(): MinDataRate | undefined;
-    set MinDataRate(value: MinDataRate);
+    set MinDataRate(value: MinDataRate | undefined);
 }
 
 
@@ -43,7 +43,7 @@ export type IHttpMinRequestBodyDataRateFeature = IHttpMinRequestBodyDataRateFeat
 
 export interface IHttpMinResponseDataRateFeature$instance {
     get MinDataRate(): MinDataRate | undefined;
-    set MinDataRate(value: MinDataRate);
+    set MinDataRate(value: MinDataRate | undefined);
 }
 
 

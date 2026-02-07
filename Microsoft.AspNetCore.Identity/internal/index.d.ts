@@ -8,7 +8,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { CookieAuthenticationOptions, CookieValidatePrincipalContext } from "../../Microsoft.AspNetCore.Authentication.Cookies/internal/index.js";
 import type { AuthenticationBuilder, AuthenticationProperties, AuthenticationScheme, AuthenticationToken, IAuthenticationSchemeProvider, ISystemClock } from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
-import type { IDataProtectionProvider } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
+import type { IDataProtectionProvider, IDataProtector } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
 import type { HttpContext, IHttpContextAccessor } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { Dictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
@@ -16,7 +16,7 @@ import type { Action, Attribute, Boolean as ClrBoolean, Byte, Char, DateTimeOffs
 import type { IQueryable } from "@tsonic/dotnet/System.Linq.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Claim, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
+import type { Claim, ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
@@ -59,7 +59,7 @@ export type ILookupProtector = ILookupProtector$instance;
 
 export interface ILookupProtectorKeyRing$instance {
     readonly CurrentKeyId: string;
-    readonly Item: string;
+    readonly [keyId: string]: string;
     GetAllKeyIds(): IEnumerable<System_Internal.String>;
 }
 
@@ -403,6 +403,7 @@ export interface IUserValidator_1$instance<TUser> {
 export type IUserValidator_1<TUser> = IUserValidator_1$instance<TUser>;
 
 export interface AspNetRoleManager_1$instance<TRole> extends RoleManager_1<TRole> {
+    readonly CancellationToken: CancellationToken;
 }
 
 
@@ -414,6 +415,7 @@ export const AspNetRoleManager_1: {
 export type AspNetRoleManager_1<TRole> = AspNetRoleManager_1$instance<TRole>;
 
 export interface AspNetUserManager_1$instance<TUser> extends UserManager_1<TUser> {
+    readonly CancellationToken: CancellationToken;
 }
 
 
@@ -559,9 +561,9 @@ export type EmailTokenProvider_1<TUser> = EmailTokenProvider_1$instance<TUser> &
 
 export interface ExternalLoginInfo$instance extends UserLoginInfo {
     get AuthenticationProperties(): AuthenticationProperties | undefined;
-    set AuthenticationProperties(value: AuthenticationProperties);
+    set AuthenticationProperties(value: AuthenticationProperties | undefined);
     get AuthenticationTokens(): IEnumerable<AuthenticationToken> | undefined;
-    set AuthenticationTokens(value: IEnumerable<AuthenticationToken>);
+    set AuthenticationTokens(value: IEnumerable<AuthenticationToken> | undefined);
     Principal: ClaimsPrincipal;
 }
 
@@ -574,7 +576,8 @@ export const ExternalLoginInfo: {
 export type ExternalLoginInfo = ExternalLoginInfo$instance;
 
 export interface IdentityBuilder$instance {
-    readonly RoleType: Type | undefined;
+    get RoleType(): Type | undefined;
+    set RoleType(value: Type | undefined);
     readonly Services: IServiceCollection;
     readonly UserType: Type;
     AddClaimsPrincipalFactory<TFactory>(): IdentityBuilder;
@@ -620,13 +623,13 @@ export type IdentityConstants = IdentityConstants$instance;
 
 export interface IdentityCookiesBuilder$instance {
     get ApplicationCookie(): OptionsBuilder<CookieAuthenticationOptions> | undefined;
-    set ApplicationCookie(value: OptionsBuilder<CookieAuthenticationOptions>);
+    set ApplicationCookie(value: OptionsBuilder<CookieAuthenticationOptions> | undefined);
     get ExternalCookie(): OptionsBuilder<CookieAuthenticationOptions> | undefined;
-    set ExternalCookie(value: OptionsBuilder<CookieAuthenticationOptions>);
+    set ExternalCookie(value: OptionsBuilder<CookieAuthenticationOptions> | undefined);
     get TwoFactorRememberMeCookie(): OptionsBuilder<CookieAuthenticationOptions> | undefined;
-    set TwoFactorRememberMeCookie(value: OptionsBuilder<CookieAuthenticationOptions>);
+    set TwoFactorRememberMeCookie(value: OptionsBuilder<CookieAuthenticationOptions> | undefined);
     get TwoFactorUserIdCookie(): OptionsBuilder<CookieAuthenticationOptions> | undefined;
-    set TwoFactorUserIdCookie(value: OptionsBuilder<CookieAuthenticationOptions>);
+    set TwoFactorUserIdCookie(value: OptionsBuilder<CookieAuthenticationOptions> | undefined);
 }
 
 
@@ -708,11 +711,12 @@ export interface IdentityPasskeyData$instance {
     IsBackedUp: boolean;
     IsBackupEligible: boolean;
     IsUserVerified: boolean;
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     PublicKey: byte[];
     SignCount: uint;
     get Transports(): string[] | undefined;
-    set Transports(value: string[]);
+    set Transports(value: string[] | undefined);
 }
 
 
@@ -725,23 +729,23 @@ export type IdentityPasskeyData = IdentityPasskeyData$instance;
 
 export interface IdentityPasskeyOptions$instance {
     get AttestationConveyancePreference(): string | undefined;
-    set AttestationConveyancePreference(value: string);
+    set AttestationConveyancePreference(value: string | undefined);
     get AuthenticatorAttachment(): string | undefined;
-    set AuthenticatorAttachment(value: string);
+    set AuthenticatorAttachment(value: string | undefined);
     AuthenticatorTimeout: TimeSpan;
     ChallengeSize: int;
     get IsAllowedAlgorithm(): Func<System_Internal.Int32, System_Internal.Boolean> | undefined;
-    set IsAllowedAlgorithm(value: Func<System_Internal.Int32, System_Internal.Boolean>);
+    set IsAllowedAlgorithm(value: Func<System_Internal.Int32, System_Internal.Boolean> | undefined);
     get ResidentKeyRequirement(): string | undefined;
-    set ResidentKeyRequirement(value: string);
+    set ResidentKeyRequirement(value: string | undefined);
     get ServerDomain(): string | undefined;
-    set ServerDomain(value: string);
+    set ServerDomain(value: string | undefined);
     get UserVerificationRequirement(): string | undefined;
-    set UserVerificationRequirement(value: string);
+    set UserVerificationRequirement(value: string | undefined);
     get ValidateOrigin(): Func<PasskeyOriginValidationContext | undefined, ValueTask<System_Internal.Boolean>> | undefined;
-    set ValidateOrigin(value: Func<PasskeyOriginValidationContext | undefined, ValueTask<System_Internal.Boolean>>);
+    set ValidateOrigin(value: Func<PasskeyOriginValidationContext | undefined, ValueTask<System_Internal.Boolean>> | undefined);
     get VerifyAttestationStatement(): Func<PasskeyAttestationStatementVerificationContext | undefined, ValueTask<System_Internal.Boolean>> | undefined;
-    set VerifyAttestationStatement(value: Func<PasskeyAttestationStatementVerificationContext | undefined, ValueTask<System_Internal.Boolean>>);
+    set VerifyAttestationStatement(value: Func<PasskeyAttestationStatementVerificationContext | undefined, ValueTask<System_Internal.Boolean>> | undefined);
 }
 
 
@@ -754,7 +758,7 @@ export type IdentityPasskeyOptions = IdentityPasskeyOptions$instance;
 
 export interface IdentityResult$instance {
     readonly Errors: IEnumerable<IdentityError>;
-    readonly Succeeded: boolean;
+    Succeeded: boolean;
     ToString(): string;
 }
 
@@ -782,11 +786,12 @@ export type IdentityRole = IdentityRole$instance;
 
 export interface IdentityRole_1$instance<TKey extends (IEquatable<TKey> | number | string | boolean)> {
     get ConcurrencyStamp(): string | undefined;
-    set ConcurrencyStamp(value: string);
+    set ConcurrencyStamp(value: string | undefined);
     Id: TKey;
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     get NormalizedName(): string | undefined;
-    set NormalizedName(value: string);
+    set NormalizedName(value: string | undefined);
     ToString(): string;
 }
 
@@ -800,9 +805,10 @@ export const IdentityRole_1: {
 export type IdentityRole_1<TKey extends (IEquatable<TKey> | number | string | boolean)> = IdentityRole_1$instance<TKey>;
 
 export interface IdentityRoleClaim_1$instance<TKey extends (IEquatable<TKey> | number | string | boolean)> {
-    ClaimType: string;
+    get ClaimType(): string | undefined;
+    set ClaimType(value: string | undefined);
     get ClaimValue(): string | undefined;
-    set ClaimValue(value: string);
+    set ClaimValue(value: string | undefined);
     Id: int;
     RoleId: TKey;
     InitializeFromClaim(other: Claim): void;
@@ -832,26 +838,27 @@ export type IdentityUser = IdentityUser$instance;
 export interface IdentityUser_1$instance<TKey extends (IEquatable<TKey> | number | string | boolean)> {
     AccessFailedCount: int;
     get ConcurrencyStamp(): string | undefined;
-    set ConcurrencyStamp(value: string);
-    Email: string;
+    set ConcurrencyStamp(value: string | undefined);
+    get Email(): string | undefined;
+    set Email(value: string | undefined);
     EmailConfirmed: boolean;
     Id: TKey;
     LockoutEnabled: boolean;
     LockoutEnd: Nullable<DateTimeOffset>;
     get NormalizedEmail(): string | undefined;
-    set NormalizedEmail(value: string);
+    set NormalizedEmail(value: string | undefined);
     get NormalizedUserName(): string | undefined;
-    set NormalizedUserName(value: string);
+    set NormalizedUserName(value: string | undefined);
     get PasswordHash(): string | undefined;
-    set PasswordHash(value: string);
+    set PasswordHash(value: string | undefined);
     get PhoneNumber(): string | undefined;
-    set PhoneNumber(value: string);
+    set PhoneNumber(value: string | undefined);
     PhoneNumberConfirmed: boolean;
     get SecurityStamp(): string | undefined;
-    set SecurityStamp(value: string);
+    set SecurityStamp(value: string | undefined);
     TwoFactorEnabled: boolean;
     get UserName(): string | undefined;
-    set UserName(value: string);
+    set UserName(value: string | undefined);
     ToString(): string;
 }
 
@@ -865,9 +872,10 @@ export const IdentityUser_1: {
 export type IdentityUser_1<TKey extends (IEquatable<TKey> | number | string | boolean)> = IdentityUser_1$instance<TKey>;
 
 export interface IdentityUserClaim_1$instance<TKey extends (IEquatable<TKey> | number | string | boolean)> {
-    ClaimType: string;
+    get ClaimType(): string | undefined;
+    set ClaimType(value: string | undefined);
     get ClaimValue(): string | undefined;
-    set ClaimValue(value: string);
+    set ClaimValue(value: string | undefined);
     Id: int;
     UserId: TKey;
     InitializeFromClaim(claim: Claim): void;
@@ -885,7 +893,7 @@ export type IdentityUserClaim_1<TKey extends (IEquatable<TKey> | number | string
 export interface IdentityUserLogin_1$instance<TKey extends (IEquatable<TKey> | number | string | boolean)> {
     LoginProvider: string;
     get ProviderDisplayName(): string | undefined;
-    set ProviderDisplayName(value: string);
+    set ProviderDisplayName(value: string | undefined);
     ProviderKey: string;
     UserId: TKey;
 }
@@ -929,7 +937,8 @@ export interface IdentityUserToken_1$instance<TKey extends (IEquatable<TKey> | n
     LoginProvider: string;
     Name: string;
     UserId: TKey;
-    Value: string;
+    get Value(): string | undefined;
+    set Value(value: string | undefined);
 }
 
 
@@ -956,7 +965,7 @@ export type LockoutOptions = LockoutOptions$instance;
 
 export interface PasskeyAssertionContext$instance {
     get AssertionState(): string | undefined;
-    set AssertionState(value: string);
+    set AssertionState(value: string | undefined);
     CredentialJson: string;
     HttpContext: HttpContext;
 }
@@ -973,12 +982,11 @@ export interface PasskeyAssertionResult_1$instance<TUser> {
     readonly Failure: PasskeyException | undefined;
     readonly Passkey: UserPasskeyInfo | undefined;
     readonly Succeeded: boolean;
-    readonly User: TUser;
+    readonly User: TUser | undefined;
 }
 
 
 export const PasskeyAssertionResult_1: {
-    new<TUser>(): PasskeyAssertionResult_1<TUser>;
 };
 
 
@@ -986,7 +994,7 @@ export type PasskeyAssertionResult_1<TUser> = PasskeyAssertionResult_1$instance<
 
 export interface PasskeyAttestationContext$instance {
     get AttestationState(): string | undefined;
-    set AttestationState(value: string);
+    set AttestationState(value: string | undefined);
     CredentialJson: string;
     HttpContext: HttpContext;
 }
@@ -1008,7 +1016,6 @@ export interface PasskeyAttestationResult$instance {
 
 
 export const PasskeyAttestationResult: {
-    new(): PasskeyAttestationResult;
     Fail(failure: PasskeyException): PasskeyAttestationResult;
     Success(passkey: UserPasskeyInfo, userEntity: PasskeyUserEntity): PasskeyAttestationResult;
 };
@@ -1032,7 +1039,7 @@ export type PasskeyAttestationStatementVerificationContext = PasskeyAttestationS
 
 export interface PasskeyCreationOptionsResult$instance {
     get AttestationState(): string | undefined;
-    set AttestationState(value: string);
+    set AttestationState(value: string | undefined);
     CreationOptionsJson: string;
 }
 
@@ -1083,7 +1090,7 @@ export interface PasskeyOriginValidationContext$instance {
     HttpContext: HttpContext;
     Origin: string;
     get TopOrigin(): string | undefined;
-    set TopOrigin(value: string);
+    set TopOrigin(value: string | undefined);
 }
 
 
@@ -1096,7 +1103,7 @@ export type PasskeyOriginValidationContext = PasskeyOriginValidationContext$inst
 
 export interface PasskeyRequestOptionsResult$instance {
     get AssertionState(): string | undefined;
-    set AssertionState(value: string);
+    set AssertionState(value: string | undefined);
     RequestOptionsJson: string;
 }
 
@@ -1173,7 +1180,7 @@ export const PasswordOptions: {
 export type PasswordOptions = PasswordOptions$instance;
 
 export interface PasswordValidator_1$instance<TUser> {
-    readonly Describer: IdentityErrorDescriber;
+    Describer: IdentityErrorDescriber;
     IsDigit(c: char): boolean;
     IsLetterOrDigit(c: char): boolean;
     IsLower(c: char): boolean;
@@ -1240,6 +1247,7 @@ export const ProtectedPersonalDataAttribute: {
 export type ProtectedPersonalDataAttribute = ProtectedPersonalDataAttribute$instance;
 
 export interface RoleManager_1$instance<TRole> {
+    readonly CancellationToken: CancellationToken;
     ErrorDescriber: IdentityErrorDescriber;
     KeyNormalizer: ILookupNormalizer;
     Logger: ILogger;
@@ -1251,6 +1259,7 @@ export interface RoleManager_1$instance<TRole> {
     CreateAsync(role: TRole): Task<IdentityResult>;
     DeleteAsync(role: TRole): Task<IdentityResult>;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     FindByIdAsync(roleId: string): Task<TRole | undefined>;
     FindByNameAsync(roleName: string): Task<TRole | undefined>;
     GetClaimsAsync(role: TRole): Task<IList<Claim>>;
@@ -1262,6 +1271,8 @@ export interface RoleManager_1$instance<TRole> {
     SetRoleNameAsync(role: TRole, name: string): Task<IdentityResult>;
     UpdateAsync(role: TRole): Task<IdentityResult>;
     UpdateNormalizedRoleNameAsync(role: TRole): Task;
+    UpdateRoleAsync(role: TRole): Task<IdentityResult>;
+    ValidateRoleAsync(role: TRole): Task<IdentityResult>;
 }
 
 
@@ -1279,6 +1290,7 @@ export interface RoleStoreBase_4$instance<TRole extends IdentityRole_1<TKey>, TK
     ConvertIdFromString(id: string): TKey | undefined;
     ConvertIdToString(id: TKey): string | undefined;
     CreateAsync(role: TRole, cancellationToken?: CancellationToken): Task<IdentityResult>;
+    CreateRoleClaim(role: TRole, claim: Claim): TRoleClaim;
     DeleteAsync(role: TRole, cancellationToken?: CancellationToken): Task<IdentityResult>;
     Dispose(): void;
     FindByIdAsync(id: string, cancellationToken?: CancellationToken): Task<TRole | undefined>;
@@ -1294,8 +1306,7 @@ export interface RoleStoreBase_4$instance<TRole extends IdentityRole_1<TKey>, TK
 }
 
 
-export const RoleStoreBase_4: {
-    new<TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable<TKey> | number | string | boolean), TUserRole extends IdentityUserRole_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber): RoleStoreBase_4<TRole, TKey, TUserRole, TRoleClaim>;
+export const RoleStoreBase_4: (abstract new<TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable<TKey> | number | string | boolean), TUserRole extends IdentityUserRole_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber) => RoleStoreBase_4<TRole, TKey, TUserRole, TRoleClaim>) & {
 };
 
 
@@ -1329,9 +1340,9 @@ export type RoleValidator_1<TRole> = RoleValidator_1$instance<TRole> & __RoleVal
 
 export interface SecurityStampRefreshingPrincipalContext$instance {
     get CurrentPrincipal(): ClaimsPrincipal | undefined;
-    set CurrentPrincipal(value: ClaimsPrincipal);
+    set CurrentPrincipal(value: ClaimsPrincipal | undefined);
     get NewPrincipal(): ClaimsPrincipal | undefined;
-    set NewPrincipal(value: ClaimsPrincipal);
+    set NewPrincipal(value: ClaimsPrincipal | undefined);
 }
 
 
@@ -1348,7 +1359,9 @@ export interface SecurityStampValidator_1$instance<TUser> {
     readonly Options: SecurityStampValidatorOptions;
     readonly SignInManager: SignInManager_1<TUser>;
     readonly TimeProvider: TimeProvider;
+    SecurityStampVerified(user: TUser, context: CookieValidatePrincipalContext): Task;
     ValidateAsync(context: CookieValidatePrincipalContext): Task;
+    VerifySecurityStamp(principal: ClaimsPrincipal): Task<TUser | undefined>;
 }
 
 
@@ -1369,8 +1382,9 @@ export type SecurityStampValidator_1<TUser> = SecurityStampValidator_1$instance<
 
 export interface SecurityStampValidatorOptions$instance {
     get OnRefreshingPrincipal(): Func<SecurityStampRefreshingPrincipalContext, Task> | undefined;
-    set OnRefreshingPrincipal(value: Func<SecurityStampRefreshingPrincipalContext, Task>);
-    TimeProvider: TimeProvider;
+    set OnRefreshingPrincipal(value: Func<SecurityStampRefreshingPrincipalContext, Task> | undefined);
+    get TimeProvider(): TimeProvider | undefined;
+    set TimeProvider(value: TimeProvider | undefined);
     ValidationInterval: TimeSpan;
 }
 
@@ -1399,9 +1413,11 @@ export interface SignInManager_1$instance<TUser> {
     GetExternalAuthenticationSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
     GetExternalLoginInfoAsync(expectedXsrf?: string): Task<ExternalLoginInfo | undefined>;
     GetTwoFactorAuthenticationUserAsync(): Task<TUser | undefined>;
+    IsLockedOut(user: TUser): Task<System_Internal.Boolean>;
     IsSignedIn(principal: ClaimsPrincipal): boolean;
     IsTwoFactorClientRememberedAsync(user: TUser): Task<System_Internal.Boolean>;
     IsTwoFactorEnabledAsync(user: TUser): Task<System_Internal.Boolean>;
+    LockedOut(user: TUser): Task<SignInResult>;
     MakePasskeyCreationOptionsAsync(userEntity: PasskeyUserEntity): Task<System_Internal.String>;
     MakePasskeyRequestOptionsAsync(user: TUser): Task<System_Internal.String>;
     PasskeySignInAsync(credentialJson: string): Task<SignInResult>;
@@ -1409,10 +1425,13 @@ export interface SignInManager_1$instance<TUser> {
     PasswordSignInAsync(userName: string, password: string, isPersistent: boolean, lockoutOnFailure: boolean): Task<SignInResult>;
     PerformPasskeyAssertionAsync(credentialJson: string): Task<PasskeyAssertionResult_1<TUser>>;
     PerformPasskeyAttestationAsync(credentialJson: string): Task<PasskeyAttestationResult>;
+    PreSignInCheck(user: TUser): Task<SignInResult | undefined>;
     RefreshSignInAsync(user: TUser): Task;
     RememberTwoFactorClientAsync(user: TUser): Task;
+    ResetLockout(user: TUser): Task;
     SignInAsync(user: TUser, isPersistent: boolean, authenticationMethod?: string): Task;
     SignInAsync(user: TUser, authenticationProperties: AuthenticationProperties, authenticationMethod?: string): Task;
+    SignInOrTwoFactorAsync(user: TUser, isPersistent: boolean, loginProvider?: string, bypassTwoFactor?: boolean): Task<SignInResult>;
     SignInWithClaimsAsync(user: TUser, isPersistent: boolean, additionalClaims: IEnumerable<Claim>): Task;
     SignInWithClaimsAsync(user: TUser, authenticationProperties: AuthenticationProperties, additionalClaims: IEnumerable<Claim>): Task;
     SignOutAsync(): Task;
@@ -1448,10 +1467,10 @@ export const SignInOptions: {
 export type SignInOptions = SignInOptions$instance;
 
 export interface SignInResult$instance {
-    readonly IsLockedOut: boolean;
-    readonly IsNotAllowed: boolean;
-    readonly RequiresTwoFactor: boolean;
-    readonly Succeeded: boolean;
+    IsLockedOut: boolean;
+    IsNotAllowed: boolean;
+    RequiresTwoFactor: boolean;
+    Succeeded: boolean;
     ToString(): string;
 }
 
@@ -1506,7 +1525,7 @@ export type TokenOptions = TokenOptions$instance;
 
 export interface TokenProviderDescriptor$instance {
     get ProviderInstance(): unknown | undefined;
-    set ProviderInstance(value: unknown);
+    set ProviderInstance(value: unknown | undefined);
     readonly ProviderType: Type;
 }
 
@@ -1526,7 +1545,7 @@ export interface TotpSecurityStampBasedTokenProvider_1$instance<TUser> {
 }
 
 
-export const TotpSecurityStampBasedTokenProvider_1: {
+export const TotpSecurityStampBasedTokenProvider_1: (abstract new<TUser>() => TotpSecurityStampBasedTokenProvider_1<TUser>) & {
 };
 
 
@@ -1540,7 +1559,10 @@ export type TotpSecurityStampBasedTokenProvider_1<TUser> = TotpSecurityStampBase
 
 
 export interface TwoFactorSecurityStampValidator_1$instance<TUser> extends SecurityStampValidator_1$instance<TUser>, ITwoFactorSecurityStampValidator {
+    SecurityStampVerified(user: TUser, context: CookieValidatePrincipalContext): Task;
     ValidateAsync(context: CookieValidatePrincipalContext): Task;
+    VerifySecurityStamp(principal: ClaimsPrincipal): Task<TUser | undefined>;
+    VerifySecurityStamp(principal: ClaimsPrincipal): Task<TUser | undefined>;
 }
 
 
@@ -1580,9 +1602,10 @@ export type UpperInvariantLookupNormalizer = UpperInvariantLookupNormalizer$inst
 
 
 export interface UserClaimsPrincipalFactory_1$instance<TUser> {
-    readonly Options: IdentityOptions;
-    readonly UserManager: UserManager_1<TUser>;
+    Options: IdentityOptions;
+    UserManager: UserManager_1<TUser>;
     CreateAsync(user: TUser): Task<ClaimsPrincipal>;
+    GenerateClaimsAsync(user: TUser): Task<ClaimsIdentity>;
 }
 
 
@@ -1601,8 +1624,10 @@ export type UserClaimsPrincipalFactory_1<TUser> = UserClaimsPrincipalFactory_1$i
 
 
 export interface UserClaimsPrincipalFactory_2$instance<TUser, TRole> extends UserClaimsPrincipalFactory_1$instance<TUser> {
-    readonly RoleManager: RoleManager_1<TRole>;
+    RoleManager: RoleManager_1<TRole>;
     CreateAsync(user: TUser): Task<ClaimsPrincipal>;
+    GenerateClaimsAsync(user: TUser): Task<ClaimsIdentity>;
+    GenerateClaimsAsync(user: TUser): Task<ClaimsIdentity>;
 }
 
 
@@ -1621,7 +1646,7 @@ export type UserClaimsPrincipalFactory_2<TUser, TRole> = UserClaimsPrincipalFact
 export interface UserLoginInfo$instance {
     LoginProvider: string;
     get ProviderDisplayName(): string | undefined;
-    set ProviderDisplayName(value: string);
+    set ProviderDisplayName(value: string | undefined);
     ProviderKey: string;
 }
 
@@ -1634,6 +1659,7 @@ export const UserLoginInfo: {
 export type UserLoginInfo = UserLoginInfo$instance;
 
 export interface UserManager_1$instance<TUser> {
+    readonly CancellationToken: CancellationToken;
     ErrorDescriber: IdentityErrorDescriber;
     KeyNormalizer: ILookupNormalizer;
     Logger: ILogger;
@@ -1674,8 +1700,10 @@ export interface UserManager_1$instance<TUser> {
     CreateAsync(user: TUser): Task<IdentityResult>;
     CreateAsync(user: TUser, password: string): Task<IdentityResult>;
     CreateSecurityTokenAsync(user: TUser): Task<byte[]>;
+    CreateTwoFactorRecoveryCode(): string;
     DeleteAsync(user: TUser): Task<IdentityResult>;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     FindByEmailAsync(email: string): Task<TUser | undefined>;
     FindByIdAsync(userId: string): Task<TUser | undefined>;
     FindByLoginAsync(loginProvider: string, providerKey: string): Task<TUser | undefined>;
@@ -1743,8 +1771,11 @@ export interface UserManager_1$instance<TUser> {
     UpdateAsync(user: TUser): Task<IdentityResult>;
     UpdateNormalizedEmailAsync(user: TUser): Task;
     UpdateNormalizedUserNameAsync(user: TUser): Task;
+    UpdatePasswordHash(user: TUser, newPassword: string, validatePassword: boolean): Task<IdentityResult>;
     UpdateSecurityStampAsync(user: TUser): Task<IdentityResult>;
+    UpdateUserAsync(user: TUser): Task<IdentityResult>;
     VerifyChangePhoneNumberTokenAsync(user: TUser, token: string, phoneNumber: string): Task<System_Internal.Boolean>;
+    VerifyPasswordAsync(store: IUserPasswordStore_1<TUser>, user: TUser, password: string): Task<PasswordVerificationResult>;
     VerifyTwoFactorTokenAsync(user: TUser, tokenProvider: string, token: string): Task<System_Internal.Boolean>;
     VerifyUserTokenAsync(user: TUser, tokenProvider: string, purpose: string, token: string): Task<System_Internal.Boolean>;
 }
@@ -1782,7 +1813,8 @@ export interface UserPasskeyInfo$instance {
     IsBackedUp: boolean;
     readonly IsBackupEligible: boolean;
     IsUserVerified: boolean;
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     readonly PublicKey: byte[];
     SignCount: uint;
     readonly Transports: string[] | undefined;
@@ -1801,16 +1833,24 @@ export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TK
     readonly Users: IQueryable<TUser>;
     AddClaimsAsync(user: TUser, claims: IEnumerable<Claim>, cancellationToken?: CancellationToken): Task;
     AddLoginAsync(user: TUser, login: UserLoginInfo, cancellationToken?: CancellationToken): Task;
+    AddUserTokenAsync(token: TUserToken): Task;
     ConvertIdFromString(id: string): TKey | undefined;
     ConvertIdToString(id: TKey): string | undefined;
     CountCodesAsync(user: TUser, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
     CreateAsync(user: TUser, cancellationToken?: CancellationToken): Task<IdentityResult>;
+    CreateUserClaim(user: TUser, claim: Claim): TUserClaim;
+    CreateUserLogin(user: TUser, login: UserLoginInfo): TUserLogin;
+    CreateUserToken(user: TUser, loginProvider: string, name: string, value: string): TUserToken;
     DeleteAsync(user: TUser, cancellationToken?: CancellationToken): Task<IdentityResult>;
     Dispose(): void;
     FindByEmailAsync(normalizedEmail: string, cancellationToken?: CancellationToken): Task<TUser | undefined>;
     FindByIdAsync(userId: string, cancellationToken?: CancellationToken): Task<TUser | undefined>;
     FindByLoginAsync(loginProvider: string, providerKey: string, cancellationToken?: CancellationToken): Task<TUser | undefined>;
     FindByNameAsync(normalizedUserName: string, cancellationToken?: CancellationToken): Task<TUser | undefined>;
+    FindTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task<TUserToken | undefined>;
+    FindUserAsync(userId: TKey, cancellationToken: CancellationToken): Task<TUser | undefined>;
+    FindUserLoginAsync(userId: TKey, loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task<TUserLogin | undefined>;
+    FindUserLoginAsync(loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task<TUserLogin | undefined>;
     GetAccessFailedCountAsync(user: TUser, cancellationToken?: CancellationToken): Task<System_Internal.Int32>;
     GetAuthenticatorKeyAsync(user: TUser, cancellationToken: CancellationToken): Task<string | undefined>;
     GetClaimsAsync(user: TUser, cancellationToken?: CancellationToken): Task<IList<Claim>>;
@@ -1836,6 +1876,7 @@ export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TK
     RemoveClaimsAsync(user: TUser, claims: IEnumerable<Claim>, cancellationToken?: CancellationToken): Task;
     RemoveLoginAsync(user: TUser, loginProvider: string, providerKey: string, cancellationToken?: CancellationToken): Task;
     RemoveTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task;
+    RemoveUserTokenAsync(token: TUserToken): Task;
     ReplaceClaimAsync(user: TUser, claim: Claim, newClaim: Claim, cancellationToken?: CancellationToken): Task;
     ReplaceCodesAsync(user: TUser, recoveryCodes: IEnumerable<System_Internal.String>, cancellationToken: CancellationToken): Task;
     ResetAccessFailedCountAsync(user: TUser, cancellationToken?: CancellationToken): Task;
@@ -1857,8 +1898,7 @@ export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TK
 }
 
 
-export const UserStoreBase_5: {
-    new<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>>(describer: IdentityErrorDescriber): UserStoreBase_5<TUser, TKey, TUserClaim, TUserLogin, TUserToken>;
+export const UserStoreBase_5: (abstract new<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>>(describer: IdentityErrorDescriber) => UserStoreBase_5<TUser, TKey, TUserClaim, TUserLogin, TUserToken>) & {
 };
 
 
@@ -1883,9 +1923,12 @@ export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TR
     AddLoginAsync(user: TUser, login: UserLoginInfo, cancellationToken?: CancellationToken): Task;
     AddToRoleAsync(user: TUser, normalizedRoleName: string, cancellationToken?: CancellationToken): Task;
     CountCodesAsync(user: TUser, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
+    CreateUserRole(user: TUser, role: TRole): TUserRole;
     FindByEmailAsync(normalizedEmail: string, cancellationToken?: CancellationToken): Task<TUser | undefined>;
     FindByIdAsync(userId: string, cancellationToken?: CancellationToken): Task<TUser | undefined>;
     FindByLoginAsync(loginProvider: string, providerKey: string, cancellationToken?: CancellationToken): Task<TUser | undefined>;
+    FindRoleAsync(normalizedRoleName: string, cancellationToken: CancellationToken): Task<TRole | undefined>;
+    FindUserRoleAsync(userId: TKey, roleId: TKey, cancellationToken: CancellationToken): Task<TUserRole | undefined>;
     GetAuthenticatorKeyAsync(user: TUser, cancellationToken: CancellationToken): Task<string | undefined>;
     GetClaimsAsync(user: TUser, cancellationToken?: CancellationToken): Task<IList<Claim>>;
     GetEmailAsync(user: TUser, cancellationToken?: CancellationToken): Task<string | undefined>;
@@ -1923,8 +1966,7 @@ export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TR
 }
 
 
-export const UserStoreBase_8: {
-    new<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber): UserStoreBase_8<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim>;
+export const UserStoreBase_8: (abstract new<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>>(describer: IdentityErrorDescriber) => UserStoreBase_8<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim>) & {
 };
 
 
@@ -1946,7 +1988,7 @@ export type UserStoreBase_8<TUser extends IdentityUser_1<TKey>, TRole extends Id
 
 
 export interface UserValidator_1$instance<TUser> {
-    readonly Describer: IdentityErrorDescriber;
+    Describer: IdentityErrorDescriber;
     ValidateAsync(manager: UserManager_1<TUser>, user: TUser): Task<IdentityResult>;
 }
 

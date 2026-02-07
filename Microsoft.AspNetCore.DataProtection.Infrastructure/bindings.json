@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.DataProtection.Infrastructure.IApplicationDiscriminator",
           "declaringAssemblyName": "Microsoft.AspNetCore.DataProtection.Abstractions"
         }

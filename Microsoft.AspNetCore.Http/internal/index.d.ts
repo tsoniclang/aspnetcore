@@ -92,7 +92,7 @@ export type IEndpointFilter = IEndpointFilter$instance;
 
 export interface IFileHttpResult$instance {
     readonly ContentType: string;
-    readonly FileDownloadName: string;
+    readonly FileDownloadName: string | undefined;
 }
 
 
@@ -101,7 +101,7 @@ export type IFileHttpResult = IFileHttpResult$instance;
 export interface IFormCollection$instance extends IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable {
     readonly Count: int;
     readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
-    readonly Item: StringValues;
+    readonly [key: string]: StringValues;
     readonly Files: IFormFileCollection;
     ContainsKey(key: string): boolean;
     TryGetValue(key: string, value: StringValues): boolean;
@@ -126,7 +126,7 @@ export interface IFormFile$instance {
 export type IFormFile = IFormFile$instance;
 
 export interface IFormFileCollection$instance extends IReadOnlyList<IFormFile>, IEnumerable__System_Collections_Generic<IFormFile>, IEnumerable, IReadOnlyCollection<IFormFile> {
-    readonly Item: IFormFile;
+    readonly [name: string]: IFormFile | undefined;
     GetFile(name: string): IFormFile | undefined;
     GetFiles(name: string): IReadOnlyList<IFormFile>;
 }
@@ -135,7 +135,7 @@ export interface IFormFileCollection$instance extends IReadOnlyList<IFormFile>, 
 export type IFormFileCollection = IFormFileCollection$instance;
 
 export interface IHeaderDictionary$instance extends IDictionary<System_Internal.String, StringValues>, ICollection__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable {
-    Item: StringValues;
+    [key: string]: StringValues;
     ContentLength: Nullable<System_Internal.Int64>;
     Accept: StringValues;
     AcceptCharset: StringValues;
@@ -232,7 +232,8 @@ export interface IHeaderDictionary$instance extends IDictionary<System_Internal.
 export type IHeaderDictionary = IHeaderDictionary$instance;
 
 export interface IHttpContextAccessor$instance {
-    HttpContext: HttpContext;
+    get HttpContext(): HttpContext | undefined;
+    set HttpContext(value: HttpContext | undefined);
 }
 
 
@@ -254,7 +255,7 @@ export interface IMiddleware$instance {
 export type IMiddleware = IMiddleware$instance;
 
 export interface IMiddlewareFactory$instance {
-    Create(middlewareType: Type): IMiddleware;
+    Create(middlewareType: Type): IMiddleware | undefined;
     Release(middleware: IMiddleware): void;
 }
 
@@ -287,7 +288,7 @@ export type IProblemDetailsWriter = IProblemDetailsWriter$instance;
 export interface IQueryCollection$instance extends IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable {
     readonly Count: int;
     readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
-    readonly Item: StringValues;
+    readonly [key: string]: StringValues;
     ContainsKey(key: string): boolean;
     TryGetValue(key: string, value: StringValues): boolean;
 }
@@ -298,7 +299,7 @@ export type IQueryCollection = IQueryCollection$instance;
 export interface IRequestCookieCollection$instance extends IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>, IEnumerable {
     readonly Count: int;
     readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
-    readonly Item: string;
+    readonly [key: string]: string | undefined;
     ContainsKey(key: string): boolean;
     TryGetValue(key: string, value: string): boolean;
 }
@@ -352,14 +353,14 @@ export interface IStatusCodeHttpResult$instance {
 export type IStatusCodeHttpResult = IStatusCodeHttpResult$instance;
 
 export interface IValueHttpResult$instance {
-    readonly Value: unknown;
+    readonly Value: unknown | undefined;
 }
 
 
 export type IValueHttpResult = IValueHttpResult$instance;
 
 export interface IValueHttpResult_1$instance<TValue> {
-    readonly Value: TValue;
+    readonly Value: TValue | undefined;
 }
 
 
@@ -435,7 +436,7 @@ export interface HostString$instance {
     readonly HasValue: boolean;
     readonly Host: string;
     readonly Port: Nullable<System_Internal.Int32>;
-    readonly Value: string;
+    readonly Value: string | undefined;
     Equals(other: HostString): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -457,7 +458,7 @@ export type HostString = HostString$instance;
 
 export interface PathString$instance {
     readonly HasValue: boolean;
-    readonly Value: string;
+    readonly Value: string | undefined;
     Add(other: PathString): PathString;
     Add(other: QueryString): string;
     Equals(other: PathString): boolean;
@@ -502,7 +503,7 @@ export type QueryCollection_Enumerator = QueryCollection_Enumerator$instance;
 
 export interface QueryString$instance {
     readonly HasValue: boolean;
-    readonly Value: string;
+    readonly Value: string | undefined;
     Add(other: QueryString): QueryString;
     Add(name: string, value: string): QueryString;
     Equals(other: QueryString): boolean;
@@ -588,20 +589,20 @@ export type BindingAddress = BindingAddress$instance;
 
 export interface ConnectionInfo$instance {
     get ClientCertificate(): X509Certificate2 | undefined;
-    set ClientCertificate(value: X509Certificate2);
+    set ClientCertificate(value: X509Certificate2 | undefined);
     Id: string;
     get LocalIpAddress(): IPAddress | undefined;
-    set LocalIpAddress(value: IPAddress);
+    set LocalIpAddress(value: IPAddress | undefined);
     LocalPort: int;
     get RemoteIpAddress(): IPAddress | undefined;
-    set RemoteIpAddress(value: IPAddress);
+    set RemoteIpAddress(value: IPAddress | undefined);
     RemotePort: int;
     GetClientCertificateAsync(cancellationToken?: CancellationToken): Task<X509Certificate2 | undefined>;
     RequestClose(): void;
 }
 
 
-export const ConnectionInfo: {
+export const ConnectionInfo: (abstract new() => ConnectionInfo) & {
 };
 
 
@@ -609,14 +610,16 @@ export type ConnectionInfo = ConnectionInfo$instance;
 
 export interface CookieBuilder$instance {
     get Domain(): string | undefined;
-    set Domain(value: string);
+    set Domain(value: string | undefined);
     Expiration: Nullable<TimeSpan>;
     readonly Extensions: IList__System_Collections_Generic<System_Internal.String>;
     HttpOnly: boolean;
     IsEssential: boolean;
     MaxAge: Nullable<TimeSpan>;
-    Name: string;
-    Path: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
+    get Path(): string | undefined;
+    set Path(value: string | undefined);
     SameSite: SameSiteMode;
     SecurePolicy: CookieSecurePolicy;
     Build(context: HttpContext): CookieOptions;
@@ -633,13 +636,14 @@ export type CookieBuilder = CookieBuilder$instance;
 
 export interface CookieOptions$instance {
     get Domain(): string | undefined;
-    set Domain(value: string);
+    set Domain(value: string | undefined);
     Expires: Nullable<DateTimeOffset>;
     readonly Extensions: IList__System_Collections_Generic<System_Internal.String>;
     HttpOnly: boolean;
     IsEssential: boolean;
     MaxAge: Nullable<TimeSpan>;
-    Path: string;
+    get Path(): string | undefined;
+    set Path(value: string | undefined);
     SameSite: SameSiteMode;
     Secure: boolean;
     CreateCookieHeader(name: string, value: string): SetCookieHeaderValue;
@@ -730,9 +734,9 @@ export const DisableHttpMetricsAttribute: {
 export type DisableHttpMetricsAttribute = DisableHttpMetricsAttribute$instance;
 
 export interface Endpoint$instance {
-    readonly DisplayName: string;
+    readonly DisplayName: string | undefined;
     readonly Metadata: EndpointMetadataCollection;
-    readonly RequestDelegate: RequestDelegate;
+    readonly RequestDelegate: RequestDelegate | undefined;
     ToString(): string | undefined;
 }
 
@@ -784,7 +788,7 @@ export interface EndpointFilterInvocationContext$instance {
 }
 
 
-export const EndpointFilterInvocationContext: {
+export const EndpointFilterInvocationContext: (abstract new() => EndpointFilterInvocationContext) & {
     Create<T>(httpContext: HttpContext, arg: T): EndpointFilterInvocationContext;
     Create<T1, T2, T3, T4, T5, T6, T7, T8>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7, arg8: T8): EndpointFilterInvocationContext;
     Create<T1, T2, T3, T4, T5, T6, T7>(httpContext: HttpContext, arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, arg7: T7): EndpointFilterInvocationContext;
@@ -801,7 +805,7 @@ export type EndpointFilterInvocationContext = EndpointFilterInvocationContext$in
 
 export interface EndpointMetadataCollection$instance {
     readonly Count: int;
-    readonly Item: unknown;
+    readonly [index: number]: unknown;
     GetEnumerator(): EndpointMetadataCollection_Enumerator;
     GetMetadata<T>(): T | undefined;
     GetOrderedMetadata<T>(): IReadOnlyList<T>;
@@ -840,8 +844,8 @@ export type EndpointSummaryAttribute = EndpointSummaryAttribute$instance & __End
 
 export interface FormCollection$instance {
     readonly Count: int;
-    readonly Files: IFormFileCollection;
-    readonly Item: StringValues;
+    Files: IFormFileCollection;
+    readonly [key: string]: StringValues;
     readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
     ContainsKey(key: string): boolean;
     GetEnumerator(): FormCollection_Enumerator;
@@ -858,8 +862,6 @@ export const FormCollection: {
 export interface __FormCollection$views {
     As_IFormCollection(): IFormCollection$instance;
 }
-
-export interface FormCollection$instance extends IFormCollection$instance {}
 
 export type FormCollection = FormCollection$instance & __FormCollection$views;
 
@@ -890,7 +892,7 @@ export type FormFile = FormFile$instance & __FormFile$views;
 
 
 export interface FormFileCollection$instance extends List<IFormFile> {
-    readonly Item: IFormFile;
+    readonly [name: string]: IFormFile | undefined;
     GetFile(name: string): IFormFile | undefined;
     GetFiles(name: string): IReadOnlyList<IFormFile>;
 }
@@ -914,7 +916,7 @@ export interface HeaderDictionary$instance {
     ContentLength: Nullable<System_Internal.Int64>;
     readonly Count: int;
     IsReadOnly: boolean;
-    Item: StringValues;
+    [key: string]: StringValues;
     readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
     readonly Values: ICollection__System_Collections_Generic<StringValues>;
     Add(item: KeyValuePair<System_Internal.String, StringValues>): void;
@@ -962,14 +964,15 @@ export interface HttpContext$instance {
 }
 
 
-export const HttpContext: {
+export const HttpContext: (abstract new() => HttpContext) & {
 };
 
 
 export type HttpContext = HttpContext$instance;
 
 export interface HttpContextAccessor$instance {
-    HttpContext: HttpContext;
+    get HttpContext(): HttpContext | undefined;
+    set HttpContext(value: HttpContext | undefined);
 }
 
 
@@ -991,7 +994,8 @@ export interface HttpRequest$instance {
     Body: Stream;
     readonly BodyReader: PipeReader;
     ContentLength: Nullable<System_Internal.Int64>;
-    ContentType: string;
+    get ContentType(): string | undefined;
+    set ContentType(value: string | undefined);
     Cookies: IRequestCookieCollection;
     Form: IFormCollection;
     readonly HasFormContentType: boolean;
@@ -1011,7 +1015,7 @@ export interface HttpRequest$instance {
 }
 
 
-export const HttpRequest: {
+export const HttpRequest: (abstract new() => HttpRequest) & {
 };
 
 
@@ -1021,7 +1025,8 @@ export interface HttpResponse$instance {
     Body: Stream;
     readonly BodyWriter: PipeWriter;
     ContentLength: Nullable<System_Internal.Int64>;
-    ContentType: string;
+    get ContentType(): string | undefined;
+    set ContentType(value: string | undefined);
     readonly Cookies: IResponseCookies;
     readonly HasStarted: boolean;
     readonly Headers: IHeaderDictionary;
@@ -1040,7 +1045,7 @@ export interface HttpResponse$instance {
 }
 
 
-export const HttpResponse: {
+export const HttpResponse: (abstract new() => HttpResponse) & {
 };
 
 
@@ -1061,7 +1066,7 @@ export const HttpValidationProblemDetails: {
 export type HttpValidationProblemDetails = HttpValidationProblemDetails$instance;
 
 export interface MiddlewareFactory$instance {
-    Create(middlewareType: Type): IMiddleware;
+    Create(middlewareType: Type): IMiddleware | undefined;
     Release(middleware: IMiddleware): void;
 }
 
@@ -1082,8 +1087,9 @@ export type MiddlewareFactory = MiddlewareFactory$instance & __MiddlewareFactory
 
 export interface ProblemDetailsContext$instance {
     get AdditionalMetadata(): EndpointMetadataCollection | undefined;
-    set AdditionalMetadata(value: EndpointMetadataCollection);
-    Exception: Exception;
+    set AdditionalMetadata(value: EndpointMetadataCollection | undefined);
+    get Exception(): Exception | undefined;
+    set Exception(value: Exception | undefined);
     HttpContext: HttpContext;
     ProblemDetails: ProblemDetails;
 }
@@ -1098,7 +1104,7 @@ export type ProblemDetailsContext = ProblemDetailsContext$instance;
 
 export interface ProblemDetailsOptions$instance {
     get CustomizeProblemDetails(): Action<ProblemDetailsContext> | undefined;
-    set CustomizeProblemDetails(value: Action<ProblemDetailsContext>);
+    set CustomizeProblemDetails(value: Action<ProblemDetailsContext> | undefined);
 }
 
 
@@ -1110,10 +1116,12 @@ export const ProblemDetailsOptions: {
 export type ProblemDetailsOptions = ProblemDetailsOptions$instance;
 
 export interface ProducesResponseTypeMetadata$instance {
-    readonly ContentTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    Description: string;
-    readonly StatusCode: int;
-    readonly Type: Type;
+    ContentTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    get Description(): string | undefined;
+    set Description(value: string | undefined);
+    StatusCode: int;
+    get Type(): Type | undefined;
+    set Type(value: Type | undefined);
     ToString(): string;
 }
 
@@ -1132,7 +1140,7 @@ export type ProducesResponseTypeMetadata = ProducesResponseTypeMetadata$instance
 
 export interface QueryCollection$instance {
     readonly Count: int;
-    readonly Item: StringValues;
+    readonly [key: string]: StringValues;
     readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
     ContainsKey(key: string): boolean;
     GetEnumerator(): QueryCollection_Enumerator;
@@ -1161,10 +1169,11 @@ export type QueryCollection = QueryCollection$instance & __QueryCollection$views
 export interface RequestDelegateFactoryOptions$instance {
     DisableInferBodyFromParameters: boolean;
     get EndpointBuilder(): EndpointBuilder | undefined;
-    set EndpointBuilder(value: EndpointBuilder);
+    set EndpointBuilder(value: EndpointBuilder | undefined);
     get RouteParameterNames(): IEnumerable__System_Collections_Generic<System_Internal.String> | undefined;
-    set RouteParameterNames(value: IEnumerable__System_Collections_Generic<System_Internal.String>);
-    ServiceProvider: IServiceProvider;
+    set RouteParameterNames(value: IEnumerable__System_Collections_Generic<System_Internal.String> | undefined);
+    get ServiceProvider(): IServiceProvider | undefined;
+    set ServiceProvider(value: IServiceProvider | undefined);
     ThrowOnBadRequest: boolean;
 }
 
@@ -1253,7 +1262,7 @@ export interface WebSocketAcceptContext$instance {
     KeepAliveTimeout: Nullable<TimeSpan>;
     ServerMaxWindowBits: int;
     get SubProtocol(): string | undefined;
-    set SubProtocol(value: string);
+    set SubProtocol(value: string | undefined);
 }
 
 
@@ -1273,7 +1282,7 @@ export interface WebSocketManager$instance {
 }
 
 
-export const WebSocketManager: {
+export const WebSocketManager: (abstract new() => WebSocketManager) & {
 };
 
 

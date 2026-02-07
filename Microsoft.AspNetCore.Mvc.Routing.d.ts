@@ -9,7 +9,7 @@ import * as Internal from './Microsoft.AspNetCore.Mvc.Routing/internal/index.js'
 import type { Endpoint, HttpContext } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { IActionDescriptorCollectionProvider } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 import type { ActionContext, IUrlHelper } from './Microsoft.AspNetCore.Mvc/internal/index.js';
-import type { IParameterPolicy, IRouteConstraint, IRouter, RouteDirection, RouteValueDictionary } from './Microsoft.AspNetCore.Routing/internal/index.js';
+import type { IParameterPolicy, IRouteConstraint, IRouter, RouteDirection, RouteValueDictionary, VirtualPathData } from './Microsoft.AspNetCore.Routing/internal/index.js';
 import type { IEnumerable, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Attribute, Boolean as ClrBoolean, Int32, Nullable, Object as ClrObject, String as ClrString } from '@tsonic/dotnet/System.js';
 import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';

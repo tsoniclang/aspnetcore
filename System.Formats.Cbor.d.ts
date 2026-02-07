@@ -8,7 +8,7 @@ import * as Internal from './System.Formats.Cbor/internal/index.js';
 // Cross-namespace type imports for constraints
 import type { Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Decimal, Double, Enum, Exception, Half, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, UInt32, UInt64, Void } from '@tsonic/dotnet/System.js';
 import type { BigInteger } from '@tsonic/dotnet/System.Numerics.js';
-import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { CborReaderState as CborReaderState } from './System.Formats.Cbor/internal/index.js';

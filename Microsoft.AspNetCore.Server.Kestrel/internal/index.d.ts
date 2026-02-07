@@ -22,14 +22,13 @@ export interface EndpointConfiguration$instance {
 
 
 export const EndpointConfiguration: {
-    new(): EndpointConfiguration;
 };
 
 
 export type EndpointConfiguration = EndpointConfiguration$instance;
 
 export interface KestrelConfigurationLoader$instance {
-    readonly Configuration: IConfiguration;
+    Configuration: IConfiguration;
     readonly Options: KestrelServerOptions;
     AnyIPEndpoint(port: int): KestrelConfigurationLoader;
     AnyIPEndpoint(port: int, configure: Action<ListenOptions>): KestrelConfigurationLoader;
@@ -51,7 +50,6 @@ export interface KestrelConfigurationLoader$instance {
 
 
 export const KestrelConfigurationLoader: {
-    new(): KestrelConfigurationLoader;
 };
 
 
