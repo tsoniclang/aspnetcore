@@ -11,6 +11,8 @@ import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/Sy
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IEmailSender$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Identity_UI_Services_IEmailSender: never;
+
     SendEmailAsync(email: string, subject: string, htmlMessage: string): Task;
 }
 
@@ -18,6 +20,8 @@ export interface IEmailSender$instance {
 export type IEmailSender = IEmailSender$instance;
 
 export interface NoOpEmailSender$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Identity_UI_Services_IEmailSender: never;
+
     SendEmailAsync(email: string, subject: string, htmlMessage: string): Task;
 }
 

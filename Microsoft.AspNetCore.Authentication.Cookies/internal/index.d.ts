@@ -21,6 +21,8 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IOptionsMonitor, IPostConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ICookieManager$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ICookieManager: never;
+
     AppendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
     DeleteCookie(context: HttpContext, key: string, options: CookieOptions): void;
     GetRequestCookie(context: HttpContext, key: string): string | undefined;
@@ -30,6 +32,8 @@ export interface ICookieManager$instance {
 export type ICookieManager = ICookieManager$instance;
 
 export interface ITicketStore$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ITicketStore: never;
+
     RemoveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
     RemoveAsync(key: string, cancellationToken: CancellationToken): Task;
     RemoveAsync(key: string): Task;
@@ -48,6 +52,8 @@ export interface ITicketStore$instance {
 export type ITicketStore = ITicketStore$instance;
 
 export interface ChunkingCookieManager$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ICookieManager: never;
+
     ChunkSize: Nullable<System_Internal.Int32>;
     ThrowForPartialCookies: boolean;
     AppendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
@@ -101,6 +107,10 @@ export const CookieAuthenticationEvents: {
 export type CookieAuthenticationEvents = CookieAuthenticationEvents$instance;
 
 export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions>, IAuthenticationSignOutHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties): Task;
     CreateEventsAsync(): Task<unknown>;
@@ -221,6 +231,8 @@ export const CookieValidatePrincipalContext: {
 export type CookieValidatePrincipalContext = CookieValidatePrincipalContext$instance;
 
 export interface PostConfigureCookieAuthenticationOptions$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
+
     PostConfigure(name: string, options: CookieAuthenticationOptions): void;
 }
 

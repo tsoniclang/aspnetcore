@@ -41,6 +41,8 @@ export const CircuitOptions: {
 export type CircuitOptions = CircuitOptions$instance;
 
 export interface CircuitRootComponentOptions$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration: never;
+
     readonly JSComponents: JSComponentConfigurationStore;
     MaxJSRootComponents: int;
 }
@@ -61,6 +63,9 @@ export type CircuitRootComponentOptions = CircuitRootComponentOptions$instance &
 
 
 export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly RevalidationInterval: TimeSpan;
     Dispose(disposing: boolean): void;
     SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
@@ -76,10 +81,14 @@ export interface __RevalidatingServerAuthenticationStateProvider$views {
     As_IHostEnvironmentAuthenticationStateProvider(): Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance;
 }
 
+export interface RevalidatingServerAuthenticationStateProvider$instance extends System_Internal.IDisposable {}
+
 export type RevalidatingServerAuthenticationStateProvider = RevalidatingServerAuthenticationStateProvider$instance & __RevalidatingServerAuthenticationStateProvider$views;
 
 
 export interface ServerAuthenticationStateProvider$instance extends AuthenticationStateProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
+
     GetAuthenticationStateAsync(): Task<AuthenticationState>;
     SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
 }

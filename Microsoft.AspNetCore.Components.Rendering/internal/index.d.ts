@@ -14,6 +14,8 @@ import type { Action, Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int3
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ComponentState$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     readonly Component: IComponent;
     readonly ComponentId: int;
     readonly LogicalParentComponentState: ComponentState | undefined;
@@ -31,6 +33,8 @@ export const ComponentState: {
 export type ComponentState = ComponentState$instance;
 
 export interface RenderTreeBuilder$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     AddAttribute(sequence: int, name: string): void;
     AddAttribute(sequence: int, name: string, value: boolean): void;
     AddAttribute(sequence: int, name: string, value: string): void;

@@ -22,6 +22,8 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ICompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
+
     readonly EncodingName: string;
     readonly SupportsFlush: boolean;
     CreateStream(outputStream: Stream): Stream;
@@ -31,6 +33,8 @@ export interface ICompressionProvider$instance {
 export type ICompressionProvider = ICompressionProvider$instance;
 
 export interface IResponseCompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider: never;
+
     GetCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
     ShouldCompressResponse(context: HttpContext): boolean;
 }
@@ -39,6 +43,8 @@ export interface IResponseCompressionProvider$instance {
 export type IResponseCompressionProvider = IResponseCompressionProvider$instance;
 
 export interface BrotliCompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
+
     readonly EncodingName: string;
     readonly SupportsFlush: boolean;
     CreateStream(outputStream: Stream): Stream;
@@ -60,6 +66,8 @@ export type BrotliCompressionProvider = BrotliCompressionProvider$instance & __B
 
 
 export interface BrotliCompressionProviderOptions$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
+
     Level: CompressionLevel;
 }
 
@@ -72,6 +80,15 @@ export const BrotliCompressionProviderOptions: {
 export type BrotliCompressionProviderOptions = BrotliCompressionProviderOptions$instance;
 
 export interface CompressionProviderCollection$instance extends Collection<ICompressionProvider> {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Collections_IList: never;
+
     Add<TCompressionProvider extends ICompressionProvider>(): void;
     Add(providerType: Type): void;
 }
@@ -85,6 +102,8 @@ export const CompressionProviderCollection: {
 export type CompressionProviderCollection = CompressionProviderCollection$instance;
 
 export interface GzipCompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
+
     readonly EncodingName: string;
     readonly SupportsFlush: boolean;
     CreateStream(outputStream: Stream): Stream;
@@ -106,6 +125,8 @@ export type GzipCompressionProvider = GzipCompressionProvider$instance & __GzipC
 
 
 export interface GzipCompressionProviderOptions$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
+
     Level: CompressionLevel;
 }
 
@@ -157,6 +178,8 @@ export const ResponseCompressionOptions: {
 export type ResponseCompressionOptions = ResponseCompressionOptions$instance;
 
 export interface ResponseCompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider: never;
+
     CheckRequestAcceptsCompression(context: HttpContext): boolean;
     GetCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
     ShouldCompressResponse(context: HttpContext): boolean;

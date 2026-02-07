@@ -12,6 +12,8 @@ import type { Action, Boolean as ClrBoolean, FormattableString, Object as ClrObj
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface IFormValueMapper$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Forms_Mapping_IFormValueMapper: never;
+
     CanMap(valueType: Type, scopeName: string, formName: string): boolean;
     Map(context: FormValueMappingContext): void;
 }

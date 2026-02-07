@@ -25,6 +25,10 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface EventData_Enumerator$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Current: KeyValuePair<System_Internal.String, unknown>;
     Dispose(): void;
     MoveNext(): boolean;
@@ -40,6 +44,11 @@ export const EventData_Enumerator: {
 export type EventData_Enumerator = EventData_Enumerator$instance;
 
 export interface AfterActionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
@@ -57,6 +66,11 @@ export const AfterActionEventData: {
 export type AfterActionEventData = AfterActionEventData$instance;
 
 export interface AfterActionFilterOnActionExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutedContext: ActionExecutedContext;
     readonly Count: int;
@@ -74,6 +88,11 @@ export const AfterActionFilterOnActionExecutedEventData: {
 export type AfterActionFilterOnActionExecutedEventData = AfterActionFilterOnActionExecutedEventData$instance;
 
 export interface AfterActionFilterOnActionExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutingContext: ActionExecutingContext;
     readonly Count: int;
@@ -91,6 +110,11 @@ export const AfterActionFilterOnActionExecutingEventData: {
 export type AfterActionFilterOnActionExecutingEventData = AfterActionFilterOnActionExecutingEventData$instance;
 
 export interface AfterActionFilterOnActionExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutedContext: ActionExecutedContext;
     readonly Count: int;
@@ -108,6 +132,11 @@ export const AfterActionFilterOnActionExecutionEventData: {
 export type AfterActionFilterOnActionExecutionEventData = AfterActionFilterOnActionExecutionEventData$instance;
 
 export interface AfterActionResultEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionContext: ActionContext;
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
@@ -124,6 +153,11 @@ export const AfterActionResultEventData: {
 export type AfterActionResultEventData = AfterActionResultEventData$instance;
 
 export interface AfterAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly AuthorizationContext: AuthorizationFilterContext;
     readonly Count: int;
@@ -141,6 +175,11 @@ export const AfterAuthorizationFilterOnAuthorizationEventData: {
 export type AfterAuthorizationFilterOnAuthorizationEventData = AfterAuthorizationFilterOnAuthorizationEventData$instance;
 
 export interface AfterControllerActionMethodEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionContext: ActionContext;
     readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown>;
     readonly Controller: unknown;
@@ -159,6 +198,11 @@ export const AfterControllerActionMethodEventData: {
 export type AfterControllerActionMethodEventData = AfterControllerActionMethodEventData$instance;
 
 export interface AfterExceptionFilterOnExceptionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly ExceptionContext: ExceptionContext;
@@ -176,6 +220,11 @@ export const AfterExceptionFilterOnExceptionEventData: {
 export type AfterExceptionFilterOnExceptionEventData = AfterExceptionFilterOnExceptionEventData$instance;
 
 export interface AfterHandlerMethodEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionContext: ActionContext;
     readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
     readonly Count: int;
@@ -195,6 +244,11 @@ export const AfterHandlerMethodEventData: {
 export type AfterHandlerMethodEventData = AfterHandlerMethodEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IPageFilter;
@@ -212,6 +266,11 @@ export const AfterPageFilterOnPageHandlerExecutedEventData: {
 export type AfterPageFilterOnPageHandlerExecutedEventData = AfterPageFilterOnPageHandlerExecutedEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IPageFilter;
@@ -229,6 +288,11 @@ export const AfterPageFilterOnPageHandlerExecutingEventData: {
 export type AfterPageFilterOnPageHandlerExecutingEventData = AfterPageFilterOnPageHandlerExecutingEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
@@ -246,6 +310,11 @@ export const AfterPageFilterOnPageHandlerExecutionEventData: {
 export type AfterPageFilterOnPageHandlerExecutionEventData = AfterPageFilterOnPageHandlerExecutionEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerSelectedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IPageFilter;
@@ -263,6 +332,11 @@ export const AfterPageFilterOnPageHandlerSelectedEventData: {
 export type AfterPageFilterOnPageHandlerSelectedEventData = AfterPageFilterOnPageHandlerSelectedEventData$instance;
 
 export interface AfterPageFilterOnPageHandlerSelectionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
@@ -280,6 +354,11 @@ export const AfterPageFilterOnPageHandlerSelectionEventData: {
 export type AfterPageFilterOnPageHandlerSelectionEventData = AfterPageFilterOnPageHandlerSelectionEventData$instance;
 
 export interface AfterResourceFilterOnResourceExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -297,6 +376,11 @@ export const AfterResourceFilterOnResourceExecutedEventData: {
 export type AfterResourceFilterOnResourceExecutedEventData = AfterResourceFilterOnResourceExecutedEventData$instance;
 
 export interface AfterResourceFilterOnResourceExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -314,6 +398,11 @@ export const AfterResourceFilterOnResourceExecutingEventData: {
 export type AfterResourceFilterOnResourceExecutingEventData = AfterResourceFilterOnResourceExecutingEventData$instance;
 
 export interface AfterResourceFilterOnResourceExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -331,6 +420,11 @@ export const AfterResourceFilterOnResourceExecutionEventData: {
 export type AfterResourceFilterOnResourceExecutionEventData = AfterResourceFilterOnResourceExecutionEventData$instance;
 
 export interface AfterResultFilterOnResultExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -348,6 +442,11 @@ export const AfterResultFilterOnResultExecutedEventData: {
 export type AfterResultFilterOnResultExecutedEventData = AfterResultFilterOnResultExecutedEventData$instance;
 
 export interface AfterResultFilterOnResultExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -365,6 +464,11 @@ export const AfterResultFilterOnResultExecutingEventData: {
 export type AfterResultFilterOnResultExecutingEventData = AfterResultFilterOnResultExecutingEventData$instance;
 
 export interface AfterResultFilterOnResultExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -382,6 +486,11 @@ export const AfterResultFilterOnResultExecutionEventData: {
 export type AfterResultFilterOnResultExecutionEventData = AfterResultFilterOnResultExecutionEventData$instance;
 
 export interface AfterViewComponentEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
@@ -400,6 +509,11 @@ export const AfterViewComponentEventData: {
 export type AfterViewComponentEventData = AfterViewComponentEventData$instance;
 
 export interface AfterViewEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
     readonly View: IView;
@@ -416,6 +530,11 @@ export const AfterViewEventData: {
 export type AfterViewEventData = AfterViewEventData$instance;
 
 export interface AfterViewPageEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
@@ -434,6 +553,11 @@ export const AfterViewPageEventData: {
 export type AfterViewPageEventData = AfterViewPageEventData$instance;
 
 export interface BeforeActionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
@@ -451,6 +575,11 @@ export const BeforeActionEventData: {
 export type BeforeActionEventData = BeforeActionEventData$instance;
 
 export interface BeforeActionFilterOnActionExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutedContext: ActionExecutedContext;
     readonly Count: int;
@@ -468,6 +597,11 @@ export const BeforeActionFilterOnActionExecutedEventData: {
 export type BeforeActionFilterOnActionExecutedEventData = BeforeActionFilterOnActionExecutedEventData$instance;
 
 export interface BeforeActionFilterOnActionExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutingContext: ActionExecutingContext;
     readonly Count: int;
@@ -485,6 +619,11 @@ export const BeforeActionFilterOnActionExecutingEventData: {
 export type BeforeActionFilterOnActionExecutingEventData = BeforeActionFilterOnActionExecutingEventData$instance;
 
 export interface BeforeActionFilterOnActionExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly ActionExecutingContext: ActionExecutingContext;
     readonly Count: int;
@@ -502,6 +641,11 @@ export const BeforeActionFilterOnActionExecutionEventData: {
 export type BeforeActionFilterOnActionExecutionEventData = BeforeActionFilterOnActionExecutionEventData$instance;
 
 export interface BeforeActionResultEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionContext: ActionContext;
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
@@ -518,6 +662,11 @@ export const BeforeActionResultEventData: {
 export type BeforeActionResultEventData = BeforeActionResultEventData$instance;
 
 export interface BeforeAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly AuthorizationContext: AuthorizationFilterContext;
     readonly Count: int;
@@ -535,6 +684,11 @@ export const BeforeAuthorizationFilterOnAuthorizationEventData: {
 export type BeforeAuthorizationFilterOnAuthorizationEventData = BeforeAuthorizationFilterOnAuthorizationEventData$instance;
 
 export interface BeforeControllerActionMethodEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionArguments: IReadOnlyDictionary<System_Internal.String, unknown>;
     readonly ActionContext: ActionContext;
     readonly Controller: unknown;
@@ -552,6 +706,11 @@ export const BeforeControllerActionMethodEventData: {
 export type BeforeControllerActionMethodEventData = BeforeControllerActionMethodEventData$instance;
 
 export interface BeforeExceptionFilterOnException$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly ExceptionContext: ExceptionContext;
@@ -569,6 +728,11 @@ export const BeforeExceptionFilterOnException: {
 export type BeforeExceptionFilterOnException = BeforeExceptionFilterOnException$instance;
 
 export interface BeforeHandlerMethodEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionContext: ActionContext;
     readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
     readonly Count: int;
@@ -587,6 +751,11 @@ export const BeforeHandlerMethodEventData: {
 export type BeforeHandlerMethodEventData = BeforeHandlerMethodEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IPageFilter;
@@ -604,6 +773,11 @@ export const BeforePageFilterOnPageHandlerExecutedEventData: {
 export type BeforePageFilterOnPageHandlerExecutedEventData = BeforePageFilterOnPageHandlerExecutedEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IPageFilter;
@@ -621,6 +795,11 @@ export const BeforePageFilterOnPageHandlerExecutingEventData: {
 export type BeforePageFilterOnPageHandlerExecutingEventData = BeforePageFilterOnPageHandlerExecutingEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
@@ -638,6 +817,11 @@ export const BeforePageFilterOnPageHandlerExecutionEventData: {
 export type BeforePageFilterOnPageHandlerExecutionEventData = BeforePageFilterOnPageHandlerExecutionEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerSelectedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IPageFilter;
@@ -655,6 +839,11 @@ export const BeforePageFilterOnPageHandlerSelectedEventData: {
 export type BeforePageFilterOnPageHandlerSelectedEventData = BeforePageFilterOnPageHandlerSelectedEventData$instance;
 
 export interface BeforePageFilterOnPageHandlerSelectionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: CompiledPageActionDescriptor;
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
@@ -672,6 +861,11 @@ export const BeforePageFilterOnPageHandlerSelectionEventData: {
 export type BeforePageFilterOnPageHandlerSelectionEventData = BeforePageFilterOnPageHandlerSelectionEventData$instance;
 
 export interface BeforeResourceFilterOnResourceExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -689,6 +883,11 @@ export const BeforeResourceFilterOnResourceExecutedEventData: {
 export type BeforeResourceFilterOnResourceExecutedEventData = BeforeResourceFilterOnResourceExecutedEventData$instance;
 
 export interface BeforeResourceFilterOnResourceExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -706,6 +905,11 @@ export const BeforeResourceFilterOnResourceExecutingEventData: {
 export type BeforeResourceFilterOnResourceExecutingEventData = BeforeResourceFilterOnResourceExecutingEventData$instance;
 
 export interface BeforeResourceFilterOnResourceExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -723,6 +927,11 @@ export const BeforeResourceFilterOnResourceExecutionEventData: {
 export type BeforeResourceFilterOnResourceExecutionEventData = BeforeResourceFilterOnResourceExecutionEventData$instance;
 
 export interface BeforeResultFilterOnResultExecutedEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -740,6 +949,11 @@ export const BeforeResultFilterOnResultExecutedEventData: {
 export type BeforeResultFilterOnResultExecutedEventData = BeforeResultFilterOnResultExecutedEventData$instance;
 
 export interface BeforeResultFilterOnResultExecutingEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -757,6 +971,11 @@ export const BeforeResultFilterOnResultExecutingEventData: {
 export type BeforeResultFilterOnResultExecutingEventData = BeforeResultFilterOnResultExecutingEventData$instance;
 
 export interface BeforeResultFilterOnResultExecutionEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
@@ -774,6 +993,11 @@ export const BeforeResultFilterOnResultExecutionEventData: {
 export type BeforeResultFilterOnResultExecutionEventData = BeforeResultFilterOnResultExecutionEventData$instance;
 
 export interface BeforeViewComponentEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
@@ -791,6 +1015,11 @@ export const BeforeViewComponentEventData: {
 export type BeforeViewComponentEventData = BeforeViewComponentEventData$instance;
 
 export interface BeforeViewEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
     readonly View: IView;
@@ -807,6 +1036,11 @@ export const BeforeViewEventData: {
 export type BeforeViewEventData = BeforeViewEventData$instance;
 
 export interface BeforeViewPageEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
@@ -825,6 +1059,11 @@ export const BeforeViewPageEventData: {
 export type BeforeViewPageEventData = BeforeViewPageEventData$instance;
 
 export interface EventData$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
 }
@@ -838,6 +1077,11 @@ export const EventData: (abstract new() => EventData) & {
 export type EventData = EventData$instance;
 
 export interface ViewComponentAfterViewExecuteEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
@@ -855,6 +1099,11 @@ export const ViewComponentAfterViewExecuteEventData: {
 export type ViewComponentAfterViewExecuteEventData = ViewComponentAfterViewExecuteEventData$instance;
 
 export interface ViewComponentBeforeViewExecuteEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
@@ -872,6 +1121,11 @@ export const ViewComponentBeforeViewExecuteEventData: {
 export type ViewComponentBeforeViewExecuteEventData = ViewComponentBeforeViewExecuteEventData$instance;
 
 export interface ViewFoundEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionContext: ActionContext;
     readonly Count: int;
     readonly IsMainPage: boolean;
@@ -891,6 +1145,11 @@ export const ViewFoundEventData: {
 export type ViewFoundEventData = ViewFoundEventData$instance;
 
 export interface ViewNotFoundEventData$instance extends EventData {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ActionContext: ActionContext;
     readonly Count: int;
     readonly IsMainPage: boolean;

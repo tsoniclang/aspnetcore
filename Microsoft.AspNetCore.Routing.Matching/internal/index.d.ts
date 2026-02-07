@@ -20,6 +20,8 @@ import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrSt
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IEndpointComparerPolicy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy: never;
+
     readonly Comparer: IComparer<Endpoint>;
 }
 
@@ -27,6 +29,8 @@ export interface IEndpointComparerPolicy$instance {
 export type IEndpointComparerPolicy = IEndpointComparerPolicy$instance;
 
 export interface IEndpointSelectorPolicy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy: never;
+
     AppliesToEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
     ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
 }
@@ -35,6 +39,8 @@ export interface IEndpointSelectorPolicy$instance {
 export type IEndpointSelectorPolicy = IEndpointSelectorPolicy$instance;
 
 export interface INodeBuilderPolicy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy: never;
+
     AppliesToEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
     BuildJumpTable(exitDestination: int, edges: IReadOnlyList<PolicyJumpTableEdge>): PolicyJumpTable;
     GetEdges(endpoints: IReadOnlyList<Endpoint>): IReadOnlyList<PolicyNodeEdge>;
@@ -44,6 +50,8 @@ export interface INodeBuilderPolicy$instance {
 export type INodeBuilderPolicy = INodeBuilderPolicy$instance;
 
 export interface IParameterLiteralNodeMatchingPolicy$instance extends IParameterPolicy {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
+
     MatchesLiteral(parameterName: string, literal: string): boolean;
 }
 
@@ -111,6 +119,8 @@ export const CandidateSet: {
 export type CandidateSet = CandidateSet$instance;
 
 export interface EndpointMetadataComparer$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
+
 }
 
 
@@ -121,6 +131,8 @@ export const EndpointMetadataComparer: {
 export type EndpointMetadataComparer = EndpointMetadataComparer$instance;
 
 export interface EndpointMetadataComparer_1$instance<TMetadata> {
+    readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
+
     Compare(x: Endpoint, y: Endpoint): int;
     CompareMetadata(x: TMetadata, y: TMetadata): int;
     GetMetadata(endpoint: Endpoint): TMetadata | undefined;
@@ -146,6 +158,10 @@ export const EndpointSelector: (abstract new() => EndpointSelector) & {
 export type EndpointSelector = EndpointSelector$instance;
 
 export interface HostMatcherPolicy$instance extends MatcherPolicy {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy: never;
+
     readonly Comparer: IComparer<Endpoint>;
     readonly Order: int;
     ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
@@ -171,6 +187,10 @@ export type HostMatcherPolicy = HostMatcherPolicy$instance & __HostMatcherPolicy
 
 
 export interface HttpMethodMatcherPolicy$instance extends MatcherPolicy {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy: never;
+
     readonly Comparer: IComparer<Endpoint>;
     readonly Order: int;
     ApplyAsync(httpContext: HttpContext, candidates: CandidateSet): Task;

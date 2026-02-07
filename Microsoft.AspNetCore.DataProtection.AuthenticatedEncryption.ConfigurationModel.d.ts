@@ -29,3 +29,6 @@ export { ManagedAuthenticatedEncryptorDescriptor as ManagedAuthenticatedEncrypto
 export { ManagedAuthenticatedEncryptorDescriptorDeserializer as ManagedAuthenticatedEncryptorDescriptorDeserializer } from './Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js';
 export { XmlExtensions$instance as XmlExtensions } from './Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js';
 export { XmlSerializedDescriptorInfo as XmlSerializedDescriptorInfo } from './Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel as ExtensionMethods } from './__internal/extensions/index.js';
+

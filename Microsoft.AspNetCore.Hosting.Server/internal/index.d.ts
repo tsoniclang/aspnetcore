@@ -13,6 +13,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IHttpApplication_1$instance<TContext> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1: never;
+
     CreateContext(contextFeatures: IFeatureCollection): TContext;
     DisposeContext(context: TContext, exception: Exception): void;
     ProcessRequestAsync(context: TContext): Task;
@@ -22,15 +24,21 @@ export interface IHttpApplication_1$instance<TContext> {
 export type IHttpApplication_1<TContext> = IHttpApplication_1$instance<TContext>;
 
 export interface IServer$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServer: never;
+
     readonly Features: IFeatureCollection;
     StartAsync<TContext>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
     StopAsync(cancellationToken: CancellationToken): Task;
 }
 
 
+export interface IServer$instance extends System_Internal.IDisposable {}
+
 export type IServer = IServer$instance;
 
 export interface IServerIntegratedAuth$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth: never;
+
     readonly IsEnabled: boolean;
     readonly AuthenticationScheme: string;
 }
@@ -39,6 +47,8 @@ export interface IServerIntegratedAuth$instance {
 export type IServerIntegratedAuth = IServerIntegratedAuth$instance;
 
 export interface ServerIntegratedAuth$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth: never;
+
     AuthenticationScheme: string;
     IsEnabled: boolean;
 }

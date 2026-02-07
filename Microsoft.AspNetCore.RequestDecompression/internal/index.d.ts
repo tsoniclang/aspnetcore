@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IDecompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_RequestDecompression_IDecompressionProvider: never;
+
     GetDecompressionStream(stream: Stream): Stream;
 }
 
@@ -20,6 +22,8 @@ export interface IDecompressionProvider$instance {
 export type IDecompressionProvider = IDecompressionProvider$instance;
 
 export interface IRequestDecompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_RequestDecompression_IRequestDecompressionProvider: never;
+
     GetDecompressionStream(context: HttpContext): Stream | undefined;
 }
 

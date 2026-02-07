@@ -48,6 +48,8 @@ export type MultiplexedConnectionDelegate = (connection: MultiplexedConnectionCo
 
 
 export interface IConnectionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionBuilder: never;
+
     readonly ApplicationServices: IServiceProvider;
     Build(): ConnectionDelegate;
     Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
@@ -57,6 +59,8 @@ export interface IConnectionBuilder$instance {
 export type IConnectionBuilder = IConnectionBuilder$instance;
 
 export interface IConnectionFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionFactory: never;
+
     ConnectAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
 }
 
@@ -64,15 +68,21 @@ export interface IConnectionFactory$instance {
 export type IConnectionFactory = IConnectionFactory$instance;
 
 export interface IConnectionListener$instance extends IAsyncDisposable {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListener: never;
+
     readonly EndPoint: EndPoint;
     AcceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
     UnbindAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
 
+export interface IConnectionListener$instance extends System_Internal.IAsyncDisposable {}
+
 export type IConnectionListener = IConnectionListener$instance;
 
 export interface IConnectionListenerFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactory: never;
+
     BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
 }
 
@@ -80,6 +90,8 @@ export interface IConnectionListenerFactory$instance {
 export type IConnectionListenerFactory = IConnectionListenerFactory$instance;
 
 export interface IConnectionListenerFactorySelector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactorySelector: never;
+
     CanBind(endpoint: EndPoint): boolean;
 }
 
@@ -87,6 +99,8 @@ export interface IConnectionListenerFactorySelector$instance {
 export type IConnectionListenerFactorySelector = IConnectionListenerFactorySelector$instance;
 
 export interface IMemoryPoolFactory_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMemoryPoolFactory_1: never;
+
     Create(options?: MemoryPoolOptions): MemoryPool<T>;
 }
 
@@ -94,6 +108,8 @@ export interface IMemoryPoolFactory_1$instance<T> {
 export type IMemoryPoolFactory_1<T> = IMemoryPoolFactory_1$instance<T>;
 
 export interface IMultiplexedConnectionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder: never;
+
     readonly ApplicationServices: IServiceProvider;
     Build(): MultiplexedConnectionDelegate;
     Use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
@@ -103,6 +119,8 @@ export interface IMultiplexedConnectionBuilder$instance {
 export type IMultiplexedConnectionBuilder = IMultiplexedConnectionBuilder$instance;
 
 export interface IMultiplexedConnectionFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory: never;
+
     ConnectAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
 }
 
@@ -110,15 +128,21 @@ export interface IMultiplexedConnectionFactory$instance {
 export type IMultiplexedConnectionFactory = IMultiplexedConnectionFactory$instance;
 
 export interface IMultiplexedConnectionListener$instance extends IAsyncDisposable {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener: never;
+
     readonly EndPoint: EndPoint;
     AcceptAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
     UnbindAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
 
+export interface IMultiplexedConnectionListener$instance extends System_Internal.IAsyncDisposable {}
+
 export type IMultiplexedConnectionListener = IMultiplexedConnectionListener$instance;
 
 export interface IMultiplexedConnectionListenerFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory: never;
+
     BindAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<IMultiplexedConnectionListener>;
 }
 
@@ -126,6 +150,8 @@ export interface IMultiplexedConnectionListenerFactory$instance {
 export type IMultiplexedConnectionListenerFactory = IMultiplexedConnectionListenerFactory$instance;
 
 export interface AddressInUseException$instance extends InvalidOperationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -138,6 +164,8 @@ export const AddressInUseException: {
 export type AddressInUseException = AddressInUseException$instance;
 
 export interface BaseConnectionContext$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
@@ -159,6 +187,8 @@ export const BaseConnectionContext: (abstract new() => BaseConnectionContext) & 
 export type BaseConnectionContext = BaseConnectionContext$instance;
 
 export interface ConnectionAbortedException$instance extends OperationCanceledException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -172,6 +202,8 @@ export const ConnectionAbortedException: {
 export type ConnectionAbortedException = ConnectionAbortedException$instance;
 
 export interface ConnectionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionBuilder: never;
+
     readonly ApplicationServices: IServiceProvider;
     Build(): ConnectionDelegate;
     Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
@@ -193,6 +225,8 @@ export type ConnectionBuilder = ConnectionBuilder$instance & __ConnectionBuilder
 
 
 export interface ConnectionContext$instance extends BaseConnectionContext {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     Transport: IDuplexPipe;
     Abort(abortReason: ConnectionAbortedException): void;
     Abort(): void;
@@ -217,6 +251,11 @@ export const ConnectionHandler: (abstract new() => ConnectionHandler) & {
 export type ConnectionHandler = ConnectionHandler$instance;
 
 export interface ConnectionItems$instance {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Items: IDictionary<unknown, unknown | undefined>;
 }
 
@@ -230,6 +269,8 @@ export const ConnectionItems: {
 export type ConnectionItems = ConnectionItems$instance;
 
 export interface ConnectionResetException$instance extends IOException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -242,6 +283,14 @@ export const ConnectionResetException: {
 export type ConnectionResetException = ConnectionResetException$instance;
 
 export interface DefaultConnectionContext$instance extends ConnectionContext {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     get Application(): IDuplexPipe | undefined;
     set Application(value: IDuplexPipe | undefined);
     ConnectionClosed: CancellationToken;
@@ -277,7 +326,7 @@ export interface __DefaultConnectionContext$views {
     As_IConnectionUserFeature(): Microsoft_AspNetCore_Connections_Features_Internal.IConnectionUserFeature$instance;
 }
 
-export interface DefaultConnectionContext$instance extends Microsoft_AspNetCore_Connections_Features_Internal.IConnectionEndPointFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionIdFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionItemsFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionTransportFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionUserFeature$instance {}
+export interface DefaultConnectionContext$instance extends Microsoft_AspNetCore_Connections_Features_Internal.IConnectionEndPointFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionIdFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionItemsFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionTransportFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionUserFeature$instance, System_Internal.IAsyncDisposable {}
 
 export type DefaultConnectionContext = DefaultConnectionContext$instance & __DefaultConnectionContext$views;
 
@@ -309,6 +358,8 @@ export const MemoryPoolOptions: {
 export type MemoryPoolOptions = MemoryPoolOptions$instance;
 
 export interface MultiplexedConnectionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder: never;
+
     readonly ApplicationServices: IServiceProvider;
     Build(): MultiplexedConnectionDelegate;
     Use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
@@ -330,6 +381,8 @@ export type MultiplexedConnectionBuilder = MultiplexedConnectionBuilder$instance
 
 
 export interface MultiplexedConnectionContext$instance extends BaseConnectionContext {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     AcceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
     ConnectAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
 }

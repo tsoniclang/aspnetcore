@@ -13,6 +13,8 @@ import type { Boolean as ClrBoolean, Int32, Int64, Nullable, Object as ClrObject
 import type { MethodInfo, ParameterInfo } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IAcceptsMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
+
     readonly ContentTypes: IReadOnlyList<System_Internal.String>;
     readonly RequestType: Type | undefined;
     readonly IsOptional: boolean;
@@ -22,30 +24,40 @@ export interface IAcceptsMetadata$instance {
 export type IAcceptsMetadata = IAcceptsMetadata$instance;
 
 export interface IAllowCookieRedirectMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAllowCookieRedirectMetadata: never;
+
 }
 
 
 export type IAllowCookieRedirectMetadata = IAllowCookieRedirectMetadata$instance;
 
 export interface IDisableCookieRedirectMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IDisableCookieRedirectMetadata: never;
+
 }
 
 
 export type IDisableCookieRedirectMetadata = IDisableCookieRedirectMetadata$instance;
 
 export interface IDisableHttpMetricsMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IDisableHttpMetricsMetadata: never;
+
 }
 
 
 export type IDisableHttpMetricsMetadata = IDisableHttpMetricsMetadata$instance;
 
 export interface IDisableValidationMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IDisableValidationMetadata: never;
+
 }
 
 
 export type IDisableValidationMetadata = IDisableValidationMetadata$instance;
 
 export interface IEndpointDescriptionMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointDescriptionMetadata: never;
+
     readonly Description: string;
 }
 
@@ -53,18 +65,24 @@ export interface IEndpointDescriptionMetadata$instance {
 export type IEndpointDescriptionMetadata = IEndpointDescriptionMetadata$instance;
 
 export interface IEndpointMetadataProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
+
 }
 
 
 export type IEndpointMetadataProvider = IEndpointMetadataProvider$instance;
 
 export interface IEndpointParameterMetadataProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointParameterMetadataProvider: never;
+
 }
 
 
 export type IEndpointParameterMetadataProvider = IEndpointParameterMetadataProvider$instance;
 
 export interface IEndpointSummaryMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointSummaryMetadata: never;
+
     readonly Summary: string;
 }
 
@@ -72,6 +90,8 @@ export interface IEndpointSummaryMetadata$instance {
 export type IEndpointSummaryMetadata = IEndpointSummaryMetadata$instance;
 
 export interface IFormOptionsMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFormOptionsMetadata: never;
+
     readonly BufferBody: Nullable<System_Internal.Boolean>;
     readonly MemoryBufferThreshold: Nullable<System_Internal.Int32>;
     readonly BufferBodyLengthLimit: Nullable<System_Internal.Int64>;
@@ -88,6 +108,8 @@ export interface IFormOptionsMetadata$instance {
 export type IFormOptionsMetadata = IFormOptionsMetadata$instance;
 
 export interface IFromBodyMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromBodyMetadata: never;
+
     readonly AllowEmpty: boolean;
 }
 
@@ -95,6 +117,8 @@ export interface IFromBodyMetadata$instance {
 export type IFromBodyMetadata = IFromBodyMetadata$instance;
 
 export interface IFromFormMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromFormMetadata: never;
+
     readonly Name: string | undefined;
 }
 
@@ -102,6 +126,8 @@ export interface IFromFormMetadata$instance {
 export type IFromFormMetadata = IFromFormMetadata$instance;
 
 export interface IFromHeaderMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromHeaderMetadata: never;
+
     readonly Name: string | undefined;
 }
 
@@ -109,6 +135,8 @@ export interface IFromHeaderMetadata$instance {
 export type IFromHeaderMetadata = IFromHeaderMetadata$instance;
 
 export interface IFromQueryMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromQueryMetadata: never;
+
     readonly Name: string | undefined;
 }
 
@@ -116,6 +144,8 @@ export interface IFromQueryMetadata$instance {
 export type IFromQueryMetadata = IFromQueryMetadata$instance;
 
 export interface IFromRouteMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromRouteMetadata: never;
+
     readonly Name: string | undefined;
 }
 
@@ -123,12 +153,16 @@ export interface IFromRouteMetadata$instance {
 export type IFromRouteMetadata = IFromRouteMetadata$instance;
 
 export interface IFromServiceMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromServiceMetadata: never;
+
 }
 
 
 export type IFromServiceMetadata = IFromServiceMetadata$instance;
 
 export interface IParameterBindingMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IParameterBindingMetadata: never;
+
     readonly Name: string;
     readonly HasTryParse: boolean;
     readonly HasBindAsync: boolean;
@@ -140,6 +174,8 @@ export interface IParameterBindingMetadata$instance {
 export type IParameterBindingMetadata = IParameterBindingMetadata$instance;
 
 export interface IProducesResponseTypeMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata: never;
+
     readonly Type: Type | undefined;
     readonly StatusCode: int;
     readonly Description: string | undefined;
@@ -150,6 +186,8 @@ export interface IProducesResponseTypeMetadata$instance {
 export type IProducesResponseTypeMetadata = IProducesResponseTypeMetadata$instance;
 
 export interface IRequestSizeLimitMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IRequestSizeLimitMetadata: never;
+
     readonly MaxRequestBodySize: Nullable<System_Internal.Int64>;
 }
 
@@ -157,6 +195,8 @@ export interface IRequestSizeLimitMetadata$instance {
 export type IRequestSizeLimitMetadata = IRequestSizeLimitMetadata$instance;
 
 export interface IRouteDiagnosticsMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IRouteDiagnosticsMetadata: never;
+
     readonly Route: string;
 }
 
@@ -164,12 +204,16 @@ export interface IRouteDiagnosticsMetadata$instance {
 export type IRouteDiagnosticsMetadata = IRouteDiagnosticsMetadata$instance;
 
 export interface ISkipStatusCodePagesMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_ISkipStatusCodePagesMetadata: never;
+
 }
 
 
 export type ISkipStatusCodePagesMetadata = ISkipStatusCodePagesMetadata$instance;
 
 export interface ITagsMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_ITagsMetadata: never;
+
     readonly Tags: IReadOnlyList<System_Internal.String>;
 }
 
@@ -177,6 +221,8 @@ export interface ITagsMetadata$instance {
 export type ITagsMetadata = ITagsMetadata$instance;
 
 export interface AcceptsMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
+
     readonly ContentTypes: IReadOnlyList<System_Internal.String>;
     readonly IsOptional: boolean;
     readonly RequestType: Type | undefined;

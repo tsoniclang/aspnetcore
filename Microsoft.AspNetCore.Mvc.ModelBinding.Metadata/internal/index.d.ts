@@ -26,6 +26,8 @@ export enum ModelMetadataKind {
 
 
 export interface IBindingMetadataProvider$instance extends IMetadataDetailsProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
+
     CreateBindingMetadata(context: BindingMetadataProviderContext): void;
 }
 
@@ -35,6 +37,8 @@ export interface IBindingMetadataProvider$instance extends IMetadataDetailsProvi
 export type IBindingMetadataProvider = IBindingMetadataProvider$instance;
 
 export interface ICompositeMetadataDetailsProvider$instance extends IBindingMetadataProvider, IMetadataDetailsProvider, IDisplayMetadataProvider, IValidationMetadataProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider: never;
+
     CreateBindingMetadata(context: BindingMetadataProviderContext): void;
     CreateDisplayMetadata(context: DisplayMetadataProviderContext): void;
     CreateValidationMetadata(context: ValidationMetadataProviderContext): void;
@@ -46,6 +50,8 @@ export interface ICompositeMetadataDetailsProvider$instance extends IBindingMeta
 export type ICompositeMetadataDetailsProvider = ICompositeMetadataDetailsProvider$instance;
 
 export interface IDisplayMetadataProvider$instance extends IMetadataDetailsProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider: never;
+
     CreateDisplayMetadata(context: DisplayMetadataProviderContext): void;
 }
 
@@ -55,12 +61,16 @@ export interface IDisplayMetadataProvider$instance extends IMetadataDetailsProvi
 export type IDisplayMetadataProvider = IDisplayMetadataProvider$instance;
 
 export interface IMetadataDetailsProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
+
 }
 
 
 export type IMetadataDetailsProvider = IMetadataDetailsProvider$instance;
 
 export interface IValidationMetadataProvider$instance extends IMetadataDetailsProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider: never;
+
     CreateValidationMetadata(context: ValidationMetadataProviderContext): void;
 }
 
@@ -70,6 +80,8 @@ export interface IValidationMetadataProvider$instance extends IMetadataDetailsPr
 export type IValidationMetadataProvider = IValidationMetadataProvider$instance;
 
 export interface ModelMetadataIdentity$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly ConstructorInfo: ConstructorInfo | undefined;
     readonly ContainerType: Type | undefined;
     readonly MetadataKind: ModelMetadataKind;
@@ -140,6 +152,9 @@ export const BindingMetadataProviderContext: {
 export type BindingMetadataProviderContext = BindingMetadataProviderContext$instance;
 
 export interface BindingSourceMetadataProvider$instance extends IMetadataDetailsProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
+
     readonly BindingSource: BindingSource | undefined;
     readonly Type: Type;
     CreateBindingMetadata(context: BindingMetadataProviderContext): void;
@@ -161,6 +176,9 @@ export type BindingSourceMetadataProvider = BindingSourceMetadataProvider$instan
 
 
 export interface DataMemberRequiredBindingMetadataProvider$instance extends IMetadataDetailsProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
+
     CreateBindingMetadata(context: BindingMetadataProviderContext): void;
 }
 
@@ -245,6 +263,9 @@ export const DefaultModelBindingMessageProvider: {
 export type DefaultModelBindingMessageProvider = DefaultModelBindingMessageProvider$instance;
 
 export interface DefaultModelMetadata$instance extends ModelMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly AdditionalValues: IReadOnlyDictionary<unknown, unknown>;
     readonly Attributes: ModelAttributes;
     readonly BinderModelName: string | undefined;
@@ -307,10 +328,14 @@ export interface __DefaultModelMetadata$views {
     As_IModelMetadataProvider(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelMetadataProvider$instance;
 }
 
+export interface DefaultModelMetadata$instance extends System_Internal.IEquatable<ModelMetadata> {}
+
 export type DefaultModelMetadata = DefaultModelMetadata$instance & __DefaultModelMetadata$views;
 
 
 export interface DefaultModelMetadataProvider$instance extends ModelMetadataProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
+
     CreateModelMetadata(entry: DefaultMetadataDetails): ModelMetadata;
     CreateParameterDetails(key: ModelMetadataIdentity): DefaultMetadataDetails;
     CreatePropertyDetails(key: ModelMetadataIdentity): DefaultMetadataDetails[];
@@ -400,6 +425,9 @@ export const DisplayMetadataProviderContext: {
 export type DisplayMetadataProviderContext = DisplayMetadataProviderContext$instance;
 
 export interface ExcludeBindingMetadataProvider$instance extends IMetadataDetailsProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
+
     CreateBindingMetadata(context: BindingMetadataProviderContext): void;
 }
 
@@ -440,6 +468,10 @@ export const ModelBindingMessageProvider: (abstract new() => ModelBindingMessage
 export type ModelBindingMessageProvider = ModelBindingMessageProvider$instance;
 
 export interface SystemTextJsonValidationMetadataProvider$instance extends IMetadataDetailsProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider: never;
+
     CreateDisplayMetadata(context: DisplayMetadataProviderContext): void;
     CreateValidationMetadata(context: ValidationMetadataProviderContext): void;
 }

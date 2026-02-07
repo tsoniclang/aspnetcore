@@ -77,6 +77,8 @@ export enum CborTag {
 
 
 export interface CborContentException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 

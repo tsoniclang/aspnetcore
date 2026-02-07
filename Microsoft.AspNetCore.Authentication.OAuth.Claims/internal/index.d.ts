@@ -29,6 +29,9 @@ export const ClaimAction: (abstract new(claimType: string, valueType: string) =>
 export type ClaimAction = ClaimAction$instance;
 
 export interface ClaimActionCollection$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     Add(action: ClaimAction): void;
     Clear(): void;
     GetEnumerator(): IEnumerator<ClaimAction>;

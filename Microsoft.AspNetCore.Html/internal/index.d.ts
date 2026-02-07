@@ -14,6 +14,8 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IHtmlAsyncContent$instance extends IHtmlContent {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlAsyncContent: never;
+
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
     WriteToAsync(writer: TextWriter): ValueTask;
 }
@@ -24,6 +26,8 @@ export interface IHtmlAsyncContent$instance extends IHtmlContent$instance {}
 export type IHtmlAsyncContent = IHtmlAsyncContent$instance;
 
 export interface IHtmlContent$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
+
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
@@ -31,6 +35,8 @@ export interface IHtmlContent$instance {
 export type IHtmlContent = IHtmlContent$instance;
 
 export interface IHtmlContentBuilder$instance extends IHtmlContentContainer, IHtmlContent {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentBuilder: never;
+
     Append(unencoded: string): IHtmlContentBuilder;
     AppendHtml(content: IHtmlContent): IHtmlContentBuilder;
     Clear(): IHtmlContentBuilder;
@@ -42,6 +48,8 @@ export interface IHtmlContentBuilder$instance extends IHtmlContentContainer, IHt
 export type IHtmlContentBuilder = IHtmlContentBuilder$instance;
 
 export interface IHtmlContentContainer$instance extends IHtmlContent {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
+
     CopyTo(builder: IHtmlContentBuilder): void;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
@@ -52,6 +60,10 @@ export interface IHtmlContentContainer$instance extends IHtmlContent$instance {}
 export type IHtmlContentContainer = IHtmlContentContainer$instance;
 
 export interface HtmlContentBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentBuilder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
+
     readonly Count: int;
     Append(unencoded: string): IHtmlContentBuilder;
     AppendHtml(htmlContent: IHtmlContent): IHtmlContentBuilder;
@@ -80,6 +92,8 @@ export type HtmlContentBuilder = HtmlContentBuilder$instance & __HtmlContentBuil
 
 
 export interface HtmlFormattableString$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
+
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
@@ -100,6 +114,8 @@ export type HtmlFormattableString = HtmlFormattableString$instance & __HtmlForma
 
 
 export interface HtmlString$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
+
     readonly Value: string | undefined;
     ToString(): string;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;

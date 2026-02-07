@@ -38,6 +38,8 @@ export enum HttpProtocols {
 
 
 export interface BadHttpRequestException$instance extends BadHttpRequestException_Http {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly StatusCode: int;
 }
 
@@ -80,6 +82,9 @@ export const Http3Limits: {
 export type Http3Limits = Http3Limits$instance;
 
 export interface KestrelServer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServer: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Features: IFeatureCollection;
     readonly Options: KestrelServerOptions;
     Dispose(): void;
@@ -175,6 +180,9 @@ export const KestrelServerOptions: {
 export type KestrelServerOptions = KestrelServerOptions$instance;
 
 export interface ListenOptions$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionBuilder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder: never;
+
     readonly ApplicationServices: IServiceProvider;
     DisableAltSvcHeader: boolean;
     EndPoint: EndPoint;

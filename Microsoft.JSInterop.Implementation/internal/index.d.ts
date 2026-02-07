@@ -19,6 +19,11 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface JSInProcessObjectReference$instance extends JSObjectReference$instance {
+    readonly __tsonic_iface_Microsoft_JSInterop_IJSInProcessObjectReference: never;
+    readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     GetValue<TValue>(identifier: string): TValue;
     GetValueAsync<TValue>(identifier: string): ValueTask<TValue>;
@@ -46,6 +51,9 @@ export type JSInProcessObjectReference = JSInProcessObjectReference$instance & _
 
 
 export interface JSObjectReference$instance {
+    readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     DisposeAsync(): ValueTask;
     GetValueAsync<TValue>(identifier: string): ValueTask<TValue>;
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask<TValue>;
@@ -72,6 +80,10 @@ export type JSObjectReference = JSObjectReference$instance & __JSObjectReference
 
 
 export interface JSStreamReference$instance extends JSObjectReference$instance {
+    readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
+    readonly __tsonic_iface_Microsoft_JSInterop_IJSStreamReference: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     readonly Length: long;
     GetValueAsync<TValue>(identifier: string): ValueTask<TValue>;
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask<TValue>;

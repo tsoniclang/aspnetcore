@@ -12,6 +12,8 @@ import type { Attribute, Object as ClrObject, String as ClrString, Type } from "
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IRazorSourceChecksumMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata: never;
+
     readonly Checksum: string;
     readonly ChecksumAlgorithm: string;
     readonly Identifier: string;
@@ -112,6 +114,8 @@ export const RazorLanguageVersionAttribute: {
 export type RazorLanguageVersionAttribute = RazorLanguageVersionAttribute$instance;
 
 export interface RazorSourceChecksumAttribute$instance extends Attribute {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata: never;
+
     readonly Checksum: string;
     readonly ChecksumAlgorithm: string;
     readonly Identifier: string;

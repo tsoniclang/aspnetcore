@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IServiceProvider, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface IApplicationBuilderFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Builder_IApplicationBuilderFactory: never;
+
     CreateBuilder(serverFeatures: IFeatureCollection): IApplicationBuilder;
 }
 
@@ -19,6 +21,8 @@ export interface IApplicationBuilderFactory$instance {
 export type IApplicationBuilderFactory = IApplicationBuilderFactory$instance;
 
 export interface ApplicationBuilderFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Builder_IApplicationBuilderFactory: never;
+
     CreateBuilder(serverFeatures: IFeatureCollection): IApplicationBuilder;
 }
 

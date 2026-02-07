@@ -15,6 +15,8 @@ import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IDeletableElement$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableElement: never;
+
     readonly Element: XElement;
     DeletionOrder: Nullable<System_Internal.Int32>;
 }
@@ -23,6 +25,8 @@ export interface IDeletableElement$instance {
 export type IDeletableElement = IDeletableElement$instance;
 
 export interface IDeletableXmlRepository$instance extends IXmlRepository {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
+
     DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
     GetAllElements(): IReadOnlyCollection<XElement>;
     StoreElement(element: XElement, friendlyName: string): void;
@@ -34,6 +38,8 @@ export interface IDeletableXmlRepository$instance extends IXmlRepository$instanc
 export type IDeletableXmlRepository = IDeletableXmlRepository$instance;
 
 export interface IXmlRepository$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
+
     GetAllElements(): IReadOnlyCollection<XElement>;
     StoreElement(element: XElement, friendlyName: string): void;
 }
@@ -42,6 +48,9 @@ export interface IXmlRepository$instance {
 export type IXmlRepository = IXmlRepository$instance;
 
 export interface FileSystemXmlRepository$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
+
     readonly Directory: DirectoryInfo;
     DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
     GetAllElements(): IReadOnlyCollection<XElement>;
@@ -64,6 +73,9 @@ export type FileSystemXmlRepository = FileSystemXmlRepository$instance & __FileS
 
 
 export interface RegistryXmlRepository$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
+
     readonly RegistryKey: RegistryKey;
     DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
     GetAllElements(): IReadOnlyCollection<XElement>;

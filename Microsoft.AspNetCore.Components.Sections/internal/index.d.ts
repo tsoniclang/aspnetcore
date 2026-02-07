@@ -13,6 +13,9 @@ import type { IDisposable, Object as ClrObject, String as ClrString, Void } from
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface SectionContent$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
     get SectionId(): unknown | undefined;
@@ -32,12 +35,15 @@ export interface __SectionContent$views {
     As_IComponent(): Microsoft_AspNetCore_Components_Internal.IComponent$instance;
 }
 
-export interface SectionContent$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance {}
+export interface SectionContent$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {}
 
 export type SectionContent = SectionContent$instance & __SectionContent$views;
 
 
 export interface SectionOutlet$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get SectionId(): unknown | undefined;
     set SectionId(value: unknown | undefined);
     get SectionName(): string | undefined;
@@ -55,7 +61,7 @@ export interface __SectionOutlet$views {
     As_IComponent(): Microsoft_AspNetCore_Components_Internal.IComponent$instance;
 }
 
-export interface SectionOutlet$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance {}
+export interface SectionOutlet$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {}
 
 export type SectionOutlet = SectionOutlet$instance & __SectionOutlet$views;
 

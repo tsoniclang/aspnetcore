@@ -17,6 +17,8 @@ import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IOutputCacheBufferStore$instance extends IOutputCacheStore {
+    readonly __tsonic_iface_Microsoft_AspNetCore_OutputCaching_IOutputCacheBufferStore: never;
+
     EvictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
     GetAsync(key: string, cancellationToken: CancellationToken): ValueTask<byte[]>;
     SetAsync(key: string, value: ReadOnlySequence<System_Internal.Byte>, tags: ReadOnlyMemory<System_Internal.String>, validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
@@ -28,6 +30,8 @@ export interface IOutputCacheBufferStore$instance extends IOutputCacheStore {
 export type IOutputCacheBufferStore = IOutputCacheBufferStore$instance;
 
 export interface IOutputCacheFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_OutputCaching_IOutputCacheFeature: never;
+
     readonly Context: OutputCacheContext;
 }
 
@@ -35,6 +39,8 @@ export interface IOutputCacheFeature$instance {
 export type IOutputCacheFeature = IOutputCacheFeature$instance;
 
 export interface IOutputCachePolicy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_OutputCaching_IOutputCachePolicy: never;
+
     CacheRequestAsync(context: OutputCacheContext, cancellation: CancellationToken): ValueTask;
 }
 
@@ -42,6 +48,8 @@ export interface IOutputCachePolicy$instance {
 export type IOutputCachePolicy = IOutputCachePolicy$instance;
 
 export interface IOutputCacheStore$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_OutputCaching_IOutputCacheStore: never;
+
     EvictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
     GetAsync(key: string, cancellationToken: CancellationToken): ValueTask<byte[]>;
     SetAsync(key: string, value: byte[], tags: string[], validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;

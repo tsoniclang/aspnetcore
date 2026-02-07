@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Boolean as ClrBoolean, Int32, IServiceProvider, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IActionConstraint$instance extends IActionConstraintMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
+
     readonly Order: int;
     Accept(context: ActionConstraintContext): boolean;
 }
@@ -24,6 +26,8 @@ export interface IActionConstraint$instance extends IActionConstraintMetadata$in
 export type IActionConstraint = IActionConstraint$instance;
 
 export interface IActionConstraintFactory$instance extends IActionConstraintMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintFactory: never;
+
     readonly IsReusable: boolean;
     CreateInstance(services: IServiceProvider): IActionConstraint;
 }
@@ -34,12 +38,16 @@ export interface IActionConstraintFactory$instance extends IActionConstraintMeta
 export type IActionConstraintFactory = IActionConstraintFactory$instance;
 
 export interface IActionConstraintMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
+
 }
 
 
 export type IActionConstraintMetadata = IActionConstraintMetadata$instance;
 
 export interface IActionConstraintProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintProvider: never;
+
     readonly Order: int;
     OnProvidersExecuting(context: ActionConstraintProviderContext): void;
 }
@@ -104,6 +112,9 @@ export const ActionConstraintProviderContext: {
 export type ActionConstraintProviderContext = ActionConstraintProviderContext$instance;
 
 export interface ActionMethodSelectorAttribute$instance extends Attribute, IActionConstraintMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
+
     Order: int;
     Accept(context: ActionConstraintContext): boolean;
     IsValidForRequest(routeContext: RouteContext, action: ActionDescriptor): boolean;
@@ -122,6 +133,9 @@ export type ActionMethodSelectorAttribute = ActionMethodSelectorAttribute$instan
 
 
 export interface HttpMethodActionConstraint$instance extends IActionConstraintMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
+
     readonly HttpMethods: IEnumerable<System_Internal.String>;
     readonly Order: int;
     Accept(context: ActionConstraintContext): boolean;

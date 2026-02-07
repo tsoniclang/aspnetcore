@@ -12,6 +12,8 @@ import type { Byte, Int32, ReadOnlyMemory, TimeSpan, Void } from "@tsonic/dotnet
 import type { SslStream } from "@tsonic/dotnet/System.Net.Security.js";
 
 export interface IConnectionTimeoutFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature: never;
+
     CancelTimeout(): void;
     SetTimeout(timeSpan: TimeSpan): void;
 }
@@ -20,6 +22,8 @@ export interface IConnectionTimeoutFeature$instance {
 export type IConnectionTimeoutFeature = IConnectionTimeoutFeature$instance;
 
 export interface IDecrementConcurrentConnectionCountFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature: never;
+
     ReleaseConnection(): void;
 }
 
@@ -27,6 +31,8 @@ export interface IDecrementConcurrentConnectionCountFeature$instance {
 export type IDecrementConcurrentConnectionCountFeature = IDecrementConcurrentConnectionCountFeature$instance;
 
 export interface IHttp2StreamIdFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature: never;
+
     readonly StreamId: int;
 }
 
@@ -34,6 +40,8 @@ export interface IHttp2StreamIdFeature$instance {
 export type IHttp2StreamIdFeature = IHttp2StreamIdFeature$instance;
 
 export interface IHttpMinRequestBodyDataRateFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature: never;
+
     get MinDataRate(): MinDataRate | undefined;
     set MinDataRate(value: MinDataRate | undefined);
 }
@@ -42,6 +50,8 @@ export interface IHttpMinRequestBodyDataRateFeature$instance {
 export type IHttpMinRequestBodyDataRateFeature = IHttpMinRequestBodyDataRateFeature$instance;
 
 export interface IHttpMinResponseDataRateFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature: never;
+
     get MinDataRate(): MinDataRate | undefined;
     set MinDataRate(value: MinDataRate | undefined);
 }
@@ -50,6 +60,8 @@ export interface IHttpMinResponseDataRateFeature$instance {
 export type IHttpMinResponseDataRateFeature = IHttpMinResponseDataRateFeature$instance;
 
 export interface ISslStreamFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ISslStreamFeature: never;
+
     readonly SslStream: SslStream;
 }
 
@@ -57,6 +69,8 @@ export interface ISslStreamFeature$instance {
 export type ISslStreamFeature = ISslStreamFeature$instance;
 
 export interface ITlsApplicationProtocolFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature: never;
+
     readonly ApplicationProtocol: ReadOnlyMemory<System_Internal.Byte>;
 }
 

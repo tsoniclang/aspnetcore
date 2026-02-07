@@ -12,6 +12,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface CorsPolicyMetadata$instance extends ICorsMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata: never;
+
     readonly Policy: CorsPolicy;
 }
 
@@ -31,6 +34,9 @@ export type CorsPolicyMetadata = CorsPolicyMetadata$instance & __CorsPolicyMetad
 
 
 export interface DisableCorsAttribute$instance extends Attribute, IDisableCorsAttribute, ICorsMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute: never;
+
     ToString(): string;
 }
 
@@ -43,6 +49,9 @@ export const DisableCorsAttribute: {
 export type DisableCorsAttribute = DisableCorsAttribute$instance;
 
 export interface EnableCorsAttribute$instance extends Attribute, ICorsMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute: never;
+
     get PolicyName(): string | undefined;
     set PolicyName(value: string | undefined);
     ToString(): string;

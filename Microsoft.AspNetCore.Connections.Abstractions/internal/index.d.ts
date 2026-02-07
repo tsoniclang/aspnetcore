@@ -12,6 +12,8 @@ import type { Func, Void } from "@tsonic/dotnet/System.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IStatefulReconnectFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Abstractions_IStatefulReconnectFeature: never;
+
     DisableReconnect(): void;
     OnReconnected(notifyOnReconnect: Func<PipeWriter, Task>): void;
 }

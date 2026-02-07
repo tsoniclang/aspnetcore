@@ -30,6 +30,8 @@ import type { IHostEnvironment } from "@tsonic/microsoft-extensions/Microsoft.Ex
 import type { ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IApplicationLifetime$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IApplicationLifetime: never;
+
     readonly ApplicationStarted: CancellationToken;
     readonly ApplicationStopping: CancellationToken;
     readonly ApplicationStopped: CancellationToken;
@@ -40,6 +42,8 @@ export interface IApplicationLifetime$instance {
 export type IApplicationLifetime = IApplicationLifetime$instance;
 
 export interface IHostingEnvironment$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IHostingEnvironment: never;
+
     EnvironmentName: string;
     ApplicationName: string;
     WebRootPath: string;
@@ -52,6 +56,8 @@ export interface IHostingEnvironment$instance {
 export type IHostingEnvironment = IHostingEnvironment$instance;
 
 export interface IHostingStartup$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IHostingStartup: never;
+
     Configure(builder: IWebHostBuilder): void;
 }
 
@@ -59,6 +65,8 @@ export interface IHostingStartup$instance {
 export type IHostingStartup = IHostingStartup$instance;
 
 export interface IStartup$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
+
     Configure(app: IApplicationBuilder): void;
     ConfigureServices(services: IServiceCollection): IServiceProvider;
 }
@@ -67,6 +75,8 @@ export interface IStartup$instance {
 export type IStartup = IStartup$instance;
 
 export interface IStartupConfigureContainerFilter_1$instance<TContainerBuilder> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1: never;
+
     ConfigureContainer(container: Action<TContainerBuilder>): Action<TContainerBuilder>;
 }
 
@@ -74,6 +84,8 @@ export interface IStartupConfigureContainerFilter_1$instance<TContainerBuilder> 
 export type IStartupConfigureContainerFilter_1<TContainerBuilder> = IStartupConfigureContainerFilter_1$instance<TContainerBuilder>;
 
 export interface IStartupConfigureServicesFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter: never;
+
     ConfigureServices(next: Action<IServiceCollection>): Action<IServiceCollection>;
 }
 
@@ -81,6 +93,8 @@ export interface IStartupConfigureServicesFilter$instance {
 export type IStartupConfigureServicesFilter = IStartupConfigureServicesFilter$instance;
 
 export interface IStartupFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartupFilter: never;
+
     Configure(next: Action<IApplicationBuilder>): Action<IApplicationBuilder>;
 }
 
@@ -88,6 +102,8 @@ export interface IStartupFilter$instance {
 export type IStartupFilter = IStartupFilter$instance;
 
 export interface IWebHost$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHost: never;
+
     readonly ServerFeatures: IFeatureCollection;
     readonly Services: IServiceProvider;
     Start(): void;
@@ -95,9 +111,13 @@ export interface IWebHost$instance extends IDisposable {
 }
 
 
+export interface IWebHost$instance extends System_Internal.IDisposable {}
+
 export type IWebHost = IWebHost$instance;
 
 export interface IWebHostBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
+
     Build(): IWebHost;
     ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
     ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
@@ -109,14 +129,20 @@ export interface IWebHostBuilder$instance {
 export type IWebHostBuilder = IWebHostBuilder$instance;
 
 export interface IWebHostEnvironment$instance extends IHostEnvironment {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostEnvironment: never;
+
     WebRootPath: string;
     WebRootFileProvider: IFileProvider;
 }
 
 
+export interface IWebHostEnvironment$instance extends Microsoft_Extensions_Hosting_Internal.IHostEnvironment {}
+
 export type IWebHostEnvironment = IWebHostEnvironment$instance;
 
 export interface DelegateStartup$instance extends StartupBase_1$instance<IServiceCollection> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
+
     Configure(app: IApplicationBuilder): void;
     ConfigureServices(services: IServiceCollection): IServiceProvider;
     ConfigureServices(services: IServiceCollection): void;
@@ -148,6 +174,8 @@ export const HostingStartupAttribute: {
 export type HostingStartupAttribute = HostingStartupAttribute$instance;
 
 export interface StartupBase$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
+
     Configure(app: IApplicationBuilder): void;
     ConfigureServices(services: IServiceCollection): void;
     CreateServiceProvider(services: IServiceCollection): IServiceProvider;
@@ -166,6 +194,8 @@ export type StartupBase = StartupBase$instance & __StartupBase$views;
 
 
 export interface StartupBase_1$instance<TBuilder> extends StartupBase$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
+
     Configure(app: IApplicationBuilder): void;
     ConfigureContainer(builder: TBuilder): void;
     ConfigureServices(services: IServiceCollection): void;
@@ -186,6 +216,8 @@ export type StartupBase_1<TBuilder> = StartupBase_1$instance<TBuilder> & __Start
 
 
 export interface WebHostBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
+
     Build(): IWebHost;
     ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
     ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;

@@ -20,6 +20,8 @@ export enum DpapiNGProtectionDescriptorFlags {
 
 
 export interface ICertificateResolver$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver: never;
+
     ResolveCertificate(thumbprint: string): X509Certificate2 | undefined;
 }
 
@@ -27,6 +29,8 @@ export interface ICertificateResolver$instance {
 export type ICertificateResolver = ICertificateResolver$instance;
 
 export interface IXmlDecryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
+
     Decrypt(encryptedElement: XElement): XElement;
 }
 
@@ -34,6 +38,8 @@ export interface IXmlDecryptor$instance {
 export type IXmlDecryptor = IXmlDecryptor$instance;
 
 export interface IXmlEncryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
+
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
@@ -41,6 +47,8 @@ export interface IXmlEncryptor$instance {
 export type IXmlEncryptor = IXmlEncryptor$instance;
 
 export interface CertificateResolver$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver: never;
+
     ResolveCertificate(thumbprint: string): X509Certificate2 | undefined;
 }
 
@@ -60,6 +68,8 @@ export type CertificateResolver = CertificateResolver$instance & __CertificateRe
 
 
 export interface CertificateXmlEncryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
+
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
@@ -80,6 +90,8 @@ export type CertificateXmlEncryptor = CertificateXmlEncryptor$instance & __Certi
 
 
 export interface DpapiNGXmlDecryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
+
     Decrypt(encryptedElement: XElement): XElement;
 }
 
@@ -100,6 +112,8 @@ export type DpapiNGXmlDecryptor = DpapiNGXmlDecryptor$instance & __DpapiNGXmlDec
 
 
 export interface DpapiNGXmlEncryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
+
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
@@ -119,6 +133,8 @@ export type DpapiNGXmlEncryptor = DpapiNGXmlEncryptor$instance & __DpapiNGXmlEnc
 
 
 export interface DpapiXmlDecryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
+
     Decrypt(encryptedElement: XElement): XElement;
 }
 
@@ -139,6 +155,8 @@ export type DpapiXmlDecryptor = DpapiXmlDecryptor$instance & __DpapiXmlDecryptor
 
 
 export interface DpapiXmlEncryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
+
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 
@@ -158,6 +176,8 @@ export type DpapiXmlEncryptor = DpapiXmlEncryptor$instance & __DpapiXmlEncryptor
 
 
 export interface EncryptedXmlDecryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
+
     Decrypt(encryptedElement: XElement): XElement;
 }
 
@@ -191,6 +211,8 @@ export const EncryptedXmlInfo: {
 export type EncryptedXmlInfo = EncryptedXmlInfo$instance;
 
 export interface NullXmlDecryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
+
     Decrypt(encryptedElement: XElement): XElement;
 }
 
@@ -210,6 +232,8 @@ export type NullXmlDecryptor = NullXmlDecryptor$instance & __NullXmlDecryptor$vi
 
 
 export interface NullXmlEncryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
+
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
 }
 

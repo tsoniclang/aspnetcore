@@ -15,6 +15,8 @@ import type { Boolean as ClrBoolean, IServiceProvider, Object as ClrObject, Stri
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IAllowAnonymousFilter$instance extends IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter: never;
+
 }
 
 
@@ -23,6 +25,9 @@ export interface IAllowAnonymousFilter$instance extends Microsoft_AspNetCore_Mvc
 export type IAllowAnonymousFilter = IAllowAnonymousFilter$instance;
 
 export interface AllowAnonymousFilter$instance extends IAllowAnonymousFilter, IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
+
 }
 
 
@@ -34,6 +39,10 @@ export const AllowAnonymousFilter: {
 export type AllowAnonymousFilter = AllowAnonymousFilter$instance;
 
 export interface AuthorizeFilter$instance extends IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
+
     readonly AuthorizeData: IEnumerable<IAuthorizeData> | undefined;
     readonly Policy: AuthorizationPolicy | undefined;
     readonly PolicyProvider: IAuthorizationPolicyProvider | undefined;

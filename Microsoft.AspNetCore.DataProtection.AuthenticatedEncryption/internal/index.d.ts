@@ -28,6 +28,8 @@ export enum ValidationAlgorithm {
 
 
 export interface IAuthenticatedEncryptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor: never;
+
     Decrypt(ciphertext: ArraySegment<System_Internal.Byte>, additionalAuthenticatedData: ArraySegment<System_Internal.Byte>): byte[];
 }
 
@@ -35,6 +37,8 @@ export interface IAuthenticatedEncryptor$instance {
 export type IAuthenticatedEncryptor = IAuthenticatedEncryptor$instance;
 
 export interface IAuthenticatedEncryptorFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
+
     CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
@@ -42,6 +46,8 @@ export interface IAuthenticatedEncryptorFactory$instance {
 export type IAuthenticatedEncryptorFactory = IAuthenticatedEncryptorFactory$instance;
 
 export interface AuthenticatedEncryptorFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
+
     CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
@@ -61,6 +67,8 @@ export type AuthenticatedEncryptorFactory = AuthenticatedEncryptorFactory$instan
 
 
 export interface CngCbcAuthenticatedEncryptorFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
+
     CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
@@ -80,6 +88,8 @@ export type CngCbcAuthenticatedEncryptorFactory = CngCbcAuthenticatedEncryptorFa
 
 
 export interface CngGcmAuthenticatedEncryptorFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
+
     CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 
@@ -99,6 +109,8 @@ export type CngGcmAuthenticatedEncryptorFactory = CngGcmAuthenticatedEncryptorFa
 
 
 export interface ManagedAuthenticatedEncryptorFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
+
     CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
 }
 

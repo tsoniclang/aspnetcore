@@ -15,12 +15,16 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ICorsMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
+
 }
 
 
 export type ICorsMetadata = ICorsMetadata$instance;
 
 export interface ICorsPolicyMetadata$instance extends ICorsMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata: never;
+
     readonly Policy: CorsPolicy;
 }
 
@@ -30,6 +34,8 @@ export interface ICorsPolicyMetadata$instance extends ICorsMetadata$instance {}
 export type ICorsPolicyMetadata = ICorsPolicyMetadata$instance;
 
 export interface ICorsPolicyProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;
+
     GetPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
 }
 
@@ -37,6 +43,8 @@ export interface ICorsPolicyProvider$instance {
 export type ICorsPolicyProvider = ICorsPolicyProvider$instance;
 
 export interface ICorsService$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService: never;
+
     ApplyResult(result: CorsResult, response: HttpResponse): void;
     EvaluatePolicy(context: HttpContext, policy: CorsPolicy): CorsResult;
 }
@@ -45,6 +53,8 @@ export interface ICorsService$instance {
 export type ICorsService = ICorsService$instance;
 
 export interface IDisableCorsAttribute$instance extends ICorsMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute: never;
+
 }
 
 
@@ -53,6 +63,8 @@ export interface IDisableCorsAttribute$instance extends ICorsMetadata$instance {
 export type IDisableCorsAttribute = IDisableCorsAttribute$instance;
 
 export interface IEnableCorsAttribute$instance extends ICorsMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute: never;
+
     get PolicyName(): string | undefined;
     set PolicyName(value: string | undefined);
 }
@@ -163,6 +175,8 @@ export const CorsResult: {
 export type CorsResult = CorsResult$instance;
 
 export interface CorsService$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService: never;
+
     ApplyResult(result: CorsResult, response: HttpResponse): void;
     EvaluatePolicy(context: HttpContext, policyName: string): CorsResult;
     EvaluatePolicy(context: HttpContext, policy: CorsPolicy): CorsResult;
@@ -186,6 +200,8 @@ export type CorsService = CorsService$instance & __CorsService$views;
 
 
 export interface DefaultCorsPolicyProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;
+
     GetPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
 }
 

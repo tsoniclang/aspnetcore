@@ -11,6 +11,8 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
 import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
 
 export interface IHttpAuthenticationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature: never;
+
     get User(): ClaimsPrincipal | undefined;
     set User(value: ClaimsPrincipal | undefined);
 }
@@ -19,6 +21,8 @@ export interface IHttpAuthenticationFeature$instance {
 export type IHttpAuthenticationFeature = IHttpAuthenticationFeature$instance;
 
 export interface HttpAuthenticationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature: never;
+
     get User(): ClaimsPrincipal | undefined;
     set User(value: ClaimsPrincipal | undefined);
 }

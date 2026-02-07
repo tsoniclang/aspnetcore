@@ -39,3 +39,6 @@ export { ModelValidatorProviderExtensions$instance as ModelValidatorProviderExte
 export { ValidateNeverAttribute as ValidateNeverAttribute } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 export { ValidationVisitor as ValidationVisitor } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 export { ValidatorCache as ValidatorCache } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation as ExtensionMethods } from './__internal/extensions/index.js';
+

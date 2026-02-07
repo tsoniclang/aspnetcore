@@ -22,6 +22,9 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface QueryBuilder$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     Add(key: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): void;
     Add(key: string, value: string): void;
     Equals(obj: unknown): boolean;

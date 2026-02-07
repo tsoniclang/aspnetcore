@@ -86,6 +86,8 @@ export enum RequestQueueMode {
 
 
 export interface IHttpSysRequestDelegationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature: never;
+
     readonly CanDelegate: boolean;
     DelegateRequest(destination: DelegationRule): void;
 }
@@ -94,6 +96,8 @@ export interface IHttpSysRequestDelegationFeature$instance {
 export type IHttpSysRequestDelegationFeature = IHttpSysRequestDelegationFeature$instance;
 
 export interface IHttpSysRequestInfoFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature: never;
+
     readonly RequestInfo: IReadOnlyDictionary<System_Internal.Int32, ReadOnlyMemory<System_Internal.Byte>>;
 }
 
@@ -101,6 +105,8 @@ export interface IHttpSysRequestInfoFeature$instance {
 export type IHttpSysRequestInfoFeature = IHttpSysRequestInfoFeature$instance;
 
 export interface IHttpSysRequestPropertyFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestPropertyFeature: never;
+
     TryGetTlsClientHello(tlsClientHelloBytesDestination: Span<System_Internal.Byte>, bytesReturned: int): boolean;
 }
 
@@ -108,6 +114,8 @@ export interface IHttpSysRequestPropertyFeature$instance {
 export type IHttpSysRequestPropertyFeature = IHttpSysRequestPropertyFeature$instance;
 
 export interface IHttpSysRequestTimingFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestTimingFeature: never;
+
     readonly Timestamps: ReadOnlySpan<System_Internal.Int64>;
     TryGetElapsedTime(startingTimestampType: HttpSysRequestTimingType, endingTimestampType: HttpSysRequestTimingType, elapsed: TimeSpan): boolean;
     TryGetTimestamp(timestampType: HttpSysRequestTimingType, timestamp: long): boolean;
@@ -117,6 +125,8 @@ export interface IHttpSysRequestTimingFeature$instance {
 export type IHttpSysRequestTimingFeature = IHttpSysRequestTimingFeature$instance;
 
 export interface IServerDelegationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature: never;
+
     CreateDelegationRule(queueName: string, urlPrefix: string): DelegationRule;
 }
 
@@ -141,6 +151,8 @@ export const AuthenticationManager: {
 export type AuthenticationManager = AuthenticationManager$instance;
 
 export interface DelegationRule$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly QueueName: string;
     readonly UrlPrefix: string;
     Dispose(): void;
@@ -154,6 +166,8 @@ export const DelegationRule: {
 export type DelegationRule = DelegationRule$instance;
 
 export interface HttpSysException$instance extends Win32Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly ErrorCode: int;
 }
 
@@ -235,6 +249,10 @@ export const UrlPrefix: {
 export type UrlPrefix = UrlPrefix$instance;
 
 export interface UrlPrefixCollection$instance {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsReadOnly: boolean;
     Add(prefix: string): void;

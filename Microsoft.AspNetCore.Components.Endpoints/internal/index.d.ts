@@ -14,6 +14,8 @@ import type { Boolean as ClrBoolean, Int32, Object as ClrObject, TimeSpan, Type 
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IComponentPrerenderer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Endpoints_IComponentPrerenderer: never;
+
     readonly Dispatcher: Dispatcher;
     PrerenderComponentAsync(httpContext: HttpContext, componentType: Type, renderMode: IComponentRenderMode, parameters: ParameterView): ValueTask<IHtmlAsyncContent>;
     PrerenderPersistedStateAsync(httpContext: HttpContext, serializationMode: PersistedStateSerializationMode): ValueTask<IHtmlContent>;
@@ -23,6 +25,8 @@ export interface IComponentPrerenderer$instance {
 export type IComponentPrerenderer = IComponentPrerenderer$instance;
 
 export interface IRazorComponentEndpointInvoker$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Endpoints_IRazorComponentEndpointInvoker: never;
+
     Render(context: HttpContext): Task;
 }
 

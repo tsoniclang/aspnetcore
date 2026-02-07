@@ -11,6 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IServerAddressesFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature: never;
+
     readonly Addresses: ICollection<System_Internal.String>;
     PreferHostingUrls: boolean;
 }
@@ -19,6 +21,8 @@ export interface IServerAddressesFeature$instance {
 export type IServerAddressesFeature = IServerAddressesFeature$instance;
 
 export interface ServerAddressesFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature: never;
+
     readonly Addresses: ICollection<System_Internal.String>;
     PreferHostingUrls: boolean;
 }

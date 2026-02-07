@@ -36,6 +36,8 @@ import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IPageHandlerMethodSelector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageHandlerMethodSelector: never;
+
     Select(context: PageContext): HandlerMethodDescriptor | undefined;
 }
 
@@ -43,6 +45,8 @@ export interface IPageHandlerMethodSelector$instance {
 export type IPageHandlerMethodSelector = IPageHandlerMethodSelector$instance;
 
 export interface IPageLoader$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageLoader: never;
+
     Load(actionDescriptor: PageActionDescriptor): CompiledPageActionDescriptor;
 }
 
@@ -50,6 +54,8 @@ export interface IPageLoader$instance {
 export type IPageLoader = IPageLoader$instance;
 
 export interface CompiledPageActionDescriptorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider: never;
+
     readonly Order: int;
     OnProvidersExecuted(context: ActionDescriptorProviderContext): void;
     OnProvidersExecuting(context: ActionDescriptorProviderContext): void;
@@ -87,6 +93,8 @@ export const HandlerMethodDescriptor: {
 export type HandlerMethodDescriptor = HandlerMethodDescriptor$instance;
 
 export interface HandlerParameterDescriptor$instance extends ParameterDescriptor {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor: never;
+
     ParameterInfo: ParameterInfo;
 }
 
@@ -104,6 +112,8 @@ export type HandlerParameterDescriptor = HandlerParameterDescriptor$instance & _
 
 
 export interface PageActionDescriptorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider: never;
+
     Order: int;
     OnProvidersExecuted(context: ActionDescriptorProviderContext): void;
     OnProvidersExecuting(context: ActionDescriptorProviderContext): void;
@@ -123,6 +133,8 @@ export type PageActionDescriptorProvider = PageActionDescriptorProvider$instance
 
 
 export interface PageBoundPropertyDescriptor$instance extends ParameterDescriptor {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor: never;
+
     Property: PropertyInfo;
 }
 
@@ -142,6 +154,8 @@ export type PageBoundPropertyDescriptor = PageBoundPropertyDescriptor$instance &
 
 
 export interface PageLoader$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageLoader: never;
+
     LoadAsync(actionDescriptor: PageActionDescriptor): Task<CompiledPageActionDescriptor>;
     LoadAsync(actionDescriptor: PageActionDescriptor, endpointMetadata: EndpointMetadataCollection): Task<CompiledPageActionDescriptor>;
 }
@@ -185,6 +199,8 @@ export const PageResultExecutor: {
 export type PageResultExecutor = PageResultExecutor$instance;
 
 export interface PageViewLocationExpander$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander: never;
+
     ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
     PopulateValues(context: ViewLocationExpanderContext): void;
 }
@@ -205,6 +221,9 @@ export type PageViewLocationExpander = PageViewLocationExpander$instance & __Pag
 
 
 export interface RazorPageAdapter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IModelTypeProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
+
     get BodyContent(): IHtmlContent | undefined;
     set BodyContent(value: IHtmlContent | undefined);
     IsLayoutBeingRendered: boolean;
@@ -246,6 +265,8 @@ export const RazorPageAttribute: {
 export type RazorPageAttribute = RazorPageAttribute$instance;
 
 export interface ServiceBasedPageModelActivatorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider: never;
+
     CreateActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown>;
     CreateReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
 }

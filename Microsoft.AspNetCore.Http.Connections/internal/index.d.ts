@@ -52,6 +52,8 @@ export const ConnectionOptions: {
 export type ConnectionOptions = ConnectionOptions$instance;
 
 export interface ConnectionOptionsSetup$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
+
     Configure(options: ConnectionOptions): void;
 }
 

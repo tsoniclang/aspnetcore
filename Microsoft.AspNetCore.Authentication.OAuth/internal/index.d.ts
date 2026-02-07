@@ -89,6 +89,9 @@ export const OAuthEvents: {
 export type OAuthEvents = OAuthEvents$instance;
 
 export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions>, IAuthenticationRequestHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     BuildChallengeUrl(properties: AuthenticationProperties, redirectUri: string): string;
     ChallengeAsync(properties: AuthenticationProperties): Task;
@@ -143,6 +146,8 @@ export const OAuthOptions: {
 export type OAuthOptions = OAuthOptions$instance;
 
 export interface OAuthTokenResponse$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get AccessToken(): string | undefined;
     set AccessToken(value: string | undefined);
     get Error(): Exception | undefined;

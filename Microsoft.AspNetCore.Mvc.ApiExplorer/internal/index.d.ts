@@ -34,6 +34,8 @@ export enum ApiConventionTypeMatchBehavior {
 
 
 export interface IApiDefaultResponseMetadataProvider$instance extends IApiResponseMetadataProvider, IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider: never;
+
     readonly Type: Type;
     readonly Description: string | undefined;
     readonly StatusCode: int;
@@ -46,6 +48,8 @@ export interface IApiDefaultResponseMetadataProvider$instance extends IApiRespon
 export type IApiDefaultResponseMetadataProvider = IApiDefaultResponseMetadataProvider$instance;
 
 export interface IApiDescriptionGroupCollectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider: never;
+
     readonly ApiDescriptionGroups: ApiDescriptionGroupCollection;
 }
 
@@ -53,6 +57,8 @@ export interface IApiDescriptionGroupCollectionProvider$instance {
 export type IApiDescriptionGroupCollectionProvider = IApiDescriptionGroupCollectionProvider$instance;
 
 export interface IApiDescriptionGroupNameProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider: never;
+
     readonly GroupName: string | undefined;
 }
 
@@ -60,6 +66,8 @@ export interface IApiDescriptionGroupNameProvider$instance {
 export type IApiDescriptionGroupNameProvider = IApiDescriptionGroupNameProvider$instance;
 
 export interface IApiDescriptionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionProvider: never;
+
     readonly Order: int;
     OnProvidersExecuting(context: ApiDescriptionProviderContext): void;
 }
@@ -68,6 +76,8 @@ export interface IApiDescriptionProvider$instance {
 export type IApiDescriptionProvider = IApiDescriptionProvider$instance;
 
 export interface IApiDescriptionVisibilityProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider: never;
+
     readonly IgnoreApi: boolean;
 }
 
@@ -75,6 +85,8 @@ export interface IApiDescriptionVisibilityProvider$instance {
 export type IApiDescriptionVisibilityProvider = IApiDescriptionVisibilityProvider$instance;
 
 export interface IApiRequestFormatMetadataProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
+
     GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
 }
 
@@ -82,6 +94,8 @@ export interface IApiRequestFormatMetadataProvider$instance {
 export type IApiRequestFormatMetadataProvider = IApiRequestFormatMetadataProvider$instance;
 
 export interface IApiRequestMetadataProvider$instance extends IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider: never;
+
     SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
 
@@ -91,6 +105,8 @@ export interface IApiRequestMetadataProvider$instance extends Microsoft_AspNetCo
 export type IApiRequestMetadataProvider = IApiRequestMetadataProvider$instance;
 
 export interface IApiResponseMetadataProvider$instance extends IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
+
     readonly Type: Type;
     readonly Description: string | undefined;
     readonly StatusCode: int;
@@ -103,6 +119,8 @@ export interface IApiResponseMetadataProvider$instance extends Microsoft_AspNetC
 export type IApiResponseMetadataProvider = IApiResponseMetadataProvider$instance;
 
 export interface IApiResponseTypeMetadataProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
+
     GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
 }
 
@@ -194,6 +212,8 @@ export const ApiDescriptionGroupCollection: {
 export type ApiDescriptionGroupCollection = ApiDescriptionGroupCollection$instance;
 
 export interface ApiDescriptionGroupCollectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider: never;
+
     readonly ApiDescriptionGroups: ApiDescriptionGroupCollection;
 }
 
@@ -311,6 +331,8 @@ export const ApiResponseType: {
 export type ApiResponseType = ApiResponseType$instance;
 
 export interface DefaultApiDescriptionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionProvider: never;
+
     readonly Order: int;
     OnProvidersExecuted(context: ApiDescriptionProviderContext): void;
     OnProvidersExecuting(context: ApiDescriptionProviderContext): void;

@@ -30,6 +30,8 @@ export enum InputDateType {
 
 
 export interface IBrowserFile$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Forms_IBrowserFile: never;
+
     readonly Name: string;
     readonly LastModified: DateTimeOffset;
     readonly Size: long;
@@ -41,6 +43,8 @@ export interface IBrowserFile$instance {
 export type IBrowserFile = IBrowserFile$instance;
 
 export interface FieldIdentifier$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly FieldName: string;
     readonly Model: unknown;
     Equals(obj: unknown): boolean;
@@ -82,6 +86,8 @@ export const AntiforgeryStateProvider: (abstract new() => AntiforgeryStateProvid
 export type AntiforgeryStateProvider = AntiforgeryStateProvider$instance;
 
 export interface AntiforgeryToken$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+
 }
 
 
@@ -100,6 +106,11 @@ export type AntiforgeryToken = AntiforgeryToken$instance & __AntiforgeryToken$vi
 
 
 export interface DataAnnotationsValidator$instance extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Attach(renderHandle: RenderHandle): void;
     Dispose(disposing: boolean): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
@@ -122,7 +133,7 @@ export interface __DataAnnotationsValidator$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface DataAnnotationsValidator$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface DataAnnotationsValidator$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {}
 
 export type DataAnnotationsValidator = DataAnnotationsValidator$instance & __DataAnnotationsValidator$views;
 
@@ -170,6 +181,10 @@ export const EditContextProperties: {
 export type EditContextProperties = EditContextProperties$instance;
 
 export interface EditForm$instance extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
     get ChildContent(): RenderFragment_1<EditContext> | undefined;
@@ -211,6 +226,11 @@ export type EditForm = EditForm$instance & __EditForm$views;
 
 
 export interface Editor_1$instance<T> extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+
     Value: T;
     ValueChanged: EventCallback_1<T>;
     ValueExpression: Expression<Func<T>>;
@@ -280,6 +300,9 @@ export const FormMappingContext: {
 export type FormMappingContext = FormMappingContext$instance;
 
 export interface FormMappingScope$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+
     ChildContent: RenderFragment_1<FormMappingContext>;
     Name: string;
 }
@@ -300,6 +323,11 @@ export type FormMappingScope = FormMappingScope$instance & __FormMappingScope$vi
 
 
 export interface InputBase_1$instance<TValue> extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
     get DisplayName(): string | undefined;
@@ -329,12 +357,17 @@ export interface __InputBase_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface InputBase_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface InputBase_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {}
 
 export type InputBase_1<TValue> = InputBase_1$instance<TValue> & __InputBase_1$views<TValue>;
 
 
 export interface InputCheckbox$instance extends InputBase_1$instance<System_Internal.Boolean> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
@@ -356,10 +389,17 @@ export interface __InputCheckbox$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputCheckbox$instance extends System_Internal.IDisposable {}
+
 export type InputCheckbox = InputCheckbox$instance & __InputCheckbox$views;
 
 
 export interface InputDate_1$instance<TValue> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Element: Nullable<ElementReference>;
     ParsingErrorMessage: string;
     Type: InputDateType;
@@ -386,10 +426,18 @@ export interface __InputDate_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputDate_1$instance<TValue> extends System_Internal.IDisposable {}
+
 export type InputDate_1<TValue> = InputDate_1$instance<TValue> & __InputDate_1$views<TValue>;
 
 
 export interface InputFile$instance extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Forms_IInputFileJsCallbacks: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get AdditionalAttributes(): IDictionary<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IDictionary<System_Internal.String, unknown> | undefined);
     Element: Nullable<ElementReference>;
@@ -414,7 +462,7 @@ export interface __InputFile$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface InputFile$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface InputFile$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {}
 
 export type InputFile = InputFile$instance & __InputFile$views;
 
@@ -434,6 +482,11 @@ export const InputFileChangeEventArgs: {
 export type InputFileChangeEventArgs = InputFileChangeEventArgs$instance;
 
 export interface InputHidden$instance extends InputBase_1$instance<System_Internal.String> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
@@ -455,10 +508,17 @@ export interface __InputHidden$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputHidden$instance extends System_Internal.IDisposable {}
+
 export type InputHidden = InputHidden$instance & __InputHidden$views;
 
 
 export interface InputNumber_1$instance<TValue> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Element: Nullable<ElementReference>;
     ParsingErrorMessage: string;
     Attach(renderHandle: RenderHandle): void;
@@ -483,10 +543,16 @@ export interface __InputNumber_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputNumber_1$instance<TValue> extends System_Internal.IDisposable {}
+
 export type InputNumber_1<TValue> = InputNumber_1$instance<TValue> & __InputNumber_1$views<TValue>;
 
 
 export interface InputRadio_1$instance<TValue> extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
     Element: Nullable<ElementReference>;
@@ -520,6 +586,12 @@ export type InputRadio_1<TValue> = InputRadio_1$instance<TValue> & __InputRadio_
 
 
 export interface InputRadioGroup_1$instance<TValue> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IInputRadioValueProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
     get Name(): string | undefined;
@@ -546,10 +618,17 @@ export interface __InputRadioGroup_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputRadioGroup_1$instance<TValue> extends System_Internal.IDisposable {}
+
 export type InputRadioGroup_1<TValue> = InputRadioGroup_1$instance<TValue> & __InputRadioGroup_1$views<TValue>;
 
 
 export interface InputSelect_1$instance<TValue> extends InputBase_1$instance<TValue> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
     Element: Nullable<ElementReference>;
@@ -575,10 +654,17 @@ export interface __InputSelect_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputSelect_1$instance<TValue> extends System_Internal.IDisposable {}
+
 export type InputSelect_1<TValue> = InputSelect_1$instance<TValue> & __InputSelect_1$views<TValue>;
 
 
 export interface InputText$instance extends InputBase_1$instance<System_Internal.String> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
@@ -600,10 +686,17 @@ export interface __InputText$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputText$instance extends System_Internal.IDisposable {}
+
 export type InputText = InputText$instance & __InputText$views;
 
 
 export interface InputTextArea$instance extends InputBase_1$instance<System_Internal.String> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Element: Nullable<ElementReference>;
     Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
@@ -625,6 +718,8 @@ export interface __InputTextArea$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
+export interface InputTextArea$instance extends System_Internal.IDisposable {}
+
 export type InputTextArea = InputTextArea$instance & __InputTextArea$views;
 
 
@@ -643,6 +738,11 @@ export const RemoteBrowserFileStreamOptions: {
 export type RemoteBrowserFileStreamOptions = RemoteBrowserFileStreamOptions$instance;
 
 export interface ValidationMessage_1$instance<TValue> extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
     get For(): Expression<Func<TValue>> | undefined;
@@ -669,7 +769,7 @@ export interface __ValidationMessage_1$views<TValue> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface ValidationMessage_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface ValidationMessage_1$instance<TValue> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {}
 
 export type ValidationMessage_1<TValue> = ValidationMessage_1$instance<TValue> & __ValidationMessage_1$views<TValue>;
 
@@ -719,6 +819,11 @@ export const ValidationStateChangedEventArgs: {
 export type ValidationStateChangedEventArgs = ValidationStateChangedEventArgs$instance;
 
 export interface ValidationSummary$instance extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get AdditionalAttributes(): IReadOnlyDictionary<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IReadOnlyDictionary<System_Internal.String, unknown> | undefined);
     get Model(): unknown | undefined;
@@ -745,7 +850,7 @@ export interface __ValidationSummary$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface ValidationSummary$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface ValidationSummary$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {}
 
 export type ValidationSummary = ValidationSummary$instance & __ValidationSummary$views;
 

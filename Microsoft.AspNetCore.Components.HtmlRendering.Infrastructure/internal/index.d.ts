@@ -21,6 +21,9 @@ import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface StaticHtmlRenderer$instance extends Renderer {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Dispatcher: Dispatcher;
     readonly RendererInfo: RendererInfo;
     BeginRenderingComponent(componentType: Type, initialParameters: ParameterView): HtmlRootComponent;

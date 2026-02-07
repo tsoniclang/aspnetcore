@@ -31,3 +31,6 @@ export { SerializableErrorWrapperProviderFactory as SerializableErrorWrapperProv
 export { ValidationProblemDetailsWrapper as ValidationProblemDetailsWrapper } from './Microsoft.AspNetCore.Mvc.Formatters.Xml/internal/index.js';
 export { WrapperProviderContext as WrapperProviderContext } from './Microsoft.AspNetCore.Mvc.Formatters.Xml/internal/index.js';
 export { WrapperProviderFactoriesExtensions$instance as WrapperProviderFactoriesExtensions } from './Microsoft.AspNetCore.Mvc.Formatters.Xml/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml as ExtensionMethods } from './__internal/extensions/index.js';
+

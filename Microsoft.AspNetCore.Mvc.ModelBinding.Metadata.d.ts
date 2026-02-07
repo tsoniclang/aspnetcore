@@ -39,3 +39,6 @@ export { SystemTextJsonValidationMetadataProvider as SystemTextJsonValidationMet
 export { ValidationMetadata as ValidationMetadata } from './Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js';
 export { ValidationMetadataProviderContext as ValidationMetadataProviderContext } from './Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js';
 export { DataMemberRequiredBindingMetadataProvider as DataMemberRequiredBindingMetadataProvider } from './Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata as ExtensionMethods } from './__internal/extensions/index.js';
+

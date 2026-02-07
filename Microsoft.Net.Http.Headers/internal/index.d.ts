@@ -209,6 +209,8 @@ export const MediaTypeHeaderValue: {
 export type MediaTypeHeaderValue = MediaTypeHeaderValue$instance;
 
 export interface MediaTypeHeaderValueComparer$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
+
     Compare(mediaType1: MediaTypeHeaderValue, mediaType2: MediaTypeHeaderValue): int;
 }
 
@@ -360,6 +362,8 @@ export const StringWithQualityHeaderValue: {
 export type StringWithQualityHeaderValue = StringWithQualityHeaderValue$instance;
 
 export interface StringWithQualityHeaderValueComparer$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
+
     Compare(stringWithQuality1: StringWithQualityHeaderValue, stringWithQuality2: StringWithQualityHeaderValue): int;
 }
 

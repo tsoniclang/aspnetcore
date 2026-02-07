@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
 
 export interface IActivator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Internal_IActivator: never;
+
     CreateInstance(expectedBaseType: Type, implementationTypeName: string): unknown;
 }
 

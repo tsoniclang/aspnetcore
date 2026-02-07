@@ -15,6 +15,8 @@ import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IPolicyEvaluator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
+
     AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
     AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
 }
@@ -23,6 +25,8 @@ export interface IPolicyEvaluator$instance {
 export type IPolicyEvaluator = IPolicyEvaluator$instance;
 
 export interface AuthorizationMiddlewareResultHandler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationMiddlewareResultHandler: never;
+
     HandleAsync(next: RequestDelegate, context: HttpContext, policy: AuthorizationPolicy, authorizeResult: PolicyAuthorizationResult): Task;
 }
 
@@ -61,6 +65,8 @@ export const PolicyAuthorizationResult: {
 export type PolicyAuthorizationResult = PolicyAuthorizationResult$instance;
 
 export interface PolicyEvaluator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
+
     AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
     AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
 }

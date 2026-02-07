@@ -15,6 +15,8 @@ import type { ObjectPoolProvider } from "@tsonic/microsoft-extensions/Microsoft.
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IResponseCachingFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;
+
     get VaryByQueryKeys(): string[] | undefined;
     set VaryByQueryKeys(value: string[] | undefined);
 }
@@ -23,6 +25,8 @@ export interface IResponseCachingFeature$instance {
 export type IResponseCachingFeature = IResponseCachingFeature$instance;
 
 export interface ResponseCachingFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;
+
     get VaryByQueryKeys(): string[] | undefined;
     set VaryByQueryKeys(value: string[] | undefined);
 }

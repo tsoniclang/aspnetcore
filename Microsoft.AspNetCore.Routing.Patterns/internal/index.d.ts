@@ -48,6 +48,8 @@ export const RoutePattern: {
 export type RoutePattern = RoutePattern$instance;
 
 export interface RoutePatternException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly Pattern: string;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }

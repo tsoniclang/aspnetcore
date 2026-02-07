@@ -14,6 +14,8 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IAntiforgery$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgery: never;
+
     GetAndStoreTokens(httpContext: HttpContext): AntiforgeryTokenSet;
     IsRequestValidAsync(httpContext: HttpContext): Task<System_Internal.Boolean>;
     SetCookieTokenAndHeader(httpContext: HttpContext): void;
@@ -24,6 +26,8 @@ export interface IAntiforgery$instance {
 export type IAntiforgery = IAntiforgery$instance;
 
 export interface IAntiforgeryAdditionalDataProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryAdditionalDataProvider: never;
+
     GetAdditionalData(context: HttpContext): string;
     ValidateAdditionalData(context: HttpContext, additionalData: string): boolean;
 }
@@ -32,6 +36,8 @@ export interface IAntiforgeryAdditionalDataProvider$instance {
 export type IAntiforgeryAdditionalDataProvider = IAntiforgeryAdditionalDataProvider$instance;
 
 export interface IAntiforgeryMetadata$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryMetadata: never;
+
     readonly RequiresValidation: boolean;
 }
 
@@ -39,6 +45,8 @@ export interface IAntiforgeryMetadata$instance {
 export type IAntiforgeryMetadata = IAntiforgeryMetadata$instance;
 
 export interface IAntiforgeryValidationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryValidationFeature: never;
+
     readonly IsValid: boolean;
     readonly Error: Exception | undefined;
 }
@@ -80,6 +88,8 @@ export const AntiforgeryTokenSet: {
 export type AntiforgeryTokenSet = AntiforgeryTokenSet$instance;
 
 export interface AntiforgeryValidationException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -92,6 +102,8 @@ export const AntiforgeryValidationException: {
 export type AntiforgeryValidationException = AntiforgeryValidationException$instance;
 
 export interface RequireAntiforgeryTokenAttribute$instance extends Attribute {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryMetadata: never;
+
     readonly RequiresValidation: boolean;
 }
 

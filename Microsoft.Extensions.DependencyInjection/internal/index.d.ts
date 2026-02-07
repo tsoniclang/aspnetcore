@@ -53,6 +53,8 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IPostConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IMvcBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IMvcBuilder: never;
+
     readonly Services: IServiceCollection;
     readonly PartManager: ApplicationPartManager;
 }
@@ -61,6 +63,8 @@ export interface IMvcBuilder$instance {
 export type IMvcBuilder = IMvcBuilder$instance;
 
 export interface IMvcCoreBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder: never;
+
     readonly Services: IServiceCollection;
     readonly PartManager: ApplicationPartManager;
 }
@@ -69,6 +73,8 @@ export interface IMvcCoreBuilder$instance {
 export type IMvcCoreBuilder = IMvcCoreBuilder$instance;
 
 export interface IRazorComponentsBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IRazorComponentsBuilder: never;
+
     readonly Services: IServiceCollection;
 }
 
@@ -76,6 +82,8 @@ export interface IRazorComponentsBuilder$instance {
 export type IRazorComponentsBuilder = IRazorComponentsBuilder$instance;
 
 export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuilder {
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder: never;
+
     readonly Services: IServiceCollection;
 }
 
@@ -85,6 +93,8 @@ export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuild
 export type IServerSideBlazorBuilder = IServerSideBlazorBuilder$instance;
 
 export interface OAuthPostConfigureOptions_2$instance<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>> {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
+
     PostConfigure(name: string, options: TOptions): void;
 }
 

@@ -11,6 +11,8 @@ import type { HttpTransportType } from "../../Microsoft.AspNetCore.Http.Connecti
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 
 export interface IHttpContextFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature: never;
+
     get HttpContext(): HttpContext | undefined;
     set HttpContext(value: HttpContext | undefined);
 }
@@ -19,6 +21,8 @@ export interface IHttpContextFeature$instance {
 export type IHttpContextFeature = IHttpContextFeature$instance;
 
 export interface IHttpTransportFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature: never;
+
     readonly TransportType: HttpTransportType;
 }
 

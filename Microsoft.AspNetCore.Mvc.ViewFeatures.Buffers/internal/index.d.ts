@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IViewBufferScope$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_Buffers_IViewBufferScope: never;
+
     CreateWriter(writer: TextWriter): TextWriter;
     GetPage(pageSize: int): ViewBufferValue[];
     ReturnSegment(segment: ViewBufferValue[]): void;
