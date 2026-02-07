@@ -18,3 +18,6 @@ export { ComponentStatePersistenceManager as ComponentStatePersistenceManager } 
 export { PersistentStateProviderServiceCollectionExtensions$instance as PersistentStateProviderServiceCollectionExtensions } from './Microsoft.AspNetCore.Components.Infrastructure/internal/index.js';
 export { RegisterPersistentComponentStateServiceCollectionExtensions$instance as RegisterPersistentComponentStateServiceCollectionExtensions } from './Microsoft.AspNetCore.Components.Infrastructure/internal/index.js';
 export { ComponentsMetricsServiceCollectionExtensions$instance as ComponentsMetricsServiceCollectionExtensions } from './Microsoft.AspNetCore.Components.Infrastructure/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_AspNetCore_Components_Infrastructure as ExtensionMethods } from './__internal/extensions/index.js';
+

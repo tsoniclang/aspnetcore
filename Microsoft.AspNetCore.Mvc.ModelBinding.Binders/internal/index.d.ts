@@ -20,6 +20,9 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface ArrayModelBinder_1$instance<TElement> extends CollectionModelBinder_1$instance<TElement> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
     ConvertToCollectionType(targetType: Type, collection: IEnumerable<TElement>): unknown | undefined;
@@ -46,6 +49,8 @@ export type ArrayModelBinder_1<TElement> = ArrayModelBinder_1$instance<TElement>
 
 
 export interface ArrayModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -65,6 +70,8 @@ export type ArrayModelBinderProvider = ArrayModelBinderProvider$instance & __Arr
 
 
 export interface BinderTypeModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -84,6 +91,8 @@ export type BinderTypeModelBinder = BinderTypeModelBinder$instance & __BinderTyp
 
 
 export interface BinderTypeModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -103,6 +112,8 @@ export type BinderTypeModelBinderProvider = BinderTypeModelBinderProvider$instan
 
 
 export interface BodyModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -124,6 +135,8 @@ export type BodyModelBinder = BodyModelBinder$instance & __BodyModelBinder$views
 
 
 export interface BodyModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -145,6 +158,8 @@ export type BodyModelBinderProvider = BodyModelBinderProvider$instance & __BodyM
 
 
 export interface ByteArrayModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -164,6 +179,8 @@ export type ByteArrayModelBinder = ByteArrayModelBinder$instance & __ByteArrayMo
 
 
 export interface ByteArrayModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -183,6 +200,8 @@ export type ByteArrayModelBinderProvider = ByteArrayModelBinderProvider$instance
 
 
 export interface CancellationTokenModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -202,6 +221,8 @@ export type CancellationTokenModelBinder = CancellationTokenModelBinder$instance
 
 
 export interface CancellationTokenModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -221,6 +242,9 @@ export type CancellationTokenModelBinderProvider = CancellationTokenModelBinderP
 
 
 export interface CollectionModelBinder_1$instance<TElement> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
     ConvertToCollectionType(targetType: Type, collection: IEnumerable<TElement>): unknown | undefined;
@@ -245,6 +269,8 @@ export type CollectionModelBinder_1<TElement> = CollectionModelBinder_1$instance
 
 
 export interface CollectionModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -264,6 +290,8 @@ export type CollectionModelBinderProvider = CollectionModelBinderProvider$instan
 
 
 export interface ComplexObjectModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -282,6 +310,8 @@ export type ComplexObjectModelBinder = ComplexObjectModelBinder$instance & __Com
 
 
 export interface ComplexObjectModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -301,6 +331,8 @@ export type ComplexObjectModelBinderProvider = ComplexObjectModelBinderProvider$
 
 
 export interface ComplexTypeModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     BindProperty(bindingContext: ModelBindingContext): Task;
     CanBindProperty(bindingContext: ModelBindingContext, propertyMetadata: ModelMetadata): boolean;
@@ -325,6 +357,8 @@ export type ComplexTypeModelBinder = ComplexTypeModelBinder$instance & __Complex
 
 
 export interface ComplexTypeModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -344,6 +378,8 @@ export type ComplexTypeModelBinderProvider = ComplexTypeModelBinderProvider$inst
 
 
 export interface DateTimeModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -363,6 +399,8 @@ export type DateTimeModelBinder = DateTimeModelBinder$instance & __DateTimeModel
 
 
 export interface DateTimeModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -382,6 +420,8 @@ export type DateTimeModelBinderProvider = DateTimeModelBinderProvider$instance &
 
 
 export interface DecimalModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -401,6 +441,9 @@ export type DecimalModelBinder = DecimalModelBinder$instance & __DecimalModelBin
 
 
 export interface DictionaryModelBinder_2$instance<TKey, TValue> extends CollectionModelBinder_1$instance<KeyValuePair<TKey, TValue>> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
     ConvertToCollectionType(targetType: Type, collection: IEnumerable<KeyValuePair<TKey, TValue>>): unknown | undefined;
@@ -424,6 +467,8 @@ export type DictionaryModelBinder_2<TKey, TValue> = DictionaryModelBinder_2$inst
 
 
 export interface DictionaryModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -443,6 +488,8 @@ export type DictionaryModelBinderProvider = DictionaryModelBinderProvider$instan
 
 
 export interface DoubleModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -462,6 +509,8 @@ export type DoubleModelBinder = DoubleModelBinder$instance & __DoubleModelBinder
 
 
 export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown): void;
 }
@@ -480,6 +529,8 @@ export type EnumTypeModelBinder = EnumTypeModelBinder$instance & __EnumTypeModel
 
 
 export interface EnumTypeModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -499,6 +550,8 @@ export type EnumTypeModelBinderProvider = EnumTypeModelBinderProvider$instance &
 
 
 export interface FloatingPointTypeModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -518,6 +571,8 @@ export type FloatingPointTypeModelBinderProvider = FloatingPointTypeModelBinderP
 
 
 export interface FloatModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -537,6 +592,8 @@ export type FloatModelBinder = FloatModelBinder$instance & __FloatModelBinder$vi
 
 
 export interface FormCollectionModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -556,6 +613,8 @@ export type FormCollectionModelBinder = FormCollectionModelBinder$instance & __F
 
 
 export interface FormCollectionModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -575,6 +634,8 @@ export type FormCollectionModelBinderProvider = FormCollectionModelBinderProvide
 
 
 export interface FormFileModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -594,6 +655,8 @@ export type FormFileModelBinder = FormFileModelBinder$instance & __FormFileModel
 
 
 export interface FormFileModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -613,6 +676,8 @@ export type FormFileModelBinderProvider = FormFileModelBinderProvider$instance &
 
 
 export interface HeaderModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -633,6 +698,8 @@ export type HeaderModelBinder = HeaderModelBinder$instance & __HeaderModelBinder
 
 
 export interface HeaderModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -652,6 +719,8 @@ export type HeaderModelBinderProvider = HeaderModelBinderProvider$instance & __H
 
 
 export interface KeyValuePairModelBinder_2$instance<TKey, TValue> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -671,6 +740,8 @@ export type KeyValuePairModelBinder_2<TKey, TValue> = KeyValuePairModelBinder_2$
 
 
 export interface KeyValuePairModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -690,6 +761,8 @@ export type KeyValuePairModelBinderProvider = KeyValuePairModelBinderProvider$in
 
 
 export interface ServicesModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
 }
 
@@ -709,6 +782,8 @@ export type ServicesModelBinder = ServicesModelBinder$instance & __ServicesModel
 
 
 export interface ServicesModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -728,6 +803,8 @@ export type ServicesModelBinderProvider = ServicesModelBinderProvider$instance &
 
 
 export interface SimpleTypeModelBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
+
     BindModelAsync(bindingContext: ModelBindingContext): Task;
     CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown): void;
 }
@@ -748,6 +825,8 @@ export type SimpleTypeModelBinder = SimpleTypeModelBinder$instance & __SimpleTyp
 
 
 export interface SimpleTypeModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 
@@ -767,6 +846,8 @@ export type SimpleTypeModelBinderProvider = SimpleTypeModelBinderProvider$instan
 
 
 export interface TryParseModelBinderProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider: never;
+
     GetBinder(context: ModelBinderProviderContext): IModelBinder | undefined;
 }
 

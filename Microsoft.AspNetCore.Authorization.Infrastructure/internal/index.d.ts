@@ -15,6 +15,9 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface AssertionRequirement$instance extends IAuthorizationRequirement {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
+
     readonly Handler: Func<AuthorizationHandlerContext, Task<System_Internal.Boolean>>;
     HandleAsync(context: AuthorizationHandlerContext): Task;
     ToString(): string;
@@ -37,6 +40,9 @@ export type AssertionRequirement = AssertionRequirement$instance & __AssertionRe
 
 
 export interface ClaimsAuthorizationRequirement$instance extends AuthorizationHandler_1<ClaimsAuthorizationRequirement>, IAuthorizationRequirement {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
+
     readonly AllowedValues: IEnumerable<System_Internal.String> | undefined;
     readonly ClaimType: string;
     HandleAsync(context: AuthorizationHandlerContext): Task;
@@ -59,6 +65,9 @@ export type ClaimsAuthorizationRequirement = ClaimsAuthorizationRequirement$inst
 
 
 export interface DenyAnonymousAuthorizationRequirement$instance extends AuthorizationHandler_1<DenyAnonymousAuthorizationRequirement>, IAuthorizationRequirement {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
+
     HandleAsync(context: AuthorizationHandlerContext): Task;
     ToString(): string;
 }
@@ -79,6 +88,9 @@ export type DenyAnonymousAuthorizationRequirement = DenyAnonymousAuthorizationRe
 
 
 export interface NameAuthorizationRequirement$instance extends AuthorizationHandler_1<NameAuthorizationRequirement>, IAuthorizationRequirement {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
+
     readonly RequiredName: string;
     HandleAsync(context: AuthorizationHandlerContext): Task;
     ToString(): string;
@@ -100,6 +112,8 @@ export type NameAuthorizationRequirement = NameAuthorizationRequirement$instance
 
 
 export interface OperationAuthorizationRequirement$instance extends IAuthorizationRequirement {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
+
     Name: string;
     ToString(): string;
 }
@@ -113,6 +127,8 @@ export const OperationAuthorizationRequirement: {
 export type OperationAuthorizationRequirement = OperationAuthorizationRequirement$instance;
 
 export interface PassThroughAuthorizationHandler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
+
     HandleAsync(context: AuthorizationHandlerContext): Task;
 }
 
@@ -133,6 +149,9 @@ export type PassThroughAuthorizationHandler = PassThroughAuthorizationHandler$in
 
 
 export interface RolesAuthorizationRequirement$instance extends AuthorizationHandler_1<RolesAuthorizationRequirement>, IAuthorizationRequirement {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
+
     readonly AllowedRoles: IEnumerable<System_Internal.String>;
     HandleAsync(context: AuthorizationHandlerContext): Task;
     ToString(): string;

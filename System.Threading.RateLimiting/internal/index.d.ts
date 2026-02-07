@@ -35,6 +35,9 @@ export const RateLimitPartition_1: {
 export type RateLimitPartition_1<TKey> = RateLimitPartition_1$instance<TKey>;
 
 export interface ConcurrencyLimiter$instance extends RateLimiter {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IdleDuration: Nullable<TimeSpan>;
     AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
     AttemptAcquireCore(permitCount: int): RateLimitLease;
@@ -67,6 +70,9 @@ export const ConcurrencyLimiterOptions: {
 export type ConcurrencyLimiterOptions = ConcurrencyLimiterOptions$instance;
 
 export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IdleDuration: Nullable<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
@@ -104,6 +110,8 @@ export const FixedWindowRateLimiterOptions: {
 export type FixedWindowRateLimiterOptions = FixedWindowRateLimiterOptions$instance;
 
 export interface MetadataName_1$instance<T> {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Name: string;
     Equals(obj: unknown): boolean;
     Equals(other: MetadataName_1<T>): boolean;
@@ -120,6 +128,9 @@ export const MetadataName_1: {
 export type MetadataName_1<T> = MetadataName_1$instance<T>;
 
 export interface PartitionedRateLimiter_1$instance<TResource> {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     AcquireAsync(resource: TResource, permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
     AcquireAsyncCore(resource: TResource, permitCount: int, cancellationToken: CancellationToken): ValueTask<RateLimitLease>;
     AttemptAcquire(resource: TResource, permitCount?: int): RateLimitLease;
@@ -140,6 +151,9 @@ export const PartitionedRateLimiter_1: (abstract new<TResource>() => Partitioned
 export type PartitionedRateLimiter_1<TResource> = PartitionedRateLimiter_1$instance<TResource>;
 
 export interface RateLimiter$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IdleDuration: Nullable<TimeSpan>;
     AcquireAsync(permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
     AcquireAsyncCore(permitCount: int, cancellationToken: CancellationToken): ValueTask<RateLimitLease>;
@@ -176,6 +190,8 @@ export const RateLimiterStatistics: {
 export type RateLimiterStatistics = RateLimiterStatistics$instance;
 
 export interface RateLimitLease$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsAcquired: boolean;
     readonly MetadataNames: IEnumerable<System_Internal.String>;
     Dispose(): void;
@@ -193,6 +209,9 @@ export const RateLimitLease: (abstract new() => RateLimitLease) & {
 export type RateLimitLease = RateLimitLease$instance;
 
 export interface ReplenishingRateLimiter$instance extends RateLimiter {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
     TryReplenish(): boolean;
@@ -206,6 +225,9 @@ export const ReplenishingRateLimiter: (abstract new() => ReplenishingRateLimiter
 export type ReplenishingRateLimiter = ReplenishingRateLimiter$instance;
 
 export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimiter {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IdleDuration: Nullable<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
@@ -244,6 +266,9 @@ export const SlidingWindowRateLimiterOptions: {
 export type SlidingWindowRateLimiterOptions = SlidingWindowRateLimiterOptions$instance;
 
 export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IdleDuration: Nullable<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;

@@ -9,6 +9,8 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as System_Internal from "@tsonic/dotnet/System.js";
 
 export interface IHostContextContainer_1$instance<TContext> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_Abstractions_IHostContextContainer_1: never;
+
     HostContext: TContext | undefined;
 }
 

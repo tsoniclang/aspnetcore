@@ -13,6 +13,8 @@ import type { Attribute, Int32, Nullable, Object as ClrObject, String as ClrStri
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 
 export interface IHttpRequestTimeoutFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Timeouts_IHttpRequestTimeoutFeature: never;
+
     readonly RequestTimeoutToken: CancellationToken;
     DisableTimeout(): void;
 }

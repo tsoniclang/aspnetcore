@@ -34,6 +34,8 @@ import type { IOptions, IPostConfigureOptions } from "@tsonic/microsoft-extensio
 import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IActionContextAccessor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor: never;
+
     get ActionContext(): ActionContext | undefined;
     set ActionContext(value: ActionContext | undefined);
 }
@@ -42,6 +44,8 @@ export interface IActionContextAccessor$instance {
 export type IActionContextAccessor = IActionContextAccessor$instance;
 
 export interface IActionDescriptorChangeProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider: never;
+
     GetChangeToken(): IChangeToken;
 }
 
@@ -49,6 +53,8 @@ export interface IActionDescriptorChangeProvider$instance {
 export type IActionDescriptorChangeProvider = IActionDescriptorChangeProvider$instance;
 
 export interface IActionDescriptorCollectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider: never;
+
     readonly ActionDescriptors: ActionDescriptorCollection;
 }
 
@@ -56,6 +62,8 @@ export interface IActionDescriptorCollectionProvider$instance {
 export type IActionDescriptorCollectionProvider = IActionDescriptorCollectionProvider$instance;
 
 export interface IActionInvokerFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory: never;
+
     CreateInvoker(actionContext: ActionContext): IActionInvoker | undefined;
 }
 
@@ -63,6 +71,8 @@ export interface IActionInvokerFactory$instance {
 export type IActionInvokerFactory = IActionInvokerFactory$instance;
 
 export interface IActionResultExecutor_1$instance<TResult extends IActionResult> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: TResult): Task;
 }
 
@@ -70,6 +80,8 @@ export interface IActionResultExecutor_1$instance<TResult extends IActionResult>
 export type IActionResultExecutor_1<TResult extends IActionResult> = IActionResultExecutor_1$instance<TResult>;
 
 export interface IActionResultTypeMapper$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper: never;
+
     Convert(value: unknown, returnType: Type): IActionResult;
     GetResultDataType(returnType: Type): Type;
 }
@@ -78,6 +90,8 @@ export interface IActionResultTypeMapper$instance {
 export type IActionResultTypeMapper = IActionResultTypeMapper$instance;
 
 export interface IActionSelector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector: never;
+
     SelectBestCandidate(context: RouteContext, candidates: IReadOnlyList<ActionDescriptor>): ActionDescriptor | undefined;
     SelectCandidates(context: RouteContext): IReadOnlyList<ActionDescriptor> | undefined;
 }
@@ -86,6 +100,8 @@ export interface IActionSelector$instance {
 export type IActionSelector = IActionSelector$instance;
 
 export interface IApiBehaviorMetadata$instance extends IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata: never;
+
 }
 
 
@@ -94,6 +110,8 @@ export interface IApiBehaviorMetadata$instance extends Microsoft_AspNetCore_Mvc_
 export type IApiBehaviorMetadata = IApiBehaviorMetadata$instance;
 
 export interface IClientErrorActionResult$instance extends IStatusCodeActionResult, IActionResult {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
+
     readonly StatusCode: Nullable<System_Internal.Int32>;
     ExecuteResultAsync(context: ActionContext): Task;
 }
@@ -102,6 +120,8 @@ export interface IClientErrorActionResult$instance extends IStatusCodeActionResu
 export type IClientErrorActionResult = IClientErrorActionResult$instance;
 
 export interface IClientErrorFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory: never;
+
     GetClientError(actionContext: ActionContext, clientError: IClientErrorActionResult): IActionResult | undefined;
 }
 
@@ -109,6 +129,8 @@ export interface IClientErrorFactory$instance {
 export type IClientErrorFactory = IClientErrorFactory$instance;
 
 export interface ICompatibilitySwitch$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch: never;
+
     readonly IsValueSet: boolean;
     readonly Name: string;
     Value: unknown;
@@ -118,6 +140,8 @@ export interface ICompatibilitySwitch$instance {
 export type ICompatibilitySwitch = ICompatibilitySwitch$instance;
 
 export interface IConvertToActionResult$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult: never;
+
     Convert(): IActionResult;
 }
 
@@ -125,6 +149,8 @@ export interface IConvertToActionResult$instance {
 export type IConvertToActionResult = IConvertToActionResult$instance;
 
 export interface IHttpRequestStreamReaderFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory: never;
+
     CreateReader(stream: Stream, encoding: Encoding): TextReader;
 }
 
@@ -132,6 +158,8 @@ export interface IHttpRequestStreamReaderFactory$instance {
 export type IHttpRequestStreamReaderFactory = IHttpRequestStreamReaderFactory$instance;
 
 export interface IHttpResponseStreamWriterFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory: never;
+
     CreateWriter(stream: Stream, encoding: Encoding): TextWriter;
 }
 
@@ -139,6 +167,8 @@ export interface IHttpResponseStreamWriterFactory$instance {
 export type IHttpResponseStreamWriterFactory = IHttpResponseStreamWriterFactory$instance;
 
 export interface IParameterInfoParameterDescriptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor: never;
+
     readonly ParameterInfo: ParameterInfo;
 }
 
@@ -146,6 +176,8 @@ export interface IParameterInfoParameterDescriptor$instance {
 export type IParameterInfoParameterDescriptor = IParameterInfoParameterDescriptor$instance;
 
 export interface IPropertyInfoParameterDescriptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor: never;
+
     readonly PropertyInfo: PropertyInfo;
 }
 
@@ -153,6 +185,8 @@ export interface IPropertyInfoParameterDescriptor$instance {
 export type IPropertyInfoParameterDescriptor = IPropertyInfoParameterDescriptor$instance;
 
 export interface IStatusCodeActionResult$instance extends IActionResult {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
+
     readonly StatusCode: Nullable<System_Internal.Int32>;
     ExecuteResultAsync(context: ActionContext): Task;
 }
@@ -163,6 +197,8 @@ export interface IStatusCodeActionResult$instance extends Microsoft_AspNetCore_M
 export type IStatusCodeActionResult = IStatusCodeActionResult$instance;
 
 export interface ActionContextAccessor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor: never;
+
     get ActionContext(): ActionContext | undefined;
     set ActionContext(value: ActionContext | undefined);
 }
@@ -196,6 +232,8 @@ export const ActionDescriptorCollection: {
 export type ActionDescriptorCollection = ActionDescriptorCollection$instance;
 
 export interface ActionDescriptorCollectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider: never;
+
     readonly ActionDescriptors: ActionDescriptorCollection;
     GetChangeToken(): IChangeToken;
 }
@@ -237,6 +275,8 @@ export const ActionResultStatusCodeAttribute: {
 export type ActionResultStatusCodeAttribute = ActionResultStatusCodeAttribute$instance;
 
 export interface AmbiguousActionException$instance extends InvalidOperationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -248,6 +288,8 @@ export const AmbiguousActionException: {
 export type AmbiguousActionException = AmbiguousActionException$instance;
 
 export interface CompatibilitySwitch_1$instance<TValue extends unknown> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch: never;
+
     IsValueSet: boolean;
     readonly Name: string;
     Value: TValue;
@@ -268,6 +310,8 @@ export type CompatibilitySwitch_1<TValue> = CompatibilitySwitch_1$instance<TValu
 
 
 export interface ConfigureCompatibilityOptions_1$instance<TOptions extends IEnumerable<ICompatibilitySwitch>> {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
+
     readonly DefaultValues: IReadOnlyDictionary<System_Internal.String, unknown>;
     PostConfigure(name: string, options: TOptions): void;
 }
@@ -280,6 +324,8 @@ export const ConfigureCompatibilityOptions_1: (abstract new<TOptions extends IEn
 export type ConfigureCompatibilityOptions_1<TOptions extends IEnumerable<ICompatibilitySwitch>> = ConfigureCompatibilityOptions_1$instance<TOptions>;
 
 export interface ContentResultExecutor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: ContentResult): Task;
 }
 
@@ -336,6 +382,8 @@ export const DefaultStatusCodeAttribute: {
 export type DefaultStatusCodeAttribute = DefaultStatusCodeAttribute$instance;
 
 export interface FileContentResultExecutor$instance extends FileResultExecutorBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: FileContentResult): Task;
     WriteFileAsync(context: ActionContext, result: FileContentResult, range: RangeItemHeaderValue, rangeLength: long): Task;
 }
@@ -371,6 +419,8 @@ export const FileResultExecutorBase: {
 export type FileResultExecutorBase = FileResultExecutorBase$instance;
 
 export interface FileStreamResultExecutor$instance extends FileResultExecutorBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: FileStreamResult): Task;
     WriteFileAsync(context: ActionContext, result: FileStreamResult, range: RangeItemHeaderValue, rangeLength: long): Task;
 }
@@ -391,6 +441,8 @@ export type FileStreamResultExecutor = FileStreamResultExecutor$instance & __Fil
 
 
 export interface LocalRedirectResultExecutor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: LocalRedirectResult): Task;
 }
 
@@ -410,6 +462,10 @@ export type LocalRedirectResultExecutor = LocalRedirectResultExecutor$instance &
 
 
 export interface ModelStateInvalidFilter$instance extends IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
+
     readonly IsReusable: boolean;
     readonly Order: int;
     OnActionExecuted(context: ActionExecutedContext): void;
@@ -445,6 +501,8 @@ export const MvcCompatibilityOptions: {
 export type MvcCompatibilityOptions = MvcCompatibilityOptions$instance;
 
 export interface ObjectResultExecutor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: ObjectResult): Task;
 }
 
@@ -475,6 +533,8 @@ export const OutputFormatterSelector: (abstract new() => OutputFormatterSelector
 export type OutputFormatterSelector = OutputFormatterSelector$instance;
 
 export interface PhysicalFileResultExecutor$instance extends FileResultExecutorBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: PhysicalFileResult): Task;
     GetFileInfo(path: string): unknown;
     GetFileStream(path: string): Stream;
@@ -509,6 +569,8 @@ export const ProblemDetailsFactory: (abstract new() => ProblemDetailsFactory) & 
 export type ProblemDetailsFactory = ProblemDetailsFactory$instance;
 
 export interface RedirectResultExecutor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: RedirectResult): Task;
 }
 
@@ -528,6 +590,8 @@ export type RedirectResultExecutor = RedirectResultExecutor$instance & __Redirec
 
 
 export interface RedirectToActionResultExecutor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: RedirectToActionResult): Task;
 }
 
@@ -547,6 +611,8 @@ export type RedirectToActionResultExecutor = RedirectToActionResultExecutor$inst
 
 
 export interface RedirectToPageResultExecutor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: RedirectToPageResult): Task;
 }
 
@@ -566,6 +632,8 @@ export type RedirectToPageResultExecutor = RedirectToPageResultExecutor$instance
 
 
 export interface RedirectToRouteResultExecutor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: RedirectToRouteResult): Task;
 }
 
@@ -585,6 +653,8 @@ export type RedirectToRouteResultExecutor = RedirectToRouteResultExecutor$instan
 
 
 export interface VirtualFileResultExecutor$instance extends FileResultExecutorBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
+
     ExecuteAsync(context: ActionContext, result: VirtualFileResult): Task;
     GetFileStream(fileInfo: IFileInfo): Stream;
     WriteFileAsync(context: ActionContext, result: VirtualFileResult, fileInfo: IFileInfo, range: RangeItemHeaderValue, rangeLength: long): Task;

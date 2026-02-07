@@ -96,6 +96,8 @@ export const TreeRouteBuilder: {
 export type TreeRouteBuilder = TreeRouteBuilder$instance;
 
 export interface TreeRouter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
+
     readonly Version: int;
     GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
     RouteAsync(context: RouteContext): Task;

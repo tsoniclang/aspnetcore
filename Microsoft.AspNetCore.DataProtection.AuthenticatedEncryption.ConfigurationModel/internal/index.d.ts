@@ -13,6 +13,8 @@ import type { Int32, Object as ClrObject, String as ClrString, Type, Void } from
 import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
 
 export interface IAuthenticatedEncryptorDescriptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
+
     ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
@@ -20,6 +22,8 @@ export interface IAuthenticatedEncryptorDescriptor$instance {
 export type IAuthenticatedEncryptorDescriptor = IAuthenticatedEncryptorDescriptor$instance;
 
 export interface IAuthenticatedEncryptorDescriptorDeserializer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
+
     ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
@@ -52,6 +56,8 @@ export const AuthenticatedEncryptorConfiguration: {
 export type AuthenticatedEncryptorConfiguration = AuthenticatedEncryptorConfiguration$instance;
 
 export interface AuthenticatedEncryptorDescriptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
+
     ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
@@ -71,6 +77,8 @@ export type AuthenticatedEncryptorDescriptor = AuthenticatedEncryptorDescriptor$
 
 
 export interface AuthenticatedEncryptorDescriptorDeserializer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
+
     ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
@@ -109,6 +117,8 @@ export const CngCbcAuthenticatedEncryptorConfiguration: {
 export type CngCbcAuthenticatedEncryptorConfiguration = CngCbcAuthenticatedEncryptorConfiguration$instance;
 
 export interface CngCbcAuthenticatedEncryptorDescriptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
+
     ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
@@ -128,6 +138,8 @@ export type CngCbcAuthenticatedEncryptorDescriptor = CngCbcAuthenticatedEncrypto
 
 
 export interface CngCbcAuthenticatedEncryptorDescriptorDeserializer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
+
     ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
@@ -163,6 +175,8 @@ export const CngGcmAuthenticatedEncryptorConfiguration: {
 export type CngGcmAuthenticatedEncryptorConfiguration = CngGcmAuthenticatedEncryptorConfiguration$instance;
 
 export interface CngGcmAuthenticatedEncryptorDescriptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
+
     ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
@@ -182,6 +196,8 @@ export type CngGcmAuthenticatedEncryptorDescriptor = CngGcmAuthenticatedEncrypto
 
 
 export interface CngGcmAuthenticatedEncryptorDescriptorDeserializer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
+
     ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 
@@ -216,6 +232,8 @@ export const ManagedAuthenticatedEncryptorConfiguration: {
 export type ManagedAuthenticatedEncryptorConfiguration = ManagedAuthenticatedEncryptorConfiguration$instance;
 
 export interface ManagedAuthenticatedEncryptorDescriptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor: never;
+
     ExportToXml(): XmlSerializedDescriptorInfo;
 }
 
@@ -235,6 +253,8 @@ export type ManagedAuthenticatedEncryptorDescriptor = ManagedAuthenticatedEncryp
 
 
 export interface ManagedAuthenticatedEncryptorDescriptorDeserializer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer: never;
+
     ImportFromXml(element: XElement): IAuthenticatedEncryptorDescriptor;
 }
 

@@ -22,6 +22,8 @@ import type { Attribute, Boolean as ClrBoolean, Func, Object as ClrObject, Strin
 import type { IStringLocalizer, IStringLocalizerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Localization.js";
 
 export interface IAttributeAdapter$instance extends IClientModelValidator {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
+
     AddValidation(context: ClientModelValidationContext): void;
     GetErrorMessage(validationContext: ModelValidationContextBase): string;
 }
@@ -32,6 +34,8 @@ export interface IAttributeAdapter$instance extends Microsoft_AspNetCore_Mvc_Mod
 export type IAttributeAdapter = IAttributeAdapter$instance;
 
 export interface IValidationAttributeAdapterProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider: never;
+
     GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
 }
 
@@ -39,6 +43,9 @@ export interface IValidationAttributeAdapterProvider$instance {
 export type IValidationAttributeAdapterProvider = IValidationAttributeAdapterProvider$instance;
 
 export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAttribute> extends ValidationAttributeAdapter_1$instance<TAttribute> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
+
     AddValidation(context: ClientModelValidationContext): void;
     GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
@@ -57,6 +64,9 @@ export type AttributeAdapterBase_1<TAttribute extends ValidationAttribute> = Att
 
 
 export interface MvcDataAnnotationsLocalizationOptions$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     DataAnnotationLocalizerProvider: Func<Type, IStringLocalizerFactory, IStringLocalizer>;
 }
 
@@ -69,6 +79,9 @@ export const MvcDataAnnotationsLocalizationOptions: {
 export type MvcDataAnnotationsLocalizationOptions = MvcDataAnnotationsLocalizationOptions$instance;
 
 export interface RequiredAttributeAdapter$instance extends AttributeAdapterBase_1$instance<RequiredAttribute> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
+
     AddValidation(context: ClientModelValidationContext): void;
     GetErrorMessage(validationContext: ModelValidationContextBase): string;
     GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
@@ -89,6 +102,8 @@ export type RequiredAttributeAdapter = RequiredAttributeAdapter$instance & __Req
 
 
 export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
+
     readonly Attribute: TAttribute;
     AddValidation(context: ClientModelValidationContext): void;
     GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
@@ -110,6 +125,8 @@ export type ValidationAttributeAdapter_1<TAttribute extends ValidationAttribute>
 
 
 export interface ValidationAttributeAdapterProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider: never;
+
     GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
 }
 

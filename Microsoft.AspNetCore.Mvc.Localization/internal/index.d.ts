@@ -20,6 +20,8 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { IStringLocalizer, IStringLocalizerFactory, LocalizedString } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Localization.js";
 
 export interface IHtmlLocalizer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer: never;
+
     get_Item2(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     get_Item2(name: string): LocalizedHtmlString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
@@ -31,6 +33,8 @@ export interface IHtmlLocalizer$instance {
 export type IHtmlLocalizer = IHtmlLocalizer$instance;
 
 export interface IHtmlLocalizer_1$instance<TResource> extends IHtmlLocalizer {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_1: never;
+
     get_Item2(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     get_Item2(name: string): LocalizedHtmlString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
@@ -45,6 +49,8 @@ export interface IHtmlLocalizer_1$instance<TResource> extends IHtmlLocalizer$ins
 export type IHtmlLocalizer_1<TResource> = IHtmlLocalizer_1$instance<TResource>;
 
 export interface IHtmlLocalizerFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizerFactory: never;
+
     Create(baseName: string, location: string): IHtmlLocalizer;
     Create(resourceSource: Type): IHtmlLocalizer;
 }
@@ -53,6 +59,8 @@ export interface IHtmlLocalizerFactory$instance {
 export type IHtmlLocalizerFactory = IHtmlLocalizerFactory$instance;
 
 export interface IViewLocalizer$instance extends IHtmlLocalizer {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IViewLocalizer: never;
+
     get_Item2(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     get_Item2(name: string): LocalizedHtmlString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
@@ -67,6 +75,8 @@ export interface IViewLocalizer$instance extends IHtmlLocalizer$instance {}
 export type IViewLocalizer = IViewLocalizer$instance;
 
 export interface HtmlLocalizer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer: never;
+
     get_Item(name: string): LocalizedHtmlString;
     get_Item(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
@@ -92,6 +102,9 @@ export type HtmlLocalizer = HtmlLocalizer$instance & __HtmlLocalizer$views;
 
 
 export interface HtmlLocalizer_1$instance<TResource> extends IHtmlLocalizer_1<TResource> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_1: never;
+
     get_Item(name: string): LocalizedHtmlString;
     get_Item(name: string, ...arguments: unknown[]): LocalizedHtmlString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
@@ -113,6 +126,8 @@ export type HtmlLocalizer_1<TResource> = HtmlLocalizer_1$instance<TResource> & _
 
 
 export interface HtmlLocalizerFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizerFactory: never;
+
     Create(resourceSource: Type): IHtmlLocalizer;
     Create(baseName: string, location: string): IHtmlLocalizer;
 }
@@ -133,6 +148,8 @@ export type HtmlLocalizerFactory = HtmlLocalizerFactory$instance & __HtmlLocaliz
 
 
 export interface LocalizedHtmlString$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
+
     readonly IsResourceNotFound: boolean;
     readonly Name: string;
     readonly Value: string;
@@ -157,6 +174,10 @@ export type LocalizedHtmlString = LocalizedHtmlString$instance & __LocalizedHtml
 
 
 export interface ViewLocalizer$instance extends IViewLocalizer {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IViewLocalizer: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;
+
     Contextualize(viewContext: ViewContext): void;
     get_Item(key: string): LocalizedHtmlString;
     get_Item(key: string, ...arguments: unknown[]): LocalizedHtmlString;

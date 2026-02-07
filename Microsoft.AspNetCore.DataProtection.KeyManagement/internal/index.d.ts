@@ -20,6 +20,8 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IDeletableKeyManager$instance extends IKeyManager {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IDeletableKeyManager: never;
+
     readonly CanDeleteKeys: boolean;
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
     DeleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;
@@ -35,6 +37,8 @@ export interface IDeletableKeyManager$instance extends IKeyManager$instance {}
 export type IDeletableKeyManager = IDeletableKeyManager$instance;
 
 export interface IKey$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey: never;
+
     readonly ActivationDate: DateTimeOffset;
     readonly CreationDate: DateTimeOffset;
     readonly ExpirationDate: DateTimeOffset;
@@ -48,6 +52,8 @@ export interface IKey$instance {
 export type IKey = IKey$instance;
 
 export interface IKeyEscrowSink$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink: never;
+
     Store(keyId: Guid, element: XElement): void;
 }
 
@@ -55,6 +61,8 @@ export interface IKeyEscrowSink$instance {
 export type IKeyEscrowSink = IKeyEscrowSink$instance;
 
 export interface IKeyManager$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager: never;
+
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
     GetAllKeys(): IReadOnlyCollection<IKey>;
     GetCacheExpirationToken(): CancellationToken;
@@ -87,6 +95,9 @@ export const KeyManagementOptions: {
 export type KeyManagementOptions = KeyManagementOptions$instance;
 
 export interface XmlKeyManager$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager: never;
+
     readonly CanDeleteKeys: boolean;
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
     DeleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;

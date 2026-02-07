@@ -15,6 +15,8 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ICompositeViewEngine$instance extends IViewEngine {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;
+
     readonly ViewEngines: IReadOnlyList<IViewEngine>;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
     GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
@@ -26,6 +28,8 @@ export interface ICompositeViewEngine$instance extends IViewEngine$instance {}
 export type ICompositeViewEngine = ICompositeViewEngine$instance;
 
 export interface IView$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IView: never;
+
     readonly Path: string;
     RenderAsync(context: ViewContext): Task;
 }
@@ -34,6 +38,8 @@ export interface IView$instance {
 export type IView = IView$instance;
 
 export interface IViewEngine$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
+
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
     GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
@@ -42,6 +48,9 @@ export interface IViewEngine$instance {
 export type IViewEngine = IViewEngine$instance;
 
 export interface CompositeViewEngine$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
+
     readonly ViewEngines: IReadOnlyList<IViewEngine>;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
     GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;

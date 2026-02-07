@@ -25,6 +25,8 @@ export enum RuleResult {
 
 
 export interface IRule$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Rewrite_IRule: never;
+
     ApplyRule(context: RewriteContext): void;
 }
 

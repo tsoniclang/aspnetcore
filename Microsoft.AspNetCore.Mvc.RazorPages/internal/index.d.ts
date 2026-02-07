@@ -46,6 +46,8 @@ import type { Encoding } from "@tsonic/dotnet/System.Text.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IPageActivatorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageActivatorProvider: never;
+
     CreateActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown>;
     CreateAsyncReleaser(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown, ValueTask> | undefined;
     CreateReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, ViewContext, unknown> | undefined;
@@ -55,6 +57,8 @@ export interface IPageActivatorProvider$instance {
 export type IPageActivatorProvider = IPageActivatorProvider$instance;
 
 export interface IPageFactoryProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageFactoryProvider: never;
+
     CreateAsyncPageDisposer(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown, ValueTask> | undefined;
     CreatePageDisposer(descriptor: CompiledPageActionDescriptor): Action<PageContext, ViewContext, unknown> | undefined;
     CreatePageFactory(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown>;
@@ -64,6 +68,8 @@ export interface IPageFactoryProvider$instance {
 export type IPageFactoryProvider = IPageFactoryProvider$instance;
 
 export interface IPageModelActivatorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider: never;
+
     CreateActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown>;
     CreateAsyncReleaser(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown, ValueTask> | undefined;
     CreateReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
@@ -73,6 +79,8 @@ export interface IPageModelActivatorProvider$instance {
 export type IPageModelActivatorProvider = IPageModelActivatorProvider$instance;
 
 export interface IPageModelFactoryProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelFactoryProvider: never;
+
     CreateAsyncModelDisposer(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown, ValueTask> | undefined;
     CreateModelDisposer(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
     CreateModelFactory(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown> | undefined;
@@ -114,6 +122,8 @@ export const NonHandlerAttribute: {
 export type NonHandlerAttribute = NonHandlerAttribute$instance;
 
 export interface Page$instance extends PageBase$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
+
     EnsureRenderedBodyOrSections(): void;
     ExecuteAsync(): Task;
 }
@@ -149,6 +159,8 @@ export const PageActionDescriptor: {
 export type PageActionDescriptor = PageActionDescriptor$instance;
 
 export interface PageBase$instance extends RazorPageBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
+
     readonly HttpContext: HttpContext;
     MetadataProvider: IModelMetadataProvider;
     readonly ModelState: ModelStateDictionary;
@@ -302,6 +314,10 @@ export const PageContextAttribute: {
 export type PageContextAttribute = PageContextAttribute$instance;
 
 export interface PageModel$instance extends IFilterMetadata {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IPageFilter: never;
+
     readonly HttpContext: HttpContext;
     MetadataProvider: IModelMetadataProvider;
     readonly ModelState: ModelStateDictionary;
@@ -427,6 +443,8 @@ export type PageModel = PageModel$instance & __PageModel$views;
 
 
 export interface PageResult$instance extends ActionResult {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
+
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     readonly Model: unknown;
@@ -450,6 +468,9 @@ export type PageResult = PageResult$instance & __PageResult$views;
 
 
 export interface RazorPagesOptions$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     Conventions: PageConventionCollection;
     RootDirectory: string;
 }

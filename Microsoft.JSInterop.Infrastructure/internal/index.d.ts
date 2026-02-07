@@ -22,6 +22,8 @@ export enum JSCallType {
 
 
 export interface IJSVoidResult$instance {
+    readonly __tsonic_iface_Microsoft_JSInterop_Infrastructure_IJSVoidResult: never;
+
 }
 
 

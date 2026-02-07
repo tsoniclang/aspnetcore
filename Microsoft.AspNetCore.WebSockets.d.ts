@@ -18,3 +18,6 @@ import type { IOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions
 export { ExtendedWebSocketAcceptContext as ExtendedWebSocketAcceptContext } from './Microsoft.AspNetCore.WebSockets/internal/index.js';
 export { WebSocketMiddleware as WebSocketMiddleware } from './Microsoft.AspNetCore.WebSockets/internal/index.js';
 export { WebSocketsDependencyInjectionExtensions$instance as WebSocketsDependencyInjectionExtensions } from './Microsoft.AspNetCore.WebSockets/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_AspNetCore_WebSockets as ExtensionMethods } from './__internal/extensions/index.js';
+

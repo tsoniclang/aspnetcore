@@ -29,6 +29,8 @@ export enum ExceptionHandledType {
 
 
 export interface ICompilationException$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_ICompilationException: never;
+
     readonly CompilationFailures: IEnumerable<CompilationFailure | undefined> | undefined;
 }
 
@@ -36,6 +38,8 @@ export interface ICompilationException$instance {
 export type ICompilationException = ICompilationException$instance;
 
 export interface IDeveloperPageExceptionFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter: never;
+
     HandleExceptionAsync(errorContext: ErrorContext, next: Func<ErrorContext, Task>): Task;
 }
 
@@ -43,6 +47,8 @@ export interface IDeveloperPageExceptionFilter$instance {
 export type IDeveloperPageExceptionFilter = IDeveloperPageExceptionFilter$instance;
 
 export interface IExceptionHandler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandler: never;
+
     TryHandleAsync(httpContext: HttpContext, exception: Exception, cancellationToken: CancellationToken): ValueTask<System_Internal.Boolean>;
 }
 
@@ -50,6 +56,8 @@ export interface IExceptionHandler$instance {
 export type IExceptionHandler = IExceptionHandler$instance;
 
 export interface IExceptionHandlerFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature: never;
+
     readonly Error: Exception;
     readonly Path: string;
     readonly Endpoint: Endpoint | undefined;
@@ -60,6 +68,8 @@ export interface IExceptionHandlerFeature$instance {
 export type IExceptionHandlerFeature = IExceptionHandlerFeature$instance;
 
 export interface IExceptionHandlerPathFeature$instance extends IExceptionHandlerFeature {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature: never;
+
     readonly Path: string;
     readonly Error: Exception;
     readonly Endpoint: Endpoint | undefined;
@@ -72,6 +82,8 @@ export interface IExceptionHandlerPathFeature$instance extends IExceptionHandler
 export type IExceptionHandlerPathFeature = IExceptionHandlerPathFeature$instance;
 
 export interface IStatusCodePagesFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature: never;
+
     Enabled: boolean;
 }
 
@@ -79,6 +91,8 @@ export interface IStatusCodePagesFeature$instance {
 export type IStatusCodePagesFeature = IStatusCodePagesFeature$instance;
 
 export interface IStatusCodeReExecuteFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature: never;
+
     OriginalPathBase: string;
     OriginalPath: string;
     get OriginalQueryString(): string | undefined;
@@ -152,6 +166,9 @@ export const ErrorContext: {
 export type ErrorContext = ErrorContext$instance;
 
 export interface ExceptionHandlerFeature$instance extends IExceptionHandlerPathFeature {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature: never;
+
     get Endpoint(): Endpoint | undefined;
     set Endpoint(value: Endpoint | undefined);
     Error: Exception;
@@ -214,6 +231,8 @@ export const StatusCodeContext: {
 export type StatusCodeContext = StatusCodeContext$instance;
 
 export interface StatusCodePagesFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature: never;
+
     Enabled: boolean;
 }
 
@@ -245,6 +264,8 @@ export const StatusCodePagesMiddleware: {
 export type StatusCodePagesMiddleware = StatusCodePagesMiddleware$instance;
 
 export interface StatusCodeReExecuteFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature: never;
+
     get Endpoint(): Endpoint | undefined;
     set Endpoint(value: Endpoint | undefined);
     OriginalPath: string;

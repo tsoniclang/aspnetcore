@@ -14,3 +14,6 @@ import type { IHostBuilder } from '@tsonic/microsoft-extensions/Microsoft.Extens
 export { GenericHostBuilderExtensions$instance as GenericHostBuilderExtensions } from './Microsoft.Extensions.Hosting/internal/index.js';
 export { GenericHostWebHostBuilderExtensions$instance as GenericHostWebHostBuilderExtensions } from './Microsoft.Extensions.Hosting/internal/index.js';
 export { WebHostBuilderOptions as WebHostBuilderOptions } from './Microsoft.Extensions.Hosting/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_Extensions_Hosting as ExtensionMethods } from './__internal/extensions/index.js';
+

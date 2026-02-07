@@ -18,6 +18,8 @@ import type { Boolean as ClrBoolean, DateTimeOffset, Guid, Object as ClrObject, 
 import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
 
 export interface ICacheableKeyRingProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider: never;
+
     GetCacheableKeyRing(now: DateTimeOffset): CacheableKeyRing;
 }
 
@@ -25,6 +27,8 @@ export interface ICacheableKeyRingProvider$instance {
 export type ICacheableKeyRingProvider = ICacheableKeyRingProvider$instance;
 
 export interface IDefaultKeyResolver$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver: never;
+
     ResolveDefaultKeyPolicy(now: DateTimeOffset, allKeys: IEnumerable<IKey>): DefaultKeyResolution;
 }
 
@@ -32,6 +36,8 @@ export interface IDefaultKeyResolver$instance {
 export type IDefaultKeyResolver = IDefaultKeyResolver$instance;
 
 export interface IInternalXmlKeyManager$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager: never;
+
     CreateNewKey(keyId: Guid, creationDate: DateTimeOffset, activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
     DeserializeDescriptorFromKeyElement(keyElement: XElement): IAuthenticatedEncryptorDescriptor;
     RevokeSingleKey(keyId: Guid, revocationDate: DateTimeOffset, reason: string): void;
@@ -41,6 +47,8 @@ export interface IInternalXmlKeyManager$instance {
 export type IInternalXmlKeyManager = IInternalXmlKeyManager$instance;
 
 export interface IKeyRing$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing: never;
+
     readonly DefaultAuthenticatedEncryptor: IAuthenticatedEncryptor | undefined;
     readonly DefaultKeyId: Guid;
     GetAuthenticatedEncryptorByKeyId(keyId: Guid, isRevoked: boolean): IAuthenticatedEncryptor | undefined;
@@ -50,6 +58,8 @@ export interface IKeyRing$instance {
 export type IKeyRing = IKeyRing$instance;
 
 export interface IKeyRingProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider: never;
+
     GetCurrentKeyRing(): IKeyRing;
 }
 

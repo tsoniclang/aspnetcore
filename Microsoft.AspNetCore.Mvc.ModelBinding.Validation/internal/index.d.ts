@@ -19,6 +19,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Boolean as ClrBoolean, Func, Int32, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IClientModelValidator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
+
     AddValidation(context: ClientModelValidationContext): void;
 }
 
@@ -26,6 +28,8 @@ export interface IClientModelValidator$instance {
 export type IClientModelValidator = IClientModelValidator$instance;
 
 export interface IClientModelValidatorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidatorProvider: never;
+
     CreateValidators(context: ClientValidatorProviderContext): void;
 }
 
@@ -33,6 +37,8 @@ export interface IClientModelValidatorProvider$instance {
 export type IClientModelValidatorProvider = IClientModelValidatorProvider$instance;
 
 export interface IMetadataBasedModelValidatorProvider$instance extends IModelValidatorProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider: never;
+
     CreateValidators(context: ModelValidatorProviderContext): void;
     HasValidators(modelType: Type, validatorMetadata: IList<unknown>): boolean;
 }
@@ -43,6 +49,8 @@ export interface IMetadataBasedModelValidatorProvider$instance extends IModelVal
 export type IMetadataBasedModelValidatorProvider = IMetadataBasedModelValidatorProvider$instance;
 
 export interface IModelValidator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidator: never;
+
     Validate(context: ModelValidationContext): IEnumerable__System_Collections_Generic<ModelValidationResult>;
 }
 
@@ -50,6 +58,8 @@ export interface IModelValidator$instance {
 export type IModelValidator = IModelValidator$instance;
 
 export interface IModelValidatorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider: never;
+
     CreateValidators(context: ModelValidatorProviderContext): void;
 }
 
@@ -57,6 +67,8 @@ export interface IModelValidatorProvider$instance {
 export type IModelValidatorProvider = IModelValidatorProvider$instance;
 
 export interface IObjectModelValidator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator: never;
+
     Validate(actionContext: ActionContext, validationState: ValidationStateDictionary, prefix: string, model: unknown): void;
 }
 
@@ -64,6 +76,8 @@ export interface IObjectModelValidator$instance {
 export type IObjectModelValidator = IObjectModelValidator$instance;
 
 export interface IPropertyValidationFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IPropertyValidationFilter: never;
+
     ShouldValidateEntry(entry: ValidationEntry, parentEntry: ValidationEntry): boolean;
 }
 
@@ -71,6 +85,8 @@ export interface IPropertyValidationFilter$instance {
 export type IPropertyValidationFilter = IPropertyValidationFilter$instance;
 
 export interface IValidationStrategy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IValidationStrategy: never;
+
     GetChildren(metadata: ModelMetadata, key: string, model: unknown): IEnumerator<ValidationEntry>;
 }
 
@@ -147,6 +163,8 @@ export const ClientValidatorProviderContext: {
 export type ClientValidatorProviderContext = ClientValidatorProviderContext$instance;
 
 export interface CompositeClientModelValidatorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidatorProvider: never;
+
     readonly ValidatorProviders: IReadOnlyList<IClientModelValidatorProvider>;
     CreateValidators(context: ClientValidatorProviderContext): void;
 }
@@ -167,6 +185,8 @@ export type CompositeClientModelValidatorProvider = CompositeClientModelValidato
 
 
 export interface CompositeModelValidatorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider: never;
+
     readonly ValidatorProviders: IList<IModelValidatorProvider>;
     CreateValidators(context: ModelValidatorProviderContext): void;
 }
@@ -241,6 +261,8 @@ export const ModelValidatorProviderContext: {
 export type ModelValidatorProviderContext = ModelValidatorProviderContext$instance;
 
 export interface ValidateNeverAttribute$instance extends Attribute {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IPropertyValidationFilter: never;
+
     ShouldValidateEntry(entry: ValidationEntry, parentEntry: ValidationEntry): boolean;
 }
 
@@ -260,6 +282,13 @@ export type ValidateNeverAttribute = ValidateNeverAttribute$instance & __Validat
 
 
 export interface ValidationStateDictionary$instance {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsReadOnly: boolean;
     get Item(): ValidationStateEntry | undefined;

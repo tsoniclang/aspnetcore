@@ -18,6 +18,8 @@ import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Micro
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface SocketConnectionContextFactory$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Create(socket: Socket): ConnectionContext;
     Dispose(): void;
 }
@@ -47,6 +49,9 @@ export const SocketConnectionFactoryOptions: {
 export type SocketConnectionFactoryOptions = SocketConnectionFactoryOptions$instance;
 
 export interface SocketTransportFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactory: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactorySelector: never;
+
     BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
     CanBind(endpoint: EndPoint): boolean;
 }

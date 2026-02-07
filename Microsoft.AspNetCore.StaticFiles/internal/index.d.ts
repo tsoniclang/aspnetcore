@@ -22,6 +22,8 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IContentTypeProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider: never;
+
     TryGetContentType(subpath: string, contentType: string): boolean;
 }
 
@@ -29,6 +31,8 @@ export interface IContentTypeProvider$instance {
 export type IContentTypeProvider = IContentTypeProvider$instance;
 
 export interface IDirectoryFormatter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter: never;
+
     GenerateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
 }
 
@@ -61,6 +65,8 @@ export const DirectoryBrowserMiddleware: {
 export type DirectoryBrowserMiddleware = DirectoryBrowserMiddleware$instance;
 
 export interface FileExtensionContentTypeProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider: never;
+
     Mappings: IDictionary<System_Internal.String, System_Internal.String>;
     TryGetContentType(subpath: string, contentType: string): boolean;
 }
@@ -82,6 +88,8 @@ export type FileExtensionContentTypeProvider = FileExtensionContentTypeProvider$
 
 
 export interface HtmlDirectoryFormatter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter: never;
+
     GenerateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
 }
 

@@ -16,6 +16,8 @@ import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IErrorBoundaryLogger$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_IErrorBoundaryLogger: never;
+
     LogErrorAsync(exception: Exception): ValueTask;
 }
 
@@ -23,6 +25,8 @@ export interface IErrorBoundaryLogger$instance {
 export type IErrorBoundaryLogger = IErrorBoundaryLogger$instance;
 
 export interface IJSComponentConfiguration$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration: never;
+
     readonly JSComponents: JSComponentConfigurationStore;
 }
 
@@ -84,6 +88,11 @@ export const DragEventArgs: {
 export type DragEventArgs = DragEventArgs$instance;
 
 export interface ErrorBoundary$instance extends ErrorBoundaryBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IErrorBoundary: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+
     Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
@@ -141,6 +150,10 @@ export const FocusEventArgs: {
 export type FocusEventArgs = FocusEventArgs$instance;
 
 export interface HeadContent$instance extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
     Attach(renderHandle: RenderHandle): void;
@@ -169,6 +182,10 @@ export type HeadContent = HeadContent$instance & __HeadContent$views;
 
 
 export interface HeadOutlet$instance extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+
     Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
@@ -195,6 +212,9 @@ export type HeadOutlet = HeadOutlet$instance & __HeadOutlet$views;
 
 
 export interface HtmlRenderer$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Dispatcher: Dispatcher;
     BeginRenderingComponent<TComponent extends IComponent>(): HtmlRootComponent;
     BeginRenderingComponent<TComponent extends IComponent>(parameters: ParameterView): HtmlRootComponent;
@@ -217,6 +237,8 @@ export const HtmlRenderer: {
 export type HtmlRenderer = HtmlRenderer$instance;
 
 export interface InteractiveAutoRenderMode$instance extends IComponentRenderMode {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
+
     readonly Prerender: boolean;
 }
 
@@ -230,6 +252,8 @@ export const InteractiveAutoRenderMode: {
 export type InteractiveAutoRenderMode = InteractiveAutoRenderMode$instance;
 
 export interface InteractiveServerRenderMode$instance extends IComponentRenderMode {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
+
     readonly Prerender: boolean;
 }
 
@@ -243,6 +267,8 @@ export const InteractiveServerRenderMode: {
 export type InteractiveServerRenderMode = InteractiveServerRenderMode$instance;
 
 export interface InteractiveWebAssemblyRenderMode$instance extends IComponentRenderMode {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
+
     readonly Prerender: boolean;
 }
 
@@ -317,6 +343,10 @@ export const MouseEventArgs: {
 export type MouseEventArgs = MouseEventArgs$instance;
 
 export interface PageTitle$instance extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
     Attach(renderHandle: RenderHandle): void;

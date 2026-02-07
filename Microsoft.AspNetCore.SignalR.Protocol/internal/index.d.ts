@@ -19,6 +19,8 @@ import type { ExceptionDispatchInfo } from "@tsonic/dotnet/System.Runtime.Except
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IHubProtocol$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol: never;
+
     readonly Name: string;
     readonly Version: int;
     readonly TransferFormat: TransferFormat;
@@ -177,6 +179,8 @@ export const InvocationMessage: {
 export type InvocationMessage = InvocationMessage$instance;
 
 export interface JsonHubProtocol$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol: never;
+
     readonly Name: string;
     readonly TransferFormat: TransferFormat;
     readonly Version: int;

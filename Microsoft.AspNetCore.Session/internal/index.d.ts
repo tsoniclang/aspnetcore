@@ -25,6 +25,8 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface ISessionStore$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Session_ISessionStore: never;
+
     Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
 }
 
@@ -32,6 +34,8 @@ export interface ISessionStore$instance {
 export type ISessionStore = ISessionStore$instance;
 
 export interface DistributedSession$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_ISession: never;
+
     readonly Id: string;
     readonly IsAvailable: boolean;
     readonly Keys: IEnumerable<System_Internal.String>;
@@ -59,6 +63,8 @@ export type DistributedSession = DistributedSession$instance & __DistributedSess
 
 
 export interface DistributedSessionStore$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Session_ISessionStore: never;
+
     Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
 }
 
@@ -78,6 +84,8 @@ export type DistributedSessionStore = DistributedSessionStore$instance & __Distr
 
 
 export interface SessionFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ISessionFeature: never;
+
     Session: ISession;
 }
 

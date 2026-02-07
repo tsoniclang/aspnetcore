@@ -61,6 +61,12 @@ export const PlaceholderContext: {
 export type PlaceholderContext = PlaceholderContext$instance;
 
 export interface Virtualize_1$instance<TItem> extends ComponentBase {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_Virtualization_IVirtualizeJsCallbacks: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     get ChildContent(): RenderFragment_1<TItem> | undefined;
     set ChildContent(value: RenderFragment_1<TItem> | undefined);
     get EmptyContent(): RenderFragment | undefined;
@@ -100,7 +106,7 @@ export interface __Virtualize_1$views<TItem> {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface Virtualize_1$instance<TItem> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
+export interface Virtualize_1$instance<TItem> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {}
 
 export type Virtualize_1<TItem> = Virtualize_1$instance<TItem> & __Virtualize_1$views<TItem>;
 

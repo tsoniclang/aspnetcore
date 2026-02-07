@@ -27,6 +27,8 @@ import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Micro
 import type { IOptions, IOptionsMonitor } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IAuthenticateResultFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticateResultFeature: never;
+
     get AuthenticateResult(): AuthenticateResult | undefined;
     set AuthenticateResult(value: AuthenticateResult | undefined);
 }
@@ -35,6 +37,8 @@ export interface IAuthenticateResultFeature$instance {
 export type IAuthenticateResultFeature = IAuthenticateResultFeature$instance;
 
 export interface IAuthenticationConfigurationProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationConfigurationProvider: never;
+
     readonly AuthenticationConfiguration: IConfiguration;
 }
 
@@ -42,6 +46,8 @@ export interface IAuthenticationConfigurationProvider$instance {
 export type IAuthenticationConfigurationProvider = IAuthenticationConfigurationProvider$instance;
 
 export interface IAuthenticationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationFeature: never;
+
     OriginalPathBase: PathString;
     OriginalPath: PathString;
 }
@@ -50,6 +56,8 @@ export interface IAuthenticationFeature$instance {
 export type IAuthenticationFeature = IAuthenticationFeature$instance;
 
 export interface IAuthenticationHandler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties): Task;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
@@ -59,6 +67,8 @@ export interface IAuthenticationHandler$instance {
 export type IAuthenticationHandler = IAuthenticationHandler$instance;
 
 export interface IAuthenticationHandlerProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandlerProvider: never;
+
     GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task<IAuthenticationHandler | undefined>;
 }
 
@@ -66,6 +76,8 @@ export interface IAuthenticationHandlerProvider$instance {
 export type IAuthenticationHandlerProvider = IAuthenticationHandlerProvider$instance;
 
 export interface IAuthenticationRequestHandler$instance extends IAuthenticationHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
+
     ChallengeAsync(properties: AuthenticationProperties): Task;
     HandleRequestAsync(): Task<System_Internal.Boolean>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
@@ -78,6 +90,8 @@ export interface IAuthenticationRequestHandler$instance extends IAuthenticationH
 export type IAuthenticationRequestHandler = IAuthenticationRequestHandler$instance;
 
 export interface IAuthenticationSchemeProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSchemeProvider: never;
+
     AddScheme(scheme: AuthenticationScheme): void;
     GetAllSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
     GetSchemeAsync(name: string): Task<AuthenticationScheme | undefined>;
@@ -89,6 +103,8 @@ export interface IAuthenticationSchemeProvider$instance {
 export type IAuthenticationSchemeProvider = IAuthenticationSchemeProvider$instance;
 
 export interface IAuthenticationService$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationService: never;
+
     AuthenticateAsync(context: HttpContext, scheme: string): Task<AuthenticateResult>;
     ChallengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
     SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
@@ -98,6 +114,8 @@ export interface IAuthenticationService$instance {
 export type IAuthenticationService = IAuthenticationService$instance;
 
 export interface IAuthenticationSignInHandler$instance extends IAuthenticationSignOutHandler, IAuthenticationHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
     SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
@@ -109,6 +127,8 @@ export interface IAuthenticationSignInHandler$instance extends IAuthenticationSi
 export type IAuthenticationSignInHandler = IAuthenticationSignInHandler$instance;
 
 export interface IAuthenticationSignOutHandler$instance extends IAuthenticationHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
     SignOutAsync(properties: AuthenticationProperties): Task;
@@ -121,6 +141,8 @@ export interface IAuthenticationSignOutHandler$instance extends IAuthenticationH
 export type IAuthenticationSignOutHandler = IAuthenticationSignOutHandler$instance;
 
 export interface IClaimsTransformation$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IClaimsTransformation: never;
+
     TransformAsync(principal: ClaimsPrincipal): Task<ClaimsPrincipal>;
 }
 
@@ -128,6 +150,8 @@ export interface IClaimsTransformation$instance {
 export type IClaimsTransformation = IClaimsTransformation$instance;
 
 export interface IDataSerializer_1$instance<TModel> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IDataSerializer_1: never;
+
     Deserialize(data: byte[]): TModel | undefined;
     Serialize(model: TModel): byte[];
 }
@@ -136,6 +160,8 @@ export interface IDataSerializer_1$instance<TModel> {
 export type IDataSerializer_1<TModel> = IDataSerializer_1$instance<TModel>;
 
 export interface ISecureDataFormat_1$instance<TData> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
+
     Protect(data: TData, purpose: string): string;
     Protect(data: TData): string;
     Unprotect(protectedText: string, purpose: string): TData | undefined;
@@ -146,6 +172,8 @@ export interface ISecureDataFormat_1$instance<TData> {
 export type ISecureDataFormat_1<TData> = ISecureDataFormat_1$instance<TData>;
 
 export interface ISystemClock$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISystemClock: never;
+
     readonly UtcNow: DateTimeOffset;
 }
 
@@ -212,6 +240,8 @@ export const AuthenticationBuilder: {
 export type AuthenticationBuilder = AuthenticationBuilder$instance;
 
 export interface AuthenticationFailureException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -224,6 +254,8 @@ export const AuthenticationFailureException: {
 export type AuthenticationFailureException = AuthenticationFailureException$instance;
 
 export interface AuthenticationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationFeature: never;
+
     OriginalPath: PathString;
     OriginalPathBase: PathString;
 }
@@ -244,8 +276,10 @@ export type AuthenticationFeature = AuthenticationFeature$instance & __Authentic
 
 
 export interface AuthenticationHandler_1$instance<TOptions extends AuthenticationSchemeOptions> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+
     readonly ClaimsIssuer: string;
-    Events: OAuthEvents | RemoteAuthenticationEvents | unknown;
+    Events: CookieAuthenticationEvents | unknown;
     Options: TOptions;
     Scheme: AuthenticationScheme;
     AuthenticateAsync(): Task<AuthenticateResult>;
@@ -276,6 +310,8 @@ export type AuthenticationHandler_1<TOptions extends AuthenticationSchemeOptions
 
 
 export interface AuthenticationHandlerProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandlerProvider: never;
+
     readonly Schemes: IAuthenticationSchemeProvider;
     GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task<IAuthenticationHandler | undefined>;
 }
@@ -428,6 +464,8 @@ export const AuthenticationSchemeOptions: {
 export type AuthenticationSchemeOptions = AuthenticationSchemeOptions$instance;
 
 export interface AuthenticationSchemeProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSchemeProvider: never;
+
     AddScheme(scheme: AuthenticationScheme): void;
     GetAllSchemesAsync(): Task<IEnumerable<AuthenticationScheme>>;
     GetDefaultAuthenticateSchemeAsync(): Task<AuthenticationScheme | undefined>;
@@ -457,6 +495,8 @@ export type AuthenticationSchemeProvider = AuthenticationSchemeProvider$instance
 
 
 export interface AuthenticationService$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationService: never;
+
     readonly Handlers: IAuthenticationHandlerProvider;
     readonly Options: AuthenticationOptions;
     readonly Schemes: IAuthenticationSchemeProvider;
@@ -558,6 +598,8 @@ export const HandleRequestResult: {
 export type HandleRequestResult = HandleRequestResult$instance;
 
 export interface NoopClaimsTransformation$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IClaimsTransformation: never;
+
     TransformAsync(principal: ClaimsPrincipal): Task<ClaimsPrincipal>;
 }
 
@@ -577,6 +619,10 @@ export type NoopClaimsTransformation = NoopClaimsTransformation$instance & __Noo
 
 
 export interface PolicySchemeHandler$instance extends SignInAuthenticationHandler_1$instance<PolicySchemeOptions>, IAuthenticationSignOutHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties): Task;
     HandleAuthenticateAsync(): Task<AuthenticateResult>;
@@ -639,6 +685,8 @@ export const PropertiesContext_1: (abstract new<TOptions extends AuthenticationS
 export type PropertiesContext_1<TOptions extends AuthenticationSchemeOptions> = PropertiesContext_1$instance<TOptions>;
 
 export interface PropertiesDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationProperties> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
+
     Protect(data: AuthenticationProperties): string;
     Protect(data: AuthenticationProperties, purpose: string): string;
     Unprotect(protectedText: string): AuthenticationProperties;
@@ -659,6 +707,8 @@ export type PropertiesDataFormat = PropertiesDataFormat$instance & __PropertiesD
 
 
 export interface PropertiesSerializer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IDataSerializer_1: never;
+
     Deserialize(data: byte[]): AuthenticationProperties | undefined;
     Read(reader: BinaryReader): AuthenticationProperties | undefined;
     Serialize(model: AuthenticationProperties): byte[];
@@ -726,6 +776,9 @@ export const RemoteAuthenticationEvents: {
 export type RemoteAuthenticationEvents = RemoteAuthenticationEvents$instance;
 
 export interface RemoteAuthenticationHandler_1$instance<TOptions extends RemoteAuthenticationOptions> extends AuthenticationHandler_1$instance<TOptions>, IAuthenticationRequestHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties): Task;
     CreateEventsAsync(): Task<unknown>;
@@ -764,7 +817,7 @@ export interface RemoteAuthenticationOptions$instance extends AuthenticationSche
     CorrelationCookie: CookieBuilder;
     get DataProtectionProvider(): IDataProtectionProvider | undefined;
     set DataProtectionProvider(value: IDataProtectionProvider | undefined);
-    Events: RemoteAuthenticationEvents | unknown;
+    Events: OAuthEvents | RemoteAuthenticationEvents | unknown;
     RemoteAuthenticationTimeout: TimeSpan;
     ReturnUrlParameter: string;
     SaveTokens: boolean;
@@ -831,6 +884,8 @@ export const ResultContext_1: (abstract new<TOptions extends AuthenticationSchem
 export type ResultContext_1<TOptions extends AuthenticationSchemeOptions> = ResultContext_1$instance<TOptions>;
 
 export interface SecureDataFormat_1$instance<TData> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
+
     Protect(data: TData): string;
     Protect(data: TData, purpose: string): string;
     Unprotect(protectedText: string): TData | undefined;
@@ -851,6 +906,10 @@ export type SecureDataFormat_1<TData> = SecureDataFormat_1$instance<TData> & __S
 
 
 export interface SignInAuthenticationHandler_1$instance<TOptions extends AuthenticationSchemeOptions> extends SignOutAuthenticationHandler_1$instance<TOptions>, IAuthenticationSignOutHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties): Task;
     HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
@@ -873,6 +932,9 @@ export type SignInAuthenticationHandler_1<TOptions extends AuthenticationSchemeO
 
 
 export interface SignOutAuthenticationHandler_1$instance<TOptions extends AuthenticationSchemeOptions> extends AuthenticationHandler_1$instance<TOptions>, IAuthenticationSignOutHandler {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
+
     AuthenticateAsync(): Task<AuthenticateResult>;
     ChallengeAsync(properties: AuthenticationProperties): Task;
     HandleSignOutAsync(properties: AuthenticationProperties): Task;
@@ -893,6 +955,8 @@ export type SignOutAuthenticationHandler_1<TOptions extends AuthenticationScheme
 
 
 export interface SystemClock$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISystemClock: never;
+
     readonly UtcNow: DateTimeOffset;
 }
 
@@ -912,6 +976,8 @@ export type SystemClock = SystemClock$instance & __SystemClock$views;
 
 
 export interface TicketDataFormat$instance extends SecureDataFormat_1$instance<AuthenticationTicket> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
+
     Protect(data: AuthenticationTicket): string;
     Protect(data: AuthenticationTicket, purpose: string): string;
     Unprotect(protectedText: string): AuthenticationTicket;
@@ -945,6 +1011,8 @@ export const TicketReceivedContext: {
 export type TicketReceivedContext = TicketReceivedContext$instance;
 
 export interface TicketSerializer$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IDataSerializer_1: never;
+
     Deserialize(data: byte[]): AuthenticationTicket | undefined;
     Read(reader: BinaryReader): AuthenticationTicket | undefined;
     ReadClaim(reader: BinaryReader, identity: ClaimsIdentity): Claim;

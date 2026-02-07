@@ -33,6 +33,8 @@ export const IISDefaults: {
 export type IISDefaults = IISDefaults$instance;
 
 export interface IISHostingStartup$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IHostingStartup: never;
+
     Configure(builder: IWebHostBuilder): void;
 }
 

@@ -33,6 +33,8 @@ import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extens
 import type { IConfigureOptions, IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
 
 export interface IClientProxy$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IClientProxy: never;
+
     SendCoreAsync(method: string, args: unknown[], cancellationToken?: CancellationToken): Task;
 }
 
@@ -40,6 +42,8 @@ export interface IClientProxy$instance {
 export type IClientProxy = IClientProxy$instance;
 
 export interface IGroupManager$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IGroupManager: never;
+
     AddToGroupAsync(connectionId: string, groupName: string, cancellationToken?: CancellationToken): Task;
 }
 
@@ -47,6 +51,8 @@ export interface IGroupManager$instance {
 export type IGroupManager = IGroupManager$instance;
 
 export interface IHubActivator_1$instance<THub extends Hub> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubActivator_1: never;
+
     Create(): THub;
     Release(hub: THub): void;
 }
@@ -55,6 +61,8 @@ export interface IHubActivator_1$instance<THub extends Hub> {
 export type IHubActivator_1<THub extends Hub> = IHubActivator_1$instance<THub>;
 
 export interface IHubCallerClients$instance extends IHubCallerClients_1<IClientProxy>, IHubClients_1<IClientProxy> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubCallerClients: never;
+
     readonly Caller: ISingleClientProxy;
     readonly Others: IClientProxy;
     readonly All: IClientProxy;
@@ -69,6 +77,8 @@ export interface IHubCallerClients$instance extends IHubCallerClients_1<IClientP
 export type IHubCallerClients = IHubCallerClients$instance;
 
 export interface IHubCallerClients_1$instance<T> extends IHubClients_1<T> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubCallerClients_1: never;
+
     readonly Caller: T;
     readonly Others: T;
     readonly All: T;
@@ -84,6 +94,8 @@ export interface IHubCallerClients_1$instance<T> extends IHubClients_1$instance<
 export type IHubCallerClients_1<T> = IHubCallerClients_1$instance<T>;
 
 export interface IHubClients$instance extends IHubClients_1<IClientProxy> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubClients: never;
+
     readonly All: IClientProxy;
     AllExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): IClientProxy;
     Client(connectionId: string): ISingleClientProxy;
@@ -95,6 +107,8 @@ export interface IHubClients$instance extends IHubClients_1<IClientProxy> {
 export type IHubClients = IHubClients$instance;
 
 export interface IHubClients_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubClients_1: never;
+
     readonly All: T;
     AllExcept(excludedConnectionIds: IReadOnlyList<System_Internal.String>): T;
     Client(connectionId: string): T;
@@ -105,6 +119,8 @@ export interface IHubClients_1$instance<T> {
 export type IHubClients_1<T> = IHubClients_1$instance<T>;
 
 export interface IHubContext$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubContext: never;
+
     readonly Clients: IHubClients;
     readonly Groups: IGroupManager;
 }
@@ -113,6 +129,8 @@ export interface IHubContext$instance {
 export type IHubContext = IHubContext$instance;
 
 export interface IHubContext_1$instance<THub extends Hub> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubContext_1: never;
+
     readonly Clients: IHubClients;
     readonly Groups: IGroupManager;
 }
@@ -121,6 +139,8 @@ export interface IHubContext_1$instance<THub extends Hub> {
 export type IHubContext_1<THub extends Hub> = IHubContext_1$instance<THub>;
 
 export interface IHubContext_2$instance<THub extends Hub_1<T>, T> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubContext_2: never;
+
     readonly Clients: IHubClients_1<T>;
     readonly Groups: IGroupManager;
 }
@@ -129,6 +149,8 @@ export interface IHubContext_2$instance<THub extends Hub_1<T>, T> {
 export type IHubContext_2<THub extends Hub_1<T>, T> = IHubContext_2$instance<THub, T>;
 
 export interface IHubFilter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubFilter: never;
+
     InvokeMethodAsync(invocationContext: HubInvocationContext, next: Func<HubInvocationContext, ValueTask<unknown>>): ValueTask<unknown>;
     OnConnectedAsync(context: HubLifetimeContext, next: Func<HubLifetimeContext, Task>): Task;
     OnDisconnectedAsync(context: HubLifetimeContext, exception: Exception, next: Func<HubLifetimeContext, Exception, Task>): Task;
@@ -138,6 +160,8 @@ export interface IHubFilter$instance {
 export type IHubFilter = IHubFilter$instance;
 
 export interface IHubProtocolResolver$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IHubProtocolResolver: never;
+
     readonly AllProtocols: IReadOnlyList<IHubProtocol>;
     GetProtocol(protocolName: string, supportedProtocols: IReadOnlyList<System_Internal.String>): IHubProtocol | undefined;
 }
@@ -146,6 +170,8 @@ export interface IHubProtocolResolver$instance {
 export type IHubProtocolResolver = IHubProtocolResolver$instance;
 
 export interface IInvocationBinder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IInvocationBinder: never;
+
     GetParameterTypes(methodName: string): IReadOnlyList<Type>;
     GetReturnType(invocationId: string): Type;
     GetTarget(utf8Bytes: ReadOnlySpan<System_Internal.Byte>): string | undefined;
@@ -155,6 +181,8 @@ export interface IInvocationBinder$instance {
 export type IInvocationBinder = IInvocationBinder$instance;
 
 export interface ISignalRBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISignalRBuilder: never;
+
     readonly Services: IServiceCollection;
 }
 
@@ -162,6 +190,8 @@ export interface ISignalRBuilder$instance {
 export type ISignalRBuilder = ISignalRBuilder$instance;
 
 export interface ISignalRServerBuilder$instance extends ISignalRBuilder {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISignalRServerBuilder: never;
+
     readonly Services: IServiceCollection;
 }
 
@@ -171,6 +201,8 @@ export interface ISignalRServerBuilder$instance extends ISignalRBuilder$instance
 export type ISignalRServerBuilder = ISignalRServerBuilder$instance;
 
 export interface ISingleClientProxy$instance extends IClientProxy {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_ISingleClientProxy: never;
+
     InvokeCoreAsync<T>(method: string, args: unknown[], cancellationToken: CancellationToken): Task<T>;
     SendCoreAsync(method: string, args: unknown[], cancellationToken?: CancellationToken): Task;
 }
@@ -181,6 +213,8 @@ export interface ISingleClientProxy$instance extends IClientProxy$instance {}
 export type ISingleClientProxy = ISingleClientProxy$instance;
 
 export interface IUserIdProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IUserIdProvider: never;
+
     GetUserId(connection: HubConnectionContext): string | undefined;
 }
 
@@ -188,6 +222,10 @@ export interface IUserIdProvider$instance {
 export type IUserIdProvider = IUserIdProvider$instance;
 
 export interface HubConnectionStore_Enumerator$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Current: HubConnectionContext;
     Dispose(): void;
     MoveNext(): boolean;
@@ -244,6 +282,8 @@ export const DefaultHubLifetimeManager_1: {
 export type DefaultHubLifetimeManager_1<THub extends Hub> = DefaultHubLifetimeManager_1$instance<THub>;
 
 export interface DefaultUserIdProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_IUserIdProvider: never;
+
     GetUserId(connection: HubConnectionContext): string | undefined;
 }
 
@@ -263,6 +303,8 @@ export type DefaultUserIdProvider = DefaultUserIdProvider$instance & __DefaultUs
 
 
 export interface DynamicHub$instance extends Hub {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Clients: DynamicHubClients | IHubCallerClients;
 }
 
@@ -297,6 +339,8 @@ export const DynamicHubClients: {
 export type DynamicHubClients = DynamicHubClients$instance;
 
 export interface Hub$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Clients: DynamicHubClients | IHubCallerClients;
     Context: HubCallerContext;
     Groups: IGroupManager;
@@ -314,6 +358,8 @@ export const Hub: (abstract new() => Hub) & {
 export type Hub = Hub$instance;
 
 export interface Hub_1$instance<T> extends Hub {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Clients: IHubCallerClients_1<T>;
 }
 
@@ -408,6 +454,8 @@ export const HubConnectionStore: {
 export type HubConnectionStore = HubConnectionStore$instance;
 
 export interface HubException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -536,6 +584,8 @@ export const HubOptions_1: {
 export type HubOptions_1<THub extends Hub> = HubOptions_1$instance<THub>;
 
 export interface HubOptionsSetup$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
+
     Configure(options: HubOptions): void;
 }
 
@@ -548,6 +598,8 @@ export const HubOptionsSetup: {
 export type HubOptionsSetup = HubOptionsSetup$instance;
 
 export interface HubOptionsSetup_1$instance<THub extends Hub> {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
+
     Configure(options: HubOptions_1<THub>): void;
 }
 

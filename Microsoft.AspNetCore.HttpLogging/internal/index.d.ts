@@ -65,6 +65,8 @@ export enum W3CLoggingFields {
 
 
 export interface IHttpLoggingInterceptor$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_HttpLogging_IHttpLoggingInterceptor: never;
+
     OnRequestAsync(logContext: HttpLoggingInterceptorContext): ValueTask;
 }
 

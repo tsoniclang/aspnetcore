@@ -12,6 +12,8 @@ import type { ActionContext, IActionResult } from "../../Microsoft.AspNetCore.Mv
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IAntiforgeryValidationFailedResult$instance extends IActionResult {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult: never;
+
     ExecuteResultAsync(context: ActionContext): Task;
 }
 

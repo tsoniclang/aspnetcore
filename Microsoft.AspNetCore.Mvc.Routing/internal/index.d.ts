@@ -18,6 +18,8 @@ import type { Attribute, Boolean as ClrBoolean, Int32, Nullable, Object as ClrOb
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IActionHttpMethodProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
+
     readonly HttpMethods: IEnumerable<System_Internal.String>;
 }
 
@@ -25,6 +27,8 @@ export interface IActionHttpMethodProvider$instance {
 export type IActionHttpMethodProvider = IActionHttpMethodProvider$instance;
 
 export interface IRouteTemplateProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
+
     readonly Template: string;
     readonly Order: Nullable<System_Internal.Int32>;
     readonly Name: string | undefined;
@@ -34,6 +38,8 @@ export interface IRouteTemplateProvider$instance {
 export type IRouteTemplateProvider = IRouteTemplateProvider$instance;
 
 export interface IRouteValueProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider: never;
+
     readonly RouteKey: string;
     readonly RouteValue: string;
 }
@@ -42,6 +48,8 @@ export interface IRouteValueProvider$instance {
 export type IRouteValueProvider = IRouteValueProvider$instance;
 
 export interface IUrlHelperFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory: never;
+
     GetUrlHelper(context: ActionContext): IUrlHelper;
 }
 
@@ -81,6 +89,9 @@ export const DynamicRouteValueTransformer: (abstract new() => DynamicRouteValueT
 export type DynamicRouteValueTransformer = DynamicRouteValueTransformer$instance;
 
 export interface HttpMethodAttribute$instance extends Attribute {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
+
     readonly HttpMethods: IEnumerable<System_Internal.String>;
     get Name(): string | undefined;
     set Name(value: string | undefined);
@@ -104,6 +115,9 @@ export type HttpMethodAttribute = HttpMethodAttribute$instance & __HttpMethodAtt
 
 
 export interface KnownRouteValueConstraint$instance extends IParameterPolicy {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
+
     Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
@@ -123,6 +137,8 @@ export type KnownRouteValueConstraint = KnownRouteValueConstraint$instance & __K
 
 
 export interface RouteValueAttribute$instance extends Attribute {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider: never;
+
     readonly RouteKey: string;
     readonly RouteValue: string;
 }
@@ -165,6 +181,8 @@ export const UrlActionContext: {
 export type UrlActionContext = UrlActionContext$instance;
 
 export interface UrlHelper$instance extends UrlHelperBase$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
+
     Action(actionContext: UrlActionContext): string | undefined;
     Content(contentPath: string): string | undefined;
     GetVirtualPathData(routeName: string, values: RouteValueDictionary): VirtualPathData | undefined;
@@ -187,6 +205,8 @@ export type UrlHelper = UrlHelper$instance & __UrlHelper$views;
 
 
 export interface UrlHelperBase$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
+
     readonly ActionContext: ActionContext;
     Action(actionContext: UrlActionContext): string | undefined;
     Content(contentPath: string): string | undefined;
@@ -210,6 +230,8 @@ export type UrlHelperBase = UrlHelperBase$instance & __UrlHelperBase$views;
 
 
 export interface UrlHelperFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory: never;
+
     GetUrlHelper(context: ActionContext): IUrlHelper;
 }
 

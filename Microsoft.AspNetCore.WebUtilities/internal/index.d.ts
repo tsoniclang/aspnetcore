@@ -77,6 +77,9 @@ export const QueryStringEnumerable_Enumerator: {
 export type QueryStringEnumerable_Enumerator = QueryStringEnumerable_Enumerator$instance;
 
 export interface BufferedReadStream$instance extends Stream {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly BufferedData: ArraySegment<System_Internal.Byte>;
     readonly CanRead: boolean;
     readonly CanSeek: boolean;
@@ -113,6 +116,9 @@ export const BufferedReadStream: {
 export type BufferedReadStream = BufferedReadStream$instance;
 
 export interface FileBufferingReadStream$instance extends Stream {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly CanRead: boolean;
     readonly CanSeek: boolean;
     readonly CanWrite: boolean;
@@ -149,6 +155,9 @@ export const FileBufferingReadStream: {
 export type FileBufferingReadStream = FileBufferingReadStream$instance;
 
 export interface FileBufferingWriteStream$instance extends Stream {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly CanRead: boolean;
     readonly CanSeek: boolean;
     readonly CanWrite: boolean;
@@ -228,6 +237,8 @@ export const FormPipeReader: {
 export type FormPipeReader = FormPipeReader$instance;
 
 export interface FormReader$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     KeyLengthLimit: int;
     ValueCountLimit: int;
     ValueLengthLimit: int;
@@ -254,6 +265,8 @@ export const FormReader: {
 export type FormReader = FormReader$instance;
 
 export interface HttpRequestStreamReader$instance extends TextReader {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(disposing: boolean): void;
     Peek(): int;
     Read(): int;
@@ -277,6 +290,9 @@ export const HttpRequestStreamReader: {
 export type HttpRequestStreamReader = HttpRequestStreamReader$instance;
 
 export interface HttpResponseStreamWriter$instance extends TextWriter {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Encoding: Encoding;
     Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;

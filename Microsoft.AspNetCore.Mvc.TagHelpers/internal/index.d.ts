@@ -40,6 +40,9 @@ export enum PersistenceMode {
 
 
 export interface AnchorTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     Action: string;
     Area: string;
     Controller: string;
@@ -73,6 +76,9 @@ export type AnchorTagHelper = AnchorTagHelper$instance & __AnchorTagHelper$views
 
 
 export interface CacheTagHelper$instance extends CacheTagHelperBase$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     Priority: Nullable<CacheItemPriority>;
     Init(context: TagHelperContext): void;
     ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
@@ -93,6 +99,9 @@ export type CacheTagHelper = CacheTagHelper$instance & __CacheTagHelper$views;
 
 
 export interface CacheTagHelperBase$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     Enabled: boolean;
     ExpiresAfter: Nullable<TimeSpan>;
     ExpiresOn: Nullable<DateTimeOffset>;
@@ -150,6 +159,9 @@ export const CacheTagHelperOptions: {
 export type CacheTagHelperOptions = CacheTagHelperOptions$instance;
 
 export interface ComponentTagHelper$instance extends TagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     ComponentType: Type;
     Parameters: IDictionary<System_Internal.String, unknown>;
     RenderMode: RenderMode;
@@ -174,6 +186,9 @@ export type ComponentTagHelper = ComponentTagHelper$instance & __ComponentTagHel
 
 
 export interface DistributedCacheTagHelper$instance extends CacheTagHelperBase$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     Name: string;
     Init(context: TagHelperContext): void;
     ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
@@ -194,6 +209,9 @@ export type DistributedCacheTagHelper = DistributedCacheTagHelper$instance & __D
 
 
 export interface EnvironmentTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     Exclude: string;
     Include: string;
     Names: string;
@@ -219,6 +237,9 @@ export type EnvironmentTagHelper = EnvironmentTagHelper$instance & __Environment
 
 
 export interface FormActionTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     Action: string;
     Area: string;
     Controller: string;
@@ -250,6 +271,9 @@ export type FormActionTagHelper = FormActionTagHelper$instance & __FormActionTag
 
 
 export interface FormTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     Action: string;
     Antiforgery: Nullable<System_Internal.Boolean>;
     Area: string;
@@ -298,6 +322,9 @@ export const GlobbingUrlBuilder: {
 export type GlobbingUrlBuilder = GlobbingUrlBuilder$instance;
 
 export interface ImageTagHelper$instance extends UrlResolutionTagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     AppendVersion: boolean;
     readonly Order: int;
     Src: string;
@@ -321,6 +348,9 @@ export type ImageTagHelper = ImageTagHelper$instance & __ImageTagHelper$views;
 
 
 export interface InputTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     For: ModelExpression;
     Format: string;
     FormName: string;
@@ -350,6 +380,9 @@ export type InputTagHelper = InputTagHelper$instance & __InputTagHelper$views;
 
 
 export interface LabelTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     For: ModelExpression;
     readonly Order: int;
     ViewContext: ViewContext;
@@ -373,6 +406,9 @@ export type LabelTagHelper = LabelTagHelper$instance & __LabelTagHelper$views;
 
 
 export interface LinkTagHelper$instance extends UrlResolutionTagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     AppendVersion: Nullable<System_Internal.Boolean>;
     FallbackHref: string;
     FallbackHrefExclude: string;
@@ -404,6 +440,9 @@ export type LinkTagHelper = LinkTagHelper$instance & __LinkTagHelper$views;
 
 
 export interface OptionTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     readonly Order: int;
     Value: string;
     ViewContext: ViewContext;
@@ -427,6 +466,9 @@ export type OptionTagHelper = OptionTagHelper$instance & __OptionTagHelper$views
 
 
 export interface PartialTagHelper$instance extends TagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     FallbackName: string;
     For: ModelExpression;
     Model: unknown;
@@ -454,6 +496,9 @@ export type PartialTagHelper = PartialTagHelper$instance & __PartialTagHelper$vi
 
 
 export interface PersistComponentStateTagHelper$instance extends TagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     PersistenceMode: Nullable<PersistenceMode>;
     ViewContext: ViewContext;
     Init(context: TagHelperContext): void;
@@ -476,6 +521,9 @@ export type PersistComponentStateTagHelper = PersistComponentStateTagHelper$inst
 
 
 export interface RenderAtEndOfFormTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     readonly Order: int;
     ViewContext: ViewContext;
     Init(context: TagHelperContext): void;
@@ -498,6 +546,9 @@ export type RenderAtEndOfFormTagHelper = RenderAtEndOfFormTagHelper$instance & _
 
 
 export interface ScriptTagHelper$instance extends UrlResolutionTagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     AppendVersion: Nullable<System_Internal.Boolean>;
     FallbackSrc: string;
     FallbackSrcExclude: string;
@@ -528,6 +579,9 @@ export type ScriptTagHelper = ScriptTagHelper$instance & __ScriptTagHelper$views
 
 
 export interface SelectTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     For: ModelExpression;
     Items: IEnumerable<SelectListItem>;
     Name: string;
@@ -554,6 +608,9 @@ export type SelectTagHelper = SelectTagHelper$instance & __SelectTagHelper$views
 
 
 export interface TextAreaTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     For: ModelExpression;
     Name: string;
     readonly Order: int;
@@ -579,6 +636,9 @@ export type TextAreaTagHelper = TextAreaTagHelper$instance & __TextAreaTagHelper
 
 
 export interface ValidationMessageTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     For: ModelExpression;
     readonly Order: int;
     ViewContext: ViewContext;
@@ -602,6 +662,9 @@ export type ValidationMessageTagHelper = ValidationMessageTagHelper$instance & _
 
 
 export interface ValidationSummaryTagHelper$instance extends TagHelper, ITagHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
+
     readonly Order: int;
     ValidationSummary: ValidationSummary;
     ViewContext: ViewContext;

@@ -22,6 +22,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IConnectionCompleteFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature: never;
+
     OnCompleted(callback: Func<unknown, Task>, state: unknown): void;
 }
 
@@ -29,6 +31,8 @@ export interface IConnectionCompleteFeature$instance {
 export type IConnectionCompleteFeature = IConnectionCompleteFeature$instance;
 
 export interface IConnectionEndPointFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature: never;
+
     get LocalEndPoint(): EndPoint | undefined;
     set LocalEndPoint(value: EndPoint | undefined);
     get RemoteEndPoint(): EndPoint | undefined;
@@ -39,6 +43,8 @@ export interface IConnectionEndPointFeature$instance {
 export type IConnectionEndPointFeature = IConnectionEndPointFeature$instance;
 
 export interface IConnectionHeartbeatFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature: never;
+
     OnHeartbeat(action: Action<unknown>, state: unknown): void;
 }
 
@@ -46,6 +52,8 @@ export interface IConnectionHeartbeatFeature$instance {
 export type IConnectionHeartbeatFeature = IConnectionHeartbeatFeature$instance;
 
 export interface IConnectionIdFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature: never;
+
     ConnectionId: string;
 }
 
@@ -53,6 +61,8 @@ export interface IConnectionIdFeature$instance {
 export type IConnectionIdFeature = IConnectionIdFeature$instance;
 
 export interface IConnectionInherentKeepAliveFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature: never;
+
     readonly HasInherentKeepAlive: boolean;
 }
 
@@ -60,6 +70,8 @@ export interface IConnectionInherentKeepAliveFeature$instance {
 export type IConnectionInherentKeepAliveFeature = IConnectionInherentKeepAliveFeature$instance;
 
 export interface IConnectionItemsFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature: never;
+
     Items: IDictionary<unknown, unknown | undefined>;
 }
 
@@ -67,6 +79,8 @@ export interface IConnectionItemsFeature$instance {
 export type IConnectionItemsFeature = IConnectionItemsFeature$instance;
 
 export interface IConnectionLifetimeFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature: never;
+
     ConnectionClosed: CancellationToken;
     Abort(): void;
 }
@@ -75,6 +89,8 @@ export interface IConnectionLifetimeFeature$instance {
 export type IConnectionLifetimeFeature = IConnectionLifetimeFeature$instance;
 
 export interface IConnectionLifetimeNotificationFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature: never;
+
     ConnectionClosedRequested: CancellationToken;
     RequestClose(): void;
 }
@@ -83,6 +99,8 @@ export interface IConnectionLifetimeNotificationFeature$instance {
 export type IConnectionLifetimeNotificationFeature = IConnectionLifetimeNotificationFeature$instance;
 
 export interface IConnectionMetricsTagsFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionMetricsTagsFeature: never;
+
     readonly Tags: ICollection<KeyValuePair<System_Internal.String, unknown>>;
 }
 
@@ -90,6 +108,8 @@ export interface IConnectionMetricsTagsFeature$instance {
 export type IConnectionMetricsTagsFeature = IConnectionMetricsTagsFeature$instance;
 
 export interface IConnectionNamedPipeFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionNamedPipeFeature: never;
+
     readonly NamedPipe: NamedPipeServerStream;
 }
 
@@ -97,6 +117,8 @@ export interface IConnectionNamedPipeFeature$instance {
 export type IConnectionNamedPipeFeature = IConnectionNamedPipeFeature$instance;
 
 export interface IConnectionSocketFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature: never;
+
     readonly Socket: Socket;
 }
 
@@ -104,6 +126,8 @@ export interface IConnectionSocketFeature$instance {
 export type IConnectionSocketFeature = IConnectionSocketFeature$instance;
 
 export interface IConnectionTransportFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature: never;
+
     Transport: IDuplexPipe;
 }
 
@@ -111,6 +135,8 @@ export interface IConnectionTransportFeature$instance {
 export type IConnectionTransportFeature = IConnectionTransportFeature$instance;
 
 export interface IConnectionUserFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature: never;
+
     get User(): ClaimsPrincipal | undefined;
     set User(value: ClaimsPrincipal | undefined);
 }
@@ -119,6 +145,8 @@ export interface IConnectionUserFeature$instance {
 export type IConnectionUserFeature = IConnectionUserFeature$instance;
 
 export interface IMemoryPoolFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature: never;
+
     readonly MemoryPool: MemoryPool<System_Internal.Byte>;
 }
 
@@ -126,6 +154,8 @@ export interface IMemoryPoolFeature$instance {
 export type IMemoryPoolFeature = IMemoryPoolFeature$instance;
 
 export interface IPersistentStateFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature: never;
+
     readonly State: IDictionary<unknown, unknown | undefined>;
 }
 
@@ -133,6 +163,8 @@ export interface IPersistentStateFeature$instance {
 export type IPersistentStateFeature = IPersistentStateFeature$instance;
 
 export interface IProtocolErrorCodeFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature: never;
+
     Error: long;
 }
 
@@ -140,6 +172,8 @@ export interface IProtocolErrorCodeFeature$instance {
 export type IProtocolErrorCodeFeature = IProtocolErrorCodeFeature$instance;
 
 export interface IStreamAbortFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature: never;
+
     AbortRead(errorCode: long, abortReason: ConnectionAbortedException): void;
 }
 
@@ -147,6 +181,8 @@ export interface IStreamAbortFeature$instance {
 export type IStreamAbortFeature = IStreamAbortFeature$instance;
 
 export interface IStreamClosedFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IStreamClosedFeature: never;
+
     OnClosed(callback: Action<unknown>, state: unknown): void;
 }
 
@@ -154,6 +190,8 @@ export interface IStreamClosedFeature$instance {
 export type IStreamClosedFeature = IStreamClosedFeature$instance;
 
 export interface IStreamDirectionFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature: never;
+
     readonly CanRead: boolean;
     readonly CanWrite: boolean;
 }
@@ -162,6 +200,8 @@ export interface IStreamDirectionFeature$instance {
 export type IStreamDirectionFeature = IStreamDirectionFeature$instance;
 
 export interface IStreamIdFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature: never;
+
     readonly StreamId: long;
 }
 
@@ -169,6 +209,8 @@ export interface IStreamIdFeature$instance {
 export type IStreamIdFeature = IStreamIdFeature$instance;
 
 export interface ITlsHandshakeFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature: never;
+
     readonly Protocol: SslProtocols;
     readonly NegotiatedCipherSuite: Nullable<TlsCipherSuite>;
     readonly HostName: string;
@@ -184,6 +226,8 @@ export interface ITlsHandshakeFeature$instance {
 export type ITlsHandshakeFeature = ITlsHandshakeFeature$instance;
 
 export interface ITransferFormatFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature: never;
+
     readonly SupportedFormats: TransferFormat;
     ActiveFormat: TransferFormat;
 }

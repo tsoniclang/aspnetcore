@@ -14,6 +14,8 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
 
 export interface IViewCompiler$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler: never;
+
     CompileAsync(relativePath: string): Task<CompiledViewDescriptor>;
 }
 
@@ -21,6 +23,8 @@ export interface IViewCompiler$instance {
 export type IViewCompiler = IViewCompiler$instance;
 
 export interface IViewCompilerProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider: never;
+
     GetCompiler(): IViewCompiler;
 }
 

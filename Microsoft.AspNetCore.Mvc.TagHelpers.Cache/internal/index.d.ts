@@ -17,6 +17,8 @@ import type { DistributedCacheEntryOptions, IDistributedCache } from "@tsonic/mi
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IDistributedCacheTagHelperFormatter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperFormatter: never;
+
     DeserializeAsync(value: byte[]): Task<HtmlString>;
     SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
 }
@@ -25,6 +27,8 @@ export interface IDistributedCacheTagHelperFormatter$instance {
 export type IDistributedCacheTagHelperFormatter = IDistributedCacheTagHelperFormatter$instance;
 
 export interface IDistributedCacheTagHelperService$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperService: never;
+
     ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
 }
 
@@ -32,6 +36,8 @@ export interface IDistributedCacheTagHelperService$instance {
 export type IDistributedCacheTagHelperService = IDistributedCacheTagHelperService$instance;
 
 export interface IDistributedCacheTagHelperStorage$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperStorage: never;
+
     GetAsync(key: string): Task<byte[]>;
     SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
 }
@@ -40,6 +46,8 @@ export interface IDistributedCacheTagHelperStorage$instance {
 export type IDistributedCacheTagHelperStorage = IDistributedCacheTagHelperStorage$instance;
 
 export interface CacheTagKey$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     Equals(obj: unknown): boolean;
     Equals(other: CacheTagKey): boolean;
     GenerateHashedKey(): string;
@@ -57,6 +65,8 @@ export const CacheTagKey: {
 export type CacheTagKey = CacheTagKey$instance;
 
 export interface DistributedCacheTagHelperFormatter$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperFormatter: never;
+
     DeserializeAsync(value: byte[]): Task<HtmlString>;
     SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
 }
@@ -89,6 +99,8 @@ export const DistributedCacheTagHelperFormattingContext: {
 export type DistributedCacheTagHelperFormattingContext = DistributedCacheTagHelperFormattingContext$instance;
 
 export interface DistributedCacheTagHelperService$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperService: never;
+
     ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
 }
 
@@ -108,6 +120,8 @@ export type DistributedCacheTagHelperService = DistributedCacheTagHelperService$
 
 
 export interface DistributedCacheTagHelperStorage$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperStorage: never;
+
     GetAsync(key: string): Task<byte[]>;
     SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
 }

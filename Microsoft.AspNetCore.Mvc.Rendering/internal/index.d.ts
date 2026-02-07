@@ -79,6 +79,8 @@ export enum ValidationSummary {
 
 
 export interface IHtmlHelper$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper: never;
+
     Html5DateRenderingMode: Html5DateRenderingMode;
     readonly IdAttributeDotReplacement: string;
     readonly MetadataProvider: IModelMetadataProvider;
@@ -120,6 +122,8 @@ export interface IHtmlHelper$instance {
 export type IHtmlHelper = IHtmlHelper$instance;
 
 export interface IHtmlHelper_1$instance<TModel> extends IHtmlHelper {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_1: never;
+
     readonly ViewData: ViewDataDictionary_1<TModel>;
     Html5DateRenderingMode: Html5DateRenderingMode;
     readonly IdAttributeDotReplacement: string;
@@ -173,6 +177,8 @@ export interface IHtmlHelper_1$instance<TModel> extends IHtmlHelper {
 export type IHtmlHelper_1<TModel> = IHtmlHelper_1$instance<TModel>;
 
 export interface IJsonHelper$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IJsonHelper: never;
+
     Serialize(value: unknown): IHtmlContent;
 }
 
@@ -180,6 +186,9 @@ export interface IJsonHelper$instance {
 export type IJsonHelper = IJsonHelper$instance;
 
 export interface MultiSelectList$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly DataGroupField: string;
     readonly DataTextField: string;
     readonly DataValueField: string;
@@ -201,6 +210,8 @@ export const MultiSelectList: {
 export type MultiSelectList = MultiSelectList$instance;
 
 export interface MvcForm$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     EndForm(): void;
     GenerateEndForm(): void;
@@ -215,6 +226,9 @@ export const MvcForm: {
 export type MvcForm = MvcForm$instance;
 
 export interface SelectList$instance extends MultiSelectList {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly SelectedValue: unknown;
 }
 
@@ -263,6 +277,8 @@ export const SelectListItem: {
 export type SelectListItem = SelectListItem$instance;
 
 export interface TagBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
+
     readonly Attributes: AttributeDictionary;
     readonly HasInnerHtml: boolean;
     readonly InnerHtml: IHtmlContentBuilder;

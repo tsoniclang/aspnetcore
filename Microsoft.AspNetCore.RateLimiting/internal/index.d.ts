@@ -14,6 +14,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IRateLimiterPolicy_1$instance<TPartitionKey> {
+    readonly __tsonic_iface_Microsoft_AspNetCore_RateLimiting_IRateLimiterPolicy_1: never;
+
     readonly OnRejected: Func<OnRejectedContext, CancellationToken, ValueTask> | undefined;
     GetPartition(httpContext: HttpContext): RateLimitPartition_1<TPartitionKey>;
 }

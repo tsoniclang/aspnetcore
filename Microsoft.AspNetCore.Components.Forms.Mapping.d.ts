@@ -15,3 +15,6 @@ export { FormMappingError as FormMappingError } from './Microsoft.AspNetCore.Com
 export { FormValueMappingContext as FormValueMappingContext } from './Microsoft.AspNetCore.Components.Forms.Mapping/internal/index.js';
 export type IFormValueMapper = Internal.IFormValueMapper;
 export { SupplyParameterFromFormServiceCollectionExtensions$instance as SupplyParameterFromFormServiceCollectionExtensions } from './Microsoft.AspNetCore.Components.Forms.Mapping/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_AspNetCore_Components_Forms_Mapping as ExtensionMethods } from './__internal/extensions/index.js';
+

@@ -63,6 +63,9 @@ export enum RenderTreeFrameType {
 
 
 export interface ArrayBuilderSegment_1$instance<T> {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Array: T[];
     readonly Count: int;
     readonly [index: number]: T;
@@ -203,6 +206,9 @@ export const EventFieldInfo: {
 export type EventFieldInfo = EventFieldInfo$instance;
 
 export interface Renderer$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Assets: ResourceAssetCollection;
     readonly Dispatcher: Dispatcher;
     readonly RendererInfo: RendererInfo;
@@ -244,6 +250,9 @@ export const WebEventDescriptor: {
 export type WebEventDescriptor = WebEventDescriptor$instance;
 
 export interface WebRenderer$instance extends Renderer {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     AttachRootComponentToBrowser(componentId: int, domElementSelector: string): void;
     Dispose(disposing: boolean): void;
     Dispose(): void;

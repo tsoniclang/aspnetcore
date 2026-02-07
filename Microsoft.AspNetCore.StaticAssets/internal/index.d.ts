@@ -69,6 +69,8 @@ export const StaticAssetSelector: {
 export type StaticAssetSelector = StaticAssetSelector$instance;
 
 export interface StaticAssetsEndpointConventionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(convention: Action<EndpointBuilder>): void;
 }

@@ -22,6 +22,8 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IDataProtectionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder: never;
+
     readonly Services: IServiceCollection;
 }
 
@@ -29,6 +31,8 @@ export interface IDataProtectionBuilder$instance {
 export type IDataProtectionBuilder = IDataProtectionBuilder$instance;
 
 export interface IDataProtectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
+
     CreateProtector(purpose: string): IDataProtector;
 }
 
@@ -36,6 +40,8 @@ export interface IDataProtectionProvider$instance {
 export type IDataProtectionProvider = IDataProtectionProvider$instance;
 
 export interface IDataProtector$instance extends IDataProtectionProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtector: never;
+
     CreateProtector(purpose: string): IDataProtector;
     Protect(plaintext: byte[]): byte[];
 }
@@ -46,6 +52,8 @@ export interface IDataProtector$instance extends IDataProtectionProvider$instanc
 export type IDataProtector = IDataProtector$instance;
 
 export interface IPersistedDataProtector$instance extends IDataProtector, IDataProtectionProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector: never;
+
     CreateProtector(purpose: string): IDataProtector;
     DangerousUnprotect(protectedData: byte[], ignoreRevocationErrors: boolean, requiresMigration: boolean, wasRevoked: boolean): byte[];
     Protect(plaintext: byte[]): byte[];
@@ -55,14 +63,20 @@ export interface IPersistedDataProtector$instance extends IDataProtector, IDataP
 export type IPersistedDataProtector = IPersistedDataProtector$instance;
 
 export interface ISecret$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_ISecret: never;
+
     readonly Length: int;
     WriteSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;
 }
 
 
+export interface ISecret$instance extends System_Internal.IDisposable {}
+
 export type ISecret = ISecret$instance;
 
 export interface ITimeLimitedDataProtector$instance extends IDataProtector, IDataProtectionProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector: never;
+
     CreateProtector(purpose: string): IDataProtector;
     CreateProtector(purpose: string): ITimeLimitedDataProtector;
     Protect(plaintext: byte[]): byte[];
@@ -87,6 +101,8 @@ export const DataProtectionOptions: {
 export type DataProtectionOptions = DataProtectionOptions$instance;
 
 export interface EphemeralDataProtectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
+
     CreateProtector(purpose: string): IDataProtector;
 }
 
@@ -107,6 +123,9 @@ export type EphemeralDataProtectionProvider = EphemeralDataProtectionProvider$in
 
 
 export interface Secret$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_ISecret: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Length: int;
     Dispose(): void;
     WriteSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;

@@ -13,6 +13,7 @@ import * as Microsoft_AspNetCore_Authentication_OAuth_Claims from "../../Microso
 import * as Microsoft_AspNetCore_Authorization from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
 import * as Microsoft_AspNetCore_Builder from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import * as Microsoft_AspNetCore_Components from "../../Microsoft.AspNetCore.Components/internal/index.js";
+import * as Microsoft_AspNetCore_Components_Endpoints from "../../Microsoft.AspNetCore.Components.Endpoints/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Forms from "../../Microsoft.AspNetCore.Components.Forms/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Rendering from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Server from "../../Microsoft.AspNetCore.Components.Server/internal/index.js";
@@ -25,6 +26,7 @@ import * as Microsoft_AspNetCore_DataProtection_KeyManagement from "../../Micros
 import * as Microsoft_AspNetCore_DataProtection_XmlEncryption from "../../Microsoft.AspNetCore.DataProtection.XmlEncryption/internal/index.js";
 import * as Microsoft_AspNetCore_Diagnostics from "../../Microsoft.AspNetCore.Diagnostics/internal/index.js";
 import * as Microsoft_AspNetCore_Diagnostics_HealthChecks from "../../Microsoft.AspNetCore.Diagnostics.HealthChecks/internal/index.js";
+import * as Microsoft_AspNetCore_HostFiltering from "../../Microsoft.AspNetCore.HostFiltering/internal/index.js";
 import * as Microsoft_AspNetCore_Hosting from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import * as Microsoft_AspNetCore_Hosting_Server from "../../Microsoft.AspNetCore.Hosting.Server/internal/index.js";
 import * as Microsoft_AspNetCore_Html from "../../Microsoft.AspNetCore.Html/internal/index.js";
@@ -32,7 +34,11 @@ import * as Microsoft_AspNetCore_Http from "../../Microsoft.AspNetCore.Http/inte
 import * as Microsoft_AspNetCore_Http_Connections from "../../Microsoft.AspNetCore.Http.Connections/internal/index.js";
 import * as Microsoft_AspNetCore_Http_Features from "../../Microsoft.AspNetCore.Http.Features/internal/index.js";
 import * as Microsoft_AspNetCore_Http_Headers from "../../Microsoft.AspNetCore.Http.Headers/internal/index.js";
+import * as Microsoft_AspNetCore_Http_Json from "../../Microsoft.AspNetCore.Http.Json/internal/index.js";
 import * as Microsoft_AspNetCore_Http_Timeouts from "../../Microsoft.AspNetCore.Http.Timeouts/internal/index.js";
+import * as Microsoft_AspNetCore_HttpLogging from "../../Microsoft.AspNetCore.HttpLogging/internal/index.js";
+import * as Microsoft_AspNetCore_HttpOverrides from "../../Microsoft.AspNetCore.HttpOverrides/internal/index.js";
+import * as Microsoft_AspNetCore_HttpsPolicy from "../../Microsoft.AspNetCore.HttpsPolicy/internal/index.js";
 import * as Microsoft_AspNetCore_Identity from "../../Microsoft.AspNetCore.Identity/internal/index.js";
 import * as Microsoft_AspNetCore_Localization from "../../Microsoft.AspNetCore.Localization/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
@@ -46,15 +52,21 @@ import * as Microsoft_AspNetCore_Mvc_Formatters from "../../Microsoft.AspNetCore
 import * as Microsoft_AspNetCore_Mvc_Formatters_Xml from "../../Microsoft.AspNetCore.Mvc.Formatters.Xml/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Localization from "../../Microsoft.AspNetCore.Mvc.Localization/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ModelBinding from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
+import * as Microsoft_AspNetCore_Mvc_ModelBinding_Metadata from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js";
+import * as Microsoft_AspNetCore_Mvc_ModelBinding_Validation from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Razor from "../../Microsoft.AspNetCore.Mvc.Razor/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_RazorPages from "../../Microsoft.AspNetCore.Mvc.RazorPages/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Rendering from "../../Microsoft.AspNetCore.Mvc.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Routing from "../../Microsoft.AspNetCore.Mvc.Routing/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_TagHelpers from "../../Microsoft.AspNetCore.Mvc.TagHelpers/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_ViewFeatures from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
+import * as Microsoft_AspNetCore_OutputCaching from "../../Microsoft.AspNetCore.OutputCaching/internal/index.js";
 import * as Microsoft_AspNetCore_RateLimiting from "../../Microsoft.AspNetCore.RateLimiting/internal/index.js";
 import * as Microsoft_AspNetCore_Razor_Hosting from "../../Microsoft.AspNetCore.Razor.Hosting/internal/index.js";
 import * as Microsoft_AspNetCore_Razor_TagHelpers from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
+import * as Microsoft_AspNetCore_RequestDecompression from "../../Microsoft.AspNetCore.RequestDecompression/internal/index.js";
+import * as Microsoft_AspNetCore_ResponseCaching from "../../Microsoft.AspNetCore.ResponseCaching/internal/index.js";
+import * as Microsoft_AspNetCore_ResponseCompression from "../../Microsoft.AspNetCore.ResponseCompression/internal/index.js";
 import * as Microsoft_AspNetCore_Rewrite from "../../Microsoft.AspNetCore.Rewrite/internal/index.js";
 import * as Microsoft_AspNetCore_Routing from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import * as Microsoft_AspNetCore_Routing_Patterns from "../../Microsoft.AspNetCore.Routing.Patterns/internal/index.js";
@@ -68,34 +80,60 @@ import * as Microsoft_AspNetCore_SignalR from "../../Microsoft.AspNetCore.Signal
 import * as Microsoft_AspNetCore_SignalR_Protocol from "../../Microsoft.AspNetCore.SignalR.Protocol/internal/index.js";
 import * as Microsoft_AspNetCore_StaticAssets from "../../Microsoft.AspNetCore.StaticAssets/internal/index.js";
 import * as Microsoft_AspNetCore_WebUtilities from "../../Microsoft.AspNetCore.WebUtilities/internal/index.js";
+import * as Microsoft_Extensions_Configuration from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
 import * as Microsoft_Extensions_DependencyInjection from "../../Microsoft.Extensions.DependencyInjection/internal/index.js";
+import * as Microsoft_Extensions_FileProviders from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
+import * as Microsoft_Extensions_Hosting from "../../Microsoft.Extensions.Hosting/internal/index.js";
+import * as Microsoft_Extensions_Localization from "@tsonic/microsoft-extensions/Microsoft.Extensions.Localization/internal/index.js";
+import * as Microsoft_Extensions_Logging from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import * as Microsoft_Extensions_Options from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
+import * as Microsoft_Extensions_Primitives from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 import * as Microsoft_JSInterop from "../../Microsoft.JSInterop/internal/index.js";
 import * as Microsoft_Net_Http_Headers from "../../Microsoft.Net.Http.Headers/internal/index.js";
+import * as Microsoft_Win32 from "@tsonic/dotnet/Microsoft.Win32/internal/index.js";
+import * as System from "@tsonic/dotnet/System/internal/index.js";
+import * as System_Buffers from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import * as System_Collections_Generic from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Globalization from "@tsonic/dotnet/System.Globalization/internal/index.js";
+import * as System_IO from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Linq_Expressions from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import * as System_Net_Security from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import * as System_Reflection from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Security_Claims from "../../System.Security.Claims/internal/index.js";
+import * as System_Security_Cryptography_X509Certificates from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import * as System_Text from "@tsonic/dotnet/System.Text/internal/index.js";
+import * as System_Text_Encodings_Web from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import * as System_Text_Json from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Text_Json_Serialization from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
+import * as System_Text_Json_Serialization_Metadata from "@tsonic/dotnet/System.Text.Json.Serialization.Metadata/internal/index.js";
+import * as System_Threading from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Threading_RateLimiting from "../../System.Threading.RateLimiting/internal/index.js";
+import * as System_Threading_Tasks from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Xml_Linq from "@tsonic/dotnet/System.Xml.Linq/internal/index.js";
 
 // Import primitive type aliases
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import CLR type aliases for generic type arguments
-import * as System_Internal from "../../System/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 
 // Import unsafe type markers
 import type { ptr } from '@tsonic/core/types.js';
 
 export interface __Ext_Microsoft_AspNetCore_Authentication_AuthenticationProperties {
-  StoreTokens(tokens: IEnumerable_1<Microsoft_AspNetCore_Authentication.AuthenticationToken>): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
+  StoreTokens(tokens: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Authentication.AuthenticationToken>): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
   GetTokenValue(tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<string | undefined>;
   UpdateTokenValue(tokenName: string, tokenValue: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<boolean>;
-  GetTokens(): ExtensionMethods_Microsoft_AspNetCore_Authentication<IEnumerable_1<Microsoft_AspNetCore_Authentication.AuthenticationToken>>;
+  GetTokens(): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Authentication.AuthenticationToken>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Authentication_IAuthenticationConfigurationProvider {
-  GetSchemeConfiguration(authenticationScheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<IConfiguration>;
+  GetSchemeConfiguration(authenticationScheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Microsoft_Extensions_Configuration.IConfiguration>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Authentication_IAuthenticationService {
-  GetTokenAsync(context: Microsoft_AspNetCore_Http.HttpContext, tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task_1<string | undefined>>;
-  GetTokenAsync(context: Microsoft_AspNetCore_Http.HttpContext, scheme: string, tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task_1<string | undefined>>;
+  GetTokenAsync(context: Microsoft_AspNetCore_Http.HttpContext, tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task_1<string | undefined>>;
+  GetTokenAsync(context: Microsoft_AspNetCore_Http.HttpContext, scheme: string, tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task_1<string | undefined>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Authentication_ClaimActionCollection {
@@ -103,46 +141,50 @@ export interface __Ext_Microsoft_AspNetCore_Authentication_ClaimActionCollection
   MapJsonKey(claimType: string, jsonKey: string, valueType: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
   MapJsonSubKey(claimType: string, jsonKey: string, subKey: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
   MapJsonSubKey(claimType: string, jsonKey: string, subKey: string, valueType: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
-  MapCustomJson(claimType: string, resolver: Func_2<JsonElement, System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
-  MapCustomJson(claimType: string, valueType: string, resolver: Func_2<JsonElement, System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
+  MapCustomJson(claimType: string, resolver: System.Func_2<System_Text_Json.JsonElement, System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
+  MapCustomJson(claimType: string, valueType: string, resolver: System.Func_2<System_Text_Json.JsonElement, System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
   MapAll(): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
-  MapAllExcept(exclusions: string[]): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
+  MapAllExcept(...exclusions: string[]): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
   DeleteClaim(claimType: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
-  DeleteClaims(claimTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
+  DeleteClaims(...claimTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Authentication<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Authentication_HttpContext {
-  AuthenticateAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task_1<Microsoft_AspNetCore_Authentication.AuthenticateResult>>;
-  AuthenticateAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task_1<Microsoft_AspNetCore_Authentication.AuthenticateResult>>;
-  ChallengeAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  ChallengeAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  ChallengeAsync(properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  ChallengeAsync(scheme: string, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  ForbidAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  ForbidAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  ForbidAsync(properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  ForbidAsync(scheme: string, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignInAsync(scheme: string, principal: ClaimsPrincipal): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignInAsync(principal: ClaimsPrincipal): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignInAsync(principal: ClaimsPrincipal, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignInAsync(scheme: string, principal: ClaimsPrincipal, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignOutAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignOutAsync(properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignOutAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  SignOutAsync(scheme: string, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task>;
-  GetTokenAsync(scheme: string, tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task_1<string | undefined>>;
-  GetTokenAsync(tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<Task_1<string | undefined>>;
+  AuthenticateAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authentication.AuthenticateResult>>;
+  AuthenticateAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authentication.AuthenticateResult>>;
+  ChallengeAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  ChallengeAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  ChallengeAsync(properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  ChallengeAsync(scheme: string, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  ForbidAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  ForbidAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  ForbidAsync(properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  ForbidAsync(scheme: string, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignInAsync(scheme: string, principal: System_Security_Claims.ClaimsPrincipal): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignInAsync(principal: System_Security_Claims.ClaimsPrincipal): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignInAsync(principal: System_Security_Claims.ClaimsPrincipal, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignInAsync(scheme: string, principal: System_Security_Claims.ClaimsPrincipal, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignOutAsync(): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignOutAsync(properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignOutAsync(scheme: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  SignOutAsync(scheme: string, properties: Microsoft_AspNetCore_Authentication.AuthenticationProperties): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task>;
+  GetTokenAsync(scheme: string, tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task_1<string | undefined>>;
+  GetTokenAsync(tokenName: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<System_Threading_Tasks.Task_1<string | undefined>>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_Authentication_JsonElement {
+  GetString(key: string): ExtensionMethods_Microsoft_AspNetCore_Authentication<string | undefined>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Authorization_IAuthorizationService {
-  AuthorizeAsync(user: ClaimsPrincipal, resource: unknown, requirement: Microsoft_AspNetCore_Authorization.IAuthorizationRequirement): ExtensionMethods_Microsoft_AspNetCore_Authorization<Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
-  AuthorizeAsync(user: ClaimsPrincipal, resource: unknown, policy: Microsoft_AspNetCore_Authorization.AuthorizationPolicy): ExtensionMethods_Microsoft_AspNetCore_Authorization<Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
-  AuthorizeAsync(user: ClaimsPrincipal, policy: Microsoft_AspNetCore_Authorization.AuthorizationPolicy): ExtensionMethods_Microsoft_AspNetCore_Authorization<Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
-  AuthorizeAsync(user: ClaimsPrincipal, policyName: string): ExtensionMethods_Microsoft_AspNetCore_Authorization<Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
+  AuthorizeAsync(user: System_Security_Claims.ClaimsPrincipal, resource: unknown, requirement: Microsoft_AspNetCore_Authorization.IAuthorizationRequirement): ExtensionMethods_Microsoft_AspNetCore_Authorization<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
+  AuthorizeAsync(user: System_Security_Claims.ClaimsPrincipal, resource: unknown, policy: Microsoft_AspNetCore_Authorization.AuthorizationPolicy): ExtensionMethods_Microsoft_AspNetCore_Authorization<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
+  AuthorizeAsync(user: System_Security_Claims.ClaimsPrincipal, policy: Microsoft_AspNetCore_Authorization.AuthorizationPolicy): ExtensionMethods_Microsoft_AspNetCore_Authorization<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
+  AuthorizeAsync(user: System_Security_Claims.ClaimsPrincipal, policyName: string): ExtensionMethods_Microsoft_AspNetCore_Authorization<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Builder_ControllerActionEndpointConventionBuilder {
-  WithStaticAssets(manifestPath: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
+  WithStaticAssets(manifestPath?: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Builder_IApplicationBuilder {
@@ -153,22 +195,22 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IApplicationBuilder {
   UseCookiePolicy(options: Microsoft_AspNetCore_Builder.CookiePolicyOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseCors(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseCors(policyName: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseCors(configurePolicy: Action_1<Microsoft_AspNetCore_Cors_Infrastructure.CorsPolicyBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseCors(configurePolicy: System.Action_1<Microsoft_AspNetCore_Cors_Infrastructure.CorsPolicyBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseDeveloperExceptionPage(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseDeveloperExceptionPage(options: Microsoft_AspNetCore_Builder.DeveloperExceptionPageOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseExceptionHandler(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseExceptionHandler(errorHandlingPath: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseExceptionHandler(errorHandlingPath: string, createScopeForErrors: boolean): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseExceptionHandler(configure: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseExceptionHandler(configure: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseExceptionHandler(options: Microsoft_AspNetCore_Builder.ExceptionHandlerOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseStatusCodePages(options: Microsoft_AspNetCore_Builder.StatusCodePagesOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseStatusCodePages(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseStatusCodePages(handler: Func_2<Microsoft_AspNetCore_Diagnostics.StatusCodeContext, Task>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseStatusCodePages(handler: System.Func_2<Microsoft_AspNetCore_Diagnostics.StatusCodeContext, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseStatusCodePages(contentType: string, bodyFormat: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseStatusCodePagesWithRedirects(locationFormat: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseStatusCodePages(configuration: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseStatusCodePages(configuration: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseStatusCodePagesWithReExecute(pathFormat: string, queryFormat: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseStatusCodePagesWithReExecute(pathFormat: string, queryFormat: string, createScopeForStatusCodePages: boolean): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseStatusCodePagesWithReExecute(pathFormat: string, queryFormat?: string, createScopeForStatusCodePages?: boolean): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseWelcomePage(options: Microsoft_AspNetCore_Builder.WelcomePageOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseWelcomePage(path: Microsoft_AspNetCore_Http.PathString): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseWelcomePage(path: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
@@ -181,17 +223,17 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IApplicationBuilder {
   UseHealthChecks(path: Microsoft_AspNetCore_Http.PathString, port: string, options: Microsoft_AspNetCore_Diagnostics_HealthChecks.HealthCheckOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseHostFiltering(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRequestTimeouts(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  Map(pathMatch: string, configuration: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  Map(pathMatch: Microsoft_AspNetCore_Http.PathString, configuration: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  Map(pathMatch: Microsoft_AspNetCore_Http.PathString, preserveMatchedPathSegment: boolean, configuration: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  MapWhen(predicate: Func_2<Microsoft_AspNetCore_Http.HttpContext, System_Internal.Boolean>, configuration: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  Map(pathMatch: string, configuration: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  Map(pathMatch: Microsoft_AspNetCore_Http.PathString, configuration: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  Map(pathMatch: Microsoft_AspNetCore_Http.PathString, preserveMatchedPathSegment: boolean, configuration: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  MapWhen(predicate: System.Func_2<Microsoft_AspNetCore_Http.HttpContext, System_Internal.Boolean>, configuration: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   Run(handler: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<void>;
-  Use(middleware: Func_3<Microsoft_AspNetCore_Http.HttpContext, Func_1<Task>, Task>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  Use(middleware: Func_3<Microsoft_AspNetCore_Http.HttpContext, Microsoft_AspNetCore_Http.RequestDelegate, Task>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseMiddleware<TMiddleware>(args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseMiddleware(middleware: Type, args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  Use(middleware: System.Func_3<Microsoft_AspNetCore_Http.HttpContext, System.Func_1<System_Threading_Tasks.Task>, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  Use(middleware: System.Func_3<Microsoft_AspNetCore_Http.HttpContext, Microsoft_AspNetCore_Http.RequestDelegate, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseMiddleware<TMiddleware>(...args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseMiddleware(middleware: System.Type, ...args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UsePathBase(pathBase: Microsoft_AspNetCore_Http.PathString): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseWhen(predicate: Func_2<Microsoft_AspNetCore_Http.HttpContext, System_Internal.Boolean>, configuration: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseWhen(predicate: System.Func_2<Microsoft_AspNetCore_Http.HttpContext, System_Internal.Boolean>, configuration: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseHttpLogging(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseW3CLogging(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseCertificateForwarding(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
@@ -203,11 +245,11 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IApplicationBuilder {
   UseHttpsRedirection(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRequestLocalization(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRequestLocalization(options: Microsoft_AspNetCore_Builder.RequestLocalizationOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseRequestLocalization(optionsAction: Action_1<Microsoft_AspNetCore_Builder.RequestLocalizationOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseRequestLocalization(cultures: string[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseRequestLocalization(optionsAction: System.Action_1<Microsoft_AspNetCore_Builder.RequestLocalizationOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseRequestLocalization(...cultures: string[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseMvc(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseMvcWithDefaultRoute(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseMvc(configureRoutes: Action_1<Microsoft_AspNetCore_Routing.IRouteBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseMvc(configureRoutes: System.Action_1<Microsoft_AspNetCore_Routing.IRouteBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseOutputCache(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRateLimiter(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRateLimiter(options: Microsoft_AspNetCore_RateLimiting.RateLimiterOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
@@ -217,9 +259,9 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IApplicationBuilder {
   UseRewriter(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRewriter(options: Microsoft_AspNetCore_Rewrite.RewriteOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRouting(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseEndpoints(configure: Action_1<Microsoft_AspNetCore_Routing.IEndpointRouteBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseEndpoints(configure: System.Action_1<Microsoft_AspNetCore_Routing.IEndpointRouteBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseRouter(router: Microsoft_AspNetCore_Routing.IRouter): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseRouter(action: Action_1<Microsoft_AspNetCore_Routing.IRouteBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseRouter(action: System.Action_1<Microsoft_AspNetCore_Routing.IRouteBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseSession(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseSession(options: Microsoft_AspNetCore_Builder.SessionOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseDefaultFiles(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IApplicationBuilder>;
@@ -240,22 +282,22 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IApplicationBuilder {
 }
 
 export interface __Ext_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder {
-  WithRequestTimeout(timeout: TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
+  WithRequestTimeout(timeout: System.TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   WithRequestTimeout(policyName: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   WithRequestTimeout(policy: Microsoft_AspNetCore_Http_Timeouts.RequestTimeoutPolicy): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   DisableRequestTimeout(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
-  ShortCircuit(statusCode: Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
+  ShortCircuit(statusCode?: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Builder_PageActionEndpointConventionBuilder {
-  WithStaticAssets(manifestPath: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.PageActionEndpointConventionBuilder>;
+  WithStaticAssets(manifestPath?: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.PageActionEndpointConventionBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Builder_RazorComponentsEndpointConventionBuilder {
-  AddAdditionalAssemblies(assemblies: Assembly[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
-  WithStaticAssets(manifestPath: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
+  AddAdditionalAssemblies(...assemblies: System_Reflection.Assembly[]): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
+  WithStaticAssets(manifestPath?: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
   AddInteractiveServerRenderMode(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
-  AddInteractiveServerRenderMode(configure: Action_1<Microsoft_AspNetCore_Components_Server.ServerComponentsEndpointOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
+  AddInteractiveServerRenderMode(configure: System.Action_1<Microsoft_AspNetCore_Components_Server.ServerComponentsEndpointOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Builder_RequestLocalizationOptions {
@@ -266,18 +308,18 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IEndpointRouteBuilder {
   MapRazorComponents<TRootComponent>(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
   MapBlazorHub(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
   MapBlazorHub(path: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
-  MapBlazorHub(configureOptions: Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
-  MapBlazorHub(path: string, configureOptions: Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
+  MapBlazorHub(configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
+  MapBlazorHub(path: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
   MapHealthChecks(pattern: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapHealthChecks(pattern: string, options: Microsoft_AspNetCore_Diagnostics_HealthChecks.HealthCheckOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
-  MapConnections(pattern: string, configure: Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
+  MapConnections(pattern: string, configure: System.Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
   MapConnectionHandler<TConnectionHandler>(pattern: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
-  MapConnectionHandler<TConnectionHandler>(pattern: string, configureOptions: Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
-  MapConnections(pattern: string, options: Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions, configure: Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
+  MapConnectionHandler<TConnectionHandler>(pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
+  MapConnections(pattern: string, options: Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions, configure: System.Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
   MapControllers(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
   MapDefaultControllerRoute(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
-  MapControllerRoute(name: string, pattern: string, defaults: unknown, constraints: unknown, dataTokens: unknown): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
-  MapAreaControllerRoute(name: string, areaName: string, pattern: string, defaults: unknown, constraints: unknown, dataTokens: unknown): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
+  MapControllerRoute(name: string, pattern: string, defaults?: unknown, constraints?: unknown, dataTokens?: unknown): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
+  MapAreaControllerRoute(name: string, areaName: string, pattern: string, defaults?: unknown, constraints?: unknown, dataTokens?: unknown): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
   MapFallbackToController(action: string, controller: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapFallbackToController(pattern: string, action: string, controller: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapFallbackToAreaController(action: string, controller: string, area: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
@@ -300,7 +342,7 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IEndpointRouteBuilder {
   MapPut(pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapDelete(pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapPatch(pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
-  MapMethods(pattern: string, httpMethods: IEnumerable_1<System_Internal.String>, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
+  MapMethods(pattern: string, httpMethods: System_Collections_Generic.IEnumerable_1<System_Internal.String>, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   Map(pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   Map(pattern: Microsoft_AspNetCore_Routing_Patterns.RoutePattern, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapGet(pattern: string, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
@@ -308,7 +350,7 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IEndpointRouteBuilder {
   MapPut(pattern: string, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapDelete(pattern: string, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapPatch(pattern: string, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  MapMethods(pattern: string, httpMethods: IEnumerable_1<System_Internal.String>, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  MapMethods(pattern: string, httpMethods: System_Collections_Generic.IEnumerable_1<System_Internal.String>, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Map(pattern: string, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Map(pattern: Microsoft_AspNetCore_Routing_Patterns.RoutePattern, handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapFallback(handler: Function): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
@@ -316,8 +358,8 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IEndpointRouteBuilder {
   MapFallback(requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapFallback(pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapHub<THub>(pattern: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
-  MapHub<THub>(pattern: string, configureOptions: Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
-  MapStaticAssets(staticAssetsManifestPath: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_StaticAssets.StaticAssetsEndpointConventionBuilder>;
+  MapHub<THub>(pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
+  MapStaticAssets(staticAssetsManifestPath?: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_StaticAssets.StaticAssetsEndpointConventionBuilder>;
   MapFallbackToFile(filePath: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapFallbackToFile(filePath: string, options: Microsoft_AspNetCore_Builder.StaticFileOptions): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapFallbackToFile(pattern: string, filePath: string): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
@@ -335,119 +377,141 @@ export interface __Ext_Microsoft_AspNetCore_Builder_IRouteBuilder {
   MapRoute(name: string, template: string, defaults: unknown, constraints: unknown, dataTokens: unknown): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_AspNetCore_Routing.IRouteBuilder>;
 }
 
+export interface __Ext_Microsoft_AspNetCore_Builder_IServiceCollection {
+  AddHostFiltering(configureOptions: System.Action_1<Microsoft_AspNetCore_HostFiltering.HostFilteringOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHsts(configureOptions: System.Action_1<Microsoft_AspNetCore_HttpsPolicy.HstsOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHttpsRedirection(configureOptions: System.Action_1<Microsoft_AspNetCore_HttpsPolicy.HttpsRedirectionOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRateLimiter(configureOptions: System.Action_1<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRateLimiter(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddResponseCompression(): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddResponseCompression(configureOptions: System.Action_1<Microsoft_AspNetCore_ResponseCompression.ResponseCompressionOptions>): ExtensionMethods_Microsoft_AspNetCore_Builder<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+}
+
 export interface __Ext_Microsoft_AspNetCore_Components_ElementReference {
-  FocusAsync(): ExtensionMethods_Microsoft_AspNetCore_Components<ValueTask>;
-  FocusAsync(preventScroll: boolean): ExtensionMethods_Microsoft_AspNetCore_Components<ValueTask>;
+  FocusAsync(): ExtensionMethods_Microsoft_AspNetCore_Components<System_Threading_Tasks.ValueTask>;
+  FocusAsync(preventScroll: boolean): ExtensionMethods_Microsoft_AspNetCore_Components<System_Threading_Tasks.ValueTask>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Components_EventCallbackFactory {
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.String>, existingValue: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.String, Task>, existingValue: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.Boolean>, existingValue: boolean, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.Boolean, Task>, existingValue: boolean, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Boolean>>, existingValue: Nullable_1<System_Internal.Boolean>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Boolean>, Task>, existingValue: Nullable_1<System_Internal.Boolean>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.Int32>, existingValue: int, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.Int32, Task>, existingValue: int, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Int32>>, existingValue: Nullable_1<System_Internal.Int32>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Int32>, Task>, existingValue: Nullable_1<System_Internal.Int32>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.Int64>, existingValue: long, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.Int64, Task>, existingValue: long, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.Int16>, existingValue: short, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.Int16, Task>, existingValue: short, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Int64>>, existingValue: Nullable_1<System_Internal.Int64>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Int64>, Task>, existingValue: Nullable_1<System_Internal.Int64>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Int16>>, existingValue: Nullable_1<System_Internal.Int16>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Int16>, Task>, existingValue: Nullable_1<System_Internal.Int16>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.Single>, existingValue: float, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.Single, Task>, existingValue: float, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Single>>, existingValue: Nullable_1<System_Internal.Single>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Single>, Task>, existingValue: Nullable_1<System_Internal.Single>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.Double>, existingValue: double, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.Double, Task>, existingValue: double, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Double>>, existingValue: Nullable_1<System_Internal.Double>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Double>, Task>, existingValue: Nullable_1<System_Internal.Double>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<System_Internal.Decimal>, existingValue: decimal, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<System_Internal.Decimal, Task>, existingValue: decimal, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<System_Internal.Decimal>>, existingValue: Nullable_1<System_Internal.Decimal>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<System_Internal.Decimal>, Task>, existingValue: Nullable_1<System_Internal.Decimal>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<DateTime>, existingValue: DateTime, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<DateTime, Task>, existingValue: DateTime, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<DateTime>, existingValue: DateTime, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<DateTime, Task>, existingValue: DateTime, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<DateTime>>, existingValue: Nullable_1<DateTime>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<DateTime>, Task>, existingValue: Nullable_1<DateTime>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<DateTime>>, existingValue: Nullable_1<DateTime>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<DateTime>, Task>, existingValue: Nullable_1<DateTime>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<DateTimeOffset>, existingValue: DateTimeOffset, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<DateTimeOffset, Task>, existingValue: DateTimeOffset, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<DateTimeOffset>, existingValue: DateTimeOffset, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<DateTimeOffset, Task>, existingValue: DateTimeOffset, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<DateTimeOffset>>, existingValue: Nullable_1<DateTimeOffset>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<DateTimeOffset>, Task>, existingValue: Nullable_1<DateTimeOffset>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<DateTimeOffset>>, existingValue: Nullable_1<DateTimeOffset>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<DateTimeOffset>, Task>, existingValue: Nullable_1<DateTimeOffset>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<DateOnly>, existingValue: DateOnly, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<DateOnly, Task>, existingValue: DateOnly, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<DateOnly>, existingValue: DateOnly, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<DateOnly, Task>, existingValue: DateOnly, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<DateOnly>>, existingValue: Nullable_1<DateOnly>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<DateOnly>, Task>, existingValue: Nullable_1<DateOnly>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<DateOnly>>, existingValue: Nullable_1<DateOnly>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<DateOnly>, Task>, existingValue: Nullable_1<DateOnly>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<TimeOnly>, existingValue: TimeOnly, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<TimeOnly, Task>, existingValue: TimeOnly, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<TimeOnly>, existingValue: TimeOnly, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<TimeOnly, Task>, existingValue: TimeOnly, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<TimeOnly>>, existingValue: Nullable_1<TimeOnly>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<TimeOnly>, Task>, existingValue: Nullable_1<TimeOnly>, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Action_1<Nullable_1<TimeOnly>>, existingValue: Nullable_1<TimeOnly>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(receiver: unknown, setter: Func_2<Nullable_1<TimeOnly>, Task>, existingValue: Nullable_1<TimeOnly>, format: string, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder<T>(receiver: unknown, setter: Action_1<T>, existingValue: T, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder<T>(receiver: unknown, setter: Func_2<T, Task>, existingValue: T, culture: CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<EventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<EventArgs>>;
-  Create(receiver: unknown, callback: Func_2<EventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<EventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components.ChangeEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components.ChangeEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.String>, existingValue: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.String, System_Threading_Tasks.Task>, existingValue: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.Boolean>, existingValue: boolean, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.Boolean, System_Threading_Tasks.Task>, existingValue: boolean, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Boolean>>, existingValue: System.Nullable_1<System_Internal.Boolean>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Boolean>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Boolean>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.Int32>, existingValue: int, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.Int32, System_Threading_Tasks.Task>, existingValue: int, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Int32>>, existingValue: System.Nullable_1<System_Internal.Int32>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Int32>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int32>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.Int64>, existingValue: long, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.Int64, System_Threading_Tasks.Task>, existingValue: long, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.Int16>, existingValue: short, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.Int16, System_Threading_Tasks.Task>, existingValue: short, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Int64>>, existingValue: System.Nullable_1<System_Internal.Int64>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Int64>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int64>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Int16>>, existingValue: System.Nullable_1<System_Internal.Int16>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Int16>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int16>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.Single>, existingValue: float, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.Single, System_Threading_Tasks.Task>, existingValue: float, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Single>>, existingValue: System.Nullable_1<System_Internal.Single>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Single>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Single>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.Double>, existingValue: double, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.Double, System_Threading_Tasks.Task>, existingValue: double, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Double>>, existingValue: System.Nullable_1<System_Internal.Double>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Double>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Double>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System_Internal.Decimal>, existingValue: decimal, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System_Internal.Decimal, System_Threading_Tasks.Task>, existingValue: decimal, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Decimal>>, existingValue: System.Nullable_1<System_Internal.Decimal>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Decimal>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Decimal>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.DateTime>, existingValue: System.DateTime, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.DateTime, System_Threading_Tasks.Task>, existingValue: System.DateTime, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.DateTime>, existingValue: System.DateTime, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.DateTime, System_Threading_Tasks.Task>, existingValue: System.DateTime, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTime>>, existingValue: System.Nullable_1<System.DateTime>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTime>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTime>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTime>>, existingValue: System.Nullable_1<System.DateTime>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTime>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTime>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.DateTimeOffset>, existingValue: System.DateTimeOffset, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.DateTimeOffset, System_Threading_Tasks.Task>, existingValue: System.DateTimeOffset, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.DateTimeOffset>, existingValue: System.DateTimeOffset, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.DateTimeOffset, System_Threading_Tasks.Task>, existingValue: System.DateTimeOffset, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTimeOffset>>, existingValue: System.Nullable_1<System.DateTimeOffset>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTimeOffset>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTimeOffset>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTimeOffset>>, existingValue: System.Nullable_1<System.DateTimeOffset>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTimeOffset>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTimeOffset>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.DateOnly>, existingValue: System.DateOnly, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.DateOnly, System_Threading_Tasks.Task>, existingValue: System.DateOnly, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.DateOnly>, existingValue: System.DateOnly, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.DateOnly, System_Threading_Tasks.Task>, existingValue: System.DateOnly, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateOnly>>, existingValue: System.Nullable_1<System.DateOnly>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateOnly>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateOnly>>, existingValue: System.Nullable_1<System.DateOnly>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateOnly>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.TimeOnly>, existingValue: System.TimeOnly, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.TimeOnly, System_Threading_Tasks.Task>, existingValue: System.TimeOnly, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.TimeOnly>, existingValue: System.TimeOnly, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.TimeOnly, System_Threading_Tasks.Task>, existingValue: System.TimeOnly, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.TimeOnly>>, existingValue: System.Nullable_1<System.TimeOnly>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.TimeOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.TimeOnly>, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Action_1<System.Nullable_1<System.TimeOnly>>, existingValue: System.Nullable_1<System.TimeOnly>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(receiver: unknown, setter: System.Func_2<System.Nullable_1<System.TimeOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.TimeOnly>, format: string, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder<T>(receiver: unknown, setter: System.Action_1<T>, existingValue: T, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder<T>(receiver: unknown, setter: System.Func_2<T, System_Threading_Tasks.Task>, existingValue: T, culture?: System_Globalization.CultureInfo): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<System.EventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<System.EventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<System.EventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<System.EventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components.ChangeEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components.ChangeEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Components_NavigationManager {
   GetUriWithQueryParameter(name: string, value: boolean): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: DateTime): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<DateTime>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: DateOnly): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<DateOnly>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: TimeOnly): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<TimeOnly>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.DateTime): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.DateOnly): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.TimeOnly): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System.TimeOnly>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
   GetUriWithQueryParameter(name: string, value: decimal): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<System_Internal.Decimal>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System_Internal.Decimal>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
   GetUriWithQueryParameter(name: string, value: double): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<System_Internal.Double>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System_Internal.Double>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
   GetUriWithQueryParameter(name: string, value: float): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<System_Internal.Single>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Guid): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<Guid>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System_Internal.Single>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Guid): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System.Guid>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
   GetUriWithQueryParameter(name: string, value: int): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
   GetUriWithQueryParameter(name: string, value: long): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameter(name: string, value: Nullable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameter(name: string, value: System.Nullable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
   GetUriWithQueryParameter(name: string, value: string): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameters(parameters: IReadOnlyDictionary_2<System_Internal.String, unknown>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
-  GetUriWithQueryParameters(uri: string, parameters: IReadOnlyDictionary_2<System_Internal.String, unknown>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameters(parameters: System_Collections_Generic.IReadOnlyDictionary_2<System_Internal.String, unknown>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+  GetUriWithQueryParameters(uri: string, parameters: System_Collections_Generic.IReadOnlyDictionary_2<System_Internal.String, unknown>): ExtensionMethods_Microsoft_AspNetCore_Components<string>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_Components_IServiceCollection {
+  AddSupplyValueFromQueryProvider(): ExtensionMethods_Microsoft_AspNetCore_Components<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Components_Forms_EditContext {
   AddDataAnnotationsValidation(): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<Microsoft_AspNetCore_Components_Forms.EditContext>;
-  EnableDataAnnotationsValidation(): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<IDisposable>;
-  EnableDataAnnotationsValidation(serviceProvider: IServiceProvider): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<IDisposable>;
-  FieldCssClass<TField>(accessor: Expression_1<Func_1<TField>>): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<string>;
+  EnableDataAnnotationsValidation(): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<System.IDisposable>;
+  EnableDataAnnotationsValidation(serviceProvider: System.IServiceProvider): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<System.IDisposable>;
+  FieldCssClass<TField>(accessor: System_Linq_Expressions.Expression_1<System.Func_1<TField>>): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<string>;
   FieldCssClass(fieldIdentifier: Microsoft_AspNetCore_Components_Forms.FieldIdentifier): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<string>;
   SetFieldCssClassProvider(fieldCssClassProvider: Microsoft_AspNetCore_Components_Forms.FieldCssClassProvider): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Components_Forms_IBrowserFile {
-  RequestImageFileAsync(format: string, maxWidth: int, maxHeight: int): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<ValueTask_1<Microsoft_AspNetCore_Components_Forms.IBrowserFile>>;
+  RequestImageFileAsync(format: string, maxWidth: int, maxHeight: int): ExtensionMethods_Microsoft_AspNetCore_Components_Forms<System_Threading_Tasks.ValueTask_1<Microsoft_AspNetCore_Components_Forms.IBrowserFile>>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_Components_Forms_Mapping_IServiceCollection {
+  AddSupplyValueFromFormProvider(): ExtensionMethods_Microsoft_AspNetCore_Components_Forms_Mapping<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_Components_Infrastructure_IServiceCollection {
+  AddSupplyValueFromPersistentComponentStateProvider(): ExtensionMethods_Microsoft_AspNetCore_Components_Infrastructure<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Components_Routing_HttpContext {
@@ -455,26 +519,26 @@ export interface __Ext_Microsoft_AspNetCore_Components_Routing_HttpContext {
 }
 
 export interface __Ext_Microsoft_AspNetCore_Components_Web_EventCallbackFactory {
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.DragEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.ErrorEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.FocusEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.MouseEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.PointerEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.ProgressEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.TouchEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
-  Create(receiver: unknown, callback: Action_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
-  Create(receiver: unknown, callback: Func_2<Microsoft_AspNetCore_Components_Web.WheelEventArgs, Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.DragEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ErrorEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.FocusEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.MouseEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.PointerEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ProgressEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.TouchEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
+  Create(receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
+  Create(receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.WheelEventArgs, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Components_Web<Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Components_Web_RenderTreeBuilder {
@@ -485,34 +549,34 @@ export interface __Ext_Microsoft_AspNetCore_Components_Web_RenderTreeBuilder {
 export interface __Ext_Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration {
   RegisterForJavaScript<TComponent>(identifier: string): ExtensionMethods_Microsoft_AspNetCore_Components_Web<void>;
   RegisterForJavaScript<TComponent>(identifier: string, javaScriptInitializer: string): ExtensionMethods_Microsoft_AspNetCore_Components_Web<void>;
-  RegisterForJavaScript(componentType: Type, identifier: string): ExtensionMethods_Microsoft_AspNetCore_Components_Web<void>;
-  RegisterForJavaScript(componentType: Type, identifier: string, javaScriptInitializer: string): ExtensionMethods_Microsoft_AspNetCore_Components_Web<void>;
+  RegisterForJavaScript(componentType: System.Type, identifier: string): ExtensionMethods_Microsoft_AspNetCore_Components_Web<void>;
+  RegisterForJavaScript(componentType: System.Type, identifier: string, javaScriptInitializer: string): ExtensionMethods_Microsoft_AspNetCore_Components_Web<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Connections_IConnectionBuilder {
   UseConnectionHandler<TConnectionHandler>(): ExtensionMethods_Microsoft_AspNetCore_Connections<Microsoft_AspNetCore_Connections.IConnectionBuilder>;
-  Use(middleware: Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, Func_1<Task>, Task>): ExtensionMethods_Microsoft_AspNetCore_Connections<Microsoft_AspNetCore_Connections.IConnectionBuilder>;
-  Use(middleware: Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, Microsoft_AspNetCore_Connections.ConnectionDelegate, Task>): ExtensionMethods_Microsoft_AspNetCore_Connections<Microsoft_AspNetCore_Connections.IConnectionBuilder>;
-  Run(middleware: Func_2<Microsoft_AspNetCore_Connections.ConnectionContext, Task>): ExtensionMethods_Microsoft_AspNetCore_Connections<Microsoft_AspNetCore_Connections.IConnectionBuilder>;
+  Use(middleware: System.Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, System.Func_1<System_Threading_Tasks.Task>, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Connections<Microsoft_AspNetCore_Connections.IConnectionBuilder>;
+  Use(middleware: System.Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, Microsoft_AspNetCore_Connections.ConnectionDelegate, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Connections<Microsoft_AspNetCore_Connections.IConnectionBuilder>;
+  Run(middleware: System.Func_2<Microsoft_AspNetCore_Connections.ConnectionContext, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Connections<Microsoft_AspNetCore_Connections.IConnectionBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder {
   SetApplicationName(applicationName: string): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   AddKeyEscrowSink(sink: Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   AddKeyEscrowSink<TImplementation>(): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  AddKeyEscrowSink(factory: Func_2<IServiceProvider, Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink>): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  AddKeyManagementOptions(setupAction: Action_1<Microsoft_AspNetCore_DataProtection_KeyManagement.KeyManagementOptions>): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  AddKeyEscrowSink(factory: System.Func_2<System.IServiceProvider, Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink>): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  AddKeyManagementOptions(setupAction: System.Action_1<Microsoft_AspNetCore_DataProtection_KeyManagement.KeyManagementOptions>): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   DisableAutomaticKeyGeneration(): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  PersistKeysToFileSystem(directory: DirectoryInfo): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  PersistKeysToRegistry(registryKey: RegistryKey): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  ProtectKeysWithCertificate(certificate: X509Certificate2): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  PersistKeysToFileSystem(directory: System_IO.DirectoryInfo): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  PersistKeysToRegistry(registryKey: Microsoft_Win32.RegistryKey): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  ProtectKeysWithCertificate(certificate: System_Security_Cryptography_X509Certificates.X509Certificate2): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   ProtectKeysWithCertificate(thumbprint: string): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  UnprotectKeysWithAnyCertificate(certificates: X509Certificate2[]): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  UnprotectKeysWithAnyCertificate(...certificates: System_Security_Cryptography_X509Certificates.X509Certificate2[]): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   ProtectKeysWithDpapi(): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   ProtectKeysWithDpapi(protectToLocalMachine: boolean): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   ProtectKeysWithDpapiNG(): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   ProtectKeysWithDpapiNG(protectionDescriptorRule: string, flags: Microsoft_AspNetCore_DataProtection_XmlEncryption.DpapiNGProtectionDescriptorFlags): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  SetDefaultKeyLifetime(lifetime: TimeSpan): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  SetDefaultKeyLifetime(lifetime: System.TimeSpan): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   UseCryptographicAlgorithms(configuration: Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel.AuthenticatedEncryptorConfiguration): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   UseCustomCryptographicAlgorithms(configuration: Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel.CngCbcAuthenticatedEncryptorConfiguration): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   UseCustomCryptographicAlgorithms(configuration: Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel.CngGcmAuthenticatedEncryptorConfiguration): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
@@ -521,8 +585,8 @@ export interface __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilde
 }
 
 export interface __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider {
-  CreateProtector(purposes: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtector>;
-  CreateProtector(purpose: string, subPurposes: string[]): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtector>;
+  CreateProtector(purposes: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtector>;
+  CreateProtector(purpose: string, ...subPurposes: string[]): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtector>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_DataProtection_IDataProtector {
@@ -532,10 +596,21 @@ export interface __Ext_Microsoft_AspNetCore_DataProtection_IDataProtector {
 }
 
 export interface __Ext_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector {
-  Protect(plaintext: byte[], lifetime: TimeSpan): ExtensionMethods_Microsoft_AspNetCore_DataProtection<byte[]>;
-  Protect(plaintext: string, expiration: DateTimeOffset): ExtensionMethods_Microsoft_AspNetCore_DataProtection<string>;
-  Protect(plaintext: string, lifetime: TimeSpan): ExtensionMethods_Microsoft_AspNetCore_DataProtection<string>;
-  Unprotect(protectedData: string, expiration: DateTimeOffset): ExtensionMethods_Microsoft_AspNetCore_DataProtection<string>;
+  Protect(plaintext: byte[], lifetime: System.TimeSpan): ExtensionMethods_Microsoft_AspNetCore_DataProtection<byte[]>;
+  Protect(plaintext: string, expiration: System.DateTimeOffset): ExtensionMethods_Microsoft_AspNetCore_DataProtection<string>;
+  Protect(plaintext: string, lifetime: System.TimeSpan): ExtensionMethods_Microsoft_AspNetCore_DataProtection<string>;
+  Unprotect(protectedData: string, expiration: System.DateTimeOffset): ExtensionMethods_Microsoft_AspNetCore_DataProtection<string>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_DataProtection_IServiceProvider {
+  GetApplicationUniqueIdentifier(): ExtensionMethods_Microsoft_AspNetCore_DataProtection<string | undefined>;
+  GetDataProtectionProvider(): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtectionProvider>;
+  GetDataProtector(purposes: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtector>;
+  GetDataProtector(purpose: string, ...subPurposes: string[]): ExtensionMethods_Microsoft_AspNetCore_DataProtection<Microsoft_AspNetCore_DataProtection.IDataProtector>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_XElement {
+  MarkAsRequiresEncryption(): ExtensionMethods_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Hosting_IHostingEnvironment {
@@ -546,84 +621,84 @@ export interface __Ext_Microsoft_AspNetCore_Hosting_IHostingEnvironment {
 }
 
 export interface __Ext_Microsoft_AspNetCore_Hosting_IWebHost {
-  StopAsync(timeout: TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Hosting<Task>;
+  StopAsync(timeout: System.TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Hosting<System_Threading_Tasks.Task>;
   WaitForShutdown(): ExtensionMethods_Microsoft_AspNetCore_Hosting<void>;
-  WaitForShutdownAsync(token: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Hosting<Task>;
+  WaitForShutdownAsync(token?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Hosting<System_Threading_Tasks.Task>;
   Run(): ExtensionMethods_Microsoft_AspNetCore_Hosting<void>;
-  RunAsync(token: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Hosting<Task>;
+  RunAsync(token?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Hosting<System_Threading_Tasks.Task>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Hosting_IWebHostBuilder {
-  Configure(configureApp: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  Configure(configureApp: Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseStartup<TStartup>(startupFactory: Func_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, TStartup>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseStartup(startupType: Type): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  Configure(configureApp: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  Configure(configureApp: System.Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseStartup<TStartup>(startupFactory: System.Func_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, TStartup>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseStartup(startupType: System.Type): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseStartup<TStartup>(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseDefaultServiceProvider(configure: Action_1<ServiceProviderOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseDefaultServiceProvider(configure: Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, ServiceProviderOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  ConfigureAppConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  ConfigureLogging(configureLogging: Action_1<ILoggingBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  ConfigureLogging(configureLogging: Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, ILoggingBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseDefaultServiceProvider(configure: System.Action_1<Microsoft_Extensions_DependencyInjection.ServiceProviderOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseDefaultServiceProvider(configure: System.Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_Extensions_DependencyInjection.ServiceProviderOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  ConfigureAppConfiguration(configureDelegate: System.Action_1<Microsoft_Extensions_Configuration.IConfigurationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  ConfigureLogging(configureLogging: System.Action_1<Microsoft_Extensions_Logging.ILoggingBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  ConfigureLogging(configureLogging: System.Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_Extensions_Logging.ILoggingBuilder>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseStaticWebAssets(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseConfiguration(configuration: IConfiguration): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseConfiguration(configuration: Microsoft_Extensions_Configuration.IConfiguration): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   CaptureStartupErrors(captureStartupErrors: boolean): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseStartup(startupAssemblyName: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseServer(server: Microsoft_AspNetCore_Hosting_Server.IServer): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseEnvironment(environment: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseContentRoot(contentRoot: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseWebRoot(webRoot: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseUrls(urls: string[]): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseUrls(...urls: string[]): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   PreferHostingUrls(preferHostingUrls: boolean): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   SuppressStatusMessages(suppressStatusMessages: boolean): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseShutdownTimeout(timeout: TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  Start(urls: string[]): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHost>;
+  UseShutdownTimeout(timeout: System.TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  Start(...urls: string[]): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHost>;
   UseHttpSys(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseHttpSys(options: Action_1<Microsoft_AspNetCore_Server_HttpSys.HttpSysOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseHttpSys(options: System.Action_1<Microsoft_AspNetCore_Server_HttpSys.HttpSysOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseIIS(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseIISIntegration(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseKestrelHttpsConfiguration(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseKestrel(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseKestrelCore(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseKestrel(options: Action_1<Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  ConfigureKestrel(options: Action_1<Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseKestrel(configureOptions: Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  ConfigureKestrel(configureOptions: Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseKestrel(options: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  ConfigureKestrel(options: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseKestrel(configureOptions: System.Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  ConfigureKestrel(configureOptions: System.Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseNamedPipes(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseNamedPipes(configureOptions: Action_1<Microsoft_AspNetCore_Server_Kestrel_Transport_NamedPipes.NamedPipeTransportOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseNamedPipes(configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Transport_NamedPipes.NamedPipeTransportOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseQuic(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseQuic(configureOptions: Action_1<Microsoft_AspNetCore_Server_Kestrel_Transport_Quic.QuicTransportOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseQuic(configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Transport_Quic.QuicTransportOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseSockets(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseSockets(configureOptions: Action_1<Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets.SocketTransportOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseSockets(configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets.SocketTransportOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Hosting_KestrelServerOptions {
   UseSystemd(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>;
-  UseSystemd(configure: Action_1<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>;
+  UseSystemd(configure: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Hosting_ListenOptions {
   UseHttps(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(fileName: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(fileName: string, password: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(fileName: string, password: string, configureOptions: Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(storeName: StoreName, subject: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(storeName: StoreName, subject: string, allowInvalid: boolean): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation, configureOptions: Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(serverCertificate: X509Certificate2): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(serverCertificate: X509Certificate2, configureOptions: Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(configureOptions: Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(fileName: string, password: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(storeName: System_Security_Cryptography_X509Certificates.StoreName, subject: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(storeName: System_Security_Cryptography_X509Certificates.StoreName, subject: string, allowInvalid: boolean): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(storeName: System_Security_Cryptography_X509Certificates.StoreName, subject: string, allowInvalid: boolean, location: System_Security_Cryptography_X509Certificates.StoreLocation): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(storeName: System_Security_Cryptography_X509Certificates.StoreName, subject: string, allowInvalid: boolean, location: System_Security_Cryptography_X509Certificates.StoreLocation, configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(serverCertificate: System_Security_Cryptography_X509Certificates.X509Certificate2): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(serverCertificate: System_Security_Cryptography_X509Certificates.X509Certificate2, configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(httpsOptions: Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown, handshakeTimeout: TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(serverOptionsSelectionCallback: System_Net_Security.ServerOptionsSelectionCallback, state: unknown): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(serverOptionsSelectionCallback: System_Net_Security.ServerOptionsSelectionCallback, state: unknown, handshakeTimeout: System.TimeSpan): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(callbackOptions: Microsoft_AspNetCore_Server_Kestrel_Https.TlsHandshakeCallbackOptions): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseConnectionLogging(): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseConnectionLogging(loggerName: string): ExtensionMethods_Microsoft_AspNetCore_Hosting<Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Html_IHtmlContentBuilder {
-  AppendFormat(format: string, args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Html<Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
-  AppendFormat(formatProvider: IFormatProvider, format: string, args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Html<Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
+  AppendFormat(format: string, ...args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Html<Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
+  AppendFormat(formatProvider: System.IFormatProvider, format: string, ...args: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Html<Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
   AppendLine(): ExtensionMethods_Microsoft_AspNetCore_Html<Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
   AppendLine(unencoded: string): ExtensionMethods_Microsoft_AspNetCore_Html<Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
   AppendLine(content: Microsoft_AspNetCore_Html.IHtmlContent): ExtensionMethods_Microsoft_AspNetCore_Html<Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
@@ -636,15 +711,15 @@ export interface __Ext_Microsoft_AspNetCore_Html_IHtmlContentBuilder {
 export interface __Ext_Microsoft_AspNetCore_Http_RouteHandlerBuilder {
   AddEndpointFilter<TFilterType>(): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   ExcludeFromDescription(): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  Produces<TResponse>(statusCode: int, contentType: string, additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  Produces(statusCode: int, responseType: Type, contentType: string, additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  ProducesProblem(statusCode: int, contentType: string): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  ProducesValidationProblem(statusCode: int, contentType: string): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  WithTags(tags: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  Accepts<TRequest>(contentType: string, additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  Accepts<TRequest>(isOptional: boolean, contentType: string, additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  Accepts(requestType: Type, contentType: string, additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  Accepts(requestType: Type, isOptional: boolean, contentType: string, additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Produces<TResponse>(statusCode?: int, contentType?: string, ...additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Produces(statusCode: int, responseType?: System.Type, contentType?: string, ...additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  ProducesProblem(statusCode: int, contentType?: string): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  ProducesValidationProblem(statusCode?: int, contentType?: string): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  WithTags(...tags: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Accepts<TRequest>(contentType: string, ...additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Accepts<TRequest>(isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Accepts(requestType: System.Type, contentType: string, ...additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Accepts(requestType: System.Type, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Http_HttpContext {
@@ -658,57 +733,57 @@ export interface __Ext_Microsoft_AspNetCore_Http_HttpRequest {
   EnableBuffering(bufferThreshold: int): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   EnableBuffering(bufferLimit: long): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   EnableBuffering(bufferThreshold: int, bufferLimit: long): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
-  ReadFormAsync(options: Microsoft_AspNetCore_Http_Features.FormOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task_1<Microsoft_AspNetCore_Http.IFormCollection>>;
-  GetDeclaredTrailers(): ExtensionMethods_Microsoft_AspNetCore_Http<StringValues>;
+  ReadFormAsync(options: Microsoft_AspNetCore_Http_Features.FormOptions, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Http.IFormCollection>>;
+  GetDeclaredTrailers(): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_Extensions_Primitives.StringValues>;
   SupportsTrailers(): ExtensionMethods_Microsoft_AspNetCore_Http<boolean>;
   CheckTrailersAvailable(): ExtensionMethods_Microsoft_AspNetCore_Http<boolean>;
-  GetTrailer(trailerName: string): ExtensionMethods_Microsoft_AspNetCore_Http<StringValues>;
+  GetTrailer(trailerName: string): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_Extensions_Primitives.StringValues>;
   GetTypedHeaders(): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Http_Headers.RequestHeaders>;
-  ReadFromJsonAsync<TValue>(cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<TValue>>;
-  ReadFromJsonAsync<TValue>(options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<TValue>>;
-  ReadFromJsonAsync<TValue>(jsonTypeInfo: JsonTypeInfo_1<TValue>, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<TValue>>;
-  ReadFromJsonAsync(jsonTypeInfo: JsonTypeInfo, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
-  ReadFromJsonAsync(type: Type, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
-  ReadFromJsonAsync(type: Type, options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
-  ReadFromJsonAsync(type: Type, context: JsonSerializerContext, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<ValueTask_1<unknown>>;
+  ReadFromJsonAsync<TValue>(cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.ValueTask_1<TValue>>;
+  ReadFromJsonAsync<TValue>(options: System_Text_Json.JsonSerializerOptions, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.ValueTask_1<TValue>>;
+  ReadFromJsonAsync<TValue>(jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo_1<TValue>, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.ValueTask_1<TValue>>;
+  ReadFromJsonAsync(jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.ValueTask_1<unknown>>;
+  ReadFromJsonAsync(type: System.Type, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.ValueTask_1<unknown>>;
+  ReadFromJsonAsync(type: System.Type, options: System_Text_Json.JsonSerializerOptions, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.ValueTask_1<unknown>>;
+  ReadFromJsonAsync(type: System.Type, context: System_Text_Json_Serialization.JsonSerializerContext, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.ValueTask_1<unknown>>;
   HasJsonContentType(): ExtensionMethods_Microsoft_AspNetCore_Http<boolean>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Http_HttpResponse {
-  WriteAsync(text: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsync(text: string, encoding: Encoding, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
+  WriteAsync(text: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsync(text: string, encoding: System_Text.Encoding, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
   DeclareTrailer(trailerName: string): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   SupportsTrailers(): ExtensionMethods_Microsoft_AspNetCore_Http<boolean>;
-  AppendTrailer(trailerName: string, trailerValues: StringValues): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
+  AppendTrailer(trailerName: string, trailerValues: Microsoft_Extensions_Primitives.StringValues): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   GetTypedHeaders(): ExtensionMethods_Microsoft_AspNetCore_Http<Microsoft_AspNetCore_Http_Headers.ResponseHeaders>;
-  WriteAsJsonAsync<TValue>(value: TValue, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync<TValue>(value: TValue, options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync<TValue>(value: TValue, options: JsonSerializerOptions, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync<TValue>(value: TValue, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync(value: unknown, jsonTypeInfo: JsonTypeInfo, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync(value: unknown, type: Type, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync(value: unknown, type: Type, options: JsonSerializerOptions, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync(value: unknown, type: Type, options: JsonSerializerOptions, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  WriteAsJsonAsync(value: unknown, type: Type, context: JsonSerializerContext, contentType: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
+  WriteAsJsonAsync<TValue>(value: TValue, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync<TValue>(value: TValue, options: System_Text_Json.JsonSerializerOptions, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync<TValue>(value: TValue, options: System_Text_Json.JsonSerializerOptions, contentType: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync<TValue>(value: TValue, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo_1<TValue>, contentType?: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(value: unknown, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo, contentType?: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(value: unknown, type: System.Type, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(value: unknown, type: System.Type, options: System_Text_Json.JsonSerializerOptions, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(value: unknown, type: System.Type, options: System_Text_Json.JsonSerializerOptions, contentType: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(value: unknown, type: System.Type, context: System_Text_Json_Serialization.JsonSerializerContext, contentType?: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
   Clear(): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   Redirect(location: string, permanent: boolean, preserveMethod: boolean): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
-  SendFileAsync(file: IFileInfo, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  SendFileAsync(file: IFileInfo, offset: long, count: Nullable_1<System_Internal.Int64>, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  SendFileAsync(fileName: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
-  SendFileAsync(fileName: string, offset: long, count: Nullable_1<System_Internal.Int64>, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<Task>;
+  SendFileAsync(file: Microsoft_Extensions_FileProviders.IFileInfo, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  SendFileAsync(file: Microsoft_Extensions_FileProviders.IFileInfo, offset: long, count: System.Nullable_1<System_Internal.Int64>, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  SendFileAsync(fileName: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
+  SendFileAsync(fileName: string, offset: long, count: System.Nullable_1<System_Internal.Int64>, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_Http<System_Threading_Tasks.Task>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Http_IHeaderDictionary {
-  Append(key: string, value: StringValues): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
-  AppendCommaSeparatedValues(key: string, values: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
+  Append(key: string, value: Microsoft_Extensions_Primitives.StringValues): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
+  AppendCommaSeparatedValues(key: string, ...values: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   GetCommaSeparatedValues(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<string[]>;
-  SetCommaSeparatedValues(key: string, values: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
-  AppendList<T>(name: string, values: IList_1<T>): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
+  SetCommaSeparatedValues(key: string, ...values: string[]): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
+  AppendList<T>(name: string, values: System_Collections_Generic.IList_1<T>): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Http_ISession {
   SetInt32(key: string, value: int): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
-  GetInt32(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<Nullable_1<System_Internal.Int32>>;
+  GetInt32(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<System.Nullable_1<System_Internal.Int32>>;
   SetString(key: string, value: string): ExtensionMethods_Microsoft_AspNetCore_Http<void>;
   GetString(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<string | undefined>;
   Get(key: string): ExtensionMethods_Microsoft_AspNetCore_Http<byte[] | undefined>;
@@ -731,16 +806,16 @@ export interface __Ext_Microsoft_AspNetCore_Http_Extensions_HttpRequest {
 
 export interface __Ext_Microsoft_AspNetCore_Http_Features_IFeatureCollection {
   GetRequiredFeature<TFeature>(): ExtensionMethods_Microsoft_AspNetCore_Http_Features<TFeature>;
-  GetRequiredFeature(key: Type): ExtensionMethods_Microsoft_AspNetCore_Http_Features<unknown>;
+  GetRequiredFeature(key: System.Type): ExtensionMethods_Microsoft_AspNetCore_Http_Features<unknown>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Identity_AuthenticationBuilder {
   AddIdentityCookies(): ExtensionMethods_Microsoft_AspNetCore_Identity<Microsoft_AspNetCore_Identity.IdentityCookiesBuilder>;
-  AddIdentityCookies(configureCookies: Action_1<Microsoft_AspNetCore_Identity.IdentityCookiesBuilder>): ExtensionMethods_Microsoft_AspNetCore_Identity<Microsoft_AspNetCore_Identity.IdentityCookiesBuilder>;
-  AddApplicationCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
-  AddExternalCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
-  AddTwoFactorRememberMeCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
-  AddTwoFactorUserIdCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
+  AddIdentityCookies(configureCookies: System.Action_1<Microsoft_AspNetCore_Identity.IdentityCookiesBuilder>): ExtensionMethods_Microsoft_AspNetCore_Identity<Microsoft_AspNetCore_Identity.IdentityCookiesBuilder>;
+  AddApplicationCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<Microsoft_Extensions_Options.OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
+  AddExternalCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<Microsoft_Extensions_Options.OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
+  AddTwoFactorRememberMeCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<Microsoft_Extensions_Options.OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
+  AddTwoFactorUserIdCookie(): ExtensionMethods_Microsoft_AspNetCore_Identity<Microsoft_Extensions_Options.OptionsBuilder_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Identity_IdentityBuilder {
@@ -771,8 +846,8 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_IUrlHelper {
   Page(pageName: string, pageHandler: string, values: unknown, protocol: string): ExtensionMethods_Microsoft_AspNetCore_Mvc<string | undefined>;
   Page(pageName: string, pageHandler: string, values: unknown, protocol: string, host: string): ExtensionMethods_Microsoft_AspNetCore_Mvc<string | undefined>;
   Page(pageName: string, pageHandler: string, values: unknown, protocol: string, host: string, fragment: string): ExtensionMethods_Microsoft_AspNetCore_Mvc<string | undefined>;
-  ActionLink(action: string, controller: string, values: unknown, protocol: string, host: string, fragment: string): ExtensionMethods_Microsoft_AspNetCore_Mvc<string | undefined>;
-  PageLink(pageName: string, pageHandler: string, values: unknown, protocol: string, host: string, fragment: string): ExtensionMethods_Microsoft_AspNetCore_Mvc<string | undefined>;
+  ActionLink(action?: string, controller?: string, values?: unknown, protocol?: string, host?: string, fragment?: string): ExtensionMethods_Microsoft_AspNetCore_Mvc<string | undefined>;
+  PageLink(pageName?: string, pageHandler?: string, values?: unknown, protocol?: string, host?: string, fragment?: string): ExtensionMethods_Microsoft_AspNetCore_Mvc<string | undefined>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor {
@@ -785,35 +860,56 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescription {
   SetProperty<T>(value: T): ExtensionMethods_Microsoft_AspNetCore_Mvc_ApiExplorer<void>;
 }
 
+export interface __Ext_Microsoft_AspNetCore_Mvc_Formatters_Xml_IEnumerable_1<T> {
+  GetWrapperProvider(wrapperProviderContext: Microsoft_AspNetCore_Mvc_Formatters_Xml.WrapperProviderContext): ExtensionMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml<Microsoft_AspNetCore_Mvc_Formatters_Xml.IWrapperProvider | undefined>;
+}
+
 export interface __Ext_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer {
   GetHtml(name: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization<Microsoft_AspNetCore_Mvc_Localization.LocalizedHtmlString>;
-  GetHtml(name: string, arguments: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization<Microsoft_AspNetCore_Mvc_Localization.LocalizedHtmlString>;
-  GetAllStrings(): ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization<IEnumerable_1<LocalizedString>>;
+  GetHtml(name: string, ...arguments: unknown[]): ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization<Microsoft_AspNetCore_Mvc_Localization.LocalizedHtmlString>;
+  GetAllStrings(): ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization<System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_Localization.LocalizedString>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider {
-  GetMetadataForProperty(containerType: Type, propertyName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata>;
+  GetMetadataForProperty(containerType: System.Type, propertyName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary {
-  AddModelError<TModel>(expression: Expression_1<Func_2<TModel, unknown>>, errorMessage: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
-  TryAddModelException<TModel>(expression: Expression_1<Func_2<TModel, unknown>>, exception: Exception): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
-  AddModelError<TModel>(expression: Expression_1<Func_2<TModel, unknown>>, exception: Exception, metadata: Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
-  Remove<TModel>(expression: Expression_1<Func_2<TModel, unknown>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<boolean>;
-  RemoveAll<TModel>(expression: Expression_1<Func_2<TModel, unknown>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+  AddModelError<TModel>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>, errorMessage: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+  TryAddModelException<TModel>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>, exception: System.Exception): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+  AddModelError<TModel>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>, exception: System.Exception, metadata: Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+  Remove<TModel>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<boolean>;
+  RemoveAll<TModel>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_IList_1<T> {
+  RemoveType<TModelBinderProvider>(): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+  RemoveType(type: System.Type): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+  RemoveType<TValueProviderFactory>(): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+  RemoveType(type: System.Type): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<void>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IList_1<T> {
+  RemoveType<TMetadataDetailsProvider>(): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata<void>;
+  RemoveType(type: System.Type): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata<void>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IList_1<T> {
+  RemoveType<TModelValidatorProvider>(): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation<void>;
+  RemoveType(type: System.Type): ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IViewComponentHelper {
-  InvokeAsync(name: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  InvokeAsync(componentType: Type): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  InvokeAsync<TComponent>(arguments: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  InvokeAsync<TComponent>(): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  InvokeAsync(name: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  InvokeAsync(componentType: System.Type): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  InvokeAsync<TComponent>(arguments: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  InvokeAsync<TComponent>(): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper {
-  RenderComponentAsync<TComponent>(renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  RenderComponentAsync<TComponent>(renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  RenderComponentAsync(componentType: Type, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  RenderComponentAsync<TComponent>(renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  RenderComponentAsync<TComponent>(renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  RenderComponentAsync(componentType: System.Type, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   Display(expression: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   Display(expression: string, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   Display(expression: string, templateName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
@@ -838,10 +934,10 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper {
   EditorForModel(templateName: string, htmlFieldName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   EditorForModel(templateName: string, htmlFieldName: string, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   BeginForm(): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(antiforgery: Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(antiforgery: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, antiforgery: System.Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(routeValues: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(actionName: string, controllerName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(actionName: string, controllerName: string, routeValues: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
@@ -849,9 +945,9 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper {
   BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(actionName: string, controllerName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(routeValues: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginRouteForm(routeValues: unknown, antiforgery: Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginRouteForm(routeValues: unknown, antiforgery: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(routeName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginRouteForm(routeName: string, antiforgery: Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginRouteForm(routeName: string, antiforgery: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(routeName: string, routeValues: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(routeName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(routeName: string, routeValues: unknown, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
@@ -893,9 +989,9 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper {
   RouteLink(linkText: string, routeName: string, routeValues: unknown, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   NameForModel(): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<string>;
   IdForModel(): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<string>;
-  PartialAsync(partialViewName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  PartialAsync(partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  PartialAsync(partialViewName: string, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  PartialAsync(partialViewName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  PartialAsync(partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  PartialAsync(partialViewName: string, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   Partial(partialViewName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   Partial(partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   Partial(partialViewName: string, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
@@ -904,16 +1000,16 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper {
   RenderPartial(partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<void>;
   RenderPartial(partialViewName: string, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<void>;
   RenderPartial(partialViewName: string, model: unknown, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<void>;
-  RenderPartialAsync(partialViewName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task>;
-  RenderPartialAsync(partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task>;
-  RenderPartialAsync(partialViewName: string, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Task>;
+  RenderPartialAsync(partialViewName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task>;
+  RenderPartialAsync(partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task>;
+  RenderPartialAsync(partialViewName: string, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<System_Threading_Tasks.Task>;
   DropDownList(expression: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   DropDownList(expression: string, optionLabel: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownList(expression: string, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownList(expression: string, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownList(expression: string, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, optionLabel: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownList(expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownList(expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownList(expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, optionLabel: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   ListBox(expression: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  ListBox(expression: string, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  ListBox(expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationMessage(expression: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationMessage(expression: string, message: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationMessage(expression: string, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
@@ -934,46 +1030,46 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper {
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_1<TModel> {
-  DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayNameFor<TModelItem, TResult>(expression: Expression_1<Func_2<TModelItem, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<string>;
-  EditorFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  CheckBoxFor(expression: Expression_1<Func_2<TModel, System_Internal.Boolean>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  HiddenFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  PasswordFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  RadioButtonFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, value: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, format: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextAreaFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextAreaFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, labelText: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownListFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownListFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownListFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, optionLabel: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  ListBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, message: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, message: string, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, message: string, tag: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValueFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<string>;
+  DisplayFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayNameFor<TModelItem, TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModelItem, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<string>;
+  EditorFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  CheckBoxFor(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, System_Internal.Boolean>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  HiddenFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  PasswordFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  RadioButtonFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, value: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBoxFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBoxFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, format: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBoxFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextAreaFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextAreaFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, labelText: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownListFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownListFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownListFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, optionLabel: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  ListBoxFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string, htmlAttributes: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string, tag: string): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValueFor<TResult>(expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): ExtensionMethods_Microsoft_AspNetCore_Mvc_Rendering<string>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_TagHelpers_TagHelperOutput {
   CopyHtmlAttribute(attributeName: string, context: Microsoft_AspNetCore_Razor_TagHelpers.TagHelperContext): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
   MergeAttributes(tagBuilder: Microsoft_AspNetCore_Mvc_Rendering.TagBuilder): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
-  RemoveRange(attributes: IEnumerable_1<Microsoft_AspNetCore_Razor_TagHelpers.TagHelperAttribute>): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
-  AddClass(classValue: string, htmlEncoder: HtmlEncoder): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
-  RemoveClass(classValue: string, htmlEncoder: HtmlEncoder): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
+  RemoveRange(attributes: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Razor_TagHelpers.TagHelperAttribute>): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
+  AddClass(classValue: string, htmlEncoder: System_Text_Encodings_Web.HtmlEncoder): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
+  RemoveClass(classValue: string, htmlEncoder: System_Text_Encodings_Web.HtmlEncoder): ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_ViewFeatures_IAntiforgery {
@@ -981,7 +1077,7 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_ViewFeatures_IAntiforgery {
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_ViewFeatures_IModelMetadataProvider {
-  GetModelExplorerForType(modelType: Type, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_ViewFeatures<Microsoft_AspNetCore_Mvc_ViewFeatures.ModelExplorer>;
+  GetModelExplorerForType(modelType: System.Type, model: unknown): ExtensionMethods_Microsoft_AspNetCore_Mvc_ViewFeatures<Microsoft_AspNetCore_Mvc_ViewFeatures.ModelExplorer>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator {
@@ -994,42 +1090,42 @@ export interface __Ext_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExplorer {
 }
 
 export interface __Ext_Microsoft_AspNetCore_RateLimiting_RateLimiterOptions {
-  AddTokenBucketLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.TokenBucketRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
-  AddFixedWindowLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.FixedWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
-  AddSlidingWindowLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.SlidingWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
-  AddConcurrencyLimiter(policyName: string, configureOptions: Action_1<System_Threading_RateLimiting.ConcurrencyLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  AddTokenBucketLimiter(policyName: string, configureOptions: System.Action_1<System_Threading_RateLimiting.TokenBucketRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  AddFixedWindowLimiter(policyName: string, configureOptions: System.Action_1<System_Threading_RateLimiting.FixedWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  AddSlidingWindowLimiter(policyName: string, configureOptions: System.Action_1<System_Threading_RateLimiting.SlidingWindowRateLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
+  AddConcurrencyLimiter(policyName: string, configureOptions: System.Action_1<System_Threading_RateLimiting.ConcurrencyLimiterOptions>): ExtensionMethods_Microsoft_AspNetCore_RateLimiting<Microsoft_AspNetCore_RateLimiting.RateLimiterOptions>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem {
-  GetChecksumMetadata(): ExtensionMethods_Microsoft_AspNetCore_Razor_Hosting<IReadOnlyList_1<Microsoft_AspNetCore_Razor_Hosting.IRazorSourceChecksumMetadata>>;
+  GetChecksumMetadata(): ExtensionMethods_Microsoft_AspNetCore_Razor_Hosting<System_Collections_Generic.IReadOnlyList_1<Microsoft_AspNetCore_Razor_Hosting.IRazorSourceChecksumMetadata>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Rewrite_RewriteOptions {
-  AddApacheModRewrite(fileProvider: IFileProvider, filePath: string): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddApacheModRewrite(reader: TextReader): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddIISUrlRewrite(fileProvider: IFileProvider, filePath: string, alwaysUseManagedServerVariables: boolean): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddIISUrlRewrite(reader: TextReader, alwaysUseManagedServerVariables: boolean): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddApacheModRewrite(fileProvider: Microsoft_Extensions_FileProviders.IFileProvider, filePath: string): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddApacheModRewrite(reader: System_IO.TextReader): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddIISUrlRewrite(fileProvider: Microsoft_Extensions_FileProviders.IFileProvider, filePath: string, alwaysUseManagedServerVariables?: boolean): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddIISUrlRewrite(reader: System_IO.TextReader, alwaysUseManagedServerVariables?: boolean): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   Add(rule: Microsoft_AspNetCore_Rewrite.IRule): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  Add(applyRule: Action_1<Microsoft_AspNetCore_Rewrite.RewriteContext>): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  Add(applyRule: System.Action_1<Microsoft_AspNetCore_Rewrite.RewriteContext>): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRewrite(regex: string, replacement: string, skipRemainingRules: boolean): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirect(regex: string, replacement: string): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirect(regex: string, replacement: string, statusCode: int): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToHttpsPermanent(): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToHttps(): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToHttps(statusCode: int): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddRedirectToHttps(statusCode: int, sslPort: Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddRedirectToHttps(statusCode: int, sslPort: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToWwwPermanent(): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddRedirectToWwwPermanent(domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddRedirectToWwwPermanent(...domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToWww(): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddRedirectToWww(domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddRedirectToWww(...domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToWww(statusCode: int): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddRedirectToWww(statusCode: int, domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddRedirectToWww(statusCode: int, ...domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToNonWwwPermanent(): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddRedirectToNonWwwPermanent(domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddRedirectToNonWwwPermanent(...domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToNonWww(): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddRedirectToNonWww(domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddRedirectToNonWww(...domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
   AddRedirectToNonWww(statusCode: int): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
-  AddRedirectToNonWww(statusCode: int, domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
+  AddRedirectToNonWww(statusCode: int, ...domains: string[]): ExtensionMethods_Microsoft_AspNetCore_Rewrite<Microsoft_AspNetCore_Rewrite.RewriteOptions>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Routing_HttpContext {
@@ -1039,54 +1135,54 @@ export interface __Ext_Microsoft_AspNetCore_Routing_HttpContext {
 
 export interface __Ext_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
   MapIdentityApi<TUser>(): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
-  MapShortCircuit(statusCode: int, routePrefixes: string[]): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
+  MapShortCircuit(statusCode: int, ...routePrefixes: string[]): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Routing_IRouteBuilder {
   MapRoute(template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapMiddlewareRoute(template: string, action: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapMiddlewareRoute(template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapDelete(template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapMiddlewareDelete(template: string, action: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapDelete(template: string, handler: Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapMiddlewareDelete(template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapDelete(template: string, handler: System.Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapGet(template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapMiddlewareGet(template: string, action: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapGet(template: string, handler: Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapMiddlewareGet(template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapGet(template: string, handler: System.Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapPost(template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapMiddlewarePost(template: string, action: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapPost(template: string, handler: Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapMiddlewarePost(template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapPost(template: string, handler: System.Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapPut(template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapMiddlewarePut(template: string, action: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapPut(template: string, handler: Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapVerb(verb: string, template: string, handler: Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapMiddlewarePut(template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapPut(template: string, handler: System.Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapVerb(verb: string, template: string, handler: System.Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapVerb(verb: string, template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapMiddlewareVerb(verb: string, template: string, action: Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapMiddlewareVerb(verb: string, template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): ExtensionMethods_Microsoft_AspNetCore_Routing<Microsoft_AspNetCore_Routing.IRouteBuilder>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Routing_LinkGenerator {
-  GetPathByAction(httpContext: Microsoft_AspNetCore_Http.HttpContext, action: string, controller: string, values: unknown, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByAction(action: string, controller: string, values: unknown, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByAction(httpContext: Microsoft_AspNetCore_Http.HttpContext, action: string, controller: string, values: unknown, scheme: string, host: Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByAction(action: string, controller: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByPage(httpContext: Microsoft_AspNetCore_Http.HttpContext, page: string, handler: string, values: unknown, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByPage(page: string, handler: string, values: unknown, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByPage(httpContext: Microsoft_AspNetCore_Http.HttpContext, page: string, handler: string, values: unknown, scheme: string, host: Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByPage(page: string, handler: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: unknown, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByName(endpointName: string, values: unknown, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByName(endpointName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: unknown, scheme: string, host: Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByName(endpointName: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByName(endpointName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values: unknown, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByRouteValues(routeName: string, values: unknown, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetPathByRouteValues(routeName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values: unknown, scheme: string, host: Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase: Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByRouteValues(routeName: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
-  GetUriByRouteValues(routeName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase: Microsoft_AspNetCore_Http.PathString, fragment: Microsoft_AspNetCore_Http.FragmentString, options: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByAction(httpContext: Microsoft_AspNetCore_Http.HttpContext, action?: string, controller?: string, values?: unknown, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByAction(action: string, controller: string, values?: unknown, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByAction(httpContext: Microsoft_AspNetCore_Http.HttpContext, action?: string, controller?: string, values?: unknown, scheme?: string, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByAction(action: string, controller: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByPage(httpContext: Microsoft_AspNetCore_Http.HttpContext, page?: string, handler?: string, values?: unknown, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByPage(page: string, handler?: string, values?: unknown, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByPage(httpContext: Microsoft_AspNetCore_Http.HttpContext, page?: string, handler?: string, values?: unknown, scheme?: string, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByPage(page: string, handler: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: unknown, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByName(endpointName: string, values: unknown, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByName(endpointName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: unknown, scheme?: string, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByName(httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme?: string, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByName(endpointName: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByName(endpointName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values: unknown, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByRouteValues(routeName: string, values: unknown, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetPathByRouteValues(routeName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values: unknown, scheme?: string, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByRouteValues(httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme?: string, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByRouteValues(routeName: string, values: unknown, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
+  GetUriByRouteValues(routeName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions): ExtensionMethods_Microsoft_AspNetCore_Routing<string | undefined>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_Routing_LinkParser {
@@ -1112,21 +1208,21 @@ export interface __Ext_Microsoft_AspNetCore_SignalR_HubConnectionContext {
 export interface __Ext_Microsoft_AspNetCore_SignalR_HubOptions {
   AddFilter(hubFilter: Microsoft_AspNetCore_SignalR.IHubFilter): ExtensionMethods_Microsoft_AspNetCore_SignalR<void>;
   AddFilter<TFilter>(): ExtensionMethods_Microsoft_AspNetCore_SignalR<void>;
-  AddFilter(filterType: Type): ExtensionMethods_Microsoft_AspNetCore_SignalR<void>;
+  AddFilter(filterType: System.Type): ExtensionMethods_Microsoft_AspNetCore_SignalR<void>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_SignalR_IClientProxy {
-  SendAsync(method: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
-  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task>;
+  SendAsync(method: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
+  SendAsync(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_SignalR_IHubClients_1<T> {
@@ -1138,7 +1234,7 @@ export interface __Ext_Microsoft_AspNetCore_SignalR_IHubClients_1<T> {
   AllExcept(excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   AllExcept(excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   AllExcept(excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
-  AllExcept(excludedConnectionIds: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
+  AllExcept(excludedConnectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Clients(connection1: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Clients(connection1: string, connection2: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Clients(connection1: string, connection2: string, connection3: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
@@ -1147,7 +1243,7 @@ export interface __Ext_Microsoft_AspNetCore_SignalR_IHubClients_1<T> {
   Clients(connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Clients(connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Clients(connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string, connection8: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
-  Clients(connectionIds: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
+  Clients(connectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Groups(group1: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Groups(group1: string, group2: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Groups(group1: string, group2: string, group3: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
@@ -1156,7 +1252,7 @@ export interface __Ext_Microsoft_AspNetCore_SignalR_IHubClients_1<T> {
   Groups(group1: string, group2: string, group3: string, group4: string, group5: string, group6: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Groups(group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Groups(group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string, group8: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
-  Groups(groupNames: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
+  Groups(groupNames: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   GroupExcept(groupName: string, excludedConnectionId1: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   GroupExcept(groupName: string, excludedConnectionId1: string, excludedConnectionId2: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   GroupExcept(groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
@@ -1165,7 +1261,7 @@ export interface __Ext_Microsoft_AspNetCore_SignalR_IHubClients_1<T> {
   GroupExcept(groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   GroupExcept(groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   GroupExcept(groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
-  GroupExcept(groupName: string, excludedConnectionIds: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
+  GroupExcept(groupName: string, excludedConnectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Users(user1: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Users(user1: string, user2: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Users(user1: string, user2: string, user3: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
@@ -1174,53 +1270,63 @@ export interface __Ext_Microsoft_AspNetCore_SignalR_IHubClients_1<T> {
   Users(user1: string, user2: string, user3: string, user4: string, user5: string, user6: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Users(user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
   Users(user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string, user8: string): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
-  Users(userIds: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
+  Users(userIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_AspNetCore_SignalR<T>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_SignalR_ISingleClientProxy {
-  InvokeAsync<T>(method: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
-  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<Task_1<T>>;
+  InvokeAsync<T>(method: string, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T>(method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_SignalR<System_Threading_Tasks.Task_1<T>>;
 }
 
 export interface __Ext_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol {
   GetMessageBytes(message: Microsoft_AspNetCore_SignalR_Protocol.HubMessage): ExtensionMethods_Microsoft_AspNetCore_SignalR_Protocol<byte[]>;
 }
 
+export interface __Ext_Microsoft_AspNetCore_WebSockets_IServiceCollection {
+  AddWebSockets(configure: System.Action_1<Microsoft_AspNetCore_Builder.WebSocketOptions>): ExtensionMethods_Microsoft_AspNetCore_WebSockets<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+}
+
 export interface __Ext_Microsoft_AspNetCore_WebUtilities_MultipartSection {
   AsFileSection(): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<Microsoft_AspNetCore_WebUtilities.FileMultipartSection | undefined>;
   AsFormDataSection(): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<Microsoft_AspNetCore_WebUtilities.FormMultipartSection | undefined>;
   GetContentDispositionHeader(): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<Microsoft_Net_Http_Headers.ContentDispositionHeaderValue | undefined>;
-  ReadAsStringAsync(): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<Task_1<System_Internal.String>>;
-  ReadAsStringAsync(cancellationToken: CancellationToken): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<ValueTask_1<System_Internal.String>>;
+  ReadAsStringAsync(): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<System_Threading_Tasks.Task_1<System_Internal.String>>;
+  ReadAsStringAsync(cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<System_Threading_Tasks.ValueTask_1<System_Internal.String>>;
+}
+
+export interface __Ext_Microsoft_AspNetCore_WebUtilities_Stream {
+  DrainAsync(cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<System_Threading_Tasks.Task>;
+  DrainAsync(limit: System.Nullable_1<System_Internal.Int64>, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<System_Threading_Tasks.Task>;
+  DrainAsync(bytePool: System_Buffers.ArrayPool_1<System_Internal.Byte>, limit: System.Nullable_1<System_Internal.Int64>, cancellationToken: System_Threading.CancellationToken): ExtensionMethods_Microsoft_AspNetCore_WebUtilities<System_Threading_Tasks.Task>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyInjection_AuthenticationBuilder {
   AddBearerToken(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddBearerToken(authenticationScheme: string): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddBearerToken(configure: Action_1<Microsoft_AspNetCore_Authentication_BearerToken.BearerTokenOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddBearerToken(authenticationScheme: string, configure: Action_1<Microsoft_AspNetCore_Authentication_BearerToken.BearerTokenOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddBearerToken(configure: System.Action_1<Microsoft_AspNetCore_Authentication_BearerToken.BearerTokenOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddBearerToken(authenticationScheme: string, configure: System.Action_1<Microsoft_AspNetCore_Authentication_BearerToken.BearerTokenOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddCookie(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddCookie(authenticationScheme: string): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddCookie(configureOptions: Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddCookie(authenticationScheme: string, configureOptions: Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddCookie(authenticationScheme: string, displayName: string, configureOptions: Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth(authenticationScheme: string, configureOptions: Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth(authenticationScheme: string, displayName: string, configureOptions: Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth<TOptions, THandler>(authenticationScheme: string, configureOptions: Action_1<TOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth<TOptions, THandler>(authenticationScheme: string, displayName: string, configureOptions: Action_1<TOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddCookie(configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddCookie(authenticationScheme: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddCookie(authenticationScheme: string, displayName: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth(authenticationScheme: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth(authenticationScheme: string, displayName: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth<TOptions, THandler>(authenticationScheme: string, configureOptions: System.Action_1<TOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth<TOptions, THandler>(authenticationScheme: string, displayName: string, configureOptions: System.Action_1<TOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyInjection_PageConventionCollection {
-  ConfigureFilter(factory: Func_2<Microsoft_AspNetCore_Mvc_ApplicationModels.PageApplicationModel, Microsoft_AspNetCore_Mvc_Filters.IFilterMetadata>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Mvc_ApplicationModels.IPageApplicationModelConvention>;
+  ConfigureFilter(factory: System.Func_2<Microsoft_AspNetCore_Mvc_ApplicationModels.PageApplicationModel, Microsoft_AspNetCore_Mvc_Filters.IFilterMetadata>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Mvc_ApplicationModels.IPageApplicationModelConvention>;
   ConfigureFilter(filter: Microsoft_AspNetCore_Mvc_Filters.IFilterMetadata): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection>;
   Add(convention: Microsoft_AspNetCore_Mvc_ApplicationModels.IParameterModelBaseConvention): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection>;
   AllowAnonymousToPage(pageName: string): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection>;
@@ -1240,152 +1346,254 @@ export interface __Ext_Microsoft_Extensions_DependencyInjection_PageConventionCo
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyInjection_ISignalRServerBuilder {
-  AddHubOptions<THub>(configure: Action_1<Microsoft_AspNetCore_SignalR.HubOptions_1<THub>>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
+  AddHubOptions<THub>(configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions_1<THub>>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyInjection_IMvcBuilder {
-  AddMvcOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddJsonOptions(configure: Action_1<Microsoft_AspNetCore_Mvc.JsonOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddFormatterMappings(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddApplicationPart(assembly: Assembly): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  ConfigureApplicationPartManager(setupAction: Action_1<Microsoft_AspNetCore_Mvc_ApplicationParts.ApplicationPartManager>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvcOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddJsonOptions(configure: System.Action_1<Microsoft_AspNetCore_Mvc.JsonOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddFormatterMappings(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddApplicationPart(assembly: System_Reflection.Assembly): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  ConfigureApplicationPartManager(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_ApplicationParts.ApplicationPartManager>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddControllersAsServices(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   SetCompatibilityVersion(version: Microsoft_AspNetCore_Mvc.CompatibilityVersion): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  ConfigureApiBehaviorOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc.ApiBehaviorOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  ConfigureApiBehaviorOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.ApiBehaviorOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddDataAnnotationsLocalization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddDataAnnotationsLocalization(setupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddXmlOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddDataAnnotationsLocalization(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddXmlOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddXmlDataContractSerializerFormatters(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddXmlDataContractSerializerFormatters(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddXmlDataContractSerializerFormatters(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddXmlSerializerFormatters(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddXmlSerializerFormatters(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddXmlSerializerFormatters(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddViewLocalization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddViewLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddViewLocalization(setupAction: Action_1<LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddViewLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, setupAction: Action_1<LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddViewLocalization(setupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddViewLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, setupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddMvcLocalization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddMvcLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddMvcLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddRazorOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Razor.RazorViewEngineOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvcLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddRazorOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Razor.RazorViewEngineOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddTagHelpersAsServices(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  InitializeTagHelper<TTagHelper>(initialize: Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddRazorPagesOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc_RazorPages.RazorPagesOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  InitializeTagHelper<TTagHelper>(initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddRazorPagesOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_RazorPages.RazorPagesOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   WithRazorPagesRoot(rootDirectory: string): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   WithRazorPagesAtContentRoot(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddCacheTagHelperLimits(configure: Action_1<Microsoft_AspNetCore_Mvc_TagHelpers.CacheTagHelperOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddViewOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddCacheTagHelperLimits(configure: System.Action_1<Microsoft_AspNetCore_Mvc_TagHelpers.CacheTagHelperOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddViewOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddViewComponentsAsServices(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddSessionStateTempDataProvider(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddCookieTempDataProvider(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  AddCookieTempDataProvider(setupAction: Action_1<Microsoft_AspNetCore_Mvc.CookieTempDataProviderOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddCookieTempDataProvider(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.CookieTempDataProviderOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
   AddApiExplorer(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddMvcOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddJsonOptions(configure: Action_1<Microsoft_AspNetCore_Mvc.JsonOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddJsonOptions(configure: System.Action_1<Microsoft_AspNetCore_Mvc.JsonOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddFormatterMappings(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddFormatterMappings(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddFormatterMappings(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddAuthorization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddAuthorization(setupAction: Action_1<Microsoft_AspNetCore_Authorization.AuthorizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddAuthorization(setupAction: System.Action_1<Microsoft_AspNetCore_Authorization.AuthorizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddControllersAsServices(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddApplicationPart(assembly: Assembly): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  ConfigureApplicationPartManager(setupAction: Action_1<Microsoft_AspNetCore_Mvc_ApplicationParts.ApplicationPartManager>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  ConfigureApiBehaviorOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc.ApiBehaviorOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddApplicationPart(assembly: System_Reflection.Assembly): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  ConfigureApplicationPartManager(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_ApplicationParts.ApplicationPartManager>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  ConfigureApiBehaviorOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.ApiBehaviorOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   SetCompatibilityVersion(version: Microsoft_AspNetCore_Mvc.CompatibilityVersion): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddCors(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddCors(setupAction: Action_1<Microsoft_AspNetCore_Cors_Infrastructure.CorsOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  ConfigureCors(setupAction: Action_1<Microsoft_AspNetCore_Cors_Infrastructure.CorsOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddCors(setupAction: System.Action_1<Microsoft_AspNetCore_Cors_Infrastructure.CorsOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  ConfigureCors(setupAction: System.Action_1<Microsoft_AspNetCore_Cors_Infrastructure.CorsOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddDataAnnotations(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddDataAnnotationsLocalization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddDataAnnotationsLocalization(setupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddXmlOptions(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddDataAnnotationsLocalization(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddXmlOptions(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddXmlDataContractSerializerFormatters(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddXmlDataContractSerializerFormatters(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddXmlDataContractSerializerFormatters(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddXmlSerializerFormatters(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddXmlSerializerFormatters(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddXmlSerializerFormatters(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters_Xml.MvcXmlOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddViewLocalization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddViewLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddViewLocalization(setupAction: Action_1<LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddViewLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, setupAction: Action_1<LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddViewLocalization(setupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddViewLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, setupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddMvcLocalization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddMvcLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddMvcLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddMvcLocalization(localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcLocalization(format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcLocalization(localizationOptionsSetupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>, format: Microsoft_AspNetCore_Mvc_Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: System.Action_1<Microsoft_AspNetCore_Mvc_DataAnnotations.MvcDataAnnotationsLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddRazorViewEngine(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddRazorViewEngine(setupAction: Action_1<Microsoft_AspNetCore_Mvc_Razor.RazorViewEngineOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddRazorViewEngine(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Razor.RazorViewEngineOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddTagHelpersAsServices(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  InitializeTagHelper<TTagHelper>(initialize: Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  InitializeTagHelper<TTagHelper>(initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddRazorPages(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddRazorPages(setupAction: Action_1<Microsoft_AspNetCore_Mvc_RazorPages.RazorPagesOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddRazorPages(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_RazorPages.RazorPagesOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   WithRazorPagesRoot(rootDirectory: string): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddCacheTagHelper(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddCacheTagHelperLimits(configure: Action_1<Microsoft_AspNetCore_Mvc_TagHelpers.CacheTagHelperOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddCacheTagHelperLimits(configure: System.Action_1<Microsoft_AspNetCore_Mvc_TagHelpers.CacheTagHelperOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddViews(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddCookieTempDataProvider(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddViews(setupAction: Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  AddCookieTempDataProvider(setupAction: Action_1<Microsoft_AspNetCore_Mvc.CookieTempDataProviderOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  ConfigureViews(setupAction: Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddViews(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddCookieTempDataProvider(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.CookieTempDataProviderOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  ConfigureViews(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyInjection_IRazorComponentsBuilder {
   RegisterPersistentService<TPersistentService>(renderMode: Microsoft_AspNetCore_Components.IComponentRenderMode): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder>;
-  AddInteractiveServerComponents(configure: Action_1<Microsoft_AspNetCore_Components_Server.CircuitOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
+  AddInteractiveServerComponents(configure?: System.Action_1<Microsoft_AspNetCore_Components_Server.CircuitOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
 }
 
 export interface __Ext_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder {
-  AddCircuitOptions(configure: Action_1<Microsoft_AspNetCore_Components_Server.CircuitOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
-  AddHubOptions(configure: Action_1<Microsoft_AspNetCore_SignalR.HubOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
+  AddCircuitOptions(configure: System.Action_1<Microsoft_AspNetCore_Components_Server.CircuitOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
+  AddHubOptions(configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
+}
+
+export interface __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection {
+  AddAntiforgery(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAntiforgery(setupAction: System.Action_1<Microsoft_AspNetCore_Antiforgery.AntiforgeryOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAuthentication(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddAuthentication(defaultScheme: string): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddAuthentication(configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication.AuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddAuthenticationCore(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAuthenticationCore(configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication.AuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAuthorizationCore(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAuthorizationCore(configure: System.Action_1<Microsoft_AspNetCore_Authorization.AuthorizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAuthorizationBuilder(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Authorization.AuthorizationBuilder>;
+  AddAuthorizationPolicyEvaluator(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAuthorization(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAuthorization(configure: System.Action_1<Microsoft_AspNetCore_Authorization.AuthorizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCascadingValue<TValue>(initialValueFactory: System.Func_2<System.IServiceProvider, TValue>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCascadingValue<TValue>(name: string, initialValueFactory: System.Func_2<System.IServiceProvider, TValue>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  TryAddCascadingValue<TValue>(valueFactory: System.Func_2<System.IServiceProvider, TValue>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+  TryAddCascadingValue<TValue>(name: string, valueFactory: System.Func_2<System.IServiceProvider, TValue>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+  AddCascadingAuthenticationState(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRazorComponents(configure?: System.Action_1<Microsoft_AspNetCore_Components_Endpoints.RazorComponentsServiceOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder>;
+  AddServerSideBlazor(configure?: System.Action_1<Microsoft_AspNetCore_Components_Server.CircuitOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
+  AddCookiePolicy(configureOptions: System.Action_1<Microsoft_AspNetCore_Builder.CookiePolicyOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCookiePolicy<TService>(configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.CookiePolicyOptions, TService>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCors(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCors(setupAction: System.Action_1<Microsoft_AspNetCore_Cors_Infrastructure.CorsOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddDataProtection(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  AddDataProtection(setupAction: System.Action_1<Microsoft_AspNetCore_DataProtection.DataProtectionOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  AddExceptionHandler(configureOptions: System.Action_1<Microsoft_AspNetCore_Builder.ExceptionHandlerOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddExceptionHandler<TService>(configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.ExceptionHandlerOptions, TService>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddExceptionHandler<T>(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHttpContextAccessor(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRequestTimeouts(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRequestTimeouts(configure: System.Action_1<Microsoft_AspNetCore_Http_Timeouts.RequestTimeoutOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddConnections(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddConnections(options: System.Action_1<Microsoft_AspNetCore_Http_Connections.ConnectionOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  ConfigureHttpJsonOptions(configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Json.JsonOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddProblemDetails(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddProblemDetails(configure: System.Action_1<Microsoft_AspNetCore_Http.ProblemDetailsOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHttpLogging(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHttpLogging(configureOptions: System.Action_1<Microsoft_AspNetCore_HttpLogging.HttpLoggingOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHttpLoggingInterceptor<T>(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddW3CLogging(configureOptions: System.Action_1<Microsoft_AspNetCore_HttpLogging.W3CLoggerOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCertificateForwarding(configure: System.Action_1<Microsoft_AspNetCore_HttpOverrides.CertificateForwardingOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddIdentity<TUser, TRole>(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentity<TUser, TRole>(setupAction: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentityApiEndpoints<TUser>(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentityApiEndpoints<TUser>(configure: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  ConfigureApplicationCookie(configure: System.Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  ConfigureExternalCookie(configure: System.Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRequestLocalization(configureOptions: System.Action_1<Microsoft_AspNetCore_Builder.RequestLocalizationOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRequestLocalization<TService>(configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.RequestLocalizationOptions, TService>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddMvc(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddMvc(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddControllers(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddControllers(configure: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddControllersWithViews(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddControllersWithViews(configure: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddRazorPages(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddRazorPages(configure: System.Action_1<Microsoft_AspNetCore_Mvc_RazorPages.RazorPagesOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  AddEndpointsApiExplorer(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddMvcCore(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddMvcCore(setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  AddOutputCache(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddOutputCache(configureOptions: System.Action_1<Microsoft_AspNetCore_OutputCaching.OutputCacheOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRequestDecompression(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRequestDecompression(configureOptions: System.Action_1<Microsoft_AspNetCore_RequestDecompression.RequestDecompressionOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddResponseCaching(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddResponseCaching(configureOptions: System.Action_1<Microsoft_AspNetCore_ResponseCaching.ResponseCachingOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRouting(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRoutingCore(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRouting(configureOptions: System.Action_1<Microsoft_AspNetCore_Routing.RouteOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSession(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSession(configure: System.Action_1<Microsoft_AspNetCore_Builder.SessionOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSignalR(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
+  AddSignalR(configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
+  AddSignalRCore(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
+  AddDirectoryBrowser(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddIdentityCore<TUser>(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentityCore<TUser>(setupAction: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_AspNetCore_Identity.IdentityBuilder>;
+}
+
+export interface __Ext_Microsoft_Extensions_DependencyInjection_IList_1<T> {
+  RemoveType<TApplicationModelConvention>(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+  RemoveType(type: System.Type): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+  Add(controllerModelConvention: Microsoft_AspNetCore_Mvc_ApplicationModels.IControllerModelConvention): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+  Add(actionModelConvention: Microsoft_AspNetCore_Mvc_ApplicationModels.IActionModelConvention): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+  Add(parameterModelConvention: Microsoft_AspNetCore_Mvc_ApplicationModels.IParameterModelConvention): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+  Add(parameterModelConvention: Microsoft_AspNetCore_Mvc_ApplicationModels.IParameterModelBaseConvention): ExtensionMethods_Microsoft_Extensions_DependencyInjection<void>;
+}
+
+export interface __Ext_Microsoft_Extensions_Hosting_IHostBuilder {
+  ConfigureWebHostDefaults(configure: System.Action_1<Microsoft_AspNetCore_Hosting.IWebHostBuilder>): ExtensionMethods_Microsoft_Extensions_Hosting<Microsoft_Extensions_Hosting.IHostBuilder>;
+  ConfigureWebHostDefaults(configure: System.Action_1<Microsoft_AspNetCore_Hosting.IWebHostBuilder>, configureOptions: System.Action_1<Microsoft_Extensions_Hosting.WebHostBuilderOptions>): ExtensionMethods_Microsoft_Extensions_Hosting<Microsoft_Extensions_Hosting.IHostBuilder>;
+  ConfigureWebHost(configure: System.Action_1<Microsoft_AspNetCore_Hosting.IWebHostBuilder>): ExtensionMethods_Microsoft_Extensions_Hosting<Microsoft_Extensions_Hosting.IHostBuilder>;
+  ConfigureWebHost(configure: System.Action_1<Microsoft_AspNetCore_Hosting.IWebHostBuilder>, configureWebHostBuilder: System.Action_1<Microsoft_Extensions_Hosting.WebHostBuilderOptions>): ExtensionMethods_Microsoft_Extensions_Hosting<Microsoft_Extensions_Hosting.IHostBuilder>;
+  ConfigureSlimWebHost(configure: System.Action_1<Microsoft_AspNetCore_Hosting.IWebHostBuilder>, configureWebHostBuilder: System.Action_1<Microsoft_Extensions_Hosting.WebHostBuilderOptions>): ExtensionMethods_Microsoft_Extensions_Hosting<Microsoft_Extensions_Hosting.IHostBuilder>;
 }
 
 export interface __Ext_Microsoft_JSInterop_IJSInProcessObjectReference {
-  InvokeVoid(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<void>;
+  InvokeVoid(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<void>;
 }
 
 export interface __Ext_Microsoft_JSInterop_IJSInProcessRuntime {
-  InvokeVoid(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<void>;
+  InvokeVoid(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<void>;
 }
 
 export interface __Ext_Microsoft_JSInterop_IJSObjectReference {
-  InvokeVoidAsync(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
-  InvokeAsync<TValue>(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  InvokeVoidAsync(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
-  InvokeAsync<TValue>(identifier: string, timeout: TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  InvokeVoidAsync(identifier: string, timeout: TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
-  InvokeConstructorAsync(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(identifier: string, timeout: TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  GetValueAsync<TValue>(identifier: string, timeout: TimeSpan): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  SetValueAsync<TValue>(identifier: string, value: TValue, timeout: TimeSpan): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
+  InvokeVoidAsync(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
+  InvokeAsync<TValue>(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue>(identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeVoidAsync(identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
+  InvokeAsync<TValue>(identifier: string, timeout: System.TimeSpan, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeVoidAsync(identifier: string, timeout: System.TimeSpan, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
+  InvokeConstructorAsync(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(identifier: string, cancellationToken: System_Threading.CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(identifier: string, timeout: System.TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  GetValueAsync<TValue>(identifier: string, timeout: System.TimeSpan): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  SetValueAsync<TValue>(identifier: string, value: TValue, timeout: System.TimeSpan): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
 }
 
 export interface __Ext_Microsoft_JSInterop_IJSRuntime {
-  InvokeVoidAsync(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
-  InvokeAsync<TValue>(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  InvokeVoidAsync(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
-  InvokeAsync<TValue>(identifier: string, timeout: TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  InvokeVoidAsync(identifier: string, timeout: TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
-  InvokeConstructorAsync(identifier: string, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(identifier: string, timeout: TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  GetValueAsync<TValue>(identifier: string, timeout: TimeSpan): ExtensionMethods_Microsoft_JSInterop<ValueTask_1<TValue>>;
-  SetValueAsync<TValue>(identifier: string, value: TValue, timeout: TimeSpan): ExtensionMethods_Microsoft_JSInterop<ValueTask>;
+  InvokeVoidAsync(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
+  InvokeAsync<TValue>(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue>(identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeVoidAsync(identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
+  InvokeAsync<TValue>(identifier: string, timeout: System.TimeSpan, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeVoidAsync(identifier: string, timeout: System.TimeSpan, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
+  InvokeConstructorAsync(identifier: string, ...args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(identifier: string, cancellationToken: System_Threading.CancellationToken, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(identifier: string, timeout: System.TimeSpan, args: unknown[]): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  GetValueAsync<TValue>(identifier: string, timeout: System.TimeSpan): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask_1<TValue>>;
+  SetValueAsync<TValue>(identifier: string, value: TValue, timeout: System.TimeSpan): ExtensionMethods_Microsoft_JSInterop<System_Threading_Tasks.ValueTask>;
 }
 
 export interface __Ext_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue {
   IsFileDisposition(): ExtensionMethods_Microsoft_Net_Http_Headers<boolean>;
   IsFormDisposition(): ExtensionMethods_Microsoft_Net_Http_Headers<boolean>;
+}
+
+export interface __Ext_System_Security_Claims_ClaimsPrincipal {
+  FindFirstValue(claimType: string): ExtensionMethods_System_Security_Claims<string | undefined>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Authentication
@@ -1397,7 +1605,8 @@ export type ExtensionMethods_Microsoft_AspNetCore_Authentication<TShape> =
     (TShape extends Microsoft_AspNetCore_Authentication.IAuthenticationConfigurationProvider ? __Ext_Microsoft_AspNetCore_Authentication_IAuthenticationConfigurationProvider : {}) &
     (TShape extends Microsoft_AspNetCore_Authentication.IAuthenticationService ? __Ext_Microsoft_AspNetCore_Authentication_IAuthenticationService : {}) &
     (TShape extends Microsoft_AspNetCore_Authentication_OAuth_Claims.ClaimActionCollection ? __Ext_Microsoft_AspNetCore_Authentication_ClaimActionCollection : {}) &
-    (TShape extends Microsoft_AspNetCore_Http.HttpContext ? __Ext_Microsoft_AspNetCore_Authentication_HttpContext : {})
+    (TShape extends Microsoft_AspNetCore_Http.HttpContext ? __Ext_Microsoft_AspNetCore_Authentication_HttpContext : {}) &
+    (TShape extends System_Text_Json.JsonElement ? __Ext_Microsoft_AspNetCore_Authentication_JsonElement : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Authorization
@@ -1420,7 +1629,8 @@ export type ExtensionMethods_Microsoft_AspNetCore_Builder<TShape> =
     (TShape extends Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder ? __Ext_Microsoft_AspNetCore_Builder_RazorComponentsEndpointConventionBuilder : {}) &
     (TShape extends Microsoft_AspNetCore_Builder.RequestLocalizationOptions ? __Ext_Microsoft_AspNetCore_Builder_RequestLocalizationOptions : {}) &
     (TShape extends Microsoft_AspNetCore_Routing.IEndpointRouteBuilder ? __Ext_Microsoft_AspNetCore_Builder_IEndpointRouteBuilder : {}) &
-    (TShape extends Microsoft_AspNetCore_Routing.IRouteBuilder ? __Ext_Microsoft_AspNetCore_Builder_IRouteBuilder : {})
+    (TShape extends Microsoft_AspNetCore_Routing.IRouteBuilder ? __Ext_Microsoft_AspNetCore_Builder_IRouteBuilder : {}) &
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_AspNetCore_Builder_IServiceCollection : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components
@@ -1430,7 +1640,8 @@ export type ExtensionMethods_Microsoft_AspNetCore_Components<TShape> =
   : TShape & (
     (TShape extends Microsoft_AspNetCore_Components.ElementReference ? __Ext_Microsoft_AspNetCore_Components_ElementReference : {}) &
     (TShape extends Microsoft_AspNetCore_Components.EventCallbackFactory ? __Ext_Microsoft_AspNetCore_Components_EventCallbackFactory : {}) &
-    (TShape extends Microsoft_AspNetCore_Components.NavigationManager ? __Ext_Microsoft_AspNetCore_Components_NavigationManager : {})
+    (TShape extends Microsoft_AspNetCore_Components.NavigationManager ? __Ext_Microsoft_AspNetCore_Components_NavigationManager : {}) &
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_AspNetCore_Components_IServiceCollection : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Forms
@@ -1440,6 +1651,22 @@ export type ExtensionMethods_Microsoft_AspNetCore_Components_Forms<TShape> =
   : TShape & (
     (TShape extends Microsoft_AspNetCore_Components_Forms.EditContext ? __Ext_Microsoft_AspNetCore_Components_Forms_EditContext : {}) &
     (TShape extends Microsoft_AspNetCore_Components_Forms.IBrowserFile ? __Ext_Microsoft_AspNetCore_Components_Forms_IBrowserFile : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Forms.Mapping
+export type ExtensionMethods_Microsoft_AspNetCore_Components_Forms_Mapping<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_AspNetCore_Components_Forms_Mapping_IServiceCollection : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Infrastructure
+export type ExtensionMethods_Microsoft_AspNetCore_Components_Infrastructure<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_AspNetCore_Components_Infrastructure_IServiceCollection : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Routing
@@ -1476,7 +1703,16 @@ export type ExtensionMethods_Microsoft_AspNetCore_DataProtection<TShape> =
     (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder ? __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder : {}) &
     (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtectionProvider ? __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider : {}) &
     (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtector ? __Ext_Microsoft_AspNetCore_DataProtection_IDataProtector : {}) &
-    (TShape extends Microsoft_AspNetCore_DataProtection.ITimeLimitedDataProtector ? __Ext_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector : {})
+    (TShape extends Microsoft_AspNetCore_DataProtection.ITimeLimitedDataProtector ? __Ext_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector : {}) &
+    (TShape extends System.IServiceProvider ? __Ext_Microsoft_AspNetCore_DataProtection_IServiceProvider : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel
+export type ExtensionMethods_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Xml_Linq.XElement ? __Ext_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_XElement : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Hosting
@@ -1570,6 +1806,15 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ApiExplorer<TShape> =
     (TShape extends Microsoft_AspNetCore_Mvc_ApiExplorer.ApiDescription ? __Ext_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescription : {})
   );
 
+// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.Formatters.Xml
+export type ExtensionMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Collections_Generic.IEnumerable_1<infer T0> ? __Ext_Microsoft_AspNetCore_Mvc_Formatters_Xml_IEnumerable_1<T0> : {}) &
+    (TShape extends (infer T)[] ? __Ext_Microsoft_AspNetCore_Mvc_Formatters_Xml_IEnumerable_1<T> : {})
+  );
+
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.Localization
 export type ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization<TShape> =
   TShape extends null | undefined ? TShape
@@ -1584,7 +1829,24 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<TShape> =
   : TShape extends void ? void
   : TShape & (
     (TShape extends Microsoft_AspNetCore_Mvc_ModelBinding.IModelMetadataProvider ? __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider : {}) &
-    (TShape extends Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary ? __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary : {})
+    (TShape extends Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary ? __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary : {}) &
+    (TShape extends System_Collections_Generic.IList_1<infer T0> ? __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_IList_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Metadata
+export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Collections_Generic.IList_1<infer T0> ? __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IList_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Validation
+export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Collections_Generic.IList_1<infer T0> ? __Ext_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IList_1<T0> : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.Rendering
@@ -1682,12 +1944,21 @@ export type ExtensionMethods_Microsoft_AspNetCore_SignalR_Protocol<TShape> =
     (TShape extends Microsoft_AspNetCore_SignalR_Protocol.IHubProtocol ? __Ext_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol : {})
   );
 
+// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.WebSockets
+export type ExtensionMethods_Microsoft_AspNetCore_WebSockets<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_AspNetCore_WebSockets_IServiceCollection : {})
+  );
+
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.WebUtilities
 export type ExtensionMethods_Microsoft_AspNetCore_WebUtilities<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
   : TShape & (
-    (TShape extends Microsoft_AspNetCore_WebUtilities.MultipartSection ? __Ext_Microsoft_AspNetCore_WebUtilities_MultipartSection : {})
+    (TShape extends Microsoft_AspNetCore_WebUtilities.MultipartSection ? __Ext_Microsoft_AspNetCore_WebUtilities_MultipartSection : {}) &
+    (TShape extends System_IO.Stream ? __Ext_Microsoft_AspNetCore_WebUtilities_Stream : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
@@ -1701,7 +1972,17 @@ export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
     (TShape extends Microsoft_Extensions_DependencyInjection.IMvcBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IMvcBuilder : {}) &
     (TShape extends Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder : {}) &
     (TShape extends Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IRazorComponentsBuilder : {}) &
-    (TShape extends Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder : {})
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder : {}) &
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection : {}) &
+    (TShape extends System_Collections_Generic.IList_1<infer T0> ? __Ext_Microsoft_Extensions_DependencyInjection_IList_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.Extensions.Hosting
+export type ExtensionMethods_Microsoft_Extensions_Hosting<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_Extensions_Hosting.IHostBuilder ? __Ext_Microsoft_Extensions_Hosting_IHostBuilder : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.JSInterop
@@ -1721,5 +2002,13 @@ export type ExtensionMethods_Microsoft_Net_Http_Headers<TShape> =
   : TShape extends void ? void
   : TShape & (
     (TShape extends Microsoft_Net_Http_Headers.ContentDispositionHeaderValue ? __Ext_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue : {})
+  );
+
+// Generic helper type for extension methods in namespace: System.Security.Claims
+export type ExtensionMethods_System_Security_Claims<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Security_Claims.ClaimsPrincipal ? __Ext_System_Security_Claims_ClaimsPrincipal : {})
   );
 

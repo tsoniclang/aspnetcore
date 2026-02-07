@@ -11,3 +11,6 @@ import type { ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { PrincipalExtensions$instance as PrincipalExtensions } from './System.Security.Claims/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_System_Security_Claims as ExtensionMethods } from './__internal/extensions/index.js';
+

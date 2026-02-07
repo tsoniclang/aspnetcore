@@ -56,6 +56,8 @@ import type { HostBuilderContext, IHost, IHostApplicationBuilder, IHostApplicati
 import type { ILogger, ILoggerFactory, ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface IApplicationBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
+
     ApplicationServices: IServiceProvider;
     readonly ServerFeatures: IFeatureCollection;
     readonly Properties: IDictionary<System_Internal.String, unknown | undefined>;
@@ -68,6 +70,8 @@ export interface IApplicationBuilder$instance {
 export type IApplicationBuilder = IApplicationBuilder$instance;
 
 export interface IEndpointConventionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
 }
 
@@ -75,6 +79,8 @@ export interface IEndpointConventionBuilder$instance {
 export type IEndpointConventionBuilder = IEndpointConventionBuilder$instance;
 
 export interface IHubEndpointConventionBuilder$instance extends IEndpointConventionBuilder {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
 }
 
@@ -84,6 +90,8 @@ export interface IHubEndpointConventionBuilder$instance extends IEndpointConvent
 export type IHubEndpointConventionBuilder = IHubEndpointConventionBuilder$instance;
 
 export interface ApplicationBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
+
     ApplicationServices: IServiceProvider;
     readonly Properties: IDictionary<System_Internal.String, unknown | undefined>;
     readonly ServerFeatures: IFeatureCollection;
@@ -109,6 +117,9 @@ export type ApplicationBuilder = ApplicationBuilder$instance & __ApplicationBuil
 
 
 export interface ComponentEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(finalConvention: Action<EndpointBuilder>): void;
 }
@@ -126,6 +137,9 @@ export type ComponentEndpointConventionBuilder = ComponentEndpointConventionBuil
 
 
 export interface ConfigureHostBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsConfigureWebHost: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
+
     readonly Properties: IDictionary<unknown, unknown>;
     ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
     ConfigureContainer<TContainerBuilder>(configureDelegate: Action<HostBuilderContext, TContainerBuilder>): IHostBuilder;
@@ -144,12 +158,15 @@ export interface __ConfigureHostBuilder$views {
     As_ISupportsConfigureWebHost(): Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance;
 }
 
-export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance {}
+export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance, Microsoft_Extensions_Hosting_Lib.IHostBuilder {}
 
 export type ConfigureHostBuilder = ConfigureHostBuilder$instance & __ConfigureHostBuilder$views;
 
 
 export interface ConfigureWebHostBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsStartup: never;
+
     ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
     ConfigureServices(configureServices: Action<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
     ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
@@ -173,6 +190,8 @@ export type ConfigureWebHostBuilder = ConfigureWebHostBuilder$instance & __Confi
 
 
 export interface ConnectionEndpointRouteBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(finalConvention: Action<EndpointBuilder>): void;
 }
@@ -192,6 +211,8 @@ export type ConnectionEndpointRouteBuilder = ConnectionEndpointRouteBuilder$inst
 
 
 export interface ControllerActionEndpointConventionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(finalConvention: Action<EndpointBuilder>): void;
 }
@@ -367,6 +388,9 @@ export const HttpMethodOverrideOptions: {
 export type HttpMethodOverrideOptions = HttpMethodOverrideOptions$instance;
 
 export interface HubEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(finalConvention: Action<EndpointBuilder>): void;
 }
@@ -416,6 +440,8 @@ export const IISServerOptions: {
 export type IISServerOptions = IISServerOptions$instance;
 
 export interface PageActionEndpointConventionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(finalConvention: Action<EndpointBuilder>): void;
 }
@@ -435,6 +461,8 @@ export type PageActionEndpointConventionBuilder = PageActionEndpointConventionBu
 
 
 export interface RazorComponentsEndpointConventionBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(finallyConvention: Action<EndpointBuilder>): void;
 }
@@ -478,6 +506,8 @@ export const RequestLocalizationOptions: {
 export type RequestLocalizationOptions = RequestLocalizationOptions$instance;
 
 export interface RouteHandlerBuilder$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
+
     Add(convention: Action<EndpointBuilder>): void;
     Finally(finalConvention: Action<EndpointBuilder>): void;
 }
@@ -556,6 +586,12 @@ export const StatusCodePagesOptions: {
 export type StatusCodePagesOptions = StatusCodePagesOptions$instance;
 
 export interface WebApplication$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHost: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Configuration: IConfiguration;
     readonly Environment: IWebHostEnvironment;
     readonly Lifetime: IHostApplicationLifetime;
@@ -588,12 +624,14 @@ export interface __WebApplication$views {
     As_IEndpointRouteBuilder(): Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance;
 }
 
-export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance {}
+export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance, Microsoft_Extensions_Hosting_Lib.IHost, System_Internal.IAsyncDisposable, System_Internal.IDisposable {}
 
 export type WebApplication = WebApplication$instance & __WebApplication$views;
 
 
 export interface WebApplicationBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
+
     readonly Configuration: ConfigurationManager;
     Environment: IWebHostEnvironment;
     Host: ConfigureHostBuilder;

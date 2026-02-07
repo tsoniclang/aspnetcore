@@ -17,6 +17,8 @@ import type { Int32, Object as ClrObject, String as ClrString, Type, Void } from
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IActionDescriptorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider: never;
+
     readonly Order: int;
     OnProvidersExecuting(context: ActionDescriptorProviderContext): void;
 }
@@ -25,6 +27,8 @@ export interface IActionDescriptorProvider$instance {
 export type IActionDescriptorProvider = IActionDescriptorProvider$instance;
 
 export interface IActionInvoker$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionInvoker: never;
+
     InvokeAsync(): Task;
 }
 
@@ -32,6 +36,8 @@ export interface IActionInvoker$instance {
 export type IActionInvoker = IActionInvoker$instance;
 
 export interface IActionInvokerProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionInvokerProvider: never;
+
     readonly Order: int;
     OnProvidersExecuting(context: ActionInvokerProviderContext): void;
 }

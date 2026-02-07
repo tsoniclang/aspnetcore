@@ -25,6 +25,8 @@ import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IViewComponentActivator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentActivator: never;
+
     Create(context: ViewComponentContext): unknown;
     Release(context: ViewComponentContext, viewComponent: unknown): void;
     ReleaseAsync(context: ViewComponentContext, viewComponent: unknown): ValueTask;
@@ -34,6 +36,8 @@ export interface IViewComponentActivator$instance {
 export type IViewComponentActivator = IViewComponentActivator$instance;
 
 export interface IViewComponentDescriptorCollectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorCollectionProvider: never;
+
     readonly ViewComponents: ViewComponentDescriptorCollection;
 }
 
@@ -41,6 +45,8 @@ export interface IViewComponentDescriptorCollectionProvider$instance {
 export type IViewComponentDescriptorCollectionProvider = IViewComponentDescriptorCollectionProvider$instance;
 
 export interface IViewComponentDescriptorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorProvider: never;
+
     GetViewComponents(): IEnumerable<ViewComponentDescriptor>;
 }
 
@@ -48,6 +54,8 @@ export interface IViewComponentDescriptorProvider$instance {
 export type IViewComponentDescriptorProvider = IViewComponentDescriptorProvider$instance;
 
 export interface IViewComponentFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentFactory: never;
+
     CreateViewComponent(context: ViewComponentContext): unknown;
     ReleaseViewComponent(context: ViewComponentContext, component: unknown): void;
     ReleaseViewComponentAsync(context: ViewComponentContext, component: unknown): ValueTask;
@@ -57,6 +65,8 @@ export interface IViewComponentFactory$instance {
 export type IViewComponentFactory = IViewComponentFactory$instance;
 
 export interface IViewComponentInvoker$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentInvoker: never;
+
     InvokeAsync(context: ViewComponentContext): Task;
 }
 
@@ -64,6 +74,8 @@ export interface IViewComponentInvoker$instance {
 export type IViewComponentInvoker = IViewComponentInvoker$instance;
 
 export interface IViewComponentInvokerFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentInvokerFactory: never;
+
     CreateInstance(context: ViewComponentContext): IViewComponentInvoker;
 }
 
@@ -71,6 +83,8 @@ export interface IViewComponentInvokerFactory$instance {
 export type IViewComponentInvokerFactory = IViewComponentInvokerFactory$instance;
 
 export interface IViewComponentSelector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentSelector: never;
+
     SelectComponent(componentName: string): ViewComponentDescriptor;
 }
 
@@ -78,6 +92,8 @@ export interface IViewComponentSelector$instance {
 export type IViewComponentSelector = IViewComponentSelector$instance;
 
 export interface ContentViewComponentResult$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentResult: never;
+
     readonly Content: string;
     Execute(context: ViewComponentContext): void;
     ExecuteAsync(context: ViewComponentContext): Task;
@@ -99,6 +115,8 @@ export type ContentViewComponentResult = ContentViewComponentResult$instance & _
 
 
 export interface DefaultViewComponentDescriptorCollectionProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorCollectionProvider: never;
+
     readonly ViewComponents: ViewComponentDescriptorCollection;
 }
 
@@ -118,6 +136,8 @@ export type DefaultViewComponentDescriptorCollectionProvider = DefaultViewCompon
 
 
 export interface DefaultViewComponentDescriptorProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorProvider: never;
+
     GetCandidateTypes(): IEnumerable<TypeInfo>;
     GetViewComponents(): IEnumerable<ViewComponentDescriptor>;
 }
@@ -138,6 +158,8 @@ export type DefaultViewComponentDescriptorProvider = DefaultViewComponentDescrip
 
 
 export interface DefaultViewComponentFactory$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentFactory: never;
+
     CreateViewComponent(context: ViewComponentContext): unknown;
     ReleaseViewComponent(context: ViewComponentContext, component: unknown): void;
     ReleaseViewComponentAsync(context: ViewComponentContext, component: unknown): ValueTask;
@@ -159,6 +181,9 @@ export type DefaultViewComponentFactory = DefaultViewComponentFactory$instance &
 
 
 export interface DefaultViewComponentHelper$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentHelper: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;
+
     Contextualize(viewContext: ViewContext): void;
     InvokeAsync(name: string, arguments: unknown): Task<IHtmlContent>;
     InvokeAsync(componentType: Type, arguments: unknown): Task<IHtmlContent>;
@@ -181,6 +206,8 @@ export type DefaultViewComponentHelper = DefaultViewComponentHelper$instance & _
 
 
 export interface DefaultViewComponentSelector$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentSelector: never;
+
     SelectComponent(componentName: string): ViewComponentDescriptor;
 }
 
@@ -200,6 +227,8 @@ export type DefaultViewComponentSelector = DefaultViewComponentSelector$instance
 
 
 export interface HtmlContentViewComponentResult$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentResult: never;
+
     readonly EncodedContent: IHtmlContent;
     Execute(context: ViewComponentContext): void;
     ExecuteAsync(context: ViewComponentContext): Task;
@@ -221,6 +250,8 @@ export type HtmlContentViewComponentResult = HtmlContentViewComponentResult$inst
 
 
 export interface ServiceBasedViewComponentActivator$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentActivator: never;
+
     Create(context: ViewComponentContext): unknown;
     Release(context: ViewComponentContext, viewComponent: unknown): void;
 }
@@ -314,6 +345,9 @@ export const ViewComponentFeature: {
 export type ViewComponentFeature = ViewComponentFeature$instance;
 
 export interface ViewComponentFeatureProvider$instance extends IApplicationFeatureProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
+
     PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: ViewComponentFeature): void;
 }
 
@@ -333,6 +367,8 @@ export type ViewComponentFeatureProvider = ViewComponentFeatureProvider$instance
 
 
 export interface ViewViewComponentResult$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentResult: never;
+
     TempData: ITempDataDictionary;
     get ViewData(): ViewDataDictionary | undefined;
     set ViewData(value: ViewDataDictionary | undefined);

@@ -14,6 +14,8 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export interface IIISEnvironmentFeature$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Server_IIS_IIISEnvironmentFeature: never;
+
     readonly IISVersion: Version;
     readonly AppPoolId: string;
     readonly AppPoolConfigFile: string;
@@ -29,6 +31,8 @@ export interface IIISEnvironmentFeature$instance {
 export type IIISEnvironmentFeature = IIISEnvironmentFeature$instance;
 
 export interface BadHttpRequestException$instance extends BadHttpRequestException_Http {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly StatusCode: int;
 }
 

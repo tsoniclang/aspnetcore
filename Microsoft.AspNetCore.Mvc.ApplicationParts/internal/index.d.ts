@@ -13,12 +13,16 @@ import type { Attribute, Boolean as ClrBoolean, Object as ClrObject, String as C
 import type { Assembly, TypeInfo } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IApplicationFeatureProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
+
 }
 
 
 export type IApplicationFeatureProvider = IApplicationFeatureProvider$instance;
 
 export interface IApplicationFeatureProvider_1$instance<TFeature> extends IApplicationFeatureProvider {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
+
     PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: TFeature): void;
 }
 
@@ -28,6 +32,8 @@ export interface IApplicationFeatureProvider_1$instance<TFeature> extends IAppli
 export type IApplicationFeatureProvider_1<TFeature> = IApplicationFeatureProvider_1$instance<TFeature>;
 
 export interface IApplicationPartTypeProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider: never;
+
     readonly Types: IEnumerable<TypeInfo>;
 }
 
@@ -35,6 +41,8 @@ export interface IApplicationPartTypeProvider$instance {
 export type IApplicationPartTypeProvider = IApplicationPartTypeProvider$instance;
 
 export interface ICompilationReferencesProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider: never;
+
     GetReferencePaths(): IEnumerable<System_Internal.String>;
 }
 
@@ -42,6 +50,8 @@ export interface ICompilationReferencesProvider$instance {
 export type ICompilationReferencesProvider = ICompilationReferencesProvider$instance;
 
 export interface IRazorCompiledItemProvider$instance {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider: never;
+
     readonly CompiledItems: IEnumerable<RazorCompiledItem>;
 }
 
@@ -98,6 +108,8 @@ export const ApplicationPartManager: {
 export type ApplicationPartManager = ApplicationPartManager$instance;
 
 export interface AssemblyPart$instance extends ApplicationPart {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider: never;
+
     readonly Assembly: Assembly;
     readonly Name: string;
     readonly Types: IEnumerable<TypeInfo>;
@@ -132,6 +144,8 @@ export const CompiledRazorAssemblyApplicationPartFactory: {
 export type CompiledRazorAssemblyApplicationPartFactory = CompiledRazorAssemblyApplicationPartFactory$instance;
 
 export interface CompiledRazorAssemblyPart$instance extends ApplicationPart {
+    readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider: never;
+
     readonly Assembly: Assembly;
     readonly Name: string;
 }
