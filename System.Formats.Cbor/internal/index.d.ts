@@ -9,11 +9,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Decimal, Double, Enum, Exception, Half, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, UInt32, UInt64, Void } from "@tsonic/dotnet/System.js";
-import type { BigInteger } from "@tsonic/dotnet/System.Numerics.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { BigInteger } from "@tsonic/dotnet/System.Numerics/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Decimal, Double, Enum, Exception, Half, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Single, Span_1, String as ClrString, UInt32, UInt64, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum CborConformanceMode {
     Lax = 0,
@@ -103,10 +103,10 @@ export interface CborReader$instance {
     ReadCborNegativeIntegerRepresentation(): ulong;
     ReadDateTimeOffset(): DateTimeOffset;
     ReadDecimal(): decimal;
-    ReadDefiniteLengthByteString(): ReadOnlyMemory<System_Internal.Byte>;
-    ReadDefiniteLengthTextStringBytes(): ReadOnlyMemory<System_Internal.Byte>;
+    ReadDefiniteLengthByteString(): ReadOnlyMemory_1<System_Internal.Byte>;
+    ReadDefiniteLengthTextStringBytes(): ReadOnlyMemory_1<System_Internal.Byte>;
     ReadDouble(): double;
-    ReadEncodedValue(disableConformanceModeChecks?: boolean): ReadOnlyMemory<System_Internal.Byte>;
+    ReadEncodedValue(disableConformanceModeChecks?: boolean): ReadOnlyMemory_1<System_Internal.Byte>;
     ReadEndArray(): void;
     ReadEndIndefiniteLengthByteString(): void;
     ReadEndIndefiniteLengthTextString(): void;
@@ -117,25 +117,25 @@ export interface CborReader$instance {
     ReadNull(): void;
     ReadSimpleValue(): CborSimpleValue;
     ReadSingle(): float;
-    ReadStartArray(): Nullable<System_Internal.Int32>;
+    ReadStartArray(): Nullable_1<System_Internal.Int32>;
     ReadStartIndefiniteLengthByteString(): void;
     ReadStartIndefiniteLengthTextString(): void;
-    ReadStartMap(): Nullable<System_Internal.Int32>;
+    ReadStartMap(): Nullable_1<System_Internal.Int32>;
     ReadTag(): CborTag;
     ReadTextString(): string;
     ReadUInt32(): uint;
     ReadUInt64(): ulong;
     ReadUnixTimeSeconds(): DateTimeOffset;
-    Reset(data: ReadOnlyMemory<System_Internal.Byte>): void;
+    Reset(data: ReadOnlyMemory_1<System_Internal.Byte>): void;
     SkipToParent(disableConformanceModeChecks?: boolean): void;
     SkipValue(disableConformanceModeChecks?: boolean): void;
-    TryReadByteString(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    TryReadTextString(destination: Span<System_Internal.Char>, charsWritten: int): boolean;
+    TryReadByteString(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
+    TryReadTextString(destination: Span_1<System_Internal.Char>, charsWritten: int): boolean;
 }
 
 
 export const CborReader: {
-    new(data: ReadOnlyMemory<System_Internal.Byte>, conformanceMode: CborConformanceMode, allowMultipleRootLevelValues: boolean): CborReader;
+    new(data: ReadOnlyMemory_1<System_Internal.Byte>, conformanceMode: CborConformanceMode, allowMultipleRootLevelValues: boolean): CborReader;
 };
 
 
@@ -149,18 +149,18 @@ export interface CborWriter$instance {
     readonly CurrentDepth: int;
     readonly IsWriteCompleted: boolean;
     Encode(): byte[];
-    Encode(destination: Span<System_Internal.Byte>): int;
+    Encode(destination: Span_1<System_Internal.Byte>): int;
     Reset(): void;
-    TryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     WriteBigInteger(value: BigInteger): void;
     WriteBoolean(value: boolean): void;
     WriteByteString(value: byte[]): void;
-    WriteByteString(value: ReadOnlySpan<System_Internal.Byte>): void;
+    WriteByteString(value: ReadOnlySpan_1<System_Internal.Byte>): void;
     WriteCborNegativeIntegerRepresentation(value: ulong): void;
     WriteDateTimeOffset(value: DateTimeOffset): void;
     WriteDecimal(value: decimal): void;
     WriteDouble(value: double): void;
-    WriteEncodedValue(encodedValue: ReadOnlySpan<System_Internal.Byte>): void;
+    WriteEncodedValue(encodedValue: ReadOnlySpan_1<System_Internal.Byte>): void;
     WriteEndArray(): void;
     WriteEndIndefiniteLengthByteString(): void;
     WriteEndIndefiniteLengthTextString(): void;
@@ -171,13 +171,13 @@ export interface CborWriter$instance {
     WriteNull(): void;
     WriteSimpleValue(value: CborSimpleValue): void;
     WriteSingle(value: float): void;
-    WriteStartArray(definiteLength: Nullable<System_Internal.Int32>): void;
+    WriteStartArray(definiteLength: Nullable_1<System_Internal.Int32>): void;
     WriteStartIndefiniteLengthByteString(): void;
     WriteStartIndefiniteLengthTextString(): void;
-    WriteStartMap(definiteLength: Nullable<System_Internal.Int32>): void;
+    WriteStartMap(definiteLength: Nullable_1<System_Internal.Int32>): void;
     WriteTag(tag: CborTag): void;
     WriteTextString(value: string): void;
-    WriteTextString(value: ReadOnlySpan<System_Internal.Char>): void;
+    WriteTextString(value: ReadOnlySpan_1<System_Internal.Char>): void;
     WriteUInt32(value: uint): void;
     WriteUInt64(value: ulong): void;
     WriteUnixTimeSeconds(seconds: long): void;

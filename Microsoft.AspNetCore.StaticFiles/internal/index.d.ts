@@ -12,14 +12,14 @@ import type { ptr } from "@tsonic/core/types.js";
 import type { DefaultFilesOptions, DirectoryBrowserOptions, StaticFileOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import type { IWebHostEnvironment } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IFileInfo } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { IFileInfo } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IContentTypeProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider: never;
@@ -33,7 +33,7 @@ export type IContentTypeProvider = IContentTypeProvider$instance;
 export interface IDirectoryFormatter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter: never;
 
-    GenerateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
+    GenerateContentAsync(context: HttpContext, contents: IEnumerable_1<IFileInfo>): Task;
 }
 
 
@@ -45,7 +45,7 @@ export interface DefaultFilesMiddleware$instance {
 
 
 export const DefaultFilesMiddleware: {
-    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, options: IOptions<DefaultFilesOptions>): DefaultFilesMiddleware;
+    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, options: IOptions_1<DefaultFilesOptions>): DefaultFilesMiddleware;
 };
 
 
@@ -57,24 +57,24 @@ export interface DirectoryBrowserMiddleware$instance {
 
 
 export const DirectoryBrowserMiddleware: {
-    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, options: IOptions<DirectoryBrowserOptions>): DirectoryBrowserMiddleware;
-    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, encoder: HtmlEncoder, options: IOptions<DirectoryBrowserOptions>): DirectoryBrowserMiddleware;
+    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, options: IOptions_1<DirectoryBrowserOptions>): DirectoryBrowserMiddleware;
+    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, encoder: HtmlEncoder, options: IOptions_1<DirectoryBrowserOptions>): DirectoryBrowserMiddleware;
 };
 
 
 export type DirectoryBrowserMiddleware = DirectoryBrowserMiddleware$instance;
 
-export interface FileExtensionContentTypeProvider$instance {
+export interface FileExtensionContentTypeProvider$instance extends IContentTypeProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider: never;
 
-    Mappings: IDictionary<System_Internal.String, System_Internal.String>;
+    Mappings: IDictionary_2<System_Internal.String, System_Internal.String>;
     TryGetContentType(subpath: string, contentType: string): boolean;
 }
 
 
 export const FileExtensionContentTypeProvider: {
     new(): FileExtensionContentTypeProvider;
-    new(mapping: IDictionary<System_Internal.String, System_Internal.String>): FileExtensionContentTypeProvider;
+    new(mapping: IDictionary_2<System_Internal.String, System_Internal.String>): FileExtensionContentTypeProvider;
 };
 
 
@@ -82,15 +82,13 @@ export interface __FileExtensionContentTypeProvider$views {
     As_IContentTypeProvider(): IContentTypeProvider$instance;
 }
 
-export interface FileExtensionContentTypeProvider$instance extends IContentTypeProvider$instance {}
-
 export type FileExtensionContentTypeProvider = FileExtensionContentTypeProvider$instance & __FileExtensionContentTypeProvider$views;
 
 
-export interface HtmlDirectoryFormatter$instance {
+export interface HtmlDirectoryFormatter$instance extends IDirectoryFormatter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter: never;
 
-    GenerateContentAsync(context: HttpContext, contents: IEnumerable<IFileInfo>): Task;
+    GenerateContentAsync(context: HttpContext, contents: IEnumerable_1<IFileInfo>): Task;
 }
 
 
@@ -103,8 +101,6 @@ export interface __HtmlDirectoryFormatter$views {
     As_IDirectoryFormatter(): IDirectoryFormatter$instance;
 }
 
-export interface HtmlDirectoryFormatter$instance extends IDirectoryFormatter$instance {}
-
 export type HtmlDirectoryFormatter = HtmlDirectoryFormatter$instance & __HtmlDirectoryFormatter$views;
 
 
@@ -114,7 +110,7 @@ export interface StaticFileMiddleware$instance {
 
 
 export const StaticFileMiddleware: {
-    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, options: IOptions<StaticFileOptions>, loggerFactory: ILoggerFactory): StaticFileMiddleware;
+    new(next: RequestDelegate, hostingEnv: IWebHostEnvironment, options: IOptions_1<StaticFileOptions>, loggerFactory: ILoggerFactory): StaticFileMiddleware;
 };
 
 

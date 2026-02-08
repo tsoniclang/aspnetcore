@@ -15,19 +15,19 @@ import type { HttpsConnectionAdapterOptions, TlsHandshakeCallbackOptions } from 
 import type { NamedPipeTransportOptions } from "../../Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes/internal/index.js";
 import type { QuicTransportOptions } from "../../Microsoft.AspNetCore.Server.Kestrel.Transport.Quic/internal/index.js";
 import type { SocketTransportOptions } from "../../Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Attribute, Boolean as ClrBoolean, Func, IDisposable, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
-import type { ServerOptionsSelectionCallback } from "@tsonic/dotnet/System.Net.Security.js";
-import type { StoreLocation, StoreName, X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IConfiguration, IConfigurationBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js";
-import * as Microsoft_Extensions_DependencyInjection_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
-import type { IServiceCollection, IServiceProviderFactory, ServiceProviderOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
-import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders.js";
-import * as Microsoft_Extensions_Hosting_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
-import type { IHostEnvironment } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
-import type { ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { ServerOptionsSelectionCallback } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import type { StoreLocation, StoreName, X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Action_2, Attribute, Boolean as ClrBoolean, Func_2, IDisposable, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IConfiguration, IConfigurationBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
+import * as Microsoft_Extensions_DependencyInjection_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
+import type { IServiceCollection, IServiceProviderFactory_1, ServiceProviderOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
+import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
+import * as Microsoft_Extensions_Hosting_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
+import type { IHostEnvironment } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
+import type { ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface IApplicationLifetime$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IApplicationLifetime: never;
@@ -77,7 +77,7 @@ export type IStartup = IStartup$instance;
 export interface IStartupConfigureContainerFilter_1$instance<TContainerBuilder> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1: never;
 
-    ConfigureContainer(container: Action<TContainerBuilder>): Action<TContainerBuilder>;
+    ConfigureContainer(container: Action_1<TContainerBuilder>): Action_1<TContainerBuilder>;
 }
 
 
@@ -86,7 +86,7 @@ export type IStartupConfigureContainerFilter_1<TContainerBuilder> = IStartupConf
 export interface IStartupConfigureServicesFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter: never;
 
-    ConfigureServices(next: Action<IServiceCollection>): Action<IServiceCollection>;
+    ConfigureServices(next: Action_1<IServiceCollection>): Action_1<IServiceCollection>;
 }
 
 
@@ -95,7 +95,7 @@ export type IStartupConfigureServicesFilter = IStartupConfigureServicesFilter$in
 export interface IStartupFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartupFilter: never;
 
-    Configure(next: Action<IApplicationBuilder>): Action<IApplicationBuilder>;
+    Configure(next: Action_1<IApplicationBuilder>): Action_1<IApplicationBuilder>;
 }
 
 
@@ -119,8 +119,8 @@ export interface IWebHostBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
 
     Build(): IWebHost;
-    ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
-    ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
+    ConfigureAppConfiguration(configureDelegate: Action_2<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action_1<IServiceCollection>): IWebHostBuilder;
     GetSetting(key: string): string | undefined;
     UseSetting(key: string, value: string): IWebHostBuilder;
 }
@@ -150,7 +150,7 @@ export interface DelegateStartup$instance extends StartupBase_1$instance<IServic
 
 
 export const DelegateStartup: {
-    new(factory: IServiceProviderFactory<IServiceCollection>, configureApp: Action<IApplicationBuilder>): DelegateStartup;
+    new(factory: IServiceProviderFactory_1<IServiceCollection>, configureApp: Action_1<IApplicationBuilder>): DelegateStartup;
 };
 
 
@@ -204,7 +204,7 @@ export interface StartupBase_1$instance<TBuilder> extends StartupBase$instance {
 }
 
 
-export const StartupBase_1: (abstract new<TBuilder>(factory: IServiceProviderFactory<TBuilder>) => StartupBase_1<TBuilder>) & {
+export const StartupBase_1: (abstract new<TBuilder>(factory: IServiceProviderFactory_1<TBuilder>) => StartupBase_1<TBuilder>) & {
 };
 
 
@@ -215,13 +215,13 @@ export interface __StartupBase_1$views<TBuilder> {
 export type StartupBase_1<TBuilder> = StartupBase_1$instance<TBuilder> & __StartupBase_1$views<TBuilder>;
 
 
-export interface WebHostBuilder$instance {
+export interface WebHostBuilder$instance extends IWebHostBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
 
     Build(): IWebHost;
-    ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
-    ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
-    ConfigureServices(configureServices: Action<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
+    ConfigureAppConfiguration(configureDelegate: Action_2<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action_1<IServiceCollection>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action_2<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
     GetSetting(key: string): string | undefined;
     UseSetting(key: string, value: string): IWebHostBuilder;
 }
@@ -235,8 +235,6 @@ export const WebHostBuilder: {
 export interface __WebHostBuilder$views {
     As_IWebHostBuilder(): IWebHostBuilder$instance;
 }
-
-export interface WebHostBuilder$instance extends IWebHostBuilder$instance {}
 
 export type WebHostBuilder = WebHostBuilder$instance & __WebHostBuilder$views;
 
@@ -292,7 +290,7 @@ export abstract class HostingEnvironmentExtensions$instance {
 export type HostingEnvironmentExtensions = HostingEnvironmentExtensions$instance;
 
 export abstract class KestrelServerOptionsSystemdExtensions$instance {
-    static UseSystemd(options: KestrelServerOptions, configure: Action<ListenOptions>): KestrelServerOptions;
+    static UseSystemd(options: KestrelServerOptions, configure: Action_1<ListenOptions>): KestrelServerOptions;
     static UseSystemd(options: KestrelServerOptions): KestrelServerOptions;
 }
 
@@ -310,16 +308,16 @@ export type ListenOptionsConnectionLoggingExtensions = ListenOptionsConnectionLo
 export abstract class ListenOptionsHttpsExtensions$instance {
     static UseHttps(listenOptions: ListenOptions, httpsOptions: HttpsConnectionAdapterOptions): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, callbackOptions: TlsHandshakeCallbackOptions): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown, handshakeTimeout: TimeSpan): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string, configureOptions: Action<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, fileName: string, password: string): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, fileName: string): ListenOptions;
     static UseHttps(listenOptions: ListenOptions): ListenOptions;
@@ -329,14 +327,14 @@ export abstract class ListenOptionsHttpsExtensions$instance {
 export type ListenOptionsHttpsExtensions = ListenOptionsHttpsExtensions$instance;
 
 export abstract class WebHostBuilderExtensions$instance {
-    static Configure(hostBuilder: IWebHostBuilder, configureApp: Action<IApplicationBuilder>): IWebHostBuilder;
-    static Configure(hostBuilder: IWebHostBuilder, configureApp: Action<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
-    static ConfigureAppConfiguration(hostBuilder: IWebHostBuilder, configureDelegate: Action<IConfigurationBuilder>): IWebHostBuilder;
-    static ConfigureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action<ILoggingBuilder>): IWebHostBuilder;
-    static ConfigureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action<WebHostBuilderContext, ILoggingBuilder>): IWebHostBuilder;
-    static UseDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action<ServiceProviderOptions>): IWebHostBuilder;
-    static UseDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action<WebHostBuilderContext, ServiceProviderOptions>): IWebHostBuilder;
-    static UseStartup<TStartup>(hostBuilder: IWebHostBuilder, startupFactory: Func<WebHostBuilderContext, TStartup>): IWebHostBuilder;
+    static Configure(hostBuilder: IWebHostBuilder, configureApp: Action_1<IApplicationBuilder>): IWebHostBuilder;
+    static Configure(hostBuilder: IWebHostBuilder, configureApp: Action_2<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
+    static ConfigureAppConfiguration(hostBuilder: IWebHostBuilder, configureDelegate: Action_1<IConfigurationBuilder>): IWebHostBuilder;
+    static ConfigureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action_1<ILoggingBuilder>): IWebHostBuilder;
+    static ConfigureLogging(hostBuilder: IWebHostBuilder, configureLogging: Action_2<WebHostBuilderContext, ILoggingBuilder>): IWebHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action_1<ServiceProviderOptions>): IWebHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IWebHostBuilder, configure: Action_2<WebHostBuilderContext, ServiceProviderOptions>): IWebHostBuilder;
+    static UseStartup<TStartup>(hostBuilder: IWebHostBuilder, startupFactory: Func_2<WebHostBuilderContext, TStartup>): IWebHostBuilder;
     static UseStartup(hostBuilder: IWebHostBuilder, startupType: Type): IWebHostBuilder;
     static UseStartup<TStartup>(hostBuilder: IWebHostBuilder): IWebHostBuilder;
     static UseStaticWebAssets(builder: IWebHostBuilder): IWebHostBuilder;
@@ -346,7 +344,7 @@ export abstract class WebHostBuilderExtensions$instance {
 export type WebHostBuilderExtensions = WebHostBuilderExtensions$instance;
 
 export abstract class WebHostBuilderHttpSysExtensions$instance {
-    static UseHttpSys(hostBuilder: IWebHostBuilder, options: Action<HttpSysOptions>): IWebHostBuilder;
+    static UseHttpSys(hostBuilder: IWebHostBuilder, options: Action_1<HttpSysOptions>): IWebHostBuilder;
     static UseHttpSys(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
@@ -368,10 +366,10 @@ export abstract class WebHostBuilderIISExtensions2$instance {
 export type WebHostBuilderIISExtensions2 = WebHostBuilderIISExtensions2$instance;
 
 export abstract class WebHostBuilderKestrelExtensions$instance {
-    static ConfigureKestrel(hostBuilder: IWebHostBuilder, options: Action<KestrelServerOptions>): IWebHostBuilder;
-    static ConfigureKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
-    static UseKestrel(hostBuilder: IWebHostBuilder, options: Action<KestrelServerOptions>): IWebHostBuilder;
-    static UseKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
+    static ConfigureKestrel(hostBuilder: IWebHostBuilder, options: Action_1<KestrelServerOptions>): IWebHostBuilder;
+    static ConfigureKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action_2<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
+    static UseKestrel(hostBuilder: IWebHostBuilder, options: Action_1<KestrelServerOptions>): IWebHostBuilder;
+    static UseKestrel(hostBuilder: IWebHostBuilder, configureOptions: Action_2<WebHostBuilderContext, KestrelServerOptions>): IWebHostBuilder;
     static UseKestrel(hostBuilder: IWebHostBuilder): IWebHostBuilder;
     static UseKestrelCore(hostBuilder: IWebHostBuilder): IWebHostBuilder;
     static UseKestrelHttpsConfiguration(hostBuilder: IWebHostBuilder): IWebHostBuilder;
@@ -381,7 +379,7 @@ export abstract class WebHostBuilderKestrelExtensions$instance {
 export type WebHostBuilderKestrelExtensions = WebHostBuilderKestrelExtensions$instance;
 
 export abstract class WebHostBuilderNamedPipeExtensions$instance {
-    static UseNamedPipes(hostBuilder: IWebHostBuilder, configureOptions: Action<NamedPipeTransportOptions>): IWebHostBuilder;
+    static UseNamedPipes(hostBuilder: IWebHostBuilder, configureOptions: Action_1<NamedPipeTransportOptions>): IWebHostBuilder;
     static UseNamedPipes(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
@@ -389,7 +387,7 @@ export abstract class WebHostBuilderNamedPipeExtensions$instance {
 export type WebHostBuilderNamedPipeExtensions = WebHostBuilderNamedPipeExtensions$instance;
 
 export abstract class WebHostBuilderQuicExtensions$instance {
-    static UseQuic(hostBuilder: IWebHostBuilder, configureOptions: Action<QuicTransportOptions>): IWebHostBuilder;
+    static UseQuic(hostBuilder: IWebHostBuilder, configureOptions: Action_1<QuicTransportOptions>): IWebHostBuilder;
     static UseQuic(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 
@@ -397,7 +395,7 @@ export abstract class WebHostBuilderQuicExtensions$instance {
 export type WebHostBuilderQuicExtensions = WebHostBuilderQuicExtensions$instance;
 
 export abstract class WebHostBuilderSocketExtensions$instance {
-    static UseSockets(hostBuilder: IWebHostBuilder, configureOptions: Action<SocketTransportOptions>): IWebHostBuilder;
+    static UseSockets(hostBuilder: IWebHostBuilder, configureOptions: Action_1<SocketTransportOptions>): IWebHostBuilder;
     static UseSockets(hostBuilder: IWebHostBuilder): IWebHostBuilder;
 }
 

@@ -11,15 +11,15 @@ import type { ICompatibilitySwitch } from "../../Microsoft.AspNetCore.Mvc.Infras
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import type { ClientModelValidationContext, IClientModelValidator, ModelValidationContextBase } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
 import type { ModelMetadata } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_ComponentModel_DataAnnotations_Internal from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
-import type { RequiredAttribute, ValidationAttribute } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { IStringLocalizer, IStringLocalizerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Localization.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_ComponentModel_DataAnnotations_Internal from "@tsonic/dotnet/System.ComponentModel.DataAnnotations/internal/index.js";
+import type { RequiredAttribute, ValidationAttribute } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Func_3, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IStringLocalizer, IStringLocalizerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Localization/internal/index.js";
 
 export interface IAttributeAdapter$instance extends IClientModelValidator {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
@@ -67,7 +67,7 @@ export interface MvcDataAnnotationsLocalizationOptions$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    DataAnnotationLocalizerProvider: Func<Type, IStringLocalizerFactory, IStringLocalizer>;
+    DataAnnotationLocalizerProvider: Func_3<Type, IStringLocalizerFactory, IStringLocalizer>;
 }
 
 
@@ -101,7 +101,7 @@ export interface __RequiredAttributeAdapter$views {
 export type RequiredAttributeAdapter = RequiredAttributeAdapter$instance & __RequiredAttributeAdapter$views;
 
 
-export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> {
+export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> extends Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     readonly Attribute: TAttribute;
@@ -111,7 +111,7 @@ export interface ValidationAttributeAdapter_1$instance<TAttribute extends Valida
 
 
 export const ValidationAttributeAdapter_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer) => ValidationAttributeAdapter_1<TAttribute>) & {
-    MergeAttribute<TAttribute extends ValidationAttribute>(attributes: IDictionary<System_Internal.String, System_Internal.String>, key: string, value: string): boolean;
+    MergeAttribute<TAttribute extends ValidationAttribute>(attributes: IDictionary_2<System_Internal.String, System_Internal.String>, key: string, value: string): boolean;
 };
 
 
@@ -119,12 +119,10 @@ export interface __ValidationAttributeAdapter_1$views<TAttribute extends Validat
     As_IClientModelValidator(): Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance;
 }
 
-export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> extends Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance {}
-
 export type ValidationAttributeAdapter_1<TAttribute extends ValidationAttribute> = ValidationAttributeAdapter_1$instance<TAttribute> & __ValidationAttributeAdapter_1$views<TAttribute>;
 
 
-export interface ValidationAttributeAdapterProvider$instance {
+export interface ValidationAttributeAdapterProvider$instance extends IValidationAttributeAdapterProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider: never;
 
     GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
@@ -140,13 +138,11 @@ export interface __ValidationAttributeAdapterProvider$views {
     As_IValidationAttributeAdapterProvider(): IValidationAttributeAdapterProvider$instance;
 }
 
-export interface ValidationAttributeAdapterProvider$instance extends IValidationAttributeAdapterProvider$instance {}
-
 export type ValidationAttributeAdapterProvider = ValidationAttributeAdapterProvider$instance & __ValidationAttributeAdapterProvider$views;
 
 
 export interface ValidationProviderAttribute$instance extends Attribute {
-    GetValidationAttributes(): IEnumerable__System_Collections_Generic<ValidationAttribute>;
+    GetValidationAttributes(): IEnumerable_1<ValidationAttribute>;
 }
 
 

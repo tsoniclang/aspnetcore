@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { IWebHostEnvironment } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
 
 export interface StaticWebAssetsLoader$instance {
 }

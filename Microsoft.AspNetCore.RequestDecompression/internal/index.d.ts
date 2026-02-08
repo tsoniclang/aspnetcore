@@ -7,10 +7,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IDecompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_RequestDecompression_IDecompressionProvider: never;
@@ -31,7 +31,7 @@ export interface IRequestDecompressionProvider$instance {
 export type IRequestDecompressionProvider = IRequestDecompressionProvider$instance;
 
 export interface RequestDecompressionOptions$instance {
-    readonly DecompressionProviders: IDictionary<System_Internal.String, IDecompressionProvider>;
+    readonly DecompressionProviders: IDictionary_2<System_Internal.String, IDecompressionProvider>;
 }
 
 

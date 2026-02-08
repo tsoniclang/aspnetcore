@@ -6,12 +6,12 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IFormatProvider, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IFormatProvider, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IHtmlAsyncContent$instance extends IHtmlContent {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlAsyncContent: never;
@@ -78,7 +78,7 @@ export interface HtmlContentBuilder$instance {
 export const HtmlContentBuilder: {
     new(): HtmlContentBuilder;
     new(capacity: int): HtmlContentBuilder;
-    new(entries: IList<unknown>): HtmlContentBuilder;
+    new(entries: IList_1<unknown>): HtmlContentBuilder;
 };
 
 
@@ -91,7 +91,7 @@ export interface __HtmlContentBuilder$views {
 export type HtmlContentBuilder = HtmlContentBuilder$instance & __HtmlContentBuilder$views;
 
 
-export interface HtmlFormattableString$instance {
+export interface HtmlFormattableString$instance extends IHtmlContent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -108,12 +108,10 @@ export interface __HtmlFormattableString$views {
     As_IHtmlContent(): IHtmlContent$instance;
 }
 
-export interface HtmlFormattableString$instance extends IHtmlContent$instance {}
-
 export type HtmlFormattableString = HtmlFormattableString$instance & __HtmlFormattableString$views;
 
 
-export interface HtmlString$instance {
+export interface HtmlString$instance extends IHtmlContent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     readonly Value: string | undefined;
@@ -132,8 +130,6 @@ export const HtmlString: {
 export interface __HtmlString$views {
     As_IHtmlContent(): IHtmlContent$instance;
 }
-
-export interface HtmlString$instance extends IHtmlContent$instance {}
 
 export type HtmlString = HtmlString$instance & __HtmlString$views;
 

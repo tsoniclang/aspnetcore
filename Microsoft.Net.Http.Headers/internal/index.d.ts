@@ -9,12 +9,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IComparer, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Double, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { Encoding, StringBuilder } from "@tsonic/dotnet/System.Text.js";
-import type { StringSegment, StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IComparer_1, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Encoding, StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Double, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { StringSegment, StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export enum SameSiteMode {
     Unspecified = -1,
@@ -25,22 +25,22 @@ export enum SameSiteMode {
 
 
 export interface CacheControlHeaderValue$instance {
-    readonly Extensions: IList<NameValueHeaderValue>;
-    MaxAge: Nullable<TimeSpan>;
+    readonly Extensions: IList_1<NameValueHeaderValue>;
+    MaxAge: Nullable_1<TimeSpan>;
     MaxStale: boolean;
-    MaxStaleLimit: Nullable<TimeSpan>;
-    MinFresh: Nullable<TimeSpan>;
+    MaxStaleLimit: Nullable_1<TimeSpan>;
+    MinFresh: Nullable_1<TimeSpan>;
     MustRevalidate: boolean;
     NoCache: boolean;
-    readonly NoCacheHeaders: ICollection<StringSegment>;
+    readonly NoCacheHeaders: ICollection_1<StringSegment>;
     NoStore: boolean;
     NoTransform: boolean;
     OnlyIfCached: boolean;
     Private: boolean;
-    readonly PrivateHeaders: ICollection<StringSegment>;
+    readonly PrivateHeaders: ICollection_1<StringSegment>;
     ProxyRevalidate: boolean;
     Public: boolean;
-    SharedMaxAge: Nullable<TimeSpan>;
+    SharedMaxAge: Nullable_1<TimeSpan>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -69,15 +69,15 @@ export const CacheControlHeaderValue: {
 export type CacheControlHeaderValue = CacheControlHeaderValue$instance;
 
 export interface ContentDispositionHeaderValue$instance {
-    CreationDate: Nullable<DateTimeOffset>;
+    CreationDate: Nullable_1<DateTimeOffset>;
     DispositionType: StringSegment;
     FileName: StringSegment;
     FileNameStar: StringSegment;
-    ModificationDate: Nullable<DateTimeOffset>;
+    ModificationDate: Nullable_1<DateTimeOffset>;
     Name: StringSegment;
-    readonly Parameters: IList<NameValueHeaderValue>;
-    ReadDate: Nullable<DateTimeOffset>;
-    Size: Nullable<System_Internal.Int64>;
+    readonly Parameters: IList_1<NameValueHeaderValue>;
+    ReadDate: Nullable_1<DateTimeOffset>;
+    Size: Nullable_1<System_Internal.Int64>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     SetHttpFileName(fileName: StringSegment): void;
@@ -96,11 +96,11 @@ export const ContentDispositionHeaderValue: {
 export type ContentDispositionHeaderValue = ContentDispositionHeaderValue$instance;
 
 export interface ContentRangeHeaderValue$instance {
-    From: Nullable<System_Internal.Int64>;
+    From: Nullable_1<System_Internal.Int64>;
     readonly HasLength: boolean;
     readonly HasRange: boolean;
-    Length: Nullable<System_Internal.Int64>;
-    To: Nullable<System_Internal.Int64>;
+    Length: Nullable_1<System_Internal.Int64>;
+    To: Nullable_1<System_Internal.Int64>;
     Unit: StringSegment;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -132,11 +132,11 @@ export const CookieHeaderValue: {
     new(name: StringSegment): CookieHeaderValue;
     new(name: StringSegment, value: StringSegment): CookieHeaderValue;
     Parse(input: StringSegment): CookieHeaderValue;
-    ParseList(inputs: IList<System_Internal.String>): IList<CookieHeaderValue>;
-    ParseStrictList(inputs: IList<System_Internal.String>): IList<CookieHeaderValue>;
+    ParseList(inputs: IList_1<System_Internal.String>): IList_1<CookieHeaderValue>;
+    ParseStrictList(inputs: IList_1<System_Internal.String>): IList_1<CookieHeaderValue>;
     TryParse(input: StringSegment, parsedValue: CookieHeaderValue): boolean;
-    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<CookieHeaderValue>): boolean;
-    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<CookieHeaderValue>): boolean;
+    TryParseList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<CookieHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<CookieHeaderValue>): boolean;
 };
 
 
@@ -157,11 +157,11 @@ export const EntityTagHeaderValue: {
     new(tag: StringSegment, isWeak: boolean): EntityTagHeaderValue;
     readonly Any: EntityTagHeaderValue;
     Parse(input: StringSegment): EntityTagHeaderValue;
-    ParseList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
-    ParseStrictList(inputs: IList<System_Internal.String>): IList<EntityTagHeaderValue>;
+    ParseList(inputs: IList_1<System_Internal.String>): IList_1<EntityTagHeaderValue>;
+    ParseStrictList(inputs: IList_1<System_Internal.String>): IList_1<EntityTagHeaderValue>;
     TryParse(input: StringSegment, parsedValue: EntityTagHeaderValue): boolean;
-    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<EntityTagHeaderValue>): boolean;
-    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<EntityTagHeaderValue>): boolean;
+    TryParseList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<EntityTagHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<EntityTagHeaderValue>): boolean;
 };
 
 
@@ -172,14 +172,14 @@ export interface MediaTypeHeaderValue$instance {
     Charset: StringSegment;
     get Encoding(): Encoding | undefined;
     set Encoding(value: Encoding | undefined);
-    readonly Facets: IEnumerable<StringSegment>;
+    readonly Facets: IEnumerable_1<StringSegment>;
     readonly IsReadOnly: boolean;
     readonly MatchesAllSubTypes: boolean;
     readonly MatchesAllSubTypesWithoutSuffix: boolean;
     readonly MatchesAllTypes: boolean;
     MediaType: StringSegment;
-    readonly Parameters: IList<NameValueHeaderValue>;
-    Quality: Nullable<System_Internal.Double>;
+    readonly Parameters: IList_1<NameValueHeaderValue>;
+    Quality: Nullable_1<System_Internal.Double>;
     readonly SubType: StringSegment;
     readonly SubTypeWithoutSuffix: StringSegment;
     readonly Suffix: StringSegment;
@@ -198,11 +198,11 @@ export const MediaTypeHeaderValue: {
     new(mediaType: StringSegment): MediaTypeHeaderValue;
     new(mediaType: StringSegment, quality: double): MediaTypeHeaderValue;
     Parse(input: StringSegment): MediaTypeHeaderValue;
-    ParseList(inputs: IList<System_Internal.String>): IList<MediaTypeHeaderValue>;
-    ParseStrictList(inputs: IList<System_Internal.String>): IList<MediaTypeHeaderValue>;
+    ParseList(inputs: IList_1<System_Internal.String>): IList_1<MediaTypeHeaderValue>;
+    ParseStrictList(inputs: IList_1<System_Internal.String>): IList_1<MediaTypeHeaderValue>;
     TryParse(input: StringSegment, parsedValue: MediaTypeHeaderValue): boolean;
-    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<MediaTypeHeaderValue>): boolean;
-    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<MediaTypeHeaderValue>): boolean;
+    TryParseList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<MediaTypeHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<MediaTypeHeaderValue>): boolean;
 };
 
 
@@ -239,13 +239,13 @@ export interface NameValueHeaderValue$instance {
 export const NameValueHeaderValue: {
     new(name: StringSegment): NameValueHeaderValue;
     new(name: StringSegment, value: StringSegment): NameValueHeaderValue;
-    Find(values: IList<NameValueHeaderValue>, name: StringSegment): NameValueHeaderValue | undefined;
+    Find(values: IList_1<NameValueHeaderValue>, name: StringSegment): NameValueHeaderValue | undefined;
     Parse(input: StringSegment): NameValueHeaderValue;
-    ParseList(input: IList<System_Internal.String>): IList<NameValueHeaderValue>;
-    ParseStrictList(input: IList<System_Internal.String>): IList<NameValueHeaderValue>;
+    ParseList(input: IList_1<System_Internal.String>): IList_1<NameValueHeaderValue>;
+    ParseStrictList(input: IList_1<System_Internal.String>): IList_1<NameValueHeaderValue>;
     TryParse(input: StringSegment, parsedValue: NameValueHeaderValue): boolean;
-    TryParseList(input: IList<System_Internal.String>, parsedValues: IList<NameValueHeaderValue>): boolean;
-    TryParseStrictList(input: IList<System_Internal.String>, parsedValues: IList<NameValueHeaderValue>): boolean;
+    TryParseList(input: IList_1<System_Internal.String>, parsedValues: IList_1<NameValueHeaderValue>): boolean;
+    TryParseStrictList(input: IList_1<System_Internal.String>, parsedValues: IList_1<NameValueHeaderValue>): boolean;
 };
 
 
@@ -253,7 +253,7 @@ export type NameValueHeaderValue = NameValueHeaderValue$instance;
 
 export interface RangeConditionHeaderValue$instance {
     readonly EntityTag: EntityTagHeaderValue | undefined;
-    readonly LastModified: Nullable<DateTimeOffset>;
+    readonly LastModified: Nullable_1<DateTimeOffset>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -272,7 +272,7 @@ export const RangeConditionHeaderValue: {
 export type RangeConditionHeaderValue = RangeConditionHeaderValue$instance;
 
 export interface RangeHeaderValue$instance {
-    readonly Ranges: ICollection<RangeItemHeaderValue>;
+    readonly Ranges: ICollection_1<RangeItemHeaderValue>;
     Unit: StringSegment;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -282,7 +282,7 @@ export interface RangeHeaderValue$instance {
 
 export const RangeHeaderValue: {
     new(): RangeHeaderValue;
-    new(from: Nullable<System_Internal.Int64>, to: Nullable<System_Internal.Int64>): RangeHeaderValue;
+    new(from: Nullable_1<System_Internal.Int64>, to: Nullable_1<System_Internal.Int64>): RangeHeaderValue;
     Parse(input: StringSegment): RangeHeaderValue;
     TryParse(input: StringSegment, parsedValue: RangeHeaderValue): boolean;
 };
@@ -291,8 +291,8 @@ export const RangeHeaderValue: {
 export type RangeHeaderValue = RangeHeaderValue$instance;
 
 export interface RangeItemHeaderValue$instance {
-    readonly From: Nullable<System_Internal.Int64>;
-    readonly To: Nullable<System_Internal.Int64>;
+    readonly From: Nullable_1<System_Internal.Int64>;
+    readonly To: Nullable_1<System_Internal.Int64>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -300,7 +300,7 @@ export interface RangeItemHeaderValue$instance {
 
 
 export const RangeItemHeaderValue: {
-    new(from: Nullable<System_Internal.Int64>, to: Nullable<System_Internal.Int64>): RangeItemHeaderValue;
+    new(from: Nullable_1<System_Internal.Int64>, to: Nullable_1<System_Internal.Int64>): RangeItemHeaderValue;
 };
 
 
@@ -308,10 +308,10 @@ export type RangeItemHeaderValue = RangeItemHeaderValue$instance;
 
 export interface SetCookieHeaderValue$instance {
     Domain: StringSegment;
-    Expires: Nullable<DateTimeOffset>;
-    readonly Extensions: IList<StringSegment>;
+    Expires: Nullable_1<DateTimeOffset>;
+    readonly Extensions: IList_1<StringSegment>;
     HttpOnly: boolean;
-    MaxAge: Nullable<TimeSpan>;
+    MaxAge: Nullable_1<TimeSpan>;
     Name: StringSegment;
     Path: StringSegment;
     SameSite: SameSiteMode;
@@ -328,18 +328,18 @@ export const SetCookieHeaderValue: {
     new(name: StringSegment): SetCookieHeaderValue;
     new(name: StringSegment, value: StringSegment): SetCookieHeaderValue;
     Parse(input: StringSegment): SetCookieHeaderValue;
-    ParseList(inputs: IList<System_Internal.String>): IList<SetCookieHeaderValue>;
-    ParseStrictList(inputs: IList<System_Internal.String>): IList<SetCookieHeaderValue>;
+    ParseList(inputs: IList_1<System_Internal.String>): IList_1<SetCookieHeaderValue>;
+    ParseStrictList(inputs: IList_1<System_Internal.String>): IList_1<SetCookieHeaderValue>;
     TryParse(input: StringSegment, parsedValue: SetCookieHeaderValue): boolean;
-    TryParseList(inputs: IList<System_Internal.String>, parsedValues: IList<SetCookieHeaderValue>): boolean;
-    TryParseStrictList(inputs: IList<System_Internal.String>, parsedValues: IList<SetCookieHeaderValue>): boolean;
+    TryParseList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<SetCookieHeaderValue>): boolean;
+    TryParseStrictList(inputs: IList_1<System_Internal.String>, parsedValues: IList_1<SetCookieHeaderValue>): boolean;
 };
 
 
 export type SetCookieHeaderValue = SetCookieHeaderValue$instance;
 
 export interface StringWithQualityHeaderValue$instance {
-    readonly Quality: Nullable<System_Internal.Double>;
+    readonly Quality: Nullable_1<System_Internal.Double>;
     readonly Value: StringSegment;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -351,11 +351,11 @@ export const StringWithQualityHeaderValue: {
     new(value: StringSegment): StringWithQualityHeaderValue;
     new(value: StringSegment, quality: double): StringWithQualityHeaderValue;
     Parse(input: StringSegment): StringWithQualityHeaderValue;
-    ParseList(input: IList<System_Internal.String>): IList<StringWithQualityHeaderValue>;
-    ParseStrictList(input: IList<System_Internal.String>): IList<StringWithQualityHeaderValue>;
+    ParseList(input: IList_1<System_Internal.String>): IList_1<StringWithQualityHeaderValue>;
+    ParseStrictList(input: IList_1<System_Internal.String>): IList_1<StringWithQualityHeaderValue>;
     TryParse(input: StringSegment, parsedValue: StringWithQualityHeaderValue): boolean;
-    TryParseList(input: IList<System_Internal.String>, parsedValues: IList<StringWithQualityHeaderValue>): boolean;
-    TryParseStrictList(input: IList<System_Internal.String>, parsedValues: IList<StringWithQualityHeaderValue>): boolean;
+    TryParseList(input: IList_1<System_Internal.String>, parsedValues: IList_1<StringWithQualityHeaderValue>): boolean;
+    TryParseStrictList(input: IList_1<System_Internal.String>, parsedValues: IList_1<StringWithQualityHeaderValue>): boolean;
 };
 
 
@@ -504,7 +504,7 @@ export abstract class HeaderUtilities$instance {
     static TryParseDate(input: StringSegment, result: DateTimeOffset): boolean;
     static TryParseNonNegativeInt32(value: StringSegment, result: int): boolean;
     static TryParseNonNegativeInt64(value: StringSegment, result: long): boolean;
-    static TryParseSeconds(headerValues: StringValues, targetValue: string, value: Nullable<TimeSpan>): boolean;
+    static TryParseSeconds(headerValues: StringValues, targetValue: string, value: Nullable_1<TimeSpan>): boolean;
     static UnescapeAsQuotedString(input: StringSegment): StringSegment;
 }
 

@@ -9,11 +9,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { IEnumerable, IEqualityComparer, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, Func, IAsyncDisposable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IEnumerable_1, IEqualityComparer_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, Func_2, IAsyncDisposable, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum QueueProcessingOrder {
     OldestFirst = 0,
@@ -22,13 +22,13 @@ export enum QueueProcessingOrder {
 
 
 export interface RateLimitPartition_1$instance<TKey> {
-    readonly Factory: Func<TKey, RateLimiter>;
+    readonly Factory: Func_2<TKey, RateLimiter>;
     readonly PartitionKey: TKey;
 }
 
 
 export const RateLimitPartition_1: {
-    new<TKey>(partitionKey: TKey, factory: Func<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
+    new<TKey>(partitionKey: TKey, factory: Func_2<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
 };
 
 
@@ -38,8 +38,8 @@ export interface ConcurrencyLimiter$instance extends RateLimiter {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable<TimeSpan>;
-    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    readonly IdleDuration: Nullable_1<TimeSpan>;
+    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquireCore(permitCount: int): RateLimitLease;
     Dispose(disposing: boolean): void;
     Dispose(): void;
@@ -73,10 +73,10 @@ export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable<TimeSpan>;
+    readonly IdleDuration: Nullable_1<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
-    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquireCore(permitCount: int): RateLimitLease;
     Dispose(disposing: boolean): void;
     Dispose(): void;
@@ -131,8 +131,8 @@ export interface PartitionedRateLimiter_1$instance<TResource> {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    AcquireAsync(resource: TResource, permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
-    AcquireAsyncCore(resource: TResource, permitCount: int, cancellationToken: CancellationToken): ValueTask<RateLimitLease>;
+    AcquireAsync(resource: TResource, permitCount?: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
+    AcquireAsyncCore(resource: TResource, permitCount: int, cancellationToken: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquire(resource: TResource, permitCount?: int): RateLimitLease;
     AttemptAcquireCore(resource: TResource, permitCount: int): RateLimitLease;
     Dispose(disposing: boolean): void;
@@ -140,7 +140,7 @@ export interface PartitionedRateLimiter_1$instance<TResource> {
     DisposeAsync(): ValueTask;
     DisposeAsyncCore(): ValueTask;
     GetStatistics(resource: TResource): RateLimiterStatistics | undefined;
-    WithTranslatedKey<TOuter>(keyAdapter: Func<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
+    WithTranslatedKey<TOuter>(keyAdapter: Func_2<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
 }
 
 
@@ -154,9 +154,9 @@ export interface RateLimiter$instance {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable<TimeSpan>;
-    AcquireAsync(permitCount?: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
-    AcquireAsyncCore(permitCount: int, cancellationToken: CancellationToken): ValueTask<RateLimitLease>;
+    readonly IdleDuration: Nullable_1<TimeSpan>;
+    AcquireAsync(permitCount?: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
+    AcquireAsyncCore(permitCount: int, cancellationToken: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquire(permitCount?: int): RateLimitLease;
     AttemptAcquireCore(permitCount: int): RateLimitLease;
     Dispose(disposing: boolean): void;
@@ -193,10 +193,10 @@ export interface RateLimitLease$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsAcquired: boolean;
-    readonly MetadataNames: IEnumerable<System_Internal.String>;
+    readonly MetadataNames: IEnumerable_1<System_Internal.String>;
     Dispose(): void;
     Dispose(disposing: boolean): void;
-    GetAllMetadata(): IEnumerable<KeyValuePair<System_Internal.String, unknown>>;
+    GetAllMetadata(): IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>;
     TryGetMetadata(metadataName: string, metadata: unknown): boolean;
     TryGetMetadata<T>(metadataName: MetadataName_1<T>, metadata: T): boolean;
 }
@@ -228,10 +228,10 @@ export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimit
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable<TimeSpan>;
+    readonly IdleDuration: Nullable_1<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
-    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AcquireAsyncCore(permitCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquireCore(permitCount: int): RateLimitLease;
     Dispose(disposing: boolean): void;
     Dispose(): void;
@@ -269,10 +269,10 @@ export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly IdleDuration: Nullable<TimeSpan>;
+    readonly IdleDuration: Nullable_1<TimeSpan>;
     readonly IsAutoReplenishing: boolean;
     readonly ReplenishmentPeriod: TimeSpan;
-    AcquireAsyncCore(tokenCount: int, cancellationToken?: CancellationToken): ValueTask<RateLimitLease>;
+    AcquireAsyncCore(tokenCount: int, cancellationToken?: CancellationToken): ValueTask_1<RateLimitLease>;
     AttemptAcquireCore(tokenCount: int): RateLimitLease;
     Dispose(disposing: boolean): void;
     Dispose(): void;
@@ -316,7 +316,7 @@ export abstract class MetadataName$instance {
 export type MetadataName = MetadataName$instance;
 
 export abstract class PartitionedRateLimiter$instance {
-    static Create<TResource, TPartitionKey>(partitioner: Func<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer<TPartitionKey>): PartitionedRateLimiter_1<TResource>;
+    static Create<TResource, TPartitionKey>(partitioner: Func_2<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer_1<TPartitionKey>): PartitionedRateLimiter_1<TResource>;
     static CreateChained<TResource>(...limiters: PartitionedRateLimiter_1<TResource>[]): PartitionedRateLimiter_1<TResource>;
 }
 
@@ -324,12 +324,12 @@ export abstract class PartitionedRateLimiter$instance {
 export type PartitionedRateLimiter = PartitionedRateLimiter$instance;
 
 export abstract class RateLimitPartition$instance {
-    static Get<TKey>(partitionKey: TKey, factory: Func<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
-    static GetConcurrencyLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, ConcurrencyLimiterOptions>): RateLimitPartition_1<TKey>;
-    static GetFixedWindowLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, FixedWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static Get<TKey>(partitionKey: TKey, factory: Func_2<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
+    static GetConcurrencyLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, ConcurrencyLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetFixedWindowLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, FixedWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
     static GetNoLimiter<TKey>(partitionKey: TKey): RateLimitPartition_1<TKey>;
-    static GetSlidingWindowLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, SlidingWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
-    static GetTokenBucketLimiter<TKey>(partitionKey: TKey, factory: Func<TKey, TokenBucketRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetSlidingWindowLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, SlidingWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetTokenBucketLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, TokenBucketRateLimiterOptions>): RateLimitPartition_1<TKey>;
 }
 
 

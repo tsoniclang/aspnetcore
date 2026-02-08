@@ -10,21 +10,21 @@ import type { AuthenticateResult } from "../../Microsoft.AspNetCore.Authenticati
 import * as Microsoft_AspNetCore_Authorization_Internal from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
 import type { AuthorizationFailure, AuthorizationPolicy, IAuthorizationMiddlewareResultHandler, IAuthorizationService } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IPolicyEvaluator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
 
-    AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
-    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
+    AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task_1<AuthenticateResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task_1<PolicyAuthorizationResult>;
 }
 
 
 export type IPolicyEvaluator = IPolicyEvaluator$instance;
 
-export interface AuthorizationMiddlewareResultHandler$instance {
+export interface AuthorizationMiddlewareResultHandler$instance extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationMiddlewareResultHandler$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationMiddlewareResultHandler: never;
 
     HandleAsync(next: RequestDelegate, context: HttpContext, policy: AuthorizationPolicy, authorizeResult: PolicyAuthorizationResult): Task;
@@ -39,8 +39,6 @@ export const AuthorizationMiddlewareResultHandler: {
 export interface __AuthorizationMiddlewareResultHandler$views {
     As_IAuthorizationMiddlewareResultHandler(): Microsoft_AspNetCore_Authorization_Internal.IAuthorizationMiddlewareResultHandler$instance;
 }
-
-export interface AuthorizationMiddlewareResultHandler$instance extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationMiddlewareResultHandler$instance {}
 
 export type AuthorizationMiddlewareResultHandler = AuthorizationMiddlewareResultHandler$instance & __AuthorizationMiddlewareResultHandler$views;
 
@@ -64,11 +62,11 @@ export const PolicyAuthorizationResult: {
 
 export type PolicyAuthorizationResult = PolicyAuthorizationResult$instance;
 
-export interface PolicyEvaluator$instance {
+export interface PolicyEvaluator$instance extends IPolicyEvaluator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
 
-    AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task<AuthenticateResult>;
-    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task<PolicyAuthorizationResult>;
+    AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task_1<AuthenticateResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task_1<PolicyAuthorizationResult>;
 }
 
 
@@ -80,8 +78,6 @@ export const PolicyEvaluator: {
 export interface __PolicyEvaluator$views {
     As_IPolicyEvaluator(): IPolicyEvaluator$instance;
 }
-
-export interface PolicyEvaluator$instance extends IPolicyEvaluator$instance {}
 
 export type PolicyEvaluator = PolicyEvaluator$instance & __PolicyEvaluator$views;
 

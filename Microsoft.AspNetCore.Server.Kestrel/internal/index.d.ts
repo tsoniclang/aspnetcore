@@ -8,10 +8,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { KestrelServerOptions, ListenOptions } from "../../Microsoft.AspNetCore.Server.Kestrel.Core/internal/index.js";
 import type { HttpsConnectionAdapterOptions } from "../../Microsoft.AspNetCore.Server.Kestrel.Https/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, UInt64, Void } from "@tsonic/dotnet/System.js";
-import type { IPAddress, IPEndPoint } from "@tsonic/dotnet/System.Net.js";
-import type { IConfiguration, IConfigurationSection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js";
+import type { IPAddress, IPEndPoint } from "@tsonic/dotnet/System.Net/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, UInt64, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IConfiguration, IConfigurationSection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
 
 export interface EndpointConfiguration$instance {
     readonly ConfigSection: IConfigurationSection;
@@ -31,21 +31,21 @@ export interface KestrelConfigurationLoader$instance {
     Configuration: IConfiguration;
     readonly Options: KestrelServerOptions;
     AnyIPEndpoint(port: int): KestrelConfigurationLoader;
-    AnyIPEndpoint(port: int, configure: Action<ListenOptions>): KestrelConfigurationLoader;
-    Endpoint(name: string, configureOptions: Action<EndpointConfiguration>): KestrelConfigurationLoader;
+    AnyIPEndpoint(port: int, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
+    Endpoint(name: string, configureOptions: Action_1<EndpointConfiguration>): KestrelConfigurationLoader;
     Endpoint(address: IPAddress, port: int): KestrelConfigurationLoader;
-    Endpoint(address: IPAddress, port: int, configure: Action<ListenOptions>): KestrelConfigurationLoader;
+    Endpoint(address: IPAddress, port: int, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
     Endpoint(endPoint: IPEndPoint): KestrelConfigurationLoader;
-    Endpoint(endPoint: IPEndPoint, configure: Action<ListenOptions>): KestrelConfigurationLoader;
+    Endpoint(endPoint: IPEndPoint, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
     HandleEndpoint(handle: ulong): KestrelConfigurationLoader;
-    HandleEndpoint(handle: ulong, configure: Action<ListenOptions>): KestrelConfigurationLoader;
+    HandleEndpoint(handle: ulong, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
     Load(): void;
     LocalhostEndpoint(port: int): KestrelConfigurationLoader;
-    LocalhostEndpoint(port: int, configure: Action<ListenOptions>): KestrelConfigurationLoader;
+    LocalhostEndpoint(port: int, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
     NamedPipeEndpoint(pipeName: string): KestrelConfigurationLoader;
-    NamedPipeEndpoint(pipeName: string, configure: Action<ListenOptions>): KestrelConfigurationLoader;
+    NamedPipeEndpoint(pipeName: string, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
     UnixSocketEndpoint(socketPath: string): KestrelConfigurationLoader;
-    UnixSocketEndpoint(socketPath: string, configure: Action<ListenOptions>): KestrelConfigurationLoader;
+    UnixSocketEndpoint(socketPath: string, configure: Action_1<ListenOptions>): KestrelConfigurationLoader;
 }
 
 

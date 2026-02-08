@@ -10,18 +10,18 @@ import type { IApplicationBuilder } from "../../Microsoft.AspNetCore.Builder/int
 import type { IWebHost, IWebHostBuilder } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import type { RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { IRouteBuilder } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class WebHost$instance {
     static CreateDefaultBuilder(): IWebHostBuilder;
     static CreateDefaultBuilder(args: string[]): IWebHostBuilder;
     static Start(app: RequestDelegate): IWebHost;
-    static Start(routeBuilder: Action<IRouteBuilder>): IWebHost;
+    static Start(routeBuilder: Action_1<IRouteBuilder>): IWebHost;
     static Start(url: string, app: RequestDelegate): IWebHost;
-    static Start(url: string, routeBuilder: Action<IRouteBuilder>): IWebHost;
-    static StartWith(app: Action<IApplicationBuilder>): IWebHost;
-    static StartWith(url: string, app: Action<IApplicationBuilder>): IWebHost;
+    static Start(url: string, routeBuilder: Action_1<IRouteBuilder>): IWebHost;
+    static StartWith(app: Action_1<IApplicationBuilder>): IWebHost;
+    static StartWith(url: string, app: Action_1<IApplicationBuilder>): IWebHost;
 }
 
 

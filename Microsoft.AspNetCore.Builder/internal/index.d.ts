@@ -39,31 +39,31 @@ import * as Microsoft_AspNetCore_StaticFiles_Infrastructure_Internal from "../..
 import type { SharedOptions, SharedOptionsBase } from "../../Microsoft.AspNetCore.StaticFiles.Infrastructure/internal/index.js";
 import type { IContentTypeProvider, IDirectoryFormatter, StaticFileResponseContext } from "../../Microsoft.AspNetCore.StaticFiles/internal/index.js";
 import type { WebHostBuilderOptions } from "../../Microsoft.Extensions.Hosting/internal/index.js";
-import type { ICollection, IDictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Delegate, Exception, Func, IAsyncDisposable, IDisposable, Int32, Int64, IServiceProvider, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
-import type { IPAddress, IPNetwork as IPNetwork__System_Net } from "@tsonic/dotnet/System.Net.js";
-import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ConfigurationManager, IConfiguration, IConfigurationBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js";
-import type { IServiceCollection, IServiceProviderFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
-import type { IMetricsBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Diagnostics.Metrics.js";
-import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders.js";
-import * as Microsoft_Extensions_Hosting_Lib from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
-import type { HostBuilderContext, IHost, IHostApplicationBuilder, IHostApplicationLifetime, IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
-import type { ILogger, ILoggerFactory, ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/index.js";
+import type { IPAddress, IPNetwork as IPNetwork__System_Net } from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { Assembly } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Action_2, Boolean as ClrBoolean, Delegate, Exception, Func_1, Func_2, Func_3, IAsyncDisposable, IDisposable, Int32, Int64, IServiceProvider, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ConfigurationManager, IConfiguration, IConfigurationBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
+import type { IServiceCollection, IServiceProviderFactory_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
+import type { IMetricsBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Diagnostics.Metrics/internal/index.js";
+import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
+import * as Microsoft_Extensions_Hosting_Lib from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
+import type { HostBuilderContext, IHost, IHostApplicationBuilder, IHostApplicationLifetime, IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
+import type { ILogger, ILoggerFactory, ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface IApplicationBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
 
     ApplicationServices: IServiceProvider;
     readonly ServerFeatures: IFeatureCollection;
-    readonly Properties: IDictionary<System_Internal.String, unknown | undefined>;
+    readonly Properties: IDictionary_2<System_Internal.String, unknown | undefined>;
     Build(): RequestDelegate;
     New(): IApplicationBuilder;
-    Use(middleware: Func<RequestDelegate, RequestDelegate>): IApplicationBuilder;
+    Use(middleware: Func_2<RequestDelegate, RequestDelegate>): IApplicationBuilder;
 }
 
 
@@ -72,7 +72,7 @@ export type IApplicationBuilder = IApplicationBuilder$instance;
 export interface IEndpointConventionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -81,7 +81,7 @@ export type IEndpointConventionBuilder = IEndpointConventionBuilder$instance;
 export interface IHubEndpointConventionBuilder$instance extends IEndpointConventionBuilder {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -89,15 +89,15 @@ export interface IHubEndpointConventionBuilder$instance extends IEndpointConvent
 
 export type IHubEndpointConventionBuilder = IHubEndpointConventionBuilder$instance;
 
-export interface ApplicationBuilder$instance {
+export interface ApplicationBuilder$instance extends IApplicationBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
 
     ApplicationServices: IServiceProvider;
-    readonly Properties: IDictionary<System_Internal.String, unknown | undefined>;
+    readonly Properties: IDictionary_2<System_Internal.String, unknown | undefined>;
     readonly ServerFeatures: IFeatureCollection;
     Build(): RequestDelegate;
     New(): IApplicationBuilder;
-    Use(middleware: Func<RequestDelegate, RequestDelegate>): IApplicationBuilder;
+    Use(middleware: Func_2<RequestDelegate, RequestDelegate>): IApplicationBuilder;
 }
 
 
@@ -111,8 +111,6 @@ export interface __ApplicationBuilder$views {
     As_IApplicationBuilder(): IApplicationBuilder$instance;
 }
 
-export interface ApplicationBuilder$instance extends IApplicationBuilder$instance {}
-
 export type ApplicationBuilder = ApplicationBuilder$instance & __ApplicationBuilder$views;
 
 
@@ -120,8 +118,8 @@ export interface ComponentEndpointConventionBuilder$instance extends IHubEndpoin
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(finalConvention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(finalConvention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -136,17 +134,17 @@ export interface __ComponentEndpointConventionBuilder$views {
 export type ComponentEndpointConventionBuilder = ComponentEndpointConventionBuilder$instance & __ComponentEndpointConventionBuilder$views;
 
 
-export interface ConfigureHostBuilder$instance {
+export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance, Microsoft_Extensions_Hosting_Lib.IHostBuilder {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsConfigureWebHost: never;
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
-    readonly Properties: IDictionary<unknown, unknown>;
-    ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
-    ConfigureContainer<TContainerBuilder>(configureDelegate: Action<HostBuilderContext, TContainerBuilder>): IHostBuilder;
-    ConfigureHostConfiguration(configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
-    ConfigureServices(configureDelegate: Action<HostBuilderContext, IServiceCollection>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory<TContainerBuilder>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: Func<HostBuilderContext, IServiceProviderFactory<TContainerBuilder>>): IHostBuilder;
+    readonly Properties: IDictionary_2<unknown, unknown>;
+    ConfigureAppConfiguration(configureDelegate: Action_2<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
+    ConfigureContainer<TContainerBuilder>(configureDelegate: Action_2<HostBuilderContext, TContainerBuilder>): IHostBuilder;
+    ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
+    ConfigureServices(configureDelegate: Action_2<HostBuilderContext, IServiceCollection>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
 }
 
 
@@ -158,18 +156,16 @@ export interface __ConfigureHostBuilder$views {
     As_ISupportsConfigureWebHost(): Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance;
 }
 
-export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance, Microsoft_Extensions_Hosting_Lib.IHostBuilder {}
-
 export type ConfigureHostBuilder = ConfigureHostBuilder$instance & __ConfigureHostBuilder$views;
 
 
-export interface ConfigureWebHostBuilder$instance {
+export interface ConfigureWebHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsStartup$instance, Microsoft_AspNetCore_Hosting_Internal.IWebHostBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsStartup: never;
 
-    ConfigureAppConfiguration(configureDelegate: Action<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
-    ConfigureServices(configureServices: Action<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
-    ConfigureServices(configureServices: Action<IServiceCollection>): IWebHostBuilder;
+    ConfigureAppConfiguration(configureDelegate: Action_2<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action_2<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
+    ConfigureServices(configureServices: Action_1<IServiceCollection>): IWebHostBuilder;
     GetSetting(key: string): string | undefined;
     UseSetting(key: string, value: string): IWebHostBuilder;
 }
@@ -184,16 +180,14 @@ export interface __ConfigureWebHostBuilder$views {
     As_IWebHostBuilder(): Microsoft_AspNetCore_Hosting_Internal.IWebHostBuilder$instance;
 }
 
-export interface ConfigureWebHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsStartup$instance, Microsoft_AspNetCore_Hosting_Internal.IWebHostBuilder$instance {}
-
 export type ConfigureWebHostBuilder = ConfigureWebHostBuilder$instance & __ConfigureWebHostBuilder$views;
 
 
-export interface ConnectionEndpointRouteBuilder$instance {
+export interface ConnectionEndpointRouteBuilder$instance extends IEndpointConventionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(finalConvention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(finalConvention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -205,16 +199,14 @@ export interface __ConnectionEndpointRouteBuilder$views {
     As_IEndpointConventionBuilder(): IEndpointConventionBuilder$instance;
 }
 
-export interface ConnectionEndpointRouteBuilder$instance extends IEndpointConventionBuilder$instance {}
-
 export type ConnectionEndpointRouteBuilder = ConnectionEndpointRouteBuilder$instance & __ConnectionEndpointRouteBuilder$views;
 
 
-export interface ControllerActionEndpointConventionBuilder$instance {
+export interface ControllerActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(finalConvention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(finalConvention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -226,22 +218,20 @@ export interface __ControllerActionEndpointConventionBuilder$views {
     As_IEndpointConventionBuilder(): IEndpointConventionBuilder$instance;
 }
 
-export interface ControllerActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {}
-
 export type ControllerActionEndpointConventionBuilder = ControllerActionEndpointConventionBuilder$instance & __ControllerActionEndpointConventionBuilder$views;
 
 
 export interface CookiePolicyOptions$instance {
-    get CheckConsentNeeded(): Func<HttpContext, System_Internal.Boolean> | undefined;
-    set CheckConsentNeeded(value: Func<HttpContext, System_Internal.Boolean> | undefined);
+    get CheckConsentNeeded(): Func_2<HttpContext, System_Internal.Boolean> | undefined;
+    set CheckConsentNeeded(value: Func_2<HttpContext, System_Internal.Boolean> | undefined);
     ConsentCookie: CookieBuilder;
     ConsentCookieValue: string;
     HttpOnly: HttpOnlyPolicy;
     MinimumSameSitePolicy: SameSiteMode;
-    get OnAppendCookie(): Action<AppendCookieContext> | undefined;
-    set OnAppendCookie(value: Action<AppendCookieContext> | undefined);
-    get OnDeleteCookie(): Action<DeleteCookieContext> | undefined;
-    set OnDeleteCookie(value: Action<DeleteCookieContext> | undefined);
+    get OnAppendCookie(): Action_1<AppendCookieContext> | undefined;
+    set OnAppendCookie(value: Action_1<AppendCookieContext> | undefined);
+    get OnDeleteCookie(): Action_1<DeleteCookieContext> | undefined;
+    set OnDeleteCookie(value: Action_1<DeleteCookieContext> | undefined);
     Secure: CookieSecurePolicy;
 }
 
@@ -254,7 +244,7 @@ export const CookiePolicyOptions: {
 export type CookiePolicyOptions = CookiePolicyOptions$instance;
 
 export interface DefaultFilesOptions$instance extends SharedOptionsBase {
-    DefaultFileNames: IList<System_Internal.String>;
+    DefaultFileNames: IList_1<System_Internal.String>;
 }
 
 
@@ -298,8 +288,8 @@ export interface EndpointBuilder$instance {
     ApplicationServices: IServiceProvider;
     get DisplayName(): string | undefined;
     set DisplayName(value: string | undefined);
-    readonly FilterFactories: IList<Func<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>>;
-    readonly Metadata: IList<unknown>;
+    readonly FilterFactories: IList_1<Func_3<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>>;
+    readonly Metadata: IList_1<unknown>;
     get RequestDelegate(): RequestDelegate | undefined;
     set RequestDelegate(value: RequestDelegate | undefined);
     Build(): Endpoint;
@@ -318,10 +308,10 @@ export interface ExceptionHandlerOptions$instance {
     get ExceptionHandler(): RequestDelegate | undefined;
     set ExceptionHandler(value: RequestDelegate | undefined);
     ExceptionHandlingPath: PathString;
-    get StatusCodeSelector(): Func<Exception, System_Internal.Int32> | undefined;
-    set StatusCodeSelector(value: Func<Exception, System_Internal.Int32> | undefined);
-    get SuppressDiagnosticsCallback(): Func<ExceptionHandlerSuppressDiagnosticsContext, System_Internal.Boolean> | undefined;
-    set SuppressDiagnosticsCallback(value: Func<ExceptionHandlerSuppressDiagnosticsContext, System_Internal.Boolean> | undefined);
+    get StatusCodeSelector(): Func_2<Exception, System_Internal.Int32> | undefined;
+    set StatusCodeSelector(value: Func_2<Exception, System_Internal.Int32> | undefined);
+    get SuppressDiagnosticsCallback(): Func_2<ExceptionHandlerSuppressDiagnosticsContext, System_Internal.Boolean> | undefined;
+    set SuppressDiagnosticsCallback(value: Func_2<ExceptionHandlerSuppressDiagnosticsContext, System_Internal.Boolean> | undefined);
 }
 
 
@@ -349,16 +339,16 @@ export const FileServerOptions: {
 export type FileServerOptions = FileServerOptions$instance;
 
 export interface ForwardedHeadersOptions$instance {
-    AllowedHosts: IList<System_Internal.String>;
+    AllowedHosts: IList_1<System_Internal.String>;
     ForwardedForHeaderName: string;
     ForwardedHeaders: ForwardedHeaders;
     ForwardedHostHeaderName: string;
     ForwardedPrefixHeaderName: string;
     ForwardedProtoHeaderName: string;
-    ForwardLimit: Nullable<System_Internal.Int32>;
-    readonly KnownIPNetworks: IList<IPNetwork__System_Net>;
-    readonly KnownNetworks: IList<IPNetwork>;
-    readonly KnownProxies: IList<IPAddress>;
+    ForwardLimit: Nullable_1<System_Internal.Int32>;
+    readonly KnownIPNetworks: IList_1<IPNetwork__System_Net>;
+    readonly KnownNetworks: IList_1<IPNetwork>;
+    readonly KnownProxies: IList_1<IPAddress>;
     OriginalForHeaderName: string;
     OriginalHostHeaderName: string;
     OriginalPrefixHeaderName: string;
@@ -391,8 +381,8 @@ export interface HubEndpointConventionBuilder$instance extends IHubEndpointConve
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(finalConvention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(finalConvention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -428,7 +418,7 @@ export interface IISServerOptions$instance {
     set AuthenticationDisplayName(value: string | undefined);
     AutomaticAuthentication: boolean;
     MaxRequestBodyBufferSize: int;
-    MaxRequestBodySize: Nullable<System_Internal.Int64>;
+    MaxRequestBodySize: Nullable_1<System_Internal.Int64>;
 }
 
 
@@ -439,11 +429,11 @@ export const IISServerOptions: {
 
 export type IISServerOptions = IISServerOptions$instance;
 
-export interface PageActionEndpointConventionBuilder$instance {
+export interface PageActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(finalConvention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(finalConvention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -455,16 +445,14 @@ export interface __PageActionEndpointConventionBuilder$views {
     As_IEndpointConventionBuilder(): IEndpointConventionBuilder$instance;
 }
 
-export interface PageActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {}
-
 export type PageActionEndpointConventionBuilder = PageActionEndpointConventionBuilder$instance & __PageActionEndpointConventionBuilder$views;
 
 
-export interface RazorComponentsEndpointConventionBuilder$instance {
+export interface RazorComponentsEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(finallyConvention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(finallyConvention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -476,8 +464,6 @@ export interface __RazorComponentsEndpointConventionBuilder$views {
     As_IEndpointConventionBuilder(): IEndpointConventionBuilder$instance;
 }
 
-export interface RazorComponentsEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {}
-
 export type RazorComponentsEndpointConventionBuilder = RazorComponentsEndpointConventionBuilder$instance & __RazorComponentsEndpointConventionBuilder$views;
 
 
@@ -487,11 +473,11 @@ export interface RequestLocalizationOptions$instance {
     DefaultRequestCulture: RequestCulture;
     FallBackToParentCultures: boolean;
     FallBackToParentUICultures: boolean;
-    RequestCultureProviders: IList<IRequestCultureProvider>;
-    get SupportedCultures(): IList<CultureInfo> | undefined;
-    set SupportedCultures(value: IList<CultureInfo> | undefined);
-    get SupportedUICultures(): IList<CultureInfo> | undefined;
-    set SupportedUICultures(value: IList<CultureInfo> | undefined);
+    RequestCultureProviders: IList_1<IRequestCultureProvider>;
+    get SupportedCultures(): IList_1<CultureInfo> | undefined;
+    set SupportedCultures(value: IList_1<CultureInfo> | undefined);
+    get SupportedUICultures(): IList_1<CultureInfo> | undefined;
+    set SupportedUICultures(value: IList_1<CultureInfo> | undefined);
     AddSupportedCultures(...cultures: string[]): RequestLocalizationOptions;
     AddSupportedUICultures(...uiCultures: string[]): RequestLocalizationOptions;
     SetDefaultCulture(defaultCulture: string): RequestLocalizationOptions;
@@ -505,24 +491,22 @@ export const RequestLocalizationOptions: {
 
 export type RequestLocalizationOptions = RequestLocalizationOptions$instance;
 
-export interface RouteHandlerBuilder$instance {
+export interface RouteHandlerBuilder$instance extends IEndpointConventionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(finalConvention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(finalConvention: Action_1<EndpointBuilder>): void;
 }
 
 
 export const RouteHandlerBuilder: {
-    new(endpointConventionBuilders: IEnumerable<IEndpointConventionBuilder>): RouteHandlerBuilder;
+    new(endpointConventionBuilders: IEnumerable_1<IEndpointConventionBuilder>): RouteHandlerBuilder;
 };
 
 
 export interface __RouteHandlerBuilder$views {
     As_IEndpointConventionBuilder(): IEndpointConventionBuilder$instance;
 }
-
-export interface RouteHandlerBuilder$instance extends IEndpointConventionBuilder$instance {}
 
 export type RouteHandlerBuilder = RouteHandlerBuilder$instance & __RouteHandlerBuilder$views;
 
@@ -558,8 +542,8 @@ export interface StaticFileOptions$instance extends SharedOptionsBase {
     get DefaultContentType(): string | undefined;
     set DefaultContentType(value: string | undefined);
     HttpsCompression: HttpsCompressionMode;
-    OnPrepareResponse: Action<StaticFileResponseContext>;
-    OnPrepareResponseAsync: Func<StaticFileResponseContext, Task>;
+    OnPrepareResponse: Action_1<StaticFileResponseContext>;
+    OnPrepareResponseAsync: Func_2<StaticFileResponseContext, Task>;
     ServeUnknownFileTypes: boolean;
 }
 
@@ -574,7 +558,7 @@ export type StaticFileOptions = StaticFileOptions$instance;
 
 export interface StatusCodePagesOptions$instance {
     CreateScopeForStatusCodePages: boolean;
-    HandleAsync: Func<StatusCodeContext, Task>;
+    HandleAsync: Func_2<StatusCodeContext, Task>;
 }
 
 
@@ -585,7 +569,7 @@ export const StatusCodePagesOptions: {
 
 export type StatusCodePagesOptions = StatusCodePagesOptions$instance;
 
-export interface WebApplication$instance {
+export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance, Microsoft_Extensions_Hosting_Lib.IHost, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder: never;
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHost: never;
@@ -597,13 +581,13 @@ export interface WebApplication$instance {
     readonly Lifetime: IHostApplicationLifetime;
     readonly Logger: ILogger;
     readonly Services: IServiceProvider;
-    readonly Urls: ICollection<System_Internal.String>;
+    readonly Urls: ICollection_1<System_Internal.String>;
     DisposeAsync(): ValueTask;
     Run(url?: string): void;
     RunAsync(url?: string): Task;
     StartAsync(cancellationToken?: CancellationToken): Task;
     StopAsync(cancellationToken?: CancellationToken): Task;
-    Use(middleware: Func<RequestDelegate, RequestDelegate>): IApplicationBuilder;
+    Use(middleware: Func_2<RequestDelegate, RequestDelegate>): IApplicationBuilder;
 }
 
 
@@ -623,8 +607,6 @@ export interface __WebApplication$views {
     As_IApplicationBuilder(): IApplicationBuilder$instance;
     As_IEndpointRouteBuilder(): Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance;
 }
-
-export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance, Microsoft_Extensions_Hosting_Lib.IHost, System_Internal.IAsyncDisposable, System_Internal.IDisposable {}
 
 export type WebApplication = WebApplication$instance & __WebApplication$views;
 
@@ -671,7 +653,7 @@ export const WebApplicationOptions: {
 export type WebApplicationOptions = WebApplicationOptions$instance;
 
 export interface WebSocketOptions$instance {
-    readonly AllowedOrigins: IList<System_Internal.String>;
+    readonly AllowedOrigins: IList_1<System_Internal.String>;
     KeepAliveInterval: TimeSpan;
     KeepAliveTimeout: TimeSpan;
     ReceiveBufferSize: int;
@@ -706,7 +688,7 @@ export type AntiforgeryApplicationBuilderExtensions = AntiforgeryApplicationBuil
 
 export abstract class ApplicationBuilderExtensions$instance {
     static UseRequestLocalization(app: IApplicationBuilder, options: RequestLocalizationOptions): IApplicationBuilder;
-    static UseRequestLocalization(app: IApplicationBuilder, optionsAction: Action<RequestLocalizationOptions>): IApplicationBuilder;
+    static UseRequestLocalization(app: IApplicationBuilder, optionsAction: Action_1<RequestLocalizationOptions>): IApplicationBuilder;
     static UseRequestLocalization(app: IApplicationBuilder, ...cultures: string[]): IApplicationBuilder;
     static UseRequestLocalization(app: IApplicationBuilder): IApplicationBuilder;
 }
@@ -732,7 +714,7 @@ export abstract class AuthorizationEndpointConventionBuilderExtensions$instance 
     static AllowAnonymous<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
     static RequireAuthorization<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policy: AuthorizationPolicy): TBuilder;
     static RequireAuthorization<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, ...authorizeData: IAuthorizeData[]): TBuilder;
-    static RequireAuthorization<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, configurePolicy: Action<AuthorizationPolicyBuilder>): TBuilder;
+    static RequireAuthorization<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, configurePolicy: Action_1<AuthorizationPolicyBuilder>): TBuilder;
     static RequireAuthorization<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, ...policyNames: string[]): TBuilder;
     static RequireAuthorization<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
 }
@@ -748,8 +730,8 @@ export abstract class CertificateForwardingBuilderExtensions$instance {
 export type CertificateForwardingBuilderExtensions = CertificateForwardingBuilderExtensions$instance;
 
 export abstract class ComponentEndpointRouteBuilderExtensions$instance {
-    static MapBlazorHub(endpoints: IEndpointRouteBuilder, configureOptions: Action<HttpConnectionDispatcherOptions>): ComponentEndpointConventionBuilder;
-    static MapBlazorHub(endpoints: IEndpointRouteBuilder, path: string, configureOptions: Action<HttpConnectionDispatcherOptions>): ComponentEndpointConventionBuilder;
+    static MapBlazorHub(endpoints: IEndpointRouteBuilder, configureOptions: Action_1<HttpConnectionDispatcherOptions>): ComponentEndpointConventionBuilder;
+    static MapBlazorHub(endpoints: IEndpointRouteBuilder, path: string, configureOptions: Action_1<HttpConnectionDispatcherOptions>): ComponentEndpointConventionBuilder;
     static MapBlazorHub(endpoints: IEndpointRouteBuilder, path: string): ComponentEndpointConventionBuilder;
     static MapBlazorHub(endpoints: IEndpointRouteBuilder): ComponentEndpointConventionBuilder;
 }
@@ -758,10 +740,10 @@ export abstract class ComponentEndpointRouteBuilderExtensions$instance {
 export type ComponentEndpointRouteBuilderExtensions = ComponentEndpointRouteBuilderExtensions$instance;
 
 export abstract class ConnectionEndpointRouteBuilderExtensions$instance {
-    static MapConnectionHandler<TConnectionHandler extends ConnectionHandler>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action<HttpConnectionDispatcherOptions>): ConnectionEndpointRouteBuilder;
+    static MapConnectionHandler<TConnectionHandler extends ConnectionHandler>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action_1<HttpConnectionDispatcherOptions>): ConnectionEndpointRouteBuilder;
     static MapConnectionHandler<TConnectionHandler extends ConnectionHandler>(endpoints: IEndpointRouteBuilder, pattern: string): ConnectionEndpointRouteBuilder;
-    static MapConnections(endpoints: IEndpointRouteBuilder, pattern: string, options: HttpConnectionDispatcherOptions, configure: Action<IConnectionBuilder>): ConnectionEndpointRouteBuilder;
-    static MapConnections(endpoints: IEndpointRouteBuilder, pattern: string, configure: Action<IConnectionBuilder>): ConnectionEndpointRouteBuilder;
+    static MapConnections(endpoints: IEndpointRouteBuilder, pattern: string, options: HttpConnectionDispatcherOptions, configure: Action_1<IConnectionBuilder>): ConnectionEndpointRouteBuilder;
+    static MapConnections(endpoints: IEndpointRouteBuilder, pattern: string, configure: Action_1<IConnectionBuilder>): ConnectionEndpointRouteBuilder;
 }
 
 
@@ -808,7 +790,7 @@ export abstract class CookieRedirectEndpointConventionBuilderExtensions$instance
 export type CookieRedirectEndpointConventionBuilderExtensions = CookieRedirectEndpointConventionBuilderExtensions$instance;
 
 export abstract class CorsEndpointConventionBuilderExtensions$instance {
-    static RequireCors<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, configurePolicy: Action<CorsPolicyBuilder>): TBuilder;
+    static RequireCors<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, configurePolicy: Action_1<CorsPolicyBuilder>): TBuilder;
     static RequireCors<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, policyName: string): TBuilder;
     static RequireCors<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
 }
@@ -817,7 +799,7 @@ export abstract class CorsEndpointConventionBuilderExtensions$instance {
 export type CorsEndpointConventionBuilderExtensions = CorsEndpointConventionBuilderExtensions$instance;
 
 export abstract class CorsMiddlewareExtensions$instance {
-    static UseCors(app: IApplicationBuilder, configurePolicy: Action<CorsPolicyBuilder>): IApplicationBuilder;
+    static UseCors(app: IApplicationBuilder, configurePolicy: Action_1<CorsPolicyBuilder>): IApplicationBuilder;
     static UseCors(app: IApplicationBuilder, policyName: string): IApplicationBuilder;
     static UseCors(app: IApplicationBuilder): IApplicationBuilder;
 }
@@ -864,8 +846,8 @@ export abstract class EndpointRouteBuilderExtensions$instance {
     static MapGet(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function): RouteHandlerBuilder;
     static MapGroup(endpoints: IEndpointRouteBuilder, prefix: RoutePattern): RouteGroupBuilder;
     static MapGroup(endpoints: IEndpointRouteBuilder, prefix: string): RouteGroupBuilder;
-    static MapMethods(endpoints: IEndpointRouteBuilder, pattern: string, httpMethods: IEnumerable<System_Internal.String>, requestDelegate: RequestDelegate): IEndpointConventionBuilder;
-    static MapMethods(endpoints: IEndpointRouteBuilder, pattern: string, httpMethods: IEnumerable<System_Internal.String>, handler: Function): RouteHandlerBuilder;
+    static MapMethods(endpoints: IEndpointRouteBuilder, pattern: string, httpMethods: IEnumerable_1<System_Internal.String>, requestDelegate: RequestDelegate): IEndpointConventionBuilder;
+    static MapMethods(endpoints: IEndpointRouteBuilder, pattern: string, httpMethods: IEnumerable_1<System_Internal.String>, handler: Function): RouteHandlerBuilder;
     static MapPatch(endpoints: IEndpointRouteBuilder, pattern: string, requestDelegate: RequestDelegate): IEndpointConventionBuilder;
     static MapPatch(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function): RouteHandlerBuilder;
     static MapPost(endpoints: IEndpointRouteBuilder, pattern: string, requestDelegate: RequestDelegate): IEndpointConventionBuilder;
@@ -878,7 +860,7 @@ export abstract class EndpointRouteBuilderExtensions$instance {
 export type EndpointRouteBuilderExtensions = EndpointRouteBuilderExtensions$instance;
 
 export abstract class EndpointRoutingApplicationBuilderExtensions$instance {
-    static UseEndpoints(builder: IApplicationBuilder, configure: Action<IEndpointRouteBuilder>): IApplicationBuilder;
+    static UseEndpoints(builder: IApplicationBuilder, configure: Action_1<IEndpointRouteBuilder>): IApplicationBuilder;
     static UseRouting(builder: IApplicationBuilder): IApplicationBuilder;
 }
 
@@ -887,7 +869,7 @@ export type EndpointRoutingApplicationBuilderExtensions = EndpointRoutingApplica
 
 export abstract class ExceptionHandlerExtensions$instance {
     static UseExceptionHandler(app: IApplicationBuilder, options: ExceptionHandlerOptions): IApplicationBuilder;
-    static UseExceptionHandler(app: IApplicationBuilder, configure: Action<IApplicationBuilder>): IApplicationBuilder;
+    static UseExceptionHandler(app: IApplicationBuilder, configure: Action_1<IApplicationBuilder>): IApplicationBuilder;
     static UseExceptionHandler(app: IApplicationBuilder, errorHandlingPath: string, createScopeForErrors: boolean): IApplicationBuilder;
     static UseExceptionHandler(app: IApplicationBuilder, errorHandlingPath: string): IApplicationBuilder;
     static UseExceptionHandler(app: IApplicationBuilder): IApplicationBuilder;
@@ -951,7 +933,7 @@ export abstract class HostFilteringBuilderExtensions$instance {
 export type HostFilteringBuilderExtensions = HostFilteringBuilderExtensions$instance;
 
 export abstract class HostFilteringServicesExtensions$instance {
-    static AddHostFiltering(services: IServiceCollection, configureOptions: Action<HostFilteringOptions>): IServiceCollection;
+    static AddHostFiltering(services: IServiceCollection, configureOptions: Action_1<HostFilteringOptions>): IServiceCollection;
 }
 
 
@@ -965,7 +947,7 @@ export abstract class HstsBuilderExtensions$instance {
 export type HstsBuilderExtensions = HstsBuilderExtensions$instance;
 
 export abstract class HstsServicesExtensions$instance {
-    static AddHsts(services: IServiceCollection, configureOptions: Action<HstsOptions>): IServiceCollection;
+    static AddHsts(services: IServiceCollection, configureOptions: Action_1<HstsOptions>): IServiceCollection;
 }
 
 
@@ -980,7 +962,7 @@ export abstract class HttpLoggingBuilderExtensions$instance {
 export type HttpLoggingBuilderExtensions = HttpLoggingBuilderExtensions$instance;
 
 export abstract class HttpLoggingEndpointConventionBuilderExtensions$instance {
-    static WithHttpLogging<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, loggingFields: HttpLoggingFields, requestBodyLogLimit?: Nullable<System_Internal.Int32>, responseBodyLogLimit?: Nullable<System_Internal.Int32>): TBuilder;
+    static WithHttpLogging<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, loggingFields: HttpLoggingFields, requestBodyLogLimit?: Nullable_1<System_Internal.Int32>, responseBodyLogLimit?: Nullable_1<System_Internal.Int32>): TBuilder;
 }
 
 
@@ -1009,14 +991,14 @@ export abstract class HttpsPolicyBuilderExtensions$instance {
 export type HttpsPolicyBuilderExtensions = HttpsPolicyBuilderExtensions$instance;
 
 export abstract class HttpsRedirectionServicesExtensions$instance {
-    static AddHttpsRedirection(services: IServiceCollection, configureOptions: Action<HttpsRedirectionOptions>): IServiceCollection;
+    static AddHttpsRedirection(services: IServiceCollection, configureOptions: Action_1<HttpsRedirectionOptions>): IServiceCollection;
 }
 
 
 export type HttpsRedirectionServicesExtensions = HttpsRedirectionServicesExtensions$instance;
 
 export abstract class HubEndpointRouteBuilderExtensions$instance {
-    static MapHub<THub extends Hub>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action<HttpConnectionDispatcherOptions>): HubEndpointConventionBuilder;
+    static MapHub<THub extends Hub>(endpoints: IEndpointRouteBuilder, pattern: string, configureOptions: Action_1<HttpConnectionDispatcherOptions>): HubEndpointConventionBuilder;
     static MapHub<THub extends Hub>(endpoints: IEndpointRouteBuilder, pattern: string): HubEndpointConventionBuilder;
 }
 
@@ -1024,9 +1006,9 @@ export abstract class HubEndpointRouteBuilderExtensions$instance {
 export type HubEndpointRouteBuilderExtensions = HubEndpointRouteBuilderExtensions$instance;
 
 export abstract class MapExtensions$instance {
-    static Map(app: IApplicationBuilder, pathMatch: PathString, configuration: Action<IApplicationBuilder>): IApplicationBuilder;
-    static Map(app: IApplicationBuilder, pathMatch: PathString, preserveMatchedPathSegment: boolean, configuration: Action<IApplicationBuilder>): IApplicationBuilder;
-    static Map(app: IApplicationBuilder, pathMatch: string, configuration: Action<IApplicationBuilder>): IApplicationBuilder;
+    static Map(app: IApplicationBuilder, pathMatch: PathString, configuration: Action_1<IApplicationBuilder>): IApplicationBuilder;
+    static Map(app: IApplicationBuilder, pathMatch: PathString, preserveMatchedPathSegment: boolean, configuration: Action_1<IApplicationBuilder>): IApplicationBuilder;
+    static Map(app: IApplicationBuilder, pathMatch: string, configuration: Action_1<IApplicationBuilder>): IApplicationBuilder;
 }
 
 
@@ -1043,14 +1025,14 @@ export abstract class MapRouteRouteBuilderExtensions$instance {
 export type MapRouteRouteBuilderExtensions = MapRouteRouteBuilderExtensions$instance;
 
 export abstract class MapWhenExtensions$instance {
-    static MapWhen(app: IApplicationBuilder, predicate: Func<HttpContext, System_Internal.Boolean>, configuration: Action<IApplicationBuilder>): IApplicationBuilder;
+    static MapWhen(app: IApplicationBuilder, predicate: Func_2<HttpContext, System_Internal.Boolean>, configuration: Action_1<IApplicationBuilder>): IApplicationBuilder;
 }
 
 
 export type MapWhenExtensions = MapWhenExtensions$instance;
 
 export abstract class MvcApplicationBuilderExtensions$instance {
-    static UseMvc(app: IApplicationBuilder, configureRoutes: Action<IRouteBuilder>): IApplicationBuilder;
+    static UseMvc(app: IApplicationBuilder, configureRoutes: Action_1<IRouteBuilder>): IApplicationBuilder;
     static UseMvc(app: IApplicationBuilder): IApplicationBuilder;
     static UseMvcWithDefaultRoute(app: IApplicationBuilder): IApplicationBuilder;
 }
@@ -1100,7 +1082,7 @@ export abstract class RateLimiterEndpointConventionBuilderExtensions$instance {
 export type RateLimiterEndpointConventionBuilderExtensions = RateLimiterEndpointConventionBuilderExtensions$instance;
 
 export abstract class RateLimiterServiceCollectionExtensions$instance {
-    static AddRateLimiter(services: IServiceCollection, configureOptions: Action<RateLimiterOptions>): IServiceCollection;
+    static AddRateLimiter(services: IServiceCollection, configureOptions: Action_1<RateLimiterOptions>): IServiceCollection;
     static AddRateLimiter(services: IServiceCollection): IServiceCollection;
 }
 
@@ -1182,7 +1164,7 @@ export abstract class ResponseCompressionBuilderExtensions$instance {
 export type ResponseCompressionBuilderExtensions = ResponseCompressionBuilderExtensions$instance;
 
 export abstract class ResponseCompressionServicesExtensions$instance {
-    static AddResponseCompression(services: IServiceCollection, configureOptions: Action<ResponseCompressionOptions>): IServiceCollection;
+    static AddResponseCompression(services: IServiceCollection, configureOptions: Action_1<ResponseCompressionOptions>): IServiceCollection;
     static AddResponseCompression(services: IServiceCollection): IServiceCollection;
 }
 
@@ -1198,7 +1180,7 @@ export abstract class RewriteBuilderExtensions$instance {
 export type RewriteBuilderExtensions = RewriteBuilderExtensions$instance;
 
 export abstract class RouteShortCircuitEndpointConventionBuilderExtensions$instance {
-    static ShortCircuit(builder: IEndpointConventionBuilder, statusCode?: Nullable<System_Internal.Int32>): IEndpointConventionBuilder;
+    static ShortCircuit(builder: IEndpointConventionBuilder, statusCode?: Nullable_1<System_Internal.Int32>): IEndpointConventionBuilder;
 }
 
 
@@ -1206,7 +1188,7 @@ export type RouteShortCircuitEndpointConventionBuilderExtensions = RouteShortCir
 
 export abstract class RoutingBuilderExtensions$instance {
     static UseRouter(builder: IApplicationBuilder, router: IRouter): IApplicationBuilder;
-    static UseRouter(builder: IApplicationBuilder, action: Action<IRouteBuilder>): IApplicationBuilder;
+    static UseRouter(builder: IApplicationBuilder, action: Action_1<IRouteBuilder>): IApplicationBuilder;
 }
 
 
@@ -1215,10 +1197,10 @@ export type RoutingBuilderExtensions = RoutingBuilderExtensions$instance;
 export abstract class RoutingEndpointConventionBuilderExtensions$instance {
     static DisableAntiforgery<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder): TBuilder;
     static RequireHost<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, ...hosts: string[]): TBuilder;
-    static WithDisplayName<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, func: Func<EndpointBuilder, System_Internal.String>): TBuilder;
+    static WithDisplayName<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, func: Func_2<EndpointBuilder, System_Internal.String>): TBuilder;
     static WithDisplayName<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, displayName: string): TBuilder;
-    static WithFormMappingOptions<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, maxCollectionSize?: Nullable<System_Internal.Int32>, maxRecursionDepth?: Nullable<System_Internal.Int32>, maxKeySize?: Nullable<System_Internal.Int32>): TBuilder;
-    static WithFormOptions<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, bufferBody?: Nullable<System_Internal.Boolean>, memoryBufferThreshold?: Nullable<System_Internal.Int32>, bufferBodyLengthLimit?: Nullable<System_Internal.Int64>, valueCountLimit?: Nullable<System_Internal.Int32>, keyLengthLimit?: Nullable<System_Internal.Int32>, valueLengthLimit?: Nullable<System_Internal.Int32>, multipartBoundaryLengthLimit?: Nullable<System_Internal.Int32>, multipartHeadersCountLimit?: Nullable<System_Internal.Int32>, multipartHeadersLengthLimit?: Nullable<System_Internal.Int32>, multipartBodyLengthLimit?: Nullable<System_Internal.Int64>): TBuilder;
+    static WithFormMappingOptions<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, maxCollectionSize?: Nullable_1<System_Internal.Int32>, maxRecursionDepth?: Nullable_1<System_Internal.Int32>, maxKeySize?: Nullable_1<System_Internal.Int32>): TBuilder;
+    static WithFormOptions<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, bufferBody?: Nullable_1<System_Internal.Boolean>, memoryBufferThreshold?: Nullable_1<System_Internal.Int32>, bufferBodyLengthLimit?: Nullable_1<System_Internal.Int64>, valueCountLimit?: Nullable_1<System_Internal.Int32>, keyLengthLimit?: Nullable_1<System_Internal.Int32>, valueLengthLimit?: Nullable_1<System_Internal.Int32>, multipartBoundaryLengthLimit?: Nullable_1<System_Internal.Int32>, multipartHeadersCountLimit?: Nullable_1<System_Internal.Int32>, multipartHeadersLengthLimit?: Nullable_1<System_Internal.Int32>, multipartBodyLengthLimit?: Nullable_1<System_Internal.Int64>): TBuilder;
     static WithGroupName<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, endpointGroupName: string): TBuilder;
     static WithMetadata<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, ...items: unknown[]): TBuilder;
     static WithName<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, endpointName: string): TBuilder;
@@ -1236,7 +1218,7 @@ export abstract class RunExtensions$instance {
 export type RunExtensions = RunExtensions$instance;
 
 export abstract class ServerRazorComponentsEndpointConventionBuilderExtensions$instance {
-    static AddInteractiveServerRenderMode(builder: RazorComponentsEndpointConventionBuilder, configure: Action<ServerComponentsEndpointOptions>): RazorComponentsEndpointConventionBuilder;
+    static AddInteractiveServerRenderMode(builder: RazorComponentsEndpointConventionBuilder, configure: Action_1<ServerComponentsEndpointOptions>): RazorComponentsEndpointConventionBuilder;
     static AddInteractiveServerRenderMode(builder: RazorComponentsEndpointConventionBuilder): RazorComponentsEndpointConventionBuilder;
 }
 
@@ -1279,8 +1261,8 @@ export type StaticFilesEndpointRouteBuilderExtensions = StaticFilesEndpointRoute
 
 export abstract class StatusCodePagesExtensions$instance {
     static UseStatusCodePages(app: IApplicationBuilder, options: StatusCodePagesOptions): IApplicationBuilder;
-    static UseStatusCodePages(app: IApplicationBuilder, configuration: Action<IApplicationBuilder>): IApplicationBuilder;
-    static UseStatusCodePages(app: IApplicationBuilder, handler: Func<StatusCodeContext, Task>): IApplicationBuilder;
+    static UseStatusCodePages(app: IApplicationBuilder, configuration: Action_1<IApplicationBuilder>): IApplicationBuilder;
+    static UseStatusCodePages(app: IApplicationBuilder, handler: Func_2<StatusCodeContext, Task>): IApplicationBuilder;
     static UseStatusCodePages(app: IApplicationBuilder, contentType: string, bodyFormat: string): IApplicationBuilder;
     static UseStatusCodePages(app: IApplicationBuilder): IApplicationBuilder;
     static UseStatusCodePagesWithRedirects(app: IApplicationBuilder, locationFormat: string): IApplicationBuilder;
@@ -1292,8 +1274,8 @@ export abstract class StatusCodePagesExtensions$instance {
 export type StatusCodePagesExtensions = StatusCodePagesExtensions$instance;
 
 export abstract class UseExtensions$instance {
-    static Use(app: IApplicationBuilder, middleware: Func<HttpContext, RequestDelegate, Task>): IApplicationBuilder;
-    static Use(app: IApplicationBuilder, middleware: Func<HttpContext, Func<Task>, Task>): IApplicationBuilder;
+    static Use(app: IApplicationBuilder, middleware: Func_3<HttpContext, RequestDelegate, Task>): IApplicationBuilder;
+    static Use(app: IApplicationBuilder, middleware: Func_3<HttpContext, Func_1<Task>, Task>): IApplicationBuilder;
 }
 
 
@@ -1315,7 +1297,7 @@ export abstract class UsePathBaseExtensions$instance {
 export type UsePathBaseExtensions = UsePathBaseExtensions$instance;
 
 export abstract class UseWhenExtensions$instance {
-    static UseWhen(app: IApplicationBuilder, predicate: Func<HttpContext, System_Internal.Boolean>, configuration: Action<IApplicationBuilder>): IApplicationBuilder;
+    static UseWhen(app: IApplicationBuilder, predicate: Func_2<HttpContext, System_Internal.Boolean>, configuration: Action_1<IApplicationBuilder>): IApplicationBuilder;
 }
 
 

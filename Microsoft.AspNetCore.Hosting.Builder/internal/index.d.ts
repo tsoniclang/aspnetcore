@@ -8,8 +8,8 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IApplicationBuilder } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import type { IFeatureCollection } from "../../Microsoft.AspNetCore.Http.Features/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IServiceProvider, Object as ClrObject } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceProvider, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IApplicationBuilderFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Builder_IApplicationBuilderFactory: never;
@@ -20,7 +20,7 @@ export interface IApplicationBuilderFactory$instance {
 
 export type IApplicationBuilderFactory = IApplicationBuilderFactory$instance;
 
-export interface ApplicationBuilderFactory$instance {
+export interface ApplicationBuilderFactory$instance extends IApplicationBuilderFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Builder_IApplicationBuilderFactory: never;
 
     CreateBuilder(serverFeatures: IFeatureCollection): IApplicationBuilder;
@@ -35,8 +35,6 @@ export const ApplicationBuilderFactory: {
 export interface __ApplicationBuilderFactory$views {
     As_IApplicationBuilderFactory(): IApplicationBuilderFactory$instance;
 }
-
-export interface ApplicationBuilderFactory$instance extends IApplicationBuilderFactory$instance {}
 
 export type ApplicationBuilderFactory = ApplicationBuilderFactory$instance & __ApplicationBuilderFactory$views;
 

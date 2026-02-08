@@ -8,11 +8,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { Renderer } from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
 import type { IComponentRenderMode, IPersistentComponentStateStore, PersistentComponentState, RestoreContext } from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IServiceProvider, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
-import type { ILogger } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceProvider, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
+import type { ILogger_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface ComponentStatePersistenceManager$instance {
     readonly State: PersistentComponentState;
@@ -24,8 +24,8 @@ export interface ComponentStatePersistenceManager$instance {
 
 
 export const ComponentStatePersistenceManager: {
-    new(logger: ILogger<ComponentStatePersistenceManager>): ComponentStatePersistenceManager;
-    new(logger: ILogger<ComponentStatePersistenceManager>, serviceProvider: IServiceProvider): ComponentStatePersistenceManager;
+    new(logger: ILogger_1<ComponentStatePersistenceManager>): ComponentStatePersistenceManager;
+    new(logger: ILogger_1<ComponentStatePersistenceManager>, serviceProvider: IServiceProvider): ComponentStatePersistenceManager;
 };
 
 

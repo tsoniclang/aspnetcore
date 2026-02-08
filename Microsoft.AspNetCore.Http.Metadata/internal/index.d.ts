@@ -7,15 +7,15 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { EndpointBuilder } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
-import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Int64, Nullable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { MethodInfo, ParameterInfo } from "@tsonic/dotnet/System.Reflection.js";
+import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { MethodInfo, ParameterInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IAcceptsMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
 
-    readonly ContentTypes: IReadOnlyList<System_Internal.String>;
+    readonly ContentTypes: IReadOnlyList_1<System_Internal.String>;
     readonly RequestType: Type | undefined;
     readonly IsOptional: boolean;
 }
@@ -92,16 +92,16 @@ export type IEndpointSummaryMetadata = IEndpointSummaryMetadata$instance;
 export interface IFormOptionsMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFormOptionsMetadata: never;
 
-    readonly BufferBody: Nullable<System_Internal.Boolean>;
-    readonly MemoryBufferThreshold: Nullable<System_Internal.Int32>;
-    readonly BufferBodyLengthLimit: Nullable<System_Internal.Int64>;
-    readonly ValueCountLimit: Nullable<System_Internal.Int32>;
-    readonly KeyLengthLimit: Nullable<System_Internal.Int32>;
-    readonly ValueLengthLimit: Nullable<System_Internal.Int32>;
-    readonly MultipartBoundaryLengthLimit: Nullable<System_Internal.Int32>;
-    readonly MultipartHeadersCountLimit: Nullable<System_Internal.Int32>;
-    readonly MultipartHeadersLengthLimit: Nullable<System_Internal.Int32>;
-    readonly MultipartBodyLengthLimit: Nullable<System_Internal.Int64>;
+    readonly BufferBody: Nullable_1<System_Internal.Boolean>;
+    readonly MemoryBufferThreshold: Nullable_1<System_Internal.Int32>;
+    readonly BufferBodyLengthLimit: Nullable_1<System_Internal.Int64>;
+    readonly ValueCountLimit: Nullable_1<System_Internal.Int32>;
+    readonly KeyLengthLimit: Nullable_1<System_Internal.Int32>;
+    readonly ValueLengthLimit: Nullable_1<System_Internal.Int32>;
+    readonly MultipartBoundaryLengthLimit: Nullable_1<System_Internal.Int32>;
+    readonly MultipartHeadersCountLimit: Nullable_1<System_Internal.Int32>;
+    readonly MultipartHeadersLengthLimit: Nullable_1<System_Internal.Int32>;
+    readonly MultipartBodyLengthLimit: Nullable_1<System_Internal.Int64>;
 }
 
 
@@ -179,7 +179,7 @@ export interface IProducesResponseTypeMetadata$instance {
     readonly Type: Type | undefined;
     readonly StatusCode: int;
     readonly Description: string | undefined;
-    readonly ContentTypes: IEnumerable<System_Internal.String>;
+    readonly ContentTypes: IEnumerable_1<System_Internal.String>;
 }
 
 
@@ -188,7 +188,7 @@ export type IProducesResponseTypeMetadata = IProducesResponseTypeMetadata$instan
 export interface IRequestSizeLimitMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IRequestSizeLimitMetadata: never;
 
-    readonly MaxRequestBodySize: Nullable<System_Internal.Int64>;
+    readonly MaxRequestBodySize: Nullable_1<System_Internal.Int64>;
 }
 
 
@@ -214,16 +214,16 @@ export type ISkipStatusCodePagesMetadata = ISkipStatusCodePagesMetadata$instance
 export interface ITagsMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_ITagsMetadata: never;
 
-    readonly Tags: IReadOnlyList<System_Internal.String>;
+    readonly Tags: IReadOnlyList_1<System_Internal.String>;
 }
 
 
 export type ITagsMetadata = ITagsMetadata$instance;
 
-export interface AcceptsMetadata$instance {
+export interface AcceptsMetadata$instance extends IAcceptsMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
 
-    readonly ContentTypes: IReadOnlyList<System_Internal.String>;
+    readonly ContentTypes: IReadOnlyList_1<System_Internal.String>;
     readonly IsOptional: boolean;
     readonly RequestType: Type | undefined;
     ToString(): string;
@@ -239,20 +239,18 @@ export interface __AcceptsMetadata$views {
     As_IAcceptsMetadata(): IAcceptsMetadata$instance;
 }
 
-export interface AcceptsMetadata$instance extends IAcceptsMetadata$instance {}
-
 export type AcceptsMetadata = AcceptsMetadata$instance & __AcceptsMetadata$views;
 
 
 export interface FormMappingOptionsMetadata$instance {
-    readonly MaxCollectionSize: Nullable<System_Internal.Int32>;
-    readonly MaxKeySize: Nullable<System_Internal.Int32>;
-    readonly MaxRecursionDepth: Nullable<System_Internal.Int32>;
+    readonly MaxCollectionSize: Nullable_1<System_Internal.Int32>;
+    readonly MaxKeySize: Nullable_1<System_Internal.Int32>;
+    readonly MaxRecursionDepth: Nullable_1<System_Internal.Int32>;
 }
 
 
 export const FormMappingOptionsMetadata: {
-    new(maxCollectionSize: Nullable<System_Internal.Int32>, maxRecursionDepth: Nullable<System_Internal.Int32>, maxKeySize: Nullable<System_Internal.Int32>): FormMappingOptionsMetadata;
+    new(maxCollectionSize: Nullable_1<System_Internal.Int32>, maxRecursionDepth: Nullable_1<System_Internal.Int32>, maxKeySize: Nullable_1<System_Internal.Int32>): FormMappingOptionsMetadata;
 };
 
 

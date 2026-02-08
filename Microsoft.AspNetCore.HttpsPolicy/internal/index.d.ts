@@ -8,13 +8,13 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IServerAddressesFeature } from "../../Microsoft.AspNetCore.Hosting.Server.Features/internal/index.js";
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Nullable, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System/internal/index.js";
+import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface HstsMiddleware$instance {
     Invoke(context: HttpContext): Task;
@@ -22,15 +22,15 @@ export interface HstsMiddleware$instance {
 
 
 export const HstsMiddleware: {
-    new(next: RequestDelegate, options: IOptions<HstsOptions>, loggerFactory: ILoggerFactory): HstsMiddleware;
-    new(next: RequestDelegate, options: IOptions<HstsOptions>): HstsMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<HstsOptions>, loggerFactory: ILoggerFactory): HstsMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<HstsOptions>): HstsMiddleware;
 };
 
 
 export type HstsMiddleware = HstsMiddleware$instance;
 
 export interface HstsOptions$instance {
-    readonly ExcludedHosts: IList<System_Internal.String>;
+    readonly ExcludedHosts: IList_1<System_Internal.String>;
     IncludeSubDomains: boolean;
     MaxAge: TimeSpan;
     Preload: boolean;
@@ -50,15 +50,15 @@ export interface HttpsRedirectionMiddleware$instance {
 
 
 export const HttpsRedirectionMiddleware: {
-    new(next: RequestDelegate, options: IOptions<HttpsRedirectionOptions>, config: IConfiguration, loggerFactory: ILoggerFactory): HttpsRedirectionMiddleware;
-    new(next: RequestDelegate, options: IOptions<HttpsRedirectionOptions>, config: IConfiguration, loggerFactory: ILoggerFactory, serverAddressesFeature: IServerAddressesFeature): HttpsRedirectionMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<HttpsRedirectionOptions>, config: IConfiguration, loggerFactory: ILoggerFactory): HttpsRedirectionMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<HttpsRedirectionOptions>, config: IConfiguration, loggerFactory: ILoggerFactory, serverAddressesFeature: IServerAddressesFeature): HttpsRedirectionMiddleware;
 };
 
 
 export type HttpsRedirectionMiddleware = HttpsRedirectionMiddleware$instance;
 
 export interface HttpsRedirectionOptions$instance {
-    HttpsPort: Nullable<System_Internal.Int32>;
+    HttpsPort: Nullable_1<System_Internal.Int32>;
     RedirectStatusCode: int;
 }
 

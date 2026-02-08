@@ -6,10 +6,10 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
-import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
+import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Assembly } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IRazorSourceChecksumMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata: never;
@@ -25,7 +25,7 @@ export type IRazorSourceChecksumMetadata = IRazorSourceChecksumMetadata$instance
 export interface RazorCompiledItem$instance {
     readonly Identifier: string;
     readonly Kind: string;
-    readonly Metadata: IReadOnlyList<unknown>;
+    readonly Metadata: IReadOnlyList_1<unknown>;
     readonly Type: Type;
 }
 
@@ -52,7 +52,7 @@ export type RazorCompiledItemAttribute = RazorCompiledItemAttribute$instance;
 
 export interface RazorCompiledItemLoader$instance {
     CreateItem(attribute: RazorCompiledItemAttribute): RazorCompiledItem;
-    LoadItems(assembly: Assembly): IReadOnlyList<RazorCompiledItem>;
+    LoadItems(assembly: Assembly): IReadOnlyList_1<RazorCompiledItem>;
 }
 
 
@@ -113,7 +113,7 @@ export const RazorLanguageVersionAttribute: {
 
 export type RazorLanguageVersionAttribute = RazorLanguageVersionAttribute$instance;
 
-export interface RazorSourceChecksumAttribute$instance extends Attribute {
+export interface RazorSourceChecksumAttribute$instance extends Attribute, IRazorSourceChecksumMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata: never;
 
     readonly Checksum: string;
@@ -131,13 +131,11 @@ export interface __RazorSourceChecksumAttribute$views {
     As_IRazorSourceChecksumMetadata(): IRazorSourceChecksumMetadata$instance;
 }
 
-export interface RazorSourceChecksumAttribute$instance extends IRazorSourceChecksumMetadata$instance {}
-
 export type RazorSourceChecksumAttribute = RazorSourceChecksumAttribute$instance & __RazorSourceChecksumAttribute$views;
 
 
 export abstract class RazorCompiledItemExtensions$instance {
-    static GetChecksumMetadata(item: RazorCompiledItem): IReadOnlyList<IRazorSourceChecksumMetadata>;
+    static GetChecksumMetadata(item: RazorCompiledItem): IReadOnlyList_1<IRazorSourceChecksumMetadata>;
 }
 
 

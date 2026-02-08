@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { NamedPipeEndPoint } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
-import type { NamedPipeServerStream, PipeOptions, PipeSecurity } from "@tsonic/dotnet/System.IO.Pipes.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, Int32, Int64, Nullable, Object as ClrObject } from "@tsonic/dotnet/System.js";
+import type { NamedPipeServerStream, PipeOptions, PipeSecurity } from "@tsonic/dotnet/System.IO.Pipes/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Func_2, Int32, Int64, Nullable_1, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CreateNamedPipeServerStreamContext$instance {
     NamedPipeEndPoint: NamedPipeEndPoint;
@@ -27,11 +27,11 @@ export const CreateNamedPipeServerStreamContext: {
 export type CreateNamedPipeServerStreamContext = CreateNamedPipeServerStreamContext$instance;
 
 export interface NamedPipeTransportOptions$instance {
-    CreateNamedPipeServerStream: Func<CreateNamedPipeServerStreamContext, NamedPipeServerStream>;
+    CreateNamedPipeServerStream: Func_2<CreateNamedPipeServerStreamContext, NamedPipeServerStream>;
     CurrentUserOnly: boolean;
     ListenerQueueCount: int;
-    MaxReadBufferSize: Nullable<System_Internal.Int64>;
-    MaxWriteBufferSize: Nullable<System_Internal.Int64>;
+    MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
+    MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
     get PipeSecurity(): PipeSecurity | undefined;
     set PipeSecurity(value: PipeSecurity | undefined);
 }

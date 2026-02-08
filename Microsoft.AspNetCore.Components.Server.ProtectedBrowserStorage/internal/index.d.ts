@@ -8,9 +8,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IDataProtectionProvider } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
 import type { IJSRuntime } from "../../Microsoft.JSInterop/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, ValueType } from "@tsonic/dotnet/System.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ProtectedBrowserStorageResult_1$instance<TValue> {
     readonly Success: boolean;
@@ -27,8 +27,8 @@ export type ProtectedBrowserStorageResult_1<TValue> = ProtectedBrowserStorageRes
 
 export interface ProtectedBrowserStorage$instance {
     DeleteAsync(key: string): ValueTask;
-    GetAsync<TValue>(key: string): ValueTask<ProtectedBrowserStorageResult_1<TValue>>;
-    GetAsync<TValue>(purpose: string, key: string): ValueTask<ProtectedBrowserStorageResult_1<TValue>>;
+    GetAsync<TValue>(key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
+    GetAsync<TValue>(purpose: string, key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
     SetAsync(key: string, value: unknown): ValueTask;
     SetAsync(purpose: string, key: string, value: unknown): ValueTask;
 }

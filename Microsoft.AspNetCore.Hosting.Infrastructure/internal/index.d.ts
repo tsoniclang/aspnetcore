@@ -10,13 +10,13 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IApplicationBuilder } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import type { IWebHostBuilder, WebHostBuilderContext } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import type { WebHostBuilderOptions } from "../../Microsoft.Extensions.Hosting/internal/index.js";
-import type { Action, Func, Type } from "@tsonic/dotnet/System.js";
-import type { IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
+import type { Action_1, Action_2, Func_2, Type } from "@tsonic/dotnet/System/internal/index.js";
+import type { IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
 
 export interface ISupportsConfigureWebHost$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsConfigureWebHost: never;
 
-    ConfigureWebHost(configure: Action<IWebHostBuilder>, configureOptions: Action<WebHostBuilderOptions>): IHostBuilder;
+    ConfigureWebHost(configure: Action_1<IWebHostBuilder>, configureOptions: Action_1<WebHostBuilderOptions>): IHostBuilder;
 }
 
 
@@ -25,9 +25,9 @@ export type ISupportsConfigureWebHost = ISupportsConfigureWebHost$instance;
 export interface ISupportsStartup$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsStartup: never;
 
-    Configure(configure: Action<IApplicationBuilder>): IWebHostBuilder;
-    Configure(configure: Action<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
-    UseStartup<TStartup>(startupFactory: Func<WebHostBuilderContext, TStartup>): IWebHostBuilder;
+    Configure(configure: Action_1<IApplicationBuilder>): IWebHostBuilder;
+    Configure(configure: Action_2<WebHostBuilderContext, IApplicationBuilder>): IWebHostBuilder;
+    UseStartup<TStartup>(startupFactory: Func_2<WebHostBuilderContext, TStartup>): IWebHostBuilder;
     UseStartup(startupType: Type): IWebHostBuilder;
 }
 

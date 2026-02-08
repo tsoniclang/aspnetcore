@@ -8,23 +8,23 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { ConnectionAbortedException, TransferFormat } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
-import type { MemoryPool } from "@tsonic/dotnet/System.Buffers.js";
-import type { ICollection, IDictionary, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IDuplexPipe } from "@tsonic/dotnet/System.IO.Pipelines.js";
-import type { NamedPipeServerStream } from "@tsonic/dotnet/System.IO.Pipes.js";
-import type { Action, Boolean as ClrBoolean, Byte, Func, Int32, Int64, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { EndPoint } from "@tsonic/dotnet/System.Net.js";
-import type { TlsCipherSuite } from "@tsonic/dotnet/System.Net.Security.js";
-import type { Socket } from "@tsonic/dotnet/System.Net.Sockets.js";
-import type { CipherAlgorithmType, ExchangeAlgorithmType, HashAlgorithmType, SslProtocols } from "@tsonic/dotnet/System.Security.Authentication.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { MemoryPool_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { ICollection_1, IDictionary_2, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IDuplexPipe } from "@tsonic/dotnet/System.IO.Pipelines/internal/index.js";
+import type { NamedPipeServerStream } from "@tsonic/dotnet/System.IO.Pipes/internal/index.js";
+import type { TlsCipherSuite } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import type { Socket } from "@tsonic/dotnet/System.Net.Sockets/internal/index.js";
+import type { EndPoint } from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { CipherAlgorithmType, ExchangeAlgorithmType, HashAlgorithmType, SslProtocols } from "@tsonic/dotnet/System.Security.Authentication/internal/index.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Byte, Func_2, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IConnectionCompleteFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature: never;
 
-    OnCompleted(callback: Func<unknown, Task>, state: unknown): void;
+    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
 }
 
 
@@ -45,7 +45,7 @@ export type IConnectionEndPointFeature = IConnectionEndPointFeature$instance;
 export interface IConnectionHeartbeatFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature: never;
 
-    OnHeartbeat(action: Action<unknown>, state: unknown): void;
+    OnHeartbeat(action: Action_1<unknown>, state: unknown): void;
 }
 
 
@@ -72,7 +72,7 @@ export type IConnectionInherentKeepAliveFeature = IConnectionInherentKeepAliveFe
 export interface IConnectionItemsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature: never;
 
-    Items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary_2<unknown, unknown | undefined>;
 }
 
 
@@ -101,7 +101,7 @@ export type IConnectionLifetimeNotificationFeature = IConnectionLifetimeNotifica
 export interface IConnectionMetricsTagsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionMetricsTagsFeature: never;
 
-    readonly Tags: ICollection<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Tags: ICollection_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -147,7 +147,7 @@ export type IConnectionUserFeature = IConnectionUserFeature$instance;
 export interface IMemoryPoolFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature: never;
 
-    readonly MemoryPool: MemoryPool<System_Internal.Byte>;
+    readonly MemoryPool: MemoryPool_1<System_Internal.Byte>;
 }
 
 
@@ -156,7 +156,7 @@ export type IMemoryPoolFeature = IMemoryPoolFeature$instance;
 export interface IPersistentStateFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature: never;
 
-    readonly State: IDictionary<unknown, unknown | undefined>;
+    readonly State: IDictionary_2<unknown, unknown | undefined>;
 }
 
 
@@ -183,7 +183,7 @@ export type IStreamAbortFeature = IStreamAbortFeature$instance;
 export interface IStreamClosedFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IStreamClosedFeature: never;
 
-    OnClosed(callback: Action<unknown>, state: unknown): void;
+    OnClosed(callback: Action_1<unknown>, state: unknown): void;
 }
 
 
@@ -212,7 +212,7 @@ export interface ITlsHandshakeFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature: never;
 
     readonly Protocol: SslProtocols;
-    readonly NegotiatedCipherSuite: Nullable<TlsCipherSuite>;
+    readonly NegotiatedCipherSuite: Nullable_1<TlsCipherSuite>;
     readonly HostName: string;
     readonly CipherAlgorithm: CipherAlgorithmType;
     readonly CipherStrength: int;

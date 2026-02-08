@@ -9,9 +9,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { ActionDescriptor } from "../../Microsoft.AspNetCore.Mvc.Abstractions/internal/index.js";
 import type { RouteContext } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { IEnumerable, IList, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Int32, IServiceProvider, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1, IList_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Int32, IServiceProvider, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IActionConstraint$instance extends IActionConstraintMetadata {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
@@ -57,19 +57,19 @@ export type IActionConstraintProvider = IActionConstraintProvider$instance;
 
 export interface ActionSelectorCandidate$instance {
     readonly Action: ActionDescriptor;
-    readonly Constraints: IReadOnlyList<IActionConstraint> | undefined;
+    readonly Constraints: IReadOnlyList_1<IActionConstraint> | undefined;
 }
 
 
 export const ActionSelectorCandidate: {
-    new(action: ActionDescriptor, constraints: IReadOnlyList<IActionConstraint>): ActionSelectorCandidate;
+    new(action: ActionDescriptor, constraints: IReadOnlyList_1<IActionConstraint>): ActionSelectorCandidate;
 };
 
 
 export type ActionSelectorCandidate = ActionSelectorCandidate$instance;
 
 export interface ActionConstraintContext$instance {
-    Candidates: IReadOnlyList<ActionSelectorCandidate>;
+    Candidates: IReadOnlyList_1<ActionSelectorCandidate>;
     CurrentCandidate: ActionSelectorCandidate;
     RouteContext: RouteContext;
 }
@@ -100,12 +100,12 @@ export type ActionConstraintItem = ActionConstraintItem$instance;
 export interface ActionConstraintProviderContext$instance {
     readonly Action: ActionDescriptor;
     readonly HttpContext: HttpContext;
-    readonly Results: IList<ActionConstraintItem>;
+    readonly Results: IList_1<ActionConstraintItem>;
 }
 
 
 export const ActionConstraintProviderContext: {
-    new(context: HttpContext, action: ActionDescriptor, items: IList<ActionConstraintItem>): ActionConstraintProviderContext;
+    new(context: HttpContext, action: ActionDescriptor, items: IList_1<ActionConstraintItem>): ActionConstraintProviderContext;
 };
 
 
@@ -132,18 +132,18 @@ export interface __ActionMethodSelectorAttribute$views {
 export type ActionMethodSelectorAttribute = ActionMethodSelectorAttribute$instance & __ActionMethodSelectorAttribute$views;
 
 
-export interface HttpMethodActionConstraint$instance extends IActionConstraintMetadata {
+export interface HttpMethodActionConstraint$instance extends IActionConstraintMetadata, IActionConstraint$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
 
-    readonly HttpMethods: IEnumerable<System_Internal.String>;
+    readonly HttpMethods: IEnumerable_1<System_Internal.String>;
     readonly Order: int;
     Accept(context: ActionConstraintContext): boolean;
 }
 
 
 export const HttpMethodActionConstraint: {
-    new(httpMethods: IEnumerable<System_Internal.String>): HttpMethodActionConstraint;
+    new(httpMethods: IEnumerable_1<System_Internal.String>): HttpMethodActionConstraint;
     readonly HttpMethodConstraintOrder: int;
 };
 
@@ -151,8 +151,6 @@ export const HttpMethodActionConstraint: {
 export interface __HttpMethodActionConstraint$views {
     As_IActionConstraint(): IActionConstraint$instance;
 }
-
-export interface HttpMethodActionConstraint$instance extends IActionConstraint$instance {}
 
 export type HttpMethodActionConstraint = HttpMethodActionConstraint$instance & __HttpMethodActionConstraint$views;
 

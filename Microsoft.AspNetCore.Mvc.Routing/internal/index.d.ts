@@ -12,15 +12,15 @@ import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.M
 import type { ActionContext, IUrlHelper } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import * as Microsoft_AspNetCore_Routing_Internal from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import type { IParameterPolicy, IRouteConstraint, IRouter, RouteDirection, RouteValueDictionary, VirtualPathData } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Int32, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Int32, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IActionHttpMethodProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
 
-    readonly HttpMethods: IEnumerable<System_Internal.String>;
+    readonly HttpMethods: IEnumerable_1<System_Internal.String>;
 }
 
 
@@ -30,7 +30,7 @@ export interface IRouteTemplateProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
     readonly Template: string;
-    readonly Order: Nullable<System_Internal.Int32>;
+    readonly Order: Nullable_1<System_Internal.Int32>;
     readonly Name: string | undefined;
 }
 
@@ -77,8 +77,8 @@ export type AttributeRouteInfo = AttributeRouteInfo$instance;
 export interface DynamicRouteValueTransformer$instance {
     get State(): unknown | undefined;
     set State(value: unknown | undefined);
-    FilterAsync(httpContext: HttpContext, values: RouteValueDictionary, endpoints: IReadOnlyList<Endpoint>): ValueTask<IReadOnlyList<Endpoint>>;
-    TransformAsync(httpContext: HttpContext, values: RouteValueDictionary): ValueTask<RouteValueDictionary>;
+    FilterAsync(httpContext: HttpContext, values: RouteValueDictionary, endpoints: IReadOnlyList_1<Endpoint>): ValueTask_1<IReadOnlyList_1<Endpoint>>;
+    TransformAsync(httpContext: HttpContext, values: RouteValueDictionary): ValueTask_1<RouteValueDictionary>;
 }
 
 
@@ -88,11 +88,11 @@ export const DynamicRouteValueTransformer: (abstract new() => DynamicRouteValueT
 
 export type DynamicRouteValueTransformer = DynamicRouteValueTransformer$instance;
 
-export interface HttpMethodAttribute$instance extends Attribute {
+export interface HttpMethodAttribute$instance extends Attribute, IActionHttpMethodProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
-    readonly HttpMethods: IEnumerable<System_Internal.String>;
+    readonly HttpMethods: IEnumerable_1<System_Internal.String>;
     get Name(): string | undefined;
     set Name(value: string | undefined);
     Order: int;
@@ -100,7 +100,7 @@ export interface HttpMethodAttribute$instance extends Attribute {
 }
 
 
-export const HttpMethodAttribute: (abstract new(httpMethods: IEnumerable<System_Internal.String>) => HttpMethodAttribute) & (abstract new(httpMethods: IEnumerable<System_Internal.String>, template: string) => HttpMethodAttribute) & {
+export const HttpMethodAttribute: (abstract new(httpMethods: IEnumerable_1<System_Internal.String>) => HttpMethodAttribute) & (abstract new(httpMethods: IEnumerable_1<System_Internal.String>, template: string) => HttpMethodAttribute) & {
 };
 
 
@@ -109,12 +109,10 @@ export interface __HttpMethodAttribute$views {
     As_IRouteTemplateProvider(): IRouteTemplateProvider$instance;
 }
 
-export interface HttpMethodAttribute$instance extends IActionHttpMethodProvider$instance {}
-
 export type HttpMethodAttribute = HttpMethodAttribute$instance & __HttpMethodAttribute$views;
 
 
-export interface KnownRouteValueConstraint$instance extends IParameterPolicy {
+export interface KnownRouteValueConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
@@ -131,12 +129,10 @@ export interface __KnownRouteValueConstraint$views {
     As_IRouteConstraint(): Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance;
 }
 
-export interface KnownRouteValueConstraint$instance extends Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {}
-
 export type KnownRouteValueConstraint = KnownRouteValueConstraint$instance & __KnownRouteValueConstraint$views;
 
 
-export interface RouteValueAttribute$instance extends Attribute {
+export interface RouteValueAttribute$instance extends Attribute, IRouteValueProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider: never;
 
     readonly RouteKey: string;
@@ -151,8 +147,6 @@ export const RouteValueAttribute: (abstract new(routeKey: string, routeValue: st
 export interface __RouteValueAttribute$views {
     As_IRouteValueProvider(): IRouteValueProvider$instance;
 }
-
-export interface RouteValueAttribute$instance extends IRouteValueProvider$instance {}
 
 export type RouteValueAttribute = RouteValueAttribute$instance & __RouteValueAttribute$views;
 
@@ -204,7 +198,7 @@ export interface __UrlHelper$views {
 export type UrlHelper = UrlHelper$instance & __UrlHelper$views;
 
 
-export interface UrlHelperBase$instance {
+export interface UrlHelperBase$instance extends Microsoft_AspNetCore_Mvc_Internal.IUrlHelper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
 
     readonly ActionContext: ActionContext;
@@ -224,12 +218,10 @@ export interface __UrlHelperBase$views {
     As_IUrlHelper(): Microsoft_AspNetCore_Mvc_Internal.IUrlHelper$instance;
 }
 
-export interface UrlHelperBase$instance extends Microsoft_AspNetCore_Mvc_Internal.IUrlHelper$instance {}
-
 export type UrlHelperBase = UrlHelperBase$instance & __UrlHelperBase$views;
 
 
-export interface UrlHelperFactory$instance {
+export interface UrlHelperFactory$instance extends IUrlHelperFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory: never;
 
     GetUrlHelper(context: ActionContext): IUrlHelper;
@@ -244,8 +236,6 @@ export const UrlHelperFactory: {
 export interface __UrlHelperFactory$views {
     As_IUrlHelperFactory(): IUrlHelperFactory$instance;
 }
-
-export interface UrlHelperFactory$instance extends IUrlHelperFactory$instance {}
 
 export type UrlHelperFactory = UrlHelperFactory$instance & __UrlHelperFactory$views;
 

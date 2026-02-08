@@ -9,15 +9,15 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { ICollection, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ICollection_1, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func_1, IAsyncDisposable, IAsyncResult, ICloneable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, Single, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export type ItemsProviderDelegate_1<TItem> = (request: ItemsProviderRequest) => ValueTask<ItemsProviderResult_1<TItem>>;
+export type ItemsProviderDelegate_1<TItem> = (request: ItemsProviderRequest) => ValueTask_1<ItemsProviderResult_1<TItem>>;
 
 
 export interface ItemsProviderRequest$instance {
@@ -35,13 +35,13 @@ export const ItemsProviderRequest: {
 export type ItemsProviderRequest = ItemsProviderRequest$instance;
 
 export interface ItemsProviderResult_1$instance<TItem> {
-    readonly Items: IEnumerable<TItem>;
+    readonly Items: IEnumerable_1<TItem>;
     readonly TotalItemCount: int;
 }
 
 
 export const ItemsProviderResult_1: {
-    new<TItem>(items: IEnumerable<TItem>, totalItemCount: int): ItemsProviderResult_1<TItem>;
+    new<TItem>(items: IEnumerable_1<TItem>, totalItemCount: int): ItemsProviderResult_1<TItem>;
 };
 
 
@@ -60,7 +60,7 @@ export const PlaceholderContext: {
 
 export type PlaceholderContext = PlaceholderContext$instance;
 
-export interface Virtualize_1$instance<TItem> extends ComponentBase {
+export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -73,8 +73,8 @@ export interface Virtualize_1$instance<TItem> extends ComponentBase {
     set EmptyContent(value: RenderFragment | undefined);
     get ItemContent(): RenderFragment_1<TItem> | undefined;
     set ItemContent(value: RenderFragment_1<TItem> | undefined);
-    get Items(): ICollection<TItem> | undefined;
-    set Items(value: ICollection<TItem> | undefined);
+    get Items(): ICollection_1<TItem> | undefined;
+    set Items(value: ICollection_1<TItem> | undefined);
     ItemSize: float;
     get ItemsProvider(): ItemsProviderDelegate_1<TItem> | undefined;
     set ItemsProvider(value: ItemsProviderDelegate_1<TItem> | undefined);
@@ -105,8 +105,6 @@ export interface __Virtualize_1$views<TItem> {
     As_IHandleAfterRender(): Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance;
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
-
-export interface Virtualize_1$instance<TItem> extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {}
 
 export type Virtualize_1<TItem> = Virtualize_1$instance<TItem> & __Virtualize_1$views<TItem>;
 

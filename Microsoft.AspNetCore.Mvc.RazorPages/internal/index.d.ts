@@ -30,27 +30,27 @@ import type { TagHelperExecutionContext } from "../../Microsoft.AspNetCore.Razor
 import type { HtmlAttributeValueStyle, TagHelperContent } from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
 import type { RouteData } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import type { MediaTypeHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { DiagnosticSource } from "@tsonic/dotnet/System.Diagnostics.js";
-import type { Stream, TextWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Attribute, Boolean as ClrBoolean, Byte, Func, Int32, Nullable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { TypeInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Encoding } from "@tsonic/dotnet/System.Text.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IDictionary_2, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { DiagnosticSource } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import type { Stream, TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Expression_1 } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { TypeInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Encoding } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { Task, Task_1, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Action_3, Attribute, Boolean as ClrBoolean, Byte, Func_1, Func_2, Func_3, Func_4, Int32, Nullable_1, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IPageActivatorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageActivatorProvider: never;
 
-    CreateActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown>;
-    CreateAsyncReleaser(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown, ValueTask> | undefined;
-    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, ViewContext, unknown> | undefined;
+    CreateActivator(descriptor: CompiledPageActionDescriptor): Func_3<PageContext, ViewContext, unknown>;
+    CreateAsyncReleaser(descriptor: CompiledPageActionDescriptor): Func_4<PageContext, ViewContext, unknown, ValueTask> | undefined;
+    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action_3<PageContext, ViewContext, unknown> | undefined;
 }
 
 
@@ -59,9 +59,9 @@ export type IPageActivatorProvider = IPageActivatorProvider$instance;
 export interface IPageFactoryProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageFactoryProvider: never;
 
-    CreateAsyncPageDisposer(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown, ValueTask> | undefined;
-    CreatePageDisposer(descriptor: CompiledPageActionDescriptor): Action<PageContext, ViewContext, unknown> | undefined;
-    CreatePageFactory(descriptor: CompiledPageActionDescriptor): Func<PageContext, ViewContext, unknown>;
+    CreateAsyncPageDisposer(descriptor: CompiledPageActionDescriptor): Func_4<PageContext, ViewContext, unknown, ValueTask> | undefined;
+    CreatePageDisposer(descriptor: CompiledPageActionDescriptor): Action_3<PageContext, ViewContext, unknown> | undefined;
+    CreatePageFactory(descriptor: CompiledPageActionDescriptor): Func_3<PageContext, ViewContext, unknown>;
 }
 
 
@@ -70,9 +70,9 @@ export type IPageFactoryProvider = IPageFactoryProvider$instance;
 export interface IPageModelActivatorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider: never;
 
-    CreateActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown>;
-    CreateAsyncReleaser(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown, ValueTask> | undefined;
-    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
+    CreateActivator(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, unknown>;
+    CreateAsyncReleaser(descriptor: CompiledPageActionDescriptor): Func_3<PageContext, unknown, ValueTask> | undefined;
+    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action_2<PageContext, unknown> | undefined;
 }
 
 
@@ -81,9 +81,9 @@ export type IPageModelActivatorProvider = IPageModelActivatorProvider$instance;
 export interface IPageModelFactoryProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelFactoryProvider: never;
 
-    CreateAsyncModelDisposer(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown, ValueTask> | undefined;
-    CreateModelDisposer(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
-    CreateModelFactory(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown> | undefined;
+    CreateAsyncModelDisposer(descriptor: CompiledPageActionDescriptor): Func_3<PageContext, unknown, ValueTask> | undefined;
+    CreateModelDisposer(descriptor: CompiledPageActionDescriptor): Action_2<PageContext, unknown> | undefined;
+    CreateModelFactory(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, unknown> | undefined;
 }
 
 
@@ -94,7 +94,7 @@ export interface CompiledPageActionDescriptor$instance extends PageActionDescrip
     set DeclaredModelTypeInfo(value: TypeInfo | undefined);
     get Endpoint(): Endpoint | undefined;
     set Endpoint(value: Endpoint | undefined);
-    HandlerMethods: IList<HandlerMethodDescriptor>;
+    HandlerMethods: IList_1<HandlerMethodDescriptor>;
     HandlerTypeInfo: TypeInfo;
     get ModelTypeInfo(): TypeInfo | undefined;
     set ModelTypeInfo(value: TypeInfo | undefined);
@@ -256,15 +256,15 @@ export interface PageBase$instance extends RazorPageBase {
     SignOut(properties: AuthenticationProperties, ...authenticationSchemes: string[]): SignOutResult;
     StatusCode(statusCode: int): StatusCodeResult;
     StatusCode(statusCode: int, value: unknown): ObjectResult;
-    TryUpdateModelAsync<TModel>(model: TModel): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, ...includeExpressions: Expression<Func<TModel, unknown>>[]): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression<Func<TModel, unknown>>[]): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string): Task<System_Internal.Boolean>;
-    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string, valueProvider: IValueProvider, propertyFilter: Func<ModelMetadata, System_Internal.Boolean>): Task<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, ...includeExpressions: Expression_1<Func_2<TModel, unknown>>[]): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, ...includeExpressions: Expression_1<Func_2<TModel, unknown>>[]): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync<TModel>(model: TModel, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string): Task_1<System_Internal.Boolean>;
+    TryUpdateModelAsync(model: unknown, modelType: Type, prefix: string, valueProvider: IValueProvider, propertyFilter: Func_2<ModelMetadata, System_Internal.Boolean>): Task_1<System_Internal.Boolean>;
     TryValidateModel(model: unknown): boolean;
     TryValidateModel(model: unknown, prefix: string): boolean;
     Unauthorized(): UnauthorizedResult;
@@ -288,9 +288,9 @@ export type PageBase = PageBase$instance & __PageBase$views;
 
 export interface PageContext$instance extends ActionContext {
     ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
-    ValueProviderFactories: IList<IValueProviderFactory>;
+    ValueProviderFactories: IList_1<IValueProviderFactory>;
     ViewData: ViewDataDictionary;
-    ViewStartFactories: IList<Func<IRazorPage>>;
+    ViewStartFactories: IList_1<Func_1<IRazorPage>>;
 }
 
 
@@ -313,7 +313,7 @@ export const PageContextAttribute: {
 
 export type PageContextAttribute = PageContextAttribute$instance;
 
-export interface PageModel$instance extends IFilterMetadata {
+export interface PageModel$instance extends IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncPageFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IPageFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IPageFilter: never;
@@ -437,8 +437,6 @@ export interface __PageModel$views {
     As_IPageFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IPageFilter$instance;
 }
 
-export interface PageModel$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncPageFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IPageFilter$instance {}
-
 export type PageModel = PageModel$instance & __PageModel$views;
 
 
@@ -449,7 +447,7 @@ export interface PageResult$instance extends ActionResult {
     set ContentType(value: string | undefined);
     readonly Model: unknown;
     Page: PageBase;
-    StatusCode: Nullable<System_Internal.Int32>;
+    StatusCode: Nullable_1<System_Internal.Int32>;
     ViewData: ViewDataDictionary;
     ExecuteResultAsync(context: ActionContext): Task;
 }

@@ -15,17 +15,17 @@ import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.
 import type { BadHttpRequestException as BadHttpRequestException_Http } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { HttpsConnectionAdapterOptions } from "../../Microsoft.AspNetCore.Server.Kestrel.Https/internal/index.js";
 import type { KestrelConfigurationLoader } from "../../Microsoft.AspNetCore.Server.Kestrel/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Double, Enum, Func, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, UInt64, Void } from "@tsonic/dotnet/System.js";
-import type { EndPoint, IPAddress, IPEndPoint } from "@tsonic/dotnet/System.Net.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Encoding } from "@tsonic/dotnet/System.Text.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { EndPoint, IPAddress, IPEndPoint } from "@tsonic/dotnet/System.Net/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Encoding } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Double, Enum, Func_2, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, UInt64, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum HttpProtocols {
     None = 0,
@@ -81,7 +81,7 @@ export const Http3Limits: {
 
 export type Http3Limits = Http3Limits$instance;
 
-export interface KestrelServer$instance {
+export interface KestrelServer$instance extends Microsoft_AspNetCore_Hosting_Server_Internal.IServer$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServer: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -94,15 +94,13 @@ export interface KestrelServer$instance {
 
 
 export const KestrelServer: {
-    new(options: IOptions<KestrelServerOptions>, transportFactory: IConnectionListenerFactory, loggerFactory: ILoggerFactory): KestrelServer;
+    new(options: IOptions_1<KestrelServerOptions>, transportFactory: IConnectionListenerFactory, loggerFactory: ILoggerFactory): KestrelServer;
 };
 
 
 export interface __KestrelServer$views {
     As_IServer(): Microsoft_AspNetCore_Hosting_Server_Internal.IServer$instance;
 }
-
-export interface KestrelServer$instance extends Microsoft_AspNetCore_Hosting_Server_Internal.IServer$instance {}
 
 export type KestrelServer = KestrelServer$instance & __KestrelServer$views;
 
@@ -111,14 +109,14 @@ export interface KestrelServerLimits$instance {
     readonly Http2: Http2Limits;
     readonly Http3: Http3Limits;
     KeepAliveTimeout: TimeSpan;
-    MaxConcurrentConnections: Nullable<System_Internal.Int64>;
-    MaxConcurrentUpgradedConnections: Nullable<System_Internal.Int64>;
-    MaxRequestBodySize: Nullable<System_Internal.Int64>;
-    MaxRequestBufferSize: Nullable<System_Internal.Int64>;
+    MaxConcurrentConnections: Nullable_1<System_Internal.Int64>;
+    MaxConcurrentUpgradedConnections: Nullable_1<System_Internal.Int64>;
+    MaxRequestBodySize: Nullable_1<System_Internal.Int64>;
+    MaxRequestBufferSize: Nullable_1<System_Internal.Int64>;
     MaxRequestHeaderCount: int;
     MaxRequestHeadersTotalSize: int;
     MaxRequestLineSize: int;
-    MaxResponseBufferSize: Nullable<System_Internal.Int64>;
+    MaxResponseBufferSize: Nullable_1<System_Internal.Int64>;
     get MinRequestBodyDataRate(): MinDataRate | undefined;
     set MinRequestBodyDataRate(value: MinDataRate | undefined);
     get MinResponseDataRate(): MinDataRate | undefined;
@@ -146,29 +144,29 @@ export interface KestrelServerOptions$instance {
     DisableStringReuse: boolean;
     EnableAltSvc: boolean;
     readonly Limits: KestrelServerLimits;
-    RequestHeaderEncodingSelector: Func<System_Internal.String, Encoding | undefined>;
-    ResponseHeaderEncodingSelector: Func<System_Internal.String, Encoding | undefined>;
+    RequestHeaderEncodingSelector: Func_2<System_Internal.String, Encoding | undefined>;
+    ResponseHeaderEncodingSelector: Func_2<System_Internal.String, Encoding | undefined>;
     Configure(): KestrelConfigurationLoader;
     Configure(config: IConfiguration): KestrelConfigurationLoader;
     Configure(config: IConfiguration, reloadOnChange: boolean): KestrelConfigurationLoader;
-    ConfigureEndpointDefaults(configureOptions: Action<ListenOptions>): void;
-    ConfigureHttpsDefaults(configureOptions: Action<HttpsConnectionAdapterOptions>): void;
+    ConfigureEndpointDefaults(configureOptions: Action_1<ListenOptions>): void;
+    ConfigureHttpsDefaults(configureOptions: Action_1<HttpsConnectionAdapterOptions>): void;
     Listen(address: IPAddress, port: int): void;
-    Listen(address: IPAddress, port: int, configure: Action<ListenOptions>): void;
+    Listen(address: IPAddress, port: int, configure: Action_1<ListenOptions>): void;
     Listen(endPoint: IPEndPoint): void;
     Listen(endPoint: EndPoint): void;
-    Listen(endPoint: IPEndPoint, configure: Action<ListenOptions>): void;
-    Listen(endPoint: EndPoint, configure: Action<ListenOptions>): void;
+    Listen(endPoint: IPEndPoint, configure: Action_1<ListenOptions>): void;
+    Listen(endPoint: EndPoint, configure: Action_1<ListenOptions>): void;
     ListenAnyIP(port: int): void;
-    ListenAnyIP(port: int, configure: Action<ListenOptions>): void;
+    ListenAnyIP(port: int, configure: Action_1<ListenOptions>): void;
     ListenHandle(handle: ulong): void;
-    ListenHandle(handle: ulong, configure: Action<ListenOptions>): void;
+    ListenHandle(handle: ulong, configure: Action_1<ListenOptions>): void;
     ListenLocalhost(port: int): void;
-    ListenLocalhost(port: int, configure: Action<ListenOptions>): void;
+    ListenLocalhost(port: int, configure: Action_1<ListenOptions>): void;
     ListenNamedPipe(pipeName: string): void;
-    ListenNamedPipe(pipeName: string, configure: Action<ListenOptions>): void;
+    ListenNamedPipe(pipeName: string, configure: Action_1<ListenOptions>): void;
     ListenUnixSocket(socketPath: string): void;
-    ListenUnixSocket(socketPath: string, configure: Action<ListenOptions>): void;
+    ListenUnixSocket(socketPath: string, configure: Action_1<ListenOptions>): void;
 }
 
 
@@ -179,7 +177,7 @@ export const KestrelServerOptions: {
 
 export type KestrelServerOptions = KestrelServerOptions$instance;
 
-export interface ListenOptions$instance {
+export interface ListenOptions$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder: never;
 
@@ -194,7 +192,7 @@ export interface ListenOptions$instance {
     readonly SocketPath: string | undefined;
     Build(): ConnectionDelegate;
     ToString(): string | undefined;
-    Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
+    Use(middleware: Func_2<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
 }
 
 
@@ -206,8 +204,6 @@ export interface __ListenOptions$views {
     As_IConnectionBuilder(): Microsoft_AspNetCore_Connections_Internal.IConnectionBuilder$instance;
     As_IMultiplexedConnectionBuilder(): Microsoft_AspNetCore_Connections_Internal.IMultiplexedConnectionBuilder$instance;
 }
-
-export interface ListenOptions$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionBuilder$instance {}
 
 export type ListenOptions = ListenOptions$instance & __ListenOptions$views;
 

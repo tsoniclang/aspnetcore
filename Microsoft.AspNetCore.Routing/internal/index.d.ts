@@ -15,19 +15,19 @@ import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.
 import type { Endpoint, EndpointFilterDelegate, EndpointFilterFactoryContext, EndpointMetadataCollection, FragmentString, HostString, HttpContext, HttpRequest, HttpResponse, PathString, RequestDelegate, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { RoutePattern, RoutePatternParameterPart, RoutePatternParameterPolicyReference } from "../../Microsoft.AspNetCore.Routing.Patterns/internal/index.js";
 import type { RouteTemplate, TemplatePart } from "../../Microsoft.AspNetCore.Routing.Template/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IEqualityComparer, IList, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Attribute, Boolean as ClrBoolean, Delegate, Double, Enum, Exception, Func, IComparable, IConvertible, IDisposable, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILogger } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
-import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1, IEnumerator_1, IEqualityComparer_1, IList_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, IReadOnlyList_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { MethodInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Attribute, Boolean as ClrBoolean, Delegate, Double, Enum, Exception, Func_3, Func_4, IComparable, IConvertible, IDisposable, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILogger } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
+import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export enum RouteDirection {
     IncomingRequest = 0,
@@ -38,7 +38,7 @@ export enum RouteDirection {
 export interface IDataTokensMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IDataTokensMetadata: never;
 
-    readonly DataTokens: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly DataTokens: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
 }
 
 
@@ -56,7 +56,7 @@ export type IDynamicEndpointMetadata = IDynamicEndpointMetadata$instance;
 export interface IEndpointAddressScheme_1$instance<TAddress> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1: never;
 
-    FindEndpoints(address: TAddress): IEnumerable__System_Collections_Generic<Endpoint>;
+    FindEndpoints(address: TAddress): IEnumerable_1<Endpoint>;
 }
 
 
@@ -84,7 +84,7 @@ export interface IEndpointRouteBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder: never;
 
     readonly ServiceProvider: IServiceProvider;
-    readonly DataSources: ICollection<EndpointDataSource>;
+    readonly DataSources: ICollection_1<EndpointDataSource>;
     CreateApplicationBuilder(): IApplicationBuilder;
 }
 
@@ -103,7 +103,7 @@ export type IExcludeFromDescriptionMetadata = IExcludeFromDescriptionMetadata$in
 export interface IHostMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IHostMetadata: never;
 
-    readonly Hosts: IReadOnlyList<System_Internal.String>;
+    readonly Hosts: IReadOnlyList_1<System_Internal.String>;
 }
 
 
@@ -113,7 +113,7 @@ export interface IHttpMethodMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IHttpMethodMetadata: never;
 
     AcceptCorsPreflight: boolean;
-    readonly HttpMethods: IReadOnlyList<System_Internal.String>;
+    readonly HttpMethods: IReadOnlyList_1<System_Internal.String>;
 }
 
 
@@ -167,7 +167,7 @@ export interface IRouteBuilder$instance {
     get DefaultHandler(): IRouter | undefined;
     set DefaultHandler(value: IRouter | undefined);
     readonly ServiceProvider: IServiceProvider;
-    readonly Routes: IList<IRouter>;
+    readonly Routes: IList_1<IRouter>;
     Build(): IRouter;
 }
 
@@ -260,7 +260,7 @@ export interface RouteData_RouteDataSnapshot$instance {
 
 
 export const RouteData_RouteDataSnapshot: {
-    new(routeData: RouteData, dataTokens: RouteValueDictionary, routers: IList<IRouter>, values: RouteValueDictionary): RouteData_RouteDataSnapshot;
+    new(routeData: RouteData, dataTokens: RouteValueDictionary, routers: IList_1<IRouter>, values: RouteValueDictionary): RouteData_RouteDataSnapshot;
 };
 
 
@@ -271,7 +271,7 @@ export interface RouteValueDictionary_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: KeyValuePair<System_Internal.String, unknown>;
+    Current: KeyValuePair_2<System_Internal.String, unknown>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -288,17 +288,17 @@ export type RouteValueDictionary_Enumerator = RouteValueDictionary_Enumerator$in
 export interface CompositeEndpointDataSource$instance extends EndpointDataSource {
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly DataSources: IEnumerable__System_Collections_Generic<EndpointDataSource>;
-    readonly Endpoints: IReadOnlyList<Endpoint>;
+    readonly DataSources: IEnumerable_1<EndpointDataSource>;
+    readonly Endpoints: IReadOnlyList_1<Endpoint>;
     Dispose(): void;
     GetChangeToken(): IChangeToken;
-    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
-    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
+    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList_1<Endpoint>;
+    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList_1<Endpoint>;
 }
 
 
 export const CompositeEndpointDataSource: {
-    new(endpointDataSources: IEnumerable__System_Collections_Generic<EndpointDataSource>): CompositeEndpointDataSource;
+    new(endpointDataSources: IEnumerable_1<EndpointDataSource>): CompositeEndpointDataSource;
 };
 
 
@@ -319,16 +319,16 @@ export const ContentEncodingMetadata: {
 
 export type ContentEncodingMetadata = ContentEncodingMetadata$instance;
 
-export interface DataTokensMetadata$instance {
+export interface DataTokensMetadata$instance extends IDataTokensMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IDataTokensMetadata: never;
 
-    readonly DataTokens: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly DataTokens: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
     ToString(): string;
 }
 
 
 export const DataTokensMetadata: {
-    new(dataTokens: IReadOnlyDictionary<System_Internal.String, unknown>): DataTokensMetadata;
+    new(dataTokens: IReadOnlyDictionary_2<System_Internal.String, unknown>): DataTokensMetadata;
 };
 
 
@@ -336,26 +336,24 @@ export interface __DataTokensMetadata$views {
     As_IDataTokensMetadata(): IDataTokensMetadata$instance;
 }
 
-export interface DataTokensMetadata$instance extends IDataTokensMetadata$instance {}
-
 export type DataTokensMetadata = DataTokensMetadata$instance & __DataTokensMetadata$views;
 
 
 export interface DefaultEndpointDataSource$instance extends EndpointDataSource {
-    readonly Endpoints: IReadOnlyList<Endpoint>;
+    readonly Endpoints: IReadOnlyList_1<Endpoint>;
     GetChangeToken(): IChangeToken;
 }
 
 
 export const DefaultEndpointDataSource: {
     new(endpoints: Endpoint[]): DefaultEndpointDataSource;
-    new(endpoints: IEnumerable__System_Collections_Generic<Endpoint>): DefaultEndpointDataSource;
+    new(endpoints: IEnumerable_1<Endpoint>): DefaultEndpointDataSource;
 };
 
 
 export type DefaultEndpointDataSource = DefaultEndpointDataSource$instance;
 
-export interface DefaultInlineConstraintResolver$instance {
+export interface DefaultInlineConstraintResolver$instance extends IInlineConstraintResolver$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IInlineConstraintResolver: never;
 
     ResolveConstraint(inlineConstraint: string): IRouteConstraint | undefined;
@@ -363,7 +361,7 @@ export interface DefaultInlineConstraintResolver$instance {
 
 
 export const DefaultInlineConstraintResolver: {
-    new(routeOptions: IOptions<RouteOptions>, serviceProvider: IServiceProvider): DefaultInlineConstraintResolver;
+    new(routeOptions: IOptions_1<RouteOptions>, serviceProvider: IServiceProvider): DefaultInlineConstraintResolver;
 };
 
 
@@ -371,15 +369,13 @@ export interface __DefaultInlineConstraintResolver$views {
     As_IInlineConstraintResolver(): IInlineConstraintResolver$instance;
 }
 
-export interface DefaultInlineConstraintResolver$instance extends IInlineConstraintResolver$instance {}
-
 export type DefaultInlineConstraintResolver = DefaultInlineConstraintResolver$instance & __DefaultInlineConstraintResolver$views;
 
 
 export interface EndpointDataSource$instance {
-    readonly Endpoints: IReadOnlyList<Endpoint>;
+    readonly Endpoints: IReadOnlyList_1<Endpoint>;
     GetChangeToken(): IChangeToken;
-    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList<Endpoint>;
+    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList_1<Endpoint>;
 }
 
 
@@ -389,7 +385,7 @@ export const EndpointDataSource: (abstract new() => EndpointDataSource) & {
 
 export type EndpointDataSource = EndpointDataSource$instance;
 
-export interface EndpointGroupNameAttribute$instance extends Attribute {
+export interface EndpointGroupNameAttribute$instance extends Attribute, IEndpointGroupNameMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata: never;
 
     readonly EndpointGroupName: string;
@@ -405,12 +401,10 @@ export interface __EndpointGroupNameAttribute$views {
     As_IEndpointGroupNameMetadata(): IEndpointGroupNameMetadata$instance;
 }
 
-export interface EndpointGroupNameAttribute$instance extends IEndpointGroupNameMetadata$instance {}
-
 export type EndpointGroupNameAttribute = EndpointGroupNameAttribute$instance & __EndpointGroupNameAttribute$views;
 
 
-export interface EndpointNameAttribute$instance extends Attribute {
+export interface EndpointNameAttribute$instance extends Attribute, IEndpointNameMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointNameMetadata: never;
 
     readonly EndpointName: string;
@@ -426,12 +420,10 @@ export interface __EndpointNameAttribute$views {
     As_IEndpointNameMetadata(): IEndpointNameMetadata$instance;
 }
 
-export interface EndpointNameAttribute$instance extends IEndpointNameMetadata$instance {}
-
 export type EndpointNameAttribute = EndpointNameAttribute$instance & __EndpointNameAttribute$views;
 
 
-export interface EndpointNameMetadata$instance {
+export interface EndpointNameMetadata$instance extends IEndpointNameMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointNameMetadata: never;
 
     readonly EndpointName: string;
@@ -448,12 +440,10 @@ export interface __EndpointNameMetadata$views {
     As_IEndpointNameMetadata(): IEndpointNameMetadata$instance;
 }
 
-export interface EndpointNameMetadata$instance extends IEndpointNameMetadata$instance {}
-
 export type EndpointNameMetadata = EndpointNameMetadata$instance & __EndpointNameMetadata$views;
 
 
-export interface ExcludeFromDescriptionAttribute$instance extends Attribute {
+export interface ExcludeFromDescriptionAttribute$instance extends Attribute, IExcludeFromDescriptionMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata: never;
 
     readonly ExcludeFromDescription: boolean;
@@ -470,15 +460,13 @@ export interface __ExcludeFromDescriptionAttribute$views {
     As_IExcludeFromDescriptionMetadata(): IExcludeFromDescriptionMetadata$instance;
 }
 
-export interface ExcludeFromDescriptionAttribute$instance extends IExcludeFromDescriptionMetadata$instance {}
-
 export type ExcludeFromDescriptionAttribute = ExcludeFromDescriptionAttribute$instance & __ExcludeFromDescriptionAttribute$views;
 
 
-export interface HostAttribute$instance extends Attribute {
+export interface HostAttribute$instance extends Attribute, IHostMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IHostMetadata: never;
 
-    readonly Hosts: IReadOnlyList<System_Internal.String>;
+    readonly Hosts: IReadOnlyList_1<System_Internal.String>;
     ToString(): string;
 }
 
@@ -493,23 +481,21 @@ export interface __HostAttribute$views {
     As_IHostMetadata(): IHostMetadata$instance;
 }
 
-export interface HostAttribute$instance extends IHostMetadata$instance {}
-
 export type HostAttribute = HostAttribute$instance & __HostAttribute$views;
 
 
-export interface HttpMethodMetadata$instance {
+export interface HttpMethodMetadata$instance extends IHttpMethodMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IHttpMethodMetadata: never;
 
     AcceptCorsPreflight: boolean;
-    readonly HttpMethods: IReadOnlyList<System_Internal.String>;
+    readonly HttpMethods: IReadOnlyList_1<System_Internal.String>;
     ToString(): string;
 }
 
 
 export const HttpMethodMetadata: {
-    new(httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>): HttpMethodMetadata;
-    new(httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>, acceptCorsPreflight: boolean): HttpMethodMetadata;
+    new(httpMethods: IEnumerable_1<System_Internal.String>): HttpMethodMetadata;
+    new(httpMethods: IEnumerable_1<System_Internal.String>, acceptCorsPreflight: boolean): HttpMethodMetadata;
 };
 
 
@@ -517,15 +503,13 @@ export interface __HttpMethodMetadata$views {
     As_IHttpMethodMetadata(): IHttpMethodMetadata$instance;
 }
 
-export interface HttpMethodMetadata$instance extends IHttpMethodMetadata$instance {}
-
 export type HttpMethodMetadata = HttpMethodMetadata$instance & __HttpMethodMetadata$views;
 
 
 export interface LinkGenerator$instance {
-    GetPathByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    GetPathByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     GetPathByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    GetUriByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    GetUriByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     GetUriByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
@@ -537,9 +521,9 @@ export const LinkGenerator: (abstract new() => LinkGenerator) & {
 export type LinkGenerator = LinkGenerator$instance;
 
 export interface LinkOptions$instance {
-    AppendTrailingSlash: Nullable<System_Internal.Boolean>;
-    LowercaseQueryStrings: Nullable<System_Internal.Boolean>;
-    LowercaseUrls: Nullable<System_Internal.Boolean>;
+    AppendTrailingSlash: Nullable_1<System_Internal.Boolean>;
+    LowercaseQueryStrings: Nullable_1<System_Internal.Boolean>;
+    LowercaseUrls: Nullable_1<System_Internal.Boolean>;
 }
 
 
@@ -567,7 +551,7 @@ export interface MatcherPolicy$instance {
 
 
 export const MatcherPolicy: (abstract new() => MatcherPolicy) & {
-    ContainsDynamicEndpoints(endpoints: IReadOnlyList<Endpoint>): boolean;
+    ContainsDynamicEndpoints(endpoints: IReadOnlyList_1<Endpoint>): boolean;
 };
 
 
@@ -600,8 +584,8 @@ export interface Route$instance extends RouteBase$instance {
 
 export const Route: {
     new(target: IRouter, routeTemplate: string, inlineConstraintResolver: IInlineConstraintResolver): Route;
-    new(target: IRouter, routeTemplate: string, defaults: RouteValueDictionary, constraints: IDictionary<System_Internal.String, unknown>, dataTokens: RouteValueDictionary, inlineConstraintResolver: IInlineConstraintResolver): Route;
-    new(target: IRouter, routeName: string, routeTemplate: string, defaults: RouteValueDictionary, constraints: IDictionary<System_Internal.String, unknown>, dataTokens: RouteValueDictionary, inlineConstraintResolver: IInlineConstraintResolver): Route;
+    new(target: IRouter, routeTemplate: string, defaults: RouteValueDictionary, constraints: IDictionary_2<System_Internal.String, unknown>, dataTokens: RouteValueDictionary, inlineConstraintResolver: IInlineConstraintResolver): Route;
+    new(target: IRouter, routeName: string, routeTemplate: string, defaults: RouteValueDictionary, constraints: IDictionary_2<System_Internal.String, unknown>, dataTokens: RouteValueDictionary, inlineConstraintResolver: IInlineConstraintResolver): Route;
 };
 
 
@@ -618,7 +602,7 @@ export interface RouteBase$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     ConstraintResolver: IInlineConstraintResolver;
-    Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
+    Constraints: IDictionary_2<System_Internal.String, IRouteConstraint>;
     DataTokens: RouteValueDictionary;
     Defaults: RouteValueDictionary;
     get Name(): string | undefined;
@@ -632,8 +616,8 @@ export interface RouteBase$instance {
 }
 
 
-export const RouteBase: (abstract new(template: string, name: string, constraintResolver: IInlineConstraintResolver, defaults: RouteValueDictionary, constraints: IDictionary<System_Internal.String, unknown>, dataTokens: RouteValueDictionary) => RouteBase) & {
-    GetConstraints(inlineConstraintResolver: IInlineConstraintResolver, parsedTemplate: RouteTemplate, constraints: IDictionary<System_Internal.String, unknown>): IDictionary<System_Internal.String, IRouteConstraint>;
+export const RouteBase: (abstract new(template: string, name: string, constraintResolver: IInlineConstraintResolver, defaults: RouteValueDictionary, constraints: IDictionary_2<System_Internal.String, unknown>, dataTokens: RouteValueDictionary) => RouteBase) & {
+    GetConstraints(inlineConstraintResolver: IInlineConstraintResolver, parsedTemplate: RouteTemplate, constraints: IDictionary_2<System_Internal.String, unknown>): IDictionary_2<System_Internal.String, IRouteConstraint>;
     GetDefaults(parsedTemplate: RouteTemplate, defaults: RouteValueDictionary): RouteValueDictionary;
 };
 
@@ -646,13 +630,13 @@ export interface __RouteBase$views {
 export type RouteBase = RouteBase$instance & __RouteBase$views;
 
 
-export interface RouteBuilder$instance {
+export interface RouteBuilder$instance extends IRouteBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteBuilder: never;
 
     readonly ApplicationBuilder: IApplicationBuilder;
     get DefaultHandler(): IRouter | undefined;
     set DefaultHandler(value: IRouter | undefined);
-    readonly Routes: IList<IRouter>;
+    readonly Routes: IList_1<IRouter>;
     readonly ServiceProvider: IServiceProvider;
     Build(): IRouter;
 }
@@ -667,8 +651,6 @@ export const RouteBuilder: {
 export interface __RouteBuilder$views {
     As_IRouteBuilder(): IRouteBuilder$instance;
 }
-
-export interface RouteBuilder$instance extends IRouteBuilder$instance {}
 
 export type RouteBuilder = RouteBuilder$instance & __RouteBuilder$views;
 
@@ -701,7 +683,7 @@ export type RouteCollection = RouteCollection$instance & __RouteCollection$views
 export interface RouteConstraintBuilder$instance {
     AddConstraint(key: string, value: unknown): void;
     AddResolvedConstraint(key: string, constraintText: string): void;
-    Build(): IDictionary<System_Internal.String, IRouteConstraint>;
+    Build(): IDictionary_2<System_Internal.String, IRouteConstraint>;
     SetOptional(key: string): void;
 }
 
@@ -744,7 +726,7 @@ export type RouteCreationException = RouteCreationException$instance;
 
 export interface RouteData$instance {
     readonly DataTokens: RouteValueDictionary;
-    readonly Routers: IList<IRouter>;
+    readonly Routers: IList_1<IRouter>;
     readonly Values: RouteValueDictionary;
     PushState(router: IRouter, values: RouteValueDictionary, dataTokens: RouteValueDictionary): RouteData_RouteDataSnapshot;
 }
@@ -786,7 +768,7 @@ export const RouteEndpointBuilder: {
 
 export type RouteEndpointBuilder = RouteEndpointBuilder$instance;
 
-export interface RouteGroupBuilder$instance {
+export interface RouteGroupBuilder$instance extends Microsoft_AspNetCore_Builder_Internal.IEndpointConventionBuilder$instance, IEndpointRouteBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder: never;
 
@@ -802,15 +784,13 @@ export interface __RouteGroupBuilder$views {
     As_IEndpointRouteBuilder(): IEndpointRouteBuilder$instance;
 }
 
-export interface RouteGroupBuilder$instance extends Microsoft_AspNetCore_Builder_Internal.IEndpointConventionBuilder$instance, IEndpointRouteBuilder$instance {}
-
 export type RouteGroupBuilder = RouteGroupBuilder$instance & __RouteGroupBuilder$views;
 
 
 export interface RouteGroupContext$instance {
     ApplicationServices: IServiceProvider;
-    Conventions: IReadOnlyList<Action<EndpointBuilder>>;
-    FinallyConventions: IReadOnlyList<Action<EndpointBuilder>>;
+    Conventions: IReadOnlyList_1<Action_1<EndpointBuilder>>;
+    FinallyConventions: IReadOnlyList_1<Action_1<EndpointBuilder>>;
     Prefix: RoutePattern;
 }
 
@@ -822,7 +802,7 @@ export const RouteGroupContext: {
 
 export type RouteGroupContext = RouteGroupContext$instance;
 
-export interface RouteHandler$instance {
+export interface RouteHandler$instance extends IRouteHandler$instance, IRouter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
@@ -842,8 +822,6 @@ export interface __RouteHandler$views {
     As_IRouter(): IRouter$instance;
 }
 
-export interface RouteHandler$instance extends IRouteHandler$instance, IRouter$instance {}
-
 export type RouteHandler = RouteHandler$instance & __RouteHandler$views;
 
 
@@ -859,7 +837,7 @@ export const RouteHandlerOptions: {
 
 export type RouteHandlerOptions = RouteHandlerOptions$instance;
 
-export interface RouteNameMetadata$instance {
+export interface RouteNameMetadata$instance extends IRouteNameMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteNameMetadata: never;
 
     readonly RouteName: string | undefined;
@@ -876,14 +854,12 @@ export interface __RouteNameMetadata$views {
     As_IRouteNameMetadata(): IRouteNameMetadata$instance;
 }
 
-export interface RouteNameMetadata$instance extends IRouteNameMetadata$instance {}
-
 export type RouteNameMetadata = RouteNameMetadata$instance & __RouteNameMetadata$views;
 
 
 export interface RouteOptions$instance {
     AppendTrailingSlash: boolean;
-    ConstraintMap: IDictionary<System_Internal.String, Type>;
+    ConstraintMap: IDictionary_2<System_Internal.String, Type>;
     LowercaseQueryStrings: boolean;
     LowercaseUrls: boolean;
     SuppressCheckForUnhandledSecurityMetadata: boolean;
@@ -907,11 +883,11 @@ export interface RouteValueDictionary$instance {
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyDictionary_2: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Comparer: IEqualityComparer<System_Internal.String>;
+    readonly Comparer: IEqualityComparer_1<System_Internal.String>;
     readonly Count: int;
     [key: string]: unknown | undefined;
-    readonly Keys: ICollection<System_Internal.String>;
-    readonly Values: ICollection<unknown | undefined>;
+    readonly Keys: ICollection_1<System_Internal.String>;
+    readonly Values: ICollection_1<unknown | undefined>;
     Add(key: string, value: unknown): void;
     Clear(): void;
     ContainsKey(key: string): boolean;
@@ -926,10 +902,10 @@ export interface RouteValueDictionary$instance {
 export const RouteValueDictionary: {
     new(): RouteValueDictionary;
     new(values: unknown): RouteValueDictionary;
-    new(values: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): RouteValueDictionary;
-    new(values: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>): RouteValueDictionary;
+    new(values: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): RouteValueDictionary;
+    new(values: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>): RouteValueDictionary;
     new(dictionary: RouteValueDictionary): RouteValueDictionary;
-    FromArray(items: KeyValuePair<System_Internal.String, unknown>[]): RouteValueDictionary;
+    FromArray(items: KeyValuePair_2<System_Internal.String, unknown>[]): RouteValueDictionary;
 };
 
 
@@ -968,7 +944,7 @@ export const RouteValuesAddress: {
 
 export type RouteValuesAddress = RouteValuesAddress$instance;
 
-export interface RoutingFeature$instance {
+export interface RoutingFeature$instance extends IRoutingFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRoutingFeature: never;
 
     get RouteData(): RouteData | undefined;
@@ -985,12 +961,10 @@ export interface __RoutingFeature$views {
     As_IRoutingFeature(): IRoutingFeature$instance;
 }
 
-export interface RoutingFeature$instance extends IRoutingFeature$instance {}
-
 export type RoutingFeature = RoutingFeature$instance & __RoutingFeature$views;
 
 
-export interface SuppressLinkGenerationMetadata$instance {
+export interface SuppressLinkGenerationMetadata$instance extends ISuppressLinkGenerationMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata: never;
 
     readonly SuppressLinkGeneration: boolean;
@@ -1007,12 +981,10 @@ export interface __SuppressLinkGenerationMetadata$views {
     As_ISuppressLinkGenerationMetadata(): ISuppressLinkGenerationMetadata$instance;
 }
 
-export interface SuppressLinkGenerationMetadata$instance extends ISuppressLinkGenerationMetadata$instance {}
-
 export type SuppressLinkGenerationMetadata = SuppressLinkGenerationMetadata$instance & __SuppressLinkGenerationMetadata$views;
 
 
-export interface SuppressMatchingMetadata$instance {
+export interface SuppressMatchingMetadata$instance extends ISuppressMatchingMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata: never;
 
     readonly SuppressMatching: boolean;
@@ -1028,8 +1000,6 @@ export const SuppressMatchingMetadata: {
 export interface __SuppressMatchingMetadata$views {
     As_ISuppressMatchingMetadata(): ISuppressMatchingMetadata$instance;
 }
-
-export interface SuppressMatchingMetadata$instance extends ISuppressMatchingMetadata$instance {}
 
 export type SuppressMatchingMetadata = SuppressMatchingMetadata$instance & __SuppressMatchingMetadata$views;
 
@@ -1066,9 +1036,9 @@ export const VirtualPathData: {
 export type VirtualPathData = VirtualPathData$instance;
 
 export abstract class ControllerLinkGeneratorExtensions$instance {
-    static GetPathByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetPathByAction(generator: LinkGenerator, action: string, controller: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetUriByAction(generator: LinkGenerator, action: string, controller: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
@@ -1090,12 +1060,12 @@ export abstract class InlineRouteParameterParser$instance {
 export type InlineRouteParameterParser = InlineRouteParameterParser$instance;
 
 export abstract class LinkGeneratorEndpointNameAddressExtensions$instance {
-    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetPathByName(generator: LinkGenerator, endpointName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetPathByName(generator: LinkGenerator, endpointName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetUriByName(generator: LinkGenerator, endpointName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetUriByName(generator: LinkGenerator, endpointName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
@@ -1104,12 +1074,12 @@ export abstract class LinkGeneratorEndpointNameAddressExtensions$instance {
 export type LinkGeneratorEndpointNameAddressExtensions = LinkGeneratorEndpointNameAddressExtensions$instance;
 
 export abstract class LinkGeneratorRouteValuesAddressExtensions$instance {
-    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetPathByRouteValues(generator: LinkGenerator, routeName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetPathByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetUriByRouteValues(generator: LinkGenerator, routeName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetUriByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
@@ -1125,9 +1095,9 @@ export abstract class LinkParserEndpointNameAddressExtensions$instance {
 export type LinkParserEndpointNameAddressExtensions = LinkParserEndpointNameAddressExtensions$instance;
 
 export abstract class PageLinkGeneratorExtensions$instance {
-    static GetPathByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetPathByPage(generator: LinkGenerator, page: string, handler?: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, scheme?: string, host?: Nullable<HostString>, pathBase?: Nullable<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetUriByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
     static GetUriByPage(generator: LinkGenerator, page: string, handler: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
 }
 
@@ -1136,37 +1106,37 @@ export type PageLinkGeneratorExtensions = PageLinkGeneratorExtensions$instance;
 
 export abstract class RequestDelegateRouteBuilderExtensions$instance {
     static MapDelete(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static MapDelete(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapDelete(builder: IRouteBuilder, template: string, handler: Func_4<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
     static MapGet(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static MapGet(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
-    static MapMiddlewareDelete(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static MapMiddlewareGet(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static MapMiddlewarePost(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static MapMiddlewarePut(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static MapMiddlewareRoute(builder: IRouteBuilder, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
-    static MapMiddlewareVerb(builder: IRouteBuilder, verb: string, template: string, action: Action<IApplicationBuilder>): IRouteBuilder;
+    static MapGet(builder: IRouteBuilder, template: string, handler: Func_4<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapMiddlewareDelete(builder: IRouteBuilder, template: string, action: Action_1<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewareGet(builder: IRouteBuilder, template: string, action: Action_1<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewarePost(builder: IRouteBuilder, template: string, action: Action_1<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewarePut(builder: IRouteBuilder, template: string, action: Action_1<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewareRoute(builder: IRouteBuilder, template: string, action: Action_1<IApplicationBuilder>): IRouteBuilder;
+    static MapMiddlewareVerb(builder: IRouteBuilder, verb: string, template: string, action: Action_1<IApplicationBuilder>): IRouteBuilder;
     static MapPost(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static MapPost(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapPost(builder: IRouteBuilder, template: string, handler: Func_4<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
     static MapPut(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
-    static MapPut(builder: IRouteBuilder, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapPut(builder: IRouteBuilder, template: string, handler: Func_4<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
     static MapRoute(builder: IRouteBuilder, template: string, handler: RequestDelegate): IRouteBuilder;
     static MapVerb(builder: IRouteBuilder, verb: string, template: string, handler: RequestDelegate): IRouteBuilder;
-    static MapVerb(builder: IRouteBuilder, verb: string, template: string, handler: Func<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
+    static MapVerb(builder: IRouteBuilder, verb: string, template: string, handler: Func_4<HttpRequest, HttpResponse, RouteData, Task>): IRouteBuilder;
 }
 
 
 export type RequestDelegateRouteBuilderExtensions = RequestDelegateRouteBuilderExtensions$instance;
 
 export abstract class RouteConstraintMatcher$instance {
-    static Match(constraints: IDictionary<System_Internal.String, IRouteConstraint>, routeValues: RouteValueDictionary, httpContext: HttpContext, route: IRouter, routeDirection: RouteDirection, logger: ILogger): boolean;
+    static Match(constraints: IDictionary_2<System_Internal.String, IRouteConstraint>, routeValues: RouteValueDictionary, httpContext: HttpContext, route: IRouter, routeDirection: RouteDirection, logger: ILogger): boolean;
 }
 
 
 export type RouteConstraintMatcher = RouteConstraintMatcher$instance;
 
 export abstract class RouteHandlerServices$instance {
-    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>, populateMetadata: Func<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>, methodInfo: MethodInfo): RouteHandlerBuilder;
-    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable__System_Collections_Generic<System_Internal.String>, populateMetadata: Func<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>): RouteHandlerBuilder;
+    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable_1<System_Internal.String>, populateMetadata: Func_3<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func_4<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>, methodInfo: MethodInfo): RouteHandlerBuilder;
+    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable_1<System_Internal.String>, populateMetadata: Func_3<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func_4<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>): RouteHandlerBuilder;
 }
 
 

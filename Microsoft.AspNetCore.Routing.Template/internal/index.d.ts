@@ -12,9 +12,9 @@ import type { ptr } from "@tsonic/core/types.js";
 import type { HttpContext, PathString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { RoutePattern, RoutePatternParameterPolicyReference, RoutePatternPart, RoutePatternPathSegment } from "../../Microsoft.AspNetCore.Routing.Patterns/internal/index.js";
 import type { IRouteConstraint, RouteValueDictionary } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { IEnumerable, IList, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1, IList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface InlineConstraint$instance {
     readonly Constraint: string;
@@ -30,8 +30,8 @@ export const InlineConstraint: {
 export type InlineConstraint = InlineConstraint$instance;
 
 export interface RouteTemplate$instance {
-    readonly Parameters: IList<TemplatePart>;
-    readonly Segments: IList<TemplateSegment>;
+    readonly Parameters: IList_1<TemplatePart>;
+    readonly Segments: IList_1<TemplateSegment>;
     readonly TemplateText: string | undefined;
     GetParameter(name: string): TemplatePart | undefined;
     GetSegment(index: int): TemplateSegment | undefined;
@@ -41,7 +41,7 @@ export interface RouteTemplate$instance {
 
 export const RouteTemplate: {
     new(other: RoutePattern): RouteTemplate;
-    new(template: string, segments: List<TemplateSegment>): RouteTemplate;
+    new(template: string, segments: List_1<TemplateSegment>): RouteTemplate;
 };
 
 
@@ -90,7 +90,7 @@ export type TemplateMatcher = TemplateMatcher$instance;
 export interface TemplatePart$instance {
     get DefaultValue(): unknown | undefined;
     set DefaultValue(value: unknown | undefined);
-    InlineConstraints: IEnumerable<InlineConstraint>;
+    InlineConstraints: IEnumerable_1<InlineConstraint>;
     IsCatchAll: boolean;
     IsLiteral: boolean;
     IsOptional: boolean;
@@ -108,7 +108,7 @@ export const TemplatePart: {
     new(): TemplatePart;
     new(other: RoutePatternPart): TemplatePart;
     CreateLiteral(text: string): TemplatePart;
-    CreateParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: unknown, inlineConstraints: IEnumerable<InlineConstraint>): TemplatePart;
+    CreateParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: unknown, inlineConstraints: IEnumerable_1<InlineConstraint>): TemplatePart;
 };
 
 
@@ -116,7 +116,7 @@ export type TemplatePart = TemplatePart$instance;
 
 export interface TemplateSegment$instance {
     readonly IsSimple: boolean;
-    readonly Parts: List<TemplatePart>;
+    readonly Parts: List_1<TemplatePart>;
     ToRoutePatternPathSegment(): RoutePatternPathSegment;
 }
 

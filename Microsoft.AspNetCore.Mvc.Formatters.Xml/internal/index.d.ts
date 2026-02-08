@@ -9,16 +9,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as Microsoft_AspNetCore_Mvc_Infrastructure_Internal from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
 import type { ICompatibilitySwitch } from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
 import type { ProblemDetails, SerializableError, ValidationProblemDetails } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
-import type { XmlSchema } from "@tsonic/dotnet/System.Xml.Schema.js";
-import * as System_Xml_Serialization_Internal from "@tsonic/dotnet/System.Xml.Serialization.js";
-import type { IXmlSerializable } from "@tsonic/dotnet/System.Xml.Serialization.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { XmlSchema } from "@tsonic/dotnet/System.Xml.Schema/internal/index.js";
+import * as System_Xml_Serialization_Internal from "@tsonic/dotnet/System.Xml.Serialization/internal/index.js";
+import type { IXmlSerializable } from "@tsonic/dotnet/System.Xml.Serialization/internal/index.js";
+import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IUnwrappable$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
@@ -53,13 +53,13 @@ export interface DelegatingEnumerable_2$instance<TWrapped, TDeclared> {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     Add(item: unknown): void;
-    GetEnumerator(): IEnumerator__System_Collections_Generic<TWrapped>;
+    GetEnumerator(): IEnumerator_1<TWrapped>;
 }
 
 
 export const DelegatingEnumerable_2: {
     new<TWrapped, TDeclared>(): DelegatingEnumerable_2<TWrapped, TDeclared>;
-    new<TWrapped, TDeclared>(source: IEnumerable__System_Collections_Generic<TDeclared>, elementWrapperProvider: IWrapperProvider): DelegatingEnumerable_2<TWrapped, TDeclared>;
+    new<TWrapped, TDeclared>(source: IEnumerable_1<TDeclared>, elementWrapperProvider: IWrapperProvider): DelegatingEnumerable_2<TWrapped, TDeclared>;
 };
 
 
@@ -78,13 +78,13 @@ export interface DelegatingEnumerator_2$instance<TWrapped, TDeclared> {
 
 
 export const DelegatingEnumerator_2: {
-    new<TWrapped, TDeclared>(inner: IEnumerator__System_Collections_Generic<TDeclared>, wrapperProvider: IWrapperProvider): DelegatingEnumerator_2<TWrapped, TDeclared>;
+    new<TWrapped, TDeclared>(inner: IEnumerator_1<TDeclared>, wrapperProvider: IWrapperProvider): DelegatingEnumerator_2<TWrapped, TDeclared>;
 };
 
 
 export type DelegatingEnumerator_2<TWrapped, TDeclared> = DelegatingEnumerator_2$instance<TWrapped, TDeclared>;
 
-export interface EnumerableWrapperProvider$instance {
+export interface EnumerableWrapperProvider$instance extends IWrapperProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
@@ -101,12 +101,10 @@ export interface __EnumerableWrapperProvider$views {
     As_IWrapperProvider(): IWrapperProvider$instance;
 }
 
-export interface EnumerableWrapperProvider$instance extends IWrapperProvider$instance {}
-
 export type EnumerableWrapperProvider = EnumerableWrapperProvider$instance & __EnumerableWrapperProvider$views;
 
 
-export interface EnumerableWrapperProviderFactory$instance {
+export interface EnumerableWrapperProviderFactory$instance extends IWrapperProviderFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory: never;
 
     GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
@@ -114,15 +112,13 @@ export interface EnumerableWrapperProviderFactory$instance {
 
 
 export const EnumerableWrapperProviderFactory: {
-    new(wrapperProviderFactories: IEnumerable__System_Collections_Generic<IWrapperProviderFactory>): EnumerableWrapperProviderFactory;
+    new(wrapperProviderFactories: IEnumerable_1<IWrapperProviderFactory>): EnumerableWrapperProviderFactory;
 };
 
 
 export interface __EnumerableWrapperProviderFactory$views {
     As_IWrapperProviderFactory(): IWrapperProviderFactory$instance;
 }
-
-export interface EnumerableWrapperProviderFactory$instance extends IWrapperProviderFactory$instance {}
 
 export type EnumerableWrapperProviderFactory = EnumerableWrapperProviderFactory$instance & __EnumerableWrapperProviderFactory$views;
 
@@ -141,7 +137,7 @@ export const MvcXmlOptions: {
 
 export type MvcXmlOptions = MvcXmlOptions$instance;
 
-export interface ProblemDetailsWrapper$instance {
+export interface ProblemDetailsWrapper$instance extends IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
     readonly __tsonic_iface_System_Xml_Serialization_IXmlSerializable: never;
 
@@ -163,12 +159,10 @@ export interface __ProblemDetailsWrapper$views {
     As_IUnwrappable(): IUnwrappable$instance;
 }
 
-export interface ProblemDetailsWrapper$instance extends IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {}
-
 export type ProblemDetailsWrapper = ProblemDetailsWrapper$instance & __ProblemDetailsWrapper$views;
 
 
-export interface SerializableErrorWrapper$instance {
+export interface SerializableErrorWrapper$instance extends IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
     readonly __tsonic_iface_System_Xml_Serialization_IXmlSerializable: never;
 
@@ -190,12 +184,10 @@ export interface __SerializableErrorWrapper$views {
     As_IUnwrappable(): IUnwrappable$instance;
 }
 
-export interface SerializableErrorWrapper$instance extends IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {}
-
 export type SerializableErrorWrapper = SerializableErrorWrapper$instance & __SerializableErrorWrapper$views;
 
 
-export interface SerializableErrorWrapperProvider$instance {
+export interface SerializableErrorWrapperProvider$instance extends IWrapperProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
@@ -212,12 +204,10 @@ export interface __SerializableErrorWrapperProvider$views {
     As_IWrapperProvider(): IWrapperProvider$instance;
 }
 
-export interface SerializableErrorWrapperProvider$instance extends IWrapperProvider$instance {}
-
 export type SerializableErrorWrapperProvider = SerializableErrorWrapperProvider$instance & __SerializableErrorWrapperProvider$views;
 
 
-export interface SerializableErrorWrapperProviderFactory$instance {
+export interface SerializableErrorWrapperProviderFactory$instance extends IWrapperProviderFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory: never;
 
     GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
@@ -233,12 +223,10 @@ export interface __SerializableErrorWrapperProviderFactory$views {
     As_IWrapperProviderFactory(): IWrapperProviderFactory$instance;
 }
 
-export interface SerializableErrorWrapperProviderFactory$instance extends IWrapperProviderFactory$instance {}
-
 export type SerializableErrorWrapperProviderFactory = SerializableErrorWrapperProviderFactory$instance & __SerializableErrorWrapperProviderFactory$views;
 
 
-export interface ValidationProblemDetailsWrapper$instance extends ProblemDetailsWrapper$instance {
+export interface ValidationProblemDetailsWrapper$instance extends ProblemDetailsWrapper$instance, IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
     readonly __tsonic_iface_System_Xml_Serialization_IXmlSerializable: never;
 
@@ -258,8 +246,6 @@ export interface __ValidationProblemDetailsWrapper$views {
     As_IUnwrappable(): IUnwrappable$instance;
 }
 
-export interface ValidationProblemDetailsWrapper$instance extends IUnwrappable$instance, System_Xml_Serialization_Internal.IXmlSerializable {}
-
 export type ValidationProblemDetailsWrapper = ValidationProblemDetailsWrapper$instance & __ValidationProblemDetailsWrapper$views;
 
 
@@ -277,7 +263,7 @@ export const WrapperProviderContext: {
 export type WrapperProviderContext = WrapperProviderContext$instance;
 
 export abstract class WrapperProviderFactoriesExtensions$instance {
-    static GetWrapperProvider(wrapperProviderFactories: IEnumerable__System_Collections_Generic<IWrapperProviderFactory>, wrapperProviderContext: WrapperProviderContext): IWrapperProvider | undefined;
+    static GetWrapperProvider(wrapperProviderFactories: IEnumerable_1<IWrapperProviderFactory>, wrapperProviderContext: WrapperProviderContext): IWrapperProvider | undefined;
 }
 
 

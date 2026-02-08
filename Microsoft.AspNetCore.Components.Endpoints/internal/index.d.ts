@@ -9,16 +9,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { Dispatcher, IComponentRenderMode, ParameterView, PersistedStateSerializationMode } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IHtmlAsyncContent, IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, TimeSpan, Type } from "@tsonic/dotnet/System.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, TimeSpan, Type } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IComponentPrerenderer$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Endpoints_IComponentPrerenderer: never;
 
     readonly Dispatcher: Dispatcher;
-    PrerenderComponentAsync(httpContext: HttpContext, componentType: Type, renderMode: IComponentRenderMode, parameters: ParameterView): ValueTask<IHtmlAsyncContent>;
-    PrerenderPersistedStateAsync(httpContext: HttpContext, serializationMode: PersistedStateSerializationMode): ValueTask<IHtmlContent>;
+    PrerenderComponentAsync(httpContext: HttpContext, componentType: Type, renderMode: IComponentRenderMode, parameters: ParameterView): ValueTask_1<IHtmlAsyncContent>;
+    PrerenderPersistedStateAsync(httpContext: HttpContext, serializationMode: PersistedStateSerializationMode): ValueTask_1<IHtmlContent>;
 }
 
 

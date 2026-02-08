@@ -8,11 +8,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { MediaTypeHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
-import type { IList, ISet, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { Encoding } from "@tsonic/dotnet/System.Text.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IList_1, ISet_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Encoding } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum HttpLoggingFields {
     None = 0,
@@ -92,7 +92,7 @@ export type HttpLoggingAttribute = HttpLoggingAttribute$instance;
 export interface HttpLoggingInterceptorContext$instance {
     HttpContext: HttpContext;
     LoggingFields: HttpLoggingFields;
-    readonly Parameters: IList<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Parameters: IList_1<KeyValuePair_2<System_Internal.String, unknown>>;
     RequestBodyLogLimit: int;
     ResponseBodyLogLimit: int;
     AddParameter(key: string, value: unknown): void;
@@ -115,9 +115,9 @@ export interface HttpLoggingOptions$instance {
     LoggingFields: HttpLoggingFields;
     readonly MediaTypeOptions: MediaTypeOptions;
     RequestBodyLogLimit: int;
-    readonly RequestHeaders: ISet<System_Internal.String>;
+    readonly RequestHeaders: ISet_1<System_Internal.String>;
     ResponseBodyLogLimit: int;
-    readonly ResponseHeaders: ISet<System_Internal.String>;
+    readonly ResponseHeaders: ISet_1<System_Internal.String>;
 }
 
 
@@ -144,13 +144,13 @@ export const MediaTypeOptions: {
 export type MediaTypeOptions = MediaTypeOptions$instance;
 
 export interface W3CLoggerOptions$instance {
-    readonly AdditionalRequestHeaders: ISet<System_Internal.String>;
+    readonly AdditionalRequestHeaders: ISet_1<System_Internal.String>;
     FileName: string;
-    FileSizeLimit: Nullable<System_Internal.Int32>;
+    FileSizeLimit: Nullable_1<System_Internal.Int32>;
     FlushInterval: TimeSpan;
     LogDirectory: string;
     LoggingFields: W3CLoggingFields;
-    RetainedFileCountLimit: Nullable<System_Internal.Int32>;
+    RetainedFileCountLimit: Nullable_1<System_Internal.Int32>;
 }
 
 

@@ -17,16 +17,16 @@ import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.M
 import type { ProblemDetails } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { RouteValueDictionary } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import type { EntityTagHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
-import type { IReadOnlyDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Int32, Int64, Nullable, Object as ClrObject, ReadOnlyMemory, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IReadOnlyDictionary_2, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { MethodInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Int32, Int64, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface Accepted$instance {
+export interface Accepted$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -47,12 +47,10 @@ export interface __Accepted$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Accepted$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Accepted = Accepted$instance & __Accepted$views;
 
 
-export interface Accepted_1$instance<TValue> {
+export interface Accepted_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -78,12 +76,10 @@ export interface __Accepted_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Accepted_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Accepted_1<TValue> = Accepted_1$instance<TValue> & __Accepted_1$views<TValue>;
 
 
-export interface AcceptedAtRoute$instance {
+export interface AcceptedAtRoute$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -105,12 +101,10 @@ export interface __AcceptedAtRoute$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface AcceptedAtRoute$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type AcceptedAtRoute = AcceptedAtRoute$instance & __AcceptedAtRoute$views;
 
 
-export interface AcceptedAtRoute_1$instance<TValue> {
+export interface AcceptedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -137,12 +131,10 @@ export interface __AcceptedAtRoute_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface AcceptedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type AcceptedAtRoute_1<TValue> = AcceptedAtRoute_1$instance<TValue> & __AcceptedAtRoute_1$views<TValue>;
 
 
-export interface BadRequest$instance {
+export interface BadRequest$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -162,12 +154,10 @@ export interface __BadRequest$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface BadRequest$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type BadRequest = BadRequest$instance & __BadRequest$views;
 
 
-export interface BadRequest_1$instance<TValue> {
+export interface BadRequest_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -192,15 +182,13 @@ export interface __BadRequest_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface BadRequest_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type BadRequest_1<TValue> = BadRequest_1$instance<TValue> & __BadRequest_1$views<TValue>;
 
 
-export interface ChallengeHttpResult$instance {
+export interface ChallengeHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
-    AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    AuthenticationSchemes: IReadOnlyList_1<System_Internal.String>;
     get Properties(): AuthenticationProperties | undefined;
     set Properties(value: AuthenticationProperties | undefined);
     ExecuteAsync(httpContext: HttpContext): Task;
@@ -215,12 +203,10 @@ export interface __ChallengeHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface ChallengeHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type ChallengeHttpResult = ChallengeHttpResult$instance & __ChallengeHttpResult$views;
 
 
-export interface Conflict$instance {
+export interface Conflict$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -240,12 +226,10 @@ export interface __Conflict$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Conflict$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Conflict = Conflict$instance & __Conflict$views;
 
 
-export interface Conflict_1$instance<TValue> {
+export interface Conflict_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -270,12 +254,10 @@ export interface __Conflict_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Conflict_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Conflict_1<TValue> = Conflict_1$instance<TValue> & __Conflict_1$views<TValue>;
 
 
-export interface ContentHttpResult$instance {
+export interface ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
@@ -283,7 +265,7 @@ export interface ContentHttpResult$instance {
     ContentType: string;
     get ResponseContent(): string | undefined;
     set ResponseContent(value: string | undefined);
-    StatusCode: Nullable<System_Internal.Int32>;
+    StatusCode: Nullable_1<System_Internal.Int32>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -298,12 +280,10 @@ export interface __ContentHttpResult$views {
     As_IStatusCodeHttpResult(): Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance;
 }
 
-export interface ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type ContentHttpResult = ContentHttpResult$instance & __ContentHttpResult$views;
 
 
-export interface Created$instance {
+export interface Created$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -324,12 +304,10 @@ export interface __Created$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Created$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Created = Created$instance & __Created$views;
 
 
-export interface Created_1$instance<TValue> {
+export interface Created_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -355,12 +333,10 @@ export interface __Created_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Created_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Created_1<TValue> = Created_1$instance<TValue> & __Created_1$views<TValue>;
 
 
-export interface CreatedAtRoute$instance {
+export interface CreatedAtRoute$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -382,12 +358,10 @@ export interface __CreatedAtRoute$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface CreatedAtRoute$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type CreatedAtRoute = CreatedAtRoute$instance & __CreatedAtRoute$views;
 
 
-export interface CreatedAtRoute_1$instance<TValue> {
+export interface CreatedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -414,12 +388,10 @@ export interface __CreatedAtRoute_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface CreatedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type CreatedAtRoute_1<TValue> = CreatedAtRoute_1$instance<TValue> & __CreatedAtRoute_1$views<TValue>;
 
 
-export interface EmptyHttpResult$instance {
+export interface EmptyHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
     ExecuteAsync(httpContext: HttpContext): Task;
@@ -435,12 +407,10 @@ export interface __EmptyHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface EmptyHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type EmptyHttpResult = EmptyHttpResult$instance & __EmptyHttpResult$views;
 
 
-export interface FileContentHttpResult$instance {
+export interface FileContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFileHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
@@ -449,11 +419,11 @@ export interface FileContentHttpResult$instance {
     EnableRangeProcessing: boolean;
     get EntityTag(): EntityTagHeaderValue | undefined;
     set EntityTag(value: EntityTagHeaderValue | undefined);
-    FileContents: ReadOnlyMemory<System_Internal.Byte>;
+    FileContents: ReadOnlyMemory_1<System_Internal.Byte>;
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable<System_Internal.Int64>;
-    LastModified: Nullable<DateTimeOffset>;
+    FileLength: Nullable_1<System_Internal.Int64>;
+    LastModified: Nullable_1<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -468,12 +438,10 @@ export interface __FileContentHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface FileContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type FileContentHttpResult = FileContentHttpResult$instance & __FileContentHttpResult$views;
 
 
-export interface FileStreamHttpResult$instance {
+export interface FileStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFileHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
@@ -484,9 +452,9 @@ export interface FileStreamHttpResult$instance {
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable<System_Internal.Int64>;
+    FileLength: Nullable_1<System_Internal.Int64>;
     readonly FileStream: Stream;
-    LastModified: Nullable<DateTimeOffset>;
+    LastModified: Nullable_1<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -501,15 +469,13 @@ export interface __FileStreamHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface FileStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type FileStreamHttpResult = FileStreamHttpResult$instance & __FileStreamHttpResult$views;
 
 
-export interface ForbidHttpResult$instance {
+export interface ForbidHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
-    AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    AuthenticationSchemes: IReadOnlyList_1<System_Internal.String>;
     get Properties(): AuthenticationProperties | undefined;
     set Properties(value: AuthenticationProperties | undefined);
     ExecuteAsync(httpContext: HttpContext): Task;
@@ -524,12 +490,10 @@ export interface __ForbidHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface ForbidHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type ForbidHttpResult = ForbidHttpResult$instance & __ForbidHttpResult$views;
 
 
-export interface InternalServerError$instance {
+export interface InternalServerError$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -549,12 +513,10 @@ export interface __InternalServerError$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface InternalServerError$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type InternalServerError = InternalServerError$instance & __InternalServerError$views;
 
 
-export interface InternalServerError_1$instance<TValue> {
+export interface InternalServerError_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -579,12 +541,10 @@ export interface __InternalServerError_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface InternalServerError_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type InternalServerError_1<TValue> = InternalServerError_1$instance<TValue> & __InternalServerError_1$views<TValue>;
 
 
-export interface JsonHttpResult_1$instance<TValue> {
+export interface JsonHttpResult_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
@@ -594,7 +554,7 @@ export interface JsonHttpResult_1$instance<TValue> {
 
     readonly ContentType: string;
     readonly JsonSerializerOptions: JsonSerializerOptions | undefined;
-    readonly StatusCode: Nullable<System_Internal.Int32>;
+    readonly StatusCode: Nullable_1<System_Internal.Int32>;
     readonly Value: TValue | undefined;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
@@ -613,12 +573,10 @@ export interface __JsonHttpResult_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface JsonHttpResult_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type JsonHttpResult_1<TValue> = JsonHttpResult_1$instance<TValue> & __JsonHttpResult_1$views<TValue>;
 
 
-export interface NoContent$instance {
+export interface NoContent$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -638,12 +596,10 @@ export interface __NoContent$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface NoContent$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type NoContent = NoContent$instance & __NoContent$views;
 
 
-export interface NotFound$instance {
+export interface NotFound$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -663,12 +619,10 @@ export interface __NotFound$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface NotFound$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type NotFound = NotFound$instance & __NotFound$views;
 
 
-export interface NotFound_1$instance<TValue> {
+export interface NotFound_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -693,12 +647,10 @@ export interface __NotFound_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface NotFound_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type NotFound_1<TValue> = NotFound_1$instance<TValue> & __NotFound_1$views<TValue>;
 
 
-export interface Ok$instance {
+export interface Ok$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -718,12 +670,10 @@ export interface __Ok$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Ok$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Ok = Ok$instance & __Ok$views;
 
 
-export interface Ok_1$instance<TValue> {
+export interface Ok_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -748,12 +698,10 @@ export interface __Ok_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Ok_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Ok_1<TValue> = Ok_1$instance<TValue> & __Ok_1$views<TValue>;
 
 
-export interface PhysicalFileHttpResult$instance {
+export interface PhysicalFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFileHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
@@ -764,9 +712,9 @@ export interface PhysicalFileHttpResult$instance {
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable<System_Internal.Int64>;
+    FileLength: Nullable_1<System_Internal.Int64>;
     readonly FileName: string;
-    LastModified: Nullable<DateTimeOffset>;
+    LastModified: Nullable_1<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -780,8 +728,6 @@ export interface __PhysicalFileHttpResult$views {
     As_IFileHttpResult(): Microsoft_AspNetCore_Http_Internal.IFileHttpResult$instance;
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
-
-export interface PhysicalFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type PhysicalFileHttpResult = PhysicalFileHttpResult$instance & __PhysicalFileHttpResult$views;
 
@@ -814,12 +760,10 @@ export interface __ProblemHttpResult$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface ProblemHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<ProblemDetails>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type ProblemHttpResult = ProblemHttpResult$instance & __ProblemHttpResult$views;
 
 
-export interface PushStreamHttpResult$instance {
+export interface PushStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFileHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
@@ -830,8 +774,8 @@ export interface PushStreamHttpResult$instance {
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable<System_Internal.Int64>;
-    LastModified: Nullable<DateTimeOffset>;
+    FileLength: Nullable_1<System_Internal.Int64>;
+    LastModified: Nullable_1<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -846,21 +790,19 @@ export interface __PushStreamHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface PushStreamHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type PushStreamHttpResult = PushStreamHttpResult$instance & __PushStreamHttpResult$views;
 
 
-export interface RazorComponentResult$instance {
+export interface RazorComponentResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
 
     readonly ComponentType: Type;
     ContentType: string;
-    readonly Parameters: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly Parameters: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
     PreventStreamingRendering: boolean;
-    StatusCode: Nullable<System_Internal.Int32>;
+    StatusCode: Nullable_1<System_Internal.Int32>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -868,7 +810,7 @@ export interface RazorComponentResult$instance {
 export const RazorComponentResult: {
     new(componentType: Type): RazorComponentResult;
     new(componentType: Type, parameters: unknown): RazorComponentResult;
-    new(componentType: Type, parameters: IReadOnlyDictionary<System_Internal.String, unknown>): RazorComponentResult;
+    new(componentType: Type, parameters: IReadOnlyDictionary_2<System_Internal.String, unknown>): RazorComponentResult;
 };
 
 
@@ -877,8 +819,6 @@ export interface __RazorComponentResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
     As_IStatusCodeHttpResult(): Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance;
 }
-
-export interface RazorComponentResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type RazorComponentResult = RazorComponentResult$instance & __RazorComponentResult$views;
 
@@ -895,7 +835,7 @@ export interface RazorComponentResult_1$instance<TComponent extends IComponent> 
 export const RazorComponentResult_1: {
     new<TComponent extends IComponent>(): RazorComponentResult_1<TComponent>;
     new<TComponent extends IComponent>(parameters: unknown): RazorComponentResult_1<TComponent>;
-    new<TComponent extends IComponent>(parameters: IReadOnlyDictionary<System_Internal.String, unknown>): RazorComponentResult_1<TComponent>;
+    new<TComponent extends IComponent>(parameters: IReadOnlyDictionary_2<System_Internal.String, unknown>): RazorComponentResult_1<TComponent>;
 };
 
 
@@ -908,7 +848,7 @@ export interface __RazorComponentResult_1$views<TComponent extends IComponent> {
 export type RazorComponentResult_1<TComponent extends IComponent> = RazorComponentResult_1$instance<TComponent> & __RazorComponentResult_1$views<TComponent>;
 
 
-export interface RedirectHttpResult$instance {
+export interface RedirectHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
     readonly AcceptLocalUrlOnly: boolean;
@@ -928,12 +868,10 @@ export interface __RedirectHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface RedirectHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type RedirectHttpResult = RedirectHttpResult$instance & __RedirectHttpResult$views;
 
 
-export interface RedirectToRouteHttpResult$instance {
+export interface RedirectToRouteHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
     readonly Fragment: string | undefined;
@@ -953,12 +891,10 @@ export interface __RedirectToRouteHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface RedirectToRouteHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type RedirectToRouteHttpResult = RedirectToRouteHttpResult$instance & __RedirectToRouteHttpResult$views;
 
 
-export interface Results_2$instance<TResult1 extends IResult, TResult2 extends IResult> {
+export interface Results_2$instance<TResult1 extends IResult, TResult2 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_INestedHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -978,12 +914,10 @@ export interface __Results_2$views<TResult1 extends IResult, TResult2 extends IR
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Results_2$instance<TResult1 extends IResult, TResult2 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Results_2<TResult1 extends IResult, TResult2 extends IResult> = Results_2$instance<TResult1, TResult2> & __Results_2$views<TResult1, TResult2>;
 
 
-export interface Results_3$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult> {
+export interface Results_3$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_INestedHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -1003,12 +937,10 @@ export interface __Results_3$views<TResult1 extends IResult, TResult2 extends IR
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Results_3$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Results_3<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult> = Results_3$instance<TResult1, TResult2, TResult3> & __Results_3$views<TResult1, TResult2, TResult3>;
 
 
-export interface Results_4$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult> {
+export interface Results_4$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_INestedHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -1028,12 +960,10 @@ export interface __Results_4$views<TResult1 extends IResult, TResult2 extends IR
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Results_4$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Results_4<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult> = Results_4$instance<TResult1, TResult2, TResult3, TResult4> & __Results_4$views<TResult1, TResult2, TResult3, TResult4>;
 
 
-export interface Results_5$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult> {
+export interface Results_5$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_INestedHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -1053,12 +983,10 @@ export interface __Results_5$views<TResult1 extends IResult, TResult2 extends IR
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Results_5$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Results_5<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult> = Results_5$instance<TResult1, TResult2, TResult3, TResult4, TResult5> & __Results_5$views<TResult1, TResult2, TResult3, TResult4, TResult5>;
 
 
-export interface Results_6$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult, TResult6 extends IResult> {
+export interface Results_6$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult, TResult6 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_INestedHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -1078,17 +1006,15 @@ export interface __Results_6$views<TResult1 extends IResult, TResult2 extends IR
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface Results_6$instance<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult, TResult6 extends IResult> extends Microsoft_AspNetCore_Http_Internal.INestedHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type Results_6<TResult1 extends IResult, TResult2 extends IResult, TResult3 extends IResult, TResult4 extends IResult, TResult5 extends IResult, TResult6 extends IResult> = Results_6$instance<TResult1, TResult2, TResult3, TResult4, TResult5, TResult6> & __Results_6$views<TResult1, TResult2, TResult3, TResult4, TResult5, TResult6>;
 
 
-export interface ServerSentEventsResult_1$instance<T> {
+export interface ServerSentEventsResult_1$instance<T> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly StatusCode: Nullable<System_Internal.Int32>;
+    readonly StatusCode: Nullable_1<System_Internal.Int32>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1103,12 +1029,10 @@ export interface __ServerSentEventsResult_1$views<T> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface ServerSentEventsResult_1$instance<T> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type ServerSentEventsResult_1<T> = ServerSentEventsResult_1$instance<T> & __ServerSentEventsResult_1$views<T>;
 
 
-export interface SignInHttpResult$instance {
+export interface SignInHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
     get AuthenticationScheme(): string | undefined;
@@ -1128,15 +1052,13 @@ export interface __SignInHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface SignInHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type SignInHttpResult = SignInHttpResult$instance & __SignInHttpResult$views;
 
 
-export interface SignOutHttpResult$instance {
+export interface SignOutHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
-    AuthenticationSchemes: IReadOnlyList<System_Internal.String>;
+    AuthenticationSchemes: IReadOnlyList_1<System_Internal.String>;
     get Properties(): AuthenticationProperties | undefined;
     set Properties(value: AuthenticationProperties | undefined);
     ExecuteAsync(httpContext: HttpContext): Task;
@@ -1151,12 +1073,10 @@ export interface __SignOutHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
 
-export interface SignOutHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type SignOutHttpResult = SignOutHttpResult$instance & __SignOutHttpResult$views;
 
 
-export interface StatusCodeHttpResult$instance {
+export interface StatusCodeHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
 
@@ -1174,12 +1094,10 @@ export interface __StatusCodeHttpResult$views {
     As_IStatusCodeHttpResult(): Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance;
 }
 
-export interface StatusCodeHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type StatusCodeHttpResult = StatusCodeHttpResult$instance & __StatusCodeHttpResult$views;
 
 
-export interface UnauthorizedHttpResult$instance {
+export interface UnauthorizedHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
 
@@ -1197,12 +1115,10 @@ export interface __UnauthorizedHttpResult$views {
     As_IStatusCodeHttpResult(): Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance;
 }
 
-export interface UnauthorizedHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
-
 export type UnauthorizedHttpResult = UnauthorizedHttpResult$instance & __UnauthorizedHttpResult$views;
 
 
-export interface UnprocessableEntity$instance {
+export interface UnprocessableEntity$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
@@ -1222,12 +1138,10 @@ export interface __UnprocessableEntity$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface UnprocessableEntity$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type UnprocessableEntity = UnprocessableEntity$instance & __UnprocessableEntity$views;
 
 
-export interface UnprocessableEntity_1$instance<TValue> {
+export interface UnprocessableEntity_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult: never;
@@ -1252,19 +1166,17 @@ export interface __UnprocessableEntity_1$views<TValue> {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface UnprocessableEntity_1$instance<TValue> extends Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type UnprocessableEntity_1<TValue> = UnprocessableEntity_1$instance<TValue> & __UnprocessableEntity_1$views<TValue>;
 
 
-export interface Utf8ContentHttpResult$instance {
+export interface Utf8ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
 
     ContentType: string;
-    ResponseContent: ReadOnlyMemory<System_Internal.Byte>;
-    StatusCode: Nullable<System_Internal.Int32>;
+    ResponseContent: ReadOnlyMemory_1<System_Internal.Byte>;
+    StatusCode: Nullable_1<System_Internal.Int32>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1278,8 +1190,6 @@ export interface __Utf8ContentHttpResult$views {
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
     As_IStatusCodeHttpResult(): Microsoft_AspNetCore_Http_Internal.IStatusCodeHttpResult$instance;
 }
-
-export interface Utf8ContentHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type Utf8ContentHttpResult = Utf8ContentHttpResult$instance & __Utf8ContentHttpResult$views;
 
@@ -1312,12 +1222,10 @@ export interface __ValidationProblem$views {
     As_IEndpointMetadataProvider(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance;
 }
 
-export interface ValidationProblem$instance extends Microsoft_AspNetCore_Http_Internal.IContentTypeHttpResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance, Microsoft_AspNetCore_Http_Internal.IValueHttpResult_1$instance<HttpValidationProblemDetails>, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointMetadataProvider$instance {}
-
 export type ValidationProblem = ValidationProblem$instance & __ValidationProblem$views;
 
 
-export interface VirtualFileHttpResult$instance {
+export interface VirtualFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFileHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
@@ -1328,9 +1236,9 @@ export interface VirtualFileHttpResult$instance {
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable<System_Internal.Int64>;
+    FileLength: Nullable_1<System_Internal.Int64>;
     FileName: string;
-    LastModified: Nullable<DateTimeOffset>;
+    LastModified: Nullable_1<DateTimeOffset>;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1344,8 +1252,6 @@ export interface __VirtualFileHttpResult$views {
     As_IFileHttpResult(): Microsoft_AspNetCore_Http_Internal.IFileHttpResult$instance;
     As_IResult(): Microsoft_AspNetCore_Http_Internal.IResult$instance;
 }
-
-export interface VirtualFileHttpResult$instance extends Microsoft_AspNetCore_Http_Internal.IResult$instance {}
 
 export type VirtualFileHttpResult = VirtualFileHttpResult$instance & __VirtualFileHttpResult$views;
 

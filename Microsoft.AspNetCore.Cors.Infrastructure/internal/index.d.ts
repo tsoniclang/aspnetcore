@@ -7,12 +7,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HttpContext, HttpResponse, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Func, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Func_2, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface ICorsMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
@@ -36,7 +36,7 @@ export type ICorsPolicyMetadata = ICorsPolicyMetadata$instance;
 export interface ICorsPolicyProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;
 
-    GetPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
+    GetPolicyAsync(context: HttpContext, policyName: string): Task_1<CorsPolicy | undefined>;
 }
 
 
@@ -91,9 +91,9 @@ export type CorsMiddleware = CorsMiddleware$instance;
 export interface CorsOptions$instance {
     DefaultPolicyName: string;
     AddDefaultPolicy(policy: CorsPolicy): void;
-    AddDefaultPolicy(configurePolicy: Action<CorsPolicyBuilder>): void;
+    AddDefaultPolicy(configurePolicy: Action_1<CorsPolicyBuilder>): void;
     AddPolicy(name: string, policy: CorsPolicy): void;
-    AddPolicy(name: string, configurePolicy: Action<CorsPolicyBuilder>): void;
+    AddPolicy(name: string, configurePolicy: Action_1<CorsPolicyBuilder>): void;
     GetPolicy(name: string): CorsPolicy | undefined;
 }
 
@@ -109,12 +109,12 @@ export interface CorsPolicy$instance {
     readonly AllowAnyHeader: boolean;
     readonly AllowAnyMethod: boolean;
     readonly AllowAnyOrigin: boolean;
-    readonly ExposedHeaders: IList<System_Internal.String>;
-    readonly Headers: IList<System_Internal.String>;
-    IsOriginAllowed: Func<System_Internal.String, System_Internal.Boolean>;
-    readonly Methods: IList<System_Internal.String>;
-    readonly Origins: IList<System_Internal.String>;
-    PreflightMaxAge: Nullable<TimeSpan>;
+    readonly ExposedHeaders: IList_1<System_Internal.String>;
+    readonly Headers: IList_1<System_Internal.String>;
+    IsOriginAllowed: Func_2<System_Internal.String, System_Internal.Boolean>;
+    readonly Methods: IList_1<System_Internal.String>;
+    readonly Origins: IList_1<System_Internal.String>;
+    PreflightMaxAge: Nullable_1<TimeSpan>;
     SupportsCredentials: boolean;
     ToString(): string;
 }
@@ -134,7 +134,7 @@ export interface CorsPolicyBuilder$instance {
     AllowCredentials(): CorsPolicyBuilder;
     Build(): CorsPolicy;
     DisallowCredentials(): CorsPolicyBuilder;
-    SetIsOriginAllowed(isOriginAllowed: Func<System_Internal.String, System_Internal.Boolean>): CorsPolicyBuilder;
+    SetIsOriginAllowed(isOriginAllowed: Func_2<System_Internal.String, System_Internal.Boolean>): CorsPolicyBuilder;
     SetIsOriginAllowedToAllowWildcardSubdomains(): CorsPolicyBuilder;
     SetPreflightMaxAge(preflightMaxAge: TimeSpan): CorsPolicyBuilder;
     WithExposedHeaders(...exposedHeaders: string[]): CorsPolicyBuilder;
@@ -153,14 +153,14 @@ export const CorsPolicyBuilder: {
 export type CorsPolicyBuilder = CorsPolicyBuilder$instance;
 
 export interface CorsResult$instance {
-    readonly AllowedExposedHeaders: IList<System_Internal.String>;
-    readonly AllowedHeaders: IList<System_Internal.String>;
-    readonly AllowedMethods: IList<System_Internal.String>;
+    readonly AllowedExposedHeaders: IList_1<System_Internal.String>;
+    readonly AllowedHeaders: IList_1<System_Internal.String>;
+    readonly AllowedMethods: IList_1<System_Internal.String>;
     get AllowedOrigin(): string | undefined;
     set AllowedOrigin(value: string | undefined);
     IsOriginAllowed: boolean;
     IsPreflightRequest: boolean;
-    PreflightMaxAge: Nullable<TimeSpan>;
+    PreflightMaxAge: Nullable_1<TimeSpan>;
     SupportsCredentials: boolean;
     VaryByOrigin: boolean;
     ToString(): string;
@@ -174,7 +174,7 @@ export const CorsResult: {
 
 export type CorsResult = CorsResult$instance;
 
-export interface CorsService$instance {
+export interface CorsService$instance extends ICorsService$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService: never;
 
     ApplyResult(result: CorsResult, response: HttpResponse): void;
@@ -186,7 +186,7 @@ export interface CorsService$instance {
 
 
 export const CorsService: {
-    new(options: IOptions<CorsOptions>, loggerFactory: ILoggerFactory): CorsService;
+    new(options: IOptions_1<CorsOptions>, loggerFactory: ILoggerFactory): CorsService;
 };
 
 
@@ -194,28 +194,24 @@ export interface __CorsService$views {
     As_ICorsService(): ICorsService$instance;
 }
 
-export interface CorsService$instance extends ICorsService$instance {}
-
 export type CorsService = CorsService$instance & __CorsService$views;
 
 
-export interface DefaultCorsPolicyProvider$instance {
+export interface DefaultCorsPolicyProvider$instance extends ICorsPolicyProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;
 
-    GetPolicyAsync(context: HttpContext, policyName: string): Task<CorsPolicy | undefined>;
+    GetPolicyAsync(context: HttpContext, policyName: string): Task_1<CorsPolicy | undefined>;
 }
 
 
 export const DefaultCorsPolicyProvider: {
-    new(options: IOptions<CorsOptions>): DefaultCorsPolicyProvider;
+    new(options: IOptions_1<CorsOptions>): DefaultCorsPolicyProvider;
 };
 
 
 export interface __DefaultCorsPolicyProvider$views {
     As_ICorsPolicyProvider(): ICorsPolicyProvider$instance;
 }
-
-export interface DefaultCorsPolicyProvider$instance extends ICorsPolicyProvider$instance {}
 
 export type DefaultCorsPolicyProvider = DefaultCorsPolicyProvider$instance & __DefaultCorsPolicyProvider$views;
 

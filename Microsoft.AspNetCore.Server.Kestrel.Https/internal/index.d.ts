@@ -7,14 +7,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { ConnectionContext } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
-import type { ReadOnlySequence } from "@tsonic/dotnet/System.Buffers.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Byte, Enum, Func, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { SslClientHelloInfo, SslPolicyErrors, SslServerAuthenticationOptions, SslStream } from "@tsonic/dotnet/System.Net.Security.js";
-import type { SslProtocols } from "@tsonic/dotnet/System.Security.Authentication.js";
-import type { StoreLocation, X509Certificate2, X509Certificate2Collection, X509Chain } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ReadOnlySequence_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { SslClientHelloInfo, SslPolicyErrors, SslServerAuthenticationOptions, SslStream } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import type { SslProtocols } from "@tsonic/dotnet/System.Security.Authentication/internal/index.js";
+import type { StoreLocation, X509Certificate2, X509Certificate2Collection, X509Chain } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Boolean as ClrBoolean, Byte, Enum, Func_2, Func_3, Func_4, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ClientCertificateMode {
     NoCertificate = 0,
@@ -27,20 +27,20 @@ export enum ClientCertificateMode {
 export interface HttpsConnectionAdapterOptions$instance {
     CheckCertificateRevocation: boolean;
     ClientCertificateMode: ClientCertificateMode;
-    get ClientCertificateValidation(): Func<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined;
-    set ClientCertificateValidation(value: Func<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined);
+    get ClientCertificateValidation(): Func_4<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined;
+    set ClientCertificateValidation(value: Func_4<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined);
     HandshakeTimeout: TimeSpan;
-    get OnAuthenticate(): Action<ConnectionContext, SslServerAuthenticationOptions> | undefined;
-    set OnAuthenticate(value: Action<ConnectionContext, SslServerAuthenticationOptions> | undefined);
+    get OnAuthenticate(): Action_2<ConnectionContext, SslServerAuthenticationOptions> | undefined;
+    set OnAuthenticate(value: Action_2<ConnectionContext, SslServerAuthenticationOptions> | undefined);
     get ServerCertificate(): X509Certificate2 | undefined;
     set ServerCertificate(value: X509Certificate2 | undefined);
     get ServerCertificateChain(): X509Certificate2Collection | undefined;
     set ServerCertificateChain(value: X509Certificate2Collection | undefined);
-    get ServerCertificateSelector(): Func<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined;
-    set ServerCertificateSelector(value: Func<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined);
+    get ServerCertificateSelector(): Func_3<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined;
+    set ServerCertificateSelector(value: Func_3<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined);
     SslProtocols: SslProtocols;
-    get TlsClientHelloBytesCallback(): Action<ConnectionContext | undefined, ReadOnlySequence<System_Internal.Byte>> | undefined;
-    set TlsClientHelloBytesCallback(value: Action<ConnectionContext | undefined, ReadOnlySequence<System_Internal.Byte>> | undefined);
+    get TlsClientHelloBytesCallback(): Action_2<ConnectionContext | undefined, ReadOnlySequence_1<System_Internal.Byte>> | undefined;
+    set TlsClientHelloBytesCallback(value: Action_2<ConnectionContext | undefined, ReadOnlySequence_1<System_Internal.Byte>> | undefined);
     AllowAnyClientCertificate(): void;
 }
 
@@ -72,7 +72,7 @@ export type TlsHandshakeCallbackContext = TlsHandshakeCallbackContext$instance;
 
 export interface TlsHandshakeCallbackOptions$instance {
     HandshakeTimeout: TimeSpan;
-    OnConnection: Func<TlsHandshakeCallbackContext, ValueTask<SslServerAuthenticationOptions>>;
+    OnConnection: Func_2<TlsHandshakeCallbackContext, ValueTask_1<SslServerAuthenticationOptions>>;
     get OnConnectionState(): unknown | undefined;
     set OnConnectionState(value: unknown | undefined);
 }

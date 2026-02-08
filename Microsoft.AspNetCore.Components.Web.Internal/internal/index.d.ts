@@ -12,7 +12,7 @@ import type { ptr } from "@tsonic/core/types.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { JSInvocationInfo } from "../../Microsoft.JSInterop.Infrastructure/internal/index.js";
 import type { JSCallResultType } from "../../Microsoft.JSInterop/internal/index.js";
-import type { Int64, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { Int64, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IInternalWebJSInProcessRuntime$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_Internal_IInternalWebJSInProcessRuntime: never;

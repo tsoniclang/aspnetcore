@@ -7,24 +7,24 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { ContentDispositionHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
-import type { ArrayPool } from "@tsonic/dotnet/System.Buffers.js";
-import type { Dictionary, IDictionary, IEnumerable, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_IO_Internal from "@tsonic/dotnet/System.IO.js";
-import type { SeekOrigin, Stream, TextReader, TextWriter } from "@tsonic/dotnet/System.IO.js";
-import type { PipeReader, PipeWriter } from "@tsonic/dotnet/System.IO.Pipelines.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { ArraySegment, Boolean as ClrBoolean, Byte, Char, Func, IAsyncDisposable, IDisposable, Int32, Int64, Memory, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Span, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Encoding } from "@tsonic/dotnet/System.Text.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
+import type { ArrayPool_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { Dictionary_2, IDictionary_2, IEnumerable_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { PipeReader, PipeWriter } from "@tsonic/dotnet/System.IO.Pipelines/internal/index.js";
+import * as System_IO_Internal from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { SeekOrigin, Stream, TextReader, TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Encoding } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { Task, Task_1, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { ArraySegment_1, Boolean as ClrBoolean, Byte, Char, Func_1, IAsyncDisposable, IDisposable, Int32, Int64, Memory_1, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Span_1, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export interface KeyValueAccumulator$instance {
     readonly HasValues: boolean;
     readonly KeyCount: int;
     ValueCount: int;
     Append(key: string, value: string): void;
-    GetResults(): Dictionary<System_Internal.String, StringValues>;
+    GetResults(): Dictionary_2<System_Internal.String, StringValues>;
 }
 
 
@@ -42,17 +42,17 @@ export interface QueryStringEnumerable$instance {
 
 export const QueryStringEnumerable: {
     new(queryString: string): QueryStringEnumerable;
-    new(queryString: ReadOnlyMemory<System_Internal.Char>): QueryStringEnumerable;
+    new(queryString: ReadOnlyMemory_1<System_Internal.Char>): QueryStringEnumerable;
 };
 
 
 export type QueryStringEnumerable = QueryStringEnumerable$instance;
 
 export interface QueryStringEnumerable_EncodedNameValuePair$instance {
-    readonly EncodedName: ReadOnlyMemory<System_Internal.Char>;
-    readonly EncodedValue: ReadOnlyMemory<System_Internal.Char>;
-    DecodeName(): ReadOnlyMemory<System_Internal.Char>;
-    DecodeValue(): ReadOnlyMemory<System_Internal.Char>;
+    readonly EncodedName: ReadOnlyMemory_1<System_Internal.Char>;
+    readonly EncodedValue: ReadOnlyMemory_1<System_Internal.Char>;
+    DecodeName(): ReadOnlyMemory_1<System_Internal.Char>;
+    DecodeValue(): ReadOnlyMemory_1<System_Internal.Char>;
 }
 
 
@@ -80,7 +80,7 @@ export interface BufferedReadStream$instance extends Stream {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly BufferedData: ArraySegment<System_Internal.Byte>;
+    readonly BufferedData: ArraySegment_1<System_Internal.Byte>;
     readonly CanRead: boolean;
     readonly CanSeek: boolean;
     readonly CanTimeout: boolean;
@@ -90,26 +90,26 @@ export interface BufferedReadStream$instance extends Stream {
     Dispose(disposing: boolean): void;
     EnsureBuffered(): boolean;
     EnsureBuffered(minCount: int): boolean;
-    EnsureBufferedAsync(cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
-    EnsureBufferedAsync(minCount: int, cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
+    EnsureBufferedAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
+    EnsureBufferedAsync(minCount: int, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
     Flush(): void;
     FlushAsync(cancellationToken: CancellationToken): Task;
     Read(buffer: byte[], offset: int, count: int): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
-    ReadAsync(buffer: Memory<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask<System_Internal.Int32>;
+    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
+    ReadAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask_1<System_Internal.Int32>;
     ReadLine(lengthLimit: int): string;
-    ReadLineAsync(lengthLimit: int, cancellationToken: CancellationToken): Task<System_Internal.String>;
+    ReadLineAsync(lengthLimit: int, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     Seek(offset: long, origin: SeekOrigin): long;
     SetLength(value: long): void;
     Write(buffer: byte[], offset: int, count: int): void;
-    WriteAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask;
+    WriteAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask;
     WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
 }
 
 
 export const BufferedReadStream: {
     new(inner: Stream, bufferSize: int): BufferedReadStream;
-    new(inner: Stream, bufferSize: int, bytePool: ArrayPool<System_Internal.Byte>): BufferedReadStream;
+    new(inner: Stream, bufferSize: int, bytePool: ArrayPool_1<System_Internal.Byte>): BufferedReadStream;
 };
 
 
@@ -131,24 +131,24 @@ export interface FileBufferingReadStream$instance extends Stream {
     Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
     Flush(): void;
-    Read(buffer: Span<System_Internal.Byte>): int;
+    Read(buffer: Span_1<System_Internal.Byte>): int;
     Read(buffer: byte[], offset: int, count: int): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
-    ReadAsync(buffer: Memory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask<System_Internal.Int32>;
+    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
+    ReadAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask_1<System_Internal.Int32>;
     Seek(offset: long, origin: SeekOrigin): long;
     SetLength(value: long): void;
     Write(buffer: byte[], offset: int, count: int): void;
-    WriteAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask;
+    WriteAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask;
     WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
 }
 
 
 export const FileBufferingReadStream: {
     new(inner: Stream, memoryThreshold: int): FileBufferingReadStream;
-    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable<System_Internal.Int64>, tempFileDirectoryAccessor: Func<System_Internal.String>): FileBufferingReadStream;
-    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable<System_Internal.Int64>, tempFileDirectoryAccessor: Func<System_Internal.String>, bytePool: ArrayPool<System_Internal.Byte>): FileBufferingReadStream;
-    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable<System_Internal.Int64>, tempFileDirectory: string): FileBufferingReadStream;
-    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable<System_Internal.Int64>, tempFileDirectory: string, bytePool: ArrayPool<System_Internal.Byte>): FileBufferingReadStream;
+    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable_1<System_Internal.Int64>, tempFileDirectoryAccessor: Func_1<System_Internal.String>): FileBufferingReadStream;
+    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable_1<System_Internal.Int64>, tempFileDirectoryAccessor: Func_1<System_Internal.String>, bytePool: ArrayPool_1<System_Internal.Byte>): FileBufferingReadStream;
+    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable_1<System_Internal.Int64>, tempFileDirectory: string): FileBufferingReadStream;
+    new(inner: Stream, memoryThreshold: int, bufferLimit: Nullable_1<System_Internal.Int64>, tempFileDirectory: string, bytePool: ArrayPool_1<System_Internal.Byte>): FileBufferingReadStream;
 };
 
 
@@ -171,18 +171,18 @@ export interface FileBufferingWriteStream$instance extends Stream {
     Flush(): void;
     FlushAsync(cancellationToken: CancellationToken): Task;
     Read(buffer: byte[], offset: int, count: int): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
-    ReadAsync(buffer: Memory<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask<System_Internal.Int32>;
+    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
+    ReadAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask_1<System_Internal.Int32>;
     Seek(offset: long, origin: SeekOrigin): long;
     SetLength(value: long): void;
     Write(buffer: byte[], offset: int, count: int): void;
     WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
-    WriteAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    WriteAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
 export const FileBufferingWriteStream: {
-    new(memoryThreshold: int, bufferLimit: Nullable<System_Internal.Int64>, tempFileDirectoryAccessor: Func<System_Internal.String>): FileBufferingWriteStream;
+    new(memoryThreshold: int, bufferLimit: Nullable_1<System_Internal.Int64>, tempFileDirectoryAccessor: Func_1<System_Internal.String>): FileBufferingWriteStream;
 };
 
 
@@ -207,8 +207,8 @@ export type FileMultipartSection = FileMultipartSection$instance;
 export interface FormMultipartSection$instance {
     readonly Name: string;
     readonly Section: MultipartSection;
-    GetValueAsync(): Task<System_Internal.String>;
-    GetValueAsync(cancellationToken: CancellationToken): ValueTask<System_Internal.String>;
+    GetValueAsync(): Task_1<System_Internal.String>;
+    GetValueAsync(cancellationToken: CancellationToken): ValueTask_1<System_Internal.String>;
 }
 
 
@@ -224,7 +224,7 @@ export interface FormPipeReader$instance {
     KeyLengthLimit: int;
     ValueCountLimit: int;
     ValueLengthLimit: int;
-    ReadFormAsync(cancellationToken?: CancellationToken): Task<Dictionary<System_Internal.String, StringValues>>;
+    ReadFormAsync(cancellationToken?: CancellationToken): Task_1<Dictionary_2<System_Internal.String, StringValues>>;
 }
 
 
@@ -243,19 +243,19 @@ export interface FormReader$instance {
     ValueCountLimit: int;
     ValueLengthLimit: int;
     Dispose(): void;
-    ReadForm(): Dictionary<System_Internal.String, StringValues>;
-    ReadFormAsync(cancellationToken?: CancellationToken): Task<Dictionary<System_Internal.String, StringValues>>;
-    ReadNextPair(): Nullable<KeyValuePair<System_Internal.String, System_Internal.String>>;
-    ReadNextPairAsync(cancellationToken?: CancellationToken): Task<Nullable<KeyValuePair<System_Internal.String, System_Internal.String>>>;
+    ReadForm(): Dictionary_2<System_Internal.String, StringValues>;
+    ReadFormAsync(cancellationToken?: CancellationToken): Task_1<Dictionary_2<System_Internal.String, StringValues>>;
+    ReadNextPair(): Nullable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
+    ReadNextPairAsync(cancellationToken?: CancellationToken): Task_1<Nullable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>>;
 }
 
 
 export const FormReader: {
     new(data: string): FormReader;
-    new(data: string, charPool: ArrayPool<System_Internal.Char>): FormReader;
+    new(data: string, charPool: ArrayPool_1<System_Internal.Char>): FormReader;
     new(stream: Stream): FormReader;
     new(stream: Stream, encoding: Encoding): FormReader;
-    new(stream: Stream, encoding: Encoding, charPool: ArrayPool<System_Internal.Char>): FormReader;
+    new(stream: Stream, encoding: Encoding, charPool: ArrayPool_1<System_Internal.Char>): FormReader;
     readonly DefaultValueCountLimit: int;
     readonly DefaultKeyLengthLimit: int;
     readonly DefaultValueLengthLimit: int;
@@ -271,19 +271,19 @@ export interface HttpRequestStreamReader$instance extends TextReader {
     Peek(): int;
     Read(): int;
     Read(buffer: char[], index: int, count: int): int;
-    Read(buffer: Span<System_Internal.Char>): int;
-    ReadAsync(buffer: char[], index: int, count: int): Task<System_Internal.Int32>;
-    ReadAsync(buffer: Memory<System_Internal.Char>, cancellationToken?: CancellationToken): ValueTask<System_Internal.Int32>;
+    Read(buffer: Span_1<System_Internal.Char>): int;
+    ReadAsync(buffer: char[], index: int, count: int): Task_1<System_Internal.Int32>;
+    ReadAsync(buffer: Memory_1<System_Internal.Char>, cancellationToken?: CancellationToken): ValueTask_1<System_Internal.Int32>;
     ReadLine(): string | undefined;
-    ReadLineAsync(): Task<string | undefined>;
-    ReadToEndAsync(): Task<System_Internal.String>;
+    ReadLineAsync(): Task_1<string | undefined>;
+    ReadToEndAsync(): Task_1<System_Internal.String>;
 }
 
 
 export const HttpRequestStreamReader: {
     new(stream: Stream, encoding: Encoding): HttpRequestStreamReader;
     new(stream: Stream, encoding: Encoding, bufferSize: int): HttpRequestStreamReader;
-    new(stream: Stream, encoding: Encoding, bufferSize: int, bytePool: ArrayPool<System_Internal.Byte>, charPool: ArrayPool<System_Internal.Char>): HttpRequestStreamReader;
+    new(stream: Stream, encoding: Encoding, bufferSize: int, bytePool: ArrayPool_1<System_Internal.Byte>, charPool: ArrayPool_1<System_Internal.Char>): HttpRequestStreamReader;
 };
 
 
@@ -300,14 +300,14 @@ export interface HttpResponseStreamWriter$instance extends TextWriter {
     FlushAsync(): Task;
     Write(value: char): void;
     Write(values: char[], index: int, count: int): void;
-    Write(value: ReadOnlySpan<System_Internal.Char>): void;
+    Write(value: ReadOnlySpan_1<System_Internal.Char>): void;
     Write(value: string): void;
     WriteAsync(value: char): Task;
     WriteAsync(values: char[], index: int, count: int): Task;
     WriteAsync(value: string): Task;
-    WriteAsync(value: ReadOnlyMemory<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
-    WriteLine(value: ReadOnlySpan<System_Internal.Char>): void;
-    WriteLineAsync(value: ReadOnlyMemory<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
+    WriteAsync(value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
+    WriteLine(value: ReadOnlySpan_1<System_Internal.Char>): void;
+    WriteLineAsync(value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
     WriteLineAsync(values: char[], index: int, count: int): Task;
     WriteLineAsync(value: char): Task;
     WriteLineAsync(value: string): Task;
@@ -317,17 +317,17 @@ export interface HttpResponseStreamWriter$instance extends TextWriter {
 export const HttpResponseStreamWriter: {
     new(stream: Stream, encoding: Encoding): HttpResponseStreamWriter;
     new(stream: Stream, encoding: Encoding, bufferSize: int): HttpResponseStreamWriter;
-    new(stream: Stream, encoding: Encoding, bufferSize: int, bytePool: ArrayPool<System_Internal.Byte>, charPool: ArrayPool<System_Internal.Char>): HttpResponseStreamWriter;
+    new(stream: Stream, encoding: Encoding, bufferSize: int, bytePool: ArrayPool_1<System_Internal.Byte>, charPool: ArrayPool_1<System_Internal.Char>): HttpResponseStreamWriter;
 };
 
 
 export type HttpResponseStreamWriter = HttpResponseStreamWriter$instance;
 
 export interface MultipartReader$instance {
-    BodyLengthLimit: Nullable<System_Internal.Int64>;
+    BodyLengthLimit: Nullable_1<System_Internal.Int64>;
     HeadersCountLimit: int;
     HeadersLengthLimit: int;
-    ReadNextSectionAsync(cancellationToken?: CancellationToken): Task<MultipartSection | undefined>;
+    ReadNextSectionAsync(cancellationToken?: CancellationToken): Task_1<MultipartSection | undefined>;
 }
 
 
@@ -342,12 +342,12 @@ export const MultipartReader: {
 export type MultipartReader = MultipartReader$instance;
 
 export interface MultipartSection$instance {
-    BaseStreamOffset: Nullable<System_Internal.Int64>;
+    BaseStreamOffset: Nullable_1<System_Internal.Int64>;
     Body: Stream;
     readonly ContentDisposition: string | undefined;
     readonly ContentType: string | undefined;
-    get Headers(): Dictionary<System_Internal.String, StringValues> | undefined;
-    set Headers(value: Dictionary<System_Internal.String, StringValues> | undefined);
+    get Headers(): Dictionary_2<System_Internal.String, StringValues> | undefined;
+    set Headers(value: Dictionary_2<System_Internal.String, StringValues> | undefined);
 }
 
 
@@ -376,20 +376,20 @@ export abstract class MultipartSectionConverterExtensions$instance {
 export type MultipartSectionConverterExtensions = MultipartSectionConverterExtensions$instance;
 
 export abstract class MultipartSectionStreamExtensions$instance {
-    static ReadAsStringAsync(section: MultipartSection, cancellationToken: CancellationToken): ValueTask<System_Internal.String>;
-    static ReadAsStringAsync(section: MultipartSection): Task<System_Internal.String>;
+    static ReadAsStringAsync(section: MultipartSection, cancellationToken: CancellationToken): ValueTask_1<System_Internal.String>;
+    static ReadAsStringAsync(section: MultipartSection): Task_1<System_Internal.String>;
 }
 
 
 export type MultipartSectionStreamExtensions = MultipartSectionStreamExtensions$instance;
 
 export abstract class QueryHelpers$instance {
-    static AddQueryString(uri: string, queryString: IDictionary<System_Internal.String, System_Internal.String>): string;
-    static AddQueryString(uri: string, queryString: IEnumerable<KeyValuePair<System_Internal.String, StringValues>>): string;
-    static AddQueryString(uri: string, queryString: IEnumerable<KeyValuePair<System_Internal.String, System_Internal.String>>): string;
+    static AddQueryString(uri: string, queryString: IDictionary_2<System_Internal.String, System_Internal.String>): string;
+    static AddQueryString(uri: string, queryString: IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>): string;
+    static AddQueryString(uri: string, queryString: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>): string;
     static AddQueryString(uri: string, name: string, value: string): string;
-    static ParseNullableQuery(queryString: string): Dictionary<System_Internal.String, StringValues> | undefined;
-    static ParseQuery(queryString: string): Dictionary<System_Internal.String, StringValues>;
+    static ParseNullableQuery(queryString: string): Dictionary_2<System_Internal.String, StringValues> | undefined;
+    static ParseQuery(queryString: string): Dictionary_2<System_Internal.String, StringValues>;
 }
 
 
@@ -403,8 +403,8 @@ export abstract class ReasonPhrases$instance {
 export type ReasonPhrases = ReasonPhrases$instance;
 
 export abstract class StreamHelperExtensions$instance {
-    static DrainAsync(stream: Stream, bytePool: ArrayPool<System_Internal.Byte>, limit: Nullable<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
-    static DrainAsync(stream: Stream, limit: Nullable<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
+    static DrainAsync(stream: Stream, bytePool: ArrayPool_1<System_Internal.Byte>, limit: Nullable_1<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
+    static DrainAsync(stream: Stream, limit: Nullable_1<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
     static DrainAsync(stream: Stream, cancellationToken: CancellationToken): Task;
 }
 
@@ -418,8 +418,8 @@ export abstract class WebEncoders$instance {
     static Base64UrlEncode(input: byte[], offset: int, output: char[], outputOffset: int, count: int): int;
     static Base64UrlEncode(input: byte[], offset: int, count: int): string;
     static Base64UrlEncode(input: byte[]): string;
-    static Base64UrlEncode(input: ReadOnlySpan<System_Internal.Byte>, output: Span<System_Internal.Char>): int;
-    static Base64UrlEncode(input: ReadOnlySpan<System_Internal.Byte>): string;
+    static Base64UrlEncode(input: ReadOnlySpan_1<System_Internal.Byte>, output: Span_1<System_Internal.Char>): int;
+    static Base64UrlEncode(input: ReadOnlySpan_1<System_Internal.Byte>): string;
     static GetArraySizeRequiredToDecode(count: int): int;
     static GetArraySizeRequiredToEncode(count: int): int;
 }

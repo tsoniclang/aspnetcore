@@ -6,24 +6,24 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { ICollection } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { ICollection_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IServerAddressesFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature: never;
 
-    readonly Addresses: ICollection<System_Internal.String>;
+    readonly Addresses: ICollection_1<System_Internal.String>;
     PreferHostingUrls: boolean;
 }
 
 
 export type IServerAddressesFeature = IServerAddressesFeature$instance;
 
-export interface ServerAddressesFeature$instance {
+export interface ServerAddressesFeature$instance extends IServerAddressesFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature: never;
 
-    readonly Addresses: ICollection<System_Internal.String>;
+    readonly Addresses: ICollection_1<System_Internal.String>;
     PreferHostingUrls: boolean;
 }
 
@@ -36,8 +36,6 @@ export const ServerAddressesFeature: {
 export interface __ServerAddressesFeature$views {
     As_IServerAddressesFeature(): IServerAddressesFeature$instance;
 }
-
-export interface ServerAddressesFeature$instance extends IServerAddressesFeature$instance {}
 
 export type ServerAddressesFeature = ServerAddressesFeature$instance & __ServerAddressesFeature$views;
 

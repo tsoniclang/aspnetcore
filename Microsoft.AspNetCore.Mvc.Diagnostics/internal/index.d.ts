@@ -17,19 +17,19 @@ import type { ViewComponentContext } from "../../Microsoft.AspNetCore.Mvc.ViewCo
 import type { IView } from "../../Microsoft.AspNetCore.Mvc.ViewEngines/internal/index.js";
 import type { ActionContext, ActionResult, IActionResult, IViewComponentResult } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { RouteData } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, IReadOnlyList_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface EventData_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: KeyValuePair<System_Internal.String, unknown>;
+    Current: KeyValuePair_2<System_Internal.String, unknown>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -52,7 +52,7 @@ export interface AfterActionEventData$instance extends EventData {
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly RouteData: RouteData;
 }
 
@@ -75,7 +75,7 @@ export interface AfterActionFilterOnActionExecutedEventData$instance extends Eve
     readonly ActionExecutedContext: ActionExecutedContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -97,7 +97,7 @@ export interface AfterActionFilterOnActionExecutingEventData$instance extends Ev
     readonly ActionExecutingContext: ActionExecutingContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -119,7 +119,7 @@ export interface AfterActionFilterOnActionExecutionEventData$instance extends Ev
     readonly ActionExecutedContext: ActionExecutedContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -139,7 +139,7 @@ export interface AfterActionResultEventData$instance extends EventData {
 
     readonly ActionContext: ActionContext;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Result: IActionResult;
 }
 
@@ -162,7 +162,7 @@ export interface AfterAuthorizationFilterOnAuthorizationEventData$instance exten
     readonly AuthorizationContext: AuthorizationFilterContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -181,16 +181,16 @@ export interface AfterControllerActionMethodEventData$instance extends EventData
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Controller: unknown;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Result: IActionResult;
 }
 
 
 export const AfterControllerActionMethodEventData: {
-    new(actionContext: ActionContext, arguments: IReadOnlyDictionary<System_Internal.String, unknown>, controller: unknown, result: IActionResult): AfterControllerActionMethodEventData;
+    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, controller: unknown, result: IActionResult): AfterControllerActionMethodEventData;
     readonly EventName: string;
 };
 
@@ -207,7 +207,7 @@ export interface AfterExceptionFilterOnExceptionEventData$instance extends Event
     readonly Count: int;
     readonly ExceptionContext: ExceptionContext;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -226,17 +226,17 @@ export interface AfterHandlerMethodEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
     readonly Count: int;
     readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
     readonly Instance: unknown;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Result: IActionResult | undefined;
 }
 
 
 export const AfterHandlerMethodEventData: {
-    new(actionContext: ActionContext, arguments: IReadOnlyDictionary<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown, result: IActionResult): AfterHandlerMethodEventData;
+    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown, result: IActionResult): AfterHandlerMethodEventData;
     readonly EventName: string;
 };
 
@@ -253,7 +253,7 @@ export interface AfterPageFilterOnPageHandlerExecutedEventData$instance extends 
     readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutedContext: PageHandlerExecutedContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -275,7 +275,7 @@ export interface AfterPageFilterOnPageHandlerExecutingEventData$instance extends
     readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutingContext: PageHandlerExecutingContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -297,7 +297,7 @@ export interface AfterPageFilterOnPageHandlerExecutionEventData$instance extends
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerExecutedContext: PageHandlerExecutedContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -319,7 +319,7 @@ export interface AfterPageFilterOnPageHandlerSelectedEventData$instance extends 
     readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -341,7 +341,7 @@ export interface AfterPageFilterOnPageHandlerSelectionEventData$instance extends
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -362,7 +362,7 @@ export interface AfterResourceFilterOnResourceExecutedEventData$instance extends
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResourceExecutedContext: ResourceExecutedContext;
 }
 
@@ -384,7 +384,7 @@ export interface AfterResourceFilterOnResourceExecutingEventData$instance extend
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResourceExecutingContext: ResourceExecutingContext;
 }
 
@@ -406,7 +406,7 @@ export interface AfterResourceFilterOnResourceExecutionEventData$instance extend
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResourceExecutedContext: ResourceExecutedContext;
 }
 
@@ -428,7 +428,7 @@ export interface AfterResultFilterOnResultExecutedEventData$instance extends Eve
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResultExecutedContext: ResultExecutedContext;
 }
 
@@ -450,7 +450,7 @@ export interface AfterResultFilterOnResultExecutingEventData$instance extends Ev
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResultExecutingContext: ResultExecutingContext;
 }
 
@@ -472,7 +472,7 @@ export interface AfterResultFilterOnResultExecutionEventData$instance extends Ev
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResultExecutedContext: ResultExecutedContext;
 }
 
@@ -493,7 +493,7 @@ export interface AfterViewComponentEventData$instance extends EventData {
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ViewComponent: unknown;
     readonly ViewComponentContext: ViewComponentContext;
     readonly ViewComponentResult: IViewComponentResult;
@@ -515,7 +515,7 @@ export interface AfterViewEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly View: IView;
     readonly ViewContext: ViewContext;
 }
@@ -538,7 +538,7 @@ export interface AfterViewPageEventData$instance extends EventData {
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Page: IRazorPage;
     readonly ViewContext: ViewContext;
 }
@@ -561,7 +561,7 @@ export interface BeforeActionEventData$instance extends EventData {
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly RouteData: RouteData;
 }
 
@@ -584,7 +584,7 @@ export interface BeforeActionFilterOnActionExecutedEventData$instance extends Ev
     readonly ActionExecutedContext: ActionExecutedContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -606,7 +606,7 @@ export interface BeforeActionFilterOnActionExecutingEventData$instance extends E
     readonly ActionExecutingContext: ActionExecutingContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -628,7 +628,7 @@ export interface BeforeActionFilterOnActionExecutionEventData$instance extends E
     readonly ActionExecutingContext: ActionExecutingContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -648,7 +648,7 @@ export interface BeforeActionResultEventData$instance extends EventData {
 
     readonly ActionContext: ActionContext;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Result: IActionResult;
 }
 
@@ -671,7 +671,7 @@ export interface BeforeAuthorizationFilterOnAuthorizationEventData$instance exte
     readonly AuthorizationContext: AuthorizationFilterContext;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -689,16 +689,16 @@ export interface BeforeControllerActionMethodEventData$instance extends EventDat
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly ActionArguments: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly ActionArguments: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly ActionContext: ActionContext;
     readonly Controller: unknown;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
 export const BeforeControllerActionMethodEventData: {
-    new(actionContext: ActionContext, actionArguments: IReadOnlyDictionary<System_Internal.String, unknown>, controller: unknown): BeforeControllerActionMethodEventData;
+    new(actionContext: ActionContext, actionArguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, controller: unknown): BeforeControllerActionMethodEventData;
     readonly EventName: string;
 };
 
@@ -715,7 +715,7 @@ export interface BeforeExceptionFilterOnException$instance extends EventData {
     readonly Count: int;
     readonly ExceptionContext: ExceptionContext;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -734,16 +734,16 @@ export interface BeforeHandlerMethodEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Arguments: IReadOnlyDictionary<System_Internal.String, unknown | undefined>;
+    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
     readonly Count: int;
     readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
     readonly Instance: unknown;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
 export const BeforeHandlerMethodEventData: {
-    new(actionContext: ActionContext, arguments: IReadOnlyDictionary<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown): BeforeHandlerMethodEventData;
+    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown): BeforeHandlerMethodEventData;
     readonly EventName: string;
 };
 
@@ -760,7 +760,7 @@ export interface BeforePageFilterOnPageHandlerExecutedEventData$instance extends
     readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutedContext: PageHandlerExecutedContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -782,7 +782,7 @@ export interface BeforePageFilterOnPageHandlerExecutingEventData$instance extend
     readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerExecutingContext: PageHandlerExecutingContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -804,7 +804,7 @@ export interface BeforePageFilterOnPageHandlerExecutionEventData$instance extend
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerExecutionContext: PageHandlerExecutingContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -826,7 +826,7 @@ export interface BeforePageFilterOnPageHandlerSelectedEventData$instance extends
     readonly Count: int;
     readonly Filter: IPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -848,7 +848,7 @@ export interface BeforePageFilterOnPageHandlerSelectionEventData$instance extend
     readonly Count: int;
     readonly Filter: IAsyncPageFilter;
     readonly HandlerSelectedContext: PageHandlerSelectedContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -869,7 +869,7 @@ export interface BeforeResourceFilterOnResourceExecutedEventData$instance extend
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResourceExecutedContext: ResourceExecutedContext;
 }
 
@@ -891,7 +891,7 @@ export interface BeforeResourceFilterOnResourceExecutingEventData$instance exten
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResourceExecutingContext: ResourceExecutingContext;
 }
 
@@ -913,7 +913,7 @@ export interface BeforeResourceFilterOnResourceExecutionEventData$instance exten
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResourceExecutingContext: ResourceExecutingContext;
 }
 
@@ -935,7 +935,7 @@ export interface BeforeResultFilterOnResultExecutedEventData$instance extends Ev
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResultExecutedContext: ResultExecutedContext;
 }
 
@@ -957,7 +957,7 @@ export interface BeforeResultFilterOnResultExecutingEventData$instance extends E
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResultExecutingContext: ResultExecutingContext;
 }
 
@@ -979,7 +979,7 @@ export interface BeforeResultFilterOnResultExecutionEventData$instance extends E
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly Filter: IFilterMetadata;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ResultExecutingContext: ResultExecutingContext;
 }
 
@@ -1000,7 +1000,7 @@ export interface BeforeViewComponentEventData$instance extends EventData {
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly ViewComponent: unknown;
     readonly ViewComponentContext: ViewComponentContext;
 }
@@ -1021,7 +1021,7 @@ export interface BeforeViewEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly View: IView;
     readonly ViewContext: ViewContext;
 }
@@ -1044,7 +1044,7 @@ export interface BeforeViewPageEventData$instance extends EventData {
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
     readonly HttpContext: HttpContext;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Page: IRazorPage;
     readonly ViewContext: ViewContext;
 }
@@ -1065,7 +1065,7 @@ export interface EventData$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
 }
 
 
@@ -1084,7 +1084,7 @@ export interface ViewComponentAfterViewExecuteEventData$instance extends EventDa
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly View: IView;
     readonly ViewComponentContext: ViewComponentContext;
 }
@@ -1106,7 +1106,7 @@ export interface ViewComponentBeforeViewExecuteEventData$instance extends EventD
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly View: IView;
     readonly ViewComponentContext: ViewComponentContext;
 }
@@ -1129,7 +1129,7 @@ export interface ViewFoundEventData$instance extends EventData {
     readonly ActionContext: ActionContext;
     readonly Count: int;
     readonly IsMainPage: boolean;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Result: ActionResult;
     readonly View: IView;
     readonly ViewName: string;
@@ -1153,15 +1153,15 @@ export interface ViewNotFoundEventData$instance extends EventData {
     readonly ActionContext: ActionContext;
     readonly Count: int;
     readonly IsMainPage: boolean;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Result: ActionResult;
-    readonly SearchedLocations: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly SearchedLocations: IEnumerable_1<System_Internal.String>;
     readonly ViewName: string;
 }
 
 
 export const ViewNotFoundEventData: {
-    new(actionContext: ActionContext, isMainPage: boolean, result: ActionResult, viewName: string, searchedLocations: IEnumerable__System_Collections_Generic<System_Internal.String>): ViewNotFoundEventData;
+    new(actionContext: ActionContext, isMainPage: boolean, result: ActionResult, viewName: string, searchedLocations: IEnumerable_1<System_Internal.String>): ViewNotFoundEventData;
     readonly EventName: string;
 };
 

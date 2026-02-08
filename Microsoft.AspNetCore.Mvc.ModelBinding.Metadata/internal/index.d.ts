@@ -10,12 +10,12 @@ import type { IPropertyValidationFilter } from "../../Microsoft.AspNetCore.Mvc.M
 import * as Microsoft_AspNetCore_Mvc_ModelBinding_Internal from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { BindingSource, EnumGroupAndName, IModelMetadataProvider, IPropertyFilterProvider, ModelAttributes, ModelMetadata, ModelMetadataProvider, ModelPropertyCollection } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { MvcOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import type { IDictionary, IEnumerable, IList, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Enum, Func, IComparable, IConvertible, IEquatable, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { ConstructorInfo, ParameterInfo, PropertyInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { JsonNamingPolicy } from "@tsonic/dotnet/System.Text.Json.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IDictionary_2, IEnumerable_1, IList_1, IReadOnlyDictionary_2, IReadOnlyList_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ConstructorInfo, ParameterInfo, PropertyInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { JsonNamingPolicy } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Boolean as ClrBoolean, Enum, Func_1, Func_2, Func_3, IComparable, IConvertible, IEquatable_1, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum ModelMetadataKind {
     Type = 0,
@@ -119,7 +119,7 @@ export interface BindingMetadata$instance {
     set BoundConstructor(value: ConstructorInfo | undefined);
     IsBindingAllowed: boolean;
     IsBindingRequired: boolean;
-    IsReadOnly: Nullable<System_Internal.Boolean>;
+    IsReadOnly: Nullable_1<System_Internal.Boolean>;
     get ModelBindingMessageProvider(): DefaultModelBindingMessageProvider | undefined;
     set ModelBindingMessageProvider(value: DefaultModelBindingMessageProvider | undefined);
     get PropertyFilterProvider(): IPropertyFilterProvider | undefined;
@@ -135,12 +135,12 @@ export const BindingMetadata: {
 export type BindingMetadata = BindingMetadata$instance;
 
 export interface BindingMetadataProviderContext$instance {
-    readonly Attributes: IReadOnlyList<unknown>;
+    readonly Attributes: IReadOnlyList_1<unknown>;
     readonly BindingMetadata: BindingMetadata;
     readonly Key: ModelMetadataIdentity;
-    readonly ParameterAttributes: IReadOnlyList<unknown> | undefined;
-    readonly PropertyAttributes: IReadOnlyList<unknown> | undefined;
-    readonly TypeAttributes: IReadOnlyList<unknown> | undefined;
+    readonly ParameterAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly PropertyAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly TypeAttributes: IReadOnlyList_1<unknown> | undefined;
 }
 
 
@@ -151,7 +151,7 @@ export const BindingMetadataProviderContext: {
 
 export type BindingMetadataProviderContext = BindingMetadataProviderContext$instance;
 
-export interface BindingSourceMetadataProvider$instance extends IMetadataDetailsProvider {
+export interface BindingSourceMetadataProvider$instance extends IMetadataDetailsProvider, IBindingMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
 
@@ -170,12 +170,10 @@ export interface __BindingSourceMetadataProvider$views {
     As_IBindingMetadataProvider(): IBindingMetadataProvider$instance;
 }
 
-export interface BindingSourceMetadataProvider$instance extends IBindingMetadataProvider$instance {}
-
 export type BindingSourceMetadataProvider = BindingSourceMetadataProvider$instance & __BindingSourceMetadataProvider$views;
 
 
-export interface DataMemberRequiredBindingMetadataProvider$instance extends IMetadataDetailsProvider {
+export interface DataMemberRequiredBindingMetadataProvider$instance extends IMetadataDetailsProvider, IBindingMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
 
@@ -192,16 +190,14 @@ export interface __DataMemberRequiredBindingMetadataProvider$views {
     As_IBindingMetadataProvider(): IBindingMetadataProvider$instance;
 }
 
-export interface DataMemberRequiredBindingMetadataProvider$instance extends IBindingMetadataProvider$instance {}
-
 export type DataMemberRequiredBindingMetadataProvider = DataMemberRequiredBindingMetadataProvider$instance & __DataMemberRequiredBindingMetadataProvider$views;
 
 
 export interface DefaultMetadataDetails$instance {
     get BindingMetadata(): BindingMetadata | undefined;
     set BindingMetadata(value: BindingMetadata | undefined);
-    get BoundConstructorInvoker(): Func<(unknown | undefined)[], unknown> | undefined;
-    set BoundConstructorInvoker(value: Func<(unknown | undefined)[], unknown> | undefined);
+    get BoundConstructorInvoker(): Func_2<(unknown | undefined)[], unknown> | undefined;
+    set BoundConstructorInvoker(value: Func_2<(unknown | undefined)[], unknown> | undefined);
     get BoundConstructorParameters(): ModelMetadata[] | undefined;
     set BoundConstructorParameters(value: ModelMetadata[] | undefined);
     get ContainerMetadata(): ModelMetadata | undefined;
@@ -212,10 +208,10 @@ export interface DefaultMetadataDetails$instance {
     readonly ModelAttributes: ModelAttributes;
     get Properties(): ModelMetadata[] | undefined;
     set Properties(value: ModelMetadata[] | undefined);
-    get PropertyGetter(): Func<unknown, unknown | undefined> | undefined;
-    set PropertyGetter(value: Func<unknown, unknown | undefined> | undefined);
-    get PropertySetter(): Action<unknown, unknown | undefined> | undefined;
-    set PropertySetter(value: Action<unknown, unknown | undefined> | undefined);
+    get PropertyGetter(): Func_2<unknown, unknown | undefined> | undefined;
+    set PropertyGetter(value: Func_2<unknown, unknown | undefined> | undefined);
+    get PropertySetter(): Action_2<unknown, unknown | undefined> | undefined;
+    set PropertySetter(value: Action_2<unknown, unknown | undefined> | undefined);
     get ValidationMetadata(): ValidationMetadata | undefined;
     set ValidationMetadata(value: ValidationMetadata | undefined);
 }
@@ -229,28 +225,28 @@ export const DefaultMetadataDetails: {
 export type DefaultMetadataDetails = DefaultMetadataDetails$instance;
 
 export interface DefaultModelBindingMessageProvider$instance extends ModelBindingMessageProvider {
-    readonly AttemptedValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String, System_Internal.String>;
-    readonly MissingBindRequiredValueAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly MissingKeyOrValueAccessor: Func<System_Internal.String>;
-    readonly MissingRequestBodyRequiredValueAccessor: Func<System_Internal.String>;
-    readonly NonPropertyAttemptedValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly NonPropertyUnknownValueIsInvalidAccessor: Func<System_Internal.String>;
-    readonly NonPropertyValueMustBeANumberAccessor: Func<System_Internal.String>;
-    readonly UnknownValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly ValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly ValueMustBeANumberAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly ValueMustNotBeNullAccessor: Func<System_Internal.String, System_Internal.String>;
-    SetAttemptedValueIsInvalidAccessor(attemptedValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String, System_Internal.String>): void;
-    SetMissingBindRequiredValueAccessor(missingBindRequiredValueAccessor: Func<System_Internal.String, System_Internal.String>): void;
-    SetMissingKeyOrValueAccessor(missingKeyOrValueAccessor: Func<System_Internal.String>): void;
-    SetMissingRequestBodyRequiredValueAccessor(missingRequestBodyRequiredValueAccessor: Func<System_Internal.String>): void;
-    SetNonPropertyAttemptedValueIsInvalidAccessor(nonPropertyAttemptedValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>): void;
-    SetNonPropertyUnknownValueIsInvalidAccessor(nonPropertyUnknownValueIsInvalidAccessor: Func<System_Internal.String>): void;
-    SetNonPropertyValueMustBeANumberAccessor(nonPropertyValueMustBeANumberAccessor: Func<System_Internal.String>): void;
-    SetUnknownValueIsInvalidAccessor(unknownValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>): void;
-    SetValueIsInvalidAccessor(valueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>): void;
-    SetValueMustBeANumberAccessor(valueMustBeANumberAccessor: Func<System_Internal.String, System_Internal.String>): void;
-    SetValueMustNotBeNullAccessor(valueMustNotBeNullAccessor: Func<System_Internal.String, System_Internal.String>): void;
+    readonly AttemptedValueIsInvalidAccessor: Func_3<System_Internal.String, System_Internal.String, System_Internal.String>;
+    readonly MissingBindRequiredValueAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly MissingKeyOrValueAccessor: Func_1<System_Internal.String>;
+    readonly MissingRequestBodyRequiredValueAccessor: Func_1<System_Internal.String>;
+    readonly NonPropertyAttemptedValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly NonPropertyUnknownValueIsInvalidAccessor: Func_1<System_Internal.String>;
+    readonly NonPropertyValueMustBeANumberAccessor: Func_1<System_Internal.String>;
+    readonly UnknownValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly ValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly ValueMustBeANumberAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly ValueMustNotBeNullAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    SetAttemptedValueIsInvalidAccessor(attemptedValueIsInvalidAccessor: Func_3<System_Internal.String, System_Internal.String, System_Internal.String>): void;
+    SetMissingBindRequiredValueAccessor(missingBindRequiredValueAccessor: Func_2<System_Internal.String, System_Internal.String>): void;
+    SetMissingKeyOrValueAccessor(missingKeyOrValueAccessor: Func_1<System_Internal.String>): void;
+    SetMissingRequestBodyRequiredValueAccessor(missingRequestBodyRequiredValueAccessor: Func_1<System_Internal.String>): void;
+    SetNonPropertyAttemptedValueIsInvalidAccessor(nonPropertyAttemptedValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>): void;
+    SetNonPropertyUnknownValueIsInvalidAccessor(nonPropertyUnknownValueIsInvalidAccessor: Func_1<System_Internal.String>): void;
+    SetNonPropertyValueMustBeANumberAccessor(nonPropertyValueMustBeANumberAccessor: Func_1<System_Internal.String>): void;
+    SetUnknownValueIsInvalidAccessor(unknownValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>): void;
+    SetValueIsInvalidAccessor(valueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>): void;
+    SetValueMustBeANumberAccessor(valueMustBeANumberAccessor: Func_2<System_Internal.String, System_Internal.String>): void;
+    SetValueMustNotBeNullAccessor(valueMustNotBeNullAccessor: Func_2<System_Internal.String, System_Internal.String>): void;
 }
 
 
@@ -266,15 +262,15 @@ export interface DefaultModelMetadata$instance extends ModelMetadata {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly AdditionalValues: IReadOnlyDictionary<unknown, unknown>;
+    readonly AdditionalValues: IReadOnlyDictionary_2<unknown, unknown>;
     readonly Attributes: ModelAttributes;
     readonly BinderModelName: string | undefined;
     readonly BinderType: Type | undefined;
     readonly BindingMetadata: BindingMetadata;
     readonly BindingSource: BindingSource | undefined;
     readonly BoundConstructor: ModelMetadata | undefined;
-    readonly BoundConstructorInvoker: Func<(unknown | undefined)[], unknown> | undefined;
-    readonly BoundConstructorParameters: IReadOnlyList<ModelMetadata> | undefined;
+    readonly BoundConstructorInvoker: Func_2<(unknown | undefined)[], unknown> | undefined;
+    readonly BoundConstructorParameters: IReadOnlyList_1<ModelMetadata> | undefined;
     readonly ContainerMetadata: ModelMetadata | undefined;
     readonly ConvertEmptyStringToNull: boolean;
     readonly DataTypeName: string | undefined;
@@ -284,10 +280,10 @@ export interface DefaultModelMetadata$instance extends ModelMetadata {
     readonly DisplayName: string | undefined;
     readonly EditFormatString: string | undefined;
     readonly ElementMetadata: ModelMetadata | undefined;
-    readonly EnumGroupedDisplayNamesAndValues: IEnumerable<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined;
-    readonly EnumNamesAndValues: IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined;
+    readonly EnumGroupedDisplayNamesAndValues: IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | undefined;
+    readonly EnumNamesAndValues: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined;
     readonly HasNonDefaultEditFormat: boolean;
-    readonly HasValidators: Nullable<System_Internal.Boolean>;
+    readonly HasValidators: Nullable_1<System_Internal.Boolean>;
     readonly HideSurroundingHtml: boolean;
     readonly HtmlEncode: boolean;
     readonly IsBindingAllowed: boolean;
@@ -302,8 +298,8 @@ export interface DefaultModelMetadata$instance extends ModelMetadata {
     readonly Placeholder: string | undefined;
     readonly Properties: ModelPropertyCollection;
     readonly PropertyFilterProvider: IPropertyFilterProvider | undefined;
-    readonly PropertyGetter: Func<unknown, unknown | undefined> | undefined;
-    readonly PropertySetter: Action<unknown, unknown | undefined> | undefined;
+    readonly PropertyGetter: Func_2<unknown, unknown | undefined> | undefined;
+    readonly PropertySetter: Action_2<unknown, unknown | undefined> | undefined;
     readonly PropertyValidationFilter: IPropertyValidationFilter | undefined;
     readonly ShowForDisplay: boolean;
     readonly ShowForEdit: boolean;
@@ -311,9 +307,9 @@ export interface DefaultModelMetadata$instance extends ModelMetadata {
     readonly TemplateHint: string | undefined;
     readonly ValidateChildren: boolean;
     readonly ValidationMetadata: ValidationMetadata;
-    readonly ValidatorMetadata: IReadOnlyList<unknown>;
-    GetMetadataForProperties(modelType: Type): IEnumerable<ModelMetadata>;
-    GetMetadataForProperties(modelType: Type): IEnumerable<ModelMetadata>;
+    readonly ValidatorMetadata: IReadOnlyList_1<unknown>;
+    GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
+    GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
     GetMetadataForType(modelType: Type): ModelMetadata;
 }
 
@@ -328,8 +324,6 @@ export interface __DefaultModelMetadata$views {
     As_IModelMetadataProvider(): Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelMetadataProvider$instance;
 }
 
-export interface DefaultModelMetadata$instance extends System_Internal.IEquatable<ModelMetadata> {}
-
 export type DefaultModelMetadata = DefaultModelMetadata$instance & __DefaultModelMetadata$views;
 
 
@@ -343,7 +337,7 @@ export interface DefaultModelMetadataProvider$instance extends ModelMetadataProv
     GetMetadataForConstructor(constructorInfo: ConstructorInfo, modelType: Type): ModelMetadata;
     GetMetadataForParameter(parameter: ParameterInfo): ModelMetadata;
     GetMetadataForParameter(parameter: ParameterInfo, modelType: Type): ModelMetadata;
-    GetMetadataForProperties(modelType: Type): IEnumerable<ModelMetadata>;
+    GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
     GetMetadataForProperty(propertyInfo: PropertyInfo, modelType: Type): ModelMetadata;
     GetMetadataForType(modelType: Type): ModelMetadata;
 }
@@ -351,7 +345,7 @@ export interface DefaultModelMetadataProvider$instance extends ModelMetadataProv
 
 export const DefaultModelMetadataProvider: {
     new(detailsProvider: ICompositeMetadataDetailsProvider): DefaultModelMetadataProvider;
-    new(detailsProvider: ICompositeMetadataDetailsProvider, optionsAccessor: IOptions<MvcOptions>): DefaultModelMetadataProvider;
+    new(detailsProvider: ICompositeMetadataDetailsProvider, optionsAccessor: IOptions_1<MvcOptions>): DefaultModelMetadataProvider;
 };
 
 
@@ -363,24 +357,24 @@ export type DefaultModelMetadataProvider = DefaultModelMetadataProvider$instance
 
 
 export interface DisplayMetadata$instance {
-    readonly AdditionalValues: IDictionary<unknown, unknown>;
+    readonly AdditionalValues: IDictionary_2<unknown, unknown>;
     ConvertEmptyStringToNull: boolean;
     get DataTypeName(): string | undefined;
     set DataTypeName(value: string | undefined);
-    get Description(): Func<string | undefined> | undefined;
-    set Description(value: Func<string | undefined> | undefined);
+    get Description(): Func_1<string | undefined> | undefined;
+    set Description(value: Func_1<string | undefined> | undefined);
     get DisplayFormatString(): string | undefined;
     set DisplayFormatString(value: string | undefined);
-    DisplayFormatStringProvider: Func<string | undefined>;
-    get DisplayName(): Func<string | undefined> | undefined;
-    set DisplayName(value: Func<string | undefined> | undefined);
+    DisplayFormatStringProvider: Func_1<string | undefined>;
+    get DisplayName(): Func_1<string | undefined> | undefined;
+    set DisplayName(value: Func_1<string | undefined> | undefined);
     get EditFormatString(): string | undefined;
     set EditFormatString(value: string | undefined);
-    EditFormatStringProvider: Func<string | undefined>;
-    get EnumGroupedDisplayNamesAndValues(): IEnumerable<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined;
-    set EnumGroupedDisplayNamesAndValues(value: IEnumerable<KeyValuePair<EnumGroupAndName, System_Internal.String>> | undefined);
-    get EnumNamesAndValues(): IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined;
-    set EnumNamesAndValues(value: IReadOnlyDictionary<System_Internal.String, System_Internal.String> | undefined);
+    EditFormatStringProvider: Func_1<string | undefined>;
+    get EnumGroupedDisplayNamesAndValues(): IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | undefined;
+    set EnumGroupedDisplayNamesAndValues(value: IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | undefined);
+    get EnumNamesAndValues(): IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined;
+    set EnumNamesAndValues(value: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined);
     HasNonDefaultEditFormat: boolean;
     HideSurroundingHtml: boolean;
     HtmlEncode: boolean;
@@ -388,10 +382,10 @@ export interface DisplayMetadata$instance {
     IsFlagsEnum: boolean;
     get NullDisplayText(): string | undefined;
     set NullDisplayText(value: string | undefined);
-    NullDisplayTextProvider: Func<string | undefined>;
+    NullDisplayTextProvider: Func_1<string | undefined>;
     Order: int;
-    get Placeholder(): Func<string | undefined> | undefined;
-    set Placeholder(value: Func<string | undefined> | undefined);
+    get Placeholder(): Func_1<string | undefined> | undefined;
+    set Placeholder(value: Func_1<string | undefined> | undefined);
     ShowForDisplay: boolean;
     ShowForEdit: boolean;
     get SimpleDisplayProperty(): string | undefined;
@@ -409,11 +403,11 @@ export const DisplayMetadata: {
 export type DisplayMetadata = DisplayMetadata$instance;
 
 export interface DisplayMetadataProviderContext$instance {
-    readonly Attributes: IReadOnlyList<unknown>;
+    readonly Attributes: IReadOnlyList_1<unknown>;
     readonly DisplayMetadata: DisplayMetadata;
     readonly Key: ModelMetadataIdentity;
-    readonly PropertyAttributes: IReadOnlyList<unknown> | undefined;
-    readonly TypeAttributes: IReadOnlyList<unknown> | undefined;
+    readonly PropertyAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly TypeAttributes: IReadOnlyList_1<unknown> | undefined;
 }
 
 
@@ -424,7 +418,7 @@ export const DisplayMetadataProviderContext: {
 
 export type DisplayMetadataProviderContext = DisplayMetadataProviderContext$instance;
 
-export interface ExcludeBindingMetadataProvider$instance extends IMetadataDetailsProvider {
+export interface ExcludeBindingMetadataProvider$instance extends IMetadataDetailsProvider, IBindingMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
 
@@ -441,23 +435,21 @@ export interface __ExcludeBindingMetadataProvider$views {
     As_IBindingMetadataProvider(): IBindingMetadataProvider$instance;
 }
 
-export interface ExcludeBindingMetadataProvider$instance extends IBindingMetadataProvider$instance {}
-
 export type ExcludeBindingMetadataProvider = ExcludeBindingMetadataProvider$instance & __ExcludeBindingMetadataProvider$views;
 
 
 export interface ModelBindingMessageProvider$instance {
-    readonly AttemptedValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String, System_Internal.String>;
-    readonly MissingBindRequiredValueAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly MissingKeyOrValueAccessor: Func<System_Internal.String>;
-    readonly MissingRequestBodyRequiredValueAccessor: Func<System_Internal.String>;
-    readonly NonPropertyAttemptedValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly NonPropertyUnknownValueIsInvalidAccessor: Func<System_Internal.String>;
-    readonly NonPropertyValueMustBeANumberAccessor: Func<System_Internal.String>;
-    readonly UnknownValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly ValueIsInvalidAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly ValueMustBeANumberAccessor: Func<System_Internal.String, System_Internal.String>;
-    readonly ValueMustNotBeNullAccessor: Func<System_Internal.String, System_Internal.String>;
+    readonly AttemptedValueIsInvalidAccessor: Func_3<System_Internal.String, System_Internal.String, System_Internal.String>;
+    readonly MissingBindRequiredValueAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly MissingKeyOrValueAccessor: Func_1<System_Internal.String>;
+    readonly MissingRequestBodyRequiredValueAccessor: Func_1<System_Internal.String>;
+    readonly NonPropertyAttemptedValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly NonPropertyUnknownValueIsInvalidAccessor: Func_1<System_Internal.String>;
+    readonly NonPropertyValueMustBeANumberAccessor: Func_1<System_Internal.String>;
+    readonly UnknownValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly ValueIsInvalidAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly ValueMustBeANumberAccessor: Func_2<System_Internal.String, System_Internal.String>;
+    readonly ValueMustNotBeNullAccessor: Func_2<System_Internal.String, System_Internal.String>;
 }
 
 
@@ -467,7 +459,7 @@ export const ModelBindingMessageProvider: (abstract new() => ModelBindingMessage
 
 export type ModelBindingMessageProvider = ModelBindingMessageProvider$instance;
 
-export interface SystemTextJsonValidationMetadataProvider$instance extends IMetadataDetailsProvider {
+export interface SystemTextJsonValidationMetadataProvider$instance extends IMetadataDetailsProvider, IDisplayMetadataProvider$instance, IValidationMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider: never;
@@ -488,20 +480,18 @@ export interface __SystemTextJsonValidationMetadataProvider$views {
     As_IValidationMetadataProvider(): IValidationMetadataProvider$instance;
 }
 
-export interface SystemTextJsonValidationMetadataProvider$instance extends IDisplayMetadataProvider$instance, IValidationMetadataProvider$instance {}
-
 export type SystemTextJsonValidationMetadataProvider = SystemTextJsonValidationMetadataProvider$instance & __SystemTextJsonValidationMetadataProvider$views;
 
 
 export interface ValidationMetadata$instance {
-    HasValidators: Nullable<System_Internal.Boolean>;
-    IsRequired: Nullable<System_Internal.Boolean>;
+    HasValidators: Nullable_1<System_Internal.Boolean>;
+    IsRequired: Nullable_1<System_Internal.Boolean>;
     get PropertyValidationFilter(): IPropertyValidationFilter | undefined;
     set PropertyValidationFilter(value: IPropertyValidationFilter | undefined);
-    ValidateChildren: Nullable<System_Internal.Boolean>;
+    ValidateChildren: Nullable_1<System_Internal.Boolean>;
     get ValidationModelName(): string | undefined;
     set ValidationModelName(value: string | undefined);
-    readonly ValidatorMetadata: IList<unknown>;
+    readonly ValidatorMetadata: IList_1<unknown>;
 }
 
 
@@ -513,11 +503,11 @@ export const ValidationMetadata: {
 export type ValidationMetadata = ValidationMetadata$instance;
 
 export interface ValidationMetadataProviderContext$instance {
-    readonly Attributes: IReadOnlyList<unknown>;
+    readonly Attributes: IReadOnlyList_1<unknown>;
     readonly Key: ModelMetadataIdentity;
-    readonly ParameterAttributes: IReadOnlyList<unknown> | undefined;
-    readonly PropertyAttributes: IReadOnlyList<unknown> | undefined;
-    readonly TypeAttributes: IReadOnlyList<unknown> | undefined;
+    readonly ParameterAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly PropertyAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly TypeAttributes: IReadOnlyList_1<unknown> | undefined;
     readonly ValidationMetadata: ValidationMetadata;
 }
 
@@ -530,8 +520,8 @@ export const ValidationMetadataProviderContext: {
 export type ValidationMetadataProviderContext = ValidationMetadataProviderContext$instance;
 
 export abstract class MetadataDetailsProviderExtensions$instance {
-    static RemoveType(list: IList<IMetadataDetailsProvider>, type: Type): void;
-    static RemoveType<TMetadataDetailsProvider extends IMetadataDetailsProvider>(list: IList<IMetadataDetailsProvider>): void;
+    static RemoveType(list: IList_1<IMetadataDetailsProvider>, type: Type): void;
+    static RemoveType<TMetadataDetailsProvider extends IMetadataDetailsProvider>(list: IList_1<IMetadataDetailsProvider>): void;
 }
 
 

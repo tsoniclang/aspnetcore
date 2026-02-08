@@ -7,18 +7,18 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { EventCallback_1 } from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Func, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action, Action_1, Func_1, Func_2, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class RuntimeHelpers$instance {
-    static CreateInferredBindSetter<T>(callback: Action<T>, value: T): Func<T, Task>;
-    static CreateInferredBindSetter<T>(callback: Func<T, Task>, value: T): Func<T, Task>;
-    static CreateInferredEventCallback<T>(receiver: unknown, callback: Action<T>, value: T): EventCallback_1<T>;
+    static CreateInferredBindSetter<T>(callback: Action_1<T>, value: T): Func_2<T, Task>;
+    static CreateInferredBindSetter<T>(callback: Func_2<T, Task>, value: T): Func_2<T, Task>;
+    static CreateInferredEventCallback<T>(receiver: unknown, callback: Action_1<T>, value: T): EventCallback_1<T>;
     static CreateInferredEventCallback<T>(receiver: unknown, callback: EventCallback_1<T>, value: T): EventCallback_1<T>;
-    static CreateInferredEventCallback<T>(receiver: unknown, callback: Func<T, Task>, value: T): EventCallback_1<T>;
+    static CreateInferredEventCallback<T>(receiver: unknown, callback: Func_2<T, Task>, value: T): EventCallback_1<T>;
     static InvokeAsynchronousDelegate(callback: Action): Task;
-    static InvokeAsynchronousDelegate(callback: Func<Task>): Task;
+    static InvokeAsynchronousDelegate(callback: Func_1<Task>): Task;
     static InvokeSynchronousDelegate(callback: Action): void;
     static TypeCheck<T>(value: T): T;
 }

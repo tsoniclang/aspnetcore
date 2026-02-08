@@ -8,16 +8,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { ViewContext } from "../../Microsoft.AspNetCore.Mvc.Rendering/internal/index.js";
 import type { ActionContext, MvcViewOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface ICompositeViewEngine$instance extends IViewEngine {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;
 
-    readonly ViewEngines: IReadOnlyList<IViewEngine>;
+    readonly ViewEngines: IReadOnlyList_1<IViewEngine>;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
     GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
@@ -51,14 +51,14 @@ export interface CompositeViewEngine$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
 
-    readonly ViewEngines: IReadOnlyList<IViewEngine>;
+    readonly ViewEngines: IReadOnlyList_1<IViewEngine>;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
     GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
 export const CompositeViewEngine: {
-    new(optionsAccessor: IOptions<MvcViewOptions>): CompositeViewEngine;
+    new(optionsAccessor: IOptions_1<MvcViewOptions>): CompositeViewEngine;
 };
 
 
@@ -71,18 +71,18 @@ export type CompositeViewEngine = CompositeViewEngine$instance & __CompositeView
 
 
 export interface ViewEngineResult$instance {
-    SearchedLocations: IEnumerable<System_Internal.String>;
+    SearchedLocations: IEnumerable_1<System_Internal.String>;
     readonly Success: boolean;
     get View(): IView | undefined;
     set View(value: IView | undefined);
     ViewName: string;
-    EnsureSuccessful(originalLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
+    EnsureSuccessful(originalLocations: IEnumerable_1<System_Internal.String>): ViewEngineResult;
 }
 
 
 export const ViewEngineResult: {
     Found(viewName: string, view: IView): ViewEngineResult;
-    NotFound(viewName: string, searchedLocations: IEnumerable<System_Internal.String>): ViewEngineResult;
+    NotFound(viewName: string, searchedLocations: IEnumerable_1<System_Internal.String>): ViewEngineResult;
 };
 
 

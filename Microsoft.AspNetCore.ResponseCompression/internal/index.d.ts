@@ -7,19 +7,19 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection as ICollection__System_Collections_Generic, IEnumerable as IEnumerable__System_Collections_Generic, IList as IList__System_Collections_Generic, IReadOnlyCollection, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { Collection } from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { CompressionLevel } from "@tsonic/dotnet/System.IO.Compression.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IServiceProvider, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IEnumerable_1, IList_1, IReadOnlyCollection_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import type { Collection_1 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { CompressionLevel } from "@tsonic/dotnet/System.IO.Compression/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IServiceProvider, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface ICompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
@@ -42,7 +42,7 @@ export interface IResponseCompressionProvider$instance {
 
 export type IResponseCompressionProvider = IResponseCompressionProvider$instance;
 
-export interface BrotliCompressionProvider$instance {
+export interface BrotliCompressionProvider$instance extends ICompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
 
     readonly EncodingName: string;
@@ -52,15 +52,13 @@ export interface BrotliCompressionProvider$instance {
 
 
 export const BrotliCompressionProvider: {
-    new(options: IOptions<BrotliCompressionProviderOptions>): BrotliCompressionProvider;
+    new(options: IOptions_1<BrotliCompressionProviderOptions>): BrotliCompressionProvider;
 };
 
 
 export interface __BrotliCompressionProvider$views {
     As_ICompressionProvider(): ICompressionProvider$instance;
 }
-
-export interface BrotliCompressionProvider$instance extends ICompressionProvider$instance {}
 
 export type BrotliCompressionProvider = BrotliCompressionProvider$instance & __BrotliCompressionProvider$views;
 
@@ -79,7 +77,7 @@ export const BrotliCompressionProviderOptions: {
 
 export type BrotliCompressionProviderOptions = BrotliCompressionProviderOptions$instance;
 
-export interface CompressionProviderCollection$instance extends Collection<ICompressionProvider> {
+export interface CompressionProviderCollection$instance extends Collection_1<ICompressionProvider> {
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -101,7 +99,7 @@ export const CompressionProviderCollection: {
 
 export type CompressionProviderCollection = CompressionProviderCollection$instance;
 
-export interface GzipCompressionProvider$instance {
+export interface GzipCompressionProvider$instance extends ICompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
 
     readonly EncodingName: string;
@@ -111,15 +109,13 @@ export interface GzipCompressionProvider$instance {
 
 
 export const GzipCompressionProvider: {
-    new(options: IOptions<GzipCompressionProviderOptions>): GzipCompressionProvider;
+    new(options: IOptions_1<GzipCompressionProviderOptions>): GzipCompressionProvider;
 };
 
 
 export interface __GzipCompressionProvider$views {
     As_ICompressionProvider(): ICompressionProvider$instance;
 }
-
-export interface GzipCompressionProvider$instance extends ICompressionProvider$instance {}
 
 export type GzipCompressionProvider = GzipCompressionProvider$instance & __GzipCompressionProvider$views;
 
@@ -144,7 +140,7 @@ export interface ResponseCompressionDefaults$instance {
 
 export const ResponseCompressionDefaults: {
     new(): ResponseCompressionDefaults;
-    readonly MimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly MimeTypes: IEnumerable_1<System_Internal.String>;
 };
 
 
@@ -164,8 +160,8 @@ export type ResponseCompressionMiddleware = ResponseCompressionMiddleware$instan
 
 export interface ResponseCompressionOptions$instance {
     EnableForHttps: boolean;
-    ExcludedMimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    MimeTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    ExcludedMimeTypes: IEnumerable_1<System_Internal.String>;
+    MimeTypes: IEnumerable_1<System_Internal.String>;
     readonly Providers: CompressionProviderCollection;
 }
 
@@ -177,7 +173,7 @@ export const ResponseCompressionOptions: {
 
 export type ResponseCompressionOptions = ResponseCompressionOptions$instance;
 
-export interface ResponseCompressionProvider$instance {
+export interface ResponseCompressionProvider$instance extends IResponseCompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider: never;
 
     CheckRequestAcceptsCompression(context: HttpContext): boolean;
@@ -187,15 +183,13 @@ export interface ResponseCompressionProvider$instance {
 
 
 export const ResponseCompressionProvider: {
-    new(services: IServiceProvider, options: IOptions<ResponseCompressionOptions>): ResponseCompressionProvider;
+    new(services: IServiceProvider, options: IOptions_1<ResponseCompressionOptions>): ResponseCompressionProvider;
 };
 
 
 export interface __ResponseCompressionProvider$views {
     As_IResponseCompressionProvider(): IResponseCompressionProvider$instance;
 }
-
-export interface ResponseCompressionProvider$instance extends IResponseCompressionProvider$instance {}
 
 export type ResponseCompressionProvider = ResponseCompressionProvider$instance & __ResponseCompressionProvider$views;
 

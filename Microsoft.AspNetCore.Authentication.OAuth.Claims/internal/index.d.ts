@@ -6,14 +6,14 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Func, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { ClaimsIdentity } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { JsonElement } from "@tsonic/dotnet/System.Text.Json.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ClaimsIdentity } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { JsonElement } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Func_2, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ClaimAction$instance {
     readonly ClaimType: string;
@@ -34,7 +34,7 @@ export interface ClaimActionCollection$instance {
 
     Add(action: ClaimAction): void;
     Clear(): void;
-    GetEnumerator(): IEnumerator<ClaimAction>;
+    GetEnumerator(): IEnumerator_1<ClaimAction>;
     Remove(claimType: string): void;
 }
 
@@ -47,13 +47,13 @@ export const ClaimActionCollection: {
 export type ClaimActionCollection = ClaimActionCollection$instance;
 
 export interface CustomJsonClaimAction$instance extends ClaimAction {
-    readonly Resolver: Func<JsonElement, string | undefined>;
+    readonly Resolver: Func_2<JsonElement, string | undefined>;
     Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 
 export const CustomJsonClaimAction: {
-    new(claimType: string, valueType: string, resolver: Func<JsonElement, System_Internal.String>): CustomJsonClaimAction;
+    new(claimType: string, valueType: string, resolver: Func_2<JsonElement, System_Internal.String>): CustomJsonClaimAction;
 };
 
 

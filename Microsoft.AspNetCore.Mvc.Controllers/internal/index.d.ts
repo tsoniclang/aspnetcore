@@ -17,11 +17,11 @@ import type { IParameterInfoParameterDescriptor, IPropertyInfoParameterDescripto
 import type { BindingInfo } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { AttributeRouteInfo } from "../../Microsoft.AspNetCore.Mvc.Routing/internal/index.js";
 import type { ControllerContext } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import type { IDictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { MethodInfo, ParameterInfo, PropertyInfo, TypeInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IDictionary_2, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { MethodInfo, ParameterInfo, PropertyInfo, TypeInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Boolean as ClrBoolean, Func_2, Func_3, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IControllerActivator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator: never;
@@ -37,9 +37,9 @@ export type IControllerActivator = IControllerActivator$instance;
 export interface IControllerActivatorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider: never;
 
-    CreateActivator(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
-    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
-    CreateReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
+    CreateActivator(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, unknown>;
+    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, unknown, ValueTask> | undefined;
+    CreateReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, unknown> | undefined;
 }
 
 
@@ -59,9 +59,9 @@ export type IControllerFactory = IControllerFactory$instance;
 export interface IControllerFactoryProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider: never;
 
-    CreateAsyncControllerReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
-    CreateControllerFactory(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
-    CreateControllerReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
+    CreateAsyncControllerReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, unknown, ValueTask> | undefined;
+    CreateControllerFactory(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, unknown>;
+    CreateControllerReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, unknown> | undefined;
 }
 
 
@@ -84,12 +84,12 @@ export const ControllerActionDescriptor: {
 
 export type ControllerActionDescriptor = ControllerActionDescriptor$instance;
 
-export interface ControllerActivatorProvider$instance {
+export interface ControllerActivatorProvider$instance extends IControllerActivatorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider: never;
 
-    CreateActivator(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown>;
-    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func<ControllerContext, unknown, ValueTask> | undefined;
-    CreateReleaser(descriptor: ControllerActionDescriptor): Action<ControllerContext, unknown> | undefined;
+    CreateActivator(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, unknown>;
+    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, unknown, ValueTask> | undefined;
+    CreateReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, unknown> | undefined;
 }
 
 
@@ -101,8 +101,6 @@ export const ControllerActivatorProvider: {
 export interface __ControllerActivatorProvider$views {
     As_IControllerActivatorProvider(): IControllerActivatorProvider$instance;
 }
-
-export interface ControllerActivatorProvider$instance extends IControllerActivatorProvider$instance {}
 
 export type ControllerActivatorProvider = ControllerActivatorProvider$instance & __ControllerActivatorProvider$views;
 
@@ -127,7 +125,7 @@ export type ControllerBoundPropertyDescriptor = ControllerBoundPropertyDescripto
 
 
 export interface ControllerFeature$instance {
-    readonly Controllers: IList<TypeInfo>;
+    readonly Controllers: IList_1<TypeInfo>;
 }
 
 
@@ -143,7 +141,7 @@ export interface ControllerFeatureProvider$instance extends IApplicationFeatureP
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
 
     IsController(typeInfo: TypeInfo): boolean;
-    PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: ControllerFeature): void;
+    PopulateFeature(parts: IEnumerable_1<ApplicationPart>, feature: ControllerFeature): void;
 }
 
 
@@ -155,8 +153,6 @@ export const ControllerFeatureProvider: {
 export interface __ControllerFeatureProvider$views {
     As_IApplicationFeatureProvider_1(): Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<ControllerFeature>;
 }
-
-export interface ControllerFeatureProvider$instance extends Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<ControllerFeature> {}
 
 export type ControllerFeatureProvider = ControllerFeatureProvider$instance & __ControllerFeatureProvider$views;
 
@@ -180,7 +176,7 @@ export interface __ControllerParameterDescriptor$views {
 export type ControllerParameterDescriptor = ControllerParameterDescriptor$instance & __ControllerParameterDescriptor$views;
 
 
-export interface ServiceBasedControllerActivator$instance {
+export interface ServiceBasedControllerActivator$instance extends IControllerActivator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator: never;
 
     Create(actionContext: ControllerContext): unknown;
@@ -196,8 +192,6 @@ export const ServiceBasedControllerActivator: {
 export interface __ServiceBasedControllerActivator$views {
     As_IControllerActivator(): IControllerActivator$instance;
 }
-
-export interface ServiceBasedControllerActivator$instance extends IControllerActivator$instance {}
 
 export type ServiceBasedControllerActivator = ServiceBasedControllerActivator$instance & __ServiceBasedControllerActivator$views;
 

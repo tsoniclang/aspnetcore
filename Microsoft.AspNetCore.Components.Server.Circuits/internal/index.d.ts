@@ -6,10 +6,10 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Func, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Func_2, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface Circuit$instance {
     readonly Id: string;
@@ -24,7 +24,7 @@ export type Circuit = Circuit$instance;
 
 export interface CircuitHandler$instance {
     readonly Order: int;
-    CreateInboundActivityHandler(next: Func<CircuitInboundActivityContext, Task>): Func<CircuitInboundActivityContext, Task>;
+    CreateInboundActivityHandler(next: Func_2<CircuitInboundActivityContext, Task>): Func_2<CircuitInboundActivityContext, Task>;
     OnCircuitClosedAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
     OnCircuitOpenedAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
     OnConnectionDownAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;

@@ -7,12 +7,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, Int32, Object as ClrObject } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { HealthCheckRegistration, HealthCheckService, HealthReport, HealthStatus } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Diagnostics.HealthChecks.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Func_2, Func_3, Int32, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
+import type { HealthCheckRegistration, HealthCheckService, HealthReport, HealthStatus } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Diagnostics.HealthChecks/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface HealthCheckMiddleware$instance {
     InvokeAsync(httpContext: HttpContext): Task;
@@ -20,7 +20,7 @@ export interface HealthCheckMiddleware$instance {
 
 
 export const HealthCheckMiddleware: {
-    new(next: RequestDelegate, healthCheckOptions: IOptions<HealthCheckOptions>, healthCheckService: HealthCheckService): HealthCheckMiddleware;
+    new(next: RequestDelegate, healthCheckOptions: IOptions_1<HealthCheckOptions>, healthCheckService: HealthCheckService): HealthCheckMiddleware;
 };
 
 
@@ -28,10 +28,10 @@ export type HealthCheckMiddleware = HealthCheckMiddleware$instance;
 
 export interface HealthCheckOptions$instance {
     AllowCachingResponses: boolean;
-    get Predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean> | undefined);
-    ResponseWriter: Func<HttpContext, HealthReport, Task>;
-    ResultStatusCodes: IDictionary<HealthStatus, System_Internal.Int32>;
+    get Predicate(): Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined;
+    set Predicate(value: Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined);
+    ResponseWriter: Func_3<HttpContext, HealthReport, Task>;
+    ResultStatusCodes: IDictionary_2<HealthStatus, System_Internal.Int32>;
 }
 
 

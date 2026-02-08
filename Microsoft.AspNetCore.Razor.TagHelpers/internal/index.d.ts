@@ -11,18 +11,18 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Html_Internal from "../../Microsoft.AspNetCore.Html/internal/index.js";
 import type { IHtmlContent, IHtmlContentBuilder, IHtmlContentContainer } from "../../Microsoft.AspNetCore.Html/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection as ICollection__System_Collections_Generic, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IList as IList__System_Collections_Generic, IReadOnlyCollection, IReadOnlyList, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { ReadOnlyCollection } from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Char, Enum, Func, IComparable, IConvertible, IFormatProvider, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import * as System_Text_Encodings_Web_Internal from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1, IList_1, IReadOnlyCollection_1, IReadOnlyList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import type { ReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Text_Encodings_Web_Internal from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Char, Enum, Func_3, IComparable, IConvertible, IFormatProvider, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum HtmlAttributeValueStyle {
     DoubleQuotes = 0,
@@ -180,7 +180,7 @@ export const OutputElementHintAttribute: {
 
 export type OutputElementHintAttribute = OutputElementHintAttribute$instance;
 
-export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollection<TagHelperAttribute> {
+export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollection_1<TagHelperAttribute> {
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -194,11 +194,11 @@ export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollect
     ContainsName(name: string): boolean;
     IndexOfName(name: string): int;
     TryGetAttribute(name: string, attribute: TagHelperAttribute): boolean;
-    TryGetAttributes(name: string, attributes: IReadOnlyList<TagHelperAttribute>): boolean;
+    TryGetAttributes(name: string, attributes: IReadOnlyList_1<TagHelperAttribute>): boolean;
 }
 
 
-export const ReadOnlyTagHelperAttributeList: (abstract new() => ReadOnlyTagHelperAttributeList) & (abstract new(attributes: IList__System_Collections_Generic<TagHelperAttribute>) => ReadOnlyTagHelperAttributeList) & {
+export const ReadOnlyTagHelperAttributeList: (abstract new() => ReadOnlyTagHelperAttributeList) & (abstract new(attributes: IList_1<TagHelperAttribute>) => ReadOnlyTagHelperAttributeList) & {
     NameEquals(name: string, attribute: TagHelperAttribute): boolean;
 };
 
@@ -206,7 +206,7 @@ export const ReadOnlyTagHelperAttributeList: (abstract new() => ReadOnlyTagHelpe
 export type ReadOnlyTagHelperAttributeList = ReadOnlyTagHelperAttributeList$instance;
 
 export interface RestrictChildrenAttribute$instance extends Attribute {
-    readonly ChildTags: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly ChildTags: IEnumerable_1<System_Internal.String>;
 }
 
 
@@ -295,14 +295,14 @@ export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttrib
 
 export const TagHelperAttributeList: {
     new(): TagHelperAttributeList;
-    new(attributes: IEnumerable__System_Collections_Generic<TagHelperAttribute>): TagHelperAttributeList;
-    new(attributes: List<TagHelperAttribute>): TagHelperAttributeList;
+    new(attributes: IEnumerable_1<TagHelperAttribute>): TagHelperAttributeList;
+    new(attributes: List_1<TagHelperAttribute>): TagHelperAttributeList;
 };
 
 
 export type TagHelperAttributeList = TagHelperAttributeList$instance;
 
-export interface TagHelperComponent$instance {
+export interface TagHelperComponent$instance extends ITagHelperComponent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     readonly Order: int;
@@ -319,8 +319,6 @@ export const TagHelperComponent: (abstract new() => TagHelperComponent) & {
 export interface __TagHelperComponent$views {
     As_ITagHelperComponent(): ITagHelperComponent$instance;
 }
-
-export interface TagHelperComponent$instance extends ITagHelperComponent$instance {}
 
 export type TagHelperComponent = TagHelperComponent$instance & __TagHelperComponent$views;
 
@@ -365,17 +363,17 @@ export type TagHelperContent = TagHelperContent$instance & __TagHelperContent$vi
 
 export interface TagHelperContext$instance {
     readonly AllAttributes: ReadOnlyTagHelperAttributeList;
-    Items: IDictionary<unknown, unknown>;
+    Items: IDictionary_2<unknown, unknown>;
     TagName: string;
     UniqueId: string;
-    Reinitialize(tagName: string, items: IDictionary<unknown, unknown>, uniqueId: string): void;
-    Reinitialize(items: IDictionary<unknown, unknown>, uniqueId: string): void;
+    Reinitialize(tagName: string, items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
+    Reinitialize(items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
 }
 
 
 export const TagHelperContext: {
-    new(tagName: string, allAttributes: TagHelperAttributeList, items: IDictionary<unknown, unknown>, uniqueId: string): TagHelperContext;
-    new(allAttributes: TagHelperAttributeList, items: IDictionary<unknown, unknown>, uniqueId: string): TagHelperContext;
+    new(tagName: string, allAttributes: TagHelperAttributeList, items: IDictionary_2<unknown, unknown>, uniqueId: string): TagHelperContext;
+    new(allAttributes: TagHelperAttributeList, items: IDictionary_2<unknown, unknown>, uniqueId: string): TagHelperContext;
 };
 
 
@@ -394,10 +392,10 @@ export interface TagHelperOutput$instance {
     readonly PreElement: TagHelperContent;
     TagMode: TagMode;
     TagName: string;
-    GetChildContentAsync(): Task<TagHelperContent>;
-    GetChildContentAsync(useCachedResult: boolean): Task<TagHelperContent>;
-    GetChildContentAsync(encoder: HtmlEncoder): Task<TagHelperContent>;
-    GetChildContentAsync(useCachedResult: boolean, encoder: HtmlEncoder): Task<TagHelperContent>;
+    GetChildContentAsync(): Task_1<TagHelperContent>;
+    GetChildContentAsync(useCachedResult: boolean): Task_1<TagHelperContent>;
+    GetChildContentAsync(encoder: HtmlEncoder): Task_1<TagHelperContent>;
+    GetChildContentAsync(useCachedResult: boolean, encoder: HtmlEncoder): Task_1<TagHelperContent>;
     Reinitialize(tagName: string, tagMode: TagMode): void;
     SuppressOutput(): void;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -405,7 +403,7 @@ export interface TagHelperOutput$instance {
 
 
 export const TagHelperOutput: {
-    new(tagName: string, attributes: TagHelperAttributeList, getChildContentAsync: Func<System_Internal.Boolean, HtmlEncoder, Task<TagHelperContent>>): TagHelperOutput;
+    new(tagName: string, attributes: TagHelperAttributeList, getChildContentAsync: Func_3<System_Internal.Boolean, HtmlEncoder, Task_1<TagHelperContent>>): TagHelperOutput;
 };
 
 

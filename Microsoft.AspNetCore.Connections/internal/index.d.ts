@@ -9,24 +9,24 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as Microsoft_AspNetCore_Connections_Features_Internal from "../../Microsoft.AspNetCore.Connections.Features/internal/index.js";
 import type { IConnectionEndPointFeature, IConnectionIdFeature, IConnectionItemsFeature, IConnectionLifetimeFeature, IConnectionTransportFeature, IConnectionUserFeature } from "../../Microsoft.AspNetCore.Connections.Features/internal/index.js";
 import type { IFeatureCollection } from "../../Microsoft.AspNetCore.Http.Features/internal/index.js";
-import type { MemoryPool } from "@tsonic/dotnet/System.Buffers.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, KeyValuePair, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_IO_Internal from "@tsonic/dotnet/System.IO.js";
-import type { IOException } from "@tsonic/dotnet/System.IO.js";
-import type { IDuplexPipe } from "@tsonic/dotnet/System.IO.Pipelines.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Enum, Exception, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, InvalidOperationException, IServiceProvider, ISpanFormattable, MulticastDelegate, Object as ClrObject, OperationCanceledException, String as ClrString, UInt64, Uri, Void } from "@tsonic/dotnet/System.js";
-import * as System_Net_Internal from "@tsonic/dotnet/System.Net.js";
-import type { EndPoint } from "@tsonic/dotnet/System.Net.js";
-import type { SslApplicationProtocol, SslClientHelloInfo, SslServerAuthenticationOptions } from "@tsonic/dotnet/System.Net.Security.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { MemoryPool_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1, KeyValuePair_2, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IDuplexPipe } from "@tsonic/dotnet/System.IO.Pipelines/internal/index.js";
+import * as System_IO_Internal from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { IOException } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { SslApplicationProtocol, SslClientHelloInfo, SslServerAuthenticationOptions } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import * as System_Net_Internal from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { EndPoint } from "@tsonic/dotnet/System.Net/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { Task, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, Enum, Exception, Func_1, Func_2, Func_3, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, InvalidOperationException, IServiceProvider, ISpanFormattable, MulticastDelegate, Object as ClrObject, OperationCanceledException, String as ClrString, UInt64, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum FileHandleType {
     Auto = 0,
@@ -52,7 +52,7 @@ export interface IConnectionBuilder$instance {
 
     readonly ApplicationServices: IServiceProvider;
     Build(): ConnectionDelegate;
-    Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
+    Use(middleware: Func_2<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
 }
 
 
@@ -61,7 +61,7 @@ export type IConnectionBuilder = IConnectionBuilder$instance;
 export interface IConnectionFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionFactory: never;
 
-    ConnectAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    ConnectAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask_1<ConnectionContext>;
 }
 
 
@@ -71,7 +71,7 @@ export interface IConnectionListener$instance extends IAsyncDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListener: never;
 
     readonly EndPoint: EndPoint;
-    AcceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    AcceptAsync(cancellationToken?: CancellationToken): ValueTask_1<ConnectionContext>;
     UnbindAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
@@ -83,7 +83,7 @@ export type IConnectionListener = IConnectionListener$instance;
 export interface IConnectionListenerFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactory: never;
 
-    BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
+    BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask_1<IConnectionListener>;
 }
 
 
@@ -101,7 +101,7 @@ export type IConnectionListenerFactorySelector = IConnectionListenerFactorySelec
 export interface IMemoryPoolFactory_1$instance<T> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMemoryPoolFactory_1: never;
 
-    Create(options?: MemoryPoolOptions): MemoryPool<T>;
+    Create(options?: MemoryPoolOptions): MemoryPool_1<T>;
 }
 
 
@@ -112,7 +112,7 @@ export interface IMultiplexedConnectionBuilder$instance {
 
     readonly ApplicationServices: IServiceProvider;
     Build(): MultiplexedConnectionDelegate;
-    Use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
+    Use(middleware: Func_2<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
 }
 
 
@@ -121,7 +121,7 @@ export type IMultiplexedConnectionBuilder = IMultiplexedConnectionBuilder$instan
 export interface IMultiplexedConnectionFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory: never;
 
-    ConnectAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
+    ConnectAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<MultiplexedConnectionContext>;
 }
 
 
@@ -131,7 +131,7 @@ export interface IMultiplexedConnectionListener$instance extends IAsyncDisposabl
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener: never;
 
     readonly EndPoint: EndPoint;
-    AcceptAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<MultiplexedConnectionContext>;
+    AcceptAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<MultiplexedConnectionContext>;
     UnbindAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
@@ -143,7 +143,7 @@ export type IMultiplexedConnectionListener = IMultiplexedConnectionListener$inst
 export interface IMultiplexedConnectionListenerFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory: never;
 
-    BindAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<IMultiplexedConnectionListener>;
+    BindAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<IMultiplexedConnectionListener>;
 }
 
 
@@ -169,7 +169,7 @@ export interface BaseConnectionContext$instance {
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
-    Items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary_2<unknown, unknown | undefined>;
     get LocalEndPoint(): EndPoint | undefined;
     set LocalEndPoint(value: EndPoint | undefined);
     get RemoteEndPoint(): EndPoint | undefined;
@@ -201,12 +201,12 @@ export const ConnectionAbortedException: {
 
 export type ConnectionAbortedException = ConnectionAbortedException$instance;
 
-export interface ConnectionBuilder$instance {
+export interface ConnectionBuilder$instance extends IConnectionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionBuilder: never;
 
     readonly ApplicationServices: IServiceProvider;
     Build(): ConnectionDelegate;
-    Use(middleware: Func<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
+    Use(middleware: Func_2<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
 }
 
 
@@ -218,8 +218,6 @@ export const ConnectionBuilder: {
 export interface __ConnectionBuilder$views {
     As_IConnectionBuilder(): IConnectionBuilder$instance;
 }
-
-export interface ConnectionBuilder$instance extends IConnectionBuilder$instance {}
 
 export type ConnectionBuilder = ConnectionBuilder$instance & __ConnectionBuilder$views;
 
@@ -256,13 +254,13 @@ export interface ConnectionItems$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Items: IDictionary<unknown, unknown | undefined>;
+    readonly Items: IDictionary_2<unknown, unknown | undefined>;
 }
 
 
 export const ConnectionItems: {
     new(): ConnectionItems;
-    new(items: IDictionary<unknown, unknown>): ConnectionItems;
+    new(items: IDictionary_2<unknown, unknown>): ConnectionItems;
 };
 
 
@@ -282,7 +280,7 @@ export const ConnectionResetException: {
 
 export type ConnectionResetException = ConnectionResetException$instance;
 
-export interface DefaultConnectionContext$instance extends ConnectionContext {
+export interface DefaultConnectionContext$instance extends ConnectionContext, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionEndPointFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionIdFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionItemsFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionTransportFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionUserFeature$instance, System_Internal.IAsyncDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature: never;
@@ -296,7 +294,7 @@ export interface DefaultConnectionContext$instance extends ConnectionContext {
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
-    Items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary_2<unknown, unknown | undefined>;
     get LocalEndPoint(): EndPoint | undefined;
     set LocalEndPoint(value: EndPoint | undefined);
     get RemoteEndPoint(): EndPoint | undefined;
@@ -325,8 +323,6 @@ export interface __DefaultConnectionContext$views {
     As_IConnectionTransportFeature(): Microsoft_AspNetCore_Connections_Features_Internal.IConnectionTransportFeature$instance;
     As_IConnectionUserFeature(): Microsoft_AspNetCore_Connections_Features_Internal.IConnectionUserFeature$instance;
 }
-
-export interface DefaultConnectionContext$instance extends Microsoft_AspNetCore_Connections_Features_Internal.IConnectionEndPointFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionIdFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionItemsFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionTransportFeature$instance, Microsoft_AspNetCore_Connections_Features_Internal.IConnectionUserFeature$instance, System_Internal.IAsyncDisposable {}
 
 export type DefaultConnectionContext = DefaultConnectionContext$instance & __DefaultConnectionContext$views;
 
@@ -357,12 +353,12 @@ export const MemoryPoolOptions: {
 
 export type MemoryPoolOptions = MemoryPoolOptions$instance;
 
-export interface MultiplexedConnectionBuilder$instance {
+export interface MultiplexedConnectionBuilder$instance extends IMultiplexedConnectionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder: never;
 
     readonly ApplicationServices: IServiceProvider;
     Build(): MultiplexedConnectionDelegate;
-    Use(middleware: Func<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
+    Use(middleware: Func_2<MultiplexedConnectionDelegate, MultiplexedConnectionDelegate>): IMultiplexedConnectionBuilder;
 }
 
 
@@ -375,16 +371,14 @@ export interface __MultiplexedConnectionBuilder$views {
     As_IMultiplexedConnectionBuilder(): IMultiplexedConnectionBuilder$instance;
 }
 
-export interface MultiplexedConnectionBuilder$instance extends IMultiplexedConnectionBuilder$instance {}
-
 export type MultiplexedConnectionBuilder = MultiplexedConnectionBuilder$instance & __MultiplexedConnectionBuilder$views;
 
 
 export interface MultiplexedConnectionContext$instance extends BaseConnectionContext {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
-    AcceptAsync(cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
-    ConnectAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask<ConnectionContext>;
+    AcceptAsync(cancellationToken?: CancellationToken): ValueTask_1<ConnectionContext>;
+    ConnectAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<ConnectionContext>;
 }
 
 
@@ -427,8 +421,8 @@ export const TlsConnectionCallbackContext: {
 export type TlsConnectionCallbackContext = TlsConnectionCallbackContext$instance;
 
 export interface TlsConnectionCallbackOptions$instance {
-    ApplicationProtocols: List<SslApplicationProtocol>;
-    OnConnection: Func<TlsConnectionCallbackContext, CancellationToken, ValueTask<SslServerAuthenticationOptions>>;
+    ApplicationProtocols: List_1<SslApplicationProtocol>;
+    OnConnection: Func_3<TlsConnectionCallbackContext, CancellationToken, ValueTask_1<SslServerAuthenticationOptions>>;
     get OnConnectionState(): unknown | undefined;
     set OnConnectionState(value: unknown | undefined);
 }
@@ -455,9 +449,9 @@ export const UriEndPoint: {
 export type UriEndPoint = UriEndPoint$instance;
 
 export abstract class ConnectionBuilderExtensions$instance {
-    static Run(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, Task>): IConnectionBuilder;
-    static Use(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, ConnectionDelegate, Task>): IConnectionBuilder;
-    static Use(connectionBuilder: IConnectionBuilder, middleware: Func<ConnectionContext, Func<Task>, Task>): IConnectionBuilder;
+    static Run(connectionBuilder: IConnectionBuilder, middleware: Func_2<ConnectionContext, Task>): IConnectionBuilder;
+    static Use(connectionBuilder: IConnectionBuilder, middleware: Func_3<ConnectionContext, ConnectionDelegate, Task>): IConnectionBuilder;
+    static Use(connectionBuilder: IConnectionBuilder, middleware: Func_3<ConnectionContext, Func_1<Task>, Task>): IConnectionBuilder;
     static UseConnectionHandler<TConnectionHandler extends ConnectionHandler>(connectionBuilder: IConnectionBuilder): IConnectionBuilder;
 }
 

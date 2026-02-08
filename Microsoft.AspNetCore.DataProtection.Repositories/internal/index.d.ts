@@ -6,19 +6,19 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { RegistryKey } from "@tsonic/dotnet/Microsoft.Win32.js";
-import type { IReadOnlyCollection } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DirectoryInfo } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Int32, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { RegistryKey } from "@tsonic/dotnet/Microsoft.Win32/internal/index.js";
+import type { IReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DirectoryInfo } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { XElement } from "@tsonic/dotnet/System.Xml.Linq/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Int32, Nullable_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface IDeletableElement$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableElement: never;
 
     readonly Element: XElement;
-    DeletionOrder: Nullable<System_Internal.Int32>;
+    DeletionOrder: Nullable_1<System_Internal.Int32>;
 }
 
 
@@ -27,8 +27,8 @@ export type IDeletableElement = IDeletableElement$instance;
 export interface IDeletableXmlRepository$instance extends IXmlRepository {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
 
-    DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
-    GetAllElements(): IReadOnlyCollection<XElement>;
+    DeleteElements(chooseElements: Action_1<IReadOnlyCollection_1<IDeletableElement>>): boolean;
+    GetAllElements(): IReadOnlyCollection_1<XElement>;
     StoreElement(element: XElement, friendlyName: string): void;
 }
 
@@ -40,7 +40,7 @@ export type IDeletableXmlRepository = IDeletableXmlRepository$instance;
 export interface IXmlRepository$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
 
-    GetAllElements(): IReadOnlyCollection<XElement>;
+    GetAllElements(): IReadOnlyCollection_1<XElement>;
     StoreElement(element: XElement, friendlyName: string): void;
 }
 
@@ -52,8 +52,8 @@ export interface FileSystemXmlRepository$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
 
     readonly Directory: DirectoryInfo;
-    DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
-    GetAllElements(): IReadOnlyCollection<XElement>;
+    DeleteElements(chooseElements: Action_1<IReadOnlyCollection_1<IDeletableElement>>): boolean;
+    GetAllElements(): IReadOnlyCollection_1<XElement>;
     StoreElement(element: XElement, friendlyName: string): void;
 }
 
@@ -77,8 +77,8 @@ export interface RegistryXmlRepository$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
 
     readonly RegistryKey: RegistryKey;
-    DeleteElements(chooseElements: Action<IReadOnlyCollection<IDeletableElement>>): boolean;
-    GetAllElements(): IReadOnlyCollection<XElement>;
+    DeleteElements(chooseElements: Action_1<IReadOnlyCollection_1<IDeletableElement>>): boolean;
+    GetAllElements(): IReadOnlyCollection_1<XElement>;
     StoreElement(element: XElement, friendlyName: string): void;
 }
 

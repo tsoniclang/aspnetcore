@@ -8,13 +8,13 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IEndpointRouteBuilder } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import type { StaticAssetDescriptor } from "../../Microsoft.AspNetCore.StaticAssets/internal/index.js";
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class StaticAssetsEndpointDataSourceHelper$instance {
     static HasStaticAssetsDataSource(builder: IEndpointRouteBuilder, staticAssetsManifestPath?: string): boolean;
-    static ResolveStaticAssetDescriptors(endpointRouteBuilder: IEndpointRouteBuilder, manifestPath: string): IReadOnlyList<StaticAssetDescriptor>;
+    static ResolveStaticAssetDescriptors(endpointRouteBuilder: IEndpointRouteBuilder, manifestPath: string): IReadOnlyList_1<StaticAssetDescriptor>;
 }
 
 
