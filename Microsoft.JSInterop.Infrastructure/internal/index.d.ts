@@ -10,8 +10,8 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { JSCallResultType, JSRuntime } from "../../Microsoft.JSInterop/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Enum, Exception, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Enum, Exception, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum JSCallType {
     FunctionCall = 1,

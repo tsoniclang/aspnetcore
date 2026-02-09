@@ -7,10 +7,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { RazorCompiledItem } from "../../Microsoft.AspNetCore.Razor.Hosting/internal/index.js";
-import type { IEnumerable, IList, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { Assembly, TypeInfo } from "@tsonic/dotnet/System.Reflection.js";
+import type { IEnumerable_1, IList_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Assembly, TypeInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IApplicationFeatureProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
@@ -23,7 +23,7 @@ export type IApplicationFeatureProvider = IApplicationFeatureProvider$instance;
 export interface IApplicationFeatureProvider_1$instance<TFeature> extends IApplicationFeatureProvider {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
 
-    PopulateFeature(parts: IEnumerable<ApplicationPart>, feature: TFeature): void;
+    PopulateFeature(parts: IEnumerable_1<ApplicationPart>, feature: TFeature): void;
 }
 
 
@@ -34,7 +34,7 @@ export type IApplicationFeatureProvider_1<TFeature> = IApplicationFeatureProvide
 export interface IApplicationPartTypeProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider: never;
 
-    readonly Types: IEnumerable<TypeInfo>;
+    readonly Types: IEnumerable_1<TypeInfo>;
 }
 
 
@@ -43,7 +43,7 @@ export type IApplicationPartTypeProvider = IApplicationPartTypeProvider$instance
 export interface ICompilationReferencesProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider: never;
 
-    GetReferencePaths(): IEnumerable<System_Internal.String>;
+    GetReferencePaths(): IEnumerable_1<System_Internal.String>;
 }
 
 
@@ -52,7 +52,7 @@ export type ICompilationReferencesProvider = ICompilationReferencesProvider$inst
 export interface IRazorCompiledItemProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider: never;
 
-    readonly CompiledItems: IEnumerable<RazorCompiledItem>;
+    readonly CompiledItems: IEnumerable_1<RazorCompiledItem>;
 }
 
 
@@ -82,7 +82,7 @@ export const ApplicationPartAttribute: {
 export type ApplicationPartAttribute = ApplicationPartAttribute$instance;
 
 export interface ApplicationPartFactory$instance {
-    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable_1<ApplicationPart>;
 }
 
 
@@ -94,8 +94,8 @@ export const ApplicationPartFactory: (abstract new() => ApplicationPartFactory) 
 export type ApplicationPartFactory = ApplicationPartFactory$instance;
 
 export interface ApplicationPartManager$instance {
-    readonly ApplicationParts: IList<ApplicationPart>;
-    readonly FeatureProviders: IList<IApplicationFeatureProvider>;
+    readonly ApplicationParts: IList_1<ApplicationPart>;
+    readonly FeatureProviders: IList_1<IApplicationFeatureProvider>;
     PopulateFeature<TFeature>(feature: TFeature): void;
 }
 
@@ -107,12 +107,12 @@ export const ApplicationPartManager: {
 
 export type ApplicationPartManager = ApplicationPartManager$instance;
 
-export interface AssemblyPart$instance extends ApplicationPart {
+export interface AssemblyPart$instance extends ApplicationPart, IApplicationPartTypeProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider: never;
 
     readonly Assembly: Assembly;
     readonly Name: string;
-    readonly Types: IEnumerable<TypeInfo>;
+    readonly Types: IEnumerable_1<TypeInfo>;
 }
 
 
@@ -125,25 +125,23 @@ export interface __AssemblyPart$views {
     As_IApplicationPartTypeProvider(): IApplicationPartTypeProvider$instance;
 }
 
-export interface AssemblyPart$instance extends IApplicationPartTypeProvider$instance {}
-
 export type AssemblyPart = AssemblyPart$instance & __AssemblyPart$views;
 
 
 export interface CompiledRazorAssemblyApplicationPartFactory$instance extends ApplicationPartFactory {
-    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable_1<ApplicationPart>;
 }
 
 
 export const CompiledRazorAssemblyApplicationPartFactory: {
     new(): CompiledRazorAssemblyApplicationPartFactory;
-    GetDefaultApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetDefaultApplicationParts(assembly: Assembly): IEnumerable_1<ApplicationPart>;
 };
 
 
 export type CompiledRazorAssemblyApplicationPartFactory = CompiledRazorAssemblyApplicationPartFactory$instance;
 
-export interface CompiledRazorAssemblyPart$instance extends ApplicationPart {
+export interface CompiledRazorAssemblyPart$instance extends ApplicationPart, IRazorCompiledItemProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider: never;
 
     readonly Assembly: Assembly;
@@ -160,13 +158,11 @@ export interface __CompiledRazorAssemblyPart$views {
     As_IRazorCompiledItemProvider(): IRazorCompiledItemProvider$instance;
 }
 
-export interface CompiledRazorAssemblyPart$instance extends IRazorCompiledItemProvider$instance {}
-
 export type CompiledRazorAssemblyPart = CompiledRazorAssemblyPart$instance & __CompiledRazorAssemblyPart$views;
 
 
 export interface ConsolidatedAssemblyApplicationPartFactory$instance extends ApplicationPartFactory {
-    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable_1<ApplicationPart>;
 }
 
 
@@ -178,21 +174,21 @@ export const ConsolidatedAssemblyApplicationPartFactory: {
 export type ConsolidatedAssemblyApplicationPartFactory = ConsolidatedAssemblyApplicationPartFactory$instance;
 
 export interface DefaultApplicationPartFactory$instance extends ApplicationPartFactory {
-    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable_1<ApplicationPart>;
 }
 
 
 export const DefaultApplicationPartFactory: {
     new(): DefaultApplicationPartFactory;
     readonly Instance: DefaultApplicationPartFactory;
-    GetDefaultApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetDefaultApplicationParts(assembly: Assembly): IEnumerable_1<ApplicationPart>;
 };
 
 
 export type DefaultApplicationPartFactory = DefaultApplicationPartFactory$instance;
 
 export interface NullApplicationPartFactory$instance extends ApplicationPartFactory {
-    GetApplicationParts(assembly: Assembly): IEnumerable<ApplicationPart>;
+    GetApplicationParts(assembly: Assembly): IEnumerable_1<ApplicationPart>;
 }
 
 
@@ -223,7 +219,7 @@ export interface RelatedAssemblyAttribute$instance extends Attribute {
 
 export const RelatedAssemblyAttribute: {
     new(assemblyFileName: string): RelatedAssemblyAttribute;
-    GetRelatedAssemblies(assembly: Assembly, throwOnError: boolean): IReadOnlyList<Assembly>;
+    GetRelatedAssemblies(assembly: Assembly, throwOnError: boolean): IReadOnlyList_1<Assembly>;
 };
 
 

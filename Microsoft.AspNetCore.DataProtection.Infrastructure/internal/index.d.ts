@@ -7,7 +7,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { String as ClrString } from "@tsonic/dotnet/System.js";
+import type { String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IApplicationDiscriminator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Infrastructure_IApplicationDiscriminator: never;

@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { EndpointDataSource } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IServiceProvider, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceProvider, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface DfaGraphWriter$instance {
     Write(dataSource: EndpointDataSource, writer: TextWriter): void;

@@ -10,25 +10,25 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { FragmentString, HostString, HttpRequest, PathString, QueryString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Int64, Nullable, Object as ClrObject, String as ClrString, Uri, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export interface QueryBuilder$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Add(key: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): void;
+    Add(key: string, values: IEnumerable_1<System_Internal.String>): void;
     Add(key: string, value: string): void;
     Equals(obj: unknown): boolean;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     GetHashCode(): int;
     ToQueryString(): QueryString;
     ToString(): string;
@@ -37,8 +37,8 @@ export interface QueryBuilder$instance {
 
 export const QueryBuilder: {
     new(): QueryBuilder;
-    new(parameters: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>): QueryBuilder;
-    new(parameters: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>): QueryBuilder;
+    new(parameters: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>): QueryBuilder;
+    new(parameters: IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>): QueryBuilder;
 };
 
 
@@ -52,8 +52,8 @@ export abstract class HttpRequestMultipartExtensions$instance {
 export type HttpRequestMultipartExtensions = HttpRequestMultipartExtensions$instance;
 
 export abstract class StreamCopyOperation$instance {
-    static CopyToAsync(source: Stream, destination: Stream, count: Nullable<System_Internal.Int64>, bufferSize: int, cancel: CancellationToken): Task;
-    static CopyToAsync(source: Stream, destination: Stream, count: Nullable<System_Internal.Int64>, cancel: CancellationToken): Task;
+    static CopyToAsync(source: Stream, destination: Stream, count: Nullable_1<System_Internal.Int64>, bufferSize: int, cancel: CancellationToken): Task;
+    static CopyToAsync(source: Stream, destination: Stream, count: Nullable_1<System_Internal.Int64>, cancel: CancellationToken): Task;
 }
 
 

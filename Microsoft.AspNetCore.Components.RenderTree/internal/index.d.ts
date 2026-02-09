@@ -12,15 +12,15 @@ import type { ptr } from "@tsonic/core/types.js";
 import type { ComponentState } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import type { JSComponentInterop } from "../../Microsoft.AspNetCore.Components.Web.Infrastructure/internal/index.js";
 import type { Dispatcher, ElementReference, ElementReferenceContext, IComponent, IComponentActivator, IComponentRenderMode, ParameterView, RendererInfo, ResourceAssetCollection } from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Byte, Enum, EventArgs, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Byte, Enum, EventArgs, Exception, IAsyncDisposable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, UInt64, UnhandledExceptionEventHandler, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export enum ComponentFrameFlags {
     HasCallerSpecifiedRenderMode = 1
@@ -113,7 +113,7 @@ export type NamedEventChange = NamedEventChange$instance;
 export interface RenderBatch$instance {
     readonly DisposedComponentIDs: ArrayRange_1<System_Internal.Int32>;
     readonly DisposedEventHandlerIDs: ArrayRange_1<System_Internal.UInt64>;
-    readonly NamedEventChanges: Nullable<ArrayRange_1<NamedEventChange>>;
+    readonly NamedEventChanges: Nullable_1<ArrayRange_1<NamedEventChange>>;
     readonly ReferenceFrames: ArrayRange_1<RenderTreeFrame>;
     readonly UpdatedComponents: ArrayRange_1<RenderTreeDiff>;
 }
@@ -164,14 +164,14 @@ export interface RenderTreeFrame$instance {
     readonly ComponentFrameFlags: ComponentFrameFlags;
     readonly ComponentId: int;
     readonly ComponentKey: unknown;
-    readonly ComponentReferenceCaptureAction: Action<unknown>;
+    readonly ComponentReferenceCaptureAction: Action_1<unknown>;
     readonly ComponentReferenceCaptureParentFrameIndex: int;
     readonly ComponentRenderMode: IComponentRenderMode;
     readonly ComponentSubtreeLength: int;
     readonly ComponentType: Type;
     readonly ElementKey: unknown;
     readonly ElementName: string;
-    readonly ElementReferenceCaptureAction: Action<ElementReference>;
+    readonly ElementReferenceCaptureAction: Action_1<ElementReference>;
     readonly ElementReferenceCaptureId: string;
     readonly ElementSubtreeLength: int;
     readonly FrameType: RenderTreeFrameType;
@@ -223,7 +223,7 @@ export interface Renderer$instance {
     GetEventArgsType(eventHandlerId: ulong): Type;
     HandleException(exception: Exception): void;
     ProcessPendingRender(): void;
-    ResolveComponentForRenderMode(componentType: Type, parentComponentId: Nullable<System_Internal.Int32>, componentActivator: IComponentActivator, renderMode: IComponentRenderMode): IComponent;
+    ResolveComponentForRenderMode(componentType: Type, parentComponentId: Nullable_1<System_Internal.Int32>, componentActivator: IComponentActivator, renderMode: IComponentRenderMode): IComponent;
     UpdateDisplayAsync(renderBatch: RenderBatch): Task;
 }
 

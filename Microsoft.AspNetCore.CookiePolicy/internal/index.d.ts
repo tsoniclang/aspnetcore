@@ -8,11 +8,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { CookiePolicyOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import type { CookieOptions, HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum HttpOnlyPolicy {
     None = 0,
@@ -45,8 +45,8 @@ export interface CookiePolicyMiddleware$instance {
 
 
 export const CookiePolicyMiddleware: {
-    new(next: RequestDelegate, options: IOptions<CookiePolicyOptions>, factory: ILoggerFactory): CookiePolicyMiddleware;
-    new(next: RequestDelegate, options: IOptions<CookiePolicyOptions>): CookiePolicyMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<CookiePolicyOptions>, factory: ILoggerFactory): CookiePolicyMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<CookiePolicyOptions>): CookiePolicyMiddleware;
 };
 
 

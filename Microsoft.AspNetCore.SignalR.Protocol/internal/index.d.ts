@@ -11,12 +11,12 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { TransferFormat } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
 import type { IInvocationBinder, JsonHubProtocolOptions } from "../../Microsoft.AspNetCore.SignalR/internal/index.js";
-import type { IBufferWriter, ReadOnlySequence } from "@tsonic/dotnet/System.Buffers.js";
-import type { IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Int32, Int64, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { ExceptionDispatchInfo } from "@tsonic/dotnet/System.Runtime.ExceptionServices.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IBufferWriter_1, ReadOnlySequence_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ExceptionDispatchInfo } from "@tsonic/dotnet/System.Runtime.ExceptionServices/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Int32, Int64, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IHubProtocol$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol: never;
@@ -24,10 +24,10 @@ export interface IHubProtocol$instance {
     readonly Name: string;
     readonly Version: int;
     readonly TransferFormat: TransferFormat;
-    GetMessageBytes(message: HubMessage): ReadOnlyMemory<System_Internal.Byte>;
+    GetMessageBytes(message: HubMessage): ReadOnlyMemory_1<System_Internal.Byte>;
     IsVersionSupported(version: int): boolean;
-    TryParseMessage(input: ReadOnlySequence<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
-    WriteMessage(message: HubMessage, output: IBufferWriter<System_Internal.Byte>): void;
+    TryParseMessage(input: ReadOnlySequence_1<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
+    WriteMessage(message: HubMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
 }
 
 
@@ -116,8 +116,8 @@ export const HandshakeResponseMessage: {
 export type HandshakeResponseMessage = HandshakeResponseMessage$instance;
 
 export interface HubInvocationMessage$instance extends HubMessage {
-    get Headers(): IDictionary<System_Internal.String, System_Internal.String> | undefined;
-    set Headers(value: IDictionary<System_Internal.String, System_Internal.String> | undefined);
+    get Headers(): IDictionary_2<System_Internal.String, System_Internal.String> | undefined;
+    set Headers(value: IDictionary_2<System_Internal.String, System_Internal.String> | undefined);
     readonly InvocationId: string | undefined;
 }
 
@@ -178,30 +178,28 @@ export const InvocationMessage: {
 
 export type InvocationMessage = InvocationMessage$instance;
 
-export interface JsonHubProtocol$instance {
+export interface JsonHubProtocol$instance extends IHubProtocol$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol: never;
 
     readonly Name: string;
     readonly TransferFormat: TransferFormat;
     readonly Version: int;
-    GetMessageBytes(message: HubMessage): ReadOnlyMemory<System_Internal.Byte>;
+    GetMessageBytes(message: HubMessage): ReadOnlyMemory_1<System_Internal.Byte>;
     IsVersionSupported(version: int): boolean;
-    TryParseMessage(input: ReadOnlySequence<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
-    WriteMessage(message: HubMessage, output: IBufferWriter<System_Internal.Byte>): void;
+    TryParseMessage(input: ReadOnlySequence_1<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
+    WriteMessage(message: HubMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
 }
 
 
 export const JsonHubProtocol: {
     new(): JsonHubProtocol;
-    new(options: IOptions<JsonHubProtocolOptions>): JsonHubProtocol;
+    new(options: IOptions_1<JsonHubProtocolOptions>): JsonHubProtocol;
 };
 
 
 export interface __JsonHubProtocol$views {
     As_IHubProtocol(): IHubProtocol$instance;
 }
-
-export interface JsonHubProtocol$instance extends IHubProtocol$instance {}
 
 export type JsonHubProtocol = JsonHubProtocol$instance & __JsonHubProtocol$views;
 
@@ -218,12 +216,12 @@ export const PingMessage: {
 export type PingMessage = PingMessage$instance;
 
 export interface RawResult$instance {
-    RawSerializedData: ReadOnlySequence<System_Internal.Byte>;
+    RawSerializedData: ReadOnlySequence_1<System_Internal.Byte>;
 }
 
 
 export const RawResult: {
-    new(rawBytes: ReadOnlySequence<System_Internal.Byte>): RawResult;
+    new(rawBytes: ReadOnlySequence_1<System_Internal.Byte>): RawResult;
 };
 
 
@@ -282,11 +280,11 @@ export const StreamItemMessage: {
 export type StreamItemMessage = StreamItemMessage$instance;
 
 export abstract class HandshakeProtocol$instance {
-    static GetSuccessfulHandshake(protocol: IHubProtocol): ReadOnlySpan<System_Internal.Byte>;
-    static TryParseRequestMessage(buffer: ReadOnlySequence<System_Internal.Byte>, requestMessage: HandshakeRequestMessage): boolean;
-    static TryParseResponseMessage(buffer: ReadOnlySequence<System_Internal.Byte>, responseMessage: HandshakeResponseMessage): boolean;
-    static WriteRequestMessage(requestMessage: HandshakeRequestMessage, output: IBufferWriter<System_Internal.Byte>): void;
-    static WriteResponseMessage(responseMessage: HandshakeResponseMessage, output: IBufferWriter<System_Internal.Byte>): void;
+    static GetSuccessfulHandshake(protocol: IHubProtocol): ReadOnlySpan_1<System_Internal.Byte>;
+    static TryParseRequestMessage(buffer: ReadOnlySequence_1<System_Internal.Byte>, requestMessage: HandshakeRequestMessage): boolean;
+    static TryParseResponseMessage(buffer: ReadOnlySequence_1<System_Internal.Byte>, responseMessage: HandshakeResponseMessage): boolean;
+    static WriteRequestMessage(requestMessage: HandshakeRequestMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
+    static WriteResponseMessage(responseMessage: HandshakeResponseMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
 }
 
 

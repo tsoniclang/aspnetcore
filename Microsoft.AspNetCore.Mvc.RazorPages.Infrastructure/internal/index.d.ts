@@ -26,14 +26,14 @@ import type { ICompositeViewEngine, IView, IViewEngine } from "../../Microsoft.A
 import * as Microsoft_AspNetCore_Mvc_ViewFeatures_Internal from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
 import type { ITempDataDictionary, ITempDataDictionaryFactory, ViewDataDictionary, ViewExecutor } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js";
 import type { ActionContext, MvcOptions, MvcViewOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import type { IDictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DiagnosticListener } from "@tsonic/dotnet/System.Diagnostics.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Attribute, Boolean as ClrBoolean, Func, Int32, Nullable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { MethodInfo, ParameterInfo, PropertyInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IDictionary_2, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DiagnosticListener } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import type { MethodInfo, ParameterInfo, PropertyInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Task, Task_1, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Attribute, Boolean as ClrBoolean, Func_2, Func_3, Int32, Nullable_1, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IPageHandlerMethodSelector$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageHandlerMethodSelector: never;
@@ -53,7 +53,7 @@ export interface IPageLoader$instance {
 
 export type IPageLoader = IPageLoader$instance;
 
-export interface CompiledPageActionDescriptorProvider$instance {
+export interface CompiledPageActionDescriptorProvider$instance extends Microsoft_AspNetCore_Mvc_Abstractions_Internal.IActionDescriptorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider: never;
 
     readonly Order: int;
@@ -63,15 +63,13 @@ export interface CompiledPageActionDescriptorProvider$instance {
 
 
 export const CompiledPageActionDescriptorProvider: {
-    new(pageRouteModelProviders: IEnumerable<IPageRouteModelProvider>, applicationModelProviders: IEnumerable<IPageApplicationModelProvider>, applicationPartManager: ApplicationPartManager, mvcOptions: IOptions<MvcOptions>, pageOptions: IOptions<RazorPagesOptions>): CompiledPageActionDescriptorProvider;
+    new(pageRouteModelProviders: IEnumerable_1<IPageRouteModelProvider>, applicationModelProviders: IEnumerable_1<IPageApplicationModelProvider>, applicationPartManager: ApplicationPartManager, mvcOptions: IOptions_1<MvcOptions>, pageOptions: IOptions_1<RazorPagesOptions>): CompiledPageActionDescriptorProvider;
 };
 
 
 export interface __CompiledPageActionDescriptorProvider$views {
     As_IActionDescriptorProvider(): Microsoft_AspNetCore_Mvc_Abstractions_Internal.IActionDescriptorProvider$instance;
 }
-
-export interface CompiledPageActionDescriptorProvider$instance extends Microsoft_AspNetCore_Mvc_Abstractions_Internal.IActionDescriptorProvider$instance {}
 
 export type CompiledPageActionDescriptorProvider = CompiledPageActionDescriptorProvider$instance & __CompiledPageActionDescriptorProvider$views;
 
@@ -81,7 +79,7 @@ export interface HandlerMethodDescriptor$instance {
     MethodInfo: MethodInfo;
     get Name(): string | undefined;
     set Name(value: string | undefined);
-    Parameters: IList<HandlerParameterDescriptor>;
+    Parameters: IList_1<HandlerParameterDescriptor>;
 }
 
 
@@ -121,7 +119,7 @@ export interface PageActionDescriptorProvider$instance {
 
 
 export const PageActionDescriptorProvider: {
-    new(pageRouteModelProviders: IEnumerable<IPageRouteModelProvider>, mvcOptionsAccessor: IOptions<MvcOptions>, pagesOptionsAccessor: IOptions<RazorPagesOptions>): PageActionDescriptorProvider;
+    new(pageRouteModelProviders: IEnumerable_1<IPageRouteModelProvider>, mvcOptionsAccessor: IOptions_1<MvcOptions>, pagesOptionsAccessor: IOptions_1<RazorPagesOptions>): PageActionDescriptorProvider;
 };
 
 
@@ -132,7 +130,7 @@ export interface __PageActionDescriptorProvider$views {
 export type PageActionDescriptorProvider = PageActionDescriptorProvider$instance & __PageActionDescriptorProvider$views;
 
 
-export interface PageBoundPropertyDescriptor$instance extends ParameterDescriptor {
+export interface PageBoundPropertyDescriptor$instance extends ParameterDescriptor, Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IPropertyInfoParameterDescriptor$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor: never;
 
     Property: PropertyInfo;
@@ -148,16 +146,14 @@ export interface __PageBoundPropertyDescriptor$views {
     As_IPropertyInfoParameterDescriptor(): Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IPropertyInfoParameterDescriptor$instance;
 }
 
-export interface PageBoundPropertyDescriptor$instance extends Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IPropertyInfoParameterDescriptor$instance {}
-
 export type PageBoundPropertyDescriptor = PageBoundPropertyDescriptor$instance & __PageBoundPropertyDescriptor$views;
 
 
-export interface PageLoader$instance {
+export interface PageLoader$instance extends IPageLoader$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageLoader: never;
 
-    LoadAsync(actionDescriptor: PageActionDescriptor): Task<CompiledPageActionDescriptor>;
-    LoadAsync(actionDescriptor: PageActionDescriptor, endpointMetadata: EndpointMetadataCollection): Task<CompiledPageActionDescriptor>;
+    LoadAsync(actionDescriptor: PageActionDescriptor): Task_1<CompiledPageActionDescriptor>;
+    LoadAsync(actionDescriptor: PageActionDescriptor, endpointMetadata: EndpointMetadataCollection): Task_1<CompiledPageActionDescriptor>;
 }
 
 
@@ -168,8 +164,6 @@ export const PageLoader: (abstract new() => PageLoader) & {
 export interface __PageLoader$views {
     As_IPageLoader(): IPageLoader$instance;
 }
-
-export interface PageLoader$instance extends IPageLoader$instance {}
 
 export type PageLoader = PageLoader$instance & __PageLoader$views;
 
@@ -187,7 +181,7 @@ export type PageModelAttribute = PageModelAttribute$instance;
 
 export interface PageResultExecutor$instance extends ViewExecutor {
     ExecuteAsync(pageContext: PageContext, result: PageResult): Task;
-    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
 }
 
 
@@ -198,10 +192,10 @@ export const PageResultExecutor: {
 
 export type PageResultExecutor = PageResultExecutor$instance;
 
-export interface PageViewLocationExpander$instance {
+export interface PageViewLocationExpander$instance extends Microsoft_AspNetCore_Mvc_Razor_Internal.IViewLocationExpander$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander: never;
 
-    ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable<System_Internal.String>): IEnumerable<System_Internal.String>;
+    ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable_1<System_Internal.String>): IEnumerable_1<System_Internal.String>;
     PopulateValues(context: ViewLocationExpanderContext): void;
 }
 
@@ -215,12 +209,10 @@ export interface __PageViewLocationExpander$views {
     As_IViewLocationExpander(): Microsoft_AspNetCore_Mvc_Razor_Internal.IViewLocationExpander$instance;
 }
 
-export interface PageViewLocationExpander$instance extends Microsoft_AspNetCore_Mvc_Razor_Internal.IViewLocationExpander$instance {}
-
 export type PageViewLocationExpander = PageViewLocationExpander$instance & __PageViewLocationExpander$views;
 
 
-export interface RazorPageAdapter$instance {
+export interface RazorPageAdapter$instance extends Microsoft_AspNetCore_Mvc_Razor_Internal.IRazorPage$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IModelTypeProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
@@ -230,8 +222,8 @@ export interface RazorPageAdapter$instance {
     get Layout(): string | undefined;
     set Layout(value: string | undefined);
     Path: string;
-    PreviousSectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
-    readonly SectionWriters: IDictionary<System_Internal.String, RenderAsyncDelegate>;
+    PreviousSectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
+    readonly SectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
     ViewContext: ViewContext;
     EnsureRenderedBodyOrSections(): void;
     ExecuteAsync(): Task;
@@ -246,8 +238,6 @@ export const RazorPageAdapter: {
 export interface __RazorPageAdapter$views {
     As_IRazorPage(): Microsoft_AspNetCore_Mvc_Razor_Internal.IRazorPage$instance;
 }
-
-export interface RazorPageAdapter$instance extends Microsoft_AspNetCore_Mvc_Razor_Internal.IRazorPage$instance {}
 
 export type RazorPageAdapter = RazorPageAdapter$instance & __RazorPageAdapter$views;
 
@@ -264,11 +254,11 @@ export const RazorPageAttribute: {
 
 export type RazorPageAttribute = RazorPageAttribute$instance;
 
-export interface ServiceBasedPageModelActivatorProvider$instance {
+export interface ServiceBasedPageModelActivatorProvider$instance extends Microsoft_AspNetCore_Mvc_RazorPages_Internal.IPageModelActivatorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider: never;
 
-    CreateActivator(descriptor: CompiledPageActionDescriptor): Func<PageContext, unknown>;
-    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action<PageContext, unknown> | undefined;
+    CreateActivator(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, unknown>;
+    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action_2<PageContext, unknown> | undefined;
 }
 
 
@@ -280,8 +270,6 @@ export const ServiceBasedPageModelActivatorProvider: {
 export interface __ServiceBasedPageModelActivatorProvider$views {
     As_IPageModelActivatorProvider(): Microsoft_AspNetCore_Mvc_RazorPages_Internal.IPageModelActivatorProvider$instance;
 }
-
-export interface ServiceBasedPageModelActivatorProvider$instance extends Microsoft_AspNetCore_Mvc_RazorPages_Internal.IPageModelActivatorProvider$instance {}
 
 export type ServiceBasedPageModelActivatorProvider = ServiceBasedPageModelActivatorProvider$instance & __ServiceBasedPageModelActivatorProvider$views;
 

@@ -9,10 +9,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as Microsoft_AspNetCore_Authentication_Internal from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
 import type { AuthenticateResult, AuthenticationProperties, AuthenticationScheme, AuthenticationSchemeOptions, AuthenticationTicket, ISecureDataFormat_1, ResultContext_1 } from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
 import type { HttpContext, HttpRequest, HttpResponse } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Exception, Func, Int64, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Exception, Func_2, Int64, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface AccessTokenResponse$instance {
     AccessToken: string;
@@ -30,7 +30,7 @@ export const AccessTokenResponse: {
 export type AccessTokenResponse = AccessTokenResponse$instance;
 
 export interface BearerTokenEvents$instance {
-    OnMessageReceived: Func<MessageReceivedContext, Task>;
+    OnMessageReceived: Func_2<MessageReceivedContext, Task>;
     MessageReceivedAsync(context: MessageReceivedContext): Task;
 }
 

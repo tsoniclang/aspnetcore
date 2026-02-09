@@ -9,16 +9,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { WebSocketOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { HttpContext, RequestDelegate, WebSocketAcceptContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Int32, Nullable, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Int32, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface ExtendedWebSocketAcceptContext$instance extends WebSocketAcceptContext {
-    KeepAliveInterval: Nullable<TimeSpan>;
-    ReceiveBufferSize: Nullable<System_Internal.Int32>;
+    KeepAliveInterval: Nullable_1<TimeSpan>;
+    ReceiveBufferSize: Nullable_1<System_Internal.Int32>;
     get SubProtocol(): string | undefined;
     set SubProtocol(value: string | undefined);
 }
@@ -37,14 +37,14 @@ export interface WebSocketMiddleware$instance {
 
 
 export const WebSocketMiddleware: {
-    new(next: RequestDelegate, options: IOptions<WebSocketOptions>, loggerFactory: ILoggerFactory): WebSocketMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<WebSocketOptions>, loggerFactory: ILoggerFactory): WebSocketMiddleware;
 };
 
 
 export type WebSocketMiddleware = WebSocketMiddleware$instance;
 
 export abstract class WebSocketsDependencyInjectionExtensions$instance {
-    static AddWebSockets(services: IServiceCollection, configure: Action<WebSocketOptions>): IServiceCollection;
+    static AddWebSockets(services: IServiceCollection, configure: Action_1<WebSocketOptions>): IServiceCollection;
 }
 
 

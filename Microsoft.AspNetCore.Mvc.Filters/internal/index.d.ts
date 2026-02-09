@@ -14,29 +14,29 @@ import type { CompiledPageActionDescriptor, PageContext } from "../../Microsoft.
 import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { ActionContext, IActionResult } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { RouteData } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection as ICollection__System_Collections_Generic, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IList as IList__System_Collections_Generic, IReadOnlyCollection, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { Collection } from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Attribute, Boolean as ClrBoolean, Exception, IAsyncResult, ICloneable, Int32, IntPtr, IServiceProvider, MulticastDelegate, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { ExceptionDispatchInfo } from "@tsonic/dotnet/System.Runtime.ExceptionServices.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1, IList_1, IReadOnlyCollection_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import type { Collection_1 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ExceptionDispatchInfo } from "@tsonic/dotnet/System.Runtime.ExceptionServices/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Attribute, Boolean as ClrBoolean, Exception, IAsyncResult, ICloneable, Int32, IntPtr, IServiceProvider, MulticastDelegate, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export type ActionExecutionDelegate = () => Task<ActionExecutedContext>;
-
-
-export type PageHandlerExecutionDelegate = () => Task<PageHandlerExecutedContext>;
+export type ActionExecutionDelegate = () => Task_1<ActionExecutedContext>;
 
 
-export type ResourceExecutionDelegate = () => Task<ResourceExecutedContext>;
+export type PageHandlerExecutionDelegate = () => Task_1<PageHandlerExecutedContext>;
 
 
-export type ResultExecutionDelegate = () => Task<ResultExecutedContext>;
+export type ResourceExecutionDelegate = () => Task_1<ResourceExecutedContext>;
+
+
+export type ResultExecutionDelegate = () => Task_1<ResultExecutedContext>;
 
 
 export interface IActionFilter$instance extends IFilterMetadata {
@@ -264,14 +264,14 @@ export interface ActionExecutedContext$instance extends FilterContext {
 
 
 export const ActionExecutedContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>, controller: unknown): ActionExecutedContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, controller: unknown): ActionExecutedContext;
 };
 
 
 export type ActionExecutedContext = ActionExecutedContext$instance;
 
 export interface ActionExecutingContext$instance extends FilterContext {
-    readonly ActionArguments: IDictionary<System_Internal.String, unknown | undefined>;
+    readonly ActionArguments: IDictionary_2<System_Internal.String, unknown | undefined>;
     readonly Controller: unknown;
     get Result(): IActionResult | undefined;
     set Result(value: IActionResult | undefined);
@@ -279,13 +279,13 @@ export interface ActionExecutingContext$instance extends FilterContext {
 
 
 export const ActionExecutingContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>, actionArguments: IDictionary<System_Internal.String, unknown>, controller: unknown): ActionExecutingContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, actionArguments: IDictionary_2<System_Internal.String, unknown>, controller: unknown): ActionExecutingContext;
 };
 
 
 export type ActionExecutingContext = ActionExecutingContext$instance;
 
-export interface ActionFilterAttribute$instance extends Attribute, IFilterMetadata {
+export interface ActionFilterAttribute$instance extends Attribute, IFilterMetadata, IActionFilter$instance, IAsyncActionFilter$instance, IAsyncResultFilter$instance, IResultFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncActionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncResultFilter: never;
@@ -315,8 +315,6 @@ export interface __ActionFilterAttribute$views {
     As_IResultFilter(): IResultFilter$instance;
 }
 
-export interface ActionFilterAttribute$instance extends IActionFilter$instance, IAsyncActionFilter$instance, IAsyncResultFilter$instance, IResultFilter$instance {}
-
 export type ActionFilterAttribute = ActionFilterAttribute$instance & __ActionFilterAttribute$views;
 
 
@@ -327,7 +325,7 @@ export interface AuthorizationFilterContext$instance extends FilterContext {
 
 
 export const AuthorizationFilterContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>): AuthorizationFilterContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>): AuthorizationFilterContext;
 };
 
 
@@ -344,13 +342,13 @@ export interface ExceptionContext$instance extends FilterContext {
 
 
 export const ExceptionContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>): ExceptionContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>): ExceptionContext;
 };
 
 
 export type ExceptionContext = ExceptionContext$instance;
 
-export interface ExceptionFilterAttribute$instance extends Attribute, IFilterMetadata {
+export interface ExceptionFilterAttribute$instance extends Attribute, IFilterMetadata, IAsyncExceptionFilter$instance, IExceptionFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncExceptionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IExceptionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -372,12 +370,10 @@ export interface __ExceptionFilterAttribute$views {
     As_IOrderedFilter(): IOrderedFilter$instance;
 }
 
-export interface ExceptionFilterAttribute$instance extends IAsyncExceptionFilter$instance, IExceptionFilter$instance {}
-
 export type ExceptionFilterAttribute = ExceptionFilterAttribute$instance & __ExceptionFilterAttribute$views;
 
 
-export interface FilterCollection$instance extends Collection<IFilterMetadata> {
+export interface FilterCollection$instance extends Collection_1<IFilterMetadata> {
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -406,13 +402,13 @@ export const FilterCollection: {
 export type FilterCollection = FilterCollection$instance;
 
 export interface FilterContext$instance extends ActionContext {
-    readonly Filters: IList__System_Collections_Generic<IFilterMetadata>;
+    readonly Filters: IList_1<IFilterMetadata>;
     FindEffectivePolicy<TMetadata extends IFilterMetadata>(): TMetadata;
     IsEffectivePolicy<TMetadata extends IFilterMetadata>(policy: TMetadata): boolean;
 }
 
 
-export const FilterContext: (abstract new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>) => FilterContext) & {
+export const FilterContext: (abstract new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>) => FilterContext) & {
 };
 
 
@@ -450,12 +446,12 @@ export type FilterItem = FilterItem$instance;
 
 export interface FilterProviderContext$instance {
     ActionContext: ActionContext;
-    Results: IList__System_Collections_Generic<FilterItem>;
+    Results: IList_1<FilterItem>;
 }
 
 
 export const FilterProviderContext: {
-    new(actionContext: ActionContext, items: IList__System_Collections_Generic<FilterItem>): FilterProviderContext;
+    new(actionContext: ActionContext, items: IList_1<FilterItem>): FilterProviderContext;
 };
 
 
@@ -477,7 +473,7 @@ export interface PageHandlerExecutedContext$instance extends FilterContext {
 
 
 export const PageHandlerExecutedContext: {
-    new(pageContext: PageContext, filters: IList__System_Collections_Generic<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor, handlerInstance: unknown): PageHandlerExecutedContext;
+    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor, handlerInstance: unknown): PageHandlerExecutedContext;
 };
 
 
@@ -485,7 +481,7 @@ export type PageHandlerExecutedContext = PageHandlerExecutedContext$instance;
 
 export interface PageHandlerExecutingContext$instance extends FilterContext {
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
-    readonly HandlerArguments: IDictionary<System_Internal.String, unknown | undefined>;
+    readonly HandlerArguments: IDictionary_2<System_Internal.String, unknown | undefined>;
     readonly HandlerInstance: unknown;
     readonly HandlerMethod: HandlerMethodDescriptor | undefined;
     get Result(): IActionResult | undefined;
@@ -494,7 +490,7 @@ export interface PageHandlerExecutingContext$instance extends FilterContext {
 
 
 export const PageHandlerExecutingContext: {
-    new(pageContext: PageContext, filters: IList__System_Collections_Generic<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor, handlerArguments: IDictionary<System_Internal.String, unknown>, handlerInstance: unknown): PageHandlerExecutingContext;
+    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor, handlerArguments: IDictionary_2<System_Internal.String, unknown>, handlerInstance: unknown): PageHandlerExecutingContext;
 };
 
 
@@ -509,7 +505,7 @@ export interface PageHandlerSelectedContext$instance extends FilterContext {
 
 
 export const PageHandlerSelectedContext: {
-    new(pageContext: PageContext, filters: IList__System_Collections_Generic<IFilterMetadata>, handlerInstance: unknown): PageHandlerSelectedContext;
+    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerInstance: unknown): PageHandlerSelectedContext;
 };
 
 
@@ -528,7 +524,7 @@ export interface ResourceExecutedContext$instance extends FilterContext {
 
 
 export const ResourceExecutedContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>): ResourceExecutedContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>): ResourceExecutedContext;
 };
 
 
@@ -537,12 +533,12 @@ export type ResourceExecutedContext = ResourceExecutedContext$instance;
 export interface ResourceExecutingContext$instance extends FilterContext {
     get Result(): IActionResult | undefined;
     set Result(value: IActionResult | undefined);
-    readonly ValueProviderFactories: IList__System_Collections_Generic<IValueProviderFactory>;
+    readonly ValueProviderFactories: IList_1<IValueProviderFactory>;
 }
 
 
 export const ResourceExecutingContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>, valueProviderFactories: IList__System_Collections_Generic<IValueProviderFactory>): ResourceExecutingContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, valueProviderFactories: IList_1<IValueProviderFactory>): ResourceExecutingContext;
 };
 
 
@@ -561,7 +557,7 @@ export interface ResultExecutedContext$instance extends FilterContext {
 
 
 export const ResultExecutedContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>, result: IActionResult, controller: unknown): ResultExecutedContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, result: IActionResult, controller: unknown): ResultExecutedContext;
 };
 
 
@@ -575,13 +571,13 @@ export interface ResultExecutingContext$instance extends FilterContext {
 
 
 export const ResultExecutingContext: {
-    new(actionContext: ActionContext, filters: IList__System_Collections_Generic<IFilterMetadata>, result: IActionResult, controller: unknown): ResultExecutingContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, result: IActionResult, controller: unknown): ResultExecutingContext;
 };
 
 
 export type ResultExecutingContext = ResultExecutingContext$instance;
 
-export interface ResultFilterAttribute$instance extends Attribute, IFilterMetadata {
+export interface ResultFilterAttribute$instance extends Attribute, IFilterMetadata, IAsyncResultFilter$instance, IResultFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncResultFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -603,8 +599,6 @@ export interface __ResultFilterAttribute$views {
     As_IOrderedFilter(): IOrderedFilter$instance;
     As_IResultFilter(): IResultFilter$instance;
 }
-
-export interface ResultFilterAttribute$instance extends IAsyncResultFilter$instance, IResultFilter$instance {}
 
 export type ResultFilterAttribute = ResultFilterAttribute$instance & __ResultFilterAttribute$views;
 

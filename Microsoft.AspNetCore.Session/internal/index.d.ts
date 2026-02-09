@@ -15,30 +15,30 @@ import * as Microsoft_AspNetCore_Http_Features_Internal from "../../Microsoft.As
 import type { ISessionFeature } from "../../Microsoft.AspNetCore.Http.Features/internal/index.js";
 import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { HttpContext, ISession, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Func, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IDistributedCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Distributed.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Func_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IDistributedCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Distributed/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface ISessionStore$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Session_ISessionStore: never;
 
-    Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
+    Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func_1<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
 }
 
 
 export type ISessionStore = ISessionStore$instance;
 
-export interface DistributedSession$instance {
+export interface DistributedSession$instance extends Microsoft_AspNetCore_Http_Internal.ISession$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_ISession: never;
 
     readonly Id: string;
     readonly IsAvailable: boolean;
-    readonly Keys: IEnumerable<System_Internal.String>;
+    readonly Keys: IEnumerable_1<System_Internal.String>;
     Clear(): void;
     CommitAsync(cancellationToken?: CancellationToken): Task;
     LoadAsync(cancellationToken?: CancellationToken): Task;
@@ -49,7 +49,7 @@ export interface DistributedSession$instance {
 
 
 export const DistributedSession: {
-    new(cache: IDistributedCache, sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, loggerFactory: ILoggerFactory, isNewSessionKey: boolean): DistributedSession;
+    new(cache: IDistributedCache, sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func_1<System_Internal.Boolean>, loggerFactory: ILoggerFactory, isNewSessionKey: boolean): DistributedSession;
 };
 
 
@@ -57,15 +57,13 @@ export interface __DistributedSession$views {
     As_ISession(): Microsoft_AspNetCore_Http_Internal.ISession$instance;
 }
 
-export interface DistributedSession$instance extends Microsoft_AspNetCore_Http_Internal.ISession$instance {}
-
 export type DistributedSession = DistributedSession$instance & __DistributedSession$views;
 
 
-export interface DistributedSessionStore$instance {
+export interface DistributedSessionStore$instance extends ISessionStore$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Session_ISessionStore: never;
 
-    Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
+    Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func_1<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
 }
 
 
@@ -78,12 +76,10 @@ export interface __DistributedSessionStore$views {
     As_ISessionStore(): ISessionStore$instance;
 }
 
-export interface DistributedSessionStore$instance extends ISessionStore$instance {}
-
 export type DistributedSessionStore = DistributedSessionStore$instance & __DistributedSessionStore$views;
 
 
-export interface SessionFeature$instance {
+export interface SessionFeature$instance extends Microsoft_AspNetCore_Http_Features_Internal.ISessionFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ISessionFeature: never;
 
     Session: ISession;
@@ -99,8 +95,6 @@ export interface __SessionFeature$views {
     As_ISessionFeature(): Microsoft_AspNetCore_Http_Features_Internal.ISessionFeature$instance;
 }
 
-export interface SessionFeature$instance extends Microsoft_AspNetCore_Http_Features_Internal.ISessionFeature$instance {}
-
 export type SessionFeature = SessionFeature$instance & __SessionFeature$views;
 
 
@@ -110,7 +104,7 @@ export interface SessionMiddleware$instance {
 
 
 export const SessionMiddleware: {
-    new(next: RequestDelegate, loggerFactory: ILoggerFactory, dataProtectionProvider: IDataProtectionProvider, sessionStore: ISessionStore, options: IOptions<SessionOptions>): SessionMiddleware;
+    new(next: RequestDelegate, loggerFactory: ILoggerFactory, dataProtectionProvider: IDataProtectionProvider, sessionStore: ISessionStore, options: IOptions_1<SessionOptions>): SessionMiddleware;
 };
 
 

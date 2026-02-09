@@ -8,8 +8,8 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { MinDataRate } from "../../Microsoft.AspNetCore.Server.Kestrel.Core/internal/index.js";
-import type { Byte, Int32, ReadOnlyMemory, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { SslStream } from "@tsonic/dotnet/System.Net.Security.js";
+import type { SslStream } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import type { Byte, Int32, ReadOnlyMemory_1, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IConnectionTimeoutFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature: never;
@@ -71,7 +71,7 @@ export type ISslStreamFeature = ISslStreamFeature$instance;
 export interface ITlsApplicationProtocolFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature: never;
 
-    readonly ApplicationProtocol: ReadOnlyMemory<System_Internal.Byte>;
+    readonly ApplicationProtocol: ReadOnlyMemory_1<System_Internal.Byte>;
 }
 
 

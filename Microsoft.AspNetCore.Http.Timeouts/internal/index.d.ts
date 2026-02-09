@@ -7,10 +7,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Int32, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
+import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Int32, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IHttpRequestTimeoutFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Timeouts_IHttpRequestTimeoutFeature: never;
@@ -36,7 +36,7 @@ export type DisableRequestTimeoutAttribute = DisableRequestTimeoutAttribute$inst
 
 export interface RequestTimeoutAttribute$instance extends Attribute {
     readonly PolicyName: string | undefined;
-    readonly Timeout: Nullable<TimeSpan>;
+    readonly Timeout: Nullable_1<TimeSpan>;
 }
 
 
@@ -51,7 +51,7 @@ export type RequestTimeoutAttribute = RequestTimeoutAttribute$instance;
 export interface RequestTimeoutOptions$instance {
     get DefaultPolicy(): RequestTimeoutPolicy | undefined;
     set DefaultPolicy(value: RequestTimeoutPolicy | undefined);
-    readonly Policies: IDictionary<System_Internal.String, RequestTimeoutPolicy>;
+    readonly Policies: IDictionary_2<System_Internal.String, RequestTimeoutPolicy>;
     AddPolicy(policyName: string, timeout: TimeSpan): RequestTimeoutOptions;
     AddPolicy(policyName: string, policy: RequestTimeoutPolicy): RequestTimeoutOptions;
 }
@@ -65,8 +65,8 @@ export const RequestTimeoutOptions: {
 export type RequestTimeoutOptions = RequestTimeoutOptions$instance;
 
 export interface RequestTimeoutPolicy$instance {
-    Timeout: Nullable<TimeSpan>;
-    TimeoutStatusCode: Nullable<System_Internal.Int32>;
+    Timeout: Nullable_1<TimeSpan>;
+    TimeoutStatusCode: Nullable_1<System_Internal.Int32>;
     get WriteTimeoutResponse(): RequestDelegate | undefined;
     set WriteTimeoutResponse(value: RequestDelegate | undefined);
 }

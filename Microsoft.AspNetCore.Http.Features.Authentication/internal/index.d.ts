@@ -6,9 +6,9 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IHttpAuthenticationFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature: never;
@@ -20,7 +20,7 @@ export interface IHttpAuthenticationFeature$instance {
 
 export type IHttpAuthenticationFeature = IHttpAuthenticationFeature$instance;
 
-export interface HttpAuthenticationFeature$instance {
+export interface HttpAuthenticationFeature$instance extends IHttpAuthenticationFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature: never;
 
     get User(): ClaimsPrincipal | undefined;
@@ -36,8 +36,6 @@ export const HttpAuthenticationFeature: {
 export interface __HttpAuthenticationFeature$views {
     As_IHttpAuthenticationFeature(): IHttpAuthenticationFeature$instance;
 }
-
-export interface HttpAuthenticationFeature$instance extends IHttpAuthenticationFeature$instance {}
 
 export type HttpAuthenticationFeature = HttpAuthenticationFeature$instance & __HttpAuthenticationFeature$views;
 

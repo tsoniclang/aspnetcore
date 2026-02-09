@@ -9,9 +9,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { SequenceReader } from "@tsonic/dotnet/System.Buffers.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan, SByte, Span, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { SequenceReader_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan_1, SByte, Span_1, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum HttpMethod {
     Get = 0,
@@ -47,9 +47,9 @@ export enum HttpVersion {
 export interface IHttpHeadersHandler$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler: never;
 
-    OnHeader(name: ReadOnlySpan<System_Internal.Byte>, value: ReadOnlySpan<System_Internal.Byte>): void;
+    OnHeader(name: ReadOnlySpan_1<System_Internal.Byte>, value: ReadOnlySpan_1<System_Internal.Byte>): void;
     OnHeadersComplete(endStream: boolean): void;
-    OnStaticIndexedHeader(index: int, value: ReadOnlySpan<System_Internal.Byte>): void;
+    OnStaticIndexedHeader(index: int, value: ReadOnlySpan_1<System_Internal.Byte>): void;
     OnStaticIndexedHeader(index: int): void;
 }
 
@@ -59,7 +59,7 @@ export type IHttpHeadersHandler = IHttpHeadersHandler$instance;
 export interface IHttpRequestLineHandler$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler: never;
 
-    OnStartLine(versionAndMethod: HttpVersionAndMethod, targetPath: TargetOffsetPathLength, startLine: Span<System_Internal.Byte>): void;
+    OnStartLine(versionAndMethod: HttpVersionAndMethod, targetPath: TargetOffsetPathLength, startLine: Span_1<System_Internal.Byte>): void;
 }
 
 
@@ -96,8 +96,8 @@ export type TargetOffsetPathLength = TargetOffsetPathLength$instance;
 export interface HttpParser_1$instance<TRequestHandler extends IHttpHeadersHandler & IHttpRequestLineHandler> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpParser_1: never;
 
-    ParseHeaders(handler: TRequestHandler, reader: SequenceReader<System_Internal.Byte>): boolean;
-    ParseRequestLine(handler: TRequestHandler, reader: SequenceReader<System_Internal.Byte>): boolean;
+    ParseHeaders(handler: TRequestHandler, reader: SequenceReader_1<System_Internal.Byte>): boolean;
+    ParseRequestLine(handler: TRequestHandler, reader: SequenceReader_1<System_Internal.Byte>): boolean;
 }
 
 

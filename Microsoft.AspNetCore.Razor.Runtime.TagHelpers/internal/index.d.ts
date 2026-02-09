@@ -7,30 +7,30 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HtmlAttributeValueStyle, ITagHelper, TagHelperAttribute, TagHelperContent, TagHelperContext, TagHelperOutput, TagMode } from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
-import type { IDictionary, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IDictionary_2, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Func_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface TagHelperExecutionContext$instance {
     readonly ChildContentRetrieved: boolean;
     readonly Context: TagHelperContext;
-    Items: IDictionary<unknown, unknown>;
+    Items: IDictionary_2<unknown, unknown>;
     Output: TagHelperOutput;
-    readonly TagHelpers: IList<ITagHelper>;
+    readonly TagHelpers: IList_1<ITagHelper>;
     Add(tagHelper: ITagHelper): void;
     AddHtmlAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
     AddHtmlAttribute(attribute: TagHelperAttribute): void;
     AddTagHelperAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
     AddTagHelperAttribute(attribute: TagHelperAttribute): void;
-    Reinitialize(tagName: string, tagMode: TagMode, items: IDictionary<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func<Task>): void;
+    Reinitialize(tagName: string, tagMode: TagMode, items: IDictionary_2<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func_1<Task>): void;
     SetOutputContentAsync(): Task;
 }
 
 
 export const TagHelperExecutionContext: {
-    new(tagName: string, tagMode: TagMode, items: IDictionary<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func<Task>, startTagHelperWritingScope: Action<HtmlEncoder>, endTagHelperWritingScope: Func<TagHelperContent>): TagHelperExecutionContext;
+    new(tagName: string, tagMode: TagMode, items: IDictionary_2<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func_1<Task>, startTagHelperWritingScope: Action_1<HtmlEncoder>, endTagHelperWritingScope: Func_1<TagHelperContent>): TagHelperExecutionContext;
 };
 
 
@@ -49,13 +49,13 @@ export const TagHelperRunner: {
 export type TagHelperRunner = TagHelperRunner$instance;
 
 export interface TagHelperScopeManager$instance {
-    Begin(tagName: string, tagMode: TagMode, uniqueId: string, executeChildContentAsync: Func<Task>): TagHelperExecutionContext;
+    Begin(tagName: string, tagMode: TagMode, uniqueId: string, executeChildContentAsync: Func_1<Task>): TagHelperExecutionContext;
     End(): TagHelperExecutionContext;
 }
 
 
 export const TagHelperScopeManager: {
-    new(startTagHelperWritingScope: Action<HtmlEncoder>, endTagHelperWritingScope: Func<TagHelperContent>): TagHelperScopeManager;
+    new(startTagHelperWritingScope: Action_1<HtmlEncoder>, endTagHelperWritingScope: Func_1<TagHelperContent>): TagHelperScopeManager;
 };
 
 

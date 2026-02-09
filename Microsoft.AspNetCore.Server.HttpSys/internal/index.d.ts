@@ -9,17 +9,17 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel.js";
-import type { Win32Exception } from "@tsonic/dotnet/System.ComponentModel.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Span, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { GenericSecurityDescriptor } from "@tsonic/dotnet/System.Security.AccessControl.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IEnumerable_1, IEnumerator_1, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import type { Win32Exception } from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { GenericSecurityDescriptor } from "@tsonic/dotnet/System.Security.AccessControl/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Span_1, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum AuthenticationSchemes {
     None = 0,
@@ -98,7 +98,7 @@ export type IHttpSysRequestDelegationFeature = IHttpSysRequestDelegationFeature$
 export interface IHttpSysRequestInfoFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature: never;
 
-    readonly RequestInfo: IReadOnlyDictionary<System_Internal.Int32, ReadOnlyMemory<System_Internal.Byte>>;
+    readonly RequestInfo: IReadOnlyDictionary_2<System_Internal.Int32, ReadOnlyMemory_1<System_Internal.Byte>>;
 }
 
 
@@ -107,7 +107,7 @@ export type IHttpSysRequestInfoFeature = IHttpSysRequestInfoFeature$instance;
 export interface IHttpSysRequestPropertyFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestPropertyFeature: never;
 
-    TryGetTlsClientHello(tlsClientHelloBytesDestination: Span<System_Internal.Byte>, bytesReturned: int): boolean;
+    TryGetTlsClientHello(tlsClientHelloBytesDestination: Span_1<System_Internal.Byte>, bytesReturned: int): boolean;
 }
 
 
@@ -116,7 +116,7 @@ export type IHttpSysRequestPropertyFeature = IHttpSysRequestPropertyFeature$inst
 export interface IHttpSysRequestTimingFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestTimingFeature: never;
 
-    readonly Timestamps: ReadOnlySpan<System_Internal.Int64>;
+    readonly Timestamps: ReadOnlySpan_1<System_Internal.Int64>;
     TryGetElapsedTime(startingTimestampType: HttpSysRequestTimingType, endingTimestampType: HttpSysRequestTimingType, elapsed: TimeSpan): boolean;
     TryGetTimestamp(timestampType: HttpSysRequestTimingType, timestamp: long): boolean;
 }
@@ -186,8 +186,8 @@ export interface HttpSysOptions$instance {
     EnableResponseCaching: boolean;
     Http503Verbosity: Http503VerbosityLevel;
     MaxAccepts: int;
-    MaxConnections: Nullable<System_Internal.Int64>;
-    MaxRequestBodySize: Nullable<System_Internal.Int64>;
+    MaxConnections: Nullable_1<System_Internal.Int64>;
+    MaxRequestBodySize: Nullable_1<System_Internal.Int64>;
     RequestQueueLimit: long;
     RequestQueueMode: RequestQueueMode;
     get RequestQueueName(): string | undefined;
@@ -240,7 +240,7 @@ export interface UrlPrefix$instance {
 
 
 export const UrlPrefix: {
-    Create(scheme: string, host: string, portValue: Nullable<System_Internal.Int32>, path: string): UrlPrefix;
+    Create(scheme: string, host: string, portValue: Nullable_1<System_Internal.Int32>, path: string): UrlPrefix;
     Create(scheme: string, host: string, port: string, path: string): UrlPrefix;
     Create(prefix: string): UrlPrefix;
 };
@@ -260,7 +260,7 @@ export interface UrlPrefixCollection$instance {
     Clear(): void;
     Contains(item: UrlPrefix): boolean;
     CopyTo(array: UrlPrefix[], arrayIndex: int): void;
-    GetEnumerator(): IEnumerator<UrlPrefix>;
+    GetEnumerator(): IEnumerator_1<UrlPrefix>;
     Remove(prefix: string): boolean;
     Remove(item: UrlPrefix): boolean;
 }

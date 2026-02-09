@@ -7,17 +7,17 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { CookieBuilder, HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Exception, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Exception, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IAntiforgery$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgery: never;
 
     GetAndStoreTokens(httpContext: HttpContext): AntiforgeryTokenSet;
-    IsRequestValidAsync(httpContext: HttpContext): Task<System_Internal.Boolean>;
+    IsRequestValidAsync(httpContext: HttpContext): Task_1<System_Internal.Boolean>;
     SetCookieTokenAndHeader(httpContext: HttpContext): void;
     ValidateRequestAsync(httpContext: HttpContext): Task;
 }
@@ -101,7 +101,7 @@ export const AntiforgeryValidationException: {
 
 export type AntiforgeryValidationException = AntiforgeryValidationException$instance;
 
-export interface RequireAntiforgeryTokenAttribute$instance extends Attribute {
+export interface RequireAntiforgeryTokenAttribute$instance extends Attribute, IAntiforgeryMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryMetadata: never;
 
     readonly RequiresValidation: boolean;
@@ -116,8 +116,6 @@ export const RequireAntiforgeryTokenAttribute: {
 export interface __RequireAntiforgeryTokenAttribute$views {
     As_IAntiforgeryMetadata(): IAntiforgeryMetadata$instance;
 }
-
-export interface RequireAntiforgeryTokenAttribute$instance extends IAntiforgeryMetadata$instance {}
 
 export type RequireAntiforgeryTokenAttribute = RequireAntiforgeryTokenAttribute$instance & __RequireAntiforgeryTokenAttribute$views;
 

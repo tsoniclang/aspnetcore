@@ -9,12 +9,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { IApplicationBuilder, RazorComponentsEndpointConventionBuilder } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import type { IComponentRenderMode } from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IEndpointRouteBuilder, RouteEndpointBuilder } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface RenderModeEndpointProvider$instance {
-    GetEndpointBuilders(renderMode: IComponentRenderMode, applicationBuilder: IApplicationBuilder): IEnumerable<RouteEndpointBuilder>;
+    GetEndpointBuilders(renderMode: IComponentRenderMode, applicationBuilder: IApplicationBuilder): IEnumerable_1<RouteEndpointBuilder>;
     Supports(renderMode: IComponentRenderMode): boolean;
 }
 

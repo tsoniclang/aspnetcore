@@ -11,15 +11,15 @@ import type { RequestLocalizationOptions } from "../../Microsoft.AspNetCore.Buil
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import * as Microsoft_AspNetCore_Localization_Internal from "../../Microsoft.AspNetCore.Localization/internal/index.js";
 import type { IRequestCultureProvider, ProviderCultureResult, RequestCultureProvider } from "../../Microsoft.AspNetCore.Localization/internal/index.js";
-import type { String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface RouteDataRequestCultureProvider$instance extends RequestCultureProvider {
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     RouteDataStringKey: string;
     UIRouteDataStringKey: string;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | undefined>;
 }
 
 

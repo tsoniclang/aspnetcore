@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { JSComponentConfigurationStore } from "../../Microsoft.AspNetCore.Components.Web/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { JsonElement, JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
+import type { JsonElement, JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JSComponentInterop$instance {
     AddRootComponent(identifier: string, domElementSelector: string): int;

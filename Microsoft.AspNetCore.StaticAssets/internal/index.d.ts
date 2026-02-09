@@ -8,16 +8,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Builder_Internal from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import type { EndpointBuilder, IEndpointConventionBuilder } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface StaticAssetDescriptor$instance {
     AssetPath: string;
-    Properties: IReadOnlyList<StaticAssetProperty>;
-    ResponseHeaders: IReadOnlyList<StaticAssetResponseHeader>;
+    Properties: IReadOnlyList_1<StaticAssetProperty>;
+    ResponseHeaders: IReadOnlyList_1<StaticAssetResponseHeader>;
     Route: string;
-    Selectors: IReadOnlyList<StaticAssetSelector>;
+    Selectors: IReadOnlyList_1<StaticAssetSelector>;
 }
 
 
@@ -68,11 +68,11 @@ export const StaticAssetSelector: {
 
 export type StaticAssetSelector = StaticAssetSelector$instance;
 
-export interface StaticAssetsEndpointConventionBuilder$instance {
+export interface StaticAssetsEndpointConventionBuilder$instance extends Microsoft_AspNetCore_Builder_Internal.IEndpointConventionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
-    Add(convention: Action<EndpointBuilder>): void;
-    Finally(convention: Action<EndpointBuilder>): void;
+    Add(convention: Action_1<EndpointBuilder>): void;
+    Finally(convention: Action_1<EndpointBuilder>): void;
 }
 
 
@@ -83,8 +83,6 @@ export const StaticAssetsEndpointConventionBuilder: {
 export interface __StaticAssetsEndpointConventionBuilder$views {
     As_IEndpointConventionBuilder(): Microsoft_AspNetCore_Builder_Internal.IEndpointConventionBuilder$instance;
 }
-
-export interface StaticAssetsEndpointConventionBuilder$instance extends Microsoft_AspNetCore_Builder_Internal.IEndpointConventionBuilder$instance {}
 
 export type StaticAssetsEndpointConventionBuilder = StaticAssetsEndpointConventionBuilder$instance & __StaticAssetsEndpointConventionBuilder$views;
 

@@ -8,14 +8,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Connections_Internal from "../../Microsoft.AspNetCore.Connections/internal/index.js";
 import type { ConnectionContext, IConnectionListener, IConnectionListenerFactory, IConnectionListenerFactorySelector } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Int64, Nullable, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import type { EndPoint } from "@tsonic/dotnet/System.Net.js";
-import type { Socket } from "@tsonic/dotnet/System.Net.Sockets.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { Socket } from "@tsonic/dotnet/System.Net.Sockets/internal/index.js";
+import type { EndPoint } from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Func_2, IDisposable, Int32, Int64, Nullable_1, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface SocketConnectionContextFactory$instance {
     readonly __tsonic_iface_System_IDisposable: never;
@@ -34,8 +34,8 @@ export type SocketConnectionContextFactory = SocketConnectionContextFactory$inst
 
 export interface SocketConnectionFactoryOptions$instance {
     IOQueueCount: int;
-    MaxReadBufferSize: Nullable<System_Internal.Int64>;
-    MaxWriteBufferSize: Nullable<System_Internal.Int64>;
+    MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
+    MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
     UnsafePreferInlineScheduling: boolean;
     WaitForDataBeforeAllocatingBuffer: boolean;
 }
@@ -48,17 +48,17 @@ export const SocketConnectionFactoryOptions: {
 
 export type SocketConnectionFactoryOptions = SocketConnectionFactoryOptions$instance;
 
-export interface SocketTransportFactory$instance {
+export interface SocketTransportFactory$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactory$instance, Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactorySelector$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactorySelector: never;
 
-    BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask<IConnectionListener>;
+    BindAsync(endpoint: EndPoint, cancellationToken?: CancellationToken): ValueTask_1<IConnectionListener>;
     CanBind(endpoint: EndPoint): boolean;
 }
 
 
 export const SocketTransportFactory: {
-    new(options: IOptions<SocketTransportOptions>, loggerFactory: ILoggerFactory): SocketTransportFactory;
+    new(options: IOptions_1<SocketTransportOptions>, loggerFactory: ILoggerFactory): SocketTransportFactory;
 };
 
 
@@ -67,17 +67,15 @@ export interface __SocketTransportFactory$views {
     As_IConnectionListenerFactorySelector(): Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactorySelector$instance;
 }
 
-export interface SocketTransportFactory$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactory$instance, Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactorySelector$instance {}
-
 export type SocketTransportFactory = SocketTransportFactory$instance & __SocketTransportFactory$views;
 
 
 export interface SocketTransportOptions$instance {
     Backlog: int;
-    CreateBoundListenSocket: Func<EndPoint, Socket>;
+    CreateBoundListenSocket: Func_2<EndPoint, Socket>;
     IOQueueCount: int;
-    MaxReadBufferSize: Nullable<System_Internal.Int64>;
-    MaxWriteBufferSize: Nullable<System_Internal.Int64>;
+    MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
+    MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
     NoDelay: boolean;
     UnsafePreferInlineScheduling: boolean;
     WaitForDataBeforeAllocatingBuffer: boolean;

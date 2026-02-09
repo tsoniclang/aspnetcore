@@ -8,11 +8,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { IComponent, ParameterView, RenderFragment, RenderHandle } from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface SectionContent$instance {
+export interface SectionContent$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -35,12 +35,10 @@ export interface __SectionContent$views {
     As_IComponent(): Microsoft_AspNetCore_Components_Internal.IComponent$instance;
 }
 
-export interface SectionContent$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {}
-
 export type SectionContent = SectionContent$instance & __SectionContent$views;
 
 
-export interface SectionOutlet$instance {
+export interface SectionOutlet$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -60,8 +58,6 @@ export const SectionOutlet: {
 export interface __SectionOutlet$views {
     As_IComponent(): Microsoft_AspNetCore_Components_Internal.IComponent$instance;
 }
-
-export interface SectionOutlet$instance extends Microsoft_AspNetCore_Components_Internal.IComponent$instance, System_Internal.IDisposable {}
 
 export type SectionOutlet = SectionOutlet$instance & __SectionOutlet$views;
 

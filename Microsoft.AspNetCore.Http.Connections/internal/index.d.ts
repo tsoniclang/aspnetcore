@@ -9,12 +9,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
 import type { ConnectionContext } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IBufferWriter } from "@tsonic/dotnet/System.Buffers.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Enum, Func, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlySpan, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
-import type { IConfigureOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IBufferWriter_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Enum, Func_2, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlySpan_1, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_Extensions_Options_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
+import type { IConfigureOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum HttpTransportType {
     None = 0,
@@ -25,8 +25,8 @@ export enum HttpTransportType {
 
 
 export interface AvailableTransport$instance {
-    get TransferFormats(): IList<System_Internal.String> | undefined;
-    set TransferFormats(value: IList<System_Internal.String> | undefined);
+    get TransferFormats(): IList_1<System_Internal.String> | undefined;
+    set TransferFormats(value: IList_1<System_Internal.String> | undefined);
     get Transport(): string | undefined;
     set Transport(value: string | undefined);
 }
@@ -40,7 +40,7 @@ export const AvailableTransport: {
 export type AvailableTransport = AvailableTransport$instance;
 
 export interface ConnectionOptions$instance {
-    DisconnectTimeout: Nullable<TimeSpan>;
+    DisconnectTimeout: Nullable_1<TimeSpan>;
 }
 
 
@@ -69,7 +69,7 @@ export type ConnectionOptionsSetup = ConnectionOptionsSetup$instance;
 export interface HttpConnectionDispatcherOptions$instance {
     AllowStatefulReconnects: boolean;
     ApplicationMaxBufferSize: long;
-    readonly AuthorizationData: IList<IAuthorizeData>;
+    readonly AuthorizationData: IList_1<IAuthorizeData>;
     CloseOnAuthenticationExpiration: boolean;
     readonly LongPolling: LongPollingOptions;
     MinimumProtocolVersion: int;
@@ -113,8 +113,8 @@ export type NegotiateMetadata = NegotiateMetadata$instance;
 export interface NegotiationResponse$instance {
     get AccessToken(): string | undefined;
     set AccessToken(value: string | undefined);
-    get AvailableTransports(): IList<AvailableTransport> | undefined;
-    set AvailableTransports(value: IList<AvailableTransport> | undefined);
+    get AvailableTransports(): IList_1<AvailableTransport> | undefined;
+    set AvailableTransports(value: IList_1<AvailableTransport> | undefined);
     get ConnectionId(): string | undefined;
     set ConnectionId(value: string | undefined);
     get ConnectionToken(): string | undefined;
@@ -137,8 +137,8 @@ export type NegotiationResponse = NegotiationResponse$instance;
 
 export interface WebSocketOptions$instance {
     CloseTimeout: TimeSpan;
-    get SubProtocolSelector(): Func<IList<System_Internal.String>, System_Internal.String> | undefined;
-    set SubProtocolSelector(value: Func<IList<System_Internal.String>, System_Internal.String> | undefined);
+    get SubProtocolSelector(): Func_2<IList_1<System_Internal.String>, System_Internal.String> | undefined;
+    set SubProtocolSelector(value: Func_2<IList_1<System_Internal.String>, System_Internal.String> | undefined);
 }
 
 
@@ -164,8 +164,8 @@ export abstract class HttpTransports$instance {
 export type HttpTransports = HttpTransports$instance;
 
 export abstract class NegotiateProtocol$instance {
-    static ParseResponse(content: ReadOnlySpan<System_Internal.Byte>): NegotiationResponse;
-    static WriteResponse(response: NegotiationResponse, output: IBufferWriter<System_Internal.Byte>): void;
+    static ParseResponse(content: ReadOnlySpan_1<System_Internal.Byte>): NegotiationResponse;
+    static WriteResponse(response: NegotiationResponse, output: IBufferWriter_1<System_Internal.Byte>): void;
 }
 
 

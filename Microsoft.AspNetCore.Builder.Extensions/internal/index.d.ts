@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HttpContext, PathString, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, Object as ClrObject } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Func_2, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface MapMiddleware$instance {
     Invoke(context: HttpContext): Task;
@@ -53,8 +53,8 @@ export type MapWhenMiddleware = MapWhenMiddleware$instance;
 export interface MapWhenOptions$instance {
     get Branch(): RequestDelegate | undefined;
     set Branch(value: RequestDelegate | undefined);
-    get Predicate(): Func<HttpContext, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func<HttpContext, System_Internal.Boolean> | undefined);
+    get Predicate(): Func_2<HttpContext, System_Internal.Boolean> | undefined;
+    set Predicate(value: Func_2<HttpContext, System_Internal.Boolean> | undefined);
 }
 
 

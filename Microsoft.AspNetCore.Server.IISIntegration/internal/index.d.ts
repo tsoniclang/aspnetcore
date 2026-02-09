@@ -11,12 +11,12 @@ import type { IISOptions } from "../../Microsoft.AspNetCore.Builder/internal/ind
 import * as Microsoft_AspNetCore_Hosting_Internal from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import type { IHostingStartup, IWebHostBuilder } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IHostApplicationLifetime } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IHostApplicationLifetime } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IISDefaults$instance {
 }
@@ -32,7 +32,7 @@ export const IISDefaults: {
 
 export type IISDefaults = IISDefaults$instance;
 
-export interface IISHostingStartup$instance {
+export interface IISHostingStartup$instance extends Microsoft_AspNetCore_Hosting_Internal.IHostingStartup$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IHostingStartup: never;
 
     Configure(builder: IWebHostBuilder): void;
@@ -48,8 +48,6 @@ export interface __IISHostingStartup$views {
     As_IHostingStartup(): Microsoft_AspNetCore_Hosting_Internal.IHostingStartup$instance;
 }
 
-export interface IISHostingStartup$instance extends Microsoft_AspNetCore_Hosting_Internal.IHostingStartup$instance {}
-
 export type IISHostingStartup = IISHostingStartup$instance & __IISHostingStartup$views;
 
 
@@ -59,8 +57,8 @@ export interface IISMiddleware$instance {
 
 
 export const IISMiddleware: {
-    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions<IISOptions>, pairingToken: string, authentication: IAuthenticationSchemeProvider, applicationLifetime: IHostApplicationLifetime): IISMiddleware;
-    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions<IISOptions>, pairingToken: string, isWebsocketsSupported: boolean, authentication: IAuthenticationSchemeProvider, applicationLifetime: IHostApplicationLifetime): IISMiddleware;
+    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions_1<IISOptions>, pairingToken: string, authentication: IAuthenticationSchemeProvider, applicationLifetime: IHostApplicationLifetime): IISMiddleware;
+    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions_1<IISOptions>, pairingToken: string, isWebsocketsSupported: boolean, authentication: IAuthenticationSchemeProvider, applicationLifetime: IHostApplicationLifetime): IISMiddleware;
 };
 
 

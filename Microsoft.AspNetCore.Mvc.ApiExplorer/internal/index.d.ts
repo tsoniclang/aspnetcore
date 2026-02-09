@@ -14,10 +14,10 @@ import type { IActionDescriptorCollectionProvider, IActionResultTypeMapper } fro
 import type { BindingInfo, BindingSource, IModelMetadataProvider, ModelMetadata } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { MvcOptions } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { IInlineConstraintResolver, IRouteConstraint, RouteOptions } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { IDictionary, IEnumerable, IList, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IDictionary_2, IEnumerable_1, IList_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum ApiConventionNameMatchBehavior {
     Any = 0,
@@ -87,7 +87,7 @@ export type IApiDescriptionVisibilityProvider = IApiDescriptionVisibilityProvide
 export interface IApiRequestFormatMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
 
-    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList_1<System_Internal.String> | undefined;
 }
 
 
@@ -121,7 +121,7 @@ export type IApiResponseMetadataProvider = IApiResponseMetadataProvider$instance
 export interface IApiResponseTypeMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
 
-    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList<System_Internal.String> | undefined;
+    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList_1<System_Internal.String> | undefined;
 }
 
 
@@ -140,12 +140,12 @@ export const ApiConventionNameMatchAttribute: {
 export type ApiConventionNameMatchAttribute = ApiConventionNameMatchAttribute$instance;
 
 export interface ApiConventionResult$instance {
-    readonly ResponseMetadataProviders: IReadOnlyList<IApiResponseMetadataProvider>;
+    readonly ResponseMetadataProviders: IReadOnlyList_1<IApiResponseMetadataProvider>;
 }
 
 
 export const ApiConventionResult: {
-    new(responseMetadataProviders: IReadOnlyList<IApiResponseMetadataProvider>): ApiConventionResult;
+    new(responseMetadataProviders: IReadOnlyList_1<IApiResponseMetadataProvider>): ApiConventionResult;
 };
 
 
@@ -169,12 +169,12 @@ export interface ApiDescription$instance {
     set GroupName(value: string | undefined);
     get HttpMethod(): string | undefined;
     set HttpMethod(value: string | undefined);
-    readonly ParameterDescriptions: IList<ApiParameterDescription>;
-    readonly Properties: IDictionary<unknown, unknown>;
+    readonly ParameterDescriptions: IList_1<ApiParameterDescription>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     get RelativePath(): string | undefined;
     set RelativePath(value: string | undefined);
-    readonly SupportedRequestFormats: IList<ApiRequestFormat>;
-    readonly SupportedResponseTypes: IList<ApiResponseType>;
+    readonly SupportedRequestFormats: IList_1<ApiRequestFormat>;
+    readonly SupportedResponseTypes: IList_1<ApiResponseType>;
 }
 
 
@@ -187,31 +187,31 @@ export type ApiDescription = ApiDescription$instance;
 
 export interface ApiDescriptionGroup$instance {
     readonly GroupName: string | undefined;
-    readonly Items: IReadOnlyList<ApiDescription>;
+    readonly Items: IReadOnlyList_1<ApiDescription>;
 }
 
 
 export const ApiDescriptionGroup: {
-    new(groupName: string, items: IReadOnlyList<ApiDescription>): ApiDescriptionGroup;
+    new(groupName: string, items: IReadOnlyList_1<ApiDescription>): ApiDescriptionGroup;
 };
 
 
 export type ApiDescriptionGroup = ApiDescriptionGroup$instance;
 
 export interface ApiDescriptionGroupCollection$instance {
-    readonly Items: IReadOnlyList<ApiDescriptionGroup>;
+    readonly Items: IReadOnlyList_1<ApiDescriptionGroup>;
     readonly Version: int;
 }
 
 
 export const ApiDescriptionGroupCollection: {
-    new(items: IReadOnlyList<ApiDescriptionGroup>, version: int): ApiDescriptionGroupCollection;
+    new(items: IReadOnlyList_1<ApiDescriptionGroup>, version: int): ApiDescriptionGroupCollection;
 };
 
 
 export type ApiDescriptionGroupCollection = ApiDescriptionGroupCollection$instance;
 
-export interface ApiDescriptionGroupCollectionProvider$instance {
+export interface ApiDescriptionGroupCollectionProvider$instance extends IApiDescriptionGroupCollectionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider: never;
 
     readonly ApiDescriptionGroups: ApiDescriptionGroupCollection;
@@ -219,7 +219,7 @@ export interface ApiDescriptionGroupCollectionProvider$instance {
 
 
 export const ApiDescriptionGroupCollectionProvider: {
-    new(actionDescriptorCollectionProvider: IActionDescriptorCollectionProvider, apiDescriptionProviders: IEnumerable<IApiDescriptionProvider>): ApiDescriptionGroupCollectionProvider;
+    new(actionDescriptorCollectionProvider: IActionDescriptorCollectionProvider, apiDescriptionProviders: IEnumerable_1<IApiDescriptionProvider>): ApiDescriptionGroupCollectionProvider;
 };
 
 
@@ -227,19 +227,17 @@ export interface __ApiDescriptionGroupCollectionProvider$views {
     As_IApiDescriptionGroupCollectionProvider(): IApiDescriptionGroupCollectionProvider$instance;
 }
 
-export interface ApiDescriptionGroupCollectionProvider$instance extends IApiDescriptionGroupCollectionProvider$instance {}
-
 export type ApiDescriptionGroupCollectionProvider = ApiDescriptionGroupCollectionProvider$instance & __ApiDescriptionGroupCollectionProvider$views;
 
 
 export interface ApiDescriptionProviderContext$instance {
-    readonly Actions: IReadOnlyList<ActionDescriptor>;
-    readonly Results: IList<ApiDescription>;
+    readonly Actions: IReadOnlyList_1<ActionDescriptor>;
+    readonly Results: IList_1<ApiDescription>;
 }
 
 
 export const ApiDescriptionProviderContext: {
-    new(actions: IReadOnlyList<ActionDescriptor>): ApiDescriptionProviderContext;
+    new(actions: IReadOnlyList_1<ActionDescriptor>): ApiDescriptionProviderContext;
 };
 
 
@@ -269,8 +267,8 @@ export const ApiParameterDescription: {
 export type ApiParameterDescription = ApiParameterDescription$instance;
 
 export interface ApiParameterRouteInfo$instance {
-    get Constraints(): IEnumerable<IRouteConstraint> | undefined;
-    set Constraints(value: IEnumerable<IRouteConstraint> | undefined);
+    get Constraints(): IEnumerable_1<IRouteConstraint> | undefined;
+    set Constraints(value: IEnumerable_1<IRouteConstraint> | undefined);
     get DefaultValue(): unknown | undefined;
     set DefaultValue(value: unknown | undefined);
     IsOptional: boolean;
@@ -311,7 +309,7 @@ export const ApiResponseFormat: {
 export type ApiResponseFormat = ApiResponseFormat$instance;
 
 export interface ApiResponseType$instance {
-    ApiResponseFormats: IList<ApiResponseFormat>;
+    ApiResponseFormats: IList_1<ApiResponseFormat>;
     get Description(): string | undefined;
     set Description(value: string | undefined);
     IsDefaultResponse: boolean;
@@ -330,7 +328,7 @@ export const ApiResponseType: {
 
 export type ApiResponseType = ApiResponseType$instance;
 
-export interface DefaultApiDescriptionProvider$instance {
+export interface DefaultApiDescriptionProvider$instance extends IApiDescriptionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionProvider: never;
 
     readonly Order: int;
@@ -340,15 +338,13 @@ export interface DefaultApiDescriptionProvider$instance {
 
 
 export const DefaultApiDescriptionProvider: {
-    new(optionsAccessor: IOptions<MvcOptions>, constraintResolver: IInlineConstraintResolver, modelMetadataProvider: IModelMetadataProvider, mapper: IActionResultTypeMapper, routeOptions: IOptions<RouteOptions>): DefaultApiDescriptionProvider;
+    new(optionsAccessor: IOptions_1<MvcOptions>, constraintResolver: IInlineConstraintResolver, modelMetadataProvider: IModelMetadataProvider, mapper: IActionResultTypeMapper, routeOptions: IOptions_1<RouteOptions>): DefaultApiDescriptionProvider;
 };
 
 
 export interface __DefaultApiDescriptionProvider$views {
     As_IApiDescriptionProvider(): IApiDescriptionProvider$instance;
 }
-
-export interface DefaultApiDescriptionProvider$instance extends IApiDescriptionProvider$instance {}
 
 export type DefaultApiDescriptionProvider = DefaultApiDescriptionProvider$instance & __DefaultApiDescriptionProvider$views;
 

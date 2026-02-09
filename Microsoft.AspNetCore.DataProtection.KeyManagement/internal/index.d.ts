@@ -11,21 +11,21 @@ import type { IAuthenticatedEncryptor, IAuthenticatedEncryptorFactory } from "..
 import type { IActivator } from "../../Microsoft.AspNetCore.DataProtection.Internal/internal/index.js";
 import type { IXmlRepository } from "../../Microsoft.AspNetCore.DataProtection.Repositories/internal/index.js";
 import type { IXmlEncryptor } from "../../Microsoft.AspNetCore.DataProtection.XmlEncryption/internal/index.js";
-import type { IList, IReadOnlyCollection } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Func, Guid, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IList_1, IReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import type { XElement } from "@tsonic/dotnet/System.Xml.Linq/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Func_2, Guid, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IDeletableKeyManager$instance extends IKeyManager {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IDeletableKeyManager: never;
 
     readonly CanDeleteKeys: boolean;
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
-    DeleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;
-    GetAllKeys(): IReadOnlyCollection<IKey>;
+    DeleteKeys(shouldDelete: Func_2<IKey, System_Internal.Boolean>): boolean;
+    GetAllKeys(): IReadOnlyCollection_1<IKey>;
     GetCacheExpirationToken(): CancellationToken;
     RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
     RevokeKey(keyId: Guid, reason?: string): void;
@@ -64,7 +64,7 @@ export interface IKeyManager$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager: never;
 
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
-    GetAllKeys(): IReadOnlyCollection<IKey>;
+    GetAllKeys(): IReadOnlyCollection_1<IKey>;
     GetCacheExpirationToken(): CancellationToken;
     RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
     RevokeKey(keyId: Guid, reason?: string): void;
@@ -76,9 +76,9 @@ export type IKeyManager = IKeyManager$instance;
 export interface KeyManagementOptions$instance {
     get AuthenticatedEncryptorConfiguration(): AlgorithmConfiguration | undefined;
     set AuthenticatedEncryptorConfiguration(value: AlgorithmConfiguration | undefined);
-    readonly AuthenticatedEncryptorFactories: IList<IAuthenticatedEncryptorFactory>;
+    readonly AuthenticatedEncryptorFactories: IList_1<IAuthenticatedEncryptorFactory>;
     AutoGenerateKeys: boolean;
-    readonly KeyEscrowSinks: IList<IKeyEscrowSink>;
+    readonly KeyEscrowSinks: IList_1<IKeyEscrowSink>;
     NewKeyLifetime: TimeSpan;
     get XmlEncryptor(): IXmlEncryptor | undefined;
     set XmlEncryptor(value: IXmlEncryptor | undefined);
@@ -94,14 +94,14 @@ export const KeyManagementOptions: {
 
 export type KeyManagementOptions = KeyManagementOptions$instance;
 
-export interface XmlKeyManager$instance {
+export interface XmlKeyManager$instance extends IKeyManager$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager: never;
 
     readonly CanDeleteKeys: boolean;
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
-    DeleteKeys(shouldDelete: Func<IKey, System_Internal.Boolean>): boolean;
-    GetAllKeys(): IReadOnlyCollection<IKey>;
+    DeleteKeys(shouldDelete: Func_2<IKey, System_Internal.Boolean>): boolean;
+    GetAllKeys(): IReadOnlyCollection_1<IKey>;
     GetCacheExpirationToken(): CancellationToken;
     RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
     RevokeKey(keyId: Guid, reason?: string): void;
@@ -109,8 +109,8 @@ export interface XmlKeyManager$instance {
 
 
 export const XmlKeyManager: {
-    new(keyManagementOptions: IOptions<KeyManagementOptions>, activator: IActivator): XmlKeyManager;
-    new(keyManagementOptions: IOptions<KeyManagementOptions>, activator: IActivator, loggerFactory: ILoggerFactory): XmlKeyManager;
+    new(keyManagementOptions: IOptions_1<KeyManagementOptions>, activator: IActivator): XmlKeyManager;
+    new(keyManagementOptions: IOptions_1<KeyManagementOptions>, activator: IActivator, loggerFactory: ILoggerFactory): XmlKeyManager;
 };
 
 
@@ -118,8 +118,6 @@ export interface __XmlKeyManager$views {
     As_IKeyManager(): IKeyManager$instance;
     As_IInternalXmlKeyManager(): Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_Internal.IInternalXmlKeyManager$instance;
 }
-
-export interface XmlKeyManager$instance extends IKeyManager$instance {}
 
 export type XmlKeyManager = XmlKeyManager$instance & __XmlKeyManager$views;
 

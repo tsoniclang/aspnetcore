@@ -10,21 +10,21 @@ import type { IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/in
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
 import type { ComponentBase, EventCallbackWorkItem, IComponent, IComponentRenderMode, IHandleAfterRender, IHandleEvent, ParameterView, RendererInfo, RenderFragment, RenderFragment_1, RenderHandle, ResourceAssetCollection, RouteData, RouteView } from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Claim, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Claim, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action, AsyncCallback, Boolean as ClrBoolean, Exception, Func_1, IAsyncResult, ICloneable, IDisposable, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export type AuthenticationStateChangedHandler = (task: Task<AuthenticationState>) => void;
+export type AuthenticationStateChangedHandler = (task: Task_1<AuthenticationState>) => void;
 
 
 export interface IHostEnvironmentAuthenticationStateProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
 
-    SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
+    SetAuthenticationState(authenticationStateTask: Task_1<AuthenticationState>): void;
 }
 
 
@@ -57,7 +57,7 @@ export const AuthenticationState: {
 export type AuthenticationState = AuthenticationState$instance;
 
 export interface AuthenticationStateData$instance {
-    Claims: IList<ClaimData>;
+    Claims: IList_1<ClaimData>;
     NameClaimType: string;
     RoleClaimType: string;
 }
@@ -71,7 +71,7 @@ export const AuthenticationStateData: {
 export type AuthenticationStateData = AuthenticationStateData$instance;
 
 export interface AuthenticationStateProvider$instance {
-    GetAuthenticationStateAsync(): Task<AuthenticationState>;
+    GetAuthenticationStateAsync(): Task_1<AuthenticationState>;
 }
 
 
@@ -140,7 +140,7 @@ export interface __AuthorizeView$views {
 export type AuthorizeView = AuthorizeView$instance & __AuthorizeView$views;
 
 
-export interface AuthorizeViewCore$instance extends ComponentBase {
+export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -176,12 +176,10 @@ export interface __AuthorizeViewCore$views {
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
 
-export interface AuthorizeViewCore$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {}
-
 export type AuthorizeViewCore = AuthorizeViewCore$instance & __AuthorizeViewCore$views;
 
 
-export interface CascadingAuthenticationState$instance extends ComponentBase {
+export interface CascadingAuthenticationState$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -209,8 +207,6 @@ export interface __CascadingAuthenticationState$views {
     As_IHandleAfterRender(): Microsoft_AspNetCore_Components_Internal.IHandleAfterRender$instance;
     As_IHandleEvent(): Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance;
 }
-
-export interface CascadingAuthenticationState$instance extends Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {}
 
 export type CascadingAuthenticationState = CascadingAuthenticationState$instance & __CascadingAuthenticationState$views;
 

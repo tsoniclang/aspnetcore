@@ -11,13 +11,13 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { ForwardedHeadersOptions, HttpMethodOverrideOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Char, Enum, Func, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { IPAddress } from "@tsonic/dotnet/System.Net.js";
-import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IPAddress } from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Char, Enum, Func_2, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum ForwardedHeaders {
     None = 0,
@@ -35,14 +35,14 @@ export interface CertificateForwardingMiddleware$instance {
 
 
 export const CertificateForwardingMiddleware: {
-    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions<CertificateForwardingOptions>): CertificateForwardingMiddleware;
+    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions_1<CertificateForwardingOptions>): CertificateForwardingMiddleware;
 };
 
 
 export type CertificateForwardingMiddleware = CertificateForwardingMiddleware$instance;
 
 export interface CertificateForwardingOptions$instance {
-    HeaderConverter: Func<System_Internal.String, X509Certificate2>;
+    HeaderConverter: Func_2<System_Internal.String, X509Certificate2>;
     CertificateHeader: string;
 }
 
@@ -61,7 +61,7 @@ export interface ForwardedHeadersMiddleware$instance {
 
 
 export const ForwardedHeadersMiddleware: {
-    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions<ForwardedHeadersOptions>): ForwardedHeadersMiddleware;
+    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions_1<ForwardedHeadersOptions>): ForwardedHeadersMiddleware;
 };
 
 
@@ -73,7 +73,7 @@ export interface HttpMethodOverrideMiddleware$instance {
 
 
 export const HttpMethodOverrideMiddleware: {
-    new(next: RequestDelegate, options: IOptions<HttpMethodOverrideOptions>): HttpMethodOverrideMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<HttpMethodOverrideOptions>): HttpMethodOverrideMiddleware;
 };
 
 
@@ -88,8 +88,8 @@ export interface IPNetwork$instance {
 
 export const IPNetwork: {
     new(prefix: IPAddress, prefixLength: int): IPNetwork;
-    Parse(networkSpan: ReadOnlySpan<System_Internal.Char>): IPNetwork;
-    TryParse(networkSpan: ReadOnlySpan<System_Internal.Char>, network: IPNetwork): boolean;
+    Parse(networkSpan: ReadOnlySpan_1<System_Internal.Char>): IPNetwork;
+    TryParse(networkSpan: ReadOnlySpan_1<System_Internal.Char>, network: IPNetwork): boolean;
 };
 
 

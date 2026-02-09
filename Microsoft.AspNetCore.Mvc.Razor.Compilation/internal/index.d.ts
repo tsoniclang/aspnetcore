@@ -7,16 +7,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { RazorCompiledItem } from "../../Microsoft.AspNetCore.Razor.Hosting/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
+import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export interface IViewCompiler$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler: never;
 
-    CompileAsync(relativePath: string): Task<CompiledViewDescriptor>;
+    CompileAsync(relativePath: string): Task_1<CompiledViewDescriptor>;
 }
 
 
@@ -32,8 +32,8 @@ export interface IViewCompilerProvider$instance {
 export type IViewCompilerProvider = IViewCompilerProvider$instance;
 
 export interface CompiledViewDescriptor$instance {
-    get ExpirationTokens(): IList<IChangeToken> | undefined;
-    set ExpirationTokens(value: IList<IChangeToken> | undefined);
+    get ExpirationTokens(): IList_1<IChangeToken> | undefined;
+    set ExpirationTokens(value: IList_1<IChangeToken> | undefined);
     get Item(): RazorCompiledItem | undefined;
     set Item(value: RazorCompiledItem | undefined);
     RelativePath: string;
@@ -66,7 +66,7 @@ export const RazorViewAttribute: {
 export type RazorViewAttribute = RazorViewAttribute$instance;
 
 export interface ViewsFeature$instance {
-    readonly ViewDescriptors: IList<CompiledViewDescriptor>;
+    readonly ViewDescriptors: IList_1<CompiledViewDescriptor>;
 }
 
 

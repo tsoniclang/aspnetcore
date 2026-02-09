@@ -7,15 +7,15 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { PipeWriter } from "@tsonic/dotnet/System.IO.Pipelines.js";
-import type { Func, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { PipeWriter } from "@tsonic/dotnet/System.IO.Pipelines/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { Func_2, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IStatefulReconnectFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Abstractions_IStatefulReconnectFeature: never;
 
     DisableReconnect(): void;
-    OnReconnected(notifyOnReconnect: Func<PipeWriter, Task>): void;
+    OnReconnected(notifyOnReconnect: Func_2<PipeWriter, Task>): void;
 }
 
 

@@ -12,10 +12,10 @@ import type { ptr } from "@tsonic/core/types.js";
 import type { IAuthenticatedEncryptorDescriptor } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js";
 import type { IAuthenticatedEncryptor } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption/internal/index.js";
 import type { IKey } from "../../Microsoft.AspNetCore.DataProtection.KeyManagement/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Guid, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { XElement } from "@tsonic/dotnet/System.Xml.Linq.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { XElement } from "@tsonic/dotnet/System.Xml.Linq/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Guid, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ICacheableKeyRingProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider: never;
@@ -29,7 +29,7 @@ export type ICacheableKeyRingProvider = ICacheableKeyRingProvider$instance;
 export interface IDefaultKeyResolver$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver: never;
 
-    ResolveDefaultKeyPolicy(now: DateTimeOffset, allKeys: IEnumerable<IKey>): DefaultKeyResolution;
+    ResolveDefaultKeyPolicy(now: DateTimeOffset, allKeys: IEnumerable_1<IKey>): DefaultKeyResolution;
 }
 
 

@@ -29,22 +29,22 @@ import type { IViewBufferScope } from "../../Microsoft.AspNetCore.Mvc.ViewFeatur
 import type { TempDataSerializer } from "../../Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { ActionContext, ControllerContext, CookieTempDataProviderOptions, IActionResult, MvcViewOptions, PartialViewResult, ViewComponentResult, ViewResult } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IList, IReadOnlyCollection, IReadOnlyDictionary, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import type { DiagnosticListener } from "@tsonic/dotnet/System.Diagnostics.js";
-import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { PropertyInfo } from "@tsonic/dotnet/System.Reflection.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { HtmlEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1, IEnumerator_1, IList_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { DiagnosticListener } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Expression_1 } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { PropertyInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { HtmlEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, Func_1, Func_2, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum InputType {
     CheckBox = 0,
@@ -86,24 +86,24 @@ export interface IHtmlGenerator$instance {
     FormatValue(value: unknown, format: string): string;
     GenerateActionLink(viewContext: ViewContext, linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
     GenerateAntiforgery(viewContext: ViewContext): IHtmlContent;
-    GenerateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
     GenerateForm(viewContext: ViewContext, actionName: string, controllerName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
-    GenerateGroupsAndOptions(optionLabel: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
+    GenerateGroupsAndOptions(optionLabel: string, selectList: IEnumerable_1<SelectListItem>): IHtmlContent;
     GenerateHidden(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, htmlAttributes: unknown): TagBuilder;
     GenerateHiddenForCheckbox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string): TagBuilder;
     GenerateLabel(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, labelText: string, htmlAttributes: unknown): TagBuilder;
     GeneratePageForm(viewContext: ViewContext, pageName: string, pageHandler: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
     GeneratePassword(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, htmlAttributes: unknown): TagBuilder;
-    GenerateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
     GenerateRouteForm(viewContext: ViewContext, routeName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
     GenerateRouteLink(viewContext: ViewContext, linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
-    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
-    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, currentValues: ICollection<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable_1<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable_1<SelectListItem>, currentValues: ICollection_1<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
     GenerateTextArea(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, rows: int, columns: int, htmlAttributes: unknown): TagBuilder;
     GenerateTextBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, format: string, htmlAttributes: unknown): TagBuilder;
     GenerateValidationMessage(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, message: string, tag: string, htmlAttributes: unknown): TagBuilder;
     GenerateValidationSummary(viewContext: ViewContext, excludePropertyErrors: boolean, message: string, headerTag: string, htmlAttributes: unknown): TagBuilder;
-    GetCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection<System_Internal.String>;
+    GetCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection_1<System_Internal.String>;
 }
 
 
@@ -123,13 +123,13 @@ export type IKeepTempDataResult = IKeepTempDataResult$instance;
 export interface IModelExpressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IModelExpressionProvider: never;
 
-    CreateModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression<Func<TModel, TValue>>): ModelExpression;
+    CreateModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression_1<Func_2<TModel, TValue>>): ModelExpression;
 }
 
 
 export type IModelExpressionProvider = IModelExpressionProvider$instance;
 
-export interface ITempDataDictionary$instance extends IDictionary<System_Internal.String, unknown>, ICollection<KeyValuePair<System_Internal.String, unknown>>, IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>, IEnumerable {
+export interface ITempDataDictionary$instance extends IDictionary_2<System_Internal.String, unknown>, ICollection_1<KeyValuePair_2<System_Internal.String, unknown>>, IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionary: never;
 
     Keep(key: string): void;
@@ -138,7 +138,7 @@ export interface ITempDataDictionary$instance extends IDictionary<System_Interna
 }
 
 
-export interface ITempDataDictionary$instance extends System_Collections_Generic_Internal.ICollection<KeyValuePair<System_Internal.String, unknown>>, System_Collections_Generic_Internal.IDictionary<System_Internal.String, unknown>, System_Collections_Generic_Internal.IEnumerable<KeyValuePair<System_Internal.String, unknown>> {}
+export interface ITempDataDictionary$instance extends System_Collections_Generic_Internal.ICollection_1<KeyValuePair_2<System_Internal.String, unknown>>, System_Collections_Generic_Internal.IDictionary_2<System_Internal.String, unknown>, System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> {}
 
 export type ITempDataDictionary = ITempDataDictionary$instance;
 
@@ -154,8 +154,8 @@ export type ITempDataDictionaryFactory = ITempDataDictionaryFactory$instance;
 export interface ITempDataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataProvider: never;
 
-    LoadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
-    SaveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
+    LoadTempData(context: HttpContext): IDictionary_2<System_Internal.String, unknown>;
+    SaveTempData(context: HttpContext, values: IDictionary_2<System_Internal.String, unknown>): void;
 }
 
 
@@ -175,7 +175,7 @@ export interface AttributeDictionary_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Current: KeyValuePair<System_Internal.String, System_Internal.String>;
+    readonly Current: KeyValuePair_2<System_Internal.String, System_Internal.String>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -200,16 +200,16 @@ export interface AttributeDictionary$instance {
     readonly Count: int;
     readonly IsReadOnly: boolean;
     [key: string]: string | undefined;
-    readonly Keys: ICollection<System_Internal.String>;
-    readonly Values: ICollection<string | undefined>;
-    Add(item: KeyValuePair<System_Internal.String, System_Internal.String>): void;
+    readonly Keys: ICollection_1<System_Internal.String>;
+    readonly Values: ICollection_1<string | undefined>;
+    Add(item: KeyValuePair_2<System_Internal.String, System_Internal.String>): void;
     Add(key: string, value: string): void;
     Clear(): void;
-    Contains(item: KeyValuePair<System_Internal.String, System_Internal.String>): boolean;
+    Contains(item: KeyValuePair_2<System_Internal.String, System_Internal.String>): boolean;
     ContainsKey(key: string): boolean;
-    CopyTo(array: KeyValuePair<System_Internal.String, System_Internal.String>[], arrayIndex: int): void;
+    CopyTo(array: KeyValuePair_2<System_Internal.String, System_Internal.String>[], arrayIndex: int): void;
     GetEnumerator(): AttributeDictionary_Enumerator;
-    Remove(item: KeyValuePair<System_Internal.String, System_Internal.String>): boolean;
+    Remove(item: KeyValuePair_2<System_Internal.String, System_Internal.String>): boolean;
     Remove(key: string): boolean;
     TryGetValue(key: string, value: string): boolean;
 }
@@ -222,16 +222,16 @@ export const AttributeDictionary: {
 
 export type AttributeDictionary = AttributeDictionary$instance;
 
-export interface CookieTempDataProvider$instance {
+export interface CookieTempDataProvider$instance extends ITempDataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataProvider: never;
 
-    LoadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
-    SaveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
+    LoadTempData(context: HttpContext): IDictionary_2<System_Internal.String, unknown>;
+    SaveTempData(context: HttpContext, values: IDictionary_2<System_Internal.String, unknown>): void;
 }
 
 
 export const CookieTempDataProvider: {
-    new(dataProtectionProvider: IDataProtectionProvider, loggerFactory: ILoggerFactory, options: IOptions<CookieTempDataProviderOptions>, tempDataSerializer: TempDataSerializer): CookieTempDataProvider;
+    new(dataProtectionProvider: IDataProtectionProvider, loggerFactory: ILoggerFactory, options: IOptions_1<CookieTempDataProviderOptions>, tempDataSerializer: TempDataSerializer): CookieTempDataProvider;
     readonly CookieName: string;
 };
 
@@ -239,8 +239,6 @@ export const CookieTempDataProvider: {
 export interface __CookieTempDataProvider$views {
     As_ITempDataProvider(): ITempDataProvider$instance;
 }
-
-export interface CookieTempDataProvider$instance extends ITempDataProvider$instance {}
 
 export type CookieTempDataProvider = CookieTempDataProvider$instance & __CookieTempDataProvider$views;
 
@@ -257,33 +255,33 @@ export interface DefaultHtmlGenerator$instance {
     FormatValue(value: unknown, format: string): string;
     GenerateActionLink(viewContext: ViewContext, linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
     GenerateAntiforgery(viewContext: ViewContext): IHtmlContent;
-    GenerateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateCheckBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
     GenerateForm(viewContext: ViewContext, actionName: string, controllerName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
     GenerateFormCore(viewContext: ViewContext, action: string, method: string, htmlAttributes: unknown): TagBuilder;
-    GenerateGroupsAndOptions(optionLabel: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
+    GenerateGroupsAndOptions(optionLabel: string, selectList: IEnumerable_1<SelectListItem>): IHtmlContent;
     GenerateHidden(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, htmlAttributes: unknown): TagBuilder;
     GenerateHiddenForCheckbox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string): TagBuilder;
-    GenerateInput(viewContext: ViewContext, inputType: InputType, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, isChecked: boolean, setId: boolean, isExplicitValue: boolean, format: string, htmlAttributes: IDictionary<System_Internal.String, unknown>): TagBuilder;
+    GenerateInput(viewContext: ViewContext, inputType: InputType, modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, isChecked: boolean, setId: boolean, isExplicitValue: boolean, format: string, htmlAttributes: IDictionary_2<System_Internal.String, unknown>): TagBuilder;
     GenerateLabel(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, labelText: string, htmlAttributes: unknown): TagBuilder;
     GenerateLink(linkText: string, url: string, htmlAttributes: unknown): TagBuilder;
     GeneratePageForm(viewContext: ViewContext, pageName: string, pageHandler: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): TagBuilder;
     GeneratePageLink(viewContext: ViewContext, linkText: string, pageName: string, pageHandler: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
     GeneratePassword(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, htmlAttributes: unknown): TagBuilder;
-    GenerateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
+    GenerateRadioButton(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): TagBuilder;
     GenerateRouteForm(viewContext: ViewContext, routeName: string, routeValues: unknown, method: string, htmlAttributes: unknown): TagBuilder;
     GenerateRouteLink(viewContext: ViewContext, linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): TagBuilder;
-    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
-    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, currentValues: ICollection<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable_1<SelectListItem>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
+    GenerateSelect(viewContext: ViewContext, modelExplorer: ModelExplorer, optionLabel: string, expression: string, selectList: IEnumerable_1<SelectListItem>, currentValues: ICollection_1<System_Internal.String>, allowMultiple: boolean, htmlAttributes: unknown): TagBuilder;
     GenerateTextArea(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, rows: int, columns: int, htmlAttributes: unknown): TagBuilder;
     GenerateTextBox(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, value: unknown, format: string, htmlAttributes: unknown): TagBuilder;
     GenerateValidationMessage(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, message: string, tag: string, htmlAttributes: unknown): TagBuilder;
     GenerateValidationSummary(viewContext: ViewContext, excludePropertyErrors: boolean, message: string, headerTag: string, htmlAttributes: unknown): TagBuilder;
-    GetCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection<System_Internal.String>;
+    GetCurrentValues(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, allowMultiple: boolean): ICollection_1<System_Internal.String>;
 }
 
 
 export const DefaultHtmlGenerator: {
-    new(antiforgery: IAntiforgery, optionsAccessor: IOptions<MvcViewOptions>, metadataProvider: IModelMetadataProvider, urlHelperFactory: IUrlHelperFactory, htmlEncoder: HtmlEncoder, validationAttributeProvider: ValidationHtmlAttributeProvider): DefaultHtmlGenerator;
+    new(antiforgery: IAntiforgery, optionsAccessor: IOptions_1<MvcViewOptions>, metadataProvider: IModelMetadataProvider, urlHelperFactory: IUrlHelperFactory, htmlEncoder: HtmlEncoder, validationAttributeProvider: ValidationHtmlAttributeProvider): DefaultHtmlGenerator;
 };
 
 
@@ -295,12 +293,12 @@ export type DefaultHtmlGenerator = DefaultHtmlGenerator$instance & __DefaultHtml
 
 
 export interface DefaultValidationHtmlAttributeProvider$instance extends ValidationHtmlAttributeProvider {
-    AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
+    AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary_2<System_Internal.String, System_Internal.String>): void;
 }
 
 
 export const DefaultValidationHtmlAttributeProvider: {
-    new(optionsAccessor: IOptions<MvcViewOptions>, metadataProvider: IModelMetadataProvider, clientValidatorCache: ClientValidatorCache): DefaultValidationHtmlAttributeProvider;
+    new(optionsAccessor: IOptions_1<MvcViewOptions>, metadataProvider: IModelMetadataProvider, clientValidatorCache: ClientValidatorCache): DefaultValidationHtmlAttributeProvider;
 };
 
 
@@ -308,8 +306,8 @@ export type DefaultValidationHtmlAttributeProvider = DefaultValidationHtmlAttrib
 
 export interface FormContext$instance {
     CanRenderAtEndOfForm: boolean;
-    readonly EndOfFormContent: IList<IHtmlContent>;
-    readonly FormData: IDictionary<System_Internal.String, unknown>;
+    readonly EndOfFormContent: IList_1<IHtmlContent>;
+    readonly FormData: IDictionary_2<System_Internal.String, unknown>;
     HasAntiforgeryToken: boolean;
     readonly HasEndOfFormContent: boolean;
     readonly HasFormData: boolean;
@@ -325,7 +323,7 @@ export const FormContext: {
 
 export type FormContext = FormContext$instance;
 
-export interface HtmlHelper$instance {
+export interface HtmlHelper$instance extends IViewContextAware$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;
 
@@ -336,53 +334,53 @@ export interface HtmlHelper$instance {
     readonly UrlEncoder: UrlEncoder;
     readonly ViewBag: unknown;
     ViewContext: ViewContext;
-    readonly ViewData: ViewDataDictionary | ViewDataDictionary_1<TModel>;
+    readonly ViewData: ViewDataDictionary;
     ActionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     AntiForgeryToken(): IHtmlContent;
-    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    CheckBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    CheckBox(expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     Contextualize(viewContext: ViewContext): void;
     CreateForm(): MvcForm;
     Display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
     DisplayName(expression: string): string;
     DisplayText(expression: string): string;
-    DropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    DropDownList(expression: string, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
     Editor(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
     Encode(value: string): string;
     Encode(value: unknown): string;
     EndForm(): void;
     FormatValue(value: unknown, format: string): string;
-    GenerateCheckBox(modelExplorer: ModelExplorer, expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    GenerateCheckBox(modelExplorer: ModelExplorer, expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     GenerateDisplay(modelExplorer: ModelExplorer, htmlFieldName: string, templateName: string, additionalViewData: unknown): IHtmlContent;
     GenerateDisplayName(modelExplorer: ModelExplorer, expression: string): string;
     GenerateDisplayText(modelExplorer: ModelExplorer): string;
     GenerateEditor(modelExplorer: ModelExplorer, htmlFieldName: string, templateName: string, additionalViewData: unknown): IHtmlContent;
-    GenerateForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    GenerateForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
     GenerateHidden(modelExplorer: ModelExplorer, expression: string, value: unknown, useViewData: boolean, htmlAttributes: unknown): IHtmlContent;
     GenerateId(expression: string): string;
     GenerateIdFromName(fullName: string): string;
     GenerateLabel(modelExplorer: ModelExplorer, expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
     GenerateName(expression: string): string;
     GeneratePassword(modelExplorer: ModelExplorer, expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    GenerateRadioButton(modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    GenerateRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    GenerateRadioButton(modelExplorer: ModelExplorer, expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    GenerateRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
     GenerateTextArea(modelExplorer: ModelExplorer, expression: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
     GenerateTextBox(modelExplorer: ModelExplorer, expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
     GenerateValidationMessage(modelExplorer: ModelExplorer, expression: string, message: string, tag: string, htmlAttributes: unknown): IHtmlContent;
     GenerateValidationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
     GenerateValue(expression: string, value: unknown, format: string, useViewData: boolean): string;
-    GetEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
-    GetEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
-    GetEnumSelectList(metadata: ModelMetadata): IEnumerable__System_Collections_Generic<SelectListItem>;
+    GetEnumSelectList<TEnum extends unknown>(): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList(enumType: Type): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList(metadata: ModelMetadata): IEnumerable_1<SelectListItem>;
     Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     Id(expression: string): string;
     Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    ListBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    ListBox(expression: string, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
     Name(expression: string): string;
-    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
+    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
     Password(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    RadioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    RadioButton(expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     Raw(value: string): IHtmlContent;
     Raw(value: unknown): IHtmlContent;
     RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
@@ -404,9 +402,9 @@ export const HtmlHelper: {
     readonly ValidationMessageValidCssClassName: string;
     readonly ValidationSummaryCssClassName: string;
     readonly ValidationSummaryValidCssClassName: string;
-    AnonymousObjectToHtmlAttributes(htmlAttributes: unknown): IDictionary<System_Internal.String, unknown>;
+    AnonymousObjectToHtmlAttributes(htmlAttributes: unknown): IDictionary_2<System_Internal.String, unknown>;
     GetFormMethodString(method: FormMethod): string;
-    ObjectToDictionary(value: unknown): IDictionary<System_Internal.String, unknown>;
+    ObjectToDictionary(value: unknown): IDictionary_2<System_Internal.String, unknown>;
 };
 
 
@@ -414,8 +412,6 @@ export interface __HtmlHelper$views {
     As_IHtmlHelper(): Microsoft_AspNetCore_Mvc_Rendering_Internal.IHtmlHelper$instance;
     As_IViewContextAware(): IViewContextAware$instance;
 }
-
-export interface HtmlHelper$instance extends IViewContextAware$instance {}
 
 export type HtmlHelper = HtmlHelper$instance & __HtmlHelper$views;
 
@@ -427,52 +423,52 @@ export interface HtmlHelper_1$instance<TModel> extends HtmlHelper$instance {
 
     ActionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     AntiForgeryToken(): IHtmlContent;
-    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    CheckBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    CheckBoxFor(expression: Expression<Func<TModel, System_Internal.Boolean>>, htmlAttributes: unknown): IHtmlContent;
+    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    CheckBox(expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    CheckBoxFor(expression: Expression_1<Func_2<TModel, System_Internal.Boolean>>, htmlAttributes: unknown): IHtmlContent;
     Contextualize(viewContext: ViewContext): void;
     Display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    DisplayFor<TResult>(expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
     DisplayName(expression: string): string;
-    DisplayNameFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    DisplayNameForInnerType<TModelItem, TResult>(expression: Expression<Func<TModelItem, TResult>>): string;
-    DisplayTextFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    DropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
-    DropDownListFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
-    EditorFor<TResult>(expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    DisplayNameFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
+    DisplayNameForInnerType<TModelItem, TResult>(expression: Expression_1<Func_2<TModelItem, TResult>>): string;
+    DisplayTextFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
+    DropDownList(expression: string, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    DropDownListFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    EditorFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
     Encode(value: string): string;
     Encode(value: unknown): string;
     EndForm(): void;
     FormatValue(value: unknown, format: string): string;
-    GetEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
-    GetEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
-    GetEnumSelectList(metadata: ModelMetadata): IEnumerable__System_Collections_Generic<SelectListItem>;
+    GetEnumSelectList<TEnum extends unknown>(): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList(enumType: Type): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList(metadata: ModelMetadata): IEnumerable_1<SelectListItem>;
     Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    HiddenFor<TResult>(expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    IdFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
+    HiddenFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
+    IdFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
     Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    LabelFor<TResult>(expression: Expression<Func<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    ListBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    ListBoxFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    NameFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
-    PasswordFor<TResult>(expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    RadioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    RadioButtonFor<TResult>(expression: Expression<Func<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
+    LabelFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
+    ListBox(expression: string, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    ListBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    NameFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
+    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
+    PasswordFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
+    RadioButton(expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    RadioButtonFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
     Raw(value: string): IHtmlContent;
     Raw(value: unknown): IHtmlContent;
     RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
     RouteLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     TextArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
-    TextAreaFor<TResult>(expression: Expression<Func<TModel, TResult>>, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
+    TextAreaFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
     TextBox(expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
-    TextBoxFor<TResult>(expression: Expression<Func<TModel, TResult>>, format: string, htmlAttributes: unknown): IHtmlContent;
+    TextBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, format: string, htmlAttributes: unknown): IHtmlContent;
     ValidationMessage(expression: string, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    ValidationMessageFor<TResult>(expression: Expression<Func<TModel, TResult>>, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
+    ValidationMessageFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
     ValidationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
     Value(expression: string, format: string): string;
-    ValueFor<TResult>(expression: Expression<Func<TModel, TResult>>, format: string): string;
+    ValueFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, format: string): string;
 }
 
 
@@ -513,21 +509,21 @@ export interface ModelExplorer$instance {
     readonly Metadata: ModelMetadata;
     readonly Model: unknown;
     readonly ModelType: Type;
-    readonly Properties: IEnumerable__System_Collections_Generic<ModelExplorer>;
+    readonly Properties: IEnumerable_1<ModelExplorer>;
     GetExplorerForExpression(modelType: Type, model: unknown): ModelExplorer;
     GetExplorerForExpression(metadata: ModelMetadata, model: unknown): ModelExplorer;
-    GetExplorerForExpression(modelType: Type, modelAccessor: Func<unknown, unknown>): ModelExplorer;
-    GetExplorerForExpression(metadata: ModelMetadata, modelAccessor: Func<unknown, unknown>): ModelExplorer;
+    GetExplorerForExpression(modelType: Type, modelAccessor: Func_2<unknown, unknown>): ModelExplorer;
+    GetExplorerForExpression(metadata: ModelMetadata, modelAccessor: Func_2<unknown, unknown>): ModelExplorer;
     GetExplorerForModel(model: unknown): ModelExplorer;
     GetExplorerForProperty(name: string): ModelExplorer;
-    GetExplorerForProperty(name: string, modelAccessor: Func<unknown, unknown>): ModelExplorer;
+    GetExplorerForProperty(name: string, modelAccessor: Func_2<unknown, unknown>): ModelExplorer;
     GetExplorerForProperty(name: string, model: unknown): ModelExplorer;
 }
 
 
 export const ModelExplorer: {
     new(metadataProvider: IModelMetadataProvider, metadata: ModelMetadata, model: unknown): ModelExplorer;
-    new(metadataProvider: IModelMetadataProvider, container: ModelExplorer, metadata: ModelMetadata, modelAccessor: Func<unknown, unknown>): ModelExplorer;
+    new(metadataProvider: IModelMetadataProvider, container: ModelExplorer, metadata: ModelMetadata, modelAccessor: Func_2<unknown, unknown>): ModelExplorer;
     new(metadataProvider: IModelMetadataProvider, container: ModelExplorer, metadata: ModelMetadata, model: unknown): ModelExplorer;
 };
 
@@ -552,9 +548,9 @@ export type ModelExpression = ModelExpression$instance;
 export interface ModelExpressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IModelExpressionProvider: never;
 
-    CreateModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression<Func<TModel, TValue>>): ModelExpression;
+    CreateModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression_1<Func_2<TModel, TValue>>): ModelExpression;
     CreateModelExpression<TModel>(viewData: ViewDataDictionary_1<TModel>, expression: string): ModelExpression;
-    GetExpressionText<TModel, TValue>(expression: Expression<Func<TModel, TValue>>): string;
+    GetExpressionText<TModel, TValue>(expression: Expression_1<Func_2<TModel, TValue>>): string;
 }
 
 
@@ -573,13 +569,13 @@ export type ModelExpressionProvider = ModelExpressionProvider$instance & __Model
 export interface PartialViewResultExecutor$instance extends ViewExecutor {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
-    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
     FindView(actionContext: ActionContext, viewResult: PartialViewResult): ViewEngineResult;
 }
 
 
 export const PartialViewResultExecutor: {
-    new(viewOptions: IOptions<MvcViewOptions>, writerFactory: IHttpResponseStreamWriterFactory, viewEngine: ICompositeViewEngine, tempDataFactory: ITempDataDictionaryFactory, diagnosticListener: DiagnosticListener, loggerFactory: ILoggerFactory, modelMetadataProvider: IModelMetadataProvider): PartialViewResultExecutor;
+    new(viewOptions: IOptions_1<MvcViewOptions>, writerFactory: IHttpResponseStreamWriterFactory, viewEngine: ICompositeViewEngine, tempDataFactory: ITempDataDictionaryFactory, diagnosticListener: DiagnosticListener, loggerFactory: ILoggerFactory, modelMetadataProvider: IModelMetadataProvider): PartialViewResultExecutor;
 };
 
 
@@ -590,7 +586,7 @@ export interface __PartialViewResultExecutor$views {
 export type PartialViewResultExecutor = PartialViewResultExecutor$instance & __PartialViewResultExecutor$views;
 
 
-export interface SaveTempDataAttribute$instance extends Attribute, IFilterMetadata {
+export interface SaveTempDataAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -611,16 +607,14 @@ export interface __SaveTempDataAttribute$views {
     As_IOrderedFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance;
 }
 
-export interface SaveTempDataAttribute$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {}
-
 export type SaveTempDataAttribute = SaveTempDataAttribute$instance & __SaveTempDataAttribute$views;
 
 
-export interface SessionStateTempDataProvider$instance {
+export interface SessionStateTempDataProvider$instance extends ITempDataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataProvider: never;
 
-    LoadTempData(context: HttpContext): IDictionary<System_Internal.String, unknown>;
-    SaveTempData(context: HttpContext, values: IDictionary<System_Internal.String, unknown>): void;
+    LoadTempData(context: HttpContext): IDictionary_2<System_Internal.String, unknown>;
+    SaveTempData(context: HttpContext, values: IDictionary_2<System_Internal.String, unknown>): void;
 }
 
 
@@ -633,12 +627,10 @@ export interface __SessionStateTempDataProvider$views {
     As_ITempDataProvider(): ITempDataProvider$instance;
 }
 
-export interface SessionStateTempDataProvider$instance extends ITempDataProvider$instance {}
-
 export type SessionStateTempDataProvider = SessionStateTempDataProvider$instance & __SessionStateTempDataProvider$views;
 
 
-export interface StringHtmlContent$instance {
+export interface StringHtmlContent$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -654,8 +646,6 @@ export interface __StringHtmlContent$views {
     As_IHtmlContent(): Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance;
 }
 
-export interface StringHtmlContent$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {}
-
 export type StringHtmlContent = StringHtmlContent$instance & __StringHtmlContent$views;
 
 
@@ -668,13 +658,13 @@ export interface TempDataDictionary$instance {
 
     readonly Count: int;
     [key: string]: unknown | undefined;
-    readonly Keys: ICollection<System_Internal.String>;
-    readonly Values: ICollection<unknown | undefined>;
+    readonly Keys: ICollection_1<System_Internal.String>;
+    readonly Values: ICollection_1<unknown | undefined>;
     Add(key: string, value: unknown): void;
     Clear(): void;
     ContainsKey(key: string): boolean;
     ContainsValue(value: unknown): boolean;
-    GetEnumerator(): IEnumerator__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
     Keep(): void;
     Keep(key: string): void;
     Load(): void;
@@ -697,7 +687,7 @@ export interface __TempDataDictionary$views {
 export type TempDataDictionary = TempDataDictionary$instance & __TempDataDictionary$views;
 
 
-export interface TempDataDictionaryFactory$instance {
+export interface TempDataDictionaryFactory$instance extends ITempDataDictionaryFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionaryFactory: never;
 
     GetTempData(context: HttpContext): ITempDataDictionary;
@@ -712,8 +702,6 @@ export const TempDataDictionaryFactory: {
 export interface __TempDataDictionaryFactory$views {
     As_ITempDataDictionaryFactory(): ITempDataDictionaryFactory$instance;
 }
-
-export interface TempDataDictionaryFactory$instance extends ITempDataDictionaryFactory$instance {}
 
 export type TempDataDictionaryFactory = TempDataDictionaryFactory$instance & __TempDataDictionaryFactory$views;
 
@@ -737,8 +725,8 @@ export const TemplateInfo: {
 export type TemplateInfo = TemplateInfo$instance;
 
 export interface ValidationHtmlAttributeProvider$instance {
-    AddAndTrackValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
-    AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary<System_Internal.String, System_Internal.String>): void;
+    AddAndTrackValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, attributes: IDictionary_2<System_Internal.String, System_Internal.String>): void;
+    AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary_2<System_Internal.String, System_Internal.String>): void;
 }
 
 
@@ -756,15 +744,13 @@ export interface ViewComponentResultExecutor$instance {
 
 
 export const ViewComponentResultExecutor: {
-    new(mvcHelperOptions: IOptions<MvcViewOptions>, loggerFactory: ILoggerFactory, htmlEncoder: HtmlEncoder, modelMetadataProvider: IModelMetadataProvider, tempDataDictionaryFactory: ITempDataDictionaryFactory, writerFactory: IHttpResponseStreamWriterFactory): ViewComponentResultExecutor;
+    new(mvcHelperOptions: IOptions_1<MvcViewOptions>, loggerFactory: ILoggerFactory, htmlEncoder: HtmlEncoder, modelMetadataProvider: IModelMetadataProvider, tempDataDictionaryFactory: ITempDataDictionaryFactory, writerFactory: IHttpResponseStreamWriterFactory): ViewComponentResultExecutor;
 };
 
 
 export interface __ViewComponentResultExecutor$views {
     As_IActionResultExecutor_1(): Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IActionResultExecutor_1$instance<ViewComponentResult>;
 }
-
-export interface ViewComponentResultExecutor$instance extends Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IActionResultExecutor_1$instance<ViewComponentResult> {}
 
 export type ViewComponentResultExecutor = ViewComponentResultExecutor$instance & __ViewComponentResultExecutor$views;
 
@@ -789,24 +775,24 @@ export interface ViewDataDictionary$instance {
     readonly Count: int;
     readonly IsReadOnly: boolean;
     [index: string]: unknown | undefined;
-    readonly Keys: ICollection<System_Internal.String>;
-    Model: TModel | unknown;
+    readonly Keys: ICollection_1<System_Internal.String>;
+    Model: unknown;
     ModelExplorer: ModelExplorer;
     readonly ModelMetadata: ModelMetadata;
     readonly ModelState: ModelStateDictionary;
     readonly TemplateInfo: TemplateInfo;
-    readonly Values: ICollection<unknown | undefined>;
+    readonly Values: ICollection_1<unknown | undefined>;
     Add(key: string, value: unknown): void;
-    Add(item: KeyValuePair<System_Internal.String, unknown>): void;
+    Add(item: KeyValuePair_2<System_Internal.String, unknown>): void;
     Clear(): void;
-    Contains(item: KeyValuePair<System_Internal.String, unknown>): boolean;
+    Contains(item: KeyValuePair_2<System_Internal.String, unknown>): boolean;
     ContainsKey(key: string): boolean;
-    CopyTo(array: KeyValuePair<System_Internal.String, unknown>[], arrayIndex: int): void;
+    CopyTo(array: KeyValuePair_2<System_Internal.String, unknown>[], arrayIndex: int): void;
     Eval(expression: string): unknown | undefined;
     Eval(expression: string, format: string): string | undefined;
     GetViewDataInfo(expression: string): ViewDataInfo | undefined;
     Remove(key: string): boolean;
-    Remove(item: KeyValuePair<System_Internal.String, unknown>): boolean;
+    Remove(item: KeyValuePair_2<System_Internal.String, unknown>): boolean;
     SetModel(value: unknown): void;
     TryGetValue(key: string, value: unknown): boolean;
 }
@@ -827,7 +813,7 @@ export interface ViewDataDictionary_1$instance<TModel> extends ViewDataDictionar
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Model: TModel | unknown;
+    Model: TModel;
 }
 
 
@@ -855,7 +841,7 @@ export interface ViewDataDictionaryControllerPropertyActivator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerPropertyActivator: never;
 
     Activate(actionContext: ControllerContext, controller: unknown): void;
-    GetActivatorDelegate(actionDescriptor: ControllerActionDescriptor): Action<ControllerContext, unknown>;
+    GetActivatorDelegate(actionDescriptor: ControllerActionDescriptor): Action_2<ControllerContext, unknown>;
 }
 
 
@@ -876,19 +862,19 @@ export interface ViewDataInfo$instance {
 export const ViewDataInfo: {
     new(container: unknown, value: unknown): ViewDataInfo;
     new(container: unknown, propertyInfo: PropertyInfo): ViewDataInfo;
-    new(container: unknown, propertyInfo: PropertyInfo, valueAccessor: Func<unknown>): ViewDataInfo;
+    new(container: unknown, propertyInfo: PropertyInfo, valueAccessor: Func_1<unknown>): ViewDataInfo;
 };
 
 
 export type ViewDataInfo = ViewDataInfo$instance;
 
 export interface ViewExecutor$instance {
-    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
 }
 
 
 export const ViewExecutor: {
-    new(viewOptions: IOptions<MvcViewOptions>, writerFactory: IHttpResponseStreamWriterFactory, viewEngine: ICompositeViewEngine, tempDataFactory: ITempDataDictionaryFactory, diagnosticListener: DiagnosticListener, modelMetadataProvider: IModelMetadataProvider): ViewExecutor;
+    new(viewOptions: IOptions_1<MvcViewOptions>, writerFactory: IHttpResponseStreamWriterFactory, viewEngine: ICompositeViewEngine, tempDataFactory: ITempDataDictionaryFactory, diagnosticListener: DiagnosticListener, modelMetadataProvider: IModelMetadataProvider): ViewExecutor;
     readonly DefaultContentType: string;
 };
 
@@ -898,13 +884,13 @@ export type ViewExecutor = ViewExecutor$instance;
 export interface ViewResultExecutor$instance extends ViewExecutor {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
-    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable<System_Internal.Int32>): Task;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
     FindView(actionContext: ActionContext, viewResult: ViewResult): ViewEngineResult;
 }
 
 
 export const ViewResultExecutor: {
-    new(viewOptions: IOptions<MvcViewOptions>, writerFactory: IHttpResponseStreamWriterFactory, viewEngine: ICompositeViewEngine, tempDataFactory: ITempDataDictionaryFactory, diagnosticListener: DiagnosticListener, loggerFactory: ILoggerFactory, modelMetadataProvider: IModelMetadataProvider): ViewResultExecutor;
+    new(viewOptions: IOptions_1<MvcViewOptions>, writerFactory: IHttpResponseStreamWriterFactory, viewEngine: ICompositeViewEngine, tempDataFactory: ITempDataDictionaryFactory, diagnosticListener: DiagnosticListener, loggerFactory: ILoggerFactory, modelMetadataProvider: IModelMetadataProvider): ViewResultExecutor;
 };
 
 

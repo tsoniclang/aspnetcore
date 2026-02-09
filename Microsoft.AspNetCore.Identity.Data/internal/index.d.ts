@@ -6,8 +6,8 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ForgotPasswordRequest$instance {
     Email: string;
@@ -120,7 +120,7 @@ export const ResetPasswordRequest: {
 export type ResetPasswordRequest = ResetPasswordRequest$instance;
 
 export interface TwoFactorRequest$instance {
-    Enable: Nullable<System_Internal.Boolean>;
+    Enable: Nullable_1<System_Internal.Boolean>;
     ForgetMachine: boolean;
     ResetRecoveryCodes: boolean;
     ResetSharedKey: boolean;

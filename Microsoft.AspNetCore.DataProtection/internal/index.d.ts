@@ -12,14 +12,14 @@ import type { ptr } from "@tsonic/core/types.js";
 import type { AuthenticatedEncryptorConfiguration, CngCbcAuthenticatedEncryptorConfiguration, CngGcmAuthenticatedEncryptorConfiguration, ManagedAuthenticatedEncryptorConfiguration } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js";
 import type { IKeyEscrowSink, KeyManagementOptions } from "../../Microsoft.AspNetCore.DataProtection.KeyManagement/internal/index.js";
 import type { DpapiNGProtectionDescriptorFlags } from "../../Microsoft.AspNetCore.DataProtection.XmlEncryption/internal/index.js";
-import type { RegistryKey } from "@tsonic/dotnet/Microsoft.Win32.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DirectoryInfo } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, ArraySegment, Boolean as ClrBoolean, Byte, DateTimeOffset, Func, IDisposable, Int32, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { RegistryKey } from "@tsonic/dotnet/Microsoft.Win32/internal/index.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DirectoryInfo } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, ArraySegment_1, Boolean as ClrBoolean, Byte, DateTimeOffset, Func_2, IDisposable, Int32, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface IDataProtectionBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder: never;
@@ -66,7 +66,7 @@ export interface ISecret$instance extends IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_ISecret: never;
 
     readonly Length: int;
-    WriteSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;
+    WriteSecretIntoBuffer(buffer: ArraySegment_1<System_Internal.Byte>): void;
 }
 
 
@@ -100,7 +100,7 @@ export const DataProtectionOptions: {
 
 export type DataProtectionOptions = DataProtectionOptions$instance;
 
-export interface EphemeralDataProtectionProvider$instance {
+export interface EphemeralDataProtectionProvider$instance extends IDataProtectionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
 
     CreateProtector(purpose: string): IDataProtector;
@@ -117,8 +117,6 @@ export interface __EphemeralDataProtectionProvider$views {
     As_IDataProtectionProvider(): IDataProtectionProvider$instance;
 }
 
-export interface EphemeralDataProtectionProvider$instance extends IDataProtectionProvider$instance {}
-
 export type EphemeralDataProtectionProvider = EphemeralDataProtectionProvider$instance & __EphemeralDataProtectionProvider$views;
 
 
@@ -128,13 +126,13 @@ export interface Secret$instance {
 
     readonly Length: int;
     Dispose(): void;
-    WriteSecretIntoBuffer(buffer: ArraySegment<System_Internal.Byte>): void;
+    WriteSecretIntoBuffer(buffer: ArraySegment_1<System_Internal.Byte>): void;
     WriteSecretIntoBuffer(buffer: ptr<byte>, bufferLength: int): void;
 }
 
 
 export const Secret: {
-    new(value: ArraySegment<System_Internal.Byte>): Secret;
+    new(value: ArraySegment_1<System_Internal.Byte>): Secret;
     new(value: byte[]): Secret;
     new(secret: ptr<byte>, secretLength: int): Secret;
     new(secret: ISecret): Secret;
@@ -162,9 +160,9 @@ export type DataProtectionAdvancedExtensions = DataProtectionAdvancedExtensions$
 
 export abstract class DataProtectionBuilderExtensions$instance {
     static AddKeyEscrowSink(builder: IDataProtectionBuilder, sink: IKeyEscrowSink): IDataProtectionBuilder;
-    static AddKeyEscrowSink(builder: IDataProtectionBuilder, factory: Func<IServiceProvider, IKeyEscrowSink>): IDataProtectionBuilder;
+    static AddKeyEscrowSink(builder: IDataProtectionBuilder, factory: Func_2<IServiceProvider, IKeyEscrowSink>): IDataProtectionBuilder;
     static AddKeyEscrowSink<TImplementation extends IKeyEscrowSink>(builder: IDataProtectionBuilder): IDataProtectionBuilder;
-    static AddKeyManagementOptions(builder: IDataProtectionBuilder, setupAction: Action<KeyManagementOptions>): IDataProtectionBuilder;
+    static AddKeyManagementOptions(builder: IDataProtectionBuilder, setupAction: Action_1<KeyManagementOptions>): IDataProtectionBuilder;
     static DisableAutomaticKeyGeneration(builder: IDataProtectionBuilder): IDataProtectionBuilder;
     static PersistKeysToFileSystem(builder: IDataProtectionBuilder, directory: DirectoryInfo): IDataProtectionBuilder;
     static PersistKeysToRegistry(builder: IDataProtectionBuilder, registryKey: RegistryKey): IDataProtectionBuilder;
@@ -188,10 +186,10 @@ export abstract class DataProtectionBuilderExtensions$instance {
 export type DataProtectionBuilderExtensions = DataProtectionBuilderExtensions$instance;
 
 export abstract class DataProtectionCommonExtensions$instance {
-    static CreateProtector(provider: IDataProtectionProvider, purposes: IEnumerable<System_Internal.String>): IDataProtector;
+    static CreateProtector(provider: IDataProtectionProvider, purposes: IEnumerable_1<System_Internal.String>): IDataProtector;
     static CreateProtector(provider: IDataProtectionProvider, purpose: string, ...subPurposes: string[]): IDataProtector;
     static GetDataProtectionProvider(services: IServiceProvider): IDataProtectionProvider;
-    static GetDataProtector(services: IServiceProvider, purposes: IEnumerable<System_Internal.String>): IDataProtector;
+    static GetDataProtector(services: IServiceProvider, purposes: IEnumerable_1<System_Internal.String>): IDataProtector;
     static GetDataProtector(services: IServiceProvider, purpose: string, ...subPurposes: string[]): IDataProtector;
     static Protect(protector: IDataProtector, plaintext: string): string;
     static Unprotect(protector: IDataProtector, protectedData: string): string;
@@ -201,8 +199,8 @@ export abstract class DataProtectionCommonExtensions$instance {
 export type DataProtectionCommonExtensions = DataProtectionCommonExtensions$instance;
 
 export abstract class DataProtectionProvider$instance {
-    static Create(keyDirectory: DirectoryInfo, setupAction: Action<IDataProtectionBuilder>, certificate: X509Certificate2): IDataProtectionProvider;
-    static Create(keyDirectory: DirectoryInfo, setupAction: Action<IDataProtectionBuilder>): IDataProtectionProvider;
+    static Create(keyDirectory: DirectoryInfo, setupAction: Action_1<IDataProtectionBuilder>, certificate: X509Certificate2): IDataProtectionProvider;
+    static Create(keyDirectory: DirectoryInfo, setupAction: Action_1<IDataProtectionBuilder>): IDataProtectionProvider;
     static Create(keyDirectory: DirectoryInfo, certificate: X509Certificate2): IDataProtectionProvider;
     static Create(keyDirectory: DirectoryInfo): IDataProtectionProvider;
     static Create(applicationName: string, certificate: X509Certificate2): IDataProtectionProvider;

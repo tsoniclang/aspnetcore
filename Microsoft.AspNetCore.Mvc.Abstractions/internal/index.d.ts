@@ -11,10 +11,10 @@ import type { FilterDescriptor } from "../../Microsoft.AspNetCore.Mvc.Filters/in
 import type { BindingInfo } from "../../Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js";
 import type { AttributeRouteInfo } from "../../Microsoft.AspNetCore.Mvc.Routing/internal/index.js";
 import type { ActionContext } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
-import type { IDictionary, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Int32, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IDictionary_2, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Int32, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IActionDescriptorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider: never;
@@ -46,19 +46,19 @@ export interface IActionInvokerProvider$instance {
 export type IActionInvokerProvider = IActionInvokerProvider$instance;
 
 export interface ActionDescriptor$instance {
-    get ActionConstraints(): IList<IActionConstraintMetadata> | undefined;
-    set ActionConstraints(value: IList<IActionConstraintMetadata> | undefined);
+    get ActionConstraints(): IList_1<IActionConstraintMetadata> | undefined;
+    set ActionConstraints(value: IList_1<IActionConstraintMetadata> | undefined);
     get AttributeRouteInfo(): AttributeRouteInfo | undefined;
     set AttributeRouteInfo(value: AttributeRouteInfo | undefined);
-    BoundProperties: IList<ParameterDescriptor>;
+    BoundProperties: IList_1<ParameterDescriptor>;
     get DisplayName(): string | undefined;
     set DisplayName(value: string | undefined);
-    EndpointMetadata: IList<unknown>;
-    FilterDescriptors: IList<FilterDescriptor>;
+    EndpointMetadata: IList_1<unknown>;
+    FilterDescriptors: IList_1<FilterDescriptor>;
     readonly Id: string;
-    Parameters: IList<ParameterDescriptor>;
-    Properties: IDictionary<unknown, unknown | undefined>;
-    RouteValues: IDictionary<System_Internal.String, string | undefined>;
+    Parameters: IList_1<ParameterDescriptor>;
+    Properties: IDictionary_2<unknown, unknown | undefined>;
+    RouteValues: IDictionary_2<System_Internal.String, string | undefined>;
 }
 
 
@@ -70,7 +70,7 @@ export const ActionDescriptor: {
 export type ActionDescriptor = ActionDescriptor$instance;
 
 export interface ActionDescriptorProviderContext$instance {
-    readonly Results: IList<ActionDescriptor>;
+    readonly Results: IList_1<ActionDescriptor>;
 }
 
 

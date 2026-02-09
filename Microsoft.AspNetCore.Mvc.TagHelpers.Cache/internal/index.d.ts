@@ -9,18 +9,18 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { HtmlString, IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
 import type { CacheTagHelper, DistributedCacheTagHelper } from "../../Microsoft.AspNetCore.Mvc.TagHelpers/internal/index.js";
 import type { TagHelperContext, TagHelperOutput } from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, IEquatable, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { DistributedCacheEntryOptions, IDistributedCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Distributed.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { HtmlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, IEquatable_1, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { DistributedCacheEntryOptions, IDistributedCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Distributed/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface IDistributedCacheTagHelperFormatter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperFormatter: never;
 
-    DeserializeAsync(value: byte[]): Task<HtmlString>;
-    SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
+    DeserializeAsync(value: byte[]): Task_1<HtmlString>;
+    SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task_1<byte[]>;
 }
 
 
@@ -29,7 +29,7 @@ export type IDistributedCacheTagHelperFormatter = IDistributedCacheTagHelperForm
 export interface IDistributedCacheTagHelperService$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperService: never;
 
-    ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
+    ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task_1<IHtmlContent>;
 }
 
 
@@ -38,7 +38,7 @@ export type IDistributedCacheTagHelperService = IDistributedCacheTagHelperServic
 export interface IDistributedCacheTagHelperStorage$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperStorage: never;
 
-    GetAsync(key: string): Task<byte[]>;
+    GetAsync(key: string): Task_1<byte[]>;
     SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
 }
 
@@ -64,11 +64,11 @@ export const CacheTagKey: {
 
 export type CacheTagKey = CacheTagKey$instance;
 
-export interface DistributedCacheTagHelperFormatter$instance {
+export interface DistributedCacheTagHelperFormatter$instance extends IDistributedCacheTagHelperFormatter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperFormatter: never;
 
-    DeserializeAsync(value: byte[]): Task<HtmlString>;
-    SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task<byte[]>;
+    DeserializeAsync(value: byte[]): Task_1<HtmlString>;
+    SerializeAsync(context: DistributedCacheTagHelperFormattingContext): Task_1<byte[]>;
 }
 
 
@@ -80,8 +80,6 @@ export const DistributedCacheTagHelperFormatter: {
 export interface __DistributedCacheTagHelperFormatter$views {
     As_IDistributedCacheTagHelperFormatter(): IDistributedCacheTagHelperFormatter$instance;
 }
-
-export interface DistributedCacheTagHelperFormatter$instance extends IDistributedCacheTagHelperFormatter$instance {}
 
 export type DistributedCacheTagHelperFormatter = DistributedCacheTagHelperFormatter$instance & __DistributedCacheTagHelperFormatter$views;
 
@@ -98,10 +96,10 @@ export const DistributedCacheTagHelperFormattingContext: {
 
 export type DistributedCacheTagHelperFormattingContext = DistributedCacheTagHelperFormattingContext$instance;
 
-export interface DistributedCacheTagHelperService$instance {
+export interface DistributedCacheTagHelperService$instance extends IDistributedCacheTagHelperService$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperService: never;
 
-    ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task<IHtmlContent>;
+    ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task_1<IHtmlContent>;
 }
 
 
@@ -114,15 +112,13 @@ export interface __DistributedCacheTagHelperService$views {
     As_IDistributedCacheTagHelperService(): IDistributedCacheTagHelperService$instance;
 }
 
-export interface DistributedCacheTagHelperService$instance extends IDistributedCacheTagHelperService$instance {}
-
 export type DistributedCacheTagHelperService = DistributedCacheTagHelperService$instance & __DistributedCacheTagHelperService$views;
 
 
-export interface DistributedCacheTagHelperStorage$instance {
+export interface DistributedCacheTagHelperStorage$instance extends IDistributedCacheTagHelperStorage$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperStorage: never;
 
-    GetAsync(key: string): Task<byte[]>;
+    GetAsync(key: string): Task_1<byte[]>;
     SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions): Task;
 }
 
@@ -135,8 +131,6 @@ export const DistributedCacheTagHelperStorage: {
 export interface __DistributedCacheTagHelperStorage$views {
     As_IDistributedCacheTagHelperStorage(): IDistributedCacheTagHelperStorage$instance;
 }
-
-export interface DistributedCacheTagHelperStorage$instance extends IDistributedCacheTagHelperStorage$instance {}
 
 export type DistributedCacheTagHelperStorage = DistributedCacheTagHelperStorage$instance & __DistributedCacheTagHelperStorage$views;
 

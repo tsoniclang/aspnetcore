@@ -8,14 +8,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IWebHostEnvironment } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { TextReader } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { TextReader } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum RuleResult {
     ContinueRules = 0,
@@ -54,14 +54,14 @@ export interface RewriteMiddleware$instance {
 
 
 export const RewriteMiddleware: {
-    new(next: RequestDelegate, hostingEnvironment: IWebHostEnvironment, loggerFactory: ILoggerFactory, options: IOptions<RewriteOptions>): RewriteMiddleware;
+    new(next: RequestDelegate, hostingEnvironment: IWebHostEnvironment, loggerFactory: ILoggerFactory, options: IOptions_1<RewriteOptions>): RewriteMiddleware;
 };
 
 
 export type RewriteMiddleware = RewriteMiddleware$instance;
 
 export interface RewriteOptions$instance {
-    readonly Rules: IList<IRule>;
+    readonly Rules: IList_1<IRule>;
     StaticFileProvider: IFileProvider;
 }
 
@@ -91,10 +91,10 @@ export type IISUrlRewriteOptionsExtensions = IISUrlRewriteOptionsExtensions$inst
 
 export abstract class RewriteOptionsExtensions$instance {
     static Add(options: RewriteOptions, rule: IRule): RewriteOptions;
-    static Add(options: RewriteOptions, applyRule: Action<RewriteContext>): RewriteOptions;
+    static Add(options: RewriteOptions, applyRule: Action_1<RewriteContext>): RewriteOptions;
     static AddRedirect(options: RewriteOptions, regex: string, replacement: string, statusCode: int): RewriteOptions;
     static AddRedirect(options: RewriteOptions, regex: string, replacement: string): RewriteOptions;
-    static AddRedirectToHttps(options: RewriteOptions, statusCode: int, sslPort: Nullable<System_Internal.Int32>): RewriteOptions;
+    static AddRedirectToHttps(options: RewriteOptions, statusCode: int, sslPort: Nullable_1<System_Internal.Int32>): RewriteOptions;
     static AddRedirectToHttps(options: RewriteOptions, statusCode: int): RewriteOptions;
     static AddRedirectToHttps(options: RewriteOptions): RewriteOptions;
     static AddRedirectToHttpsPermanent(options: RewriteOptions): RewriteOptions;

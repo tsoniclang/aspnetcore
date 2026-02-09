@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { IWebHostBuilder } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System.js";
-import type { IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
+import type { IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
 
 export interface WebHostBuilderOptions$instance {
     SuppressEnvironmentConfiguration: boolean;
@@ -24,17 +24,17 @@ export const WebHostBuilderOptions: {
 export type WebHostBuilderOptions = WebHostBuilderOptions$instance;
 
 export abstract class GenericHostBuilderExtensions$instance {
-    static ConfigureWebHostDefaults(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureOptions: Action<WebHostBuilderOptions>): IHostBuilder;
-    static ConfigureWebHostDefaults(builder: IHostBuilder, configure: Action<IWebHostBuilder>): IHostBuilder;
+    static ConfigureWebHostDefaults(builder: IHostBuilder, configure: Action_1<IWebHostBuilder>, configureOptions: Action_1<WebHostBuilderOptions>): IHostBuilder;
+    static ConfigureWebHostDefaults(builder: IHostBuilder, configure: Action_1<IWebHostBuilder>): IHostBuilder;
 }
 
 
 export type GenericHostBuilderExtensions = GenericHostBuilderExtensions$instance;
 
 export abstract class GenericHostWebHostBuilderExtensions$instance {
-    static ConfigureSlimWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureWebHostBuilder: Action<WebHostBuilderOptions>): IHostBuilder;
-    static ConfigureWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>, configureWebHostBuilder: Action<WebHostBuilderOptions>): IHostBuilder;
-    static ConfigureWebHost(builder: IHostBuilder, configure: Action<IWebHostBuilder>): IHostBuilder;
+    static ConfigureSlimWebHost(builder: IHostBuilder, configure: Action_1<IWebHostBuilder>, configureWebHostBuilder: Action_1<WebHostBuilderOptions>): IHostBuilder;
+    static ConfigureWebHost(builder: IHostBuilder, configure: Action_1<IWebHostBuilder>, configureWebHostBuilder: Action_1<WebHostBuilderOptions>): IHostBuilder;
+    static ConfigureWebHost(builder: IHostBuilder, configure: Action_1<IWebHostBuilder>): IHostBuilder;
 }
 
 

@@ -8,46 +8,46 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { HostString, IHeaderDictionary } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { CacheControlHeaderValue, ContentDispositionHeaderValue, ContentRangeHeaderValue, CookieHeaderValue, EntityTagHeaderValue, MediaTypeHeaderValue, RangeConditionHeaderValue, RangeHeaderValue, SetCookieHeaderValue, StringWithQualityHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { DateTimeOffset, Int64, Nullable, Object as ClrObject, String as ClrString, Uri, Void } from "@tsonic/dotnet/System.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { DateTimeOffset, Int64, Nullable_1, Object as ClrObject, String as ClrString, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface RequestHeaders$instance {
-    Accept: IList<MediaTypeHeaderValue>;
-    AcceptCharset: IList<StringWithQualityHeaderValue>;
-    AcceptEncoding: IList<StringWithQualityHeaderValue>;
-    AcceptLanguage: IList<StringWithQualityHeaderValue>;
+    Accept: IList_1<MediaTypeHeaderValue>;
+    AcceptCharset: IList_1<StringWithQualityHeaderValue>;
+    AcceptEncoding: IList_1<StringWithQualityHeaderValue>;
+    AcceptLanguage: IList_1<StringWithQualityHeaderValue>;
     get CacheControl(): CacheControlHeaderValue | undefined;
     set CacheControl(value: CacheControlHeaderValue | undefined);
     get ContentDisposition(): ContentDispositionHeaderValue | undefined;
     set ContentDisposition(value: ContentDispositionHeaderValue | undefined);
-    ContentLength: Nullable<System_Internal.Int64>;
+    ContentLength: Nullable_1<System_Internal.Int64>;
     get ContentRange(): ContentRangeHeaderValue | undefined;
     set ContentRange(value: ContentRangeHeaderValue | undefined);
     get ContentType(): MediaTypeHeaderValue | undefined;
     set ContentType(value: MediaTypeHeaderValue | undefined);
-    Cookie: IList<CookieHeaderValue>;
-    Date: Nullable<DateTimeOffset>;
-    Expires: Nullable<DateTimeOffset>;
+    Cookie: IList_1<CookieHeaderValue>;
+    Date: Nullable_1<DateTimeOffset>;
+    Expires: Nullable_1<DateTimeOffset>;
     readonly Headers: IHeaderDictionary;
     Host: HostString;
-    IfMatch: IList<EntityTagHeaderValue>;
-    IfModifiedSince: Nullable<DateTimeOffset>;
-    IfNoneMatch: IList<EntityTagHeaderValue>;
+    IfMatch: IList_1<EntityTagHeaderValue>;
+    IfModifiedSince: Nullable_1<DateTimeOffset>;
+    IfNoneMatch: IList_1<EntityTagHeaderValue>;
     get IfRange(): RangeConditionHeaderValue | undefined;
     set IfRange(value: RangeConditionHeaderValue | undefined);
-    IfUnmodifiedSince: Nullable<DateTimeOffset>;
-    LastModified: Nullable<DateTimeOffset>;
+    IfUnmodifiedSince: Nullable_1<DateTimeOffset>;
+    LastModified: Nullable_1<DateTimeOffset>;
     get Range(): RangeHeaderValue | undefined;
     set Range(value: RangeHeaderValue | undefined);
     get Referer(): Uri | undefined;
     set Referer(value: Uri | undefined);
     Append(name: string, value: unknown): void;
-    AppendList<T>(name: string, values: IList<T>): void;
+    AppendList<T>(name: string, values: IList_1<T>): void;
     Get<T>(name: string): T | undefined;
-    GetList<T>(name: string): IList<T>;
+    GetList<T>(name: string): IList_1<T>;
     Set(name: string, value: unknown): void;
-    SetList<T>(name: string, values: IList<T>): void;
+    SetList<T>(name: string, values: IList_1<T>): void;
 }
 
 
@@ -63,26 +63,26 @@ export interface ResponseHeaders$instance {
     set CacheControl(value: CacheControlHeaderValue | undefined);
     get ContentDisposition(): ContentDispositionHeaderValue | undefined;
     set ContentDisposition(value: ContentDispositionHeaderValue | undefined);
-    ContentLength: Nullable<System_Internal.Int64>;
+    ContentLength: Nullable_1<System_Internal.Int64>;
     get ContentRange(): ContentRangeHeaderValue | undefined;
     set ContentRange(value: ContentRangeHeaderValue | undefined);
     get ContentType(): MediaTypeHeaderValue | undefined;
     set ContentType(value: MediaTypeHeaderValue | undefined);
-    Date: Nullable<DateTimeOffset>;
+    Date: Nullable_1<DateTimeOffset>;
     get ETag(): EntityTagHeaderValue | undefined;
     set ETag(value: EntityTagHeaderValue | undefined);
-    Expires: Nullable<DateTimeOffset>;
+    Expires: Nullable_1<DateTimeOffset>;
     readonly Headers: IHeaderDictionary;
-    LastModified: Nullable<DateTimeOffset>;
+    LastModified: Nullable_1<DateTimeOffset>;
     get Location(): Uri | undefined;
     set Location(value: Uri | undefined);
-    SetCookie: IList<SetCookieHeaderValue>;
+    SetCookie: IList_1<SetCookieHeaderValue>;
     Append(name: string, value: unknown): void;
-    AppendList<T>(name: string, values: IList<T>): void;
+    AppendList<T>(name: string, values: IList_1<T>): void;
     Get<T>(name: string): T | undefined;
-    GetList<T>(name: string): IList<T>;
+    GetList<T>(name: string): IList_1<T>;
     Set(name: string, value: unknown): void;
-    SetList<T>(name: string, values: IList<T>): void;
+    SetList<T>(name: string, values: IList_1<T>): void;
 }
 
 

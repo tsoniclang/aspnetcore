@@ -11,12 +11,12 @@ import type { AuthenticationState, AuthenticationStateProvider, IHostEnvironment
 import * as Microsoft_AspNetCore_Components_Web_Internal from "../../Microsoft.AspNetCore.Components.Web/internal/index.js";
 import type { IJSComponentConfiguration, JSComponentConfigurationStore } from "../../Microsoft.AspNetCore.Components.Web/internal/index.js";
 import type { HttpContext, WebSocketAcceptContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { HybridCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Hybrid.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Func_3, IDisposable, Int32, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { HybridCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Hybrid/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface CircuitOptions$instance {
     DetailedErrors: boolean;
@@ -26,7 +26,7 @@ export interface CircuitOptions$instance {
     set HybridPersistenceCache(value: HybridCache | undefined);
     JSInteropDefaultCallTimeout: TimeSpan;
     MaxBufferedUnacknowledgedRenderBatches: int;
-    PersistedCircuitDistributedRetentionPeriod: Nullable<TimeSpan>;
+    PersistedCircuitDistributedRetentionPeriod: Nullable_1<TimeSpan>;
     PersistedCircuitInMemoryMaxRetained: int;
     PersistedCircuitInMemoryRetentionPeriod: TimeSpan;
     readonly RootComponents: CircuitRootComponentOptions;
@@ -40,7 +40,7 @@ export const CircuitOptions: {
 
 export type CircuitOptions = CircuitOptions$instance;
 
-export interface CircuitRootComponentOptions$instance {
+export interface CircuitRootComponentOptions$instance extends Microsoft_AspNetCore_Components_Web_Internal.IJSComponentConfiguration$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration: never;
 
     readonly JSComponents: JSComponentConfigurationStore;
@@ -57,19 +57,17 @@ export interface __CircuitRootComponentOptions$views {
     As_IJSComponentConfiguration(): Microsoft_AspNetCore_Components_Web_Internal.IJSComponentConfiguration$instance;
 }
 
-export interface CircuitRootComponentOptions$instance extends Microsoft_AspNetCore_Components_Web_Internal.IJSComponentConfiguration$instance {}
-
 export type CircuitRootComponentOptions = CircuitRootComponentOptions$instance & __CircuitRootComponentOptions$views;
 
 
-export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance {
+export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly RevalidationInterval: TimeSpan;
     Dispose(disposing: boolean): void;
-    SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
-    ValidateAuthenticationStateAsync(authenticationState: AuthenticationState, cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
+    SetAuthenticationState(authenticationStateTask: Task_1<AuthenticationState>): void;
+    ValidateAuthenticationStateAsync(authenticationState: AuthenticationState, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
 }
 
 
@@ -81,16 +79,14 @@ export interface __RevalidatingServerAuthenticationStateProvider$views {
     As_IHostEnvironmentAuthenticationStateProvider(): Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance;
 }
 
-export interface RevalidatingServerAuthenticationStateProvider$instance extends System_Internal.IDisposable {}
-
 export type RevalidatingServerAuthenticationStateProvider = RevalidatingServerAuthenticationStateProvider$instance & __RevalidatingServerAuthenticationStateProvider$views;
 
 
-export interface ServerAuthenticationStateProvider$instance extends AuthenticationStateProvider {
+export interface ServerAuthenticationStateProvider$instance extends AuthenticationStateProvider, Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
 
-    GetAuthenticationStateAsync(): Task<AuthenticationState>;
-    SetAuthenticationState(authenticationStateTask: Task<AuthenticationState>): void;
+    GetAuthenticationStateAsync(): Task_1<AuthenticationState>;
+    SetAuthenticationState(authenticationStateTask: Task_1<AuthenticationState>): void;
 }
 
 
@@ -103,14 +99,12 @@ export interface __ServerAuthenticationStateProvider$views {
     As_IHostEnvironmentAuthenticationStateProvider(): Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance;
 }
 
-export interface ServerAuthenticationStateProvider$instance extends Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance {}
-
 export type ServerAuthenticationStateProvider = ServerAuthenticationStateProvider$instance & __ServerAuthenticationStateProvider$views;
 
 
 export interface ServerComponentsEndpointOptions$instance {
-    get ConfigureWebSocketAcceptContext(): Func<HttpContext, WebSocketAcceptContext, Task> | undefined;
-    set ConfigureWebSocketAcceptContext(value: Func<HttpContext, WebSocketAcceptContext, Task> | undefined);
+    get ConfigureWebSocketAcceptContext(): Func_3<HttpContext, WebSocketAcceptContext, Task> | undefined;
+    set ConfigureWebSocketAcceptContext(value: Func_3<HttpContext, WebSocketAcceptContext, Task> | undefined);
     get ContentSecurityFrameAncestorsPolicy(): string | undefined;
     set ContentSecurityFrameAncestorsPolicy(value: string | undefined);
     DisableWebSocketCompression: boolean;

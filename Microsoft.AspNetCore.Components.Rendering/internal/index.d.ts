@@ -8,10 +8,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { ArrayRange_1, Renderer, RenderTreeFrame } from "../../Microsoft.AspNetCore.Components.RenderTree/internal/index.js";
 import type { ElementReference, EventCallback, EventCallback_1, IComponent, IComponentRenderMode, MarkupString, RenderFragment, RenderFragment_1 } from "../../Microsoft.AspNetCore.Components/internal/index.js";
-import type { IEnumerable, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, MulticastDelegate, Nullable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IEnumerable_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, MulticastDelegate, Nullable_1, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ComponentState$instance {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -44,17 +44,17 @@ export interface RenderTreeBuilder$instance {
     AddAttribute(sequence: int, name: string, value: unknown): void;
     AddAttribute(sequence: int, frame: RenderTreeFrame): void;
     AddComponentParameter(sequence: int, name: string, value: unknown): void;
-    AddComponentReferenceCapture(sequence: int, componentReferenceCaptureAction: Action<unknown>): void;
+    AddComponentReferenceCapture(sequence: int, componentReferenceCaptureAction: Action_1<unknown>): void;
     AddComponentRenderMode(renderMode: IComponentRenderMode): void;
     AddContent(sequence: int, textContent: string): void;
     AddContent(sequence: int, fragment: RenderFragment): void;
     AddContent<TValue>(sequence: int, fragment: RenderFragment_1<TValue>, value: TValue): void;
-    AddContent(sequence: int, markupContent: Nullable<MarkupString>): void;
+    AddContent(sequence: int, markupContent: Nullable_1<MarkupString>): void;
     AddContent(sequence: int, markupContent: MarkupString): void;
     AddContent(sequence: int, textContent: unknown): void;
-    AddElementReferenceCapture(sequence: int, elementReferenceCaptureAction: Action<ElementReference>): void;
+    AddElementReferenceCapture(sequence: int, elementReferenceCaptureAction: Action_1<ElementReference>): void;
     AddMarkupContent(sequence: int, markupContent: string): void;
-    AddMultipleAttributes(sequence: int, attributes: IEnumerable<KeyValuePair<System_Internal.String, unknown>>): void;
+    AddMultipleAttributes(sequence: int, attributes: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): void;
     AddNamedEvent(eventType: string, assignedName: string): void;
     Clear(): void;
     CloseComponent(): void;

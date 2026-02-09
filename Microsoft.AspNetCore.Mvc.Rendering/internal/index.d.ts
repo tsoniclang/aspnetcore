@@ -17,16 +17,16 @@ import type { AttributeDictionary, FormContext, HtmlHelperOptions, ITempDataDict
 import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { ActionContext, IViewComponentHelper } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { RouteData } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, Func, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { HtmlEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IDictionary_2, IEnumerable_1, IEnumerator_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Expression_1 } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { HtmlEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, Func_2, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum CheckBoxHiddenInputRenderMode {
     None = 0,
@@ -91,22 +91,22 @@ export interface IHtmlHelper$instance {
     readonly UrlEncoder: UrlEncoder;
     ActionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     AntiForgeryToken(): IHtmlContent;
-    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    CheckBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    CheckBox(expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     Display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
     DisplayName(expression: string): string;
-    DropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    DropDownList(expression: string, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
     Encode(value: unknown): string;
     EndForm(): void;
     FormatValue(value: unknown, format: string): string;
-    GetEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
-    GetEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
+    GetEnumSelectList<TEnum extends unknown>(): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList(enumType: Type): IEnumerable_1<SelectListItem>;
     Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    ListBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
-    RadioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    ListBox(expression: string, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
+    RadioButton(expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     Raw(value: unknown): IHtmlContent;
     Raw(value: string): IHtmlContent;
     RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
@@ -134,42 +134,42 @@ export interface IHtmlHelper_1$instance<TModel> extends IHtmlHelper {
     readonly UrlEncoder: UrlEncoder;
     ActionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     AntiForgeryToken(): IHtmlContent;
-    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    CheckBox(expression: string, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    CheckBoxFor(expression: Expression<Func<TModel, System_Internal.Boolean>>, htmlAttributes: unknown): IHtmlContent;
+    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    CheckBox(expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    CheckBoxFor(expression: Expression_1<Func_2<TModel, System_Internal.Boolean>>, htmlAttributes: unknown): IHtmlContent;
     Display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    DisplayFor<TResult>(expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    DisplayNameFor<TResult>(expression: Expression<Func<TModel, TResult>>): string;
-    DropDownList(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
-    DropDownListFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
+    DisplayNameFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
+    DropDownList(expression: string, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
+    DropDownListFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
     Encode(value: unknown): string;
     Encode(value: string): string;
     EndForm(): void;
     FormatValue(value: unknown, format: string): string;
-    GetEnumSelectList<TEnum extends unknown>(): IEnumerable__System_Collections_Generic<SelectListItem>;
-    GetEnumSelectList(enumType: Type): IEnumerable__System_Collections_Generic<SelectListItem>;
-    GetEnumSelectList<TEnum>(): IEnumerable__System_Collections_Generic<SelectListItem>;
+    GetEnumSelectList<TEnum extends unknown>(): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList(enumType: Type): IEnumerable_1<SelectListItem>;
+    GetEnumSelectList<TEnum>(): IEnumerable_1<SelectListItem>;
     Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    LabelFor<TResult>(expression: Expression<Func<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    ListBox(expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    ListBoxFor<TResult>(expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task<IHtmlContent>;
-    RadioButton(expression: string, value: unknown, isChecked: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
-    RadioButtonFor<TResult>(expression: Expression<Func<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
+    LabelFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
+    ListBox(expression: string, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    ListBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
+    RadioButton(expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
+    RadioButtonFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
     Raw(value: unknown): IHtmlContent;
     Raw(value: string): IHtmlContent;
     RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
     RouteLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
     TextArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
-    TextAreaFor<TResult>(expression: Expression<Func<TModel, TResult>>, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
+    TextAreaFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
     TextBox(expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
     ValidationMessage(expression: string, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    ValidationMessageFor<TResult>(expression: Expression<Func<TModel, TResult>>, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
+    ValidationMessageFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
     ValidationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
     Value(expression: string, format: string): string;
-    ValueFor<TResult>(expression: Expression<Func<TModel, TResult>>, format: string): string;
+    ValueFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, format: string): string;
     DisplayName(expression: string): string;
 }
 
@@ -194,7 +194,7 @@ export interface MultiSelectList$instance {
     readonly DataValueField: string;
     readonly Items: IEnumerable;
     readonly SelectedValues: IEnumerable;
-    GetEnumerator(): IEnumerator<SelectListItem>;
+    GetEnumerator(): IEnumerator_1<SelectListItem>;
 }
 
 
@@ -276,7 +276,7 @@ export const SelectListItem: {
 
 export type SelectListItem = SelectListItem$instance;
 
-export interface TagBuilder$instance {
+export interface TagBuilder$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     readonly Attributes: AttributeDictionary;
@@ -288,8 +288,8 @@ export interface TagBuilder$instance {
     GenerateId(name: string, invalidCharReplacement: string): void;
     MergeAttribute(key: string, value: string): void;
     MergeAttribute(key: string, value: string, replaceExisting: boolean): void;
-    MergeAttributes<TKey, TValue>(attributes: IDictionary<TKey, TValue>): void;
-    MergeAttributes<TKey, TValue>(attributes: IDictionary<TKey, TValue>, replaceExisting: boolean): void;
+    MergeAttributes<TKey, TValue>(attributes: IDictionary_2<TKey, TValue>): void;
+    MergeAttributes<TKey, TValue>(attributes: IDictionary_2<TKey, TValue>, replaceExisting: boolean): void;
     RenderBody(): IHtmlContent | undefined;
     RenderEndTag(): IHtmlContent;
     RenderSelfClosingTag(): IHtmlContent;
@@ -308,8 +308,6 @@ export const TagBuilder: {
 export interface __TagBuilder$views {
     As_IHtmlContent(): Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance;
 }
-
-export interface TagBuilder$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {}
 
 export type TagBuilder = TagBuilder$instance & __TagBuilder$views;
 
@@ -342,9 +340,9 @@ export const ViewContext: {
 export type ViewContext = ViewContext$instance;
 
 export abstract class HtmlHelperComponentExtensions$instance {
-    static RenderComponentAsync<TComponent extends IComponent>(htmlHelper: IHtmlHelper, renderMode: RenderMode, parameters: unknown): Task<IHtmlContent>;
-    static RenderComponentAsync<TComponent extends IComponent>(htmlHelper: IHtmlHelper, renderMode: RenderMode): Task<IHtmlContent>;
-    static RenderComponentAsync(htmlHelper: IHtmlHelper, componentType: Type, renderMode: RenderMode, parameters: unknown): Task<IHtmlContent>;
+    static RenderComponentAsync<TComponent extends IComponent>(htmlHelper: IHtmlHelper, renderMode: RenderMode, parameters: unknown): Task_1<IHtmlContent>;
+    static RenderComponentAsync<TComponent extends IComponent>(htmlHelper: IHtmlHelper, renderMode: RenderMode): Task_1<IHtmlContent>;
+    static RenderComponentAsync(htmlHelper: IHtmlHelper, componentType: Type, renderMode: RenderMode, parameters: unknown): Task_1<IHtmlContent>;
 }
 
 
@@ -356,11 +354,11 @@ export abstract class HtmlHelperDisplayExtensions$instance {
     static Display(htmlHelper: IHtmlHelper, expression: string, templateName: string, htmlFieldName: string): IHtmlContent;
     static Display(htmlHelper: IHtmlHelper, expression: string, templateName: string): IHtmlContent;
     static Display(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, additionalViewData: unknown): IHtmlContent;
-    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, templateName: string, additionalViewData: unknown): IHtmlContent;
-    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string): IHtmlContent;
-    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, templateName: string): IHtmlContent;
-    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, additionalViewData: unknown): IHtmlContent;
+    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): IHtmlContent;
+    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): IHtmlContent;
+    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, templateName: string): IHtmlContent;
+    static DisplayFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
     static DisplayForModel(htmlHelper: IHtmlHelper, additionalViewData: unknown): IHtmlContent;
     static DisplayForModel(htmlHelper: IHtmlHelper, templateName: string, additionalViewData: unknown): IHtmlContent;
     static DisplayForModel(htmlHelper: IHtmlHelper, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
@@ -373,7 +371,7 @@ export abstract class HtmlHelperDisplayExtensions$instance {
 export type HtmlHelperDisplayExtensions = HtmlHelperDisplayExtensions$instance;
 
 export abstract class HtmlHelperDisplayNameExtensions$instance {
-    static DisplayNameFor<TModelItem, TResult>(htmlHelper: IHtmlHelper_1<IEnumerable__System_Collections_Generic<TModelItem>>, expression: Expression<Func<TModelItem, TResult>>): string;
+    static DisplayNameFor<TModelItem, TResult>(htmlHelper: IHtmlHelper_1<IEnumerable_1<TModelItem>>, expression: Expression_1<Func_2<TModelItem, TResult>>): string;
     static DisplayNameForModel(htmlHelper: IHtmlHelper): string;
 }
 
@@ -386,11 +384,11 @@ export abstract class HtmlHelperEditorExtensions$instance {
     static Editor(htmlHelper: IHtmlHelper, expression: string, templateName: string, htmlFieldName: string): IHtmlContent;
     static Editor(htmlHelper: IHtmlHelper, expression: string, templateName: string): IHtmlContent;
     static Editor(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, additionalViewData: unknown): IHtmlContent;
-    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, templateName: string, additionalViewData: unknown): IHtmlContent;
-    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, templateName: string, htmlFieldName: string): IHtmlContent;
-    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, templateName: string): IHtmlContent;
-    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, additionalViewData: unknown): IHtmlContent;
+    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): IHtmlContent;
+    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): IHtmlContent;
+    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, templateName: string): IHtmlContent;
+    static EditorFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
     static EditorForModel(htmlHelper: IHtmlHelper, additionalViewData: unknown): IHtmlContent;
     static EditorForModel(htmlHelper: IHtmlHelper, templateName: string, additionalViewData: unknown): IHtmlContent;
     static EditorForModel(htmlHelper: IHtmlHelper, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
@@ -403,10 +401,10 @@ export abstract class HtmlHelperEditorExtensions$instance {
 export type HtmlHelperEditorExtensions = HtmlHelperEditorExtensions$instance;
 
 export abstract class HtmlHelperFormExtensions$instance {
-    static BeginForm(htmlHelper: IHtmlHelper, method: FormMethod, antiforgery: Nullable<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
+    static BeginForm(htmlHelper: IHtmlHelper, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
     static BeginForm(htmlHelper: IHtmlHelper, method: FormMethod, htmlAttributes: unknown): MvcForm;
     static BeginForm(htmlHelper: IHtmlHelper, method: FormMethod): MvcForm;
-    static BeginForm(htmlHelper: IHtmlHelper, antiforgery: Nullable<System_Internal.Boolean>): MvcForm;
+    static BeginForm(htmlHelper: IHtmlHelper, antiforgery: Nullable_1<System_Internal.Boolean>): MvcForm;
     static BeginForm(htmlHelper: IHtmlHelper, routeValues: unknown): MvcForm;
     static BeginForm(htmlHelper: IHtmlHelper, actionName: string, controllerName: string, method: FormMethod, htmlAttributes: unknown): MvcForm;
     static BeginForm(htmlHelper: IHtmlHelper, actionName: string, controllerName: string, method: FormMethod): MvcForm;
@@ -414,11 +412,11 @@ export abstract class HtmlHelperFormExtensions$instance {
     static BeginForm(htmlHelper: IHtmlHelper, actionName: string, controllerName: string, routeValues: unknown): MvcForm;
     static BeginForm(htmlHelper: IHtmlHelper, actionName: string, controllerName: string): MvcForm;
     static BeginForm(htmlHelper: IHtmlHelper): MvcForm;
-    static BeginRouteForm(htmlHelper: IHtmlHelper, routeValues: unknown, antiforgery: Nullable<System_Internal.Boolean>): MvcForm;
+    static BeginRouteForm(htmlHelper: IHtmlHelper, routeValues: unknown, antiforgery: Nullable_1<System_Internal.Boolean>): MvcForm;
     static BeginRouteForm(htmlHelper: IHtmlHelper, routeValues: unknown): MvcForm;
     static BeginRouteForm(htmlHelper: IHtmlHelper, routeName: string, method: FormMethod, htmlAttributes: unknown): MvcForm;
     static BeginRouteForm(htmlHelper: IHtmlHelper, routeName: string, method: FormMethod): MvcForm;
-    static BeginRouteForm(htmlHelper: IHtmlHelper, routeName: string, antiforgery: Nullable<System_Internal.Boolean>): MvcForm;
+    static BeginRouteForm(htmlHelper: IHtmlHelper, routeName: string, antiforgery: Nullable_1<System_Internal.Boolean>): MvcForm;
     static BeginRouteForm(htmlHelper: IHtmlHelper, routeName: string, routeValues: unknown, method: FormMethod): MvcForm;
     static BeginRouteForm(htmlHelper: IHtmlHelper, routeName: string, routeValues: unknown): MvcForm;
     static BeginRouteForm(htmlHelper: IHtmlHelper, routeName: string): MvcForm;
@@ -431,30 +429,30 @@ export abstract class HtmlHelperInputExtensions$instance {
     static CheckBox(htmlHelper: IHtmlHelper, expression: string, isChecked: boolean): IHtmlContent;
     static CheckBox(htmlHelper: IHtmlHelper, expression: string, htmlAttributes: unknown): IHtmlContent;
     static CheckBox(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static CheckBoxFor<TModel>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, System_Internal.Boolean>>): IHtmlContent;
+    static CheckBoxFor<TModel>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, System_Internal.Boolean>>): IHtmlContent;
     static Hidden(htmlHelper: IHtmlHelper, expression: string, value: unknown): IHtmlContent;
     static Hidden(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static HiddenFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static HiddenFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
     static Password(htmlHelper: IHtmlHelper, expression: string, value: unknown): IHtmlContent;
     static Password(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static PasswordFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static PasswordFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
     static RadioButton(htmlHelper: IHtmlHelper, expression: string, value: unknown, isChecked: boolean): IHtmlContent;
     static RadioButton(htmlHelper: IHtmlHelper, expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     static RadioButton(htmlHelper: IHtmlHelper, expression: string, value: unknown): IHtmlContent;
-    static RadioButtonFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, value: unknown): IHtmlContent;
+    static RadioButtonFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, value: unknown): IHtmlContent;
     static TextArea(htmlHelper: IHtmlHelper, expression: string, htmlAttributes: unknown): IHtmlContent;
     static TextArea(htmlHelper: IHtmlHelper, expression: string, value: string, htmlAttributes: unknown): IHtmlContent;
     static TextArea(htmlHelper: IHtmlHelper, expression: string, value: string): IHtmlContent;
     static TextArea(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static TextAreaFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    static TextAreaFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static TextAreaFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
+    static TextAreaFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
     static TextBox(htmlHelper: IHtmlHelper, expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     static TextBox(htmlHelper: IHtmlHelper, expression: string, value: unknown, format: string): IHtmlContent;
     static TextBox(htmlHelper: IHtmlHelper, expression: string, value: unknown): IHtmlContent;
     static TextBox(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static TextBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    static TextBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, format: string): IHtmlContent;
-    static TextBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static TextBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
+    static TextBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, format: string): IHtmlContent;
+    static TextBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
 }
 
 
@@ -463,9 +461,9 @@ export type HtmlHelperInputExtensions = HtmlHelperInputExtensions$instance;
 export abstract class HtmlHelperLabelExtensions$instance {
     static Label(htmlHelper: IHtmlHelper, expression: string, labelText: string): IHtmlContent;
     static Label(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static LabelFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    static LabelFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, labelText: string): IHtmlContent;
-    static LabelFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static LabelFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
+    static LabelFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, labelText: string): IHtmlContent;
+    static LabelFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
     static LabelForModel(htmlHelper: IHtmlHelper, htmlAttributes: unknown): IHtmlContent;
     static LabelForModel(htmlHelper: IHtmlHelper, labelText: string, htmlAttributes: unknown): IHtmlContent;
     static LabelForModel(htmlHelper: IHtmlHelper, labelText: string): IHtmlContent;
@@ -505,9 +503,9 @@ export abstract class HtmlHelperPartialExtensions$instance {
     static Partial(htmlHelper: IHtmlHelper, partialViewName: string, model: unknown, viewData: ViewDataDictionary): IHtmlContent;
     static Partial(htmlHelper: IHtmlHelper, partialViewName: string, model: unknown): IHtmlContent;
     static Partial(htmlHelper: IHtmlHelper, partialViewName: string): IHtmlContent;
-    static PartialAsync(htmlHelper: IHtmlHelper, partialViewName: string, viewData: ViewDataDictionary): Task<IHtmlContent>;
-    static PartialAsync(htmlHelper: IHtmlHelper, partialViewName: string, model: unknown): Task<IHtmlContent>;
-    static PartialAsync(htmlHelper: IHtmlHelper, partialViewName: string): Task<IHtmlContent>;
+    static PartialAsync(htmlHelper: IHtmlHelper, partialViewName: string, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
+    static PartialAsync(htmlHelper: IHtmlHelper, partialViewName: string, model: unknown): Task_1<IHtmlContent>;
+    static PartialAsync(htmlHelper: IHtmlHelper, partialViewName: string): Task_1<IHtmlContent>;
     static RenderPartial(htmlHelper: IHtmlHelper, partialViewName: string, viewData: ViewDataDictionary): void;
     static RenderPartial(htmlHelper: IHtmlHelper, partialViewName: string, model: unknown, viewData: ViewDataDictionary): void;
     static RenderPartial(htmlHelper: IHtmlHelper, partialViewName: string, model: unknown): void;
@@ -521,17 +519,17 @@ export abstract class HtmlHelperPartialExtensions$instance {
 export type HtmlHelperPartialExtensions = HtmlHelperPartialExtensions$instance;
 
 export abstract class HtmlHelperSelectExtensions$instance {
-    static DropDownList(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    static DropDownList(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string): IHtmlContent;
-    static DropDownList(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
+    static DropDownList(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    static DropDownList(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable_1<SelectListItem>, optionLabel: string): IHtmlContent;
+    static DropDownList(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable_1<SelectListItem>): IHtmlContent;
     static DropDownList(htmlHelper: IHtmlHelper, expression: string, optionLabel: string): IHtmlContent;
     static DropDownList(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static DropDownListFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
-    static DropDownListFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>, optionLabel: string): IHtmlContent;
-    static DropDownListFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
-    static ListBox(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
+    static DropDownListFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
+    static DropDownListFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, optionLabel: string): IHtmlContent;
+    static DropDownListFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>): IHtmlContent;
+    static ListBox(htmlHelper: IHtmlHelper, expression: string, selectList: IEnumerable_1<SelectListItem>): IHtmlContent;
     static ListBox(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static ListBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, selectList: IEnumerable__System_Collections_Generic<SelectListItem>): IHtmlContent;
+    static ListBoxFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>): IHtmlContent;
 }
 
 
@@ -543,10 +541,10 @@ export abstract class HtmlHelperValidationExtensions$instance {
     static ValidationMessage(htmlHelper: IHtmlHelper, expression: string, message: string, tag: string): IHtmlContent;
     static ValidationMessage(htmlHelper: IHtmlHelper, expression: string, message: string): IHtmlContent;
     static ValidationMessage(htmlHelper: IHtmlHelper, expression: string): IHtmlContent;
-    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, message: string, htmlAttributes: unknown): IHtmlContent;
-    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, message: string, tag: string): IHtmlContent;
-    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>, message: string): IHtmlContent;
-    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): IHtmlContent;
+    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, message: string, htmlAttributes: unknown): IHtmlContent;
+    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, message: string, tag: string): IHtmlContent;
+    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>, message: string): IHtmlContent;
+    static ValidationMessageFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): IHtmlContent;
     static ValidationSummary(htmlHelper: IHtmlHelper, excludePropertyErrors: boolean, message: string, htmlAttributes: unknown): IHtmlContent;
     static ValidationSummary(htmlHelper: IHtmlHelper, excludePropertyErrors: boolean, message: string, tag: string): IHtmlContent;
     static ValidationSummary(htmlHelper: IHtmlHelper, excludePropertyErrors: boolean, message: string): IHtmlContent;
@@ -563,7 +561,7 @@ export type HtmlHelperValidationExtensions = HtmlHelperValidationExtensions$inst
 
 export abstract class HtmlHelperValueExtensions$instance {
     static Value(htmlHelper: IHtmlHelper, expression: string): string;
-    static ValueFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression<Func<TModel, TResult>>): string;
+    static ValueFor<TModel, TResult>(htmlHelper: IHtmlHelper_1<TModel>, expression: Expression_1<Func_2<TModel, TResult>>): string;
     static ValueForModel(htmlHelper: IHtmlHelper, format: string): string;
     static ValueForModel(htmlHelper: IHtmlHelper): string;
 }
@@ -572,10 +570,10 @@ export abstract class HtmlHelperValueExtensions$instance {
 export type HtmlHelperValueExtensions = HtmlHelperValueExtensions$instance;
 
 export abstract class ViewComponentHelperExtensions$instance {
-    static InvokeAsync<TComponent>(helper: IViewComponentHelper, arguments: unknown): Task<IHtmlContent>;
-    static InvokeAsync(helper: IViewComponentHelper, name: string): Task<IHtmlContent>;
-    static InvokeAsync(helper: IViewComponentHelper, componentType: Type): Task<IHtmlContent>;
-    static InvokeAsync<TComponent>(helper: IViewComponentHelper): Task<IHtmlContent>;
+    static InvokeAsync<TComponent>(helper: IViewComponentHelper, arguments: unknown): Task_1<IHtmlContent>;
+    static InvokeAsync(helper: IViewComponentHelper, name: string): Task_1<IHtmlContent>;
+    static InvokeAsync(helper: IViewComponentHelper, componentType: Type): Task_1<IHtmlContent>;
+    static InvokeAsync<TComponent>(helper: IViewComponentHelper): Task_1<IHtmlContent>;
 }
 
 

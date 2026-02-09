@@ -9,10 +9,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { RouteTemplate, TemplateBinder, TemplateMatcher } from "../../Microsoft.AspNetCore.Routing.Template/internal/index.js";
 import * as Microsoft_AspNetCore_Routing_Internal from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import type { IRouteConstraint, IRouter, RouteContext, RouteValueDictionary, VirtualPathContext, VirtualPathData } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { Dictionary, IDictionary, IList, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Dictionary_2, IDictionary_2, IList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface InboundMatch$instance {
     Entry: InboundRouteEntry;
@@ -28,7 +28,7 @@ export const InboundMatch: {
 export type InboundMatch = InboundMatch$instance;
 
 export interface InboundRouteEntry$instance {
-    Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
+    Constraints: IDictionary_2<System_Internal.String, IRouteConstraint>;
     Defaults: RouteValueDictionary;
     Handler: IRouter;
     Order: int;
@@ -59,7 +59,7 @@ export const OutboundMatch: {
 export type OutboundMatch = OutboundMatch$instance;
 
 export interface OutboundRouteEntry$instance {
-    Constraints: IDictionary<System_Internal.String, IRouteConstraint>;
+    Constraints: IDictionary_2<System_Internal.String, IRouteConstraint>;
     Data: unknown;
     Defaults: RouteValueDictionary;
     Handler: IRouter;
@@ -79,8 +79,8 @@ export const OutboundRouteEntry: {
 export type OutboundRouteEntry = OutboundRouteEntry$instance;
 
 export interface TreeRouteBuilder$instance {
-    readonly InboundEntries: IList<InboundRouteEntry>;
-    readonly OutboundEntries: IList<OutboundRouteEntry>;
+    readonly InboundEntries: IList_1<InboundRouteEntry>;
+    readonly OutboundEntries: IList_1<OutboundRouteEntry>;
     Build(): TreeRouter;
     Build(version: int): TreeRouter;
     Clear(): void;
@@ -95,7 +95,7 @@ export const TreeRouteBuilder: {
 
 export type TreeRouteBuilder = TreeRouteBuilder$instance;
 
-export interface TreeRouter$instance {
+export interface TreeRouter$instance extends Microsoft_AspNetCore_Routing_Internal.IRouter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     readonly Version: int;
@@ -113,8 +113,6 @@ export interface __TreeRouter$views {
     As_IRouter(): Microsoft_AspNetCore_Routing_Internal.IRouter$instance;
 }
 
-export interface TreeRouter$instance extends Microsoft_AspNetCore_Routing_Internal.IRouter$instance {}
-
 export type TreeRouter = TreeRouter$instance & __TreeRouter$views;
 
 
@@ -124,8 +122,8 @@ export interface UrlMatchingNode$instance {
     ConstrainedParameters: UrlMatchingNode;
     readonly Depth: int;
     IsCatchAll: boolean;
-    readonly Literals: Dictionary<System_Internal.String, UrlMatchingNode>;
-    readonly Matches: List<InboundMatch>;
+    readonly Literals: Dictionary_2<System_Internal.String, UrlMatchingNode>;
+    readonly Matches: List_1<InboundMatch>;
     Parameters: UrlMatchingNode;
 }
 

@@ -7,12 +7,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int64, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { ObjectPoolProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.ObjectPool.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int64, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { ObjectPoolProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.ObjectPool/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IResponseCachingFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;
@@ -24,7 +24,7 @@ export interface IResponseCachingFeature$instance {
 
 export type IResponseCachingFeature = IResponseCachingFeature$instance;
 
-export interface ResponseCachingFeature$instance {
+export interface ResponseCachingFeature$instance extends IResponseCachingFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;
 
     get VaryByQueryKeys(): string[] | undefined;
@@ -41,8 +41,6 @@ export interface __ResponseCachingFeature$views {
     As_IResponseCachingFeature(): IResponseCachingFeature$instance;
 }
 
-export interface ResponseCachingFeature$instance extends IResponseCachingFeature$instance {}
-
 export type ResponseCachingFeature = ResponseCachingFeature$instance & __ResponseCachingFeature$views;
 
 
@@ -52,7 +50,7 @@ export interface ResponseCachingMiddleware$instance {
 
 
 export const ResponseCachingMiddleware: {
-    new(next: RequestDelegate, options: IOptions<ResponseCachingOptions>, loggerFactory: ILoggerFactory, poolProvider: ObjectPoolProvider): ResponseCachingMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<ResponseCachingOptions>, loggerFactory: ILoggerFactory, poolProvider: ObjectPoolProvider): ResponseCachingMiddleware;
 };
 
 

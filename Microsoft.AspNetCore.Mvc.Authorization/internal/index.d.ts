@@ -9,10 +9,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { AuthorizationPolicy, IAuthorizationPolicyProvider, IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Filters_Internal from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
 import type { AuthorizationFilterContext, IAsyncAuthorizationFilter, IFilterFactory, IFilterMetadata } from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IServiceProvider, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IServiceProvider, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IAllowAnonymousFilter$instance extends IFilterMetadata {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter: never;
@@ -38,12 +38,12 @@ export const AllowAnonymousFilter: {
 
 export type AllowAnonymousFilter = AllowAnonymousFilter$instance;
 
-export interface AuthorizeFilter$instance extends IFilterMetadata {
+export interface AuthorizeFilter$instance extends IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
-    readonly AuthorizeData: IEnumerable<IAuthorizeData> | undefined;
+    readonly AuthorizeData: IEnumerable_1<IAuthorizeData> | undefined;
     readonly Policy: AuthorizationPolicy | undefined;
     readonly PolicyProvider: IAuthorizationPolicyProvider | undefined;
     OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
@@ -53,8 +53,8 @@ export interface AuthorizeFilter$instance extends IFilterMetadata {
 export const AuthorizeFilter: {
     new(): AuthorizeFilter;
     new(policy: AuthorizationPolicy): AuthorizeFilter;
-    new(policyProvider: IAuthorizationPolicyProvider, authorizeData: IEnumerable<IAuthorizeData>): AuthorizeFilter;
-    new(authorizeData: IEnumerable<IAuthorizeData>): AuthorizeFilter;
+    new(policyProvider: IAuthorizationPolicyProvider, authorizeData: IEnumerable_1<IAuthorizeData>): AuthorizeFilter;
+    new(authorizeData: IEnumerable_1<IAuthorizeData>): AuthorizeFilter;
     new(policy: string): AuthorizeFilter;
 };
 
@@ -63,8 +63,6 @@ export interface __AuthorizeFilter$views {
     As_IAsyncAuthorizationFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance;
     As_IFilterFactory(): Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance;
 }
-
-export interface AuthorizeFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {}
 
 export type AuthorizeFilter = AuthorizeFilter$instance & __AuthorizeFilter$views;
 

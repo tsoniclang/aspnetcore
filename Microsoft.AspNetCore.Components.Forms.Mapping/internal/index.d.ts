@@ -6,10 +6,10 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, FormattableString, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Action_3, Boolean as ClrBoolean, FormattableString, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface IFormValueMapper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Forms_Mapping_IFormValueMapper: never;
@@ -24,7 +24,7 @@ export type IFormValueMapper = IFormValueMapper$instance;
 export interface FormMappingError$instance {
     readonly AttemptedValue: string | undefined;
     Container: unknown;
-    readonly ErrorMessages: IReadOnlyList<FormattableString>;
+    readonly ErrorMessages: IReadOnlyList_1<FormattableString>;
     readonly Name: string;
     readonly Path: string;
 }
@@ -39,10 +39,10 @@ export type FormMappingError = FormMappingError$instance;
 export interface FormValueMappingContext$instance {
     readonly AcceptFormName: string | undefined;
     readonly AcceptMappingScopeName: string;
-    get MapErrorToContainer(): Action<System_Internal.String, unknown> | undefined;
-    set MapErrorToContainer(value: Action<System_Internal.String, unknown> | undefined);
-    get OnError(): Action<System_Internal.String, FormattableString, string | undefined> | undefined;
-    set OnError(value: Action<System_Internal.String, FormattableString, string | undefined> | undefined);
+    get MapErrorToContainer(): Action_2<System_Internal.String, unknown> | undefined;
+    set MapErrorToContainer(value: Action_2<System_Internal.String, unknown> | undefined);
+    get OnError(): Action_3<System_Internal.String, FormattableString, string | undefined> | undefined;
+    set OnError(value: Action_3<System_Internal.String, FormattableString, string | undefined> | undefined);
     readonly ParameterName: string;
     get Result(): unknown | undefined;
     set Result(value: unknown | undefined);

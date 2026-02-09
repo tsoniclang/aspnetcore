@@ -9,12 +9,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ICorsPolicyProvider, ICorsService } from "../../Microsoft.AspNetCore.Cors.Infrastructure/internal/index.js";
 import * as Microsoft_AspNetCore_Mvc_Filters_Internal from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
 import type { AuthorizationFilterContext, IAsyncAuthorizationFilter, IFilterMetadata, IOrderedFilter } from "../../Microsoft.AspNetCore.Mvc.Filters/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export interface CorsAuthorizationFilter$instance extends IFilterMetadata {
+export interface CorsAuthorizationFilter$instance extends IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Cors_ICorsAuthorizationFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -37,8 +37,6 @@ export interface __CorsAuthorizationFilter$views {
     As_IAsyncAuthorizationFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance;
     As_IOrderedFilter(): Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance;
 }
-
-export interface CorsAuthorizationFilter$instance extends Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IOrderedFilter$instance {}
 
 export type CorsAuthorizationFilter = CorsAuthorizationFilter$instance & __CorsAuthorizationFilter$views;
 

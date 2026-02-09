@@ -21,33 +21,33 @@ import * as Microsoft_AspNetCore_Mvc_Internal from "../../Microsoft.AspNetCore.M
 import type { ProblemDetails } from "../../Microsoft.AspNetCore.Mvc/internal/index.js";
 import type { RouteGroupBuilder, RouteValueDictionary } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import type { EntityTagHeaderValue, MediaTypeHeaderValue, SetCookieHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Dictionary, IAsyncEnumerable, ICollection as ICollection__System_Collections_Generic, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IList as IList__System_Collections_Generic, IReadOnlyCollection, IReadOnlyList, KeyValuePair, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IEnumerable, IEnumerator, IList } from "@tsonic/dotnet/System.Collections.js";
-import * as System_IO_Internal from "@tsonic/dotnet/System.IO.js";
-import type { IOException, Stream } from "@tsonic/dotnet/System.IO.js";
-import type { PipeReader, PipeWriter } from "@tsonic/dotnet/System.IO.Pipelines.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, DateTimeOffset, Delegate, Enum, Exception, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, StringComparison, TimeSpan, Type, Uri, ValueType, Version, Void } from "@tsonic/dotnet/System.js";
-import type { IPAddress } from "@tsonic/dotnet/System.Net.js";
-import type { SseItem } from "@tsonic/dotnet/System.Net.ServerSentEvents.js";
-import type { WebSocket } from "@tsonic/dotnet/System.Net.WebSockets.js";
-import type { MethodInfo, ParameterInfo } from "@tsonic/dotnet/System.Reflection.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { Encoding } from "@tsonic/dotnet/System.Text.js";
-import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
-import type { JsonSerializerContext } from "@tsonic/dotnet/System.Text.Json.Serialization.js";
-import type { JsonTypeInfo } from "@tsonic/dotnet/System.Text.Json.Serialization.Metadata.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IServiceScopeFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
-import type { IFileInfo } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders.js";
-import * as Microsoft_Extensions_Primitives_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
-import type { StringSegment, StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Dictionary_2, IAsyncEnumerable_1, ICollection_1, IDictionary_2, IEnumerable_1, IEnumerator_1, IList_1, IReadOnlyCollection_1, IReadOnlyList_1, KeyValuePair_2, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IEnumerable, IEnumerator, IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { PipeReader, PipeWriter } from "@tsonic/dotnet/System.IO.Pipelines/internal/index.js";
+import * as System_IO_Internal from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { IOException, Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { SseItem_1 } from "@tsonic/dotnet/System.Net.ServerSentEvents/internal/index.js";
+import type { WebSocket } from "@tsonic/dotnet/System.Net.WebSockets/internal/index.js";
+import type { IPAddress } from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { MethodInfo, ParameterInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { JsonTypeInfo, JsonTypeInfo_1 } from "@tsonic/dotnet/System.Text.Json.Serialization.Metadata/internal/index.js";
+import type { JsonSerializerContext } from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Encoding } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { Task, Task_1, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, AsyncCallback, Attribute, Boolean as ClrBoolean, Byte, DateTimeOffset, Delegate, Enum, Exception, Func_1, Func_2, Func_3, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, String as ClrString, StringComparison, TimeSpan, Type, Uri, ValueType, Version, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IServiceScopeFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
+import type { IFileInfo } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
+import * as Microsoft_Extensions_Primitives_Internal from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
+import type { StringSegment, StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export enum CookieSecurePolicy {
     SameAsRequest = 0,
@@ -64,7 +64,7 @@ export enum SameSiteMode {
 }
 
 
-export type EndpointFilterDelegate = (context: EndpointFilterInvocationContext) => ValueTask<unknown>;
+export type EndpointFilterDelegate = (context: EndpointFilterInvocationContext) => ValueTask_1<unknown>;
 
 
 export type RequestDelegate = (context: HttpContext) => Task;
@@ -90,7 +90,7 @@ export type IContentTypeHttpResult = IContentTypeHttpResult$instance;
 export interface IEndpointFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IEndpointFilter: never;
 
-    InvokeAsync(context: EndpointFilterInvocationContext, next: EndpointFilterDelegate): ValueTask<unknown>;
+    InvokeAsync(context: EndpointFilterInvocationContext, next: EndpointFilterDelegate): ValueTask_1<unknown>;
 }
 
 
@@ -106,11 +106,11 @@ export interface IFileHttpResult$instance {
 
 export type IFileHttpResult = IFileHttpResult$instance;
 
-export interface IFormCollection$instance extends IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable {
+export interface IFormCollection$instance extends IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFormCollection: never;
 
     readonly Count: int;
-    readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
+    readonly Keys: ICollection_1<System_Internal.String>;
     readonly [key: string]: StringValues;
     readonly Files: IFormFileCollection;
     ContainsKey(key: string): boolean;
@@ -118,7 +118,7 @@ export interface IFormCollection$instance extends IEnumerable__System_Collection
 }
 
 
-export interface IFormCollection$instance extends System_Collections_Generic_Internal.IEnumerable<KeyValuePair<System_Internal.String, StringValues>> {}
+export interface IFormCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>> {}
 
 export type IFormCollection = IFormCollection$instance;
 
@@ -139,24 +139,24 @@ export interface IFormFile$instance {
 
 export type IFormFile = IFormFile$instance;
 
-export interface IFormFileCollection$instance extends IReadOnlyList<IFormFile>, IEnumerable__System_Collections_Generic<IFormFile>, IEnumerable, IReadOnlyCollection<IFormFile> {
+export interface IFormFileCollection$instance extends IReadOnlyList_1<IFormFile>, IEnumerable_1<IFormFile>, IEnumerable, IReadOnlyCollection_1<IFormFile> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFormFileCollection: never;
 
     readonly [name: string]: IFormFile | undefined;
     GetFile(name: string): IFormFile | undefined;
-    GetFiles(name: string): IReadOnlyList<IFormFile>;
+    GetFiles(name: string): IReadOnlyList_1<IFormFile>;
 }
 
 
-export interface IFormFileCollection$instance extends System_Collections_Generic_Internal.IEnumerable<IFormFile>, System_Collections_Generic_Internal.IReadOnlyCollection<IFormFile>, System_Collections_Generic_Internal.IReadOnlyList<IFormFile> {}
+export interface IFormFileCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<IFormFile>, System_Collections_Generic_Internal.IReadOnlyCollection_1<IFormFile>, System_Collections_Generic_Internal.IReadOnlyList_1<IFormFile> {}
 
 export type IFormFileCollection = IFormFileCollection$instance;
 
-export interface IHeaderDictionary$instance extends IDictionary<System_Internal.String, StringValues>, ICollection__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable {
+export interface IHeaderDictionary$instance extends IDictionary_2<System_Internal.String, StringValues>, ICollection_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHeaderDictionary: never;
 
     [key: string]: StringValues;
-    ContentLength: Nullable<System_Internal.Int64>;
+    ContentLength: Nullable_1<System_Internal.Int64>;
     Accept: StringValues;
     AcceptCharset: StringValues;
     AcceptEncoding: StringValues;
@@ -249,7 +249,7 @@ export interface IHeaderDictionary$instance extends IDictionary<System_Internal.
 }
 
 
-export interface IHeaderDictionary$instance extends System_Collections_Generic_Internal.ICollection<KeyValuePair<System_Internal.String, StringValues>>, System_Collections_Generic_Internal.IDictionary<System_Internal.String, StringValues>, System_Collections_Generic_Internal.IEnumerable<KeyValuePair<System_Internal.String, StringValues>> {}
+export interface IHeaderDictionary$instance extends System_Collections_Generic_Internal.ICollection_1<KeyValuePair_2<System_Internal.String, StringValues>>, System_Collections_Generic_Internal.IDictionary_2<System_Internal.String, StringValues>, System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>> {}
 
 export type IHeaderDictionary = IHeaderDictionary$instance;
 
@@ -304,7 +304,7 @@ export type INestedHttpResult = INestedHttpResult$instance;
 export interface IProblemDetailsService$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IProblemDetailsService: never;
 
-    TryWriteAsync(context: ProblemDetailsContext): ValueTask<System_Internal.Boolean>;
+    TryWriteAsync(context: ProblemDetailsContext): ValueTask_1<System_Internal.Boolean>;
     WriteAsync(context: ProblemDetailsContext): ValueTask;
 }
 
@@ -321,40 +321,40 @@ export interface IProblemDetailsWriter$instance {
 
 export type IProblemDetailsWriter = IProblemDetailsWriter$instance;
 
-export interface IQueryCollection$instance extends IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>, IEnumerable {
+export interface IQueryCollection$instance extends IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IQueryCollection: never;
 
     readonly Count: int;
-    readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
+    readonly Keys: ICollection_1<System_Internal.String>;
     readonly [key: string]: StringValues;
     ContainsKey(key: string): boolean;
     TryGetValue(key: string, value: StringValues): boolean;
 }
 
 
-export interface IQueryCollection$instance extends System_Collections_Generic_Internal.IEnumerable<KeyValuePair<System_Internal.String, StringValues>> {}
+export interface IQueryCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>> {}
 
 export type IQueryCollection = IQueryCollection$instance;
 
-export interface IRequestCookieCollection$instance extends IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>, IEnumerable {
+export interface IRequestCookieCollection$instance extends IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IRequestCookieCollection: never;
 
     readonly Count: int;
-    readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
+    readonly Keys: ICollection_1<System_Internal.String>;
     readonly [key: string]: string | undefined;
     ContainsKey(key: string): boolean;
     TryGetValue(key: string, value: string): boolean;
 }
 
 
-export interface IRequestCookieCollection$instance extends System_Collections_Generic_Internal.IEnumerable<KeyValuePair<System_Internal.String, System_Internal.String>> {}
+export interface IRequestCookieCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> {}
 
 export type IRequestCookieCollection = IRequestCookieCollection$instance;
 
 export interface IResponseCookies$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResponseCookies: never;
 
-    Append(keyValuePairs: ReadOnlySpan<KeyValuePair<System_Internal.String, System_Internal.String>>, options: CookieOptions): void;
+    Append(keyValuePairs: ReadOnlySpan_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, options: CookieOptions): void;
     Append(key: string, value: string, options: CookieOptions): void;
     Append(key: string, value: string): void;
     Delete(key: string, options: CookieOptions): void;
@@ -386,7 +386,7 @@ export interface ISession$instance {
 
     readonly IsAvailable: boolean;
     readonly Id: string;
-    readonly Keys: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly Keys: IEnumerable_1<System_Internal.String>;
     Clear(): void;
     LoadAsync(cancellationToken?: CancellationToken): Task;
     Remove(key: string): void;
@@ -400,7 +400,7 @@ export type ISession = ISession$instance;
 export interface IStatusCodeHttpResult$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
 
-    readonly StatusCode: Nullable<System_Internal.Int32>;
+    readonly StatusCode: Nullable_1<System_Internal.Int32>;
 }
 
 
@@ -448,7 +448,7 @@ export interface FormCollection_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Current: KeyValuePair<System_Internal.String, StringValues>;
+    readonly Current: KeyValuePair_2<System_Internal.String, StringValues>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -490,7 +490,7 @@ export interface HeaderDictionary_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Current: KeyValuePair<System_Internal.String, StringValues>;
+    readonly Current: KeyValuePair_2<System_Internal.String, StringValues>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -509,7 +509,7 @@ export interface HostString$instance {
 
     readonly HasValue: boolean;
     readonly Host: string;
-    readonly Port: Nullable<System_Internal.Int32>;
+    readonly Port: Nullable_1<System_Internal.Int32>;
     readonly Value: string | undefined;
     Equals(other: HostString): boolean;
     Equals(obj: unknown): boolean;
@@ -524,7 +524,7 @@ export const HostString: {
     new(host: string, port: int): HostString;
     FromUriComponent(uriComponent: string): HostString;
     FromUriComponent(uri: Uri): HostString;
-    MatchesAny(value: StringSegment, patterns: IList__System_Collections_Generic<StringSegment>): boolean;
+    MatchesAny(value: StringSegment, patterns: IList_1<StringSegment>): boolean;
 };
 
 
@@ -567,7 +567,7 @@ export interface QueryCollection_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Current: KeyValuePair<System_Internal.String, StringValues>;
+    readonly Current: KeyValuePair_2<System_Internal.String, StringValues>;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -599,8 +599,8 @@ export interface QueryString$instance {
 export const QueryString: {
     new(value: string): QueryString;
     readonly Empty: QueryString;
-    Create(parameters: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, StringValues>>): QueryString;
-    Create(parameters: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>): QueryString;
+    Create(parameters: IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>): QueryString;
+    Create(parameters: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>): QueryString;
     Create(name: string, value: string): QueryString;
     FromUriComponent(uriComponent: string): QueryString;
     FromUriComponent(uri: Uri): QueryString;
@@ -683,7 +683,7 @@ export interface ConnectionInfo$instance {
     get RemoteIpAddress(): IPAddress | undefined;
     set RemoteIpAddress(value: IPAddress | undefined);
     RemotePort: int;
-    GetClientCertificateAsync(cancellationToken?: CancellationToken): Task<X509Certificate2 | undefined>;
+    GetClientCertificateAsync(cancellationToken?: CancellationToken): Task_1<X509Certificate2 | undefined>;
     RequestClose(): void;
 }
 
@@ -697,11 +697,11 @@ export type ConnectionInfo = ConnectionInfo$instance;
 export interface CookieBuilder$instance {
     get Domain(): string | undefined;
     set Domain(value: string | undefined);
-    Expiration: Nullable<TimeSpan>;
-    readonly Extensions: IList__System_Collections_Generic<System_Internal.String>;
+    Expiration: Nullable_1<TimeSpan>;
+    readonly Extensions: IList_1<System_Internal.String>;
     HttpOnly: boolean;
     IsEssential: boolean;
-    MaxAge: Nullable<TimeSpan>;
+    MaxAge: Nullable_1<TimeSpan>;
     get Name(): string | undefined;
     set Name(value: string | undefined);
     get Path(): string | undefined;
@@ -723,11 +723,11 @@ export type CookieBuilder = CookieBuilder$instance;
 export interface CookieOptions$instance {
     get Domain(): string | undefined;
     set Domain(value: string | undefined);
-    Expires: Nullable<DateTimeOffset>;
-    readonly Extensions: IList__System_Collections_Generic<System_Internal.String>;
+    Expires: Nullable_1<DateTimeOffset>;
+    readonly Extensions: IList_1<System_Internal.String>;
     HttpOnly: boolean;
     IsEssential: boolean;
-    MaxAge: Nullable<TimeSpan>;
+    MaxAge: Nullable_1<TimeSpan>;
     get Path(): string | undefined;
     set Path(value: string | undefined);
     SameSite: SameSiteMode;
@@ -745,7 +745,7 @@ export const CookieOptions: {
 export type CookieOptions = CookieOptions$instance;
 
 export interface DefaultEndpointFilterInvocationContext$instance extends EndpointFilterInvocationContext {
-    readonly Arguments: IList__System_Collections_Generic<unknown | undefined>;
+    readonly Arguments: IList_1<unknown | undefined>;
     readonly HttpContext: HttpContext;
     GetArgument<T>(index: int): T;
 }
@@ -763,7 +763,7 @@ export interface DefaultHttpContext$instance extends HttpContext {
     readonly Features: IFeatureCollection;
     FormOptions: FormOptions;
     readonly HttpContext: HttpContext;
-    Items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary_2<unknown, unknown | undefined>;
     readonly Request: HttpRequest;
     RequestAborted: CancellationToken;
     RequestServices: IServiceProvider;
@@ -787,7 +787,7 @@ export const DefaultHttpContext: {
 
 export type DefaultHttpContext = DefaultHttpContext$instance;
 
-export interface DefaultHttpContextFactory$instance {
+export interface DefaultHttpContextFactory$instance extends IHttpContextFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHttpContextFactory: never;
 
     Create(featureCollection: IFeatureCollection): HttpContext;
@@ -803,8 +803,6 @@ export const DefaultHttpContextFactory: {
 export interface __DefaultHttpContextFactory$views {
     As_IHttpContextFactory(): IHttpContextFactory$instance;
 }
-
-export interface DefaultHttpContextFactory$instance extends IHttpContextFactory$instance {}
 
 export type DefaultHttpContextFactory = DefaultHttpContextFactory$instance & __DefaultHttpContextFactory$views;
 
@@ -838,7 +836,7 @@ export const Endpoint: {
 
 export type Endpoint = Endpoint$instance;
 
-export interface EndpointDescriptionAttribute$instance extends Attribute {
+export interface EndpointDescriptionAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointDescriptionMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointDescriptionMetadata: never;
 
     readonly Description: string;
@@ -854,8 +852,6 @@ export const EndpointDescriptionAttribute: {
 export interface __EndpointDescriptionAttribute$views {
     As_IEndpointDescriptionMetadata(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointDescriptionMetadata$instance;
 }
-
-export interface EndpointDescriptionAttribute$instance extends Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointDescriptionMetadata$instance {}
 
 export type EndpointDescriptionAttribute = EndpointDescriptionAttribute$instance & __EndpointDescriptionAttribute$views;
 
@@ -874,7 +870,7 @@ export const EndpointFilterFactoryContext: {
 export type EndpointFilterFactoryContext = EndpointFilterFactoryContext$instance;
 
 export interface EndpointFilterInvocationContext$instance {
-    readonly Arguments: IList__System_Collections_Generic<unknown | undefined>;
+    readonly Arguments: IList_1<unknown | undefined>;
     readonly HttpContext: HttpContext;
     GetArgument<T>(index: int): T;
 }
@@ -905,13 +901,13 @@ export interface EndpointMetadataCollection$instance {
     readonly [index: number]: unknown;
     GetEnumerator(): EndpointMetadataCollection_Enumerator;
     GetMetadata<T>(): T | undefined;
-    GetOrderedMetadata<T>(): IReadOnlyList<T>;
+    GetOrderedMetadata<T>(): IReadOnlyList_1<T>;
     GetRequiredMetadata<T>(): T;
 }
 
 
 export const EndpointMetadataCollection: {
-    new(items: IEnumerable__System_Collections_Generic<unknown>): EndpointMetadataCollection;
+    new(items: IEnumerable_1<unknown>): EndpointMetadataCollection;
     new(items: unknown[]): EndpointMetadataCollection;
     readonly Empty: EndpointMetadataCollection;
 };
@@ -919,7 +915,7 @@ export const EndpointMetadataCollection: {
 
 export type EndpointMetadataCollection = EndpointMetadataCollection$instance;
 
-export interface EndpointSummaryAttribute$instance extends Attribute {
+export interface EndpointSummaryAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointSummaryMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointSummaryMetadata: never;
 
     readonly Summary: string;
@@ -936,8 +932,6 @@ export interface __EndpointSummaryAttribute$views {
     As_IEndpointSummaryMetadata(): Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointSummaryMetadata$instance;
 }
 
-export interface EndpointSummaryAttribute$instance extends Microsoft_AspNetCore_Http_Metadata_Internal.IEndpointSummaryMetadata$instance {}
-
 export type EndpointSummaryAttribute = EndpointSummaryAttribute$instance & __EndpointSummaryAttribute$views;
 
 
@@ -949,7 +943,7 @@ export interface FormCollection$instance {
     readonly Count: int;
     Files: IFormFileCollection;
     readonly [key: string]: StringValues;
-    readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
+    readonly Keys: ICollection_1<System_Internal.String>;
     ContainsKey(key: string): boolean;
     GetEnumerator(): FormCollection_Enumerator;
     TryGetValue(key: string, value: StringValues): boolean;
@@ -957,7 +951,7 @@ export interface FormCollection$instance {
 
 
 export const FormCollection: {
-    new(fields: Dictionary<System_Internal.String, StringValues>, files: IFormFileCollection): FormCollection;
+    new(fields: Dictionary_2<System_Internal.String, StringValues>, files: IFormFileCollection): FormCollection;
     readonly Empty: FormCollection;
 };
 
@@ -996,7 +990,7 @@ export interface __FormFile$views {
 export type FormFile = FormFile$instance & __FormFile$views;
 
 
-export interface FormFileCollection$instance extends List<IFormFile> {
+export interface FormFileCollection$instance extends List_1<IFormFile> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IFormFileCollection: never;
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -1009,7 +1003,7 @@ export interface FormFileCollection$instance extends List<IFormFile> {
 
     readonly [name: string]: IFormFile | undefined;
     GetFile(name: string): IFormFile | undefined;
-    GetFiles(name: string): IReadOnlyList<IFormFile>;
+    GetFiles(name: string): IReadOnlyList_1<IFormFile>;
 }
 
 
@@ -1022,32 +1016,30 @@ export interface __FormFileCollection$views {
     As_IFormFileCollection(): IFormFileCollection$instance;
 }
 
-export interface FormFileCollection$instance extends IFormFileCollection$instance, System_Collections_Generic_Internal.ICollection<IFormFile>, System_Collections_Generic_Internal.IList<IFormFile> {}
-
 export type FormFileCollection = FormFileCollection$instance & __FormFileCollection$views;
 
 
-export interface HeaderDictionary$instance {
+export interface HeaderDictionary$instance extends IHeaderDictionary$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHeaderDictionary: never;
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    ContentLength: Nullable<System_Internal.Int64>;
+    ContentLength: Nullable_1<System_Internal.Int64>;
     readonly Count: int;
     IsReadOnly: boolean;
     [key: string]: StringValues;
-    readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
-    readonly Values: ICollection__System_Collections_Generic<StringValues>;
-    Add(item: KeyValuePair<System_Internal.String, StringValues>): void;
+    readonly Keys: ICollection_1<System_Internal.String>;
+    readonly Values: ICollection_1<StringValues>;
+    Add(item: KeyValuePair_2<System_Internal.String, StringValues>): void;
     Add(key: string, value: StringValues): void;
     Clear(): void;
-    Contains(item: KeyValuePair<System_Internal.String, StringValues>): boolean;
+    Contains(item: KeyValuePair_2<System_Internal.String, StringValues>): boolean;
     ContainsKey(key: string): boolean;
-    CopyTo(array: KeyValuePair<System_Internal.String, StringValues>[], arrayIndex: int): void;
+    CopyTo(array: KeyValuePair_2<System_Internal.String, StringValues>[], arrayIndex: int): void;
     GetEnumerator(): HeaderDictionary_Enumerator;
-    Remove(item: KeyValuePair<System_Internal.String, StringValues>): boolean;
+    Remove(item: KeyValuePair_2<System_Internal.String, StringValues>): boolean;
     Remove(key: string): boolean;
     TryGetValue(key: string, value: StringValues): boolean;
 }
@@ -1055,7 +1047,7 @@ export interface HeaderDictionary$instance {
 
 export const HeaderDictionary: {
     new(): HeaderDictionary;
-    new(store: Dictionary<System_Internal.String, StringValues>): HeaderDictionary;
+    new(store: Dictionary_2<System_Internal.String, StringValues>): HeaderDictionary;
     new(capacity: int): HeaderDictionary;
 };
 
@@ -1064,15 +1056,13 @@ export interface __HeaderDictionary$views {
     As_IHeaderDictionary(): IHeaderDictionary$instance;
 }
 
-export interface HeaderDictionary$instance extends IHeaderDictionary$instance {}
-
 export type HeaderDictionary = HeaderDictionary$instance & __HeaderDictionary$views;
 
 
 export interface HttpContext$instance {
     readonly Connection: ConnectionInfo;
     readonly Features: IFeatureCollection;
-    Items: IDictionary<unknown, unknown | undefined>;
+    Items: IDictionary_2<unknown, unknown | undefined>;
     readonly Request: HttpRequest;
     RequestAborted: CancellationToken;
     RequestServices: IServiceProvider;
@@ -1091,7 +1081,7 @@ export const HttpContext: (abstract new() => HttpContext) & {
 
 export type HttpContext = HttpContext$instance;
 
-export interface HttpContextAccessor$instance {
+export interface HttpContextAccessor$instance extends IHttpContextAccessor$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHttpContextAccessor: never;
 
     get HttpContext(): HttpContext | undefined;
@@ -1108,15 +1098,13 @@ export interface __HttpContextAccessor$views {
     As_IHttpContextAccessor(): IHttpContextAccessor$instance;
 }
 
-export interface HttpContextAccessor$instance extends IHttpContextAccessor$instance {}
-
 export type HttpContextAccessor = HttpContextAccessor$instance & __HttpContextAccessor$views;
 
 
 export interface HttpRequest$instance {
     Body: Stream;
     readonly BodyReader: PipeReader;
-    ContentLength: Nullable<System_Internal.Int64>;
+    ContentLength: Nullable_1<System_Internal.Int64>;
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     Cookies: IRequestCookieCollection;
@@ -1134,7 +1122,7 @@ export interface HttpRequest$instance {
     QueryString: QueryString;
     RouteValues: RouteValueDictionary;
     Scheme: string;
-    ReadFormAsync(cancellationToken?: CancellationToken): Task<IFormCollection>;
+    ReadFormAsync(cancellationToken?: CancellationToken): Task_1<IFormCollection>;
 }
 
 
@@ -1147,7 +1135,7 @@ export type HttpRequest = HttpRequest$instance;
 export interface HttpResponse$instance {
     Body: Stream;
     readonly BodyWriter: PipeWriter;
-    ContentLength: Nullable<System_Internal.Int64>;
+    ContentLength: Nullable_1<System_Internal.Int64>;
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     readonly Cookies: IResponseCookies;
@@ -1156,10 +1144,10 @@ export interface HttpResponse$instance {
     readonly HttpContext: HttpContext;
     StatusCode: int;
     CompleteAsync(): Task;
-    OnCompleted(callback: Func<unknown, Task>, state: unknown): void;
-    OnCompleted(callback: Func<Task>): void;
-    OnStarting(callback: Func<unknown, Task>, state: unknown): void;
-    OnStarting(callback: Func<Task>): void;
+    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
+    OnCompleted(callback: Func_1<Task>): void;
+    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
+    OnStarting(callback: Func_1<Task>): void;
     Redirect(location: string): void;
     Redirect(location: string, permanent: boolean): void;
     RegisterForDispose(disposable: IDisposable): void;
@@ -1175,20 +1163,20 @@ export const HttpResponse: (abstract new() => HttpResponse) & {
 export type HttpResponse = HttpResponse$instance;
 
 export interface HttpValidationProblemDetails$instance extends ProblemDetails {
-    Errors: IDictionary<System_Internal.String, string[]>;
+    Errors: IDictionary_2<System_Internal.String, string[]>;
 }
 
 
 export const HttpValidationProblemDetails: {
     new(): HttpValidationProblemDetails;
-    new(errors: IDictionary<System_Internal.String, string[]>): HttpValidationProblemDetails;
-    new(errors: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, string[]>>): HttpValidationProblemDetails;
+    new(errors: IDictionary_2<System_Internal.String, string[]>): HttpValidationProblemDetails;
+    new(errors: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>): HttpValidationProblemDetails;
 };
 
 
 export type HttpValidationProblemDetails = HttpValidationProblemDetails$instance;
 
-export interface MiddlewareFactory$instance {
+export interface MiddlewareFactory$instance extends IMiddlewareFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IMiddlewareFactory: never;
 
     Create(middlewareType: Type): IMiddleware | undefined;
@@ -1204,8 +1192,6 @@ export const MiddlewareFactory: {
 export interface __MiddlewareFactory$views {
     As_IMiddlewareFactory(): IMiddlewareFactory$instance;
 }
-
-export interface MiddlewareFactory$instance extends IMiddlewareFactory$instance {}
 
 export type MiddlewareFactory = MiddlewareFactory$instance & __MiddlewareFactory$views;
 
@@ -1228,8 +1214,8 @@ export const ProblemDetailsContext: {
 export type ProblemDetailsContext = ProblemDetailsContext$instance;
 
 export interface ProblemDetailsOptions$instance {
-    get CustomizeProblemDetails(): Action<ProblemDetailsContext> | undefined;
-    set CustomizeProblemDetails(value: Action<ProblemDetailsContext> | undefined);
+    get CustomizeProblemDetails(): Action_1<ProblemDetailsContext> | undefined;
+    set CustomizeProblemDetails(value: Action_1<ProblemDetailsContext> | undefined);
 }
 
 
@@ -1243,7 +1229,7 @@ export type ProblemDetailsOptions = ProblemDetailsOptions$instance;
 export interface ProducesResponseTypeMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata: never;
 
-    ContentTypes: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    ContentTypes: IEnumerable_1<System_Internal.String>;
     get Description(): string | undefined;
     set Description(value: string | undefined);
     StatusCode: int;
@@ -1265,14 +1251,14 @@ export interface __ProducesResponseTypeMetadata$views {
 export type ProducesResponseTypeMetadata = ProducesResponseTypeMetadata$instance & __ProducesResponseTypeMetadata$views;
 
 
-export interface QueryCollection$instance {
+export interface QueryCollection$instance extends IQueryCollection$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IQueryCollection: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
     readonly [key: string]: StringValues;
-    readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
+    readonly Keys: ICollection_1<System_Internal.String>;
     ContainsKey(key: string): boolean;
     GetEnumerator(): QueryCollection_Enumerator;
     TryGetValue(key: string, value: StringValues): boolean;
@@ -1281,7 +1267,7 @@ export interface QueryCollection$instance {
 
 export const QueryCollection: {
     new(): QueryCollection;
-    new(store: Dictionary<System_Internal.String, StringValues>): QueryCollection;
+    new(store: Dictionary_2<System_Internal.String, StringValues>): QueryCollection;
     new(store: QueryCollection): QueryCollection;
     new(capacity: int): QueryCollection;
     readonly Empty: QueryCollection;
@@ -1292,8 +1278,6 @@ export interface __QueryCollection$views {
     As_IQueryCollection(): IQueryCollection$instance;
 }
 
-export interface QueryCollection$instance extends IQueryCollection$instance {}
-
 export type QueryCollection = QueryCollection$instance & __QueryCollection$views;
 
 
@@ -1301,8 +1285,8 @@ export interface RequestDelegateFactoryOptions$instance {
     DisableInferBodyFromParameters: boolean;
     get EndpointBuilder(): EndpointBuilder | undefined;
     set EndpointBuilder(value: EndpointBuilder | undefined);
-    get RouteParameterNames(): IEnumerable__System_Collections_Generic<System_Internal.String> | undefined;
-    set RouteParameterNames(value: IEnumerable__System_Collections_Generic<System_Internal.String> | undefined);
+    get RouteParameterNames(): IEnumerable_1<System_Internal.String> | undefined;
+    set RouteParameterNames(value: IEnumerable_1<System_Internal.String> | undefined);
     get ServiceProvider(): IServiceProvider | undefined;
     set ServiceProvider(value: IServiceProvider | undefined);
     ThrowOnBadRequest: boolean;
@@ -1317,7 +1301,7 @@ export const RequestDelegateFactoryOptions: {
 export type RequestDelegateFactoryOptions = RequestDelegateFactoryOptions$instance;
 
 export interface RequestDelegateMetadataResult$instance {
-    EndpointMetadata: IReadOnlyList<unknown>;
+    EndpointMetadata: IReadOnlyList_1<unknown>;
 }
 
 
@@ -1329,13 +1313,13 @@ export const RequestDelegateMetadataResult: {
 export type RequestDelegateMetadataResult = RequestDelegateMetadataResult$instance;
 
 export interface RequestDelegateResult$instance {
-    readonly EndpointMetadata: IReadOnlyList<unknown>;
+    readonly EndpointMetadata: IReadOnlyList_1<unknown>;
     readonly RequestDelegate: RequestDelegate;
 }
 
 
 export const RequestDelegateResult: {
-    new(requestDelegate: RequestDelegate, metadata: IReadOnlyList<unknown>): RequestDelegateResult;
+    new(requestDelegate: RequestDelegate, metadata: IReadOnlyList_1<unknown>): RequestDelegateResult;
 };
 
 
@@ -1350,7 +1334,7 @@ export interface StreamResponseBodyFeature$instance {
     CompleteAsync(): Task;
     DisableBuffering(): void;
     Dispose(): void;
-    SendFileAsync(path: string, offset: long, count: Nullable<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
+    SendFileAsync(path: string, offset: long, count: Nullable_1<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
     StartAsync(cancellationToken?: CancellationToken): Task;
 }
 
@@ -1368,10 +1352,10 @@ export interface __StreamResponseBodyFeature$views {
 export type StreamResponseBodyFeature = StreamResponseBodyFeature$instance & __StreamResponseBodyFeature$views;
 
 
-export interface TagsAttribute$instance extends Attribute {
+export interface TagsAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.ITagsMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_ITagsMetadata: never;
 
-    readonly Tags: IReadOnlyList<System_Internal.String>;
+    readonly Tags: IReadOnlyList_1<System_Internal.String>;
     ToString(): string;
 }
 
@@ -1385,16 +1369,14 @@ export interface __TagsAttribute$views {
     As_ITagsMetadata(): Microsoft_AspNetCore_Http_Metadata_Internal.ITagsMetadata$instance;
 }
 
-export interface TagsAttribute$instance extends Microsoft_AspNetCore_Http_Metadata_Internal.ITagsMetadata$instance {}
-
 export type TagsAttribute = TagsAttribute$instance & __TagsAttribute$views;
 
 
 export interface WebSocketAcceptContext$instance {
     DangerousEnableCompression: boolean;
     DisableServerContextTakeover: boolean;
-    KeepAliveInterval: Nullable<TimeSpan>;
-    KeepAliveTimeout: Nullable<TimeSpan>;
+    KeepAliveInterval: Nullable_1<TimeSpan>;
+    KeepAliveTimeout: Nullable_1<TimeSpan>;
     ServerMaxWindowBits: int;
     get SubProtocol(): string | undefined;
     set SubProtocol(value: string | undefined);
@@ -1410,10 +1392,10 @@ export type WebSocketAcceptContext = WebSocketAcceptContext$instance;
 
 export interface WebSocketManager$instance {
     readonly IsWebSocketRequest: boolean;
-    readonly WebSocketRequestedProtocols: IList__System_Collections_Generic<System_Internal.String>;
-    AcceptWebSocketAsync(): Task<WebSocket>;
-    AcceptWebSocketAsync(subProtocol: string): Task<WebSocket>;
-    AcceptWebSocketAsync(acceptContext: WebSocketAcceptContext): Task<WebSocket>;
+    readonly WebSocketRequestedProtocols: IList_1<System_Internal.String>;
+    AcceptWebSocketAsync(): Task_1<WebSocket>;
+    AcceptWebSocketAsync(subProtocol: string): Task_1<WebSocket>;
+    AcceptWebSocketAsync(acceptContext: WebSocketAcceptContext): Task_1<WebSocket>;
 }
 
 
@@ -1427,9 +1409,9 @@ export abstract class EndpointFilterExtensions$instance {
     static AddEndpointFilter<TFilterType extends IEndpointFilter>(builder: RouteHandlerBuilder): RouteHandlerBuilder;
     static AddEndpointFilter<TFilterType extends IEndpointFilter>(builder: RouteGroupBuilder): RouteGroupBuilder;
     static AddEndpointFilter<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, filter: IEndpointFilter): TBuilder;
-    static AddEndpointFilter<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, routeHandlerFilter: Func<EndpointFilterInvocationContext, EndpointFilterDelegate, ValueTask<unknown>>): TBuilder;
+    static AddEndpointFilter<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, routeHandlerFilter: Func_3<EndpointFilterInvocationContext, EndpointFilterDelegate, ValueTask_1<unknown>>): TBuilder;
     static AddEndpointFilter<TBuilder extends IEndpointConventionBuilder, TFilterType extends IEndpointFilter>(builder: TBuilder): TBuilder;
-    static AddEndpointFilterFactory<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, filterFactory: Func<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>): TBuilder;
+    static AddEndpointFilterFactory<TBuilder extends IEndpointConventionBuilder>(builder: TBuilder, filterFactory: Func_3<EndpointFilterFactoryContext, EndpointFilterDelegate, EndpointFilterDelegate>): TBuilder;
 }
 
 
@@ -1454,7 +1436,7 @@ export abstract class HeaderDictionaryExtensions$instance {
 export type HeaderDictionaryExtensions = HeaderDictionaryExtensions$instance;
 
 export abstract class HeaderDictionaryTypeExtensions$instance {
-    static AppendList<T>(Headers: IHeaderDictionary, name: string, values: IList__System_Collections_Generic<T>): void;
+    static AppendList<T>(Headers: IHeaderDictionary, name: string, values: IList_1<T>): void;
     static GetTypedHeaders(request: HttpRequest): RequestHeaders;
     static GetTypedHeaders(response: HttpResponse): ResponseHeaders;
 }
@@ -1516,13 +1498,13 @@ export type HttpProtocol = HttpProtocol$instance;
 
 export abstract class HttpRequestJsonExtensions$instance {
     static HasJsonContentType(request: HttpRequest): boolean;
-    static ReadFromJsonAsync<TValue>(request: HttpRequest, jsonTypeInfo: JsonTypeInfo<TValue>, cancellationToken?: CancellationToken): ValueTask<TValue>;
-    static ReadFromJsonAsync<TValue>(request: HttpRequest, options: JsonSerializerOptions, cancellationToken?: CancellationToken): ValueTask<TValue>;
-    static ReadFromJsonAsync(request: HttpRequest, jsonTypeInfo: JsonTypeInfo, cancellationToken?: CancellationToken): ValueTask<unknown>;
-    static ReadFromJsonAsync<TValue>(request: HttpRequest, cancellationToken?: CancellationToken): ValueTask<TValue>;
-    static ReadFromJsonAsync(request: HttpRequest, type: Type, options: JsonSerializerOptions, cancellationToken?: CancellationToken): ValueTask<unknown>;
-    static ReadFromJsonAsync(request: HttpRequest, type: Type, context: JsonSerializerContext, cancellationToken?: CancellationToken): ValueTask<unknown>;
-    static ReadFromJsonAsync(request: HttpRequest, type: Type, cancellationToken?: CancellationToken): ValueTask<unknown>;
+    static ReadFromJsonAsync<TValue>(request: HttpRequest, jsonTypeInfo: JsonTypeInfo_1<TValue>, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
+    static ReadFromJsonAsync<TValue>(request: HttpRequest, options: JsonSerializerOptions, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
+    static ReadFromJsonAsync(request: HttpRequest, jsonTypeInfo: JsonTypeInfo, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    static ReadFromJsonAsync<TValue>(request: HttpRequest, cancellationToken?: CancellationToken): ValueTask_1<TValue>;
+    static ReadFromJsonAsync(request: HttpRequest, type: Type, options: JsonSerializerOptions, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    static ReadFromJsonAsync(request: HttpRequest, type: Type, context: JsonSerializerContext, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    static ReadFromJsonAsync(request: HttpRequest, type: Type, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
 }
 
 
@@ -1544,7 +1526,7 @@ export abstract class HttpResponseJsonExtensions$instance {
     static WriteAsJsonAsync(response: HttpResponse, value: unknown, type: Type, options: JsonSerializerOptions, cancellationToken?: CancellationToken): Task;
     static WriteAsJsonAsync(response: HttpResponse, value: unknown, type: Type, context: JsonSerializerContext, contentType?: string, cancellationToken?: CancellationToken): Task;
     static WriteAsJsonAsync(response: HttpResponse, value: unknown, type: Type, cancellationToken?: CancellationToken): Task;
-    static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, jsonTypeInfo: JsonTypeInfo<TValue>, contentType?: string, cancellationToken?: CancellationToken): Task;
+    static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string, cancellationToken?: CancellationToken): Task;
     static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, options: JsonSerializerOptions, contentType: string, cancellationToken?: CancellationToken): Task;
     static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, options: JsonSerializerOptions, cancellationToken?: CancellationToken): Task;
     static WriteAsJsonAsync<TValue>(response: HttpResponse, value: TValue, cancellationToken?: CancellationToken): Task;
@@ -1586,8 +1568,8 @@ export type OpenApiRouteHandlerBuilderExtensions = OpenApiRouteHandlerBuilderExt
 export abstract class RequestDelegateFactory$instance {
     static Create(handler: Function, options?: RequestDelegateFactoryOptions, metadataResult?: RequestDelegateMetadataResult): RequestDelegateResult;
     static Create(handler: Function, options: RequestDelegateFactoryOptions): RequestDelegateResult;
-    static Create(methodInfo: MethodInfo, targetFactory?: Func<HttpContext, unknown>, options?: RequestDelegateFactoryOptions, metadataResult?: RequestDelegateMetadataResult): RequestDelegateResult;
-    static Create(methodInfo: MethodInfo, targetFactory: Func<HttpContext, unknown>, options: RequestDelegateFactoryOptions): RequestDelegateResult;
+    static Create(methodInfo: MethodInfo, targetFactory?: Func_2<HttpContext, unknown>, options?: RequestDelegateFactoryOptions, metadataResult?: RequestDelegateMetadataResult): RequestDelegateResult;
+    static Create(methodInfo: MethodInfo, targetFactory: Func_2<HttpContext, unknown>, options: RequestDelegateFactoryOptions): RequestDelegateResult;
     static InferMetadata(methodInfo: MethodInfo, options?: RequestDelegateFactoryOptions): RequestDelegateMetadataResult;
 }
 
@@ -1595,7 +1577,7 @@ export abstract class RequestDelegateFactory$instance {
 export type RequestDelegateFactory = RequestDelegateFactory$instance;
 
 export abstract class RequestFormReaderExtensions$instance {
-    static ReadFormAsync(request: HttpRequest, options: FormOptions, cancellationToken?: CancellationToken): Task<IFormCollection>;
+    static ReadFormAsync(request: HttpRequest, options: FormOptions, cancellationToken?: CancellationToken): Task_1<IFormCollection>;
 }
 
 
@@ -1639,13 +1621,13 @@ export abstract class Results$instance {
     static AcceptedAtRoute<TValue>(routeName?: string, routeValues?: unknown, value?: TValue): IResult;
     static BadRequest(error?: unknown): IResult;
     static BadRequest<TValue>(error: TValue): IResult;
-    static Bytes(contents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
-    static Bytes(contents: ReadOnlyMemory<System_Internal.Byte>, contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
-    static Challenge(properties?: AuthenticationProperties, authenticationSchemes?: IList__System_Collections_Generic<System_Internal.String>): IResult;
+    static Bytes(contents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
+    static Bytes(contents: ReadOnlyMemory_1<System_Internal.Byte>, contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
+    static Challenge(properties?: AuthenticationProperties, authenticationSchemes?: IList_1<System_Internal.String>): IResult;
     static Conflict(error?: unknown): IResult;
     static Conflict<TValue>(error: TValue): IResult;
     static Content(content: string, contentType: MediaTypeHeaderValue): IResult;
-    static Content(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable<System_Internal.Int32>): IResult;
+    static Content(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
     static Content(content: string, contentType: string, contentEncoding: Encoding): IResult;
     static Created(): IResult;
     static Created(uri: string, value: unknown): IResult;
@@ -1656,18 +1638,18 @@ export abstract class Results$instance {
     static CreatedAtRoute<TValue>(routeName: string, routeValues: RouteValueDictionary, value?: TValue): IResult;
     static CreatedAtRoute(routeName?: string, routeValues?: unknown, value?: unknown): IResult;
     static CreatedAtRoute<TValue>(routeName?: string, routeValues?: unknown, value?: TValue): IResult;
-    static File(fileContents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
-    static File(fileStream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
-    static File(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
-    static Forbid(properties?: AuthenticationProperties, authenticationSchemes?: IList__System_Collections_Generic<System_Internal.String>): IResult;
+    static File(fileContents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
+    static File(fileStream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
+    static File(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
+    static Forbid(properties?: AuthenticationProperties, authenticationSchemes?: IList_1<System_Internal.String>): IResult;
     static InternalServerError(): IResult;
     static InternalServerError<TValue>(error: TValue): IResult;
-    static Json(data: unknown, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
-    static Json(data: unknown, jsonTypeInfo: JsonTypeInfo, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
-    static Json(data: unknown, type: Type, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
-    static Json<TValue>(data: TValue, jsonTypeInfo: JsonTypeInfo<TValue>, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
-    static Json<TValue>(data: TValue, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
-    static Json<TValue>(data: TValue, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
+    static Json(data: unknown, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json(data: unknown, jsonTypeInfo: JsonTypeInfo, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json(data: unknown, type: Type, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json<TValue>(data: TValue, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json<TValue>(data: TValue, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Json<TValue>(data: TValue, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
     static LocalRedirect(localUrl: string, permanent?: boolean, preserveMethod?: boolean): IResult;
     static NoContent(): IResult;
     static NotFound(value?: unknown): IResult;
@@ -1675,44 +1657,44 @@ export abstract class Results$instance {
     static Ok(value?: unknown): IResult;
     static Ok<TValue>(value: TValue): IResult;
     static Problem(problemDetails: ProblemDetails): IResult;
-    static Problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): IResult;
-    static Problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): IResult;
+    static Problem(detail: string, instance: string, statusCode: Nullable_1<System_Internal.Int32>, title: string, type: string, extensions: IDictionary_2<System_Internal.String, unknown>): IResult;
+    static Problem(detail?: string, instance?: string, statusCode?: Nullable_1<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): IResult;
     static Redirect(url: string, permanent?: boolean, preserveMethod?: boolean): IResult;
     static RedirectToRoute(routeName: string, routeValues: RouteValueDictionary, permanent?: boolean, preserveMethod?: boolean, fragment?: string): IResult;
     static RedirectToRoute(routeName?: string, routeValues?: unknown, permanent?: boolean, preserveMethod?: boolean, fragment?: string): IResult;
-    static ServerSentEvents<T>(values: IAsyncEnumerable<T>, eventType?: string): IResult;
-    static ServerSentEvents<T>(values: IAsyncEnumerable<SseItem<T>>): IResult;
-    static ServerSentEvents(values: IAsyncEnumerable<System_Internal.String>, eventType?: string): IResult;
+    static ServerSentEvents<T>(values: IAsyncEnumerable_1<T>, eventType?: string): IResult;
+    static ServerSentEvents<T>(values: IAsyncEnumerable_1<SseItem_1<T>>): IResult;
+    static ServerSentEvents(values: IAsyncEnumerable_1<System_Internal.String>, eventType?: string): IResult;
     static SignIn(principal: ClaimsPrincipal, properties?: AuthenticationProperties, authenticationScheme?: string): IResult;
-    static SignOut(properties?: AuthenticationProperties, authenticationSchemes?: IList__System_Collections_Generic<System_Internal.String>): IResult;
+    static SignOut(properties?: AuthenticationProperties, authenticationSchemes?: IList_1<System_Internal.String>): IResult;
     static StatusCode(statusCode: int): IResult;
-    static Stream(streamWriterCallback: Func<Stream, Task>, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
-    static Stream(pipeReader: PipeReader, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
-    static Stream(stream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
-    static Text(utf8Content: ReadOnlySpan<System_Internal.Byte>, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): IResult;
-    static Text(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable<System_Internal.Int32>): IResult;
+    static Stream(streamWriterCallback: Func_2<Stream, Task>, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): IResult;
+    static Stream(pipeReader: PipeReader, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
+    static Stream(stream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): IResult;
+    static Text(utf8Content: ReadOnlySpan_1<System_Internal.Byte>, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
+    static Text(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable_1<System_Internal.Int32>): IResult;
     static Text(content: string, contentType: string, contentEncoding: Encoding): IResult;
     static Unauthorized(): IResult;
     static UnprocessableEntity(error?: unknown): IResult;
     static UnprocessableEntity<TValue>(error: TValue): IResult;
-    static ValidationProblem(errors: IDictionary<System_Internal.String, string[]>, detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): IResult;
-    static ValidationProblem(errors: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, string[]>>, detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): IResult;
+    static ValidationProblem(errors: IDictionary_2<System_Internal.String, string[]>, detail: string, instance: string, statusCode: Nullable_1<System_Internal.Int32>, title: string, type: string, extensions: IDictionary_2<System_Internal.String, unknown>): IResult;
+    static ValidationProblem(errors: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>, detail?: string, instance?: string, statusCode?: Nullable_1<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): IResult;
 }
 
 
 export type Results = Results$instance;
 
 export abstract class SendFileFallback$instance {
-    static SendFileAsync(destination: Stream, filePath: string, offset: long, count: Nullable<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
+    static SendFileAsync(destination: Stream, filePath: string, offset: long, count: Nullable_1<System_Internal.Int64>, cancellationToken: CancellationToken): Task;
 }
 
 
 export type SendFileFallback = SendFileFallback$instance;
 
 export abstract class SendFileResponseExtensions$instance {
-    static SendFileAsync(response: HttpResponse, file: IFileInfo, offset: long, count: Nullable<System_Internal.Int64>, cancellationToken?: CancellationToken): Task;
+    static SendFileAsync(response: HttpResponse, file: IFileInfo, offset: long, count: Nullable_1<System_Internal.Int64>, cancellationToken?: CancellationToken): Task;
     static SendFileAsync(response: HttpResponse, file: IFileInfo, cancellationToken?: CancellationToken): Task;
-    static SendFileAsync(response: HttpResponse, fileName: string, offset: long, count: Nullable<System_Internal.Int64>, cancellationToken?: CancellationToken): Task;
+    static SendFileAsync(response: HttpResponse, fileName: string, offset: long, count: Nullable_1<System_Internal.Int64>, cancellationToken?: CancellationToken): Task;
     static SendFileAsync(response: HttpResponse, fileName: string, cancellationToken?: CancellationToken): Task;
 }
 
@@ -1721,7 +1703,7 @@ export type SendFileResponseExtensions = SendFileResponseExtensions$instance;
 
 export abstract class SessionExtensions$instance {
     static Get(session: ISession, key: string): byte[] | undefined;
-    static GetInt32(session: ISession, key: string): Nullable<System_Internal.Int32>;
+    static GetInt32(session: ISession, key: string): Nullable_1<System_Internal.Int32>;
     static GetString(session: ISession, key: string): string | undefined;
     static SetInt32(session: ISession, key: string, value: int): void;
     static SetString(session: ISession, key: string, value: string): void;
@@ -1815,13 +1797,13 @@ export abstract class TypedResults$instance {
     static AcceptedAtRoute<TValue>(value: TValue, routeName?: string, routeValues?: unknown): AcceptedAtRoute_1<TValue>;
     static BadRequest(): BadRequest;
     static BadRequest<TValue>(error: TValue): BadRequest_1<TValue>;
-    static Bytes(contents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): FileContentHttpResult;
-    static Bytes(contents: ReadOnlyMemory<System_Internal.Byte>, contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): FileContentHttpResult;
-    static Challenge(properties?: AuthenticationProperties, authenticationSchemes?: IList__System_Collections_Generic<System_Internal.String>): ChallengeHttpResult;
+    static Bytes(contents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): FileContentHttpResult;
+    static Bytes(contents: ReadOnlyMemory_1<System_Internal.Byte>, contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): FileContentHttpResult;
+    static Challenge(properties?: AuthenticationProperties, authenticationSchemes?: IList_1<System_Internal.String>): ChallengeHttpResult;
     static Conflict(): Conflict;
     static Conflict<TValue>(error: TValue): Conflict_1<TValue>;
     static Content(content: string, contentType: MediaTypeHeaderValue): ContentHttpResult;
-    static Content(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable<System_Internal.Int32>): ContentHttpResult;
+    static Content(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable_1<System_Internal.Int32>): ContentHttpResult;
     static Content(content: string, contentType: string, contentEncoding: Encoding): ContentHttpResult;
     static Created(): Created;
     static Created<TValue>(uri: string, value: TValue): Created_1<TValue>;
@@ -1832,45 +1814,45 @@ export abstract class TypedResults$instance {
     static CreatedAtRoute(routeName?: string, routeValues?: unknown): CreatedAtRoute;
     static CreatedAtRoute<TValue>(value: TValue, routeName: string, routeValues: RouteValueDictionary): CreatedAtRoute_1<TValue>;
     static CreatedAtRoute<TValue>(value: TValue, routeName?: string, routeValues?: unknown): CreatedAtRoute_1<TValue>;
-    static File(fileContents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): FileContentHttpResult;
-    static File(fileStream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): FileStreamHttpResult;
-    static Forbid(properties?: AuthenticationProperties, authenticationSchemes?: IList__System_Collections_Generic<System_Internal.String>): ForbidHttpResult;
+    static File(fileContents: byte[], contentType?: string, fileDownloadName?: string, enableRangeProcessing?: boolean, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): FileContentHttpResult;
+    static File(fileStream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): FileStreamHttpResult;
+    static Forbid(properties?: AuthenticationProperties, authenticationSchemes?: IList_1<System_Internal.String>): ForbidHttpResult;
     static InternalServerError(): InternalServerError;
     static InternalServerError<TValue>(error: TValue): InternalServerError_1<TValue>;
-    static Json<TValue>(data: TValue, jsonTypeInfo: JsonTypeInfo<TValue>, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): JsonHttpResult_1<TValue>;
-    static Json<TValue>(data: TValue, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): JsonHttpResult_1<TValue>;
-    static Json<TValue>(data: TValue, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): JsonHttpResult_1<TValue>;
+    static Json<TValue>(data: TValue, jsonTypeInfo: JsonTypeInfo_1<TValue>, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
+    static Json<TValue>(data: TValue, options?: JsonSerializerOptions, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
+    static Json<TValue>(data: TValue, context: JsonSerializerContext, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): JsonHttpResult_1<TValue>;
     static LocalRedirect(localUrl: string, permanent?: boolean, preserveMethod?: boolean): RedirectHttpResult;
     static NoContent(): NoContent;
     static NotFound(): NotFound;
     static NotFound<TValue>(value: TValue): NotFound_1<TValue>;
     static Ok(): Ok;
     static Ok<TValue>(value: TValue): Ok_1<TValue>;
-    static PhysicalFile(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): PhysicalFileHttpResult;
+    static PhysicalFile(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): PhysicalFileHttpResult;
     static Problem(problemDetails: ProblemDetails): ProblemHttpResult;
-    static Problem(detail: string, instance: string, statusCode: Nullable<System_Internal.Int32>, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): ProblemHttpResult;
-    static Problem(detail?: string, instance?: string, statusCode?: Nullable<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): ProblemHttpResult;
+    static Problem(detail: string, instance: string, statusCode: Nullable_1<System_Internal.Int32>, title: string, type: string, extensions: IDictionary_2<System_Internal.String, unknown>): ProblemHttpResult;
+    static Problem(detail?: string, instance?: string, statusCode?: Nullable_1<System_Internal.Int32>, title?: string, type?: string, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): ProblemHttpResult;
     static Redirect(url: string, permanent?: boolean, preserveMethod?: boolean): RedirectHttpResult;
     static RedirectToRoute(routeName: string, routeValues: RouteValueDictionary, permanent?: boolean, preserveMethod?: boolean, fragment?: string): RedirectToRouteHttpResult;
     static RedirectToRoute(routeName?: string, routeValues?: unknown, permanent?: boolean, preserveMethod?: boolean, fragment?: string): RedirectToRouteHttpResult;
-    static ServerSentEvents<T>(values: IAsyncEnumerable<T>, eventType?: string): ServerSentEventsResult_1<T>;
-    static ServerSentEvents<T>(values: IAsyncEnumerable<SseItem<T>>): ServerSentEventsResult_1<T>;
-    static ServerSentEvents(values: IAsyncEnumerable<System_Internal.String>, eventType?: string): ServerSentEventsResult_1<System_Internal.String>;
+    static ServerSentEvents<T>(values: IAsyncEnumerable_1<T>, eventType?: string): ServerSentEventsResult_1<T>;
+    static ServerSentEvents<T>(values: IAsyncEnumerable_1<SseItem_1<T>>): ServerSentEventsResult_1<T>;
+    static ServerSentEvents(values: IAsyncEnumerable_1<System_Internal.String>, eventType?: string): ServerSentEventsResult_1<System_Internal.String>;
     static SignIn(principal: ClaimsPrincipal, properties?: AuthenticationProperties, authenticationScheme?: string): SignInHttpResult;
-    static SignOut(properties?: AuthenticationProperties, authenticationSchemes?: IList__System_Collections_Generic<System_Internal.String>): SignOutHttpResult;
+    static SignOut(properties?: AuthenticationProperties, authenticationSchemes?: IList_1<System_Internal.String>): SignOutHttpResult;
     static StatusCode(statusCode: int): StatusCodeHttpResult;
-    static Stream(streamWriterCallback: Func<Stream, Task>, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue): PushStreamHttpResult;
-    static Stream(pipeReader: PipeReader, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): FileStreamHttpResult;
-    static Stream(stream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): FileStreamHttpResult;
-    static Text(utf8Content: ReadOnlySpan<System_Internal.Byte>, contentType?: string, statusCode?: Nullable<System_Internal.Int32>): Utf8ContentHttpResult;
-    static Text(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable<System_Internal.Int32>): ContentHttpResult;
+    static Stream(streamWriterCallback: Func_2<Stream, Task>, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue): PushStreamHttpResult;
+    static Stream(pipeReader: PipeReader, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): FileStreamHttpResult;
+    static Stream(stream: Stream, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): FileStreamHttpResult;
+    static Text(utf8Content: ReadOnlySpan_1<System_Internal.Byte>, contentType?: string, statusCode?: Nullable_1<System_Internal.Int32>): Utf8ContentHttpResult;
+    static Text(content: string, contentType?: string, contentEncoding?: Encoding, statusCode?: Nullable_1<System_Internal.Int32>): ContentHttpResult;
     static Text(content: string, contentType: string, contentEncoding: Encoding): ContentHttpResult;
     static Unauthorized(): UnauthorizedHttpResult;
     static UnprocessableEntity(): UnprocessableEntity;
     static UnprocessableEntity<TValue>(error: TValue): UnprocessableEntity_1<TValue>;
-    static ValidationProblem(errors: IDictionary<System_Internal.String, string[]>, detail: string, instance: string, title: string, type: string, extensions: IDictionary<System_Internal.String, unknown>): ValidationProblem;
-    static ValidationProblem(errors: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, string[]>>, detail?: string, instance?: string, title?: string, type?: string, extensions?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): ValidationProblem;
-    static VirtualFile(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): VirtualFileHttpResult;
+    static ValidationProblem(errors: IDictionary_2<System_Internal.String, string[]>, detail: string, instance: string, title: string, type: string, extensions: IDictionary_2<System_Internal.String, unknown>): ValidationProblem;
+    static ValidationProblem(errors: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>, detail?: string, instance?: string, title?: string, type?: string, extensions?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): ValidationProblem;
+    static VirtualFile(path: string, contentType?: string, fileDownloadName?: string, lastModified?: Nullable_1<DateTimeOffset>, entityTag?: EntityTagHeaderValue, enableRangeProcessing?: boolean): VirtualFileHttpResult;
 }
 
 

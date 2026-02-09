@@ -11,27 +11,27 @@ import * as Microsoft_AspNetCore_Authentication_Internal from "../../Microsoft.A
 import type { AccessDeniedContext, AuthenticateResult, AuthenticationProperties, AuthenticationScheme, AuthenticationTicket, HandleRequestResult, IAuthenticationHandler, IAuthenticationRequestHandler, ISecureDataFormat_1, ISystemClock, RedirectContext_1, RemoteAuthenticationEvents, RemoteAuthenticationHandler_1, RemoteAuthenticationOptions, RemoteFailureContext, ResultContext_1, TicketReceivedContext } from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
 import type { IDataProtectionProvider } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
 import type { CookieBuilder, HttpContext, HttpRequest, HttpResponse, PathString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
-import type { ICollection, IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func, IDisposable, Nullable, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
-import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
-import type { ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { JsonDocument, JsonElement } from "@tsonic/dotnet/System.Text.Json.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptionsMonitor } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import type { ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { JsonDocument, JsonElement } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func_2, IDisposable, Nullable_1, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptionsMonitor_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface OAuthChallengeProperties$instance extends AuthenticationProperties {
-    Scope: ICollection<System_Internal.String>;
+    Scope: ICollection_1<System_Internal.String>;
     SetScope(...scopes: string[]): void;
 }
 
 
 export const OAuthChallengeProperties: {
     new(): OAuthChallengeProperties;
-    new(items: IDictionary<System_Internal.String, System_Internal.String>): OAuthChallengeProperties;
-    new(items: IDictionary<System_Internal.String, System_Internal.String>, parameters: IDictionary<System_Internal.String, unknown>): OAuthChallengeProperties;
+    new(items: IDictionary_2<System_Internal.String, System_Internal.String>): OAuthChallengeProperties;
+    new(items: IDictionary_2<System_Internal.String, System_Internal.String>, parameters: IDictionary_2<System_Internal.String, unknown>): OAuthChallengeProperties;
     readonly ScopeKey: string;
 };
 
@@ -55,7 +55,7 @@ export type OAuthCodeExchangeContext = OAuthCodeExchangeContext$instance;
 export interface OAuthCreatingTicketContext$instance extends ResultContext_1<OAuthOptions> {
     readonly AccessToken: string | undefined;
     readonly Backchannel: HttpClient;
-    readonly ExpiresIn: Nullable<TimeSpan>;
+    readonly ExpiresIn: Nullable_1<TimeSpan>;
     readonly Identity: ClaimsIdentity | undefined;
     readonly RefreshToken: string | undefined;
     readonly TokenResponse: OAuthTokenResponse;
@@ -74,8 +74,8 @@ export const OAuthCreatingTicketContext: {
 export type OAuthCreatingTicketContext = OAuthCreatingTicketContext$instance;
 
 export interface OAuthEvents$instance extends RemoteAuthenticationEvents {
-    OnCreatingTicket: Func<OAuthCreatingTicketContext, Task>;
-    OnRedirectToAuthorizationEndpoint: Func<RedirectContext_1<OAuthOptions>, Task>;
+    OnCreatingTicket: Func_2<OAuthCreatingTicketContext, Task>;
+    OnRedirectToAuthorizationEndpoint: Func_2<RedirectContext_1<OAuthOptions>, Task>;
     CreatingTicket(context: OAuthCreatingTicketContext): Task;
     RedirectToAuthorizationEndpoint(context: RedirectContext_1<OAuthOptions>): Task;
 }
@@ -92,25 +92,25 @@ export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
-    AuthenticateAsync(): Task<AuthenticateResult>;
+    AuthenticateAsync(): Task_1<AuthenticateResult>;
     BuildChallengeUrl(properties: AuthenticationProperties, redirectUri: string): string;
     ChallengeAsync(properties: AuthenticationProperties): Task;
-    CreateEventsAsync(): Task<unknown>;
-    CreateEventsAsync(): Task<unknown>;
-    CreateTicketAsync(identity: ClaimsIdentity, properties: AuthenticationProperties, tokens: OAuthTokenResponse): Task<AuthenticationTicket>;
-    ExchangeCodeAsync(context: OAuthCodeExchangeContext): Task<OAuthTokenResponse>;
-    FormatScope(scopes: IEnumerable<System_Internal.String>): string;
+    CreateEventsAsync(): Task_1<unknown>;
+    CreateEventsAsync(): Task_1<unknown>;
+    CreateTicketAsync(identity: ClaimsIdentity, properties: AuthenticationProperties, tokens: OAuthTokenResponse): Task_1<AuthenticationTicket>;
+    ExchangeCodeAsync(context: OAuthCodeExchangeContext): Task_1<OAuthTokenResponse>;
+    FormatScope(scopes: IEnumerable_1<System_Internal.String>): string;
     FormatScope(): string;
     HandleChallengeAsync(properties: AuthenticationProperties): Task;
-    HandleRemoteAuthenticateAsync(): Task<HandleRequestResult>;
-    HandleRequestAsync(): Task<System_Internal.Boolean>;
+    HandleRemoteAuthenticateAsync(): Task_1<HandleRequestResult>;
+    HandleRequestAsync(): Task_1<System_Internal.Boolean>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
 }
 
 
 export const OAuthHandler_1: {
-    new<TOptions extends OAuthOptions>(options: IOptionsMonitor<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock): OAuthHandler_1<TOptions>;
-    new<TOptions extends OAuthOptions>(options: IOptionsMonitor<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder): OAuthHandler_1<TOptions>;
+    new<TOptions extends OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder, clock: ISystemClock): OAuthHandler_1<TOptions>;
+    new<TOptions extends OAuthOptions>(options: IOptionsMonitor_1<TOptions>, logger: ILoggerFactory, encoder: UrlEncoder): OAuthHandler_1<TOptions>;
 };
 
 
@@ -122,13 +122,13 @@ export type OAuthHandler_1<TOptions extends OAuthOptions> = OAuthHandler_1$insta
 
 
 export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
-    readonly AdditionalAuthorizationParameters: IDictionary<System_Internal.String, System_Internal.String>;
+    readonly AdditionalAuthorizationParameters: IDictionary_2<System_Internal.String, System_Internal.String>;
     AuthorizationEndpoint: string;
     readonly ClaimActions: ClaimActionCollection;
     ClientId: string;
     ClientSecret: string;
     Events: OAuthEvents | RemoteAuthenticationEvents | unknown;
-    readonly Scope: ICollection<System_Internal.String>;
+    readonly Scope: ICollection_1<System_Internal.String>;
     StateDataFormat: ISecureDataFormat_1<AuthenticationProperties>;
     TokenEndpoint: string;
     UsePkce: boolean;

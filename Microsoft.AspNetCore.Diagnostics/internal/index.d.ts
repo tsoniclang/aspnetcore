@@ -10,14 +10,14 @@ import type { DeveloperExceptionPageOptions, ExceptionHandlerOptions, StatusCode
 import type { IWebHostEnvironment } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
 import type { Endpoint, HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { RouteValueDictionary } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DiagnosticListener, DiagnosticSource } from "@tsonic/dotnet/System.Diagnostics.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, Exception, Func, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
-import type { IOptions } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DiagnosticListener, DiagnosticSource } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import type { Task, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, Exception, Func_2, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
+import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export enum ExceptionHandledType {
     Unhandled = 0,
@@ -31,7 +31,7 @@ export enum ExceptionHandledType {
 export interface ICompilationException$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_ICompilationException: never;
 
-    readonly CompilationFailures: IEnumerable<CompilationFailure | undefined> | undefined;
+    readonly CompilationFailures: IEnumerable_1<CompilationFailure | undefined> | undefined;
 }
 
 
@@ -40,7 +40,7 @@ export type ICompilationException = ICompilationException$instance;
 export interface IDeveloperPageExceptionFilter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter: never;
 
-    HandleExceptionAsync(errorContext: ErrorContext, next: Func<ErrorContext, Task>): Task;
+    HandleExceptionAsync(errorContext: ErrorContext, next: Func_2<ErrorContext, Task>): Task;
 }
 
 
@@ -49,7 +49,7 @@ export type IDeveloperPageExceptionFilter = IDeveloperPageExceptionFilter$instan
 export interface IExceptionHandler$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandler: never;
 
-    TryHandleAsync(httpContext: HttpContext, exception: Exception, cancellationToken: CancellationToken): ValueTask<System_Internal.Boolean>;
+    TryHandleAsync(httpContext: HttpContext, exception: Exception, cancellationToken: CancellationToken): ValueTask_1<System_Internal.Boolean>;
 }
 
 
@@ -108,15 +108,15 @@ export type IStatusCodeReExecuteFeature = IStatusCodeReExecuteFeature$instance;
 export interface CompilationFailure$instance {
     readonly CompiledContent: string | undefined;
     readonly FailureSummary: string | undefined;
-    readonly Messages: IEnumerable<DiagnosticMessage | undefined> | undefined;
+    readonly Messages: IEnumerable_1<DiagnosticMessage | undefined> | undefined;
     readonly SourceFileContent: string | undefined;
     readonly SourceFilePath: string | undefined;
 }
 
 
 export const CompilationFailure: {
-    new(sourceFilePath: string, sourceFileContent: string, compiledContent: string, messages: IEnumerable<DiagnosticMessage>): CompilationFailure;
-    new(sourceFilePath: string, sourceFileContent: string, compiledContent: string, messages: IEnumerable<DiagnosticMessage>, failureSummary: string): CompilationFailure;
+    new(sourceFilePath: string, sourceFileContent: string, compiledContent: string, messages: IEnumerable_1<DiagnosticMessage>): CompilationFailure;
+    new(sourceFilePath: string, sourceFileContent: string, compiledContent: string, messages: IEnumerable_1<DiagnosticMessage>, failureSummary: string): CompilationFailure;
 };
 
 
@@ -128,7 +128,7 @@ export interface DeveloperExceptionPageMiddleware$instance {
 
 
 export const DeveloperExceptionPageMiddleware: {
-    new(next: RequestDelegate, options: IOptions<DeveloperExceptionPageOptions>, loggerFactory: ILoggerFactory, hostingEnvironment: IWebHostEnvironment, diagnosticSource: DiagnosticSource, filters: IEnumerable<IDeveloperPageExceptionFilter>): DeveloperExceptionPageMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<DeveloperExceptionPageOptions>, loggerFactory: ILoggerFactory, hostingEnvironment: IWebHostEnvironment, diagnosticSource: DiagnosticSource, filters: IEnumerable_1<IDeveloperPageExceptionFilter>): DeveloperExceptionPageMiddleware;
 };
 
 
@@ -196,7 +196,7 @@ export interface ExceptionHandlerMiddleware$instance {
 
 
 export const ExceptionHandlerMiddleware: {
-    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions<ExceptionHandlerOptions>, diagnosticListener: DiagnosticListener): ExceptionHandlerMiddleware;
+    new(next: RequestDelegate, loggerFactory: ILoggerFactory, options: IOptions_1<ExceptionHandlerOptions>, diagnosticListener: DiagnosticListener): ExceptionHandlerMiddleware;
 };
 
 
@@ -230,7 +230,7 @@ export const StatusCodeContext: {
 
 export type StatusCodeContext = StatusCodeContext$instance;
 
-export interface StatusCodePagesFeature$instance {
+export interface StatusCodePagesFeature$instance extends IStatusCodePagesFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature: never;
 
     Enabled: boolean;
@@ -246,8 +246,6 @@ export interface __StatusCodePagesFeature$views {
     As_IStatusCodePagesFeature(): IStatusCodePagesFeature$instance;
 }
 
-export interface StatusCodePagesFeature$instance extends IStatusCodePagesFeature$instance {}
-
 export type StatusCodePagesFeature = StatusCodePagesFeature$instance & __StatusCodePagesFeature$views;
 
 
@@ -257,7 +255,7 @@ export interface StatusCodePagesMiddleware$instance {
 
 
 export const StatusCodePagesMiddleware: {
-    new(next: RequestDelegate, options: IOptions<StatusCodePagesOptions>): StatusCodePagesMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<StatusCodePagesOptions>): StatusCodePagesMiddleware;
 };
 
 
@@ -296,7 +294,7 @@ export interface WelcomePageMiddleware$instance {
 
 
 export const WelcomePageMiddleware: {
-    new(next: RequestDelegate, options: IOptions<WelcomePageOptions>): WelcomePageMiddleware;
+    new(next: RequestDelegate, options: IOptions_1<WelcomePageOptions>): WelcomePageMiddleware;
 };
 
 
