@@ -31,6 +31,8 @@ export interface IRequestDecompressionProvider$instance {
 export type IRequestDecompressionProvider = IRequestDecompressionProvider$instance;
 
 export interface RequestDecompressionOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_RequestDecompression_RequestDecompressionOptions: never;
+
     readonly DecompressionProviders: IDictionary_2<System_Internal.String, IDecompressionProvider>;
 }
 

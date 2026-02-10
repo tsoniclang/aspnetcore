@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Func_2, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface Circuit$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_Circuits_Circuit: never;
+
     readonly Id: string;
 }
 
@@ -23,6 +25,8 @@ export const Circuit: {
 export type Circuit = Circuit$instance;
 
 export interface CircuitHandler$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_Circuits_CircuitHandler: never;
+
     readonly Order: int;
     CreateInboundActivityHandler(next: Func_2<CircuitInboundActivityContext, Task>): Func_2<CircuitInboundActivityContext, Task>;
     OnCircuitClosedAsync(circuit: Circuit, cancellationToken: CancellationToken): Task;
@@ -39,6 +43,8 @@ export const CircuitHandler: (abstract new() => CircuitHandler) & {
 export type CircuitHandler = CircuitHandler$instance;
 
 export interface CircuitInboundActivityContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_Circuits_CircuitInboundActivityContext: never;
+
     readonly Circuit: Circuit;
 }
 

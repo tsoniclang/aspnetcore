@@ -108,6 +108,8 @@ export interface IJSStreamReference$instance extends System_Internal.IAsyncDispo
 export type IJSStreamReference = IJSStreamReference$instance;
 
 export interface DotNetObjectReference_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_JSInterop_DotNetObjectReference_1: never;
+
     readonly __tsonic_iface_Microsoft_JSInterop_Infrastructure_IDotNetObjectReference: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -123,6 +125,8 @@ export const DotNetObjectReference_1: {
 export type DotNetObjectReference_1<TValue> = DotNetObjectReference_1$instance<TValue>;
 
 export interface DotNetStreamReference$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_DotNetStreamReference: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly LeaveOpen: boolean;
@@ -139,6 +143,8 @@ export const DotNetStreamReference: {
 export type DotNetStreamReference = DotNetStreamReference$instance;
 
 export interface JSDisconnectedException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_JSInterop_JSDisconnectedException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -152,6 +158,8 @@ export const JSDisconnectedException: {
 export type JSDisconnectedException = JSDisconnectedException$instance;
 
 export interface JSException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_JSInterop_JSException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -166,6 +174,8 @@ export const JSException: {
 export type JSException = JSException$instance;
 
 export interface JSInProcessRuntime$instance extends JSRuntime, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_JSInterop_JSInProcessRuntime: never;
+
     readonly __tsonic_iface_Microsoft_JSInterop_IJSInProcessRuntime: never;
     readonly __tsonic_iface_Microsoft_JSInterop_IJSRuntime: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -199,6 +209,8 @@ export type JSInProcessRuntime = JSInProcessRuntime$instance & __JSInProcessRunt
 
 
 export interface JSInvokableAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_JSInterop_JSInvokableAttribute: never;
+
     readonly Identifier: string | undefined;
 }
 
@@ -212,6 +224,8 @@ export const JSInvokableAttribute: {
 export type JSInvokableAttribute = JSInvokableAttribute$instance;
 
 export interface JSRuntime$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_JSRuntime: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     BeginInvokeJS(taskId: long, identifier: string, argsJson: string): void;

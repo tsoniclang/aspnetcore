@@ -186,6 +186,8 @@ export interface IJsonHelper$instance {
 export type IJsonHelper = IJsonHelper$instance;
 
 export interface MultiSelectList$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_MultiSelectList: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -210,6 +212,8 @@ export const MultiSelectList: {
 export type MultiSelectList = MultiSelectList$instance;
 
 export interface MvcForm$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_MvcForm: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -226,6 +230,8 @@ export const MvcForm: {
 export type MvcForm = MvcForm$instance;
 
 export interface SelectList$instance extends MultiSelectList {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_SelectList: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -245,6 +251,8 @@ export const SelectList: {
 export type SelectList = SelectList$instance;
 
 export interface SelectListGroup$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_SelectListGroup: never;
+
     Disabled: boolean;
     Name: string;
 }
@@ -258,6 +266,8 @@ export const SelectListGroup: {
 export type SelectListGroup = SelectListGroup$instance;
 
 export interface SelectListItem$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem: never;
+
     Disabled: boolean;
     Group: SelectListGroup;
     Selected: boolean;
@@ -277,6 +287,8 @@ export const SelectListItem: {
 export type SelectListItem = SelectListItem$instance;
 
 export interface TagBuilder$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_TagBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     readonly Attributes: AttributeDictionary;
@@ -313,6 +325,8 @@ export type TagBuilder = TagBuilder$instance & __TagBuilder$views;
 
 
 export interface ViewContext$instance extends ActionContext {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Rendering_ViewContext: never;
+
     CheckBoxHiddenInputRenderMode: CheckBoxHiddenInputRenderMode;
     ClientValidationEnabled: boolean;
     get ExecutingFilePath(): string | undefined;

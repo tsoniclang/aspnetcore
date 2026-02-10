@@ -347,11 +347,10 @@ export type IRouteValuesFeature = IRouteValuesFeature$instance;
 export interface IServerVariablesFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IServerVariablesFeature: never;
 
-    [variableName: string]: string | undefined;
 }
 
 
-export type IServerVariablesFeature = IServerVariablesFeature$instance;
+export type IServerVariablesFeature = IServerVariablesFeature$instance & { [variableName: string]: string | undefined; };
 
 export interface IServiceProvidersFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IServiceProvidersFeature: never;
@@ -416,6 +415,8 @@ export interface IWebTransportSession$instance {
 export type IWebTransportSession = IWebTransportSession$instance;
 
 export interface FeatureReference_1$instance<T> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FeatureReference_1: never;
+
     Fetch(features: IFeatureCollection): T | undefined;
     Update(features: IFeatureCollection, feature: T): T;
 }
@@ -430,6 +431,8 @@ export const FeatureReference_1: {
 export type FeatureReference_1<T> = FeatureReference_1$instance<T>;
 
 export interface FeatureReferences_1$instance<TCache> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FeatureReferences_1: never;
+
     Cache: TCache | undefined;
     Collection: IFeatureCollection;
     Revision: int;
@@ -448,6 +451,8 @@ export const FeatureReferences_1: {
 export type FeatureReferences_1<TCache> = FeatureReferences_1$instance<TCache>;
 
 export interface DefaultSessionFeature$instance extends ISessionFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_DefaultSessionFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ISessionFeature: never;
 
     Session: ISession;
@@ -467,6 +472,8 @@ export type DefaultSessionFeature = DefaultSessionFeature$instance & __DefaultSe
 
 
 export interface FeatureCollection$instance extends IFeatureCollection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FeatureCollection: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IFeatureCollection: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -496,6 +503,8 @@ export type FeatureCollection = FeatureCollection$instance & __FeatureCollection
 
 
 export interface FormFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FormFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IFormFeature: never;
 
     get Form(): IFormCollection | undefined;
@@ -522,6 +531,8 @@ export type FormFeature = FormFeature$instance & __FormFeature$views;
 
 
 export interface FormOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FormOptions: never;
+
     BufferBody: boolean;
     BufferBodyLengthLimit: long;
     KeyLengthLimit: int;
@@ -547,6 +558,8 @@ export const FormOptions: {
 export type FormOptions = FormOptions$instance;
 
 export interface HttpConnectionFeature$instance extends IHttpConnectionFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_HttpConnectionFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpConnectionFeature: never;
 
     ConnectionId: string;
@@ -572,6 +585,8 @@ export type HttpConnectionFeature = HttpConnectionFeature$instance & __HttpConne
 
 
 export interface HttpRequestFeature$instance extends IHttpRequestFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_HttpRequestFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpRequestFeature: never;
 
     Body: Stream;
@@ -599,6 +614,8 @@ export type HttpRequestFeature = HttpRequestFeature$instance & __HttpRequestFeat
 
 
 export interface HttpRequestIdentifierFeature$instance extends IHttpRequestIdentifierFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_HttpRequestIdentifierFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpRequestIdentifierFeature: never;
 
     TraceIdentifier: string;
@@ -618,6 +635,8 @@ export type HttpRequestIdentifierFeature = HttpRequestIdentifierFeature$instance
 
 
 export interface HttpRequestLifetimeFeature$instance extends IHttpRequestLifetimeFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_HttpRequestLifetimeFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpRequestLifetimeFeature: never;
 
     RequestAborted: CancellationToken;
@@ -638,6 +657,8 @@ export type HttpRequestLifetimeFeature = HttpRequestLifetimeFeature$instance & _
 
 
 export interface HttpResponseFeature$instance extends IHttpResponseFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_HttpResponseFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpResponseFeature: never;
 
     Body: Stream;
@@ -664,6 +685,8 @@ export type HttpResponseFeature = HttpResponseFeature$instance & __HttpResponseF
 
 
 export interface ItemsFeature$instance extends IItemsFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_ItemsFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IItemsFeature: never;
 
     Items: IDictionary_2<unknown, unknown | undefined>;
@@ -683,6 +706,8 @@ export type ItemsFeature = ItemsFeature$instance & __ItemsFeature$views;
 
 
 export interface QueryFeature$instance extends IQueryFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_QueryFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IQueryFeature: never;
 
     Query: IQueryCollection;
@@ -703,6 +728,8 @@ export type QueryFeature = QueryFeature$instance & __QueryFeature$views;
 
 
 export interface RequestBodyPipeFeature$instance extends IRequestBodyPipeFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_RequestBodyPipeFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IRequestBodyPipeFeature: never;
 
     readonly Reader: PipeReader;
@@ -722,6 +749,8 @@ export type RequestBodyPipeFeature = RequestBodyPipeFeature$instance & __Request
 
 
 export interface RequestCookiesFeature$instance extends IRequestCookiesFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_RequestCookiesFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IRequestCookiesFeature: never;
 
     Cookies: IRequestCookieCollection;
@@ -742,6 +771,8 @@ export type RequestCookiesFeature = RequestCookiesFeature$instance & __RequestCo
 
 
 export interface RequestServicesFeature$instance extends IServiceProvidersFeature$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_RequestServicesFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IServiceProvidersFeature: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -765,6 +796,8 @@ export type RequestServicesFeature = RequestServicesFeature$instance & __Request
 
 
 export interface ResponseCookiesFeature$instance extends IResponseCookiesFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_ResponseCookiesFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IResponseCookiesFeature: never;
 
     readonly Cookies: IResponseCookies;
@@ -785,6 +818,8 @@ export type ResponseCookiesFeature = ResponseCookiesFeature$instance & __Respons
 
 
 export interface RouteValuesFeature$instance extends IRouteValuesFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_RouteValuesFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IRouteValuesFeature: never;
 
     RouteValues: RouteValueDictionary;
@@ -804,6 +839,8 @@ export type RouteValuesFeature = RouteValuesFeature$instance & __RouteValuesFeat
 
 
 export interface ServiceProvidersFeature$instance extends IServiceProvidersFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_ServiceProvidersFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IServiceProvidersFeature: never;
 
     RequestServices: IServiceProvider;
@@ -823,6 +860,8 @@ export type ServiceProvidersFeature = ServiceProvidersFeature$instance & __Servi
 
 
 export interface TlsConnectionFeature$instance extends ITlsConnectionFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_TlsConnectionFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ITlsConnectionFeature: never;
 
     get ClientCertificate(): X509Certificate2 | undefined;

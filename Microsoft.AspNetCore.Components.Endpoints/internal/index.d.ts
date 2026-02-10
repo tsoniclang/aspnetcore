@@ -34,6 +34,8 @@ export interface IRazorComponentEndpointInvoker$instance {
 export type IRazorComponentEndpointInvoker = IRazorComponentEndpointInvoker$instance;
 
 export interface ComponentTypeMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Endpoints_ComponentTypeMetadata: never;
+
     readonly Type: Type;
 }
 
@@ -46,6 +48,8 @@ export const ComponentTypeMetadata: {
 export type ComponentTypeMetadata = ComponentTypeMetadata$instance;
 
 export interface RazorComponentsServiceOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Endpoints_RazorComponentsServiceOptions: never;
+
     DetailedErrors: boolean;
     MaxFormMappingCollectionSize: int;
     MaxFormMappingErrorCount: int;
@@ -63,6 +67,8 @@ export const RazorComponentsServiceOptions: {
 export type RazorComponentsServiceOptions = RazorComponentsServiceOptions$instance;
 
 export interface RootComponentMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Endpoints_RootComponentMetadata: never;
+
     readonly Type: Type;
 }
 

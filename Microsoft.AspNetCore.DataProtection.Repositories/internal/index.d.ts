@@ -48,6 +48,8 @@ export interface IXmlRepository$instance {
 export type IXmlRepository = IXmlRepository$instance;
 
 export interface FileSystemXmlRepository$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_Repositories_FileSystemXmlRepository: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
 
@@ -73,6 +75,8 @@ export type FileSystemXmlRepository = FileSystemXmlRepository$instance & __FileS
 
 
 export interface RegistryXmlRepository$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_Repositories_RegistryXmlRepository: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository: never;
 

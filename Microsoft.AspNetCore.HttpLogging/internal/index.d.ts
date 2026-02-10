@@ -74,6 +74,8 @@ export interface IHttpLoggingInterceptor$instance {
 export type IHttpLoggingInterceptor = IHttpLoggingInterceptor$instance;
 
 export interface HttpLoggingAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_HttpLoggingAttribute: never;
+
     IsRequestBodyLogLimitSet: boolean;
     IsResponseBodyLogLimitSet: boolean;
     readonly LoggingFields: HttpLoggingFields;
@@ -90,6 +92,8 @@ export const HttpLoggingAttribute: {
 export type HttpLoggingAttribute = HttpLoggingAttribute$instance;
 
 export interface HttpLoggingInterceptorContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_HttpLoggingInterceptorContext: never;
+
     HttpContext: HttpContext;
     LoggingFields: HttpLoggingFields;
     readonly Parameters: IList_1<KeyValuePair_2<System_Internal.String, unknown>>;
@@ -111,6 +115,8 @@ export const HttpLoggingInterceptorContext: {
 export type HttpLoggingInterceptorContext = HttpLoggingInterceptorContext$instance;
 
 export interface HttpLoggingOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_HttpLoggingOptions: never;
+
     CombineLogs: boolean;
     LoggingFields: HttpLoggingFields;
     readonly MediaTypeOptions: MediaTypeOptions;
@@ -129,6 +135,8 @@ export const HttpLoggingOptions: {
 export type HttpLoggingOptions = HttpLoggingOptions$instance;
 
 export interface MediaTypeOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_MediaTypeOptions: never;
+
     AddBinary(mediaType: MediaTypeHeaderValue): void;
     AddBinary(contentType: string): void;
     AddText(contentType: string): void;
@@ -144,6 +152,8 @@ export const MediaTypeOptions: {
 export type MediaTypeOptions = MediaTypeOptions$instance;
 
 export interface W3CLoggerOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpLogging_W3CLoggerOptions: never;
+
     readonly AdditionalRequestHeaders: ISet_1<System_Internal.String>;
     FileName: string;
     FileSizeLimit: Nullable_1<System_Internal.Int32>;

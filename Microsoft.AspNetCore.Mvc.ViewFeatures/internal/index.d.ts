@@ -171,6 +171,8 @@ export interface IViewContextAware$instance {
 export type IViewContextAware = IViewContextAware$instance;
 
 export interface AttributeDictionary_Enumerator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_AttributeDictionary_Enumerator: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -190,6 +192,8 @@ export const AttributeDictionary_Enumerator: {
 export type AttributeDictionary_Enumerator = AttributeDictionary_Enumerator$instance;
 
 export interface AttributeDictionary$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_AttributeDictionary: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -199,7 +203,6 @@ export interface AttributeDictionary$instance {
 
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    [key: string]: string | undefined;
     readonly Keys: ICollection_1<System_Internal.String>;
     readonly Values: ICollection_1<string | undefined>;
     Add(item: KeyValuePair_2<System_Internal.String, System_Internal.String>): void;
@@ -220,9 +223,11 @@ export const AttributeDictionary: {
 };
 
 
-export type AttributeDictionary = AttributeDictionary$instance;
+export type AttributeDictionary = AttributeDictionary$instance & { [key: string]: string | undefined; };
 
 export interface CookieTempDataProvider$instance extends ITempDataProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_CookieTempDataProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataProvider: never;
 
     LoadTempData(context: HttpContext): IDictionary_2<System_Internal.String, unknown>;
@@ -244,6 +249,8 @@ export type CookieTempDataProvider = CookieTempDataProvider$instance & __CookieT
 
 
 export interface DefaultHtmlGenerator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_DefaultHtmlGenerator: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator: never;
 
     readonly IdAttributeDotReplacement: string;
@@ -293,6 +300,8 @@ export type DefaultHtmlGenerator = DefaultHtmlGenerator$instance & __DefaultHtml
 
 
 export interface DefaultValidationHtmlAttributeProvider$instance extends ValidationHtmlAttributeProvider {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_DefaultValidationHtmlAttributeProvider: never;
+
     AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary_2<System_Internal.String, System_Internal.String>): void;
 }
 
@@ -305,6 +314,8 @@ export const DefaultValidationHtmlAttributeProvider: {
 export type DefaultValidationHtmlAttributeProvider = DefaultValidationHtmlAttributeProvider$instance;
 
 export interface FormContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_FormContext: never;
+
     CanRenderAtEndOfForm: boolean;
     readonly EndOfFormContent: IList_1<IHtmlContent>;
     readonly FormData: IDictionary_2<System_Internal.String, unknown>;
@@ -324,6 +335,8 @@ export const FormContext: {
 export type FormContext = FormContext$instance;
 
 export interface HtmlHelper$instance extends IViewContextAware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;
 
@@ -417,6 +430,8 @@ export type HtmlHelper = HtmlHelper$instance & __HtmlHelper$views;
 
 
 export interface HtmlHelper_1$instance<TModel> extends HtmlHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;
@@ -487,6 +502,8 @@ export type HtmlHelper_1<TModel> = HtmlHelper_1$instance<TModel> & __HtmlHelper_
 
 
 export interface HtmlHelperOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelperOptions: never;
+
     CheckBoxHiddenInputRenderMode: CheckBoxHiddenInputRenderMode;
     ClientValidationEnabled: boolean;
     FormInputRenderMode: FormInputRenderMode;
@@ -505,6 +522,8 @@ export const HtmlHelperOptions: {
 export type HtmlHelperOptions = HtmlHelperOptions$instance;
 
 export interface ModelExplorer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExplorer: never;
+
     readonly Container: ModelExplorer;
     readonly Metadata: ModelMetadata;
     readonly Model: unknown;
@@ -531,6 +550,8 @@ export const ModelExplorer: {
 export type ModelExplorer = ModelExplorer$instance;
 
 export interface ModelExpression$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression: never;
+
     readonly Metadata: ModelMetadata;
     readonly Model: unknown;
     readonly ModelExplorer: ModelExplorer;
@@ -546,6 +567,8 @@ export const ModelExpression: {
 export type ModelExpression = ModelExpression$instance;
 
 export interface ModelExpressionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpressionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IModelExpressionProvider: never;
 
     CreateModelExpression<TModel, TValue>(viewData: ViewDataDictionary_1<TModel>, expression: Expression_1<Func_2<TModel, TValue>>): ModelExpression;
@@ -567,6 +590,8 @@ export type ModelExpressionProvider = ModelExpressionProvider$instance & __Model
 
 
 export interface PartialViewResultExecutor$instance extends ViewExecutor {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_PartialViewResultExecutor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
     ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
@@ -587,6 +612,8 @@ export type PartialViewResultExecutor = PartialViewResultExecutor$instance & __P
 
 
 export interface SaveTempDataAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_SaveTempDataAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -611,6 +638,8 @@ export type SaveTempDataAttribute = SaveTempDataAttribute$instance & __SaveTempD
 
 
 export interface SessionStateTempDataProvider$instance extends ITempDataProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_SessionStateTempDataProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataProvider: never;
 
     LoadTempData(context: HttpContext): IDictionary_2<System_Internal.String, unknown>;
@@ -631,6 +660,8 @@ export type SessionStateTempDataProvider = SessionStateTempDataProvider$instance
 
 
 export interface StringHtmlContent$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_StringHtmlContent: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -650,6 +681,8 @@ export type StringHtmlContent = StringHtmlContent$instance & __StringHtmlContent
 
 
 export interface TempDataDictionary$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionary: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionary: never;
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
@@ -657,7 +690,6 @@ export interface TempDataDictionary$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    [key: string]: unknown | undefined;
     readonly Keys: ICollection_1<System_Internal.String>;
     readonly Values: ICollection_1<unknown | undefined>;
     Add(key: string, value: unknown): void;
@@ -684,10 +716,12 @@ export interface __TempDataDictionary$views {
     As_ITempDataDictionary(): ITempDataDictionary$instance;
 }
 
-export type TempDataDictionary = TempDataDictionary$instance & __TempDataDictionary$views;
+export type TempDataDictionary = TempDataDictionary$instance & __TempDataDictionary$views & { [key: string]: unknown | undefined; };
 
 
 export interface TempDataDictionaryFactory$instance extends ITempDataDictionaryFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionaryFactory: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionaryFactory: never;
 
     GetTempData(context: HttpContext): ITempDataDictionary;
@@ -707,6 +741,8 @@ export type TempDataDictionaryFactory = TempDataDictionaryFactory$instance & __T
 
 
 export interface TemplateInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_TemplateInfo: never;
+
     FormattedModelValue: unknown;
     HtmlFieldPrefix: string;
     readonly TemplateDepth: int;
@@ -725,6 +761,8 @@ export const TemplateInfo: {
 export type TemplateInfo = TemplateInfo$instance;
 
 export interface ValidationHtmlAttributeProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ValidationHtmlAttributeProvider: never;
+
     AddAndTrackValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, expression: string, attributes: IDictionary_2<System_Internal.String, System_Internal.String>): void;
     AddValidationAttributes(viewContext: ViewContext, modelExplorer: ModelExplorer, attributes: IDictionary_2<System_Internal.String, System_Internal.String>): void;
 }
@@ -736,7 +774,9 @@ export const ValidationHtmlAttributeProvider: (abstract new() => ValidationHtmlA
 
 export type ValidationHtmlAttributeProvider = ValidationHtmlAttributeProvider$instance;
 
-export interface ViewComponentResultExecutor$instance {
+export interface ViewComponentResultExecutor$instance extends Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IActionResultExecutor_1$instance<ViewComponentResult> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewComponentResultExecutor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
     ExecuteAsync(context: ActionContext, result: ViewComponentResult): Task;
@@ -756,6 +796,8 @@ export type ViewComponentResultExecutor = ViewComponentResultExecutor$instance &
 
 
 export interface ViewContextAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewContextAttribute: never;
+
 }
 
 
@@ -767,6 +809,8 @@ export const ViewContextAttribute: {
 export type ViewContextAttribute = ViewContextAttribute$instance;
 
 export interface ViewDataDictionary$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -774,7 +818,6 @@ export interface ViewDataDictionary$instance {
 
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    [index: string]: unknown | undefined;
     readonly Keys: ICollection_1<System_Internal.String>;
     Model: unknown;
     ModelExplorer: ModelExplorer;
@@ -805,9 +848,11 @@ export const ViewDataDictionary: {
 };
 
 
-export type ViewDataDictionary = ViewDataDictionary$instance;
+export type ViewDataDictionary = ViewDataDictionary$instance & { [index: string]: unknown | undefined; };
 
 export interface ViewDataDictionary_1$instance<TModel> extends ViewDataDictionary {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_1: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -827,6 +872,8 @@ export const ViewDataDictionary_1: {
 export type ViewDataDictionary_1<TModel> = ViewDataDictionary_1$instance<TModel>;
 
 export interface ViewDataDictionaryAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionaryAttribute: never;
+
 }
 
 
@@ -838,6 +885,8 @@ export const ViewDataDictionaryAttribute: {
 export type ViewDataDictionaryAttribute = ViewDataDictionaryAttribute$instance;
 
 export interface ViewDataDictionaryControllerPropertyActivator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionaryControllerPropertyActivator: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerPropertyActivator: never;
 
     Activate(actionContext: ControllerContext, controller: unknown): void;
@@ -853,6 +902,8 @@ export const ViewDataDictionaryControllerPropertyActivator: {
 export type ViewDataDictionaryControllerPropertyActivator = ViewDataDictionaryControllerPropertyActivator$instance;
 
 export interface ViewDataInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataInfo: never;
+
     readonly Container: unknown;
     readonly PropertyInfo: PropertyInfo;
     Value: unknown;
@@ -869,6 +920,8 @@ export const ViewDataInfo: {
 export type ViewDataInfo = ViewDataInfo$instance;
 
 export interface ViewExecutor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewExecutor: never;
+
     ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
 }
 
@@ -882,6 +935,8 @@ export const ViewExecutor: {
 export type ViewExecutor = ViewExecutor$instance;
 
 export interface ViewResultExecutor$instance extends ViewExecutor {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewResultExecutor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
     ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;

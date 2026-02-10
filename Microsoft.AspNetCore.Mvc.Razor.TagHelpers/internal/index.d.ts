@@ -43,6 +43,8 @@ export interface ITagHelperComponentPropertyActivator$instance {
 export type ITagHelperComponentPropertyActivator = ITagHelperComponentPropertyActivator$instance;
 
 export interface BodyTagHelper$instance extends TagHelperComponentTagHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
@@ -64,6 +66,8 @@ export type BodyTagHelper = BodyTagHelper$instance & __BodyTagHelper$views;
 
 
 export interface HeadTagHelper$instance extends TagHelperComponentTagHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
@@ -85,6 +89,8 @@ export type HeadTagHelper = HeadTagHelper$instance & __HeadTagHelper$views;
 
 
 export interface TagHelperComponentTagHelper$instance extends TagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
@@ -107,6 +113,8 @@ export type TagHelperComponentTagHelper = TagHelperComponentTagHelper$instance &
 
 
 export interface TagHelperFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperFeature: never;
+
     readonly TagHelpers: IList_1<TypeInfo>;
 }
 
@@ -118,7 +126,9 @@ export const TagHelperFeature: {
 
 export type TagHelperFeature = TagHelperFeature$instance;
 
-export interface TagHelperFeatureProvider$instance extends IApplicationFeatureProvider {
+export interface TagHelperFeatureProvider$instance extends IApplicationFeatureProvider, Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<TagHelperFeature> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperFeatureProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
 
@@ -141,6 +151,8 @@ export type TagHelperFeatureProvider = TagHelperFeatureProvider$instance & __Tag
 
 
 export interface UrlResolutionTagHelper$instance extends TagHelper, ITagHelper, Microsoft_AspNetCore_Razor_TagHelpers_Internal.ITagHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 

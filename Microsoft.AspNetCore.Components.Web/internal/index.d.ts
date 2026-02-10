@@ -34,6 +34,8 @@ export interface IJSComponentConfiguration$instance {
 export type IJSComponentConfiguration = IJSComponentConfiguration$instance;
 
 export interface ClipboardEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ClipboardEventArgs: never;
+
     Type: string;
 }
 
@@ -46,6 +48,8 @@ export const ClipboardEventArgs: {
 export type ClipboardEventArgs = ClipboardEventArgs$instance;
 
 export interface DataTransfer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_DataTransfer: never;
+
     DropEffect: string;
     get EffectAllowed(): string | undefined;
     set EffectAllowed(value: string | undefined);
@@ -63,6 +67,8 @@ export const DataTransfer: {
 export type DataTransfer = DataTransfer$instance;
 
 export interface DataTransferItem$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_DataTransferItem: never;
+
     Kind: string;
     Type: string;
 }
@@ -76,6 +82,8 @@ export const DataTransferItem: {
 export type DataTransferItem = DataTransferItem$instance;
 
 export interface DragEventArgs$instance extends MouseEventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_DragEventArgs: never;
+
     DataTransfer: DataTransfer;
 }
 
@@ -88,6 +96,8 @@ export const DragEventArgs: {
 export type DragEventArgs = DragEventArgs$instance;
 
 export interface ErrorBoundary$instance extends ErrorBoundaryBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ErrorBoundary: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IErrorBoundary: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
@@ -118,6 +128,8 @@ export type ErrorBoundary = ErrorBoundary$instance & __ErrorBoundary$views;
 
 
 export interface ErrorEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ErrorEventArgs: never;
+
     Colno: int;
     get Filename(): string | undefined;
     set Filename(value: string | undefined);
@@ -137,6 +149,8 @@ export const ErrorEventArgs: {
 export type ErrorEventArgs = ErrorEventArgs$instance;
 
 export interface FocusEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_FocusEventArgs: never;
+
     get Type(): string | undefined;
     set Type(value: string | undefined);
 }
@@ -150,6 +164,8 @@ export const FocusEventArgs: {
 export type FocusEventArgs = FocusEventArgs$instance;
 
 export interface HeadContent$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HeadContent: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -180,6 +196,8 @@ export type HeadContent = HeadContent$instance & __HeadContent$views;
 
 
 export interface HeadOutlet$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HeadOutlet: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -208,6 +226,8 @@ export type HeadOutlet = HeadOutlet$instance & __HeadOutlet$views;
 
 
 export interface HtmlRenderer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HtmlRenderer: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -233,6 +253,8 @@ export const HtmlRenderer: {
 export type HtmlRenderer = HtmlRenderer$instance;
 
 export interface InteractiveAutoRenderMode$instance extends IComponentRenderMode {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_InteractiveAutoRenderMode: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
 
     readonly Prerender: boolean;
@@ -248,6 +270,8 @@ export const InteractiveAutoRenderMode: {
 export type InteractiveAutoRenderMode = InteractiveAutoRenderMode$instance;
 
 export interface InteractiveServerRenderMode$instance extends IComponentRenderMode {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_InteractiveServerRenderMode: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
 
     readonly Prerender: boolean;
@@ -263,6 +287,8 @@ export const InteractiveServerRenderMode: {
 export type InteractiveServerRenderMode = InteractiveServerRenderMode$instance;
 
 export interface InteractiveWebAssemblyRenderMode$instance extends IComponentRenderMode {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_InteractiveWebAssemblyRenderMode: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponentRenderMode: never;
 
     readonly Prerender: boolean;
@@ -278,6 +304,8 @@ export const InteractiveWebAssemblyRenderMode: {
 export type InteractiveWebAssemblyRenderMode = InteractiveWebAssemblyRenderMode$instance;
 
 export interface JSComponentConfigurationStore$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_JSComponentConfigurationStore: never;
+
 }
 
 
@@ -289,6 +317,8 @@ export const JSComponentConfigurationStore: {
 export type JSComponentConfigurationStore = JSComponentConfigurationStore$instance;
 
 export interface KeyboardEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_KeyboardEventArgs: never;
+
     AltKey: boolean;
     Code: string;
     CtrlKey: boolean;
@@ -310,6 +340,8 @@ export const KeyboardEventArgs: {
 export type KeyboardEventArgs = KeyboardEventArgs$instance;
 
 export interface MouseEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_MouseEventArgs: never;
+
     AltKey: boolean;
     Button: long;
     Buttons: long;
@@ -339,6 +371,8 @@ export const MouseEventArgs: {
 export type MouseEventArgs = MouseEventArgs$instance;
 
 export interface PageTitle$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_PageTitle: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -369,6 +403,8 @@ export type PageTitle = PageTitle$instance & __PageTitle$views;
 
 
 export interface PointerEventArgs$instance extends MouseEventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_PointerEventArgs: never;
+
     Height: float;
     IsPrimary: boolean;
     PointerId: long;
@@ -388,6 +424,8 @@ export const PointerEventArgs: {
 export type PointerEventArgs = PointerEventArgs$instance;
 
 export interface ProgressEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ProgressEventArgs: never;
+
     LengthComputable: boolean;
     Loaded: long;
     Total: long;
@@ -403,6 +441,8 @@ export const ProgressEventArgs: {
 export type ProgressEventArgs = ProgressEventArgs$instance;
 
 export interface TouchEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_TouchEventArgs: never;
+
     AltKey: boolean;
     ChangedTouches: TouchPoint[];
     CtrlKey: boolean;
@@ -423,6 +463,8 @@ export const TouchEventArgs: {
 export type TouchEventArgs = TouchEventArgs$instance;
 
 export interface TouchPoint$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_TouchPoint: never;
+
     ClientX: double;
     ClientY: double;
     Identifier: long;
@@ -441,6 +483,8 @@ export const TouchPoint: {
 export type TouchPoint = TouchPoint$instance;
 
 export interface WheelEventArgs$instance extends MouseEventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_WheelEventArgs: never;
+
     DeltaMode: long;
     DeltaX: double;
     DeltaY: double;

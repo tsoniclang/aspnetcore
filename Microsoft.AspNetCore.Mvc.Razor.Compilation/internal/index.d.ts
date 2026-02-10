@@ -32,6 +32,8 @@ export interface IViewCompilerProvider$instance {
 export type IViewCompilerProvider = IViewCompilerProvider$instance;
 
 export interface CompiledViewDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor: never;
+
     get ExpirationTokens(): IList_1<IChangeToken> | undefined;
     set ExpirationTokens(value: IList_1<IChangeToken> | undefined);
     get Item(): RazorCompiledItem | undefined;
@@ -53,6 +55,8 @@ export const CompiledViewDescriptor: {
 export type CompiledViewDescriptor = CompiledViewDescriptor$instance;
 
 export interface RazorViewAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Compilation_RazorViewAttribute: never;
+
     readonly Path: string;
     readonly ViewType: Type;
 }
@@ -66,6 +70,8 @@ export const RazorViewAttribute: {
 export type RazorViewAttribute = RazorViewAttribute$instance;
 
 export interface ViewsFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Compilation_ViewsFeature: never;
+
     readonly ViewDescriptors: IList_1<CompiledViewDescriptor>;
 }
 

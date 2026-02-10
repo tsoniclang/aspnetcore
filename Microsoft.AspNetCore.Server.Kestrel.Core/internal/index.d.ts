@@ -38,6 +38,8 @@ export enum HttpProtocols {
 
 
 export interface BadHttpRequestException$instance extends BadHttpRequestException_Http {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_BadHttpRequestException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly StatusCode: int;
@@ -51,6 +53,8 @@ export const BadHttpRequestException: {
 export type BadHttpRequestException = BadHttpRequestException$instance;
 
 export interface Http2Limits$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Http2Limits: never;
+
     HeaderTableSize: int;
     InitialConnectionWindowSize: int;
     InitialStreamWindowSize: int;
@@ -70,6 +74,8 @@ export const Http2Limits: {
 export type Http2Limits = Http2Limits$instance;
 
 export interface Http3Limits$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Http3Limits: never;
+
     MaxRequestHeaderFieldSize: int;
 }
 
@@ -82,6 +88,8 @@ export const Http3Limits: {
 export type Http3Limits = Http3Limits$instance;
 
 export interface KestrelServer$instance extends Microsoft_AspNetCore_Hosting_Server_Internal.IServer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServer: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServer: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -106,6 +114,8 @@ export type KestrelServer = KestrelServer$instance & __KestrelServer$views;
 
 
 export interface KestrelServerLimits$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerLimits: never;
+
     readonly Http2: Http2Limits;
     readonly Http3: Http3Limits;
     KeepAliveTimeout: TimeSpan;
@@ -133,6 +143,8 @@ export const KestrelServerLimits: {
 export type KestrelServerLimits = KestrelServerLimits$instance;
 
 export interface KestrelServerOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerOptions: never;
+
     AddServerHeader: boolean;
     AllowAlternateSchemes: boolean;
     AllowHostHeaderOverride: boolean;
@@ -178,6 +190,8 @@ export const KestrelServerOptions: {
 export type KestrelServerOptions = KestrelServerOptions$instance;
 
 export interface ListenOptions$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_ListenOptions: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder: never;
 
@@ -209,6 +223,8 @@ export type ListenOptions = ListenOptions$instance & __ListenOptions$views;
 
 
 export interface MinDataRate$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_MinDataRate: never;
+
     readonly BytesPerSecond: double;
     readonly GracePeriod: TimeSpan;
     ToString(): string;

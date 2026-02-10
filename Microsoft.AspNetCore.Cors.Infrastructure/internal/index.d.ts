@@ -75,6 +75,8 @@ export interface IEnableCorsAttribute$instance extends ICorsMetadata$instance {}
 export type IEnableCorsAttribute = IEnableCorsAttribute$instance;
 
 export interface CorsMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsMiddleware: never;
+
     Invoke(context: HttpContext, corsPolicyProvider: ICorsPolicyProvider): Task;
 }
 
@@ -89,6 +91,8 @@ export const CorsMiddleware: {
 export type CorsMiddleware = CorsMiddleware$instance;
 
 export interface CorsOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsOptions: never;
+
     DefaultPolicyName: string;
     AddDefaultPolicy(policy: CorsPolicy): void;
     AddDefaultPolicy(configurePolicy: Action_1<CorsPolicyBuilder>): void;
@@ -106,6 +110,8 @@ export const CorsOptions: {
 export type CorsOptions = CorsOptions$instance;
 
 export interface CorsPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy: never;
+
     readonly AllowAnyHeader: boolean;
     readonly AllowAnyMethod: boolean;
     readonly AllowAnyOrigin: boolean;
@@ -128,6 +134,8 @@ export const CorsPolicy: {
 export type CorsPolicy = CorsPolicy$instance;
 
 export interface CorsPolicyBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicyBuilder: never;
+
     AllowAnyHeader(): CorsPolicyBuilder;
     AllowAnyMethod(): CorsPolicyBuilder;
     AllowAnyOrigin(): CorsPolicyBuilder;
@@ -153,6 +161,8 @@ export const CorsPolicyBuilder: {
 export type CorsPolicyBuilder = CorsPolicyBuilder$instance;
 
 export interface CorsResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsResult: never;
+
     readonly AllowedExposedHeaders: IList_1<System_Internal.String>;
     readonly AllowedHeaders: IList_1<System_Internal.String>;
     readonly AllowedMethods: IList_1<System_Internal.String>;
@@ -175,6 +185,8 @@ export const CorsResult: {
 export type CorsResult = CorsResult$instance;
 
 export interface CorsService$instance extends ICorsService$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_CorsService: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService: never;
 
     ApplyResult(result: CorsResult, response: HttpResponse): void;
@@ -198,6 +210,8 @@ export type CorsService = CorsService$instance & __CorsService$views;
 
 
 export interface DefaultCorsPolicyProvider$instance extends ICorsPolicyProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Cors_Infrastructure_DefaultCorsPolicyProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;
 
     GetPolicyAsync(context: HttpContext, policyName: string): Task_1<CorsPolicy | undefined>;

@@ -43,6 +43,8 @@ export interface IResponseCompressionProvider$instance {
 export type IResponseCompressionProvider = IResponseCompressionProvider$instance;
 
 export interface BrotliCompressionProvider$instance extends ICompressionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_BrotliCompressionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
 
     readonly EncodingName: string;
@@ -64,6 +66,8 @@ export type BrotliCompressionProvider = BrotliCompressionProvider$instance & __B
 
 
 export interface BrotliCompressionProviderOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_BrotliCompressionProviderOptions: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
 
     Level: CompressionLevel;
@@ -78,6 +82,8 @@ export const BrotliCompressionProviderOptions: {
 export type BrotliCompressionProviderOptions = BrotliCompressionProviderOptions$instance;
 
 export interface CompressionProviderCollection$instance extends Collection_1<ICompressionProvider> {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_CompressionProviderCollection: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -100,6 +106,8 @@ export const CompressionProviderCollection: {
 export type CompressionProviderCollection = CompressionProviderCollection$instance;
 
 export interface GzipCompressionProvider$instance extends ICompressionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_GzipCompressionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider: never;
 
     readonly EncodingName: string;
@@ -121,6 +129,8 @@ export type GzipCompressionProvider = GzipCompressionProvider$instance & __GzipC
 
 
 export interface GzipCompressionProviderOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_GzipCompressionProviderOptions: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
 
     Level: CompressionLevel;
@@ -135,6 +145,8 @@ export const GzipCompressionProviderOptions: {
 export type GzipCompressionProviderOptions = GzipCompressionProviderOptions$instance;
 
 export interface ResponseCompressionDefaults$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults: never;
+
 }
 
 
@@ -147,6 +159,8 @@ export const ResponseCompressionDefaults: {
 export type ResponseCompressionDefaults = ResponseCompressionDefaults$instance;
 
 export interface ResponseCompressionMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -159,6 +173,8 @@ export const ResponseCompressionMiddleware: {
 export type ResponseCompressionMiddleware = ResponseCompressionMiddleware$instance;
 
 export interface ResponseCompressionOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionOptions: never;
+
     EnableForHttps: boolean;
     ExcludedMimeTypes: IEnumerable_1<System_Internal.String>;
     MimeTypes: IEnumerable_1<System_Internal.String>;
@@ -174,6 +190,8 @@ export const ResponseCompressionOptions: {
 export type ResponseCompressionOptions = ResponseCompressionOptions$instance;
 
 export interface ResponseCompressionProvider$instance extends IResponseCompressionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider: never;
 
     CheckRequestAcceptsCompression(context: HttpContext): boolean;

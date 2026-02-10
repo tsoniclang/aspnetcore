@@ -66,6 +66,8 @@ export interface IHttpRequestLineHandler$instance {
 export type IHttpRequestLineHandler = IHttpRequestLineHandler$instance;
 
 export interface HttpVersionAndMethod$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpVersionAndMethod: never;
+
     readonly Method: HttpMethod;
     readonly MethodEnd: int;
     Version: HttpVersion;
@@ -80,6 +82,8 @@ export const HttpVersionAndMethod: {
 export type HttpVersionAndMethod = HttpVersionAndMethod$instance;
 
 export interface TargetOffsetPathLength$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_TargetOffsetPathLength: never;
+
     readonly IsEncoded: boolean;
     readonly Length: int;
     readonly Offset: int;
@@ -94,6 +98,8 @@ export const TargetOffsetPathLength: {
 export type TargetOffsetPathLength = TargetOffsetPathLength$instance;
 
 export interface HttpParser_1$instance<TRequestHandler extends IHttpHeadersHandler & IHttpRequestLineHandler> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpParser_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpParser_1: never;
 
     ParseHeaders(handler: TRequestHandler, reader: SequenceReader_1<System_Internal.Byte>): boolean;

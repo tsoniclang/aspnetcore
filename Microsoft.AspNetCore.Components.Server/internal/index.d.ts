@@ -19,6 +19,8 @@ import type { HybridCache } from "@tsonic/microsoft-extensions/Microsoft.Extensi
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface CircuitOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_CircuitOptions: never;
+
     DetailedErrors: boolean;
     DisconnectedCircuitMaxRetained: int;
     DisconnectedCircuitRetentionPeriod: TimeSpan;
@@ -41,6 +43,8 @@ export const CircuitOptions: {
 export type CircuitOptions = CircuitOptions$instance;
 
 export interface CircuitRootComponentOptions$instance extends Microsoft_AspNetCore_Components_Web_Internal.IJSComponentConfiguration$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_CircuitRootComponentOptions: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration: never;
 
     readonly JSComponents: JSComponentConfigurationStore;
@@ -61,6 +65,8 @@ export type CircuitRootComponentOptions = CircuitRootComponentOptions$instance &
 
 
 export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_RevalidatingServerAuthenticationStateProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -83,6 +89,8 @@ export type RevalidatingServerAuthenticationStateProvider = RevalidatingServerAu
 
 
 export interface ServerAuthenticationStateProvider$instance extends AuthenticationStateProvider, Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ServerAuthenticationStateProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
 
     GetAuthenticationStateAsync(): Task_1<AuthenticationState>;
@@ -103,6 +111,8 @@ export type ServerAuthenticationStateProvider = ServerAuthenticationStateProvide
 
 
 export interface ServerComponentsEndpointOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ServerComponentsEndpointOptions: never;
+
     get ConfigureWebSocketAcceptContext(): Func_3<HttpContext, WebSocketAcceptContext, Task> | undefined;
     set ConfigureWebSocketAcceptContext(value: Func_3<HttpContext, WebSocketAcceptContext, Task> | undefined);
     get ContentSecurityFrameAncestorsPolicy(): string | undefined;

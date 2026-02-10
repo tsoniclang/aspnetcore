@@ -21,6 +21,8 @@ import type { Boolean as ClrBoolean, EventArgs, Exception, IAsyncDisposable, IDi
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface StaticHtmlRenderer$instance extends Renderer {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_HtmlRendering_Infrastructure_StaticHtmlRenderer: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 

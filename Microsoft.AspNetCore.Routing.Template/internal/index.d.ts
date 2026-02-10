@@ -17,6 +17,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface InlineConstraint$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_InlineConstraint: never;
+
     readonly Constraint: string;
 }
 
@@ -30,6 +32,8 @@ export const InlineConstraint: {
 export type InlineConstraint = InlineConstraint$instance;
 
 export interface RouteTemplate$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_RouteTemplate: never;
+
     readonly Parameters: IList_1<TemplatePart>;
     readonly Segments: IList_1<TemplateSegment>;
     readonly TemplateText: string | undefined;
@@ -48,6 +52,8 @@ export const RouteTemplate: {
 export type RouteTemplate = RouteTemplate$instance;
 
 export interface TemplateBinder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplateBinder: never;
+
     BindValues(acceptedValues: RouteValueDictionary): string | undefined;
     GetValues(ambientValues: RouteValueDictionary, values: RouteValueDictionary): TemplateValuesResult | undefined;
     TryProcessConstraints(httpContext: HttpContext, combinedValues: RouteValueDictionary, parameterName: string, constraint: IRouteConstraint): boolean;
@@ -62,6 +68,8 @@ export const TemplateBinder: {
 export type TemplateBinder = TemplateBinder$instance;
 
 export interface TemplateBinderFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplateBinderFactory: never;
+
     Create(template: RouteTemplate, defaults: RouteValueDictionary): TemplateBinder;
     Create(pattern: RoutePattern): TemplateBinder;
 }
@@ -74,6 +82,8 @@ export const TemplateBinderFactory: (abstract new() => TemplateBinderFactory) & 
 export type TemplateBinderFactory = TemplateBinderFactory$instance;
 
 export interface TemplateMatcher$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplateMatcher: never;
+
     readonly Defaults: RouteValueDictionary;
     readonly Template: RouteTemplate;
     TryMatch(path: PathString, values: RouteValueDictionary): boolean;
@@ -88,6 +98,8 @@ export const TemplateMatcher: {
 export type TemplateMatcher = TemplateMatcher$instance;
 
 export interface TemplatePart$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplatePart: never;
+
     get DefaultValue(): unknown | undefined;
     set DefaultValue(value: unknown | undefined);
     InlineConstraints: IEnumerable_1<InlineConstraint>;
@@ -115,6 +127,8 @@ export const TemplatePart: {
 export type TemplatePart = TemplatePart$instance;
 
 export interface TemplateSegment$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplateSegment: never;
+
     readonly IsSimple: boolean;
     readonly Parts: List_1<TemplatePart>;
     ToRoutePatternPathSegment(): RoutePatternPathSegment;
@@ -130,6 +144,8 @@ export const TemplateSegment: {
 export type TemplateSegment = TemplateSegment$instance;
 
 export interface TemplateValuesResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplateValuesResult: never;
+
     AcceptedValues: RouteValueDictionary;
     CombinedValues: RouteValueDictionary;
 }

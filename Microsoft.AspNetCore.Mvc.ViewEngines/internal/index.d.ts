@@ -48,6 +48,8 @@ export interface IViewEngine$instance {
 export type IViewEngine = IViewEngine$instance;
 
 export interface CompositeViewEngine$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewEngines_CompositeViewEngine: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
 
@@ -71,6 +73,8 @@ export type CompositeViewEngine = CompositeViewEngine$instance & __CompositeView
 
 
 export interface ViewEngineResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewEngines_ViewEngineResult: never;
+
     SearchedLocations: IEnumerable_1<System_Internal.String>;
     readonly Success: boolean;
     get View(): IView | undefined;

@@ -15,6 +15,8 @@ import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/inde
 import type { String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface RouteDataRequestCultureProvider$instance extends RequestCultureProvider {
+    readonly __tsonic_type_Microsoft_AspNetCore_Localization_Routing_RouteDataRequestCultureProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     RouteDataStringKey: string;

@@ -92,6 +92,8 @@ export interface IViewComponentSelector$instance {
 export type IViewComponentSelector = IViewComponentSelector$instance;
 
 export interface ContentViewComponentResult$instance extends Microsoft_AspNetCore_Mvc_Internal.IViewComponentResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ContentViewComponentResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentResult: never;
 
     readonly Content: string;
@@ -113,6 +115,8 @@ export type ContentViewComponentResult = ContentViewComponentResult$instance & _
 
 
 export interface DefaultViewComponentDescriptorCollectionProvider$instance extends IViewComponentDescriptorCollectionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentDescriptorCollectionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorCollectionProvider: never;
 
     readonly ViewComponents: ViewComponentDescriptorCollection;
@@ -132,6 +136,8 @@ export type DefaultViewComponentDescriptorCollectionProvider = DefaultViewCompon
 
 
 export interface DefaultViewComponentDescriptorProvider$instance extends IViewComponentDescriptorProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentDescriptorProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorProvider: never;
 
     GetCandidateTypes(): IEnumerable_1<TypeInfo>;
@@ -152,6 +158,8 @@ export type DefaultViewComponentDescriptorProvider = DefaultViewComponentDescrip
 
 
 export interface DefaultViewComponentFactory$instance extends IViewComponentFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentFactory: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentFactory: never;
 
     CreateViewComponent(context: ViewComponentContext): unknown;
@@ -173,6 +181,8 @@ export type DefaultViewComponentFactory = DefaultViewComponentFactory$instance &
 
 
 export interface DefaultViewComponentHelper$instance extends Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IViewContextAware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;
 
@@ -196,6 +206,8 @@ export type DefaultViewComponentHelper = DefaultViewComponentHelper$instance & _
 
 
 export interface DefaultViewComponentSelector$instance extends IViewComponentSelector$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentSelector: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentSelector: never;
 
     SelectComponent(componentName: string): ViewComponentDescriptor;
@@ -215,6 +227,8 @@ export type DefaultViewComponentSelector = DefaultViewComponentSelector$instance
 
 
 export interface HtmlContentViewComponentResult$instance extends Microsoft_AspNetCore_Mvc_Internal.IViewComponentResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_HtmlContentViewComponentResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentResult: never;
 
     readonly EncodedContent: IHtmlContent;
@@ -236,6 +250,8 @@ export type HtmlContentViewComponentResult = HtmlContentViewComponentResult$inst
 
 
 export interface ServiceBasedViewComponentActivator$instance extends IViewComponentActivator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ServiceBasedViewComponentActivator: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentActivator: never;
 
     Create(context: ViewComponentContext): unknown;
@@ -256,6 +272,8 @@ export type ServiceBasedViewComponentActivator = ServiceBasedViewComponentActiva
 
 
 export interface ViewComponentContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentContext: never;
+
     Arguments: IDictionary_2<System_Internal.String, unknown | undefined>;
     HtmlEncoder: HtmlEncoder;
     readonly TempData: ITempDataDictionary;
@@ -275,6 +293,8 @@ export const ViewComponentContext: {
 export type ViewComponentContext = ViewComponentContext$instance;
 
 export interface ViewComponentContextAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentContextAttribute: never;
+
 }
 
 
@@ -286,6 +306,8 @@ export const ViewComponentContextAttribute: {
 export type ViewComponentContextAttribute = ViewComponentContextAttribute$instance;
 
 export interface ViewComponentDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentDescriptor: never;
+
     DisplayName: string;
     FullName: string;
     Id: string;
@@ -304,6 +326,8 @@ export const ViewComponentDescriptor: {
 export type ViewComponentDescriptor = ViewComponentDescriptor$instance;
 
 export interface ViewComponentDescriptorCollection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentDescriptorCollection: never;
+
     readonly Items: IReadOnlyList_1<ViewComponentDescriptor>;
     readonly Version: int;
 }
@@ -317,6 +341,8 @@ export const ViewComponentDescriptorCollection: {
 export type ViewComponentDescriptorCollection = ViewComponentDescriptorCollection$instance;
 
 export interface ViewComponentFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentFeature: never;
+
     readonly ViewComponents: IList_1<TypeInfo>;
 }
 
@@ -328,7 +354,9 @@ export const ViewComponentFeature: {
 
 export type ViewComponentFeature = ViewComponentFeature$instance;
 
-export interface ViewComponentFeatureProvider$instance extends IApplicationFeatureProvider {
+export interface ViewComponentFeatureProvider$instance extends IApplicationFeatureProvider, Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<ViewComponentFeature> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentFeatureProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
 
@@ -349,6 +377,8 @@ export type ViewComponentFeatureProvider = ViewComponentFeatureProvider$instance
 
 
 export interface ViewViewComponentResult$instance extends Microsoft_AspNetCore_Mvc_Internal.IViewComponentResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponents_ViewViewComponentResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IViewComponentResult: never;
 
     TempData: ITempDataDictionary;

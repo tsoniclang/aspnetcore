@@ -128,6 +128,8 @@ export interface IApiResponseTypeMetadataProvider$instance {
 export type IApiResponseTypeMetadataProvider = IApiResponseTypeMetadataProvider$instance;
 
 export interface ApiConventionNameMatchAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionNameMatchAttribute: never;
+
     readonly MatchBehavior: ApiConventionNameMatchBehavior;
 }
 
@@ -140,6 +142,8 @@ export const ApiConventionNameMatchAttribute: {
 export type ApiConventionNameMatchAttribute = ApiConventionNameMatchAttribute$instance;
 
 export interface ApiConventionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionResult: never;
+
     readonly ResponseMetadataProviders: IReadOnlyList_1<IApiResponseMetadataProvider>;
 }
 
@@ -152,6 +156,8 @@ export const ApiConventionResult: {
 export type ApiConventionResult = ApiConventionResult$instance;
 
 export interface ApiConventionTypeMatchAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionTypeMatchAttribute: never;
+
     readonly MatchBehavior: ApiConventionTypeMatchBehavior;
 }
 
@@ -164,6 +170,8 @@ export const ApiConventionTypeMatchAttribute: {
 export type ApiConventionTypeMatchAttribute = ApiConventionTypeMatchAttribute$instance;
 
 export interface ApiDescription$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescription: never;
+
     ActionDescriptor: ActionDescriptor;
     get GroupName(): string | undefined;
     set GroupName(value: string | undefined);
@@ -186,6 +194,8 @@ export const ApiDescription: {
 export type ApiDescription = ApiDescription$instance;
 
 export interface ApiDescriptionGroup$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescriptionGroup: never;
+
     readonly GroupName: string | undefined;
     readonly Items: IReadOnlyList_1<ApiDescription>;
 }
@@ -199,6 +209,8 @@ export const ApiDescriptionGroup: {
 export type ApiDescriptionGroup = ApiDescriptionGroup$instance;
 
 export interface ApiDescriptionGroupCollection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescriptionGroupCollection: never;
+
     readonly Items: IReadOnlyList_1<ApiDescriptionGroup>;
     readonly Version: int;
 }
@@ -212,6 +224,8 @@ export const ApiDescriptionGroupCollection: {
 export type ApiDescriptionGroupCollection = ApiDescriptionGroupCollection$instance;
 
 export interface ApiDescriptionGroupCollectionProvider$instance extends IApiDescriptionGroupCollectionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescriptionGroupCollectionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider: never;
 
     readonly ApiDescriptionGroups: ApiDescriptionGroupCollection;
@@ -231,6 +245,8 @@ export type ApiDescriptionGroupCollectionProvider = ApiDescriptionGroupCollectio
 
 
 export interface ApiDescriptionProviderContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescriptionProviderContext: never;
+
     readonly Actions: IReadOnlyList_1<ActionDescriptor>;
     readonly Results: IList_1<ApiDescription>;
 }
@@ -244,6 +260,8 @@ export const ApiDescriptionProviderContext: {
 export type ApiDescriptionProviderContext = ApiDescriptionProviderContext$instance;
 
 export interface ApiParameterDescription$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiParameterDescription: never;
+
     get BindingInfo(): BindingInfo | undefined;
     set BindingInfo(value: BindingInfo | undefined);
     get DefaultValue(): unknown | undefined;
@@ -267,6 +285,8 @@ export const ApiParameterDescription: {
 export type ApiParameterDescription = ApiParameterDescription$instance;
 
 export interface ApiParameterRouteInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiParameterRouteInfo: never;
+
     get Constraints(): IEnumerable_1<IRouteConstraint> | undefined;
     set Constraints(value: IEnumerable_1<IRouteConstraint> | undefined);
     get DefaultValue(): unknown | undefined;
@@ -283,6 +303,8 @@ export const ApiParameterRouteInfo: {
 export type ApiParameterRouteInfo = ApiParameterRouteInfo$instance;
 
 export interface ApiRequestFormat$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiRequestFormat: never;
+
     Formatter: IInputFormatter;
     MediaType: string;
 }
@@ -296,6 +318,8 @@ export const ApiRequestFormat: {
 export type ApiRequestFormat = ApiRequestFormat$instance;
 
 export interface ApiResponseFormat$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiResponseFormat: never;
+
     Formatter: IOutputFormatter;
     MediaType: string;
 }
@@ -309,6 +333,8 @@ export const ApiResponseFormat: {
 export type ApiResponseFormat = ApiResponseFormat$instance;
 
 export interface ApiResponseType$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiResponseType: never;
+
     ApiResponseFormats: IList_1<ApiResponseFormat>;
     get Description(): string | undefined;
     set Description(value: string | undefined);
@@ -329,6 +355,8 @@ export const ApiResponseType: {
 export type ApiResponseType = ApiResponseType$instance;
 
 export interface DefaultApiDescriptionProvider$instance extends IApiDescriptionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_DefaultApiDescriptionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionProvider: never;
 
     readonly Order: int;

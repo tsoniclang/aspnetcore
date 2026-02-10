@@ -47,6 +47,8 @@ export interface IServerIntegratedAuth$instance {
 export type IServerIntegratedAuth = IServerIntegratedAuth$instance;
 
 export interface ServerIntegratedAuth$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_Server_ServerIntegratedAuth: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth: never;
 
     AuthenticationScheme: string;

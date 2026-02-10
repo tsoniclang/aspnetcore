@@ -25,6 +25,8 @@ export enum SameSiteMode {
 
 
 export interface CacheControlHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_CacheControlHeaderValue: never;
+
     readonly Extensions: IList_1<NameValueHeaderValue>;
     MaxAge: Nullable_1<TimeSpan>;
     MaxStale: boolean;
@@ -69,6 +71,8 @@ export const CacheControlHeaderValue: {
 export type CacheControlHeaderValue = CacheControlHeaderValue$instance;
 
 export interface ContentDispositionHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue: never;
+
     CreationDate: Nullable_1<DateTimeOffset>;
     DispositionType: StringSegment;
     FileName: StringSegment;
@@ -96,6 +100,8 @@ export const ContentDispositionHeaderValue: {
 export type ContentDispositionHeaderValue = ContentDispositionHeaderValue$instance;
 
 export interface ContentRangeHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_ContentRangeHeaderValue: never;
+
     From: Nullable_1<System_Internal.Int64>;
     readonly HasLength: boolean;
     readonly HasRange: boolean;
@@ -120,6 +126,8 @@ export const ContentRangeHeaderValue: {
 export type ContentRangeHeaderValue = ContentRangeHeaderValue$instance;
 
 export interface CookieHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_CookieHeaderValue: never;
+
     Name: StringSegment;
     Value: StringSegment;
     Equals(obj: unknown): boolean;
@@ -143,6 +151,8 @@ export const CookieHeaderValue: {
 export type CookieHeaderValue = CookieHeaderValue$instance;
 
 export interface EntityTagHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_EntityTagHeaderValue: never;
+
     readonly IsWeak: boolean;
     readonly Tag: StringSegment;
     Compare(other: EntityTagHeaderValue, useStrongComparison: boolean): boolean;
@@ -168,6 +178,8 @@ export const EntityTagHeaderValue: {
 export type EntityTagHeaderValue = EntityTagHeaderValue$instance;
 
 export interface MediaTypeHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_MediaTypeHeaderValue: never;
+
     Boundary: StringSegment;
     Charset: StringSegment;
     get Encoding(): Encoding | undefined;
@@ -209,6 +221,8 @@ export const MediaTypeHeaderValue: {
 export type MediaTypeHeaderValue = MediaTypeHeaderValue$instance;
 
 export interface MediaTypeHeaderValueComparer$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_MediaTypeHeaderValueComparer: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
 
     Compare(mediaType1: MediaTypeHeaderValue, mediaType2: MediaTypeHeaderValue): int;
@@ -223,6 +237,8 @@ export const MediaTypeHeaderValueComparer: {
 export type MediaTypeHeaderValueComparer = MediaTypeHeaderValueComparer$instance;
 
 export interface NameValueHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_NameValueHeaderValue: never;
+
     readonly IsReadOnly: boolean;
     readonly Name: StringSegment;
     Value: StringSegment;
@@ -252,6 +268,8 @@ export const NameValueHeaderValue: {
 export type NameValueHeaderValue = NameValueHeaderValue$instance;
 
 export interface RangeConditionHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_RangeConditionHeaderValue: never;
+
     readonly EntityTag: EntityTagHeaderValue | undefined;
     readonly LastModified: Nullable_1<DateTimeOffset>;
     Equals(obj: unknown): boolean;
@@ -272,6 +290,8 @@ export const RangeConditionHeaderValue: {
 export type RangeConditionHeaderValue = RangeConditionHeaderValue$instance;
 
 export interface RangeHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_RangeHeaderValue: never;
+
     readonly Ranges: ICollection_1<RangeItemHeaderValue>;
     Unit: StringSegment;
     Equals(obj: unknown): boolean;
@@ -291,6 +311,8 @@ export const RangeHeaderValue: {
 export type RangeHeaderValue = RangeHeaderValue$instance;
 
 export interface RangeItemHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_RangeItemHeaderValue: never;
+
     readonly From: Nullable_1<System_Internal.Int64>;
     readonly To: Nullable_1<System_Internal.Int64>;
     Equals(obj: unknown): boolean;
@@ -307,6 +329,8 @@ export const RangeItemHeaderValue: {
 export type RangeItemHeaderValue = RangeItemHeaderValue$instance;
 
 export interface SetCookieHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_SetCookieHeaderValue: never;
+
     Domain: StringSegment;
     Expires: Nullable_1<DateTimeOffset>;
     readonly Extensions: IList_1<StringSegment>;
@@ -339,6 +363,8 @@ export const SetCookieHeaderValue: {
 export type SetCookieHeaderValue = SetCookieHeaderValue$instance;
 
 export interface StringWithQualityHeaderValue$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue: never;
+
     readonly Quality: Nullable_1<System_Internal.Double>;
     readonly Value: StringSegment;
     Equals(obj: unknown): boolean;
@@ -362,6 +388,8 @@ export const StringWithQualityHeaderValue: {
 export type StringWithQualityHeaderValue = StringWithQualityHeaderValue$instance;
 
 export interface StringWithQualityHeaderValueComparer$instance {
+    readonly __tsonic_type_Microsoft_Net_Http_Headers_StringWithQualityHeaderValueComparer: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
 
     Compare(stringWithQuality1: StringWithQualityHeaderValue, stringWithQuality2: StringWithQualityHeaderValue): int;

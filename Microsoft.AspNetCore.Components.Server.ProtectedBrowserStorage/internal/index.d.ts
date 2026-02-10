@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ProtectedBrowserStorageResult_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorageResult_1: never;
+
     readonly Success: boolean;
     readonly Value: TValue | undefined;
 }
@@ -26,6 +28,8 @@ export const ProtectedBrowserStorageResult_1: {
 export type ProtectedBrowserStorageResult_1<TValue> = ProtectedBrowserStorageResult_1$instance<TValue>;
 
 export interface ProtectedBrowserStorage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorage: never;
+
     DeleteAsync(key: string): ValueTask;
     GetAsync<TValue>(key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
     GetAsync<TValue>(purpose: string, key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
@@ -41,6 +45,8 @@ export const ProtectedBrowserStorage: {
 export type ProtectedBrowserStorage = ProtectedBrowserStorage$instance;
 
 export interface ProtectedLocalStorage$instance extends ProtectedBrowserStorage {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedLocalStorage: never;
+
 }
 
 
@@ -52,6 +58,8 @@ export const ProtectedLocalStorage: {
 export type ProtectedLocalStorage = ProtectedLocalStorage$instance;
 
 export interface ProtectedSessionStorage$instance extends ProtectedBrowserStorage {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedSessionStorage: never;
+
 }
 
 

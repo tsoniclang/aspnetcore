@@ -74,6 +74,8 @@ export interface IKeyManager$instance {
 export type IKeyManager = IKeyManager$instance;
 
 export interface KeyManagementOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_KeyManagementOptions: never;
+
     get AuthenticatedEncryptorConfiguration(): AlgorithmConfiguration | undefined;
     set AuthenticatedEncryptorConfiguration(value: AlgorithmConfiguration | undefined);
     readonly AuthenticatedEncryptorFactories: IList_1<IAuthenticatedEncryptorFactory>;
@@ -95,6 +97,8 @@ export const KeyManagementOptions: {
 export type KeyManagementOptions = KeyManagementOptions$instance;
 
 export interface XmlKeyManager$instance extends IKeyManager$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_XmlKeyManager: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager: never;
 

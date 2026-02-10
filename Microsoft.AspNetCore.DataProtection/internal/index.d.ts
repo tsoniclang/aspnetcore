@@ -88,6 +88,8 @@ export interface ITimeLimitedDataProtector$instance extends IDataProtector, IDat
 export type ITimeLimitedDataProtector = ITimeLimitedDataProtector$instance;
 
 export interface DataProtectionOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_DataProtectionOptions: never;
+
     get ApplicationDiscriminator(): string | undefined;
     set ApplicationDiscriminator(value: string | undefined);
 }
@@ -101,6 +103,8 @@ export const DataProtectionOptions: {
 export type DataProtectionOptions = DataProtectionOptions$instance;
 
 export interface EphemeralDataProtectionProvider$instance extends IDataProtectionProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_EphemeralDataProtectionProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider: never;
 
     CreateProtector(purpose: string): IDataProtector;
@@ -121,6 +125,8 @@ export type EphemeralDataProtectionProvider = EphemeralDataProtectionProvider$in
 
 
 export interface Secret$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_Secret: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_ISecret: never;
     readonly __tsonic_iface_System_IDisposable: never;
 

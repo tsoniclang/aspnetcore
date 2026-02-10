@@ -60,6 +60,8 @@ export interface IHtmlContentContainer$instance extends IHtmlContent$instance {}
 export type IHtmlContentContainer = IHtmlContentContainer$instance;
 
 export interface HtmlContentBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Html_HtmlContentBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
@@ -92,6 +94,8 @@ export type HtmlContentBuilder = HtmlContentBuilder$instance & __HtmlContentBuil
 
 
 export interface HtmlFormattableString$instance extends IHtmlContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Html_HtmlFormattableString: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -112,6 +116,8 @@ export type HtmlFormattableString = HtmlFormattableString$instance & __HtmlForma
 
 
 export interface HtmlString$instance extends IHtmlContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Html_HtmlString: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     readonly Value: string | undefined;

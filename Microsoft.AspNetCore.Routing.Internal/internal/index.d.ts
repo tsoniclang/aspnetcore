@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IServiceProvider, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface DfaGraphWriter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Internal_DfaGraphWriter: never;
+
     Write(dataSource: EndpointDataSource, writer: TextWriter): void;
 }
 

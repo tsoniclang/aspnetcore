@@ -11,6 +11,8 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.j
 import type { IMemoryCache } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Caching.Memory/internal/index.js";
 
 export interface TagHelperMemoryCacheProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Infrastructure_TagHelperMemoryCacheProvider: never;
+
     Cache: IMemoryCache;
 }
 

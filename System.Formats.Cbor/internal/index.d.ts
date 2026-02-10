@@ -77,6 +77,8 @@ export enum CborTag {
 
 
 export interface CborContentException$instance extends Exception {
+    readonly __tsonic_type_System_Formats_Cbor_CborContentException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -91,6 +93,8 @@ export const CborContentException: {
 export type CborContentException = CborContentException$instance;
 
 export interface CborReader$instance {
+    readonly __tsonic_type_System_Formats_Cbor_CborReader: never;
+
     readonly AllowMultipleRootLevelValues: boolean;
     readonly BytesRemaining: int;
     readonly ConformanceMode: CborConformanceMode;
@@ -142,6 +146,8 @@ export const CborReader: {
 export type CborReader = CborReader$instance;
 
 export interface CborWriter$instance {
+    readonly __tsonic_type_System_Formats_Cbor_CborWriter: never;
+
     readonly AllowMultipleRootLevelValues: boolean;
     readonly BytesWritten: int;
     readonly ConformanceMode: CborConformanceMode;

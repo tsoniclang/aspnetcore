@@ -22,6 +22,8 @@ export enum QueueProcessingOrder {
 
 
 export interface RateLimitPartition_1$instance<TKey> {
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimitPartition_1: never;
+
     readonly Factory: Func_2<TKey, RateLimiter>;
     readonly PartitionKey: TKey;
 }
@@ -35,6 +37,8 @@ export const RateLimitPartition_1: {
 export type RateLimitPartition_1<TKey> = RateLimitPartition_1$instance<TKey>;
 
 export interface ConcurrencyLimiter$instance extends RateLimiter {
+    readonly __tsonic_type_System_Threading_RateLimiting_ConcurrencyLimiter: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -56,6 +60,8 @@ export const ConcurrencyLimiter: {
 export type ConcurrencyLimiter = ConcurrencyLimiter$instance;
 
 export interface ConcurrencyLimiterOptions$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_ConcurrencyLimiterOptions: never;
+
     PermitLimit: int;
     QueueLimit: int;
     QueueProcessingOrder: QueueProcessingOrder;
@@ -70,6 +76,8 @@ export const ConcurrencyLimiterOptions: {
 export type ConcurrencyLimiterOptions = ConcurrencyLimiterOptions$instance;
 
 export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter {
+    readonly __tsonic_type_System_Threading_RateLimiting_FixedWindowRateLimiter: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -94,6 +102,8 @@ export const FixedWindowRateLimiter: {
 export type FixedWindowRateLimiter = FixedWindowRateLimiter$instance;
 
 export interface FixedWindowRateLimiterOptions$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_FixedWindowRateLimiterOptions: never;
+
     AutoReplenishment: boolean;
     PermitLimit: int;
     QueueLimit: int;
@@ -110,6 +120,8 @@ export const FixedWindowRateLimiterOptions: {
 export type FixedWindowRateLimiterOptions = FixedWindowRateLimiterOptions$instance;
 
 export interface MetadataName_1$instance<T> {
+    readonly __tsonic_type_System_Threading_RateLimiting_MetadataName_1: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Name: string;
@@ -128,6 +140,8 @@ export const MetadataName_1: {
 export type MetadataName_1<T> = MetadataName_1$instance<T>;
 
 export interface PartitionedRateLimiter_1$instance<TResource> {
+    readonly __tsonic_type_System_Threading_RateLimiting_PartitionedRateLimiter_1: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -151,6 +165,8 @@ export const PartitionedRateLimiter_1: (abstract new<TResource>() => Partitioned
 export type PartitionedRateLimiter_1<TResource> = PartitionedRateLimiter_1$instance<TResource>;
 
 export interface RateLimiter$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimiter: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -175,6 +191,8 @@ export const RateLimiter: (abstract new() => RateLimiter) & {
 export type RateLimiter = RateLimiter$instance;
 
 export interface RateLimiterStatistics$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimiterStatistics: never;
+
     CurrentAvailablePermits: long;
     CurrentQueuedCount: long;
     TotalFailedLeases: long;
@@ -190,6 +208,8 @@ export const RateLimiterStatistics: {
 export type RateLimiterStatistics = RateLimiterStatistics$instance;
 
 export interface RateLimitLease$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_RateLimitLease: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsAcquired: boolean;
@@ -209,6 +229,8 @@ export const RateLimitLease: (abstract new() => RateLimitLease) & {
 export type RateLimitLease = RateLimitLease$instance;
 
 export interface ReplenishingRateLimiter$instance extends RateLimiter {
+    readonly __tsonic_type_System_Threading_RateLimiting_ReplenishingRateLimiter: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -225,6 +247,8 @@ export const ReplenishingRateLimiter: (abstract new() => ReplenishingRateLimiter
 export type ReplenishingRateLimiter = ReplenishingRateLimiter$instance;
 
 export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimiter {
+    readonly __tsonic_type_System_Threading_RateLimiting_SlidingWindowRateLimiter: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -249,6 +273,8 @@ export const SlidingWindowRateLimiter: {
 export type SlidingWindowRateLimiter = SlidingWindowRateLimiter$instance;
 
 export interface SlidingWindowRateLimiterOptions$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_SlidingWindowRateLimiterOptions: never;
+
     AutoReplenishment: boolean;
     PermitLimit: int;
     QueueLimit: int;
@@ -266,6 +292,8 @@ export const SlidingWindowRateLimiterOptions: {
 export type SlidingWindowRateLimiterOptions = SlidingWindowRateLimiterOptions$instance;
 
 export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter {
+    readonly __tsonic_type_System_Threading_RateLimiting_TokenBucketRateLimiter: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -290,6 +318,8 @@ export const TokenBucketRateLimiter: {
 export type TokenBucketRateLimiter = TokenBucketRateLimiter$instance;
 
 export interface TokenBucketRateLimiterOptions$instance {
+    readonly __tsonic_type_System_Threading_RateLimiting_TokenBucketRateLimiterOptions: never;
+
     AutoReplenishment: boolean;
     QueueLimit: int;
     QueueProcessingOrder: QueueProcessingOrder;

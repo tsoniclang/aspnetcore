@@ -47,6 +47,8 @@ export interface IXmlEncryptor$instance {
 export type IXmlEncryptor = IXmlEncryptor$instance;
 
 export interface CertificateResolver$instance extends ICertificateResolver$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_CertificateResolver: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver: never;
 
     ResolveCertificate(thumbprint: string): X509Certificate2 | undefined;
@@ -66,6 +68,8 @@ export type CertificateResolver = CertificateResolver$instance & __CertificateRe
 
 
 export interface CertificateXmlEncryptor$instance extends IXmlEncryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_CertificateXmlEncryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
 
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
@@ -86,6 +90,8 @@ export type CertificateXmlEncryptor = CertificateXmlEncryptor$instance & __Certi
 
 
 export interface DpapiNGXmlDecryptor$instance extends IXmlDecryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiNGXmlDecryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
 
     Decrypt(encryptedElement: XElement): XElement;
@@ -106,6 +112,8 @@ export type DpapiNGXmlDecryptor = DpapiNGXmlDecryptor$instance & __DpapiNGXmlDec
 
 
 export interface DpapiNGXmlEncryptor$instance extends IXmlEncryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiNGXmlEncryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
 
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
@@ -125,6 +133,8 @@ export type DpapiNGXmlEncryptor = DpapiNGXmlEncryptor$instance & __DpapiNGXmlEnc
 
 
 export interface DpapiXmlDecryptor$instance extends IXmlDecryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiXmlDecryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
 
     Decrypt(encryptedElement: XElement): XElement;
@@ -145,6 +155,8 @@ export type DpapiXmlDecryptor = DpapiXmlDecryptor$instance & __DpapiXmlDecryptor
 
 
 export interface DpapiXmlEncryptor$instance extends IXmlEncryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiXmlEncryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
 
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;
@@ -164,6 +176,8 @@ export type DpapiXmlEncryptor = DpapiXmlEncryptor$instance & __DpapiXmlEncryptor
 
 
 export interface EncryptedXmlDecryptor$instance extends IXmlDecryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_EncryptedXmlDecryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
 
     Decrypt(encryptedElement: XElement): XElement;
@@ -184,6 +198,8 @@ export type EncryptedXmlDecryptor = EncryptedXmlDecryptor$instance & __Encrypted
 
 
 export interface EncryptedXmlInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_EncryptedXmlInfo: never;
+
     readonly DecryptorType: Type;
     readonly EncryptedElement: XElement;
 }
@@ -197,6 +213,8 @@ export const EncryptedXmlInfo: {
 export type EncryptedXmlInfo = EncryptedXmlInfo$instance;
 
 export interface NullXmlDecryptor$instance extends IXmlDecryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_NullXmlDecryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor: never;
 
     Decrypt(encryptedElement: XElement): XElement;
@@ -216,6 +234,8 @@ export type NullXmlDecryptor = NullXmlDecryptor$instance & __NullXmlDecryptor$vi
 
 
 export interface NullXmlEncryptor$instance extends IXmlEncryptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_XmlEncryption_NullXmlEncryptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor: never;
 
     Encrypt(plaintextElement: XElement): EncryptedXmlInfo;

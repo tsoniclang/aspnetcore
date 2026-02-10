@@ -23,6 +23,8 @@ export interface IHttpRequestTimeoutFeature$instance {
 export type IHttpRequestTimeoutFeature = IHttpRequestTimeoutFeature$instance;
 
 export interface DisableRequestTimeoutAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_DisableRequestTimeoutAttribute: never;
+
     ToString(): string;
 }
 
@@ -35,6 +37,8 @@ export const DisableRequestTimeoutAttribute: {
 export type DisableRequestTimeoutAttribute = DisableRequestTimeoutAttribute$instance;
 
 export interface RequestTimeoutAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_RequestTimeoutAttribute: never;
+
     readonly PolicyName: string | undefined;
     readonly Timeout: Nullable_1<TimeSpan>;
 }
@@ -49,6 +53,8 @@ export const RequestTimeoutAttribute: {
 export type RequestTimeoutAttribute = RequestTimeoutAttribute$instance;
 
 export interface RequestTimeoutOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_RequestTimeoutOptions: never;
+
     get DefaultPolicy(): RequestTimeoutPolicy | undefined;
     set DefaultPolicy(value: RequestTimeoutPolicy | undefined);
     readonly Policies: IDictionary_2<System_Internal.String, RequestTimeoutPolicy>;
@@ -65,6 +71,8 @@ export const RequestTimeoutOptions: {
 export type RequestTimeoutOptions = RequestTimeoutOptions$instance;
 
 export interface RequestTimeoutPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_RequestTimeoutPolicy: never;
+
     Timeout: Nullable_1<TimeSpan>;
     TimeoutStatusCode: Nullable_1<System_Internal.Int32>;
     get WriteTimeoutResponse(): RequestDelegate | undefined;

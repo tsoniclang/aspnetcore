@@ -34,6 +34,8 @@ export interface IRule$instance {
 export type IRule = IRule$instance;
 
 export interface RewriteContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Rewrite_RewriteContext: never;
+
     HttpContext: HttpContext;
     Logger: ILogger;
     Result: RuleResult;
@@ -49,6 +51,8 @@ export const RewriteContext: {
 export type RewriteContext = RewriteContext$instance;
 
 export interface RewriteMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Rewrite_RewriteMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -61,6 +65,8 @@ export const RewriteMiddleware: {
 export type RewriteMiddleware = RewriteMiddleware$instance;
 
 export interface RewriteOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Rewrite_RewriteOptions: never;
+
     readonly Rules: IList_1<IRule>;
     StaticFileProvider: IFileProvider;
 }

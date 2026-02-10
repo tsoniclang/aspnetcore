@@ -106,6 +106,8 @@ export interface IStatusCodeReExecuteFeature$instance {
 export type IStatusCodeReExecuteFeature = IStatusCodeReExecuteFeature$instance;
 
 export interface CompilationFailure$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_CompilationFailure: never;
+
     readonly CompiledContent: string | undefined;
     readonly FailureSummary: string | undefined;
     readonly Messages: IEnumerable_1<DiagnosticMessage | undefined> | undefined;
@@ -123,6 +125,8 @@ export const CompilationFailure: {
 export type CompilationFailure = CompilationFailure$instance;
 
 export interface DeveloperExceptionPageMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_DeveloperExceptionPageMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -135,6 +139,8 @@ export const DeveloperExceptionPageMiddleware: {
 export type DeveloperExceptionPageMiddleware = DeveloperExceptionPageMiddleware$instance;
 
 export interface DiagnosticMessage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_DiagnosticMessage: never;
+
     readonly EndColumn: int;
     readonly EndLine: int;
     readonly FormattedMessage: string | undefined;
@@ -153,6 +159,8 @@ export const DiagnosticMessage: {
 export type DiagnosticMessage = DiagnosticMessage$instance;
 
 export interface ErrorContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_ErrorContext: never;
+
     readonly Exception: Exception;
     readonly HttpContext: HttpContext;
 }
@@ -166,6 +174,8 @@ export const ErrorContext: {
 export type ErrorContext = ErrorContext$instance;
 
 export interface ExceptionHandlerFeature$instance extends IExceptionHandlerPathFeature {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_ExceptionHandlerFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature: never;
 
@@ -191,6 +201,8 @@ export type ExceptionHandlerFeature = ExceptionHandlerFeature$instance & __Excep
 
 
 export interface ExceptionHandlerMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_ExceptionHandlerMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -203,6 +215,8 @@ export const ExceptionHandlerMiddleware: {
 export type ExceptionHandlerMiddleware = ExceptionHandlerMiddleware$instance;
 
 export interface ExceptionHandlerSuppressDiagnosticsContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_ExceptionHandlerSuppressDiagnosticsContext: never;
+
     Exception: Exception;
     ExceptionHandledBy: ExceptionHandledType;
     HttpContext: HttpContext;
@@ -217,6 +231,8 @@ export const ExceptionHandlerSuppressDiagnosticsContext: {
 export type ExceptionHandlerSuppressDiagnosticsContext = ExceptionHandlerSuppressDiagnosticsContext$instance;
 
 export interface StatusCodeContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_StatusCodeContext: never;
+
     HttpContext: HttpContext;
     Next: RequestDelegate;
     Options: StatusCodePagesOptions;
@@ -231,6 +247,8 @@ export const StatusCodeContext: {
 export type StatusCodeContext = StatusCodeContext$instance;
 
 export interface StatusCodePagesFeature$instance extends IStatusCodePagesFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_StatusCodePagesFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature: never;
 
     Enabled: boolean;
@@ -250,6 +268,8 @@ export type StatusCodePagesFeature = StatusCodePagesFeature$instance & __StatusC
 
 
 export interface StatusCodePagesMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_StatusCodePagesMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -262,6 +282,8 @@ export const StatusCodePagesMiddleware: {
 export type StatusCodePagesMiddleware = StatusCodePagesMiddleware$instance;
 
 export interface StatusCodeReExecuteFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_StatusCodeReExecuteFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature: never;
 
     get Endpoint(): Endpoint | undefined;
@@ -289,6 +311,8 @@ export type StatusCodeReExecuteFeature = StatusCodeReExecuteFeature$instance & _
 
 
 export interface WelcomePageMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_WelcomePageMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 

@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, Func_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface TagHelperExecutionContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperExecutionContext: never;
+
     readonly ChildContentRetrieved: boolean;
     readonly Context: TagHelperContext;
     Items: IDictionary_2<unknown, unknown>;
@@ -37,6 +39,8 @@ export const TagHelperExecutionContext: {
 export type TagHelperExecutionContext = TagHelperExecutionContext$instance;
 
 export interface TagHelperRunner$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperRunner: never;
+
     RunAsync(executionContext: TagHelperExecutionContext): Task;
 }
 
@@ -49,6 +53,8 @@ export const TagHelperRunner: {
 export type TagHelperRunner = TagHelperRunner$instance;
 
 export interface TagHelperScopeManager$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperScopeManager: never;
+
     Begin(tagName: string, tagMode: TagMode, uniqueId: string, executeChildContentAsync: Func_1<Task>): TagHelperExecutionContext;
     End(): TagHelperExecutionContext;
 }

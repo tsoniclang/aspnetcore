@@ -67,12 +67,11 @@ export interface ILookupProtectorKeyRing$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ILookupProtectorKeyRing: never;
 
     readonly CurrentKeyId: string;
-    readonly [keyId: string]: string;
     GetAllKeyIds(): IEnumerable_1<System_Internal.String>;
 }
 
 
-export type ILookupProtectorKeyRing = ILookupProtectorKeyRing$instance;
+export type ILookupProtectorKeyRing = ILookupProtectorKeyRing$instance & { readonly [keyId: string]: string; };
 
 export interface IPasskeyHandler_1$instance<TUser> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasskeyHandler_1: never;
@@ -475,6 +474,8 @@ export interface IUserValidator_1$instance<TUser> {
 export type IUserValidator_1<TUser> = IUserValidator_1$instance<TUser>;
 
 export interface AspNetRoleManager_1$instance<TRole> extends RoleManager_1<TRole> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_AspNetRoleManager_1: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly CancellationToken: CancellationToken;
@@ -489,6 +490,8 @@ export const AspNetRoleManager_1: {
 export type AspNetRoleManager_1<TRole> = AspNetRoleManager_1$instance<TRole>;
 
 export interface AspNetUserManager_1$instance<TUser> extends UserManager_1<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_AspNetUserManager_1: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly CancellationToken: CancellationToken;
@@ -503,6 +506,8 @@ export const AspNetUserManager_1: {
 export type AspNetUserManager_1<TUser> = AspNetUserManager_1$instance<TUser>;
 
 export interface AuthenticatorTokenProvider_1$instance<TUser> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_AuthenticatorTokenProvider_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     CanGenerateTwoFactorTokenAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
@@ -524,6 +529,8 @@ export type AuthenticatorTokenProvider_1<TUser> = AuthenticatorTokenProvider_1$i
 
 
 export interface ClaimsIdentityOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_ClaimsIdentityOptions: never;
+
     EmailClaimType: string;
     RoleClaimType: string;
     SecurityStampClaimType: string;
@@ -540,6 +547,8 @@ export const ClaimsIdentityOptions: {
 export type ClaimsIdentityOptions = ClaimsIdentityOptions$instance;
 
 export interface DataProtectionTokenProviderOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_DataProtectionTokenProviderOptions: never;
+
     Name: string;
     TokenLifespan: TimeSpan;
 }
@@ -553,6 +562,8 @@ export const DataProtectionTokenProviderOptions: {
 export type DataProtectionTokenProviderOptions = DataProtectionTokenProviderOptions$instance;
 
 export interface DataProtectorTokenProvider_1$instance<TUser> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     readonly Logger: ILogger_1<DataProtectorTokenProvider_1<TUser>>;
@@ -576,6 +587,8 @@ export type DataProtectorTokenProvider_1<TUser> = DataProtectorTokenProvider_1$i
 
 
 export interface DefaultPersonalDataProtector$instance extends IPersonalDataProtector$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_DefaultPersonalDataProtector: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPersonalDataProtector: never;
 
     Protect(data: string): string | undefined;
@@ -596,6 +609,8 @@ export type DefaultPersonalDataProtector = DefaultPersonalDataProtector$instance
 
 
 export interface DefaultUserConfirmation_1$instance<TUser> extends IUserConfirmation_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_DefaultUserConfirmation_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserConfirmation_1: never;
 
     IsConfirmedAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
@@ -615,6 +630,8 @@ export type DefaultUserConfirmation_1<TUser> = DefaultUserConfirmation_1$instanc
 
 
 export interface EmailTokenProvider_1$instance<TUser> extends TotpSecurityStampBasedTokenProvider_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_EmailTokenProvider_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     CanGenerateTwoFactorTokenAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
@@ -638,6 +655,8 @@ export type EmailTokenProvider_1<TUser> = EmailTokenProvider_1$instance<TUser> &
 
 
 export interface ExternalLoginInfo$instance extends UserLoginInfo {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_ExternalLoginInfo: never;
+
     get AuthenticationProperties(): AuthenticationProperties | undefined;
     set AuthenticationProperties(value: AuthenticationProperties | undefined);
     get AuthenticationTokens(): IEnumerable_1<AuthenticationToken> | undefined;
@@ -654,6 +673,8 @@ export const ExternalLoginInfo: {
 export type ExternalLoginInfo = ExternalLoginInfo$instance;
 
 export interface IdentityBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityBuilder: never;
+
     get RoleType(): Type | undefined;
     set RoleType(value: Type | undefined);
     readonly Services: IServiceCollection;
@@ -684,6 +705,8 @@ export const IdentityBuilder: {
 export type IdentityBuilder = IdentityBuilder$instance;
 
 export interface IdentityConstants$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityConstants: never;
+
 }
 
 
@@ -700,6 +723,8 @@ export const IdentityConstants: {
 export type IdentityConstants = IdentityConstants$instance;
 
 export interface IdentityCookiesBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityCookiesBuilder: never;
+
     get ApplicationCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | undefined;
     set ApplicationCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | undefined);
     get ExternalCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | undefined;
@@ -719,6 +744,8 @@ export const IdentityCookiesBuilder: {
 export type IdentityCookiesBuilder = IdentityCookiesBuilder$instance;
 
 export interface IdentityError$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityError: never;
+
     Code: string;
     Description: string;
 }
@@ -732,6 +759,8 @@ export const IdentityError: {
 export type IdentityError = IdentityError$instance;
 
 export interface IdentityErrorDescriber$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityErrorDescriber: never;
+
     ConcurrencyFailure(): IdentityError;
     DefaultError(): IdentityError;
     DuplicateEmail(email: string): IdentityError;
@@ -765,6 +794,8 @@ export const IdentityErrorDescriber: {
 export type IdentityErrorDescriber = IdentityErrorDescriber$instance;
 
 export interface IdentityOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityOptions: never;
+
     ClaimsIdentity: ClaimsIdentityOptions;
     Lockout: LockoutOptions;
     Password: PasswordOptions;
@@ -783,6 +814,8 @@ export const IdentityOptions: {
 export type IdentityOptions = IdentityOptions$instance;
 
 export interface IdentityPasskeyData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityPasskeyData: never;
+
     AttestationObject: byte[];
     ClientDataJson: byte[];
     CreatedAt: DateTimeOffset;
@@ -806,6 +839,8 @@ export const IdentityPasskeyData: {
 export type IdentityPasskeyData = IdentityPasskeyData$instance;
 
 export interface IdentityPasskeyOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityPasskeyOptions: never;
+
     get AttestationConveyancePreference(): string | undefined;
     set AttestationConveyancePreference(value: string | undefined);
     get AuthenticatorAttachment(): string | undefined;
@@ -835,6 +870,8 @@ export const IdentityPasskeyOptions: {
 export type IdentityPasskeyOptions = IdentityPasskeyOptions$instance;
 
 export interface IdentityResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityResult: never;
+
     readonly Errors: IEnumerable_1<IdentityError>;
     Succeeded: boolean;
     ToString(): string;
@@ -851,6 +888,8 @@ export const IdentityResult: {
 export type IdentityResult = IdentityResult$instance;
 
 export interface IdentityRole$instance extends IdentityRole_1<System_Internal.String> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityRole: never;
+
 }
 
 
@@ -863,6 +902,8 @@ export const IdentityRole: {
 export type IdentityRole = IdentityRole$instance;
 
 export interface IdentityRole_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityRole_1: never;
+
     get ConcurrencyStamp(): string | undefined;
     set ConcurrencyStamp(value: string | undefined);
     Id: TKey;
@@ -883,6 +924,8 @@ export const IdentityRole_1: {
 export type IdentityRole_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityRole_1$instance<TKey>;
 
 export interface IdentityRoleClaim_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityRoleClaim_1: never;
+
     get ClaimType(): string | undefined;
     set ClaimType(value: string | undefined);
     get ClaimValue(): string | undefined;
@@ -902,6 +945,8 @@ export const IdentityRoleClaim_1: {
 export type IdentityRoleClaim_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityRoleClaim_1$instance<TKey>;
 
 export interface IdentityUser$instance extends IdentityUser_1<System_Internal.String> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUser: never;
+
 }
 
 
@@ -914,6 +959,8 @@ export const IdentityUser: {
 export type IdentityUser = IdentityUser$instance;
 
 export interface IdentityUser_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUser_1: never;
+
     AccessFailedCount: int;
     get ConcurrencyStamp(): string | undefined;
     set ConcurrencyStamp(value: string | undefined);
@@ -950,6 +997,8 @@ export const IdentityUser_1: {
 export type IdentityUser_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUser_1$instance<TKey>;
 
 export interface IdentityUserClaim_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserClaim_1: never;
+
     get ClaimType(): string | undefined;
     set ClaimType(value: string | undefined);
     get ClaimValue(): string | undefined;
@@ -969,6 +1018,8 @@ export const IdentityUserClaim_1: {
 export type IdentityUserClaim_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserClaim_1$instance<TKey>;
 
 export interface IdentityUserLogin_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserLogin_1: never;
+
     LoginProvider: string;
     get ProviderDisplayName(): string | undefined;
     set ProviderDisplayName(value: string | undefined);
@@ -985,6 +1036,8 @@ export const IdentityUserLogin_1: {
 export type IdentityUserLogin_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserLogin_1$instance<TKey>;
 
 export interface IdentityUserPasskey_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserPasskey_1: never;
+
     CredentialId: byte[];
     Data: IdentityPasskeyData;
     UserId: TKey;
@@ -999,6 +1052,8 @@ export const IdentityUserPasskey_1: {
 export type IdentityUserPasskey_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserPasskey_1$instance<TKey>;
 
 export interface IdentityUserRole_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserRole_1: never;
+
     RoleId: TKey;
     UserId: TKey;
 }
@@ -1012,6 +1067,8 @@ export const IdentityUserRole_1: {
 export type IdentityUserRole_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserRole_1$instance<TKey>;
 
 export interface IdentityUserToken_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserToken_1: never;
+
     LoginProvider: string;
     Name: string;
     UserId: TKey;
@@ -1028,6 +1085,8 @@ export const IdentityUserToken_1: {
 export type IdentityUserToken_1<TKey extends (IEquatable_1<TKey> | number | string | boolean)> = IdentityUserToken_1$instance<TKey>;
 
 export interface LockoutOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_LockoutOptions: never;
+
     AllowedForNewUsers: boolean;
     DefaultLockoutTimeSpan: TimeSpan;
     MaxFailedAccessAttempts: int;
@@ -1042,6 +1101,8 @@ export const LockoutOptions: {
 export type LockoutOptions = LockoutOptions$instance;
 
 export interface PasskeyAssertionContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAssertionContext: never;
+
     get AssertionState(): string | undefined;
     set AssertionState(value: string | undefined);
     CredentialJson: string;
@@ -1057,6 +1118,8 @@ export const PasskeyAssertionContext: {
 export type PasskeyAssertionContext = PasskeyAssertionContext$instance;
 
 export interface PasskeyAssertionResult_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAssertionResult_1: never;
+
     readonly Failure: PasskeyException | undefined;
     readonly Passkey: UserPasskeyInfo | undefined;
     readonly Succeeded: boolean;
@@ -1071,6 +1134,8 @@ export const PasskeyAssertionResult_1: {
 export type PasskeyAssertionResult_1<TUser> = PasskeyAssertionResult_1$instance<TUser>;
 
 export interface PasskeyAttestationContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAttestationContext: never;
+
     get AttestationState(): string | undefined;
     set AttestationState(value: string | undefined);
     CredentialJson: string;
@@ -1086,6 +1151,8 @@ export const PasskeyAttestationContext: {
 export type PasskeyAttestationContext = PasskeyAttestationContext$instance;
 
 export interface PasskeyAttestationResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAttestationResult: never;
+
     readonly Failure: PasskeyException | undefined;
     readonly Passkey: UserPasskeyInfo | undefined;
     readonly Succeeded: boolean;
@@ -1102,6 +1169,8 @@ export const PasskeyAttestationResult: {
 export type PasskeyAttestationResult = PasskeyAttestationResult$instance;
 
 export interface PasskeyAttestationStatementVerificationContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAttestationStatementVerificationContext: never;
+
     AttestationObject: ReadOnlyMemory_1<System_Internal.Byte>;
     ClientDataHash: ReadOnlyMemory_1<System_Internal.Byte>;
     HttpContext: HttpContext;
@@ -1116,6 +1185,8 @@ export const PasskeyAttestationStatementVerificationContext: {
 export type PasskeyAttestationStatementVerificationContext = PasskeyAttestationStatementVerificationContext$instance;
 
 export interface PasskeyCreationOptionsResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyCreationOptionsResult: never;
+
     get AttestationState(): string | undefined;
     set AttestationState(value: string | undefined);
     CreationOptionsJson: string;
@@ -1130,6 +1201,8 @@ export const PasskeyCreationOptionsResult: {
 export type PasskeyCreationOptionsResult = PasskeyCreationOptionsResult$instance;
 
 export interface PasskeyException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -1144,6 +1217,8 @@ export const PasskeyException: {
 export type PasskeyException = PasskeyException$instance;
 
 export interface PasskeyHandler_1$instance<TUser> extends IPasskeyHandler_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyHandler_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasskeyHandler_1: never;
 
     MakeCreationOptionsAsync(userEntity: PasskeyUserEntity, httpContext: HttpContext): Task_1<PasskeyCreationOptionsResult>;
@@ -1166,6 +1241,8 @@ export type PasskeyHandler_1<TUser> = PasskeyHandler_1$instance<TUser> & __Passk
 
 
 export interface PasskeyOriginValidationContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyOriginValidationContext: never;
+
     CrossOrigin: boolean;
     HttpContext: HttpContext;
     Origin: string;
@@ -1182,6 +1259,8 @@ export const PasskeyOriginValidationContext: {
 export type PasskeyOriginValidationContext = PasskeyOriginValidationContext$instance;
 
 export interface PasskeyRequestOptionsResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyRequestOptionsResult: never;
+
     get AssertionState(): string | undefined;
     set AssertionState(value: string | undefined);
     RequestOptionsJson: string;
@@ -1196,6 +1275,8 @@ export const PasskeyRequestOptionsResult: {
 export type PasskeyRequestOptionsResult = PasskeyRequestOptionsResult$instance;
 
 export interface PasskeyUserEntity$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyUserEntity: never;
+
     DisplayName: string;
     Id: string;
     Name: string;
@@ -1210,6 +1291,8 @@ export const PasskeyUserEntity: {
 export type PasskeyUserEntity = PasskeyUserEntity$instance;
 
 export interface PasswordHasher_1$instance<TUser> extends IPasswordHasher_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasswordHasher_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasswordHasher_1: never;
 
     HashPassword(user: TUser, password: string): string;
@@ -1230,6 +1313,8 @@ export type PasswordHasher_1<TUser> = PasswordHasher_1$instance<TUser> & __Passw
 
 
 export interface PasswordHasherOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasswordHasherOptions: never;
+
     CompatibilityMode: PasswordHasherCompatibilityMode;
     IterationCount: int;
 }
@@ -1243,6 +1328,8 @@ export const PasswordHasherOptions: {
 export type PasswordHasherOptions = PasswordHasherOptions$instance;
 
 export interface PasswordOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasswordOptions: never;
+
     RequireDigit: boolean;
     RequiredLength: int;
     RequiredUniqueChars: int;
@@ -1260,6 +1347,8 @@ export const PasswordOptions: {
 export type PasswordOptions = PasswordOptions$instance;
 
 export interface PasswordValidator_1$instance<TUser> extends IPasswordValidator_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasswordValidator_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasswordValidator_1: never;
 
     Describer: IdentityErrorDescriber;
@@ -1284,6 +1373,8 @@ export type PasswordValidator_1<TUser> = PasswordValidator_1$instance<TUser> & _
 
 
 export interface PersonalDataAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PersonalDataAttribute: never;
+
 }
 
 
@@ -1295,6 +1386,8 @@ export const PersonalDataAttribute: {
 export type PersonalDataAttribute = PersonalDataAttribute$instance;
 
 export interface PhoneNumberTokenProvider_1$instance<TUser> extends TotpSecurityStampBasedTokenProvider_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_PhoneNumberTokenProvider_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     CanGenerateTwoFactorTokenAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
@@ -1318,6 +1411,8 @@ export type PhoneNumberTokenProvider_1<TUser> = PhoneNumberTokenProvider_1$insta
 
 
 export interface ProtectedPersonalDataAttribute$instance extends PersonalDataAttribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_ProtectedPersonalDataAttribute: never;
+
 }
 
 
@@ -1329,6 +1424,8 @@ export const ProtectedPersonalDataAttribute: {
 export type ProtectedPersonalDataAttribute = ProtectedPersonalDataAttribute$instance;
 
 export interface RoleManager_1$instance<TRole> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_RoleManager_1: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly CancellationToken: CancellationToken;
@@ -1368,6 +1465,8 @@ export const RoleManager_1: {
 export type RoleManager_1<TRole> = RoleManager_1$instance<TRole>;
 
 export interface RoleStoreBase_4$instance<TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserRole extends IdentityUserRole_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_RoleStoreBase_4: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableRoleStore_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleClaimStore_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleStore_1: never;
@@ -1409,6 +1508,8 @@ export type RoleStoreBase_4<TRole extends IdentityRole_1<TKey>, TKey extends (IE
 
 
 export interface RoleValidator_1$instance<TRole> extends IRoleValidator_1$instance<TRole> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_RoleValidator_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleValidator_1: never;
 
     ValidateAsync(manager: RoleManager_1<TRole>, role: TRole): Task_1<IdentityResult>;
@@ -1428,6 +1529,8 @@ export type RoleValidator_1<TRole> = RoleValidator_1$instance<TRole> & __RoleVal
 
 
 export interface SecurityStampRefreshingPrincipalContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_SecurityStampRefreshingPrincipalContext: never;
+
     get CurrentPrincipal(): ClaimsPrincipal | undefined;
     set CurrentPrincipal(value: ClaimsPrincipal | undefined);
     get NewPrincipal(): ClaimsPrincipal | undefined;
@@ -1443,6 +1546,8 @@ export const SecurityStampRefreshingPrincipalContext: {
 export type SecurityStampRefreshingPrincipalContext = SecurityStampRefreshingPrincipalContext$instance;
 
 export interface SecurityStampValidator_1$instance<TUser> extends ISecurityStampValidator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_SecurityStampValidator_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ISecurityStampValidator: never;
 
     readonly Clock: ISystemClock;
@@ -1470,6 +1575,8 @@ export type SecurityStampValidator_1<TUser> = SecurityStampValidator_1$instance<
 
 
 export interface SecurityStampValidatorOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions: never;
+
     get OnRefreshingPrincipal(): Func_2<SecurityStampRefreshingPrincipalContext, Task> | undefined;
     set OnRefreshingPrincipal(value: Func_2<SecurityStampRefreshingPrincipalContext, Task> | undefined);
     get TimeProvider(): TimeProvider | undefined;
@@ -1486,6 +1593,8 @@ export const SecurityStampValidatorOptions: {
 export type SecurityStampValidatorOptions = SecurityStampValidatorOptions$instance;
 
 export interface SignInManager_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_SignInManager_1: never;
+
     AuthenticationScheme: string;
     ClaimsFactory: IUserClaimsPrincipalFactory_1<TUser>;
     Context: HttpContext;
@@ -1542,6 +1651,8 @@ export const SignInManager_1: {
 export type SignInManager_1<TUser> = SignInManager_1$instance<TUser>;
 
 export interface SignInOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_SignInOptions: never;
+
     RequireConfirmedAccount: boolean;
     RequireConfirmedEmail: boolean;
     RequireConfirmedPhoneNumber: boolean;
@@ -1556,6 +1667,8 @@ export const SignInOptions: {
 export type SignInOptions = SignInOptions$instance;
 
 export interface SignInResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_SignInResult: never;
+
     IsLockedOut: boolean;
     IsNotAllowed: boolean;
     RequiresTwoFactor: boolean;
@@ -1577,6 +1690,8 @@ export const SignInResult: {
 export type SignInResult = SignInResult$instance;
 
 export interface StoreOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_StoreOptions: never;
+
     MaxLengthForKeys: int;
     ProtectPersonalData: boolean;
     SchemaVersion: Version;
@@ -1591,6 +1706,8 @@ export const StoreOptions: {
 export type StoreOptions = StoreOptions$instance;
 
 export interface TokenOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_TokenOptions: never;
+
     AuthenticatorIssuer: string;
     AuthenticatorTokenProvider: string;
     ChangeEmailTokenProvider: string;
@@ -1613,6 +1730,8 @@ export const TokenOptions: {
 export type TokenOptions = TokenOptions$instance;
 
 export interface TokenProviderDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_TokenProviderDescriptor: never;
+
     get ProviderInstance(): unknown | undefined;
     set ProviderInstance(value: unknown | undefined);
     readonly ProviderType: Type;
@@ -1627,6 +1746,8 @@ export const TokenProviderDescriptor: {
 export type TokenProviderDescriptor = TokenProviderDescriptor$instance;
 
 export interface TotpSecurityStampBasedTokenProvider_1$instance<TUser> extends IUserTwoFactorTokenProvider_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_TotpSecurityStampBasedTokenProvider_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     CanGenerateTwoFactorTokenAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
@@ -1648,6 +1769,8 @@ export type TotpSecurityStampBasedTokenProvider_1<TUser> = TotpSecurityStampBase
 
 
 export interface TwoFactorSecurityStampValidator_1$instance<TUser> extends SecurityStampValidator_1$instance<TUser>, ITwoFactorSecurityStampValidator, ITwoFactorSecurityStampValidator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_TwoFactorSecurityStampValidator_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ISecurityStampValidator: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator: never;
 
@@ -1672,6 +1795,8 @@ export type TwoFactorSecurityStampValidator_1<TUser> = TwoFactorSecurityStampVal
 
 
 export interface UpperInvariantLookupNormalizer$instance extends ILookupNormalizer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UpperInvariantLookupNormalizer: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ILookupNormalizer: never;
 
     NormalizeEmail(email: string): string | undefined;
@@ -1692,6 +1817,8 @@ export type UpperInvariantLookupNormalizer = UpperInvariantLookupNormalizer$inst
 
 
 export interface UserClaimsPrincipalFactory_1$instance<TUser> extends IUserClaimsPrincipalFactory_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserClaimsPrincipalFactory_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_1: never;
 
     Options: IdentityOptions;
@@ -1714,6 +1841,8 @@ export type UserClaimsPrincipalFactory_1<TUser> = UserClaimsPrincipalFactory_1$i
 
 
 export interface UserClaimsPrincipalFactory_2$instance<TUser, TRole> extends UserClaimsPrincipalFactory_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserClaimsPrincipalFactory_2: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_1: never;
 
     RoleManager: RoleManager_1<TRole>;
@@ -1736,6 +1865,8 @@ export type UserClaimsPrincipalFactory_2<TUser, TRole> = UserClaimsPrincipalFact
 
 
 export interface UserLoginInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserLoginInfo: never;
+
     LoginProvider: string;
     get ProviderDisplayName(): string | undefined;
     set ProviderDisplayName(value: string | undefined);
@@ -1751,6 +1882,8 @@ export const UserLoginInfo: {
 export type UserLoginInfo = UserLoginInfo$instance;
 
 export interface UserManager_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserManager_1: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly CancellationToken: CancellationToken;
@@ -1887,6 +2020,8 @@ export const UserManager_1: {
 export type UserManager_1<TUser> = UserManager_1$instance<TUser>;
 
 export interface UserOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserOptions: never;
+
     AllowedUserNameCharacters: string;
     RequireUniqueEmail: boolean;
 }
@@ -1900,6 +2035,8 @@ export const UserOptions: {
 export type UserOptions = UserOptions$instance;
 
 export interface UserPasskeyInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserPasskeyInfo: never;
+
     readonly AttestationObject: byte[];
     readonly ClientDataJson: byte[];
     readonly CreatedAt: DateTimeOffset;
@@ -1923,6 +2060,8 @@ export const UserPasskeyInfo: {
 export type UserPasskeyInfo = UserPasskeyInfo$instance;
 
 export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>> extends IUserPasswordStore_1<TUser>, IUserSecurityStampStore_1<TUser>, IUserAuthenticatorKeyStore_1<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserStoreBase_5: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableUserStore_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticationTokenStore_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticatorKeyStore_1: never;
@@ -2028,6 +2167,8 @@ export type UserStoreBase_5<TUser extends IdentityUser_1<TKey>, TKey extends (IE
 
 
 export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> extends UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken>, IUserPasswordStore_1<TUser>, IUserSecurityStampStore_1<TUser>, IUserAuthenticatorKeyStore_1<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserStoreBase_8: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableUserStore_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticationTokenStore_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticatorKeyStore_1: never;
@@ -2113,6 +2254,8 @@ export type UserStoreBase_8<TUser extends IdentityUser_1<TKey>, TRole extends Id
 
 
 export interface UserValidator_1$instance<TUser> extends IUserValidator_1$instance<TUser> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserValidator_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserValidator_1: never;
 
     Describer: IdentityErrorDescriber;

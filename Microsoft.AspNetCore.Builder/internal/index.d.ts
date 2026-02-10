@@ -90,6 +90,8 @@ export interface IHubEndpointConventionBuilder$instance extends IEndpointConvent
 export type IHubEndpointConventionBuilder = IHubEndpointConventionBuilder$instance;
 
 export interface ApplicationBuilder$instance extends IApplicationBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ApplicationBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
 
     ApplicationServices: IServiceProvider;
@@ -115,6 +117,8 @@ export type ApplicationBuilder = ApplicationBuilder$instance & __ApplicationBuil
 
 
 export interface ComponentEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ComponentEndpointConventionBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
 
@@ -135,6 +139,8 @@ export type ComponentEndpointConventionBuilder = ComponentEndpointConventionBuil
 
 
 export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance, Microsoft_Extensions_Hosting_Lib.IHostBuilder {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ConfigureHostBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsConfigureWebHost: never;
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
@@ -160,6 +166,8 @@ export type ConfigureHostBuilder = ConfigureHostBuilder$instance & __ConfigureHo
 
 
 export interface ConfigureWebHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsStartup$instance, Microsoft_AspNetCore_Hosting_Internal.IWebHostBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ConfigureWebHostBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsStartup: never;
 
@@ -184,6 +192,8 @@ export type ConfigureWebHostBuilder = ConfigureWebHostBuilder$instance & __Confi
 
 
 export interface ConnectionEndpointRouteBuilder$instance extends IEndpointConventionBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ConnectionEndpointRouteBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
     Add(convention: Action_1<EndpointBuilder>): void;
@@ -203,6 +213,8 @@ export type ConnectionEndpointRouteBuilder = ConnectionEndpointRouteBuilder$inst
 
 
 export interface ControllerActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ControllerActionEndpointConventionBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
     Add(convention: Action_1<EndpointBuilder>): void;
@@ -222,6 +234,8 @@ export type ControllerActionEndpointConventionBuilder = ControllerActionEndpoint
 
 
 export interface CookiePolicyOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_CookiePolicyOptions: never;
+
     get CheckConsentNeeded(): Func_2<HttpContext, System_Internal.Boolean> | undefined;
     set CheckConsentNeeded(value: Func_2<HttpContext, System_Internal.Boolean> | undefined);
     ConsentCookie: CookieBuilder;
@@ -244,6 +258,8 @@ export const CookiePolicyOptions: {
 export type CookiePolicyOptions = CookiePolicyOptions$instance;
 
 export interface DefaultFilesOptions$instance extends SharedOptionsBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_DefaultFilesOptions: never;
+
     DefaultFileNames: IList_1<System_Internal.String>;
 }
 
@@ -257,6 +273,8 @@ export const DefaultFilesOptions: {
 export type DefaultFilesOptions = DefaultFilesOptions$instance;
 
 export interface DeveloperExceptionPageOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_DeveloperExceptionPageOptions: never;
+
     get FileProvider(): IFileProvider | undefined;
     set FileProvider(value: IFileProvider | undefined);
     SourceCodeLineCount: int;
@@ -271,6 +289,8 @@ export const DeveloperExceptionPageOptions: {
 export type DeveloperExceptionPageOptions = DeveloperExceptionPageOptions$instance;
 
 export interface DirectoryBrowserOptions$instance extends SharedOptionsBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_DirectoryBrowserOptions: never;
+
     get Formatter(): IDirectoryFormatter | undefined;
     set Formatter(value: IDirectoryFormatter | undefined);
 }
@@ -285,6 +305,8 @@ export const DirectoryBrowserOptions: {
 export type DirectoryBrowserOptions = DirectoryBrowserOptions$instance;
 
 export interface EndpointBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_EndpointBuilder: never;
+
     ApplicationServices: IServiceProvider;
     get DisplayName(): string | undefined;
     set DisplayName(value: string | undefined);
@@ -303,6 +325,8 @@ export const EndpointBuilder: (abstract new() => EndpointBuilder) & {
 export type EndpointBuilder = EndpointBuilder$instance;
 
 export interface ExceptionHandlerOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ExceptionHandlerOptions: never;
+
     AllowStatusCode404Response: boolean;
     CreateScopeForErrors: boolean;
     get ExceptionHandler(): RequestDelegate | undefined;
@@ -323,6 +347,8 @@ export const ExceptionHandlerOptions: {
 export type ExceptionHandlerOptions = ExceptionHandlerOptions$instance;
 
 export interface FileServerOptions$instance extends SharedOptionsBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_FileServerOptions: never;
+
     DefaultFilesOptions: DefaultFilesOptions;
     DirectoryBrowserOptions: DirectoryBrowserOptions;
     EnableDefaultFiles: boolean;
@@ -339,6 +365,8 @@ export const FileServerOptions: {
 export type FileServerOptions = FileServerOptions$instance;
 
 export interface ForwardedHeadersOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_ForwardedHeadersOptions: never;
+
     AllowedHosts: IList_1<System_Internal.String>;
     ForwardedForHeaderName: string;
     ForwardedHeaders: ForwardedHeaders;
@@ -365,6 +393,8 @@ export const ForwardedHeadersOptions: {
 export type ForwardedHeadersOptions = ForwardedHeadersOptions$instance;
 
 export interface HttpMethodOverrideOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_HttpMethodOverrideOptions: never;
+
     get FormFieldName(): string | undefined;
     set FormFieldName(value: string | undefined);
 }
@@ -378,6 +408,8 @@ export const HttpMethodOverrideOptions: {
 export type HttpMethodOverrideOptions = HttpMethodOverrideOptions$instance;
 
 export interface HubEndpointConventionBuilder$instance extends IHubEndpointConventionBuilder {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_HubEndpointConventionBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder: never;
 
@@ -398,6 +430,8 @@ export type HubEndpointConventionBuilder = HubEndpointConventionBuilder$instance
 
 
 export interface IISOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_IISOptions: never;
+
     get AuthenticationDisplayName(): string | undefined;
     set AuthenticationDisplayName(value: string | undefined);
     AutomaticAuthentication: boolean;
@@ -413,6 +447,8 @@ export const IISOptions: {
 export type IISOptions = IISOptions$instance;
 
 export interface IISServerOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_IISServerOptions: never;
+
     AllowSynchronousIO: boolean;
     get AuthenticationDisplayName(): string | undefined;
     set AuthenticationDisplayName(value: string | undefined);
@@ -430,6 +466,8 @@ export const IISServerOptions: {
 export type IISServerOptions = IISServerOptions$instance;
 
 export interface PageActionEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_PageActionEndpointConventionBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
     Add(convention: Action_1<EndpointBuilder>): void;
@@ -449,6 +487,8 @@ export type PageActionEndpointConventionBuilder = PageActionEndpointConventionBu
 
 
 export interface RazorComponentsEndpointConventionBuilder$instance extends IEndpointConventionBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_RazorComponentsEndpointConventionBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
     Add(convention: Action_1<EndpointBuilder>): void;
@@ -468,6 +508,8 @@ export type RazorComponentsEndpointConventionBuilder = RazorComponentsEndpointCo
 
 
 export interface RequestLocalizationOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_RequestLocalizationOptions: never;
+
     ApplyCurrentCultureToResponseHeaders: boolean;
     CultureInfoUseUserOverride: boolean;
     DefaultRequestCulture: RequestCulture;
@@ -492,6 +534,8 @@ export const RequestLocalizationOptions: {
 export type RequestLocalizationOptions = RequestLocalizationOptions$instance;
 
 export interface RouteHandlerBuilder$instance extends IEndpointConventionBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_RouteHandlerBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
     Add(convention: Action_1<EndpointBuilder>): void;
@@ -512,6 +556,8 @@ export type RouteHandlerBuilder = RouteHandlerBuilder$instance & __RouteHandlerB
 
 
 export interface RouterMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_RouterMiddleware: never;
+
     Invoke(httpContext: HttpContext): Task;
 }
 
@@ -524,6 +570,8 @@ export const RouterMiddleware: {
 export type RouterMiddleware = RouterMiddleware$instance;
 
 export interface SessionOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_SessionOptions: never;
+
     Cookie: CookieBuilder;
     IdleTimeout: TimeSpan;
     IOTimeout: TimeSpan;
@@ -538,6 +586,8 @@ export const SessionOptions: {
 export type SessionOptions = SessionOptions$instance;
 
 export interface StaticFileOptions$instance extends SharedOptionsBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_StaticFileOptions: never;
+
     ContentTypeProvider: IContentTypeProvider;
     get DefaultContentType(): string | undefined;
     set DefaultContentType(value: string | undefined);
@@ -557,6 +607,8 @@ export const StaticFileOptions: {
 export type StaticFileOptions = StaticFileOptions$instance;
 
 export interface StatusCodePagesOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_StatusCodePagesOptions: never;
+
     CreateScopeForStatusCodePages: boolean;
     HandleAsync: Func_2<StatusCodeContext, Task>;
 }
@@ -570,6 +622,8 @@ export const StatusCodePagesOptions: {
 export type StatusCodePagesOptions = StatusCodePagesOptions$instance;
 
 export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance, Microsoft_Extensions_Hosting_Lib.IHost, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_WebApplication: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder: never;
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHost: never;
@@ -612,6 +666,8 @@ export type WebApplication = WebApplication$instance & __WebApplication$views;
 
 
 export interface WebApplicationBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_WebApplicationBuilder: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
 
     readonly Configuration: ConfigurationManager;
@@ -632,6 +688,8 @@ export const WebApplicationBuilder: {
 export type WebApplicationBuilder = WebApplicationBuilder$instance;
 
 export interface WebApplicationOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_WebApplicationOptions: never;
+
     get ApplicationName(): string | undefined;
     set ApplicationName(value: string | undefined);
     get Args(): string[] | undefined;
@@ -653,6 +711,8 @@ export const WebApplicationOptions: {
 export type WebApplicationOptions = WebApplicationOptions$instance;
 
 export interface WebSocketOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_WebSocketOptions: never;
+
     readonly AllowedOrigins: IList_1<System_Internal.String>;
     KeepAliveInterval: TimeSpan;
     KeepAliveTimeout: TimeSpan;
@@ -668,6 +728,8 @@ export const WebSocketOptions: {
 export type WebSocketOptions = WebSocketOptions$instance;
 
 export interface WelcomePageOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_WelcomePageOptions: never;
+
     Path: PathString;
 }
 

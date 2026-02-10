@@ -141,6 +141,8 @@ export interface IWebHostEnvironment$instance extends Microsoft_Extensions_Hosti
 export type IWebHostEnvironment = IWebHostEnvironment$instance;
 
 export interface DelegateStartup$instance extends StartupBase_1$instance<IServiceCollection> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_DelegateStartup: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
 
     Configure(app: IApplicationBuilder): void;
@@ -162,6 +164,8 @@ export type DelegateStartup = DelegateStartup$instance & __DelegateStartup$views
 
 
 export interface HostingStartupAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_HostingStartupAttribute: never;
+
     readonly HostingStartupType: Type;
 }
 
@@ -174,6 +178,8 @@ export const HostingStartupAttribute: {
 export type HostingStartupAttribute = HostingStartupAttribute$instance;
 
 export interface StartupBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_StartupBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
 
     Configure(app: IApplicationBuilder): void;
@@ -194,6 +200,8 @@ export type StartupBase = StartupBase$instance & __StartupBase$views;
 
 
 export interface StartupBase_1$instance<TBuilder> extends StartupBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_StartupBase_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
 
     Configure(app: IApplicationBuilder): void;
@@ -216,6 +224,8 @@ export type StartupBase_1<TBuilder> = StartupBase_1$instance<TBuilder> & __Start
 
 
 export interface WebHostBuilder$instance extends IWebHostBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_WebHostBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IWebHostBuilder: never;
 
     Build(): IWebHost;
@@ -240,6 +250,8 @@ export type WebHostBuilder = WebHostBuilder$instance & __WebHostBuilder$views;
 
 
 export interface WebHostBuilderContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_WebHostBuilderContext: never;
+
     Configuration: IConfiguration;
     HostingEnvironment: IWebHostEnvironment;
 }

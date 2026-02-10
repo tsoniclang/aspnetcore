@@ -24,6 +24,8 @@ export interface IRateLimiterPolicy_1$instance<TPartitionKey> {
 export type IRateLimiterPolicy_1<TPartitionKey> = IRateLimiterPolicy_1$instance<TPartitionKey>;
 
 export interface DisableRateLimitingAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_DisableRateLimitingAttribute: never;
+
 }
 
 
@@ -35,6 +37,8 @@ export const DisableRateLimitingAttribute: {
 export type DisableRateLimitingAttribute = DisableRateLimitingAttribute$instance;
 
 export interface EnableRateLimitingAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_EnableRateLimitingAttribute: never;
+
     readonly PolicyName: string | undefined;
 }
 
@@ -47,6 +51,8 @@ export const EnableRateLimitingAttribute: {
 export type EnableRateLimitingAttribute = EnableRateLimitingAttribute$instance;
 
 export interface OnRejectedContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_OnRejectedContext: never;
+
     HttpContext: HttpContext;
     Lease: RateLimitLease;
 }
@@ -60,6 +66,8 @@ export const OnRejectedContext: {
 export type OnRejectedContext = OnRejectedContext$instance;
 
 export interface RateLimiterOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_RateLimiterOptions: never;
+
     get GlobalLimiter(): PartitionedRateLimiter_1<HttpContext> | undefined;
     set GlobalLimiter(value: PartitionedRateLimiter_1<HttpContext> | undefined);
     get OnRejected(): Func_3<OnRejectedContext, CancellationToken, ValueTask> | undefined;

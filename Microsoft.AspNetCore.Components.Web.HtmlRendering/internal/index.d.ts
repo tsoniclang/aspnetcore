@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface HtmlRootComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HtmlRendering_HtmlRootComponent: never;
+
     readonly QuiescenceTask: Task;
     ToHtmlString(): string;
     WriteHtmlTo(output: TextWriter): void;

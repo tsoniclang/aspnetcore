@@ -34,6 +34,8 @@ export interface ISessionStore$instance {
 export type ISessionStore = ISessionStore$instance;
 
 export interface DistributedSession$instance extends Microsoft_AspNetCore_Http_Internal.ISession$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Session_DistributedSession: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_ISession: never;
 
     readonly Id: string;
@@ -61,6 +63,8 @@ export type DistributedSession = DistributedSession$instance & __DistributedSess
 
 
 export interface DistributedSessionStore$instance extends ISessionStore$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Session_DistributedSessionStore: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Session_ISessionStore: never;
 
     Create(sessionKey: string, idleTimeout: TimeSpan, ioTimeout: TimeSpan, tryEstablishSession: Func_1<System_Internal.Boolean>, isNewSessionKey: boolean): ISession;
@@ -80,6 +84,8 @@ export type DistributedSessionStore = DistributedSessionStore$instance & __Distr
 
 
 export interface SessionFeature$instance extends Microsoft_AspNetCore_Http_Features_Internal.ISessionFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Session_SessionFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ISessionFeature: never;
 
     Session: ISession;
@@ -99,6 +105,8 @@ export type SessionFeature = SessionFeature$instance & __SessionFeature$views;
 
 
 export interface SessionMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Session_SessionMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 

@@ -15,6 +15,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Decimal, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface InboundMatch$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_InboundMatch: never;
+
     Entry: InboundRouteEntry;
     TemplateMatcher: TemplateMatcher;
 }
@@ -28,6 +30,8 @@ export const InboundMatch: {
 export type InboundMatch = InboundMatch$instance;
 
 export interface InboundRouteEntry$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_InboundRouteEntry: never;
+
     Constraints: IDictionary_2<System_Internal.String, IRouteConstraint>;
     Defaults: RouteValueDictionary;
     Handler: IRouter;
@@ -46,6 +50,8 @@ export const InboundRouteEntry: {
 export type InboundRouteEntry = InboundRouteEntry$instance;
 
 export interface OutboundMatch$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_OutboundMatch: never;
+
     Entry: OutboundRouteEntry;
     TemplateBinder: TemplateBinder;
 }
@@ -59,6 +65,8 @@ export const OutboundMatch: {
 export type OutboundMatch = OutboundMatch$instance;
 
 export interface OutboundRouteEntry$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_OutboundRouteEntry: never;
+
     Constraints: IDictionary_2<System_Internal.String, IRouteConstraint>;
     Data: unknown;
     Defaults: RouteValueDictionary;
@@ -79,6 +87,8 @@ export const OutboundRouteEntry: {
 export type OutboundRouteEntry = OutboundRouteEntry$instance;
 
 export interface TreeRouteBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_TreeRouteBuilder: never;
+
     readonly InboundEntries: IList_1<InboundRouteEntry>;
     readonly OutboundEntries: IList_1<OutboundRouteEntry>;
     Build(): TreeRouter;
@@ -96,6 +106,8 @@ export const TreeRouteBuilder: {
 export type TreeRouteBuilder = TreeRouteBuilder$instance;
 
 export interface TreeRouter$instance extends Microsoft_AspNetCore_Routing_Internal.IRouter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_TreeRouter: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     readonly Version: int;
@@ -117,6 +129,8 @@ export type TreeRouter = TreeRouter$instance & __TreeRouter$views;
 
 
 export interface UrlMatchingNode$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_UrlMatchingNode: never;
+
     CatchAlls: UrlMatchingNode;
     ConstrainedCatchAlls: UrlMatchingNode;
     ConstrainedParameters: UrlMatchingNode;
@@ -136,6 +150,8 @@ export const UrlMatchingNode: {
 export type UrlMatchingNode = UrlMatchingNode$instance;
 
 export interface UrlMatchingTree$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_UrlMatchingTree: never;
+
     readonly Order: int;
     readonly Root: UrlMatchingNode;
 }

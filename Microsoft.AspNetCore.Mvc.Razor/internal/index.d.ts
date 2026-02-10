@@ -132,6 +132,8 @@ export interface IViewLocationExpander$instance {
 export type IViewLocationExpander = IViewLocationExpander$instance;
 
 export interface RazorPageFactoryResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageFactoryResult: never;
+
     readonly RazorPageFactory: Func_1<IRazorPage> | undefined;
     readonly Success: boolean;
     readonly ViewDescriptor: CompiledViewDescriptor | undefined;
@@ -146,6 +148,8 @@ export const RazorPageFactoryResult: {
 export type RazorPageFactoryResult = RazorPageFactoryResult$instance;
 
 export interface RazorPageResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageResult: never;
+
     readonly Name: string;
     readonly Page: IRazorPage | undefined;
     readonly SearchedLocations: IEnumerable_1<System_Internal.String> | undefined;
@@ -161,6 +165,8 @@ export const RazorPageResult: {
 export type RazorPageResult = RazorPageResult$instance;
 
 export interface HelperResult$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_HelperResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     readonly WriteAction: Func_2<TextWriter, Task>;
@@ -181,6 +187,8 @@ export type HelperResult = HelperResult$instance & __HelperResult$views;
 
 
 export interface LanguageViewLocationExpander$instance extends IViewLocationExpander$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_LanguageViewLocationExpander: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander: never;
 
     ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable_1<System_Internal.String>): IEnumerable_1<System_Internal.String>;
@@ -202,6 +210,8 @@ export type LanguageViewLocationExpander = LanguageViewLocationExpander$instance
 
 
 export interface RazorPage$instance extends RazorPageBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPage: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
     readonly Context: HttpContext;
@@ -233,6 +243,8 @@ export type RazorPage = RazorPage$instance & __RazorPage$views;
 
 
 export interface RazorPage_1$instance<TModel> extends RazorPage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPage_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
     readonly Model: TModel;
@@ -254,6 +266,8 @@ export type RazorPage_1<TModel> = RazorPage_1$instance<TModel> & __RazorPage_1$v
 
 
 export interface RazorPageActivator$instance extends IRazorPageActivator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageActivator: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator: never;
 
     Activate(page: IRazorPage, context: ViewContext): void;
@@ -273,6 +287,8 @@ export type RazorPageActivator = RazorPageActivator$instance & __RazorPageActiva
 
 
 export interface RazorPageBase$instance extends IRazorPage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
     get BodyContent(): IHtmlContent | undefined;
@@ -331,6 +347,8 @@ export type RazorPageBase = RazorPageBase$instance & __RazorPageBase$views;
 
 
 export interface RazorView$instance extends Microsoft_AspNetCore_Mvc_ViewEngines_Internal.IView$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorView: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IView: never;
 
     readonly Path: string;
@@ -353,6 +371,8 @@ export type RazorView = RazorView$instance & __RazorView$views;
 
 
 export interface RazorViewEngine$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorViewEngine: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
 
@@ -380,6 +400,8 @@ export type RazorViewEngine = RazorViewEngine$instance & __RazorViewEngine$views
 
 
 export interface RazorViewEngineOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorViewEngineOptions: never;
+
     readonly AreaPageViewLocationFormats: IList_1<System_Internal.String>;
     readonly AreaViewLocationFormats: IList_1<System_Internal.String>;
     readonly PageViewLocationFormats: IList_1<System_Internal.String>;
@@ -396,6 +418,8 @@ export const RazorViewEngineOptions: {
 export type RazorViewEngineOptions = RazorViewEngineOptions$instance;
 
 export interface TagHelperInitializer_1$instance<TTagHelper extends ITagHelper> extends ITagHelperInitializer_1$instance<TTagHelper> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_TagHelperInitializer_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1: never;
 
     Initialize(helper: TTagHelper, context: ViewContext): void;
@@ -415,6 +439,8 @@ export type TagHelperInitializer_1<TTagHelper extends ITagHelper> = TagHelperIni
 
 
 export interface ViewLocationExpanderContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_ViewLocationExpanderContext: never;
+
     readonly ActionContext: ActionContext;
     readonly AreaName: string | undefined;
     readonly ControllerName: string | undefined;

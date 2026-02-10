@@ -12,6 +12,8 @@ import type { Action_1, Boolean as ClrBoolean, Object as ClrObject } from "@tson
 import type { IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
 
 export interface WebHostBuilderOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_WebHostBuilderOptions: never;
+
     SuppressEnvironmentConfiguration: boolean;
 }
 

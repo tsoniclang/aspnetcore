@@ -61,6 +61,8 @@ export interface IParameterLiteralNodeMatchingPolicy$instance extends Microsoft_
 export type IParameterLiteralNodeMatchingPolicy = IParameterLiteralNodeMatchingPolicy$instance;
 
 export interface CandidateState$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_CandidateState: never;
+
     readonly Endpoint: Endpoint;
     readonly Score: int;
     get Values(): RouteValueDictionary | undefined;
@@ -76,6 +78,8 @@ export const CandidateState: {
 export type CandidateState = CandidateState$instance;
 
 export interface PolicyJumpTableEdge$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge: never;
+
     readonly Destination: int;
     readonly State: unknown;
 }
@@ -89,6 +93,8 @@ export const PolicyJumpTableEdge: {
 export type PolicyJumpTableEdge = PolicyJumpTableEdge$instance;
 
 export interface PolicyNodeEdge$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge: never;
+
     readonly Endpoints: IReadOnlyList_1<Endpoint>;
     readonly State: unknown;
 }
@@ -102,8 +108,9 @@ export const PolicyNodeEdge: {
 export type PolicyNodeEdge = PolicyNodeEdge$instance;
 
 export interface CandidateSet$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_CandidateSet: never;
+
     readonly Count: int;
-    readonly [index: number]: CandidateState;
     ExpandEndpoint(index: int, endpoints: IReadOnlyList_1<Endpoint>, comparer: IComparer_1<Endpoint>): void;
     IsValidCandidate(index: int): boolean;
     ReplaceEndpoint(index: int, endpoint: Endpoint, values: RouteValueDictionary): void;
@@ -116,9 +123,11 @@ export const CandidateSet: {
 };
 
 
-export type CandidateSet = CandidateSet$instance;
+export type CandidateSet = CandidateSet$instance & { readonly [index: number]: CandidateState; };
 
 export interface EndpointMetadataComparer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
 
 }
@@ -131,6 +140,8 @@ export const EndpointMetadataComparer: {
 export type EndpointMetadataComparer = EndpointMetadataComparer$instance;
 
 export interface EndpointMetadataComparer_1$instance<TMetadata> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
 
     Compare(x: Endpoint, y: Endpoint): int;
@@ -147,6 +158,8 @@ export const EndpointMetadataComparer_1: (abstract new<TMetadata>() => EndpointM
 export type EndpointMetadataComparer_1<TMetadata> = EndpointMetadataComparer_1$instance<TMetadata>;
 
 export interface EndpointSelector$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_EndpointSelector: never;
+
     SelectAsync(httpContext: HttpContext, candidates: CandidateSet): Task;
 }
 
@@ -158,6 +171,8 @@ export const EndpointSelector: (abstract new() => EndpointSelector) & {
 export type EndpointSelector = EndpointSelector$instance;
 
 export interface HostMatcherPolicy$instance extends MatcherPolicy, IEndpointComparerPolicy$instance, IEndpointSelectorPolicy$instance, INodeBuilderPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_HostMatcherPolicy: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy: never;
@@ -185,6 +200,8 @@ export type HostMatcherPolicy = HostMatcherPolicy$instance & __HostMatcherPolicy
 
 
 export interface HttpMethodMatcherPolicy$instance extends MatcherPolicy, IEndpointComparerPolicy$instance, IEndpointSelectorPolicy$instance, INodeBuilderPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_HttpMethodMatcherPolicy: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy: never;
@@ -212,6 +229,8 @@ export type HttpMethodMatcherPolicy = HttpMethodMatcherPolicy$instance & __HttpM
 
 
 export interface PolicyJumpTable$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTable: never;
+
     GetDestination(httpContext: HttpContext): int;
 }
 

@@ -43,6 +43,8 @@ export interface IValidationAttributeAdapterProvider$instance {
 export type IValidationAttributeAdapterProvider = IValidationAttributeAdapterProvider$instance;
 
 export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAttribute> extends ValidationAttributeAdapter_1$instance<TAttribute> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_AttributeAdapterBase_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
@@ -64,6 +66,8 @@ export type AttributeAdapterBase_1<TAttribute extends ValidationAttribute> = Att
 
 
 export interface MvcDataAnnotationsLocalizationOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -79,6 +83,8 @@ export const MvcDataAnnotationsLocalizationOptions: {
 export type MvcDataAnnotationsLocalizationOptions = MvcDataAnnotationsLocalizationOptions$instance;
 
 export interface RequiredAttributeAdapter$instance extends AttributeAdapterBase_1$instance<RequiredAttribute> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_RequiredAttributeAdapter: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
@@ -102,6 +108,8 @@ export type RequiredAttributeAdapter = RequiredAttributeAdapter$instance & __Req
 
 
 export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> extends Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationAttributeAdapter_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     readonly Attribute: TAttribute;
@@ -123,6 +131,8 @@ export type ValidationAttributeAdapter_1<TAttribute extends ValidationAttribute>
 
 
 export interface ValidationAttributeAdapterProvider$instance extends IValidationAttributeAdapterProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationAttributeAdapterProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider: never;
 
     GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
@@ -142,6 +152,8 @@ export type ValidationAttributeAdapterProvider = ValidationAttributeAdapterProvi
 
 
 export interface ValidationProviderAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationProviderAttribute: never;
+
     GetValidationAttributes(): IEnumerable_1<ValidationAttribute>;
 }
 

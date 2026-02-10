@@ -15,6 +15,8 @@ import type { ILogger_1 } from "@tsonic/microsoft-extensions/Microsoft.Extension
 import type { IOptionsMonitor_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface HostFilteringMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HostFiltering_HostFilteringMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -27,6 +29,8 @@ export const HostFilteringMiddleware: {
 export type HostFilteringMiddleware = HostFilteringMiddleware$instance;
 
 export interface HostFilteringOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HostFiltering_HostFilteringOptions: never;
+
     AllowedHosts: IList_1<System_Internal.String>;
     AllowEmptyHosts: boolean;
     IncludeFailureMessage: boolean;

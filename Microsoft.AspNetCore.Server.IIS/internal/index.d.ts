@@ -31,6 +31,8 @@ export interface IIISEnvironmentFeature$instance {
 export type IIISEnvironmentFeature = IIISEnvironmentFeature$instance;
 
 export interface BadHttpRequestException$instance extends BadHttpRequestException_Http {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_IIS_BadHttpRequestException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly StatusCode: int;
@@ -44,6 +46,8 @@ export const BadHttpRequestException: {
 export type BadHttpRequestException = BadHttpRequestException$instance;
 
 export interface IISServerDefaults$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_IIS_IISServerDefaults: never;
+
 }
 
 

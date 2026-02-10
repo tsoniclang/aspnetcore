@@ -46,6 +46,8 @@ export interface IDistributedCacheTagHelperStorage$instance {
 export type IDistributedCacheTagHelperStorage = IDistributedCacheTagHelperStorage$instance;
 
 export interface CacheTagKey$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_CacheTagKey: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(obj: unknown): boolean;
@@ -65,6 +67,8 @@ export const CacheTagKey: {
 export type CacheTagKey = CacheTagKey$instance;
 
 export interface DistributedCacheTagHelperFormatter$instance extends IDistributedCacheTagHelperFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperFormatter: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperFormatter: never;
 
     DeserializeAsync(value: byte[]): Task_1<HtmlString>;
@@ -85,6 +89,8 @@ export type DistributedCacheTagHelperFormatter = DistributedCacheTagHelperFormat
 
 
 export interface DistributedCacheTagHelperFormattingContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperFormattingContext: never;
+
     Html: HtmlString;
 }
 
@@ -97,6 +103,8 @@ export const DistributedCacheTagHelperFormattingContext: {
 export type DistributedCacheTagHelperFormattingContext = DistributedCacheTagHelperFormattingContext$instance;
 
 export interface DistributedCacheTagHelperService$instance extends IDistributedCacheTagHelperService$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperService: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperService: never;
 
     ProcessContentAsync(output: TagHelperOutput, key: CacheTagKey, options: DistributedCacheEntryOptions): Task_1<IHtmlContent>;
@@ -116,6 +124,8 @@ export type DistributedCacheTagHelperService = DistributedCacheTagHelperService$
 
 
 export interface DistributedCacheTagHelperStorage$instance extends IDistributedCacheTagHelperStorage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperStorage: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperStorage: never;
 
     GetAsync(key: string): Task_1<byte[]>;

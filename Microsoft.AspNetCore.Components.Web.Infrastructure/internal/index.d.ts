@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JSComponentInterop$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Infrastructure_JSComponentInterop: never;
+
     AddRootComponent(identifier: string, domElementSelector: string): int;
     RemoveRootComponent(componentId: int): void;
 }

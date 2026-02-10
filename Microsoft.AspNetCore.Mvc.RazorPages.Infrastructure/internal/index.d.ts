@@ -54,6 +54,8 @@ export interface IPageLoader$instance {
 export type IPageLoader = IPageLoader$instance;
 
 export interface CompiledPageActionDescriptorProvider$instance extends Microsoft_AspNetCore_Mvc_Abstractions_Internal.IActionDescriptorProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_CompiledPageActionDescriptorProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider: never;
 
     readonly Order: int;
@@ -75,6 +77,8 @@ export type CompiledPageActionDescriptorProvider = CompiledPageActionDescriptorP
 
 
 export interface HandlerMethodDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_HandlerMethodDescriptor: never;
+
     HttpMethod: string;
     MethodInfo: MethodInfo;
     get Name(): string | undefined;
@@ -91,6 +95,8 @@ export const HandlerMethodDescriptor: {
 export type HandlerMethodDescriptor = HandlerMethodDescriptor$instance;
 
 export interface HandlerParameterDescriptor$instance extends ParameterDescriptor {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_HandlerParameterDescriptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor: never;
 
     ParameterInfo: ParameterInfo;
@@ -110,6 +116,8 @@ export type HandlerParameterDescriptor = HandlerParameterDescriptor$instance & _
 
 
 export interface PageActionDescriptorProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageActionDescriptorProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider: never;
 
     Order: int;
@@ -131,6 +139,8 @@ export type PageActionDescriptorProvider = PageActionDescriptorProvider$instance
 
 
 export interface PageBoundPropertyDescriptor$instance extends ParameterDescriptor, Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IPropertyInfoParameterDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageBoundPropertyDescriptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor: never;
 
     Property: PropertyInfo;
@@ -150,6 +160,8 @@ export type PageBoundPropertyDescriptor = PageBoundPropertyDescriptor$instance &
 
 
 export interface PageLoader$instance extends IPageLoader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageLoader: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageLoader: never;
 
     LoadAsync(actionDescriptor: PageActionDescriptor): Task_1<CompiledPageActionDescriptor>;
@@ -169,6 +181,8 @@ export type PageLoader = PageLoader$instance & __PageLoader$views;
 
 
 export interface PageModelAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageModelAttribute: never;
+
 }
 
 
@@ -180,6 +194,8 @@ export const PageModelAttribute: {
 export type PageModelAttribute = PageModelAttribute$instance;
 
 export interface PageResultExecutor$instance extends ViewExecutor {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageResultExecutor: never;
+
     ExecuteAsync(pageContext: PageContext, result: PageResult): Task;
     ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
 }
@@ -193,6 +209,8 @@ export const PageResultExecutor: {
 export type PageResultExecutor = PageResultExecutor$instance;
 
 export interface PageViewLocationExpander$instance extends Microsoft_AspNetCore_Mvc_Razor_Internal.IViewLocationExpander$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageViewLocationExpander: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander: never;
 
     ExpandViewLocations(context: ViewLocationExpanderContext, viewLocations: IEnumerable_1<System_Internal.String>): IEnumerable_1<System_Internal.String>;
@@ -213,6 +231,8 @@ export type PageViewLocationExpander = PageViewLocationExpander$instance & __Pag
 
 
 export interface RazorPageAdapter$instance extends Microsoft_AspNetCore_Mvc_Razor_Internal.IRazorPage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_RazorPageAdapter: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IModelTypeProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
@@ -243,6 +263,8 @@ export type RazorPageAdapter = RazorPageAdapter$instance & __RazorPageAdapter$vi
 
 
 export interface RazorPageAttribute$instance extends RazorViewAttribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_RazorPageAttribute: never;
+
     readonly RouteTemplate: string;
 }
 
@@ -255,6 +277,8 @@ export const RazorPageAttribute: {
 export type RazorPageAttribute = RazorPageAttribute$instance;
 
 export interface ServiceBasedPageModelActivatorProvider$instance extends Microsoft_AspNetCore_Mvc_RazorPages_Internal.IPageModelActivatorProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_ServiceBasedPageModelActivatorProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider: never;
 
     CreateActivator(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, unknown>;

@@ -40,6 +40,8 @@ export interface IDirectoryFormatter$instance {
 export type IDirectoryFormatter = IDirectoryFormatter$instance;
 
 export interface DefaultFilesMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_DefaultFilesMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -52,6 +54,8 @@ export const DefaultFilesMiddleware: {
 export type DefaultFilesMiddleware = DefaultFilesMiddleware$instance;
 
 export interface DirectoryBrowserMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_DirectoryBrowserMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -65,6 +69,8 @@ export const DirectoryBrowserMiddleware: {
 export type DirectoryBrowserMiddleware = DirectoryBrowserMiddleware$instance;
 
 export interface FileExtensionContentTypeProvider$instance extends IContentTypeProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider: never;
 
     Mappings: IDictionary_2<System_Internal.String, System_Internal.String>;
@@ -86,6 +92,8 @@ export type FileExtensionContentTypeProvider = FileExtensionContentTypeProvider$
 
 
 export interface HtmlDirectoryFormatter$instance extends IDirectoryFormatter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_HtmlDirectoryFormatter: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter: never;
 
     GenerateContentAsync(context: HttpContext, contents: IEnumerable_1<IFileInfo>): Task;
@@ -105,6 +113,8 @@ export type HtmlDirectoryFormatter = HtmlDirectoryFormatter$instance & __HtmlDir
 
 
 export interface StaticFileMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_StaticFileMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -117,6 +127,8 @@ export const StaticFileMiddleware: {
 export type StaticFileMiddleware = StaticFileMiddleware$instance;
 
 export interface StaticFileResponseContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_StaticFileResponseContext: never;
+
     readonly Context: HttpContext;
     readonly File: IFileInfo;
 }

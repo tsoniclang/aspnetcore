@@ -15,6 +15,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Exception, Func_2, Int64, Object as ClrObject, String as ClrString, TimeProvider, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface AccessTokenResponse$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BearerToken_AccessTokenResponse: never;
+
     AccessToken: string;
     ExpiresIn: long;
     RefreshToken: string;
@@ -30,6 +32,8 @@ export const AccessTokenResponse: {
 export type AccessTokenResponse = AccessTokenResponse$instance;
 
 export interface BearerTokenEvents$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BearerToken_BearerTokenEvents: never;
+
     OnMessageReceived: Func_2<MessageReceivedContext, Task>;
     MessageReceivedAsync(context: MessageReceivedContext): Task;
 }
@@ -43,6 +47,8 @@ export const BearerTokenEvents: {
 export type BearerTokenEvents = BearerTokenEvents$instance;
 
 export interface BearerTokenOptions$instance extends AuthenticationSchemeOptions {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BearerToken_BearerTokenOptions: never;
+
     BearerTokenExpiration: TimeSpan;
     BearerTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
     Events: BearerTokenEvents | unknown;
@@ -59,6 +65,8 @@ export const BearerTokenOptions: {
 export type BearerTokenOptions = BearerTokenOptions$instance;
 
 export interface MessageReceivedContext$instance extends ResultContext_1<BearerTokenOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BearerToken_MessageReceivedContext: never;
+
     get Token(): string | undefined;
     set Token(value: string | undefined);
 }

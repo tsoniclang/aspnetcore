@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int32, Int64, Nullable_1, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface QuicTransportOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_Quic_QuicTransportOptions: never;
+
     Backlog: int;
     DefaultCloseErrorCode: long;
     DefaultStreamErrorCode: long;
