@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Int32, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ForgotPasswordRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_ForgotPasswordRequest: never;
+
     Email: string;
 }
 
@@ -22,6 +24,8 @@ export const ForgotPasswordRequest: {
 export type ForgotPasswordRequest = ForgotPasswordRequest$instance;
 
 export interface InfoRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_InfoRequest: never;
+
     get NewEmail(): string | undefined;
     set NewEmail(value: string | undefined);
     get NewPassword(): string | undefined;
@@ -39,6 +43,8 @@ export const InfoRequest: {
 export type InfoRequest = InfoRequest$instance;
 
 export interface InfoResponse$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_InfoResponse: never;
+
     Email: string;
     IsEmailConfirmed: boolean;
 }
@@ -52,6 +58,8 @@ export const InfoResponse: {
 export type InfoResponse = InfoResponse$instance;
 
 export interface LoginRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_LoginRequest: never;
+
     Email: string;
     Password: string;
     get TwoFactorCode(): string | undefined;
@@ -69,6 +77,8 @@ export const LoginRequest: {
 export type LoginRequest = LoginRequest$instance;
 
 export interface RefreshRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_RefreshRequest: never;
+
     RefreshToken: string;
 }
 
@@ -81,6 +91,8 @@ export const RefreshRequest: {
 export type RefreshRequest = RefreshRequest$instance;
 
 export interface RegisterRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_RegisterRequest: never;
+
     Email: string;
     Password: string;
 }
@@ -94,6 +106,8 @@ export const RegisterRequest: {
 export type RegisterRequest = RegisterRequest$instance;
 
 export interface ResendConfirmationEmailRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_ResendConfirmationEmailRequest: never;
+
     Email: string;
 }
 
@@ -106,6 +120,8 @@ export const ResendConfirmationEmailRequest: {
 export type ResendConfirmationEmailRequest = ResendConfirmationEmailRequest$instance;
 
 export interface ResetPasswordRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_ResetPasswordRequest: never;
+
     Email: string;
     NewPassword: string;
     ResetCode: string;
@@ -120,6 +136,8 @@ export const ResetPasswordRequest: {
 export type ResetPasswordRequest = ResetPasswordRequest$instance;
 
 export interface TwoFactorRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_TwoFactorRequest: never;
+
     Enable: Nullable_1<System_Internal.Boolean>;
     ForgetMachine: boolean;
     ResetRecoveryCodes: boolean;
@@ -137,6 +155,8 @@ export const TwoFactorRequest: {
 export type TwoFactorRequest = TwoFactorRequest$instance;
 
 export interface TwoFactorResponse$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_TwoFactorResponse: never;
+
     IsMachineRemembered: boolean;
     IsTwoFactorEnabled: boolean;
     get RecoveryCodes(): string[] | undefined;

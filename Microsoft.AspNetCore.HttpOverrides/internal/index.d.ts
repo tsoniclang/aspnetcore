@@ -30,6 +30,8 @@ export enum ForwardedHeaders {
 
 
 export interface CertificateForwardingMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingMiddleware: never;
+
     Invoke(httpContext: HttpContext): Task;
 }
 
@@ -42,6 +44,8 @@ export const CertificateForwardingMiddleware: {
 export type CertificateForwardingMiddleware = CertificateForwardingMiddleware$instance;
 
 export interface CertificateForwardingOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions: never;
+
     HeaderConverter: Func_2<System_Internal.String, X509Certificate2>;
     CertificateHeader: string;
 }
@@ -55,6 +59,8 @@ export const CertificateForwardingOptions: {
 export type CertificateForwardingOptions = CertificateForwardingOptions$instance;
 
 export interface ForwardedHeadersMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpOverrides_ForwardedHeadersMiddleware: never;
+
     ApplyForwarders(context: HttpContext): void;
     Invoke(context: HttpContext): Task;
 }
@@ -68,6 +74,8 @@ export const ForwardedHeadersMiddleware: {
 export type ForwardedHeadersMiddleware = ForwardedHeadersMiddleware$instance;
 
 export interface HttpMethodOverrideMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpOverrides_HttpMethodOverrideMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -80,6 +88,8 @@ export const HttpMethodOverrideMiddleware: {
 export type HttpMethodOverrideMiddleware = HttpMethodOverrideMiddleware$instance;
 
 export interface IPNetwork$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_HttpOverrides_IPNetwork: never;
+
     readonly Prefix: IPAddress;
     readonly PrefixLength: int;
     Contains(address: IPAddress): boolean;

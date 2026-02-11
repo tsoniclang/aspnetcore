@@ -19,6 +19,8 @@ import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Exte
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface IISDefaults$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_IISIntegration_IISDefaults: never;
+
 }
 
 
@@ -33,6 +35,8 @@ export const IISDefaults: {
 export type IISDefaults = IISDefaults$instance;
 
 export interface IISHostingStartup$instance extends Microsoft_AspNetCore_Hosting_Internal.IHostingStartup$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_IISIntegration_IISHostingStartup: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IHostingStartup: never;
 
     Configure(builder: IWebHostBuilder): void;
@@ -52,6 +56,8 @@ export type IISHostingStartup = IISHostingStartup$instance & __IISHostingStartup
 
 
 export interface IISMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_IISIntegration_IISMiddleware: never;
+
     Invoke(httpContext: HttpContext): Task;
 }
 

@@ -134,6 +134,8 @@ export interface IServerDelegationFeature$instance {
 export type IServerDelegationFeature = IServerDelegationFeature$instance;
 
 export interface AuthenticationManager$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_AuthenticationManager: never;
+
     AllowAnonymous: boolean;
     get AuthenticationDisplayName(): string | undefined;
     set AuthenticationDisplayName(value: string | undefined);
@@ -151,6 +153,8 @@ export const AuthenticationManager: {
 export type AuthenticationManager = AuthenticationManager$instance;
 
 export interface DelegationRule$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_DelegationRule: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly QueueName: string;
@@ -166,6 +170,8 @@ export const DelegationRule: {
 export type DelegationRule = DelegationRule$instance;
 
 export interface HttpSysException$instance extends Win32Exception {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_HttpSysException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly ErrorCode: int;
@@ -179,6 +185,8 @@ export const HttpSysException: {
 export type HttpSysException = HttpSysException$instance;
 
 export interface HttpSysOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_HttpSysOptions: never;
+
     AllowSynchronousIO: boolean;
     readonly Authentication: AuthenticationManager;
     ClientCertificateMethod: ClientCertificateMethod;
@@ -210,6 +218,8 @@ export const HttpSysOptions: {
 export type HttpSysOptions = HttpSysOptions$instance;
 
 export interface TimeoutManager$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_TimeoutManager: never;
+
     DrainEntityBody: TimeSpan;
     EntityBody: TimeSpan;
     HeaderWait: TimeSpan;
@@ -226,6 +236,8 @@ export const TimeoutManager: {
 export type TimeoutManager = TimeoutManager$instance;
 
 export interface UrlPrefix$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_UrlPrefix: never;
+
     readonly FullPrefix: string;
     readonly Host: string;
     readonly IsHttps: boolean;
@@ -249,6 +261,8 @@ export const UrlPrefix: {
 export type UrlPrefix = UrlPrefix$instance;
 
 export interface UrlPrefixCollection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_UrlPrefixCollection: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;

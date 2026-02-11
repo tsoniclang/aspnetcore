@@ -57,6 +57,8 @@ export interface IUrlHelperFactory$instance {
 export type IUrlHelperFactory = IUrlHelperFactory$instance;
 
 export interface AttributeRouteInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_AttributeRouteInfo: never;
+
     get Name(): string | undefined;
     set Name(value: string | undefined);
     Order: int;
@@ -75,6 +77,8 @@ export const AttributeRouteInfo: {
 export type AttributeRouteInfo = AttributeRouteInfo$instance;
 
 export interface DynamicRouteValueTransformer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never;
+
     get State(): unknown | undefined;
     set State(value: unknown | undefined);
     FilterAsync(httpContext: HttpContext, values: RouteValueDictionary, endpoints: IReadOnlyList_1<Endpoint>): ValueTask_1<IReadOnlyList_1<Endpoint>>;
@@ -89,6 +93,8 @@ export const DynamicRouteValueTransformer: (abstract new() => DynamicRouteValueT
 export type DynamicRouteValueTransformer = DynamicRouteValueTransformer$instance;
 
 export interface HttpMethodAttribute$instance extends Attribute, IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_HttpMethodAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -113,6 +119,8 @@ export type HttpMethodAttribute = HttpMethodAttribute$instance & __HttpMethodAtt
 
 
 export interface KnownRouteValueConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_KnownRouteValueConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
@@ -133,6 +141,8 @@ export type KnownRouteValueConstraint = KnownRouteValueConstraint$instance & __K
 
 
 export interface RouteValueAttribute$instance extends Attribute, IRouteValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_RouteValueAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider: never;
 
     readonly RouteKey: string;
@@ -152,6 +162,8 @@ export type RouteValueAttribute = RouteValueAttribute$instance & __RouteValueAtt
 
 
 export interface UrlActionContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlActionContext: never;
+
     get Action(): string | undefined;
     set Action(value: string | undefined);
     get Controller(): string | undefined;
@@ -175,6 +187,8 @@ export const UrlActionContext: {
 export type UrlActionContext = UrlActionContext$instance;
 
 export interface UrlHelper$instance extends UrlHelperBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
 
     Action(actionContext: UrlActionContext): string | undefined;
@@ -199,6 +213,8 @@ export type UrlHelper = UrlHelper$instance & __UrlHelper$views;
 
 
 export interface UrlHelperBase$instance extends Microsoft_AspNetCore_Mvc_Internal.IUrlHelper$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelperBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
 
     readonly ActionContext: ActionContext;
@@ -222,6 +238,8 @@ export type UrlHelperBase = UrlHelperBase$instance & __UrlHelperBase$views;
 
 
 export interface UrlHelperFactory$instance extends IUrlHelperFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelperFactory: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory: never;
 
     GetUrlHelper(context: ActionContext): IUrlHelper;
@@ -241,6 +259,8 @@ export type UrlHelperFactory = UrlHelperFactory$instance & __UrlHelperFactory$vi
 
 
 export interface UrlRouteContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlRouteContext: never;
+
     get Fragment(): string | undefined;
     set Fragment(value: string | undefined);
     get Host(): string | undefined;

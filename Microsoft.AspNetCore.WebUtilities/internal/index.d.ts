@@ -20,6 +20,8 @@ import type { ArraySegment_1, Boolean as ClrBoolean, Byte, Char, Func_1, IAsyncD
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export interface KeyValueAccumulator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_KeyValueAccumulator: never;
+
     readonly HasValues: boolean;
     readonly KeyCount: int;
     ValueCount: int;
@@ -36,6 +38,8 @@ export const KeyValueAccumulator: {
 export type KeyValueAccumulator = KeyValueAccumulator$instance;
 
 export interface QueryStringEnumerable$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable: never;
+
     GetEnumerator(): QueryStringEnumerable_Enumerator;
 }
 
@@ -49,6 +53,8 @@ export const QueryStringEnumerable: {
 export type QueryStringEnumerable = QueryStringEnumerable$instance;
 
 export interface QueryStringEnumerable_EncodedNameValuePair$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable_EncodedNameValuePair: never;
+
     readonly EncodedName: ReadOnlyMemory_1<System_Internal.Char>;
     readonly EncodedValue: ReadOnlyMemory_1<System_Internal.Char>;
     DecodeName(): ReadOnlyMemory_1<System_Internal.Char>;
@@ -64,6 +70,8 @@ export const QueryStringEnumerable_EncodedNameValuePair: {
 export type QueryStringEnumerable_EncodedNameValuePair = QueryStringEnumerable_EncodedNameValuePair$instance;
 
 export interface QueryStringEnumerable_Enumerator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable_Enumerator: never;
+
     Current: QueryStringEnumerable_EncodedNameValuePair;
     MoveNext(): boolean;
 }
@@ -77,6 +85,8 @@ export const QueryStringEnumerable_Enumerator: {
 export type QueryStringEnumerable_Enumerator = QueryStringEnumerable_Enumerator$instance;
 
 export interface BufferedReadStream$instance extends Stream {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_BufferedReadStream: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -116,6 +126,8 @@ export const BufferedReadStream: {
 export type BufferedReadStream = BufferedReadStream$instance;
 
 export interface FileBufferingReadStream$instance extends Stream {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FileBufferingReadStream: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -155,6 +167,8 @@ export const FileBufferingReadStream: {
 export type FileBufferingReadStream = FileBufferingReadStream$instance;
 
 export interface FileBufferingWriteStream$instance extends Stream {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -189,6 +203,8 @@ export const FileBufferingWriteStream: {
 export type FileBufferingWriteStream = FileBufferingWriteStream$instance;
 
 export interface FileMultipartSection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FileMultipartSection: never;
+
     readonly FileName: string;
     readonly FileStream: Stream | undefined;
     readonly Name: string;
@@ -205,6 +221,8 @@ export const FileMultipartSection: {
 export type FileMultipartSection = FileMultipartSection$instance;
 
 export interface FormMultipartSection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FormMultipartSection: never;
+
     readonly Name: string;
     readonly Section: MultipartSection;
     GetValueAsync(): Task_1<System_Internal.String>;
@@ -221,6 +239,8 @@ export const FormMultipartSection: {
 export type FormMultipartSection = FormMultipartSection$instance;
 
 export interface FormPipeReader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FormPipeReader: never;
+
     KeyLengthLimit: int;
     ValueCountLimit: int;
     ValueLengthLimit: int;
@@ -237,6 +257,8 @@ export const FormPipeReader: {
 export type FormPipeReader = FormPipeReader$instance;
 
 export interface FormReader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FormReader: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     KeyLengthLimit: int;
@@ -265,6 +287,8 @@ export const FormReader: {
 export type FormReader = FormReader$instance;
 
 export interface HttpRequestStreamReader$instance extends TextReader {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_HttpRequestStreamReader: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(disposing: boolean): void;
@@ -290,6 +314,8 @@ export const HttpRequestStreamReader: {
 export type HttpRequestStreamReader = HttpRequestStreamReader$instance;
 
 export interface HttpResponseStreamWriter$instance extends TextWriter {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -324,6 +350,8 @@ export const HttpResponseStreamWriter: {
 export type HttpResponseStreamWriter = HttpResponseStreamWriter$instance;
 
 export interface MultipartReader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_MultipartReader: never;
+
     BodyLengthLimit: Nullable_1<System_Internal.Int64>;
     HeadersCountLimit: int;
     HeadersLengthLimit: int;
@@ -342,6 +370,8 @@ export const MultipartReader: {
 export type MultipartReader = MultipartReader$instance;
 
 export interface MultipartSection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_MultipartSection: never;
+
     BaseStreamOffset: Nullable_1<System_Internal.Int64>;
     Body: Stream;
     readonly ContentDisposition: string | undefined;

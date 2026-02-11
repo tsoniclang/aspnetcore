@@ -25,6 +25,8 @@ export enum ClientCertificateMode {
 
 
 export interface HttpsConnectionAdapterOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Https_HttpsConnectionAdapterOptions: never;
+
     CheckCertificateRevocation: boolean;
     ClientCertificateMode: ClientCertificateMode;
     get ClientCertificateValidation(): Func_4<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined;
@@ -53,6 +55,8 @@ export const HttpsConnectionAdapterOptions: {
 export type HttpsConnectionAdapterOptions = HttpsConnectionAdapterOptions$instance;
 
 export interface TlsHandshakeCallbackContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackContext: never;
+
     AllowDelayedClientCertificateNegotation: boolean;
     CancellationToken: CancellationToken;
     ClientHelloInfo: SslClientHelloInfo;
@@ -71,6 +75,8 @@ export const TlsHandshakeCallbackContext: {
 export type TlsHandshakeCallbackContext = TlsHandshakeCallbackContext$instance;
 
 export interface TlsHandshakeCallbackOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackOptions: never;
+
     HandshakeTimeout: TimeSpan;
     OnConnection: Func_2<TlsHandshakeCallbackContext, ValueTask_1<SslServerAuthenticationOptions>>;
     get OnConnectionState(): unknown | undefined;

@@ -31,6 +31,8 @@ export interface IHostEnvironmentAuthenticationStateProvider$instance {
 export type IHostEnvironmentAuthenticationStateProvider = IHostEnvironmentAuthenticationStateProvider$instance;
 
 export interface ClaimData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_ClaimData: never;
+
     readonly Type: string;
     readonly Value: string;
 }
@@ -45,6 +47,8 @@ export const ClaimData: {
 export type ClaimData = ClaimData$instance;
 
 export interface AuthenticationState$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthenticationState: never;
+
     readonly User: ClaimsPrincipal;
 }
 
@@ -57,6 +61,8 @@ export const AuthenticationState: {
 export type AuthenticationState = AuthenticationState$instance;
 
 export interface AuthenticationStateData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateData: never;
+
     Claims: IList_1<ClaimData>;
     NameClaimType: string;
     RoleClaimType: string;
@@ -71,6 +77,8 @@ export const AuthenticationStateData: {
 export type AuthenticationStateData = AuthenticationStateData$instance;
 
 export interface AuthenticationStateProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider: never;
+
     GetAuthenticationStateAsync(): Task_1<AuthenticationState>;
 }
 
@@ -82,6 +90,8 @@ export const AuthenticationStateProvider: (abstract new() => AuthenticationState
 export type AuthenticationStateProvider = AuthenticationStateProvider$instance;
 
 export interface AuthorizeRouteView$instance extends RouteView {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeRouteView: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
     get Authorizing(): RenderFragment | undefined;
@@ -109,6 +119,8 @@ export type AuthorizeRouteView = AuthorizeRouteView$instance & __AuthorizeRouteV
 
 
 export interface AuthorizeView$instance extends AuthorizeViewCore$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeView: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -141,6 +153,8 @@ export type AuthorizeView = AuthorizeView$instance & __AuthorizeView$views;
 
 
 export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeViewCore: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -180,6 +194,8 @@ export type AuthorizeViewCore = AuthorizeViewCore$instance & __AuthorizeViewCore
 
 
 export interface CascadingAuthenticationState$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_CascadingAuthenticationState: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;

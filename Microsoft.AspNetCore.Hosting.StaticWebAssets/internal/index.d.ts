@@ -12,6 +12,8 @@ import type { Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/i
 import type { IConfiguration } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
 
 export interface StaticWebAssetsLoader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_StaticWebAssets_StaticWebAssetsLoader: never;
+
 }
 
 

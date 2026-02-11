@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_2, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface MapMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_Extensions_MapMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -24,6 +26,8 @@ export const MapMiddleware: {
 export type MapMiddleware = MapMiddleware$instance;
 
 export interface MapOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_Extensions_MapOptions: never;
+
     get Branch(): RequestDelegate | undefined;
     set Branch(value: RequestDelegate | undefined);
     PathMatch: PathString;
@@ -39,6 +43,8 @@ export const MapOptions: {
 export type MapOptions = MapOptions$instance;
 
 export interface MapWhenMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_Extensions_MapWhenMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 
@@ -51,6 +57,8 @@ export const MapWhenMiddleware: {
 export type MapWhenMiddleware = MapWhenMiddleware$instance;
 
 export interface MapWhenOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_Extensions_MapWhenOptions: never;
+
     get Branch(): RequestDelegate | undefined;
     set Branch(value: RequestDelegate | undefined);
     get Predicate(): Func_2<HttpContext, System_Internal.Boolean> | undefined;
@@ -66,6 +74,8 @@ export const MapWhenOptions: {
 export type MapWhenOptions = MapWhenOptions$instance;
 
 export interface UsePathBaseMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Builder_Extensions_UsePathBaseMiddleware: never;
+
     Invoke(context: HttpContext): Task;
 }
 

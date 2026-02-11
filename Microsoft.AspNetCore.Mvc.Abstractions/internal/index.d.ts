@@ -46,6 +46,8 @@ export interface IActionInvokerProvider$instance {
 export type IActionInvokerProvider = IActionInvokerProvider$instance;
 
 export interface ActionDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor: never;
+
     get ActionConstraints(): IList_1<IActionConstraintMetadata> | undefined;
     set ActionConstraints(value: IList_1<IActionConstraintMetadata> | undefined);
     get AttributeRouteInfo(): AttributeRouteInfo | undefined;
@@ -70,6 +72,8 @@ export const ActionDescriptor: {
 export type ActionDescriptor = ActionDescriptor$instance;
 
 export interface ActionDescriptorProviderContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptorProviderContext: never;
+
     readonly Results: IList_1<ActionDescriptor>;
 }
 
@@ -82,6 +86,8 @@ export const ActionDescriptorProviderContext: {
 export type ActionDescriptorProviderContext = ActionDescriptorProviderContext$instance;
 
 export interface ActionInvokerProviderContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionInvokerProviderContext: never;
+
     readonly ActionContext: ActionContext;
     get Result(): IActionInvoker | undefined;
     set Result(value: IActionInvoker | undefined);
@@ -96,6 +102,8 @@ export const ActionInvokerProviderContext: {
 export type ActionInvokerProviderContext = ActionInvokerProviderContext$instance;
 
 export interface ParameterDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ParameterDescriptor: never;
+
     get BindingInfo(): BindingInfo | undefined;
     set BindingInfo(value: BindingInfo | undefined);
     Name: string;

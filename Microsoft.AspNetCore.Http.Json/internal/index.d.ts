@@ -11,6 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JsonOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Json_JsonOptions: never;
+
     readonly SerializerOptions: JsonSerializerOptions;
 }
 

@@ -52,6 +52,8 @@ export interface ITicketStore$instance {
 export type ITicketStore = ITicketStore$instance;
 
 export interface ChunkingCookieManager$instance extends ICookieManager$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_ChunkingCookieManager: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ICookieManager: never;
 
     ChunkSize: Nullable_1<System_Internal.Int32>;
@@ -76,6 +78,8 @@ export type ChunkingCookieManager = ChunkingCookieManager$instance & __ChunkingC
 
 
 export interface CookieAuthenticationEvents$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationEvents: never;
+
     OnCheckSlidingExpiration: Func_2<CookieSlidingExpirationContext, Task>;
     OnRedirectToAccessDenied: Func_2<RedirectContext_1<CookieAuthenticationOptions>, Task>;
     OnRedirectToLogin: Func_2<RedirectContext_1<CookieAuthenticationOptions>, Task>;
@@ -105,6 +109,8 @@ export const CookieAuthenticationEvents: {
 export type CookieAuthenticationEvents = CookieAuthenticationEvents$instance;
 
 export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions>, IAuthenticationSignOutHandler {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationHandler: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
@@ -141,6 +147,8 @@ export type CookieAuthenticationHandler = CookieAuthenticationHandler$instance &
 
 
 export interface CookieAuthenticationOptions$instance extends AuthenticationSchemeOptions {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationOptions: never;
+
     AccessDeniedPath: PathString;
     Cookie: CookieBuilder;
     CookieManager: ICookieManager;
@@ -166,6 +174,8 @@ export const CookieAuthenticationOptions: {
 export type CookieAuthenticationOptions = CookieAuthenticationOptions$instance;
 
 export interface CookieSignedInContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSignedInContext: never;
+
 }
 
 
@@ -177,6 +187,8 @@ export const CookieSignedInContext: {
 export type CookieSignedInContext = CookieSignedInContext$instance;
 
 export interface CookieSigningInContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSigningInContext: never;
+
     CookieOptions: CookieOptions;
 }
 
@@ -189,6 +201,8 @@ export const CookieSigningInContext: {
 export type CookieSigningInContext = CookieSigningInContext$instance;
 
 export interface CookieSigningOutContext$instance extends PropertiesContext_1<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSigningOutContext: never;
+
     CookieOptions: CookieOptions;
 }
 
@@ -201,6 +215,8 @@ export const CookieSigningOutContext: {
 export type CookieSigningOutContext = CookieSigningOutContext$instance;
 
 export interface CookieSlidingExpirationContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieSlidingExpirationContext: never;
+
     readonly ElapsedTime: TimeSpan;
     readonly RemainingTime: TimeSpan;
     ShouldRenew: boolean;
@@ -215,6 +231,8 @@ export const CookieSlidingExpirationContext: {
 export type CookieSlidingExpirationContext = CookieSlidingExpirationContext$instance;
 
 export interface CookieValidatePrincipalContext$instance extends PrincipalContext_1<CookieAuthenticationOptions> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieValidatePrincipalContext: never;
+
     ShouldRenew: boolean;
     RejectPrincipal(): void;
     ReplacePrincipal(principal: ClaimsPrincipal): void;
@@ -229,6 +247,8 @@ export const CookieValidatePrincipalContext: {
 export type CookieValidatePrincipalContext = CookieValidatePrincipalContext$instance;
 
 export interface PostConfigureCookieAuthenticationOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_PostConfigureCookieAuthenticationOptions: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
     PostConfigure(name: string, options: CookieAuthenticationOptions): void;

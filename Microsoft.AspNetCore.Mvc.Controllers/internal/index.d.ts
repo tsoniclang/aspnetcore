@@ -68,6 +68,8 @@ export interface IControllerFactoryProvider$instance {
 export type IControllerFactoryProvider = IControllerFactoryProvider$instance;
 
 export interface ControllerActionDescriptor$instance extends ActionDescriptor {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerActionDescriptor: never;
+
     ActionName: string;
     ControllerName: string;
     ControllerTypeInfo: TypeInfo;
@@ -85,6 +87,8 @@ export const ControllerActionDescriptor: {
 export type ControllerActionDescriptor = ControllerActionDescriptor$instance;
 
 export interface ControllerActivatorProvider$instance extends IControllerActivatorProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerActivatorProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider: never;
 
     CreateActivator(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, unknown>;
@@ -106,6 +110,8 @@ export type ControllerActivatorProvider = ControllerActivatorProvider$instance &
 
 
 export interface ControllerBoundPropertyDescriptor$instance extends ParameterDescriptor {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerBoundPropertyDescriptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor: never;
 
     PropertyInfo: PropertyInfo;
@@ -125,6 +131,8 @@ export type ControllerBoundPropertyDescriptor = ControllerBoundPropertyDescripto
 
 
 export interface ControllerFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerFeature: never;
+
     readonly Controllers: IList_1<TypeInfo>;
 }
 
@@ -136,7 +144,9 @@ export const ControllerFeature: {
 
 export type ControllerFeature = ControllerFeature$instance;
 
-export interface ControllerFeatureProvider$instance extends IApplicationFeatureProvider {
+export interface ControllerFeatureProvider$instance extends IApplicationFeatureProvider, Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<ControllerFeature> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerFeatureProvider: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1: never;
 
@@ -158,6 +168,8 @@ export type ControllerFeatureProvider = ControllerFeatureProvider$instance & __C
 
 
 export interface ControllerParameterDescriptor$instance extends ParameterDescriptor {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerParameterDescriptor: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor: never;
 
     ParameterInfo: ParameterInfo;
@@ -177,6 +189,8 @@ export type ControllerParameterDescriptor = ControllerParameterDescriptor$instan
 
 
 export interface ServiceBasedControllerActivator$instance extends IControllerActivator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ServiceBasedControllerActivator: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator: never;
 
     Create(actionContext: ControllerContext): unknown;

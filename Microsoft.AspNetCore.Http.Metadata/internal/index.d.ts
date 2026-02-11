@@ -221,6 +221,8 @@ export interface ITagsMetadata$instance {
 export type ITagsMetadata = ITagsMetadata$instance;
 
 export interface AcceptsMetadata$instance extends IAcceptsMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Metadata_AcceptsMetadata: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
 
     readonly ContentTypes: IReadOnlyList_1<System_Internal.String>;
@@ -243,6 +245,8 @@ export type AcceptsMetadata = AcceptsMetadata$instance & __AcceptsMetadata$views
 
 
 export interface FormMappingOptionsMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Metadata_FormMappingOptionsMetadata: never;
+
     readonly MaxCollectionSize: Nullable_1<System_Internal.Int32>;
     readonly MaxKeySize: Nullable_1<System_Internal.Int32>;
     readonly MaxRecursionDepth: Nullable_1<System_Internal.Int32>;

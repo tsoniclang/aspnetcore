@@ -103,6 +103,8 @@ export interface IPersistentComponentStateStore$instance {
 export type IPersistentComponentStateStore = IPersistentComponentStateStore$instance;
 
 export interface CascadingParameterInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingParameterInfo: never;
+
     readonly Attribute: CascadingParameterAttributeBase;
     readonly PropertyName: string;
     readonly PropertyType: Type;
@@ -117,6 +119,8 @@ export const CascadingParameterInfo: {
 export type CascadingParameterInfo = CascadingParameterInfo$instance;
 
 export interface ElementReference$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ElementReference: never;
+
     readonly Context: ElementReferenceContext | undefined;
     readonly Id: string;
 }
@@ -131,6 +135,8 @@ export const ElementReference: {
 export type ElementReference = ElementReference$instance;
 
 export interface EventCallback$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_EventCallback: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IEventCallback: never;
 
     readonly HasDelegate: boolean;
@@ -151,6 +157,8 @@ export const EventCallback: {
 export type EventCallback = EventCallback$instance;
 
 export interface EventCallback_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_EventCallback_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IEventCallback: never;
 
     readonly HasDelegate: boolean;
@@ -170,6 +178,8 @@ export const EventCallback_1: {
 export type EventCallback_1<TValue> = EventCallback_1$instance<TValue>;
 
 export interface EventCallbackWorkItem$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_EventCallbackWorkItem: never;
+
     InvokeAsync(arg: unknown): Task;
 }
 
@@ -183,6 +193,8 @@ export const EventCallbackWorkItem: {
 export type EventCallbackWorkItem = EventCallbackWorkItem$instance;
 
 export interface MarkupString$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_MarkupString: never;
+
     readonly Value: string;
     ToString(): string;
 }
@@ -196,6 +208,8 @@ export const MarkupString: {
 export type MarkupString = MarkupString$instance;
 
 export interface NavigationOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_NavigationOptions: never;
+
     ForceLoad: boolean;
     get HistoryEntryState(): string | undefined;
     set HistoryEntryState(value: string | undefined);
@@ -211,6 +225,8 @@ export const NavigationOptions: {
 export type NavigationOptions = NavigationOptions$instance;
 
 export interface ParameterValue$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ParameterValue: never;
+
     readonly Cascading: boolean;
     readonly Name: string;
     readonly Value: unknown;
@@ -225,6 +241,8 @@ export const ParameterValue: {
 export type ParameterValue = ParameterValue$instance;
 
 export interface ParameterView$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ParameterView: never;
+
     GetEnumerator(): ParameterView_Enumerator;
     GetValueOrDefault<TValue>(parameterName: string): TValue | undefined;
     GetValueOrDefault<TValue>(parameterName: string, defaultValue: TValue): TValue;
@@ -244,6 +262,8 @@ export const ParameterView: {
 export type ParameterView = ParameterView$instance;
 
 export interface ParameterView_Enumerator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ParameterView_Enumerator: never;
+
     readonly Current: ParameterValue;
     MoveNext(): boolean;
 }
@@ -257,6 +277,8 @@ export const ParameterView_Enumerator: {
 export type ParameterView_Enumerator = ParameterView_Enumerator$instance;
 
 export interface PersistingComponentStateSubscription$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_PersistingComponentStateSubscription: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -271,6 +293,8 @@ export const PersistingComponentStateSubscription: {
 export type PersistingComponentStateSubscription = PersistingComponentStateSubscription$instance;
 
 export interface RenderHandle$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderHandle: never;
+
     readonly Assets: ResourceAssetCollection;
     readonly Dispatcher: Dispatcher;
     readonly IsInitialized: boolean;
@@ -290,6 +314,8 @@ export const RenderHandle: {
 export type RenderHandle = RenderHandle$instance;
 
 export interface RestoreOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RestoreOptions: never;
+
     AllowUpdates: boolean;
     RestoreBehavior: RestoreBehavior;
 }
@@ -303,6 +329,8 @@ export const RestoreOptions: {
 export type RestoreOptions = RestoreOptions$instance;
 
 export interface RestoringComponentStateSubscription$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RestoringComponentStateSubscription: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -317,6 +345,8 @@ export const RestoringComponentStateSubscription: {
 export type RestoringComponentStateSubscription = RestoringComponentStateSubscription$instance;
 
 export interface BindElementAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_BindElementAttribute: never;
+
     readonly ChangeAttribute: string;
     readonly Element: string;
     readonly Suffix: string | undefined;
@@ -332,6 +362,8 @@ export const BindElementAttribute: {
 export type BindElementAttribute = BindElementAttribute$instance;
 
 export interface BindInputElementAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_BindInputElementAttribute: never;
+
     readonly ChangeAttribute: string | undefined;
     readonly Format: string | undefined;
     readonly IsInvariantCulture: boolean;
@@ -349,6 +381,8 @@ export const BindInputElementAttribute: {
 export type BindInputElementAttribute = BindInputElementAttribute$instance;
 
 export interface CascadingParameterAttribute$instance extends CascadingParameterAttributeBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingParameterAttribute: never;
+
     get Name(): string | undefined;
     set Name(value: string | undefined);
 }
@@ -362,6 +396,8 @@ export const CascadingParameterAttribute: {
 export type CascadingParameterAttribute = CascadingParameterAttribute$instance;
 
 export interface CascadingParameterAttributeBase$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingParameterAttributeBase: never;
+
 }
 
 
@@ -372,6 +408,8 @@ export const CascadingParameterAttributeBase: (abstract new() => CascadingParame
 export type CascadingParameterAttributeBase = CascadingParameterAttributeBase$instance;
 
 export interface CascadingTypeParameterAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingTypeParameterAttribute: never;
+
     readonly Name: string;
 }
 
@@ -384,6 +422,8 @@ export const CascadingTypeParameterAttribute: {
 export type CascadingTypeParameterAttribute = CascadingTypeParameterAttribute$instance;
 
 export interface CascadingValue_1$instance<TValue> extends IComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingValue_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
@@ -411,6 +451,8 @@ export type CascadingValue_1<TValue> = CascadingValue_1$instance<TValue> & __Cas
 
 
 export interface CascadingValueSource_1$instance<TValue> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_CascadingValueSource_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_ICascadingValueSupplier: never;
 
     NotifyChangedAsync(): Task;
@@ -429,6 +471,8 @@ export const CascadingValueSource_1: {
 export type CascadingValueSource_1<TValue> = CascadingValueSource_1$instance<TValue>;
 
 export interface ChangeEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ChangeEventArgs: never;
+
     get Value(): unknown | undefined;
     set Value(value: unknown | undefined);
 }
@@ -442,6 +486,8 @@ export const ChangeEventArgs: {
 export type ChangeEventArgs = ChangeEventArgs$instance;
 
 export interface ComponentBase$instance extends IComponent$instance, IHandleEvent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ComponentBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -472,6 +518,8 @@ export type ComponentBase = ComponentBase$instance & __ComponentBase$views;
 
 
 export interface Dispatcher$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Dispatcher: never;
+
     AssertAccess(): void;
     CheckAccess(): boolean;
     InvokeAsync(workItem: Action): Task;
@@ -488,6 +536,8 @@ export const Dispatcher: (abstract new() => Dispatcher) & {
 export type Dispatcher = Dispatcher$instance;
 
 export interface DynamicComponent$instance extends IComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_DynamicComponent: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
     get Instance(): unknown | undefined;
@@ -513,6 +563,8 @@ export type DynamicComponent = DynamicComponent$instance & __DynamicComponent$vi
 
 
 export interface EditorRequiredAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_EditorRequiredAttribute: never;
+
 }
 
 
@@ -524,6 +576,8 @@ export const EditorRequiredAttribute: {
 export type EditorRequiredAttribute = EditorRequiredAttribute$instance;
 
 export interface ElementReferenceContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ElementReferenceContext: never;
+
 }
 
 
@@ -534,6 +588,8 @@ export const ElementReferenceContext: (abstract new() => ElementReferenceContext
 export type ElementReferenceContext = ElementReferenceContext$instance;
 
 export interface ErrorBoundaryBase$instance extends ComponentBase$instance, IHandleEvent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ErrorBoundaryBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IErrorBoundary: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
@@ -568,6 +624,8 @@ export type ErrorBoundaryBase = ErrorBoundaryBase$instance & __ErrorBoundaryBase
 
 
 export interface EventCallbackFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_EventCallbackFactory: never;
+
     Create(receiver: unknown, callback: EventCallback): EventCallback;
     Create(receiver: unknown, callback: Action): EventCallback;
     Create(receiver: unknown, callback: Action_1<unknown>): EventCallback;
@@ -592,6 +650,8 @@ export const EventCallbackFactory: {
 export type EventCallbackFactory = EventCallbackFactory$instance;
 
 export interface EventHandlerAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_EventHandlerAttribute: never;
+
     readonly AttributeName: string;
     readonly EnablePreventDefault: boolean;
     readonly EnableStopPropagation: boolean;
@@ -608,6 +668,8 @@ export const EventHandlerAttribute: {
 export type EventHandlerAttribute = EventHandlerAttribute$instance;
 
 export interface ExcludeFromInteractiveRoutingAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ExcludeFromInteractiveRoutingAttribute: never;
+
 }
 
 
@@ -619,6 +681,8 @@ export const ExcludeFromInteractiveRoutingAttribute: {
 export type ExcludeFromInteractiveRoutingAttribute = ExcludeFromInteractiveRoutingAttribute$instance;
 
 export interface ImportMap$instance extends IComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ImportMap: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
     get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
@@ -643,6 +707,8 @@ export type ImportMap = ImportMap$instance & __ImportMap$views;
 
 
 export interface ImportMapDefinition$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ImportMapDefinition: never;
+
     readonly Imports: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined;
     readonly Integrity: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined;
     readonly Scopes: IReadOnlyDictionary_2<System_Internal.String, IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>> | undefined;
@@ -660,6 +726,8 @@ export const ImportMapDefinition: {
 export type ImportMapDefinition = ImportMapDefinition$instance;
 
 export interface InjectAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_InjectAttribute: never;
+
     get Key(): unknown | undefined;
     set Key(value: unknown | undefined);
 }
@@ -673,6 +741,8 @@ export const InjectAttribute: {
 export type InjectAttribute = InjectAttribute$instance;
 
 export interface LayoutAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_LayoutAttribute: never;
+
     LayoutType: Type;
 }
 
@@ -685,6 +755,8 @@ export const LayoutAttribute: {
 export type LayoutAttribute = LayoutAttribute$instance;
 
 export interface LayoutComponentBase$instance extends ComponentBase$instance, IHandleEvent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_LayoutComponentBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -713,6 +785,8 @@ export type LayoutComponentBase = LayoutComponentBase$instance & __LayoutCompone
 
 
 export interface LayoutView$instance extends IComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_LayoutView: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
     ChildContent: RenderFragment;
@@ -735,6 +809,8 @@ export type LayoutView = LayoutView$instance & __LayoutView$views;
 
 
 export interface LocationChangeException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_LocationChangeException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -748,6 +824,8 @@ export const LocationChangeException: {
 export type LocationChangeException = LocationChangeException$instance;
 
 export interface NavigationException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_NavigationException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly Location: string;
@@ -762,6 +840,8 @@ export const NavigationException: {
 export type NavigationException = NavigationException$instance;
 
 export interface NavigationManager$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_NavigationManager: never;
+
     BaseUri: string;
     get HistoryEntryState(): string | undefined;
     set HistoryEntryState(value: string | undefined);
@@ -789,6 +869,8 @@ export const NavigationManager: (abstract new() => NavigationManager) & {
 export type NavigationManager = NavigationManager$instance;
 
 export interface OwningComponentBase$instance extends ComponentBase$instance, IHandleEvent$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_OwningComponentBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -819,6 +901,8 @@ export type OwningComponentBase = OwningComponentBase$instance & __OwningCompone
 
 
 export interface OwningComponentBase_1$instance<TService> extends OwningComponentBase$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_OwningComponentBase_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
@@ -847,6 +931,8 @@ export type OwningComponentBase_1<TService> = OwningComponentBase_1$instance<TSe
 
 
 export interface ParameterAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ParameterAttribute: never;
+
     CaptureUnmatchedValues: boolean;
 }
 
@@ -859,6 +945,8 @@ export const ParameterAttribute: {
 export type ParameterAttribute = ParameterAttribute$instance;
 
 export interface PersistentComponentState$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_PersistentComponentState: never;
+
     PersistAsJson<TValue>(key: string, instance: TValue): void;
     RegisterOnPersisting(callback: Func_1<Task>): PersistingComponentStateSubscription;
     RegisterOnPersisting(callback: Func_1<Task>, renderMode: IComponentRenderMode): PersistingComponentStateSubscription;
@@ -874,6 +962,8 @@ export const PersistentComponentState: {
 export type PersistentComponentState = PersistentComponentState$instance;
 
 export interface PersistentComponentStateSerializer_1$instance<T> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_PersistentComponentStateSerializer_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IPersistentComponentStateSerializer: never;
 
     Persist(value: T, writer: IBufferWriter_1<System_Internal.Byte>): void;
@@ -888,6 +978,8 @@ export const PersistentComponentStateSerializer_1: (abstract new<T>() => Persist
 export type PersistentComponentStateSerializer_1<T> = PersistentComponentStateSerializer_1$instance<T>;
 
 export interface PersistentStateAttribute$instance extends CascadingParameterAttributeBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_PersistentStateAttribute: never;
+
     AllowUpdates: boolean;
     RestoreBehavior: RestoreBehavior;
 }
@@ -901,6 +993,8 @@ export const PersistentStateAttribute: {
 export type PersistentStateAttribute = PersistentStateAttribute$instance;
 
 export interface RendererInfo$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RendererInfo: never;
+
     readonly IsInteractive: boolean;
     readonly Name: string;
 }
@@ -914,6 +1008,8 @@ export const RendererInfo: {
 export type RendererInfo = RendererInfo$instance;
 
 export interface RenderModeAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderModeAttribute: never;
+
     readonly Mode: IComponentRenderMode;
 }
 
@@ -925,6 +1021,8 @@ export const RenderModeAttribute: (abstract new() => RenderModeAttribute) & {
 export type RenderModeAttribute = RenderModeAttribute$instance;
 
 export interface ResourceAsset$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ResourceAsset: never;
+
     readonly Properties: IReadOnlyList_1<ResourceAssetProperty> | undefined;
     readonly Url: string;
 }
@@ -938,12 +1036,13 @@ export const ResourceAsset: {
 export type ResourceAsset = ResourceAsset$instance;
 
 export interface ResourceAssetCollection$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ResourceAssetCollection: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly [key: string]: string;
     IsContentSpecificUrl(path: string): boolean;
 }
 
@@ -954,9 +1053,11 @@ export const ResourceAssetCollection: {
 };
 
 
-export type ResourceAssetCollection = ResourceAssetCollection$instance;
+export type ResourceAssetCollection = ResourceAssetCollection$instance & { readonly [key: string]: string; };
 
 export interface ResourceAssetProperty$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ResourceAssetProperty: never;
+
     readonly Name: string;
     readonly Value: string;
 }
@@ -970,6 +1071,8 @@ export const ResourceAssetProperty: {
 export type ResourceAssetProperty = ResourceAssetProperty$instance;
 
 export interface ResourcePreloader$instance extends IComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_ResourcePreloader: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
 }
@@ -988,6 +1091,8 @@ export type ResourcePreloader = ResourcePreloader$instance & __ResourcePreloader
 
 
 export interface RestoreContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RestoreContext: never;
+
 }
 
 
@@ -1001,6 +1106,8 @@ export const RestoreContext: {
 export type RestoreContext = RestoreContext$instance;
 
 export interface RouteAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RouteAttribute: never;
+
     readonly Template: string;
 }
 
@@ -1013,6 +1120,8 @@ export const RouteAttribute: {
 export type RouteAttribute = RouteAttribute$instance;
 
 export interface RouteData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RouteData: never;
+
     readonly PageType: Type;
     readonly RouteValues: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
     get Template(): string | undefined;
@@ -1028,6 +1137,8 @@ export const RouteData: {
 export type RouteData = RouteData$instance;
 
 export interface RouteView$instance extends IComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_RouteView: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
     DefaultLayout: Type;
@@ -1051,6 +1162,8 @@ export type RouteView = RouteView$instance & __RouteView$views;
 
 
 export interface StreamRenderingAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_StreamRenderingAttribute: never;
+
     readonly Enabled: boolean;
 }
 
@@ -1063,6 +1176,8 @@ export const StreamRenderingAttribute: {
 export type StreamRenderingAttribute = StreamRenderingAttribute$instance;
 
 export interface SupplyParameterFromFormAttribute$instance extends CascadingParameterAttributeBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_SupplyParameterFromFormAttribute: never;
+
     get FormName(): string | undefined;
     set FormName(value: string | undefined);
     get Name(): string | undefined;
@@ -1078,6 +1193,8 @@ export const SupplyParameterFromFormAttribute: {
 export type SupplyParameterFromFormAttribute = SupplyParameterFromFormAttribute$instance;
 
 export interface SupplyParameterFromQueryAttribute$instance extends CascadingParameterAttributeBase {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_SupplyParameterFromQueryAttribute: never;
+
     get Name(): string | undefined;
     set Name(value: string | undefined);
 }
@@ -1091,6 +1208,8 @@ export const SupplyParameterFromQueryAttribute: {
 export type SupplyParameterFromQueryAttribute = SupplyParameterFromQueryAttribute$instance;
 
 export interface WebElementReferenceContext$instance extends ElementReferenceContext {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_WebElementReferenceContext: never;
+
 }
 
 

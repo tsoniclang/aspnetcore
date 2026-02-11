@@ -11,6 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface TempDataSerializer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_Infrastructure_TempDataSerializer: never;
+
     CanSerializeType(type: Type): boolean;
     Deserialize(unprotectedData: byte[]): IDictionary_2<System_Internal.String, unknown>;
     Serialize(values: IDictionary_2<System_Internal.String, unknown>): byte[];

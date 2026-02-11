@@ -149,6 +149,8 @@ export interface IViewComponentResult$instance {
 export type IViewComponentResult = IViewComponentResult$instance;
 
 export interface AcceptedAtActionResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AcceptedAtActionResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -179,6 +181,8 @@ export type AcceptedAtActionResult = AcceptedAtActionResult$instance & __Accepte
 
 
 export interface AcceptedAtRouteResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AcceptedAtRouteResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -208,6 +212,8 @@ export type AcceptedAtRouteResult = AcceptedAtRouteResult$instance & __AcceptedA
 
 
 export interface AcceptedResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AcceptedResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -234,6 +240,8 @@ export type AcceptedResult = AcceptedResult$instance & __AcceptedResult$views;
 
 
 export interface AcceptVerbsAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AcceptVerbsAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -261,6 +269,8 @@ export type AcceptVerbsAttribute = AcceptVerbsAttribute$instance & __AcceptVerbs
 
 
 export interface ActionContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContext: never;
+
     ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
     HttpContext: HttpContext;
     readonly ModelState: ModelStateDictionary;
@@ -279,6 +289,8 @@ export const ActionContext: {
 export type ActionContext = ActionContext$instance;
 
 export interface ActionContextAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionContextAttribute: never;
+
 }
 
 
@@ -290,6 +302,8 @@ export const ActionContextAttribute: {
 export type ActionContextAttribute = ActionContextAttribute$instance;
 
 export interface ActionNameAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionNameAttribute: never;
+
     readonly Name: string;
 }
 
@@ -302,6 +316,8 @@ export const ActionNameAttribute: {
 export type ActionNameAttribute = ActionNameAttribute$instance;
 
 export interface ActionResult$instance extends IActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     ExecuteResult(context: ActionContext): void;
@@ -321,6 +337,8 @@ export type ActionResult = ActionResult$instance & __ActionResult$views;
 
 
 export interface ActionResult_1$instance<TValue> extends Microsoft_AspNetCore_Mvc_Infrastructure_Internal.IConvertToActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionResult_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult: never;
 
     readonly Result: ActionResult | undefined;
@@ -342,6 +360,8 @@ export type ActionResult_1<TValue> = ActionResult_1$instance<TValue> & __ActionR
 
 
 export interface AntiforgeryValidationFailedResult$instance extends BadRequestResult$instance, IAntiforgeryValidationFailedResult {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AntiforgeryValidationFailedResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
@@ -365,6 +385,8 @@ export type AntiforgeryValidationFailedResult = AntiforgeryValidationFailedResul
 
 
 export interface ApiBehaviorOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiBehaviorOptions: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -386,6 +408,8 @@ export const ApiBehaviorOptions: {
 export type ApiBehaviorOptions = ApiBehaviorOptions$instance;
 
 export interface ApiControllerAttribute$instance extends ControllerAttribute, IApiBehaviorMetadata, IFilterMetadata, IDisableCookieRedirectMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiControllerAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IDisableCookieRedirectMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata: never;
@@ -401,6 +425,8 @@ export const ApiControllerAttribute: {
 export type ApiControllerAttribute = ApiControllerAttribute$instance;
 
 export interface ApiConventionMethodAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiConventionMethodAttribute: never;
+
     readonly ConventionType: Type;
 }
 
@@ -413,6 +439,8 @@ export const ApiConventionMethodAttribute: {
 export type ApiConventionMethodAttribute = ApiConventionMethodAttribute$instance;
 
 export interface ApiConventionTypeAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiConventionTypeAttribute: never;
+
     readonly ConventionType: Type;
 }
 
@@ -425,6 +453,8 @@ export const ApiConventionTypeAttribute: {
 export type ApiConventionTypeAttribute = ApiConventionTypeAttribute$instance;
 
 export interface ApiDescriptionActionData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiDescriptionActionData: never;
+
     get GroupName(): string | undefined;
     set GroupName(value: string | undefined);
 }
@@ -438,6 +468,8 @@ export const ApiDescriptionActionData: {
 export type ApiDescriptionActionData = ApiDescriptionActionData$instance;
 
 export interface ApiExplorerSettingsAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorerSettingsAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider: never;
 
@@ -461,6 +493,8 @@ export type ApiExplorerSettingsAttribute = ApiExplorerSettingsAttribute$instance
 
 
 export interface AreaAttribute$instance extends RouteValueAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IRouteValueProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AreaAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider: never;
 
 }
@@ -479,6 +513,8 @@ export type AreaAttribute = AreaAttribute$instance & __AreaAttribute$views;
 
 
 export interface AutoValidateAntiforgeryTokenAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_AutoValidateAntiforgeryTokenAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -503,6 +539,8 @@ export type AutoValidateAntiforgeryTokenAttribute = AutoValidateAntiforgeryToken
 
 
 export interface BadRequestObjectResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_BadRequestObjectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -525,6 +563,8 @@ export type BadRequestObjectResult = BadRequestObjectResult$instance & __BadRequ
 
 
 export interface BadRequestResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_BadRequestResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -547,6 +587,8 @@ export type BadRequestResult = BadRequestResult$instance & __BadRequestResult$vi
 
 
 export interface BindAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelNameProvider$instance, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IPropertyFilterProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_BindAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IPropertyFilterProvider: never;
 
@@ -571,6 +613,8 @@ export type BindAttribute = BindAttribute$instance & __BindAttribute$views;
 
 
 export interface BindPropertiesAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_BindPropertiesAttribute: never;
+
     SupportsGet: boolean;
 }
 
@@ -583,6 +627,8 @@ export const BindPropertiesAttribute: {
 export type BindPropertiesAttribute = BindPropertiesAttribute$instance;
 
 export interface BindPropertyAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IRequestPredicateProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_BindPropertyAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBinderTypeProviderMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
@@ -613,6 +659,8 @@ export type BindPropertyAttribute = BindPropertyAttribute$instance & __BindPrope
 
 
 export interface CacheProfile$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_CacheProfile: never;
+
     Duration: Nullable_1<System_Internal.Int32>;
     Location: Nullable_1<ResponseCacheLocation>;
     NoStore: Nullable_1<System_Internal.Boolean>;
@@ -631,6 +679,8 @@ export const CacheProfile: {
 export type CacheProfile = CacheProfile$instance;
 
 export interface ChallengeResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ChallengeResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     AuthenticationSchemes: IList_1<System_Internal.String>;
@@ -658,6 +708,8 @@ export type ChallengeResult = ChallengeResult$instance & __ChallengeResult$views
 
 
 export interface ClientErrorData$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ClientErrorData: never;
+
     get Link(): string | undefined;
     set Link(value: string | undefined);
     get Title(): string | undefined;
@@ -673,6 +725,8 @@ export const ClientErrorData: {
 export type ClientErrorData = ClientErrorData$instance;
 
 export interface ConflictObjectResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ConflictObjectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -695,6 +749,8 @@ export type ConflictObjectResult = ConflictObjectResult$instance & __ConflictObj
 
 
 export interface ConflictResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ConflictResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -717,6 +773,8 @@ export type ConflictResult = ConflictResult$instance & __ConflictResult$views;
 
 
 export interface ConsumesAttribute$instance extends Attribute, IFilterMetadata, IActionConstraintMetadata, Microsoft_AspNetCore_Mvc_ActionConstraints_Internal.IActionConstraint$instance, Microsoft_AspNetCore_Mvc_ApiExplorer_Internal.IApiRequestMetadataProvider$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResourceFilter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ConsumesAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata: never;
@@ -752,6 +810,8 @@ export type ConsumesAttribute = ConsumesAttribute$instance & __ConsumesAttribute
 
 
 export interface ContentResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ContentResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -778,6 +838,8 @@ export type ContentResult = ContentResult$instance & __ContentResult$views;
 
 
 export interface Controller$instance extends ControllerBase, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IActionFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncActionFilter$instance, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controller: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IActionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncActionFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -821,6 +883,8 @@ export type Controller = Controller$instance & __Controller$views;
 
 
 export interface ControllerAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ControllerAttribute: never;
+
 }
 
 
@@ -832,6 +896,8 @@ export const ControllerAttribute: {
 export type ControllerAttribute = ControllerAttribute$instance;
 
 export interface ControllerBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ControllerBase: never;
+
     ControllerContext: ControllerContext;
     readonly HttpContext: HttpContext;
     MetadataProvider: IModelMetadataProvider;
@@ -1017,6 +1083,8 @@ export const ControllerBase: (abstract new() => ControllerBase) & {
 export type ControllerBase = ControllerBase$instance;
 
 export interface ControllerContext$instance extends ActionContext {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ControllerContext: never;
+
     ActionDescriptor: ActionDescriptor | ControllerActionDescriptor;
     ValueProviderFactories: IList_1<IValueProviderFactory>;
 }
@@ -1031,6 +1099,8 @@ export const ControllerContext: {
 export type ControllerContext = ControllerContext$instance;
 
 export interface ControllerContextAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ControllerContextAttribute: never;
+
 }
 
 
@@ -1042,6 +1112,8 @@ export const ControllerContextAttribute: {
 export type ControllerContextAttribute = ControllerContextAttribute$instance;
 
 export interface CookieTempDataProviderOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_CookieTempDataProviderOptions: never;
+
     Cookie: CookieBuilder;
 }
 
@@ -1054,6 +1126,8 @@ export const CookieTempDataProviderOptions: {
 export type CookieTempDataProviderOptions = CookieTempDataProviderOptions$instance;
 
 export interface CreatedAtActionResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_CreatedAtActionResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -1084,6 +1158,8 @@ export type CreatedAtActionResult = CreatedAtActionResult$instance & __CreatedAt
 
 
 export interface CreatedAtRouteResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_CreatedAtRouteResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -1113,6 +1189,8 @@ export type CreatedAtRouteResult = CreatedAtRouteResult$instance & __CreatedAtRo
 
 
 export interface CreatedResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_CreatedResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -1139,6 +1217,8 @@ export type CreatedResult = CreatedResult$instance & __CreatedResult$views;
 
 
 export interface DisableRequestSizeLimitAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.IRequestSizeLimitMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DisableRequestSizeLimitAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IRequestSizeLimitMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -1165,6 +1245,8 @@ export type DisableRequestSizeLimitAttribute = DisableRequestSizeLimitAttribute$
 
 
 export interface EmptyResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_EmptyResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     ExecuteResult(context: ActionContext): void;
@@ -1185,6 +1267,8 @@ export type EmptyResult = EmptyResult$instance & __EmptyResult$views;
 
 
 export interface FileContentResult$instance extends FileResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FileContentResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     FileContents: byte[];
@@ -1206,6 +1290,8 @@ export type FileContentResult = FileContentResult$instance & __FileContentResult
 
 
 export interface FileResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FileResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     readonly ContentType: string;
@@ -1230,6 +1316,8 @@ export type FileResult = FileResult$instance & __FileResult$views;
 
 
 export interface FileStreamResult$instance extends FileResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FileStreamResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     FileStream: Stream;
@@ -1251,6 +1339,8 @@ export type FileStreamResult = FileStreamResult$instance & __FileStreamResult$vi
 
 
 export interface ForbidResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ForbidResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     AuthenticationSchemes: IList_1<System_Internal.String>;
@@ -1278,6 +1368,8 @@ export type ForbidResult = ForbidResult$instance & __ForbidResult$views;
 
 
 export interface FormatFilterAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FormatFilterAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
@@ -1299,6 +1391,8 @@ export type FormatFilterAttribute = FormatFilterAttribute$instance & __FormatFil
 
 
 export interface FromBodyAttribute$instance extends Attribute, Microsoft_AspNetCore_Http_Metadata_Internal.IFromBodyMetadata$instance, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBindingSourceMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FromBodyAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromBodyMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IConfigureEmptyBodyBehavior: never;
@@ -1322,6 +1416,8 @@ export type FromBodyAttribute = FromBodyAttribute$instance & __FromBodyAttribute
 
 
 export interface FromFormAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBindingSourceMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FromFormAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromFormMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
@@ -1347,6 +1443,8 @@ export type FromFormAttribute = FromFormAttribute$instance & __FromFormAttribute
 
 
 export interface FromHeaderAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBindingSourceMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FromHeaderAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromHeaderMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
@@ -1372,6 +1470,8 @@ export type FromHeaderAttribute = FromHeaderAttribute$instance & __FromHeaderAtt
 
 
 export interface FromQueryAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBindingSourceMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FromQueryAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromQueryMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
@@ -1397,6 +1497,8 @@ export type FromQueryAttribute = FromQueryAttribute$instance & __FromQueryAttrib
 
 
 export interface FromRouteAttribute$instance extends Attribute, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBindingSourceMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FromRouteAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromRouteMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
@@ -1422,6 +1524,8 @@ export type FromRouteAttribute = FromRouteAttribute$instance & __FromRouteAttrib
 
 
 export interface FromServicesAttribute$instance extends Attribute, IFromServiceMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.IFromServiceMetadata$instance, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IBindingSourceMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_FromServicesAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromServiceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
 
@@ -1442,6 +1546,8 @@ export type FromServicesAttribute = FromServicesAttribute$instance & __FromServi
 
 
 export interface HiddenInputAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HiddenInputAttribute: never;
+
     DisplayValue: boolean;
 }
 
@@ -1454,6 +1560,8 @@ export const HiddenInputAttribute: {
 export type HiddenInputAttribute = HiddenInputAttribute$instance;
 
 export interface HttpDeleteAttribute$instance extends HttpMethodAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HttpDeleteAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -1475,6 +1583,8 @@ export type HttpDeleteAttribute = HttpDeleteAttribute$instance & __HttpDeleteAtt
 
 
 export interface HttpGetAttribute$instance extends HttpMethodAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HttpGetAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -1496,6 +1606,8 @@ export type HttpGetAttribute = HttpGetAttribute$instance & __HttpGetAttribute$vi
 
 
 export interface HttpHeadAttribute$instance extends HttpMethodAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HttpHeadAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -1517,6 +1629,8 @@ export type HttpHeadAttribute = HttpHeadAttribute$instance & __HttpHeadAttribute
 
 
 export interface HttpOptionsAttribute$instance extends HttpMethodAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HttpOptionsAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -1538,6 +1652,8 @@ export type HttpOptionsAttribute = HttpOptionsAttribute$instance & __HttpOptions
 
 
 export interface HttpPatchAttribute$instance extends HttpMethodAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HttpPatchAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -1559,6 +1675,8 @@ export type HttpPatchAttribute = HttpPatchAttribute$instance & __HttpPatchAttrib
 
 
 export interface HttpPostAttribute$instance extends HttpMethodAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HttpPostAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -1580,6 +1698,8 @@ export type HttpPostAttribute = HttpPostAttribute$instance & __HttpPostAttribute
 
 
 export interface HttpPutAttribute$instance extends HttpMethodAttribute, Microsoft_AspNetCore_Mvc_Routing_Internal.IActionHttpMethodProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_HttpPutAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
@@ -1601,6 +1721,8 @@ export type HttpPutAttribute = HttpPutAttribute$instance & __HttpPutAttribute$vi
 
 
 export interface IgnoreAntiforgeryTokenAttribute$instance extends Attribute, IAntiforgeryPolicy, IFilterMetadata, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IAntiforgeryPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_IgnoreAntiforgeryTokenAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IAntiforgeryPolicy: never;
@@ -1622,6 +1744,8 @@ export type IgnoreAntiforgeryTokenAttribute = IgnoreAntiforgeryTokenAttribute$in
 
 
 export interface JsonOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_JsonOptions: never;
+
     AllowInputFormatterExceptionMessages: boolean;
     readonly JsonSerializerOptions: JsonSerializerOptions;
 }
@@ -1635,6 +1759,8 @@ export const JsonOptions: {
 export type JsonOptions = JsonOptions$instance;
 
 export interface JsonResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_JsonResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -1664,6 +1790,8 @@ export type JsonResult = JsonResult$instance & __JsonResult$views;
 
 
 export interface LocalRedirectResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_LocalRedirectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     Permanent: boolean;
@@ -1690,6 +1818,8 @@ export type LocalRedirectResult = LocalRedirectResult$instance & __LocalRedirect
 
 
 export interface MiddlewareFilterAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_MiddlewareFilterAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -1715,6 +1845,8 @@ export type MiddlewareFilterAttribute = MiddlewareFilterAttribute$instance & __M
 
 
 export interface MiddlewareFilterAttribute_1$instance<T> extends MiddlewareFilterAttribute$instance, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_MiddlewareFilterAttribute_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -1737,6 +1869,8 @@ export type MiddlewareFilterAttribute_1<T> = MiddlewareFilterAttribute_1$instanc
 
 
 export interface ModelBinderAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinderAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBinderTypeProviderMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
@@ -1765,6 +1899,8 @@ export type ModelBinderAttribute = ModelBinderAttribute$instance & __ModelBinder
 
 
 export interface ModelBinderAttribute_1$instance<TBinder extends IModelBinder> extends ModelBinderAttribute$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinderAttribute_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBinderTypeProviderMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider: never;
@@ -1787,6 +1923,8 @@ export type ModelBinderAttribute_1<TBinder extends IModelBinder> = ModelBinderAt
 
 
 export interface ModelMetadataTypeAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelMetadataTypeAttribute: never;
+
     readonly MetadataType: Type;
 }
 
@@ -1799,6 +1937,8 @@ export const ModelMetadataTypeAttribute: {
 export type ModelMetadataTypeAttribute = ModelMetadataTypeAttribute$instance;
 
 export interface ModelMetadataTypeAttribute_1$instance<T> extends ModelMetadataTypeAttribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelMetadataTypeAttribute_1: never;
+
 }
 
 
@@ -1810,6 +1950,8 @@ export const ModelMetadataTypeAttribute_1: {
 export type ModelMetadataTypeAttribute_1<T> = ModelMetadataTypeAttribute_1$instance<T>;
 
 export interface MvcOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_MvcOptions: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -1852,6 +1994,8 @@ export const MvcOptions: {
 export type MvcOptions = MvcOptions$instance;
 
 export interface MvcViewOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_MvcViewOptions: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -1869,6 +2013,8 @@ export const MvcViewOptions: {
 export type MvcViewOptions = MvcViewOptions$instance;
 
 export interface NoContentResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_NoContentResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -1891,6 +2037,8 @@ export type NoContentResult = NoContentResult$instance & __NoContentResult$views
 
 
 export interface NonActionAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_NonActionAttribute: never;
+
 }
 
 
@@ -1902,6 +2050,8 @@ export const NonActionAttribute: {
 export type NonActionAttribute = NonActionAttribute$instance;
 
 export interface NonControllerAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_NonControllerAttribute: never;
+
 }
 
 
@@ -1913,6 +2063,8 @@ export const NonControllerAttribute: {
 export type NonControllerAttribute = NonControllerAttribute$instance;
 
 export interface NonViewComponentAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_NonViewComponentAttribute: never;
+
 }
 
 
@@ -1924,6 +2076,8 @@ export const NonViewComponentAttribute: {
 export type NonViewComponentAttribute = NonViewComponentAttribute$instance;
 
 export interface NotFoundObjectResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_NotFoundObjectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -1945,6 +2099,8 @@ export type NotFoundObjectResult = NotFoundObjectResult$instance & __NotFoundObj
 
 
 export interface NotFoundResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_NotFoundResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -1967,6 +2123,8 @@ export type NotFoundResult = NotFoundResult$instance & __NotFoundResult$views;
 
 
 export interface ObjectResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ObjectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -1996,6 +2154,8 @@ export type ObjectResult = ObjectResult$instance & __ObjectResult$views;
 
 
 export interface OkObjectResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_OkObjectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -2017,6 +2177,8 @@ export type OkObjectResult = OkObjectResult$instance & __OkObjectResult$views;
 
 
 export interface OkResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_OkResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -2039,6 +2201,8 @@ export type OkResult = OkResult$instance & __OkResult$views;
 
 
 export interface PageRemoteAttribute$instance extends RemoteAttributeBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_PageRemoteAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     get PageHandler(): string | undefined;
@@ -2063,6 +2227,8 @@ export type PageRemoteAttribute = PageRemoteAttribute$instance & __PageRemoteAtt
 
 
 export interface PartialViewResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_PartialViewResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -2094,6 +2260,8 @@ export type PartialViewResult = PartialViewResult$instance & __PartialViewResult
 
 
 export interface PhysicalFileResult$instance extends FileResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_PhysicalFileResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     FileName: string;
@@ -2115,6 +2283,8 @@ export type PhysicalFileResult = PhysicalFileResult$instance & __PhysicalFileRes
 
 
 export interface ProblemDetails$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProblemDetails: never;
+
     get Detail(): string | undefined;
     set Detail(value: string | undefined);
     Extensions: IDictionary_2<System_Internal.String, unknown | undefined>;
@@ -2136,6 +2306,8 @@ export const ProblemDetails: {
 export type ProblemDetails = ProblemDetails$instance;
 
 export interface ProducesAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IResultFilter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2169,6 +2341,8 @@ export type ProducesAttribute = ProducesAttribute$instance & __ProducesAttribute
 
 
 export interface ProducesAttribute_1$instance<T> extends ProducesAttribute$instance, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesAttribute_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2195,6 +2369,8 @@ export type ProducesAttribute_1<T> = ProducesAttribute_1$instance<T> & __Produce
 
 
 export interface ProducesDefaultResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesDefaultResponseTypeAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -2220,6 +2396,8 @@ export type ProducesDefaultResponseTypeAttribute = ProducesDefaultResponseTypeAt
 
 
 export interface ProducesErrorResponseTypeAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesErrorResponseTypeAttribute: never;
+
     readonly Type: Type;
 }
 
@@ -2232,6 +2410,8 @@ export const ProducesErrorResponseTypeAttribute: {
 export type ProducesErrorResponseTypeAttribute = ProducesErrorResponseTypeAttribute$instance;
 
 export interface ProducesResponseTypeAttribute$instance extends Attribute, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesResponseTypeAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
@@ -2257,6 +2437,8 @@ export type ProducesResponseTypeAttribute = ProducesResponseTypeAttribute$instan
 
 
 export interface ProducesResponseTypeAttribute_1$instance<T> extends ProducesResponseTypeAttribute$instance, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ProducesResponseTypeAttribute_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
@@ -2278,6 +2460,8 @@ export type ProducesResponseTypeAttribute_1<T> = ProducesResponseTypeAttribute_1
 
 
 export interface RedirectResult$instance extends ActionResult$instance, IKeepTempDataResult, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IKeepTempDataResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RedirectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult: never;
 
@@ -2305,6 +2489,8 @@ export type RedirectResult = RedirectResult$instance & __RedirectResult$views;
 
 
 export interface RedirectToActionResult$instance extends ActionResult$instance, IKeepTempDataResult, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IKeepTempDataResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RedirectToActionResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult: never;
 
@@ -2342,6 +2528,8 @@ export type RedirectToActionResult = RedirectToActionResult$instance & __Redirec
 
 
 export interface RedirectToPageResult$instance extends ActionResult$instance, IKeepTempDataResult, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IKeepTempDataResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RedirectToPageResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult: never;
 
@@ -2386,6 +2574,8 @@ export type RedirectToPageResult = RedirectToPageResult$instance & __RedirectToP
 
 
 export interface RedirectToRouteResult$instance extends ActionResult$instance, IKeepTempDataResult, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IKeepTempDataResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RedirectToRouteResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult: never;
 
@@ -2422,6 +2612,8 @@ export type RedirectToRouteResult = RedirectToRouteResult$instance & __RedirectT
 
 
 export interface RemoteAttribute$instance extends RemoteAttributeBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RemoteAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     AddValidation(context: ClientModelValidationContext): void;
@@ -2444,6 +2636,8 @@ export type RemoteAttribute = RemoteAttribute$instance & __RemoteAttribute$views
 
 
 export interface RemoteAttributeBase$instance extends ValidationAttribute, Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RemoteAttributeBase: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     AdditionalFields: string;
@@ -2470,6 +2664,8 @@ export type RemoteAttributeBase = RemoteAttributeBase$instance & __RemoteAttribu
 
 
 export interface RequestFormLimitsAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RequestFormLimitsAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFormOptionsMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -2506,6 +2702,8 @@ export type RequestFormLimitsAttribute = RequestFormLimitsAttribute$instance & _
 
 
 export interface RequestSizeLimitAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.IRequestSizeLimitMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RequestSizeLimitAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IRequestSizeLimitMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
@@ -2532,6 +2730,8 @@ export type RequestSizeLimitAttribute = RequestSizeLimitAttribute$instance & __R
 
 
 export interface RequireHttpsAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IAuthorizationFilter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RequireHttpsAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAuthorizationFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2557,6 +2757,8 @@ export type RequireHttpsAttribute = RequireHttpsAttribute$instance & __RequireHt
 
 
 export interface ResponseCacheAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ResponseCacheAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2591,6 +2793,8 @@ export type ResponseCacheAttribute = ResponseCacheAttribute$instance & __Respons
 
 
 export interface RouteAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RouteAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
     get Name(): string | undefined;
@@ -2613,6 +2817,8 @@ export type RouteAttribute = RouteAttribute$instance & __RouteAttribute$views;
 
 
 export interface SerializableError$instance extends Dictionary_2<System_Internal.String, unknown> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SerializableError: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -2636,6 +2842,8 @@ export const SerializableError: {
 export type SerializableError = SerializableError$instance;
 
 export interface ServiceFilterAttribute$instance extends Attribute, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ServiceFilterAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2661,6 +2869,8 @@ export type ServiceFilterAttribute = ServiceFilterAttribute$instance & __Service
 
 
 export interface ServiceFilterAttribute_1$instance<TFilter extends IFilterMetadata> extends ServiceFilterAttribute$instance, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ServiceFilterAttribute_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2683,6 +2893,8 @@ export type ServiceFilterAttribute_1<TFilter extends IFilterMetadata> = ServiceF
 
 
 export interface SignInResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SignInResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     get AuthenticationScheme(): string | undefined;
@@ -2710,6 +2922,8 @@ export type SignInResult = SignInResult$instance & __SignInResult$views;
 
 
 export interface SignOutResult$instance extends ActionResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SignOutResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
@@ -2739,6 +2953,8 @@ export type SignOutResult = SignOutResult$instance & __SignOutResult$views;
 
 
 export interface SkipStatusCodePagesAttribute$instance extends Attribute, IFilterMetadata, ISkipStatusCodePagesMetadata, Microsoft_AspNetCore_Http_Metadata_Internal.ISkipStatusCodePagesMetadata$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IResourceFilter$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_SkipStatusCodePagesAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_ISkipStatusCodePagesMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IResourceFilter: never;
@@ -2761,6 +2977,8 @@ export type SkipStatusCodePagesAttribute = SkipStatusCodePagesAttribute$instance
 
 
 export interface StatusCodeResult$instance extends ActionResult$instance, IClientErrorActionResult {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_StatusCodeResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -2785,6 +3003,8 @@ export type StatusCodeResult = StatusCodeResult$instance & __StatusCodeResult$vi
 
 
 export interface TempDataAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TempDataAttribute: never;
+
     get Key(): string | undefined;
     set Key(value: string | undefined);
 }
@@ -2798,6 +3018,8 @@ export const TempDataAttribute: {
 export type TempDataAttribute = TempDataAttribute$instance;
 
 export interface TypeFilterAttribute$instance extends Attribute, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TypeFilterAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2825,6 +3047,8 @@ export type TypeFilterAttribute = TypeFilterAttribute$instance & __TypeFilterAtt
 
 
 export interface TypeFilterAttribute_1$instance<TFilter extends IFilterMetadata> extends TypeFilterAttribute$instance, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_TypeFilterAttribute_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2847,6 +3071,8 @@ export type TypeFilterAttribute_1<TFilter extends IFilterMetadata> = TypeFilterA
 
 
 export interface UnauthorizedObjectResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_UnauthorizedObjectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -2868,6 +3094,8 @@ export type UnauthorizedObjectResult = UnauthorizedObjectResult$instance & __Una
 
 
 export interface UnauthorizedResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_UnauthorizedResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -2890,6 +3118,8 @@ export type UnauthorizedResult = UnauthorizedResult$instance & __UnauthorizedRes
 
 
 export interface UnprocessableEntityObjectResult$instance extends ObjectResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_UnprocessableEntityObjectResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -2912,6 +3142,8 @@ export type UnprocessableEntityObjectResult = UnprocessableEntityObjectResult$in
 
 
 export interface UnprocessableEntityResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_UnprocessableEntityResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -2934,6 +3166,8 @@ export type UnprocessableEntityResult = UnprocessableEntityResult$instance & __U
 
 
 export interface UnsupportedMediaTypeResult$instance extends StatusCodeResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_UnsupportedMediaTypeResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
@@ -2956,6 +3190,8 @@ export type UnsupportedMediaTypeResult = UnsupportedMediaTypeResult$instance & _
 
 
 export interface ValidateAntiForgeryTokenAttribute$instance extends Attribute, IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ValidateAntiForgeryTokenAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
@@ -2980,6 +3216,8 @@ export type ValidateAntiForgeryTokenAttribute = ValidateAntiForgeryTokenAttribut
 
 
 export interface ValidationProblemDetails$instance extends HttpValidationProblemDetails {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ValidationProblemDetails: never;
+
     Errors: IDictionary_2<System_Internal.String, string[]>;
 }
 
@@ -2994,6 +3232,8 @@ export const ValidationProblemDetails: {
 export type ValidationProblemDetails = ValidationProblemDetails$instance;
 
 export interface ViewComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponent: never;
+
     readonly HttpContext: HttpContext;
     readonly ModelState: ModelStateDictionary;
     readonly Request: HttpRequest;
@@ -3022,6 +3262,8 @@ export const ViewComponent: (abstract new() => ViewComponent) & {
 export type ViewComponent = ViewComponent$instance;
 
 export interface ViewComponentAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponentAttribute: never;
+
     Name: string;
 }
 
@@ -3034,6 +3276,8 @@ export const ViewComponentAttribute: {
 export type ViewComponentAttribute = ViewComponentAttribute$instance;
 
 export interface ViewComponentResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewComponentResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -3067,6 +3311,8 @@ export type ViewComponentResult = ViewComponentResult$instance & __ViewComponent
 
 
 export interface ViewDataAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewDataAttribute: never;
+
     get Key(): string | undefined;
     set Key(value: string | undefined);
 }
@@ -3080,6 +3326,8 @@ export const ViewDataAttribute: {
 export type ViewDataAttribute = ViewDataAttribute$instance;
 
 export interface ViewResult$instance extends ActionResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult: never;
 
@@ -3111,6 +3359,8 @@ export type ViewResult = ViewResult$instance & __ViewResult$views;
 
 
 export interface VirtualFileResult$instance extends FileResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_VirtualFileResult: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IActionResult: never;
 
     FileName: string;

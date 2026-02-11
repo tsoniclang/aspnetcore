@@ -67,6 +67,8 @@ export interface IKeyRingProvider$instance {
 export type IKeyRingProvider = IKeyRingProvider$instance;
 
 export interface DefaultKeyResolution$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_DefaultKeyResolution: never;
+
     DefaultKey: IKey | undefined;
     FallbackKey: IKey | undefined;
     ShouldGenerateNewKey: boolean;
@@ -81,6 +83,8 @@ export const DefaultKeyResolution: {
 export type DefaultKeyResolution = DefaultKeyResolution$instance;
 
 export interface CacheableKeyRing$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_CacheableKeyRing: never;
+
 }
 
 

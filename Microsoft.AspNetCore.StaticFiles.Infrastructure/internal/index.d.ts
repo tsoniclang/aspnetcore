@@ -12,6 +12,8 @@ import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/
 import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
 
 export interface SharedOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptions: never;
+
     get FileProvider(): IFileProvider | undefined;
     set FileProvider(value: IFileProvider | undefined);
     RedirectToAppendTrailingSlash: boolean;
@@ -27,6 +29,8 @@ export const SharedOptions: {
 export type SharedOptions = SharedOptions$instance;
 
 export interface SharedOptionsBase$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptionsBase: never;
+
     get FileProvider(): IFileProvider | undefined;
     set FileProvider(value: IFileProvider | undefined);
     RedirectToAppendTrailingSlash: boolean;

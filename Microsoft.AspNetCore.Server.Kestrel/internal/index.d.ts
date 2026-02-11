@@ -14,6 +14,8 @@ import type { Action_1, Boolean as ClrBoolean, Int32, Object as ClrObject, Strin
 import type { IConfiguration, IConfigurationSection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Configuration/internal/index.js";
 
 export interface EndpointConfiguration$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_EndpointConfiguration: never;
+
     readonly ConfigSection: IConfigurationSection;
     readonly HttpsOptions: HttpsConnectionAdapterOptions;
     readonly IsHttps: boolean;
@@ -28,6 +30,8 @@ export const EndpointConfiguration: {
 export type EndpointConfiguration = EndpointConfiguration$instance;
 
 export interface KestrelConfigurationLoader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_KestrelConfigurationLoader: never;
+
     Configuration: IConfiguration;
     readonly Options: KestrelServerOptions;
     AnyIPEndpoint(port: int): KestrelConfigurationLoader;

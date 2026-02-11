@@ -22,6 +22,8 @@ export interface IFormValueMapper$instance {
 export type IFormValueMapper = IFormValueMapper$instance;
 
 export interface FormMappingError$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_Mapping_FormMappingError: never;
+
     readonly AttemptedValue: string | undefined;
     Container: unknown;
     readonly ErrorMessages: IReadOnlyList_1<FormattableString>;
@@ -37,6 +39,8 @@ export const FormMappingError: {
 export type FormMappingError = FormMappingError$instance;
 
 export interface FormValueMappingContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_Mapping_FormValueMappingContext: never;
+
     readonly AcceptFormName: string | undefined;
     readonly AcceptMappingScopeName: string;
     get MapErrorToContainer(): Action_2<System_Internal.String, unknown> | undefined;

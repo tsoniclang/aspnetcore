@@ -22,6 +22,8 @@ import type { Boolean as ClrBoolean, Int32, Int64, Nullable_1, Object as ClrObje
 import type { StringValues } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Primitives/internal/index.js";
 
 export interface QueryBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Extensions_QueryBuilder: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 

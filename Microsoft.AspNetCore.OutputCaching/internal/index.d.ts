@@ -59,6 +59,8 @@ export interface IOutputCacheStore$instance {
 export type IOutputCacheStore = IOutputCacheStore$instance;
 
 export interface CacheVaryByRules$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_CacheVaryByRules: never;
+
     get CacheKeyPrefix(): string | undefined;
     set CacheKeyPrefix(value: string | undefined);
     HeaderNames: StringValues;
@@ -77,6 +79,8 @@ export const CacheVaryByRules: {
 export type CacheVaryByRules = CacheVaryByRules$instance;
 
 export interface OutputCacheAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCacheAttribute: never;
+
     Duration: int;
     NoStore: boolean;
     get PolicyName(): string | undefined;
@@ -100,6 +104,8 @@ export const OutputCacheAttribute: {
 export type OutputCacheAttribute = OutputCacheAttribute$instance;
 
 export interface OutputCacheContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCacheContext: never;
+
     AllowCacheLookup: boolean;
     AllowCacheStorage: boolean;
     AllowLocking: boolean;
@@ -120,6 +126,8 @@ export const OutputCacheContext: {
 export type OutputCacheContext = OutputCacheContext$instance;
 
 export interface OutputCacheOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCacheOptions: never;
+
     ApplicationServices: IServiceProvider;
     DefaultExpirationTimeSpan: TimeSpan;
     MaximumBodySize: long;
@@ -142,6 +150,8 @@ export const OutputCacheOptions: {
 export type OutputCacheOptions = OutputCacheOptions$instance;
 
 export interface OutputCachePolicyBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCachePolicyBuilder: never;
+
     AddPolicy(policyType: Type): OutputCachePolicyBuilder;
     AddPolicy<T extends IOutputCachePolicy>(): OutputCachePolicyBuilder;
     Cache(): OutputCachePolicyBuilder;

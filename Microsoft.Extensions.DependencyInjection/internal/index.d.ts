@@ -93,6 +93,8 @@ export interface IServerSideBlazorBuilder$instance extends IRazorComponentsBuild
 export type IServerSideBlazorBuilder = IServerSideBlazorBuilder$instance;
 
 export interface OAuthPostConfigureOptions_2$instance<TOptions extends OAuthOptions, THandler extends OAuthHandler_1<TOptions>> {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_OAuthPostConfigureOptions_2: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
     PostConfigure(name: string, options: TOptions): void;

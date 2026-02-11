@@ -23,6 +23,8 @@ export interface IViewBufferScope$instance {
 export type IViewBufferScope = IViewBufferScope$instance;
 
 export interface ViewBufferValue$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_Buffers_ViewBufferValue: never;
+
     readonly Value: unknown;
 }
 

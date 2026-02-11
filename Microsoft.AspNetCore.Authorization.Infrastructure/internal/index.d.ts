@@ -15,6 +15,8 @@ import type { Boolean as ClrBoolean, Func_2, Object as ClrObject, String as ClrS
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface AssertionRequirement$instance extends IAuthorizationRequirement, Microsoft_AspNetCore_Authorization_Internal.IAuthorizationHandler$instance, Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Infrastructure_AssertionRequirement: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
 
@@ -37,7 +39,9 @@ export interface __AssertionRequirement$views {
 export type AssertionRequirement = AssertionRequirement$instance & __AssertionRequirement$views;
 
 
-export interface ClaimsAuthorizationRequirement$instance extends AuthorizationHandler_1<ClaimsAuthorizationRequirement>, IAuthorizationRequirement extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+export interface ClaimsAuthorizationRequirement$instance extends AuthorizationHandler_1<ClaimsAuthorizationRequirement>, IAuthorizationRequirement, Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Infrastructure_ClaimsAuthorizationRequirement: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
 
@@ -60,7 +64,9 @@ export interface __ClaimsAuthorizationRequirement$views {
 export type ClaimsAuthorizationRequirement = ClaimsAuthorizationRequirement$instance & __ClaimsAuthorizationRequirement$views;
 
 
-export interface DenyAnonymousAuthorizationRequirement$instance extends AuthorizationHandler_1<DenyAnonymousAuthorizationRequirement>, IAuthorizationRequirement extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+export interface DenyAnonymousAuthorizationRequirement$instance extends AuthorizationHandler_1<DenyAnonymousAuthorizationRequirement>, IAuthorizationRequirement, Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Infrastructure_DenyAnonymousAuthorizationRequirement: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
 
@@ -81,7 +87,9 @@ export interface __DenyAnonymousAuthorizationRequirement$views {
 export type DenyAnonymousAuthorizationRequirement = DenyAnonymousAuthorizationRequirement$instance & __DenyAnonymousAuthorizationRequirement$views;
 
 
-export interface NameAuthorizationRequirement$instance extends AuthorizationHandler_1<NameAuthorizationRequirement>, IAuthorizationRequirement extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+export interface NameAuthorizationRequirement$instance extends AuthorizationHandler_1<NameAuthorizationRequirement>, IAuthorizationRequirement, Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Infrastructure_NameAuthorizationRequirement: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
 
@@ -104,6 +112,8 @@ export type NameAuthorizationRequirement = NameAuthorizationRequirement$instance
 
 
 export interface OperationAuthorizationRequirement$instance extends IAuthorizationRequirement {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Infrastructure_OperationAuthorizationRequirement: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
 
     Name: string;
@@ -119,6 +129,8 @@ export const OperationAuthorizationRequirement: {
 export type OperationAuthorizationRequirement = OperationAuthorizationRequirement$instance;
 
 export interface PassThroughAuthorizationHandler$instance extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationHandler$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Infrastructure_PassThroughAuthorizationHandler: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
 
     HandleAsync(context: AuthorizationHandlerContext): Task;
@@ -138,7 +150,9 @@ export interface __PassThroughAuthorizationHandler$views {
 export type PassThroughAuthorizationHandler = PassThroughAuthorizationHandler$instance & __PassThroughAuthorizationHandler$views;
 
 
-export interface RolesAuthorizationRequirement$instance extends AuthorizationHandler_1<RolesAuthorizationRequirement>, IAuthorizationRequirement extends Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+export interface RolesAuthorizationRequirement$instance extends AuthorizationHandler_1<RolesAuthorizationRequirement>, IAuthorizationRequirement, Microsoft_AspNetCore_Authorization_Internal.IAuthorizationRequirement$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Infrastructure_RolesAuthorizationRequirement: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
 

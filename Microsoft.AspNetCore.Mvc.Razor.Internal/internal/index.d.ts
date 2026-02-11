@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface RazorInjectAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Internal_RazorInjectAttribute: never;
+
     get Key(): unknown | undefined;
     set Key(value: unknown | undefined);
 }

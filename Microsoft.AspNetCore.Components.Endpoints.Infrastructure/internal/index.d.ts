@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface RenderModeEndpointProvider$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Endpoints_Infrastructure_RenderModeEndpointProvider: never;
+
     GetEndpointBuilders(renderMode: IComponentRenderMode, applicationBuilder: IApplicationBuilder): IEnumerable_1<RouteEndpointBuilder>;
     Supports(renderMode: IComponentRenderMode): boolean;
 }

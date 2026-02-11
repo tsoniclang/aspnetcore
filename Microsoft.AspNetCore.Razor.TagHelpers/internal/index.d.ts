@@ -71,6 +71,8 @@ export interface ITagHelperComponent$instance {
 export type ITagHelperComponent = ITagHelperComponent$instance;
 
 export interface DefaultTagHelperContent$instance extends TagHelperContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_DefaultTagHelperContent: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
@@ -108,6 +110,8 @@ export type DefaultTagHelperContent = DefaultTagHelperContent$instance & __Defau
 
 
 export interface HtmlAttributeNameAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNameAttribute: never;
+
     DictionaryAttributePrefix: string;
     DictionaryAttributePrefixSet: boolean;
     readonly Name: string;
@@ -123,6 +127,8 @@ export const HtmlAttributeNameAttribute: {
 export type HtmlAttributeNameAttribute = HtmlAttributeNameAttribute$instance;
 
 export interface HtmlAttributeNotBoundAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNotBoundAttribute: never;
+
 }
 
 
@@ -134,6 +140,8 @@ export const HtmlAttributeNotBoundAttribute: {
 export type HtmlAttributeNotBoundAttribute = HtmlAttributeNotBoundAttribute$instance;
 
 export interface HtmlTargetElementAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_HtmlTargetElementAttribute: never;
+
     Attributes: string;
     ParentTag: string;
     readonly Tag: string;
@@ -151,6 +159,8 @@ export const HtmlTargetElementAttribute: {
 export type HtmlTargetElementAttribute = HtmlTargetElementAttribute$instance;
 
 export interface NullHtmlEncoder$instance extends HtmlEncoder {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_NullHtmlEncoder: never;
+
     readonly MaxOutputCharactersPerInputCharacter: int;
     Encode(value: string): string;
     Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
@@ -169,6 +179,8 @@ export const NullHtmlEncoder: {
 export type NullHtmlEncoder = NullHtmlEncoder$instance;
 
 export interface OutputElementHintAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_OutputElementHintAttribute: never;
+
     readonly OutputElement: string;
 }
 
@@ -181,6 +193,8 @@ export const OutputElementHintAttribute: {
 export type OutputElementHintAttribute = OutputElementHintAttribute$instance;
 
 export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollection_1<TagHelperAttribute> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -190,7 +204,6 @@ export interface ReadOnlyTagHelperAttributeList$instance extends ReadOnlyCollect
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    readonly [name: string]: TagHelperAttribute;
     ContainsName(name: string): boolean;
     IndexOfName(name: string): int;
     TryGetAttribute(name: string, attribute: TagHelperAttribute): boolean;
@@ -203,9 +216,11 @@ export const ReadOnlyTagHelperAttributeList: (abstract new() => ReadOnlyTagHelpe
 };
 
 
-export type ReadOnlyTagHelperAttributeList = ReadOnlyTagHelperAttributeList$instance;
+export type ReadOnlyTagHelperAttributeList = ReadOnlyTagHelperAttributeList$instance & { readonly [name: string]: TagHelperAttribute; };
 
 export interface RestrictChildrenAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_RestrictChildrenAttribute: never;
+
     readonly ChildTags: IEnumerable_1<System_Internal.String>;
 }
 
@@ -218,6 +233,8 @@ export const RestrictChildrenAttribute: {
 export type RestrictChildrenAttribute = RestrictChildrenAttribute$instance;
 
 export interface TagHelper$instance extends ITagHelper {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
@@ -240,6 +257,8 @@ export type TagHelper = TagHelper$instance & __TagHelper$views;
 
 
 export interface TagHelperAttribute$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 
@@ -271,6 +290,8 @@ export type TagHelperAttribute = TagHelperAttribute$instance & __TagHelperAttrib
 
 
 export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttributeList {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -280,7 +301,6 @@ export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttrib
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    [index: number]: TagHelperAttribute;
     Add(name: string, value: unknown): void;
     Add(attribute: TagHelperAttribute): void;
     Clear(): void;
@@ -300,9 +320,11 @@ export const TagHelperAttributeList: {
 };
 
 
-export type TagHelperAttributeList = TagHelperAttributeList$instance;
+export type TagHelperAttributeList = TagHelperAttributeList$instance & { [index: number]: TagHelperAttribute; };
 
 export interface TagHelperComponent$instance extends ITagHelperComponent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperComponent: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     readonly Order: int;
@@ -324,6 +346,8 @@ export type TagHelperComponent = TagHelperComponent$instance & __TagHelperCompon
 
 
 export interface TagHelperContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentBuilder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
@@ -362,6 +386,8 @@ export type TagHelperContent = TagHelperContent$instance & __TagHelperContent$vi
 
 
 export interface TagHelperContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext: never;
+
     readonly AllAttributes: ReadOnlyTagHelperAttributeList;
     Items: IDictionary_2<unknown, unknown>;
     TagName: string;
@@ -380,6 +406,8 @@ export const TagHelperContext: {
 export type TagHelperContext = TagHelperContext$instance;
 
 export interface TagHelperOutput$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 

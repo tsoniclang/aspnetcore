@@ -34,6 +34,8 @@ export interface IHubProtocol$instance {
 export type IHubProtocol = IHubProtocol$instance;
 
 export interface AckMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_AckMessage: never;
+
     SequenceId: long;
 }
 
@@ -46,6 +48,8 @@ export const AckMessage: {
 export type AckMessage = AckMessage$instance;
 
 export interface CancelInvocationMessage$instance extends HubInvocationMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_CancelInvocationMessage: never;
+
 }
 
 
@@ -57,6 +61,8 @@ export const CancelInvocationMessage: {
 export type CancelInvocationMessage = CancelInvocationMessage$instance;
 
 export interface CloseMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_CloseMessage: never;
+
     readonly AllowReconnect: boolean;
     readonly Error: string | undefined;
 }
@@ -72,6 +78,8 @@ export const CloseMessage: {
 export type CloseMessage = CloseMessage$instance;
 
 export interface CompletionMessage$instance extends HubInvocationMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_CompletionMessage: never;
+
     readonly Error: string | undefined;
     readonly HasResult: boolean;
     readonly Result: unknown | undefined;
@@ -90,6 +98,8 @@ export const CompletionMessage: {
 export type CompletionMessage = CompletionMessage$instance;
 
 export interface HandshakeRequestMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HandshakeRequestMessage: never;
+
     readonly Protocol: string;
     readonly Version: int;
 }
@@ -103,6 +113,8 @@ export const HandshakeRequestMessage: {
 export type HandshakeRequestMessage = HandshakeRequestMessage$instance;
 
 export interface HandshakeResponseMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HandshakeResponseMessage: never;
+
     readonly Error: string | undefined;
 }
 
@@ -116,6 +128,8 @@ export const HandshakeResponseMessage: {
 export type HandshakeResponseMessage = HandshakeResponseMessage$instance;
 
 export interface HubInvocationMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HubInvocationMessage: never;
+
     get Headers(): IDictionary_2<System_Internal.String, System_Internal.String> | undefined;
     set Headers(value: IDictionary_2<System_Internal.String, System_Internal.String> | undefined);
     readonly InvocationId: string | undefined;
@@ -129,6 +143,8 @@ export const HubInvocationMessage: (abstract new(invocationId: string) => HubInv
 export type HubInvocationMessage = HubInvocationMessage$instance;
 
 export interface HubMessage$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HubMessage: never;
+
 }
 
 
@@ -139,6 +155,8 @@ export const HubMessage: (abstract new() => HubMessage) & {
 export type HubMessage = HubMessage$instance;
 
 export interface HubMethodInvocationMessage$instance extends HubInvocationMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HubMethodInvocationMessage: never;
+
     readonly Arguments: (unknown | undefined)[];
     readonly StreamIds: string[] | undefined;
     readonly Target: string;
@@ -152,6 +170,8 @@ export const HubMethodInvocationMessage: (abstract new(invocationId: string, tar
 export type HubMethodInvocationMessage = HubMethodInvocationMessage$instance;
 
 export interface InvocationBindingFailureMessage$instance extends HubInvocationMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_InvocationBindingFailureMessage: never;
+
     readonly BindingFailure: ExceptionDispatchInfo;
     readonly Target: string;
 }
@@ -165,6 +185,8 @@ export const InvocationBindingFailureMessage: {
 export type InvocationBindingFailureMessage = InvocationBindingFailureMessage$instance;
 
 export interface InvocationMessage$instance extends HubMethodInvocationMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_InvocationMessage: never;
+
     ToString(): string;
 }
 
@@ -179,6 +201,8 @@ export const InvocationMessage: {
 export type InvocationMessage = InvocationMessage$instance;
 
 export interface JsonHubProtocol$instance extends IHubProtocol$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol: never;
 
     readonly Name: string;
@@ -205,6 +229,8 @@ export type JsonHubProtocol = JsonHubProtocol$instance & __JsonHubProtocol$views
 
 
 export interface PingMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_PingMessage: never;
+
 }
 
 
@@ -216,6 +242,8 @@ export const PingMessage: {
 export type PingMessage = PingMessage$instance;
 
 export interface RawResult$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_RawResult: never;
+
     RawSerializedData: ReadOnlySequence_1<System_Internal.Byte>;
 }
 
@@ -228,6 +256,8 @@ export const RawResult: {
 export type RawResult = RawResult$instance;
 
 export interface SequenceMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_SequenceMessage: never;
+
     SequenceId: long;
 }
 
@@ -240,6 +270,8 @@ export const SequenceMessage: {
 export type SequenceMessage = SequenceMessage$instance;
 
 export interface StreamBindingFailureMessage$instance extends HubMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_StreamBindingFailureMessage: never;
+
     readonly BindingFailure: ExceptionDispatchInfo;
     readonly Id: string;
 }
@@ -253,6 +285,8 @@ export const StreamBindingFailureMessage: {
 export type StreamBindingFailureMessage = StreamBindingFailureMessage$instance;
 
 export interface StreamInvocationMessage$instance extends HubMethodInvocationMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_StreamInvocationMessage: never;
+
     ToString(): string;
 }
 
@@ -266,6 +300,8 @@ export const StreamInvocationMessage: {
 export type StreamInvocationMessage = StreamInvocationMessage$instance;
 
 export interface StreamItemMessage$instance extends HubInvocationMessage {
+    readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_StreamItemMessage: never;
+
     get Item(): unknown | undefined;
     set Item(value: unknown | undefined);
     ToString(): string;

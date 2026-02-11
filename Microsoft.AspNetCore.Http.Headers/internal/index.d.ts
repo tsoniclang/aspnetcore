@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { DateTimeOffset, Int64, Nullable_1, Object as ClrObject, String as ClrString, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface RequestHeaders$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Headers_RequestHeaders: never;
+
     Accept: IList_1<MediaTypeHeaderValue>;
     AcceptCharset: IList_1<StringWithQualityHeaderValue>;
     AcceptEncoding: IList_1<StringWithQualityHeaderValue>;
@@ -59,6 +61,8 @@ export const RequestHeaders: {
 export type RequestHeaders = RequestHeaders$instance;
 
 export interface ResponseHeaders$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Headers_ResponseHeaders: never;
+
     get CacheControl(): CacheControlHeaderValue | undefined;
     set CacheControl(value: CacheControlHeaderValue | undefined);
     get ContentDisposition(): ContentDispositionHeaderValue | undefined;

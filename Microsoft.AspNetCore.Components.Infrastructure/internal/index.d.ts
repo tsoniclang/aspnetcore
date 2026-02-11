@@ -15,6 +15,8 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 import type { ILogger_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface ComponentStatePersistenceManager$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Infrastructure_ComponentStatePersistenceManager: never;
+
     readonly State: PersistentComponentState;
     PersistStateAsync(store: IPersistentComponentStateStore, renderer: Renderer): Task;
     RestoreStateAsync(store: IPersistentComponentStateStore): Task;

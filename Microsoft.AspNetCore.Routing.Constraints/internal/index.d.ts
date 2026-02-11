@@ -17,6 +17,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Int32, Int64, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface AlphaRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_AlphaRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -41,6 +43,8 @@ export type AlphaRouteConstraint = AlphaRouteConstraint$instance & __AlphaRouteC
 
 
 export interface BoolRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_BoolRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -64,6 +68,8 @@ export type BoolRouteConstraint = BoolRouteConstraint$instance & __BoolRouteCons
 
 
 export interface CompositeRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_CompositeRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
@@ -87,6 +93,8 @@ export type CompositeRouteConstraint = CompositeRouteConstraint$instance & __Com
 
 
 export interface DateTimeRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_DateTimeRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -110,6 +118,8 @@ export type DateTimeRouteConstraint = DateTimeRouteConstraint$instance & __DateT
 
 
 export interface DecimalRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_DecimalRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -133,6 +143,8 @@ export type DecimalRouteConstraint = DecimalRouteConstraint$instance & __Decimal
 
 
 export interface DoubleRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_DoubleRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -156,6 +168,8 @@ export type DoubleRouteConstraint = DoubleRouteConstraint$instance & __DoubleRou
 
 
 export interface FileNameRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_FileNameRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -179,6 +193,8 @@ export type FileNameRouteConstraint = FileNameRouteConstraint$instance & __FileN
 
 
 export interface FloatRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_FloatRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -202,6 +218,8 @@ export type FloatRouteConstraint = FloatRouteConstraint$instance & __FloatRouteC
 
 
 export interface GuidRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_GuidRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -225,6 +243,8 @@ export type GuidRouteConstraint = GuidRouteConstraint$instance & __GuidRouteCons
 
 
 export interface HttpMethodRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_HttpMethodRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
@@ -246,6 +266,8 @@ export type HttpMethodRouteConstraint = HttpMethodRouteConstraint$instance & __H
 
 
 export interface IntRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_IntRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -269,6 +291,8 @@ export type IntRouteConstraint = IntRouteConstraint$instance & __IntRouteConstra
 
 
 export interface LengthRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_LengthRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -295,6 +319,8 @@ export type LengthRouteConstraint = LengthRouteConstraint$instance & __LengthRou
 
 
 export interface LongRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_LongRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -318,6 +344,8 @@ export type LongRouteConstraint = LongRouteConstraint$instance & __LongRouteCons
 
 
 export interface MaxLengthRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_MaxLengthRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -342,6 +370,8 @@ export type MaxLengthRouteConstraint = MaxLengthRouteConstraint$instance & __Max
 
 
 export interface MaxRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_MaxRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -366,6 +396,8 @@ export type MaxRouteConstraint = MaxRouteConstraint$instance & __MaxRouteConstra
 
 
 export interface MinLengthRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_MinLengthRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -390,6 +422,8 @@ export type MinLengthRouteConstraint = MinLengthRouteConstraint$instance & __Min
 
 
 export interface MinRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_MinRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -414,6 +448,8 @@ export type MinRouteConstraint = MinRouteConstraint$instance & __MinRouteConstra
 
 
 export interface NonFileNameRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_NonFileNameRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -437,6 +473,8 @@ export type NonFileNameRouteConstraint = NonFileNameRouteConstraint$instance & _
 
 
 export interface OptionalRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_OptionalRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
@@ -458,6 +496,8 @@ export type OptionalRouteConstraint = OptionalRouteConstraint$instance & __Optio
 
 
 export interface RangeRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_RangeRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -483,6 +523,8 @@ export type RangeRouteConstraint = RangeRouteConstraint$instance & __RangeRouteC
 
 
 export interface RegexInlineRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_RegexInlineRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
@@ -507,6 +549,8 @@ export type RegexInlineRouteConstraint = RegexInlineRouteConstraint$instance & _
 
 
 export interface RegexRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_RegexRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
@@ -531,6 +575,8 @@ export type RegexRouteConstraint = RegexRouteConstraint$instance & __RegexRouteC
 
 
 export interface RequiredRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_RequiredRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
@@ -551,6 +597,8 @@ export type RequiredRouteConstraint = RequiredRouteConstraint$instance & __Requi
 
 
 export interface StringRouteConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_StringRouteConstraint: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;

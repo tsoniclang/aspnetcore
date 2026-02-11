@@ -55,6 +55,8 @@ export interface IAntiforgeryValidationFeature$instance {
 export type IAntiforgeryValidationFeature = IAntiforgeryValidationFeature$instance;
 
 export interface AntiforgeryOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Antiforgery_AntiforgeryOptions: never;
+
     Cookie: CookieBuilder;
     FormFieldName: string;
     get HeaderName(): string | undefined;
@@ -73,6 +75,8 @@ export const AntiforgeryOptions: {
 export type AntiforgeryOptions = AntiforgeryOptions$instance;
 
 export interface AntiforgeryTokenSet$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Antiforgery_AntiforgeryTokenSet: never;
+
     readonly CookieToken: string | undefined;
     readonly FormFieldName: string;
     readonly HeaderName: string | undefined;
@@ -88,6 +92,8 @@ export const AntiforgeryTokenSet: {
 export type AntiforgeryTokenSet = AntiforgeryTokenSet$instance;
 
 export interface AntiforgeryValidationException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_AspNetCore_Antiforgery_AntiforgeryValidationException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -102,6 +108,8 @@ export const AntiforgeryValidationException: {
 export type AntiforgeryValidationException = AntiforgeryValidationException$instance;
 
 export interface RequireAntiforgeryTokenAttribute$instance extends Attribute, IAntiforgeryMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Antiforgery_RequireAntiforgeryTokenAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryMetadata: never;
 
     readonly RequiresValidation: boolean;

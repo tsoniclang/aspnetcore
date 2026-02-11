@@ -21,6 +21,8 @@ export interface IHttpAuthenticationFeature$instance {
 export type IHttpAuthenticationFeature = IHttpAuthenticationFeature$instance;
 
 export interface HttpAuthenticationFeature$instance extends IHttpAuthenticationFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_Authentication_HttpAuthenticationFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature: never;
 
     get User(): ClaimsPrincipal | undefined;

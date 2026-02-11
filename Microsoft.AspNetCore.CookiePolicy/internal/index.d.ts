@@ -21,6 +21,8 @@ export enum HttpOnlyPolicy {
 
 
 export interface AppendCookieContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_CookiePolicy_AppendCookieContext: never;
+
     readonly Context: HttpContext;
     CookieName: string;
     readonly CookieOptions: CookieOptions;
@@ -39,6 +41,8 @@ export const AppendCookieContext: {
 export type AppendCookieContext = AppendCookieContext$instance;
 
 export interface CookiePolicyMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_CookiePolicy_CookiePolicyMiddleware: never;
+
     Options: CookiePolicyOptions;
     Invoke(context: HttpContext): Task;
 }
@@ -53,6 +57,8 @@ export const CookiePolicyMiddleware: {
 export type CookiePolicyMiddleware = CookiePolicyMiddleware$instance;
 
 export interface DeleteCookieContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_CookiePolicy_DeleteCookieContext: never;
+
     readonly Context: HttpContext;
     CookieName: string;
     readonly CookieOptions: CookieOptions;

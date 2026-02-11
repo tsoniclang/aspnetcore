@@ -18,6 +18,8 @@ import type { ILogger, ILoggerFactory } from "@tsonic/microsoft-extensions/Micro
 import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Options/internal/index.js";
 
 export interface SocketConnectionContextFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketConnectionContextFactory: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Create(socket: Socket): ConnectionContext;
@@ -33,6 +35,8 @@ export const SocketConnectionContextFactory: {
 export type SocketConnectionContextFactory = SocketConnectionContextFactory$instance;
 
 export interface SocketConnectionFactoryOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketConnectionFactoryOptions: never;
+
     IOQueueCount: int;
     MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
     MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
@@ -49,6 +53,8 @@ export const SocketConnectionFactoryOptions: {
 export type SocketConnectionFactoryOptions = SocketConnectionFactoryOptions$instance;
 
 export interface SocketTransportFactory$instance extends Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactory$instance, Microsoft_AspNetCore_Connections_Internal.IConnectionListenerFactorySelector$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketTransportFactory: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IConnectionListenerFactorySelector: never;
 
@@ -71,6 +77,8 @@ export type SocketTransportFactory = SocketTransportFactory$instance & __SocketT
 
 
 export interface SocketTransportOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketTransportOptions: never;
+
     Backlog: int;
     CreateBoundListenSocket: Func_2<EndPoint, Socket>;
     IOQueueCount: int;

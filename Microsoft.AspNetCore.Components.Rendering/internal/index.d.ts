@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Int32, MulticastDelegate, Nullable_1, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ComponentState$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Rendering_ComponentState: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     readonly Component: IComponent;
@@ -33,6 +35,8 @@ export const ComponentState: {
 export type ComponentState = ComponentState$instance;
 
 export interface RenderTreeBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     AddAttribute(sequence: int, name: string): void;

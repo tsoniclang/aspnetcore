@@ -21,6 +21,8 @@ export interface IServerAddressesFeature$instance {
 export type IServerAddressesFeature = IServerAddressesFeature$instance;
 
 export interface ServerAddressesFeature$instance extends IServerAddressesFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Hosting_Server_Features_ServerAddressesFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature: never;
 
     readonly Addresses: ICollection_1<System_Internal.String>;

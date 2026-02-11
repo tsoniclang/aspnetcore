@@ -25,6 +25,8 @@ export interface IAllowAnonymousFilter$instance extends Microsoft_AspNetCore_Mvc
 export type IAllowAnonymousFilter = IAllowAnonymousFilter$instance;
 
 export interface AllowAnonymousFilter$instance extends IAllowAnonymousFilter, IFilterMetadata {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Authorization_AllowAnonymousFilter: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
@@ -39,6 +41,8 @@ export const AllowAnonymousFilter: {
 export type AllowAnonymousFilter = AllowAnonymousFilter$instance;
 
 export interface AuthorizeFilter$instance extends IFilterMetadata, Microsoft_AspNetCore_Mvc_Filters_Internal.IAsyncAuthorizationFilter$instance, Microsoft_AspNetCore_Mvc_Filters_Internal.IFilterFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Authorization_AuthorizeFilter: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;

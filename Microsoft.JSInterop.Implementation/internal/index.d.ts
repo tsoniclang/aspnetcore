@@ -19,6 +19,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IAsyncDisposable, IDisposable, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JSInProcessObjectReference$instance extends JSObjectReference$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSInProcessObjectReference: never;
+
     readonly __tsonic_iface_Microsoft_JSInterop_IJSInProcessObjectReference: never;
     readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -51,6 +53,8 @@ export type JSInProcessObjectReference = JSInProcessObjectReference$instance & _
 
 
 export interface JSObjectReference$instance extends Microsoft_JSInterop_Internal.IJSObjectReference$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSObjectReference: never;
+
     readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
@@ -78,6 +82,8 @@ export type JSObjectReference = JSObjectReference$instance & __JSObjectReference
 
 
 export interface JSStreamReference$instance extends JSObjectReference$instance, Microsoft_JSInterop_Internal.IJSStreamReference$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSStreamReference: never;
+
     readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
     readonly __tsonic_iface_Microsoft_JSInterop_IJSStreamReference: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;

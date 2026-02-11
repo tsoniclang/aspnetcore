@@ -25,6 +25,8 @@ export enum HttpTransportType {
 
 
 export interface AvailableTransport$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_AvailableTransport: never;
+
     get TransferFormats(): IList_1<System_Internal.String> | undefined;
     set TransferFormats(value: IList_1<System_Internal.String> | undefined);
     get Transport(): string | undefined;
@@ -40,6 +42,8 @@ export const AvailableTransport: {
 export type AvailableTransport = AvailableTransport$instance;
 
 export interface ConnectionOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_ConnectionOptions: never;
+
     DisconnectTimeout: Nullable_1<TimeSpan>;
 }
 
@@ -52,6 +56,8 @@ export const ConnectionOptions: {
 export type ConnectionOptions = ConnectionOptions$instance;
 
 export interface ConnectionOptionsSetup$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_ConnectionOptionsSetup: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
     Configure(options: ConnectionOptions): void;
@@ -67,6 +73,8 @@ export const ConnectionOptionsSetup: {
 export type ConnectionOptionsSetup = ConnectionOptionsSetup$instance;
 
 export interface HttpConnectionDispatcherOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_HttpConnectionDispatcherOptions: never;
+
     AllowStatefulReconnects: boolean;
     ApplicationMaxBufferSize: long;
     readonly AuthorizationData: IList_1<IAuthorizeData>;
@@ -88,6 +96,8 @@ export const HttpConnectionDispatcherOptions: {
 export type HttpConnectionDispatcherOptions = HttpConnectionDispatcherOptions$instance;
 
 export interface LongPollingOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_LongPollingOptions: never;
+
     PollTimeout: TimeSpan;
 }
 
@@ -100,6 +110,8 @@ export const LongPollingOptions: {
 export type LongPollingOptions = LongPollingOptions$instance;
 
 export interface NegotiateMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_NegotiateMetadata: never;
+
 }
 
 
@@ -111,6 +123,8 @@ export const NegotiateMetadata: {
 export type NegotiateMetadata = NegotiateMetadata$instance;
 
 export interface NegotiationResponse$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_NegotiationResponse: never;
+
     get AccessToken(): string | undefined;
     set AccessToken(value: string | undefined);
     get AvailableTransports(): IList_1<AvailableTransport> | undefined;
@@ -136,6 +150,8 @@ export const NegotiationResponse: {
 export type NegotiationResponse = NegotiationResponse$instance;
 
 export interface WebSocketOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_WebSocketOptions: never;
+
     CloseTimeout: TimeSpan;
     get SubProtocolSelector(): Func_2<IList_1<System_Internal.String>, System_Internal.String> | undefined;
     set SubProtocolSelector(value: Func_2<IList_1<System_Internal.String>, System_Internal.String> | undefined);

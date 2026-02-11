@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_2, Int32, Int64, Nullable_1, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CreateNamedPipeServerStreamContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_NamedPipes_CreateNamedPipeServerStreamContext: never;
+
     NamedPipeEndPoint: NamedPipeEndPoint;
     PipeOptions: PipeOptions;
     get PipeSecurity(): PipeSecurity | undefined;
@@ -27,6 +29,8 @@ export const CreateNamedPipeServerStreamContext: {
 export type CreateNamedPipeServerStreamContext = CreateNamedPipeServerStreamContext$instance;
 
 export interface NamedPipeTransportOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_NamedPipes_NamedPipeTransportOptions: never;
+
     CreateNamedPipeServerStream: Func_2<CreateNamedPipeServerStreamContext, NamedPipeServerStream>;
     CurrentUserOnly: boolean;
     ListenerQueueCount: int;

@@ -75,6 +75,8 @@ export interface IViewLocalizer$instance extends IHtmlLocalizer$instance {}
 export type IViewLocalizer = IViewLocalizer$instance;
 
 export interface HtmlLocalizer$instance extends IHtmlLocalizer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer: never;
 
     get_Item(name: string): LocalizedHtmlString;
@@ -100,6 +102,8 @@ export type HtmlLocalizer = HtmlLocalizer$instance & __HtmlLocalizer$views;
 
 
 export interface HtmlLocalizer_1$instance<TResource> extends IHtmlLocalizer_1<TResource> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_1: never;
 
@@ -124,6 +128,8 @@ export type HtmlLocalizer_1<TResource> = HtmlLocalizer_1$instance<TResource> & _
 
 
 export interface HtmlLocalizerFactory$instance extends IHtmlLocalizerFactory$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizerFactory: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizerFactory: never;
 
     Create(resourceSource: Type): IHtmlLocalizer;
@@ -144,6 +150,8 @@ export type HtmlLocalizerFactory = HtmlLocalizerFactory$instance & __HtmlLocaliz
 
 
 export interface LocalizedHtmlString$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContent$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Localization_LocalizedHtmlString: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
     readonly IsResourceNotFound: boolean;
@@ -168,6 +176,8 @@ export type LocalizedHtmlString = LocalizedHtmlString$instance & __LocalizedHtml
 
 
 export interface ViewLocalizer$instance extends IViewLocalizer, Microsoft_AspNetCore_Mvc_ViewFeatures_Internal.IViewContextAware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Localization_ViewLocalizer: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Localization_IViewLocalizer: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;

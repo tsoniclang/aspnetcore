@@ -23,6 +23,8 @@ export interface IRazorSourceChecksumMetadata$instance {
 export type IRazorSourceChecksumMetadata = IRazorSourceChecksumMetadata$instance;
 
 export interface RazorCompiledItem$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem: never;
+
     readonly Identifier: string;
     readonly Kind: string;
     readonly Metadata: IReadOnlyList_1<unknown>;
@@ -37,6 +39,8 @@ export const RazorCompiledItem: (abstract new() => RazorCompiledItem) & {
 export type RazorCompiledItem = RazorCompiledItem$instance;
 
 export interface RazorCompiledItemAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemAttribute: never;
+
     readonly Identifier: string;
     readonly Kind: string;
     readonly Type: Type;
@@ -51,6 +55,8 @@ export const RazorCompiledItemAttribute: {
 export type RazorCompiledItemAttribute = RazorCompiledItemAttribute$instance;
 
 export interface RazorCompiledItemLoader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemLoader: never;
+
     CreateItem(attribute: RazorCompiledItemAttribute): RazorCompiledItem;
     LoadItems(assembly: Assembly): IReadOnlyList_1<RazorCompiledItem>;
 }
@@ -64,6 +70,8 @@ export const RazorCompiledItemLoader: {
 export type RazorCompiledItemLoader = RazorCompiledItemLoader$instance;
 
 export interface RazorCompiledItemMetadataAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemMetadataAttribute: never;
+
     readonly Key: string;
     readonly Value: string;
 }
@@ -77,6 +85,8 @@ export const RazorCompiledItemMetadataAttribute: {
 export type RazorCompiledItemMetadataAttribute = RazorCompiledItemMetadataAttribute$instance;
 
 export interface RazorConfigurationNameAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorConfigurationNameAttribute: never;
+
     readonly ConfigurationName: string;
 }
 
@@ -89,6 +99,8 @@ export const RazorConfigurationNameAttribute: {
 export type RazorConfigurationNameAttribute = RazorConfigurationNameAttribute$instance;
 
 export interface RazorExtensionAssemblyNameAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorExtensionAssemblyNameAttribute: never;
+
     readonly AssemblyName: string;
     readonly ExtensionName: string;
 }
@@ -102,6 +114,8 @@ export const RazorExtensionAssemblyNameAttribute: {
 export type RazorExtensionAssemblyNameAttribute = RazorExtensionAssemblyNameAttribute$instance;
 
 export interface RazorLanguageVersionAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorLanguageVersionAttribute: never;
+
     readonly LanguageVersion: string;
 }
 
@@ -114,6 +128,8 @@ export const RazorLanguageVersionAttribute: {
 export type RazorLanguageVersionAttribute = RazorLanguageVersionAttribute$instance;
 
 export interface RazorSourceChecksumAttribute$instance extends Attribute, IRazorSourceChecksumMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Razor_Hosting_RazorSourceChecksumAttribute: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata: never;
 
     readonly Checksum: string;

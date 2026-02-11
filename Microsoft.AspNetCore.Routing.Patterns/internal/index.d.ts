@@ -28,6 +28,8 @@ export enum RoutePatternPartKind {
 
 
 export interface RoutePattern$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePattern: never;
+
     readonly Defaults: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
     readonly InboundPrecedence: decimal;
     readonly OutboundPrecedence: decimal;
@@ -48,6 +50,8 @@ export const RoutePattern: {
 export type RoutePattern = RoutePattern$instance;
 
 export interface RoutePatternException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly Pattern: string;
@@ -63,6 +67,8 @@ export const RoutePatternException: {
 export type RoutePatternException = RoutePatternException$instance;
 
 export interface RoutePatternLiteralPart$instance extends RoutePatternPart {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternLiteralPart: never;
+
     readonly Content: string;
 }
 
@@ -74,6 +80,8 @@ export const RoutePatternLiteralPart: {
 export type RoutePatternLiteralPart = RoutePatternLiteralPart$instance;
 
 export interface RoutePatternParameterPart$instance extends RoutePatternPart {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterPart: never;
+
     readonly Default: unknown | undefined;
     readonly EncodeSlashes: boolean;
     readonly IsCatchAll: boolean;
@@ -91,6 +99,8 @@ export const RoutePatternParameterPart: {
 export type RoutePatternParameterPart = RoutePatternParameterPart$instance;
 
 export interface RoutePatternParameterPolicyReference$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterPolicyReference: never;
+
     readonly Content: string | undefined;
     readonly ParameterPolicy: IParameterPolicy | undefined;
 }
@@ -103,6 +113,8 @@ export const RoutePatternParameterPolicyReference: {
 export type RoutePatternParameterPolicyReference = RoutePatternParameterPolicyReference$instance;
 
 export interface RoutePatternPart$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternPart: never;
+
     readonly IsLiteral: boolean;
     readonly IsParameter: boolean;
     readonly IsSeparator: boolean;
@@ -117,6 +129,8 @@ export const RoutePatternPart: {
 export type RoutePatternPart = RoutePatternPart$instance;
 
 export interface RoutePatternPathSegment$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternPathSegment: never;
+
     readonly IsSimple: boolean;
     readonly Parts: IReadOnlyList_1<RoutePatternPart>;
 }
@@ -129,6 +143,8 @@ export const RoutePatternPathSegment: {
 export type RoutePatternPathSegment = RoutePatternPathSegment$instance;
 
 export interface RoutePatternSeparatorPart$instance extends RoutePatternPart {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternSeparatorPart: never;
+
     readonly Content: string;
 }
 
@@ -140,6 +156,8 @@ export const RoutePatternSeparatorPart: {
 export type RoutePatternSeparatorPart = RoutePatternSeparatorPart$instance;
 
 export interface RoutePatternTransformer$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_Patterns_RoutePatternTransformer: never;
+
     SubstituteRequiredValues(original: RoutePattern, requiredValues: unknown): RoutePattern | undefined;
     SubstituteRequiredValues(original: RoutePattern, requiredValues: RouteValueDictionary): RoutePattern | undefined;
 }

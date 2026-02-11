@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface StaticAssetDescriptor$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticAssets_StaticAssetDescriptor: never;
+
     AssetPath: string;
     Properties: IReadOnlyList_1<StaticAssetProperty>;
     ResponseHeaders: IReadOnlyList_1<StaticAssetResponseHeader>;
@@ -29,6 +31,8 @@ export const StaticAssetDescriptor: {
 export type StaticAssetDescriptor = StaticAssetDescriptor$instance;
 
 export interface StaticAssetProperty$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticAssets_StaticAssetProperty: never;
+
     readonly Name: string;
     readonly Value: string;
 }
@@ -42,6 +46,8 @@ export const StaticAssetProperty: {
 export type StaticAssetProperty = StaticAssetProperty$instance;
 
 export interface StaticAssetResponseHeader$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticAssets_StaticAssetResponseHeader: never;
+
     readonly Name: string;
     readonly Value: string;
 }
@@ -55,6 +61,8 @@ export const StaticAssetResponseHeader: {
 export type StaticAssetResponseHeader = StaticAssetResponseHeader$instance;
 
 export interface StaticAssetSelector$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticAssets_StaticAssetSelector: never;
+
     readonly Name: string;
     readonly Quality: string;
     readonly Value: string;
@@ -69,6 +77,8 @@ export const StaticAssetSelector: {
 export type StaticAssetSelector = StaticAssetSelector$instance;
 
 export interface StaticAssetsEndpointConventionBuilder$instance extends Microsoft_AspNetCore_Builder_Internal.IEndpointConventionBuilder$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_StaticAssets_StaticAssetsEndpointConventionBuilder: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder: never;
 
     Add(convention: Action_1<EndpointBuilder>): void;

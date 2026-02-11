@@ -25,6 +25,8 @@ export interface IResponseCachingFeature$instance {
 export type IResponseCachingFeature = IResponseCachingFeature$instance;
 
 export interface ResponseCachingFeature$instance extends IResponseCachingFeature$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCaching_ResponseCachingFeature: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;
 
     get VaryByQueryKeys(): string[] | undefined;
@@ -45,6 +47,8 @@ export type ResponseCachingFeature = ResponseCachingFeature$instance & __Respons
 
 
 export interface ResponseCachingMiddleware$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCaching_ResponseCachingMiddleware: never;
+
     Invoke(httpContext: HttpContext): Task;
 }
 
@@ -57,6 +61,8 @@ export const ResponseCachingMiddleware: {
 export type ResponseCachingMiddleware = ResponseCachingMiddleware$instance;
 
 export interface ResponseCachingOptions$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_ResponseCaching_ResponseCachingOptions: never;
+
     MaximumBodySize: long;
     SizeLimit: long;
     UseCaseSensitivePaths: boolean;

@@ -21,6 +21,8 @@ export type ItemsProviderDelegate_1<TItem> = (request: ItemsProviderRequest) => 
 
 
 export interface ItemsProviderRequest$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderRequest: never;
+
     readonly CancellationToken: CancellationToken;
     readonly Count: int;
     readonly StartIndex: int;
@@ -35,6 +37,8 @@ export const ItemsProviderRequest: {
 export type ItemsProviderRequest = ItemsProviderRequest$instance;
 
 export interface ItemsProviderResult_1$instance<TItem> {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderResult_1: never;
+
     readonly Items: IEnumerable_1<TItem>;
     readonly TotalItemCount: int;
 }
@@ -48,6 +52,8 @@ export const ItemsProviderResult_1: {
 export type ItemsProviderResult_1<TItem> = ItemsProviderResult_1$instance<TItem>;
 
 export interface PlaceholderContext$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_PlaceholderContext: never;
+
     readonly Index: int;
     readonly Size: float;
 }
@@ -61,6 +67,8 @@ export const PlaceholderContext: {
 export type PlaceholderContext = PlaceholderContext$instance;
 
 export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {
+    readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1: never;
+
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;

@@ -30,6 +30,8 @@ export interface IJSVoidResult$instance {
 export type IJSVoidResult = IJSVoidResult$instance;
 
 export interface DotNetInvocationInfo$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_DotNetInvocationInfo: never;
+
     readonly AssemblyName: string | undefined;
     readonly CallId: string | undefined;
     readonly DotNetObjectId: long;
@@ -45,6 +47,8 @@ export const DotNetInvocationInfo: {
 export type DotNetInvocationInfo = DotNetInvocationInfo$instance;
 
 export interface DotNetInvocationResult$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_DotNetInvocationResult: never;
+
     readonly ErrorKind: string | undefined;
     readonly Exception: Exception | undefined;
     readonly ResultJson: string | undefined;
@@ -60,6 +64,8 @@ export const DotNetInvocationResult: {
 export type DotNetInvocationResult = DotNetInvocationResult$instance;
 
 export interface JSInvocationInfo$instance {
+    readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_JSInvocationInfo: never;
+
     ArgsJson: string;
     AsyncHandle: long;
     CallType: JSCallType;
