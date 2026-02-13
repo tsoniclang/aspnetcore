@@ -6,7 +6,7 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { ConnectionAbortedException, TransferFormat } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
 import type { MemoryPool_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
 import type { ICollection_1, IDictionary_2, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";

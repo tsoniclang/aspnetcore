@@ -452,7 +452,7 @@ export interface AuthenticationSchemeOptions$instance {
 
     get ClaimsIssuer(): string | undefined;
     set ClaimsIssuer(value: string | undefined);
-    Events: CookieAuthenticationEvents | unknown;
+    Events: RemoteAuthenticationEvents | unknown;
     get EventsType(): Type | undefined;
     set EventsType(value: Type | undefined);
     get ForwardAuthenticate(): string | undefined;
