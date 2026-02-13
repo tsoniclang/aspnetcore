@@ -6,7 +6,7 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { MinDataRate } from "../../Microsoft.AspNetCore.Server.Kestrel.Core/internal/index.js";
 import type { SslStream } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
 import type { Byte, Int32, ReadOnlyMemory_1, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
