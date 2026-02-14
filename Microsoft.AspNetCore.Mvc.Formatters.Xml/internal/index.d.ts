@@ -251,7 +251,6 @@ export interface ValidationProblemDetailsWrapper$instance extends ProblemDetails
     readonly __tsonic_iface_System_Xml_Serialization_IXmlSerializable: never;
 
     ReadValue(reader: XmlReader, name: string): void;
-    Unwrap(declaredType: Type): unknown;
     WriteXml(writer: XmlWriter): void;
 }
 

@@ -130,8 +130,6 @@ export interface Page$instance extends PageBase$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
-    EnsureRenderedBodyOrSections(): void;
-    ExecuteAsync(): Task;
 }
 
 
@@ -193,7 +191,6 @@ export interface PageBase$instance extends RazorPageBase {
     Content(content: string, contentType: MediaTypeHeaderValue): ContentResult;
     EndContext(): void;
     EnsureRenderedBodyOrSections(): void;
-    ExecuteAsync(): Task;
     File(fileContents: byte[], contentType: string): FileContentResult;
     File(fileContents: byte[], contentType: string, fileDownloadName: string): FileContentResult;
     File(fileStream: Stream, contentType: string): FileStreamResult;

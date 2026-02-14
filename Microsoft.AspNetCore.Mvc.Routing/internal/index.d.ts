@@ -192,10 +192,8 @@ export interface UrlHelper$instance extends UrlHelperBase$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
 
     Action(actionContext: UrlActionContext): string | undefined;
-    Content(contentPath: string): string | undefined;
+    GenerateUrl3(protocol: string, host: string, pathData: VirtualPathData, fragment: string): string | undefined;
     GetVirtualPathData(routeName: string, values: RouteValueDictionary): VirtualPathData | undefined;
-    IsLocalUrl(url: string): boolean;
-    Link(routeName: string, values: unknown): string | undefined;
     RouteUrl(routeContext: UrlRouteContext): string | undefined;
 }
 

@@ -201,26 +201,6 @@
           "sourceInterface": "Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter"
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.DataAnnotations",
-          "isExtensionMethod": false
-        },
-        {
           "stableId": "Microsoft.AspNetCore.Mvc.DataAnnotations:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase\u00601::GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object[]):System.String",
           "clrName": "GetErrorMessage",
           "metadataToken": 0,

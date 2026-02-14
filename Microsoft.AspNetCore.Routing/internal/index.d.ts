@@ -299,7 +299,6 @@ export interface CompositeEndpointDataSource$instance extends EndpointDataSource
     Dispose(): void;
     GetChangeToken(): IChangeToken;
     GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList_1<Endpoint>;
-    GetGroupedEndpoints(context: RouteGroupContext): IReadOnlyList_1<Endpoint>;
 }
 
 
@@ -615,10 +614,8 @@ export interface Route$instance extends RouteBase$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     readonly RouteTemplate: string | undefined;
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
     OnRouteMatched(context: RouteContext): Task;
     OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | undefined;
-    RouteAsync(context: RouteContext): Task;
 }
 
 

@@ -28,15 +28,9 @@ export interface JSInProcessObjectReference$instance extends JSObjectReference$i
 
     Dispose(): void;
     GetValue<TValue>(identifier: string): TValue;
-    GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
     Invoke<TValue>(identifier: string, ...args: unknown[]): TValue;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
     InvokeConstructor(identifier: string, args: unknown[]): IJSInProcessObjectReference;
     SetValue<TValue>(identifier: string, value: TValue): void;
-    SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
-    SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
 }
 
 
@@ -81,7 +75,7 @@ export interface __JSObjectReference$views {
 export type JSObjectReference = JSObjectReference$instance & __JSObjectReference$views;
 
 
-export interface JSStreamReference$instance extends JSObjectReference$instance, Microsoft_JSInterop_Internal.IJSStreamReference$instance {
+export interface JSStreamReference$instance extends JSObjectReference$instance, Microsoft_JSInterop_Internal.IJSObjectReference$instance, Microsoft_JSInterop_Internal.IJSStreamReference$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSStreamReference: never;
 
     readonly __tsonic_iface_Microsoft_JSInterop_IJSObjectReference: never;
@@ -89,12 +83,6 @@ export interface JSStreamReference$instance extends JSObjectReference$instance, 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     readonly Length: long;
-    GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
-    SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
-    SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
 }
 
 

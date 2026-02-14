@@ -108,16 +108,13 @@ export const CookieAuthenticationEvents: {
 
 export type CookieAuthenticationEvents = CookieAuthenticationEvents$instance;
 
-export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions>, IAuthenticationSignOutHandler {
+export interface CookieAuthenticationHandler$instance extends SignInAuthenticationHandler_1<CookieAuthenticationOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationHandler: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
-    AuthenticateAsync(): Task_1<AuthenticateResult>;
-    ChallengeAsync(properties: AuthenticationProperties): Task;
-    CreateEventsAsync(): Task_1<unknown>;
     CreateEventsAsync(): Task_1<unknown>;
     FinishResponseAsync(): Task;
     HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
@@ -125,10 +122,7 @@ export interface CookieAuthenticationHandler$instance extends SignInAuthenticati
     HandleForbiddenAsync(properties: AuthenticationProperties): Task;
     HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
     HandleSignOutAsync(properties: AuthenticationProperties): Task;
-    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
     InitializeHandlerAsync(): Task;
-    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    SignOutAsync(properties: AuthenticationProperties): Task;
 }
 
 

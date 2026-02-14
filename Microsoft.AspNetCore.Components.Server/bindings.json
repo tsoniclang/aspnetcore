@@ -413,26 +413,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Components.Server:Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider::SetAuthenticationState(System.Threading.Tasks.Task_1):System.Void",
-          "clrName": "SetAuthenticationState",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.Threading.Tasks.Task_1):System.Void",
-          "normalizedSignature": "SetAuthenticationState|(System.Threading.Tasks.Task_1):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.RevalidatingServerAuthenticationStateProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Server",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -554,26 +534,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Authorization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Components.Authorization.IHostEnvironmentAuthenticationStateProvider"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider::GetAuthenticationStateAsync():System.Threading.Tasks.Task_1",
-          "clrName": "GetAuthenticationStateAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Threading.Tasks.Task_1",
-          "normalizedSignature": "GetAuthenticationStateAsync|():System.Threading.Tasks.Task_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-          "isExtensionMethod": false
         }
       ],
       "properties": [],

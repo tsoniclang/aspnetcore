@@ -635,10 +635,7 @@ export interface EmailTokenProvider_1$instance<TUser> extends TotpSecurityStampB
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     CanGenerateTwoFactorTokenAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
-    GenerateAsync(purpose: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.String>;
     GetUserModifierAsync(purpose: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.String>;
-    GetUserModifierAsync(purpose: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.String>;
-    ValidateAsync(purpose: string, token: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
 }
 
 
@@ -1391,10 +1388,7 @@ export interface PhoneNumberTokenProvider_1$instance<TUser> extends TotpSecurity
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1: never;
 
     CanGenerateTwoFactorTokenAsync(manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
-    GenerateAsync(purpose: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.String>;
     GetUserModifierAsync(purpose: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.String>;
-    GetUserModifierAsync(purpose: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.String>;
-    ValidateAsync(purpose: string, token: string, manager: UserManager_1<TUser>, user: TUser): Task_1<System_Internal.Boolean>;
 }
 
 
@@ -1768,15 +1762,13 @@ export interface __TotpSecurityStampBasedTokenProvider_1$views<TUser> {
 export type TotpSecurityStampBasedTokenProvider_1<TUser> = TotpSecurityStampBasedTokenProvider_1$instance<TUser> & __TotpSecurityStampBasedTokenProvider_1$views<TUser>;
 
 
-export interface TwoFactorSecurityStampValidator_1$instance<TUser> extends SecurityStampValidator_1$instance<TUser>, ITwoFactorSecurityStampValidator, ITwoFactorSecurityStampValidator$instance {
+export interface TwoFactorSecurityStampValidator_1$instance<TUser> extends SecurityStampValidator_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_TwoFactorSecurityStampValidator_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ISecurityStampValidator: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator: never;
 
     SecurityStampVerified(user: TUser, context: CookieValidatePrincipalContext): Task;
-    ValidateAsync(context: CookieValidatePrincipalContext): Task;
-    VerifySecurityStamp(principal: ClaimsPrincipal): Task_1<TUser | undefined>;
     VerifySecurityStamp(principal: ClaimsPrincipal): Task_1<TUser | undefined>;
 }
 
@@ -1840,14 +1832,12 @@ export interface __UserClaimsPrincipalFactory_1$views<TUser> {
 export type UserClaimsPrincipalFactory_1<TUser> = UserClaimsPrincipalFactory_1$instance<TUser> & __UserClaimsPrincipalFactory_1$views<TUser>;
 
 
-export interface UserClaimsPrincipalFactory_2$instance<TUser, TRole> extends UserClaimsPrincipalFactory_1$instance<TUser> {
+export interface UserClaimsPrincipalFactory_2$instance<TUser, TRole> extends UserClaimsPrincipalFactory_1$instance<TUser>, IUserClaimsPrincipalFactory_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserClaimsPrincipalFactory_2: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_1: never;
 
     RoleManager: RoleManager_1<TRole>;
-    CreateAsync(user: TUser): Task_1<ClaimsPrincipal>;
-    GenerateClaimsAsync(user: TUser): Task_1<ClaimsIdentity>;
     GenerateClaimsAsync(user: TUser): Task_1<ClaimsIdentity>;
 }
 
@@ -2166,7 +2156,7 @@ export interface __UserStoreBase_5$views<TUser extends IdentityUser_1<TKey>, TKe
 export type UserStoreBase_5<TUser extends IdentityUser_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>> = UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken> & __UserStoreBase_5$views<TUser, TKey, TUserClaim, TUserLogin, TUserToken>;
 
 
-export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> extends UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken>, IUserPasswordStore_1<TUser>, IUserSecurityStampStore_1<TUser>, IUserAuthenticatorKeyStore_1<TUser> {
+export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TRole extends IdentityRole_1<TKey>, TKey extends (IEquatable_1<TKey> | number | string | boolean), TUserClaim extends IdentityUserClaim_1<TKey>, TUserRole extends IdentityUserRole_1<TKey>, TUserLogin extends IdentityUserLogin_1<TKey>, TUserToken extends IdentityUserToken_1<TKey>, TRoleClaim extends IdentityRoleClaim_1<TKey>> extends UserStoreBase_5$instance<TUser, TKey, TUserClaim, TUserLogin, TUserToken> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserStoreBase_8: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IQueryableUserStore_1: never;
@@ -2185,50 +2175,14 @@ export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TR
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserTwoFactorStore_1: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    AddClaimsAsync(user: TUser, claims: IEnumerable_1<Claim>, cancellationToken?: CancellationToken): Task;
-    AddLoginAsync(user: TUser, login: UserLoginInfo, cancellationToken?: CancellationToken): Task;
     AddToRoleAsync(user: TUser, normalizedRoleName: string, cancellationToken?: CancellationToken): Task;
-    CountCodesAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
     CreateUserRole(user: TUser, role: TRole): TUserRole;
-    FindByEmailAsync(normalizedEmail: string, cancellationToken?: CancellationToken): Task_1<TUser | undefined>;
-    FindByIdAsync(userId: string, cancellationToken?: CancellationToken): Task_1<TUser | undefined>;
-    FindByLoginAsync(loginProvider: string, providerKey: string, cancellationToken?: CancellationToken): Task_1<TUser | undefined>;
     FindRoleAsync(normalizedRoleName: string, cancellationToken: CancellationToken): Task_1<TRole | undefined>;
     FindUserRoleAsync(userId: TKey, roleId: TKey, cancellationToken: CancellationToken): Task_1<TUserRole | undefined>;
-    GetAuthenticatorKeyAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | undefined>;
-    GetClaimsAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IList_1<Claim>>;
-    GetEmailAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
-    GetLockoutEndDateAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<Nullable_1<DateTimeOffset>>;
-    GetLoginsAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IList_1<UserLoginInfo>>;
-    GetPasswordHashAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
-    GetPhoneNumberAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
     GetRolesAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IList_1<System_Internal.String>>;
-    GetSecurityStampAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
-    GetTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task_1<string | undefined>;
-    GetTwoFactorEnabledAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
-    GetUserIdAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.String>;
-    GetUsersForClaimAsync(claim: Claim, cancellationToken?: CancellationToken): Task_1<IList_1<TUser>>;
     GetUsersInRoleAsync(normalizedRoleName: string, cancellationToken?: CancellationToken): Task_1<IList_1<TUser>>;
     IsInRoleAsync(user: TUser, normalizedRoleName: string, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
-    RedeemCodeAsync(user: TUser, code: string, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
     RemoveFromRoleAsync(user: TUser, normalizedRoleName: string, cancellationToken?: CancellationToken): Task;
-    RemoveLoginAsync(user: TUser, loginProvider: string, providerKey: string, cancellationToken?: CancellationToken): Task;
-    RemoveTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task;
-    ReplaceClaimAsync(user: TUser, claim: Claim, newClaim: Claim, cancellationToken?: CancellationToken): Task;
-    ReplaceCodesAsync(user: TUser, recoveryCodes: IEnumerable_1<System_Internal.String>, cancellationToken: CancellationToken): Task;
-    ResetAccessFailedCountAsync(user: TUser, cancellationToken?: CancellationToken): Task;
-    SetAuthenticatorKeyAsync(user: TUser, key: string, cancellationToken: CancellationToken): Task;
-    SetEmailAsync(user: TUser, email: string, cancellationToken?: CancellationToken): Task;
-    SetEmailConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken?: CancellationToken): Task;
-    SetLockoutEnabledAsync(user: TUser, enabled: boolean, cancellationToken?: CancellationToken): Task;
-    SetLockoutEndDateAsync(user: TUser, lockoutEnd: Nullable_1<DateTimeOffset>, cancellationToken?: CancellationToken): Task;
-    SetPasswordHashAsync(user: TUser, passwordHash: string, cancellationToken?: CancellationToken): Task;
-    SetPhoneNumberAsync(user: TUser, phoneNumber: string, cancellationToken?: CancellationToken): Task;
-    SetPhoneNumberConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken?: CancellationToken): Task;
-    SetSecurityStampAsync(user: TUser, stamp: string, cancellationToken?: CancellationToken): Task;
-    SetTokenAsync(user: TUser, loginProvider: string, name: string, value: string, cancellationToken: CancellationToken): Task;
-    SetTwoFactorEnabledAsync(user: TUser, enabled: boolean, cancellationToken?: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken?: CancellationToken): Task;
 }
 
 

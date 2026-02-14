@@ -883,14 +883,13 @@ export interface __RazorComponentResult$views {
 export type RazorComponentResult = RazorComponentResult$instance & __RazorComponentResult$views;
 
 
-export interface RazorComponentResult_1$instance<TComponent extends IComponent> extends RazorComponentResult$instance {
+export interface RazorComponentResult_1$instance<TComponent extends IComponent> extends RazorComponentResult$instance, Microsoft_AspNetCore_Http_Internal.IResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_HttpResults_RazorComponentResult_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IContentTypeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
 
-    ExecuteAsync(httpContext: HttpContext): Task;
 }
 
 

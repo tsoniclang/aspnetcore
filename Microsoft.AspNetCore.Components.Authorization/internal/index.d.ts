@@ -89,7 +89,7 @@ export const AuthenticationStateProvider: (abstract new() => AuthenticationState
 
 export type AuthenticationStateProvider = AuthenticationStateProvider$instance;
 
-export interface AuthorizeRouteView$instance extends RouteView {
+export interface AuthorizeRouteView$instance extends RouteView, Microsoft_AspNetCore_Components_Internal.IComponent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeRouteView: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -100,9 +100,7 @@ export interface AuthorizeRouteView$instance extends RouteView {
     set NotAuthorized(value: RenderFragment_1<AuthenticationState> | undefined);
     get Resource(): unknown | undefined;
     set Resource(value: unknown | undefined);
-    Attach(renderHandle: RenderHandle): void;
     Render(builder: RenderTreeBuilder): void;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -118,7 +116,7 @@ export interface __AuthorizeRouteView$views {
 export type AuthorizeRouteView = AuthorizeRouteView$instance & __AuthorizeRouteView$views;
 
 
-export interface AuthorizeView$instance extends AuthorizeViewCore$instance {
+export interface AuthorizeView$instance extends AuthorizeViewCore$instance, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeView: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -129,12 +127,7 @@ export interface AuthorizeView$instance extends AuthorizeViewCore$instance {
     set Policy(value: string | undefined);
     get Roles(): string | undefined;
     set Roles(value: string | undefined);
-    Attach(renderHandle: RenderHandle): void;
     GetAuthorizeData(): IAuthorizeData[];
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -152,7 +145,7 @@ export interface __AuthorizeView$views {
 export type AuthorizeView = AuthorizeView$instance & __AuthorizeView$views;
 
 
-export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_AuthorizeViewCore: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -169,14 +162,9 @@ export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_Asp
     set NotAuthorized(value: RenderFragment_1<AuthenticationState> | undefined);
     get Resource(): unknown | undefined;
     set Resource(value: unknown | undefined);
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     GetAuthorizeData(): IAuthorizeData[] | undefined;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
     OnParametersSetAsync(): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -193,7 +181,7 @@ export interface __AuthorizeViewCore$views {
 export type AuthorizeViewCore = AuthorizeViewCore$instance & __AuthorizeViewCore$views;
 
 
-export interface CascadingAuthenticationState$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface CascadingAuthenticationState$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Authorization_CascadingAuthenticationState: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -203,13 +191,8 @@ export interface CascadingAuthenticationState$instance extends ComponentBase, Mi
 
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(__builder: RenderTreeBuilder): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
     OnInitialized(): void;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 

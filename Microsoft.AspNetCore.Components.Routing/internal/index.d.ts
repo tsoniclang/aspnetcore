@@ -60,7 +60,7 @@ export interface IScrollToLocationHash$instance {
 
 export type IScrollToLocationHash = IScrollToLocationHash$instance;
 
-export interface FocusOnNavigate$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface FocusOnNavigate$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_FocusOnNavigate: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -71,13 +71,9 @@ export interface FocusOnNavigate$instance extends ComponentBase, Microsoft_AspNe
     set RouteData(value: RouteData | undefined);
     get Selector(): string | undefined;
     set Selector(value: string | undefined);
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
     OnParametersSet(): void;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -170,7 +166,7 @@ export interface __NavigationLock$views {
 export type NavigationLock = NavigationLock$instance & __NavigationLock$views;
 
 
-export interface NavLink$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
+export interface NavLink$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_NavLink: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -185,15 +181,10 @@ export interface NavLink$instance extends ComponentBase, Microsoft_AspNetCore_Co
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
     Match: NavLinkMatch;
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     Dispose(): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
     OnInitialized(): void;
     OnParametersSet(): void;
-    SetParametersAsync(parameters: ParameterView): Task;
     ShouldMatch(uriAbsolute: string): boolean;
 }
 

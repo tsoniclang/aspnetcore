@@ -325,7 +325,6 @@ export interface DefaultModelMetadata$instance extends ModelMetadata, System_Int
     readonly ValidationMetadata: ValidationMetadata;
     readonly ValidatorMetadata: IReadOnlyList_1<unknown>;
     GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
-    GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
     GetMetadataForType(modelType: Type): ModelMetadata;
 }
 

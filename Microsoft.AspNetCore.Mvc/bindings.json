@@ -650,26 +650,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.AcceptedAtActionResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.AcceptedAtActionResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -852,26 +832,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.AcceptedAtRouteResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.AcceptedAtRouteResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -1046,26 +1006,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.AcceptedResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.AcceptedResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -1856,26 +1796,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.AntiforgeryValidationFailedResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.AntiforgeryValidationFailedResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -2718,26 +2638,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.BadRequestObjectResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.BadRequestObjectResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -2839,26 +2739,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.BadRequestResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.BadRequestResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -3723,26 +3603,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ConflictObjectResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ConflictObjectResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -3844,26 +3704,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ConflictResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ConflictResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -8781,26 +8621,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.CreatedAtActionResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.CreatedAtActionResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -8983,26 +8803,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.CreatedAtRouteResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.CreatedAtRouteResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -9177,26 +8977,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.CreatedResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.CreatedResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -9532,26 +9312,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.EmptyResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.EmptyResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [],
@@ -9725,26 +9485,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.FileResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.FileResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -12835,26 +12575,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.MiddlewareFilterAttribute\u00601::CreateInstance(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "clrName": "CreateInstance",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "normalizedSignature": "CreateInstance|(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.MiddlewareFilterAttribute\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -14024,26 +13744,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.NoContentResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.NoContentResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -14229,26 +13929,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.NotFoundObjectResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.NotFoundObjectResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -14339,26 +14019,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.NotFoundResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.NotFoundResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -14666,26 +14326,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.OkObjectResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.OkObjectResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -14776,26 +14416,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.OkResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.OkResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -14898,26 +14518,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.PageRemoteAttribute::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.PageRemoteAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -15936,66 +15536,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesAttribute\u00601::OnResultExecuted(Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext):System.Void",
-          "clrName": "OnResultExecuted",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext):System.Void",
-          "normalizedSignature": "OnResultExecuted|(Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ProducesAttribute\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesAttribute\u00601::OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext):System.Void",
-          "clrName": "OnResultExecuting",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext):System.Void",
-          "normalizedSignature": "OnResultExecuting|(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ProducesAttribute\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesAttribute\u00601::SetContentTypes(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
-          "clrName": "SetContentTypes",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
-          "normalizedSignature": "SetContentTypes|(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ProducesAttribute\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -16601,26 +16141,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ApiExplorer.IApiResponseMetadataProvider"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute\u00601::SetContentTypes(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
-          "clrName": "SetContentTypes",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void",
-          "normalizedSignature": "SetContentTypes|(Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -17843,26 +17363,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IClientModelValidator"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.RemoteAttribute::AddValidation(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "clrName": "AddValidation",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void",
-          "normalizedSignature": "AddValidation|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientModelValidationContext):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.RemoteAttribute",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -19902,26 +19402,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ServiceFilterAttribute\u00601::CreateInstance(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "clrName": "CreateInstance",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "normalizedSignature": "CreateInstance|(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ServiceFilterAttribute\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -20554,26 +20034,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.StatusCodeResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.StatusCodeResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -20945,26 +20405,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Filters.IFilterFactory"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.TypeFilterAttribute\u00601::CreateInstance(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "clrName": "CreateInstance",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata",
-          "normalizedSignature": "CreateInstance|(System.IServiceProvider):Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.TypeFilterAttribute\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -21071,26 +20511,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -21181,26 +20601,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.UnauthorizedResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.UnauthorizedResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -21287,26 +20687,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.UnprocessableEntityObjectResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -21408,26 +20788,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.UnprocessableEntityResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.UnprocessableEntityResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -21518,26 +20878,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.IActionResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.UnsupportedMediaTypeResult::ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteResultAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteResultAsync|(Microsoft.AspNetCore.Mvc.ActionContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.UnsupportedMediaTypeResult",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [

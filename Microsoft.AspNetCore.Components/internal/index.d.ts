@@ -587,7 +587,7 @@ export const ElementReferenceContext: (abstract new() => ElementReferenceContext
 
 export type ElementReferenceContext = ElementReferenceContext$instance;
 
-export interface ErrorBoundaryBase$instance extends ComponentBase$instance, IHandleEvent$instance {
+export interface ErrorBoundaryBase$instance extends ComponentBase$instance, IComponent$instance, IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_ErrorBoundaryBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -600,13 +600,8 @@ export interface ErrorBoundaryBase$instance extends ComponentBase$instance, IHan
     get ErrorContent(): RenderFragment_1<Exception> | undefined;
     set ErrorContent(value: RenderFragment_1<Exception> | undefined);
     MaximumErrorCount: int;
-    Attach(renderHandle: RenderHandle): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
     OnErrorAsync(exception: Exception): Task;
     Recover(): void;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -763,10 +758,6 @@ export interface LayoutComponentBase$instance extends ComponentBase$instance, IH
 
     get Body(): RenderFragment | undefined;
     set Body(value: RenderFragment | undefined);
-    Attach(renderHandle: RenderHandle): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
     SetParametersAsync(parameters: ParameterView): Task;
 }
 
@@ -868,7 +859,7 @@ export const NavigationManager: (abstract new() => NavigationManager) & {
 
 export type NavigationManager = NavigationManager$instance;
 
-export interface OwningComponentBase$instance extends ComponentBase$instance, IHandleEvent$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+export interface OwningComponentBase$instance extends ComponentBase$instance, IComponent$instance, IHandleEvent$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_OwningComponentBase: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -877,13 +868,8 @@ export interface OwningComponentBase$instance extends ComponentBase$instance, IH
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Attach(renderHandle: RenderHandle): void;
     Dispose(disposing: boolean): void;
     DisposeAsyncCore(): ValueTask;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -900,7 +886,7 @@ export interface __OwningComponentBase$views {
 export type OwningComponentBase = OwningComponentBase$instance & __OwningComponentBase$views;
 
 
-export interface OwningComponentBase_1$instance<TService> extends OwningComponentBase$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+export interface OwningComponentBase_1$instance<TService> extends OwningComponentBase$instance, IComponent$instance, IHandleEvent$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_OwningComponentBase_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -909,11 +895,6 @@ export interface OwningComponentBase_1$instance<TService> extends OwningComponen
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Attach(renderHandle: RenderHandle): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 

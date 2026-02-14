@@ -662,8 +662,6 @@ export interface EmptyModelMetadataProvider$instance extends DefaultModelMetadat
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
 
-    GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
-    GetMetadataForType(modelType: Type): ModelMetadata;
 }
 
 
@@ -722,7 +720,7 @@ export interface __FormFileValueProviderFactory$views {
 export type FormFileValueProviderFactory = FormFileValueProviderFactory$instance & __FormFileValueProviderFactory$views;
 
 
-export interface FormValueProvider$instance extends BindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
+export interface FormValueProvider$instance extends BindingSourceValueProvider$instance, IBindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_FormValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
@@ -731,7 +729,6 @@ export interface FormValueProvider$instance extends BindingSourceValueProvider$i
 
     readonly Culture: CultureInfo | undefined;
     ContainsPrefix(prefix: string): boolean;
-    Filter(bindingSource: BindingSource): IValueProvider | undefined;
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
     GetValue(key: string): ValueProviderResult;
 }
@@ -780,10 +777,6 @@ export interface JQueryFormValueProvider$instance extends JQueryValueProvider$in
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
-    ContainsPrefix(prefix: string): boolean;
-    Filter(): IValueProvider | undefined;
-    Filter(bindingSource: BindingSource): IValueProvider | undefined;
-    GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
     GetValue(key: string): ValueProviderResult;
 }
 
@@ -824,7 +817,7 @@ export interface __JQueryFormValueProviderFactory$views {
 export type JQueryFormValueProviderFactory = JQueryFormValueProviderFactory$instance & __JQueryFormValueProviderFactory$views;
 
 
-export interface JQueryQueryStringValueProvider$instance extends JQueryValueProvider$instance {
+export interface JQueryQueryStringValueProvider$instance extends JQueryValueProvider$instance, IEnumerableValueProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryQueryStringValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
@@ -832,11 +825,6 @@ export interface JQueryQueryStringValueProvider$instance extends JQueryValueProv
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
-    ContainsPrefix(prefix: string): boolean;
-    Filter(): IValueProvider | undefined;
-    Filter(bindingSource: BindingSource): IValueProvider | undefined;
-    GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
-    GetValue(key: string): ValueProviderResult;
 }
 
 
@@ -886,6 +874,7 @@ export interface JQueryValueProvider$instance extends BindingSourceValueProvider
 
     readonly Culture: CultureInfo | undefined;
     ContainsPrefix(prefix: string): boolean;
+    Filter(): IValueProvider | undefined;
     Filter(bindingSource: BindingSource): IValueProvider | undefined;
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
     GetValue(key: string): ValueProviderResult;
@@ -1314,7 +1303,7 @@ export const PrefixContainer: {
 
 export type PrefixContainer = PrefixContainer$instance;
 
-export interface QueryStringValueProvider$instance extends BindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
+export interface QueryStringValueProvider$instance extends BindingSourceValueProvider$instance, IBindingSourceValueProvider$instance, IEnumerableValueProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_QueryStringValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
@@ -1323,7 +1312,6 @@ export interface QueryStringValueProvider$instance extends BindingSourceValuePro
 
     readonly Culture: CultureInfo | undefined;
     ContainsPrefix(prefix: string): boolean;
-    Filter(bindingSource: BindingSource): IValueProvider | undefined;
     GetKeysFromPrefix(prefix: string): IDictionary_2<System_Internal.String, System_Internal.String>;
     GetValue(key: string): ValueProviderResult;
 }
@@ -1364,14 +1352,13 @@ export interface __QueryStringValueProviderFactory$views {
 export type QueryStringValueProviderFactory = QueryStringValueProviderFactory$instance & __QueryStringValueProviderFactory$views;
 
 
-export interface RouteValueProvider$instance extends BindingSourceValueProvider$instance {
+export interface RouteValueProvider$instance extends BindingSourceValueProvider$instance, IBindingSourceValueProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_RouteValueProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider: never;
 
     ContainsPrefix(key: string): boolean;
-    Filter(bindingSource: BindingSource): IValueProvider | undefined;
     GetValue(key: string): ValueProviderResult;
 }
 

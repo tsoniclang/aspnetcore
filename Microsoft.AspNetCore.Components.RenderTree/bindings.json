@@ -2441,7 +2441,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
-          "isSealed": false,
+          "isSealed": true,
           "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.RenderTree.WebRenderer",
           "declaringAssemblyName": "Microsoft.AspNetCore.Components.Web",

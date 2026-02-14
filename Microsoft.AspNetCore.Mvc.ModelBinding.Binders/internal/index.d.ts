@@ -25,11 +25,8 @@ export interface ArrayModelBinder_1$instance<TElement> extends CollectionModelBi
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
-    BindModelAsync(bindingContext: ModelBindingContext): Task;
     CanCreateInstance(targetType: Type): boolean;
     ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<TElement>): unknown | undefined;
-    ConvertToCollectionType(targetType: Type, collection: IEnumerable_1<TElement>): unknown | undefined;
-    CopyToModel(target: unknown, sourceCollection: IEnumerable_1<TElement>): void;
     CopyToModel(target: unknown, sourceCollection: IEnumerable_1<TElement>): void;
     CreateEmptyCollection(targetType: Type): unknown;
 }
@@ -514,12 +511,11 @@ export interface __DoubleModelBinder$views {
 export type DoubleModelBinder = DoubleModelBinder$instance & __DoubleModelBinder$views;
 
 
-export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$instance {
+export interface EnumTypeModelBinder$instance extends SimpleTypeModelBinder$instance, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Binders_EnumTypeModelBinder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder: never;
 
-    BindModelAsync(bindingContext: ModelBindingContext): Task;
     CheckModel(bindingContext: ModelBindingContext, valueProviderResult: ValueProviderResult, model: unknown): void;
 }
 

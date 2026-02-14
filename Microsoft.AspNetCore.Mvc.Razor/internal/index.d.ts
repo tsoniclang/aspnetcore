@@ -219,7 +219,6 @@ export interface RazorPage$instance extends RazorPageBase$instance {
     DefineSection2(name: string, section: RenderAsyncDelegate): void;
     EndContext(): void;
     EnsureRenderedBodyOrSections(): void;
-    ExecuteAsync(): Task;
     IgnoreBody(): void;
     IgnoreSection(sectionName: string): void;
     IsSectionDefined(name: string): boolean;
@@ -249,8 +248,6 @@ export interface RazorPage_1$instance<TModel> extends RazorPage$instance {
 
     readonly Model: TModel;
     ViewData: ViewDataDictionary_1<TModel>;
-    EnsureRenderedBodyOrSections(): void;
-    ExecuteAsync(): Task;
 }
 
 

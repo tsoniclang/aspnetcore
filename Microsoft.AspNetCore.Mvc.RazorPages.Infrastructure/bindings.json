@@ -821,11 +821,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1):System.Threading.Tasks.Task",
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1\u003CSystem.Int32\u003E):System.Threading.Tasks.Task",
           "clrName": "ExecuteAsync",
           "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1):System.Threading.Tasks.Task|static=false",
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1\u003CSystem.Int32\u003E):System.Threading.Tasks.Task",
+          "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewEngines.IView,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary,System.String,System.Nullable_1\u003CSystem.Int32\u003E):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
           "provenance": "BaseOverload",
           "arity": 0,
@@ -841,11 +841,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1):System.Threading.Tasks.Task",
+          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor::ExecuteAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1\u003CSystem.Int32\u003E):System.Threading.Tasks.Task",
           "clrName": "ExecuteAsync",
           "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1):System.Threading.Tasks.Task|static=false",
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1\u003CSystem.Int32\u003E):System.Threading.Tasks.Task",
+          "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String,System.Nullable_1\u003CSystem.Int32\u003E):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
           "provenance": "BaseOverload",
           "arity": 0,

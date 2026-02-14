@@ -48,7 +48,7 @@ export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAt
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
-    AddValidation(context: ClientModelValidationContext): void;
+    GetErrorMessage(validationContext: ModelValidationContextBase): string;
     GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
 
