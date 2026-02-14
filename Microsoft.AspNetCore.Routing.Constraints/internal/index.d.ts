@@ -16,7 +16,7 @@ import type { Regex } from "@tsonic/dotnet/System.Text.RegularExpressions/intern
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Int32, Int64, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface AlphaRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+export interface AlphaRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_AlphaRouteConstraint: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
@@ -24,8 +24,6 @@ export interface AlphaRouteConstraint$instance extends RegexRouteConstraint$inst
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
-    MatchesLiteral(parameterName: string, literal: string): boolean;
 }
 
 
@@ -522,7 +520,7 @@ export interface __RangeRouteConstraint$views {
 export type RangeRouteConstraint = RangeRouteConstraint$instance & __RangeRouteConstraint$views;
 
 
-export interface RegexInlineRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
+export interface RegexInlineRouteConstraint$instance extends RegexRouteConstraint$instance, IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance, Microsoft_AspNetCore_Routing_Matching_Internal.IParameterLiteralNodeMatchingPolicy$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Constraints_RegexInlineRouteConstraint: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
@@ -530,8 +528,6 @@ export interface RegexInlineRouteConstraint$instance extends RegexRouteConstrain
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
-    MatchesLiteral(parameterName: string, literal: string): boolean;
 }
 
 

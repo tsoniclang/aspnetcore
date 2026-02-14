@@ -96,16 +96,13 @@ export const OAuthEvents: {
 
 export type OAuthEvents = OAuthEvents$instance;
 
-export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions>, IAuthenticationRequestHandler {
+export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends RemoteAuthenticationHandler_1<TOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
-    AuthenticateAsync(): Task_1<AuthenticateResult>;
     BuildChallengeUrl(properties: AuthenticationProperties, redirectUri: string): string;
-    ChallengeAsync(properties: AuthenticationProperties): Task;
-    CreateEventsAsync(): Task_1<unknown>;
     CreateEventsAsync(): Task_1<unknown>;
     CreateTicketAsync(identity: ClaimsIdentity, properties: AuthenticationProperties, tokens: OAuthTokenResponse): Task_1<AuthenticationTicket>;
     ExchangeCodeAsync(context: OAuthCodeExchangeContext): Task_1<OAuthTokenResponse>;
@@ -113,8 +110,6 @@ export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends 
     FormatScope(): string;
     HandleChallengeAsync(properties: AuthenticationProperties): Task;
     HandleRemoteAuthenticateAsync(): Task_1<HandleRequestResult>;
-    HandleRequestAsync(): Task_1<System_Internal.Boolean>;
-    InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
 }
 
 

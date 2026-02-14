@@ -80,12 +80,9 @@ export interface DefaultTagHelperContent$instance extends TagHelperContent$insta
     readonly IsEmptyOrWhiteSpace: boolean;
     readonly IsModified: boolean;
     Append(unencoded: string): TagHelperContent;
-    Append(unencoded: string): IHtmlContentBuilder;
     AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
     AppendHtml(encoded: string): TagHelperContent;
-    AppendHtml(content: IHtmlContent): IHtmlContentBuilder;
     Clear(): TagHelperContent;
-    Clear(): IHtmlContentBuilder;
     CopyTo(destination: IHtmlContentBuilder): void;
     GetContent(): string;
     GetContent(encoder: HtmlEncoder): string;

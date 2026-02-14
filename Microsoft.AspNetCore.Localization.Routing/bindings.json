@@ -66,26 +66,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Localization",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Localization.IRequestCultureProvider"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Localization.Routing:Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider::DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
-          "clrName": "DetermineProviderCultureResult",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1",
-          "normalizedSignature": "DetermineProviderCultureResult|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Localization.Routing.RouteDataRequestCultureProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Localization.Routing",
-          "isExtensionMethod": false
         }
       ],
       "properties": [

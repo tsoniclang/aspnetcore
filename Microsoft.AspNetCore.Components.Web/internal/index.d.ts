@@ -95,7 +95,7 @@ export const DragEventArgs: {
 
 export type DragEventArgs = DragEventArgs$instance;
 
-export interface ErrorBoundary$instance extends ErrorBoundaryBase {
+export interface ErrorBoundary$instance extends ErrorBoundaryBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ErrorBoundary: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -103,13 +103,8 @@ export interface ErrorBoundary$instance extends ErrorBoundaryBase {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
     OnErrorAsync(exception: Exception): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -163,7 +158,7 @@ export const FocusEventArgs: {
 
 export type FocusEventArgs = FocusEventArgs$instance;
 
-export interface HeadContent$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface HeadContent$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HeadContent: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -172,12 +167,7 @@ export interface HeadContent$instance extends ComponentBase, Microsoft_AspNetCor
 
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -195,19 +185,15 @@ export interface __HeadContent$views {
 export type HeadContent = HeadContent$instance & __HeadContent$views;
 
 
-export interface HeadOutlet$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface HeadOutlet$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_HeadOutlet: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 
@@ -370,7 +356,7 @@ export const MouseEventArgs: {
 
 export type MouseEventArgs = MouseEventArgs$instance;
 
-export interface PageTitle$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
+export interface PageTitle$instance extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_PageTitle: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -379,12 +365,7 @@ export interface PageTitle$instance extends ComponentBase, Microsoft_AspNetCore_
 
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
-    OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 

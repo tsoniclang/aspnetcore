@@ -571,46 +571,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Page::EnsureRenderedBodyOrSections():System.Void",
-          "clrName": "EnsureRenderedBodyOrSections",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "EnsureRenderedBodyOrSections|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Page",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.Page::ExecuteAsync():System.Threading.Tasks.Task",
-          "clrName": "ExecuteAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteAsync|():System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.Page",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -2995,26 +2955,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Razor.IRazorPage"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.RazorPages:Microsoft.AspNetCore.Mvc.RazorPages.PageBase::ExecuteAsync():System.Threading.Tasks.Task",
-          "clrName": "ExecuteAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteAsync|():System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.RazorPages.PageBase",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.RazorPages",
-          "isExtensionMethod": false
         }
       ],
       "properties": [

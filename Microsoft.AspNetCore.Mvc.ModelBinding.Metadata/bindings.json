@@ -2086,26 +2086,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata::GetMetadataForProperties(System.Type):System.Collections.Generic.IEnumerable_1",
-          "clrName": "GetMetadataForProperties",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.Type):System.Collections.Generic.IEnumerable_1",
-          "normalizedSignature": "GetMetadataForProperties|(System.Type):System.Collections.Generic.IEnumerable_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadata",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -3274,26 +3254,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider::GetMetadataForProperties(System.Type):System.Collections.Generic.IEnumerable_1",
-          "clrName": "GetMetadataForProperties",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.Type):System.Collections.Generic.IEnumerable_1",
-          "normalizedSignature": "GetMetadataForProperties|(System.Type):System.Collections.Generic.IEnumerable_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelMetadataProvider",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
         }
       ],
       "properties": [

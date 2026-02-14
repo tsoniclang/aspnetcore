@@ -66,7 +66,7 @@ export const PlaceholderContext: {
 
 export type PlaceholderContext = PlaceholderContext$instance;
 
-export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {
+export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_AspNetCore_Components_Internal.IComponent$instance, Microsoft_AspNetCore_Components_Internal.IHandleEvent$instance, System_Internal.IAsyncDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
@@ -91,15 +91,11 @@ export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_A
     get Placeholder(): RenderFragment_1<PlaceholderContext> | undefined;
     set Placeholder(value: RenderFragment_1<PlaceholderContext> | undefined);
     SpacerElement: string;
-    Attach(renderHandle: RenderHandle): void;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     DisposeAsync(): ValueTask;
-    HandleEventAsync(item: EventCallbackWorkItem, arg: unknown): Task;
     OnAfterRenderAsync(firstRender: boolean): Task;
-    OnAfterRenderAsync(): Task;
     OnParametersSet(): void;
     RefreshDataAsync(): Task;
-    SetParametersAsync(parameters: ParameterView): Task;
 }
 
 

@@ -181,18 +181,12 @@ export interface JSInProcessRuntime$instance extends JSRuntime, System_Internal.
     readonly __tsonic_iface_System_IDisposable: never;
 
     GetValue<TValue>(identifier: string): TValue;
-    GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
     Invoke<TValue>(identifier: string, ...args: unknown[]): TValue;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
     InvokeConstructor(identifier: string, ...args: unknown[]): IJSInProcessObjectReference;
     InvokeJS(identifier: string, argsJson: string): string | undefined;
     InvokeJS(identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): string | undefined;
     InvokeJS(invocationInfo: JSInvocationInfo): string | undefined;
     SetValue<TValue>(identifier: string, value: TValue): void;
-    SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
-    SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
 }
 
 

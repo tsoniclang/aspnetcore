@@ -436,53 +436,24 @@ export interface HtmlHelper_1$instance<TModel> extends HtmlHelper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware: never;
 
-    ActionLink(linkText: string, actionName: string, controllerName: string, protocol: string, hostname: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
-    AntiForgeryToken(): IHtmlContent;
-    BeginForm(actionName: string, controllerName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    BeginRouteForm(routeName: string, routeValues: unknown, method: FormMethod, antiforgery: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): MvcForm;
-    CheckBox(expression: string, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     CheckBoxFor(expression: Expression_1<Func_2<TModel, System_Internal.Boolean>>, htmlAttributes: unknown): IHtmlContent;
     Contextualize(viewContext: ViewContext): void;
-    Display(expression: string, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
     DisplayFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    DisplayName(expression: string): string;
     DisplayNameFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
     DisplayNameForInnerType<TModelItem, TResult>(expression: Expression_1<Func_2<TModelItem, TResult>>): string;
     DisplayTextFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
-    DropDownList(expression: string, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
     DropDownListFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, optionLabel: string, htmlAttributes: unknown): IHtmlContent;
     EditorFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string, additionalViewData: unknown): IHtmlContent;
-    Encode(value: string): string;
-    Encode(value: unknown): string;
-    EndForm(): void;
-    FormatValue(value: unknown, format: string): string;
-    GetEnumSelectList<TEnum extends unknown>(): IEnumerable_1<SelectListItem>;
-    GetEnumSelectList(enumType: Type): IEnumerable_1<SelectListItem>;
-    GetEnumSelectList(metadata: ModelMetadata): IEnumerable_1<SelectListItem>;
-    Hidden(expression: string, value: unknown, htmlAttributes: unknown): IHtmlContent;
     HiddenFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
     IdFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
-    Label(expression: string, labelText: string, htmlAttributes: unknown): IHtmlContent;
     LabelFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, labelText: string, htmlAttributes: unknown): IHtmlContent;
-    ListBox(expression: string, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
     ListBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, selectList: IEnumerable_1<SelectListItem>, htmlAttributes: unknown): IHtmlContent;
     NameFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>): string;
-    PartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task_1<IHtmlContent>;
     PasswordFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, htmlAttributes: unknown): IHtmlContent;
-    RadioButton(expression: string, value: unknown, isChecked: Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): IHtmlContent;
     RadioButtonFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, value: unknown, htmlAttributes: unknown): IHtmlContent;
-    Raw(value: string): IHtmlContent;
-    Raw(value: unknown): IHtmlContent;
-    RenderPartialAsync(partialViewName: string, model: unknown, viewData: ViewDataDictionary): Task;
-    RouteLink(linkText: string, routeName: string, protocol: string, hostName: string, fragment: string, routeValues: unknown, htmlAttributes: unknown): IHtmlContent;
-    TextArea(expression: string, value: string, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
     TextAreaFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, rows: int, columns: int, htmlAttributes: unknown): IHtmlContent;
-    TextBox(expression: string, value: unknown, format: string, htmlAttributes: unknown): IHtmlContent;
     TextBoxFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, format: string, htmlAttributes: unknown): IHtmlContent;
-    ValidationMessage(expression: string, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
     ValidationMessageFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    ValidationSummary(excludePropertyErrors: boolean, message: string, htmlAttributes: unknown, tag: string): IHtmlContent;
-    Value(expression: string, format: string): string;
     ValueFor<TResult>(expression: Expression_1<Func_2<TModel, TResult>>, format: string): string;
 }
 
@@ -594,6 +565,8 @@ export interface PartialViewResultExecutor$instance extends ViewExecutor {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewResult: PartialViewResult): Task;
+    ExecuteAsync(context: ActionContext, result: PartialViewResult): Task;
     ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
     FindView(actionContext: ActionContext, viewResult: PartialViewResult): ViewEngineResult;
 }
@@ -939,6 +912,7 @@ export interface ViewResultExecutor$instance extends ViewExecutor {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
+    ExecuteAsync(context: ActionContext, result: ViewResult): Task;
     ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
     FindView(actionContext: ActionContext, viewResult: ViewResult): ViewEngineResult;
 }

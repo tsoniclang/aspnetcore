@@ -146,8 +146,6 @@ export interface DelegateStartup$instance extends StartupBase_1$instance<IServic
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
 
     Configure(app: IApplicationBuilder): void;
-    ConfigureServices(services: IServiceCollection): IServiceProvider;
-    ConfigureServices(services: IServiceCollection): void;
 }
 
 
@@ -204,10 +202,7 @@ export interface StartupBase_1$instance<TBuilder> extends StartupBase$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_IStartup: never;
 
-    Configure(app: IApplicationBuilder): void;
     ConfigureContainer(builder: TBuilder): void;
-    ConfigureServices(services: IServiceCollection): void;
-    ConfigureServices(services: IServiceCollection): IServiceProvider;
     CreateServiceProvider(services: IServiceCollection): IServiceProvider;
 }
 

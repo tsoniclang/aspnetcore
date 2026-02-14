@@ -1256,26 +1256,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Formatters.Xml:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper::Unwrap(System.Type):System.Object",
-          "clrName": "Unwrap",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.Type):System.Object",
-          "normalizedSignature": "Unwrap|(System.Type):System.Object|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
-          "isExtensionMethod": false
         }
       ],
       "properties": [],

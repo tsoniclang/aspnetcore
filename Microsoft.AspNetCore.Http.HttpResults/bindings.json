@@ -5882,26 +5882,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.AspNetCore.Http.IResult"
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Components.Endpoints:Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult\u00601::ExecuteAsync(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "clrName": "ExecuteAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task",
-          "normalizedSignature": "ExecuteAsync|(Microsoft.AspNetCore.Http.HttpContext):System.Threading.Tasks.Task|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components.Endpoints",
-          "isExtensionMethod": false
         }
       ],
       "properties": [

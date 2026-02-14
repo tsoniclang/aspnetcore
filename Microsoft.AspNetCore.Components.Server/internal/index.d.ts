@@ -64,7 +64,7 @@ export interface __CircuitRootComponentOptions$views {
 export type CircuitRootComponentOptions = CircuitRootComponentOptions$instance & __CircuitRootComponentOptions$views;
 
 
-export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance, System_Internal.IDisposable {
+export interface RevalidatingServerAuthenticationStateProvider$instance extends ServerAuthenticationStateProvider$instance, Microsoft_AspNetCore_Components_Authorization_Internal.IHostEnvironmentAuthenticationStateProvider$instance, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_RevalidatingServerAuthenticationStateProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider: never;
@@ -72,7 +72,6 @@ export interface RevalidatingServerAuthenticationStateProvider$instance extends 
 
     readonly RevalidationInterval: TimeSpan;
     Dispose(disposing: boolean): void;
-    SetAuthenticationState(authenticationStateTask: Task_1<AuthenticationState>): void;
     ValidateAuthenticationStateAsync(authenticationState: AuthenticationState, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
 }
 
