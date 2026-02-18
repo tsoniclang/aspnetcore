@@ -51,7 +51,7 @@ import type { ConfigurationManager, IConfiguration, IConfigurationBuilder } from
 import type { IServiceCollection, IServiceProviderFactory_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 import type { IMetricsBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Diagnostics.Metrics/internal/index.js";
 import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Extensions.FileProviders/internal/index.js";
-import * as Microsoft_Extensions_Hosting_Lib from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
+import * as Microsoft_Extensions_Hosting_Lib_tsonic_microsoft_extensions from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
 import type { HostBuilderContext, IHost, IHostApplicationBuilder, IHostApplicationLifetime, IHostBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Hosting/internal/index.js";
 import type { ILogger, ILoggerFactory, ILoggingBuilder } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
@@ -138,7 +138,7 @@ export interface __ComponentEndpointConventionBuilder$views {
 export type ComponentEndpointConventionBuilder = ComponentEndpointConventionBuilder$instance & __ComponentEndpointConventionBuilder$views;
 
 
-export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance, Microsoft_Extensions_Hosting_Lib.IHostBuilder {
+export interface ConfigureHostBuilder$instance extends Microsoft_AspNetCore_Hosting_Infrastructure_Internal.ISupportsConfigureWebHost$instance, Microsoft_Extensions_Hosting_Lib_tsonic_microsoft_extensions.IHostBuilder {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_ConfigureHostBuilder: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsConfigureWebHost: never;
@@ -621,7 +621,7 @@ export const StatusCodePagesOptions: {
 
 export type StatusCodePagesOptions = StatusCodePagesOptions$instance;
 
-export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance, Microsoft_Extensions_Hosting_Lib.IHost, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+export interface WebApplication$instance extends IApplicationBuilder$instance, Microsoft_AspNetCore_Routing_Internal.IEndpointRouteBuilder$instance, Microsoft_Extensions_Hosting_Lib_tsonic_microsoft_extensions.IHost, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_WebApplication: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Builder_IApplicationBuilder: never;
