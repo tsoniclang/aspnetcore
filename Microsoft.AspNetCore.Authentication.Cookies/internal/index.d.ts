@@ -148,7 +148,7 @@ export interface CookieAuthenticationOptions$instance extends AuthenticationSche
     CookieManager: ICookieManager;
     get DataProtectionProvider(): IDataProtectionProvider | undefined;
     set DataProtectionProvider(value: IDataProtectionProvider | undefined);
-    Events: CookieAuthenticationEvents | unknown;
+    Events: unknown;
     ExpireTimeSpan: TimeSpan;
     LoginPath: PathString;
     LogoutPath: PathString;

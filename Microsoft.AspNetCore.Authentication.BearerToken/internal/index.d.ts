@@ -51,7 +51,7 @@ export interface BearerTokenOptions$instance extends AuthenticationSchemeOptions
 
     BearerTokenExpiration: TimeSpan;
     BearerTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
-    Events: BearerTokenEvents | unknown;
+    Events: unknown;
     RefreshTokenExpiration: TimeSpan;
     RefreshTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
 }
