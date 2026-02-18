@@ -134,7 +134,7 @@ export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
     readonly ClaimActions: ClaimActionCollection;
     ClientId: string;
     ClientSecret: string;
-    Events: OAuthEvents | RemoteAuthenticationEvents | unknown;
+    Events: unknown;
     readonly Scope: ICollection_1<System_Internal.String>;
     StateDataFormat: ISecureDataFormat_1<AuthenticationProperties>;
     TokenEndpoint: string;

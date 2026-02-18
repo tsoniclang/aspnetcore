@@ -22,6 +22,7 @@ import type { IApiBehaviorMetadata, IClientErrorActionResult, ICompatibilitySwit
 import type { DefaultModelBindingMessageProvider, IMetadataDetailsProvider } from './Microsoft.AspNetCore.Mvc.ModelBinding.Metadata/internal/index.js';
 import type { ClientModelValidationContext, IClientModelValidator, IClientModelValidatorProvider, IModelValidatorProvider, IObjectModelValidator } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 import type { BindingSource, EmptyBodyBehavior, IBinderTypeProviderMetadata, IBindingSourceMetadata, IModelBinder, IModelBinderFactory, IModelBinderProvider, IModelMetadataProvider, IModelNameProvider, IPropertyFilterProvider, IRequestPredicateProvider, IValueProvider, IValueProviderFactory, ModelMetadata, ModelStateDictionary } from './Microsoft.AspNetCore.Mvc.ModelBinding/internal/index.js';
+import type { CompiledPageActionDescriptor } from './Microsoft.AspNetCore.Mvc.RazorPages/internal/index.js';
 import type { ViewContext } from './Microsoft.AspNetCore.Mvc.Rendering/internal/index.js';
 import type { HttpMethodAttribute, IActionHttpMethodProvider, IRouteTemplateProvider, IRouteValueProvider, RouteValueAttribute, UrlActionContext, UrlRouteContext } from './Microsoft.AspNetCore.Mvc.Routing/internal/index.js';
 import type { ContentViewComponentResult, ViewComponentContext, ViewViewComponentResult } from './Microsoft.AspNetCore.Mvc.ViewComponents/internal/index.js';

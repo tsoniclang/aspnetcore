@@ -289,7 +289,7 @@ export interface AuthenticationHandler_1$instance<TOptions extends Authenticatio
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
 
     readonly ClaimsIssuer: string;
-    Events: RemoteAuthenticationEvents | unknown;
+    Events: unknown;
     Options: TOptions;
     Scheme: AuthenticationScheme;
     AuthenticateAsync(): Task_1<AuthenticateResult>;
@@ -452,7 +452,7 @@ export interface AuthenticationSchemeOptions$instance {
 
     get ClaimsIssuer(): string | undefined;
     set ClaimsIssuer(value: string | undefined);
-    Events: BearerTokenEvents | unknown;
+    Events: unknown;
     get EventsType(): Type | undefined;
     set EventsType(value: Type | undefined);
     get ForwardAuthenticate(): string | undefined;
@@ -855,7 +855,7 @@ export interface RemoteAuthenticationOptions$instance extends AuthenticationSche
     CorrelationCookie: CookieBuilder;
     get DataProtectionProvider(): IDataProtectionProvider | undefined;
     set DataProtectionProvider(value: IDataProtectionProvider | undefined);
-    Events: RemoteAuthenticationEvents | unknown;
+    Events: unknown;
     RemoteAuthenticationTimeout: TimeSpan;
     ReturnUrlParameter: string;
     SaveTokens: boolean;
