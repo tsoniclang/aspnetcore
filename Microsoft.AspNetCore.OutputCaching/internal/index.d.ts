@@ -112,8 +112,10 @@ export interface OutputCacheContext$instance {
     readonly CacheVaryByRules: CacheVaryByRules;
     EnableOutputCaching: boolean;
     HttpContext: HttpContext;
-    ResponseExpirationTimeSpan: Nullable_1<TimeSpan>;
-    ResponseTime: Nullable_1<DateTimeOffset>;
+    get ResponseExpirationTimeSpan(): Nullable_1<TimeSpan>;
+    set ResponseExpirationTimeSpan(value: Nullable_1<TimeSpan> | TimeSpan);
+    get ResponseTime(): Nullable_1<DateTimeOffset>;
+    set ResponseTime(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     readonly Tags: HashSet_1<System_Internal.String>;
 }
 

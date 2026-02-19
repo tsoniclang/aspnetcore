@@ -34,8 +34,10 @@ export interface NamedPipeTransportOptions$instance {
     CreateNamedPipeServerStream: Func_2<CreateNamedPipeServerStreamContext, NamedPipeServerStream>;
     CurrentUserOnly: boolean;
     ListenerQueueCount: int;
-    MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
-    MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
+    get MaxReadBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxReadBufferSize(value: Nullable_1<System_Internal.Int64> | long);
+    get MaxWriteBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxWriteBufferSize(value: Nullable_1<System_Internal.Int64> | long);
     get PipeSecurity(): PipeSecurity | undefined;
     set PipeSecurity(value: PipeSecurity | undefined);
 }

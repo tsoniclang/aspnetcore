@@ -373,7 +373,8 @@ export interface ForwardedHeadersOptions$instance {
     ForwardedHostHeaderName: string;
     ForwardedPrefixHeaderName: string;
     ForwardedProtoHeaderName: string;
-    ForwardLimit: Nullable_1<System_Internal.Int32>;
+    get ForwardLimit(): Nullable_1<System_Internal.Int32>;
+    set ForwardLimit(value: Nullable_1<System_Internal.Int32> | int);
     readonly KnownIPNetworks: IList_1<IPNetwork__System_Net>;
     readonly KnownNetworks: IList_1<IPNetwork>;
     readonly KnownProxies: IList_1<IPAddress>;
@@ -454,7 +455,8 @@ export interface IISServerOptions$instance {
     set AuthenticationDisplayName(value: string | undefined);
     AutomaticAuthentication: boolean;
     MaxRequestBodyBufferSize: int;
-    MaxRequestBodySize: Nullable_1<System_Internal.Int64>;
+    get MaxRequestBodySize(): Nullable_1<System_Internal.Int64>;
+    set MaxRequestBodySize(value: Nullable_1<System_Internal.Int64> | long);
 }
 
 

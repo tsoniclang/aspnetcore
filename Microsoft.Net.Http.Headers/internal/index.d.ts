@@ -28,10 +28,13 @@ export interface CacheControlHeaderValue$instance {
     readonly __tsonic_type_Microsoft_Net_Http_Headers_CacheControlHeaderValue: never;
 
     readonly Extensions: IList_1<NameValueHeaderValue>;
-    MaxAge: Nullable_1<TimeSpan>;
+    get MaxAge(): Nullable_1<TimeSpan>;
+    set MaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
     MaxStale: boolean;
-    MaxStaleLimit: Nullable_1<TimeSpan>;
-    MinFresh: Nullable_1<TimeSpan>;
+    get MaxStaleLimit(): Nullable_1<TimeSpan>;
+    set MaxStaleLimit(value: Nullable_1<TimeSpan> | TimeSpan);
+    get MinFresh(): Nullable_1<TimeSpan>;
+    set MinFresh(value: Nullable_1<TimeSpan> | TimeSpan);
     MustRevalidate: boolean;
     NoCache: boolean;
     readonly NoCacheHeaders: ICollection_1<StringSegment>;
@@ -42,7 +45,8 @@ export interface CacheControlHeaderValue$instance {
     readonly PrivateHeaders: ICollection_1<StringSegment>;
     ProxyRevalidate: boolean;
     Public: boolean;
-    SharedMaxAge: Nullable_1<TimeSpan>;
+    get SharedMaxAge(): Nullable_1<TimeSpan>;
+    set SharedMaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -73,15 +77,19 @@ export type CacheControlHeaderValue = CacheControlHeaderValue$instance;
 export interface ContentDispositionHeaderValue$instance {
     readonly __tsonic_type_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue: never;
 
-    CreationDate: Nullable_1<DateTimeOffset>;
+    get CreationDate(): Nullable_1<DateTimeOffset>;
+    set CreationDate(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     DispositionType: StringSegment;
     FileName: StringSegment;
     FileNameStar: StringSegment;
-    ModificationDate: Nullable_1<DateTimeOffset>;
+    get ModificationDate(): Nullable_1<DateTimeOffset>;
+    set ModificationDate(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     Name: StringSegment;
     readonly Parameters: IList_1<NameValueHeaderValue>;
-    ReadDate: Nullable_1<DateTimeOffset>;
-    Size: Nullable_1<System_Internal.Int64>;
+    get ReadDate(): Nullable_1<DateTimeOffset>;
+    set ReadDate(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
+    get Size(): Nullable_1<System_Internal.Int64>;
+    set Size(value: Nullable_1<System_Internal.Int64> | long);
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     SetHttpFileName(fileName: StringSegment): void;
@@ -102,11 +110,14 @@ export type ContentDispositionHeaderValue = ContentDispositionHeaderValue$instan
 export interface ContentRangeHeaderValue$instance {
     readonly __tsonic_type_Microsoft_Net_Http_Headers_ContentRangeHeaderValue: never;
 
-    From: Nullable_1<System_Internal.Int64>;
+    get From(): Nullable_1<System_Internal.Int64>;
+    set From(value: Nullable_1<System_Internal.Int64> | long);
     readonly HasLength: boolean;
     readonly HasRange: boolean;
-    Length: Nullable_1<System_Internal.Int64>;
-    To: Nullable_1<System_Internal.Int64>;
+    get Length(): Nullable_1<System_Internal.Int64>;
+    set Length(value: Nullable_1<System_Internal.Int64> | long);
+    get To(): Nullable_1<System_Internal.Int64>;
+    set To(value: Nullable_1<System_Internal.Int64> | long);
     Unit: StringSegment;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -191,7 +202,8 @@ export interface MediaTypeHeaderValue$instance {
     readonly MatchesAllTypes: boolean;
     MediaType: StringSegment;
     readonly Parameters: IList_1<NameValueHeaderValue>;
-    Quality: Nullable_1<System_Internal.Double>;
+    get Quality(): Nullable_1<System_Internal.Double>;
+    set Quality(value: Nullable_1<System_Internal.Double> | double);
     readonly SubType: StringSegment;
     readonly SubTypeWithoutSuffix: StringSegment;
     readonly Suffix: StringSegment;
@@ -332,10 +344,12 @@ export interface SetCookieHeaderValue$instance {
     readonly __tsonic_type_Microsoft_Net_Http_Headers_SetCookieHeaderValue: never;
 
     Domain: StringSegment;
-    Expires: Nullable_1<DateTimeOffset>;
+    get Expires(): Nullable_1<DateTimeOffset>;
+    set Expires(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     readonly Extensions: IList_1<StringSegment>;
     HttpOnly: boolean;
-    MaxAge: Nullable_1<TimeSpan>;
+    get MaxAge(): Nullable_1<TimeSpan>;
+    set MaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
     Name: StringSegment;
     Path: StringSegment;
     SameSite: SameSiteMode;

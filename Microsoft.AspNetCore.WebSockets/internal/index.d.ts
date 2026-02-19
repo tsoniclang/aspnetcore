@@ -19,8 +19,10 @@ import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensio
 export interface ExtendedWebSocketAcceptContext$instance extends WebSocketAcceptContext {
     readonly __tsonic_type_Microsoft_AspNetCore_WebSockets_ExtendedWebSocketAcceptContext: never;
 
-    KeepAliveInterval: Nullable_1<TimeSpan>;
-    ReceiveBufferSize: Nullable_1<System_Internal.Int32>;
+    get KeepAliveInterval(): Nullable_1<TimeSpan>;
+    set KeepAliveInterval(value: Nullable_1<TimeSpan> | TimeSpan);
+    get ReceiveBufferSize(): Nullable_1<System_Internal.Int32>;
+    set ReceiveBufferSize(value: Nullable_1<System_Internal.Int32> | int);
     get SubProtocol(): string | undefined;
     set SubProtocol(value: string | undefined);
 }

@@ -367,7 +367,8 @@ export interface InputCheckbox$instance extends InputBase_1$instance<System_Inte
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     TryParseValueFromString(value: string, result: boolean, validationErrorMessage: string): boolean;
 }
@@ -395,7 +396,8 @@ export interface InputDate_1$instance<TValue> extends InputBase_1$instance<TValu
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     ParsingErrorMessage: string;
     Type: InputDateType;
     BuildRenderTree(builder: RenderTreeBuilder): void;
@@ -430,7 +432,8 @@ export interface InputFile$instance extends ComponentBase, Microsoft_AspNetCore_
 
     get AdditionalAttributes(): IDictionary_2<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IDictionary_2<System_Internal.String, unknown> | undefined);
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     OnChange: EventCallback_1<InputFileChangeEventArgs>;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     OnAfterRenderAsync(firstRender: boolean): Task;
@@ -475,7 +478,8 @@ export interface InputHidden$instance extends InputBase_1$instance<System_Intern
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     TryParseValueFromString(value: string, result: string, validationErrorMessage: string): boolean;
 }
@@ -503,7 +507,8 @@ export interface InputNumber_1$instance<TValue> extends InputBase_1$instance<TVa
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     ParsingErrorMessage: string;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     FormatValueAsString(value: TValue): string | undefined;
@@ -534,7 +539,8 @@ export interface InputRadio_1$instance<TValue> extends ComponentBase, Microsoft_
 
     get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
     set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined);
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     get Name(): string | undefined;
     set Name(value: string | undefined);
     Value: TValue | undefined;
@@ -600,7 +606,8 @@ export interface InputSelect_1$instance<TValue> extends InputBase_1$instance<TVa
 
     get ChildContent(): RenderFragment | undefined;
     set ChildContent(value: RenderFragment | undefined);
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     FormatValueAsString(value: TValue): string | undefined;
     TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
@@ -629,7 +636,8 @@ export interface InputText$instance extends InputBase_1$instance<System_Internal
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     TryParseValueFromString(value: string, result: string, validationErrorMessage: string): boolean;
 }
@@ -657,7 +665,8 @@ export interface InputTextArea$instance extends InputBase_1$instance<System_Inte
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Element: Nullable_1<ElementReference>;
+    get Element(): Nullable_1<ElementReference>;
+    set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     TryParseValueFromString(value: string, result: string, validationErrorMessage: string): boolean;
 }

@@ -133,7 +133,8 @@ export interface IHttpMaxRequestBodySizeFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpMaxRequestBodySizeFeature: never;
 
     readonly IsReadOnly: boolean;
-    MaxRequestBodySize: Nullable_1<System_Internal.Int64>;
+    get MaxRequestBodySize(): Nullable_1<System_Internal.Int64>;
+    set MaxRequestBodySize(value: Nullable_1<System_Internal.Int64> | long);
 }
 
 

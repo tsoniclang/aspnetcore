@@ -44,7 +44,8 @@ export type AvailableTransport = AvailableTransport$instance;
 export interface ConnectionOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_ConnectionOptions: never;
 
-    DisconnectTimeout: Nullable_1<TimeSpan>;
+    get DisconnectTimeout(): Nullable_1<TimeSpan>;
+    set DisconnectTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
 }
 
 

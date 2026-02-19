@@ -28,7 +28,8 @@ export interface CircuitOptions$instance {
     set HybridPersistenceCache(value: HybridCache | undefined);
     JSInteropDefaultCallTimeout: TimeSpan;
     MaxBufferedUnacknowledgedRenderBatches: int;
-    PersistedCircuitDistributedRetentionPeriod: Nullable_1<TimeSpan>;
+    get PersistedCircuitDistributedRetentionPeriod(): Nullable_1<TimeSpan>;
+    set PersistedCircuitDistributedRetentionPeriod(value: Nullable_1<TimeSpan> | TimeSpan);
     PersistedCircuitInMemoryMaxRetained: int;
     PersistedCircuitInMemoryRetentionPeriod: TimeSpan;
     readonly RootComponents: CircuitRootComponentOptions;

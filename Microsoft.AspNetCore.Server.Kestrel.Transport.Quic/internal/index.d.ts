@@ -16,9 +16,11 @@ export interface QuicTransportOptions$instance {
     DefaultCloseErrorCode: long;
     DefaultStreamErrorCode: long;
     MaxBidirectionalStreamCount: int;
-    MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
+    get MaxReadBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxReadBufferSize(value: Nullable_1<System_Internal.Int64> | long);
     MaxUnidirectionalStreamCount: int;
-    MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
+    get MaxWriteBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxWriteBufferSize(value: Nullable_1<System_Internal.Int64> | long);
 }
 
 

@@ -156,11 +156,13 @@ export interface W3CLoggerOptions$instance {
 
     readonly AdditionalRequestHeaders: ISet_1<System_Internal.String>;
     FileName: string;
-    FileSizeLimit: Nullable_1<System_Internal.Int32>;
+    get FileSizeLimit(): Nullable_1<System_Internal.Int32>;
+    set FileSizeLimit(value: Nullable_1<System_Internal.Int32> | int);
     FlushInterval: TimeSpan;
     LogDirectory: string;
     LoggingFields: W3CLoggingFields;
-    RetainedFileCountLimit: Nullable_1<System_Internal.Int32>;
+    get RetainedFileCountLimit(): Nullable_1<System_Internal.Int32>;
+    set RetainedFileCountLimit(value: Nullable_1<System_Internal.Int32> | int);
 }
 
 

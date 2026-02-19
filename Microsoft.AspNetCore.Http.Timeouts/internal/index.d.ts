@@ -73,8 +73,10 @@ export type RequestTimeoutOptions = RequestTimeoutOptions$instance;
 export interface RequestTimeoutPolicy$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_RequestTimeoutPolicy: never;
 
-    Timeout: Nullable_1<TimeSpan>;
-    TimeoutStatusCode: Nullable_1<System_Internal.Int32>;
+    get Timeout(): Nullable_1<TimeSpan>;
+    set Timeout(value: Nullable_1<TimeSpan> | TimeSpan);
+    get TimeoutStatusCode(): Nullable_1<System_Internal.Int32>;
+    set TimeoutStatusCode(value: Nullable_1<System_Internal.Int32> | int);
     get WriteTimeoutResponse(): RequestDelegate | undefined;
     set WriteTimeoutResponse(value: RequestDelegate | undefined);
 }

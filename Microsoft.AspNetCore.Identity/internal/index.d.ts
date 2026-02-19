@@ -966,7 +966,8 @@ export interface IdentityUser_1$instance<TKey extends (IEquatable_1<TKey> | numb
     EmailConfirmed: boolean;
     Id: TKey;
     LockoutEnabled: boolean;
-    LockoutEnd: Nullable_1<DateTimeOffset>;
+    get LockoutEnd(): Nullable_1<DateTimeOffset>;
+    set LockoutEnd(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     get NormalizedEmail(): string | undefined;
     set NormalizedEmail(value: string | undefined);
     get NormalizedUserName(): string | undefined;

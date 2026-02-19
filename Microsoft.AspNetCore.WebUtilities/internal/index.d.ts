@@ -352,7 +352,8 @@ export type HttpResponseStreamWriter = HttpResponseStreamWriter$instance;
 export interface MultipartReader$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_MultipartReader: never;
 
-    BodyLengthLimit: Nullable_1<System_Internal.Int64>;
+    get BodyLengthLimit(): Nullable_1<System_Internal.Int64>;
+    set BodyLengthLimit(value: Nullable_1<System_Internal.Int64> | long);
     HeadersCountLimit: int;
     HeadersLengthLimit: int;
     ReadNextSectionAsync(cancellationToken?: CancellationToken): Task_1<MultipartSection | undefined>;
@@ -372,7 +373,8 @@ export type MultipartReader = MultipartReader$instance;
 export interface MultipartSection$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_MultipartSection: never;
 
-    BaseStreamOffset: Nullable_1<System_Internal.Int64>;
+    get BaseStreamOffset(): Nullable_1<System_Internal.Int64>;
+    set BaseStreamOffset(value: Nullable_1<System_Internal.Int64> | long);
     Body: Stream;
     readonly ContentDisposition: string | undefined;
     readonly ContentType: string | undefined;

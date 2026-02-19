@@ -285,7 +285,8 @@ export interface ContentHttpResult$instance extends Microsoft_AspNetCore_Http_In
     ContentType: string;
     get ResponseContent(): string | undefined;
     set ResponseContent(value: string | undefined);
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -454,8 +455,10 @@ export interface FileContentHttpResult$instance extends Microsoft_AspNetCore_Htt
     FileContents: ReadOnlyMemory_1<System_Internal.Byte>;
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable_1<System_Internal.Int64>;
-    LastModified: Nullable_1<DateTimeOffset>;
+    get FileLength(): Nullable_1<System_Internal.Int64>;
+    set FileLength(value: Nullable_1<System_Internal.Int64> | long);
+    get LastModified(): Nullable_1<DateTimeOffset>;
+    set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -486,9 +489,11 @@ export interface FileStreamHttpResult$instance extends Microsoft_AspNetCore_Http
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable_1<System_Internal.Int64>;
+    get FileLength(): Nullable_1<System_Internal.Int64>;
+    set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     readonly FileStream: Stream;
-    LastModified: Nullable_1<DateTimeOffset>;
+    get LastModified(): Nullable_1<DateTimeOffset>;
+    set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -766,9 +771,11 @@ export interface PhysicalFileHttpResult$instance extends Microsoft_AspNetCore_Ht
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable_1<System_Internal.Int64>;
+    get FileLength(): Nullable_1<System_Internal.Int64>;
+    set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     readonly FileName: string;
-    LastModified: Nullable_1<DateTimeOffset>;
+    get LastModified(): Nullable_1<DateTimeOffset>;
+    set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -832,8 +839,10 @@ export interface PushStreamHttpResult$instance extends Microsoft_AspNetCore_Http
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable_1<System_Internal.Int64>;
-    LastModified: Nullable_1<DateTimeOffset>;
+    get FileLength(): Nullable_1<System_Internal.Int64>;
+    set FileLength(value: Nullable_1<System_Internal.Int64> | long);
+    get LastModified(): Nullable_1<DateTimeOffset>;
+    set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -862,7 +871,8 @@ export interface RazorComponentResult$instance extends Microsoft_AspNetCore_Http
     ContentType: string;
     readonly Parameters: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
     PreventStreamingRendering: boolean;
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1267,7 +1277,8 @@ export interface Utf8ContentHttpResult$instance extends Microsoft_AspNetCore_Htt
 
     ContentType: string;
     ResponseContent: ReadOnlyMemory_1<System_Internal.Byte>;
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1331,9 +1342,11 @@ export interface VirtualFileHttpResult$instance extends Microsoft_AspNetCore_Htt
     set EntityTag(value: EntityTagHeaderValue | undefined);
     get FileDownloadName(): string | undefined;
     set FileDownloadName(value: string | undefined);
-    FileLength: Nullable_1<System_Internal.Int64>;
+    get FileLength(): Nullable_1<System_Internal.Int64>;
+    set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     FileName: string;
-    LastModified: Nullable_1<DateTimeOffset>;
+    get LastModified(): Nullable_1<DateTimeOffset>;
+    set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 

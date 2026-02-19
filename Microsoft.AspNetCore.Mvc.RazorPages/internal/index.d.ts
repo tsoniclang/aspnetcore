@@ -462,7 +462,8 @@ export interface PageResult$instance extends ActionResult {
     set ContentType(value: string | undefined);
     readonly Model: unknown;
     Page: PageBase;
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     ViewData: ViewDataDictionary;
     ExecuteResultAsync(context: ActionContext): Task;
 }

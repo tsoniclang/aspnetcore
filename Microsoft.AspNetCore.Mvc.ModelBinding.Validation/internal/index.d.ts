@@ -355,7 +355,8 @@ export type ValidationStateEntry = ValidationStateEntry$instance;
 export interface ValidationVisitor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationVisitor: never;
 
-    MaxValidationDepth: Nullable_1<System_Internal.Int32>;
+    get MaxValidationDepth(): Nullable_1<System_Internal.Int32>;
+    set MaxValidationDepth(value: Nullable_1<System_Internal.Int32> | int);
     ValidateComplexTypesIfChildValidationFails: boolean;
     GetValidationEntry(model: unknown): ValidationStateEntry | undefined;
     SuppressValidation(key: string): void;
