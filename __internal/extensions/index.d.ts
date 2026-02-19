@@ -599,6 +599,7 @@ export interface __Ext_Microsoft_AspNetCore_DataProtection_IDataProtector {
 }
 
 export interface __Ext_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector {
+  ToTimeLimitedDataProtector(): Rewrap<this, Microsoft_AspNetCore_DataProtection.ITimeLimitedDataProtector>;
   Protect(plaintext: byte[], lifetime: System.TimeSpan): Rewrap<this, byte[]>;
   Protect(plaintext: string, expiration: System.DateTimeOffset): Rewrap<this, string>;
   Protect(plaintext: string, lifetime: System.TimeSpan): Rewrap<this, string>;
@@ -1603,7 +1604,6 @@ export interface __Ext_System_Security_Claims_ClaimsPrincipal {
 type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
 type __TsonicMergeExtMaps<A, B> = A & B;
 type __TsonicWithExt<TShape, K extends string, TApplier> = { __tsonic_ext?: __TsonicMergeExtMaps<__TsonicExtMapOf<TShape>, { [P in K]: TApplier }> };
-type __TsonicPreferExt<A, B> = A & B;
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Authentication
 type __TsonicExtSurface_Microsoft_AspNetCore_Authentication<TShape> =
@@ -1768,7 +1768,7 @@ export type ExtensionMethods_Microsoft_AspNetCore_Connections<TShape> =
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.DataProtection
 type __TsonicExtSurface_Microsoft_AspNetCore_DataProtection<TShape> =
   (
-    (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder ? __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder : {}) & (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtectionProvider ? __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider : {}) & (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtector ? (TShape extends Microsoft_AspNetCore_DataProtection.ITimeLimitedDataProtector ? {} : __Ext_Microsoft_AspNetCore_DataProtection_IDataProtector) : {}) & (TShape extends Microsoft_AspNetCore_DataProtection.ITimeLimitedDataProtector ? __TsonicPreferExt<__Ext_Microsoft_AspNetCore_DataProtection_IDataProtector, __Ext_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector> : {}) & (TShape extends System.IServiceProvider ? __Ext_Microsoft_AspNetCore_DataProtection_IServiceProvider : {})
+    (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder ? __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder : {}) & (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtectionProvider ? __Ext_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider : {}) & (TShape extends Microsoft_AspNetCore_DataProtection.IDataProtector ? (TShape extends Microsoft_AspNetCore_DataProtection.ITimeLimitedDataProtector ? {} : __Ext_Microsoft_AspNetCore_DataProtection_IDataProtector) : {}) & (TShape extends Microsoft_AspNetCore_DataProtection.ITimeLimitedDataProtector ? __Ext_Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector : {}) & (TShape extends System.IServiceProvider ? __Ext_Microsoft_AspNetCore_DataProtection_IServiceProvider : {})
   );
 
 interface __TsonicExtApplier_Microsoft_AspNetCore_DataProtection {
