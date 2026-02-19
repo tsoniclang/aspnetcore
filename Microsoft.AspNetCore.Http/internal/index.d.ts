@@ -153,7 +153,8 @@ export type IFormFileCollection = IFormFileCollection$instance & { readonly [nam
 export interface IHeaderDictionary$instance extends IDictionary_2<System_Internal.String, StringValues>, ICollection_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IHeaderDictionary: never;
 
-    ContentLength: Nullable_1<System_Internal.Int64>;
+    get ContentLength(): Nullable_1<System_Internal.Int64>;
+    set ContentLength(value: Nullable_1<System_Internal.Int64> | long);
     Accept: StringValues;
     AcceptCharset: StringValues;
     AcceptEncoding: StringValues;
@@ -720,11 +721,13 @@ export interface CookieBuilder$instance {
 
     get Domain(): string | undefined;
     set Domain(value: string | undefined);
-    Expiration: Nullable_1<TimeSpan>;
+    get Expiration(): Nullable_1<TimeSpan>;
+    set Expiration(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly Extensions: IList_1<System_Internal.String>;
     HttpOnly: boolean;
     IsEssential: boolean;
-    MaxAge: Nullable_1<TimeSpan>;
+    get MaxAge(): Nullable_1<TimeSpan>;
+    set MaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
     get Name(): string | undefined;
     set Name(value: string | undefined);
     get Path(): string | undefined;
@@ -748,11 +751,13 @@ export interface CookieOptions$instance {
 
     get Domain(): string | undefined;
     set Domain(value: string | undefined);
-    Expires: Nullable_1<DateTimeOffset>;
+    get Expires(): Nullable_1<DateTimeOffset>;
+    set Expires(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     readonly Extensions: IList_1<System_Internal.String>;
     HttpOnly: boolean;
     IsEssential: boolean;
-    MaxAge: Nullable_1<TimeSpan>;
+    get MaxAge(): Nullable_1<TimeSpan>;
+    set MaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
     get Path(): string | undefined;
     set Path(value: string | undefined);
     SameSite: SameSiteMode;
@@ -1076,7 +1081,8 @@ export interface HeaderDictionary$instance extends IHeaderDictionary$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    ContentLength: Nullable_1<System_Internal.Int64>;
+    get ContentLength(): Nullable_1<System_Internal.Int64>;
+    set ContentLength(value: Nullable_1<System_Internal.Int64> | long);
     readonly Count: int;
     IsReadOnly: boolean;
     readonly Keys: ICollection_1<System_Internal.String>;
@@ -1159,7 +1165,8 @@ export interface HttpRequest$instance {
 
     Body: Stream;
     readonly BodyReader: PipeReader;
-    ContentLength: Nullable_1<System_Internal.Int64>;
+    get ContentLength(): Nullable_1<System_Internal.Int64>;
+    set ContentLength(value: Nullable_1<System_Internal.Int64> | long);
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     Cookies: IRequestCookieCollection;
@@ -1192,7 +1199,8 @@ export interface HttpResponse$instance {
 
     Body: Stream;
     readonly BodyWriter: PipeWriter;
-    ContentLength: Nullable_1<System_Internal.Int64>;
+    get ContentLength(): Nullable_1<System_Internal.Int64>;
+    set ContentLength(value: Nullable_1<System_Internal.Int64> | long);
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     readonly Cookies: IResponseCookies;
@@ -1455,8 +1463,10 @@ export interface WebSocketAcceptContext$instance {
 
     DangerousEnableCompression: boolean;
     DisableServerContextTakeover: boolean;
-    KeepAliveInterval: Nullable_1<TimeSpan>;
-    KeepAliveTimeout: Nullable_1<TimeSpan>;
+    get KeepAliveInterval(): Nullable_1<TimeSpan>;
+    set KeepAliveInterval(value: Nullable_1<TimeSpan> | TimeSpan);
+    get KeepAliveTimeout(): Nullable_1<TimeSpan>;
+    set KeepAliveTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     ServerMaxWindowBits: int;
     get SubProtocol(): string | undefined;
     set SubProtocol(value: string | undefined);

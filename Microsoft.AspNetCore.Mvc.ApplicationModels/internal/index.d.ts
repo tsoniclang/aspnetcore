@@ -271,7 +271,8 @@ export interface ApiExplorerModel$instance {
 
     get GroupName(): string | undefined;
     set GroupName(value: string | undefined);
-    IsVisible: Nullable_1<System_Internal.Boolean>;
+    get IsVisible(): Nullable_1<System_Internal.Boolean>;
+    set IsVisible(value: Nullable_1<System_Internal.Boolean> | boolean);
 }
 
 
@@ -355,7 +356,8 @@ export interface AttributeRouteModel$instance {
     readonly IsAbsoluteTemplate: boolean;
     get Name(): string | undefined;
     set Name(value: string | undefined);
-    Order: Nullable_1<System_Internal.Int32>;
+    get Order(): Nullable_1<System_Internal.Int32>;
+    set Order(value: Nullable_1<System_Internal.Int32> | int);
     SuppressLinkGeneration: boolean;
     SuppressPathMatching: boolean;
     get Template(): string | undefined;

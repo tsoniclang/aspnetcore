@@ -433,7 +433,8 @@ export interface HubConnectionContextOptions$instance {
     ClientTimeoutInterval: TimeSpan;
     KeepAliveInterval: TimeSpan;
     MaximumParallelInvocations: int;
-    MaximumReceiveMessageSize: Nullable_1<System_Internal.Int64>;
+    get MaximumReceiveMessageSize(): Nullable_1<System_Internal.Int64>;
+    set MaximumReceiveMessageSize(value: Nullable_1<System_Internal.Int64> | long);
     StreamBufferCapacity: int;
 }
 
@@ -588,15 +589,21 @@ export type HubMethodNameAttribute = HubMethodNameAttribute$instance;
 export interface HubOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_HubOptions: never;
 
-    ClientTimeoutInterval: Nullable_1<TimeSpan>;
+    get ClientTimeoutInterval(): Nullable_1<TimeSpan>;
+    set ClientTimeoutInterval(value: Nullable_1<TimeSpan> | TimeSpan);
     DisableImplicitFromServicesParameters: boolean;
-    EnableDetailedErrors: Nullable_1<System_Internal.Boolean>;
-    HandshakeTimeout: Nullable_1<TimeSpan>;
-    KeepAliveInterval: Nullable_1<TimeSpan>;
+    get EnableDetailedErrors(): Nullable_1<System_Internal.Boolean>;
+    set EnableDetailedErrors(value: Nullable_1<System_Internal.Boolean> | boolean);
+    get HandshakeTimeout(): Nullable_1<TimeSpan>;
+    set HandshakeTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
+    get KeepAliveInterval(): Nullable_1<TimeSpan>;
+    set KeepAliveInterval(value: Nullable_1<TimeSpan> | TimeSpan);
     MaximumParallelInvocationsPerClient: int;
-    MaximumReceiveMessageSize: Nullable_1<System_Internal.Int64>;
+    get MaximumReceiveMessageSize(): Nullable_1<System_Internal.Int64>;
+    set MaximumReceiveMessageSize(value: Nullable_1<System_Internal.Int64> | long);
     StatefulReconnectBufferSize: long;
-    StreamBufferCapacity: Nullable_1<System_Internal.Int32>;
+    get StreamBufferCapacity(): Nullable_1<System_Internal.Int32>;
+    set StreamBufferCapacity(value: Nullable_1<System_Internal.Int32> | int);
     get SupportedProtocols(): IList_1<System_Internal.String> | undefined;
     set SupportedProtocols(value: IList_1<System_Internal.String> | undefined);
 }

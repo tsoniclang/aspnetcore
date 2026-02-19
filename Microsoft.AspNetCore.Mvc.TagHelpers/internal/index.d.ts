@@ -79,7 +79,8 @@ export interface CacheTagHelper$instance extends CacheTagHelperBase$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    Priority: Nullable_1<CacheItemPriority>;
+    get Priority(): Nullable_1<CacheItemPriority>;
+    set Priority(value: Nullable_1<CacheItemPriority> | CacheItemPriority);
     ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
 
@@ -104,9 +105,12 @@ export interface CacheTagHelperBase$instance extends TagHelper {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     Enabled: boolean;
-    ExpiresAfter: Nullable_1<TimeSpan>;
-    ExpiresOn: Nullable_1<DateTimeOffset>;
-    ExpiresSliding: Nullable_1<TimeSpan>;
+    get ExpiresAfter(): Nullable_1<TimeSpan>;
+    set ExpiresAfter(value: Nullable_1<TimeSpan> | TimeSpan);
+    get ExpiresOn(): Nullable_1<DateTimeOffset>;
+    set ExpiresOn(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
+    get ExpiresSliding(): Nullable_1<TimeSpan>;
+    set ExpiresSliding(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly Order: int;
     VaryBy: string;
     VaryByCookie: string;
@@ -274,7 +278,8 @@ export interface FormTagHelper$instance extends TagHelper {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     Action: string;
-    Antiforgery: Nullable_1<System_Internal.Boolean>;
+    get Antiforgery(): Nullable_1<System_Internal.Boolean>;
+    set Antiforgery(value: Nullable_1<System_Internal.Boolean> | boolean);
     Area: string;
     Controller: string;
     Fragment: string;
@@ -405,7 +410,8 @@ export interface LinkTagHelper$instance extends UrlResolutionTagHelper {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    AppendVersion: Nullable_1<System_Internal.Boolean>;
+    get AppendVersion(): Nullable_1<System_Internal.Boolean>;
+    set AppendVersion(value: Nullable_1<System_Internal.Boolean> | boolean);
     FallbackHref: string;
     FallbackHrefExclude: string;
     FallbackHrefInclude: string;
@@ -493,7 +499,8 @@ export interface PersistComponentStateTagHelper$instance extends TagHelper {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    PersistenceMode: Nullable_1<PersistenceMode>;
+    get PersistenceMode(): Nullable_1<PersistenceMode>;
+    set PersistenceMode(value: Nullable_1<PersistenceMode> | PersistenceMode);
     ViewContext: ViewContext;
     ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
 }
@@ -542,7 +549,8 @@ export interface ScriptTagHelper$instance extends UrlResolutionTagHelper {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
-    AppendVersion: Nullable_1<System_Internal.Boolean>;
+    get AppendVersion(): Nullable_1<System_Internal.Boolean>;
+    set AppendVersion(value: Nullable_1<System_Internal.Boolean> | boolean);
     FallbackSrc: string;
     FallbackSrcExclude: string;
     FallbackSrcInclude: string;

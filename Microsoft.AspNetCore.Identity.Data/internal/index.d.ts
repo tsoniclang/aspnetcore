@@ -138,7 +138,8 @@ export type ResetPasswordRequest = ResetPasswordRequest$instance;
 export interface TwoFactorRequest$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_TwoFactorRequest: never;
 
-    Enable: Nullable_1<System_Internal.Boolean>;
+    get Enable(): Nullable_1<System_Internal.Boolean>;
+    set Enable(value: Nullable_1<System_Internal.Boolean> | boolean);
     ForgetMachine: boolean;
     ResetRecoveryCodes: boolean;
     ResetSharedKey: boolean;

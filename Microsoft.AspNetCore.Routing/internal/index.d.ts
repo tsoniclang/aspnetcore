@@ -552,9 +552,12 @@ export type LinkGenerator = LinkGenerator$instance;
 export interface LinkOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_LinkOptions: never;
 
-    AppendTrailingSlash: Nullable_1<System_Internal.Boolean>;
-    LowercaseQueryStrings: Nullable_1<System_Internal.Boolean>;
-    LowercaseUrls: Nullable_1<System_Internal.Boolean>;
+    get AppendTrailingSlash(): Nullable_1<System_Internal.Boolean>;
+    set AppendTrailingSlash(value: Nullable_1<System_Internal.Boolean> | boolean);
+    get LowercaseQueryStrings(): Nullable_1<System_Internal.Boolean>;
+    set LowercaseQueryStrings(value: Nullable_1<System_Internal.Boolean> | boolean);
+    get LowercaseUrls(): Nullable_1<System_Internal.Boolean>;
+    set LowercaseUrls(value: Nullable_1<System_Internal.Boolean> | boolean);
 }
 
 

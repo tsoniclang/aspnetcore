@@ -56,7 +56,8 @@ export interface ChunkingCookieManager$instance extends ICookieManager$instance 
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ICookieManager: never;
 
-    ChunkSize: Nullable_1<System_Internal.Int32>;
+    get ChunkSize(): Nullable_1<System_Internal.Int32>;
+    set ChunkSize(value: Nullable_1<System_Internal.Int32> | int);
     ThrowForPartialCookies: boolean;
     AppendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
     DeleteCookie(context: HttpContext, key: string, options: CookieOptions): void;

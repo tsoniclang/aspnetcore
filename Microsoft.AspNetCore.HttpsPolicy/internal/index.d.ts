@@ -66,7 +66,8 @@ export type HttpsRedirectionMiddleware = HttpsRedirectionMiddleware$instance;
 export interface HttpsRedirectionOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_HttpsPolicy_HttpsRedirectionOptions: never;
 
-    HttpsPort: Nullable_1<System_Internal.Int32>;
+    get HttpsPort(): Nullable_1<System_Internal.Int32>;
+    set HttpsPort(value: Nullable_1<System_Internal.Int32> | int);
     RedirectStatusCode: int;
 }
 

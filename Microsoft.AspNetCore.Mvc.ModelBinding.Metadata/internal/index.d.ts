@@ -123,7 +123,8 @@ export interface BindingMetadata$instance {
     set BoundConstructor(value: ConstructorInfo | undefined);
     IsBindingAllowed: boolean;
     IsBindingRequired: boolean;
-    IsReadOnly: Nullable_1<System_Internal.Boolean>;
+    get IsReadOnly(): Nullable_1<System_Internal.Boolean>;
+    set IsReadOnly(value: Nullable_1<System_Internal.Boolean> | boolean);
     get ModelBindingMessageProvider(): DefaultModelBindingMessageProvider | undefined;
     set ModelBindingMessageProvider(value: DefaultModelBindingMessageProvider | undefined);
     get PropertyFilterProvider(): IPropertyFilterProvider | undefined;
@@ -513,11 +514,14 @@ export type SystemTextJsonValidationMetadataProvider = SystemTextJsonValidationM
 export interface ValidationMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ValidationMetadata: never;
 
-    HasValidators: Nullable_1<System_Internal.Boolean>;
-    IsRequired: Nullable_1<System_Internal.Boolean>;
+    get HasValidators(): Nullable_1<System_Internal.Boolean>;
+    set HasValidators(value: Nullable_1<System_Internal.Boolean> | boolean);
+    get IsRequired(): Nullable_1<System_Internal.Boolean>;
+    set IsRequired(value: Nullable_1<System_Internal.Boolean> | boolean);
     get PropertyValidationFilter(): IPropertyValidationFilter | undefined;
     set PropertyValidationFilter(value: IPropertyValidationFilter | undefined);
-    ValidateChildren: Nullable_1<System_Internal.Boolean>;
+    get ValidateChildren(): Nullable_1<System_Internal.Boolean>;
+    set ValidateChildren(value: Nullable_1<System_Internal.Boolean> | boolean);
     get ValidationModelName(): string | undefined;
     set ValidationModelName(value: string | undefined);
     readonly ValidatorMetadata: IList_1<unknown>;

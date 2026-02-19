@@ -120,7 +120,8 @@ export interface CorsPolicy$instance {
     IsOriginAllowed: Func_2<System_Internal.String, System_Internal.Boolean>;
     readonly Methods: IList_1<System_Internal.String>;
     readonly Origins: IList_1<System_Internal.String>;
-    PreflightMaxAge: Nullable_1<TimeSpan>;
+    get PreflightMaxAge(): Nullable_1<TimeSpan>;
+    set PreflightMaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
     SupportsCredentials: boolean;
     ToString(): string;
 }
@@ -170,7 +171,8 @@ export interface CorsResult$instance {
     set AllowedOrigin(value: string | undefined);
     IsOriginAllowed: boolean;
     IsPreflightRequest: boolean;
-    PreflightMaxAge: Nullable_1<TimeSpan>;
+    get PreflightMaxAge(): Nullable_1<TimeSpan>;
+    set PreflightMaxAge(value: Nullable_1<TimeSpan> | TimeSpan);
     SupportsCredentials: boolean;
     VaryByOrigin: boolean;
     ToString(): string;

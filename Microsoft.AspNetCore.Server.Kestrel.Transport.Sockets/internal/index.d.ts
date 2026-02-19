@@ -38,8 +38,10 @@ export interface SocketConnectionFactoryOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketConnectionFactoryOptions: never;
 
     IOQueueCount: int;
-    MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
-    MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
+    get MaxReadBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxReadBufferSize(value: Nullable_1<System_Internal.Int64> | long);
+    get MaxWriteBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxWriteBufferSize(value: Nullable_1<System_Internal.Int64> | long);
     UnsafePreferInlineScheduling: boolean;
     WaitForDataBeforeAllocatingBuffer: boolean;
 }
@@ -82,8 +84,10 @@ export interface SocketTransportOptions$instance {
     Backlog: int;
     CreateBoundListenSocket: Func_2<EndPoint, Socket>;
     IOQueueCount: int;
-    MaxReadBufferSize: Nullable_1<System_Internal.Int64>;
-    MaxWriteBufferSize: Nullable_1<System_Internal.Int64>;
+    get MaxReadBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxReadBufferSize(value: Nullable_1<System_Internal.Int64> | long);
+    get MaxWriteBufferSize(): Nullable_1<System_Internal.Int64>;
+    set MaxWriteBufferSize(value: Nullable_1<System_Internal.Int64> | long);
     NoDelay: boolean;
     UnsafePreferInlineScheduling: boolean;
     WaitForDataBeforeAllocatingBuffer: boolean;

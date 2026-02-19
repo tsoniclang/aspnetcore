@@ -656,9 +656,12 @@ export type BindPropertyAttribute = BindPropertyAttribute$instance & __BindPrope
 export interface CacheProfile$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_CacheProfile: never;
 
-    Duration: Nullable_1<System_Internal.Int32>;
-    Location: Nullable_1<ResponseCacheLocation>;
-    NoStore: Nullable_1<System_Internal.Boolean>;
+    get Duration(): Nullable_1<System_Internal.Int32>;
+    set Duration(value: Nullable_1<System_Internal.Int32> | int);
+    get Location(): Nullable_1<ResponseCacheLocation>;
+    set Location(value: Nullable_1<ResponseCacheLocation> | ResponseCacheLocation);
+    get NoStore(): Nullable_1<System_Internal.Boolean>;
+    set NoStore(value: Nullable_1<System_Internal.Boolean> | boolean);
     get VaryByHeader(): string | undefined;
     set VaryByHeader(value: string | undefined);
     get VaryByQueryKeys(): string[] | undefined;
@@ -812,7 +815,8 @@ export interface ContentResult$instance extends ActionResult$instance {
     set Content(value: string | undefined);
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     ExecuteResultAsync(context: ActionContext): Task;
 }
 
@@ -1288,7 +1292,8 @@ export interface FileResult$instance extends ActionResult$instance, IActionResul
     get EntityTag(): EntityTagHeaderValue | undefined;
     set EntityTag(value: EntityTagHeaderValue | undefined);
     FileDownloadName: string;
-    LastModified: Nullable_1<DateTimeOffset>;
+    get LastModified(): Nullable_1<DateTimeOffset>;
+    set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
 }
 
 
@@ -1756,7 +1761,8 @@ export interface JsonResult$instance extends ActionResult$instance {
     set ContentType(value: string | undefined);
     get SerializerSettings(): unknown | undefined;
     set SerializerSettings(value: unknown | undefined);
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     get Value(): unknown | undefined;
     set Value(value: unknown | undefined);
     ExecuteResultAsync(context: ActionContext): Task;
@@ -1954,7 +1960,8 @@ export interface MvcOptions$instance {
     MaxModelBindingCollectionSize: int;
     MaxModelBindingRecursionDepth: int;
     MaxModelValidationErrors: int;
-    MaxValidationDepth: Nullable_1<System_Internal.Int32>;
+    get MaxValidationDepth(): Nullable_1<System_Internal.Int32>;
+    set MaxValidationDepth(value: Nullable_1<System_Internal.Int32> | int);
     readonly ModelBinderProviders: IList_1<IModelBinderProvider>;
     readonly ModelBindingMessageProvider: DefaultModelBindingMessageProvider;
     readonly ModelMetadataDetailsProviders: IList_1<IMetadataDetailsProvider>;
@@ -1963,7 +1970,8 @@ export interface MvcOptions$instance {
     RequireHttpsPermanent: boolean;
     RespectBrowserAcceptHeader: boolean;
     ReturnHttpNotAcceptable: boolean;
-    SslPort: Nullable_1<System_Internal.Int32>;
+    get SslPort(): Nullable_1<System_Internal.Int32>;
+    set SslPort(value: Nullable_1<System_Internal.Int32> | int);
     SuppressAsyncSuffixInActionNames: boolean;
     SuppressImplicitRequiredAttributeForNonNullableReferenceTypes: boolean;
     SuppressInputFormatterBuffering: boolean;
@@ -2116,7 +2124,8 @@ export interface ObjectResult$instance extends ActionResult$instance {
     get DeclaredType(): Type | undefined;
     set DeclaredType(value: Type | undefined);
     Formatters: FormatterCollection_1<IOutputFormatter>;
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     get Value(): unknown | undefined;
     set Value(value: unknown | undefined);
     ExecuteResultAsync(context: ActionContext): Task;
@@ -2216,7 +2225,8 @@ export interface PartialViewResult$instance extends ActionResult$instance {
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     readonly Model: unknown | undefined;
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     TempData: ITempDataDictionary;
     ViewData: ViewDataDictionary;
     get ViewEngine(): IViewEngine | undefined;
@@ -2271,7 +2281,8 @@ export interface ProblemDetails$instance {
     Extensions: IDictionary_2<System_Internal.String, unknown | undefined>;
     get Instance(): string | undefined;
     set Instance(value: string | undefined);
-    Status: Nullable_1<System_Internal.Int32>;
+    get Status(): Nullable_1<System_Internal.Int32>;
+    set Status(value: Nullable_1<System_Internal.Int32> | int);
     get Title(): string | undefined;
     set Title(value: string | undefined);
     get Type(): string | undefined;
@@ -3254,7 +3265,8 @@ export interface ViewComponentResult$instance extends ActionResult$instance {
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     readonly Model: unknown | undefined;
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     TempData: ITempDataDictionary;
     get ViewComponentName(): string | undefined;
     set ViewComponentName(value: string | undefined);
@@ -3302,7 +3314,8 @@ export interface ViewResult$instance extends ActionResult$instance {
     get ContentType(): string | undefined;
     set ContentType(value: string | undefined);
     readonly Model: unknown | undefined;
-    StatusCode: Nullable_1<System_Internal.Int32>;
+    get StatusCode(): Nullable_1<System_Internal.Int32>;
+    set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     TempData: ITempDataDictionary;
     ViewData: ViewDataDictionary;
     get ViewEngine(): IViewEngine | undefined;

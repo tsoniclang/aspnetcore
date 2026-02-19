@@ -18,7 +18,8 @@ export interface IDeletableElement$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableElement: never;
 
     readonly Element: XElement;
-    DeletionOrder: Nullable_1<System_Internal.Int32>;
+    get DeletionOrder(): Nullable_1<System_Internal.Int32>;
+    set DeletionOrder(value: Nullable_1<System_Internal.Int32> | int);
 }
 
 

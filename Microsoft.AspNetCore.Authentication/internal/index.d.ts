@@ -387,10 +387,13 @@ export type AuthenticationOptions = AuthenticationOptions$instance;
 export interface AuthenticationProperties$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationProperties: never;
 
-    AllowRefresh: Nullable_1<System_Internal.Boolean>;
-    ExpiresUtc: Nullable_1<DateTimeOffset>;
+    get AllowRefresh(): Nullable_1<System_Internal.Boolean>;
+    set AllowRefresh(value: Nullable_1<System_Internal.Boolean> | boolean);
+    get ExpiresUtc(): Nullable_1<DateTimeOffset>;
+    set ExpiresUtc(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     IsPersistent: boolean;
-    IssuedUtc: Nullable_1<DateTimeOffset>;
+    get IssuedUtc(): Nullable_1<DateTimeOffset>;
+    set IssuedUtc(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     readonly Items: IDictionary_2<System_Internal.String, string | undefined>;
     readonly Parameters: IDictionary_2<System_Internal.String, unknown | undefined>;
     get RedirectUri(): string | undefined;

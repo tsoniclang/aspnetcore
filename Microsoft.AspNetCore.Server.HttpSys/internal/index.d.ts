@@ -194,8 +194,10 @@ export interface HttpSysOptions$instance {
     EnableResponseCaching: boolean;
     Http503Verbosity: Http503VerbosityLevel;
     MaxAccepts: int;
-    MaxConnections: Nullable_1<System_Internal.Int64>;
-    MaxRequestBodySize: Nullable_1<System_Internal.Int64>;
+    get MaxConnections(): Nullable_1<System_Internal.Int64>;
+    set MaxConnections(value: Nullable_1<System_Internal.Int64> | long);
+    get MaxRequestBodySize(): Nullable_1<System_Internal.Int64>;
+    set MaxRequestBodySize(value: Nullable_1<System_Internal.Int64> | long);
     RequestQueueLimit: long;
     RequestQueueMode: RequestQueueMode;
     get RequestQueueName(): string | undefined;
