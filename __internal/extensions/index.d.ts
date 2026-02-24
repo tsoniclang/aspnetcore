@@ -230,8 +230,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
   MapBlazorHub(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, path: string): Rewrap<this, Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
   MapBlazorHub(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
   MapBlazorHub(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, path: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
-  MapConnectionHandler<TConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
-  MapConnectionHandler<TConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
+  MapConnectionHandler<TConnectionHandler extends Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
+  MapConnectionHandler<TConnectionHandler extends Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
   MapConnections(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configure: System.Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
   MapConnections(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, options: Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions, configure: System.Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
   MapControllerRoute(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, name: string, pattern: string, defaults?: unknown, constraints?: unknown, dataTokens?: unknown): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
@@ -239,12 +239,12 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
   MapDefaultControllerRoute(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
   MapDelete(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapDelete(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  MapDynamicControllerRoute<TTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
-  MapDynamicControllerRoute<TTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown): Rewrap<this, void>;
-  MapDynamicControllerRoute<TTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown, order: int): Rewrap<this, void>;
-  MapDynamicPageRoute<TTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
-  MapDynamicPageRoute<TTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown): Rewrap<this, void>;
-  MapDynamicPageRoute<TTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown, order: int): Rewrap<this, void>;
+  MapDynamicControllerRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
+  MapDynamicControllerRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown): Rewrap<this, void>;
+  MapDynamicControllerRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown, order: int): Rewrap<this, void>;
+  MapDynamicPageRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
+  MapDynamicPageRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown): Rewrap<this, void>;
+  MapDynamicPageRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown, order: int): Rewrap<this, void>;
   MapFallback(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapFallback(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapFallback(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
@@ -267,8 +267,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
   MapGroup(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, prefix: Microsoft_AspNetCore_Routing_Patterns.RoutePattern): Rewrap<this, Microsoft_AspNetCore_Routing.RouteGroupBuilder>;
   MapHealthChecks(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapHealthChecks(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, options: Microsoft_AspNetCore_Diagnostics_HealthChecks.HealthCheckOptions): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
-  MapHub<THub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
-  MapHub<THub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
+  MapHub<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
+  MapHub<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
   MapMethods(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, httpMethods: System_Collections_Generic.IEnumerable_1<System_Internal.String>, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapMethods(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, httpMethods: System_Collections_Generic.IEnumerable_1<System_Internal.String>, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapPatch(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
@@ -595,8 +595,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Components_Web {
   Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.TouchEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
   Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
   Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.WheelEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
-  RegisterForJavaScript<TComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string): Rewrap<this, void>;
-  RegisterForJavaScript<TComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): Rewrap<this, void>;
+  RegisterForJavaScript<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string): Rewrap<this, void>;
+  RegisterForJavaScript<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): Rewrap<this, void>;
   RegisterForJavaScript(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, componentType: System.Type, identifier: string): Rewrap<this, void>;
   RegisterForJavaScript(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, componentType: System.Type, identifier: string, javaScriptInitializer: string): Rewrap<this, void>;
 }
@@ -617,7 +617,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Connections {
   Run(this: Microsoft_AspNetCore_Connections.IConnectionBuilder, middleware: System.Func_2<Microsoft_AspNetCore_Connections.ConnectionContext, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
   Use(this: Microsoft_AspNetCore_Connections.IConnectionBuilder, middleware: System.Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, System.Func_1<System_Threading_Tasks.Task>, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
   Use(this: Microsoft_AspNetCore_Connections.IConnectionBuilder, middleware: System.Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, Microsoft_AspNetCore_Connections.ConnectionDelegate, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
-  UseConnectionHandler<TConnectionHandler>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
+  UseConnectionHandler<TConnectionHandler extends Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Connections
@@ -634,7 +634,7 @@ export type ExtensionMethods_Microsoft_AspNetCore_Connections<TShape> =
 // Extension method table for namespace: Microsoft.AspNetCore.DataProtection
 interface __TsonicExtMethods_Microsoft_AspNetCore_DataProtection {
   AddKeyEscrowSink(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder, sink: Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  AddKeyEscrowSink<TImplementation>(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  AddKeyEscrowSink<TImplementation extends Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink>(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   AddKeyEscrowSink(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder, factory: System.Func_2<System.IServiceProvider, Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink>): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   AddKeyManagementOptions(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_DataProtection_KeyManagement.KeyManagementOptions>): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   CreateProtector(this: Microsoft_AspNetCore_DataProtection.IDataProtectionProvider, purposes: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtector>;
@@ -809,8 +809,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Http {
   Accepts<TRequest>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Accepts(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, requestType: System.Type, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Accepts(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, requestType: System.Type, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  AddEndpointFilter<TFilterType>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  AddEndpointFilter<TFilterType>(this: Microsoft_AspNetCore_Routing.RouteGroupBuilder): Rewrap<this, Microsoft_AspNetCore_Routing.RouteGroupBuilder>;
+  AddEndpointFilter<TFilterType extends Microsoft_AspNetCore_Http.IEndpointFilter>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  AddEndpointFilter<TFilterType extends Microsoft_AspNetCore_Http.IEndpointFilter>(this: Microsoft_AspNetCore_Routing.RouteGroupBuilder): Rewrap<this, Microsoft_AspNetCore_Routing.RouteGroupBuilder>;
   Append(this: Microsoft_AspNetCore_Http.IHeaderDictionary, key: string, value: Microsoft_Extensions_Primitives.StringValues): Rewrap<this, void>;
   AppendCommaSeparatedValues(this: Microsoft_AspNetCore_Http.IHeaderDictionary, key: string, ...values: string[]): Rewrap<this, void>;
   AppendList<T>(this: Microsoft_AspNetCore_Http.IHeaderDictionary, name: string, values: System_Collections_Generic.IList_1<T>): Rewrap<this, void>;
@@ -1072,9 +1072,9 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding {
   GetMetadataForProperty(this: Microsoft_AspNetCore_Mvc_ModelBinding.IModelMetadataProvider, containerType: System.Type, propertyName: string): Rewrap<this, Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata>;
   Remove<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>): Rewrap<this, boolean>;
   RemoveAll<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>): Rewrap<this, void>;
-  RemoveType<TModelBinderProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>): Rewrap<this, void>;
+  RemoveType<TModelBinderProvider extends Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>, type: System.Type): Rewrap<this, void>;
-  RemoveType<TValueProviderFactory>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>): Rewrap<this, void>;
+  RemoveType<TValueProviderFactory extends Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>, type: System.Type): Rewrap<this, void>;
   TryAddModelException<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>, exception: System.Exception): Rewrap<this, void>;
 }
@@ -1092,7 +1092,7 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Metadata
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata {
-  RemoveType<TMetadataDetailsProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>): Rewrap<this, void>;
+  RemoveType<TMetadataDetailsProvider extends Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>, type: System.Type): Rewrap<this, void>;
 }
 
@@ -1109,7 +1109,7 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata<TSha
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Validation
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation {
-  RemoveType<TModelValidatorProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>): Rewrap<this, void>;
+  RemoveType<TModelValidatorProvider extends Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>, type: System.Type): Rewrap<this, void>;
 }
 
@@ -1232,8 +1232,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Rendering {
   RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown, isChecked: boolean): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   RadioButtonFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, value: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RenderComponentAsync<TComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  RenderComponentAsync<TComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  RenderComponentAsync<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  RenderComponentAsync<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   RenderComponentAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, componentType: System.Type, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string): Rewrap<this, void>;
   RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, void>;
@@ -1490,7 +1490,7 @@ export type ExtensionMethods_Microsoft_AspNetCore_Server_IIS<TShape> =
 // Extension method table for namespace: Microsoft.AspNetCore.SignalR
 interface __TsonicExtMethods_Microsoft_AspNetCore_SignalR {
   AddFilter(this: Microsoft_AspNetCore_SignalR.HubOptions, hubFilter: Microsoft_AspNetCore_SignalR.IHubFilter): Rewrap<this, void>;
-  AddFilter<TFilter>(this: Microsoft_AspNetCore_SignalR.HubOptions): Rewrap<this, void>;
+  AddFilter<TFilter extends Microsoft_AspNetCore_SignalR.IHubFilter>(this: Microsoft_AspNetCore_SignalR.HubOptions): Rewrap<this, void>;
   AddFilter(this: Microsoft_AspNetCore_SignalR.HubOptions, filterType: System.Type): Rewrap<this, void>;
   AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string): Rewrap<this, T>;
   AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string): Rewrap<this, T>;
@@ -1552,7 +1552,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_SignalR {
   SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
   SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
   SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown, arg2: unknown, arg3: unknown, arg4: unknown, arg5: unknown, arg6: unknown, arg7: unknown, arg8: unknown, arg9: unknown, arg10: unknown, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  UseHub<THub>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
+  UseHub<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
   Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string): Rewrap<this, T>;
   Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string): Rewrap<this, T>;
   Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string): Rewrap<this, T>;
@@ -1702,15 +1702,15 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddEndpointsApiExplorer(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddExceptionHandler(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_Builder.ExceptionHandlerOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddExceptionHandler<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.ExceptionHandlerOptions, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddExceptionHandler<T>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddExceptionHandler<T extends Microsoft_AspNetCore_Diagnostics.IExceptionHandler>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddFormatterMappings(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddFormatterMappings(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddFormatterMappings(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddHttpContextAccessor(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddHttpLogging(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddHttpLogging(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_HttpLogging.HttpLoggingOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddHttpLoggingInterceptor<T>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddHubOptions<THub>(this: Microsoft_AspNetCore_SignalR.ISignalRServerBuilder, configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions_1<THub>>): Rewrap<this, Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
+  AddHttpLoggingInterceptor<T extends Microsoft_AspNetCore_HttpLogging.IHttpLoggingInterceptor>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHubOptions<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_SignalR.ISignalRServerBuilder, configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions_1<THub>>): Rewrap<this, Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
   AddHubOptions(this: Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder, configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
   AddIdentity<TUser, TRole>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
   AddIdentity<TUser, TRole>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
@@ -1745,8 +1745,8 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddMvcOptions(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddOAuth(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddOAuth(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth<TOptions, THandler>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth<TOptions, THandler>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth<TOptions extends Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions, THandler extends Microsoft_AspNetCore_Authentication_OAuth.OAuthHandler_1<TOptions>>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth<TOptions extends Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions, THandler extends Microsoft_AspNetCore_Authentication_OAuth.OAuthHandler_1<TOptions>>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddOutputCache(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddOutputCache(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_OutputCaching.OutputCacheOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddPageRoute(this: Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection, pageName: string, route: string): Rewrap<this, Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection>;
@@ -1827,10 +1827,10 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   ConfigureFilter(this: Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection, filter: Microsoft_AspNetCore_Mvc_Filters.IFilterMetadata): Rewrap<this, Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection>;
   ConfigureHttpJsonOptions(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Json.JsonOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   ConfigureViews(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  InitializeTagHelper<TTagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  InitializeTagHelper<TTagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  InitializeTagHelper<TTagHelper extends Microsoft_AspNetCore_Razor_TagHelpers.ITagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  InitializeTagHelper<TTagHelper extends Microsoft_AspNetCore_Razor_TagHelpers.ITagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   RegisterPersistentService<TPersistentService>(this: Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder, renderMode: Microsoft_AspNetCore_Components.IComponentRenderMode): Rewrap<this, Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder>;
-  RemoveType<TApplicationModelConvention>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>): Rewrap<this, void>;
+  RemoveType<TApplicationModelConvention extends Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>, type: System.Type): Rewrap<this, void>;
   SetCompatibilityVersion(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, version: Microsoft_AspNetCore_Mvc.CompatibilityVersion): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   SetCompatibilityVersion(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, version: Microsoft_AspNetCore_Mvc.CompatibilityVersion): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
