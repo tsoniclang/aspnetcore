@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/aspnetcore",
-  "version": "10.0.38",
+  "version": "10.0.39",
   "description": "TypeScript type definitions for Microsoft.AspNetCore.App shared framework for .NET 10",
   "type": "module",
   "keywords": [
@@ -18,8 +18,8 @@
     "url": "https://github.com/tsoniclang/aspnetcore.git"
   },
   "peerDependencies": {
-    "@tsonic/core": "10.0.38",
-    "@tsonic/dotnet": "10.0.38",
-    "@tsonic/microsoft-extensions": "10.0.38"
+    "@tsonic/core": "10.0.39",
+    "@tsonic/dotnet": "10.0.39",
+    "@tsonic/microsoft-extensions": "10.0.39"
   }
 }
