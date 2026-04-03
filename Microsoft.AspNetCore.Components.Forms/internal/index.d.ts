@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Forms
 // Assembly: Microsoft.AspNetCore.Components.Forms, Microsoft.AspNetCore.Components.Web
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { FormMappingError } from "../../Microsoft.AspNetCore.Components.Forms.Mapping/internal/index.js";
@@ -48,15 +46,15 @@ export interface FieldIdentifier$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly FieldName: string;
-    readonly Model: unknown;
-    Equals(obj: unknown): boolean;
+    readonly Model: JsValue;
+    Equals(obj: JsValue | null): boolean;
     Equals(otherIdentifier: FieldIdentifier): boolean;
     GetHashCode(): int;
 }
 
 
 export const FieldIdentifier: {
-    new(model: unknown, fieldName: string): FieldIdentifier;
+    new(model: JsValue, fieldName: string): FieldIdentifier;
     Create<TField>(accessor: Expression_1<Func_1<TField>>): FieldIdentifier;
 };
 
@@ -81,7 +79,7 @@ export type AntiforgeryRequestToken = AntiforgeryRequestToken$instance;
 export interface AntiforgeryStateProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_AntiforgeryStateProvider: never;
 
-    GetAntiforgeryToken(): AntiforgeryRequestToken | undefined;
+    GetAntiforgeryToken(): AntiforgeryRequestToken | null;
 }
 
 
@@ -142,18 +140,18 @@ export type DataAnnotationsValidator = DataAnnotationsValidator$instance & __Dat
 export interface EditContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_EditContext: never;
 
-    readonly Model: unknown;
+    readonly Model: JsValue;
     readonly Properties: EditContextProperties;
     ShouldUseFieldIdentifiers: boolean;
     Field(fieldName: string): FieldIdentifier;
     GetValidationMessages(): IEnumerable_1<System_Internal.String>;
     GetValidationMessages(fieldIdentifier: FieldIdentifier): IEnumerable_1<System_Internal.String>;
-    GetValidationMessages(accessor: Expression_1<Func_1<unknown>>): IEnumerable_1<System_Internal.String>;
+    GetValidationMessages(accessor: Expression_1<Func_1<JsValue>>): IEnumerable_1<System_Internal.String>;
     IsModified(): boolean;
     IsModified(fieldIdentifier: FieldIdentifier): boolean;
-    IsModified(accessor: Expression_1<Func_1<unknown>>): boolean;
+    IsModified(accessor: Expression_1<Func_1<JsValue>>): boolean;
     IsValid(fieldIdentifier: FieldIdentifier): boolean;
-    IsValid(accessor: Expression_1<Func_1<unknown>>): boolean;
+    IsValid(accessor: Expression_1<Func_1<JsValue>>): boolean;
     MarkAsUnmodified(fieldIdentifier: FieldIdentifier): void;
     MarkAsUnmodified(): void;
     NotifyFieldChanged(fieldIdentifier: FieldIdentifier): void;
@@ -163,7 +161,7 @@ export interface EditContext$instance {
 
 
 export const EditContext: {
-    new(model: unknown): EditContext;
+    new(model: JsValue): EditContext;
 };
 
 
@@ -172,9 +170,9 @@ export type EditContext = EditContext$instance;
 export interface EditContextProperties$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_EditContextProperties: never;
 
-    Item: unknown;
-    Remove(key: unknown): boolean;
-    TryGetValue(key: unknown, value: unknown): boolean;
+    Item: JsValue;
+    Remove(key: JsValue): boolean;
+    TryGetValue(key: JsValue, value: JsValue | null): boolean;
 }
 
 
@@ -192,17 +190,17 @@ export interface EditForm$instance extends ComponentBase, Microsoft_AspNetCore_C
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined);
-    get ChildContent(): RenderFragment_1<EditContext> | undefined;
-    set ChildContent(value: RenderFragment_1<EditContext> | undefined);
-    get EditContext(): EditContext | undefined;
-    set EditContext(value: EditContext | undefined);
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
+    get ChildContent(): RenderFragment_1<EditContext> | null;
+    set ChildContent(value: RenderFragment_1<EditContext> | null);
+    get EditContext(): EditContext | null;
+    set EditContext(value: EditContext | null);
     Enhance: boolean;
-    get FormName(): string | undefined;
-    set FormName(value: string | undefined);
-    get Model(): unknown | undefined;
-    set Model(value: unknown | undefined);
+    get FormName(): string | null;
+    set FormName(value: string | null);
+    get Model(): JsValue | null;
+    set Model(value: JsValue | null);
     OnInvalidSubmit: EventCallback_1<EditContext>;
     OnSubmit: EventCallback_1<EditContext>;
     OnValidSubmit: EventCallback_1<EditContext>;
@@ -287,10 +285,10 @@ export interface FormMappingContext$instance {
     readonly MappingScopeName: string;
     GetAllErrors(): IEnumerable_1<FormMappingError>;
     GetAllErrors(formName: string): IEnumerable_1<FormMappingError>;
-    GetAttemptedValue(key: string): string | undefined;
-    GetAttemptedValue(formName: string, key: string): string | undefined;
-    GetErrors(key: string): FormMappingError | undefined;
-    GetErrors(formName: string, key: string): FormMappingError | undefined;
+    GetAttemptedValue(key: string): string | null;
+    GetAttemptedValue(formName: string, key: string): string | null;
+    GetErrors(key: string): FormMappingError | null;
+    GetErrors(formName: string, key: string): FormMappingError | null;
 }
 
 
@@ -331,18 +329,18 @@ export interface InputBase_1$instance<TValue> extends ComponentBase, Microsoft_A
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined);
-    get DisplayName(): string | undefined;
-    set DisplayName(value: string | undefined);
-    Value: TValue | undefined;
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
+    get DisplayName(): string | null;
+    set DisplayName(value: string | null);
+    Value: TValue | null;
     ValueChanged: EventCallback_1<TValue>;
-    get ValueExpression(): Expression_1<Func_1<TValue>> | undefined;
-    set ValueExpression(value: Expression_1<Func_1<TValue>> | undefined);
+    get ValueExpression(): Expression_1<Func_1<TValue>> | null;
+    set ValueExpression(value: Expression_1<Func_1<TValue>> | null);
     Dispose(disposing: boolean): void;
-    FormatValueAsString(value: TValue): string | undefined;
+    FormatValueAsString(value: TValue | null): string | null;
     SetParametersAsync(parameters: ParameterView): Task;
-    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
+    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -370,7 +368,7 @@ export interface InputCheckbox$instance extends InputBase_1$instance<System_Inte
     get Element(): Nullable_1<ElementReference>;
     set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string, result: boolean, validationErrorMessage: string): boolean;
+    TryParseValueFromString(value: string | null, result: boolean, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -401,9 +399,9 @@ export interface InputDate_1$instance<TValue> extends InputBase_1$instance<TValu
     ParsingErrorMessage: string;
     Type: InputDateType;
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    FormatValueAsString(value: TValue): string;
+    FormatValueAsString(value: TValue | null): string;
     OnParametersSet(): void;
-    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
+    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -430,8 +428,8 @@ export interface InputFile$instance extends ComponentBase, Microsoft_AspNetCore_
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get AdditionalAttributes(): IDictionary_2<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IDictionary_2<System_Internal.String, unknown> | undefined);
+    get AdditionalAttributes(): IDictionary_2<System_Internal.String, JsValue> | null;
+    set AdditionalAttributes(value: IDictionary_2<System_Internal.String, JsValue> | null);
     get Element(): Nullable_1<ElementReference>;
     set Element(value: Nullable_1<ElementReference> | ElementReference);
     OnChange: EventCallback_1<InputFileChangeEventArgs>;
@@ -481,7 +479,7 @@ export interface InputHidden$instance extends InputBase_1$instance<System_Intern
     get Element(): Nullable_1<ElementReference>;
     set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string, result: string, validationErrorMessage: string): boolean;
+    TryParseValueFromString(value: string | null, result: string | null, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -511,8 +509,8 @@ export interface InputNumber_1$instance<TValue> extends InputBase_1$instance<TVa
     set Element(value: Nullable_1<ElementReference> | ElementReference);
     ParsingErrorMessage: string;
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    FormatValueAsString(value: TValue): string | undefined;
-    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
+    FormatValueAsString(value: TValue | null): string | null;
+    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -537,13 +535,13 @@ export interface InputRadio_1$instance<TValue> extends ComponentBase, Microsoft_
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined);
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
     get Element(): Nullable_1<ElementReference>;
     set Element(value: Nullable_1<ElementReference> | ElementReference);
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
-    Value: TValue | undefined;
+    get Name(): string | null;
+    set Name(value: string | null);
+    Value: TValue | null;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     OnParametersSet(): void;
 }
@@ -572,13 +570,13 @@ export interface InputRadioGroup_1$instance<TValue> extends InputBase_1$instance
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IInputRadioValueProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get ChildContent(): RenderFragment | undefined;
-    set ChildContent(value: RenderFragment | undefined);
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get ChildContent(): RenderFragment | null;
+    set ChildContent(value: RenderFragment | null);
+    get Name(): string | null;
+    set Name(value: string | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     OnParametersSet(): void;
-    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
+    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -604,13 +602,13 @@ export interface InputSelect_1$instance<TValue> extends InputBase_1$instance<TVa
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get ChildContent(): RenderFragment | undefined;
-    set ChildContent(value: RenderFragment | undefined);
+    get ChildContent(): RenderFragment | null;
+    set ChildContent(value: RenderFragment | null);
     get Element(): Nullable_1<ElementReference>;
     set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    FormatValueAsString(value: TValue): string | undefined;
-    TryParseValueFromString(value: string, result: TValue, validationErrorMessage: string): boolean;
+    FormatValueAsString(value: TValue | null): string | null;
+    TryParseValueFromString(value: string | null, result: TValue, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -639,7 +637,7 @@ export interface InputText$instance extends InputBase_1$instance<System_Internal
     get Element(): Nullable_1<ElementReference>;
     set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string, result: string, validationErrorMessage: string): boolean;
+    TryParseValueFromString(value: string | null, result: string | null, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -668,7 +666,7 @@ export interface InputTextArea$instance extends InputBase_1$instance<System_Inte
     get Element(): Nullable_1<ElementReference>;
     set Element(value: Nullable_1<ElementReference> | ElementReference);
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    TryParseValueFromString(value: string, result: string, validationErrorMessage: string): boolean;
+    TryParseValueFromString(value: string | null, result: string | null, validationErrorMessage: string | null): boolean;
 }
 
 
@@ -710,10 +708,10 @@ export interface ValidationMessage_1$instance<TValue> extends ComponentBase, Mic
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined);
-    get For(): Expression_1<Func_1<TValue>> | undefined;
-    set For(value: Expression_1<Func_1<TValue>> | undefined);
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
+    get For(): Expression_1<Func_1<TValue>> | null;
+    set For(value: Expression_1<Func_1<TValue>> | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     Dispose(disposing: boolean): void;
     OnParametersSet(): void;
@@ -738,14 +736,14 @@ export interface ValidationMessageStore$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_ValidationMessageStore: never;
 
     Add(fieldIdentifier: FieldIdentifier, message: string): void;
-    Add(accessor: Expression_1<Func_1<unknown>>, message: string): void;
+    Add(accessor: Expression_1<Func_1<JsValue>>, message: string): void;
     Add(fieldIdentifier: FieldIdentifier, messages: IEnumerable_1<System_Internal.String>): void;
-    Add(accessor: Expression_1<Func_1<unknown>>, messages: IEnumerable_1<System_Internal.String>): void;
+    Add(accessor: Expression_1<Func_1<JsValue>>, messages: IEnumerable_1<System_Internal.String>): void;
     Clear(): void;
-    Clear(accessor: Expression_1<Func_1<unknown>>): void;
+    Clear(accessor: Expression_1<Func_1<JsValue>>): void;
     Clear(fieldIdentifier: FieldIdentifier): void;
     get_Item(fieldIdentifier: FieldIdentifier): IEnumerable_1<System_Internal.String>;
-    get_Item(accessor: Expression_1<Func_1<unknown>>): IEnumerable_1<System_Internal.String>;
+    get_Item(accessor: Expression_1<Func_1<JsValue>>): IEnumerable_1<System_Internal.String>;
 }
 
 
@@ -792,10 +790,10 @@ export interface ValidationSummary$instance extends ComponentBase, Microsoft_Asp
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined);
-    get Model(): unknown | undefined;
-    set Model(value: unknown | undefined);
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
+    get Model(): JsValue | null;
+    set Model(value: JsValue | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     Dispose(disposing: boolean): void;
     OnParametersSet(): void;

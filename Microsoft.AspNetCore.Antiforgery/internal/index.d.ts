@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Antiforgery
 // Assembly: Microsoft.AspNetCore.Antiforgery, Microsoft.AspNetCore.Http.Abstractions, Microsoft.AspNetCore.Http.Features
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { CookieBuilder, HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -48,7 +49,7 @@ export interface IAntiforgeryValidationFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Antiforgery_IAntiforgeryValidationFeature: never;
 
     readonly IsValid: boolean;
-    readonly Error: Exception | undefined;
+    readonly Error: Exception | null;
 }
 
 
@@ -59,8 +60,8 @@ export interface AntiforgeryOptions$instance {
 
     Cookie: CookieBuilder;
     FormFieldName: string;
-    get HeaderName(): string | undefined;
-    set HeaderName(value: string | undefined);
+    get HeaderName(): string | null;
+    set HeaderName(value: string | null);
     SuppressReadingTokenFromFormBody: boolean;
     SuppressXFrameOptionsHeader: boolean;
 }
@@ -77,15 +78,15 @@ export type AntiforgeryOptions = AntiforgeryOptions$instance;
 export interface AntiforgeryTokenSet$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Antiforgery_AntiforgeryTokenSet: never;
 
-    readonly CookieToken: string | undefined;
+    readonly CookieToken: string | null;
     readonly FormFieldName: string;
-    readonly HeaderName: string | undefined;
-    readonly RequestToken: string | undefined;
+    readonly HeaderName: string | null;
+    readonly RequestToken: string | null;
 }
 
 
 export const AntiforgeryTokenSet: {
-    new(requestToken: string, cookieToken: string, formFieldName: string, headerName: string): AntiforgeryTokenSet;
+    new(requestToken: string | null, cookieToken: string | null, formFieldName: string, headerName: string | null): AntiforgeryTokenSet;
 };
 
 
@@ -101,7 +102,7 @@ export interface AntiforgeryValidationException$instance extends Exception {
 
 export const AntiforgeryValidationException: {
     new(message: string): AntiforgeryValidationException;
-    new(message: string, innerException: Exception): AntiforgeryValidationException;
+    new(message: string, innerException: Exception | null): AntiforgeryValidationException;
 };
 
 

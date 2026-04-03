@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.StaticAssets.Infrastructure
 // Assembly: Microsoft.AspNetCore.StaticAssets
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEndpointRouteBuilder } from "../../Microsoft.AspNetCore.Routing/internal/index.js";
@@ -13,8 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class StaticAssetsEndpointDataSourceHelper$instance {
-    static HasStaticAssetsDataSource(builder: IEndpointRouteBuilder, staticAssetsManifestPath?: string): boolean;
-    static ResolveStaticAssetDescriptors(endpointRouteBuilder: IEndpointRouteBuilder, manifestPath: string): IReadOnlyList_1<StaticAssetDescriptor>;
+    static HasStaticAssetsDataSource(builder: IEndpointRouteBuilder, staticAssetsManifestPath?: string | null): boolean;
+    static ResolveStaticAssetDescriptors(endpointRouteBuilder: IEndpointRouteBuilder, manifestPath: string | null): IReadOnlyList_1<StaticAssetDescriptor>;
 }
 
 

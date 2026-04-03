@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.SignalR.Protocol
 // Assembly: Microsoft.AspNetCore.SignalR.Common, Microsoft.AspNetCore.SignalR.Protocols.Json
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { TransferFormat } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
@@ -26,7 +24,7 @@ export interface IHubProtocol$instance {
     readonly TransferFormat: TransferFormat;
     GetMessageBytes(message: HubMessage): ReadOnlyMemory_1<System_Internal.Byte>;
     IsVersionSupported(version: int): boolean;
-    TryParseMessage(input: ReadOnlySequence_1<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
+    TryParseMessage(input: ReadOnlySequence_1<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage | null): boolean;
     WriteMessage(message: HubMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
 }
 
@@ -64,13 +62,13 @@ export interface CloseMessage$instance extends HubMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_CloseMessage: never;
 
     readonly AllowReconnect: boolean;
-    readonly Error: string | undefined;
+    readonly Error: string | null;
 }
 
 
 export const CloseMessage: {
-    new(error: string): CloseMessage;
-    new(error: string, allowReconnect: boolean): CloseMessage;
+    new(error: string | null): CloseMessage;
+    new(error: string | null, allowReconnect: boolean): CloseMessage;
     readonly Empty: CloseMessage;
 };
 
@@ -80,18 +78,18 @@ export type CloseMessage = CloseMessage$instance;
 export interface CompletionMessage$instance extends HubInvocationMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_CompletionMessage: never;
 
-    readonly Error: string | undefined;
+    readonly Error: string | null;
     readonly HasResult: boolean;
-    readonly Result: unknown | undefined;
+    readonly Result: JsValue | null;
     ToString(): string;
 }
 
 
 export const CompletionMessage: {
-    new(invocationId: string, error: string, result: unknown, hasResult: boolean): CompletionMessage;
+    new(invocationId: string, error: string | null, result: JsValue | null, hasResult: boolean): CompletionMessage;
     Empty(invocationId: string): CompletionMessage;
-    WithError(invocationId: string, error: string): CompletionMessage;
-    WithResult(invocationId: string, payload: unknown): CompletionMessage;
+    WithError(invocationId: string, error: string | null): CompletionMessage;
+    WithResult(invocationId: string, payload: JsValue | null): CompletionMessage;
 };
 
 
@@ -115,12 +113,12 @@ export type HandshakeRequestMessage = HandshakeRequestMessage$instance;
 export interface HandshakeResponseMessage$instance extends HubMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HandshakeResponseMessage: never;
 
-    readonly Error: string | undefined;
+    readonly Error: string | null;
 }
 
 
 export const HandshakeResponseMessage: {
-    new(error: string): HandshakeResponseMessage;
+    new(error: string | null): HandshakeResponseMessage;
     readonly Empty: HandshakeResponseMessage;
 };
 
@@ -130,13 +128,13 @@ export type HandshakeResponseMessage = HandshakeResponseMessage$instance;
 export interface HubInvocationMessage$instance extends HubMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HubInvocationMessage: never;
 
-    get Headers(): IDictionary_2<System_Internal.String, System_Internal.String> | undefined;
-    set Headers(value: IDictionary_2<System_Internal.String, System_Internal.String> | undefined);
-    readonly InvocationId: string | undefined;
+    get Headers(): IDictionary_2<System_Internal.String, System_Internal.String> | null;
+    set Headers(value: IDictionary_2<System_Internal.String, System_Internal.String> | null);
+    readonly InvocationId: string | null;
 }
 
 
-export const HubInvocationMessage: (abstract new(invocationId: string) => HubInvocationMessage) & {
+export const HubInvocationMessage: (abstract new(invocationId: string | null) => HubInvocationMessage) & {
 };
 
 
@@ -157,13 +155,13 @@ export type HubMessage = HubMessage$instance;
 export interface HubMethodInvocationMessage$instance extends HubInvocationMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HubMethodInvocationMessage: never;
 
-    readonly Arguments: (unknown | undefined)[];
-    readonly StreamIds: string[] | undefined;
+    readonly Arguments: (JsValue | null)[];
+    readonly StreamIds: string[] | null;
     readonly Target: string;
 }
 
 
-export const HubMethodInvocationMessage: (abstract new(invocationId: string, target: string, arguments: unknown[], streamIds: string[]) => HubMethodInvocationMessage) & (abstract new(invocationId: string, target: string, arguments: unknown[]) => HubMethodInvocationMessage) & {
+export const HubMethodInvocationMessage: (abstract new(invocationId: string | null, target: string, arguments: (JsValue | null)[], streamIds: string[] | null) => HubMethodInvocationMessage) & (abstract new(invocationId: string | null, target: string, arguments: (JsValue | null)[]) => HubMethodInvocationMessage) & {
 };
 
 
@@ -178,7 +176,7 @@ export interface InvocationBindingFailureMessage$instance extends HubInvocationM
 
 
 export const InvocationBindingFailureMessage: {
-    new(invocationId: string, target: string, bindingFailure: ExceptionDispatchInfo): InvocationBindingFailureMessage;
+    new(invocationId: string | null, target: string, bindingFailure: ExceptionDispatchInfo): InvocationBindingFailureMessage;
 };
 
 
@@ -192,9 +190,9 @@ export interface InvocationMessage$instance extends HubMethodInvocationMessage {
 
 
 export const InvocationMessage: {
-    new(target: string, arguments: unknown[]): InvocationMessage;
-    new(invocationId: string, target: string, arguments: unknown[]): InvocationMessage;
-    new(invocationId: string, target: string, arguments: unknown[], streamIds: string[]): InvocationMessage;
+    new(target: string, arguments: (JsValue | null)[]): InvocationMessage;
+    new(invocationId: string | null, target: string, arguments: (JsValue | null)[]): InvocationMessage;
+    new(invocationId: string | null, target: string, arguments: (JsValue | null)[], streamIds: string[] | null): InvocationMessage;
 };
 
 
@@ -210,7 +208,7 @@ export interface JsonHubProtocol$instance extends IHubProtocol$instance {
     readonly Version: int;
     GetMessageBytes(message: HubMessage): ReadOnlyMemory_1<System_Internal.Byte>;
     IsVersionSupported(version: int): boolean;
-    TryParseMessage(input: ReadOnlySequence_1<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage): boolean;
+    TryParseMessage(input: ReadOnlySequence_1<System_Internal.Byte>, binder: IInvocationBinder, message: HubMessage | null): boolean;
     WriteMessage(message: HubMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
 }
 
@@ -292,8 +290,8 @@ export interface StreamInvocationMessage$instance extends HubMethodInvocationMes
 
 
 export const StreamInvocationMessage: {
-    new(invocationId: string, target: string, arguments: unknown[]): StreamInvocationMessage;
-    new(invocationId: string, target: string, arguments: unknown[], streamIds: string[]): StreamInvocationMessage;
+    new(invocationId: string, target: string, arguments: (JsValue | null)[]): StreamInvocationMessage;
+    new(invocationId: string, target: string, arguments: (JsValue | null)[], streamIds: string[] | null): StreamInvocationMessage;
 };
 
 
@@ -302,14 +300,14 @@ export type StreamInvocationMessage = StreamInvocationMessage$instance;
 export interface StreamItemMessage$instance extends HubInvocationMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_StreamItemMessage: never;
 
-    get Item(): unknown | undefined;
-    set Item(value: unknown | undefined);
+    get Item(): JsValue | null;
+    set Item(value: JsValue | null);
     ToString(): string;
 }
 
 
 export const StreamItemMessage: {
-    new(invocationId: string, item: unknown): StreamItemMessage;
+    new(invocationId: string, item: JsValue | null): StreamItemMessage;
 };
 
 
@@ -317,8 +315,8 @@ export type StreamItemMessage = StreamItemMessage$instance;
 
 export abstract class HandshakeProtocol$instance {
     static GetSuccessfulHandshake(protocol: IHubProtocol): ReadOnlySpan_1<System_Internal.Byte>;
-    static TryParseRequestMessage(buffer: ReadOnlySequence_1<System_Internal.Byte>, requestMessage: HandshakeRequestMessage): boolean;
-    static TryParseResponseMessage(buffer: ReadOnlySequence_1<System_Internal.Byte>, responseMessage: HandshakeResponseMessage): boolean;
+    static TryParseRequestMessage(buffer: ReadOnlySequence_1<System_Internal.Byte>, requestMessage: HandshakeRequestMessage | null): boolean;
+    static TryParseResponseMessage(buffer: ReadOnlySequence_1<System_Internal.Byte>, responseMessage: HandshakeResponseMessage | null): boolean;
     static WriteRequestMessage(requestMessage: HandshakeRequestMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
     static WriteResponseMessage(responseMessage: HandshakeResponseMessage, output: IBufferWriter_1<System_Internal.Byte>): void;
 }

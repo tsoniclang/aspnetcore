@@ -10,7 +10,7 @@ import type { IModelMetadataProvider, ModelMetadata, ModelStateDictionary } from
 import type { ActionContext } from './Microsoft.AspNetCore.Mvc/internal/index.js';
 import type { ICollection, IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
-import type { Attribute, Boolean as ClrBoolean, Func, Int32, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { Attribute, Boolean as ClrBoolean, Func, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { ClientModelValidationContext as ClientModelValidationContext } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
@@ -38,6 +38,7 @@ export type IObjectModelValidator = Internal.IObjectModelValidator;
 export { ModelValidatorProviderExtensions$instance as ModelValidatorProviderExtensions } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 export { ValidateNeverAttribute as ValidateNeverAttribute } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 export { ValidationVisitor as ValidationVisitor } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
+export { ValidationVisitor_StateManager as ValidationVisitor_StateManager } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 export { ValidatorCache as ValidatorCache } from './Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js';
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation as ExtensionMethods } from './__internal/extensions/index.js';

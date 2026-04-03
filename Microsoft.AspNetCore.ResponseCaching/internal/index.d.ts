@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.ResponseCaching
 // Assembly: Microsoft.AspNetCore.ResponseCaching, Microsoft.AspNetCore.ResponseCaching.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -17,8 +18,8 @@ import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensio
 export interface IResponseCachingFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;
 
-    get VaryByQueryKeys(): string[] | undefined;
-    set VaryByQueryKeys(value: string[] | undefined);
+    get VaryByQueryKeys(): string[] | null;
+    set VaryByQueryKeys(value: string[] | null);
 }
 
 
@@ -29,8 +30,8 @@ export interface ResponseCachingFeature$instance extends IResponseCachingFeature
 
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature: never;
 
-    get VaryByQueryKeys(): string[] | undefined;
-    set VaryByQueryKeys(value: string[] | undefined);
+    get VaryByQueryKeys(): string[] | null;
+    set VaryByQueryKeys(value: string[] | null);
 }
 
 

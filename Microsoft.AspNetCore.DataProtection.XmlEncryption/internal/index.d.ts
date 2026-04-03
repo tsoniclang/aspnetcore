@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.DataProtection.XmlEncryption
 // Assembly: Microsoft.AspNetCore.DataProtection
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
@@ -22,7 +23,7 @@ export enum DpapiNGProtectionDescriptorFlags {
 export interface ICertificateResolver$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver: never;
 
-    ResolveCertificate(thumbprint: string): X509Certificate2 | undefined;
+    ResolveCertificate(thumbprint: string): X509Certificate2 | null;
 }
 
 
@@ -51,7 +52,7 @@ export interface CertificateResolver$instance extends ICertificateResolver$insta
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver: never;
 
-    ResolveCertificate(thumbprint: string): X509Certificate2 | undefined;
+    ResolveCertificate(thumbprint: string): X509Certificate2 | null;
 }
 
 
@@ -100,7 +101,7 @@ export interface DpapiNGXmlDecryptor$instance extends IXmlDecryptor$instance {
 
 export const DpapiNGXmlDecryptor: {
     new(): DpapiNGXmlDecryptor;
-    new(services: IServiceProvider): DpapiNGXmlDecryptor;
+    new(services: IServiceProvider | null): DpapiNGXmlDecryptor;
 };
 
 
@@ -143,7 +144,7 @@ export interface DpapiXmlDecryptor$instance extends IXmlDecryptor$instance {
 
 export const DpapiXmlDecryptor: {
     new(): DpapiXmlDecryptor;
-    new(services: IServiceProvider): DpapiXmlDecryptor;
+    new(services: IServiceProvider | null): DpapiXmlDecryptor;
 };
 
 
@@ -186,7 +187,7 @@ export interface EncryptedXmlDecryptor$instance extends IXmlDecryptor$instance {
 
 export const EncryptedXmlDecryptor: {
     new(): EncryptedXmlDecryptor;
-    new(services: IServiceProvider): EncryptedXmlDecryptor;
+    new(services: IServiceProvider | null): EncryptedXmlDecryptor;
 };
 
 
@@ -244,7 +245,7 @@ export interface NullXmlEncryptor$instance extends IXmlEncryptor$instance {
 
 export const NullXmlEncryptor: {
     new(): NullXmlEncryptor;
-    new(services: IServiceProvider): NullXmlEncryptor;
+    new(services: IServiceProvider | null): NullXmlEncryptor;
 };
 
 

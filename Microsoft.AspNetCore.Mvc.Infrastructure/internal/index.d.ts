@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Infrastructure
 // Assembly: Microsoft.AspNetCore.Mvc.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IWebHostEnvironment } from "../../Microsoft.AspNetCore.Hosting/internal/index.js";
@@ -36,8 +37,8 @@ import type { IChangeToken } from "@tsonic/microsoft-extensions/Microsoft.Extens
 export interface IActionContextAccessor$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor: never;
 
-    get ActionContext(): ActionContext | undefined;
-    set ActionContext(value: ActionContext | undefined);
+    get ActionContext(): ActionContext | null;
+    set ActionContext(value: ActionContext | null);
 }
 
 
@@ -64,7 +65,7 @@ export type IActionDescriptorCollectionProvider = IActionDescriptorCollectionPro
 export interface IActionInvokerFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory: never;
 
-    CreateInvoker(actionContext: ActionContext): IActionInvoker | undefined;
+    CreateInvoker(actionContext: ActionContext): IActionInvoker | null;
 }
 
 
@@ -82,7 +83,7 @@ export type IActionResultExecutor_1<TResult extends IActionResult> = IActionResu
 export interface IActionResultTypeMapper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper: never;
 
-    Convert(value: unknown, returnType: Type): IActionResult;
+    Convert(value: JsValue | null, returnType: Type): IActionResult;
     GetResultDataType(returnType: Type): Type;
 }
 
@@ -92,8 +93,8 @@ export type IActionResultTypeMapper = IActionResultTypeMapper$instance;
 export interface IActionSelector$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector: never;
 
-    SelectBestCandidate(context: RouteContext, candidates: IReadOnlyList_1<ActionDescriptor>): ActionDescriptor | undefined;
-    SelectCandidates(context: RouteContext): IReadOnlyList_1<ActionDescriptor> | undefined;
+    SelectBestCandidate(context: RouteContext, candidates: IReadOnlyList_1<ActionDescriptor>): ActionDescriptor | null;
+    SelectCandidates(context: RouteContext): IReadOnlyList_1<ActionDescriptor> | null;
 }
 
 
@@ -122,7 +123,7 @@ export type IClientErrorActionResult = IClientErrorActionResult$instance;
 export interface IClientErrorFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory: never;
 
-    GetClientError(actionContext: ActionContext, clientError: IClientErrorActionResult): IActionResult | undefined;
+    GetClientError(actionContext: ActionContext, clientError: IClientErrorActionResult): IActionResult | null;
 }
 
 
@@ -133,7 +134,7 @@ export interface ICompatibilitySwitch$instance {
 
     readonly IsValueSet: boolean;
     readonly Name: string;
-    Value: unknown;
+    Value: JsValue;
 }
 
 
@@ -201,8 +202,8 @@ export interface ActionContextAccessor$instance extends IActionContextAccessor$i
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor: never;
 
-    get ActionContext(): ActionContext | undefined;
-    set ActionContext(value: ActionContext | undefined);
+    get ActionContext(): ActionContext | null;
+    set ActionContext(value: ActionContext | null);
 }
 
 
@@ -289,13 +290,13 @@ export interface AmbiguousActionException$instance extends InvalidOperationExcep
 
 
 export const AmbiguousActionException: {
-    new(message: string): AmbiguousActionException;
+    new(message: string | null): AmbiguousActionException;
 };
 
 
 export type AmbiguousActionException = AmbiguousActionException$instance;
 
-export interface CompatibilitySwitch_1$instance<TValue extends unknown> {
+export interface CompatibilitySwitch_1$instance<TValue extends NonNullable<JsValue>> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_CompatibilitySwitch_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch: never;
@@ -307,12 +308,12 @@ export interface CompatibilitySwitch_1$instance<TValue extends unknown> {
 
 
 export const CompatibilitySwitch_1: {
-    new<TValue extends unknown>(name: string): CompatibilitySwitch_1<TValue>;
-    new<TValue extends unknown>(name: string, initialValue: TValue): CompatibilitySwitch_1<TValue>;
+    new<TValue extends NonNullable<JsValue>>(name: string): CompatibilitySwitch_1<TValue>;
+    new<TValue extends NonNullable<JsValue>>(name: string, initialValue: TValue): CompatibilitySwitch_1<TValue>;
 };
 
 
-export interface __CompatibilitySwitch_1$views<TValue extends unknown> {
+export interface __CompatibilitySwitch_1$views<TValue extends NonNullable<JsValue>> {
     As_ICompatibilitySwitch(): ICompatibilitySwitch$instance;
 }
 
@@ -324,8 +325,8 @@ export interface ConfigureCompatibilityOptions_1$instance<TOptions extends IEnum
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly DefaultValues: IReadOnlyDictionary_2<System_Internal.String, unknown>;
-    PostConfigure(name: string, options: TOptions): void;
+    readonly DefaultValues: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
+    PostConfigure(name: string | null, options: TOptions): void;
 }
 
 
@@ -359,7 +360,7 @@ export type ContentResultExecutor = ContentResultExecutor$instance & __ContentRe
 export interface DefaultOutputFormatterSelector$instance extends OutputFormatterSelector {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_DefaultOutputFormatterSelector: never;
 
-    SelectFormatter(context: OutputFormatterCanWriteContext, formatters: IList_1<IOutputFormatter>, contentTypes: MediaTypeCollection): IOutputFormatter | undefined;
+    SelectFormatter(context: OutputFormatterCanWriteContext, formatters: IList_1<IOutputFormatter>, contentTypes: MediaTypeCollection): IOutputFormatter | null;
 }
 
 
@@ -373,13 +374,13 @@ export type DefaultOutputFormatterSelector = DefaultOutputFormatterSelector$inst
 export interface DefaultProblemDetailsFactory$instance extends ProblemDetailsFactory {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_DefaultProblemDetailsFactory: never;
 
-    CreateProblemDetails(httpContext: HttpContext, statusCode?: Nullable_1<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
-    CreateValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable_1<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
+    CreateProblemDetails(httpContext: HttpContext, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, detail?: string | null, instance?: string | null): ProblemDetails;
+    CreateValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, detail?: string | null, instance?: string | null): ValidationProblemDetails;
 }
 
 
 export const DefaultProblemDetailsFactory: {
-    new(options: IOptions_1<ApiBehaviorOptions>, problemDetailsOptions: IOptions_1<ProblemDetailsOptions>): DefaultProblemDetailsFactory;
+    new(options: IOptions_1<ApiBehaviorOptions>, problemDetailsOptions: IOptions_1<ProblemDetailsOptions> | null): DefaultProblemDetailsFactory;
 };
 
 
@@ -405,7 +406,7 @@ export interface FileContentResultExecutor$instance extends FileResultExecutorBa
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
     ExecuteAsync(context: ActionContext, result: FileContentResult): Task;
-    WriteFileAsync(context: ActionContext, result: FileContentResult, range: RangeItemHeaderValue, rangeLength: long): Task;
+    WriteFileAsync(context: ActionContext, result: FileContentResult, range: RangeItemHeaderValue | null, rangeLength: long): Task;
 }
 
 
@@ -424,7 +425,7 @@ export type FileContentResultExecutor = FileContentResultExecutor$instance & __F
 export interface FileResultExecutorBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_FileResultExecutorBase: never;
 
-    SetHeadersAndLog(context: ActionContext, result: FileResult, fileLength: Nullable_1<System_Internal.Int64>, enableRangeProcessing: boolean, lastModified?: Nullable_1<DateTimeOffset>, etag?: EntityTagHeaderValue): ValueTuple_3<RangeItemHeaderValue, System_Internal.Int64, System_Internal.Boolean>;
+    SetHeadersAndLog(context: ActionContext, result: FileResult, fileLength: Nullable_1<System_Internal.Int64>, enableRangeProcessing: boolean, lastModified?: Nullable_1<DateTimeOffset>, etag?: EntityTagHeaderValue | null): ValueTuple_3<RangeItemHeaderValue, System_Internal.Int64, System_Internal.Boolean>;
 }
 
 
@@ -432,7 +433,7 @@ export const FileResultExecutorBase: {
     new(logger: ILogger): FileResultExecutorBase;
     readonly BufferSize: int;
     CreateLogger<T>(factory: ILoggerFactory): ILogger;
-    WriteFileAsync(context: HttpContext, fileStream: Stream, range: RangeItemHeaderValue, rangeLength: long): Task;
+    WriteFileAsync(context: HttpContext, fileStream: Stream, range: RangeItemHeaderValue | null, rangeLength: long): Task;
 };
 
 
@@ -444,7 +445,7 @@ export interface FileStreamResultExecutor$instance extends FileResultExecutorBas
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
     ExecuteAsync(context: ActionContext, result: FileStreamResult): Task;
-    WriteFileAsync(context: ActionContext, result: FileStreamResult, range: RangeItemHeaderValue, rangeLength: long): Task;
+    WriteFileAsync(context: ActionContext, result: FileStreamResult, range: RangeItemHeaderValue | null, rangeLength: long): Task;
 }
 
 
@@ -546,7 +547,7 @@ export type ObjectResultExecutor = ObjectResultExecutor$instance & __ObjectResul
 export interface OutputFormatterSelector$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_OutputFormatterSelector: never;
 
-    SelectFormatter(context: OutputFormatterCanWriteContext, formatters: IList_1<IOutputFormatter>, mediaTypes: MediaTypeCollection): IOutputFormatter | undefined;
+    SelectFormatter(context: OutputFormatterCanWriteContext, formatters: IList_1<IOutputFormatter>, mediaTypes: MediaTypeCollection): IOutputFormatter | null;
 }
 
 
@@ -562,9 +563,9 @@ export interface PhysicalFileResultExecutor$instance extends FileResultExecutorB
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1: never;
 
     ExecuteAsync(context: ActionContext, result: PhysicalFileResult): Task;
-    GetFileInfo(path: string): unknown;
+    GetFileInfo(path: string): PhysicalFileResultExecutor_FileMetadata;
     GetFileStream(path: string): Stream;
-    WriteFileAsync(context: ActionContext, result: PhysicalFileResult, range: RangeItemHeaderValue, rangeLength: long): Task;
+    WriteFileAsync(context: ActionContext, result: PhysicalFileResult, range: RangeItemHeaderValue | null, rangeLength: long): Task;
 }
 
 
@@ -580,11 +581,27 @@ export interface __PhysicalFileResultExecutor$views {
 export type PhysicalFileResultExecutor = PhysicalFileResultExecutor$instance & __PhysicalFileResultExecutor$views;
 
 
+export interface PhysicalFileResultExecutor_FileMetadata$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_PhysicalFileResultExecutor_FileMetadata: never;
+
+    Exists: boolean;
+    LastModified: DateTimeOffset;
+    Length: long;
+}
+
+
+export const PhysicalFileResultExecutor_FileMetadata: {
+    new(): PhysicalFileResultExecutor_FileMetadata;
+};
+
+
+export type PhysicalFileResultExecutor_FileMetadata = PhysicalFileResultExecutor_FileMetadata$instance;
+
 export interface ProblemDetailsFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Infrastructure_ProblemDetailsFactory: never;
 
-    CreateProblemDetails(httpContext: HttpContext, statusCode?: Nullable_1<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ProblemDetails;
-    CreateValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable_1<System_Internal.Int32>, title?: string, type?: string, detail?: string, instance?: string): ValidationProblemDetails;
+    CreateProblemDetails(httpContext: HttpContext, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, detail?: string | null, instance?: string | null): ProblemDetails;
+    CreateValidationProblemDetails(httpContext: HttpContext, modelStateDictionary: ModelStateDictionary, statusCode?: Nullable_1<System_Internal.Int32>, title?: string | null, type?: string | null, detail?: string | null, instance?: string | null): ValidationProblemDetails;
 }
 
 
@@ -685,7 +702,7 @@ export interface VirtualFileResultExecutor$instance extends FileResultExecutorBa
 
     ExecuteAsync(context: ActionContext, result: VirtualFileResult): Task;
     GetFileStream(fileInfo: IFileInfo): Stream;
-    WriteFileAsync(context: ActionContext, result: VirtualFileResult, fileInfo: IFileInfo, range: RangeItemHeaderValue, rangeLength: long): Task;
+    WriteFileAsync(context: ActionContext, result: VirtualFileResult, fileInfo: IFileInfo, range: RangeItemHeaderValue | null, rangeLength: long): Task;
 }
 
 

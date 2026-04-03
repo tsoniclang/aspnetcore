@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure
 // Assembly: Microsoft.AspNetCore.Mvc.RazorPages
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
@@ -38,7 +39,7 @@ import type { IOptions_1 } from "@tsonic/microsoft-extensions/Microsoft.Extensio
 export interface IPageHandlerMethodSelector$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageHandlerMethodSelector: never;
 
-    Select(context: PageContext): HandlerMethodDescriptor | undefined;
+    Select(context: PageContext): HandlerMethodDescriptor | null;
 }
 
 
@@ -81,8 +82,8 @@ export interface HandlerMethodDescriptor$instance {
 
     HttpMethod: string;
     MethodInfo: MethodInfo;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     Parameters: IList_1<HandlerParameterDescriptor>;
 }
 
@@ -197,7 +198,7 @@ export interface PageResultExecutor$instance extends ViewExecutor {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageResultExecutor: never;
 
     ExecuteAsync(pageContext: PageContext, result: PageResult): Task;
-    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string, statusCode: Nullable_1<System_Internal.Int32>): Task;
+    ExecuteAsync(actionContext: ActionContext, view: IView, viewData: ViewDataDictionary, tempData: ITempDataDictionary, contentType: string | null, statusCode: Nullable_1<System_Internal.Int32>): Task;
 }
 
 
@@ -236,11 +237,11 @@ export interface RazorPageAdapter$instance extends Microsoft_AspNetCore_Mvc_Razo
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IModelTypeProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
-    get BodyContent(): IHtmlContent | undefined;
-    set BodyContent(value: IHtmlContent | undefined);
+    get BodyContent(): IHtmlContent | null;
+    set BodyContent(value: IHtmlContent | null);
     IsLayoutBeingRendered: boolean;
-    get Layout(): string | undefined;
-    set Layout(value: string | undefined);
+    get Layout(): string | null;
+    set Layout(value: string | null);
     Path: string;
     PreviousSectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
     readonly SectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
@@ -281,8 +282,8 @@ export interface ServiceBasedPageModelActivatorProvider$instance extends Microso
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider: never;
 
-    CreateActivator(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, unknown>;
-    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action_2<PageContext, unknown> | undefined;
+    CreateActivator(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, JsValue>;
+    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action_2<PageContext, JsValue> | null;
 }
 
 

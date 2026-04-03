@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Http.Features
 // Assembly: Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Http.Abstractions, Microsoft.AspNetCore.Http.Features, Microsoft.Extensions.Features
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ConnectionContext } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
@@ -40,7 +38,7 @@ export enum HttpsCompressionMode {
 export interface IBadRequestExceptionFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IBadRequestExceptionFeature: never;
 
-    readonly Error: Exception | undefined;
+    readonly Error: Exception | null;
 }
 
 
@@ -49,26 +47,26 @@ export type IBadRequestExceptionFeature = IBadRequestExceptionFeature$instance;
 export interface IEndpointFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IEndpointFeature: never;
 
-    get Endpoint(): Endpoint | undefined;
-    set Endpoint(value: Endpoint | undefined);
+    get Endpoint(): Endpoint | null;
+    set Endpoint(value: Endpoint | null);
 }
 
 
 export type IEndpointFeature = IEndpointFeature$instance;
 
-export interface IFeatureCollection$instance extends IEnumerable_1<KeyValuePair_2<Type, unknown>>, IEnumerable {
+export interface IFeatureCollection$instance extends IEnumerable_1<KeyValuePair_2<Type, JsValue>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IFeatureCollection: never;
 
     readonly IsReadOnly: boolean;
     readonly Revision: int;
-    get Item(): unknown | undefined;
-    set Item(value: unknown | undefined);
-    Get<TFeature>(): TFeature | undefined;
-    Set<TFeature>(instance: TFeature): void;
+    get Item(): JsValue | null;
+    set Item(value: JsValue | null);
+    Get<TFeature>(): TFeature | null;
+    Set<TFeature>(instance: TFeature | null): void;
 }
 
 
-export interface IFeatureCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<Type, unknown>> {}
+export interface IFeatureCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<Type, JsValue>> {}
 
 export type IFeatureCollection = IFeatureCollection$instance;
 
@@ -76,8 +74,8 @@ export interface IFormFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IFormFeature: never;
 
     readonly HasFormContentType: boolean;
-    get Form(): IFormCollection | undefined;
-    set Form(value: IFormCollection | undefined);
+    get Form(): IFormCollection | null;
+    set Form(value: IFormCollection | null);
     ReadForm(): IFormCollection;
     ReadFormAsync(cancellationToken: CancellationToken): Task_1<IFormCollection>;
 }
@@ -107,10 +105,10 @@ export interface IHttpConnectionFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpConnectionFeature: never;
 
     ConnectionId: string;
-    get RemoteIpAddress(): IPAddress | undefined;
-    set RemoteIpAddress(value: IPAddress | undefined);
-    get LocalIpAddress(): IPAddress | undefined;
-    set LocalIpAddress(value: IPAddress | undefined);
+    get RemoteIpAddress(): IPAddress | null;
+    set RemoteIpAddress(value: IPAddress | null);
+    get LocalIpAddress(): IPAddress | null;
+    set LocalIpAddress(value: IPAddress | null);
     RemotePort: int;
     LocalPort: int;
 }
@@ -122,7 +120,7 @@ export interface IHttpExtendedConnectFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpExtendedConnectFeature: never;
 
     readonly IsExtendedConnect: boolean;
-    readonly Protocol: string | undefined;
+    readonly Protocol: string | null;
     AcceptAsync(): ValueTask_1<Stream>;
 }
 
@@ -143,7 +141,7 @@ export type IHttpMaxRequestBodySizeFeature = IHttpMaxRequestBodySizeFeature$inst
 export interface IHttpMetricsTagsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpMetricsTagsFeature: never;
 
-    readonly Tags: ICollection_1<KeyValuePair_2<System_Internal.String, unknown>>;
+    readonly Tags: ICollection_1<KeyValuePair_2<System_Internal.String, JsValue>>;
     MetricsDisabled: boolean;
 }
 
@@ -232,12 +230,12 @@ export interface IHttpResponseFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpResponseFeature: never;
 
     StatusCode: int;
-    get ReasonPhrase(): string | undefined;
-    set ReasonPhrase(value: string | undefined);
+    get ReasonPhrase(): string | null;
+    set ReasonPhrase(value: string | null);
     Headers: IHeaderDictionary;
     Body: Stream;
     readonly HasStarted: boolean;
-    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
+    OnStarting(callback: Func_2<JsValue, Task>, state: JsValue): void;
 }
 
 
@@ -294,7 +292,7 @@ export type IHttpWebTransportFeature = IHttpWebTransportFeature$instance;
 export interface IItemsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IItemsFeature: never;
 
-    Items: IDictionary_2<unknown, unknown | undefined>;
+    Items: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
@@ -351,7 +349,7 @@ export interface IServerVariablesFeature$instance {
 }
 
 
-export type IServerVariablesFeature = IServerVariablesFeature$instance & { [variableName: string]: string | undefined; };
+export type IServerVariablesFeature = IServerVariablesFeature$instance & { [variableName: string]: string | null; };
 
 export interface IServiceProvidersFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IServiceProvidersFeature: never;
@@ -374,9 +372,9 @@ export type ISessionFeature = ISessionFeature$instance;
 export interface ITlsConnectionFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ITlsConnectionFeature: never;
 
-    get ClientCertificate(): X509Certificate2 | undefined;
-    set ClientCertificate(value: X509Certificate2 | undefined);
-    GetClientCertificateAsync(cancellationToken: CancellationToken): Task_1<X509Certificate2 | undefined>;
+    get ClientCertificate(): X509Certificate2 | null;
+    set ClientCertificate(value: X509Certificate2 | null);
+    GetClientCertificateAsync(cancellationToken: CancellationToken): Task_1<X509Certificate2 | null>;
 }
 
 
@@ -418,14 +416,14 @@ export type IWebTransportSession = IWebTransportSession$instance;
 export interface FeatureReference_1$instance<T> {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FeatureReference_1: never;
 
-    Fetch(features: IFeatureCollection): T | undefined;
+    Fetch(features: IFeatureCollection): T | null;
     Update(features: IFeatureCollection, feature: T): T;
 }
 
 
 export const FeatureReference_1: {
     new<T>(): FeatureReference_1<T>;
-    readonly Default: unknown;
+    readonly Default: <T>() => FeatureReference_1<T>;
 };
 
 
@@ -434,11 +432,11 @@ export type FeatureReference_1<T> = FeatureReference_1$instance<T>;
 export interface FeatureReferences_1$instance<TCache> {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FeatureReferences_1: never;
 
-    Cache: TCache | undefined;
+    Cache: TCache | null;
     Collection: IFeatureCollection;
     Revision: int;
-    Fetch<TFeature, TState>(cached: TFeature, state: TState, factory: Func_2<TState, TFeature>): TFeature | undefined;
-    Fetch<TFeature>(cached: TFeature, factory: Func_2<IFeatureCollection, TFeature>): TFeature | undefined;
+    Fetch<TFeature, TState>(cached: TFeature | null, state: TState, factory: Func_2<TState, TFeature | null>): TFeature | null;
+    Fetch<TFeature>(cached: TFeature | null, factory: Func_2<IFeatureCollection, TFeature | null>): TFeature | null;
     Initalize(collection: IFeatureCollection): void;
     Initalize(collection: IFeatureCollection, revision: int): void;
 }
@@ -480,12 +478,12 @@ export interface FeatureCollection$instance extends IFeatureCollection$instance 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly IsReadOnly: boolean;
-    get Item(): unknown | undefined;
-    set Item(value: unknown | undefined);
+    get Item(): JsValue | null;
+    set Item(value: JsValue | null);
     readonly Revision: int;
-    Get<TFeature>(): TFeature | undefined;
-    GetEnumerator(): IEnumerator_1<KeyValuePair_2<Type, unknown>>;
-    Set<TFeature>(instance: TFeature): void;
+    Get<TFeature>(): TFeature | null;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<Type, JsValue>>;
+    Set<TFeature>(instance: TFeature | null): void;
 }
 
 
@@ -508,8 +506,8 @@ export interface FormFeature$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IFormFeature: never;
 
-    get Form(): IFormCollection | undefined;
-    set Form(value: IFormCollection | undefined);
+    get Form(): IFormCollection | null;
+    set Form(value: IFormCollection | null);
     readonly HasFormContentType: boolean;
     ReadForm(): IFormCollection;
     ReadFormAsync(): Task_1<IFormCollection>;
@@ -564,11 +562,11 @@ export interface HttpConnectionFeature$instance extends IHttpConnectionFeature$i
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpConnectionFeature: never;
 
     ConnectionId: string;
-    get LocalIpAddress(): IPAddress | undefined;
-    set LocalIpAddress(value: IPAddress | undefined);
+    get LocalIpAddress(): IPAddress | null;
+    set LocalIpAddress(value: IPAddress | null);
     LocalPort: int;
-    get RemoteIpAddress(): IPAddress | undefined;
-    set RemoteIpAddress(value: IPAddress | undefined);
+    get RemoteIpAddress(): IPAddress | null;
+    set RemoteIpAddress(value: IPAddress | null);
     RemotePort: int;
 }
 
@@ -665,11 +663,11 @@ export interface HttpResponseFeature$instance extends IHttpResponseFeature$insta
     Body: Stream;
     readonly HasStarted: boolean;
     Headers: IHeaderDictionary;
-    get ReasonPhrase(): string | undefined;
-    set ReasonPhrase(value: string | undefined);
+    get ReasonPhrase(): string | null;
+    set ReasonPhrase(value: string | null);
     StatusCode: int;
-    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
-    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
+    OnCompleted(callback: Func_2<JsValue, Task>, state: JsValue): void;
+    OnStarting(callback: Func_2<JsValue, Task>, state: JsValue): void;
 }
 
 
@@ -690,7 +688,7 @@ export interface ItemsFeature$instance extends IItemsFeature$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IItemsFeature: never;
 
-    Items: IDictionary_2<unknown, unknown | undefined>;
+    Items: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
@@ -785,7 +783,7 @@ export interface RequestServicesFeature$instance extends IServiceProvidersFeatur
 
 
 export const RequestServicesFeature: {
-    new(context: HttpContext, scopeFactory: IServiceScopeFactory): RequestServicesFeature;
+    new(context: HttpContext, scopeFactory: IServiceScopeFactory | null): RequestServicesFeature;
 };
 
 
@@ -807,7 +805,7 @@ export interface ResponseCookiesFeature$instance extends IResponseCookiesFeature
 
 export const ResponseCookiesFeature: {
     new(features: IFeatureCollection): ResponseCookiesFeature;
-    new(features: IFeatureCollection, builderPool: ObjectPool_1<StringBuilder>): ResponseCookiesFeature;
+    new(features: IFeatureCollection, builderPool: ObjectPool_1<StringBuilder> | null): ResponseCookiesFeature;
 };
 
 
@@ -865,9 +863,9 @@ export interface TlsConnectionFeature$instance extends ITlsConnectionFeature$ins
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_ITlsConnectionFeature: never;
 
-    get ClientCertificate(): X509Certificate2 | undefined;
-    set ClientCertificate(value: X509Certificate2 | undefined);
-    GetClientCertificateAsync(cancellationToken: CancellationToken): Task_1<X509Certificate2 | undefined>;
+    get ClientCertificate(): X509Certificate2 | null;
+    set ClientCertificate(value: X509Certificate2 | null);
+    GetClientCertificateAsync(cancellationToken: CancellationToken): Task_1<X509Certificate2 | null>;
 }
 
 
@@ -884,7 +882,7 @@ export type TlsConnectionFeature = TlsConnectionFeature$instance & __TlsConnecti
 
 
 export abstract class FeatureCollectionExtensions$instance {
-    static GetRequiredFeature(featureCollection: IFeatureCollection, key: Type): unknown;
+    static GetRequiredFeature(featureCollection: IFeatureCollection, key: Type): JsValue;
     static GetRequiredFeature<TFeature>(featureCollection: IFeatureCollection): TFeature;
 }
 

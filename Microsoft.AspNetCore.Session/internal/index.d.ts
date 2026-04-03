@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Session
 // Assembly: Microsoft.AspNetCore.Session
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { SessionOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -46,7 +44,7 @@ export interface DistributedSession$instance extends Microsoft_AspNetCore_Http_I
     LoadAsync(cancellationToken?: CancellationToken): Task;
     Remove(key: string): void;
     Set(key: string, value: byte[]): void;
-    TryGetValue(key: string, value: byte[]): boolean;
+    TryGetValue(key: string, value: byte[] | null): boolean;
 }
 
 

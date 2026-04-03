@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Cors
 // Assembly: Microsoft.AspNetCore.Mvc.Cors
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ICorsPolicyProvider, ICorsService } from "../../Microsoft.AspNetCore.Cors.Infrastructure/internal/index.js";
@@ -23,8 +24,8 @@ export interface CorsAuthorizationFilter$instance extends IFilterMetadata, Micro
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter: never;
 
     readonly Order: int;
-    get PolicyName(): string | undefined;
-    set PolicyName(value: string | undefined);
+    get PolicyName(): string | null;
+    set PolicyName(value: string | null);
     OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
 }
 

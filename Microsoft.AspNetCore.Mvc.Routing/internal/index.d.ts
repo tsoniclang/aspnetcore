@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Routing
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { Endpoint, HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -31,7 +32,7 @@ export interface IRouteTemplateProvider$instance {
 
     readonly Template: string;
     readonly Order: Nullable_1<System_Internal.Int32>;
-    readonly Name: string | undefined;
+    readonly Name: string | null;
 }
 
 
@@ -59,13 +60,13 @@ export type IUrlHelperFactory = IUrlHelperFactory$instance;
 export interface AttributeRouteInfo$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_AttributeRouteInfo: never;
 
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     Order: int;
     SuppressLinkGeneration: boolean;
     SuppressPathMatching: boolean;
-    get Template(): string | undefined;
-    set Template(value: string | undefined);
+    get Template(): string | null;
+    set Template(value: string | null);
 }
 
 
@@ -79,8 +80,8 @@ export type AttributeRouteInfo = AttributeRouteInfo$instance;
 export interface DynamicRouteValueTransformer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never;
 
-    get State(): unknown | undefined;
-    set State(value: unknown | undefined);
+    get State(): JsValue | null;
+    set State(value: JsValue | null);
     FilterAsync(httpContext: HttpContext, values: RouteValueDictionary, endpoints: IReadOnlyList_1<Endpoint>): ValueTask_1<IReadOnlyList_1<Endpoint>>;
     TransformAsync(httpContext: HttpContext, values: RouteValueDictionary): ValueTask_1<RouteValueDictionary>;
 }
@@ -99,14 +100,14 @@ export interface HttpMethodAttribute$instance extends Attribute, IActionHttpMeth
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider: never;
 
     readonly HttpMethods: IEnumerable_1<System_Internal.String>;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     Order: int;
     readonly Template: string;
 }
 
 
-export const HttpMethodAttribute: (abstract new(httpMethods: IEnumerable_1<System_Internal.String>) => HttpMethodAttribute) & (abstract new(httpMethods: IEnumerable_1<System_Internal.String>, template: string) => HttpMethodAttribute) & {
+export const HttpMethodAttribute: (abstract new(httpMethods: IEnumerable_1<System_Internal.String>) => HttpMethodAttribute) & (abstract new(httpMethods: IEnumerable_1<System_Internal.String>, template: string | null) => HttpMethodAttribute) & {
 };
 
 
@@ -124,7 +125,7 @@ export interface KnownRouteValueConstraint$instance extends IParameterPolicy, Mi
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -164,18 +165,18 @@ export type RouteValueAttribute = RouteValueAttribute$instance & __RouteValueAtt
 export interface UrlActionContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlActionContext: never;
 
-    get Action(): string | undefined;
-    set Action(value: string | undefined);
-    get Controller(): string | undefined;
-    set Controller(value: string | undefined);
-    get Fragment(): string | undefined;
-    set Fragment(value: string | undefined);
-    get Host(): string | undefined;
-    set Host(value: string | undefined);
-    get Protocol(): string | undefined;
-    set Protocol(value: string | undefined);
-    get Values(): unknown | undefined;
-    set Values(value: unknown | undefined);
+    get Action(): string | null;
+    set Action(value: string | null);
+    get Controller(): string | null;
+    set Controller(value: string | null);
+    get Fragment(): string | null;
+    set Fragment(value: string | null);
+    get Host(): string | null;
+    set Host(value: string | null);
+    get Protocol(): string | null;
+    set Protocol(value: string | null);
+    get Values(): JsValue | null;
+    set Values(value: JsValue | null);
 }
 
 
@@ -191,10 +192,10 @@ export interface UrlHelper$instance extends UrlHelperBase$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
 
-    Action(actionContext: UrlActionContext): string | undefined;
-    GenerateUrl3(protocol: string, host: string, pathData: VirtualPathData, fragment: string): string | undefined;
-    GetVirtualPathData(routeName: string, values: RouteValueDictionary): VirtualPathData | undefined;
-    RouteUrl(routeContext: UrlRouteContext): string | undefined;
+    Action(actionContext: UrlActionContext): string | null;
+    GenerateUrl3(protocol: string | null, host: string | null, pathData: VirtualPathData | null, fragment: string | null): string | null;
+    GetVirtualPathData(routeName: string | null, values: RouteValueDictionary): VirtualPathData | null;
+    RouteUrl(routeContext: UrlRouteContext): string | null;
 }
 
 
@@ -216,11 +217,11 @@ export interface UrlHelperBase$instance extends Microsoft_AspNetCore_Mvc_Interna
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
 
     readonly ActionContext: ActionContext;
-    Action(actionContext: UrlActionContext): string | undefined;
-    Content(contentPath: string): string | undefined;
-    IsLocalUrl(url: string): boolean;
-    Link(routeName: string, values: unknown): string | undefined;
-    RouteUrl(routeContext: UrlRouteContext): string | undefined;
+    Action(actionContext: UrlActionContext): string | null;
+    Content(contentPath: string | null): string | null;
+    IsLocalUrl(url: string | null): boolean;
+    Link(routeName: string | null, values: JsValue | null): string | null;
+    RouteUrl(routeContext: UrlRouteContext): string | null;
 }
 
 
@@ -259,16 +260,16 @@ export type UrlHelperFactory = UrlHelperFactory$instance & __UrlHelperFactory$vi
 export interface UrlRouteContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlRouteContext: never;
 
-    get Fragment(): string | undefined;
-    set Fragment(value: string | undefined);
-    get Host(): string | undefined;
-    set Host(value: string | undefined);
-    get Protocol(): string | undefined;
-    set Protocol(value: string | undefined);
-    get RouteName(): string | undefined;
-    set RouteName(value: string | undefined);
-    get Values(): unknown | undefined;
-    set Values(value: unknown | undefined);
+    get Fragment(): string | null;
+    set Fragment(value: string | null);
+    get Host(): string | null;
+    set Host(value: string | null);
+    get Protocol(): string | null;
+    set Protocol(value: string | null);
+    get RouteName(): string | null;
+    set RouteName(value: string | null);
+    get Values(): JsValue | null;
+    set Values(value: JsValue | null);
 }
 
 

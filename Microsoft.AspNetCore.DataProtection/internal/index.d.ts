@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.DataProtection
 // Assembly: Microsoft.AspNetCore.DataProtection, Microsoft.AspNetCore.DataProtection.Abstractions, Microsoft.AspNetCore.DataProtection.Extensions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { AuthenticatedEncryptorConfiguration, CngCbcAuthenticatedEncryptorConfiguration, CngGcmAuthenticatedEncryptorConfiguration, ManagedAuthenticatedEncryptorConfiguration } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js";
@@ -90,8 +88,8 @@ export type ITimeLimitedDataProtector = ITimeLimitedDataProtector$instance;
 export interface DataProtectionOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_DataProtectionOptions: never;
 
-    get ApplicationDiscriminator(): string | undefined;
-    set ApplicationDiscriminator(value: string | undefined);
+    get ApplicationDiscriminator(): string | null;
+    set ApplicationDiscriminator(value: string | null);
 }
 
 
@@ -217,7 +215,7 @@ export abstract class DataProtectionProvider$instance {
 export type DataProtectionProvider = DataProtectionProvider$instance;
 
 export abstract class DataProtectionUtilityExtensions$instance {
-    static GetApplicationUniqueIdentifier(services: IServiceProvider): string | undefined;
+    static GetApplicationUniqueIdentifier(services: IServiceProvider): string | null;
 }
 
 

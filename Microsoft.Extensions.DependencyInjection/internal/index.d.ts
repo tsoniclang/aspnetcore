@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.DependencyInjection
 // Assembly: Microsoft.AspNetCore.Antiforgery, Microsoft.AspNetCore.Authentication, Microsoft.AspNetCore.Authentication.BearerToken, Microsoft.AspNetCore.Authentication.Cookies, Microsoft.AspNetCore.Authentication.Core, Microsoft.AspNetCore.Authentication.OAuth, Microsoft.AspNetCore.Authorization, Microsoft.AspNetCore.Authorization.Policy, Microsoft.AspNetCore.Components, Microsoft.AspNetCore.Components.Authorization, Microsoft.AspNetCore.Components.Endpoints, Microsoft.AspNetCore.Components.Server, Microsoft.AspNetCore.CookiePolicy, Microsoft.AspNetCore.Cors, Microsoft.AspNetCore.DataProtection, Microsoft.AspNetCore.Diagnostics, Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Http.Connections, Microsoft.AspNetCore.Http.Extensions, Microsoft.AspNetCore.HttpLogging, Microsoft.AspNetCore.HttpOverrides, Microsoft.AspNetCore.Identity, Microsoft.AspNetCore.Localization, Microsoft.AspNetCore.Mvc, Microsoft.AspNetCore.Mvc.ApiExplorer, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.Cors, Microsoft.AspNetCore.Mvc.DataAnnotations, Microsoft.AspNetCore.Mvc.Formatters.Xml, Microsoft.AspNetCore.Mvc.Localization, Microsoft.AspNetCore.Mvc.Razor, Microsoft.AspNetCore.Mvc.RazorPages, Microsoft.AspNetCore.Mvc.TagHelpers, Microsoft.AspNetCore.Mvc.ViewFeatures, Microsoft.AspNetCore.OutputCaching, Microsoft.AspNetCore.RequestDecompression, Microsoft.AspNetCore.ResponseCaching, Microsoft.AspNetCore.Routing, Microsoft.AspNetCore.Session, Microsoft.AspNetCore.SignalR, Microsoft.AspNetCore.SignalR.Core, Microsoft.AspNetCore.SignalR.Protocols.Json, Microsoft.AspNetCore.StaticFiles, Microsoft.Extensions.Caching.Memory, Microsoft.Extensions.DependencyInjection, Microsoft.Extensions.DependencyInjection.Abstractions, Microsoft.Extensions.Diagnostics, Microsoft.Extensions.Diagnostics.HealthChecks, Microsoft.Extensions.Hosting.Abstractions, Microsoft.Extensions.Http, Microsoft.Extensions.Identity.Core, Microsoft.Extensions.Localization, Microsoft.Extensions.Logging, Microsoft.Extensions.Options, Microsoft.Extensions.Options.ConfigurationExtensions, Microsoft.Extensions.Options.DataAnnotations, Microsoft.Extensions.Validation, Microsoft.Extensions.WebEncoders
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { AntiforgeryOptions } from "../../Microsoft.AspNetCore.Antiforgery/internal/index.js";
@@ -97,7 +98,7 @@ export interface OAuthPostConfigureOptions_2$instance<TOptions extends OAuthOpti
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    PostConfigure(name: string, options: TOptions): void;
+    PostConfigure(name: string | null, options: TOptions): void;
 }
 
 
@@ -188,7 +189,7 @@ export abstract class CertificateForwardingServiceExtensions$instance {
 export type CertificateForwardingServiceExtensions = CertificateForwardingServiceExtensions$instance;
 
 export abstract class ComponentServiceCollectionExtensions$instance {
-    static AddServerSideBlazor(services: IServiceCollection, configure?: Action_1<CircuitOptions>): IServerSideBlazorBuilder;
+    static AddServerSideBlazor(services: IServiceCollection, configure?: Action_1<CircuitOptions> | null): IServerSideBlazorBuilder;
 }
 
 
@@ -205,7 +206,7 @@ export type ConnectionsDependencyInjectionExtensions = ConnectionsDependencyInje
 export abstract class CookieExtensions$instance {
     static AddCookie(builder: AuthenticationBuilder, configureOptions: Action_1<CookieAuthenticationOptions>): AuthenticationBuilder;
     static AddCookie(builder: AuthenticationBuilder, authenticationScheme: string, configureOptions: Action_1<CookieAuthenticationOptions>): AuthenticationBuilder;
-    static AddCookie(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: Action_1<CookieAuthenticationOptions>): AuthenticationBuilder;
+    static AddCookie(builder: AuthenticationBuilder, authenticationScheme: string, displayName: string | null, configureOptions: Action_1<CookieAuthenticationOptions>): AuthenticationBuilder;
     static AddCookie(builder: AuthenticationBuilder, authenticationScheme: string): AuthenticationBuilder;
     static AddCookie(builder: AuthenticationBuilder): AuthenticationBuilder;
 }
@@ -368,7 +369,7 @@ export abstract class MvcCorsMvcCoreBuilderExtensions$instance {
 export type MvcCorsMvcCoreBuilderExtensions = MvcCorsMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcDataAnnotationsMvcBuilderExtensions$instance {
-    static AddDataAnnotationsLocalization(builder: IMvcBuilder, setupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
+    static AddDataAnnotationsLocalization(builder: IMvcBuilder, setupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcBuilder;
     static AddDataAnnotationsLocalization(builder: IMvcBuilder): IMvcBuilder;
 }
 
@@ -377,7 +378,7 @@ export type MvcDataAnnotationsMvcBuilderExtensions = MvcDataAnnotationsMvcBuilde
 
 export abstract class MvcDataAnnotationsMvcCoreBuilderExtensions$instance {
     static AddDataAnnotations(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static AddDataAnnotationsLocalization(builder: IMvcCoreBuilder, setupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
+    static AddDataAnnotationsLocalization(builder: IMvcCoreBuilder, setupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcCoreBuilder;
     static AddDataAnnotationsLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
 }
 
@@ -385,17 +386,17 @@ export abstract class MvcDataAnnotationsMvcCoreBuilderExtensions$instance {
 export type MvcDataAnnotationsMvcCoreBuilderExtensions = MvcDataAnnotationsMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcLocalizationMvcBuilderExtensions$instance {
-    static AddMvcLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcBuilder;
     static AddMvcLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
-    static AddMvcLocalization(builder: IMvcBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
-    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcBuilder;
-    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcBuilder;
+    static AddMvcLocalization(builder: IMvcBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null): IMvcBuilder;
     static AddMvcLocalization(builder: IMvcBuilder): IMvcBuilder;
-    static AddViewLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action_1<LocalizationOptions>): IMvcBuilder;
+    static AddViewLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action_1<LocalizationOptions> | null): IMvcBuilder;
     static AddViewLocalization(builder: IMvcBuilder, format: LanguageViewLocationExpanderFormat): IMvcBuilder;
-    static AddViewLocalization(builder: IMvcBuilder, setupAction: Action_1<LocalizationOptions>): IMvcBuilder;
+    static AddViewLocalization(builder: IMvcBuilder, setupAction: Action_1<LocalizationOptions> | null): IMvcBuilder;
     static AddViewLocalization(builder: IMvcBuilder): IMvcBuilder;
 }
 
@@ -403,17 +404,17 @@ export abstract class MvcLocalizationMvcBuilderExtensions$instance {
 export type MvcLocalizationMvcBuilderExtensions = MvcLocalizationMvcBuilderExtensions$instance;
 
 export abstract class MvcLocalizationMvcCoreBuilderExtensions$instance {
-    static AddMvcLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcCoreBuilder;
     static AddMvcLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
-    static AddMvcLocalization(builder: IMvcCoreBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
-    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions>): IMvcCoreBuilder;
-    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions>): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null, format: LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null, dataAnnotationsLocalizationOptionsSetupAction: Action_1<MvcDataAnnotationsLocalizationOptions> | null): IMvcCoreBuilder;
+    static AddMvcLocalization(builder: IMvcCoreBuilder, localizationOptionsSetupAction: Action_1<LocalizationOptions> | null): IMvcCoreBuilder;
     static AddMvcLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
-    static AddViewLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action_1<LocalizationOptions>): IMvcCoreBuilder;
+    static AddViewLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat, setupAction: Action_1<LocalizationOptions> | null): IMvcCoreBuilder;
     static AddViewLocalization(builder: IMvcCoreBuilder, format: LanguageViewLocationExpanderFormat): IMvcCoreBuilder;
-    static AddViewLocalization(builder: IMvcCoreBuilder, setupAction: Action_1<LocalizationOptions>): IMvcCoreBuilder;
+    static AddViewLocalization(builder: IMvcCoreBuilder, setupAction: Action_1<LocalizationOptions> | null): IMvcCoreBuilder;
     static AddViewLocalization(builder: IMvcCoreBuilder): IMvcCoreBuilder;
 }
 
@@ -458,13 +459,13 @@ export abstract class MvcRazorPagesMvcCoreBuilderExtensions$instance {
 export type MvcRazorPagesMvcCoreBuilderExtensions = MvcRazorPagesMvcCoreBuilderExtensions$instance;
 
 export abstract class MvcServiceCollectionExtensions$instance {
-    static AddControllers(services: IServiceCollection, configure: Action_1<MvcOptions>): IMvcBuilder;
+    static AddControllers(services: IServiceCollection, configure: Action_1<MvcOptions> | null): IMvcBuilder;
     static AddControllers(services: IServiceCollection): IMvcBuilder;
-    static AddControllersWithViews(services: IServiceCollection, configure: Action_1<MvcOptions>): IMvcBuilder;
+    static AddControllersWithViews(services: IServiceCollection, configure: Action_1<MvcOptions> | null): IMvcBuilder;
     static AddControllersWithViews(services: IServiceCollection): IMvcBuilder;
     static AddMvc(services: IServiceCollection, setupAction: Action_1<MvcOptions>): IMvcBuilder;
     static AddMvc(services: IServiceCollection): IMvcBuilder;
-    static AddRazorPages(services: IServiceCollection, configure: Action_1<RazorPagesOptions>): IMvcBuilder;
+    static AddRazorPages(services: IServiceCollection, configure: Action_1<RazorPagesOptions> | null): IMvcBuilder;
     static AddRazorPages(services: IServiceCollection): IMvcBuilder;
 }
 
@@ -578,7 +579,7 @@ export abstract class PolicyServiceCollectionExtensions$instance {
 export type PolicyServiceCollectionExtensions = PolicyServiceCollectionExtensions$instance;
 
 export abstract class ProblemDetailsServiceCollectionExtensions$instance {
-    static AddProblemDetails(services: IServiceCollection, configure: Action_1<ProblemDetailsOptions>): IServiceCollection;
+    static AddProblemDetails(services: IServiceCollection, configure: Action_1<ProblemDetailsOptions> | null): IServiceCollection;
     static AddProblemDetails(services: IServiceCollection): IServiceCollection;
 }
 
@@ -593,7 +594,7 @@ export abstract class RazorComponentsRazorComponentBuilderExtensions$instance {
 export type RazorComponentsRazorComponentBuilderExtensions = RazorComponentsRazorComponentBuilderExtensions$instance;
 
 export abstract class RazorComponentsServiceCollectionExtensions$instance {
-    static AddRazorComponents(services: IServiceCollection, configure?: Action_1<RazorComponentsServiceOptions>): IRazorComponentsBuilder;
+    static AddRazorComponents(services: IServiceCollection, configure?: Action_1<RazorComponentsServiceOptions> | null): IRazorComponentsBuilder;
 }
 
 
@@ -641,7 +642,7 @@ export abstract class RoutingServiceCollectionExtensions$instance {
 export type RoutingServiceCollectionExtensions = RoutingServiceCollectionExtensions$instance;
 
 export abstract class ServerRazorComponentsBuilderExtensions$instance {
-    static AddInteractiveServerComponents(builder: IRazorComponentsBuilder, configure?: Action_1<CircuitOptions>): IServerSideBlazorBuilder;
+    static AddInteractiveServerComponents(builder: IRazorComponentsBuilder, configure?: Action_1<CircuitOptions> | null): IServerSideBlazorBuilder;
 }
 
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.ViewEngines
 // Assembly: Microsoft.AspNetCore.Mvc.ViewFeatures
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ViewContext } from "../../Microsoft.AspNetCore.Mvc.Rendering/internal/index.js";
@@ -19,7 +20,7 @@ export interface ICompositeViewEngine$instance extends IViewEngine {
 
     readonly ViewEngines: IReadOnlyList_1<IViewEngine>;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string | null, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
@@ -41,7 +42,7 @@ export interface IViewEngine$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine: never;
 
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string | null, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
@@ -55,7 +56,7 @@ export interface CompositeViewEngine$instance {
 
     readonly ViewEngines: IReadOnlyList_1<IViewEngine>;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string | null, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
@@ -77,10 +78,10 @@ export interface ViewEngineResult$instance {
 
     SearchedLocations: IEnumerable_1<System_Internal.String>;
     readonly Success: boolean;
-    get View(): IView | undefined;
-    set View(value: IView | undefined);
+    get View(): IView | null;
+    set View(value: IView | null);
     ViewName: string;
-    EnsureSuccessful(originalLocations: IEnumerable_1<System_Internal.String>): ViewEngineResult;
+    EnsureSuccessful(originalLocations: IEnumerable_1<System_Internal.String> | null): ViewEngineResult;
 }
 
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 // Assembly: Microsoft.AspNetCore.Components.Server
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IDataProtectionProvider } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
@@ -16,7 +17,7 @@ export interface ProtectedBrowserStorageResult_1$instance<TValue> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorageResult_1: never;
 
     readonly Success: boolean;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
 }
 
 
@@ -33,8 +34,8 @@ export interface ProtectedBrowserStorage$instance {
     DeleteAsync(key: string): ValueTask;
     GetAsync<TValue>(key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
     GetAsync<TValue>(purpose: string, key: string): ValueTask_1<ProtectedBrowserStorageResult_1<TValue>>;
-    SetAsync(key: string, value: unknown): ValueTask;
-    SetAsync(purpose: string, key: string, value: unknown): ValueTask;
+    SetAsync(key: string, value: JsValue): ValueTask;
+    SetAsync(purpose: string, key: string, value: JsValue): ValueTask;
 }
 
 

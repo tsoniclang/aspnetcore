@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Abstractions
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IActionConstraintMetadata } from "../../Microsoft.AspNetCore.Mvc.ActionConstraints/internal/index.js";
@@ -48,19 +49,19 @@ export type IActionInvokerProvider = IActionInvokerProvider$instance;
 export interface ActionDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor: never;
 
-    get ActionConstraints(): IList_1<IActionConstraintMetadata> | undefined;
-    set ActionConstraints(value: IList_1<IActionConstraintMetadata> | undefined);
-    get AttributeRouteInfo(): AttributeRouteInfo | undefined;
-    set AttributeRouteInfo(value: AttributeRouteInfo | undefined);
+    get ActionConstraints(): IList_1<IActionConstraintMetadata> | null;
+    set ActionConstraints(value: IList_1<IActionConstraintMetadata> | null);
+    get AttributeRouteInfo(): AttributeRouteInfo | null;
+    set AttributeRouteInfo(value: AttributeRouteInfo | null);
     BoundProperties: IList_1<ParameterDescriptor>;
-    get DisplayName(): string | undefined;
-    set DisplayName(value: string | undefined);
-    EndpointMetadata: IList_1<unknown>;
+    get DisplayName(): string | null;
+    set DisplayName(value: string | null);
+    EndpointMetadata: IList_1<JsValue>;
     FilterDescriptors: IList_1<FilterDescriptor>;
     readonly Id: string;
     Parameters: IList_1<ParameterDescriptor>;
-    Properties: IDictionary_2<unknown, unknown | undefined>;
-    RouteValues: IDictionary_2<System_Internal.String, string | undefined>;
+    Properties: IDictionary_2<JsValue, JsValue | null>;
+    RouteValues: IDictionary_2<System_Internal.String, string | null>;
 }
 
 
@@ -89,8 +90,8 @@ export interface ActionInvokerProviderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ActionInvokerProviderContext: never;
 
     readonly ActionContext: ActionContext;
-    get Result(): IActionInvoker | undefined;
-    set Result(value: IActionInvoker | undefined);
+    get Result(): IActionInvoker | null;
+    set Result(value: IActionInvoker | null);
 }
 
 
@@ -104,8 +105,8 @@ export type ActionInvokerProviderContext = ActionInvokerProviderContext$instance
 export interface ParameterDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Abstractions_ParameterDescriptor: never;
 
-    get BindingInfo(): BindingInfo | undefined;
-    set BindingInfo(value: BindingInfo | undefined);
+    get BindingInfo(): BindingInfo | null;
+    set BindingInfo(value: BindingInfo | null);
     Name: string;
     ParameterType: Type;
 }
@@ -119,7 +120,7 @@ export const ParameterDescriptor: {
 export type ParameterDescriptor = ParameterDescriptor$instance;
 
 export abstract class ActionDescriptorExtensions$instance {
-    static GetProperty<T>(actionDescriptor: ActionDescriptor): T | undefined;
+    static GetProperty<T>(actionDescriptor: ActionDescriptor): T | null;
     static SetProperty<T>(actionDescriptor: ActionDescriptor, value: T): void;
 }
 

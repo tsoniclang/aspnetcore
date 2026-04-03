@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.DataProtection.KeyManagement
 // Assembly: Microsoft.AspNetCore.DataProtection
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { AlgorithmConfiguration, IAuthenticatedEncryptorDescriptor } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js";
@@ -27,8 +28,8 @@ export interface IDeletableKeyManager$instance extends IKeyManager {
     DeleteKeys(shouldDelete: Func_2<IKey, System_Internal.Boolean>): boolean;
     GetAllKeys(): IReadOnlyCollection_1<IKey>;
     GetCacheExpirationToken(): CancellationToken;
-    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
-    RevokeKey(keyId: Guid, reason?: string): void;
+    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string | null): void;
+    RevokeKey(keyId: Guid, reason?: string | null): void;
 }
 
 
@@ -45,7 +46,7 @@ export interface IKey$instance {
     readonly IsRevoked: boolean;
     readonly KeyId: Guid;
     readonly Descriptor: IAuthenticatedEncryptorDescriptor;
-    CreateEncryptor(): IAuthenticatedEncryptor | undefined;
+    CreateEncryptor(): IAuthenticatedEncryptor | null;
 }
 
 
@@ -66,8 +67,8 @@ export interface IKeyManager$instance {
     CreateNewKey(activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
     GetAllKeys(): IReadOnlyCollection_1<IKey>;
     GetCacheExpirationToken(): CancellationToken;
-    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
-    RevokeKey(keyId: Guid, reason?: string): void;
+    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string | null): void;
+    RevokeKey(keyId: Guid, reason?: string | null): void;
 }
 
 
@@ -76,16 +77,16 @@ export type IKeyManager = IKeyManager$instance;
 export interface KeyManagementOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_KeyManagementOptions: never;
 
-    get AuthenticatedEncryptorConfiguration(): AlgorithmConfiguration | undefined;
-    set AuthenticatedEncryptorConfiguration(value: AlgorithmConfiguration | undefined);
+    get AuthenticatedEncryptorConfiguration(): AlgorithmConfiguration | null;
+    set AuthenticatedEncryptorConfiguration(value: AlgorithmConfiguration | null);
     readonly AuthenticatedEncryptorFactories: IList_1<IAuthenticatedEncryptorFactory>;
     AutoGenerateKeys: boolean;
     readonly KeyEscrowSinks: IList_1<IKeyEscrowSink>;
     NewKeyLifetime: TimeSpan;
-    get XmlEncryptor(): IXmlEncryptor | undefined;
-    set XmlEncryptor(value: IXmlEncryptor | undefined);
-    get XmlRepository(): IXmlRepository | undefined;
-    set XmlRepository(value: IXmlRepository | undefined);
+    get XmlEncryptor(): IXmlEncryptor | null;
+    set XmlEncryptor(value: IXmlEncryptor | null);
+    get XmlRepository(): IXmlRepository | null;
+    set XmlRepository(value: IXmlRepository | null);
 }
 
 
@@ -107,8 +108,8 @@ export interface XmlKeyManager$instance extends IKeyManager$instance {
     DeleteKeys(shouldDelete: Func_2<IKey, System_Internal.Boolean>): boolean;
     GetAllKeys(): IReadOnlyCollection_1<IKey>;
     GetCacheExpirationToken(): CancellationToken;
-    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string): void;
-    RevokeKey(keyId: Guid, reason?: string): void;
+    RevokeAllKeys(revocationDate: DateTimeOffset, reason?: string | null): void;
+    RevokeKey(keyId: Guid, reason?: string | null): void;
 }
 
 

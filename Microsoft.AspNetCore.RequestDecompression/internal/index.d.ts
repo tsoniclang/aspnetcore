@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.RequestDecompression
 // Assembly: Microsoft.AspNetCore.RequestDecompression
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -24,7 +25,7 @@ export type IDecompressionProvider = IDecompressionProvider$instance;
 export interface IRequestDecompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_RequestDecompression_IRequestDecompressionProvider: never;
 
-    GetDecompressionStream(context: HttpContext): Stream | undefined;
+    GetDecompressionStream(context: HttpContext): Stream | null;
 }
 
 

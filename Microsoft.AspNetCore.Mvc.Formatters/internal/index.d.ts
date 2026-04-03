@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Formatters
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.Formatters.Xml
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -74,7 +75,7 @@ export interface MediaType$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_MediaType: never;
 
     readonly Charset: StringSegment;
-    readonly Encoding: Encoding | undefined;
+    readonly Encoding: Encoding | null;
     readonly HasWildcard: boolean;
     readonly MatchesAllSubTypes: boolean;
     readonly MatchesAllSubTypesWithoutSuffix: boolean;
@@ -94,8 +95,8 @@ export const MediaType: {
     new(mediaType: StringSegment): MediaType;
     new(mediaType: string, offset: int, length: Nullable_1<System_Internal.Int32>): MediaType;
     CreateMediaTypeSegmentWithQuality(mediaType: string, start: int): MediaTypeSegmentWithQuality;
-    GetEncoding(mediaType: StringSegment): Encoding | undefined;
-    GetEncoding(mediaType: string): Encoding | undefined;
+    GetEncoding(mediaType: StringSegment): Encoding | null;
+    GetEncoding(mediaType: string): Encoding | null;
     ReplaceEncoding(mediaType: StringSegment, encoding: Encoding): string;
     ReplaceEncoding(mediaType: string, encoding: Encoding): string;
 };
@@ -127,7 +128,7 @@ export interface FormatFilter$instance extends IFilterMetadata, Microsoft_AspNet
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IResultFilter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_IFormatFilter: never;
 
-    GetFormat(context: ActionContext): string | undefined;
+    GetFormat(context: ActionContext): string | null;
     OnResourceExecuted(context: ResourceExecutedContext): void;
     OnResourceExecuting(context: ResourceExecutingContext): void;
     OnResultExecuted(context: ResultExecutedContext): void;
@@ -177,7 +178,7 @@ export interface FormatterMappings$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Formatters_FormatterMappings: never;
 
     ClearMediaTypeMappingForFormat(format: string): boolean;
-    GetMediaTypeMappingForFormat(format: string): string | undefined;
+    GetMediaTypeMappingForFormat(format: string): string | null;
     SetMediaTypeMappingForFormat(format: string, contentType: string): void;
     SetMediaTypeMappingForFormat(format: string, contentType: MediaTypeHeaderValue): void;
 }
@@ -222,8 +223,8 @@ export interface InputFormatter$instance extends Microsoft_AspNetCore_Mvc_ApiExp
     readonly SupportedMediaTypes: MediaTypeCollection;
     CanRead(context: InputFormatterContext): boolean;
     CanReadType(type: Type): boolean;
-    GetDefaultValueForType(modelType: Type): unknown | undefined;
-    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList_1<System_Internal.String> | undefined;
+    GetDefaultValueForType(modelType: Type): JsValue | null;
+    GetSupportedContentTypes(contentType: string | null, objectType: Type): IReadOnlyList_1<System_Internal.String> | null;
     ReadAsync(context: InputFormatterContext): Task_1<InputFormatterResult>;
     ReadRequestBodyAsync(context: InputFormatterContext): Task_1<InputFormatterResult>;
 }
@@ -284,7 +285,7 @@ export interface InputFormatterResult$instance {
 
     readonly HasError: boolean;
     readonly IsModelSet: boolean;
-    readonly Model: unknown | undefined;
+    readonly Model: JsValue | null;
 }
 
 
@@ -293,8 +294,8 @@ export const InputFormatterResult: {
     FailureAsync(): Task_1<InputFormatterResult>;
     NoValue(): InputFormatterResult;
     NoValueAsync(): Task_1<InputFormatterResult>;
-    Success(model: unknown): InputFormatterResult;
-    SuccessAsync(model: unknown): Task_1<InputFormatterResult>;
+    Success(model: JsValue | null): InputFormatterResult;
+    SuccessAsync(model: JsValue | null): Task_1<InputFormatterResult>;
 };
 
 
@@ -333,8 +334,8 @@ export interface OutputFormatter$instance extends Microsoft_AspNetCore_Mvc_ApiEx
 
     readonly SupportedMediaTypes: MediaTypeCollection;
     CanWriteResult(context: OutputFormatterCanWriteContext): boolean;
-    CanWriteType(type: Type): boolean;
-    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList_1<System_Internal.String> | undefined;
+    CanWriteType(type: Type | null): boolean;
+    GetSupportedContentTypes(contentType: string | null, objectType: Type): IReadOnlyList_1<System_Internal.String> | null;
     WriteAsync(context: OutputFormatterWriteContext): Task;
     WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
     WriteResponseHeaders(context: OutputFormatterWriteContext): void;
@@ -359,10 +360,10 @@ export interface OutputFormatterCanWriteContext$instance {
     ContentType: StringSegment;
     ContentTypeIsServerDefined: boolean;
     HttpContext: HttpContext;
-    get Object(): unknown | undefined;
-    set Object(value: unknown | undefined);
-    get ObjectType(): Type | undefined;
-    set ObjectType(value: Type | undefined);
+    get Object(): JsValue | null;
+    set Object(value: JsValue | null);
+    get ObjectType(): Type | null;
+    set ObjectType(value: Type | null);
 }
 
 
@@ -380,7 +381,7 @@ export interface OutputFormatterWriteContext$instance extends OutputFormatterCan
 
 
 export const OutputFormatterWriteContext: {
-    new(httpContext: HttpContext, writerFactory: Func_3<Stream, Encoding, TextWriter>, objectType: Type, object: unknown): OutputFormatterWriteContext;
+    new(httpContext: HttpContext, writerFactory: Func_3<Stream, Encoding, TextWriter>, objectType: Type | null, object: JsValue | null): OutputFormatterWriteContext;
 };
 
 
@@ -550,7 +551,7 @@ export interface XmlDataContractSerializerInputFormatter$instance extends TextIn
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly XmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
     CanReadType(type: Type): boolean;
-    CreateSerializer(type: Type): DataContractSerializer | undefined;
+    CreateSerializer(type: Type): DataContractSerializer | null;
     CreateXmlReader(readStream: Stream, encoding: Encoding): XmlReader;
     GetCachedSerializer(type: Type): DataContractSerializer;
     GetSerializableType(declaredType: Type): Type;
@@ -582,8 +583,8 @@ export interface XmlDataContractSerializerOutputFormatter$instance extends TextO
     SerializerSettings: DataContractSerializerSettings;
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly WriterSettings: XmlWriterSettings;
-    CanWriteType(type: Type): boolean;
-    CreateSerializer(type: Type): DataContractSerializer | undefined;
+    CanWriteType(type: Type | null): boolean;
+    CreateSerializer(type: Type): DataContractSerializer | null;
     CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     CreateXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     GetCachedSerializer(type: Type): DataContractSerializer;
@@ -621,7 +622,7 @@ export interface XmlSerializerInputFormatter$instance extends TextInputFormatter
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly XmlDictionaryReaderQuotas: XmlDictionaryReaderQuotas;
     CanReadType(type: Type): boolean;
-    CreateSerializer(type: Type): XmlSerializer | undefined;
+    CreateSerializer(type: Type): XmlSerializer | null;
     CreateXmlReader(readStream: Stream, encoding: Encoding, type: Type): XmlReader;
     CreateXmlReader(readStream: Stream, encoding: Encoding): XmlReader;
     GetCachedSerializer(type: Type): XmlSerializer;
@@ -653,13 +654,13 @@ export interface XmlSerializerOutputFormatter$instance extends TextOutputFormatt
 
     readonly WrapperProviderFactories: IList_1<IWrapperProviderFactory>;
     readonly WriterSettings: XmlWriterSettings;
-    CanWriteType(type: Type): boolean;
-    CreateSerializer(type: Type): XmlSerializer | undefined;
+    CanWriteType(type: Type | null): boolean;
+    CreateSerializer(type: Type): XmlSerializer | null;
     CreateXmlWriter(writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     CreateXmlWriter(context: OutputFormatterWriteContext, writer: TextWriter, xmlWriterSettings: XmlWriterSettings): XmlWriter;
     GetCachedSerializer(type: Type): XmlSerializer;
     GetSerializableType(type: Type): Type;
-    Serialize(xmlSerializer: XmlSerializer, xmlWriter: XmlWriter, value: unknown): void;
+    Serialize(xmlSerializer: XmlSerializer, xmlWriter: XmlWriter, value: JsValue | null): void;
     WriteResponseBodyAsync(context: OutputFormatterWriteContext, selectedEncoding: Encoding): Task;
     WriteResponseBodyAsync(context: OutputFormatterWriteContext): Task;
 }

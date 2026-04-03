@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Web.Internal
 // Assembly: Microsoft.AspNetCore.Components.Web
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -18,7 +16,7 @@ export interface IInternalWebJSInProcessRuntime$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_Internal_IInternalWebJSInProcessRuntime: never;
 
     InvokeJS(invocationInfo: JSInvocationInfo): string;
-    InvokeJS(identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): string;
+    InvokeJS(identifier: string, argsJson: string | null, resultType: JSCallResultType, targetInstanceId: long): string;
 }
 
 

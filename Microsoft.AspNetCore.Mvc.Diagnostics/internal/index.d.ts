@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Diagnostics
 // Assembly: Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.Razor, Microsoft.AspNetCore.Mvc.RazorPages, Microsoft.AspNetCore.Mvc.ViewFeatures
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -23,27 +24,6 @@ import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/
 import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
-
-export interface EventData_Enumerator$instance {
-    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData_Enumerator: never;
-
-    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
-    readonly __tsonic_iface_System_Collections_IEnumerator: never;
-    readonly __tsonic_iface_System_IDisposable: never;
-
-    Current: KeyValuePair_2<System_Internal.String, unknown>;
-    Dispose(): void;
-    MoveNext(): boolean;
-    Reset(): void;
-}
-
-
-export const EventData_Enumerator: {
-    new(): EventData_Enumerator;
-};
-
-
-export type EventData_Enumerator = EventData_Enumerator$instance;
 
 export interface AfterActionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionEventData: never;
@@ -66,7 +46,7 @@ export const AfterActionEventData: {
 };
 
 
-export type AfterActionEventData = AfterActionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterActionEventData = AfterActionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterActionFilterOnActionExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionFilterOnActionExecutedEventData: never;
@@ -89,7 +69,7 @@ export const AfterActionFilterOnActionExecutedEventData: {
 };
 
 
-export type AfterActionFilterOnActionExecutedEventData = AfterActionFilterOnActionExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterActionFilterOnActionExecutedEventData = AfterActionFilterOnActionExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterActionFilterOnActionExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionFilterOnActionExecutingEventData: never;
@@ -112,7 +92,7 @@ export const AfterActionFilterOnActionExecutingEventData: {
 };
 
 
-export type AfterActionFilterOnActionExecutingEventData = AfterActionFilterOnActionExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterActionFilterOnActionExecutingEventData = AfterActionFilterOnActionExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterActionFilterOnActionExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionFilterOnActionExecutionEventData: never;
@@ -135,7 +115,7 @@ export const AfterActionFilterOnActionExecutionEventData: {
 };
 
 
-export type AfterActionFilterOnActionExecutionEventData = AfterActionFilterOnActionExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterActionFilterOnActionExecutionEventData = AfterActionFilterOnActionExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterActionResultEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionResultEventData: never;
@@ -157,7 +137,7 @@ export const AfterActionResultEventData: {
 };
 
 
-export type AfterActionResultEventData = AfterActionResultEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterActionResultEventData = AfterActionResultEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterAuthorizationFilterOnAuthorizationEventData: never;
@@ -180,7 +160,7 @@ export const AfterAuthorizationFilterOnAuthorizationEventData: {
 };
 
 
-export type AfterAuthorizationFilterOnAuthorizationEventData = AfterAuthorizationFilterOnAuthorizationEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterAuthorizationFilterOnAuthorizationEventData = AfterAuthorizationFilterOnAuthorizationEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterControllerActionMethodEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterControllerActionMethodEventData: never;
@@ -191,20 +171,20 @@ export interface AfterControllerActionMethodEventData$instance extends EventData
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>;
-    readonly Controller: unknown;
+    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
+    readonly Controller: JsValue;
     readonly Count: int;
     readonly Result: IActionResult;
 }
 
 
 export const AfterControllerActionMethodEventData: {
-    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, controller: unknown, result: IActionResult): AfterControllerActionMethodEventData;
+    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, JsValue>, controller: JsValue, result: IActionResult): AfterControllerActionMethodEventData;
     readonly EventName: string;
 };
 
 
-export type AfterControllerActionMethodEventData = AfterControllerActionMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterControllerActionMethodEventData = AfterControllerActionMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterExceptionFilterOnExceptionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterExceptionFilterOnExceptionEventData: never;
@@ -227,7 +207,7 @@ export const AfterExceptionFilterOnExceptionEventData: {
 };
 
 
-export type AfterExceptionFilterOnExceptionEventData = AfterExceptionFilterOnExceptionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterExceptionFilterOnExceptionEventData = AfterExceptionFilterOnExceptionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterHandlerMethodEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterHandlerMethodEventData: never;
@@ -238,21 +218,21 @@ export interface AfterHandlerMethodEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
+    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>;
     readonly Count: int;
     readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
-    readonly Instance: unknown;
-    readonly Result: IActionResult | undefined;
+    readonly Instance: JsValue;
+    readonly Result: IActionResult | null;
 }
 
 
 export const AfterHandlerMethodEventData: {
-    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown, result: IActionResult): AfterHandlerMethodEventData;
+    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: JsValue, result: IActionResult | null): AfterHandlerMethodEventData;
     readonly EventName: string;
 };
 
 
-export type AfterHandlerMethodEventData = AfterHandlerMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterHandlerMethodEventData = AfterHandlerMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterPageFilterOnPageHandlerExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutedEventData: never;
@@ -275,7 +255,7 @@ export const AfterPageFilterOnPageHandlerExecutedEventData: {
 };
 
 
-export type AfterPageFilterOnPageHandlerExecutedEventData = AfterPageFilterOnPageHandlerExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterPageFilterOnPageHandlerExecutedEventData = AfterPageFilterOnPageHandlerExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterPageFilterOnPageHandlerExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutingEventData: never;
@@ -298,7 +278,7 @@ export const AfterPageFilterOnPageHandlerExecutingEventData: {
 };
 
 
-export type AfterPageFilterOnPageHandlerExecutingEventData = AfterPageFilterOnPageHandlerExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterPageFilterOnPageHandlerExecutingEventData = AfterPageFilterOnPageHandlerExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterPageFilterOnPageHandlerExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutionEventData: never;
@@ -321,7 +301,7 @@ export const AfterPageFilterOnPageHandlerExecutionEventData: {
 };
 
 
-export type AfterPageFilterOnPageHandlerExecutionEventData = AfterPageFilterOnPageHandlerExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterPageFilterOnPageHandlerExecutionEventData = AfterPageFilterOnPageHandlerExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterPageFilterOnPageHandlerSelectedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectedEventData: never;
@@ -344,7 +324,7 @@ export const AfterPageFilterOnPageHandlerSelectedEventData: {
 };
 
 
-export type AfterPageFilterOnPageHandlerSelectedEventData = AfterPageFilterOnPageHandlerSelectedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterPageFilterOnPageHandlerSelectedEventData = AfterPageFilterOnPageHandlerSelectedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterPageFilterOnPageHandlerSelectionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectionEventData: never;
@@ -367,7 +347,7 @@ export const AfterPageFilterOnPageHandlerSelectionEventData: {
 };
 
 
-export type AfterPageFilterOnPageHandlerSelectionEventData = AfterPageFilterOnPageHandlerSelectionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterPageFilterOnPageHandlerSelectionEventData = AfterPageFilterOnPageHandlerSelectionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterResourceFilterOnResourceExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResourceFilterOnResourceExecutedEventData: never;
@@ -390,7 +370,7 @@ export const AfterResourceFilterOnResourceExecutedEventData: {
 };
 
 
-export type AfterResourceFilterOnResourceExecutedEventData = AfterResourceFilterOnResourceExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterResourceFilterOnResourceExecutedEventData = AfterResourceFilterOnResourceExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterResourceFilterOnResourceExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResourceFilterOnResourceExecutingEventData: never;
@@ -413,7 +393,7 @@ export const AfterResourceFilterOnResourceExecutingEventData: {
 };
 
 
-export type AfterResourceFilterOnResourceExecutingEventData = AfterResourceFilterOnResourceExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterResourceFilterOnResourceExecutingEventData = AfterResourceFilterOnResourceExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterResourceFilterOnResourceExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResourceFilterOnResourceExecutionEventData: never;
@@ -436,7 +416,7 @@ export const AfterResourceFilterOnResourceExecutionEventData: {
 };
 
 
-export type AfterResourceFilterOnResourceExecutionEventData = AfterResourceFilterOnResourceExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterResourceFilterOnResourceExecutionEventData = AfterResourceFilterOnResourceExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterResultFilterOnResultExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResultFilterOnResultExecutedEventData: never;
@@ -459,7 +439,7 @@ export const AfterResultFilterOnResultExecutedEventData: {
 };
 
 
-export type AfterResultFilterOnResultExecutedEventData = AfterResultFilterOnResultExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterResultFilterOnResultExecutedEventData = AfterResultFilterOnResultExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterResultFilterOnResultExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResultFilterOnResultExecutingEventData: never;
@@ -482,7 +462,7 @@ export const AfterResultFilterOnResultExecutingEventData: {
 };
 
 
-export type AfterResultFilterOnResultExecutingEventData = AfterResultFilterOnResultExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterResultFilterOnResultExecutingEventData = AfterResultFilterOnResultExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterResultFilterOnResultExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterResultFilterOnResultExecutionEventData: never;
@@ -505,7 +485,7 @@ export const AfterResultFilterOnResultExecutionEventData: {
 };
 
 
-export type AfterResultFilterOnResultExecutionEventData = AfterResultFilterOnResultExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterResultFilterOnResultExecutionEventData = AfterResultFilterOnResultExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterViewComponentEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewComponentEventData: never;
@@ -517,19 +497,19 @@ export interface AfterViewComponentEventData$instance extends EventData {
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
-    readonly ViewComponent: unknown;
+    readonly ViewComponent: JsValue;
     readonly ViewComponentContext: ViewComponentContext;
     readonly ViewComponentResult: IViewComponentResult;
 }
 
 
 export const AfterViewComponentEventData: {
-    new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, viewComponentResult: IViewComponentResult, viewComponent: unknown): AfterViewComponentEventData;
+    new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, viewComponentResult: IViewComponentResult, viewComponent: JsValue): AfterViewComponentEventData;
     readonly EventName: string;
 };
 
 
-export type AfterViewComponentEventData = AfterViewComponentEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterViewComponentEventData = AfterViewComponentEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterViewEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewEventData: never;
@@ -551,7 +531,7 @@ export const AfterViewEventData: {
 };
 
 
-export type AfterViewEventData = AfterViewEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterViewEventData = AfterViewEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface AfterViewPageEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewPageEventData: never;
@@ -575,7 +555,7 @@ export const AfterViewPageEventData: {
 };
 
 
-export type AfterViewPageEventData = AfterViewPageEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type AfterViewPageEventData = AfterViewPageEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeActionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionEventData: never;
@@ -598,7 +578,7 @@ export const BeforeActionEventData: {
 };
 
 
-export type BeforeActionEventData = BeforeActionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeActionEventData = BeforeActionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeActionFilterOnActionExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionFilterOnActionExecutedEventData: never;
@@ -621,7 +601,7 @@ export const BeforeActionFilterOnActionExecutedEventData: {
 };
 
 
-export type BeforeActionFilterOnActionExecutedEventData = BeforeActionFilterOnActionExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeActionFilterOnActionExecutedEventData = BeforeActionFilterOnActionExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeActionFilterOnActionExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionFilterOnActionExecutingEventData: never;
@@ -644,7 +624,7 @@ export const BeforeActionFilterOnActionExecutingEventData: {
 };
 
 
-export type BeforeActionFilterOnActionExecutingEventData = BeforeActionFilterOnActionExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeActionFilterOnActionExecutingEventData = BeforeActionFilterOnActionExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeActionFilterOnActionExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionFilterOnActionExecutionEventData: never;
@@ -667,7 +647,7 @@ export const BeforeActionFilterOnActionExecutionEventData: {
 };
 
 
-export type BeforeActionFilterOnActionExecutionEventData = BeforeActionFilterOnActionExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeActionFilterOnActionExecutionEventData = BeforeActionFilterOnActionExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeActionResultEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeActionResultEventData: never;
@@ -689,7 +669,7 @@ export const BeforeActionResultEventData: {
 };
 
 
-export type BeforeActionResultEventData = BeforeActionResultEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeActionResultEventData = BeforeActionResultEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeAuthorizationFilterOnAuthorizationEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeAuthorizationFilterOnAuthorizationEventData: never;
@@ -712,7 +692,7 @@ export const BeforeAuthorizationFilterOnAuthorizationEventData: {
 };
 
 
-export type BeforeAuthorizationFilterOnAuthorizationEventData = BeforeAuthorizationFilterOnAuthorizationEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeAuthorizationFilterOnAuthorizationEventData = BeforeAuthorizationFilterOnAuthorizationEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeControllerActionMethodEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeControllerActionMethodEventData: never;
@@ -722,20 +702,20 @@ export interface BeforeControllerActionMethodEventData$instance extends EventDat
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly ActionArguments: IReadOnlyDictionary_2<System_Internal.String, unknown>;
+    readonly ActionArguments: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
     readonly ActionContext: ActionContext;
-    readonly Controller: unknown;
+    readonly Controller: JsValue;
     readonly Count: int;
 }
 
 
 export const BeforeControllerActionMethodEventData: {
-    new(actionContext: ActionContext, actionArguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, controller: unknown): BeforeControllerActionMethodEventData;
+    new(actionContext: ActionContext, actionArguments: IReadOnlyDictionary_2<System_Internal.String, JsValue>, controller: JsValue): BeforeControllerActionMethodEventData;
     readonly EventName: string;
 };
 
 
-export type BeforeControllerActionMethodEventData = BeforeControllerActionMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeControllerActionMethodEventData = BeforeControllerActionMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeExceptionFilterOnException$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeExceptionFilterOnException: never;
@@ -758,7 +738,7 @@ export const BeforeExceptionFilterOnException: {
 };
 
 
-export type BeforeExceptionFilterOnException = BeforeExceptionFilterOnException$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeExceptionFilterOnException = BeforeExceptionFilterOnException$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeHandlerMethodEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeHandlerMethodEventData: never;
@@ -769,20 +749,20 @@ export interface BeforeHandlerMethodEventData$instance extends EventData {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly ActionContext: ActionContext;
-    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
+    readonly Arguments: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>;
     readonly Count: int;
     readonly HandlerMethodDescriptor: HandlerMethodDescriptor;
-    readonly Instance: unknown;
+    readonly Instance: JsValue;
 }
 
 
 export const BeforeHandlerMethodEventData: {
-    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, unknown>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: unknown): BeforeHandlerMethodEventData;
+    new(actionContext: ActionContext, arguments: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>, handlerMethodDescriptor: HandlerMethodDescriptor, instance: JsValue): BeforeHandlerMethodEventData;
     readonly EventName: string;
 };
 
 
-export type BeforeHandlerMethodEventData = BeforeHandlerMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeHandlerMethodEventData = BeforeHandlerMethodEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforePageFilterOnPageHandlerExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutedEventData: never;
@@ -805,7 +785,7 @@ export const BeforePageFilterOnPageHandlerExecutedEventData: {
 };
 
 
-export type BeforePageFilterOnPageHandlerExecutedEventData = BeforePageFilterOnPageHandlerExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforePageFilterOnPageHandlerExecutedEventData = BeforePageFilterOnPageHandlerExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforePageFilterOnPageHandlerExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutingEventData: never;
@@ -828,7 +808,7 @@ export const BeforePageFilterOnPageHandlerExecutingEventData: {
 };
 
 
-export type BeforePageFilterOnPageHandlerExecutingEventData = BeforePageFilterOnPageHandlerExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforePageFilterOnPageHandlerExecutingEventData = BeforePageFilterOnPageHandlerExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforePageFilterOnPageHandlerExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutionEventData: never;
@@ -851,7 +831,7 @@ export const BeforePageFilterOnPageHandlerExecutionEventData: {
 };
 
 
-export type BeforePageFilterOnPageHandlerExecutionEventData = BeforePageFilterOnPageHandlerExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforePageFilterOnPageHandlerExecutionEventData = BeforePageFilterOnPageHandlerExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforePageFilterOnPageHandlerSelectedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectedEventData: never;
@@ -874,7 +854,7 @@ export const BeforePageFilterOnPageHandlerSelectedEventData: {
 };
 
 
-export type BeforePageFilterOnPageHandlerSelectedEventData = BeforePageFilterOnPageHandlerSelectedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforePageFilterOnPageHandlerSelectedEventData = BeforePageFilterOnPageHandlerSelectedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforePageFilterOnPageHandlerSelectionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectionEventData: never;
@@ -897,7 +877,7 @@ export const BeforePageFilterOnPageHandlerSelectionEventData: {
 };
 
 
-export type BeforePageFilterOnPageHandlerSelectionEventData = BeforePageFilterOnPageHandlerSelectionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforePageFilterOnPageHandlerSelectionEventData = BeforePageFilterOnPageHandlerSelectionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeResourceFilterOnResourceExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResourceFilterOnResourceExecutedEventData: never;
@@ -920,7 +900,7 @@ export const BeforeResourceFilterOnResourceExecutedEventData: {
 };
 
 
-export type BeforeResourceFilterOnResourceExecutedEventData = BeforeResourceFilterOnResourceExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeResourceFilterOnResourceExecutedEventData = BeforeResourceFilterOnResourceExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeResourceFilterOnResourceExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResourceFilterOnResourceExecutingEventData: never;
@@ -943,7 +923,7 @@ export const BeforeResourceFilterOnResourceExecutingEventData: {
 };
 
 
-export type BeforeResourceFilterOnResourceExecutingEventData = BeforeResourceFilterOnResourceExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeResourceFilterOnResourceExecutingEventData = BeforeResourceFilterOnResourceExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeResourceFilterOnResourceExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResourceFilterOnResourceExecutionEventData: never;
@@ -966,7 +946,7 @@ export const BeforeResourceFilterOnResourceExecutionEventData: {
 };
 
 
-export type BeforeResourceFilterOnResourceExecutionEventData = BeforeResourceFilterOnResourceExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeResourceFilterOnResourceExecutionEventData = BeforeResourceFilterOnResourceExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeResultFilterOnResultExecutedEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResultFilterOnResultExecutedEventData: never;
@@ -989,7 +969,7 @@ export const BeforeResultFilterOnResultExecutedEventData: {
 };
 
 
-export type BeforeResultFilterOnResultExecutedEventData = BeforeResultFilterOnResultExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeResultFilterOnResultExecutedEventData = BeforeResultFilterOnResultExecutedEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeResultFilterOnResultExecutingEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResultFilterOnResultExecutingEventData: never;
@@ -1012,7 +992,7 @@ export const BeforeResultFilterOnResultExecutingEventData: {
 };
 
 
-export type BeforeResultFilterOnResultExecutingEventData = BeforeResultFilterOnResultExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeResultFilterOnResultExecutingEventData = BeforeResultFilterOnResultExecutingEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeResultFilterOnResultExecutionEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeResultFilterOnResultExecutionEventData: never;
@@ -1035,7 +1015,7 @@ export const BeforeResultFilterOnResultExecutionEventData: {
 };
 
 
-export type BeforeResultFilterOnResultExecutionEventData = BeforeResultFilterOnResultExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeResultFilterOnResultExecutionEventData = BeforeResultFilterOnResultExecutionEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeViewComponentEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewComponentEventData: never;
@@ -1047,18 +1027,18 @@ export interface BeforeViewComponentEventData$instance extends EventData {
 
     readonly ActionDescriptor: ActionDescriptor;
     readonly Count: int;
-    readonly ViewComponent: unknown;
+    readonly ViewComponent: JsValue;
     readonly ViewComponentContext: ViewComponentContext;
 }
 
 
 export const BeforeViewComponentEventData: {
-    new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, viewComponent: unknown): BeforeViewComponentEventData;
+    new(actionDescriptor: ActionDescriptor, viewComponentContext: ViewComponentContext, viewComponent: JsValue): BeforeViewComponentEventData;
     readonly EventName: string;
 };
 
 
-export type BeforeViewComponentEventData = BeforeViewComponentEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeViewComponentEventData = BeforeViewComponentEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeViewEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewEventData: never;
@@ -1080,7 +1060,7 @@ export const BeforeViewEventData: {
 };
 
 
-export type BeforeViewEventData = BeforeViewEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeViewEventData = BeforeViewEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface BeforeViewPageEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewPageEventData: never;
@@ -1104,7 +1084,7 @@ export const BeforeViewPageEventData: {
 };
 
 
-export type BeforeViewPageEventData = BeforeViewPageEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type BeforeViewPageEventData = BeforeViewPageEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface EventData$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData: never;
@@ -1123,7 +1103,27 @@ export const EventData: (abstract new() => EventData) & {
 };
 
 
-export type EventData = EventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type EventData = EventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
+
+export interface EventData_Enumerator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_EventData_Enumerator: never;
+
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
+    Current: KeyValuePair_2<System_Internal.String, JsValue>;
+    Dispose(): void;
+    MoveNext(): boolean;
+}
+
+
+export const EventData_Enumerator: {
+    new(): EventData_Enumerator;
+};
+
+
+export type EventData_Enumerator = EventData_Enumerator$instance;
 
 export interface ViewComponentAfterViewExecuteEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentAfterViewExecuteEventData: never;
@@ -1146,7 +1146,7 @@ export const ViewComponentAfterViewExecuteEventData: {
 };
 
 
-export type ViewComponentAfterViewExecuteEventData = ViewComponentAfterViewExecuteEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type ViewComponentAfterViewExecuteEventData = ViewComponentAfterViewExecuteEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface ViewComponentBeforeViewExecuteEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentBeforeViewExecuteEventData: never;
@@ -1169,7 +1169,7 @@ export const ViewComponentBeforeViewExecuteEventData: {
 };
 
 
-export type ViewComponentBeforeViewExecuteEventData = ViewComponentBeforeViewExecuteEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type ViewComponentBeforeViewExecuteEventData = ViewComponentBeforeViewExecuteEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface ViewFoundEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewFoundEventData: never;
@@ -1194,7 +1194,7 @@ export const ViewFoundEventData: {
 };
 
 
-export type ViewFoundEventData = ViewFoundEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type ViewFoundEventData = ViewFoundEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 
 export interface ViewNotFoundEventData$instance extends EventData {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Diagnostics_ViewNotFoundEventData: never;
@@ -1219,5 +1219,5 @@ export const ViewNotFoundEventData: {
 };
 
 
-export type ViewNotFoundEventData = ViewNotFoundEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
+export type ViewNotFoundEventData = ViewNotFoundEventData$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, JsValue>; };
 

@@ -2,11 +2,9 @@
 // Namespace: Microsoft.JSInterop
 // Assembly: Microsoft.JSInterop
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { DotNetInvocationInfo, DotNetInvocationResult, JSInvocationInfo } from "../../Microsoft.JSInterop.Infrastructure/internal/index.js";
@@ -33,10 +31,10 @@ export interface IJSInProcessObjectReference$instance extends IJSObjectReference
     GetValue<TValue>(identifier: string): TValue;
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
     GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    Invoke<TValue>(identifier: string, ...args: unknown[]): TValue;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
-    InvokeConstructor(identifier: string, args: unknown[]): IJSInProcessObjectReference;
+    Invoke<TValue>(identifier: string, ...args: (JsValue | null)[] | null): TValue;
+    InvokeAsync<TValue>(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeConstructor(identifier: string, args: (JsValue | null)[] | null): IJSInProcessObjectReference;
     SetValue<TValue>(identifier: string, value: TValue): void;
     SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
     SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
@@ -53,10 +51,10 @@ export interface IJSInProcessRuntime$instance {
     GetValue<TValue>(identifier: string): TValue;
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
     GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    Invoke<TResult>(identifier: string, ...args: unknown[]): TResult;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
-    InvokeConstructor(identifier: string, ...args: unknown[]): IJSInProcessObjectReference;
+    Invoke<TResult>(identifier: string, ...args: (JsValue | null)[] | null): TResult;
+    InvokeAsync<TValue>(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeConstructor(identifier: string, ...args: (JsValue | null)[] | null): IJSInProcessObjectReference;
     SetValue<TValue>(identifier: string, value: TValue): void;
     SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
     SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
@@ -70,8 +68,8 @@ export interface IJSObjectReference$instance extends IAsyncDisposable {
 
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
     GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
+    InvokeAsync<TValue>(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
     SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
     SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
 }
@@ -86,8 +84,8 @@ export interface IJSRuntime$instance {
 
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
     GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
+    InvokeAsync<TValue>(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
     SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
     SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
 }
@@ -181,11 +179,11 @@ export interface JSInProcessRuntime$instance extends JSRuntime, System_Internal.
     readonly __tsonic_iface_System_IDisposable: never;
 
     GetValue<TValue>(identifier: string): TValue;
-    Invoke<TValue>(identifier: string, ...args: unknown[]): TValue;
-    InvokeConstructor(identifier: string, ...args: unknown[]): IJSInProcessObjectReference;
-    InvokeJS(identifier: string, argsJson: string): string | undefined;
-    InvokeJS(identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): string | undefined;
-    InvokeJS(invocationInfo: JSInvocationInfo): string | undefined;
+    Invoke<TValue>(identifier: string, ...args: (JsValue | null)[] | null): TValue;
+    InvokeConstructor(identifier: string, ...args: (JsValue | null)[] | null): IJSInProcessObjectReference;
+    InvokeJS(identifier: string, argsJson: string | null): string | null;
+    InvokeJS(identifier: string, argsJson: string | null, resultType: JSCallResultType, targetInstanceId: long): string | null;
+    InvokeJS(invocationInfo: JSInvocationInfo): string | null;
     SetValue<TValue>(identifier: string, value: TValue): void;
 }
 
@@ -205,7 +203,7 @@ export type JSInProcessRuntime = JSInProcessRuntime$instance & __JSInProcessRunt
 export interface JSInvokableAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_JSInterop_JSInvokableAttribute: never;
 
-    readonly Identifier: string | undefined;
+    readonly Identifier: string | null;
 }
 
 
@@ -222,17 +220,17 @@ export interface JSRuntime$instance {
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    BeginInvokeJS(taskId: long, identifier: string, argsJson: string): void;
-    BeginInvokeJS(taskId: long, identifier: string, argsJson: string, resultType: JSCallResultType, targetInstanceId: long): void;
+    BeginInvokeJS(taskId: long, identifier: string, argsJson: string | null): void;
+    BeginInvokeJS(taskId: long, identifier: string, argsJson: string | null, resultType: JSCallResultType, targetInstanceId: long): void;
     BeginInvokeJS(invocationInfo: JSInvocationInfo): void;
     Dispose(): void;
     EndInvokeDotNet(invocationInfo: DotNetInvocationInfo, invocationResult: DotNetInvocationResult): void;
     GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
     GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, args: unknown[]): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<TValue>;
-    InvokeConstructorAsync(identifier: string, args: unknown[]): ValueTask_1<IJSObjectReference>;
-    InvokeConstructorAsync(identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<IJSObjectReference>;
+    InvokeAsync<TValue>(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    InvokeConstructorAsync(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
+    InvokeConstructorAsync(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
     ReadJSDataAsStreamAsync(jsStreamReference: IJSStreamReference, totalLength: long, cancellationToken?: CancellationToken): Task_1<Stream>;
     ReceiveByteArray(id: int, data: byte[]): void;
     SendByteArray(id: int, data: byte[]): void;
@@ -256,14 +254,14 @@ export abstract class DotNetObjectReference$instance {
 export type DotNetObjectReference = DotNetObjectReference$instance;
 
 export abstract class JSInProcessObjectReferenceExtensions$instance {
-    static InvokeVoid(jsObjectReference: IJSInProcessObjectReference, identifier: string, ...args: unknown[]): void;
+    static InvokeVoid(jsObjectReference: IJSInProcessObjectReference, identifier: string, ...args: (JsValue | null)[] | null): void;
 }
 
 
 export type JSInProcessObjectReferenceExtensions = JSInProcessObjectReferenceExtensions$instance;
 
 export abstract class JSInProcessRuntimeExtensions$instance {
-    static InvokeVoid(jsRuntime: IJSInProcessRuntime, identifier: string, ...args: unknown[]): void;
+    static InvokeVoid(jsRuntime: IJSInProcessRuntime, identifier: string, ...args: (JsValue | null)[] | null): void;
 }
 
 
@@ -271,15 +269,15 @@ export type JSInProcessRuntimeExtensions = JSInProcessRuntimeExtensions$instance
 
 export abstract class JSObjectReferenceExtensions$instance {
     static GetValueAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, timeout: TimeSpan): ValueTask_1<TValue>;
-    static InvokeAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, ...args: unknown[]): ValueTask_1<TValue>;
-    static InvokeAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, cancellationToken: CancellationToken, ...args: unknown[]): ValueTask_1<TValue>;
-    static InvokeAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, timeout: TimeSpan, ...args: unknown[]): ValueTask_1<TValue>;
-    static InvokeConstructorAsync(jsObjectReference: IJSObjectReference, identifier: string, ...args: unknown[]): ValueTask_1<IJSObjectReference>;
-    static InvokeConstructorAsync(jsObjectReference: IJSObjectReference, identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<IJSObjectReference>;
-    static InvokeConstructorAsync(jsObjectReference: IJSObjectReference, identifier: string, timeout: TimeSpan, args: unknown[]): ValueTask_1<IJSObjectReference>;
-    static InvokeVoidAsync(jsObjectReference: IJSObjectReference, identifier: string, ...args: unknown[]): ValueTask;
-    static InvokeVoidAsync(jsObjectReference: IJSObjectReference, identifier: string, cancellationToken: CancellationToken, ...args: unknown[]): ValueTask;
-    static InvokeVoidAsync(jsObjectReference: IJSObjectReference, identifier: string, timeout: TimeSpan, ...args: unknown[]): ValueTask;
+    static InvokeAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, ...args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    static InvokeAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, cancellationToken: CancellationToken, ...args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    static InvokeAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, timeout: TimeSpan, ...args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    static InvokeConstructorAsync(jsObjectReference: IJSObjectReference, identifier: string, ...args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
+    static InvokeConstructorAsync(jsObjectReference: IJSObjectReference, identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
+    static InvokeConstructorAsync(jsObjectReference: IJSObjectReference, identifier: string, timeout: TimeSpan, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
+    static InvokeVoidAsync(jsObjectReference: IJSObjectReference, identifier: string, ...args: (JsValue | null)[] | null): ValueTask;
+    static InvokeVoidAsync(jsObjectReference: IJSObjectReference, identifier: string, cancellationToken: CancellationToken, ...args: (JsValue | null)[] | null): ValueTask;
+    static InvokeVoidAsync(jsObjectReference: IJSObjectReference, identifier: string, timeout: TimeSpan, ...args: (JsValue | null)[] | null): ValueTask;
     static SetValueAsync<TValue>(jsObjectReference: IJSObjectReference, identifier: string, value: TValue, timeout: TimeSpan): ValueTask;
 }
 
@@ -288,15 +286,15 @@ export type JSObjectReferenceExtensions = JSObjectReferenceExtensions$instance;
 
 export abstract class JSRuntimeExtensions$instance {
     static GetValueAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, timeout: TimeSpan): ValueTask_1<TValue>;
-    static InvokeAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, ...args: unknown[]): ValueTask_1<TValue>;
-    static InvokeAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, cancellationToken: CancellationToken, ...args: unknown[]): ValueTask_1<TValue>;
-    static InvokeAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, timeout: TimeSpan, ...args: unknown[]): ValueTask_1<TValue>;
-    static InvokeConstructorAsync(jsRuntime: IJSRuntime, identifier: string, ...args: unknown[]): ValueTask_1<IJSObjectReference>;
-    static InvokeConstructorAsync(jsRuntime: IJSRuntime, identifier: string, cancellationToken: CancellationToken, args: unknown[]): ValueTask_1<IJSObjectReference>;
-    static InvokeConstructorAsync(jsRuntime: IJSRuntime, identifier: string, timeout: TimeSpan, args: unknown[]): ValueTask_1<IJSObjectReference>;
-    static InvokeVoidAsync(jsRuntime: IJSRuntime, identifier: string, ...args: unknown[]): ValueTask;
-    static InvokeVoidAsync(jsRuntime: IJSRuntime, identifier: string, cancellationToken: CancellationToken, ...args: unknown[]): ValueTask;
-    static InvokeVoidAsync(jsRuntime: IJSRuntime, identifier: string, timeout: TimeSpan, ...args: unknown[]): ValueTask;
+    static InvokeAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, ...args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    static InvokeAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, cancellationToken: CancellationToken, ...args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    static InvokeAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, timeout: TimeSpan, ...args: (JsValue | null)[] | null): ValueTask_1<TValue>;
+    static InvokeConstructorAsync(jsRuntime: IJSRuntime, identifier: string, ...args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
+    static InvokeConstructorAsync(jsRuntime: IJSRuntime, identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
+    static InvokeConstructorAsync(jsRuntime: IJSRuntime, identifier: string, timeout: TimeSpan, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
+    static InvokeVoidAsync(jsRuntime: IJSRuntime, identifier: string, ...args: (JsValue | null)[] | null): ValueTask;
+    static InvokeVoidAsync(jsRuntime: IJSRuntime, identifier: string, cancellationToken: CancellationToken, ...args: (JsValue | null)[] | null): ValueTask;
+    static InvokeVoidAsync(jsRuntime: IJSRuntime, identifier: string, timeout: TimeSpan, ...args: (JsValue | null)[] | null): ValueTask;
     static SetValueAsync<TValue>(jsRuntime: IJSRuntime, identifier: string, value: TValue, timeout: TimeSpan): ValueTask;
 }
 

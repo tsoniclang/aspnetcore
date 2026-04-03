@@ -2,11 +2,9 @@
 // Namespace: System.Formats.Cbor
 // Assembly: System.Formats.Cbor
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { BigInteger } from "@tsonic/dotnet/System.Numerics/internal/index.js";
@@ -85,8 +83,8 @@ export interface CborContentException$instance extends Exception {
 
 
 export const CborContentException: {
-    new(message: string): CborContentException;
-    new(message: string, inner: Exception): CborContentException;
+    new(message: string | null): CborContentException;
+    new(message: string | null, inner: Exception | null): CborContentException;
 };
 
 

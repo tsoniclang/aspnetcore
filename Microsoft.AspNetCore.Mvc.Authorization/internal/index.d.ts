@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Authorization
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { AuthorizationPolicy, IAuthorizationPolicyProvider, IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
@@ -47,9 +48,9 @@ export interface AuthorizeFilter$instance extends IFilterMetadata, Microsoft_Asp
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterFactory: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata: never;
 
-    readonly AuthorizeData: IEnumerable_1<IAuthorizeData> | undefined;
-    readonly Policy: AuthorizationPolicy | undefined;
-    readonly PolicyProvider: IAuthorizationPolicyProvider | undefined;
+    readonly AuthorizeData: IEnumerable_1<IAuthorizeData> | null;
+    readonly Policy: AuthorizationPolicy | null;
+    readonly PolicyProvider: IAuthorizationPolicyProvider | null;
     OnAuthorizationAsync(context: AuthorizationFilterContext): Task;
 }
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Server
 // Assembly: Microsoft.AspNetCore.Components.Endpoints, Microsoft.AspNetCore.Components.Server
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Components_Authorization_Internal from "../../Microsoft.AspNetCore.Components.Authorization/internal/index.js";
@@ -24,8 +25,8 @@ export interface CircuitOptions$instance {
     DetailedErrors: boolean;
     DisconnectedCircuitMaxRetained: int;
     DisconnectedCircuitRetentionPeriod: TimeSpan;
-    get HybridPersistenceCache(): HybridCache | undefined;
-    set HybridPersistenceCache(value: HybridCache | undefined);
+    get HybridPersistenceCache(): HybridCache | null;
+    set HybridPersistenceCache(value: HybridCache | null);
     JSInteropDefaultCallTimeout: TimeSpan;
     MaxBufferedUnacknowledgedRenderBatches: int;
     get PersistedCircuitDistributedRetentionPeriod(): Nullable_1<TimeSpan>;
@@ -113,10 +114,10 @@ export type ServerAuthenticationStateProvider = ServerAuthenticationStateProvide
 export interface ServerComponentsEndpointOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Server_ServerComponentsEndpointOptions: never;
 
-    get ConfigureWebSocketAcceptContext(): Func_3<HttpContext, WebSocketAcceptContext, Task> | undefined;
-    set ConfigureWebSocketAcceptContext(value: Func_3<HttpContext, WebSocketAcceptContext, Task> | undefined);
-    get ContentSecurityFrameAncestorsPolicy(): string | undefined;
-    set ContentSecurityFrameAncestorsPolicy(value: string | undefined);
+    get ConfigureWebSocketAcceptContext(): Func_3<HttpContext, WebSocketAcceptContext, Task> | null;
+    set ConfigureWebSocketAcceptContext(value: Func_3<HttpContext, WebSocketAcceptContext, Task> | null);
+    get ContentSecurityFrameAncestorsPolicy(): string | null;
+    set ContentSecurityFrameAncestorsPolicy(value: string | null);
     DisableWebSocketCompression: boolean;
 }
 

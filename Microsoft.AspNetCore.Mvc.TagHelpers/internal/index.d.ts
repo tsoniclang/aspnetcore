@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.TagHelpers
 // Assembly: Microsoft.AspNetCore.Mvc.TagHelpers
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ImportMapDefinition } from "../../Microsoft.AspNetCore.Components/internal/index.js";
@@ -170,7 +168,7 @@ export interface ComponentTagHelper$instance extends TagHelper {
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent: never;
 
     ComponentType: Type;
-    Parameters: IDictionary_2<System_Internal.String, unknown>;
+    Parameters: IDictionary_2<System_Internal.String, JsValue>;
     RenderMode: RenderMode;
     ViewContext: ViewContext;
     ProcessAsync(context: TagHelperContext, output: TagHelperOutput): Task;
@@ -472,7 +470,7 @@ export interface PartialTagHelper$instance extends TagHelper {
 
     FallbackName: string;
     For: ModelExpression;
-    Model: unknown;
+    Model: JsValue;
     Name: string;
     Optional: boolean;
     ViewContext: ViewContext;

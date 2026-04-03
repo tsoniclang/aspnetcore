@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Connections
 // Assembly: Microsoft.AspNetCore.Connections.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Connections_Features_Internal from "../../Microsoft.AspNetCore.Connections.Features/internal/index.js";
@@ -101,7 +102,7 @@ export type IConnectionListenerFactorySelector = IConnectionListenerFactorySelec
 export interface IMemoryPoolFactory_1$instance<T> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMemoryPoolFactory_1: never;
 
-    Create(options?: MemoryPoolOptions): MemoryPool_1<T>;
+    Create(options?: MemoryPoolOptions | null): MemoryPool_1<T>;
 }
 
 
@@ -121,7 +122,7 @@ export type IMultiplexedConnectionBuilder = IMultiplexedConnectionBuilder$instan
 export interface IMultiplexedConnectionFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory: never;
 
-    ConnectAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<MultiplexedConnectionContext>;
+    ConnectAsync(endpoint: EndPoint, features?: IFeatureCollection | null, cancellationToken?: CancellationToken): ValueTask_1<MultiplexedConnectionContext>;
 }
 
 
@@ -131,7 +132,7 @@ export interface IMultiplexedConnectionListener$instance extends IAsyncDisposabl
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener: never;
 
     readonly EndPoint: EndPoint;
-    AcceptAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<MultiplexedConnectionContext>;
+    AcceptAsync(features?: IFeatureCollection | null, cancellationToken?: CancellationToken): ValueTask_1<MultiplexedConnectionContext>;
     UnbindAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
@@ -143,7 +144,7 @@ export type IMultiplexedConnectionListener = IMultiplexedConnectionListener$inst
 export interface IMultiplexedConnectionListenerFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory: never;
 
-    BindAsync(endpoint: EndPoint, features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<IMultiplexedConnectionListener>;
+    BindAsync(endpoint: EndPoint, features?: IFeatureCollection | null, cancellationToken?: CancellationToken): ValueTask_1<IMultiplexedConnectionListener>;
 }
 
 
@@ -173,11 +174,11 @@ export interface BaseConnectionContext$instance {
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
-    Items: IDictionary_2<unknown, unknown | undefined>;
-    get LocalEndPoint(): EndPoint | undefined;
-    set LocalEndPoint(value: EndPoint | undefined);
-    get RemoteEndPoint(): EndPoint | undefined;
-    set RemoteEndPoint(value: EndPoint | undefined);
+    Items: IDictionary_2<JsValue, JsValue | null>;
+    get LocalEndPoint(): EndPoint | null;
+    set LocalEndPoint(value: EndPoint | null);
+    get RemoteEndPoint(): EndPoint | null;
+    set RemoteEndPoint(value: EndPoint | null);
     Abort(): void;
     Abort(abortReason: ConnectionAbortedException): void;
     DisposeAsync(): ValueTask;
@@ -268,13 +269,13 @@ export interface ConnectionItems$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Items: IDictionary_2<unknown, unknown | undefined>;
+    readonly Items: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
 export const ConnectionItems: {
     new(): ConnectionItems;
-    new(items: IDictionary_2<unknown, unknown>): ConnectionItems;
+    new(items: IDictionary_2<JsValue, JsValue | null>): ConnectionItems;
 };
 
 
@@ -307,19 +308,19 @@ export interface DefaultConnectionContext$instance extends ConnectionContext, Mi
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
-    get Application(): IDuplexPipe | undefined;
-    set Application(value: IDuplexPipe | undefined);
+    get Application(): IDuplexPipe | null;
+    set Application(value: IDuplexPipe | null);
     ConnectionClosed: CancellationToken;
     ConnectionId: string;
     readonly Features: IFeatureCollection;
-    Items: IDictionary_2<unknown, unknown | undefined>;
-    get LocalEndPoint(): EndPoint | undefined;
-    set LocalEndPoint(value: EndPoint | undefined);
-    get RemoteEndPoint(): EndPoint | undefined;
-    set RemoteEndPoint(value: EndPoint | undefined);
+    Items: IDictionary_2<JsValue, JsValue | null>;
+    get LocalEndPoint(): EndPoint | null;
+    set LocalEndPoint(value: EndPoint | null);
+    get RemoteEndPoint(): EndPoint | null;
+    set RemoteEndPoint(value: EndPoint | null);
     Transport: IDuplexPipe;
-    get User(): ClaimsPrincipal | undefined;
-    set User(value: ClaimsPrincipal | undefined);
+    get User(): ClaimsPrincipal | null;
+    set User(value: ClaimsPrincipal | null);
     Abort(abortReason: ConnectionAbortedException): void;
     Abort(): void;
     DisposeAsync(): ValueTask;
@@ -363,8 +364,8 @@ export type FileHandleEndPoint = FileHandleEndPoint$instance;
 export interface MemoryPoolOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Connections_MemoryPoolOptions: never;
 
-    get Owner(): string | undefined;
-    set Owner(value: string | undefined);
+    get Owner(): string | null;
+    set Owner(value: string | null);
 }
 
 
@@ -404,7 +405,7 @@ export interface MultiplexedConnectionContext$instance extends BaseConnectionCon
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     AcceptAsync(cancellationToken?: CancellationToken): ValueTask_1<ConnectionContext>;
-    ConnectAsync(features?: IFeatureCollection, cancellationToken?: CancellationToken): ValueTask_1<ConnectionContext>;
+    ConnectAsync(features?: IFeatureCollection | null, cancellationToken?: CancellationToken): ValueTask_1<ConnectionContext>;
 }
 
 
@@ -419,7 +420,7 @@ export interface NamedPipeEndPoint$instance extends EndPoint {
 
     readonly PipeName: string;
     readonly ServerName: string;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -438,8 +439,8 @@ export interface TlsConnectionCallbackContext$instance {
 
     ClientHelloInfo: SslClientHelloInfo;
     Connection: BaseConnectionContext;
-    get State(): unknown | undefined;
-    set State(value: unknown | undefined);
+    get State(): JsValue | null;
+    set State(value: JsValue | null);
 }
 
 
@@ -455,8 +456,8 @@ export interface TlsConnectionCallbackOptions$instance {
 
     ApplicationProtocols: List_1<SslApplicationProtocol>;
     OnConnection: Func_3<TlsConnectionCallbackContext, CancellationToken, ValueTask_1<SslServerAuthenticationOptions>>;
-    get OnConnectionState(): unknown | undefined;
-    set OnConnectionState(value: unknown | undefined);
+    get OnConnectionState(): JsValue | null;
+    set OnConnectionState(value: JsValue | null);
 }
 
 

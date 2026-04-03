@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.RenderTree
 // Assembly: Microsoft.AspNetCore.Components, Microsoft.AspNetCore.Components.Web
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ComponentState } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
@@ -155,7 +153,7 @@ export interface RenderTreeEdit$instance {
     readonly SiblingIndex: int;
     readonly ReferenceFrameIndex: int;
     readonly MoveToSiblingIndex: int;
-    readonly RemovedAttributeName: string | undefined;
+    readonly RemovedAttributeName: string | null;
 }
 
 
@@ -172,17 +170,17 @@ export interface RenderTreeFrame$instance {
     readonly AttributeEventHandlerId: ulong;
     readonly AttributeEventUpdatesAttributeName: string;
     readonly AttributeName: string;
-    readonly AttributeValue: unknown;
+    readonly AttributeValue: JsValue;
     readonly Component: IComponent;
     readonly ComponentFrameFlags: ComponentFrameFlags;
     readonly ComponentId: int;
-    readonly ComponentKey: unknown;
-    readonly ComponentReferenceCaptureAction: Action_1<unknown>;
+    readonly ComponentKey: JsValue;
+    readonly ComponentReferenceCaptureAction: Action_1<JsValue>;
     readonly ComponentReferenceCaptureParentFrameIndex: int;
     readonly ComponentRenderMode: IComponentRenderMode;
     readonly ComponentSubtreeLength: int;
     readonly ComponentType: Type;
-    readonly ElementKey: unknown;
+    readonly ElementKey: JsValue;
     readonly ElementName: string;
     readonly ElementReferenceCaptureAction: Action_1<ElementReference>;
     readonly ElementReferenceCaptureId: string;
@@ -209,7 +207,7 @@ export interface EventFieldInfo$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_EventFieldInfo: never;
 
     ComponentId: int;
-    FieldValue: unknown;
+    FieldValue: JsValue;
 }
 
 
@@ -229,14 +227,14 @@ export interface Renderer$instance {
     readonly Assets: ResourceAssetCollection;
     readonly Dispatcher: Dispatcher;
     readonly RendererInfo: RendererInfo;
-    AddPendingTask(componentState: ComponentState, task: Task): void;
-    CreateComponentState(componentId: int, component: IComponent, parentComponentState: ComponentState): ComponentState;
-    DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs): Task;
-    DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo, eventArgs: EventArgs, waitForQuiescence: boolean): Task;
+    AddPendingTask(componentState: ComponentState | null, task: Task): void;
+    CreateComponentState(componentId: int, component: IComponent, parentComponentState: ComponentState | null): ComponentState;
+    DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo | null, eventArgs: EventArgs): Task;
+    DispatchEventAsync(eventHandlerId: ulong, fieldInfo: EventFieldInfo | null, eventArgs: EventArgs, waitForQuiescence: boolean): Task;
     Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsync(): ValueTask;
-    GetComponentRenderMode(component: IComponent): IComponentRenderMode | undefined;
+    GetComponentRenderMode(component: IComponent): IComponentRenderMode | null;
     GetEventArgsType(eventHandlerId: ulong): Type;
     HandleException(exception: Exception): void;
     ProcessPendingRender(): void;
@@ -254,8 +252,8 @@ export type Renderer = Renderer$instance;
 export interface WebEventDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_WebEventDescriptor: never;
 
-    get EventFieldInfo(): EventFieldInfo | undefined;
-    set EventFieldInfo(value: EventFieldInfo | undefined);
+    get EventFieldInfo(): EventFieldInfo | null;
+    set EventFieldInfo(value: EventFieldInfo | null);
     EventHandlerId: ulong;
     EventName: string;
 }

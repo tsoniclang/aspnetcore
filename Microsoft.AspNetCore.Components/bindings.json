@@ -1125,7 +1125,10 @@
           "isLiteral": false,
           "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Components.EventCallback\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Components"
+          "declaringAssemblyName": "Microsoft.AspNetCore.Components",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "field"
+          }
         }
       ],
       "events": [],

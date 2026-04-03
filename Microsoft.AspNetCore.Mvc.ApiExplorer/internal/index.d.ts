@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.ApiExplorer
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.ApiExplorer, Microsoft.AspNetCore.Mvc.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ActionDescriptor, ParameterDescriptor } from "../../Microsoft.AspNetCore.Mvc.Abstractions/internal/index.js";
@@ -37,7 +38,7 @@ export interface IApiDefaultResponseMetadataProvider$instance extends IApiRespon
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider: never;
 
     readonly Type: Type;
-    readonly Description: string | undefined;
+    readonly Description: string | null;
     readonly StatusCode: int;
     SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
@@ -59,7 +60,7 @@ export type IApiDescriptionGroupCollectionProvider = IApiDescriptionGroupCollect
 export interface IApiDescriptionGroupNameProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider: never;
 
-    readonly GroupName: string | undefined;
+    readonly GroupName: string | null;
 }
 
 
@@ -87,7 +88,7 @@ export type IApiDescriptionVisibilityProvider = IApiDescriptionVisibilityProvide
 export interface IApiRequestFormatMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider: never;
 
-    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList_1<System_Internal.String> | undefined;
+    GetSupportedContentTypes(contentType: string | null, objectType: Type): IReadOnlyList_1<System_Internal.String> | null;
 }
 
 
@@ -108,7 +109,7 @@ export interface IApiResponseMetadataProvider$instance extends IFilterMetadata {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider: never;
 
     readonly Type: Type;
-    readonly Description: string | undefined;
+    readonly Description: string | null;
     readonly StatusCode: int;
     SetContentTypes(contentTypes: MediaTypeCollection): void;
 }
@@ -121,7 +122,7 @@ export type IApiResponseMetadataProvider = IApiResponseMetadataProvider$instance
 export interface IApiResponseTypeMetadataProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider: never;
 
-    GetSupportedContentTypes(contentType: string, objectType: Type): IReadOnlyList_1<System_Internal.String> | undefined;
+    GetSupportedContentTypes(contentType: string | null, objectType: Type): IReadOnlyList_1<System_Internal.String> | null;
 }
 
 
@@ -173,14 +174,14 @@ export interface ApiDescription$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescription: never;
 
     ActionDescriptor: ActionDescriptor;
-    get GroupName(): string | undefined;
-    set GroupName(value: string | undefined);
-    get HttpMethod(): string | undefined;
-    set HttpMethod(value: string | undefined);
+    get GroupName(): string | null;
+    set GroupName(value: string | null);
+    get HttpMethod(): string | null;
+    set HttpMethod(value: string | null);
     readonly ParameterDescriptions: IList_1<ApiParameterDescription>;
-    readonly Properties: IDictionary_2<unknown, unknown>;
-    get RelativePath(): string | undefined;
-    set RelativePath(value: string | undefined);
+    readonly Properties: IDictionary_2<JsValue, JsValue>;
+    get RelativePath(): string | null;
+    set RelativePath(value: string | null);
     readonly SupportedRequestFormats: IList_1<ApiRequestFormat>;
     readonly SupportedResponseTypes: IList_1<ApiResponseType>;
 }
@@ -196,13 +197,13 @@ export type ApiDescription = ApiDescription$instance;
 export interface ApiDescriptionGroup$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescriptionGroup: never;
 
-    readonly GroupName: string | undefined;
+    readonly GroupName: string | null;
     readonly Items: IReadOnlyList_1<ApiDescription>;
 }
 
 
 export const ApiDescriptionGroup: {
-    new(groupName: string, items: IReadOnlyList_1<ApiDescription>): ApiDescriptionGroup;
+    new(groupName: string | null, items: IReadOnlyList_1<ApiDescription>): ApiDescriptionGroup;
 };
 
 
@@ -262,16 +263,16 @@ export type ApiDescriptionProviderContext = ApiDescriptionProviderContext$instan
 export interface ApiParameterDescription$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiParameterDescription: never;
 
-    get BindingInfo(): BindingInfo | undefined;
-    set BindingInfo(value: BindingInfo | undefined);
-    get DefaultValue(): unknown | undefined;
-    set DefaultValue(value: unknown | undefined);
+    get BindingInfo(): BindingInfo | null;
+    set BindingInfo(value: BindingInfo | null);
+    get DefaultValue(): JsValue | null;
+    set DefaultValue(value: JsValue | null);
     IsRequired: boolean;
     ModelMetadata: ModelMetadata;
     Name: string;
     ParameterDescriptor: ParameterDescriptor;
-    get RouteInfo(): ApiParameterRouteInfo | undefined;
-    set RouteInfo(value: ApiParameterRouteInfo | undefined);
+    get RouteInfo(): ApiParameterRouteInfo | null;
+    set RouteInfo(value: ApiParameterRouteInfo | null);
     Source: BindingSource;
     Type: Type;
 }
@@ -287,10 +288,10 @@ export type ApiParameterDescription = ApiParameterDescription$instance;
 export interface ApiParameterRouteInfo$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiParameterRouteInfo: never;
 
-    get Constraints(): IEnumerable_1<IRouteConstraint> | undefined;
-    set Constraints(value: IEnumerable_1<IRouteConstraint> | undefined);
-    get DefaultValue(): unknown | undefined;
-    set DefaultValue(value: unknown | undefined);
+    get Constraints(): IEnumerable_1<IRouteConstraint> | null;
+    set Constraints(value: IEnumerable_1<IRouteConstraint> | null);
+    get DefaultValue(): JsValue | null;
+    set DefaultValue(value: JsValue | null);
     IsOptional: boolean;
 }
 
@@ -336,14 +337,14 @@ export interface ApiResponseType$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiResponseType: never;
 
     ApiResponseFormats: IList_1<ApiResponseFormat>;
-    get Description(): string | undefined;
-    set Description(value: string | undefined);
+    get Description(): string | null;
+    set Description(value: string | null);
     IsDefaultResponse: boolean;
-    get ModelMetadata(): ModelMetadata | undefined;
-    set ModelMetadata(value: ModelMetadata | undefined);
+    get ModelMetadata(): ModelMetadata | null;
+    set ModelMetadata(value: ModelMetadata | null);
     StatusCode: int;
-    get Type(): Type | undefined;
-    set Type(value: Type | undefined);
+    get Type(): Type | null;
+    set Type(value: Type | null);
 }
 
 
@@ -378,7 +379,7 @@ export type DefaultApiDescriptionProvider = DefaultApiDescriptionProvider$instan
 
 
 export abstract class ApiDescriptionExtensions$instance {
-    static GetProperty<T>(apiDescription: ApiDescription): T | undefined;
+    static GetProperty<T>(apiDescription: ApiDescription): T | null;
     static SetProperty<T>(apiDescription: ApiDescription, value: T): void;
 }
 

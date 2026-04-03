@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Server.Kestrel.Core
 // Assembly: Microsoft.AspNetCore.Server.Kestrel.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Connections_Internal from "../../Microsoft.AspNetCore.Connections/internal/index.js";
@@ -132,10 +133,10 @@ export interface KestrelServerLimits$instance {
     MaxRequestLineSize: int;
     get MaxResponseBufferSize(): Nullable_1<System_Internal.Int64>;
     set MaxResponseBufferSize(value: Nullable_1<System_Internal.Int64> | long);
-    get MinRequestBodyDataRate(): MinDataRate | undefined;
-    set MinRequestBodyDataRate(value: MinDataRate | undefined);
-    get MinResponseDataRate(): MinDataRate | undefined;
-    set MinResponseDataRate(value: MinDataRate | undefined);
+    get MinRequestBodyDataRate(): MinDataRate | null;
+    set MinRequestBodyDataRate(value: MinDataRate | null);
+    get MinResponseDataRate(): MinDataRate | null;
+    set MinResponseDataRate(value: MinDataRate | null);
     RequestHeadersTimeout: TimeSpan;
 }
 
@@ -156,13 +157,13 @@ export interface KestrelServerOptions$instance {
     AllowResponseHeaderCompression: boolean;
     AllowSynchronousIO: boolean;
     ApplicationServices: IServiceProvider;
-    get ConfigurationLoader(): KestrelConfigurationLoader | undefined;
-    set ConfigurationLoader(value: KestrelConfigurationLoader | undefined);
+    get ConfigurationLoader(): KestrelConfigurationLoader | null;
+    set ConfigurationLoader(value: KestrelConfigurationLoader | null);
     DisableStringReuse: boolean;
     EnableAltSvc: boolean;
     readonly Limits: KestrelServerLimits;
-    RequestHeaderEncodingSelector: Func_2<System_Internal.String, Encoding | undefined>;
-    ResponseHeaderEncodingSelector: Func_2<System_Internal.String, Encoding | undefined>;
+    RequestHeaderEncodingSelector: Func_2<System_Internal.String, Encoding | null>;
+    ResponseHeaderEncodingSelector: Func_2<System_Internal.String, Encoding | null>;
     Configure(): KestrelConfigurationLoader;
     Configure(config: IConfiguration): KestrelConfigurationLoader;
     Configure(config: IConfiguration, reloadOnChange: boolean): KestrelConfigurationLoader;
@@ -204,13 +205,13 @@ export interface ListenOptions$instance extends Microsoft_AspNetCore_Connections
     DisableAltSvcHeader: boolean;
     EndPoint: EndPoint;
     readonly FileHandle: ulong;
-    readonly IPEndPoint: IPEndPoint | undefined;
+    readonly IPEndPoint: IPEndPoint | null;
     KestrelServerOptions: KestrelServerOptions;
-    readonly PipeName: string | undefined;
+    readonly PipeName: string | null;
     Protocols: HttpProtocols;
-    readonly SocketPath: string | undefined;
+    readonly SocketPath: string | null;
     Build(): ConnectionDelegate;
-    ToString(): string | undefined;
+    ToString(): string | null;
     Use(middleware: Func_2<ConnectionDelegate, ConnectionDelegate>): IConnectionBuilder;
 }
 

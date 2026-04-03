@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Authentication.Cookies
 // Assembly: Microsoft.AspNetCore.Authentication.Cookies
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Authentication_Internal from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
@@ -23,9 +24,9 @@ import type { IOptionsMonitor_1, IPostConfigureOptions_1 } from "@tsonic/microso
 export interface ICookieManager$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_Cookies_ICookieManager: never;
 
-    AppendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
+    AppendResponseCookie(context: HttpContext, key: string, value: string | null, options: CookieOptions): void;
     DeleteCookie(context: HttpContext, key: string, options: CookieOptions): void;
-    GetRequestCookie(context: HttpContext, key: string): string | undefined;
+    GetRequestCookie(context: HttpContext, key: string): string | null;
 }
 
 
@@ -40,9 +41,9 @@ export interface ITicketStore$instance {
     RenewAsync(key: string, ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task;
     RenewAsync(key: string, ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task;
     RenewAsync(key: string, ticket: AuthenticationTicket): Task;
-    RetrieveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | undefined>;
-    RetrieveAsync(key: string, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | undefined>;
-    RetrieveAsync(key: string): Task_1<AuthenticationTicket | undefined>;
+    RetrieveAsync(key: string, httpContext: HttpContext, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | null>;
+    RetrieveAsync(key: string, cancellationToken: CancellationToken): Task_1<AuthenticationTicket | null>;
+    RetrieveAsync(key: string): Task_1<AuthenticationTicket | null>;
     StoreAsync(ticket: AuthenticationTicket, httpContext: HttpContext, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     StoreAsync(ticket: AuthenticationTicket, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     StoreAsync(ticket: AuthenticationTicket): Task_1<System_Internal.String>;
@@ -59,9 +60,9 @@ export interface ChunkingCookieManager$instance extends ICookieManager$instance 
     get ChunkSize(): Nullable_1<System_Internal.Int32>;
     set ChunkSize(value: Nullable_1<System_Internal.Int32> | int);
     ThrowForPartialCookies: boolean;
-    AppendResponseCookie(context: HttpContext, key: string, value: string, options: CookieOptions): void;
+    AppendResponseCookie(context: HttpContext, key: string, value: string | null, options: CookieOptions): void;
     DeleteCookie(context: HttpContext, key: string, options: CookieOptions): void;
-    GetRequestCookie(context: HttpContext, key: string): string | undefined;
+    GetRequestCookie(context: HttpContext, key: string): string | null;
 }
 
 
@@ -116,13 +117,13 @@ export interface CookieAuthenticationHandler$instance extends SignInAuthenticati
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
-    CreateEventsAsync(): Task_1<unknown>;
+    CreateEventsAsync(): Task_1<JsValue>;
     FinishResponseAsync(): Task;
     HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
     HandleChallengeAsync(properties: AuthenticationProperties): Task;
     HandleForbiddenAsync(properties: AuthenticationProperties): Task;
-    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    HandleSignOutAsync(properties: AuthenticationProperties): Task;
+    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
+    HandleSignOutAsync(properties: AuthenticationProperties | null): Task;
     InitializeHandlerAsync(): Task;
 }
 
@@ -147,15 +148,15 @@ export interface CookieAuthenticationOptions$instance extends AuthenticationSche
     AccessDeniedPath: PathString;
     Cookie: CookieBuilder;
     CookieManager: ICookieManager;
-    get DataProtectionProvider(): IDataProtectionProvider | undefined;
-    set DataProtectionProvider(value: IDataProtectionProvider | undefined);
-    Events: unknown;
+    get DataProtectionProvider(): IDataProtectionProvider | null;
+    set DataProtectionProvider(value: IDataProtectionProvider | null);
+    Events: CookieAuthenticationEvents | JsValue;
     ExpireTimeSpan: TimeSpan;
     LoginPath: PathString;
     LogoutPath: PathString;
     ReturnUrlParameter: string;
-    get SessionStore(): ITicketStore | undefined;
-    set SessionStore(value: ITicketStore | undefined);
+    get SessionStore(): ITicketStore | null;
+    set SessionStore(value: ITicketStore | null);
     SlidingExpiration: boolean;
     TicketDataFormat: ISecureDataFormat_1<AuthenticationTicket>;
 }
@@ -175,7 +176,7 @@ export interface CookieSignedInContext$instance extends PrincipalContext_1<Cooki
 
 
 export const CookieSignedInContext: {
-    new(context: HttpContext, scheme: AuthenticationScheme, principal: ClaimsPrincipal, properties: AuthenticationProperties, options: CookieAuthenticationOptions): CookieSignedInContext;
+    new(context: HttpContext, scheme: AuthenticationScheme, principal: ClaimsPrincipal, properties: AuthenticationProperties | null, options: CookieAuthenticationOptions): CookieSignedInContext;
 };
 
 
@@ -189,7 +190,7 @@ export interface CookieSigningInContext$instance extends PrincipalContext_1<Cook
 
 
 export const CookieSigningInContext: {
-    new(context: HttpContext, scheme: AuthenticationScheme, options: CookieAuthenticationOptions, principal: ClaimsPrincipal, properties: AuthenticationProperties, cookieOptions: CookieOptions): CookieSigningInContext;
+    new(context: HttpContext, scheme: AuthenticationScheme, options: CookieAuthenticationOptions, principal: ClaimsPrincipal, properties: AuthenticationProperties | null, cookieOptions: CookieOptions): CookieSigningInContext;
 };
 
 
@@ -203,7 +204,7 @@ export interface CookieSigningOutContext$instance extends PropertiesContext_1<Co
 
 
 export const CookieSigningOutContext: {
-    new(context: HttpContext, scheme: AuthenticationScheme, options: CookieAuthenticationOptions, properties: AuthenticationProperties, cookieOptions: CookieOptions): CookieSigningOutContext;
+    new(context: HttpContext, scheme: AuthenticationScheme, options: CookieAuthenticationOptions, properties: AuthenticationProperties | null, cookieOptions: CookieOptions): CookieSigningOutContext;
 };
 
 
@@ -246,7 +247,7 @@ export interface PostConfigureCookieAuthenticationOptions$instance {
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    PostConfigure(name: string, options: CookieAuthenticationOptions): void;
+    PostConfigure(name: string | null, options: CookieAuthenticationOptions): void;
 }
 
 

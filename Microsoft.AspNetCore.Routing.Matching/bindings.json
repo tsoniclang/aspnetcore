@@ -728,7 +728,10 @@
           "isLiteral": false,
           "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer\u00601",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Routing"
+          "declaringAssemblyName": "Microsoft.AspNetCore.Routing",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "field"
+          }
         }
       ],
       "events": [],

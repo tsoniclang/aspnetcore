@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption
 // Assembly: Microsoft.AspNetCore.DataProtection
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IKey } from "../../Microsoft.AspNetCore.DataProtection.KeyManagement/internal/index.js";
@@ -39,7 +40,7 @@ export type IAuthenticatedEncryptor = IAuthenticatedEncryptor$instance;
 export interface IAuthenticatedEncryptorFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
 
-    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | null;
 }
 
 
@@ -50,7 +51,7 @@ export interface AuthenticatedEncryptorFactory$instance extends IAuthenticatedEn
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
 
-    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | null;
 }
 
 
@@ -71,7 +72,7 @@ export interface CngCbcAuthenticatedEncryptorFactory$instance extends IAuthentic
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
 
-    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | null;
 }
 
 
@@ -92,7 +93,7 @@ export interface CngGcmAuthenticatedEncryptorFactory$instance extends IAuthentic
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
 
-    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | null;
 }
 
 
@@ -113,7 +114,7 @@ export interface ManagedAuthenticatedEncryptorFactory$instance extends IAuthenti
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory: never;
 
-    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | undefined;
+    CreateEncryptorInstance(key: IKey): IAuthenticatedEncryptor | null;
 }
 
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Diagnostics.HealthChecks
 // Assembly: Microsoft.AspNetCore.Diagnostics.HealthChecks
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -32,8 +33,8 @@ export interface HealthCheckOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_HealthChecks_HealthCheckOptions: never;
 
     AllowCachingResponses: boolean;
-    get Predicate(): Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined);
+    get Predicate(): Func_2<HealthCheckRegistration, System_Internal.Boolean> | null;
+    set Predicate(value: Func_2<HealthCheckRegistration, System_Internal.Boolean> | null);
     ResponseWriter: Func_3<HttpContext, HealthReport, Task>;
     ResultStatusCodes: IDictionary_2<HealthStatus, System_Internal.Int32>;
 }

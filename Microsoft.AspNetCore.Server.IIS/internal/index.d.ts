@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Server.IIS
 // Assembly: Microsoft.AspNetCore.Server.IIS
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -60,7 +61,7 @@ export const IISServerDefaults: {
 export type IISServerDefaults = IISServerDefaults$instance;
 
 export abstract class HttpContextExtensions$instance {
-    static GetIISServerVariable(context: HttpContext, variableName: string): string | undefined;
+    static GetIISServerVariable(context: HttpContext, variableName: string): string | null;
 }
 
 

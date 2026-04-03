@@ -60,6 +60,7 @@ export { NavigationOptions as NavigationOptions } from './Microsoft.AspNetCore.C
 export { ParameterAttribute as ParameterAttribute } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { ParameterValue as ParameterValue } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { ParameterView as ParameterView } from './Microsoft.AspNetCore.Components/internal/index.js';
+export { ParameterView_Enumerator as ParameterView_Enumerator } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { PersistentComponentState as PersistentComponentState } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { PersistentComponentStateSerializer_1 as PersistentComponentStateSerializer } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { PersistingComponentStateSubscription as PersistingComponentStateSubscription } from './Microsoft.AspNetCore.Components/internal/index.js';
@@ -81,7 +82,6 @@ export { RouteData as RouteData } from './Microsoft.AspNetCore.Components/intern
 export { StreamRenderingAttribute as StreamRenderingAttribute } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { SupplyParameterFromQueryAttribute as SupplyParameterFromQueryAttribute } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { SupplyParameterFromQueryProviderServiceCollectionExtensions$instance as SupplyParameterFromQueryProviderServiceCollectionExtensions } from './Microsoft.AspNetCore.Components/internal/index.js';
-export { ParameterView_Enumerator as ParameterView_Enumerator } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { ImportMap as ImportMap } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { ImportMapDefinition as ImportMapDefinition } from './Microsoft.AspNetCore.Components/internal/index.js';
 export { ResourcePreloader as ResourcePreloader } from './Microsoft.AspNetCore.Components/internal/index.js';

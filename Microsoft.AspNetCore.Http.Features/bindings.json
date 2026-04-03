@@ -2400,7 +2400,10 @@
           "isLiteral": false,
           "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Http.Features.FeatureReference\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Features"
+          "declaringAssemblyName": "Microsoft.Extensions.Features",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "field"
+          }
         }
       ],
       "events": [],

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Metadata
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.Formatters.Xml
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IPropertyValidationFilter } from "../../Microsoft.AspNetCore.Mvc.ModelBinding.Validation/internal/index.js";
@@ -84,15 +85,15 @@ export interface ModelMetadataIdentity$instance {
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly ConstructorInfo: ConstructorInfo | undefined;
-    readonly ContainerType: Type | undefined;
+    readonly ConstructorInfo: ConstructorInfo | null;
+    readonly ContainerType: Type | null;
     readonly MetadataKind: ModelMetadataKind;
     readonly ModelType: Type;
-    readonly Name: string | undefined;
-    readonly ParameterInfo: ParameterInfo | undefined;
-    readonly PropertyInfo: PropertyInfo | undefined;
+    readonly Name: string | null;
+    readonly ParameterInfo: ParameterInfo | null;
+    readonly PropertyInfo: PropertyInfo | null;
     Equals(other: ModelMetadataIdentity): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
 }
 
@@ -113,22 +114,22 @@ export type ModelMetadataIdentity = ModelMetadataIdentity$instance;
 export interface BindingMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_BindingMetadata: never;
 
-    get BinderModelName(): string | undefined;
-    set BinderModelName(value: string | undefined);
-    get BinderType(): Type | undefined;
-    set BinderType(value: Type | undefined);
-    get BindingSource(): BindingSource | undefined;
-    set BindingSource(value: BindingSource | undefined);
-    get BoundConstructor(): ConstructorInfo | undefined;
-    set BoundConstructor(value: ConstructorInfo | undefined);
+    get BinderModelName(): string | null;
+    set BinderModelName(value: string | null);
+    get BinderType(): Type | null;
+    set BinderType(value: Type | null);
+    get BindingSource(): BindingSource | null;
+    set BindingSource(value: BindingSource | null);
+    get BoundConstructor(): ConstructorInfo | null;
+    set BoundConstructor(value: ConstructorInfo | null);
     IsBindingAllowed: boolean;
     IsBindingRequired: boolean;
     get IsReadOnly(): Nullable_1<System_Internal.Boolean>;
     set IsReadOnly(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get ModelBindingMessageProvider(): DefaultModelBindingMessageProvider | undefined;
-    set ModelBindingMessageProvider(value: DefaultModelBindingMessageProvider | undefined);
-    get PropertyFilterProvider(): IPropertyFilterProvider | undefined;
-    set PropertyFilterProvider(value: IPropertyFilterProvider | undefined);
+    get ModelBindingMessageProvider(): DefaultModelBindingMessageProvider | null;
+    set ModelBindingMessageProvider(value: DefaultModelBindingMessageProvider | null);
+    get PropertyFilterProvider(): IPropertyFilterProvider | null;
+    set PropertyFilterProvider(value: IPropertyFilterProvider | null);
 }
 
 
@@ -142,12 +143,12 @@ export type BindingMetadata = BindingMetadata$instance;
 export interface BindingMetadataProviderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_BindingMetadataProviderContext: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     readonly BindingMetadata: BindingMetadata;
     readonly Key: ModelMetadataIdentity;
-    readonly ParameterAttributes: IReadOnlyList_1<unknown> | undefined;
-    readonly PropertyAttributes: IReadOnlyList_1<unknown> | undefined;
-    readonly TypeAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly ParameterAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly PropertyAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly TypeAttributes: IReadOnlyList_1<JsValue> | null;
 }
 
 
@@ -164,14 +165,14 @@ export interface BindingSourceMetadataProvider$instance extends IMetadataDetails
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider: never;
 
-    readonly BindingSource: BindingSource | undefined;
+    readonly BindingSource: BindingSource | null;
     readonly Type: Type;
     CreateBindingMetadata(context: BindingMetadataProviderContext): void;
 }
 
 
 export const BindingSourceMetadataProvider: {
-    new(type: Type, bindingSource: BindingSource): BindingSourceMetadataProvider;
+    new(type: Type, bindingSource: BindingSource | null): BindingSourceMetadataProvider;
 };
 
 
@@ -207,26 +208,26 @@ export type DataMemberRequiredBindingMetadataProvider = DataMemberRequiredBindin
 export interface DefaultMetadataDetails$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DefaultMetadataDetails: never;
 
-    get BindingMetadata(): BindingMetadata | undefined;
-    set BindingMetadata(value: BindingMetadata | undefined);
-    get BoundConstructorInvoker(): Func_2<(unknown | undefined)[], unknown> | undefined;
-    set BoundConstructorInvoker(value: Func_2<(unknown | undefined)[], unknown> | undefined);
-    get BoundConstructorParameters(): ModelMetadata[] | undefined;
-    set BoundConstructorParameters(value: ModelMetadata[] | undefined);
-    get ContainerMetadata(): ModelMetadata | undefined;
-    set ContainerMetadata(value: ModelMetadata | undefined);
-    get DisplayMetadata(): DisplayMetadata | undefined;
-    set DisplayMetadata(value: DisplayMetadata | undefined);
+    get BindingMetadata(): BindingMetadata | null;
+    set BindingMetadata(value: BindingMetadata | null);
+    get BoundConstructorInvoker(): Func_2<(JsValue | null)[], JsValue> | null;
+    set BoundConstructorInvoker(value: Func_2<(JsValue | null)[], JsValue> | null);
+    get BoundConstructorParameters(): ModelMetadata[] | null;
+    set BoundConstructorParameters(value: ModelMetadata[] | null);
+    get ContainerMetadata(): ModelMetadata | null;
+    set ContainerMetadata(value: ModelMetadata | null);
+    get DisplayMetadata(): DisplayMetadata | null;
+    set DisplayMetadata(value: DisplayMetadata | null);
     readonly Key: ModelMetadataIdentity;
     readonly ModelAttributes: ModelAttributes;
-    get Properties(): ModelMetadata[] | undefined;
-    set Properties(value: ModelMetadata[] | undefined);
-    get PropertyGetter(): Func_2<unknown, unknown | undefined> | undefined;
-    set PropertyGetter(value: Func_2<unknown, unknown | undefined> | undefined);
-    get PropertySetter(): Action_2<unknown, unknown | undefined> | undefined;
-    set PropertySetter(value: Action_2<unknown, unknown | undefined> | undefined);
-    get ValidationMetadata(): ValidationMetadata | undefined;
-    set ValidationMetadata(value: ValidationMetadata | undefined);
+    get Properties(): ModelMetadata[] | null;
+    set Properties(value: ModelMetadata[] | null);
+    get PropertyGetter(): Func_2<JsValue, JsValue | null> | null;
+    set PropertyGetter(value: Func_2<JsValue, JsValue | null> | null);
+    get PropertySetter(): Action_2<JsValue, JsValue | null> | null;
+    set PropertySetter(value: Action_2<JsValue, JsValue | null> | null);
+    get ValidationMetadata(): ValidationMetadata | null;
+    set ValidationMetadata(value: ValidationMetadata | null);
 }
 
 
@@ -279,26 +280,26 @@ export interface DefaultModelMetadata$instance extends ModelMetadata, System_Int
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly AdditionalValues: IReadOnlyDictionary_2<unknown, unknown>;
+    readonly AdditionalValues: IReadOnlyDictionary_2<JsValue, JsValue>;
     readonly Attributes: ModelAttributes;
-    readonly BinderModelName: string | undefined;
-    readonly BinderType: Type | undefined;
+    readonly BinderModelName: string | null;
+    readonly BinderType: Type | null;
     readonly BindingMetadata: BindingMetadata;
-    readonly BindingSource: BindingSource | undefined;
-    readonly BoundConstructor: ModelMetadata | undefined;
-    readonly BoundConstructorInvoker: Func_2<(unknown | undefined)[], unknown> | undefined;
-    readonly BoundConstructorParameters: IReadOnlyList_1<ModelMetadata> | undefined;
-    readonly ContainerMetadata: ModelMetadata | undefined;
+    readonly BindingSource: BindingSource | null;
+    readonly BoundConstructor: ModelMetadata | null;
+    readonly BoundConstructorInvoker: Func_2<(JsValue | null)[], JsValue> | null;
+    readonly BoundConstructorParameters: IReadOnlyList_1<ModelMetadata> | null;
+    readonly ContainerMetadata: ModelMetadata | null;
     readonly ConvertEmptyStringToNull: boolean;
-    readonly DataTypeName: string | undefined;
-    readonly Description: string | undefined;
-    readonly DisplayFormatString: string | undefined;
+    readonly DataTypeName: string | null;
+    readonly Description: string | null;
+    readonly DisplayFormatString: string | null;
     readonly DisplayMetadata: DisplayMetadata;
-    readonly DisplayName: string | undefined;
-    readonly EditFormatString: string | undefined;
-    readonly ElementMetadata: ModelMetadata | undefined;
-    readonly EnumGroupedDisplayNamesAndValues: IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | undefined;
-    readonly EnumNamesAndValues: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined;
+    readonly DisplayName: string | null;
+    readonly EditFormatString: string | null;
+    readonly ElementMetadata: ModelMetadata | null;
+    readonly EnumGroupedDisplayNamesAndValues: IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | null;
+    readonly EnumNamesAndValues: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | null;
     readonly HasNonDefaultEditFormat: boolean;
     readonly HasValidators: Nullable_1<System_Internal.Boolean>;
     readonly HideSurroundingHtml: boolean;
@@ -310,21 +311,21 @@ export interface DefaultModelMetadata$instance extends ModelMetadata, System_Int
     readonly IsReadOnly: boolean;
     readonly IsRequired: boolean;
     readonly ModelBindingMessageProvider: ModelBindingMessageProvider;
-    readonly NullDisplayText: string | undefined;
+    readonly NullDisplayText: string | null;
     readonly Order: int;
-    readonly Placeholder: string | undefined;
+    readonly Placeholder: string | null;
     readonly Properties: ModelPropertyCollection;
-    readonly PropertyFilterProvider: IPropertyFilterProvider | undefined;
-    readonly PropertyGetter: Func_2<unknown, unknown | undefined> | undefined;
-    readonly PropertySetter: Action_2<unknown, unknown | undefined> | undefined;
-    readonly PropertyValidationFilter: IPropertyValidationFilter | undefined;
+    readonly PropertyFilterProvider: IPropertyFilterProvider | null;
+    readonly PropertyGetter: Func_2<JsValue, JsValue | null> | null;
+    readonly PropertySetter: Action_2<JsValue, JsValue | null> | null;
+    readonly PropertyValidationFilter: IPropertyValidationFilter | null;
     readonly ShowForDisplay: boolean;
     readonly ShowForEdit: boolean;
-    readonly SimpleDisplayProperty: string | undefined;
-    readonly TemplateHint: string | undefined;
+    readonly SimpleDisplayProperty: string | null;
+    readonly TemplateHint: string | null;
     readonly ValidateChildren: boolean;
     readonly ValidationMetadata: ValidationMetadata;
-    readonly ValidatorMetadata: IReadOnlyList_1<unknown>;
+    readonly ValidatorMetadata: IReadOnlyList_1<JsValue>;
     GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
     GetMetadataForType(modelType: Type): ModelMetadata;
 }
@@ -377,41 +378,41 @@ export type DefaultModelMetadataProvider = DefaultModelMetadataProvider$instance
 export interface DisplayMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DisplayMetadata: never;
 
-    readonly AdditionalValues: IDictionary_2<unknown, unknown>;
+    readonly AdditionalValues: IDictionary_2<JsValue, JsValue>;
     ConvertEmptyStringToNull: boolean;
-    get DataTypeName(): string | undefined;
-    set DataTypeName(value: string | undefined);
-    get Description(): Func_1<string | undefined> | undefined;
-    set Description(value: Func_1<string | undefined> | undefined);
-    get DisplayFormatString(): string | undefined;
-    set DisplayFormatString(value: string | undefined);
-    DisplayFormatStringProvider: Func_1<string | undefined>;
-    get DisplayName(): Func_1<string | undefined> | undefined;
-    set DisplayName(value: Func_1<string | undefined> | undefined);
-    get EditFormatString(): string | undefined;
-    set EditFormatString(value: string | undefined);
-    EditFormatStringProvider: Func_1<string | undefined>;
-    get EnumGroupedDisplayNamesAndValues(): IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | undefined;
-    set EnumGroupedDisplayNamesAndValues(value: IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | undefined);
-    get EnumNamesAndValues(): IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined;
-    set EnumNamesAndValues(value: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | undefined);
+    get DataTypeName(): string | null;
+    set DataTypeName(value: string | null);
+    get Description(): Func_1<string | null> | null;
+    set Description(value: Func_1<string | null> | null);
+    get DisplayFormatString(): string | null;
+    set DisplayFormatString(value: string | null);
+    DisplayFormatStringProvider: Func_1<string | null>;
+    get DisplayName(): Func_1<string | null> | null;
+    set DisplayName(value: Func_1<string | null> | null);
+    get EditFormatString(): string | null;
+    set EditFormatString(value: string | null);
+    EditFormatStringProvider: Func_1<string | null>;
+    get EnumGroupedDisplayNamesAndValues(): IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | null;
+    set EnumGroupedDisplayNamesAndValues(value: IEnumerable_1<KeyValuePair_2<EnumGroupAndName, System_Internal.String>> | null);
+    get EnumNamesAndValues(): IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | null;
+    set EnumNamesAndValues(value: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String> | null);
     HasNonDefaultEditFormat: boolean;
     HideSurroundingHtml: boolean;
     HtmlEncode: boolean;
     IsEnum: boolean;
     IsFlagsEnum: boolean;
-    get NullDisplayText(): string | undefined;
-    set NullDisplayText(value: string | undefined);
-    NullDisplayTextProvider: Func_1<string | undefined>;
+    get NullDisplayText(): string | null;
+    set NullDisplayText(value: string | null);
+    NullDisplayTextProvider: Func_1<string | null>;
     Order: int;
-    get Placeholder(): Func_1<string | undefined> | undefined;
-    set Placeholder(value: Func_1<string | undefined> | undefined);
+    get Placeholder(): Func_1<string | null> | null;
+    set Placeholder(value: Func_1<string | null> | null);
     ShowForDisplay: boolean;
     ShowForEdit: boolean;
-    get SimpleDisplayProperty(): string | undefined;
-    set SimpleDisplayProperty(value: string | undefined);
-    get TemplateHint(): string | undefined;
-    set TemplateHint(value: string | undefined);
+    get SimpleDisplayProperty(): string | null;
+    set SimpleDisplayProperty(value: string | null);
+    get TemplateHint(): string | null;
+    set TemplateHint(value: string | null);
 }
 
 
@@ -425,11 +426,11 @@ export type DisplayMetadata = DisplayMetadata$instance;
 export interface DisplayMetadataProviderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DisplayMetadataProviderContext: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     readonly DisplayMetadata: DisplayMetadata;
     readonly Key: ModelMetadataIdentity;
-    readonly PropertyAttributes: IReadOnlyList_1<unknown> | undefined;
-    readonly TypeAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly PropertyAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly TypeAttributes: IReadOnlyList_1<JsValue> | null;
 }
 
 
@@ -518,13 +519,13 @@ export interface ValidationMetadata$instance {
     set HasValidators(value: Nullable_1<System_Internal.Boolean> | boolean);
     get IsRequired(): Nullable_1<System_Internal.Boolean>;
     set IsRequired(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get PropertyValidationFilter(): IPropertyValidationFilter | undefined;
-    set PropertyValidationFilter(value: IPropertyValidationFilter | undefined);
+    get PropertyValidationFilter(): IPropertyValidationFilter | null;
+    set PropertyValidationFilter(value: IPropertyValidationFilter | null);
     get ValidateChildren(): Nullable_1<System_Internal.Boolean>;
     set ValidateChildren(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get ValidationModelName(): string | undefined;
-    set ValidationModelName(value: string | undefined);
-    readonly ValidatorMetadata: IList_1<unknown>;
+    get ValidationModelName(): string | null;
+    set ValidationModelName(value: string | null);
+    readonly ValidatorMetadata: IList_1<JsValue>;
 }
 
 
@@ -538,11 +539,11 @@ export type ValidationMetadata = ValidationMetadata$instance;
 export interface ValidationMetadataProviderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ValidationMetadataProviderContext: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     readonly Key: ModelMetadataIdentity;
-    readonly ParameterAttributes: IReadOnlyList_1<unknown> | undefined;
-    readonly PropertyAttributes: IReadOnlyList_1<unknown> | undefined;
-    readonly TypeAttributes: IReadOnlyList_1<unknown> | undefined;
+    readonly ParameterAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly PropertyAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly TypeAttributes: IReadOnlyList_1<JsValue> | null;
     readonly ValidationMetadata: ValidationMetadata;
 }
 

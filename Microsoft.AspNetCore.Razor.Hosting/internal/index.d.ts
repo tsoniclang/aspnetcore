@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Razor.Hosting
 // Assembly: Microsoft.AspNetCore.Razor.Runtime
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -27,7 +28,7 @@ export interface RazorCompiledItem$instance {
 
     readonly Identifier: string;
     readonly Kind: string;
-    readonly Metadata: IReadOnlyList_1<unknown>;
+    readonly Metadata: IReadOnlyList_1<JsValue>;
     readonly Type: Type;
 }
 

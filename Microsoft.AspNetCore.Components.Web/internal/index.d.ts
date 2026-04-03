@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Web
 // Assembly: Microsoft.AspNetCore.Components.Web
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
@@ -51,8 +52,8 @@ export interface DataTransfer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_DataTransfer: never;
 
     DropEffect: string;
-    get EffectAllowed(): string | undefined;
-    set EffectAllowed(value: string | undefined);
+    get EffectAllowed(): string | null;
+    set EffectAllowed(value: string | null);
     Files: string[];
     Items: DataTransferItem[];
     Types: string[];
@@ -126,13 +127,13 @@ export interface ErrorEventArgs$instance extends EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_ErrorEventArgs: never;
 
     Colno: int;
-    get Filename(): string | undefined;
-    set Filename(value: string | undefined);
+    get Filename(): string | null;
+    set Filename(value: string | null);
     Lineno: int;
-    get Message(): string | undefined;
-    set Message(value: string | undefined);
-    get Type(): string | undefined;
-    set Type(value: string | undefined);
+    get Message(): string | null;
+    set Message(value: string | null);
+    get Type(): string | null;
+    set Type(value: string | null);
 }
 
 
@@ -146,8 +147,8 @@ export type ErrorEventArgs = ErrorEventArgs$instance;
 export interface FocusEventArgs$instance extends EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Web_FocusEventArgs: never;
 
-    get Type(): string | undefined;
-    set Type(value: string | undefined);
+    get Type(): string | null;
+    set Type(value: string | null);
 }
 
 
@@ -165,8 +166,8 @@ export interface HeadContent$instance extends ComponentBase, Microsoft_AspNetCor
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    get ChildContent(): RenderFragment | undefined;
-    set ChildContent(value: RenderFragment | undefined);
+    get ChildContent(): RenderFragment | null;
+    set ChildContent(value: RenderFragment | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
 }
 
@@ -363,8 +364,8 @@ export interface PageTitle$instance extends ComponentBase, Microsoft_AspNetCore_
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    get ChildContent(): RenderFragment | undefined;
-    set ChildContent(value: RenderFragment | undefined);
+    get ChildContent(): RenderFragment | null;
+    set ChildContent(value: RenderFragment | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
 }
 
@@ -512,26 +513,26 @@ export abstract class RenderMode$instance {
 export type RenderMode = RenderMode$instance;
 
 export abstract class WebEventCallbackFactoryEventArgsExtensions$instance {
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<ClipboardEventArgs>): EventCallback_1<ClipboardEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<DragEventArgs>): EventCallback_1<DragEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<ErrorEventArgs>): EventCallback_1<ErrorEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<FocusEventArgs>): EventCallback_1<FocusEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<KeyboardEventArgs>): EventCallback_1<KeyboardEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<MouseEventArgs>): EventCallback_1<MouseEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<PointerEventArgs>): EventCallback_1<PointerEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<ProgressEventArgs>): EventCallback_1<ProgressEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<TouchEventArgs>): EventCallback_1<TouchEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Action_1<WheelEventArgs>): EventCallback_1<WheelEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<ClipboardEventArgs, Task>): EventCallback_1<ClipboardEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<DragEventArgs, Task>): EventCallback_1<DragEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<ErrorEventArgs, Task>): EventCallback_1<ErrorEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<FocusEventArgs, Task>): EventCallback_1<FocusEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<KeyboardEventArgs, Task>): EventCallback_1<KeyboardEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<MouseEventArgs, Task>): EventCallback_1<MouseEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<PointerEventArgs, Task>): EventCallback_1<PointerEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<ProgressEventArgs, Task>): EventCallback_1<ProgressEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<TouchEventArgs, Task>): EventCallback_1<TouchEventArgs>;
-    static Create(factory: EventCallbackFactory, receiver: unknown, callback: Func_2<WheelEventArgs, Task>): EventCallback_1<WheelEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<ClipboardEventArgs>): EventCallback_1<ClipboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<DragEventArgs>): EventCallback_1<DragEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<ErrorEventArgs>): EventCallback_1<ErrorEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<FocusEventArgs>): EventCallback_1<FocusEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<KeyboardEventArgs>): EventCallback_1<KeyboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<MouseEventArgs>): EventCallback_1<MouseEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<PointerEventArgs>): EventCallback_1<PointerEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<ProgressEventArgs>): EventCallback_1<ProgressEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<TouchEventArgs>): EventCallback_1<TouchEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Action_1<WheelEventArgs>): EventCallback_1<WheelEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<ClipboardEventArgs, Task>): EventCallback_1<ClipboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<DragEventArgs, Task>): EventCallback_1<DragEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<ErrorEventArgs, Task>): EventCallback_1<ErrorEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<FocusEventArgs, Task>): EventCallback_1<FocusEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<KeyboardEventArgs, Task>): EventCallback_1<KeyboardEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<MouseEventArgs, Task>): EventCallback_1<MouseEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<PointerEventArgs, Task>): EventCallback_1<PointerEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<ProgressEventArgs, Task>): EventCallback_1<ProgressEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<TouchEventArgs, Task>): EventCallback_1<TouchEventArgs>;
+    static Create(factory: EventCallbackFactory, receiver: JsValue, callback: Func_2<WheelEventArgs, Task>): EventCallback_1<WheelEventArgs>;
 }
 
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Server.Kestrel.Https
 // Assembly: Microsoft.AspNetCore.Server.Kestrel.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ConnectionContext } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
@@ -29,20 +30,20 @@ export interface HttpsConnectionAdapterOptions$instance {
 
     CheckCertificateRevocation: boolean;
     ClientCertificateMode: ClientCertificateMode;
-    get ClientCertificateValidation(): Func_4<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined;
-    set ClientCertificateValidation(value: Func_4<X509Certificate2, X509Chain | undefined, SslPolicyErrors, System_Internal.Boolean> | undefined);
+    get ClientCertificateValidation(): Func_4<X509Certificate2, X509Chain | null, SslPolicyErrors, System_Internal.Boolean> | null;
+    set ClientCertificateValidation(value: Func_4<X509Certificate2, X509Chain | null, SslPolicyErrors, System_Internal.Boolean> | null);
     HandshakeTimeout: TimeSpan;
-    get OnAuthenticate(): Action_2<ConnectionContext, SslServerAuthenticationOptions> | undefined;
-    set OnAuthenticate(value: Action_2<ConnectionContext, SslServerAuthenticationOptions> | undefined);
-    get ServerCertificate(): X509Certificate2 | undefined;
-    set ServerCertificate(value: X509Certificate2 | undefined);
-    get ServerCertificateChain(): X509Certificate2Collection | undefined;
-    set ServerCertificateChain(value: X509Certificate2Collection | undefined);
-    get ServerCertificateSelector(): Func_3<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined;
-    set ServerCertificateSelector(value: Func_3<ConnectionContext | undefined, string | undefined, X509Certificate2 | undefined> | undefined);
+    get OnAuthenticate(): Action_2<ConnectionContext, SslServerAuthenticationOptions> | null;
+    set OnAuthenticate(value: Action_2<ConnectionContext, SslServerAuthenticationOptions> | null);
+    get ServerCertificate(): X509Certificate2 | null;
+    set ServerCertificate(value: X509Certificate2 | null);
+    get ServerCertificateChain(): X509Certificate2Collection | null;
+    set ServerCertificateChain(value: X509Certificate2Collection | null);
+    get ServerCertificateSelector(): Func_3<ConnectionContext | null, string | null, X509Certificate2 | null> | null;
+    set ServerCertificateSelector(value: Func_3<ConnectionContext | null, string | null, X509Certificate2 | null> | null);
     SslProtocols: SslProtocols;
-    get TlsClientHelloBytesCallback(): Action_2<ConnectionContext | undefined, ReadOnlySequence_1<System_Internal.Byte>> | undefined;
-    set TlsClientHelloBytesCallback(value: Action_2<ConnectionContext | undefined, ReadOnlySequence_1<System_Internal.Byte>> | undefined);
+    get TlsClientHelloBytesCallback(): Action_2<ConnectionContext | null, ReadOnlySequence_1<System_Internal.Byte>> | null;
+    set TlsClientHelloBytesCallback(value: Action_2<ConnectionContext | null, ReadOnlySequence_1<System_Internal.Byte>> | null);
     AllowAnyClientCertificate(): void;
 }
 
@@ -62,8 +63,8 @@ export interface TlsHandshakeCallbackContext$instance {
     ClientHelloInfo: SslClientHelloInfo;
     Connection: ConnectionContext;
     SslStream: SslStream;
-    get State(): unknown | undefined;
-    set State(value: unknown | undefined);
+    get State(): JsValue | null;
+    set State(value: JsValue | null);
 }
 
 
@@ -79,8 +80,8 @@ export interface TlsHandshakeCallbackOptions$instance {
 
     HandshakeTimeout: TimeSpan;
     OnConnection: Func_2<TlsHandshakeCallbackContext, ValueTask_1<SslServerAuthenticationOptions>>;
-    get OnConnectionState(): unknown | undefined;
-    set OnConnectionState(value: unknown | undefined);
+    get OnConnectionState(): JsValue | null;
+    set OnConnectionState(value: JsValue | null);
 }
 
 

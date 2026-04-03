@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.WebUtilities
 // Assembly: Microsoft.AspNetCore.WebUtilities
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ContentDispositionHeaderValue } from "../../Microsoft.Net.Http.Headers/internal/index.js";
@@ -45,7 +46,7 @@ export interface QueryStringEnumerable$instance {
 
 
 export const QueryStringEnumerable: {
-    new(queryString: string): QueryStringEnumerable;
+    new(queryString: string | null): QueryStringEnumerable;
     new(queryString: ReadOnlyMemory_1<System_Internal.Char>): QueryStringEnumerable;
 };
 
@@ -138,7 +139,7 @@ export interface FileBufferingReadStream$instance extends Stream {
     readonly Length: long;
     readonly MemoryThreshold: int;
     Position: long;
-    readonly TempFileName: string | undefined;
+    readonly TempFileName: string | null;
     CopyToAsync(destination: Stream, bufferSize: int, cancellationToken: CancellationToken): Task;
     Dispose(disposing: boolean): void;
     DisposeAsync(): ValueTask;
@@ -196,7 +197,7 @@ export interface FileBufferingWriteStream$instance extends Stream {
 
 
 export const FileBufferingWriteStream: {
-    new(memoryThreshold: int, bufferLimit: Nullable_1<System_Internal.Int64>, tempFileDirectoryAccessor: Func_1<System_Internal.String>): FileBufferingWriteStream;
+    new(memoryThreshold: int, bufferLimit: Nullable_1<System_Internal.Int64>, tempFileDirectoryAccessor: Func_1<System_Internal.String> | null): FileBufferingWriteStream;
 };
 
 
@@ -206,7 +207,7 @@ export interface FileMultipartSection$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_WebUtilities_FileMultipartSection: never;
 
     readonly FileName: string;
-    readonly FileStream: Stream | undefined;
+    readonly FileStream: Stream | null;
     readonly Name: string;
     readonly Section: MultipartSection;
 }
@@ -214,7 +215,7 @@ export interface FileMultipartSection$instance {
 
 export const FileMultipartSection: {
     new(section: MultipartSection): FileMultipartSection;
-    new(section: MultipartSection, header: ContentDispositionHeaderValue): FileMultipartSection;
+    new(section: MultipartSection, header: ContentDispositionHeaderValue | null): FileMultipartSection;
 };
 
 
@@ -232,7 +233,7 @@ export interface FormMultipartSection$instance {
 
 export const FormMultipartSection: {
     new(section: MultipartSection): FormMultipartSection;
-    new(section: MultipartSection, header: ContentDispositionHeaderValue): FormMultipartSection;
+    new(section: MultipartSection, header: ContentDispositionHeaderValue | null): FormMultipartSection;
 };
 
 
@@ -298,8 +299,8 @@ export interface HttpRequestStreamReader$instance extends TextReader {
     Read(buffer: Span_1<System_Internal.Char>): int;
     ReadAsync(buffer: char[], index: int, count: int): Task_1<System_Internal.Int32>;
     ReadAsync(buffer: Memory_1<System_Internal.Char>, cancellationToken?: CancellationToken): ValueTask_1<System_Internal.Int32>;
-    ReadLine(): string | undefined;
-    ReadLineAsync(): Task_1<string | undefined>;
+    ReadLine(): string | null;
+    ReadLineAsync(): Task_1<string | null>;
     ReadToEndAsync(): Task_1<System_Internal.String>;
 }
 
@@ -327,16 +328,16 @@ export interface HttpResponseStreamWriter$instance extends TextWriter {
     Write(value: char): void;
     Write(values: char[], index: int, count: int): void;
     Write(value: ReadOnlySpan_1<System_Internal.Char>): void;
-    Write(value: string): void;
+    Write(value: string | null): void;
     WriteAsync(value: char): Task;
     WriteAsync(values: char[], index: int, count: int): Task;
-    WriteAsync(value: string): Task;
+    WriteAsync(value: string | null): Task;
     WriteAsync(value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
     WriteLine(value: ReadOnlySpan_1<System_Internal.Char>): void;
     WriteLineAsync(value: ReadOnlyMemory_1<System_Internal.Char>, cancellationToken?: CancellationToken): Task;
     WriteLineAsync(values: char[], index: int, count: int): Task;
     WriteLineAsync(value: char): Task;
-    WriteLineAsync(value: string): Task;
+    WriteLineAsync(value: string | null): Task;
 }
 
 
@@ -356,7 +357,7 @@ export interface MultipartReader$instance {
     set BodyLengthLimit(value: Nullable_1<System_Internal.Int64> | long);
     HeadersCountLimit: int;
     HeadersLengthLimit: int;
-    ReadNextSectionAsync(cancellationToken?: CancellationToken): Task_1<MultipartSection | undefined>;
+    ReadNextSectionAsync(cancellationToken?: CancellationToken): Task_1<MultipartSection | null>;
 }
 
 
@@ -376,10 +377,10 @@ export interface MultipartSection$instance {
     get BaseStreamOffset(): Nullable_1<System_Internal.Int64>;
     set BaseStreamOffset(value: Nullable_1<System_Internal.Int64> | long);
     Body: Stream;
-    readonly ContentDisposition: string | undefined;
-    readonly ContentType: string | undefined;
-    get Headers(): Dictionary_2<System_Internal.String, StringValues> | undefined;
-    set Headers(value: Dictionary_2<System_Internal.String, StringValues> | undefined);
+    readonly ContentDisposition: string | null;
+    readonly ContentType: string | null;
+    get Headers(): Dictionary_2<System_Internal.String, StringValues> | null;
+    set Headers(value: Dictionary_2<System_Internal.String, StringValues> | null);
 }
 
 
@@ -399,9 +400,9 @@ export abstract class Base64UrlTextEncoder$instance {
 export type Base64UrlTextEncoder = Base64UrlTextEncoder$instance;
 
 export abstract class MultipartSectionConverterExtensions$instance {
-    static AsFileSection(section: MultipartSection): FileMultipartSection | undefined;
-    static AsFormDataSection(section: MultipartSection): FormMultipartSection | undefined;
-    static GetContentDispositionHeader(section: MultipartSection): ContentDispositionHeaderValue | undefined;
+    static AsFileSection(section: MultipartSection): FileMultipartSection | null;
+    static AsFormDataSection(section: MultipartSection): FormMultipartSection | null;
+    static GetContentDispositionHeader(section: MultipartSection): ContentDispositionHeaderValue | null;
 }
 
 
@@ -416,12 +417,12 @@ export abstract class MultipartSectionStreamExtensions$instance {
 export type MultipartSectionStreamExtensions = MultipartSectionStreamExtensions$instance;
 
 export abstract class QueryHelpers$instance {
-    static AddQueryString(uri: string, queryString: IDictionary_2<System_Internal.String, System_Internal.String>): string;
+    static AddQueryString(uri: string, queryString: IDictionary_2<System_Internal.String, string | null>): string;
     static AddQueryString(uri: string, queryString: IEnumerable_1<KeyValuePair_2<System_Internal.String, StringValues>>): string;
     static AddQueryString(uri: string, queryString: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>): string;
     static AddQueryString(uri: string, name: string, value: string): string;
-    static ParseNullableQuery(queryString: string): Dictionary_2<System_Internal.String, StringValues> | undefined;
-    static ParseQuery(queryString: string): Dictionary_2<System_Internal.String, StringValues>;
+    static ParseNullableQuery(queryString: string | null): Dictionary_2<System_Internal.String, StringValues> | null;
+    static ParseQuery(queryString: string | null): Dictionary_2<System_Internal.String, StringValues>;
 }
 
 

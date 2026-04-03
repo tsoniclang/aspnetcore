@@ -3889,244 +3889,6 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
-      "clrName": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "Object"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664437,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664438,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 100664439,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::Current:System.Object",
-          "clrName": "Current",
-          "metadataToken": 385876347,
-          "canonicalSignature": ":System.Object",
-          "normalizedSignature": "Current|:System.Object|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
-      "clrName": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Http",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "KeyValuePair_2[[String,StringValues]]"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664010,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664012,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Synthesized",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Current",
-          "metadataToken": 385876208,
-          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.FragmentString",
       "clrName": "Microsoft.AspNetCore.Http.FragmentString",
       "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
@@ -4360,125 +4122,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
-      "clrName": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Http",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "KeyValuePair_2[[String,StringValues]]"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664018,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664020,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Synthesized",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Current",
-          "metadataToken": 385876210,
-          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HostString",
@@ -5217,125 +4860,6 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
         }
       ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
-      "clrName": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Http",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "KeyValuePair_2[[String,StringValues]]"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664074,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664076,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Synthesized",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Current",
-          "metadataToken": 385876218,
-          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.QueryString",
@@ -8203,6 +7727,125 @@
       ]
     },
     {
+      "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
+      "clrName": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "Object"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664437,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664438,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::Reset():System.Void",
+          "clrName": "Reset",
+          "metadataToken": 100664439,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Reset|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator::Current:System.Object",
+          "clrName": "Current",
+          "metadataToken": 385876347,
+          "canonicalSignature": ":System.Object",
+          "normalizedSignature": "Current|:System.Object|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.EndpointMetadataCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
       "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.EndpointSummaryAttribute",
       "clrName": "Microsoft.AspNetCore.Http.EndpointSummaryAttribute",
       "assemblyName": "Microsoft.AspNetCore.Http.Extensions",
@@ -8616,6 +8259,105 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
       ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
+      "clrName": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,StringValues]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664010,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664012,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Current",
+          "metadataToken": 385876208,
+          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.FormCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.FormFile",
@@ -11417,6 +11159,105 @@
       ]
     },
     {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
+      "clrName": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,StringValues]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664018,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664020,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Current",
+          "metadataToken": 385876210,
+          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.HeaderDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
       "stableId": "Microsoft.AspNetCore.Http.Abstractions:Microsoft.AspNetCore.Http.HttpContext",
       "clrName": "Microsoft.AspNetCore.Http.HttpContext",
       "assemblyName": "Microsoft.AspNetCore.Http.Abstractions",
@@ -13466,6 +13307,105 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Http"
         }
       ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
+      "clrName": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Http",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,StringValues]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664074,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664076,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Http:Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Current",
+          "metadataToken": 385876218,
+          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Http.QueryCollection\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Http.Extensions:Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions",

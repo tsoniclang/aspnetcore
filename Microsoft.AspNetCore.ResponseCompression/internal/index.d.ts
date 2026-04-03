@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.ResponseCompression
 // Assembly: Microsoft.AspNetCore.ResponseCompression
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -35,7 +36,7 @@ export type ICompressionProvider = ICompressionProvider$instance;
 export interface IResponseCompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider: never;
 
-    GetCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
+    GetCompressionProvider(context: HttpContext): ICompressionProvider | null;
     ShouldCompressResponse(context: HttpContext): boolean;
 }
 
@@ -195,7 +196,7 @@ export interface ResponseCompressionProvider$instance extends IResponseCompressi
     readonly __tsonic_iface_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider: never;
 
     CheckRequestAcceptsCompression(context: HttpContext): boolean;
-    GetCompressionProvider(context: HttpContext): ICompressionProvider | undefined;
+    GetCompressionProvider(context: HttpContext): ICompressionProvider | null;
     ShouldCompressResponse(context: HttpContext): boolean;
 }
 

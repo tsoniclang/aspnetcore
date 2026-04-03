@@ -23,6 +23,7 @@ import type { Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, St
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { EventData as EventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
+export { EventData_Enumerator as EventData_Enumerator } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { BeforeActionEventData as BeforeActionEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { AfterActionEventData as AfterActionEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { BeforeAuthorizationFilterOnAuthorizationEventData as BeforeAuthorizationFilterOnAuthorizationEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
@@ -51,7 +52,6 @@ export { BeforeResultFilterOnResultExecutedEventData as BeforeResultFilterOnResu
 export { AfterResultFilterOnResultExecutedEventData as AfterResultFilterOnResultExecutedEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { BeforeActionResultEventData as BeforeActionResultEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { AfterActionResultEventData as AfterActionResultEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
-export { EventData_Enumerator as EventData_Enumerator } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { BeforeViewPageEventData as BeforeViewPageEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { AfterViewPageEventData as AfterViewPageEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';
 export { BeforeHandlerMethodEventData as BeforeHandlerMethodEventData } from './Microsoft.AspNetCore.Mvc.Diagnostics/internal/index.js';

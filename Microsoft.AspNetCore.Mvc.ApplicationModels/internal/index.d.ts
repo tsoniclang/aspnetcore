@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.ApplicationModels
 // Assembly: Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.RazorPages
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IActionConstraintMetadata } from "../../Microsoft.AspNetCore.Mvc.ActionConstraints/internal/index.js";
@@ -64,8 +65,8 @@ export type IApplicationModelProvider = IApplicationModelProvider$instance;
 export interface IBindingModel$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel: never;
 
-    get BindingInfo(): BindingInfo | undefined;
-    set BindingInfo(value: BindingInfo | undefined);
+    get BindingInfo(): BindingInfo | null;
+    set BindingInfo(value: BindingInfo | null);
 }
 
 
@@ -74,10 +75,10 @@ export type IBindingModel = IBindingModel$instance;
 export interface ICommonModel$instance extends IPropertyModel {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     readonly MemberInfo: MemberInfo;
     readonly Name: string;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
@@ -117,7 +118,7 @@ export type IPageApplicationModelConvention = IPageApplicationModelConvention$in
 export interface IPageApplicationModelPartsProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelPartsProvider: never;
 
-    CreateHandlerModel(method: MethodInfo): PageHandlerModel | undefined;
+    CreateHandlerModel(method: MethodInfo): PageHandlerModel | null;
     CreateParameterModel(parameter: ParameterInfo): PageParameterModel;
     CreatePropertyModel(property: PropertyInfo): PagePropertyModel;
     IsHandler(methodInfo: MethodInfo): boolean;
@@ -197,7 +198,7 @@ export type IParameterModelConvention = IParameterModelConvention$instance;
 export interface IPropertyModel$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel: never;
 
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
@@ -214,21 +215,21 @@ export interface ActionModel$instance extends IApiExplorerModel$instance, ICommo
     readonly ActionMethod: MethodInfo;
     ActionName: string;
     ApiExplorer: ApiExplorerModel;
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     Controller: ControllerModel;
     readonly DisplayName: string;
     readonly Filters: IList_1<IFilterMetadata>;
     readonly Parameters: IList_1<ParameterModel>;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
-    get RouteParameterTransformer(): IOutboundParameterTransformer | undefined;
-    set RouteParameterTransformer(value: IOutboundParameterTransformer | undefined);
-    readonly RouteValues: IDictionary_2<System_Internal.String, string | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
+    get RouteParameterTransformer(): IOutboundParameterTransformer | null;
+    set RouteParameterTransformer(value: IOutboundParameterTransformer | null);
+    readonly RouteValues: IDictionary_2<System_Internal.String, string | null>;
     readonly Selectors: IList_1<SelectorModel>;
 }
 
 
 export const ActionModel: {
-    new(actionMethod: MethodInfo, attributes: IReadOnlyList_1<unknown>): ActionModel;
+    new(actionMethod: MethodInfo, attributes: IReadOnlyList_1<JsValue>): ActionModel;
     new(other: ActionModel): ActionModel;
 };
 
@@ -269,8 +270,8 @@ export type ApiConventionApplicationModelConvention = ApiConventionApplicationMo
 export interface ApiExplorerModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_ApiExplorerModel: never;
 
-    get GroupName(): string | undefined;
-    set GroupName(value: string | undefined);
+    get GroupName(): string | null;
+    set GroupName(value: string | null);
     get IsVisible(): Nullable_1<System_Internal.Boolean>;
     set IsVisible(value: Nullable_1<System_Internal.Boolean> | boolean);
 }
@@ -316,7 +317,7 @@ export interface ApplicationModel$instance extends IApiExplorerModel$instance, I
     ApiExplorer: ApiExplorerModel;
     readonly Controllers: IList_1<ControllerModel>;
     readonly Filters: IList_1<IFilterMetadata>;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
@@ -352,16 +353,16 @@ export type ApplicationModelProviderContext = ApplicationModelProviderContext$in
 export interface AttributeRouteModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_AttributeRouteModel: never;
 
-    readonly Attribute: IRouteTemplateProvider | undefined;
+    readonly Attribute: IRouteTemplateProvider | null;
     readonly IsAbsoluteTemplate: boolean;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     get Order(): Nullable_1<System_Internal.Int32>;
     set Order(value: Nullable_1<System_Internal.Int32> | int);
     SuppressLinkGeneration: boolean;
     SuppressPathMatching: boolean;
-    get Template(): string | undefined;
-    set Template(value: string | undefined);
+    get Template(): string | null;
+    set Template(value: string | null);
 }
 
 
@@ -369,11 +370,11 @@ export const AttributeRouteModel: {
     new(): AttributeRouteModel;
     new(templateProvider: IRouteTemplateProvider): AttributeRouteModel;
     new(other: AttributeRouteModel): AttributeRouteModel;
-    CombineAttributeRouteModel(left: AttributeRouteModel, right: AttributeRouteModel): AttributeRouteModel | undefined;
-    CombineTemplates(prefix: string, template: string): string | undefined;
-    IsOverridePattern(template: string): boolean;
-    ReplaceTokens(template: string, values: IDictionary_2<System_Internal.String, System_Internal.String>, routeTokenTransformer: IOutboundParameterTransformer): string;
-    ReplaceTokens(template: string, values: IDictionary_2<System_Internal.String, System_Internal.String>): string;
+    CombineAttributeRouteModel(left: AttributeRouteModel | null, right: AttributeRouteModel | null): AttributeRouteModel | null;
+    CombineTemplates(prefix: string | null, template: string | null): string | null;
+    IsOverridePattern(template: string | null): boolean;
+    ReplaceTokens(template: string, values: IDictionary_2<System_Internal.String, string | null>, routeTokenTransformer: IOutboundParameterTransformer | null): string;
+    ReplaceTokens(template: string, values: IDictionary_2<System_Internal.String, string | null>): string;
 };
 
 
@@ -433,22 +434,22 @@ export interface ControllerModel$instance extends IApiExplorerModel$instance, IC
 
     readonly Actions: IList_1<ActionModel>;
     ApiExplorer: ApiExplorerModel;
-    get Application(): ApplicationModel | undefined;
-    set Application(value: ApplicationModel | undefined);
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    get Application(): ApplicationModel | null;
+    set Application(value: ApplicationModel | null);
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     ControllerName: string;
     readonly ControllerProperties: IList_1<PropertyModel>;
     readonly ControllerType: TypeInfo;
     readonly DisplayName: string;
     readonly Filters: IList_1<IFilterMetadata>;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
-    readonly RouteValues: IDictionary_2<System_Internal.String, string | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
+    readonly RouteValues: IDictionary_2<System_Internal.String, string | null>;
     readonly Selectors: IList_1<SelectorModel>;
 }
 
 
 export const ControllerModel: {
-    new(controllerType: TypeInfo, attributes: IReadOnlyList_1<unknown>): ControllerModel;
+    new(controllerType: TypeInfo, attributes: IReadOnlyList_1<JsValue>): ControllerModel;
     new(other: ControllerModel): ControllerModel;
 };
 
@@ -512,27 +513,27 @@ export interface PageApplicationModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PageApplicationModel: never;
 
     readonly ActionDescriptor: PageActionDescriptor;
-    readonly AreaName: string | undefined;
-    readonly DeclaredModelType: TypeInfo | undefined;
-    readonly EndpointMetadata: IList_1<unknown>;
+    readonly AreaName: string | null;
+    readonly DeclaredModelType: TypeInfo | null;
+    readonly EndpointMetadata: IList_1<JsValue>;
     readonly Filters: IList_1<IFilterMetadata>;
     readonly HandlerMethods: IList_1<PageHandlerModel>;
     readonly HandlerProperties: IList_1<PagePropertyModel>;
     readonly HandlerType: TypeInfo;
-    readonly HandlerTypeAttributes: IReadOnlyList_1<unknown>;
-    get ModelType(): TypeInfo | undefined;
-    set ModelType(value: TypeInfo | undefined);
+    readonly HandlerTypeAttributes: IReadOnlyList_1<JsValue>;
+    get ModelType(): TypeInfo | null;
+    set ModelType(value: TypeInfo | null);
     PageType: TypeInfo;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
     readonly RelativePath: string;
-    readonly RouteTemplate: string | undefined;
+    readonly RouteTemplate: string | null;
     readonly ViewEnginePath: string;
 }
 
 
 export const PageApplicationModel: {
-    new(actionDescriptor: PageActionDescriptor, handlerType: TypeInfo, handlerAttributes: IReadOnlyList_1<unknown>): PageApplicationModel;
-    new(actionDescriptor: PageActionDescriptor, declaredModelType: TypeInfo, handlerType: TypeInfo, handlerAttributes: IReadOnlyList_1<unknown>): PageApplicationModel;
+    new(actionDescriptor: PageActionDescriptor, handlerType: TypeInfo, handlerAttributes: IReadOnlyList_1<JsValue>): PageApplicationModel;
+    new(actionDescriptor: PageActionDescriptor, declaredModelType: TypeInfo, handlerType: TypeInfo, handlerAttributes: IReadOnlyList_1<JsValue>): PageApplicationModel;
     new(other: PageApplicationModel): PageApplicationModel;
 };
 
@@ -594,20 +595,20 @@ export interface PageHandlerModel$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
-    get HandlerName(): string | undefined;
-    set HandlerName(value: string | undefined);
+    readonly Attributes: IReadOnlyList_1<JsValue>;
+    get HandlerName(): string | null;
+    set HandlerName(value: string | null);
     HttpMethod: string;
     readonly MethodInfo: MethodInfo;
     Name: string;
     Page: PageApplicationModel;
     readonly Parameters: IList_1<PageParameterModel>;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
 export const PageHandlerModel: {
-    new(handlerMethod: MethodInfo, attributes: IReadOnlyList_1<unknown>): PageHandlerModel;
+    new(handlerMethod: MethodInfo, attributes: IReadOnlyList_1<JsValue>): PageHandlerModel;
     new(other: PageHandlerModel): PageHandlerModel;
 };
 
@@ -634,7 +635,7 @@ export interface PageParameterModel$instance extends ParameterModelBase$instance
 
 
 export const PageParameterModel: {
-    new(parameterInfo: ParameterInfo, attributes: IReadOnlyList_1<unknown>): PageParameterModel;
+    new(parameterInfo: ParameterInfo, attributes: IReadOnlyList_1<JsValue>): PageParameterModel;
     new(other: PageParameterModel): PageParameterModel;
 };
 
@@ -662,7 +663,7 @@ export interface PagePropertyModel$instance extends ParameterModelBase$instance,
 
 
 export const PagePropertyModel: {
-    new(propertyInfo: PropertyInfo, attributes: IReadOnlyList_1<unknown>): PagePropertyModel;
+    new(propertyInfo: PropertyInfo, attributes: IReadOnlyList_1<JsValue>): PagePropertyModel;
     new(other: PagePropertyModel): PagePropertyModel;
 };
 
@@ -680,12 +681,12 @@ export interface PageRouteMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteMetadata: never;
 
     readonly PageRoute: string;
-    readonly RouteTemplate: string | undefined;
+    readonly RouteTemplate: string | null;
 }
 
 
 export const PageRouteMetadata: {
-    new(pageRoute: string, routeTemplate: string): PageRouteMetadata;
+    new(pageRoute: string, routeTemplate: string | null): PageRouteMetadata;
 };
 
 
@@ -694,11 +695,11 @@ export type PageRouteMetadata = PageRouteMetadata$instance;
 export interface PageRouteModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteModel: never;
 
-    readonly AreaName: string | undefined;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly AreaName: string | null;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
     readonly RelativePath: string;
-    get RouteParameterTransformer(): IOutboundParameterTransformer | undefined;
-    set RouteParameterTransformer(value: IOutboundParameterTransformer | undefined);
+    get RouteParameterTransformer(): IOutboundParameterTransformer | null;
+    set RouteParameterTransformer(value: IOutboundParameterTransformer | null);
     readonly RouteValues: IDictionary_2<System_Internal.String, System_Internal.String>;
     readonly Selectors: IList_1<SelectorModel>;
     readonly ViewEnginePath: string;
@@ -707,7 +708,7 @@ export interface PageRouteModel$instance {
 
 export const PageRouteModel: {
     new(relativePath: string, viewEnginePath: string): PageRouteModel;
-    new(relativePath: string, viewEnginePath: string, areaName: string): PageRouteModel;
+    new(relativePath: string, viewEnginePath: string, areaName: string | null): PageRouteModel;
     new(other: PageRouteModel): PageRouteModel;
 };
 
@@ -759,16 +760,16 @@ export interface ParameterModel$instance extends ParameterModelBase$instance, IB
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel: never;
 
     Action: ActionModel;
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     readonly DisplayName: string;
     readonly ParameterInfo: ParameterInfo;
     ParameterName: string;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
 export const ParameterModel: {
-    new(parameterInfo: ParameterInfo, attributes: IReadOnlyList_1<unknown>): ParameterModel;
+    new(parameterInfo: ParameterInfo, attributes: IReadOnlyList_1<JsValue>): ParameterModel;
     new(other: ParameterModel): ParameterModel;
 };
 
@@ -787,16 +788,16 @@ export interface ParameterModelBase$instance extends IBindingModel$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
-    get BindingInfo(): BindingInfo | undefined;
-    set BindingInfo(value: BindingInfo | undefined);
+    readonly Attributes: IReadOnlyList_1<JsValue>;
+    get BindingInfo(): BindingInfo | null;
+    set BindingInfo(value: BindingInfo | null);
     Name: string;
     readonly ParameterType: Type;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
 }
 
 
-export const ParameterModelBase: (abstract new(parameterType: Type, attributes: IReadOnlyList_1<unknown>) => ParameterModelBase) & (abstract new(other: ParameterModelBase) => ParameterModelBase) & {
+export const ParameterModelBase: (abstract new(parameterType: Type, attributes: IReadOnlyList_1<JsValue>) => ParameterModelBase) & (abstract new(other: ParameterModelBase) => ParameterModelBase) & {
 };
 
 
@@ -814,16 +815,16 @@ export interface PropertyModel$instance extends ParameterModelBase$instance, IBi
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel: never;
 
-    readonly Attributes: IReadOnlyList_1<unknown>;
+    readonly Attributes: IReadOnlyList_1<JsValue>;
     Controller: ControllerModel;
-    readonly Properties: IDictionary_2<unknown, unknown | undefined>;
+    readonly Properties: IDictionary_2<JsValue, JsValue | null>;
     readonly PropertyInfo: PropertyInfo;
     PropertyName: string;
 }
 
 
 export const PropertyModel: {
-    new(propertyInfo: PropertyInfo, attributes: IReadOnlyList_1<unknown>): PropertyModel;
+    new(propertyInfo: PropertyInfo, attributes: IReadOnlyList_1<JsValue>): PropertyModel;
     new(other: PropertyModel): PropertyModel;
 };
 
@@ -863,9 +864,9 @@ export interface SelectorModel$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ApplicationModels_SelectorModel: never;
 
     readonly ActionConstraints: IList_1<IActionConstraintMetadata>;
-    get AttributeRouteModel(): AttributeRouteModel | undefined;
-    set AttributeRouteModel(value: AttributeRouteModel | undefined);
-    readonly EndpointMetadata: IList_1<unknown>;
+    get AttributeRouteModel(): AttributeRouteModel | null;
+    set AttributeRouteModel(value: AttributeRouteModel | null);
+    readonly EndpointMetadata: IList_1<JsValue>;
 }
 
 

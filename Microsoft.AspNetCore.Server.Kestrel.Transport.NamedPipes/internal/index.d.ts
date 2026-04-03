@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes
 // Assembly: Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { NamedPipeEndPoint } from "../../Microsoft.AspNetCore.Connections/internal/index.js";
@@ -16,8 +17,8 @@ export interface CreateNamedPipeServerStreamContext$instance {
 
     NamedPipeEndPoint: NamedPipeEndPoint;
     PipeOptions: PipeOptions;
-    get PipeSecurity(): PipeSecurity | undefined;
-    set PipeSecurity(value: PipeSecurity | undefined);
+    get PipeSecurity(): PipeSecurity | null;
+    set PipeSecurity(value: PipeSecurity | null);
 }
 
 
@@ -38,8 +39,8 @@ export interface NamedPipeTransportOptions$instance {
     set MaxReadBufferSize(value: Nullable_1<System_Internal.Int64> | long);
     get MaxWriteBufferSize(): Nullable_1<System_Internal.Int64>;
     set MaxWriteBufferSize(value: Nullable_1<System_Internal.Int64> | long);
-    get PipeSecurity(): PipeSecurity | undefined;
-    set PipeSecurity(value: PipeSecurity | undefined);
+    get PipeSecurity(): PipeSecurity | null;
+    set PipeSecurity(value: PipeSecurity | null);
 }
 
 

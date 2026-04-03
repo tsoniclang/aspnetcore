@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel
 // Assembly: Microsoft.AspNetCore.DataProtection
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { EncryptionAlgorithm, ValidationAlgorithm } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption/internal/index.js";
@@ -106,11 +107,11 @@ export interface CngCbcAuthenticatedEncryptorConfiguration$instance extends Algo
 
     EncryptionAlgorithm: string;
     EncryptionAlgorithmKeySize: int;
-    get EncryptionAlgorithmProvider(): string | undefined;
-    set EncryptionAlgorithmProvider(value: string | undefined);
+    get EncryptionAlgorithmProvider(): string | null;
+    set EncryptionAlgorithmProvider(value: string | null);
     HashAlgorithm: string;
-    get HashAlgorithmProvider(): string | undefined;
-    set HashAlgorithmProvider(value: string | undefined);
+    get HashAlgorithmProvider(): string | null;
+    set HashAlgorithmProvider(value: string | null);
     CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 
@@ -169,8 +170,8 @@ export interface CngGcmAuthenticatedEncryptorConfiguration$instance extends Algo
 
     EncryptionAlgorithm: string;
     EncryptionAlgorithmKeySize: int;
-    get EncryptionAlgorithmProvider(): string | undefined;
-    set EncryptionAlgorithmProvider(value: string | undefined);
+    get EncryptionAlgorithmProvider(): string | null;
+    set EncryptionAlgorithmProvider(value: string | null);
     CreateNewDescriptor(): IAuthenticatedEncryptorDescriptor;
 }
 

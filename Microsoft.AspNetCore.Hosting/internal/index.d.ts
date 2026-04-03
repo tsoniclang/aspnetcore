@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Hosting
 // Assembly: Microsoft.AspNetCore.Hosting, Microsoft.AspNetCore.Hosting.Abstractions, Microsoft.AspNetCore.Server.HttpSys, Microsoft.AspNetCore.Server.IIS, Microsoft.AspNetCore.Server.IISIntegration, Microsoft.AspNetCore.Server.Kestrel, Microsoft.AspNetCore.Server.Kestrel.Core, Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes, Microsoft.AspNetCore.Server.Kestrel.Transport.Quic, Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IApplicationBuilder } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -121,8 +122,8 @@ export interface IWebHostBuilder$instance {
     Build(): IWebHost;
     ConfigureAppConfiguration(configureDelegate: Action_2<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
     ConfigureServices(configureServices: Action_1<IServiceCollection>): IWebHostBuilder;
-    GetSetting(key: string): string | undefined;
-    UseSetting(key: string, value: string): IWebHostBuilder;
+    GetSetting(key: string): string | null;
+    UseSetting(key: string, value: string | null): IWebHostBuilder;
 }
 
 
@@ -227,8 +228,8 @@ export interface WebHostBuilder$instance extends IWebHostBuilder$instance {
     ConfigureAppConfiguration(configureDelegate: Action_2<WebHostBuilderContext, IConfigurationBuilder>): IWebHostBuilder;
     ConfigureServices(configureServices: Action_1<IServiceCollection>): IWebHostBuilder;
     ConfigureServices(configureServices: Action_2<WebHostBuilderContext, IServiceCollection>): IWebHostBuilder;
-    GetSetting(key: string): string | undefined;
-    UseSetting(key: string, value: string): IWebHostBuilder;
+    GetSetting(key: string): string | null;
+    UseSetting(key: string, value: string | null): IWebHostBuilder;
 }
 
 
@@ -305,7 +306,7 @@ export abstract class KestrelServerOptionsSystemdExtensions$instance {
 export type KestrelServerOptionsSystemdExtensions = KestrelServerOptionsSystemdExtensions$instance;
 
 export abstract class ListenOptionsConnectionLoggingExtensions$instance {
-    static UseConnectionLogging(listenOptions: ListenOptions, loggerName: string): ListenOptions;
+    static UseConnectionLogging(listenOptions: ListenOptions, loggerName: string | null): ListenOptions;
     static UseConnectionLogging(listenOptions: ListenOptions): ListenOptions;
 }
 
@@ -316,16 +317,16 @@ export abstract class ListenOptionsHttpsExtensions$instance {
     static UseHttps(listenOptions: ListenOptions, httpsOptions: HttpsConnectionAdapterOptions): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, callbackOptions: TlsHandshakeCallbackOptions): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown, handshakeTimeout: TimeSpan): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: unknown): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: JsValue, handshakeTimeout: TimeSpan): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, serverOptionsSelectionCallback: ServerOptionsSelectionCallback, state: JsValue): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean, location: StoreLocation): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string, allowInvalid: boolean): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, storeName: StoreName, subject: string): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, serverCertificate: X509Certificate2): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
-    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string | null, configureOptions: Action_1<HttpsConnectionAdapterOptions>): ListenOptions;
+    static UseHttps(listenOptions: ListenOptions, fileName: string, password: string | null): ListenOptions;
     static UseHttps(listenOptions: ListenOptions, fileName: string): ListenOptions;
     static UseHttps(listenOptions: ListenOptions): ListenOptions;
 }

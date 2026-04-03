@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Authorization.Infrastructure
 // Assembly: Microsoft.AspNetCore.Authorization
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Authorization_Internal from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
@@ -45,7 +46,7 @@ export interface ClaimsAuthorizationRequirement$instance extends AuthorizationHa
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement: never;
 
-    readonly AllowedValues: IEnumerable_1<System_Internal.String> | undefined;
+    readonly AllowedValues: IEnumerable_1<System_Internal.String> | null;
     readonly ClaimType: string;
     HandleRequirementAsync(context: AuthorizationHandlerContext, requirement: ClaimsAuthorizationRequirement): Task;
     ToString(): string;
@@ -53,7 +54,7 @@ export interface ClaimsAuthorizationRequirement$instance extends AuthorizationHa
 
 
 export const ClaimsAuthorizationRequirement: {
-    new(claimType: string, allowedValues: IEnumerable_1<System_Internal.String>): ClaimsAuthorizationRequirement;
+    new(claimType: string, allowedValues: IEnumerable_1<System_Internal.String> | null): ClaimsAuthorizationRequirement;
 };
 
 

@@ -67,6 +67,7 @@ export { MvcCompatibilityOptions as MvcCompatibilityOptions } from './Microsoft.
 export { ObjectResultExecutor as ObjectResultExecutor } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 export { OutputFormatterSelector as OutputFormatterSelector } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 export { PhysicalFileResultExecutor as PhysicalFileResultExecutor } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
+export { PhysicalFileResultExecutor_FileMetadata as PhysicalFileResultExecutor_FileMetadata } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 export { ProblemDetailsFactory as ProblemDetailsFactory } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 export { RedirectResultExecutor as RedirectResultExecutor } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';
 export { RedirectToActionResultExecutor as RedirectToActionResultExecutor } from './Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js';

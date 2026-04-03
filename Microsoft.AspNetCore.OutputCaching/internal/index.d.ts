@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.OutputCaching
 // Assembly: Microsoft.AspNetCore.OutputCaching
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -22,7 +23,7 @@ export interface IOutputCacheBufferStore$instance extends IOutputCacheStore {
     EvictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
     GetAsync(key: string, cancellationToken: CancellationToken): ValueTask_1<byte[]>;
     SetAsync(key: string, value: ReadOnlySequence_1<System_Internal.Byte>, tags: ReadOnlyMemory_1<System_Internal.String>, validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
-    SetAsync(key: string, value: byte[], tags: string[], validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
+    SetAsync(key: string, value: byte[], tags: string[] | null, validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
     TryGetAsync(key: string, destination: PipeWriter, cancellationToken: CancellationToken): ValueTask_1<System_Internal.Boolean>;
 }
 
@@ -52,7 +53,7 @@ export interface IOutputCacheStore$instance {
 
     EvictByTagAsync(tag: string, cancellationToken: CancellationToken): ValueTask;
     GetAsync(key: string, cancellationToken: CancellationToken): ValueTask_1<byte[]>;
-    SetAsync(key: string, value: byte[], tags: string[], validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
+    SetAsync(key: string, value: byte[], tags: string[] | null, validFor: TimeSpan, cancellationToken: CancellationToken): ValueTask;
 }
 
 
@@ -61,8 +62,8 @@ export type IOutputCacheStore = IOutputCacheStore$instance;
 export interface CacheVaryByRules$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_CacheVaryByRules: never;
 
-    get CacheKeyPrefix(): string | undefined;
-    set CacheKeyPrefix(value: string | undefined);
+    get CacheKeyPrefix(): string | null;
+    set CacheKeyPrefix(value: string | null);
     HeaderNames: StringValues;
     QueryKeys: StringValues;
     RouteValueNames: StringValues;
@@ -83,16 +84,16 @@ export interface OutputCacheAttribute$instance extends Attribute {
 
     Duration: int;
     NoStore: boolean;
-    get PolicyName(): string | undefined;
-    set PolicyName(value: string | undefined);
-    get Tags(): string[] | undefined;
-    set Tags(value: string[] | undefined);
-    get VaryByHeaderNames(): string[] | undefined;
-    set VaryByHeaderNames(value: string[] | undefined);
-    get VaryByQueryKeys(): string[] | undefined;
-    set VaryByQueryKeys(value: string[] | undefined);
-    get VaryByRouteValueNames(): string[] | undefined;
-    set VaryByRouteValueNames(value: string[] | undefined);
+    get PolicyName(): string | null;
+    set PolicyName(value: string | null);
+    get Tags(): string[] | null;
+    set Tags(value: string[] | null);
+    get VaryByHeaderNames(): string[] | null;
+    set VaryByHeaderNames(value: string[] | null);
+    get VaryByQueryKeys(): string[] | null;
+    set VaryByQueryKeys(value: string[] | null);
+    get VaryByRouteValueNames(): string[] | null;
+    set VaryByRouteValueNames(value: string[] | null);
 }
 
 

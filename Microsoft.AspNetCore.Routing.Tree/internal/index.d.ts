@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Routing.Tree
 // Assembly: Microsoft.AspNetCore.Routing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RouteTemplate, TemplateBinder, TemplateMatcher } from "../../Microsoft.AspNetCore.Routing.Template/internal/index.js";
@@ -68,7 +69,7 @@ export interface OutboundRouteEntry$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Tree_OutboundRouteEntry: never;
 
     Constraints: IDictionary_2<System_Internal.String, IRouteConstraint>;
-    Data: unknown;
+    Data: JsValue;
     Defaults: RouteValueDictionary;
     Handler: IRouter;
     Order: int;
@@ -111,7 +112,7 @@ export interface TreeRouter$instance extends Microsoft_AspNetCore_Routing_Intern
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     readonly Version: int;
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
     RouteAsync(context: RouteContext): Task;
 }
 

@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Routing.Matching
 // Assembly: Microsoft.AspNetCore.Routing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -65,8 +63,8 @@ export interface CandidateState$instance {
 
     readonly Endpoint: Endpoint;
     readonly Score: int;
-    get Values(): RouteValueDictionary | undefined;
-    set Values(value: RouteValueDictionary | undefined);
+    get Values(): RouteValueDictionary | null;
+    set Values(value: RouteValueDictionary | null);
 }
 
 
@@ -81,12 +79,12 @@ export interface PolicyJumpTableEdge$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge: never;
 
     readonly Destination: int;
-    readonly State: unknown;
+    readonly State: JsValue;
 }
 
 
 export const PolicyJumpTableEdge: {
-    new(state: unknown, destination: int): PolicyJumpTableEdge;
+    new(state: JsValue, destination: int): PolicyJumpTableEdge;
 };
 
 
@@ -96,12 +94,12 @@ export interface PolicyNodeEdge$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge: never;
 
     readonly Endpoints: IReadOnlyList_1<Endpoint>;
-    readonly State: unknown;
+    readonly State: JsValue;
 }
 
 
 export const PolicyNodeEdge: {
-    new(state: unknown, endpoints: IReadOnlyList_1<Endpoint>): PolicyNodeEdge;
+    new(state: JsValue, endpoints: IReadOnlyList_1<Endpoint>): PolicyNodeEdge;
 };
 
 
@@ -113,7 +111,7 @@ export interface CandidateSet$instance {
     readonly Count: int;
     ExpandEndpoint(index: int, endpoints: IReadOnlyList_1<Endpoint>, comparer: IComparer_1<Endpoint>): void;
     IsValidCandidate(index: int): boolean;
-    ReplaceEndpoint(index: int, endpoint: Endpoint, values: RouteValueDictionary): void;
+    ReplaceEndpoint(index: int, endpoint: Endpoint | null, values: RouteValueDictionary | null): void;
     SetValidity(index: int, value: boolean): void;
 }
 
@@ -144,14 +142,14 @@ export interface EndpointMetadataComparer_1$instance<TMetadata> {
 
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
 
-    Compare(x: Endpoint, y: Endpoint): int;
-    CompareMetadata(x: TMetadata, y: TMetadata): int;
-    GetMetadata(endpoint: Endpoint): TMetadata | undefined;
+    Compare(x: Endpoint | null, y: Endpoint | null): int;
+    CompareMetadata(x: TMetadata | null, y: TMetadata | null): int;
+    GetMetadata(endpoint: Endpoint): TMetadata | null;
 }
 
 
 export const EndpointMetadataComparer_1: (abstract new<TMetadata>() => EndpointMetadataComparer_1<TMetadata>) & {
-    readonly Default: unknown;
+    readonly Default: <TMetadata>() => EndpointMetadataComparer_1<TMetadata>;
 };
 
 
