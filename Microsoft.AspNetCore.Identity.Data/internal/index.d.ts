@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Identity.Data
 // Assembly: Microsoft.AspNetCore.Identity
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -26,12 +27,12 @@ export type ForgotPasswordRequest = ForgotPasswordRequest$instance;
 export interface InfoRequest$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_Data_InfoRequest: never;
 
-    get NewEmail(): string | undefined;
-    set NewEmail(value: string | undefined);
-    get NewPassword(): string | undefined;
-    set NewPassword(value: string | undefined);
-    get OldPassword(): string | undefined;
-    set OldPassword(value: string | undefined);
+    get NewEmail(): string | null;
+    set NewEmail(value: string | null);
+    get NewPassword(): string | null;
+    set NewPassword(value: string | null);
+    get OldPassword(): string | null;
+    set OldPassword(value: string | null);
 }
 
 
@@ -62,10 +63,10 @@ export interface LoginRequest$instance {
 
     Email: string;
     Password: string;
-    get TwoFactorCode(): string | undefined;
-    set TwoFactorCode(value: string | undefined);
-    get TwoFactorRecoveryCode(): string | undefined;
-    set TwoFactorRecoveryCode(value: string | undefined);
+    get TwoFactorCode(): string | null;
+    set TwoFactorCode(value: string | null);
+    get TwoFactorRecoveryCode(): string | null;
+    set TwoFactorRecoveryCode(value: string | null);
 }
 
 
@@ -143,8 +144,8 @@ export interface TwoFactorRequest$instance {
     ForgetMachine: boolean;
     ResetRecoveryCodes: boolean;
     ResetSharedKey: boolean;
-    get TwoFactorCode(): string | undefined;
-    set TwoFactorCode(value: string | undefined);
+    get TwoFactorCode(): string | null;
+    set TwoFactorCode(value: string | null);
 }
 
 
@@ -160,8 +161,8 @@ export interface TwoFactorResponse$instance {
 
     IsMachineRemembered: boolean;
     IsTwoFactorEnabled: boolean;
-    get RecoveryCodes(): string[] | undefined;
-    set RecoveryCodes(value: string[] | undefined);
+    get RecoveryCodes(): string[] | null;
+    set RecoveryCodes(value: string[] | null);
     RecoveryCodesLeft: int;
     SharedKey: string;
 }

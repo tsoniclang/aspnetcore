@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.TagHelpers.Cache
 // Assembly: Microsoft.AspNetCore.Mvc.TagHelpers
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HtmlString, IHtmlContent } from "../../Microsoft.AspNetCore.Html/internal/index.js";
@@ -50,7 +51,7 @@ export interface CacheTagKey$instance {
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue): boolean;
     Equals(other: CacheTagKey): boolean;
     GenerateHashedKey(): string;
     GenerateKey(): string;

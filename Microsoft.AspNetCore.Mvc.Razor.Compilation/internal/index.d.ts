@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Razor.Compilation
 // Assembly: Microsoft.AspNetCore.Mvc.Razor
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RazorCompiledItem } from "../../Microsoft.AspNetCore.Razor.Hosting/internal/index.js";
@@ -34,14 +35,14 @@ export type IViewCompilerProvider = IViewCompilerProvider$instance;
 export interface CompiledViewDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor: never;
 
-    get ExpirationTokens(): IList_1<IChangeToken> | undefined;
-    set ExpirationTokens(value: IList_1<IChangeToken> | undefined);
-    get Item(): RazorCompiledItem | undefined;
-    set Item(value: RazorCompiledItem | undefined);
+    get ExpirationTokens(): IList_1<IChangeToken> | null;
+    set ExpirationTokens(value: IList_1<IChangeToken> | null);
+    get Item(): RazorCompiledItem | null;
+    set Item(value: RazorCompiledItem | null);
     RelativePath: string;
-    readonly Type: Type | undefined;
-    get ViewAttribute(): RazorViewAttribute | undefined;
-    set ViewAttribute(value: RazorViewAttribute | undefined);
+    readonly Type: Type | null;
+    get ViewAttribute(): RazorViewAttribute | null;
+    set ViewAttribute(value: RazorViewAttribute | null);
 }
 
 

@@ -2,11 +2,9 @@
 // Namespace: System.Threading.RateLimiting
 // Assembly: System.Threading.RateLimiting
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { IEnumerable_1, IEqualityComparer_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -48,7 +46,7 @@ export interface ConcurrencyLimiter$instance extends RateLimiter {
     Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | undefined;
+    GetStatistics(): RateLimiterStatistics | null;
 }
 
 
@@ -89,7 +87,7 @@ export interface FixedWindowRateLimiter$instance extends ReplenishingRateLimiter
     Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | undefined;
+    GetStatistics(): RateLimiterStatistics | null;
     TryReplenish(): boolean;
 }
 
@@ -125,8 +123,8 @@ export interface MetadataName_1$instance<T> {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Name: string;
-    Equals(obj: unknown): boolean;
-    Equals(other: MetadataName_1<T>): boolean;
+    Equals(obj: JsValue | null): boolean;
+    Equals(other: MetadataName_1<T> | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -153,7 +151,7 @@ export interface PartitionedRateLimiter_1$instance<TResource> {
     Dispose(): void;
     DisposeAsync(): ValueTask;
     DisposeAsyncCore(): ValueTask;
-    GetStatistics(resource: TResource): RateLimiterStatistics | undefined;
+    GetStatistics(resource: TResource): RateLimiterStatistics | null;
     WithTranslatedKey<TOuter>(keyAdapter: Func_2<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
 }
 
@@ -179,7 +177,7 @@ export interface RateLimiter$instance {
     Dispose(): void;
     DisposeAsync(): ValueTask;
     DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | undefined;
+    GetStatistics(): RateLimiterStatistics | null;
 }
 
 
@@ -216,8 +214,8 @@ export interface RateLimitLease$instance {
     readonly MetadataNames: IEnumerable_1<System_Internal.String>;
     Dispose(): void;
     Dispose(disposing: boolean): void;
-    GetAllMetadata(): IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>;
-    TryGetMetadata(metadataName: string, metadata: unknown): boolean;
+    GetAllMetadata(): IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>>;
+    TryGetMetadata(metadataName: string, metadata: JsValue | null): boolean;
     TryGetMetadata<T>(metadataName: MetadataName_1<T>, metadata: T): boolean;
 }
 
@@ -260,7 +258,7 @@ export interface SlidingWindowRateLimiter$instance extends ReplenishingRateLimit
     Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | undefined;
+    GetStatistics(): RateLimiterStatistics | null;
     TryReplenish(): boolean;
 }
 
@@ -305,7 +303,7 @@ export interface TokenBucketRateLimiter$instance extends ReplenishingRateLimiter
     Dispose(disposing: boolean): void;
     Dispose(): void;
     DisposeAsyncCore(): ValueTask;
-    GetStatistics(): RateLimiterStatistics | undefined;
+    GetStatistics(): RateLimiterStatistics | null;
     TryReplenish(): boolean;
 }
 
@@ -346,7 +344,7 @@ export abstract class MetadataName$instance {
 export type MetadataName = MetadataName$instance;
 
 export abstract class PartitionedRateLimiter$instance {
-    static Create<TResource, TPartitionKey>(partitioner: Func_2<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer_1<TPartitionKey>): PartitionedRateLimiter_1<TResource>;
+    static Create<TResource, TPartitionKey>(partitioner: Func_2<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer_1<TPartitionKey> | null): PartitionedRateLimiter_1<TResource>;
     static CreateChained<TResource>(...limiters: PartitionedRateLimiter_1<TResource>[]): PartitionedRateLimiter_1<TResource>;
 }
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Authentication.OAuth
 // Assembly: Microsoft.AspNetCore.Authentication.OAuth
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ClaimActionCollection } from "../../Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js";
@@ -32,8 +33,8 @@ export interface OAuthChallengeProperties$instance extends AuthenticationPropert
 
 export const OAuthChallengeProperties: {
     new(): OAuthChallengeProperties;
-    new(items: IDictionary_2<System_Internal.String, System_Internal.String>): OAuthChallengeProperties;
-    new(items: IDictionary_2<System_Internal.String, System_Internal.String>, parameters: IDictionary_2<System_Internal.String, unknown>): OAuthChallengeProperties;
+    new(items: IDictionary_2<System_Internal.String, string | null>): OAuthChallengeProperties;
+    new(items: IDictionary_2<System_Internal.String, string | null> | null, parameters: IDictionary_2<System_Internal.String, JsValue | null> | null): OAuthChallengeProperties;
     readonly ScopeKey: string;
 };
 
@@ -59,13 +60,13 @@ export type OAuthCodeExchangeContext = OAuthCodeExchangeContext$instance;
 export interface OAuthCreatingTicketContext$instance extends ResultContext_1<OAuthOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_OAuthCreatingTicketContext: never;
 
-    readonly AccessToken: string | undefined;
+    readonly AccessToken: string | null;
     readonly Backchannel: HttpClient;
     readonly ExpiresIn: Nullable_1<TimeSpan>;
-    readonly Identity: ClaimsIdentity | undefined;
-    readonly RefreshToken: string | undefined;
+    readonly Identity: ClaimsIdentity | null;
+    readonly RefreshToken: string | null;
     readonly TokenResponse: OAuthTokenResponse;
-    readonly TokenType: string | undefined;
+    readonly TokenType: string | null;
     readonly User: JsonElement;
     RunClaimActions(): void;
     RunClaimActions(userData: JsonElement): void;
@@ -103,7 +104,7 @@ export interface OAuthHandler_1$instance<TOptions extends OAuthOptions> extends 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
     BuildChallengeUrl(properties: AuthenticationProperties, redirectUri: string): string;
-    CreateEventsAsync(): Task_1<unknown>;
+    CreateEventsAsync(): Task_1<JsValue>;
     CreateTicketAsync(identity: ClaimsIdentity, properties: AuthenticationProperties, tokens: OAuthTokenResponse): Task_1<AuthenticationTicket>;
     ExchangeCodeAsync(context: OAuthCodeExchangeContext): Task_1<OAuthTokenResponse>;
     FormatScope(scopes: IEnumerable_1<System_Internal.String>): string;
@@ -134,7 +135,7 @@ export interface OAuthOptions$instance extends RemoteAuthenticationOptions {
     readonly ClaimActions: ClaimActionCollection;
     ClientId: string;
     ClientSecret: string;
-    Events: unknown;
+    Events: JsValue | OAuthEvents | RemoteAuthenticationEvents;
     readonly Scope: ICollection_1<System_Internal.String>;
     StateDataFormat: ISecureDataFormat_1<AuthenticationProperties>;
     TokenEndpoint: string;
@@ -157,18 +158,18 @@ export interface OAuthTokenResponse$instance {
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get AccessToken(): string | undefined;
-    set AccessToken(value: string | undefined);
-    get Error(): Exception | undefined;
-    set Error(value: Exception | undefined);
-    get ExpiresIn(): string | undefined;
-    set ExpiresIn(value: string | undefined);
-    get RefreshToken(): string | undefined;
-    set RefreshToken(value: string | undefined);
-    get Response(): JsonDocument | undefined;
-    set Response(value: JsonDocument | undefined);
-    get TokenType(): string | undefined;
-    set TokenType(value: string | undefined);
+    get AccessToken(): string | null;
+    set AccessToken(value: string | null);
+    get Error(): Exception | null;
+    set Error(value: Exception | null);
+    get ExpiresIn(): string | null;
+    set ExpiresIn(value: string | null);
+    get RefreshToken(): string | null;
+    set RefreshToken(value: string | null);
+    get Response(): JsonDocument | null;
+    set Response(value: JsonDocument | null);
+    get TokenType(): string | null;
+    set TokenType(value: string | null);
     Dispose(): void;
 }
 

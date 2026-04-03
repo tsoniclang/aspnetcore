@@ -39,6 +39,7 @@ export { HubConnectionContext as HubConnectionContext } from './Microsoft.AspNet
 export { HubConnectionContextOptions as HubConnectionContextOptions } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { HubConnectionHandler_1 as HubConnectionHandler } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { HubConnectionStore as HubConnectionStore } from './Microsoft.AspNetCore.SignalR/internal/index.js';
+export { HubConnectionStore_Enumerator as HubConnectionStore_Enumerator } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { HubInvocationContext as HubInvocationContext } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { HubLifetimeContext as HubLifetimeContext } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { HubLifetimeManager_1 as HubLifetimeManager } from './Microsoft.AspNetCore.SignalR/internal/index.js';
@@ -56,7 +57,6 @@ export type IUserIdProvider = Internal.IUserIdProvider;
 export { SerializedHubMessage as SerializedHubMessage } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { SerializedMessage as SerializedMessage } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { SignalRConnectionBuilderExtensions$instance as SignalRConnectionBuilderExtensions } from './Microsoft.AspNetCore.SignalR/internal/index.js';
-export { HubConnectionStore_Enumerator as HubConnectionStore_Enumerator } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 export { JsonHubProtocolOptions as JsonHubProtocolOptions } from './Microsoft.AspNetCore.SignalR/internal/index.js';
 
 // Multi-arity family value exports (arity-0 constructors/static namespaces)

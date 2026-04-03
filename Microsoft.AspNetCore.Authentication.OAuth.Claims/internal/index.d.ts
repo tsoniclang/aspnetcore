@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Authentication.OAuth.Claims
 // Assembly: Microsoft.AspNetCore.Authentication.OAuth
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -53,13 +54,13 @@ export type ClaimActionCollection = ClaimActionCollection$instance;
 export interface CustomJsonClaimAction$instance extends ClaimAction {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_OAuth_Claims_CustomJsonClaimAction: never;
 
-    readonly Resolver: Func_2<JsonElement, string | undefined>;
+    readonly Resolver: Func_2<JsonElement, string | null>;
     Run(userData: JsonElement, identity: ClaimsIdentity, issuer: string): void;
 }
 
 
 export const CustomJsonClaimAction: {
-    new(claimType: string, valueType: string, resolver: Func_2<JsonElement, System_Internal.String>): CustomJsonClaimAction;
+    new(claimType: string, valueType: string, resolver: Func_2<JsonElement, string | null>): CustomJsonClaimAction;
 };
 
 

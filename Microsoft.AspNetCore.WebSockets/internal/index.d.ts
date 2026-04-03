@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.WebSockets
 // Assembly: Microsoft.AspNetCore.WebSockets
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { WebSocketOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -23,8 +24,8 @@ export interface ExtendedWebSocketAcceptContext$instance extends WebSocketAccept
     set KeepAliveInterval(value: Nullable_1<TimeSpan> | TimeSpan);
     get ReceiveBufferSize(): Nullable_1<System_Internal.Int32>;
     set ReceiveBufferSize(value: Nullable_1<System_Internal.Int32> | int);
-    get SubProtocol(): string | undefined;
-    set SubProtocol(value: string | undefined);
+    get SubProtocol(): string | null;
+    set SubProtocol(value: string | null);
 }
 
 

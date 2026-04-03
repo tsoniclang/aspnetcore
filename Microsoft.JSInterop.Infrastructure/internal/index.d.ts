@@ -2,11 +2,9 @@
 // Namespace: Microsoft.JSInterop.Infrastructure
 // Assembly: Microsoft.JSInterop
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { JSCallResultType, JSRuntime } from "../../Microsoft.JSInterop/internal/index.js";
@@ -32,15 +30,15 @@ export type IJSVoidResult = IJSVoidResult$instance;
 export interface DotNetInvocationInfo$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_DotNetInvocationInfo: never;
 
-    readonly AssemblyName: string | undefined;
-    readonly CallId: string | undefined;
+    readonly AssemblyName: string | null;
+    readonly CallId: string | null;
     readonly DotNetObjectId: long;
     readonly MethodIdentifier: string;
 }
 
 
 export const DotNetInvocationInfo: {
-    new(assemblyName: string, methodIdentifier: string, dotNetObjectId: long, callId: string): DotNetInvocationInfo;
+    new(assemblyName: string | null, methodIdentifier: string, dotNetObjectId: long, callId: string | null): DotNetInvocationInfo;
 };
 
 
@@ -49,9 +47,9 @@ export type DotNetInvocationInfo = DotNetInvocationInfo$instance;
 export interface DotNetInvocationResult$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Infrastructure_DotNetInvocationResult: never;
 
-    readonly ErrorKind: string | undefined;
-    readonly Exception: Exception | undefined;
-    readonly ResultJson: string | undefined;
+    readonly ErrorKind: string | null;
+    readonly Exception: Exception | null;
+    readonly ResultJson: string | null;
     readonly Success: boolean;
 }
 
@@ -85,7 +83,7 @@ export type JSInvocationInfo = JSInvocationInfo$instance;
 export abstract class DotNetDispatcher$instance {
     static BeginInvokeDotNet(jsRuntime: JSRuntime, invocationInfo: DotNetInvocationInfo, argsJson: string): void;
     static EndInvokeJS(jsRuntime: JSRuntime, arguments: string): void;
-    static Invoke(jsRuntime: JSRuntime, invocationInfo: DotNetInvocationInfo, argsJson: string): string | undefined;
+    static Invoke(jsRuntime: JSRuntime, invocationInfo: DotNetInvocationInfo, argsJson: string): string | null;
     static ReceiveByteArray(jsRuntime: JSRuntime, id: int, data: byte[]): void;
 }
 

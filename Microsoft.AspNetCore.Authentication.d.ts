@@ -6,7 +6,9 @@
 import * as Internal from './Microsoft.AspNetCore.Authentication/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { BearerTokenEvents } from './Microsoft.AspNetCore.Authentication.BearerToken/internal/index.js';
 import type { ClaimActionCollection } from './Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js';
+import type { OAuthEvents } from './Microsoft.AspNetCore.Authentication.OAuth/internal/index.js';
 import type { IDataProtectionProvider, IDataProtector } from './Microsoft.AspNetCore.DataProtection/internal/index.js';
 import type { CookieBuilder, CookieOptions, CookieSecurePolicy, HttpContext, HttpRequest, HttpResponse, PathString, RequestDelegate, SameSiteMode } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { IDictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';

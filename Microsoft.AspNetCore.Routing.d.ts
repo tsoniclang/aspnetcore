@@ -94,11 +94,11 @@ export { LinkGenerator as LinkGenerator } from './Microsoft.AspNetCore.Routing/i
 export { LinkOptions as LinkOptions } from './Microsoft.AspNetCore.Routing/internal/index.js';
 export { RouteContext as RouteContext } from './Microsoft.AspNetCore.Routing/internal/index.js';
 export { RouteData as RouteData } from './Microsoft.AspNetCore.Routing/internal/index.js';
+export { RouteData_RouteDataSnapshot as RouteData_RouteDataSnapshot } from './Microsoft.AspNetCore.Routing/internal/index.js';
 export { RouteDirection as RouteDirection } from './Microsoft.AspNetCore.Routing/internal/index.js';
 export { RoutingHttpContextExtensions$instance as RoutingHttpContextExtensions } from './Microsoft.AspNetCore.Routing/internal/index.js';
 export { VirtualPathContext as VirtualPathContext } from './Microsoft.AspNetCore.Routing/internal/index.js';
 export { VirtualPathData as VirtualPathData } from './Microsoft.AspNetCore.Routing/internal/index.js';
-export { RouteData_RouteDataSnapshot as RouteData_RouteDataSnapshot } from './Microsoft.AspNetCore.Routing/internal/index.js';
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Routing as ExtensionMethods } from './__internal/extensions/index.js';
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Formatters.Xml
 // Assembly: Microsoft.AspNetCore.Mvc.Formatters.Xml
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Mvc_Infrastructure_Internal from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
@@ -23,7 +24,7 @@ import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, String as
 export interface IUnwrappable$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
 
-    Unwrap(declaredType: Type): unknown;
+    Unwrap(declaredType: Type): JsValue;
 }
 
 
@@ -33,7 +34,7 @@ export interface IWrapperProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
-    Wrap(original: unknown): unknown | undefined;
+    Wrap(original: JsValue | null): JsValue | null;
 }
 
 
@@ -42,7 +43,7 @@ export type IWrapperProvider = IWrapperProvider$instance;
 export interface IWrapperProviderFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory: never;
 
-    GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
+    GetProvider(context: WrapperProviderContext): IWrapperProvider | null;
 }
 
 
@@ -54,7 +55,7 @@ export interface DelegatingEnumerable_2$instance<TWrapped, TDeclared> {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Add(item: unknown): void;
+    Add(item: JsValue): void;
     GetEnumerator(): IEnumerator_1<TWrapped>;
 }
 
@@ -82,7 +83,7 @@ export interface DelegatingEnumerator_2$instance<TWrapped, TDeclared> {
 
 
 export const DelegatingEnumerator_2: {
-    new<TWrapped, TDeclared>(inner: IEnumerator_1<TDeclared>, wrapperProvider: IWrapperProvider): DelegatingEnumerator_2<TWrapped, TDeclared>;
+    new<TWrapped, TDeclared>(inner: IEnumerator_1<TDeclared>, wrapperProvider: IWrapperProvider | null): DelegatingEnumerator_2<TWrapped, TDeclared>;
 };
 
 
@@ -94,12 +95,12 @@ export interface EnumerableWrapperProvider$instance extends IWrapperProvider$ins
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
-    Wrap(original: unknown): unknown | undefined;
+    Wrap(original: JsValue | null): JsValue | null;
 }
 
 
 export const EnumerableWrapperProvider: {
-    new(sourceEnumerableOfT: Type, elementWrapperProvider: IWrapperProvider): EnumerableWrapperProvider;
+    new(sourceEnumerableOfT: Type, elementWrapperProvider: IWrapperProvider | null): EnumerableWrapperProvider;
 };
 
 
@@ -115,7 +116,7 @@ export interface EnumerableWrapperProviderFactory$instance extends IWrapperProvi
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory: never;
 
-    GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
+    GetProvider(context: WrapperProviderContext): IWrapperProvider | null;
 }
 
 
@@ -153,7 +154,7 @@ export interface ProblemDetailsWrapper$instance extends IUnwrappable$instance, S
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable: never;
     readonly __tsonic_iface_System_Xml_Serialization_IXmlSerializable: never;
 
-    GetSchema(): XmlSchema | undefined;
+    GetSchema(): XmlSchema | null;
     ReadValue(reader: XmlReader, name: string): void;
     ReadXml(reader: XmlReader): void;
     WriteXml(writer: XmlWriter): void;
@@ -181,9 +182,9 @@ export interface SerializableErrorWrapper$instance extends IUnwrappable$instance
     readonly __tsonic_iface_System_Xml_Serialization_IXmlSerializable: never;
 
     readonly SerializableError: SerializableError;
-    GetSchema(): XmlSchema | undefined;
+    GetSchema(): XmlSchema | null;
     ReadXml(reader: XmlReader): void;
-    Unwrap(declaredType: Type): unknown;
+    Unwrap(declaredType: Type): JsValue;
     WriteXml(writer: XmlWriter): void;
 }
 
@@ -207,7 +208,7 @@ export interface SerializableErrorWrapperProvider$instance extends IWrapperProvi
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider: never;
 
     readonly WrappingType: Type;
-    Wrap(original: unknown): unknown | undefined;
+    Wrap(original: JsValue | null): JsValue | null;
 }
 
 
@@ -228,7 +229,7 @@ export interface SerializableErrorWrapperProviderFactory$instance extends IWrapp
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory: never;
 
-    GetProvider(context: WrapperProviderContext): IWrapperProvider | undefined;
+    GetProvider(context: WrapperProviderContext): IWrapperProvider | null;
 }
 
 
@@ -284,7 +285,7 @@ export const WrapperProviderContext: {
 export type WrapperProviderContext = WrapperProviderContext$instance;
 
 export abstract class WrapperProviderFactoriesExtensions$instance {
-    static GetWrapperProvider(wrapperProviderFactories: IEnumerable_1<IWrapperProviderFactory>, wrapperProviderContext: WrapperProviderContext): IWrapperProvider | undefined;
+    static GetWrapperProvider(wrapperProviderFactories: IEnumerable_1<IWrapperProviderFactory>, wrapperProviderContext: WrapperProviderContext): IWrapperProvider | null;
 }
 
 

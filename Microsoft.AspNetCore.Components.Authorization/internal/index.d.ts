@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Authorization
 // Assembly: Microsoft.AspNetCore.Components.Authorization
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
@@ -94,12 +95,12 @@ export interface AuthorizeRouteView$instance extends RouteView, Microsoft_AspNet
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
 
-    get Authorizing(): RenderFragment | undefined;
-    set Authorizing(value: RenderFragment | undefined);
-    get NotAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set NotAuthorized(value: RenderFragment_1<AuthenticationState> | undefined);
-    get Resource(): unknown | undefined;
-    set Resource(value: unknown | undefined);
+    get Authorizing(): RenderFragment | null;
+    set Authorizing(value: RenderFragment | null);
+    get NotAuthorized(): RenderFragment_1<AuthenticationState> | null;
+    set NotAuthorized(value: RenderFragment_1<AuthenticationState> | null);
+    get Resource(): JsValue | null;
+    set Resource(value: JsValue | null);
     Render(builder: RenderTreeBuilder): void;
 }
 
@@ -123,10 +124,10 @@ export interface AuthorizeView$instance extends AuthorizeViewCore$instance, Micr
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    get Policy(): string | undefined;
-    set Policy(value: string | undefined);
-    get Roles(): string | undefined;
-    set Roles(value: string | undefined);
+    get Policy(): string | null;
+    set Policy(value: string | null);
+    get Roles(): string | null;
+    set Roles(value: string | null);
     GetAuthorizeData(): IAuthorizeData[];
 }
 
@@ -152,18 +153,18 @@ export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_Asp
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    get Authorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set Authorized(value: RenderFragment_1<AuthenticationState> | undefined);
-    get Authorizing(): RenderFragment | undefined;
-    set Authorizing(value: RenderFragment | undefined);
-    get ChildContent(): RenderFragment_1<AuthenticationState> | undefined;
-    set ChildContent(value: RenderFragment_1<AuthenticationState> | undefined);
-    get NotAuthorized(): RenderFragment_1<AuthenticationState> | undefined;
-    set NotAuthorized(value: RenderFragment_1<AuthenticationState> | undefined);
-    get Resource(): unknown | undefined;
-    set Resource(value: unknown | undefined);
+    get Authorized(): RenderFragment_1<AuthenticationState> | null;
+    set Authorized(value: RenderFragment_1<AuthenticationState> | null);
+    get Authorizing(): RenderFragment | null;
+    set Authorizing(value: RenderFragment | null);
+    get ChildContent(): RenderFragment_1<AuthenticationState> | null;
+    set ChildContent(value: RenderFragment_1<AuthenticationState> | null);
+    get NotAuthorized(): RenderFragment_1<AuthenticationState> | null;
+    set NotAuthorized(value: RenderFragment_1<AuthenticationState> | null);
+    get Resource(): JsValue | null;
+    set Resource(value: JsValue | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
-    GetAuthorizeData(): IAuthorizeData[] | undefined;
+    GetAuthorizeData(): IAuthorizeData[] | null;
     OnParametersSetAsync(): Task;
 }
 
@@ -189,8 +190,8 @@ export interface CascadingAuthenticationState$instance extends ComponentBase, Mi
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get ChildContent(): RenderFragment | undefined;
-    set ChildContent(value: RenderFragment | undefined);
+    get ChildContent(): RenderFragment | null;
+    set ChildContent(value: RenderFragment | null);
     BuildRenderTree(__builder: RenderTreeBuilder): void;
     OnInitialized(): void;
 }

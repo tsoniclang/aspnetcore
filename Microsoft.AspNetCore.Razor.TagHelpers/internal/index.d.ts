@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Razor.TagHelpers
 // Assembly: Microsoft.AspNetCore.Razor
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Html_Internal from "../../Microsoft.AspNetCore.Html/internal/index.js";
@@ -260,11 +258,11 @@ export interface TagHelperAttribute$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 
     readonly Name: string;
-    readonly Value: unknown;
+    readonly Value: JsValue;
     readonly ValueStyle: HtmlAttributeValueStyle;
     CopyTo(destination: IHtmlContentBuilder): void;
     Equals(other: TagHelperAttribute): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue): boolean;
     GetHashCode(): int;
     MoveTo(destination: IHtmlContentBuilder): void;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -273,8 +271,8 @@ export interface TagHelperAttribute$instance {
 
 export const TagHelperAttribute: {
     new(name: string): TagHelperAttribute;
-    new(name: string, value: unknown): TagHelperAttribute;
-    new(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): TagHelperAttribute;
+    new(name: string, value: JsValue): TagHelperAttribute;
+    new(name: string, value: JsValue, valueStyle: HtmlAttributeValueStyle): TagHelperAttribute;
 };
 
 
@@ -298,14 +296,14 @@ export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttrib
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add(name: string, value: unknown): void;
+    Add(name: string, value: JsValue): void;
     Add(attribute: TagHelperAttribute): void;
     Clear(): void;
     Insert(index: int, attribute: TagHelperAttribute): void;
     Remove(attribute: TagHelperAttribute): boolean;
     RemoveAll(name: string): boolean;
     RemoveAt(index: int): void;
-    SetAttribute(name: string, value: unknown): void;
+    SetAttribute(name: string, value: JsValue): void;
     SetAttribute(attribute: TagHelperAttribute): void;
 }
 
@@ -352,8 +350,8 @@ export interface TagHelperContent$instance {
     readonly IsEmptyOrWhiteSpace: boolean;
     readonly IsModified: boolean;
     Append(unencoded: string): TagHelperContent;
-    AppendFormat(format: string, ...args: unknown[]): TagHelperContent;
-    AppendFormat(provider: IFormatProvider, format: string, ...args: unknown[]): TagHelperContent;
+    AppendFormat(format: string, ...args: JsValue[]): TagHelperContent;
+    AppendFormat(provider: IFormatProvider, format: string, ...args: JsValue[]): TagHelperContent;
     AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
     AppendHtml(encoded: string): TagHelperContent;
     Clear(): TagHelperContent;
@@ -386,17 +384,17 @@ export interface TagHelperContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext: never;
 
     readonly AllAttributes: ReadOnlyTagHelperAttributeList;
-    Items: IDictionary_2<unknown, unknown>;
+    Items: IDictionary_2<JsValue, JsValue>;
     TagName: string;
     UniqueId: string;
-    Reinitialize(tagName: string, items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
-    Reinitialize(items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
+    Reinitialize(tagName: string, items: IDictionary_2<JsValue, JsValue>, uniqueId: string): void;
+    Reinitialize(items: IDictionary_2<JsValue, JsValue>, uniqueId: string): void;
 }
 
 
 export const TagHelperContext: {
-    new(tagName: string, allAttributes: TagHelperAttributeList, items: IDictionary_2<unknown, unknown>, uniqueId: string): TagHelperContext;
-    new(allAttributes: TagHelperAttributeList, items: IDictionary_2<unknown, unknown>, uniqueId: string): TagHelperContext;
+    new(tagName: string, allAttributes: TagHelperAttributeList, items: IDictionary_2<JsValue, JsValue>, uniqueId: string): TagHelperContext;
+    new(allAttributes: TagHelperAttributeList, items: IDictionary_2<JsValue, JsValue>, uniqueId: string): TagHelperContext;
 };
 
 

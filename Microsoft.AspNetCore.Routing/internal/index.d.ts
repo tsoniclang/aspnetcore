@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Routing
 // Assembly: Microsoft.AspNetCore.Http.Abstractions, Microsoft.AspNetCore.Identity, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Routing, Microsoft.AspNetCore.Routing.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Builder_Internal from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -38,7 +36,7 @@ export enum RouteDirection {
 export interface IDataTokensMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IDataTokensMetadata: never;
 
-    readonly DataTokens: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
+    readonly DataTokens: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>;
 }
 
 
@@ -122,7 +120,7 @@ export type IHttpMethodMetadata = IHttpMethodMetadata$instance;
 export interface IInlineConstraintResolver$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IInlineConstraintResolver: never;
 
-    ResolveConstraint(inlineConstraint: string): IRouteConstraint | undefined;
+    ResolveConstraint(inlineConstraint: string): IRouteConstraint | null;
 }
 
 
@@ -131,8 +129,8 @@ export type IInlineConstraintResolver = IInlineConstraintResolver$instance;
 export interface INamedRouter$instance extends IRouter {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_INamedRouter: never;
 
-    readonly Name: string | undefined;
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    readonly Name: string | null;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
     RouteAsync(context: RouteContext): Task;
 }
 
@@ -144,7 +142,7 @@ export type INamedRouter = INamedRouter$instance;
 export interface IOutboundParameterTransformer$instance extends IParameterPolicy {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IOutboundParameterTransformer: never;
 
-    TransformOutbound(value: unknown): string | undefined;
+    TransformOutbound(value: JsValue | null): string | null;
 }
 
 
@@ -164,8 +162,8 @@ export interface IRouteBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteBuilder: never;
 
     readonly ApplicationBuilder: IApplicationBuilder;
-    get DefaultHandler(): IRouter | undefined;
-    set DefaultHandler(value: IRouter | undefined);
+    get DefaultHandler(): IRouter | null;
+    set DefaultHandler(value: IRouter | null);
     readonly ServiceProvider: IServiceProvider;
     readonly Routes: IList_1<IRouter>;
     Build(): IRouter;
@@ -178,7 +176,7 @@ export interface IRouteCollection$instance extends IRouter {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteCollection: never;
 
     Add(router: IRouter): void;
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
     RouteAsync(context: RouteContext): Task;
 }
 
@@ -190,7 +188,7 @@ export type IRouteCollection = IRouteCollection$instance;
 export interface IRouteConstraint$instance extends IParameterPolicy {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -210,7 +208,7 @@ export type IRouteHandler = IRouteHandler$instance;
 export interface IRouteNameMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteNameMetadata: never;
 
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
 }
 
 
@@ -219,7 +217,7 @@ export type IRouteNameMetadata = IRouteNameMetadata$instance;
 export interface IRouter$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
     RouteAsync(context: RouteContext): Task;
 }
 
@@ -229,8 +227,8 @@ export type IRouter = IRouter$instance;
 export interface IRoutingFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRoutingFeature: never;
 
-    get RouteData(): RouteData | undefined;
-    set RouteData(value: RouteData | undefined);
+    get RouteData(): RouteData | null;
+    set RouteData(value: RouteData | null);
 }
 
 
@@ -253,41 +251,6 @@ export interface ISuppressMatchingMetadata$instance {
 
 
 export type ISuppressMatchingMetadata = ISuppressMatchingMetadata$instance;
-
-export interface RouteData_RouteDataSnapshot$instance {
-    readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteData_RouteDataSnapshot: never;
-
-    Restore(): void;
-}
-
-
-export const RouteData_RouteDataSnapshot: {
-    new(routeData: RouteData, dataTokens: RouteValueDictionary, routers: IList_1<IRouter>, values: RouteValueDictionary): RouteData_RouteDataSnapshot;
-};
-
-
-export type RouteData_RouteDataSnapshot = RouteData_RouteDataSnapshot$instance;
-
-export interface RouteValueDictionary_Enumerator$instance {
-    readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteValueDictionary_Enumerator: never;
-
-    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
-    readonly __tsonic_iface_System_Collections_IEnumerator: never;
-    readonly __tsonic_iface_System_IDisposable: never;
-
-    Current: KeyValuePair_2<System_Internal.String, unknown>;
-    Dispose(): void;
-    MoveNext(): boolean;
-    Reset(): void;
-}
-
-
-export const RouteValueDictionary_Enumerator: {
-    new(dictionary: RouteValueDictionary): RouteValueDictionary_Enumerator;
-};
-
-
-export type RouteValueDictionary_Enumerator = RouteValueDictionary_Enumerator$instance;
 
 export interface CompositeEndpointDataSource$instance extends EndpointDataSource {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_CompositeEndpointDataSource: never;
@@ -331,13 +294,13 @@ export interface DataTokensMetadata$instance extends IDataTokensMetadata$instanc
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IDataTokensMetadata: never;
 
-    readonly DataTokens: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
+    readonly DataTokens: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>;
     ToString(): string;
 }
 
 
 export const DataTokensMetadata: {
-    new(dataTokens: IReadOnlyDictionary_2<System_Internal.String, unknown>): DataTokensMetadata;
+    new(dataTokens: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): DataTokensMetadata;
 };
 
 
@@ -369,7 +332,7 @@ export interface DefaultInlineConstraintResolver$instance extends IInlineConstra
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IInlineConstraintResolver: never;
 
-    ResolveConstraint(inlineConstraint: string): IRouteConstraint | undefined;
+    ResolveConstraint(inlineConstraint: string): IRouteConstraint | null;
 }
 
 
@@ -536,10 +499,10 @@ export type HttpMethodMetadata = HttpMethodMetadata$instance & __HttpMethodMetad
 export interface LinkGenerator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_LinkGenerator: never;
 
-    GetPathByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    GetPathByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    GetUriByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    GetUriByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    GetPathByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    GetPathByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    GetUriByAddress<TAddress>(httpContext: HttpContext, address: TAddress, values: RouteValueDictionary, ambientValues?: RouteValueDictionary | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    GetUriByAddress<TAddress>(address: TAddress, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
 }
 
 
@@ -571,7 +534,7 @@ export type LinkOptions = LinkOptions$instance;
 export interface LinkParser$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_LinkParser: never;
 
-    ParsePathByAddress<TAddress>(address: TAddress, path: PathString): RouteValueDictionary | undefined;
+    ParsePathByAddress<TAddress>(address: TAddress, path: PathString): RouteValueDictionary | null;
 }
 
 
@@ -598,9 +561,9 @@ export type MatcherPolicy = MatcherPolicy$instance;
 export interface ParameterPolicyFactory$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_ParameterPolicyFactory: never;
 
-    Create(parameter: RoutePatternParameterPart, inlineText: string): IParameterPolicy;
-    Create(parameter: RoutePatternParameterPart, parameterPolicy: IParameterPolicy): IParameterPolicy;
-    Create(parameter: RoutePatternParameterPart, reference: RoutePatternParameterPolicyReference): IParameterPolicy;
+    Create(parameter: RoutePatternParameterPart | null, inlineText: string): IParameterPolicy;
+    Create(parameter: RoutePatternParameterPart | null, parameterPolicy: IParameterPolicy): IParameterPolicy;
+    Create(parameter: RoutePatternParameterPart | null, reference: RoutePatternParameterPolicyReference): IParameterPolicy;
 }
 
 
@@ -616,16 +579,16 @@ export interface Route$instance extends RouteBase$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_INamedRouter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
-    readonly RouteTemplate: string | undefined;
+    readonly RouteTemplate: string | null;
     OnRouteMatched(context: RouteContext): Task;
-    OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | undefined;
+    OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | null;
 }
 
 
 export const Route: {
     new(target: IRouter, routeTemplate: string, inlineConstraintResolver: IInlineConstraintResolver): Route;
-    new(target: IRouter, routeTemplate: string, defaults: RouteValueDictionary, constraints: IDictionary_2<System_Internal.String, unknown>, dataTokens: RouteValueDictionary, inlineConstraintResolver: IInlineConstraintResolver): Route;
-    new(target: IRouter, routeName: string, routeTemplate: string, defaults: RouteValueDictionary, constraints: IDictionary_2<System_Internal.String, unknown>, dataTokens: RouteValueDictionary, inlineConstraintResolver: IInlineConstraintResolver): Route;
+    new(target: IRouter, routeTemplate: string, defaults: RouteValueDictionary | null, constraints: IDictionary_2<System_Internal.String, JsValue> | null, dataTokens: RouteValueDictionary | null, inlineConstraintResolver: IInlineConstraintResolver): Route;
+    new(target: IRouter, routeName: string | null, routeTemplate: string | null, defaults: RouteValueDictionary | null, constraints: IDictionary_2<System_Internal.String, JsValue> | null, dataTokens: RouteValueDictionary | null, inlineConstraintResolver: IInlineConstraintResolver): Route;
 };
 
 
@@ -647,20 +610,20 @@ export interface RouteBase$instance {
     Constraints: IDictionary_2<System_Internal.String, IRouteConstraint>;
     DataTokens: RouteValueDictionary;
     Defaults: RouteValueDictionary;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     ParsedTemplate: RouteTemplate;
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
     OnRouteMatched(context: RouteContext): Task;
-    OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | undefined;
+    OnVirtualPathGenerated(context: VirtualPathContext): VirtualPathData | null;
     RouteAsync(context: RouteContext): Task;
     ToString(): string;
 }
 
 
-export const RouteBase: (abstract new(template: string, name: string, constraintResolver: IInlineConstraintResolver, defaults: RouteValueDictionary, constraints: IDictionary_2<System_Internal.String, unknown>, dataTokens: RouteValueDictionary) => RouteBase) & {
-    GetConstraints(inlineConstraintResolver: IInlineConstraintResolver, parsedTemplate: RouteTemplate, constraints: IDictionary_2<System_Internal.String, unknown>): IDictionary_2<System_Internal.String, IRouteConstraint>;
-    GetDefaults(parsedTemplate: RouteTemplate, defaults: RouteValueDictionary): RouteValueDictionary;
+export const RouteBase: (abstract new(template: string | null, name: string | null, constraintResolver: IInlineConstraintResolver, defaults: RouteValueDictionary | null, constraints: IDictionary_2<System_Internal.String, JsValue> | null, dataTokens: RouteValueDictionary | null) => RouteBase) & {
+    GetConstraints(inlineConstraintResolver: IInlineConstraintResolver, parsedTemplate: RouteTemplate, constraints: IDictionary_2<System_Internal.String, JsValue> | null): IDictionary_2<System_Internal.String, IRouteConstraint>;
+    GetDefaults(parsedTemplate: RouteTemplate, defaults: RouteValueDictionary | null): RouteValueDictionary;
 };
 
 
@@ -678,8 +641,8 @@ export interface RouteBuilder$instance extends IRouteBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteBuilder: never;
 
     readonly ApplicationBuilder: IApplicationBuilder;
-    get DefaultHandler(): IRouter | undefined;
-    set DefaultHandler(value: IRouter | undefined);
+    get DefaultHandler(): IRouter | null;
+    set DefaultHandler(value: IRouter | null);
     readonly Routes: IList_1<IRouter>;
     readonly ServiceProvider: IServiceProvider;
     Build(): IRouter;
@@ -688,7 +651,7 @@ export interface RouteBuilder$instance extends IRouteBuilder$instance {
 
 export const RouteBuilder: {
     new(applicationBuilder: IApplicationBuilder): RouteBuilder;
-    new(applicationBuilder: IApplicationBuilder, defaultHandler: IRouter): RouteBuilder;
+    new(applicationBuilder: IApplicationBuilder, defaultHandler: IRouter | null): RouteBuilder;
 };
 
 
@@ -707,7 +670,7 @@ export interface RouteCollection$instance {
 
     readonly Count: int;
     Add(router: IRouter): void;
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
     RouteAsync(context: RouteContext): Task;
 }
 
@@ -728,7 +691,7 @@ export type RouteCollection = RouteCollection$instance & __RouteCollection$views
 export interface RouteConstraintBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteConstraintBuilder: never;
 
-    AddConstraint(key: string, value: unknown): void;
+    AddConstraint(key: string, value: JsValue): void;
     AddResolvedConstraint(key: string, constraintText: string): void;
     Build(): IDictionary_2<System_Internal.String, IRouteConstraint>;
     SetOptional(key: string): void;
@@ -745,8 +708,8 @@ export type RouteConstraintBuilder = RouteConstraintBuilder$instance;
 export interface RouteContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteContext: never;
 
-    get Handler(): RequestDelegate | undefined;
-    set Handler(value: RequestDelegate | undefined);
+    get Handler(): RequestDelegate | null;
+    set Handler(value: RequestDelegate | null);
     readonly HttpContext: HttpContext;
     RouteData: RouteData;
 }
@@ -781,7 +744,7 @@ export interface RouteData$instance {
     readonly DataTokens: RouteValueDictionary;
     readonly Routers: IList_1<IRouter>;
     readonly Values: RouteValueDictionary;
-    PushState(router: IRouter, values: RouteValueDictionary, dataTokens: RouteValueDictionary): RouteData_RouteDataSnapshot;
+    PushState(router: IRouter | null, values: RouteValueDictionary | null, dataTokens: RouteValueDictionary | null): RouteData_RouteDataSnapshot;
 }
 
 
@@ -794,6 +757,20 @@ export const RouteData: {
 
 export type RouteData = RouteData$instance;
 
+export interface RouteData_RouteDataSnapshot$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteData_RouteDataSnapshot: never;
+
+    Restore(): void;
+}
+
+
+export const RouteData_RouteDataSnapshot: {
+    new(routeData: RouteData, dataTokens: RouteValueDictionary | null, routers: IList_1<IRouter> | null, values: RouteValueDictionary | null): RouteData_RouteDataSnapshot;
+};
+
+
+export type RouteData_RouteDataSnapshot = RouteData_RouteDataSnapshot$instance;
+
 export interface RouteEndpoint$instance extends Endpoint {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteEndpoint: never;
 
@@ -803,7 +780,7 @@ export interface RouteEndpoint$instance extends Endpoint {
 
 
 export const RouteEndpoint: {
-    new(requestDelegate: RequestDelegate, routePattern: RoutePattern, order: int, metadata: EndpointMetadataCollection, displayName: string): RouteEndpoint;
+    new(requestDelegate: RequestDelegate, routePattern: RoutePattern, order: int, metadata: EndpointMetadataCollection | null, displayName: string | null): RouteEndpoint;
 };
 
 
@@ -819,7 +796,7 @@ export interface RouteEndpointBuilder$instance extends EndpointBuilder {
 
 
 export const RouteEndpointBuilder: {
-    new(requestDelegate: RequestDelegate, routePattern: RoutePattern, order: int): RouteEndpointBuilder;
+    new(requestDelegate: RequestDelegate | null, routePattern: RoutePattern, order: int): RouteEndpointBuilder;
 };
 
 
@@ -870,7 +847,7 @@ export interface RouteHandler$instance extends IRouteHandler$instance, IRouter$i
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouter: never;
 
     GetRequestHandler(httpContext: HttpContext, routeData: RouteData): RequestDelegate;
-    GetVirtualPath(context: VirtualPathContext): VirtualPathData | undefined;
+    GetVirtualPath(context: VirtualPathContext): VirtualPathData | null;
     RouteAsync(context: RouteContext): Task;
 }
 
@@ -907,13 +884,13 @@ export interface RouteNameMetadata$instance extends IRouteNameMetadata$instance 
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteNameMetadata: never;
 
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
     ToString(): string;
 }
 
 
 export const RouteNameMetadata: {
-    new(routeName: string): RouteNameMetadata;
+    new(routeName: string | null): RouteNameMetadata;
 };
 
 
@@ -957,37 +934,58 @@ export interface RouteValueDictionary$instance {
     readonly Comparer: IEqualityComparer_1<System_Internal.String>;
     readonly Count: int;
     readonly Keys: ICollection_1<System_Internal.String>;
-    readonly Values: ICollection_1<unknown | undefined>;
-    Add(key: string, value: unknown): void;
+    readonly Values: ICollection_1<JsValue | null>;
+    Add(key: string, value: JsValue | null): void;
     Clear(): void;
     ContainsKey(key: string): boolean;
     GetEnumerator(): RouteValueDictionary_Enumerator;
     Remove(key: string): boolean;
-    Remove(key: string, value: unknown): boolean;
-    TryAdd(key: string, value: unknown): boolean;
-    TryGetValue(key: string, value: unknown): boolean;
+    Remove(key: string, value: JsValue | null): boolean;
+    TryAdd(key: string, value: JsValue | null): boolean;
+    TryGetValue(key: string, value: JsValue | null): boolean;
 }
 
 
 export const RouteValueDictionary: {
     new(): RouteValueDictionary;
-    new(values: unknown): RouteValueDictionary;
-    new(values: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): RouteValueDictionary;
-    new(values: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>): RouteValueDictionary;
-    new(dictionary: RouteValueDictionary): RouteValueDictionary;
-    FromArray(items: KeyValuePair_2<System_Internal.String, unknown>[]): RouteValueDictionary;
+    new(values: JsValue | null): RouteValueDictionary;
+    new(values: IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>> | null): RouteValueDictionary;
+    new(values: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | null): RouteValueDictionary;
+    new(dictionary: RouteValueDictionary | null): RouteValueDictionary;
+    FromArray(items: KeyValuePair_2<System_Internal.String, JsValue>[]): RouteValueDictionary;
 };
 
 
-export type RouteValueDictionary = RouteValueDictionary$instance & { [key: string]: unknown | undefined; };
+export type RouteValueDictionary = RouteValueDictionary$instance & { [key: string]: JsValue | null; };
+
+export interface RouteValueDictionary_Enumerator$instance {
+    readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteValueDictionary_Enumerator: never;
+
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
+    Current: KeyValuePair_2<System_Internal.String, JsValue>;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
+}
+
+
+export const RouteValueDictionary_Enumerator: {
+    new(dictionary: RouteValueDictionary): RouteValueDictionary_Enumerator;
+};
+
+
+export type RouteValueDictionary_Enumerator = RouteValueDictionary_Enumerator$instance;
 
 export interface RouteValueEqualityComparer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteValueEqualityComparer: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEqualityComparer_1: never;
 
-    Equals(x: unknown, y: unknown): boolean;
-    GetHashCode(obj: unknown): int;
+    Equals(x: JsValue | null, y: JsValue | null): boolean;
+    GetHashCode(obj: JsValue): int;
 }
 
 
@@ -1002,12 +1000,12 @@ export type RouteValueEqualityComparer = RouteValueEqualityComparer$instance;
 export interface RouteValuesAddress$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_RouteValuesAddress: never;
 
-    get AmbientValues(): RouteValueDictionary | undefined;
-    set AmbientValues(value: RouteValueDictionary | undefined);
+    get AmbientValues(): RouteValueDictionary | null;
+    set AmbientValues(value: RouteValueDictionary | null);
     ExplicitValues: RouteValueDictionary;
-    get RouteName(): string | undefined;
-    set RouteName(value: string | undefined);
-    ToString(): string | undefined;
+    get RouteName(): string | null;
+    set RouteName(value: string | null);
+    ToString(): string | null;
 }
 
 
@@ -1023,8 +1021,8 @@ export interface RoutingFeature$instance extends IRoutingFeature$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRoutingFeature: never;
 
-    get RouteData(): RouteData | undefined;
-    set RouteData(value: RouteData | undefined);
+    get RouteData(): RouteData | null;
+    set RouteData(value: RouteData | null);
 }
 
 
@@ -1089,14 +1087,14 @@ export interface VirtualPathContext$instance {
 
     readonly AmbientValues: RouteValueDictionary;
     readonly HttpContext: HttpContext;
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
     Values: RouteValueDictionary;
 }
 
 
 export const VirtualPathContext: {
     new(httpContext: HttpContext, ambientValues: RouteValueDictionary, values: RouteValueDictionary): VirtualPathContext;
-    new(httpContext: HttpContext, ambientValues: RouteValueDictionary, values: RouteValueDictionary, routeName: string): VirtualPathContext;
+    new(httpContext: HttpContext, ambientValues: RouteValueDictionary, values: RouteValueDictionary, routeName: string | null): VirtualPathContext;
 };
 
 
@@ -1120,10 +1118,10 @@ export const VirtualPathData: {
 export type VirtualPathData = VirtualPathData$instance;
 
 export abstract class ControllerLinkGeneratorExtensions$instance {
-    static GetPathByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByAction(generator: LinkGenerator, action: string, controller: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string, controller?: string, values?: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByAction(generator: LinkGenerator, action: string, controller: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string | null, controller?: string | null, values?: JsValue | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByAction(generator: LinkGenerator, action: string, controller: string, values?: JsValue | null, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByAction(generator: LinkGenerator, httpContext: HttpContext, action?: string | null, controller?: string | null, values?: JsValue | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByAction(generator: LinkGenerator, action: string, controller: string, values: JsValue | null, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
 }
 
 
@@ -1144,45 +1142,45 @@ export abstract class InlineRouteParameterParser$instance {
 export type InlineRouteParameterParser = InlineRouteParameterParser$instance;
 
 export abstract class LinkGeneratorEndpointNameAddressExtensions$instance {
-    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByName(generator: LinkGenerator, endpointName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByName(generator: LinkGenerator, endpointName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByName(generator: LinkGenerator, endpointName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByName(generator: LinkGenerator, endpointName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: JsValue | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByName(generator: LinkGenerator, endpointName: string, values?: RouteValueDictionary | null, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByName(generator: LinkGenerator, endpointName: string, values: JsValue | null, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values?: RouteValueDictionary | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByName(generator: LinkGenerator, httpContext: HttpContext, endpointName: string, values: JsValue | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByName(generator: LinkGenerator, endpointName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByName(generator: LinkGenerator, endpointName: string, values: JsValue | null, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
 }
 
 
 export type LinkGeneratorEndpointNameAddressExtensions = LinkGeneratorEndpointNameAddressExtensions$instance;
 
 export abstract class LinkGeneratorRouteValuesAddressExtensions$instance {
-    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByRouteValues(generator: LinkGenerator, routeName: string, values?: RouteValueDictionary, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values?: RouteValueDictionary, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string, values: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByRouteValues(generator: LinkGenerator, routeName: string, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByRouteValues(generator: LinkGenerator, routeName: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string | null, values?: RouteValueDictionary | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string | null, values: JsValue | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByRouteValues(generator: LinkGenerator, routeName: string | null, values?: RouteValueDictionary | null, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByRouteValues(generator: LinkGenerator, routeName: string | null, values: JsValue | null, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string | null, values?: RouteValueDictionary | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByRouteValues(generator: LinkGenerator, httpContext: HttpContext, routeName: string | null, values: JsValue | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByRouteValues(generator: LinkGenerator, routeName: string | null, values: RouteValueDictionary, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByRouteValues(generator: LinkGenerator, routeName: string | null, values: JsValue | null, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
 }
 
 
 export type LinkGeneratorRouteValuesAddressExtensions = LinkGeneratorRouteValuesAddressExtensions$instance;
 
 export abstract class LinkParserEndpointNameAddressExtensions$instance {
-    static ParsePathByEndpointName(parser: LinkParser, endpointName: string, path: PathString): RouteValueDictionary | undefined;
+    static ParsePathByEndpointName(parser: LinkParser, endpointName: string, path: PathString): RouteValueDictionary | null;
 }
 
 
 export type LinkParserEndpointNameAddressExtensions = LinkParserEndpointNameAddressExtensions$instance;
 
 export abstract class PageLinkGeneratorExtensions$instance {
-    static GetPathByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetPathByPage(generator: LinkGenerator, page: string, handler?: string, values?: unknown, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string, handler?: string, values?: unknown, scheme?: string, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions): string | undefined;
-    static GetUriByPage(generator: LinkGenerator, page: string, handler: string, values: unknown, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions): string | undefined;
+    static GetPathByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string | null, handler?: string | null, values?: JsValue | null, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetPathByPage(generator: LinkGenerator, page: string, handler?: string | null, values?: JsValue | null, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByPage(generator: LinkGenerator, httpContext: HttpContext, page?: string | null, handler?: string | null, values?: JsValue | null, scheme?: string | null, host?: Nullable_1<HostString>, pathBase?: Nullable_1<PathString>, fragment?: FragmentString, options?: LinkOptions | null): string | null;
+    static GetUriByPage(generator: LinkGenerator, page: string, handler: string | null, values: JsValue | null, scheme: string, host: HostString, pathBase?: PathString, fragment?: FragmentString, options?: LinkOptions | null): string | null;
 }
 
 
@@ -1219,8 +1217,8 @@ export abstract class RouteConstraintMatcher$instance {
 export type RouteConstraintMatcher = RouteConstraintMatcher$instance;
 
 export abstract class RouteHandlerServices$instance {
-    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable_1<System_Internal.String>, populateMetadata: Func_3<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func_4<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>, methodInfo: MethodInfo): RouteHandlerBuilder;
-    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable_1<System_Internal.String>, populateMetadata: Func_3<MethodInfo, RequestDelegateFactoryOptions, RequestDelegateMetadataResult>, createRequestDelegate: Func_4<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult, RequestDelegateResult>): RouteHandlerBuilder;
+    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable_1<System_Internal.String> | null, populateMetadata: Func_3<MethodInfo, RequestDelegateFactoryOptions | null, RequestDelegateMetadataResult>, createRequestDelegate: Func_4<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult | null, RequestDelegateResult>, methodInfo: MethodInfo): RouteHandlerBuilder;
+    static Map(endpoints: IEndpointRouteBuilder, pattern: string, handler: Function, httpMethods: IEnumerable_1<System_Internal.String> | null, populateMetadata: Func_3<MethodInfo, RequestDelegateFactoryOptions | null, RequestDelegateMetadataResult>, createRequestDelegate: Func_4<Function, RequestDelegateFactoryOptions, RequestDelegateMetadataResult | null, RequestDelegateResult>): RouteHandlerBuilder;
 }
 
 
@@ -1235,7 +1233,7 @@ export type RouteShortCircuitEndpointRouteBuilderExtensions = RouteShortCircuitE
 
 export abstract class RoutingHttpContextExtensions$instance {
     static GetRouteData(httpContext: HttpContext): RouteData;
-    static GetRouteValue(httpContext: HttpContext, key: string): unknown | undefined;
+    static GetRouteValue(httpContext: HttpContext, key: string): JsValue | null;
 }
 
 

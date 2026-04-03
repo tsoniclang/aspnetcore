@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.RateLimiting
 // Assembly: Microsoft.AspNetCore.RateLimiting
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -16,7 +17,7 @@ import type { Action_1, Attribute, Func_2, Func_3, Int32, Object as ClrObject, S
 export interface IRateLimiterPolicy_1$instance<TPartitionKey> {
     readonly __tsonic_iface_Microsoft_AspNetCore_RateLimiting_IRateLimiterPolicy_1: never;
 
-    readonly OnRejected: Func_3<OnRejectedContext, CancellationToken, ValueTask> | undefined;
+    readonly OnRejected: Func_3<OnRejectedContext, CancellationToken, ValueTask> | null;
     GetPartition(httpContext: HttpContext): RateLimitPartition_1<TPartitionKey>;
 }
 
@@ -39,7 +40,7 @@ export type DisableRateLimitingAttribute = DisableRateLimitingAttribute$instance
 export interface EnableRateLimitingAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_EnableRateLimitingAttribute: never;
 
-    readonly PolicyName: string | undefined;
+    readonly PolicyName: string | null;
 }
 
 
@@ -68,10 +69,10 @@ export type OnRejectedContext = OnRejectedContext$instance;
 export interface RateLimiterOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_RateLimiting_RateLimiterOptions: never;
 
-    get GlobalLimiter(): PartitionedRateLimiter_1<HttpContext> | undefined;
-    set GlobalLimiter(value: PartitionedRateLimiter_1<HttpContext> | undefined);
-    get OnRejected(): Func_3<OnRejectedContext, CancellationToken, ValueTask> | undefined;
-    set OnRejected(value: Func_3<OnRejectedContext, CancellationToken, ValueTask> | undefined);
+    get GlobalLimiter(): PartitionedRateLimiter_1<HttpContext> | null;
+    set GlobalLimiter(value: PartitionedRateLimiter_1<HttpContext> | null);
+    get OnRejected(): Func_3<OnRejectedContext, CancellationToken, ValueTask> | null;
+    set OnRejected(value: Func_3<OnRejectedContext, CancellationToken, ValueTask> | null);
     RejectionStatusCode: int;
     AddPolicy<TPartitionKey>(policyName: string, partitioner: Func_2<HttpContext, RateLimitPartition_1<TPartitionKey>>): RateLimiterOptions;
     AddPolicy<TPartitionKey, TPolicy extends IRateLimiterPolicy_1<TPartitionKey>>(policyName: string): RateLimiterOptions;

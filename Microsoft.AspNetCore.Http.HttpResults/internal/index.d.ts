@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Http.HttpResults
 // Assembly: Microsoft.AspNetCore.Components.Endpoints, Microsoft.AspNetCore.Http.Abstractions, Microsoft.AspNetCore.Http.Results
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { AuthenticationProperties } from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
@@ -33,7 +34,7 @@ export interface Accepted$instance extends Microsoft_AspNetCore_Http_Internal.IR
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly Location: string | undefined;
+    readonly Location: string | null;
     readonly StatusCode: int;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
@@ -61,9 +62,9 @@ export interface Accepted_1$instance<TValue> extends Microsoft_AspNetCore_Http_I
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly Location: string | undefined;
+    readonly Location: string | null;
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -90,7 +91,7 @@ export interface AcceptedAtRoute$instance extends Microsoft_AspNetCore_Http_Inte
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
     readonly RouteValues: RouteValueDictionary;
     readonly StatusCode: int;
     ExecuteAsync(httpContext: HttpContext): Task;
@@ -119,10 +120,10 @@ export interface AcceptedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
     readonly RouteValues: RouteValueDictionary;
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -177,7 +178,7 @@ export interface BadRequest_1$instance<TValue> extends Microsoft_AspNetCore_Http
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -203,8 +204,8 @@ export interface ChallengeHttpResult$instance extends Microsoft_AspNetCore_Http_
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
     AuthenticationSchemes: IReadOnlyList_1<System_Internal.String>;
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -255,7 +256,7 @@ export interface Conflict_1$instance<TValue> extends Microsoft_AspNetCore_Http_I
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -283,8 +284,8 @@ export interface ContentHttpResult$instance extends Microsoft_AspNetCore_Http_In
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
 
     ContentType: string;
-    get ResponseContent(): string | undefined;
-    set ResponseContent(value: string | undefined);
+    get ResponseContent(): string | null;
+    set ResponseContent(value: string | null);
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
     ExecuteAsync(httpContext: HttpContext): Task;
@@ -311,7 +312,7 @@ export interface Created$instance extends Microsoft_AspNetCore_Http_Internal.IRe
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly Location: string | undefined;
+    readonly Location: string | null;
     readonly StatusCode: int;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
@@ -339,9 +340,9 @@ export interface Created_1$instance<TValue> extends Microsoft_AspNetCore_Http_In
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly Location: string | undefined;
+    readonly Location: string | null;
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -368,7 +369,7 @@ export interface CreatedAtRoute$instance extends Microsoft_AspNetCore_Http_Inter
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IStatusCodeHttpResult: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
     readonly RouteValues: RouteValueDictionary;
     readonly StatusCode: int;
     ExecuteAsync(httpContext: HttpContext): Task;
@@ -397,10 +398,10 @@ export interface CreatedAtRoute_1$instance<TValue> extends Microsoft_AspNetCore_
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IValueHttpResult_1: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
     readonly RouteValues: RouteValueDictionary;
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -450,11 +451,11 @@ export interface FileContentHttpResult$instance extends Microsoft_AspNetCore_Htt
 
     ContentType: string;
     EnableRangeProcessing: boolean;
-    get EntityTag(): EntityTagHeaderValue | undefined;
-    set EntityTag(value: EntityTagHeaderValue | undefined);
+    get EntityTag(): EntityTagHeaderValue | null;
+    set EntityTag(value: EntityTagHeaderValue | null);
     FileContents: ReadOnlyMemory_1<System_Internal.Byte>;
-    get FileDownloadName(): string | undefined;
-    set FileDownloadName(value: string | undefined);
+    get FileDownloadName(): string | null;
+    set FileDownloadName(value: string | null);
     get FileLength(): Nullable_1<System_Internal.Int64>;
     set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     get LastModified(): Nullable_1<DateTimeOffset>;
@@ -485,10 +486,10 @@ export interface FileStreamHttpResult$instance extends Microsoft_AspNetCore_Http
 
     ContentType: string;
     EnableRangeProcessing: boolean;
-    get EntityTag(): EntityTagHeaderValue | undefined;
-    set EntityTag(value: EntityTagHeaderValue | undefined);
-    get FileDownloadName(): string | undefined;
-    set FileDownloadName(value: string | undefined);
+    get EntityTag(): EntityTagHeaderValue | null;
+    set EntityTag(value: EntityTagHeaderValue | null);
+    get FileDownloadName(): string | null;
+    set FileDownloadName(value: string | null);
     get FileLength(): Nullable_1<System_Internal.Int64>;
     set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     readonly FileStream: Stream;
@@ -517,8 +518,8 @@ export interface ForbidHttpResult$instance extends Microsoft_AspNetCore_Http_Int
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
     AuthenticationSchemes: IReadOnlyList_1<System_Internal.String>;
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -569,7 +570,7 @@ export interface InternalServerError_1$instance<TValue> extends Microsoft_AspNet
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -600,9 +601,9 @@ export interface JsonHttpResult_1$instance<TValue> extends Microsoft_AspNetCore_
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
     readonly ContentType: string;
-    readonly JsonSerializerOptions: JsonSerializerOptions | undefined;
+    readonly JsonSerializerOptions: JsonSerializerOptions | null;
     readonly StatusCode: Nullable_1<System_Internal.Int32>;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -683,7 +684,7 @@ export interface NotFound_1$instance<TValue> extends Microsoft_AspNetCore_Http_I
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
     readonly StatusCode: int;
-    Value: TValue | undefined;
+    Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -738,7 +739,7 @@ export interface Ok_1$instance<TValue> extends Microsoft_AspNetCore_Http_Interna
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -767,10 +768,10 @@ export interface PhysicalFileHttpResult$instance extends Microsoft_AspNetCore_Ht
 
     ContentType: string;
     EnableRangeProcessing: boolean;
-    get EntityTag(): EntityTagHeaderValue | undefined;
-    set EntityTag(value: EntityTagHeaderValue | undefined);
-    get FileDownloadName(): string | undefined;
-    set FileDownloadName(value: string | undefined);
+    get EntityTag(): EntityTagHeaderValue | null;
+    set EntityTag(value: EntityTagHeaderValue | null);
+    get FileDownloadName(): string | null;
+    set FileDownloadName(value: string | null);
     get FileLength(): Nullable_1<System_Internal.Int64>;
     set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     readonly FileName: string;
@@ -835,10 +836,10 @@ export interface PushStreamHttpResult$instance extends Microsoft_AspNetCore_Http
 
     ContentType: string;
     EnableRangeProcessing: boolean;
-    get EntityTag(): EntityTagHeaderValue | undefined;
-    set EntityTag(value: EntityTagHeaderValue | undefined);
-    get FileDownloadName(): string | undefined;
-    set FileDownloadName(value: string | undefined);
+    get EntityTag(): EntityTagHeaderValue | null;
+    set EntityTag(value: EntityTagHeaderValue | null);
+    get FileDownloadName(): string | null;
+    set FileDownloadName(value: string | null);
     get FileLength(): Nullable_1<System_Internal.Int64>;
     set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     get LastModified(): Nullable_1<DateTimeOffset>;
@@ -869,7 +870,7 @@ export interface RazorComponentResult$instance extends Microsoft_AspNetCore_Http
 
     readonly ComponentType: Type;
     ContentType: string;
-    readonly Parameters: IReadOnlyDictionary_2<System_Internal.String, unknown | undefined>;
+    readonly Parameters: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>;
     PreventStreamingRendering: boolean;
     get StatusCode(): Nullable_1<System_Internal.Int32>;
     set StatusCode(value: Nullable_1<System_Internal.Int32> | int);
@@ -879,8 +880,8 @@ export interface RazorComponentResult$instance extends Microsoft_AspNetCore_Http
 
 export const RazorComponentResult: {
     new(componentType: Type): RazorComponentResult;
-    new(componentType: Type, parameters: unknown): RazorComponentResult;
-    new(componentType: Type, parameters: IReadOnlyDictionary_2<System_Internal.String, unknown>): RazorComponentResult;
+    new(componentType: Type, parameters: JsValue): RazorComponentResult;
+    new(componentType: Type, parameters: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): RazorComponentResult;
 };
 
 
@@ -905,8 +906,8 @@ export interface RazorComponentResult_1$instance<TComponent extends IComponent> 
 
 export const RazorComponentResult_1: {
     new<TComponent extends IComponent>(): RazorComponentResult_1<TComponent>;
-    new<TComponent extends IComponent>(parameters: unknown): RazorComponentResult_1<TComponent>;
-    new<TComponent extends IComponent>(parameters: IReadOnlyDictionary_2<System_Internal.String, unknown>): RazorComponentResult_1<TComponent>;
+    new<TComponent extends IComponent>(parameters: JsValue): RazorComponentResult_1<TComponent>;
+    new<TComponent extends IComponent>(parameters: IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): RazorComponentResult_1<TComponent>;
 };
 
 
@@ -933,7 +934,7 @@ export interface RedirectHttpResult$instance extends Microsoft_AspNetCore_Http_I
 
 
 export const RedirectHttpResult: {
-    IsLocalUrl(url: string): boolean;
+    IsLocalUrl(url: string | null): boolean;
 };
 
 
@@ -949,10 +950,10 @@ export interface RedirectToRouteHttpResult$instance extends Microsoft_AspNetCore
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
-    readonly Fragment: string | undefined;
+    readonly Fragment: string | null;
     readonly Permanent: boolean;
     readonly PreserveMethod: boolean;
-    readonly RouteName: string | undefined;
+    readonly RouteName: string | null;
     readonly RouteValues: RouteValueDictionary;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
@@ -1124,11 +1125,11 @@ export interface SignInHttpResult$instance extends Microsoft_AspNetCore_Http_Int
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
-    get AuthenticationScheme(): string | undefined;
-    set AuthenticationScheme(value: string | undefined);
+    get AuthenticationScheme(): string | null;
+    set AuthenticationScheme(value: string | null);
     Principal: ClaimsPrincipal;
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1150,8 +1151,8 @@ export interface SignOutHttpResult$instance extends Microsoft_AspNetCore_Http_In
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_IResult: never;
 
     AuthenticationSchemes: IReadOnlyList_1<System_Internal.String>;
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1248,7 +1249,7 @@ export interface UnprocessableEntity_1$instance<TValue> extends Microsoft_AspNet
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IEndpointMetadataProvider: never;
 
     readonly StatusCode: int;
-    readonly Value: TValue | undefined;
+    readonly Value: TValue | null;
     ExecuteAsync(httpContext: HttpContext): Task;
 }
 
@@ -1338,10 +1339,10 @@ export interface VirtualFileHttpResult$instance extends Microsoft_AspNetCore_Htt
 
     ContentType: string;
     EnableRangeProcessing: boolean;
-    get EntityTag(): EntityTagHeaderValue | undefined;
-    set EntityTag(value: EntityTagHeaderValue | undefined);
-    get FileDownloadName(): string | undefined;
-    set FileDownloadName(value: string | undefined);
+    get EntityTag(): EntityTagHeaderValue | null;
+    set EntityTag(value: EntityTagHeaderValue | null);
+    get FileDownloadName(): string | null;
+    set FileDownloadName(value: string | null);
     get FileLength(): Nullable_1<System_Internal.Int64>;
     set FileLength(value: Nullable_1<System_Internal.Int64> | long);
     FileName: string;

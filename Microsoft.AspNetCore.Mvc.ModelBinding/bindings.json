@@ -1160,66 +1160,6 @@
       ]
     },
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
-      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664184,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext):void",
-          "metadataToken": 100664183,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ]
-    },
-    {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult",
       "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
@@ -1408,600 +1348,6 @@
       "fields": [],
       "events": [],
       "constructors": []
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "KeyValuePair_2[[String,ModelStateEntry]]"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664211,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664212,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 100664213,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Current",
-          "metadataToken": 385876350,
-          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "metadataToken": 100664208,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
-      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
-          "typeArguments": [
-            "String"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable::GetEnumerator():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-          "clrName": "GetEnumerator",
-          "metadataToken": 100664215,
-          "canonicalSignature": "():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-          "normalizedSignature": "GetEnumerator|():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
-          "metadataToken": 100664214,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "String"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664222,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664223,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 100664224,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::Current:System.String",
-          "clrName": "Current",
-          "metadataToken": 385876352,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Current|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "metadataToken": 100664218,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
-      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
-          "typeArguments": [
-            "KeyValuePair_2[[String,ModelStateEntry]]"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable::GetEnumerator():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-          "clrName": "GetEnumerator",
-          "metadataToken": 100664205,
-          "canonicalSignature": "():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
-          "normalizedSignature": "GetEnumerator|():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "metadataToken": 100664204,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
-      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
-          "typeArguments": [
-            "ModelStateEntry"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable::GetEnumerator():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-          "clrName": "GetEnumerator",
-          "metadataToken": 100664226,
-          "canonicalSignature": "():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-          "normalizedSignature": "GetEnumerator|():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
-          "metadataToken": 100664225,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "ModelStateEntry"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664233,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664234,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 100664235,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::Current:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry",
-          "clrName": "Current",
-          "metadataToken": 385876354,
-          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry",
-          "normalizedSignature": "Current|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "metadataToken": 100664229,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
-        }
-      ]
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult",
@@ -6425,6 +5771,66 @@
       ]
     },
     {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664184,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext):void",
+          "metadataToken": 100664183,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext\u002BNestedScope",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
+    },
+    {
       "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelError",
       "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelError",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
@@ -8928,6 +8334,600 @@
           "parameterCount": 1,
           "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,ModelStateEntry]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664211,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664212,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::Reset():System.Void",
+          "clrName": "Reset",
+          "metadataToken": 100664213,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Reset|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Current",
+          "metadataToken": 385876350,
+          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry,Microsoft.AspNetCore.Mvc.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "metadataToken": 100664208,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable::GetEnumerator():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+          "clrName": "GetEnumerator",
+          "metadataToken": 100664215,
+          "canonicalSignature": "():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+          "normalizedSignature": "GetEnumerator|():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
+          "metadataToken": 100664214,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerable",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664222,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664223,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::Reset():System.Void",
+          "clrName": "Reset",
+          "metadataToken": 100664224,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Reset|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::Current:System.String",
+          "clrName": "Current",
+          "metadataToken": 385876352,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Current|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "metadataToken": 100664218,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BKeyEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,ModelStateEntry]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable::GetEnumerator():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+          "clrName": "GetEnumerator",
+          "metadataToken": 100664205,
+          "canonicalSignature": "():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator",
+          "normalizedSignature": "GetEnumerator|():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BEnumerator|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "metadataToken": 100664204,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BPrefixEnumerable",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "ModelStateEntry"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable::GetEnumerator():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+          "clrName": "GetEnumerator",
+          "metadataToken": 100664226,
+          "canonicalSignature": "():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+          "normalizedSignature": "GetEnumerator|():Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
+          "metadataToken": 100664225,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerable",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "ModelStateEntry"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664233,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664234,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::Reset():System.Void",
+          "clrName": "Reset",
+          "metadataToken": 100664235,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Reset|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::Current:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry",
+          "clrName": "Current",
+          "metadataToken": 385876354,
+          "canonicalSignature": ":Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry",
+          "normalizedSignature": "Current|:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Abstractions:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "metadataToken": 100664229,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary\u002BValueEnumerator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Abstractions"
         }
       ]

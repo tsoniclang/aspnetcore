@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.HttpOverrides
 // Assembly: Microsoft.AspNetCore.HttpOverrides
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ForwardedHeadersOptions, HttpMethodOverrideOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -99,7 +97,7 @@ export interface IPNetwork$instance {
 export const IPNetwork: {
     new(prefix: IPAddress, prefixLength: int): IPNetwork;
     Parse(networkSpan: ReadOnlySpan_1<System_Internal.Char>): IPNetwork;
-    TryParse(networkSpan: ReadOnlySpan_1<System_Internal.Char>, network: IPNetwork): boolean;
+    TryParse(networkSpan: ReadOnlySpan_1<System_Internal.Char>, network: IPNetwork | null): boolean;
 };
 
 

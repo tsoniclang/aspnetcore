@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Authorization.Policy
 // Assembly: Microsoft.AspNetCore.Authorization.Policy
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { AuthenticateResult } from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
@@ -18,7 +19,7 @@ export interface IPolicyEvaluator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
 
     AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task_1<AuthenticateResult>;
-    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task_1<PolicyAuthorizationResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: JsValue | null): Task_1<PolicyAuthorizationResult>;
 }
 
 
@@ -48,8 +49,8 @@ export type AuthorizationMiddlewareResultHandler = AuthorizationMiddlewareResult
 export interface PolicyAuthorizationResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authorization_Policy_PolicyAuthorizationResult: never;
 
-    get AuthorizationFailure(): AuthorizationFailure | undefined;
-    set AuthorizationFailure(value: AuthorizationFailure | undefined);
+    get AuthorizationFailure(): AuthorizationFailure | null;
+    set AuthorizationFailure(value: AuthorizationFailure | null);
     Challenged: boolean;
     Forbidden: boolean;
     Succeeded: boolean;
@@ -59,7 +60,7 @@ export interface PolicyAuthorizationResult$instance {
 export const PolicyAuthorizationResult: {
     Challenge(): PolicyAuthorizationResult;
     Forbid(): PolicyAuthorizationResult;
-    Forbid(authorizationFailure: AuthorizationFailure): PolicyAuthorizationResult;
+    Forbid(authorizationFailure: AuthorizationFailure | null): PolicyAuthorizationResult;
     Success(): PolicyAuthorizationResult;
 };
 
@@ -72,7 +73,7 @@ export interface PolicyEvaluator$instance extends IPolicyEvaluator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
 
     AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task_1<AuthenticateResult>;
-    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown): Task_1<PolicyAuthorizationResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: JsValue | null): Task_1<PolicyAuthorizationResult>;
 }
 
 

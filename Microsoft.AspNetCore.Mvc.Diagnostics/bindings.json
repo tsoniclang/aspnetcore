@@ -8,125 +8,6 @@
   ],
   "types": [
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
-      "clrName": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "KeyValuePair_2[[String,Object]]"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100667697,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100667698,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Synthesized",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Current",
-          "metadataToken": 385877095,
-          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.AfterActionEventData",
       "clrName": "Microsoft.AspNetCore.Mvc.Diagnostics.AfterActionEventData",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
@@ -8068,6 +7949,105 @@
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
         }
       ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
+      "clrName": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100667697,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100667698,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Current",
+          "metadataToken": 385877095,
+          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Diagnostics.EventData\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
     },
     {
       "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.Diagnostics.ViewComponentAfterViewExecuteEventData",

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Authentication.BearerToken
 // Assembly: Microsoft.AspNetCore.Authentication.BearerToken
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Authentication_Internal from "../../Microsoft.AspNetCore.Authentication/internal/index.js";
@@ -51,7 +52,7 @@ export interface BearerTokenOptions$instance extends AuthenticationSchemeOptions
 
     BearerTokenExpiration: TimeSpan;
     BearerTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
-    Events: unknown;
+    Events: BearerTokenEvents | JsValue;
     RefreshTokenExpiration: TimeSpan;
     RefreshTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
 }
@@ -67,8 +68,8 @@ export type BearerTokenOptions = BearerTokenOptions$instance;
 export interface MessageReceivedContext$instance extends ResultContext_1<BearerTokenOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_BearerToken_MessageReceivedContext: never;
 
-    get Token(): string | undefined;
-    set Token(value: string | undefined);
+    get Token(): string | null;
+    set Token(value: string | null);
 }
 
 

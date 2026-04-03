@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Hosting.Server
 // Assembly: Microsoft.AspNetCore.Hosting.Server.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IFeatureCollection } from "../../Microsoft.AspNetCore.Http.Features/internal/index.js";
@@ -16,7 +17,7 @@ export interface IHttpApplication_1$instance<TContext> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1: never;
 
     CreateContext(contextFeatures: IFeatureCollection): TContext;
-    DisposeContext(context: TContext, exception: Exception): void;
+    DisposeContext(context: TContext, exception: Exception | null): void;
     ProcessRequestAsync(context: TContext): Task;
 }
 

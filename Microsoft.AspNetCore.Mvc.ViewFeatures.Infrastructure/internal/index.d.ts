@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure
 // Assembly: Microsoft.AspNetCore.Mvc.ViewFeatures
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -14,8 +15,8 @@ export interface TempDataSerializer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewFeatures_Infrastructure_TempDataSerializer: never;
 
     CanSerializeType(type: Type): boolean;
-    Deserialize(unprotectedData: byte[]): IDictionary_2<System_Internal.String, unknown>;
-    Serialize(values: IDictionary_2<System_Internal.String, unknown>): byte[];
+    Deserialize(unprotectedData: byte[]): IDictionary_2<System_Internal.String, JsValue>;
+    Serialize(values: IDictionary_2<System_Internal.String, JsValue>): byte[];
 }
 
 

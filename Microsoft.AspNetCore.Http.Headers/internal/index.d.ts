@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Http.Headers
 // Assembly: Microsoft.AspNetCore.Http.Extensions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HostString, IHeaderDictionary } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -19,16 +20,16 @@ export interface RequestHeaders$instance {
     AcceptCharset: IList_1<StringWithQualityHeaderValue>;
     AcceptEncoding: IList_1<StringWithQualityHeaderValue>;
     AcceptLanguage: IList_1<StringWithQualityHeaderValue>;
-    get CacheControl(): CacheControlHeaderValue | undefined;
-    set CacheControl(value: CacheControlHeaderValue | undefined);
-    get ContentDisposition(): ContentDispositionHeaderValue | undefined;
-    set ContentDisposition(value: ContentDispositionHeaderValue | undefined);
+    get CacheControl(): CacheControlHeaderValue | null;
+    set CacheControl(value: CacheControlHeaderValue | null);
+    get ContentDisposition(): ContentDispositionHeaderValue | null;
+    set ContentDisposition(value: ContentDispositionHeaderValue | null);
     get ContentLength(): Nullable_1<System_Internal.Int64>;
     set ContentLength(value: Nullable_1<System_Internal.Int64> | long);
-    get ContentRange(): ContentRangeHeaderValue | undefined;
-    set ContentRange(value: ContentRangeHeaderValue | undefined);
-    get ContentType(): MediaTypeHeaderValue | undefined;
-    set ContentType(value: MediaTypeHeaderValue | undefined);
+    get ContentRange(): ContentRangeHeaderValue | null;
+    set ContentRange(value: ContentRangeHeaderValue | null);
+    get ContentType(): MediaTypeHeaderValue | null;
+    set ContentType(value: MediaTypeHeaderValue | null);
     Cookie: IList_1<CookieHeaderValue>;
     get Date(): Nullable_1<DateTimeOffset>;
     set Date(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
@@ -40,22 +41,22 @@ export interface RequestHeaders$instance {
     get IfModifiedSince(): Nullable_1<DateTimeOffset>;
     set IfModifiedSince(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     IfNoneMatch: IList_1<EntityTagHeaderValue>;
-    get IfRange(): RangeConditionHeaderValue | undefined;
-    set IfRange(value: RangeConditionHeaderValue | undefined);
+    get IfRange(): RangeConditionHeaderValue | null;
+    set IfRange(value: RangeConditionHeaderValue | null);
     get IfUnmodifiedSince(): Nullable_1<DateTimeOffset>;
     set IfUnmodifiedSince(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     get LastModified(): Nullable_1<DateTimeOffset>;
     set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
-    get Range(): RangeHeaderValue | undefined;
-    set Range(value: RangeHeaderValue | undefined);
-    get Referer(): Uri | undefined;
-    set Referer(value: Uri | undefined);
-    Append(name: string, value: unknown): void;
+    get Range(): RangeHeaderValue | null;
+    set Range(value: RangeHeaderValue | null);
+    get Referer(): Uri | null;
+    set Referer(value: Uri | null);
+    Append(name: string, value: JsValue): void;
     AppendList<T>(name: string, values: IList_1<T>): void;
-    Get<T>(name: string): T | undefined;
+    Get<T>(name: string): T | null;
     GetList<T>(name: string): IList_1<T>;
-    Set(name: string, value: unknown): void;
-    SetList<T>(name: string, values: IList_1<T>): void;
+    Set(name: string, value: JsValue | null): void;
+    SetList<T>(name: string, values: IList_1<T> | null): void;
 }
 
 
@@ -69,34 +70,34 @@ export type RequestHeaders = RequestHeaders$instance;
 export interface ResponseHeaders$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Headers_ResponseHeaders: never;
 
-    get CacheControl(): CacheControlHeaderValue | undefined;
-    set CacheControl(value: CacheControlHeaderValue | undefined);
-    get ContentDisposition(): ContentDispositionHeaderValue | undefined;
-    set ContentDisposition(value: ContentDispositionHeaderValue | undefined);
+    get CacheControl(): CacheControlHeaderValue | null;
+    set CacheControl(value: CacheControlHeaderValue | null);
+    get ContentDisposition(): ContentDispositionHeaderValue | null;
+    set ContentDisposition(value: ContentDispositionHeaderValue | null);
     get ContentLength(): Nullable_1<System_Internal.Int64>;
     set ContentLength(value: Nullable_1<System_Internal.Int64> | long);
-    get ContentRange(): ContentRangeHeaderValue | undefined;
-    set ContentRange(value: ContentRangeHeaderValue | undefined);
-    get ContentType(): MediaTypeHeaderValue | undefined;
-    set ContentType(value: MediaTypeHeaderValue | undefined);
+    get ContentRange(): ContentRangeHeaderValue | null;
+    set ContentRange(value: ContentRangeHeaderValue | null);
+    get ContentType(): MediaTypeHeaderValue | null;
+    set ContentType(value: MediaTypeHeaderValue | null);
     get Date(): Nullable_1<DateTimeOffset>;
     set Date(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
-    get ETag(): EntityTagHeaderValue | undefined;
-    set ETag(value: EntityTagHeaderValue | undefined);
+    get ETag(): EntityTagHeaderValue | null;
+    set ETag(value: EntityTagHeaderValue | null);
     get Expires(): Nullable_1<DateTimeOffset>;
     set Expires(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     readonly Headers: IHeaderDictionary;
     get LastModified(): Nullable_1<DateTimeOffset>;
     set LastModified(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
-    get Location(): Uri | undefined;
-    set Location(value: Uri | undefined);
+    get Location(): Uri | null;
+    set Location(value: Uri | null);
     SetCookie: IList_1<SetCookieHeaderValue>;
-    Append(name: string, value: unknown): void;
+    Append(name: string, value: JsValue): void;
     AppendList<T>(name: string, values: IList_1<T>): void;
-    Get<T>(name: string): T | undefined;
+    Get<T>(name: string): T | null;
     GetList<T>(name: string): IList_1<T>;
-    Set(name: string, value: unknown): void;
-    SetList<T>(name: string, values: IList_1<T>): void;
+    Set(name: string, value: JsValue | null): void;
+    SetList<T>(name: string, values: IList_1<T> | null): void;
 }
 
 

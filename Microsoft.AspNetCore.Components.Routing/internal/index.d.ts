@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Routing
 // Assembly: Microsoft.AspNetCore.Components, Microsoft.AspNetCore.Components.Endpoints, Microsoft.AspNetCore.Components.Web
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
@@ -45,7 +46,7 @@ export type INavigationInterception = INavigationInterception$instance;
 export interface IRoutingStateProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Routing_IRoutingStateProvider: never;
 
-    readonly RouteData: RouteData | undefined;
+    readonly RouteData: RouteData | null;
 }
 
 
@@ -67,10 +68,10 @@ export interface FocusOnNavigate$instance extends ComponentBase, Microsoft_AspNe
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleAfterRender: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
 
-    get RouteData(): RouteData | undefined;
-    set RouteData(value: RouteData | undefined);
-    get Selector(): string | undefined;
-    set Selector(value: string | undefined);
+    get RouteData(): RouteData | null;
+    set RouteData(value: RouteData | null);
+    get Selector(): string | null;
+    set Selector(value: string | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     OnAfterRenderAsync(firstRender: boolean): Task;
     OnParametersSet(): void;
@@ -94,8 +95,8 @@ export type FocusOnNavigate = FocusOnNavigate$instance & __FocusOnNavigate$views
 export interface LocationChangedEventArgs$instance extends EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_LocationChangedEventArgs: never;
 
-    get HistoryEntryState(): string | undefined;
-    set HistoryEntryState(value: string | undefined);
+    get HistoryEntryState(): string | null;
+    set HistoryEntryState(value: string | null);
     readonly IsNavigationIntercepted: boolean;
     readonly Location: string;
 }
@@ -112,8 +113,8 @@ export interface LocationChangingContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_LocationChangingContext: never;
 
     CancellationToken: CancellationToken;
-    get HistoryEntryState(): string | undefined;
-    set HistoryEntryState(value: string | undefined);
+    get HistoryEntryState(): string | null;
+    set HistoryEntryState(value: string | null);
     IsNavigationIntercepted: boolean;
     TargetLocation: string;
     PreventNavigation(): void;
@@ -174,12 +175,12 @@ export interface NavLink$instance extends ComponentBase, Microsoft_AspNetCore_Co
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IHandleEvent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get ActiveClass(): string | undefined;
-    set ActiveClass(value: string | undefined);
-    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined;
-    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, unknown> | undefined);
-    get ChildContent(): RenderFragment | undefined;
-    set ChildContent(value: RenderFragment | undefined);
+    get ActiveClass(): string | null;
+    set ActiveClass(value: string | null);
+    get AdditionalAttributes(): IReadOnlyDictionary_2<System_Internal.String, JsValue> | null;
+    set AdditionalAttributes(value: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null);
+    get ChildContent(): RenderFragment | null;
+    set ChildContent(value: RenderFragment | null);
     Match: NavLinkMatch;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     Dispose(): void;
@@ -206,8 +207,8 @@ export type NavLink = NavLink$instance & __NavLink$views;
 export interface NotFoundEventArgs$instance extends EventArgs {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Routing_NotFoundEventArgs: never;
 
-    get Path(): string | undefined;
-    set Path(value: string | undefined);
+    get Path(): string | null;
+    set Path(value: string | null);
 }
 
 
@@ -228,11 +229,11 @@ export interface Router$instance extends Microsoft_AspNetCore_Components_Interna
     AdditionalAssemblies: IEnumerable_1<Assembly>;
     AppAssembly: Assembly;
     Found: RenderFragment_1<RouteData>;
-    get Navigating(): RenderFragment | undefined;
-    set Navigating(value: RenderFragment | undefined);
+    get Navigating(): RenderFragment | null;
+    set Navigating(value: RenderFragment | null);
     NotFound: RenderFragment;
-    get NotFoundPage(): Type | undefined;
-    set NotFoundPage(value: Type | undefined);
+    get NotFoundPage(): Type | null;
+    set NotFoundPage(value: Type | null);
     OnNavigateAsync: EventCallback_1<NavigationContext>;
     PreferExactMatches: boolean;
     Attach(renderHandle: RenderHandle): void;

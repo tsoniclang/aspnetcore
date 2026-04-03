@@ -2318,6 +2318,86 @@
       ]
     },
     {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager",
+      "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Protected",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager::Recurse(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor,System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager",
+          "clrName": "Recurse",
+          "metadataToken": 100667274,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor,System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager",
+          "normalizedSignature": "Recurse|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor,System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.IValidationStrategy):Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 5,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100667276,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager::.ctor(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor,System.Object):void",
+          "metadataToken": 100667275,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor,System.Object):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor,System.Object):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor\u002BStateManager",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
+    },
+    {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache",
       "clrName": "Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidatorCache",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Core",

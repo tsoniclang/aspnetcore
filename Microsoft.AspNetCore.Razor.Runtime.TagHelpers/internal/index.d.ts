@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Razor.Runtime.TagHelpers
 // Assembly: Microsoft.AspNetCore.Razor.Runtime
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HtmlAttributeValueStyle, ITagHelper, TagHelperAttribute, TagHelperContent, TagHelperContext, TagHelperOutput, TagMode } from "../../Microsoft.AspNetCore.Razor.TagHelpers/internal/index.js";
@@ -18,21 +19,21 @@ export interface TagHelperExecutionContext$instance {
 
     readonly ChildContentRetrieved: boolean;
     readonly Context: TagHelperContext;
-    Items: IDictionary_2<unknown, unknown>;
+    Items: IDictionary_2<JsValue, JsValue>;
     Output: TagHelperOutput;
     readonly TagHelpers: IList_1<ITagHelper>;
     Add(tagHelper: ITagHelper): void;
-    AddHtmlAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
+    AddHtmlAttribute(name: string, value: JsValue, valueStyle: HtmlAttributeValueStyle): void;
     AddHtmlAttribute(attribute: TagHelperAttribute): void;
-    AddTagHelperAttribute(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): void;
+    AddTagHelperAttribute(name: string, value: JsValue, valueStyle: HtmlAttributeValueStyle): void;
     AddTagHelperAttribute(attribute: TagHelperAttribute): void;
-    Reinitialize(tagName: string, tagMode: TagMode, items: IDictionary_2<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func_1<Task>): void;
+    Reinitialize(tagName: string, tagMode: TagMode, items: IDictionary_2<JsValue, JsValue>, uniqueId: string, executeChildContentAsync: Func_1<Task>): void;
     SetOutputContentAsync(): Task;
 }
 
 
 export const TagHelperExecutionContext: {
-    new(tagName: string, tagMode: TagMode, items: IDictionary_2<unknown, unknown>, uniqueId: string, executeChildContentAsync: Func_1<Task>, startTagHelperWritingScope: Action_1<HtmlEncoder>, endTagHelperWritingScope: Func_1<TagHelperContent>): TagHelperExecutionContext;
+    new(tagName: string, tagMode: TagMode, items: IDictionary_2<JsValue, JsValue>, uniqueId: string, executeChildContentAsync: Func_1<Task>, startTagHelperWritingScope: Action_1<HtmlEncoder>, endTagHelperWritingScope: Func_1<TagHelperContent>): TagHelperExecutionContext;
 };
 
 

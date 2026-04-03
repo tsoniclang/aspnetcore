@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.CompilerServices
 // Assembly: Microsoft.AspNetCore.Components
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { EventCallback_1 } from "../../Microsoft.AspNetCore.Components/internal/index.js";
@@ -12,11 +13,11 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action, Action_1, Func_1, Func_2, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class RuntimeHelpers$instance {
-    static CreateInferredBindSetter<T>(callback: Action_1<T>, value: T): Func_2<T, Task>;
+    static CreateInferredBindSetter<T>(callback: Action_1<T | null>, value: T): Func_2<T, Task>;
     static CreateInferredBindSetter<T>(callback: Func_2<T, Task>, value: T): Func_2<T, Task>;
-    static CreateInferredEventCallback<T>(receiver: unknown, callback: Action_1<T>, value: T): EventCallback_1<T>;
-    static CreateInferredEventCallback<T>(receiver: unknown, callback: EventCallback_1<T>, value: T): EventCallback_1<T>;
-    static CreateInferredEventCallback<T>(receiver: unknown, callback: Func_2<T, Task>, value: T): EventCallback_1<T>;
+    static CreateInferredEventCallback<T>(receiver: JsValue, callback: Action_1<T>, value: T): EventCallback_1<T>;
+    static CreateInferredEventCallback<T>(receiver: JsValue, callback: EventCallback_1<T>, value: T): EventCallback_1<T>;
+    static CreateInferredEventCallback<T>(receiver: JsValue, callback: Func_2<T, Task>, value: T): EventCallback_1<T>;
     static InvokeAsynchronousDelegate(callback: Action): Task;
     static InvokeAsynchronousDelegate(callback: Func_1<Task>): Task;
     static InvokeSynchronousDelegate(callback: Action): void;

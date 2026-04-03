@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Server.HttpSys
 // Assembly: Microsoft.AspNetCore.Server.HttpSys
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -137,8 +135,8 @@ export interface AuthenticationManager$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Server_HttpSys_AuthenticationManager: never;
 
     AllowAnonymous: boolean;
-    get AuthenticationDisplayName(): string | undefined;
-    set AuthenticationDisplayName(value: string | undefined);
+    get AuthenticationDisplayName(): string | null;
+    set AuthenticationDisplayName(value: string | null);
     AutomaticAuthentication: boolean;
     CaptureCredentials: boolean;
     EnableKerberosCredentialCaching: boolean;
@@ -200,10 +198,10 @@ export interface HttpSysOptions$instance {
     set MaxRequestBodySize(value: Nullable_1<System_Internal.Int64> | long);
     RequestQueueLimit: long;
     RequestQueueMode: RequestQueueMode;
-    get RequestQueueName(): string | undefined;
-    set RequestQueueName(value: string | undefined);
-    get RequestQueueSecurityDescriptor(): GenericSecurityDescriptor | undefined;
-    set RequestQueueSecurityDescriptor(value: GenericSecurityDescriptor | undefined);
+    get RequestQueueName(): string | null;
+    set RequestQueueName(value: string | null);
+    get RequestQueueSecurityDescriptor(): GenericSecurityDescriptor | null;
+    set RequestQueueSecurityDescriptor(value: GenericSecurityDescriptor | null);
     ThrowWriteExceptions: boolean;
     readonly Timeouts: TimeoutManager;
     UnsafePreferInlineScheduling: boolean;
@@ -247,7 +245,7 @@ export interface UrlPrefix$instance {
     readonly Port: string;
     readonly PortValue: int;
     readonly Scheme: string;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }

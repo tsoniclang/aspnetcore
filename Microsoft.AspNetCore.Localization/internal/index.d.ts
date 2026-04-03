@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Localization
 // Assembly: Microsoft.AspNetCore.Localization
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RequestLocalizationOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -21,7 +22,7 @@ export interface IRequestCultureFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureFeature: never;
 
     readonly RequestCulture: RequestCulture;
-    readonly Provider: IRequestCultureProvider | undefined;
+    readonly Provider: IRequestCultureProvider | null;
 }
 
 
@@ -30,7 +31,7 @@ export type IRequestCultureFeature = IRequestCultureFeature$instance;
 export interface IRequestCultureProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
 }
 
 
@@ -42,7 +43,7 @@ export interface AcceptLanguageHeaderRequestCultureProvider$instance extends Req
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     MaximumAcceptLanguageHeaderValuesToTry: int;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
 }
 
 
@@ -64,7 +65,7 @@ export interface CookieRequestCultureProvider$instance extends RequestCulturePro
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
     CookieName: string;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
 }
 
 
@@ -72,7 +73,7 @@ export const CookieRequestCultureProvider: {
     new(): CookieRequestCultureProvider;
     readonly DefaultCookieName: string;
     MakeCookieValue(requestCulture: RequestCulture): string;
-    ParseCookieValue(value: string): ProviderCultureResult | undefined;
+    ParseCookieValue(value: string): ProviderCultureResult | null;
 };
 
 
@@ -88,12 +89,12 @@ export interface CustomRequestCultureProvider$instance extends RequestCulturePro
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
 }
 
 
 export const CustomRequestCultureProvider: {
-    new(provider: Func_2<HttpContext, Task_1<ProviderCultureResult>>): CustomRequestCultureProvider;
+    new(provider: Func_2<HttpContext, Task_1<ProviderCultureResult | null>>): CustomRequestCultureProvider;
 };
 
 
@@ -129,7 +130,7 @@ export interface QueryStringRequestCultureProvider$instance extends RequestCultu
 
     QueryStringKey: string;
     UIQueryStringKey: string;
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | undefined>;
+    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
 }
 
 
@@ -168,13 +169,13 @@ export interface RequestCultureFeature$instance extends IRequestCultureFeature$i
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureFeature: never;
 
-    readonly Provider: IRequestCultureProvider | undefined;
+    readonly Provider: IRequestCultureProvider | null;
     readonly RequestCulture: RequestCulture;
 }
 
 
 export const RequestCultureFeature: {
-    new(requestCulture: RequestCulture, provider: IRequestCultureProvider): RequestCultureFeature;
+    new(requestCulture: RequestCulture, provider: IRequestCultureProvider | null): RequestCultureFeature;
 };
 
 
@@ -190,14 +191,14 @@ export interface RequestCultureProvider$instance extends IRequestCultureProvider
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Localization_IRequestCultureProvider: never;
 
-    get Options(): RequestLocalizationOptions | undefined;
-    set Options(value: RequestLocalizationOptions | undefined);
-    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | undefined>;
+    get Options(): RequestLocalizationOptions | null;
+    set Options(value: RequestLocalizationOptions | null);
+    DetermineProviderCultureResult(httpContext: HttpContext): Task_1<ProviderCultureResult | null>;
 }
 
 
 export const RequestCultureProvider: (abstract new() => RequestCultureProvider) & {
-    readonly NullProviderCultureResult: Task_1<ProviderCultureResult | undefined>;
+    readonly NullProviderCultureResult: Task_1<ProviderCultureResult | null>;
 };
 
 

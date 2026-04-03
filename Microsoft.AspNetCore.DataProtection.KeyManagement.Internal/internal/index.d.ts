@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.DataProtection.KeyManagement.Internal
 // Assembly: Microsoft.AspNetCore.DataProtection
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { IAuthenticatedEncryptorDescriptor } from "../../Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel/internal/index.js";
@@ -40,7 +38,7 @@ export interface IInternalXmlKeyManager$instance {
 
     CreateNewKey(keyId: Guid, creationDate: DateTimeOffset, activationDate: DateTimeOffset, expirationDate: DateTimeOffset): IKey;
     DeserializeDescriptorFromKeyElement(keyElement: XElement): IAuthenticatedEncryptorDescriptor;
-    RevokeSingleKey(keyId: Guid, revocationDate: DateTimeOffset, reason: string): void;
+    RevokeSingleKey(keyId: Guid, revocationDate: DateTimeOffset, reason: string | null): void;
 }
 
 
@@ -49,9 +47,9 @@ export type IInternalXmlKeyManager = IInternalXmlKeyManager$instance;
 export interface IKeyRing$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing: never;
 
-    readonly DefaultAuthenticatedEncryptor: IAuthenticatedEncryptor | undefined;
+    readonly DefaultAuthenticatedEncryptor: IAuthenticatedEncryptor | null;
     readonly DefaultKeyId: Guid;
-    GetAuthenticatedEncryptorByKeyId(keyId: Guid, isRevoked: boolean): IAuthenticatedEncryptor | undefined;
+    GetAuthenticatedEncryptorByKeyId(keyId: Guid, isRevoked: boolean): IAuthenticatedEncryptor | null;
 }
 
 
@@ -69,8 +67,8 @@ export type IKeyRingProvider = IKeyRingProvider$instance;
 export interface DefaultKeyResolution$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_DefaultKeyResolution: never;
 
-    DefaultKey: IKey | undefined;
-    FallbackKey: IKey | undefined;
+    DefaultKey: IKey | null;
+    FallbackKey: IKey | null;
     ShouldGenerateNewKey: boolean;
 }
 

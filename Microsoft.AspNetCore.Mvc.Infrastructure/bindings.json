@@ -2677,6 +2677,97 @@
       ]
     },
     {
+      "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata",
+      "clrName": "Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.Core",
+      "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Protected",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata::Exists:System.Boolean",
+          "clrName": "Exists",
+          "metadataToken": 385877087,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata::Length:System.Int64",
+          "clrName": "Length",
+          "metadataToken": 385877088,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "Length|:System.Int64|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata::LastModified:System.DateTimeOffset",
+          "clrName": "LastModified",
+          "metadataToken": 385877089,
+          "canonicalSignature": ":System.DateTimeOffset",
+          "normalizedSignature": "LastModified|:System.DateTimeOffset|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata::.ctor():void",
+          "metadataToken": 100667544,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.Infrastructure.PhysicalFileResultExecutor\u002BFileMetadata",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.Core"
+        }
+      ]
+    },
+    {
       "stableId": "Microsoft.AspNetCore.Mvc.Core:Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory",
       "clrName": "Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory",
       "assemblyName": "Microsoft.AspNetCore.Mvc.Core",

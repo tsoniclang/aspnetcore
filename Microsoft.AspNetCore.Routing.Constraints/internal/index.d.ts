@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Routing.Constraints
 // Assembly: Microsoft.AspNetCore.Routing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -48,7 +49,7 @@ export interface BoolRouteConstraint$instance extends IParameterPolicy, Microsof
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -73,7 +74,7 @@ export interface CompositeRouteConstraint$instance extends IParameterPolicy, Mic
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
     Constraints: IEnumerable_1<IRouteConstraint>;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -98,7 +99,7 @@ export interface DateTimeRouteConstraint$instance extends IParameterPolicy, Micr
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -123,7 +124,7 @@ export interface DecimalRouteConstraint$instance extends IParameterPolicy, Micro
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -148,7 +149,7 @@ export interface DoubleRouteConstraint$instance extends IParameterPolicy, Micros
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -173,7 +174,7 @@ export interface FileNameRouteConstraint$instance extends IParameterPolicy, Micr
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -198,7 +199,7 @@ export interface FloatRouteConstraint$instance extends IParameterPolicy, Microso
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -223,7 +224,7 @@ export interface GuidRouteConstraint$instance extends IParameterPolicy, Microsof
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -247,7 +248,7 @@ export interface HttpMethodRouteConstraint$instance extends IParameterPolicy, Mi
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
     readonly AllowedMethods: IList_1<System_Internal.String>;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -271,7 +272,7 @@ export interface IntRouteConstraint$instance extends IParameterPolicy, Microsoft
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -298,7 +299,7 @@ export interface LengthRouteConstraint$instance extends IParameterPolicy, Micros
 
     readonly MaxLength: int;
     readonly MinLength: int;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -324,7 +325,7 @@ export interface LongRouteConstraint$instance extends IParameterPolicy, Microsof
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -350,7 +351,7 @@ export interface MaxLengthRouteConstraint$instance extends IParameterPolicy, Mic
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
     readonly MaxLength: int;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -376,7 +377,7 @@ export interface MaxRouteConstraint$instance extends IParameterPolicy, Microsoft
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
     Max: long;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -402,7 +403,7 @@ export interface MinLengthRouteConstraint$instance extends IParameterPolicy, Mic
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
     MinLength: int;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -428,7 +429,7 @@ export interface MinRouteConstraint$instance extends IParameterPolicy, Microsoft
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
     readonly Min: long;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -453,7 +454,7 @@ export interface NonFileNameRouteConstraint$instance extends IParameterPolicy, M
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -477,7 +478,7 @@ export interface OptionalRouteConstraint$instance extends IParameterPolicy, Micr
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
     readonly InnerConstraint: IRouteConstraint;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -503,7 +504,7 @@ export interface RangeRouteConstraint$instance extends IParameterPolicy, Microso
 
     Max: long;
     Min: long;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -552,7 +553,7 @@ export interface RegexRouteConstraint$instance extends IParameterPolicy, Microso
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
     readonly Constraint: Regex;
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -576,7 +577,7 @@ export interface RequiredRouteConstraint$instance extends IParameterPolicy, Micr
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IRouteConstraint: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 
@@ -600,7 +601,7 @@ export interface StringRouteConstraint$instance extends IParameterPolicy, Micros
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_ICachableParameterPolicy: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy: never;
 
-    Match(httpContext: HttpContext, route: IRouter, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
+    Match(httpContext: HttpContext | null, route: IRouter | null, routeKey: string, values: RouteValueDictionary, routeDirection: RouteDirection): boolean;
 }
 
 

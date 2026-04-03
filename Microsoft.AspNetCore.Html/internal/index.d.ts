@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Html
 // Assembly: Microsoft.AspNetCore.Html.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -67,9 +68,9 @@ export interface HtmlContentBuilder$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 
     readonly Count: int;
-    Append(unencoded: string): IHtmlContentBuilder;
-    AppendHtml(htmlContent: IHtmlContent): IHtmlContentBuilder;
-    AppendHtml(encoded: string): IHtmlContentBuilder;
+    Append(unencoded: string | null): IHtmlContentBuilder;
+    AppendHtml(htmlContent: IHtmlContent | null): IHtmlContentBuilder;
+    AppendHtml(encoded: string | null): IHtmlContentBuilder;
     Clear(): IHtmlContentBuilder;
     CopyTo(destination: IHtmlContentBuilder): void;
     MoveTo(destination: IHtmlContentBuilder): void;
@@ -80,7 +81,7 @@ export interface HtmlContentBuilder$instance {
 export const HtmlContentBuilder: {
     new(): HtmlContentBuilder;
     new(capacity: int): HtmlContentBuilder;
-    new(entries: IList_1<unknown>): HtmlContentBuilder;
+    new(entries: IList_1<JsValue>): HtmlContentBuilder;
 };
 
 
@@ -103,8 +104,8 @@ export interface HtmlFormattableString$instance extends IHtmlContent$instance {
 
 
 export const HtmlFormattableString: {
-    new(format: string, args: unknown[]): HtmlFormattableString;
-    new(formatProvider: IFormatProvider, format: string, args: unknown[]): HtmlFormattableString;
+    new(format: string, args: (JsValue | null)[]): HtmlFormattableString;
+    new(formatProvider: IFormatProvider | null, format: string, args: (JsValue | null)[]): HtmlFormattableString;
 };
 
 
@@ -120,14 +121,14 @@ export interface HtmlString$instance extends IHtmlContent$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
 
-    readonly Value: string | undefined;
+    readonly Value: string | null;
     ToString(): string;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
 }
 
 
 export const HtmlString: {
-    new(value: string): HtmlString;
+    new(value: string | null): HtmlString;
     readonly NewLine: HtmlString;
     readonly Empty: HtmlString;
 };
@@ -141,8 +142,8 @@ export type HtmlString = HtmlString$instance & __HtmlString$views;
 
 
 export abstract class HtmlContentBuilderExtensions$instance {
-    static AppendFormat(builder: IHtmlContentBuilder, formatProvider: IFormatProvider, format: string, ...args: unknown[]): IHtmlContentBuilder;
-    static AppendFormat(builder: IHtmlContentBuilder, format: string, ...args: unknown[]): IHtmlContentBuilder;
+    static AppendFormat(builder: IHtmlContentBuilder, formatProvider: IFormatProvider, format: string, ...args: (JsValue | null)[]): IHtmlContentBuilder;
+    static AppendFormat(builder: IHtmlContentBuilder, format: string, ...args: (JsValue | null)[]): IHtmlContentBuilder;
     static AppendHtmlLine(builder: IHtmlContentBuilder, encoded: string): IHtmlContentBuilder;
     static AppendLine(builder: IHtmlContentBuilder, content: IHtmlContent): IHtmlContentBuilder;
     static AppendLine(builder: IHtmlContentBuilder, unencoded: string): IHtmlContentBuilder;

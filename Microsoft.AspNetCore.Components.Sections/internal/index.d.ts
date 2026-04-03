@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Sections
 // Assembly: Microsoft.AspNetCore.Components
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Components_Internal from "../../Microsoft.AspNetCore.Components/internal/index.js";
@@ -18,12 +19,12 @@ export interface SectionContent$instance extends Microsoft_AspNetCore_Components
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get ChildContent(): RenderFragment | undefined;
-    set ChildContent(value: RenderFragment | undefined);
-    get SectionId(): unknown | undefined;
-    set SectionId(value: unknown | undefined);
-    get SectionName(): string | undefined;
-    set SectionName(value: string | undefined);
+    get ChildContent(): RenderFragment | null;
+    set ChildContent(value: RenderFragment | null);
+    get SectionId(): JsValue | null;
+    set SectionId(value: JsValue | null);
+    get SectionName(): string | null;
+    set SectionName(value: string | null);
     Dispose(): void;
 }
 
@@ -46,10 +47,10 @@ export interface SectionOutlet$instance extends Microsoft_AspNetCore_Components_
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get SectionId(): unknown | undefined;
-    set SectionId(value: unknown | undefined);
-    get SectionName(): string | undefined;
-    set SectionName(value: string | undefined);
+    get SectionId(): JsValue | null;
+    set SectionId(value: JsValue | null);
+    get SectionName(): string | null;
+    set SectionName(value: string | null);
     Dispose(): void;
 }
 

@@ -38,6 +38,7 @@ import type { IOptions } from '@tsonic/microsoft-extensions/Microsoft.Extensions
 export type IKeepTempDataResult = Internal.IKeepTempDataResult;
 export { AntiforgeryExtensions$instance as AntiforgeryExtensions } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 export { AttributeDictionary as AttributeDictionary } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
+export { AttributeDictionary_Enumerator as AttributeDictionary_Enumerator } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 export { CookieTempDataProvider as CookieTempDataProvider } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 export { DefaultHtmlGenerator as DefaultHtmlGenerator } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 export { DefaultHtmlGeneratorExtensions$instance as DefaultHtmlGeneratorExtensions } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
@@ -76,7 +77,6 @@ export { ViewDataEvaluator$instance as ViewDataEvaluator } from './Microsoft.Asp
 export { ViewDataInfo as ViewDataInfo } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 export { ViewExecutor as ViewExecutor } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 export { ViewResultExecutor as ViewResultExecutor } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
-export { AttributeDictionary_Enumerator as AttributeDictionary_Enumerator } from './Microsoft.AspNetCore.Mvc.ViewFeatures/internal/index.js';
 
 // Multi-arity family value exports (arity-0 constructors/static namespaces)
 export const HtmlHelper: typeof Internal.HtmlHelper;

@@ -1121,137 +1121,6 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
-      "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
-      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
-          "typeArguments": [
-            "KeyValuePair_2[[String,String]]"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
-          "metadataToken": 100664933,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
-          "metadataToken": 100664934,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
-          "metadataToken": 100664935,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Reset|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Current",
-          "metadataToken": 385876322,
-          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary):void",
-          "metadataToken": 100664930,
-          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary):void",
-          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
-        }
-      ]
-    },
-    {
       "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary",
       "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary",
       "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
@@ -1626,6 +1495,137 @@
           "parameterCount": 0,
           "visibility": "Public",
           "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
+      "clrName": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
+      "assemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,String]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100664933,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "metadataToken": 100664934,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::Reset():System.Void",
+          "clrName": "Reset",
+          "metadataToken": 100664935,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Reset|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::Current:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Current",
+          "metadataToken": 385876322,
+          "canonicalSignature": ":System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Current|:System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.AspNetCore.Mvc.ViewFeatures:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator::.ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary):void",
+          "metadataToken": 100664930,
+          "canonicalSignature": "(Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary):void",
+          "normalizedSignature": "constructor|(Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary\u002BEnumerator",
           "declaringAssemblyName": "Microsoft.AspNetCore.Mvc.ViewFeatures"
         }
       ]

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Http.Connections
 // Assembly: Microsoft.AspNetCore.Http.Connections, Microsoft.AspNetCore.Http.Connections.Common
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IAuthorizeData } from "../../Microsoft.AspNetCore.Authorization/internal/index.js";
@@ -27,10 +28,10 @@ export enum HttpTransportType {
 export interface AvailableTransport$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_AvailableTransport: never;
 
-    get TransferFormats(): IList_1<System_Internal.String> | undefined;
-    set TransferFormats(value: IList_1<System_Internal.String> | undefined);
-    get Transport(): string | undefined;
-    set Transport(value: string | undefined);
+    get TransferFormats(): IList_1<System_Internal.String> | null;
+    set TransferFormats(value: IList_1<System_Internal.String> | null);
+    get Transport(): string | null;
+    set Transport(value: string | null);
 }
 
 
@@ -126,18 +127,18 @@ export type NegotiateMetadata = NegotiateMetadata$instance;
 export interface NegotiationResponse$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_NegotiationResponse: never;
 
-    get AccessToken(): string | undefined;
-    set AccessToken(value: string | undefined);
-    get AvailableTransports(): IList_1<AvailableTransport> | undefined;
-    set AvailableTransports(value: IList_1<AvailableTransport> | undefined);
-    get ConnectionId(): string | undefined;
-    set ConnectionId(value: string | undefined);
-    get ConnectionToken(): string | undefined;
-    set ConnectionToken(value: string | undefined);
-    get Error(): string | undefined;
-    set Error(value: string | undefined);
-    get Url(): string | undefined;
-    set Url(value: string | undefined);
+    get AccessToken(): string | null;
+    set AccessToken(value: string | null);
+    get AvailableTransports(): IList_1<AvailableTransport> | null;
+    set AvailableTransports(value: IList_1<AvailableTransport> | null);
+    get ConnectionId(): string | null;
+    set ConnectionId(value: string | null);
+    get ConnectionToken(): string | null;
+    set ConnectionToken(value: string | null);
+    get Error(): string | null;
+    set Error(value: string | null);
+    get Url(): string | null;
+    set Url(value: string | null);
     UseStatefulReconnect: boolean;
     Version: int;
 }
@@ -154,8 +155,8 @@ export interface WebSocketOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Connections_WebSocketOptions: never;
 
     CloseTimeout: TimeSpan;
-    get SubProtocolSelector(): Func_2<IList_1<System_Internal.String>, System_Internal.String> | undefined;
-    set SubProtocolSelector(value: Func_2<IList_1<System_Internal.String>, System_Internal.String> | undefined);
+    get SubProtocolSelector(): Func_2<IList_1<System_Internal.String>, System_Internal.String> | null;
+    set SubProtocolSelector(value: Func_2<IList_1<System_Internal.String>, System_Internal.String> | null);
 }
 
 
@@ -167,7 +168,7 @@ export const WebSocketOptions: {
 export type WebSocketOptions = WebSocketOptions$instance;
 
 export abstract class HttpConnectionContextExtensions$instance {
-    static GetHttpContext(connection: ConnectionContext): HttpContext | undefined;
+    static GetHttpContext(connection: ConnectionContext): HttpContext | null;
 }
 
 

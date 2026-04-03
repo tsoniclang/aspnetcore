@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Filters
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.RazorPages
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -254,19 +255,19 @@ export interface ActionExecutedContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext: never;
 
     Canceled: boolean;
-    readonly Controller: unknown;
-    get Exception(): Exception | undefined;
-    set Exception(value: Exception | undefined);
-    get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
+    readonly Controller: JsValue;
+    get Exception(): Exception | null;
+    set Exception(value: Exception | null);
+    get ExceptionDispatchInfo(): ExceptionDispatchInfo | null;
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | null);
     ExceptionHandled: boolean;
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
 }
 
 
 export const ActionExecutedContext: {
-    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, controller: unknown): ActionExecutedContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, controller: JsValue): ActionExecutedContext;
 };
 
 
@@ -275,15 +276,15 @@ export type ActionExecutedContext = ActionExecutedContext$instance;
 export interface ActionExecutingContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext: never;
 
-    readonly ActionArguments: IDictionary_2<System_Internal.String, unknown | undefined>;
-    readonly Controller: unknown;
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    readonly ActionArguments: IDictionary_2<System_Internal.String, JsValue | null>;
+    readonly Controller: JsValue;
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
 }
 
 
 export const ActionExecutingContext: {
-    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, actionArguments: IDictionary_2<System_Internal.String, unknown>, controller: unknown): ActionExecutingContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, actionArguments: IDictionary_2<System_Internal.String, JsValue | null>, controller: JsValue): ActionExecutingContext;
 };
 
 
@@ -327,8 +328,8 @@ export type ActionFilterAttribute = ActionFilterAttribute$instance & __ActionFil
 export interface AuthorizationFilterContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_AuthorizationFilterContext: never;
 
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
 }
 
 
@@ -343,11 +344,11 @@ export interface ExceptionContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ExceptionContext: never;
 
     Exception: Exception;
-    get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
+    get ExceptionDispatchInfo(): ExceptionDispatchInfo | null;
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | null);
     ExceptionHandled: boolean;
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
 }
 
 
@@ -450,8 +451,8 @@ export interface FilterItem$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_FilterItem: never;
 
     readonly Descriptor: FilterDescriptor;
-    get Filter(): IFilterMetadata | undefined;
-    set Filter(value: IFilterMetadata | undefined);
+    get Filter(): IFilterMetadata | null;
+    set Filter(value: IFilterMetadata | null);
     IsReusable: boolean;
 }
 
@@ -484,20 +485,20 @@ export interface PageHandlerExecutedContext$instance extends FilterContext {
 
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
     Canceled: boolean;
-    get Exception(): Exception | undefined;
-    set Exception(value: Exception | undefined);
-    get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
+    get Exception(): Exception | null;
+    set Exception(value: Exception | null);
+    get ExceptionDispatchInfo(): ExceptionDispatchInfo | null;
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | null);
     ExceptionHandled: boolean;
-    readonly HandlerInstance: unknown;
-    readonly HandlerMethod: HandlerMethodDescriptor | undefined;
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    readonly HandlerInstance: JsValue;
+    readonly HandlerMethod: HandlerMethodDescriptor | null;
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
 }
 
 
 export const PageHandlerExecutedContext: {
-    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor, handlerInstance: unknown): PageHandlerExecutedContext;
+    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor | null, handlerInstance: JsValue): PageHandlerExecutedContext;
 };
 
 
@@ -507,16 +508,16 @@ export interface PageHandlerExecutingContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutingContext: never;
 
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
-    readonly HandlerArguments: IDictionary_2<System_Internal.String, unknown | undefined>;
-    readonly HandlerInstance: unknown;
-    readonly HandlerMethod: HandlerMethodDescriptor | undefined;
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    readonly HandlerArguments: IDictionary_2<System_Internal.String, JsValue | null>;
+    readonly HandlerInstance: JsValue;
+    readonly HandlerMethod: HandlerMethodDescriptor | null;
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
 }
 
 
 export const PageHandlerExecutingContext: {
-    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor, handlerArguments: IDictionary_2<System_Internal.String, unknown>, handlerInstance: unknown): PageHandlerExecutingContext;
+    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerMethod: HandlerMethodDescriptor | null, handlerArguments: IDictionary_2<System_Internal.String, JsValue | null>, handlerInstance: JsValue): PageHandlerExecutingContext;
 };
 
 
@@ -526,14 +527,14 @@ export interface PageHandlerSelectedContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_PageHandlerSelectedContext: never;
 
     readonly ActionDescriptor: ActionDescriptor | CompiledPageActionDescriptor;
-    readonly HandlerInstance: unknown;
-    get HandlerMethod(): HandlerMethodDescriptor | undefined;
-    set HandlerMethod(value: HandlerMethodDescriptor | undefined);
+    readonly HandlerInstance: JsValue;
+    get HandlerMethod(): HandlerMethodDescriptor | null;
+    set HandlerMethod(value: HandlerMethodDescriptor | null);
 }
 
 
 export const PageHandlerSelectedContext: {
-    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerInstance: unknown): PageHandlerSelectedContext;
+    new(pageContext: PageContext, filters: IList_1<IFilterMetadata>, handlerInstance: JsValue): PageHandlerSelectedContext;
 };
 
 
@@ -543,13 +544,13 @@ export interface ResourceExecutedContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResourceExecutedContext: never;
 
     Canceled: boolean;
-    get Exception(): Exception | undefined;
-    set Exception(value: Exception | undefined);
-    get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
+    get Exception(): Exception | null;
+    set Exception(value: Exception | null);
+    get ExceptionDispatchInfo(): ExceptionDispatchInfo | null;
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | null);
     ExceptionHandled: boolean;
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
 }
 
 
@@ -563,8 +564,8 @@ export type ResourceExecutedContext = ResourceExecutedContext$instance;
 export interface ResourceExecutingContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResourceExecutingContext: never;
 
-    get Result(): IActionResult | undefined;
-    set Result(value: IActionResult | undefined);
+    get Result(): IActionResult | null;
+    set Result(value: IActionResult | null);
     readonly ValueProviderFactories: IList_1<IValueProviderFactory>;
 }
 
@@ -580,18 +581,18 @@ export interface ResultExecutedContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResultExecutedContext: never;
 
     Canceled: boolean;
-    readonly Controller: unknown;
-    get Exception(): Exception | undefined;
-    set Exception(value: Exception | undefined);
-    get ExceptionDispatchInfo(): ExceptionDispatchInfo | undefined;
-    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | undefined);
+    readonly Controller: JsValue;
+    get Exception(): Exception | null;
+    set Exception(value: Exception | null);
+    get ExceptionDispatchInfo(): ExceptionDispatchInfo | null;
+    set ExceptionDispatchInfo(value: ExceptionDispatchInfo | null);
     ExceptionHandled: boolean;
     readonly Result: IActionResult;
 }
 
 
 export const ResultExecutedContext: {
-    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, result: IActionResult, controller: unknown): ResultExecutedContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, result: IActionResult, controller: JsValue): ResultExecutedContext;
 };
 
 
@@ -601,13 +602,13 @@ export interface ResultExecutingContext$instance extends FilterContext {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Filters_ResultExecutingContext: never;
 
     Cancel: boolean;
-    readonly Controller: unknown;
+    readonly Controller: JsValue;
     Result: IActionResult;
 }
 
 
 export const ResultExecutingContext: {
-    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, result: IActionResult, controller: unknown): ResultExecutingContext;
+    new(actionContext: ActionContext, filters: IList_1<IFilterMetadata>, result: IActionResult, controller: JsValue): ResultExecutingContext;
 };
 
 

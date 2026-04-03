@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Cors
 // Assembly: Microsoft.AspNetCore.Cors
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Cors_Infrastructure_Internal from "../../Microsoft.AspNetCore.Cors.Infrastructure/internal/index.js";
@@ -56,15 +57,15 @@ export interface EnableCorsAttribute$instance extends Attribute, ICorsMetadata, 
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute: never;
 
-    get PolicyName(): string | undefined;
-    set PolicyName(value: string | undefined);
+    get PolicyName(): string | null;
+    set PolicyName(value: string | null);
     ToString(): string;
 }
 
 
 export const EnableCorsAttribute: {
     new(): EnableCorsAttribute;
-    new(policyName: string): EnableCorsAttribute;
+    new(policyName: string | null): EnableCorsAttribute;
 };
 
 

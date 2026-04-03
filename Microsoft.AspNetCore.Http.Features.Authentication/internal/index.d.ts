@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Http.Features.Authentication
 // Assembly: Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Http.Features
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
@@ -13,8 +14,8 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.j
 export interface IHttpAuthenticationFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature: never;
 
-    get User(): ClaimsPrincipal | undefined;
-    set User(value: ClaimsPrincipal | undefined);
+    get User(): ClaimsPrincipal | null;
+    set User(value: ClaimsPrincipal | null);
 }
 
 
@@ -25,8 +26,8 @@ export interface HttpAuthenticationFeature$instance extends IHttpAuthenticationF
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature: never;
 
-    get User(): ClaimsPrincipal | undefined;
-    set User(value: ClaimsPrincipal | undefined);
+    get User(): ClaimsPrincipal | null;
+    set User(value: ClaimsPrincipal | null);
 }
 
 

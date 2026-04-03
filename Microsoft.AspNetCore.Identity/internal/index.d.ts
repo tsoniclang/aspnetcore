@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Identity
 // Assembly: Microsoft.AspNetCore.Identity, Microsoft.Extensions.Identity.Core, Microsoft.Extensions.Identity.Stores
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { CookieAuthenticationOptions, CookieValidatePrincipalContext } from "../../Microsoft.AspNetCore.Authentication.Cookies/internal/index.js";
@@ -48,7 +49,7 @@ export type IEmailSender_1<TUser> = IEmailSender_1$instance<TUser>;
 export interface ILookupNormalizer$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ILookupNormalizer: never;
 
-    NormalizeName(name: string): string | undefined;
+    NormalizeName(name: string | null): string | null;
 }
 
 
@@ -57,7 +58,7 @@ export type ILookupNormalizer = ILookupNormalizer$instance;
 export interface ILookupProtector$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ILookupProtector: never;
 
-    Protect(keyId: string, data: string): string | undefined;
+    Protect(keyId: string, data: string | null): string | null;
 }
 
 
@@ -77,7 +78,7 @@ export interface IPasskeyHandler_1$instance<TUser> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasskeyHandler_1: never;
 
     MakeCreationOptionsAsync(userEntity: PasskeyUserEntity, httpContext: HttpContext): Task_1<PasskeyCreationOptionsResult>;
-    MakeRequestOptionsAsync(user: TUser, httpContext: HttpContext): Task_1<PasskeyRequestOptionsResult>;
+    MakeRequestOptionsAsync(user: TUser | null, httpContext: HttpContext): Task_1<PasskeyRequestOptionsResult>;
     PerformAssertionAsync(context: PasskeyAssertionContext): Task_1<PasskeyAssertionResult_1<TUser>>;
     PerformAttestationAsync(context: PasskeyAttestationContext): Task_1<PasskeyAttestationResult>;
 }
@@ -98,7 +99,7 @@ export type IPasswordHasher_1<TUser> = IPasswordHasher_1$instance<TUser>;
 export interface IPasswordValidator_1$instance<TUser> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasswordValidator_1: never;
 
-    ValidateAsync(manager: UserManager_1<TUser>, user: TUser, password: string): Task_1<IdentityResult>;
+    ValidateAsync(manager: UserManager_1<TUser>, user: TUser, password: string | null): Task_1<IdentityResult>;
 }
 
 
@@ -107,7 +108,7 @@ export type IPasswordValidator_1<TUser> = IPasswordValidator_1$instance<TUser>;
 export interface IPersonalDataProtector$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPersonalDataProtector: never;
 
-    Protect(data: string): string | undefined;
+    Protect(data: string | null): string | null;
 }
 
 
@@ -118,7 +119,7 @@ export interface IProtectedUserStore_1$instance<TUser> extends IUserStore_1<TUse
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -132,7 +133,7 @@ export interface IQueryableRoleStore_1$instance<TRole> extends IRoleStore_1<TRol
     readonly Roles: IQueryable_1<TRole>;
     CreateAsync(role: TRole, cancellationToken: CancellationToken): Task_1<IdentityResult>;
     FindByIdAsync(roleId: string, cancellationToken: CancellationToken): Task_1<TRole>;
-    SetRoleNameAsync(role: TRole, roleName: string, cancellationToken: CancellationToken): Task;
+    SetRoleNameAsync(role: TRole, roleName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -146,7 +147,7 @@ export interface IQueryableUserStore_1$instance<TUser> extends IUserStore_1<TUse
     readonly Users: IQueryable_1<TUser>;
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -158,10 +159,10 @@ export interface IRoleClaimStore_1$instance<TRole> extends IRoleStore_1<TRole>, 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleClaimStore_1: never;
 
     AddClaimAsync(role: TRole, claim: Claim, cancellationToken?: CancellationToken): Task;
+    CreateAsync(role: TRole, cancellationToken: CancellationToken): Task_1<IdentityResult>;
     FindByIdAsync(roleId: string, cancellationToken: CancellationToken): Task_1<TRole>;
     GetClaimsAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<IList_1<Claim>>;
-    SetRoleNameAsync(role: TRole, roleName: string, cancellationToken: CancellationToken): Task;
-    CreateAsync(role: TRole, cancellationToken: CancellationToken): Task_1<IdentityResult>;
+    SetRoleNameAsync(role: TRole, roleName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -173,8 +174,8 @@ export interface IRoleStore_1$instance<TRole> extends IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IRoleStore_1: never;
 
     CreateAsync(role: TRole, cancellationToken: CancellationToken): Task_1<IdentityResult>;
-    FindByIdAsync(roleId: string, cancellationToken: CancellationToken): Task_1<TRole | undefined>;
-    SetRoleNameAsync(role: TRole, roleName: string, cancellationToken: CancellationToken): Task;
+    FindByIdAsync(roleId: string, cancellationToken: CancellationToken): Task_1<TRole | null>;
+    SetRoleNameAsync(role: TRole, roleName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -215,11 +216,11 @@ export interface IUserAuthenticationTokenStore_1$instance<TUser> extends IUserSt
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticationTokenStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    GetTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task_1<string | undefined>;
+    GetTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task_1<string | null>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     RemoveTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task;
-    SetTokenAsync(user: TUser, loginProvider: string, name: string, value: string, cancellationToken: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetTokenAsync(user: TUser, loginProvider: string, name: string, value: string | null, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -231,10 +232,10 @@ export interface IUserAuthenticatorKeyStore_1$instance<TUser> extends IUserStore
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserAuthenticatorKeyStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    GetAuthenticatorKeyAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | undefined>;
-    SetAuthenticatorKeyAsync(user: TUser, key: string, cancellationToken: CancellationToken): Task;
+    GetAuthenticatorKeyAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | null>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetAuthenticatorKeyAsync(user: TUser, key: string, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -257,10 +258,10 @@ export interface IUserClaimStore_1$instance<TUser> extends IUserStore_1<TUser>, 
     AddClaimsAsync(user: TUser, claims: IEnumerable_1<Claim>, cancellationToken: CancellationToken): Task;
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
     GetClaimsAsync(user: TUser, cancellationToken: CancellationToken): Task_1<IList_1<Claim>>;
+    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     GetUsersForClaimAsync(claim: Claim, cancellationToken: CancellationToken): Task_1<IList_1<TUser>>;
     ReplaceClaimAsync(user: TUser, claim: Claim, newClaim: Claim, cancellationToken: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
-    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -280,13 +281,13 @@ export type IUserConfirmation_1<TUser> = IUserConfirmation_1$instance<TUser>;
 export interface IUserEmailStore_1$instance<TUser> extends IUserStore_1<TUser>, IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserEmailStore_1: never;
 
-    FindByEmailAsync(normalizedEmail: string, cancellationToken: CancellationToken): Task_1<TUser | undefined>;
-    GetEmailAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | undefined>;
-    SetEmailAsync(user: TUser, email: string, cancellationToken: CancellationToken): Task;
-    SetEmailConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken: CancellationToken): Task;
-    FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
+    FindByEmailAsync(normalizedEmail: string, cancellationToken: CancellationToken): Task_1<TUser | null>;
+    GetEmailAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | null>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetEmailAsync(user: TUser, email: string | null, cancellationToken: CancellationToken): Task;
+    SetEmailConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
+    FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
 }
 
 
@@ -299,11 +300,11 @@ export interface IUserLockoutStore_1$instance<TUser> extends IUserStore_1<TUser>
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
     GetLockoutEndDateAsync(user: TUser, cancellationToken: CancellationToken): Task_1<Nullable_1<DateTimeOffset>>;
+    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     ResetAccessFailedCountAsync(user: TUser, cancellationToken: CancellationToken): Task;
     SetLockoutEnabledAsync(user: TUser, enabled: boolean, cancellationToken: CancellationToken): Task;
     SetLockoutEndDateAsync(user: TUser, lockoutEnd: Nullable_1<DateTimeOffset>, cancellationToken: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
-    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -316,11 +317,11 @@ export interface IUserLoginStore_1$instance<TUser> extends IUserStore_1<TUser>, 
 
     AddLoginAsync(user: TUser, login: UserLoginInfo, cancellationToken: CancellationToken): Task;
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    FindByLoginAsync(loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task_1<TUser | undefined>;
+    FindByLoginAsync(loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task_1<TUser | null>;
     GetLoginsAsync(user: TUser, cancellationToken: CancellationToken): Task_1<IList_1<UserLoginInfo>>;
-    RemoveLoginAsync(user: TUser, loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    RemoveLoginAsync(user: TUser, loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -333,12 +334,12 @@ export interface IUserPasskeyStore_1$instance<TUser> extends IUserStore_1<TUser>
 
     AddOrUpdatePasskeyAsync(user: TUser, passkey: UserPasskeyInfo, cancellationToken: CancellationToken): Task;
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    FindByPasskeyIdAsync(credentialId: byte[], cancellationToken: CancellationToken): Task_1<TUser | undefined>;
-    FindPasskeyAsync(user: TUser, credentialId: byte[], cancellationToken: CancellationToken): Task_1<UserPasskeyInfo | undefined>;
+    FindByPasskeyIdAsync(credentialId: byte[], cancellationToken: CancellationToken): Task_1<TUser | null>;
+    FindPasskeyAsync(user: TUser, credentialId: byte[], cancellationToken: CancellationToken): Task_1<UserPasskeyInfo | null>;
     GetPasskeysAsync(user: TUser, cancellationToken: CancellationToken): Task_1<IList_1<UserPasskeyInfo>>;
-    RemovePasskeyAsync(user: TUser, credentialId: byte[], cancellationToken: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    RemovePasskeyAsync(user: TUser, credentialId: byte[], cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -350,10 +351,10 @@ export interface IUserPasswordStore_1$instance<TUser> extends IUserStore_1<TUser
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserPasswordStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    GetPasswordHashAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | undefined>;
-    SetPasswordHashAsync(user: TUser, passwordHash: string, cancellationToken: CancellationToken): Task;
+    GetPasswordHashAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | null>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetPasswordHashAsync(user: TUser, passwordHash: string | null, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -365,11 +366,11 @@ export interface IUserPhoneNumberStore_1$instance<TUser> extends IUserStore_1<TU
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserPhoneNumberStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    GetPhoneNumberAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | undefined>;
-    SetPhoneNumberAsync(user: TUser, phoneNumber: string, cancellationToken: CancellationToken): Task;
-    SetPhoneNumberConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken: CancellationToken): Task;
+    GetPhoneNumberAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | null>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetPhoneNumberAsync(user: TUser, phoneNumber: string | null, cancellationToken: CancellationToken): Task;
+    SetPhoneNumberConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -382,11 +383,11 @@ export interface IUserRoleStore_1$instance<TUser> extends IUserStore_1<TUser>, I
 
     AddToRoleAsync(user: TUser, roleName: string, cancellationToken: CancellationToken): Task;
     GetRolesAsync(user: TUser, cancellationToken: CancellationToken): Task_1<IList_1<System_Internal.String>>;
+    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     GetUsersInRoleAsync(roleName: string, cancellationToken: CancellationToken): Task_1<IList_1<TUser>>;
     IsInRoleAsync(user: TUser, roleName: string, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -398,10 +399,10 @@ export interface IUserSecurityStampStore_1$instance<TUser> extends IUserStore_1<
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserSecurityStampStore_1: never;
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
-    GetSecurityStampAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | undefined>;
-    SetSecurityStampAsync(user: TUser, stamp: string, cancellationToken: CancellationToken): Task;
+    GetSecurityStampAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | null>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetSecurityStampAsync(user: TUser, stamp: string, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -412,9 +413,9 @@ export type IUserSecurityStampStore_1<TUser> = IUserSecurityStampStore_1$instanc
 export interface IUserStore_1$instance<TUser> extends IDisposable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IUserStore_1: never;
 
-    FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser | undefined>;
+    FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser | null>;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -427,10 +428,10 @@ export interface IUserTwoFactorRecoveryCodeStore_1$instance<TUser> extends IUser
 
     CountCodesAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
+    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
     RedeemCodeAsync(user: TUser, code: string, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
     ReplaceCodesAsync(user: TUser, recoveryCodes: IEnumerable_1<System_Internal.String>, cancellationToken: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
-    GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -443,9 +444,9 @@ export interface IUserTwoFactorStore_1$instance<TUser> extends IUserStore_1<TUse
 
     FindByIdAsync(userId: string, cancellationToken: CancellationToken): Task_1<TUser>;
     GetTwoFactorEnabledAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
-    SetTwoFactorEnabledAsync(user: TUser, enabled: boolean, cancellationToken: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken: CancellationToken): Task;
     GetUserIdAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.String>;
+    SetTwoFactorEnabledAsync(user: TUser, enabled: boolean, cancellationToken: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -591,8 +592,8 @@ export interface DefaultPersonalDataProtector$instance extends IPersonalDataProt
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPersonalDataProtector: never;
 
-    Protect(data: string): string | undefined;
-    Unprotect(data: string): string | undefined;
+    Protect(data: string | null): string | null;
+    Unprotect(data: string | null): string | null;
 }
 
 
@@ -654,10 +655,10 @@ export type EmailTokenProvider_1<TUser> = EmailTokenProvider_1$instance<TUser> &
 export interface ExternalLoginInfo$instance extends UserLoginInfo {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_ExternalLoginInfo: never;
 
-    get AuthenticationProperties(): AuthenticationProperties | undefined;
-    set AuthenticationProperties(value: AuthenticationProperties | undefined);
-    get AuthenticationTokens(): IEnumerable_1<AuthenticationToken> | undefined;
-    set AuthenticationTokens(value: IEnumerable_1<AuthenticationToken> | undefined);
+    get AuthenticationProperties(): AuthenticationProperties | null;
+    set AuthenticationProperties(value: AuthenticationProperties | null);
+    get AuthenticationTokens(): IEnumerable_1<AuthenticationToken> | null;
+    set AuthenticationTokens(value: IEnumerable_1<AuthenticationToken> | null);
     Principal: ClaimsPrincipal;
 }
 
@@ -672,8 +673,8 @@ export type ExternalLoginInfo = ExternalLoginInfo$instance;
 export interface IdentityBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityBuilder: never;
 
-    get RoleType(): Type | undefined;
-    set RoleType(value: Type | undefined);
+    get RoleType(): Type | null;
+    set RoleType(value: Type | null);
     readonly Services: IServiceCollection;
     readonly UserType: Type;
     AddClaimsPrincipalFactory<TFactory>(): IdentityBuilder;
@@ -722,14 +723,14 @@ export type IdentityConstants = IdentityConstants$instance;
 export interface IdentityCookiesBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityCookiesBuilder: never;
 
-    get ApplicationCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | undefined;
-    set ApplicationCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | undefined);
-    get ExternalCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | undefined;
-    set ExternalCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | undefined);
-    get TwoFactorRememberMeCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | undefined;
-    set TwoFactorRememberMeCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | undefined);
-    get TwoFactorUserIdCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | undefined;
-    set TwoFactorUserIdCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | undefined);
+    get ApplicationCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | null;
+    set ApplicationCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | null);
+    get ExternalCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | null;
+    set ExternalCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | null);
+    get TwoFactorRememberMeCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | null;
+    set TwoFactorRememberMeCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | null);
+    get TwoFactorUserIdCookie(): OptionsBuilder_1<CookieAuthenticationOptions> | null;
+    set TwoFactorUserIdCookie(value: OptionsBuilder_1<CookieAuthenticationOptions> | null);
 }
 
 
@@ -763,10 +764,10 @@ export interface IdentityErrorDescriber$instance {
     DuplicateEmail(email: string): IdentityError;
     DuplicateRoleName(role: string): IdentityError;
     DuplicateUserName(userName: string): IdentityError;
-    InvalidEmail(email: string): IdentityError;
-    InvalidRoleName(role: string): IdentityError;
+    InvalidEmail(email: string | null): IdentityError;
+    InvalidRoleName(role: string | null): IdentityError;
     InvalidToken(): IdentityError;
-    InvalidUserName(userName: string): IdentityError;
+    InvalidUserName(userName: string | null): IdentityError;
     LoginAlreadyAssociated(): IdentityError;
     PasswordMismatch(): IdentityError;
     PasswordRequiresDigit(): IdentityError;
@@ -819,12 +820,12 @@ export interface IdentityPasskeyData$instance {
     IsBackedUp: boolean;
     IsBackupEligible: boolean;
     IsUserVerified: boolean;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     PublicKey: byte[];
     SignCount: uint;
-    get Transports(): string[] | undefined;
-    set Transports(value: string[] | undefined);
+    get Transports(): string[] | null;
+    set Transports(value: string[] | null);
 }
 
 
@@ -838,24 +839,24 @@ export type IdentityPasskeyData = IdentityPasskeyData$instance;
 export interface IdentityPasskeyOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityPasskeyOptions: never;
 
-    get AttestationConveyancePreference(): string | undefined;
-    set AttestationConveyancePreference(value: string | undefined);
-    get AuthenticatorAttachment(): string | undefined;
-    set AuthenticatorAttachment(value: string | undefined);
+    get AttestationConveyancePreference(): string | null;
+    set AttestationConveyancePreference(value: string | null);
+    get AuthenticatorAttachment(): string | null;
+    set AuthenticatorAttachment(value: string | null);
     AuthenticatorTimeout: TimeSpan;
     ChallengeSize: int;
-    get IsAllowedAlgorithm(): Func_2<System_Internal.Int32, System_Internal.Boolean> | undefined;
-    set IsAllowedAlgorithm(value: Func_2<System_Internal.Int32, System_Internal.Boolean> | undefined);
-    get ResidentKeyRequirement(): string | undefined;
-    set ResidentKeyRequirement(value: string | undefined);
-    get ServerDomain(): string | undefined;
-    set ServerDomain(value: string | undefined);
-    get UserVerificationRequirement(): string | undefined;
-    set UserVerificationRequirement(value: string | undefined);
-    get ValidateOrigin(): Func_2<PasskeyOriginValidationContext | undefined, ValueTask_1<System_Internal.Boolean>> | undefined;
-    set ValidateOrigin(value: Func_2<PasskeyOriginValidationContext | undefined, ValueTask_1<System_Internal.Boolean>> | undefined);
-    get VerifyAttestationStatement(): Func_2<PasskeyAttestationStatementVerificationContext | undefined, ValueTask_1<System_Internal.Boolean>> | undefined;
-    set VerifyAttestationStatement(value: Func_2<PasskeyAttestationStatementVerificationContext | undefined, ValueTask_1<System_Internal.Boolean>> | undefined);
+    get IsAllowedAlgorithm(): Func_2<System_Internal.Int32, System_Internal.Boolean> | null;
+    set IsAllowedAlgorithm(value: Func_2<System_Internal.Int32, System_Internal.Boolean> | null);
+    get ResidentKeyRequirement(): string | null;
+    set ResidentKeyRequirement(value: string | null);
+    get ServerDomain(): string | null;
+    set ServerDomain(value: string | null);
+    get UserVerificationRequirement(): string | null;
+    set UserVerificationRequirement(value: string | null);
+    get ValidateOrigin(): Func_2<PasskeyOriginValidationContext | null, ValueTask_1<System_Internal.Boolean>> | null;
+    set ValidateOrigin(value: Func_2<PasskeyOriginValidationContext | null, ValueTask_1<System_Internal.Boolean>> | null);
+    get VerifyAttestationStatement(): Func_2<PasskeyAttestationStatementVerificationContext | null, ValueTask_1<System_Internal.Boolean>> | null;
+    set VerifyAttestationStatement(value: Func_2<PasskeyAttestationStatementVerificationContext | null, ValueTask_1<System_Internal.Boolean>> | null);
 }
 
 
@@ -901,13 +902,13 @@ export type IdentityRole = IdentityRole$instance;
 export interface IdentityRole_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityRole_1: never;
 
-    get ConcurrencyStamp(): string | undefined;
-    set ConcurrencyStamp(value: string | undefined);
+    get ConcurrencyStamp(): string | null;
+    set ConcurrencyStamp(value: string | null);
     Id: TKey;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
-    get NormalizedName(): string | undefined;
-    set NormalizedName(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
+    get NormalizedName(): string | null;
+    set NormalizedName(value: string | null);
     ToString(): string;
 }
 
@@ -923,13 +924,13 @@ export type IdentityRole_1<TKey extends (IEquatable_1<TKey> | number | string | 
 export interface IdentityRoleClaim_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityRoleClaim_1: never;
 
-    get ClaimType(): string | undefined;
-    set ClaimType(value: string | undefined);
-    get ClaimValue(): string | undefined;
-    set ClaimValue(value: string | undefined);
+    get ClaimType(): string | null;
+    set ClaimType(value: string | null);
+    get ClaimValue(): string | null;
+    set ClaimValue(value: string | null);
     Id: int;
     RoleId: TKey;
-    InitializeFromClaim(other: Claim): void;
+    InitializeFromClaim(other: Claim | null): void;
     ToClaim(): Claim;
 }
 
@@ -959,29 +960,29 @@ export interface IdentityUser_1$instance<TKey extends (IEquatable_1<TKey> | numb
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUser_1: never;
 
     AccessFailedCount: int;
-    get ConcurrencyStamp(): string | undefined;
-    set ConcurrencyStamp(value: string | undefined);
-    get Email(): string | undefined;
-    set Email(value: string | undefined);
+    get ConcurrencyStamp(): string | null;
+    set ConcurrencyStamp(value: string | null);
+    get Email(): string | null;
+    set Email(value: string | null);
     EmailConfirmed: boolean;
     Id: TKey;
     LockoutEnabled: boolean;
     get LockoutEnd(): Nullable_1<DateTimeOffset>;
     set LockoutEnd(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
-    get NormalizedEmail(): string | undefined;
-    set NormalizedEmail(value: string | undefined);
-    get NormalizedUserName(): string | undefined;
-    set NormalizedUserName(value: string | undefined);
-    get PasswordHash(): string | undefined;
-    set PasswordHash(value: string | undefined);
-    get PhoneNumber(): string | undefined;
-    set PhoneNumber(value: string | undefined);
+    get NormalizedEmail(): string | null;
+    set NormalizedEmail(value: string | null);
+    get NormalizedUserName(): string | null;
+    set NormalizedUserName(value: string | null);
+    get PasswordHash(): string | null;
+    set PasswordHash(value: string | null);
+    get PhoneNumber(): string | null;
+    set PhoneNumber(value: string | null);
     PhoneNumberConfirmed: boolean;
-    get SecurityStamp(): string | undefined;
-    set SecurityStamp(value: string | undefined);
+    get SecurityStamp(): string | null;
+    set SecurityStamp(value: string | null);
     TwoFactorEnabled: boolean;
-    get UserName(): string | undefined;
-    set UserName(value: string | undefined);
+    get UserName(): string | null;
+    set UserName(value: string | null);
     ToString(): string;
 }
 
@@ -997,10 +998,10 @@ export type IdentityUser_1<TKey extends (IEquatable_1<TKey> | number | string | 
 export interface IdentityUserClaim_1$instance<TKey extends (IEquatable_1<TKey> | number | string | boolean)> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserClaim_1: never;
 
-    get ClaimType(): string | undefined;
-    set ClaimType(value: string | undefined);
-    get ClaimValue(): string | undefined;
-    set ClaimValue(value: string | undefined);
+    get ClaimType(): string | null;
+    set ClaimType(value: string | null);
+    get ClaimValue(): string | null;
+    set ClaimValue(value: string | null);
     Id: int;
     UserId: TKey;
     InitializeFromClaim(claim: Claim): void;
@@ -1019,8 +1020,8 @@ export interface IdentityUserLogin_1$instance<TKey extends (IEquatable_1<TKey> |
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_IdentityUserLogin_1: never;
 
     LoginProvider: string;
-    get ProviderDisplayName(): string | undefined;
-    set ProviderDisplayName(value: string | undefined);
+    get ProviderDisplayName(): string | null;
+    set ProviderDisplayName(value: string | null);
     ProviderKey: string;
     UserId: TKey;
 }
@@ -1070,8 +1071,8 @@ export interface IdentityUserToken_1$instance<TKey extends (IEquatable_1<TKey> |
     LoginProvider: string;
     Name: string;
     UserId: TKey;
-    get Value(): string | undefined;
-    set Value(value: string | undefined);
+    get Value(): string | null;
+    set Value(value: string | null);
 }
 
 
@@ -1101,8 +1102,8 @@ export type LockoutOptions = LockoutOptions$instance;
 export interface PasskeyAssertionContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAssertionContext: never;
 
-    get AssertionState(): string | undefined;
-    set AssertionState(value: string | undefined);
+    get AssertionState(): string | null;
+    set AssertionState(value: string | null);
     CredentialJson: string;
     HttpContext: HttpContext;
 }
@@ -1118,10 +1119,10 @@ export type PasskeyAssertionContext = PasskeyAssertionContext$instance;
 export interface PasskeyAssertionResult_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAssertionResult_1: never;
 
-    readonly Failure: PasskeyException | undefined;
-    readonly Passkey: UserPasskeyInfo | undefined;
+    readonly Failure: PasskeyException | null;
+    readonly Passkey: UserPasskeyInfo | null;
     readonly Succeeded: boolean;
-    readonly User: TUser | undefined;
+    readonly User: TUser | null;
 }
 
 
@@ -1134,8 +1135,8 @@ export type PasskeyAssertionResult_1<TUser> = PasskeyAssertionResult_1$instance<
 export interface PasskeyAttestationContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAttestationContext: never;
 
-    get AttestationState(): string | undefined;
-    set AttestationState(value: string | undefined);
+    get AttestationState(): string | null;
+    set AttestationState(value: string | null);
     CredentialJson: string;
     HttpContext: HttpContext;
 }
@@ -1151,10 +1152,10 @@ export type PasskeyAttestationContext = PasskeyAttestationContext$instance;
 export interface PasskeyAttestationResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyAttestationResult: never;
 
-    readonly Failure: PasskeyException | undefined;
-    readonly Passkey: UserPasskeyInfo | undefined;
+    readonly Failure: PasskeyException | null;
+    readonly Passkey: UserPasskeyInfo | null;
     readonly Succeeded: boolean;
-    readonly UserEntity: PasskeyUserEntity | undefined;
+    readonly UserEntity: PasskeyUserEntity | null;
 }
 
 
@@ -1185,8 +1186,8 @@ export type PasskeyAttestationStatementVerificationContext = PasskeyAttestationS
 export interface PasskeyCreationOptionsResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyCreationOptionsResult: never;
 
-    get AttestationState(): string | undefined;
-    set AttestationState(value: string | undefined);
+    get AttestationState(): string | null;
+    set AttestationState(value: string | null);
     CreationOptionsJson: string;
 }
 
@@ -1208,19 +1209,19 @@ export interface PasskeyException$instance extends Exception {
 
 export const PasskeyException: {
     new(message: string): PasskeyException;
-    new(message: string, innerException: Exception): PasskeyException;
+    new(message: string, innerException: Exception | null): PasskeyException;
 };
 
 
 export type PasskeyException = PasskeyException$instance;
 
-export interface PasskeyHandler_1$instance<TUser> extends IPasskeyHandler_1$instance<TUser> {
+export interface PasskeyHandler_1$instance<TUser> {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyHandler_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_IPasskeyHandler_1: never;
 
     MakeCreationOptionsAsync(userEntity: PasskeyUserEntity, httpContext: HttpContext): Task_1<PasskeyCreationOptionsResult>;
-    MakeRequestOptionsAsync(user: TUser, httpContext: HttpContext): Task_1<PasskeyRequestOptionsResult>;
+    MakeRequestOptionsAsync(user: TUser | null, httpContext: HttpContext): Task_1<PasskeyRequestOptionsResult>;
     PerformAssertionAsync(context: PasskeyAssertionContext): Task_1<PasskeyAssertionResult_1<TUser>>;
     PerformAttestationAsync(context: PasskeyAttestationContext): Task_1<PasskeyAttestationResult>;
 }
@@ -1244,8 +1245,8 @@ export interface PasskeyOriginValidationContext$instance {
     CrossOrigin: boolean;
     HttpContext: HttpContext;
     Origin: string;
-    get TopOrigin(): string | undefined;
-    set TopOrigin(value: string | undefined);
+    get TopOrigin(): string | null;
+    set TopOrigin(value: string | null);
 }
 
 
@@ -1259,8 +1260,8 @@ export type PasskeyOriginValidationContext = PasskeyOriginValidationContext$inst
 export interface PasskeyRequestOptionsResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_PasskeyRequestOptionsResult: never;
 
-    get AssertionState(): string | undefined;
-    set AssertionState(value: string | undefined);
+    get AssertionState(): string | null;
+    set AssertionState(value: string | null);
     RequestOptionsJson: string;
 }
 
@@ -1299,7 +1300,7 @@ export interface PasswordHasher_1$instance<TUser> extends IPasswordHasher_1$inst
 
 
 export const PasswordHasher_1: {
-    new<TUser>(optionsAccessor: IOptions_1<PasswordHasherOptions>): PasswordHasher_1<TUser>;
+    new<TUser>(optionsAccessor: IOptions_1<PasswordHasherOptions> | null): PasswordHasher_1<TUser>;
 };
 
 
@@ -1354,12 +1355,12 @@ export interface PasswordValidator_1$instance<TUser> extends IPasswordValidator_
     IsLetterOrDigit(c: char): boolean;
     IsLower(c: char): boolean;
     IsUpper(c: char): boolean;
-    ValidateAsync(manager: UserManager_1<TUser>, user: TUser, password: string): Task_1<IdentityResult>;
+    ValidateAsync(manager: UserManager_1<TUser>, user: TUser, password: string | null): Task_1<IdentityResult>;
 }
 
 
 export const PasswordValidator_1: {
-    new<TUser>(errors: IdentityErrorDescriber): PasswordValidator_1<TUser>;
+    new<TUser>(errors: IdentityErrorDescriber | null): PasswordValidator_1<TUser>;
 };
 
 
@@ -1436,15 +1437,15 @@ export interface RoleManager_1$instance<TRole> {
     DeleteAsync(role: TRole): Task_1<IdentityResult>;
     Dispose(): void;
     Dispose(disposing: boolean): void;
-    FindByIdAsync(roleId: string): Task_1<TRole | undefined>;
-    FindByNameAsync(roleName: string): Task_1<TRole | undefined>;
+    FindByIdAsync(roleId: string): Task_1<TRole | null>;
+    FindByNameAsync(roleName: string): Task_1<TRole | null>;
     GetClaimsAsync(role: TRole): Task_1<IList_1<Claim>>;
     GetRoleIdAsync(role: TRole): Task_1<System_Internal.String>;
-    GetRoleNameAsync(role: TRole): Task_1<string | undefined>;
-    NormalizeKey(key: string): string | undefined;
+    GetRoleNameAsync(role: TRole): Task_1<string | null>;
+    NormalizeKey(key: string | null): string | null;
     RemoveClaimAsync(role: TRole, claim: Claim): Task_1<IdentityResult>;
     RoleExistsAsync(roleName: string): Task_1<System_Internal.Boolean>;
-    SetRoleNameAsync(role: TRole, name: string): Task_1<IdentityResult>;
+    SetRoleNameAsync(role: TRole, name: string | null): Task_1<IdentityResult>;
     UpdateAsync(role: TRole): Task_1<IdentityResult>;
     UpdateNormalizedRoleNameAsync(role: TRole): Task;
     UpdateRoleAsync(role: TRole): Task_1<IdentityResult>;
@@ -1470,21 +1471,21 @@ export interface RoleStoreBase_4$instance<TRole extends IdentityRole_1<TKey>, TK
     ErrorDescriber: IdentityErrorDescriber;
     readonly Roles: IQueryable_1<TRole>;
     AddClaimAsync(role: TRole, claim: Claim, cancellationToken?: CancellationToken): Task;
-    ConvertIdFromString(id: string): TKey | undefined;
-    ConvertIdToString(id: TKey): string | undefined;
+    ConvertIdFromString(id: string | null): TKey | null;
+    ConvertIdToString(id: TKey): string | null;
     CreateAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<IdentityResult>;
     CreateRoleClaim(role: TRole, claim: Claim): TRoleClaim;
     DeleteAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<IdentityResult>;
     Dispose(): void;
-    FindByIdAsync(id: string, cancellationToken?: CancellationToken): Task_1<TRole | undefined>;
-    FindByNameAsync(normalizedName: string, cancellationToken?: CancellationToken): Task_1<TRole | undefined>;
+    FindByIdAsync(id: string, cancellationToken?: CancellationToken): Task_1<TRole | null>;
+    FindByNameAsync(normalizedName: string, cancellationToken?: CancellationToken): Task_1<TRole | null>;
     GetClaimsAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<IList_1<Claim>>;
-    GetNormalizedRoleNameAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<string | undefined>;
+    GetNormalizedRoleNameAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<string | null>;
     GetRoleIdAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<System_Internal.String>;
-    GetRoleNameAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<string | undefined>;
+    GetRoleNameAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<string | null>;
     RemoveClaimAsync(role: TRole, claim: Claim, cancellationToken?: CancellationToken): Task;
-    SetNormalizedRoleNameAsync(role: TRole, normalizedName: string, cancellationToken?: CancellationToken): Task;
-    SetRoleNameAsync(role: TRole, roleName: string, cancellationToken?: CancellationToken): Task;
+    SetNormalizedRoleNameAsync(role: TRole, normalizedName: string | null, cancellationToken?: CancellationToken): Task;
+    SetRoleNameAsync(role: TRole, roleName: string | null, cancellationToken?: CancellationToken): Task;
     UpdateAsync(role: TRole, cancellationToken?: CancellationToken): Task_1<IdentityResult>;
 }
 
@@ -1512,7 +1513,7 @@ export interface RoleValidator_1$instance<TRole> extends IRoleValidator_1$instan
 
 
 export const RoleValidator_1: {
-    new<TRole>(errors: IdentityErrorDescriber): RoleValidator_1<TRole>;
+    new<TRole>(errors: IdentityErrorDescriber | null): RoleValidator_1<TRole>;
 };
 
 
@@ -1526,10 +1527,10 @@ export type RoleValidator_1<TRole> = RoleValidator_1$instance<TRole> & __RoleVal
 export interface SecurityStampRefreshingPrincipalContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_SecurityStampRefreshingPrincipalContext: never;
 
-    get CurrentPrincipal(): ClaimsPrincipal | undefined;
-    set CurrentPrincipal(value: ClaimsPrincipal | undefined);
-    get NewPrincipal(): ClaimsPrincipal | undefined;
-    set NewPrincipal(value: ClaimsPrincipal | undefined);
+    get CurrentPrincipal(): ClaimsPrincipal | null;
+    set CurrentPrincipal(value: ClaimsPrincipal | null);
+    get NewPrincipal(): ClaimsPrincipal | null;
+    set NewPrincipal(value: ClaimsPrincipal | null);
 }
 
 
@@ -1552,7 +1553,7 @@ export interface SecurityStampValidator_1$instance<TUser> extends ISecurityStamp
     readonly TimeProvider: TimeProvider;
     SecurityStampVerified(user: TUser, context: CookieValidatePrincipalContext): Task;
     ValidateAsync(context: CookieValidatePrincipalContext): Task;
-    VerifySecurityStamp(principal: ClaimsPrincipal): Task_1<TUser | undefined>;
+    VerifySecurityStamp(principal: ClaimsPrincipal | null): Task_1<TUser | null>;
 }
 
 
@@ -1572,10 +1573,10 @@ export type SecurityStampValidator_1<TUser> = SecurityStampValidator_1$instance<
 export interface SecurityStampValidatorOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions: never;
 
-    get OnRefreshingPrincipal(): Func_2<SecurityStampRefreshingPrincipalContext, Task> | undefined;
-    set OnRefreshingPrincipal(value: Func_2<SecurityStampRefreshingPrincipalContext, Task> | undefined);
-    get TimeProvider(): TimeProvider | undefined;
-    set TimeProvider(value: TimeProvider | undefined);
+    get OnRefreshingPrincipal(): Func_2<SecurityStampRefreshingPrincipalContext, Task> | null;
+    set OnRefreshingPrincipal(value: Func_2<SecurityStampRefreshingPrincipalContext, Task> | null);
+    get TimeProvider(): TimeProvider | null;
+    set TimeProvider(value: TimeProvider | null);
     ValidationInterval: TimeSpan;
 }
 
@@ -1598,43 +1599,43 @@ export interface SignInManager_1$instance<TUser> {
     UserManager: UserManager_1<TUser>;
     CanSignInAsync(user: TUser): Task_1<System_Internal.Boolean>;
     CheckPasswordSignInAsync(user: TUser, password: string, lockoutOnFailure: boolean): Task_1<SignInResult>;
-    ConfigureExternalAuthenticationProperties(provider: string, redirectUrl: string, userId?: string): AuthenticationProperties;
+    ConfigureExternalAuthenticationProperties(provider: string | null, redirectUrl: string | null, userId?: string | null): AuthenticationProperties;
     CreateUserPrincipalAsync(user: TUser): Task_1<ClaimsPrincipal>;
     ExternalLoginSignInAsync(loginProvider: string, providerKey: string, isPersistent: boolean): Task_1<SignInResult>;
     ExternalLoginSignInAsync(loginProvider: string, providerKey: string, isPersistent: boolean, bypassTwoFactor: boolean): Task_1<SignInResult>;
     ForgetTwoFactorClientAsync(): Task;
     GetExternalAuthenticationSchemesAsync(): Task_1<IEnumerable_1<AuthenticationScheme>>;
-    GetExternalLoginInfoAsync(expectedXsrf?: string): Task_1<ExternalLoginInfo | undefined>;
-    GetTwoFactorAuthenticationUserAsync(): Task_1<TUser | undefined>;
+    GetExternalLoginInfoAsync(expectedXsrf?: string | null): Task_1<ExternalLoginInfo | null>;
+    GetTwoFactorAuthenticationUserAsync(): Task_1<TUser | null>;
     IsLockedOut(user: TUser): Task_1<System_Internal.Boolean>;
     IsSignedIn(principal: ClaimsPrincipal): boolean;
     IsTwoFactorClientRememberedAsync(user: TUser): Task_1<System_Internal.Boolean>;
     IsTwoFactorEnabledAsync(user: TUser): Task_1<System_Internal.Boolean>;
     LockedOut(user: TUser): Task_1<SignInResult>;
     MakePasskeyCreationOptionsAsync(userEntity: PasskeyUserEntity): Task_1<System_Internal.String>;
-    MakePasskeyRequestOptionsAsync(user: TUser): Task_1<System_Internal.String>;
+    MakePasskeyRequestOptionsAsync(user: TUser | null): Task_1<System_Internal.String>;
     PasskeySignInAsync(credentialJson: string): Task_1<SignInResult>;
     PasswordSignInAsync(user: TUser, password: string, isPersistent: boolean, lockoutOnFailure: boolean): Task_1<SignInResult>;
     PasswordSignInAsync(userName: string, password: string, isPersistent: boolean, lockoutOnFailure: boolean): Task_1<SignInResult>;
     PerformPasskeyAssertionAsync(credentialJson: string): Task_1<PasskeyAssertionResult_1<TUser>>;
     PerformPasskeyAttestationAsync(credentialJson: string): Task_1<PasskeyAttestationResult>;
-    PreSignInCheck(user: TUser): Task_1<SignInResult | undefined>;
+    PreSignInCheck(user: TUser): Task_1<SignInResult | null>;
     RefreshSignInAsync(user: TUser): Task;
     RememberTwoFactorClientAsync(user: TUser): Task;
     ResetLockout(user: TUser): Task;
-    SignInAsync(user: TUser, isPersistent: boolean, authenticationMethod?: string): Task;
-    SignInAsync(user: TUser, authenticationProperties: AuthenticationProperties, authenticationMethod?: string): Task;
-    SignInOrTwoFactorAsync(user: TUser, isPersistent: boolean, loginProvider?: string, bypassTwoFactor?: boolean): Task_1<SignInResult>;
+    SignInAsync(user: TUser, isPersistent: boolean, authenticationMethod?: string | null): Task;
+    SignInAsync(user: TUser, authenticationProperties: AuthenticationProperties, authenticationMethod?: string | null): Task;
+    SignInOrTwoFactorAsync(user: TUser, isPersistent: boolean, loginProvider?: string | null, bypassTwoFactor?: boolean): Task_1<SignInResult>;
     SignInWithClaimsAsync(user: TUser, isPersistent: boolean, additionalClaims: IEnumerable_1<Claim>): Task;
-    SignInWithClaimsAsync(user: TUser, authenticationProperties: AuthenticationProperties, additionalClaims: IEnumerable_1<Claim>): Task;
+    SignInWithClaimsAsync(user: TUser, authenticationProperties: AuthenticationProperties | null, additionalClaims: IEnumerable_1<Claim>): Task;
     SignOutAsync(): Task;
     TwoFactorAuthenticatorSignInAsync(code: string, isPersistent: boolean, rememberClient: boolean): Task_1<SignInResult>;
     TwoFactorRecoveryCodeSignInAsync(recoveryCode: string): Task_1<SignInResult>;
     TwoFactorSignInAsync(provider: string, code: string, isPersistent: boolean, rememberClient: boolean): Task_1<SignInResult>;
     UpdateExternalAuthenticationTokensAsync(externalLogin: ExternalLoginInfo): Task_1<IdentityResult>;
-    ValidateSecurityStampAsync(principal: ClaimsPrincipal): Task_1<TUser | undefined>;
-    ValidateSecurityStampAsync(user: TUser, securityStamp: string): Task_1<System_Internal.Boolean>;
-    ValidateTwoFactorSecurityStampAsync(principal: ClaimsPrincipal): Task_1<TUser | undefined>;
+    ValidateSecurityStampAsync(principal: ClaimsPrincipal | null): Task_1<TUser | null>;
+    ValidateSecurityStampAsync(user: TUser | null, securityStamp: string | null): Task_1<System_Internal.Boolean>;
+    ValidateTwoFactorSecurityStampAsync(principal: ClaimsPrincipal | null): Task_1<TUser | null>;
 }
 
 
@@ -1727,8 +1728,8 @@ export type TokenOptions = TokenOptions$instance;
 export interface TokenProviderDescriptor$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_TokenProviderDescriptor: never;
 
-    get ProviderInstance(): unknown | undefined;
-    set ProviderInstance(value: unknown | undefined);
+    get ProviderInstance(): JsValue | null;
+    set ProviderInstance(value: JsValue | null);
     readonly ProviderType: Type;
 }
 
@@ -1770,7 +1771,7 @@ export interface TwoFactorSecurityStampValidator_1$instance<TUser> extends Secur
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator: never;
 
     SecurityStampVerified(user: TUser, context: CookieValidatePrincipalContext): Task;
-    VerifySecurityStamp(principal: ClaimsPrincipal): Task_1<TUser | undefined>;
+    VerifySecurityStamp(principal: ClaimsPrincipal | null): Task_1<TUser | null>;
 }
 
 
@@ -1792,8 +1793,8 @@ export interface UpperInvariantLookupNormalizer$instance extends ILookupNormaliz
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Identity_ILookupNormalizer: never;
 
-    NormalizeEmail(email: string): string | undefined;
-    NormalizeName(name: string): string | undefined;
+    NormalizeEmail(email: string | null): string | null;
+    NormalizeName(name: string | null): string | null;
 }
 
 
@@ -1859,14 +1860,14 @@ export interface UserLoginInfo$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Identity_UserLoginInfo: never;
 
     LoginProvider: string;
-    get ProviderDisplayName(): string | undefined;
-    set ProviderDisplayName(value: string | undefined);
+    get ProviderDisplayName(): string | null;
+    set ProviderDisplayName(value: string | null);
     ProviderKey: string;
 }
 
 
 export const UserLoginInfo: {
-    new(loginProvider: string, providerKey: string, providerDisplayName: string): UserLoginInfo;
+    new(loginProvider: string, providerKey: string, providerDisplayName: string | null): UserLoginInfo;
 };
 
 
@@ -1922,39 +1923,39 @@ export interface UserManager_1$instance<TUser> {
     DeleteAsync(user: TUser): Task_1<IdentityResult>;
     Dispose(): void;
     Dispose(disposing: boolean): void;
-    FindByEmailAsync(email: string): Task_1<TUser | undefined>;
-    FindByIdAsync(userId: string): Task_1<TUser | undefined>;
-    FindByLoginAsync(loginProvider: string, providerKey: string): Task_1<TUser | undefined>;
-    FindByNameAsync(userName: string): Task_1<TUser | undefined>;
-    FindByPasskeyIdAsync(credentialId: byte[]): Task_1<TUser | undefined>;
+    FindByEmailAsync(email: string): Task_1<TUser | null>;
+    FindByIdAsync(userId: string): Task_1<TUser | null>;
+    FindByLoginAsync(loginProvider: string, providerKey: string): Task_1<TUser | null>;
+    FindByNameAsync(userName: string): Task_1<TUser | null>;
+    FindByPasskeyIdAsync(credentialId: byte[]): Task_1<TUser | null>;
     GenerateChangeEmailTokenAsync(user: TUser, newEmail: string): Task_1<System_Internal.String>;
     GenerateChangePhoneNumberTokenAsync(user: TUser, phoneNumber: string): Task_1<System_Internal.String>;
     GenerateConcurrencyStampAsync(user: TUser): Task_1<System_Internal.String>;
     GenerateEmailConfirmationTokenAsync(user: TUser): Task_1<System_Internal.String>;
     GenerateNewAuthenticatorKey(): string;
-    GenerateNewTwoFactorRecoveryCodesAsync(user: TUser, number: int): Task_1<IEnumerable_1<System_Internal.String> | undefined>;
+    GenerateNewTwoFactorRecoveryCodesAsync(user: TUser, number: int): Task_1<IEnumerable_1<System_Internal.String> | null>;
     GeneratePasswordResetTokenAsync(user: TUser): Task_1<System_Internal.String>;
     GenerateTwoFactorTokenAsync(user: TUser, tokenProvider: string): Task_1<System_Internal.String>;
     GenerateUserTokenAsync(user: TUser, tokenProvider: string, purpose: string): Task_1<System_Internal.String>;
     GetAccessFailedCountAsync(user: TUser): Task_1<System_Internal.Int32>;
-    GetAuthenticationTokenAsync(user: TUser, loginProvider: string, tokenName: string): Task_1<string | undefined>;
-    GetAuthenticatorKeyAsync(user: TUser): Task_1<string | undefined>;
+    GetAuthenticationTokenAsync(user: TUser, loginProvider: string, tokenName: string): Task_1<string | null>;
+    GetAuthenticatorKeyAsync(user: TUser): Task_1<string | null>;
     GetClaimsAsync(user: TUser): Task_1<IList_1<Claim>>;
-    GetEmailAsync(user: TUser): Task_1<string | undefined>;
+    GetEmailAsync(user: TUser): Task_1<string | null>;
     GetLockoutEnabledAsync(user: TUser): Task_1<System_Internal.Boolean>;
     GetLockoutEndDateAsync(user: TUser): Task_1<Nullable_1<DateTimeOffset>>;
     GetLoginsAsync(user: TUser): Task_1<IList_1<UserLoginInfo>>;
-    GetPasskeyAsync(user: TUser, credentialId: byte[]): Task_1<UserPasskeyInfo | undefined>;
+    GetPasskeyAsync(user: TUser, credentialId: byte[]): Task_1<UserPasskeyInfo | null>;
     GetPasskeysAsync(user: TUser): Task_1<IList_1<UserPasskeyInfo>>;
-    GetPhoneNumberAsync(user: TUser): Task_1<string | undefined>;
+    GetPhoneNumberAsync(user: TUser): Task_1<string | null>;
     GetRolesAsync(user: TUser): Task_1<IList_1<System_Internal.String>>;
     GetSecurityStampAsync(user: TUser): Task_1<System_Internal.String>;
     GetTwoFactorEnabledAsync(user: TUser): Task_1<System_Internal.Boolean>;
-    GetUserAsync(principal: ClaimsPrincipal): Task_1<TUser | undefined>;
-    GetUserId(principal: ClaimsPrincipal): string | undefined;
+    GetUserAsync(principal: ClaimsPrincipal): Task_1<TUser | null>;
+    GetUserId(principal: ClaimsPrincipal): string | null;
     GetUserIdAsync(user: TUser): Task_1<System_Internal.String>;
-    GetUserName(principal: ClaimsPrincipal): string | undefined;
-    GetUserNameAsync(user: TUser): Task_1<string | undefined>;
+    GetUserName(principal: ClaimsPrincipal): string | null;
+    GetUserNameAsync(user: TUser): Task_1<string | null>;
     GetUsersForClaimAsync(claim: Claim): Task_1<IList_1<TUser>>;
     GetUsersInRoleAsync(roleName: string): Task_1<IList_1<TUser>>;
     GetValidTwoFactorProvidersAsync(user: TUser): Task_1<IList_1<System_Internal.String>>;
@@ -1963,8 +1964,8 @@ export interface UserManager_1$instance<TUser> {
     IsInRoleAsync(user: TUser, role: string): Task_1<System_Internal.Boolean>;
     IsLockedOutAsync(user: TUser): Task_1<System_Internal.Boolean>;
     IsPhoneNumberConfirmedAsync(user: TUser): Task_1<System_Internal.Boolean>;
-    NormalizeEmail(email: string): string | undefined;
-    NormalizeName(name: string): string | undefined;
+    NormalizeEmail(email: string | null): string | null;
+    NormalizeName(name: string | null): string | null;
     RedeemTwoFactorRecoveryCodeAsync(user: TUser, code: string): Task_1<IdentityResult>;
     RegisterTokenProvider(providerName: string, provider: IUserTwoFactorTokenProvider_1<TUser>): void;
     RemoveAuthenticationTokenAsync(user: TUser, loginProvider: string, tokenName: string): Task_1<IdentityResult>;
@@ -1979,13 +1980,13 @@ export interface UserManager_1$instance<TUser> {
     ResetAccessFailedCountAsync(user: TUser): Task_1<IdentityResult>;
     ResetAuthenticatorKeyAsync(user: TUser): Task_1<IdentityResult>;
     ResetPasswordAsync(user: TUser, token: string, newPassword: string): Task_1<IdentityResult>;
-    SetAuthenticationTokenAsync(user: TUser, loginProvider: string, tokenName: string, tokenValue: string): Task_1<IdentityResult>;
-    SetEmailAsync(user: TUser, email: string): Task_1<IdentityResult>;
+    SetAuthenticationTokenAsync(user: TUser, loginProvider: string, tokenName: string, tokenValue: string | null): Task_1<IdentityResult>;
+    SetEmailAsync(user: TUser, email: string | null): Task_1<IdentityResult>;
     SetLockoutEnabledAsync(user: TUser, enabled: boolean): Task_1<IdentityResult>;
     SetLockoutEndDateAsync(user: TUser, lockoutEnd: Nullable_1<DateTimeOffset>): Task_1<IdentityResult>;
-    SetPhoneNumberAsync(user: TUser, phoneNumber: string): Task_1<IdentityResult>;
+    SetPhoneNumberAsync(user: TUser, phoneNumber: string | null): Task_1<IdentityResult>;
     SetTwoFactorEnabledAsync(user: TUser, enabled: boolean): Task_1<IdentityResult>;
-    SetUserNameAsync(user: TUser, userName: string): Task_1<IdentityResult>;
+    SetUserNameAsync(user: TUser, userName: string | null): Task_1<IdentityResult>;
     UpdateAsync(user: TUser): Task_1<IdentityResult>;
     UpdateNormalizedEmailAsync(user: TUser): Task;
     UpdateNormalizedUserNameAsync(user: TUser): Task;
@@ -2035,16 +2036,16 @@ export interface UserPasskeyInfo$instance {
     IsBackedUp: boolean;
     readonly IsBackupEligible: boolean;
     IsUserVerified: boolean;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     readonly PublicKey: byte[];
     SignCount: uint;
-    readonly Transports: string[] | undefined;
+    readonly Transports: string[] | null;
 }
 
 
 export const UserPasskeyInfo: {
-    new(credentialId: byte[], publicKey: byte[], createdAt: DateTimeOffset, signCount: uint, transports: string[], isUserVerified: boolean, isBackupEligible: boolean, isBackedUp: boolean, attestationObject: byte[], clientDataJson: byte[]): UserPasskeyInfo;
+    new(credentialId: byte[], publicKey: byte[], createdAt: DateTimeOffset, signCount: uint, transports: string[] | null, isUserVerified: boolean, isBackupEligible: boolean, isBackedUp: boolean, attestationObject: byte[], clientDataJson: byte[]): UserPasskeyInfo;
 };
 
 
@@ -2073,41 +2074,41 @@ export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TK
     AddClaimsAsync(user: TUser, claims: IEnumerable_1<Claim>, cancellationToken?: CancellationToken): Task;
     AddLoginAsync(user: TUser, login: UserLoginInfo, cancellationToken?: CancellationToken): Task;
     AddUserTokenAsync(token: TUserToken): Task;
-    ConvertIdFromString(id: string): TKey | undefined;
-    ConvertIdToString(id: TKey): string | undefined;
+    ConvertIdFromString(id: string | null): TKey | null;
+    ConvertIdToString(id: TKey): string | null;
     CountCodesAsync(user: TUser, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
     CreateAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IdentityResult>;
     CreateUserClaim(user: TUser, claim: Claim): TUserClaim;
     CreateUserLogin(user: TUser, login: UserLoginInfo): TUserLogin;
-    CreateUserToken(user: TUser, loginProvider: string, name: string, value: string): TUserToken;
+    CreateUserToken(user: TUser, loginProvider: string, name: string, value: string | null): TUserToken;
     DeleteAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IdentityResult>;
     Dispose(): void;
-    FindByEmailAsync(normalizedEmail: string, cancellationToken?: CancellationToken): Task_1<TUser | undefined>;
-    FindByIdAsync(userId: string, cancellationToken?: CancellationToken): Task_1<TUser | undefined>;
-    FindByLoginAsync(loginProvider: string, providerKey: string, cancellationToken?: CancellationToken): Task_1<TUser | undefined>;
-    FindByNameAsync(normalizedUserName: string, cancellationToken?: CancellationToken): Task_1<TUser | undefined>;
-    FindTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task_1<TUserToken | undefined>;
-    FindUserAsync(userId: TKey, cancellationToken: CancellationToken): Task_1<TUser | undefined>;
-    FindUserLoginAsync(userId: TKey, loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task_1<TUserLogin | undefined>;
-    FindUserLoginAsync(loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task_1<TUserLogin | undefined>;
+    FindByEmailAsync(normalizedEmail: string, cancellationToken?: CancellationToken): Task_1<TUser | null>;
+    FindByIdAsync(userId: string, cancellationToken?: CancellationToken): Task_1<TUser | null>;
+    FindByLoginAsync(loginProvider: string, providerKey: string, cancellationToken?: CancellationToken): Task_1<TUser | null>;
+    FindByNameAsync(normalizedUserName: string, cancellationToken?: CancellationToken): Task_1<TUser | null>;
+    FindTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task_1<TUserToken | null>;
+    FindUserAsync(userId: TKey, cancellationToken: CancellationToken): Task_1<TUser | null>;
+    FindUserLoginAsync(userId: TKey, loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task_1<TUserLogin | null>;
+    FindUserLoginAsync(loginProvider: string, providerKey: string, cancellationToken: CancellationToken): Task_1<TUserLogin | null>;
     GetAccessFailedCountAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Int32>;
-    GetAuthenticatorKeyAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | undefined>;
+    GetAuthenticatorKeyAsync(user: TUser, cancellationToken: CancellationToken): Task_1<string | null>;
     GetClaimsAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IList_1<Claim>>;
-    GetEmailAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
+    GetEmailAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | null>;
     GetEmailConfirmedAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
     GetLockoutEnabledAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
     GetLockoutEndDateAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<Nullable_1<DateTimeOffset>>;
     GetLoginsAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IList_1<UserLoginInfo>>;
-    GetNormalizedEmailAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
-    GetNormalizedUserNameAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
-    GetPasswordHashAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
-    GetPhoneNumberAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
+    GetNormalizedEmailAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | null>;
+    GetNormalizedUserNameAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | null>;
+    GetPasswordHashAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | null>;
+    GetPhoneNumberAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | null>;
     GetPhoneNumberConfirmedAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
-    GetSecurityStampAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
-    GetTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task_1<string | undefined>;
+    GetSecurityStampAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | null>;
+    GetTokenAsync(user: TUser, loginProvider: string, name: string, cancellationToken: CancellationToken): Task_1<string | null>;
     GetTwoFactorEnabledAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
     GetUserIdAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.String>;
-    GetUserNameAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | undefined>;
+    GetUserNameAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<string | null>;
     GetUsersForClaimAsync(claim: Claim, cancellationToken?: CancellationToken): Task_1<IList_1<TUser>>;
     HasPasswordAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
     IncrementAccessFailedCountAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<System_Internal.Int32>;
@@ -2120,19 +2121,19 @@ export interface UserStoreBase_5$instance<TUser extends IdentityUser_1<TKey>, TK
     ReplaceCodesAsync(user: TUser, recoveryCodes: IEnumerable_1<System_Internal.String>, cancellationToken: CancellationToken): Task;
     ResetAccessFailedCountAsync(user: TUser, cancellationToken?: CancellationToken): Task;
     SetAuthenticatorKeyAsync(user: TUser, key: string, cancellationToken: CancellationToken): Task;
-    SetEmailAsync(user: TUser, email: string, cancellationToken?: CancellationToken): Task;
+    SetEmailAsync(user: TUser, email: string | null, cancellationToken?: CancellationToken): Task;
     SetEmailConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken?: CancellationToken): Task;
     SetLockoutEnabledAsync(user: TUser, enabled: boolean, cancellationToken?: CancellationToken): Task;
     SetLockoutEndDateAsync(user: TUser, lockoutEnd: Nullable_1<DateTimeOffset>, cancellationToken?: CancellationToken): Task;
-    SetNormalizedEmailAsync(user: TUser, normalizedEmail: string, cancellationToken?: CancellationToken): Task;
-    SetNormalizedUserNameAsync(user: TUser, normalizedName: string, cancellationToken?: CancellationToken): Task;
-    SetPasswordHashAsync(user: TUser, passwordHash: string, cancellationToken?: CancellationToken): Task;
-    SetPhoneNumberAsync(user: TUser, phoneNumber: string, cancellationToken?: CancellationToken): Task;
+    SetNormalizedEmailAsync(user: TUser, normalizedEmail: string | null, cancellationToken?: CancellationToken): Task;
+    SetNormalizedUserNameAsync(user: TUser, normalizedName: string | null, cancellationToken?: CancellationToken): Task;
+    SetPasswordHashAsync(user: TUser, passwordHash: string | null, cancellationToken?: CancellationToken): Task;
+    SetPhoneNumberAsync(user: TUser, phoneNumber: string | null, cancellationToken?: CancellationToken): Task;
     SetPhoneNumberConfirmedAsync(user: TUser, confirmed: boolean, cancellationToken?: CancellationToken): Task;
     SetSecurityStampAsync(user: TUser, stamp: string, cancellationToken?: CancellationToken): Task;
-    SetTokenAsync(user: TUser, loginProvider: string, name: string, value: string, cancellationToken: CancellationToken): Task;
+    SetTokenAsync(user: TUser, loginProvider: string, name: string, value: string | null, cancellationToken: CancellationToken): Task;
     SetTwoFactorEnabledAsync(user: TUser, enabled: boolean, cancellationToken?: CancellationToken): Task;
-    SetUserNameAsync(user: TUser, userName: string, cancellationToken?: CancellationToken): Task;
+    SetUserNameAsync(user: TUser, userName: string | null, cancellationToken?: CancellationToken): Task;
     UpdateAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IdentityResult>;
 }
 
@@ -2178,8 +2179,8 @@ export interface UserStoreBase_8$instance<TUser extends IdentityUser_1<TKey>, TR
 
     AddToRoleAsync(user: TUser, normalizedRoleName: string, cancellationToken?: CancellationToken): Task;
     CreateUserRole(user: TUser, role: TRole): TUserRole;
-    FindRoleAsync(normalizedRoleName: string, cancellationToken: CancellationToken): Task_1<TRole | undefined>;
-    FindUserRoleAsync(userId: TKey, roleId: TKey, cancellationToken: CancellationToken): Task_1<TUserRole | undefined>;
+    FindRoleAsync(normalizedRoleName: string, cancellationToken: CancellationToken): Task_1<TRole | null>;
+    FindUserRoleAsync(userId: TKey, roleId: TKey, cancellationToken: CancellationToken): Task_1<TUserRole | null>;
     GetRolesAsync(user: TUser, cancellationToken?: CancellationToken): Task_1<IList_1<System_Internal.String>>;
     GetUsersInRoleAsync(normalizedRoleName: string, cancellationToken?: CancellationToken): Task_1<IList_1<TUser>>;
     IsInRoleAsync(user: TUser, normalizedRoleName: string, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
@@ -2219,7 +2220,7 @@ export interface UserValidator_1$instance<TUser> extends IUserValidator_1$instan
 
 
 export const UserValidator_1: {
-    new<TUser>(errors: IdentityErrorDescriber): UserValidator_1<TUser>;
+    new<TUser>(errors: IdentityErrorDescriber | null): UserValidator_1<TUser>;
 };
 
 

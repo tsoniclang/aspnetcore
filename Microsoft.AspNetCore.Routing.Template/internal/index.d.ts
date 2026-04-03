@@ -2,11 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Routing.Template
 // Assembly: Microsoft.AspNetCore.Routing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { HttpContext, PathString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -36,9 +34,9 @@ export interface RouteTemplate$instance {
 
     readonly Parameters: IList_1<TemplatePart>;
     readonly Segments: IList_1<TemplateSegment>;
-    readonly TemplateText: string | undefined;
-    GetParameter(name: string): TemplatePart | undefined;
-    GetSegment(index: int): TemplateSegment | undefined;
+    readonly TemplateText: string | null;
+    GetParameter(name: string): TemplatePart | null;
+    GetSegment(index: int): TemplateSegment | null;
     ToRoutePattern(): RoutePattern;
 }
 
@@ -54,14 +52,14 @@ export type RouteTemplate = RouteTemplate$instance;
 export interface TemplateBinder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplateBinder: never;
 
-    BindValues(acceptedValues: RouteValueDictionary): string | undefined;
-    GetValues(ambientValues: RouteValueDictionary, values: RouteValueDictionary): TemplateValuesResult | undefined;
-    TryProcessConstraints(httpContext: HttpContext, combinedValues: RouteValueDictionary, parameterName: string, constraint: IRouteConstraint): boolean;
+    BindValues(acceptedValues: RouteValueDictionary): string | null;
+    GetValues(ambientValues: RouteValueDictionary | null, values: RouteValueDictionary): TemplateValuesResult | null;
+    TryProcessConstraints(httpContext: HttpContext | null, combinedValues: RouteValueDictionary, parameterName: string | null, constraint: IRouteConstraint | null): boolean;
 }
 
 
 export const TemplateBinder: {
-    RoutePartsEqual(a: unknown, b: unknown): boolean;
+    RoutePartsEqual(a: JsValue | null, b: JsValue | null): boolean;
 };
 
 
@@ -100,18 +98,18 @@ export type TemplateMatcher = TemplateMatcher$instance;
 export interface TemplatePart$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Routing_Template_TemplatePart: never;
 
-    get DefaultValue(): unknown | undefined;
-    set DefaultValue(value: unknown | undefined);
+    get DefaultValue(): JsValue | null;
+    set DefaultValue(value: JsValue | null);
     InlineConstraints: IEnumerable_1<InlineConstraint>;
     IsCatchAll: boolean;
     IsLiteral: boolean;
     IsOptional: boolean;
     IsOptionalSeperator: boolean;
     IsParameter: boolean;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
-    get Text(): string | undefined;
-    set Text(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
+    get Text(): string | null;
+    set Text(value: string | null);
     ToRoutePatternPart(): RoutePatternPart;
 }
 
@@ -120,7 +118,7 @@ export const TemplatePart: {
     new(): TemplatePart;
     new(other: RoutePatternPart): TemplatePart;
     CreateLiteral(text: string): TemplatePart;
-    CreateParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: unknown, inlineConstraints: IEnumerable_1<InlineConstraint>): TemplatePart;
+    CreateParameter(name: string, isCatchAll: boolean, isOptional: boolean, defaultValue: JsValue | null, inlineConstraints: IEnumerable_1<InlineConstraint> | null): TemplatePart;
 };
 
 

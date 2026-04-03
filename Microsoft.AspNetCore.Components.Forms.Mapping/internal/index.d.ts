@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Forms.Mapping
 // Assembly: Microsoft.AspNetCore.Components.Web
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -14,7 +15,7 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 export interface IFormValueMapper$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Forms_Mapping_IFormValueMapper: never;
 
-    CanMap(valueType: Type, scopeName: string, formName: string): boolean;
+    CanMap(valueType: Type, scopeName: string, formName: string | null): boolean;
     Map(context: FormValueMappingContext): void;
 }
 
@@ -24,8 +25,8 @@ export type IFormValueMapper = IFormValueMapper$instance;
 export interface FormMappingError$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_Mapping_FormMappingError: never;
 
-    readonly AttemptedValue: string | undefined;
-    Container: unknown;
+    readonly AttemptedValue: string | null;
+    Container: JsValue;
     readonly ErrorMessages: IReadOnlyList_1<FormattableString>;
     readonly Name: string;
     readonly Path: string;
@@ -41,17 +42,17 @@ export type FormMappingError = FormMappingError$instance;
 export interface FormValueMappingContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_Forms_Mapping_FormValueMappingContext: never;
 
-    readonly AcceptFormName: string | undefined;
+    readonly AcceptFormName: string | null;
     readonly AcceptMappingScopeName: string;
-    get MapErrorToContainer(): Action_2<System_Internal.String, unknown> | undefined;
-    set MapErrorToContainer(value: Action_2<System_Internal.String, unknown> | undefined);
-    get OnError(): Action_3<System_Internal.String, FormattableString, string | undefined> | undefined;
-    set OnError(value: Action_3<System_Internal.String, FormattableString, string | undefined> | undefined);
+    get MapErrorToContainer(): Action_2<System_Internal.String, JsValue> | null;
+    set MapErrorToContainer(value: Action_2<System_Internal.String, JsValue> | null);
+    get OnError(): Action_3<System_Internal.String, FormattableString, string | null> | null;
+    set OnError(value: Action_3<System_Internal.String, FormattableString, string | null> | null);
     readonly ParameterName: string;
-    get Result(): unknown | undefined;
-    set Result(value: unknown | undefined);
+    get Result(): JsValue | null;
+    set Result(value: JsValue | null);
     readonly ValueType: Type;
-    SetResult(result: unknown): void;
+    SetResult(result: JsValue | null): void;
 }
 
 

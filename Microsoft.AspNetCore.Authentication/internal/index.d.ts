@@ -2,11 +2,14 @@
 // Namespace: Microsoft.AspNetCore.Authentication
 // Assembly: Microsoft.AspNetCore.Authentication, Microsoft.AspNetCore.Authentication.Abstractions, Microsoft.AspNetCore.Authentication.Core, Microsoft.AspNetCore.Authentication.OAuth
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
+import type { BearerTokenEvents } from "../../Microsoft.AspNetCore.Authentication.BearerToken/internal/index.js";
 import type { ClaimActionCollection } from "../../Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js";
+import type { OAuthEvents } from "../../Microsoft.AspNetCore.Authentication.OAuth/internal/index.js";
 import type { IDataProtectionProvider, IDataProtector } from "../../Microsoft.AspNetCore.DataProtection/internal/index.js";
 import * as Microsoft_AspNetCore_Http_Internal from "../../Microsoft.AspNetCore.Http/internal/index.js";
 import type { CookieBuilder, CookieOptions, CookieSecurePolicy, HttpContext, HttpRequest, HttpResponse, PathString, RequestDelegate, SameSiteMode } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -29,8 +32,8 @@ import type { IOptions_1, IOptionsMonitor_1 } from "@tsonic/microsoft-extensions
 export interface IAuthenticateResultFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticateResultFeature: never;
 
-    get AuthenticateResult(): AuthenticateResult | undefined;
-    set AuthenticateResult(value: AuthenticateResult | undefined);
+    get AuthenticateResult(): AuthenticateResult | null;
+    set AuthenticateResult(value: AuthenticateResult | null);
 }
 
 
@@ -59,7 +62,7 @@ export interface IAuthenticationHandler$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
 
     AuthenticateAsync(): Task_1<AuthenticateResult>;
-    ChallengeAsync(properties: AuthenticationProperties): Task;
+    ChallengeAsync(properties: AuthenticationProperties | null): Task;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
 }
 
@@ -69,7 +72,7 @@ export type IAuthenticationHandler = IAuthenticationHandler$instance;
 export interface IAuthenticationHandlerProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandlerProvider: never;
 
-    GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task_1<IAuthenticationHandler | undefined>;
+    GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task_1<IAuthenticationHandler | null>;
 }
 
 
@@ -78,7 +81,7 @@ export type IAuthenticationHandlerProvider = IAuthenticationHandlerProvider$inst
 export interface IAuthenticationRequestHandler$instance extends IAuthenticationHandler {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
-    ChallengeAsync(properties: AuthenticationProperties): Task;
+    ChallengeAsync(properties: AuthenticationProperties | null): Task;
     HandleRequestAsync(): Task_1<System_Internal.Boolean>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
     AuthenticateAsync(): Task_1<AuthenticateResult>;
@@ -94,7 +97,7 @@ export interface IAuthenticationSchemeProvider$instance {
 
     AddScheme(scheme: AuthenticationScheme): void;
     GetAllSchemesAsync(): Task_1<IEnumerable_1<AuthenticationScheme>>;
-    GetSchemeAsync(name: string): Task_1<AuthenticationScheme | undefined>;
+    GetSchemeAsync(name: string): Task_1<AuthenticationScheme | null>;
     RemoveScheme(name: string): void;
     TryAddScheme(scheme: AuthenticationScheme): boolean;
 }
@@ -105,9 +108,9 @@ export type IAuthenticationSchemeProvider = IAuthenticationSchemeProvider$instan
 export interface IAuthenticationService$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationService: never;
 
-    AuthenticateAsync(context: HttpContext, scheme: string): Task_1<AuthenticateResult>;
-    ChallengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    AuthenticateAsync(context: HttpContext, scheme: string | null): Task_1<AuthenticateResult>;
+    ChallengeAsync(context: HttpContext, scheme: string | null, properties: AuthenticationProperties | null): Task;
+    SignInAsync(context: HttpContext, scheme: string | null, principal: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
 }
 
 
@@ -118,9 +121,9 @@ export interface IAuthenticationSignInHandler$instance extends IAuthenticationSi
 
     AuthenticateAsync(): Task_1<AuthenticateResult>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    SignOutAsync(properties: AuthenticationProperties): Task;
-    ChallengeAsync(properties: AuthenticationProperties): Task;
+    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
+    SignOutAsync(properties: AuthenticationProperties | null): Task;
+    ChallengeAsync(properties: AuthenticationProperties | null): Task;
 }
 
 
@@ -131,8 +134,8 @@ export interface IAuthenticationSignOutHandler$instance extends IAuthenticationH
 
     AuthenticateAsync(): Task_1<AuthenticateResult>;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
-    SignOutAsync(properties: AuthenticationProperties): Task;
-    ChallengeAsync(properties: AuthenticationProperties): Task;
+    SignOutAsync(properties: AuthenticationProperties | null): Task;
+    ChallengeAsync(properties: AuthenticationProperties | null): Task;
 }
 
 
@@ -152,7 +155,7 @@ export type IClaimsTransformation = IClaimsTransformation$instance;
 export interface IDataSerializer_1$instance<TModel> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IDataSerializer_1: never;
 
-    Deserialize(data: byte[]): TModel | undefined;
+    Deserialize(data: byte[]): TModel | null;
     Serialize(model: TModel): byte[];
 }
 
@@ -162,10 +165,10 @@ export type IDataSerializer_1<TModel> = IDataSerializer_1$instance<TModel>;
 export interface ISecureDataFormat_1$instance<TData> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
 
-    Protect(data: TData, purpose: string): string;
+    Protect(data: TData, purpose: string | null): string;
     Protect(data: TData): string;
-    Unprotect(protectedText: string, purpose: string): TData | undefined;
-    Unprotect(protectedText: string): TData | undefined;
+    Unprotect(protectedText: string | null, purpose: string | null): TData | null;
+    Unprotect(protectedText: string | null): TData | null;
 }
 
 
@@ -184,10 +187,10 @@ export interface AccessDeniedContext$instance extends HandleRequestContext_1<Rem
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AccessDeniedContext: never;
 
     AccessDeniedPath: PathString;
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
-    get ReturnUrl(): string | undefined;
-    set ReturnUrl(value: string | undefined);
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
+    get ReturnUrl(): string | null;
+    set ReturnUrl(value: string | null);
     ReturnUrlParameter: string;
 }
 
@@ -202,23 +205,23 @@ export type AccessDeniedContext = AccessDeniedContext$instance;
 export interface AuthenticateResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticateResult: never;
 
-    get Failure(): Exception | undefined;
-    set Failure(value: Exception | undefined);
+    get Failure(): Exception | null;
+    set Failure(value: Exception | null);
     None: boolean;
-    readonly Principal: ClaimsPrincipal | undefined;
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
+    readonly Principal: ClaimsPrincipal | null;
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
     readonly Succeeded: boolean;
-    get Ticket(): AuthenticationTicket | undefined;
-    set Ticket(value: AuthenticationTicket | undefined);
+    get Ticket(): AuthenticationTicket | null;
+    set Ticket(value: AuthenticationTicket | null);
     Clone(): AuthenticateResult;
 }
 
 
 export const AuthenticateResult: (abstract new() => AuthenticateResult) & {
-    Fail(failure: Exception, properties: AuthenticationProperties): AuthenticateResult;
+    Fail(failure: Exception, properties: AuthenticationProperties | null): AuthenticateResult;
     Fail(failure: Exception): AuthenticateResult;
-    Fail(failureMessage: string, properties: AuthenticationProperties): AuthenticateResult;
+    Fail(failureMessage: string, properties: AuthenticationProperties | null): AuthenticateResult;
     Fail(failureMessage: string): AuthenticateResult;
     NoResult(): AuthenticateResult;
     Success(ticket: AuthenticationTicket): AuthenticateResult;
@@ -231,10 +234,10 @@ export interface AuthenticationBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationBuilder: never;
 
     readonly Services: IServiceCollection;
-    AddPolicyScheme(authenticationScheme: string, displayName: string, configureOptions: Action_1<PolicySchemeOptions>): AuthenticationBuilder;
-    AddRemoteScheme<TOptions extends RemoteAuthenticationOptions, THandler extends RemoteAuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
-    AddScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
-    AddScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, configureOptions: Action_1<TOptions>): AuthenticationBuilder;
+    AddPolicyScheme(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<PolicySchemeOptions>): AuthenticationBuilder;
+    AddRemoteScheme<TOptions extends RemoteAuthenticationOptions, THandler extends RemoteAuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
+    AddScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, displayName: string | null, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
+    AddScheme<TOptions extends AuthenticationSchemeOptions, THandler extends AuthenticationHandler_1<TOptions>>(authenticationScheme: string, configureOptions: Action_1<TOptions> | null): AuthenticationBuilder;
 }
 
 
@@ -254,8 +257,8 @@ export interface AuthenticationFailureException$instance extends Exception {
 
 
 export const AuthenticationFailureException: {
-    new(message: string): AuthenticationFailureException;
-    new(message: string, innerException: Exception): AuthenticationFailureException;
+    new(message: string | null): AuthenticationFailureException;
+    new(message: string | null, innerException: Exception | null): AuthenticationFailureException;
 };
 
 
@@ -289,20 +292,20 @@ export interface AuthenticationHandler_1$instance<TOptions extends Authenticatio
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
 
     readonly ClaimsIssuer: string;
-    Events: unknown;
+    Events: JsValue | RemoteAuthenticationEvents;
     Options: TOptions;
     Scheme: AuthenticationScheme;
     AuthenticateAsync(): Task_1<AuthenticateResult>;
-    ChallengeAsync(properties: AuthenticationProperties): Task;
-    CreateEventsAsync(): Task_1<unknown>;
-    ForbidAsync(properties: AuthenticationProperties): Task;
+    ChallengeAsync(properties: AuthenticationProperties | null): Task;
+    CreateEventsAsync(): Task_1<JsValue>;
+    ForbidAsync(properties: AuthenticationProperties | null): Task;
     HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
     HandleChallengeAsync(properties: AuthenticationProperties): Task;
     HandleForbiddenAsync(properties: AuthenticationProperties): Task;
     InitializeAsync(scheme: AuthenticationScheme, context: HttpContext): Task;
     InitializeEventsAsync(): Task;
     InitializeHandlerAsync(): Task;
-    ResolveTarget(scheme: string): string | undefined;
+    ResolveTarget(scheme: string | null): string | null;
 }
 
 
@@ -323,7 +326,7 @@ export interface AuthenticationHandlerProvider$instance extends IAuthenticationH
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandlerProvider: never;
 
     readonly Schemes: IAuthenticationSchemeProvider;
-    GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task_1<IAuthenticationHandler | undefined>;
+    GetHandlerAsync(context: HttpContext, authenticationScheme: string): Task_1<IAuthenticationHandler | null>;
 }
 
 
@@ -357,23 +360,23 @@ export type AuthenticationMiddleware = AuthenticationMiddleware$instance;
 export interface AuthenticationOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationOptions: never;
 
-    get DefaultAuthenticateScheme(): string | undefined;
-    set DefaultAuthenticateScheme(value: string | undefined);
-    get DefaultChallengeScheme(): string | undefined;
-    set DefaultChallengeScheme(value: string | undefined);
-    get DefaultForbidScheme(): string | undefined;
-    set DefaultForbidScheme(value: string | undefined);
-    get DefaultScheme(): string | undefined;
-    set DefaultScheme(value: string | undefined);
-    get DefaultSignInScheme(): string | undefined;
-    set DefaultSignInScheme(value: string | undefined);
-    get DefaultSignOutScheme(): string | undefined;
-    set DefaultSignOutScheme(value: string | undefined);
+    get DefaultAuthenticateScheme(): string | null;
+    set DefaultAuthenticateScheme(value: string | null);
+    get DefaultChallengeScheme(): string | null;
+    set DefaultChallengeScheme(value: string | null);
+    get DefaultForbidScheme(): string | null;
+    set DefaultForbidScheme(value: string | null);
+    get DefaultScheme(): string | null;
+    set DefaultScheme(value: string | null);
+    get DefaultSignInScheme(): string | null;
+    set DefaultSignInScheme(value: string | null);
+    get DefaultSignOutScheme(): string | null;
+    set DefaultSignOutScheme(value: string | null);
     RequireAuthenticatedSignIn: boolean;
     readonly SchemeMap: IDictionary_2<System_Internal.String, AuthenticationSchemeBuilder>;
     readonly Schemes: IEnumerable_1<AuthenticationSchemeBuilder>;
     AddScheme(name: string, configureBuilder: Action_1<AuthenticationSchemeBuilder>): void;
-    AddScheme<THandler extends IAuthenticationHandler>(name: string, displayName: string): void;
+    AddScheme<THandler extends IAuthenticationHandler>(name: string, displayName: string | null): void;
 }
 
 
@@ -394,22 +397,22 @@ export interface AuthenticationProperties$instance {
     IsPersistent: boolean;
     get IssuedUtc(): Nullable_1<DateTimeOffset>;
     set IssuedUtc(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
-    readonly Items: IDictionary_2<System_Internal.String, string | undefined>;
-    readonly Parameters: IDictionary_2<System_Internal.String, unknown | undefined>;
-    get RedirectUri(): string | undefined;
-    set RedirectUri(value: string | undefined);
+    readonly Items: IDictionary_2<System_Internal.String, string | null>;
+    readonly Parameters: IDictionary_2<System_Internal.String, JsValue | null>;
+    get RedirectUri(): string | null;
+    set RedirectUri(value: string | null);
     Clone(): AuthenticationProperties;
-    GetParameter<T>(key: string): T | undefined;
-    GetString(key: string): string | undefined;
+    GetParameter<T>(key: string): T | null;
+    GetString(key: string): string | null;
     SetParameter<T>(key: string, value: T): void;
-    SetString(key: string, value: string): void;
+    SetString(key: string, value: string | null): void;
 }
 
 
 export const AuthenticationProperties: {
     new(): AuthenticationProperties;
-    new(items: IDictionary_2<System_Internal.String, System_Internal.String>): AuthenticationProperties;
-    new(items: IDictionary_2<System_Internal.String, System_Internal.String>, parameters: IDictionary_2<System_Internal.String, unknown>): AuthenticationProperties;
+    new(items: IDictionary_2<System_Internal.String, string | null>): AuthenticationProperties;
+    new(items: IDictionary_2<System_Internal.String, string | null> | null, parameters: IDictionary_2<System_Internal.String, JsValue | null> | null): AuthenticationProperties;
 };
 
 
@@ -418,14 +421,14 @@ export type AuthenticationProperties = AuthenticationProperties$instance;
 export interface AuthenticationScheme$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationScheme: never;
 
-    readonly DisplayName: string | undefined;
+    readonly DisplayName: string | null;
     readonly HandlerType: Type;
     readonly Name: string;
 }
 
 
 export const AuthenticationScheme: {
-    new(name: string, displayName: string, handlerType: Type): AuthenticationScheme;
+    new(name: string, displayName: string | null, handlerType: Type): AuthenticationScheme;
 };
 
 
@@ -434,10 +437,10 @@ export type AuthenticationScheme = AuthenticationScheme$instance;
 export interface AuthenticationSchemeBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeBuilder: never;
 
-    get DisplayName(): string | undefined;
-    set DisplayName(value: string | undefined);
-    get HandlerType(): Type | undefined;
-    set HandlerType(value: Type | undefined);
+    get DisplayName(): string | null;
+    set DisplayName(value: string | null);
+    get HandlerType(): Type | null;
+    set HandlerType(value: Type | null);
     readonly Name: string;
     Build(): AuthenticationScheme;
 }
@@ -453,27 +456,27 @@ export type AuthenticationSchemeBuilder = AuthenticationSchemeBuilder$instance;
 export interface AuthenticationSchemeOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions: never;
 
-    get ClaimsIssuer(): string | undefined;
-    set ClaimsIssuer(value: string | undefined);
-    Events: unknown;
-    get EventsType(): Type | undefined;
-    set EventsType(value: Type | undefined);
-    get ForwardAuthenticate(): string | undefined;
-    set ForwardAuthenticate(value: string | undefined);
-    get ForwardChallenge(): string | undefined;
-    set ForwardChallenge(value: string | undefined);
-    get ForwardDefault(): string | undefined;
-    set ForwardDefault(value: string | undefined);
-    get ForwardDefaultSelector(): Func_2<HttpContext, string | undefined> | undefined;
-    set ForwardDefaultSelector(value: Func_2<HttpContext, string | undefined> | undefined);
-    get ForwardForbid(): string | undefined;
-    set ForwardForbid(value: string | undefined);
-    get ForwardSignIn(): string | undefined;
-    set ForwardSignIn(value: string | undefined);
-    get ForwardSignOut(): string | undefined;
-    set ForwardSignOut(value: string | undefined);
-    get TimeProvider(): TimeProvider | undefined;
-    set TimeProvider(value: TimeProvider | undefined);
+    get ClaimsIssuer(): string | null;
+    set ClaimsIssuer(value: string | null);
+    Events: BearerTokenEvents | JsValue;
+    get EventsType(): Type | null;
+    set EventsType(value: Type | null);
+    get ForwardAuthenticate(): string | null;
+    set ForwardAuthenticate(value: string | null);
+    get ForwardChallenge(): string | null;
+    set ForwardChallenge(value: string | null);
+    get ForwardDefault(): string | null;
+    set ForwardDefault(value: string | null);
+    get ForwardDefaultSelector(): Func_2<HttpContext, string | null> | null;
+    set ForwardDefaultSelector(value: Func_2<HttpContext, string | null> | null);
+    get ForwardForbid(): string | null;
+    set ForwardForbid(value: string | null);
+    get ForwardSignIn(): string | null;
+    set ForwardSignIn(value: string | null);
+    get ForwardSignOut(): string | null;
+    set ForwardSignOut(value: string | null);
+    get TimeProvider(): TimeProvider | null;
+    set TimeProvider(value: TimeProvider | null);
     Validate(): void;
     Validate(scheme: string): void;
 }
@@ -493,13 +496,13 @@ export interface AuthenticationSchemeProvider$instance extends IAuthenticationSc
 
     AddScheme(scheme: AuthenticationScheme): void;
     GetAllSchemesAsync(): Task_1<IEnumerable_1<AuthenticationScheme>>;
-    GetDefaultAuthenticateSchemeAsync(): Task_1<AuthenticationScheme | undefined>;
-    GetDefaultChallengeSchemeAsync(): Task_1<AuthenticationScheme | undefined>;
-    GetDefaultForbidSchemeAsync(): Task_1<AuthenticationScheme | undefined>;
-    GetDefaultSignInSchemeAsync(): Task_1<AuthenticationScheme | undefined>;
-    GetDefaultSignOutSchemeAsync(): Task_1<AuthenticationScheme | undefined>;
+    GetDefaultAuthenticateSchemeAsync(): Task_1<AuthenticationScheme | null>;
+    GetDefaultChallengeSchemeAsync(): Task_1<AuthenticationScheme | null>;
+    GetDefaultForbidSchemeAsync(): Task_1<AuthenticationScheme | null>;
+    GetDefaultSignInSchemeAsync(): Task_1<AuthenticationScheme | null>;
+    GetDefaultSignOutSchemeAsync(): Task_1<AuthenticationScheme | null>;
     GetRequestHandlerSchemesAsync(): Task_1<IEnumerable_1<AuthenticationScheme>>;
-    GetSchemeAsync(name: string): Task_1<AuthenticationScheme | undefined>;
+    GetSchemeAsync(name: string): Task_1<AuthenticationScheme | null>;
     RemoveScheme(name: string): void;
     TryAddScheme(scheme: AuthenticationScheme): boolean;
 }
@@ -526,11 +529,11 @@ export interface AuthenticationService$instance extends IAuthenticationService$i
     readonly Options: AuthenticationOptions;
     readonly Schemes: IAuthenticationSchemeProvider;
     readonly Transform: IClaimsTransformation;
-    AuthenticateAsync(context: HttpContext, scheme: string): Task_1<AuthenticateResult>;
-    ChallengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    ForbidAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    SignOutAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
+    AuthenticateAsync(context: HttpContext, scheme: string | null): Task_1<AuthenticateResult>;
+    ChallengeAsync(context: HttpContext, scheme: string | null, properties: AuthenticationProperties | null): Task;
+    ForbidAsync(context: HttpContext, scheme: string | null, properties: AuthenticationProperties | null): Task;
+    SignInAsync(context: HttpContext, scheme: string | null, principal: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
+    SignOutAsync(context: HttpContext, scheme: string | null, properties: AuthenticationProperties | null): Task;
 }
 
 
@@ -557,7 +560,7 @@ export interface AuthenticationTicket$instance {
 
 
 export const AuthenticationTicket: {
-    new(principal: ClaimsPrincipal, properties: AuthenticationProperties, authenticationScheme: string): AuthenticationTicket;
+    new(principal: ClaimsPrincipal, properties: AuthenticationProperties | null, authenticationScheme: string): AuthenticationTicket;
     new(principal: ClaimsPrincipal, authenticationScheme: string): AuthenticationTicket;
 };
 
@@ -621,7 +624,7 @@ export interface HandleRequestResult$instance extends AuthenticateResult {
 
 export const HandleRequestResult: {
     new(): HandleRequestResult;
-    Fail(failureMessage: string, properties: AuthenticationProperties): HandleRequestResult;
+    Fail(failureMessage: string, properties: AuthenticationProperties | null): HandleRequestResult;
     Fail(failureMessage: string): HandleRequestResult;
     Handle(): HandleRequestResult;
     SkipHandler(): HandleRequestResult;
@@ -659,10 +662,10 @@ export interface PolicySchemeHandler$instance extends SignInAuthenticationHandle
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
     HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
-    HandleChallengeAsync(properties: AuthenticationProperties): Task;
-    HandleForbiddenAsync(properties: AuthenticationProperties): Task;
-    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    HandleSignOutAsync(properties: AuthenticationProperties): Task;
+    HandleChallengeAsync(properties: AuthenticationProperties | null): Task;
+    HandleForbiddenAsync(properties: AuthenticationProperties | null): Task;
+    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
+    HandleSignOutAsync(properties: AuthenticationProperties | null): Task;
 }
 
 
@@ -696,12 +699,12 @@ export type PolicySchemeOptions = PolicySchemeOptions$instance;
 export interface PrincipalContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends PropertiesContext_1<TOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_PrincipalContext_1: never;
 
-    get Principal(): ClaimsPrincipal | undefined;
-    set Principal(value: ClaimsPrincipal | undefined);
+    get Principal(): ClaimsPrincipal | null;
+    set Principal(value: ClaimsPrincipal | null);
 }
 
 
-export const PrincipalContext_1: (abstract new<TOptions extends AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties) => PrincipalContext_1<TOptions>) & {
+export const PrincipalContext_1: (abstract new<TOptions extends AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties | null) => PrincipalContext_1<TOptions>) & {
 };
 
 
@@ -714,7 +717,7 @@ export interface PropertiesContext_1$instance<TOptions extends AuthenticationSch
 }
 
 
-export const PropertiesContext_1: (abstract new<TOptions extends AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties) => PropertiesContext_1<TOptions>) & {
+export const PropertiesContext_1: (abstract new<TOptions extends AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties | null) => PropertiesContext_1<TOptions>) & {
 };
 
 
@@ -745,8 +748,8 @@ export interface PropertiesSerializer$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IDataSerializer_1: never;
 
-    Deserialize(data: byte[]): AuthenticationProperties | undefined;
-    Read(reader: BinaryReader): AuthenticationProperties | undefined;
+    Deserialize(data: byte[]): AuthenticationProperties | null;
+    Read(reader: BinaryReader): AuthenticationProperties | null;
     Serialize(model: AuthenticationProperties): byte[];
     Write(writer: BinaryWriter, properties: AuthenticationProperties): void;
 }
@@ -782,17 +785,17 @@ export type RedirectContext_1<TOptions extends AuthenticationSchemeOptions> = Re
 export interface RemoteAuthenticationContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends HandleRequestContext_1<TOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteAuthenticationContext_1: never;
 
-    get Principal(): ClaimsPrincipal | undefined;
-    set Principal(value: ClaimsPrincipal | undefined);
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
+    get Principal(): ClaimsPrincipal | null;
+    set Principal(value: ClaimsPrincipal | null);
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
     Fail(failure: Exception): void;
     Fail(failureMessage: string): void;
     Success(): void;
 }
 
 
-export const RemoteAuthenticationContext_1: (abstract new<TOptions extends AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties) => RemoteAuthenticationContext_1<TOptions>) & {
+export const RemoteAuthenticationContext_1: (abstract new<TOptions extends AuthenticationSchemeOptions>(context: HttpContext, scheme: AuthenticationScheme, options: TOptions, properties: AuthenticationProperties | null) => RemoteAuthenticationContext_1<TOptions>) & {
 };
 
 
@@ -823,7 +826,7 @@ export interface RemoteAuthenticationHandler_1$instance<TOptions extends RemoteA
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationRequestHandler: never;
 
-    CreateEventsAsync(): Task_1<unknown>;
+    CreateEventsAsync(): Task_1<JsValue>;
     GenerateCorrelationId(properties: AuthenticationProperties): void;
     HandleAccessDeniedErrorAsync(properties: AuthenticationProperties): Task_1<HandleRequestResult>;
     HandleAuthenticateAsync(): Task_1<AuthenticateResult>;
@@ -851,19 +854,19 @@ export interface RemoteAuthenticationOptions$instance extends AuthenticationSche
 
     AccessDeniedPath: PathString;
     Backchannel: HttpClient;
-    get BackchannelHttpHandler(): HttpMessageHandler | undefined;
-    set BackchannelHttpHandler(value: HttpMessageHandler | undefined);
+    get BackchannelHttpHandler(): HttpMessageHandler | null;
+    set BackchannelHttpHandler(value: HttpMessageHandler | null);
     BackchannelTimeout: TimeSpan;
     CallbackPath: PathString;
     CorrelationCookie: CookieBuilder;
-    get DataProtectionProvider(): IDataProtectionProvider | undefined;
-    set DataProtectionProvider(value: IDataProtectionProvider | undefined);
-    Events: unknown;
+    get DataProtectionProvider(): IDataProtectionProvider | null;
+    set DataProtectionProvider(value: IDataProtectionProvider | null);
+    Events: JsValue | OAuthEvents | RemoteAuthenticationEvents;
     RemoteAuthenticationTimeout: TimeSpan;
     ReturnUrlParameter: string;
     SaveTokens: boolean;
-    get SignInScheme(): string | undefined;
-    set SignInScheme(value: string | undefined);
+    get SignInScheme(): string | null;
+    set SignInScheme(value: string | null);
     Validate(scheme: string): void;
     Validate(): void;
 }
@@ -879,10 +882,10 @@ export type RemoteAuthenticationOptions = RemoteAuthenticationOptions$instance;
 export interface RemoteFailureContext$instance extends HandleRequestContext_1<RemoteAuthenticationOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RemoteFailureContext: never;
 
-    get Failure(): Exception | undefined;
-    set Failure(value: Exception | undefined);
-    get Properties(): AuthenticationProperties | undefined;
-    set Properties(value: AuthenticationProperties | undefined);
+    get Failure(): Exception | null;
+    set Failure(value: Exception | null);
+    get Properties(): AuthenticationProperties | null;
+    set Properties(value: AuthenticationProperties | null);
 }
 
 
@@ -896,7 +899,7 @@ export type RemoteFailureContext = RemoteFailureContext$instance;
 export interface RequestPathBaseCookieBuilder$instance extends CookieBuilder {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_RequestPathBaseCookieBuilder: never;
 
-    readonly AdditionalPath: string | undefined;
+    readonly AdditionalPath: string | null;
     Build(context: HttpContext, expiresFrom: DateTimeOffset): CookieOptions;
     Build(context: HttpContext): CookieOptions;
 }
@@ -912,11 +915,11 @@ export type RequestPathBaseCookieBuilder = RequestPathBaseCookieBuilder$instance
 export interface ResultContext_1$instance<TOptions extends AuthenticationSchemeOptions> extends BaseContext_1<TOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_ResultContext_1: never;
 
-    get Principal(): ClaimsPrincipal | undefined;
-    set Principal(value: ClaimsPrincipal | undefined);
+    get Principal(): ClaimsPrincipal | null;
+    set Principal(value: ClaimsPrincipal | null);
     Properties: AuthenticationProperties;
-    get Result(): AuthenticateResult | undefined;
-    set Result(value: AuthenticateResult | undefined);
+    get Result(): AuthenticateResult | null;
+    set Result(value: AuthenticateResult | null);
     Fail(failure: Exception): void;
     Fail(failureMessage: string): void;
     NoResult(): void;
@@ -936,9 +939,9 @@ export interface SecureDataFormat_1$instance<TData> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1: never;
 
     Protect(data: TData): string;
-    Protect(data: TData, purpose: string): string;
-    Unprotect(protectedText: string): TData | undefined;
-    Unprotect(protectedText: string, purpose: string): TData | undefined;
+    Protect(data: TData, purpose: string | null): string;
+    Unprotect(protectedText: string | null): TData | null;
+    Unprotect(protectedText: string | null, purpose: string | null): TData | null;
 }
 
 
@@ -961,8 +964,8 @@ export interface SignInAuthenticationHandler_1$instance<TOptions extends Authent
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignInHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
-    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    HandleSignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
+    SignInAsync(user: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
 }
 
 
@@ -984,8 +987,8 @@ export interface SignOutAuthenticationHandler_1$instance<TOptions extends Authen
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationHandler: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IAuthenticationSignOutHandler: never;
 
-    HandleSignOutAsync(properties: AuthenticationProperties): Task;
-    SignOutAsync(properties: AuthenticationProperties): Task;
+    HandleSignOutAsync(properties: AuthenticationProperties | null): Task;
+    SignOutAsync(properties: AuthenticationProperties | null): Task;
 }
 
 
@@ -1044,8 +1047,8 @@ export type TicketDataFormat = TicketDataFormat$instance & __TicketDataFormat$vi
 export interface TicketReceivedContext$instance extends RemoteAuthenticationContext_1<RemoteAuthenticationOptions> {
     readonly __tsonic_type_Microsoft_AspNetCore_Authentication_TicketReceivedContext: never;
 
-    get ReturnUri(): string | undefined;
-    set ReturnUri(value: string | undefined);
+    get ReturnUri(): string | null;
+    set ReturnUri(value: string | null);
 }
 
 
@@ -1061,8 +1064,8 @@ export interface TicketSerializer$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Authentication_IDataSerializer_1: never;
 
-    Deserialize(data: byte[]): AuthenticationTicket | undefined;
-    Read(reader: BinaryReader): AuthenticationTicket | undefined;
+    Deserialize(data: byte[]): AuthenticationTicket | null;
+    Read(reader: BinaryReader): AuthenticationTicket | null;
     ReadClaim(reader: BinaryReader, identity: ClaimsIdentity): Claim;
     ReadIdentity(reader: BinaryReader): ClaimsIdentity;
     Serialize(ticket: AuthenticationTicket): byte[];
@@ -1093,25 +1096,25 @@ export abstract class AuthenticationConfigurationProviderExtensions$instance {
 export type AuthenticationConfigurationProviderExtensions = AuthenticationConfigurationProviderExtensions$instance;
 
 export abstract class AuthenticationHttpContextExtensions$instance {
-    static AuthenticateAsync(context: HttpContext, scheme: string): Task_1<AuthenticateResult>;
+    static AuthenticateAsync(context: HttpContext, scheme: string | null): Task_1<AuthenticateResult>;
     static AuthenticateAsync(context: HttpContext): Task_1<AuthenticateResult>;
-    static ChallengeAsync(context: HttpContext, properties: AuthenticationProperties): Task;
-    static ChallengeAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    static ChallengeAsync(context: HttpContext, scheme: string): Task;
+    static ChallengeAsync(context: HttpContext, properties: AuthenticationProperties | null): Task;
+    static ChallengeAsync(context: HttpContext, scheme: string | null, properties: AuthenticationProperties | null): Task;
+    static ChallengeAsync(context: HttpContext, scheme: string | null): Task;
     static ChallengeAsync(context: HttpContext): Task;
-    static ForbidAsync(context: HttpContext, properties: AuthenticationProperties): Task;
-    static ForbidAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    static ForbidAsync(context: HttpContext, scheme: string): Task;
+    static ForbidAsync(context: HttpContext, properties: AuthenticationProperties | null): Task;
+    static ForbidAsync(context: HttpContext, scheme: string | null, properties: AuthenticationProperties | null): Task;
+    static ForbidAsync(context: HttpContext, scheme: string | null): Task;
     static ForbidAsync(context: HttpContext): Task;
-    static GetTokenAsync(context: HttpContext, scheme: string, tokenName: string): Task_1<string | undefined>;
-    static GetTokenAsync(context: HttpContext, tokenName: string): Task_1<string | undefined>;
-    static SignInAsync(context: HttpContext, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
+    static GetTokenAsync(context: HttpContext, scheme: string | null, tokenName: string): Task_1<string | null>;
+    static GetTokenAsync(context: HttpContext, tokenName: string): Task_1<string | null>;
+    static SignInAsync(context: HttpContext, principal: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
     static SignInAsync(context: HttpContext, principal: ClaimsPrincipal): Task;
-    static SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal, properties: AuthenticationProperties): Task;
-    static SignInAsync(context: HttpContext, scheme: string, principal: ClaimsPrincipal): Task;
-    static SignOutAsync(context: HttpContext, properties: AuthenticationProperties): Task;
-    static SignOutAsync(context: HttpContext, scheme: string, properties: AuthenticationProperties): Task;
-    static SignOutAsync(context: HttpContext, scheme: string): Task;
+    static SignInAsync(context: HttpContext, scheme: string | null, principal: ClaimsPrincipal, properties: AuthenticationProperties | null): Task;
+    static SignInAsync(context: HttpContext, scheme: string | null, principal: ClaimsPrincipal): Task;
+    static SignOutAsync(context: HttpContext, properties: AuthenticationProperties | null): Task;
+    static SignOutAsync(context: HttpContext, scheme: string | null, properties: AuthenticationProperties | null): Task;
+    static SignOutAsync(context: HttpContext, scheme: string | null): Task;
     static SignOutAsync(context: HttpContext): Task;
 }
 
@@ -1119,12 +1122,12 @@ export abstract class AuthenticationHttpContextExtensions$instance {
 export type AuthenticationHttpContextExtensions = AuthenticationHttpContextExtensions$instance;
 
 export abstract class AuthenticationTokenExtensions$instance {
-    static GetTokenAsync(auth: IAuthenticationService, context: HttpContext, scheme: string, tokenName: string): Task_1<string | undefined>;
-    static GetTokenAsync(auth: IAuthenticationService, context: HttpContext, tokenName: string): Task_1<string | undefined>;
+    static GetTokenAsync(auth: IAuthenticationService, context: HttpContext, scheme: string | null, tokenName: string): Task_1<string | null>;
+    static GetTokenAsync(auth: IAuthenticationService, context: HttpContext, tokenName: string): Task_1<string | null>;
     static GetTokens(properties: AuthenticationProperties): IEnumerable_1<AuthenticationToken>;
-    static GetTokenValue(properties: AuthenticationProperties, tokenName: string): string | undefined;
+    static GetTokenValue(properties: AuthenticationProperties, tokenName: string): string | null;
     static StoreTokens(properties: AuthenticationProperties, tokens: IEnumerable_1<AuthenticationToken>): void;
-    static UpdateTokenValue(properties: AuthenticationProperties, tokenName: string, tokenValue: string): boolean;
+    static UpdateTokenValue(properties: AuthenticationProperties, tokenName: string, tokenValue: string | null): boolean;
 }
 
 
@@ -1143,8 +1146,8 @@ export abstract class ClaimActionCollectionMapExtensions$instance {
     static DeleteClaims(collection: ClaimActionCollection, ...claimTypes: string[]): void;
     static MapAll(collection: ClaimActionCollection): void;
     static MapAllExcept(collection: ClaimActionCollection, ...exclusions: string[]): void;
-    static MapCustomJson(collection: ClaimActionCollection, claimType: string, resolver: Func_2<JsonElement, System_Internal.String>): void;
-    static MapCustomJson(collection: ClaimActionCollection, claimType: string, valueType: string, resolver: Func_2<JsonElement, System_Internal.String>): void;
+    static MapCustomJson(collection: ClaimActionCollection, claimType: string, resolver: Func_2<JsonElement, string | null>): void;
+    static MapCustomJson(collection: ClaimActionCollection, claimType: string, valueType: string, resolver: Func_2<JsonElement, string | null>): void;
     static MapJsonKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, valueType: string): void;
     static MapJsonKey(collection: ClaimActionCollection, claimType: string, jsonKey: string): void;
     static MapJsonSubKey(collection: ClaimActionCollection, claimType: string, jsonKey: string, subKey: string, valueType: string): void;
@@ -1155,7 +1158,7 @@ export abstract class ClaimActionCollectionMapExtensions$instance {
 export type ClaimActionCollectionMapExtensions = ClaimActionCollectionMapExtensions$instance;
 
 export abstract class JsonDocumentAuthExtensions$instance {
-    static GetString(element: JsonElement, key: string): string | undefined;
+    static GetString(element: JsonElement, key: string): string | null;
 }
 
 

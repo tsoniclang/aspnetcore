@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Diagnostics
 // Assembly: Microsoft.AspNetCore.Diagnostics, Microsoft.AspNetCore.Diagnostics.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { DeveloperExceptionPageOptions, ExceptionHandlerOptions, StatusCodePagesOptions, WelcomePageOptions } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -31,7 +32,7 @@ export enum ExceptionHandledType {
 export interface ICompilationException$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_ICompilationException: never;
 
-    readonly CompilationFailures: IEnumerable_1<CompilationFailure | undefined> | undefined;
+    readonly CompilationFailures: IEnumerable_1<CompilationFailure | null> | null;
 }
 
 
@@ -60,8 +61,8 @@ export interface IExceptionHandlerFeature$instance {
 
     readonly Error: Exception;
     readonly Path: string;
-    readonly Endpoint: Endpoint | undefined;
-    readonly RouteValues: RouteValueDictionary | undefined;
+    readonly Endpoint: Endpoint | null;
+    readonly RouteValues: RouteValueDictionary | null;
 }
 
 
@@ -72,8 +73,8 @@ export interface IExceptionHandlerPathFeature$instance extends IExceptionHandler
 
     readonly Path: string;
     readonly Error: Exception;
-    readonly Endpoint: Endpoint | undefined;
-    readonly RouteValues: RouteValueDictionary | undefined;
+    readonly Endpoint: Endpoint | null;
+    readonly RouteValues: RouteValueDictionary | null;
 }
 
 
@@ -95,11 +96,11 @@ export interface IStatusCodeReExecuteFeature$instance {
 
     OriginalPathBase: string;
     OriginalPath: string;
-    get OriginalQueryString(): string | undefined;
-    set OriginalQueryString(value: string | undefined);
+    get OriginalQueryString(): string | null;
+    set OriginalQueryString(value: string | null);
     readonly OriginalStatusCode: int;
-    readonly Endpoint: Endpoint | undefined;
-    readonly RouteValues: RouteValueDictionary | undefined;
+    readonly Endpoint: Endpoint | null;
+    readonly RouteValues: RouteValueDictionary | null;
 }
 
 
@@ -108,17 +109,17 @@ export type IStatusCodeReExecuteFeature = IStatusCodeReExecuteFeature$instance;
 export interface CompilationFailure$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_CompilationFailure: never;
 
-    readonly CompiledContent: string | undefined;
-    readonly FailureSummary: string | undefined;
-    readonly Messages: IEnumerable_1<DiagnosticMessage | undefined> | undefined;
-    readonly SourceFileContent: string | undefined;
-    readonly SourceFilePath: string | undefined;
+    readonly CompiledContent: string | null;
+    readonly FailureSummary: string | null;
+    readonly Messages: IEnumerable_1<DiagnosticMessage | null> | null;
+    readonly SourceFileContent: string | null;
+    readonly SourceFilePath: string | null;
 }
 
 
 export const CompilationFailure: {
-    new(sourceFilePath: string, sourceFileContent: string, compiledContent: string, messages: IEnumerable_1<DiagnosticMessage>): CompilationFailure;
-    new(sourceFilePath: string, sourceFileContent: string, compiledContent: string, messages: IEnumerable_1<DiagnosticMessage>, failureSummary: string): CompilationFailure;
+    new(sourceFilePath: string | null, sourceFileContent: string | null, compiledContent: string | null, messages: IEnumerable_1<DiagnosticMessage> | null): CompilationFailure;
+    new(sourceFilePath: string | null, sourceFileContent: string | null, compiledContent: string | null, messages: IEnumerable_1<DiagnosticMessage | null> | null, failureSummary: string | null): CompilationFailure;
 };
 
 
@@ -143,16 +144,16 @@ export interface DiagnosticMessage$instance {
 
     readonly EndColumn: int;
     readonly EndLine: int;
-    readonly FormattedMessage: string | undefined;
-    readonly Message: string | undefined;
-    readonly SourceFilePath: string | undefined;
+    readonly FormattedMessage: string | null;
+    readonly Message: string | null;
+    readonly SourceFilePath: string | null;
     readonly StartColumn: int;
     readonly StartLine: int;
 }
 
 
 export const DiagnosticMessage: {
-    new(message: string, formattedMessage: string, filePath: string, startLine: int, startColumn: int, endLine: int, endColumn: int): DiagnosticMessage;
+    new(message: string | null, formattedMessage: string | null, filePath: string | null, startLine: int, startColumn: int, endLine: int, endColumn: int): DiagnosticMessage;
 };
 
 
@@ -179,12 +180,12 @@ export interface ExceptionHandlerFeature$instance extends IExceptionHandlerPathF
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature: never;
 
-    get Endpoint(): Endpoint | undefined;
-    set Endpoint(value: Endpoint | undefined);
+    get Endpoint(): Endpoint | null;
+    set Endpoint(value: Endpoint | null);
     Error: Exception;
     Path: string;
-    get RouteValues(): RouteValueDictionary | undefined;
-    set RouteValues(value: RouteValueDictionary | undefined);
+    get RouteValues(): RouteValueDictionary | null;
+    set RouteValues(value: RouteValueDictionary | null);
 }
 
 
@@ -286,15 +287,15 @@ export interface StatusCodeReExecuteFeature$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature: never;
 
-    get Endpoint(): Endpoint | undefined;
-    set Endpoint(value: Endpoint | undefined);
+    get Endpoint(): Endpoint | null;
+    set Endpoint(value: Endpoint | null);
     OriginalPath: string;
     OriginalPathBase: string;
-    get OriginalQueryString(): string | undefined;
-    set OriginalQueryString(value: string | undefined);
+    get OriginalQueryString(): string | null;
+    set OriginalQueryString(value: string | null);
     OriginalStatusCode: int;
-    get RouteValues(): RouteValueDictionary | undefined;
-    set RouteValues(value: RouteValueDictionary | undefined);
+    get RouteValues(): RouteValueDictionary | null;
+    set RouteValues(value: RouteValueDictionary | null);
 }
 
 

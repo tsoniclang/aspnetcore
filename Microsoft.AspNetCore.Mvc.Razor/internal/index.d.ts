@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.Razor
 // Assembly: Microsoft.AspNetCore.Mvc.Razor
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Html_Internal from "../../Microsoft.AspNetCore.Html/internal/index.js";
@@ -46,12 +47,12 @@ export interface IRazorPage$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
     ViewContext: ViewContext;
-    get BodyContent(): IHtmlContent | undefined;
-    set BodyContent(value: IHtmlContent | undefined);
+    get BodyContent(): IHtmlContent | null;
+    set BodyContent(value: IHtmlContent | null);
     IsLayoutBeingRendered: boolean;
     Path: string;
-    get Layout(): string | undefined;
-    set Layout(value: string | undefined);
+    get Layout(): string | null;
+    set Layout(value: string | null);
     PreviousSectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
     readonly SectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
     EnsureRenderedBodyOrSections(): void;
@@ -84,9 +85,9 @@ export interface IRazorViewEngine$instance extends IViewEngine {
 
     FindPage(context: ActionContext, pageName: string): RazorPageResult;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    GetAbsolutePath(executingFilePath: string, pagePath: string): string | undefined;
+    GetAbsolutePath(executingFilePath: string | null, pagePath: string | null): string | null;
     GetPage(executingFilePath: string, pagePath: string): RazorPageResult;
-    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string | null, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
@@ -134,14 +135,14 @@ export type IViewLocationExpander = IViewLocationExpander$instance;
 export interface RazorPageFactoryResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageFactoryResult: never;
 
-    readonly RazorPageFactory: Func_1<IRazorPage> | undefined;
+    readonly RazorPageFactory: Func_1<IRazorPage> | null;
     readonly Success: boolean;
-    readonly ViewDescriptor: CompiledViewDescriptor | undefined;
+    readonly ViewDescriptor: CompiledViewDescriptor | null;
 }
 
 
 export const RazorPageFactoryResult: {
-    new(viewDescriptor: CompiledViewDescriptor, razorPageFactory: Func_1<IRazorPage>): RazorPageFactoryResult;
+    new(viewDescriptor: CompiledViewDescriptor, razorPageFactory: Func_1<IRazorPage> | null): RazorPageFactoryResult;
 };
 
 
@@ -151,8 +152,8 @@ export interface RazorPageResult$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_RazorPageResult: never;
 
     readonly Name: string;
-    readonly Page: IRazorPage | undefined;
-    readonly SearchedLocations: IEnumerable_1<System_Internal.String> | undefined;
+    readonly Page: IRazorPage | null;
+    readonly SearchedLocations: IEnumerable_1<System_Internal.String> | null;
 }
 
 
@@ -223,10 +224,10 @@ export interface RazorPage$instance extends RazorPageBase$instance {
     IgnoreSection(sectionName: string): void;
     IsSectionDefined(name: string): boolean;
     RenderBody(): IHtmlContent;
-    RenderSection(name: string): HtmlString | undefined;
-    RenderSection(name: string, required: boolean): HtmlString | undefined;
-    RenderSectionAsync(name: string): Task_1<HtmlString | undefined>;
-    RenderSectionAsync(name: string, required: boolean): Task_1<HtmlString | undefined>;
+    RenderSection(name: string): HtmlString | null;
+    RenderSection(name: string, required: boolean): HtmlString | null;
+    RenderSectionAsync(name: string): Task_1<HtmlString | null>;
+    RenderSectionAsync(name: string, required: boolean): Task_1<HtmlString | null>;
 }
 
 
@@ -288,22 +289,22 @@ export interface RazorPageBase$instance extends IRazorPage$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Razor_IRazorPage: never;
 
-    get BodyContent(): IHtmlContent | undefined;
-    set BodyContent(value: IHtmlContent | undefined);
+    get BodyContent(): IHtmlContent | null;
+    set BodyContent(value: IHtmlContent | null);
     DiagnosticSource: DiagnosticSource;
     HtmlEncoder: HtmlEncoder;
     IsLayoutBeingRendered: boolean;
-    get Layout(): string | undefined;
-    set Layout(value: string | undefined);
+    get Layout(): string | null;
+    set Layout(value: string | null);
     readonly Output: TextWriter;
     Path: string;
     PreviousSectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
     readonly SectionWriters: IDictionary_2<System_Internal.String, RenderAsyncDelegate>;
     readonly TempData: ITempDataDictionary;
     readonly User: ClaimsPrincipal;
-    readonly ViewBag: unknown;
+    readonly ViewBag: JsValue;
     ViewContext: ViewContext;
-    AddHtmlAttributeValue(prefix: string, prefixOffset: int, value: unknown, valueOffset: int, valueLength: int, isLiteral: boolean): void;
+    AddHtmlAttributeValue(prefix: string | null, prefixOffset: int, value: JsValue | null, valueOffset: int, valueLength: int, isLiteral: boolean): void;
     BeginAddHtmlAttributeValues(executionContext: TagHelperExecutionContext, attributeName: string, attributeValuesCount: int, attributeValueStyle: HtmlAttributeValueStyle): void;
     BeginContext(position: int, length: int, isLiteral: boolean): void;
     BeginWriteAttribute(name: string, prefix: string, prefixOffset: int, suffix: string, suffixOffset: int, attributeValuesCount: int): void;
@@ -324,11 +325,11 @@ export interface RazorPageBase$instance extends IRazorPage$instance {
     PushWriter(writer: TextWriter): void;
     SetAntiforgeryCookieAndHeader(): HtmlString;
     StartTagHelperWritingScope(encoder: HtmlEncoder): void;
-    Write(value: unknown): void;
-    Write(value: string): void;
-    WriteAttributeValue(prefix: string, prefixOffset: int, value: unknown, valueOffset: int, valueLength: int, isLiteral: boolean): void;
-    WriteLiteral(value: unknown): void;
-    WriteLiteral(value: string): void;
+    Write(value: JsValue | null): void;
+    Write(value: string | null): void;
+    WriteAttributeValue(prefix: string, prefixOffset: int, value: JsValue | null, valueOffset: int, valueLength: int, isLiteral: boolean): void;
+    WriteLiteral(value: JsValue | null): void;
+    WriteLiteral(value: string | null): void;
 }
 
 
@@ -375,16 +376,16 @@ export interface RazorViewEngine$instance {
 
     FindPage(context: ActionContext, pageName: string): RazorPageResult;
     FindView(context: ActionContext, viewName: string, isMainPage: boolean): ViewEngineResult;
-    GetAbsolutePath(executingFilePath: string, pagePath: string): string | undefined;
+    GetAbsolutePath(executingFilePath: string | null, pagePath: string | null): string | null;
     GetPage(executingFilePath: string, pagePath: string): RazorPageResult;
-    GetView(executingFilePath: string, viewPath: string, isMainPage: boolean): ViewEngineResult;
+    GetView(executingFilePath: string | null, viewPath: string, isMainPage: boolean): ViewEngineResult;
 }
 
 
 export const RazorViewEngine: {
     new(pageFactory: IRazorPageFactoryProvider, pageActivator: IRazorPageActivator, htmlEncoder: HtmlEncoder, optionsAccessor: IOptions_1<RazorViewEngineOptions>, loggerFactory: ILoggerFactory, diagnosticListener: DiagnosticListener): RazorViewEngine;
     readonly ViewExtension: string;
-    GetNormalizedRouteValue(context: ActionContext, key: string): string | undefined;
+    GetNormalizedRouteValue(context: ActionContext, key: string): string | null;
 };
 
 
@@ -439,17 +440,17 @@ export interface ViewLocationExpanderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Razor_ViewLocationExpanderContext: never;
 
     readonly ActionContext: ActionContext;
-    readonly AreaName: string | undefined;
-    readonly ControllerName: string | undefined;
+    readonly AreaName: string | null;
+    readonly ControllerName: string | null;
     readonly IsMainPage: boolean;
-    readonly PageName: string | undefined;
-    Values: IDictionary_2<System_Internal.String, string | undefined>;
+    readonly PageName: string | null;
+    Values: IDictionary_2<System_Internal.String, string | null>;
     readonly ViewName: string;
 }
 
 
 export const ViewLocationExpanderContext: {
-    new(actionContext: ActionContext, viewName: string, controllerName: string, areaName: string, pageName: string, isMainPage: boolean): ViewLocationExpanderContext;
+    new(actionContext: ActionContext, viewName: string, controllerName: string | null, areaName: string | null, pageName: string | null, isMainPage: boolean): ViewLocationExpanderContext;
 };
 
 

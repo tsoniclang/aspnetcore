@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.StaticFiles.Infrastructure
 // Assembly: Microsoft.AspNetCore.StaticFiles
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { PathString } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -14,8 +15,8 @@ import type { IFileProvider } from "@tsonic/microsoft-extensions/Microsoft.Exten
 export interface SharedOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptions: never;
 
-    get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider | undefined);
+    get FileProvider(): IFileProvider | null;
+    set FileProvider(value: IFileProvider | null);
     RedirectToAppendTrailingSlash: boolean;
     RequestPath: PathString;
 }
@@ -31,8 +32,8 @@ export type SharedOptions = SharedOptions$instance;
 export interface SharedOptionsBase$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptionsBase: never;
 
-    get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider | undefined);
+    get FileProvider(): IFileProvider | null;
+    set FileProvider(value: IFileProvider | null);
     RedirectToAppendTrailingSlash: boolean;
     RequestPath: PathString;
 }

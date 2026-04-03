@@ -37,9 +37,9 @@ export { QueryHelpers$instance as QueryHelpers } from './Microsoft.AspNetCore.We
 export { ReasonPhrases$instance as ReasonPhrases } from './Microsoft.AspNetCore.WebUtilities/internal/index.js';
 export { StreamHelperExtensions$instance as StreamHelperExtensions } from './Microsoft.AspNetCore.WebUtilities/internal/index.js';
 export { QueryStringEnumerable as QueryStringEnumerable } from './Microsoft.AspNetCore.WebUtilities/internal/index.js';
-export { WebEncoders$instance as WebEncoders } from './Microsoft.AspNetCore.WebUtilities/internal/index.js';
 export { QueryStringEnumerable_EncodedNameValuePair as QueryStringEnumerable_EncodedNameValuePair } from './Microsoft.AspNetCore.WebUtilities/internal/index.js';
 export { QueryStringEnumerable_Enumerator as QueryStringEnumerable_Enumerator } from './Microsoft.AspNetCore.WebUtilities/internal/index.js';
+export { WebEncoders$instance as WebEncoders } from './Microsoft.AspNetCore.WebUtilities/internal/index.js';
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_WebUtilities as ExtensionMethods } from './__internal/extensions/index.js';
 

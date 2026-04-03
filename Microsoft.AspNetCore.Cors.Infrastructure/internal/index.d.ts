@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Cors.Infrastructure
 // Assembly: Microsoft.AspNetCore.Cors, Microsoft.AspNetCore.Http.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext, HttpResponse, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -36,7 +37,7 @@ export type ICorsPolicyMetadata = ICorsPolicyMetadata$instance;
 export interface ICorsPolicyProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;
 
-    GetPolicyAsync(context: HttpContext, policyName: string): Task_1<CorsPolicy | undefined>;
+    GetPolicyAsync(context: HttpContext, policyName: string | null): Task_1<CorsPolicy | null>;
 }
 
 
@@ -65,8 +66,8 @@ export type IDisableCorsAttribute = IDisableCorsAttribute$instance;
 export interface IEnableCorsAttribute$instance extends ICorsMetadata {
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute: never;
 
-    get PolicyName(): string | undefined;
-    set PolicyName(value: string | undefined);
+    get PolicyName(): string | null;
+    set PolicyName(value: string | null);
 }
 
 
@@ -83,7 +84,7 @@ export interface CorsMiddleware$instance {
 
 export const CorsMiddleware: {
     new(next: RequestDelegate, corsService: ICorsService, loggerFactory: ILoggerFactory): CorsMiddleware;
-    new(next: RequestDelegate, corsService: ICorsService, loggerFactory: ILoggerFactory, policyName: string): CorsMiddleware;
+    new(next: RequestDelegate, corsService: ICorsService, loggerFactory: ILoggerFactory, policyName: string | null): CorsMiddleware;
     new(next: RequestDelegate, corsService: ICorsService, policy: CorsPolicy, loggerFactory: ILoggerFactory): CorsMiddleware;
 };
 
@@ -98,7 +99,7 @@ export interface CorsOptions$instance {
     AddDefaultPolicy(configurePolicy: Action_1<CorsPolicyBuilder>): void;
     AddPolicy(name: string, policy: CorsPolicy): void;
     AddPolicy(name: string, configurePolicy: Action_1<CorsPolicyBuilder>): void;
-    GetPolicy(name: string): CorsPolicy | undefined;
+    GetPolicy(name: string): CorsPolicy | null;
 }
 
 
@@ -167,8 +168,8 @@ export interface CorsResult$instance {
     readonly AllowedExposedHeaders: IList_1<System_Internal.String>;
     readonly AllowedHeaders: IList_1<System_Internal.String>;
     readonly AllowedMethods: IList_1<System_Internal.String>;
-    get AllowedOrigin(): string | undefined;
-    set AllowedOrigin(value: string | undefined);
+    get AllowedOrigin(): string | null;
+    set AllowedOrigin(value: string | null);
     IsOriginAllowed: boolean;
     IsPreflightRequest: boolean;
     get PreflightMaxAge(): Nullable_1<TimeSpan>;
@@ -216,7 +217,7 @@ export interface DefaultCorsPolicyProvider$instance extends ICorsPolicyProvider$
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider: never;
 
-    GetPolicyAsync(context: HttpContext, policyName: string): Task_1<CorsPolicy | undefined>;
+    GetPolicyAsync(context: HttpContext, policyName: string | null): Task_1<CorsPolicy | null>;
 }
 
 

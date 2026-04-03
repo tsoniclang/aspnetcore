@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Components.Web.Virtualization
 // Assembly: Microsoft.AspNetCore.Components.Web
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RenderTreeBuilder } from "../../Microsoft.AspNetCore.Components.Rendering/internal/index.js";
@@ -75,21 +76,21 @@ export interface Virtualize_1$instance<TItem> extends ComponentBase, Microsoft_A
     readonly __tsonic_iface_Microsoft_AspNetCore_Components_Web_Virtualization_IVirtualizeJsCallbacks: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
-    get ChildContent(): RenderFragment_1<TItem> | undefined;
-    set ChildContent(value: RenderFragment_1<TItem> | undefined);
-    get EmptyContent(): RenderFragment | undefined;
-    set EmptyContent(value: RenderFragment | undefined);
-    get ItemContent(): RenderFragment_1<TItem> | undefined;
-    set ItemContent(value: RenderFragment_1<TItem> | undefined);
-    get Items(): ICollection_1<TItem> | undefined;
-    set Items(value: ICollection_1<TItem> | undefined);
+    get ChildContent(): RenderFragment_1<TItem> | null;
+    set ChildContent(value: RenderFragment_1<TItem> | null);
+    get EmptyContent(): RenderFragment | null;
+    set EmptyContent(value: RenderFragment | null);
+    get ItemContent(): RenderFragment_1<TItem> | null;
+    set ItemContent(value: RenderFragment_1<TItem> | null);
+    get Items(): ICollection_1<TItem> | null;
+    set Items(value: ICollection_1<TItem> | null);
     ItemSize: float;
-    get ItemsProvider(): ItemsProviderDelegate_1<TItem> | undefined;
-    set ItemsProvider(value: ItemsProviderDelegate_1<TItem> | undefined);
+    get ItemsProvider(): ItemsProviderDelegate_1<TItem> | null;
+    set ItemsProvider(value: ItemsProviderDelegate_1<TItem> | null);
     MaxItemCount: int;
     OverscanCount: int;
-    get Placeholder(): RenderFragment_1<PlaceholderContext> | undefined;
-    set Placeholder(value: RenderFragment_1<PlaceholderContext> | undefined);
+    get Placeholder(): RenderFragment_1<PlaceholderContext> | null;
+    set Placeholder(value: RenderFragment_1<PlaceholderContext> | null);
     SpacerElement: string;
     BuildRenderTree(builder: RenderTreeBuilder): void;
     DisposeAsync(): ValueTask;

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Builder.Extensions
 // Assembly: Microsoft.AspNetCore.Http.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext, PathString, RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -28,8 +29,8 @@ export type MapMiddleware = MapMiddleware$instance;
 export interface MapOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_Extensions_MapOptions: never;
 
-    get Branch(): RequestDelegate | undefined;
-    set Branch(value: RequestDelegate | undefined);
+    get Branch(): RequestDelegate | null;
+    set Branch(value: RequestDelegate | null);
     PathMatch: PathString;
     PreserveMatchedPathSegment: boolean;
 }
@@ -59,10 +60,10 @@ export type MapWhenMiddleware = MapWhenMiddleware$instance;
 export interface MapWhenOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Builder_Extensions_MapWhenOptions: never;
 
-    get Branch(): RequestDelegate | undefined;
-    set Branch(value: RequestDelegate | undefined);
-    get Predicate(): Func_2<HttpContext, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func_2<HttpContext, System_Internal.Boolean> | undefined);
+    get Branch(): RequestDelegate | null;
+    set Branch(value: RequestDelegate | null);
+    get Predicate(): Func_2<HttpContext, System_Internal.Boolean> | null;
+    set Predicate(value: Func_2<HttpContext, System_Internal.Boolean> | null);
 }
 
 

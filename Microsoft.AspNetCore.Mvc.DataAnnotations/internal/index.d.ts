@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.DataAnnotations
 // Assembly: Microsoft.AspNetCore.Mvc.DataAnnotations
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Mvc_Infrastructure_Internal from "../../Microsoft.AspNetCore.Mvc.Infrastructure/internal/index.js";
@@ -36,7 +37,7 @@ export type IAttributeAdapter = IAttributeAdapter$instance;
 export interface IValidationAttributeAdapterProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider: never;
 
-    GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
+    GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer | null): IAttributeAdapter | null;
 }
 
 
@@ -49,11 +50,11 @@ export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAt
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     GetErrorMessage(validationContext: ModelValidationContextBase): string;
-    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: JsValue[]): string;
 }
 
 
-export const AttributeAdapterBase_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer) => AttributeAdapterBase_1<TAttribute>) & {
+export const AttributeAdapterBase_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer | null) => AttributeAdapterBase_1<TAttribute>) & {
 };
 
 
@@ -90,12 +91,12 @@ export interface RequiredAttributeAdapter$instance extends AttributeAdapterBase_
 
     AddValidation(context: ClientModelValidationContext): void;
     GetErrorMessage(validationContext: ModelValidationContextBase): string;
-    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: JsValue[]): string;
 }
 
 
 export const RequiredAttributeAdapter: {
-    new(attribute: RequiredAttribute, stringLocalizer: IStringLocalizer): RequiredAttributeAdapter;
+    new(attribute: RequiredAttribute, stringLocalizer: IStringLocalizer | null): RequiredAttributeAdapter;
 };
 
 
@@ -114,11 +115,11 @@ export interface ValidationAttributeAdapter_1$instance<TAttribute extends Valida
 
     readonly Attribute: TAttribute;
     AddValidation(context: ClientModelValidationContext): void;
-    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: JsValue[]): string;
 }
 
 
-export const ValidationAttributeAdapter_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer) => ValidationAttributeAdapter_1<TAttribute>) & {
+export const ValidationAttributeAdapter_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer | null) => ValidationAttributeAdapter_1<TAttribute>) & {
     MergeAttribute<TAttribute extends ValidationAttribute>(attributes: IDictionary_2<System_Internal.String, System_Internal.String>, key: string, value: string): boolean;
 };
 
@@ -135,7 +136,7 @@ export interface ValidationAttributeAdapterProvider$instance extends IValidation
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider: never;
 
-    GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer): IAttributeAdapter | undefined;
+    GetAttributeAdapter(attribute: ValidationAttribute, stringLocalizer: IStringLocalizer | null): IAttributeAdapter | null;
 }
 
 

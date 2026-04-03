@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
 // Assembly: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_AspNetCore_Connections_Internal from "../../Microsoft.AspNetCore.Connections/internal/index.js";

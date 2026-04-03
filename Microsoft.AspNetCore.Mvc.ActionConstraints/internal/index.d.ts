@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Mvc.ActionConstraints
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { HttpContext } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -59,12 +60,12 @@ export interface ActionSelectorCandidate$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionConstraints_ActionSelectorCandidate: never;
 
     readonly Action: ActionDescriptor;
-    readonly Constraints: IReadOnlyList_1<IActionConstraint> | undefined;
+    readonly Constraints: IReadOnlyList_1<IActionConstraint> | null;
 }
 
 
 export const ActionSelectorCandidate: {
-    new(action: ActionDescriptor, constraints: IReadOnlyList_1<IActionConstraint>): ActionSelectorCandidate;
+    new(action: ActionDescriptor, constraints: IReadOnlyList_1<IActionConstraint> | null): ActionSelectorCandidate;
 };
 
 
@@ -89,8 +90,8 @@ export type ActionConstraintContext = ActionConstraintContext$instance;
 export interface ActionConstraintItem$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionConstraints_ActionConstraintItem: never;
 
-    get Constraint(): IActionConstraint | undefined;
-    set Constraint(value: IActionConstraint | undefined);
+    get Constraint(): IActionConstraint | null;
+    set Constraint(value: IActionConstraint | null);
     IsReusable: boolean;
     readonly Metadata: IActionConstraintMetadata;
 }

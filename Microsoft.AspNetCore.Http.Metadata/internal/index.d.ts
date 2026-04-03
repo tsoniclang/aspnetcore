@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Http.Metadata
 // Assembly: Microsoft.AspNetCore.Http.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { EndpointBuilder } from "../../Microsoft.AspNetCore.Builder/internal/index.js";
@@ -16,7 +17,7 @@ export interface IAcceptsMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata: never;
 
     readonly ContentTypes: IReadOnlyList_1<System_Internal.String>;
-    readonly RequestType: Type | undefined;
+    readonly RequestType: Type | null;
     readonly IsOptional: boolean;
 }
 
@@ -119,7 +120,7 @@ export type IFromBodyMetadata = IFromBodyMetadata$instance;
 export interface IFromFormMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromFormMetadata: never;
 
-    readonly Name: string | undefined;
+    readonly Name: string | null;
 }
 
 
@@ -128,7 +129,7 @@ export type IFromFormMetadata = IFromFormMetadata$instance;
 export interface IFromHeaderMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromHeaderMetadata: never;
 
-    readonly Name: string | undefined;
+    readonly Name: string | null;
 }
 
 
@@ -137,7 +138,7 @@ export type IFromHeaderMetadata = IFromHeaderMetadata$instance;
 export interface IFromQueryMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromQueryMetadata: never;
 
-    readonly Name: string | undefined;
+    readonly Name: string | null;
 }
 
 
@@ -146,7 +147,7 @@ export type IFromQueryMetadata = IFromQueryMetadata$instance;
 export interface IFromRouteMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IFromRouteMetadata: never;
 
-    readonly Name: string | undefined;
+    readonly Name: string | null;
 }
 
 
@@ -176,9 +177,9 @@ export type IParameterBindingMetadata = IParameterBindingMetadata$instance;
 export interface IProducesResponseTypeMetadata$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata: never;
 
-    readonly Type: Type | undefined;
+    readonly Type: Type | null;
     readonly StatusCode: int;
-    readonly Description: string | undefined;
+    readonly Description: string | null;
     readonly ContentTypes: IEnumerable_1<System_Internal.String>;
 }
 
@@ -227,13 +228,13 @@ export interface AcceptsMetadata$instance extends IAcceptsMetadata$instance {
 
     readonly ContentTypes: IReadOnlyList_1<System_Internal.String>;
     readonly IsOptional: boolean;
-    readonly RequestType: Type | undefined;
+    readonly RequestType: Type | null;
     ToString(): string;
 }
 
 
 export const AcceptsMetadata: {
-    new(contentTypes: string[], type: Type, isOptional: boolean): AcceptsMetadata;
+    new(contentTypes: string[], type: Type | null, isOptional: boolean): AcceptsMetadata;
 };
 
 

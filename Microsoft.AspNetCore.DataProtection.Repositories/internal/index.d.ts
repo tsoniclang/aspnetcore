@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.DataProtection.Repositories
 // Assembly: Microsoft.AspNetCore.DataProtection
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RegistryKey } from "@tsonic/dotnet/Microsoft.Win32/internal/index.js";
@@ -63,7 +64,7 @@ export interface FileSystemXmlRepository$instance {
 
 export const FileSystemXmlRepository: {
     new(directory: DirectoryInfo, loggerFactory: ILoggerFactory): FileSystemXmlRepository;
-    readonly DefaultKeyStorageDirectory: DirectoryInfo | undefined;
+    readonly DefaultKeyStorageDirectory: DirectoryInfo | null;
 };
 
 
@@ -90,7 +91,7 @@ export interface RegistryXmlRepository$instance {
 
 export const RegistryXmlRepository: {
     new(registryKey: RegistryKey, loggerFactory: ILoggerFactory): RegistryXmlRepository;
-    readonly DefaultRegistryKey: RegistryKey | undefined;
+    readonly DefaultRegistryKey: RegistryKey | null;
 };
 
 

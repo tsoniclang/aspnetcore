@@ -2,8 +2,9 @@
 // Namespace: Microsoft.AspNetCore.Http.Timeouts
 // Assembly: Microsoft.AspNetCore.Http
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { RequestDelegate } from "../../Microsoft.AspNetCore.Http/internal/index.js";
@@ -39,7 +40,7 @@ export type DisableRequestTimeoutAttribute = DisableRequestTimeoutAttribute$inst
 export interface RequestTimeoutAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_RequestTimeoutAttribute: never;
 
-    readonly PolicyName: string | undefined;
+    readonly PolicyName: string | null;
     readonly Timeout: Nullable_1<TimeSpan>;
 }
 
@@ -55,8 +56,8 @@ export type RequestTimeoutAttribute = RequestTimeoutAttribute$instance;
 export interface RequestTimeoutOptions$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Timeouts_RequestTimeoutOptions: never;
 
-    get DefaultPolicy(): RequestTimeoutPolicy | undefined;
-    set DefaultPolicy(value: RequestTimeoutPolicy | undefined);
+    get DefaultPolicy(): RequestTimeoutPolicy | null;
+    set DefaultPolicy(value: RequestTimeoutPolicy | null);
     readonly Policies: IDictionary_2<System_Internal.String, RequestTimeoutPolicy>;
     AddPolicy(policyName: string, timeout: TimeSpan): RequestTimeoutOptions;
     AddPolicy(policyName: string, policy: RequestTimeoutPolicy): RequestTimeoutOptions;
@@ -77,8 +78,8 @@ export interface RequestTimeoutPolicy$instance {
     set Timeout(value: Nullable_1<TimeSpan> | TimeSpan);
     get TimeoutStatusCode(): Nullable_1<System_Internal.Int32>;
     set TimeoutStatusCode(value: Nullable_1<System_Internal.Int32> | int);
-    get WriteTimeoutResponse(): RequestDelegate | undefined;
-    set WriteTimeoutResponse(value: RequestDelegate | undefined);
+    get WriteTimeoutResponse(): RequestDelegate | null;
+    set WriteTimeoutResponse(value: RequestDelegate | null);
 }
 
 
