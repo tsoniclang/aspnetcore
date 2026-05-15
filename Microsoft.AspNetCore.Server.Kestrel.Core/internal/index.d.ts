@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Server.Kestrel.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -97,7 +97,7 @@ export interface KestrelServer$instance extends Microsoft_AspNetCore_Hosting_Ser
     readonly Features: IFeatureCollection;
     readonly Options: KestrelServerOptions;
     Dispose(): void;
-    StartAsync<TContext>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
+    StartAsync<TContext extends unknown>(application: IHttpApplication_1<TContext>, cancellationToken: CancellationToken): Task;
     StopAsync(cancellationToken: CancellationToken): Task;
 }
 

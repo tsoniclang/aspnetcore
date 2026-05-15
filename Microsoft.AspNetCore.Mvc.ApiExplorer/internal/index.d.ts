@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.ApiExplorer, Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -179,7 +179,7 @@ export interface ApiDescription$instance {
     get HttpMethod(): string | null;
     set HttpMethod(value: string | null);
     readonly ParameterDescriptions: IList_1<ApiParameterDescription>;
-    readonly Properties: IDictionary_2<JsValue, JsValue>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     get RelativePath(): string | null;
     set RelativePath(value: string | null);
     readonly SupportedRequestFormats: IList_1<ApiRequestFormat>;
@@ -265,8 +265,8 @@ export interface ApiParameterDescription$instance {
 
     get BindingInfo(): BindingInfo | null;
     set BindingInfo(value: BindingInfo | null);
-    get DefaultValue(): JsValue | null;
-    set DefaultValue(value: JsValue | null);
+    get DefaultValue(): unknown | null;
+    set DefaultValue(value: unknown | null);
     IsRequired: boolean;
     ModelMetadata: ModelMetadata;
     Name: string;
@@ -290,8 +290,8 @@ export interface ApiParameterRouteInfo$instance {
 
     get Constraints(): IEnumerable_1<IRouteConstraint> | null;
     set Constraints(value: IEnumerable_1<IRouteConstraint> | null);
-    get DefaultValue(): JsValue | null;
-    set DefaultValue(value: JsValue | null);
+    get DefaultValue(): unknown | null;
+    set DefaultValue(value: unknown | null);
     IsOptional: boolean;
 }
 
@@ -379,8 +379,8 @@ export type DefaultApiDescriptionProvider = DefaultApiDescriptionProvider$instan
 
 
 export abstract class ApiDescriptionExtensions$instance {
-    static GetProperty<T>(apiDescription: ApiDescription): T | null;
-    static SetProperty<T>(apiDescription: ApiDescription, value: T): void;
+    static GetProperty<T extends unknown>(apiDescription: ApiDescription): T | null;
+    static SetProperty<T extends unknown>(apiDescription: ApiDescription, value: T): void;
 }
 
 

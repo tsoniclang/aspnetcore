@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Authorization.Policy/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AuthenticateResult } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 import type { AuthorizationFailure, AuthorizationPolicy, IAuthorizationMiddlewareResultHandler, IAuthorizationService } from './Microsoft.AspNetCore.Authorization/internal/index.js';

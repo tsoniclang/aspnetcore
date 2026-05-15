@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Http/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AuthenticationProperties } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 import type { EndpointBuilder, IEndpointConventionBuilder, RouteHandlerBuilder } from './Microsoft.AspNetCore.Builder/internal/index.js';
@@ -80,7 +84,7 @@ export type IFileHttpResult = Internal.IFileHttpResult;
 export type INestedHttpResult = Internal.INestedHttpResult;
 export type IResult = Internal.IResult;
 export type IStatusCodeHttpResult = Internal.IStatusCodeHttpResult;
-export type IBindableFromHttpContext<TSelf extends Internal.IBindableFromHttpContext_1<TSelf>> = Internal.IBindableFromHttpContext_1<TSelf>;
+export type IBindableFromHttpContext<TSelf extends (object | null) & Internal.IBindableFromHttpContext_1<TSelf>> = Internal.IBindableFromHttpContext_1<TSelf>;
 export type IEndpointFilter = Internal.IEndpointFilter;
 export type IHttpContextAccessor = Internal.IHttpContextAccessor;
 export type IHttpContextFactory = Internal.IHttpContextFactory;
@@ -141,10 +145,10 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type IValueHttpResult<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IValueHttpResult :
-  Internal.IValueHttpResult_1<T1>;
+  [T1] extends [unknown] ? Internal.IValueHttpResult_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Http as ExtensionMethods } from './__internal/extensions/index.js';

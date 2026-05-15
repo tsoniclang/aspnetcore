@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Diagnostics, Microsoft.AspNetCore.Diagnostics.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -174,7 +174,7 @@ export const ErrorContext: {
 
 export type ErrorContext = ErrorContext$instance;
 
-export interface ExceptionHandlerFeature$instance extends IExceptionHandlerPathFeature {
+export interface ExceptionHandlerFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Diagnostics_ExceptionHandlerFeature: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature: never;

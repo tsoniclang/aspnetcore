@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Razor
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -227,7 +227,7 @@ export const RestrictChildrenAttribute: {
 
 export type RestrictChildrenAttribute = RestrictChildrenAttribute$instance;
 
-export interface TagHelper$instance extends ITagHelper {
+export interface TagHelper$instance extends ITagHelper, ITagHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper: never;
@@ -251,18 +251,18 @@ export interface __TagHelper$views {
 export type TagHelper = TagHelper$instance & __TagHelper$views;
 
 
-export interface TagHelperAttribute$instance {
+export interface TagHelperAttribute$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContentContainer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContentContainer: never;
 
     readonly Name: string;
-    readonly Value: JsValue;
+    readonly Value: unknown;
     readonly ValueStyle: HtmlAttributeValueStyle;
     CopyTo(destination: IHtmlContentBuilder): void;
     Equals(other: TagHelperAttribute): boolean;
-    Equals(obj: JsValue): boolean;
+    Equals(obj: unknown): boolean;
     GetHashCode(): int;
     MoveTo(destination: IHtmlContentBuilder): void;
     WriteTo(writer: TextWriter, encoder: HtmlEncoder): void;
@@ -271,8 +271,8 @@ export interface TagHelperAttribute$instance {
 
 export const TagHelperAttribute: {
     new(name: string): TagHelperAttribute;
-    new(name: string, value: JsValue): TagHelperAttribute;
-    new(name: string, value: JsValue, valueStyle: HtmlAttributeValueStyle): TagHelperAttribute;
+    new(name: string, value: unknown): TagHelperAttribute;
+    new(name: string, value: unknown, valueStyle: HtmlAttributeValueStyle): TagHelperAttribute;
 };
 
 
@@ -296,14 +296,14 @@ export interface TagHelperAttributeList$instance extends ReadOnlyTagHelperAttrib
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add(name: string, value: JsValue): void;
+    Add(name: string, value: unknown): void;
     Add(attribute: TagHelperAttribute): void;
     Clear(): void;
     Insert(index: int, attribute: TagHelperAttribute): void;
     Remove(attribute: TagHelperAttribute): boolean;
     RemoveAll(name: string): boolean;
     RemoveAt(index: int): void;
-    SetAttribute(name: string, value: JsValue): void;
+    SetAttribute(name: string, value: unknown): void;
     SetAttribute(attribute: TagHelperAttribute): void;
 }
 
@@ -350,8 +350,8 @@ export interface TagHelperContent$instance {
     readonly IsEmptyOrWhiteSpace: boolean;
     readonly IsModified: boolean;
     Append(unencoded: string): TagHelperContent;
-    AppendFormat(format: string, ...args: JsValue[]): TagHelperContent;
-    AppendFormat(provider: IFormatProvider, format: string, ...args: JsValue[]): TagHelperContent;
+    AppendFormat(format: string, ...args: unknown[]): TagHelperContent;
+    AppendFormat(provider: IFormatProvider, format: string, ...args: unknown[]): TagHelperContent;
     AppendHtml(htmlContent: IHtmlContent): TagHelperContent;
     AppendHtml(encoded: string): TagHelperContent;
     Clear(): TagHelperContent;
@@ -384,23 +384,23 @@ export interface TagHelperContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext: never;
 
     readonly AllAttributes: ReadOnlyTagHelperAttributeList;
-    Items: IDictionary_2<JsValue, JsValue>;
+    Items: IDictionary_2<unknown, unknown>;
     TagName: string;
     UniqueId: string;
-    Reinitialize(tagName: string, items: IDictionary_2<JsValue, JsValue>, uniqueId: string): void;
-    Reinitialize(items: IDictionary_2<JsValue, JsValue>, uniqueId: string): void;
+    Reinitialize(tagName: string, items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
+    Reinitialize(items: IDictionary_2<unknown, unknown>, uniqueId: string): void;
 }
 
 
 export const TagHelperContext: {
-    new(tagName: string, allAttributes: TagHelperAttributeList, items: IDictionary_2<JsValue, JsValue>, uniqueId: string): TagHelperContext;
-    new(allAttributes: TagHelperAttributeList, items: IDictionary_2<JsValue, JsValue>, uniqueId: string): TagHelperContext;
+    new(tagName: string, allAttributes: TagHelperAttributeList, items: IDictionary_2<unknown, unknown>, uniqueId: string): TagHelperContext;
+    new(allAttributes: TagHelperAttributeList, items: IDictionary_2<unknown, unknown>, uniqueId: string): TagHelperContext;
 };
 
 
 export type TagHelperContext = TagHelperContext$instance;
 
-export interface TagHelperOutput$instance {
+export interface TagHelperOutput$instance extends Microsoft_AspNetCore_Html_Internal.IHtmlContentContainer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Html_IHtmlContent: never;

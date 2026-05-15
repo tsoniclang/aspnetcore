@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Authorization.Policy
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -19,7 +19,7 @@ export interface IPolicyEvaluator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
 
     AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task_1<AuthenticateResult>;
-    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: JsValue | null): Task_1<PolicyAuthorizationResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown | null): Task_1<PolicyAuthorizationResult>;
 }
 
 
@@ -73,7 +73,7 @@ export interface PolicyEvaluator$instance extends IPolicyEvaluator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator: never;
 
     AuthenticateAsync(policy: AuthorizationPolicy, context: HttpContext): Task_1<AuthenticateResult>;
-    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: JsValue | null): Task_1<PolicyAuthorizationResult>;
+    AuthorizeAsync(policy: AuthorizationPolicy, authenticationResult: AuthenticateResult, context: HttpContext, resource: unknown | null): Task_1<PolicyAuthorizationResult>;
 }
 
 

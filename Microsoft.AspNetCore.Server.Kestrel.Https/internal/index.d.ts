@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Server.Kestrel.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -63,8 +63,8 @@ export interface TlsHandshakeCallbackContext$instance {
     ClientHelloInfo: SslClientHelloInfo;
     Connection: ConnectionContext;
     SslStream: SslStream;
-    get State(): JsValue | null;
-    set State(value: JsValue | null);
+    get State(): unknown | null;
+    set State(value: unknown | null);
 }
 
 
@@ -80,8 +80,8 @@ export interface TlsHandshakeCallbackOptions$instance {
 
     HandshakeTimeout: TimeSpan;
     OnConnection: Func_2<TlsHandshakeCallbackContext, ValueTask_1<SslServerAuthenticationOptions>>;
-    get OnConnectionState(): JsValue | null;
-    set OnConnectionState(value: JsValue | null);
+    get OnConnectionState(): unknown | null;
+    set OnConnectionState(value: unknown | null);
 }
 
 

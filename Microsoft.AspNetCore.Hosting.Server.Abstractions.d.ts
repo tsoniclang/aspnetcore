@@ -5,5 +5,9 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Hosting.Server.Abstractions/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Public API exports (curated - no internal $instance/$views leakage)
-export type IHostContextContainer<TContext> = Internal.IHostContextContainer_1<TContext>;
+export type IHostContextContainer<TContext extends unknown> = Internal.IHostContextContainer_1<TContext>;

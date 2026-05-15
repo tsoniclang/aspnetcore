@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Authentication.BearerToken
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -52,7 +52,7 @@ export interface BearerTokenOptions$instance extends AuthenticationSchemeOptions
 
     BearerTokenExpiration: TimeSpan;
     BearerTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
-    Events: BearerTokenEvents | JsValue;
+    Events: BearerTokenEvents | unknown;
     RefreshTokenExpiration: TimeSpan;
     RefreshTokenProtector: ISecureDataFormat_1<AuthenticationTicket>;
 }

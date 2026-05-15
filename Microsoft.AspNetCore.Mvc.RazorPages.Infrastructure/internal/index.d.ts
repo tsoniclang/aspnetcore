@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.RazorPages
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -282,8 +282,8 @@ export interface ServiceBasedPageModelActivatorProvider$instance extends Microso
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider: never;
 
-    CreateActivator(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, JsValue>;
-    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action_2<PageContext, JsValue> | null;
+    CreateActivator(descriptor: CompiledPageActionDescriptor): Func_2<PageContext, unknown>;
+    CreateReleaser(descriptor: CompiledPageActionDescriptor): Action_2<PageContext, unknown> | null;
 }
 
 

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.DataAnnotations
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -43,27 +43,27 @@ export interface IValidationAttributeAdapterProvider$instance {
 
 export type IValidationAttributeAdapterProvider = IValidationAttributeAdapterProvider$instance;
 
-export interface AttributeAdapterBase_1$instance<TAttribute extends ValidationAttribute> extends ValidationAttributeAdapter_1$instance<TAttribute> {
+export interface AttributeAdapterBase_1$instance<TAttribute extends unknown & ValidationAttribute> extends ValidationAttributeAdapter_1$instance<TAttribute> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_AttributeAdapterBase_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter: never;
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     GetErrorMessage(validationContext: ModelValidationContextBase): string;
-    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: JsValue[]): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
 
 
-export const AttributeAdapterBase_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer | null) => AttributeAdapterBase_1<TAttribute>) & {
+export const AttributeAdapterBase_1: (abstract new<TAttribute extends unknown & ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer | null) => AttributeAdapterBase_1<TAttribute>) & {
 };
 
 
-export interface __AttributeAdapterBase_1$views<TAttribute extends ValidationAttribute> {
+export interface __AttributeAdapterBase_1$views<TAttribute extends unknown & ValidationAttribute> {
     As_IClientModelValidator(): Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance;
     As_IAttributeAdapter(): IAttributeAdapter$instance;
 }
 
-export type AttributeAdapterBase_1<TAttribute extends ValidationAttribute> = AttributeAdapterBase_1$instance<TAttribute> & __AttributeAdapterBase_1$views<TAttribute>;
+export type AttributeAdapterBase_1<TAttribute extends unknown & ValidationAttribute> = AttributeAdapterBase_1$instance<TAttribute> & __AttributeAdapterBase_1$views<TAttribute>;
 
 
 export interface MvcDataAnnotationsLocalizationOptions$instance {
@@ -91,7 +91,7 @@ export interface RequiredAttributeAdapter$instance extends AttributeAdapterBase_
 
     AddValidation(context: ClientModelValidationContext): void;
     GetErrorMessage(validationContext: ModelValidationContextBase): string;
-    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: JsValue[]): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
 
 
@@ -108,27 +108,27 @@ export interface __RequiredAttributeAdapter$views {
 export type RequiredAttributeAdapter = RequiredAttributeAdapter$instance & __RequiredAttributeAdapter$views;
 
 
-export interface ValidationAttributeAdapter_1$instance<TAttribute extends ValidationAttribute> extends Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance {
+export interface ValidationAttributeAdapter_1$instance<TAttribute extends unknown & ValidationAttribute> extends Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationAttributeAdapter_1: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator: never;
 
     readonly Attribute: TAttribute;
     AddValidation(context: ClientModelValidationContext): void;
-    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: JsValue[]): string;
+    GetErrorMessage(modelMetadata: ModelMetadata, ...arguments: unknown[]): string;
 }
 
 
-export const ValidationAttributeAdapter_1: (abstract new<TAttribute extends ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer | null) => ValidationAttributeAdapter_1<TAttribute>) & {
-    MergeAttribute<TAttribute extends ValidationAttribute>(attributes: IDictionary_2<System_Internal.String, System_Internal.String>, key: string, value: string): boolean;
+export const ValidationAttributeAdapter_1: (abstract new<TAttribute extends unknown & ValidationAttribute>(attribute: TAttribute, stringLocalizer: IStringLocalizer | null) => ValidationAttributeAdapter_1<TAttribute>) & {
+    MergeAttribute<TAttribute extends unknown & ValidationAttribute>(attributes: IDictionary_2<System_Internal.String, System_Internal.String>, key: string, value: string): boolean;
 };
 
 
-export interface __ValidationAttributeAdapter_1$views<TAttribute extends ValidationAttribute> {
+export interface __ValidationAttributeAdapter_1$views<TAttribute extends unknown & ValidationAttribute> {
     As_IClientModelValidator(): Microsoft_AspNetCore_Mvc_ModelBinding_Validation_Internal.IClientModelValidator$instance;
 }
 
-export type ValidationAttributeAdapter_1<TAttribute extends ValidationAttribute> = ValidationAttributeAdapter_1$instance<TAttribute> & __ValidationAttributeAdapter_1$views<TAttribute>;
+export type ValidationAttributeAdapter_1<TAttribute extends unknown & ValidationAttribute> = ValidationAttributeAdapter_1$instance<TAttribute> & __ValidationAttributeAdapter_1$views<TAttribute>;
 
 
 export interface ValidationAttributeAdapterProvider$instance extends IValidationAttributeAdapterProvider$instance {

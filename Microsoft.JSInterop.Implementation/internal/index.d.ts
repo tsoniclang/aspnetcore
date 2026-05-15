@@ -3,7 +3,7 @@
 // Assembly: Microsoft.JSInterop
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -16,7 +16,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IAsyncDisposable, IDisposable, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface JSInProcessObjectReference$instance extends JSObjectReference$instance {
+export interface JSInProcessObjectReference$instance extends JSObjectReference$instance, Microsoft_JSInterop_Internal.IJSInProcessObjectReference$instance {
     readonly __tsonic_type_Microsoft_JSInterop_Implementation_JSInProcessObjectReference: never;
 
     readonly __tsonic_iface_Microsoft_JSInterop_IJSInProcessObjectReference: never;
@@ -25,10 +25,11 @@ export interface JSInProcessObjectReference$instance extends JSObjectReference$i
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
-    GetValue<TValue>(identifier: string): TValue;
-    Invoke<TValue>(identifier: string, ...args: (JsValue | null)[] | null): TValue;
-    InvokeConstructor(identifier: string, args: (JsValue | null)[] | null): IJSInProcessObjectReference;
-    SetValue<TValue>(identifier: string, value: TValue): void;
+    GetValue<TValue extends unknown>(identifier: string): TValue;
+    Invoke<TValue extends unknown>(identifier: string, ...args: (unknown | null)[]): TValue;
+    Invoke<TValue extends unknown>(identifier: string, args: (unknown | null)[] | null): TValue;
+    InvokeConstructor(identifier: string, args: (unknown | null)[] | null): IJSInProcessObjectReference;
+    SetValue<TValue extends unknown>(identifier: string, value: TValue): void;
 }
 
 
@@ -51,14 +52,14 @@ export interface JSObjectReference$instance extends Microsoft_JSInterop_Internal
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     DisposeAsync(): ValueTask;
-    GetValueAsync<TValue>(identifier: string): ValueTask_1<TValue>;
-    GetValueAsync<TValue>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
-    InvokeAsync<TValue>(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<TValue>;
-    InvokeConstructorAsync(identifier: string, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
-    InvokeConstructorAsync(identifier: string, cancellationToken: CancellationToken, args: (JsValue | null)[] | null): ValueTask_1<IJSObjectReference>;
-    SetValueAsync<TValue>(identifier: string, value: TValue): ValueTask;
-    SetValueAsync<TValue>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
+    GetValueAsync<TValue extends unknown>(identifier: string): ValueTask_1<TValue>;
+    GetValueAsync<TValue extends unknown>(identifier: string, cancellationToken: CancellationToken): ValueTask_1<TValue>;
+    InvokeAsync<TValue extends unknown>(identifier: string, args: (unknown | null)[] | null): ValueTask_1<TValue>;
+    InvokeAsync<TValue extends unknown>(identifier: string, cancellationToken: CancellationToken, args: (unknown | null)[] | null): ValueTask_1<TValue>;
+    InvokeConstructorAsync(identifier: string, args: (unknown | null)[] | null): ValueTask_1<IJSObjectReference>;
+    InvokeConstructorAsync(identifier: string, cancellationToken: CancellationToken, args: (unknown | null)[] | null): ValueTask_1<IJSObjectReference>;
+    SetValueAsync<TValue extends unknown>(identifier: string, value: TValue): ValueTask;
+    SetValueAsync<TValue extends unknown>(identifier: string, value: TValue, cancellationToken: CancellationToken): ValueTask;
 }
 
 

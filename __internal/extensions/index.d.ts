@@ -70,7 +70,6 @@ import * as Microsoft_AspNetCore_ResponseCompression from "../../Microsoft.AspNe
 import * as Microsoft_AspNetCore_Rewrite from "../../Microsoft.AspNetCore.Rewrite/internal/index.js";
 import * as Microsoft_AspNetCore_Routing from "../../Microsoft.AspNetCore.Routing/internal/index.js";
 import * as Microsoft_AspNetCore_Routing_Patterns from "../../Microsoft.AspNetCore.Routing.Patterns/internal/index.js";
-import * as Microsoft_AspNetCore_Server_HttpSys from "../../Microsoft.AspNetCore.Server.HttpSys/internal/index.js";
 import * as Microsoft_AspNetCore_Server_Kestrel_Core from "../../Microsoft.AspNetCore.Server.Kestrel.Core/internal/index.js";
 import * as Microsoft_AspNetCore_Server_Kestrel_Https from "../../Microsoft.AspNetCore.Server.Kestrel.Https/internal/index.js";
 import * as Microsoft_AspNetCore_Server_Kestrel_Transport_NamedPipes from "../../Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes/internal/index.js";
@@ -112,7 +111,7 @@ import * as System_Threading_Tasks from "@tsonic/dotnet/System.Threading.Tasks/i
 import * as System_Xml_Linq from "@tsonic/dotnet/System.Xml.Linq/internal/index.js";
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import sticky extension scope helper
@@ -170,7 +169,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Authentication {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Authentication
 interface __TsonicExtApplier_Microsoft_AspNetCore_Authentication {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Authentication;
 }
 
@@ -181,15 +180,15 @@ export type ExtensionMethods_Microsoft_AspNetCore_Authentication<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Authorization
 interface __TsonicExtMethods_Microsoft_AspNetCore_Authorization {
-  AuthorizeAsync(this: Microsoft_AspNetCore_Authorization.IAuthorizationService, user: System_Security_Claims.ClaimsPrincipal, resource: JsValue | null, requirement: Microsoft_AspNetCore_Authorization.IAuthorizationRequirement): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
-  AuthorizeAsync(this: Microsoft_AspNetCore_Authorization.IAuthorizationService, user: System_Security_Claims.ClaimsPrincipal, resource: JsValue | null, policy: Microsoft_AspNetCore_Authorization.AuthorizationPolicy): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
+  AuthorizeAsync(this: Microsoft_AspNetCore_Authorization.IAuthorizationService, user: System_Security_Claims.ClaimsPrincipal, resource: unknown | null, requirement: Microsoft_AspNetCore_Authorization.IAuthorizationRequirement): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
+  AuthorizeAsync(this: Microsoft_AspNetCore_Authorization.IAuthorizationService, user: System_Security_Claims.ClaimsPrincipal, resource: unknown | null, policy: Microsoft_AspNetCore_Authorization.AuthorizationPolicy): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
   AuthorizeAsync(this: Microsoft_AspNetCore_Authorization.IAuthorizationService, user: System_Security_Claims.ClaimsPrincipal, policy: Microsoft_AspNetCore_Authorization.AuthorizationPolicy): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
   AuthorizeAsync(this: Microsoft_AspNetCore_Authorization.IAuthorizationService, user: System_Security_Claims.ClaimsPrincipal, policyName: string): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Authorization.AuthorizationResult>>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Authorization
 interface __TsonicExtApplier_Microsoft_AspNetCore_Authorization {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Authorization;
 }
 
@@ -219,30 +218,30 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
   Map(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: Microsoft_AspNetCore_Routing_Patterns.RoutePattern, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   Map(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Map(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: Microsoft_AspNetCore_Routing_Patterns.RoutePattern, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  MapAreaControllerRoute(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, name: string, areaName: string, pattern: string, defaults?: JsValue | null, constraints?: JsValue | null, dataTokens?: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
+  MapAreaControllerRoute(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, name: string, areaName: string, pattern: string, defaults?: unknown | null, constraints?: unknown | null, dataTokens?: unknown | null): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
   MapAreaRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string, areaName: string, template: string | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapAreaRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string, areaName: string, template: string | null, defaults: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapAreaRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string, areaName: string, template: string | null, defaults: JsValue | null, constraints: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapAreaRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string, areaName: string, template: string | null, defaults: JsValue | null, constraints: JsValue | null, dataTokens: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapAreaRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string, areaName: string, template: string | null, defaults: unknown | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapAreaRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string, areaName: string, template: string | null, defaults: unknown | null, constraints: unknown | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapAreaRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string, areaName: string, template: string | null, defaults: unknown | null, constraints: unknown | null, dataTokens: unknown | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapBlazorHub(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
   MapBlazorHub(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, path: string): Rewrap<this, Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
   MapBlazorHub(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
   MapBlazorHub(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, path: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions>): Rewrap<this, Microsoft_AspNetCore_Builder.ComponentEndpointConventionBuilder>;
-  MapConnectionHandler<TConnectionHandler extends Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
-  MapConnectionHandler<TConnectionHandler extends Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions> | null): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
+  MapConnectionHandler<TConnectionHandler extends unknown & Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
+  MapConnectionHandler<TConnectionHandler extends unknown & Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions> | null): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
   MapConnections(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configure: System.Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
   MapConnections(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, options: Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions, configure: System.Action_1<Microsoft_AspNetCore_Connections.IConnectionBuilder>): Rewrap<this, Microsoft_AspNetCore_Builder.ConnectionEndpointRouteBuilder>;
-  MapControllerRoute(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, name: string, pattern: string, defaults?: JsValue | null, constraints?: JsValue | null, dataTokens?: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
+  MapControllerRoute(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, name: string, pattern: string, defaults?: unknown | null, constraints?: unknown | null, dataTokens?: unknown | null): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
   MapControllers(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
   MapDefaultControllerRoute(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.ControllerActionEndpointConventionBuilder>;
   MapDelete(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapDelete(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  MapDynamicControllerRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
-  MapDynamicControllerRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: JsValue | null): Rewrap<this, void>;
-  MapDynamicControllerRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: JsValue, order: int): Rewrap<this, void>;
-  MapDynamicPageRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
-  MapDynamicPageRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: JsValue | null): Rewrap<this, void>;
-  MapDynamicPageRoute<TTransformer extends Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: JsValue, order: int): Rewrap<this, void>;
+  MapDynamicControllerRoute<TTransformer extends unknown & Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
+  MapDynamicControllerRoute<TTransformer extends unknown & Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown | null): Rewrap<this, void>;
+  MapDynamicControllerRoute<TTransformer extends unknown & Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown, order: int): Rewrap<this, void>;
+  MapDynamicPageRoute<TTransformer extends unknown & Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, void>;
+  MapDynamicPageRoute<TTransformer extends unknown & Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown | null): Rewrap<this, void>;
+  MapDynamicPageRoute<TTransformer extends unknown & Microsoft_AspNetCore_Mvc_Routing.DynamicRouteValueTransformer>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, state: unknown, order: int): Rewrap<this, void>;
   MapFallback(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapFallback(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapFallback(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
@@ -265,8 +264,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
   MapGroup(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, prefix: Microsoft_AspNetCore_Routing_Patterns.RoutePattern): Rewrap<this, Microsoft_AspNetCore_Routing.RouteGroupBuilder>;
   MapHealthChecks(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapHealthChecks(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, options: Microsoft_AspNetCore_Diagnostics_HealthChecks.HealthCheckOptions): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
-  MapHub<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
-  MapHub<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions> | null): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
+  MapHub<THub extends unknown & Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
+  MapHub<THub extends unknown & Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Connections.HttpConnectionDispatcherOptions> | null): Rewrap<this, Microsoft_AspNetCore_Builder.HubEndpointConventionBuilder>;
   MapMethods(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, httpMethods: System_Collections_Generic.IEnumerable_1<System_Internal.String>, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapMethods(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, httpMethods: System_Collections_Generic.IEnumerable_1<System_Internal.String>, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapPatch(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
@@ -275,12 +274,12 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
   MapPost(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   MapPut(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, requestDelegate: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapPut(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, pattern: string, handler: Function): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  MapRazorComponents<TRootComponent>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
+  MapRazorComponents<TRootComponent extends unknown>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.RazorComponentsEndpointConventionBuilder>;
   MapRazorPages(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.PageActionEndpointConventionBuilder>;
   MapRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string | null, template: string | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string | null, template: string | null, defaults: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string | null, template: string | null, defaults: JsValue | null, constraints: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string | null, template: string | null, defaults: JsValue | null, constraints: JsValue | null, dataTokens: JsValue | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string | null, template: string | null, defaults: unknown | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string | null, template: string | null, defaults: unknown | null, constraints: unknown | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
+  MapRoute(this: Microsoft_AspNetCore_Routing.IRouteBuilder, name: string | null, template: string | null, defaults: unknown | null, constraints: unknown | null, dataTokens: unknown | null): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapStaticAssets(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder, staticAssetsManifestPath?: string | null): Rewrap<this, Microsoft_AspNetCore_StaticAssets.StaticAssetsEndpointConventionBuilder>;
   MapWhen(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, predicate: System.Func_2<Microsoft_AspNetCore_Http.HttpContext, System_Internal.Boolean>, configuration: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   Run(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, handler: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, void>;
@@ -328,8 +327,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
   UseHttpMethodOverride(this: Microsoft_AspNetCore_Builder.IApplicationBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseHttpMethodOverride(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, options: Microsoft_AspNetCore_Builder.HttpMethodOverrideOptions): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseHttpsRedirection(this: Microsoft_AspNetCore_Builder.IApplicationBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseMiddleware<TMiddleware>(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, ...args: (JsValue | null)[]): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
-  UseMiddleware(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, middleware: System.Type, ...args: (JsValue | null)[]): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseMiddleware<TMiddleware extends unknown>(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, ...args: (unknown | null)[]): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
+  UseMiddleware(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, middleware: System.Type, ...args: (unknown | null)[]): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseMvc(this: Microsoft_AspNetCore_Builder.IApplicationBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseMvc(this: Microsoft_AspNetCore_Builder.IApplicationBuilder, configureRoutes: System.Action_1<Microsoft_AspNetCore_Routing.IRouteBuilder>): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
   UseMvcWithDefaultRoute(this: Microsoft_AspNetCore_Builder.IApplicationBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.IApplicationBuilder>;
@@ -381,7 +380,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Builder {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Builder
 interface __TsonicExtApplier_Microsoft_AspNetCore_Builder {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Builder;
 }
 
@@ -393,74 +392,74 @@ export type ExtensionMethods_Microsoft_AspNetCore_Builder<TShape> =
 // Extension method table for namespace: Microsoft.AspNetCore.Components
 interface __TsonicExtMethods_Microsoft_AspNetCore_Components {
   AddSupplyValueFromQueryProvider(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<System.EventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<System.EventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<System.EventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<System.EventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components.ChangeEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components.ChangeEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<string | null>, existingValue: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<string | null, System_Threading_Tasks.Task>, existingValue: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System_Internal.Boolean>, existingValue: boolean, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System_Internal.Boolean, System_Threading_Tasks.Task>, existingValue: boolean, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System_Internal.Boolean>>, existingValue: System.Nullable_1<System_Internal.Boolean>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System_Internal.Boolean>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Boolean>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System_Internal.Int32>, existingValue: int, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System_Internal.Int32, System_Threading_Tasks.Task>, existingValue: int, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System_Internal.Int32>>, existingValue: System.Nullable_1<System_Internal.Int32>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System_Internal.Int32>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int32>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System_Internal.Int64>, existingValue: long, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System_Internal.Int64, System_Threading_Tasks.Task>, existingValue: long, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System_Internal.Int16>, existingValue: short, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System_Internal.Int16, System_Threading_Tasks.Task>, existingValue: short, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System_Internal.Int64>>, existingValue: System.Nullable_1<System_Internal.Int64>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System_Internal.Int64>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int64>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System_Internal.Int16>>, existingValue: System.Nullable_1<System_Internal.Int16>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System_Internal.Int16>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int16>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System_Internal.Single>, existingValue: float, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System_Internal.Single, System_Threading_Tasks.Task>, existingValue: float, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System_Internal.Single>>, existingValue: System.Nullable_1<System_Internal.Single>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System_Internal.Single>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Single>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System_Internal.Double>, existingValue: double, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System_Internal.Double, System_Threading_Tasks.Task>, existingValue: double, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System_Internal.Double>>, existingValue: System.Nullable_1<System_Internal.Double>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System_Internal.Double>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Double>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System_Internal.Decimal>, existingValue: decimal, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System_Internal.Decimal, System_Threading_Tasks.Task>, existingValue: decimal, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System_Internal.Decimal>>, existingValue: System.Nullable_1<System_Internal.Decimal>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System_Internal.Decimal>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Decimal>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.DateTime>, existingValue: System.DateTime, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.DateTime, System_Threading_Tasks.Task>, existingValue: System.DateTime, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.DateTime>, existingValue: System.DateTime, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.DateTime, System_Threading_Tasks.Task>, existingValue: System.DateTime, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.DateTime>>, existingValue: System.Nullable_1<System.DateTime>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.DateTime>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTime>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.DateTime>>, existingValue: System.Nullable_1<System.DateTime>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.DateTime>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTime>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.DateTimeOffset>, existingValue: System.DateTimeOffset, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.DateTimeOffset, System_Threading_Tasks.Task>, existingValue: System.DateTimeOffset, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.DateTimeOffset>, existingValue: System.DateTimeOffset, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.DateTimeOffset, System_Threading_Tasks.Task>, existingValue: System.DateTimeOffset, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.DateTimeOffset>>, existingValue: System.Nullable_1<System.DateTimeOffset>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.DateTimeOffset>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTimeOffset>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.DateTimeOffset>>, existingValue: System.Nullable_1<System.DateTimeOffset>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.DateTimeOffset>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTimeOffset>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.DateOnly>, existingValue: System.DateOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.DateOnly, System_Threading_Tasks.Task>, existingValue: System.DateOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.DateOnly>, existingValue: System.DateOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.DateOnly, System_Threading_Tasks.Task>, existingValue: System.DateOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.DateOnly>>, existingValue: System.Nullable_1<System.DateOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.DateOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.DateOnly>>, existingValue: System.Nullable_1<System.DateOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.DateOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.TimeOnly>, existingValue: System.TimeOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.TimeOnly, System_Threading_Tasks.Task>, existingValue: System.TimeOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.TimeOnly>, existingValue: System.TimeOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.TimeOnly, System_Threading_Tasks.Task>, existingValue: System.TimeOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.TimeOnly>>, existingValue: System.Nullable_1<System.TimeOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.TimeOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.TimeOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<System.Nullable_1<System.TimeOnly>>, existingValue: System.Nullable_1<System.TimeOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<System.Nullable_1<System.TimeOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.TimeOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder<T>(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Action_1<T>, existingValue: T, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
-  CreateBinder<T>(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, setter: System.Func_2<T, System_Threading_Tasks.Task>, existingValue: T, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<System.EventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<System.EventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<System.EventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<System.EventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components.ChangeEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components.ChangeEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<string | null>, existingValue: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<string | null, System_Threading_Tasks.Task>, existingValue: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System_Internal.Boolean>, existingValue: boolean, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System_Internal.Boolean, System_Threading_Tasks.Task>, existingValue: boolean, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Boolean>>, existingValue: System.Nullable_1<System_Internal.Boolean>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Boolean>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Boolean>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System_Internal.Int32>, existingValue: int, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System_Internal.Int32, System_Threading_Tasks.Task>, existingValue: int, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Int32>>, existingValue: System.Nullable_1<System_Internal.Int32>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Int32>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int32>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System_Internal.Int64>, existingValue: long, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System_Internal.Int64, System_Threading_Tasks.Task>, existingValue: long, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System_Internal.Int16>, existingValue: short, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System_Internal.Int16, System_Threading_Tasks.Task>, existingValue: short, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Int64>>, existingValue: System.Nullable_1<System_Internal.Int64>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Int64>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int64>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Int16>>, existingValue: System.Nullable_1<System_Internal.Int16>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Int16>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Int16>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System_Internal.Single>, existingValue: float, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System_Internal.Single, System_Threading_Tasks.Task>, existingValue: float, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Single>>, existingValue: System.Nullable_1<System_Internal.Single>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Single>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Single>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System_Internal.Double>, existingValue: double, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System_Internal.Double, System_Threading_Tasks.Task>, existingValue: double, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Double>>, existingValue: System.Nullable_1<System_Internal.Double>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Double>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Double>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System_Internal.Decimal>, existingValue: decimal, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System_Internal.Decimal, System_Threading_Tasks.Task>, existingValue: decimal, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System_Internal.Decimal>>, existingValue: System.Nullable_1<System_Internal.Decimal>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System_Internal.Decimal>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System_Internal.Decimal>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.DateTime>, existingValue: System.DateTime, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.DateTime, System_Threading_Tasks.Task>, existingValue: System.DateTime, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.DateTime>, existingValue: System.DateTime, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.DateTime, System_Threading_Tasks.Task>, existingValue: System.DateTime, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTime>>, existingValue: System.Nullable_1<System.DateTime>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTime>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTime>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTime>>, existingValue: System.Nullable_1<System.DateTime>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTime>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTime>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.DateTimeOffset>, existingValue: System.DateTimeOffset, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.DateTimeOffset, System_Threading_Tasks.Task>, existingValue: System.DateTimeOffset, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.DateTimeOffset>, existingValue: System.DateTimeOffset, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.DateTimeOffset, System_Threading_Tasks.Task>, existingValue: System.DateTimeOffset, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTimeOffset>>, existingValue: System.Nullable_1<System.DateTimeOffset>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTimeOffset>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTimeOffset>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateTimeOffset>>, existingValue: System.Nullable_1<System.DateTimeOffset>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateTimeOffset>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateTimeOffset>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.DateOnly>, existingValue: System.DateOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.DateOnly, System_Threading_Tasks.Task>, existingValue: System.DateOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.DateOnly>, existingValue: System.DateOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.DateOnly, System_Threading_Tasks.Task>, existingValue: System.DateOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateOnly>>, existingValue: System.Nullable_1<System.DateOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.DateOnly>>, existingValue: System.Nullable_1<System.DateOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.DateOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.DateOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.TimeOnly>, existingValue: System.TimeOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.TimeOnly, System_Threading_Tasks.Task>, existingValue: System.TimeOnly, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.TimeOnly>, existingValue: System.TimeOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.TimeOnly, System_Threading_Tasks.Task>, existingValue: System.TimeOnly, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.TimeOnly>>, existingValue: System.Nullable_1<System.TimeOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.TimeOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.TimeOnly>, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<System.Nullable_1<System.TimeOnly>>, existingValue: System.Nullable_1<System.TimeOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<System.Nullable_1<System.TimeOnly>, System_Threading_Tasks.Task>, existingValue: System.Nullable_1<System.TimeOnly>, format: string, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder<T extends unknown>(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Action_1<T>, existingValue: T, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
+  CreateBinder<T extends unknown>(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, setter: System.Func_2<T, System_Threading_Tasks.Task>, existingValue: T, culture?: System_Globalization.CultureInfo | null): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components.ChangeEventArgs>>;
   FocusAsync(this: Microsoft_AspNetCore_Components.ElementReference): Rewrap<this, System_Threading_Tasks.ValueTask>;
   FocusAsync(this: Microsoft_AspNetCore_Components.ElementReference, preventScroll: boolean): Rewrap<this, System_Threading_Tasks.ValueTask>;
   GetUriWithQueryParameter(this: Microsoft_AspNetCore_Components.NavigationManager, name: string, value: boolean): Rewrap<this, string>;
@@ -484,13 +483,13 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Components {
   GetUriWithQueryParameter(this: Microsoft_AspNetCore_Components.NavigationManager, name: string, value: long): Rewrap<this, string>;
   GetUriWithQueryParameter(this: Microsoft_AspNetCore_Components.NavigationManager, name: string, value: System.Nullable_1<System_Internal.Int64>): Rewrap<this, string>;
   GetUriWithQueryParameter(this: Microsoft_AspNetCore_Components.NavigationManager, name: string, value: string | null): Rewrap<this, string>;
-  GetUriWithQueryParameters(this: Microsoft_AspNetCore_Components.NavigationManager, parameters: System_Collections_Generic.IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): Rewrap<this, string>;
-  GetUriWithQueryParameters(this: Microsoft_AspNetCore_Components.NavigationManager, uri: string, parameters: System_Collections_Generic.IReadOnlyDictionary_2<System_Internal.String, JsValue | null>): Rewrap<this, string>;
+  GetUriWithQueryParameters(this: Microsoft_AspNetCore_Components.NavigationManager, parameters: System_Collections_Generic.IReadOnlyDictionary_2<System_Internal.String, unknown | null>): Rewrap<this, string>;
+  GetUriWithQueryParameters(this: Microsoft_AspNetCore_Components.NavigationManager, uri: string, parameters: System_Collections_Generic.IReadOnlyDictionary_2<System_Internal.String, unknown | null>): Rewrap<this, string>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components
 interface __TsonicExtApplier_Microsoft_AspNetCore_Components {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Components;
 }
 
@@ -504,7 +503,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Components_Forms {
   AddDataAnnotationsValidation(this: Microsoft_AspNetCore_Components_Forms.EditContext): Rewrap<this, Microsoft_AspNetCore_Components_Forms.EditContext>;
   EnableDataAnnotationsValidation(this: Microsoft_AspNetCore_Components_Forms.EditContext): Rewrap<this, System.IDisposable>;
   EnableDataAnnotationsValidation(this: Microsoft_AspNetCore_Components_Forms.EditContext, serviceProvider: System.IServiceProvider): Rewrap<this, System.IDisposable>;
-  FieldCssClass<TField>(this: Microsoft_AspNetCore_Components_Forms.EditContext, accessor: System_Linq_Expressions.Expression_1<System.Func_1<TField>>): Rewrap<this, string>;
+  FieldCssClass<TField extends unknown>(this: Microsoft_AspNetCore_Components_Forms.EditContext, accessor: System_Linq_Expressions.Expression_1<System.Func_1<TField>>): Rewrap<this, string>;
   FieldCssClass(this: Microsoft_AspNetCore_Components_Forms.EditContext, fieldIdentifier: Microsoft_AspNetCore_Components_Forms.FieldIdentifier): Rewrap<this, string>;
   RequestImageFileAsync(this: Microsoft_AspNetCore_Components_Forms.IBrowserFile, format: string, maxWidth: int, maxHeight: int): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_AspNetCore_Components_Forms.IBrowserFile>>;
   SetFieldCssClassProvider(this: Microsoft_AspNetCore_Components_Forms.EditContext, fieldCssClassProvider: Microsoft_AspNetCore_Components_Forms.FieldCssClassProvider): Rewrap<this, void>;
@@ -512,7 +511,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Components_Forms {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Forms
 interface __TsonicExtApplier_Microsoft_AspNetCore_Components_Forms {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Components_Forms;
 }
 
@@ -528,7 +527,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Components_Forms_Mapping {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Forms.Mapping
 interface __TsonicExtApplier_Microsoft_AspNetCore_Components_Forms_Mapping {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Components_Forms_Mapping;
 }
 
@@ -544,7 +543,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Components_Infrastructure {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Infrastructure
 interface __TsonicExtApplier_Microsoft_AspNetCore_Components_Infrastructure {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Components_Infrastructure;
 }
 
@@ -560,7 +559,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Components_Routing {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Routing
 interface __TsonicExtApplier_Microsoft_AspNetCore_Components_Routing {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Components_Routing;
 }
 
@@ -573,35 +572,35 @@ export type ExtensionMethods_Microsoft_AspNetCore_Components_Routing<TShape> =
 interface __TsonicExtMethods_Microsoft_AspNetCore_Components_Web {
   AddEventPreventDefaultAttribute(this: Microsoft_AspNetCore_Components_Rendering.RenderTreeBuilder, sequence: int, eventName: string, value: boolean): Rewrap<this, void>;
   AddEventStopPropagationAttribute(this: Microsoft_AspNetCore_Components_Rendering.RenderTreeBuilder, sequence: int, eventName: string, value: boolean): Rewrap<this, void>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.DragEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ErrorEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.FocusEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.MouseEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.PointerEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ProgressEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.TouchEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
-  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: JsValue, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.WheelEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
-  RegisterForJavaScript<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string): Rewrap<this, void>;
-  RegisterForJavaScript<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): Rewrap<this, void>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ClipboardEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.DragEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.DragEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ErrorEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ErrorEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.FocusEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.FocusEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.KeyboardEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.MouseEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.MouseEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.PointerEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.PointerEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.ProgressEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.ProgressEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.TouchEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.TouchEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Action_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
+  Create(this: Microsoft_AspNetCore_Components.EventCallbackFactory, receiver: unknown, callback: System.Func_2<Microsoft_AspNetCore_Components_Web.WheelEventArgs, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Components.EventCallback_1<Microsoft_AspNetCore_Components_Web.WheelEventArgs>>;
+  RegisterForJavaScript<TComponent extends unknown & Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string): Rewrap<this, void>;
+  RegisterForJavaScript<TComponent extends unknown & Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, identifier: string, javaScriptInitializer: string): Rewrap<this, void>;
   RegisterForJavaScript(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, componentType: System.Type, identifier: string): Rewrap<this, void>;
   RegisterForJavaScript(this: Microsoft_AspNetCore_Components_Web.IJSComponentConfiguration, componentType: System.Type, identifier: string, javaScriptInitializer: string): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Components.Web
 interface __TsonicExtApplier_Microsoft_AspNetCore_Components_Web {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Components_Web;
 }
 
@@ -615,12 +614,12 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Connections {
   Run(this: Microsoft_AspNetCore_Connections.IConnectionBuilder, middleware: System.Func_2<Microsoft_AspNetCore_Connections.ConnectionContext, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
   Use(this: Microsoft_AspNetCore_Connections.IConnectionBuilder, middleware: System.Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, System.Func_1<System_Threading_Tasks.Task>, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
   Use(this: Microsoft_AspNetCore_Connections.IConnectionBuilder, middleware: System.Func_3<Microsoft_AspNetCore_Connections.ConnectionContext, Microsoft_AspNetCore_Connections.ConnectionDelegate, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
-  UseConnectionHandler<TConnectionHandler extends Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
+  UseConnectionHandler<TConnectionHandler extends unknown & Microsoft_AspNetCore_Connections.ConnectionHandler>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Connections
 interface __TsonicExtApplier_Microsoft_AspNetCore_Connections {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Connections;
 }
 
@@ -632,7 +631,7 @@ export type ExtensionMethods_Microsoft_AspNetCore_Connections<TShape> =
 // Extension method table for namespace: Microsoft.AspNetCore.DataProtection
 interface __TsonicExtMethods_Microsoft_AspNetCore_DataProtection {
   AddKeyEscrowSink(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder, sink: Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
-  AddKeyEscrowSink<TImplementation extends Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink>(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
+  AddKeyEscrowSink<TImplementation extends (object | null) & Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink>(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   AddKeyEscrowSink(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder, factory: System.Func_2<System.IServiceProvider, Microsoft_AspNetCore_DataProtection_KeyManagement.IKeyEscrowSink>): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   AddKeyManagementOptions(this: Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_DataProtection_KeyManagement.KeyManagementOptions>): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtectionBuilder>;
   CreateProtector(this: Microsoft_AspNetCore_DataProtection.IDataProtectionProvider, purposes: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, Microsoft_AspNetCore_DataProtection.IDataProtector>;
@@ -669,7 +668,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_DataProtection {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.DataProtection
 interface __TsonicExtApplier_Microsoft_AspNetCore_DataProtection {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_DataProtection;
 }
 
@@ -685,7 +684,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_DataProtection_AuthenticatedEn
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel
 interface __TsonicExtApplier_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel;
 }
 
@@ -721,8 +720,6 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Hosting {
   UseDefaultServiceProvider(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, configure: System.Action_1<Microsoft_Extensions_DependencyInjection.ServiceProviderOptions>): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseDefaultServiceProvider(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, configure: System.Action_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, Microsoft_Extensions_DependencyInjection.ServiceProviderOptions>): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseEnvironment(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, environment: string): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseHttpSys(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseHttpSys(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, options: System.Action_1<Microsoft_AspNetCore_Server_HttpSys.HttpSysOptions>): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, fileName: string): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, fileName: string, password: string | null): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
@@ -735,8 +732,8 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Hosting {
   UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, serverCertificate: System_Security_Cryptography_X509Certificates.X509Certificate2, configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions>): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, httpsOptions: Microsoft_AspNetCore_Server_Kestrel_Https.HttpsConnectionAdapterOptions): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, serverOptionsSelectionCallback: System_Net_Security.ServerOptionsSelectionCallback, state: JsValue): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
-  UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, serverOptionsSelectionCallback: System_Net_Security.ServerOptionsSelectionCallback, state: JsValue, handshakeTimeout: System.TimeSpan): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, serverOptionsSelectionCallback: System_Net_Security.ServerOptionsSelectionCallback, state: unknown): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
+  UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, serverOptionsSelectionCallback: System_Net_Security.ServerOptionsSelectionCallback, state: unknown, handshakeTimeout: System.TimeSpan): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseHttps(this: Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions, callbackOptions: Microsoft_AspNetCore_Server_Kestrel_Https.TlsHandshakeCallbackOptions): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.ListenOptions>;
   UseIIS(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseIISIntegration(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
@@ -753,9 +750,9 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Hosting {
   UseShutdownTimeout(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, timeout: System.TimeSpan): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseSockets(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseSockets(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, configureOptions: System.Action_1<Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets.SocketTransportOptions>): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseStartup<TStartup>(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, startupFactory: System.Func_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, TStartup>): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseStartup<TStartup extends (object | null)>(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, startupFactory: System.Func_2<Microsoft_AspNetCore_Hosting.WebHostBuilderContext, TStartup>): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseStartup(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, startupType: System.Type): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
-  UseStartup<TStartup>(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
+  UseStartup<TStartup extends (object | null)>(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseStartup(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder, startupAssemblyName: string): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseStaticWebAssets(this: Microsoft_AspNetCore_Hosting.IWebHostBuilder): Rewrap<this, Microsoft_AspNetCore_Hosting.IWebHostBuilder>;
   UseSystemd(this: Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions): Rewrap<this, Microsoft_AspNetCore_Server_Kestrel_Core.KestrelServerOptions>;
@@ -768,7 +765,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Hosting {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Hosting
 interface __TsonicExtApplier_Microsoft_AspNetCore_Hosting {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Hosting;
 }
 
@@ -779,8 +776,8 @@ export type ExtensionMethods_Microsoft_AspNetCore_Hosting<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Html
 interface __TsonicExtMethods_Microsoft_AspNetCore_Html {
-  AppendFormat(this: Microsoft_AspNetCore_Html.IHtmlContentBuilder, format: string, ...args: (JsValue | null)[]): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
-  AppendFormat(this: Microsoft_AspNetCore_Html.IHtmlContentBuilder, formatProvider: System.IFormatProvider, format: string, ...args: (JsValue | null)[]): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
+  AppendFormat(this: Microsoft_AspNetCore_Html.IHtmlContentBuilder, format: string, ...args: (unknown | null)[]): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
+  AppendFormat(this: Microsoft_AspNetCore_Html.IHtmlContentBuilder, formatProvider: System.IFormatProvider, format: string, ...args: (unknown | null)[]): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
   AppendHtmlLine(this: Microsoft_AspNetCore_Html.IHtmlContentBuilder, encoded: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
   AppendLine(this: Microsoft_AspNetCore_Html.IHtmlContentBuilder): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
   AppendLine(this: Microsoft_AspNetCore_Html.IHtmlContentBuilder, unencoded: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContentBuilder>;
@@ -792,7 +789,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Html {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Html
 interface __TsonicExtApplier_Microsoft_AspNetCore_Html {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Html;
 }
 
@@ -803,15 +800,15 @@ export type ExtensionMethods_Microsoft_AspNetCore_Html<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Http
 interface __TsonicExtMethods_Microsoft_AspNetCore_Http {
-  Accepts<TRequest>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  Accepts<TRequest>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Accepts<TRequest extends unknown>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Accepts<TRequest extends unknown>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Accepts(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, requestType: System.Type, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Accepts(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, requestType: System.Type, isOptional: boolean, contentType: string, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  AddEndpointFilter<TFilterType extends Microsoft_AspNetCore_Http.IEndpointFilter>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  AddEndpointFilter<TFilterType extends Microsoft_AspNetCore_Http.IEndpointFilter>(this: Microsoft_AspNetCore_Routing.RouteGroupBuilder): Rewrap<this, Microsoft_AspNetCore_Routing.RouteGroupBuilder>;
+  AddEndpointFilter<TFilterType extends unknown & Microsoft_AspNetCore_Http.IEndpointFilter>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  AddEndpointFilter<TFilterType extends unknown & Microsoft_AspNetCore_Http.IEndpointFilter>(this: Microsoft_AspNetCore_Routing.RouteGroupBuilder): Rewrap<this, Microsoft_AspNetCore_Routing.RouteGroupBuilder>;
   Append(this: Microsoft_AspNetCore_Http.IHeaderDictionary, key: string, value: Microsoft_Extensions_Primitives.StringValues): Rewrap<this, void>;
   AppendCommaSeparatedValues(this: Microsoft_AspNetCore_Http.IHeaderDictionary, key: string, ...values: string[]): Rewrap<this, void>;
-  AppendList<T>(this: Microsoft_AspNetCore_Http.IHeaderDictionary, name: string, values: System_Collections_Generic.IList_1<T>): Rewrap<this, void>;
+  AppendList<T extends unknown>(this: Microsoft_AspNetCore_Http.IHeaderDictionary, name: string, values: System_Collections_Generic.IList_1<T>): Rewrap<this, void>;
   AppendTrailer(this: Microsoft_AspNetCore_Http.HttpResponse, trailerName: string, trailerValues: Microsoft_Extensions_Primitives.StringValues): Rewrap<this, void>;
   CheckTrailersAvailable(this: Microsoft_AspNetCore_Http.HttpRequest): Rewrap<this, boolean>;
   Clear(this: Microsoft_AspNetCore_Http.HttpResponse): Rewrap<this, void>;
@@ -832,18 +829,18 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Http {
   GetTypedHeaders(this: Microsoft_AspNetCore_Http.HttpRequest): Rewrap<this, Microsoft_AspNetCore_Http_Headers.RequestHeaders>;
   GetTypedHeaders(this: Microsoft_AspNetCore_Http.HttpResponse): Rewrap<this, Microsoft_AspNetCore_Http_Headers.ResponseHeaders>;
   HasJsonContentType(this: Microsoft_AspNetCore_Http.HttpRequest): Rewrap<this, boolean>;
-  Produces<TResponse>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, statusCode?: int, contentType?: string | null, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
+  Produces<TResponse extends unknown>(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, statusCode?: int, contentType?: string | null, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   Produces(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, statusCode: int, responseType?: System.Type | null, contentType?: string | null, ...additionalContentTypes: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   ProducesProblem(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, statusCode: int, contentType?: string | null): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   ProducesValidationProblem(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, statusCode?: int, contentType?: string | null): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
   ReadFormAsync(this: Microsoft_AspNetCore_Http.HttpRequest, options: Microsoft_AspNetCore_Http_Features.FormOptions, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Http.IFormCollection>>;
-  ReadFromJsonAsync<TValue>(this: Microsoft_AspNetCore_Http.HttpRequest, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  ReadFromJsonAsync<TValue>(this: Microsoft_AspNetCore_Http.HttpRequest, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  ReadFromJsonAsync<TValue>(this: Microsoft_AspNetCore_Http.HttpRequest, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo_1<TValue>, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<JsValue>>;
-  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, type: System.Type, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<JsValue>>;
-  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, type: System.Type, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<JsValue>>;
-  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, type: System.Type, context: System_Text_Json_Serialization.JsonSerializerContext, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<JsValue>>;
+  ReadFromJsonAsync<TValue extends unknown>(this: Microsoft_AspNetCore_Http.HttpRequest, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  ReadFromJsonAsync<TValue extends unknown>(this: Microsoft_AspNetCore_Http.HttpRequest, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  ReadFromJsonAsync<TValue extends unknown>(this: Microsoft_AspNetCore_Http.HttpRequest, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo_1<TValue>, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<unknown>>;
+  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, type: System.Type, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<unknown>>;
+  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, type: System.Type, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<unknown>>;
+  ReadFromJsonAsync(this: Microsoft_AspNetCore_Http.HttpRequest, type: System.Type, context: System_Text_Json_Serialization.JsonSerializerContext, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<unknown>>;
   Redirect(this: Microsoft_AspNetCore_Http.HttpResponse, location: string, permanent: boolean, preserveMethod: boolean): Rewrap<this, void>;
   SendFileAsync(this: Microsoft_AspNetCore_Http.HttpResponse, file: Microsoft_Extensions_FileProviders.IFileInfo, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
   SendFileAsync(this: Microsoft_AspNetCore_Http.HttpResponse, file: Microsoft_Extensions_FileProviders.IFileInfo, offset: long, count: System.Nullable_1<System_Internal.Int64>, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
@@ -856,22 +853,22 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Http {
   SupportsTrailers(this: Microsoft_AspNetCore_Http.HttpRequest): Rewrap<this, boolean>;
   SupportsTrailers(this: Microsoft_AspNetCore_Http.HttpResponse): Rewrap<this, boolean>;
   WithTags(this: Microsoft_AspNetCore_Builder.RouteHandlerBuilder, ...tags: string[]): Rewrap<this, Microsoft_AspNetCore_Builder.RouteHandlerBuilder>;
-  WriteAsJsonAsync<TValue>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync<TValue>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync<TValue>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, options: System_Text_Json.JsonSerializerOptions | null, contentType: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync<TValue>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo_1<TValue>, contentType?: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: JsValue | null, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo, contentType?: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: JsValue | null, type: System.Type, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: JsValue | null, type: System.Type, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: JsValue | null, type: System.Type, options: System_Text_Json.JsonSerializerOptions | null, contentType: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: JsValue | null, type: System.Type, context: System_Text_Json_Serialization.JsonSerializerContext, contentType?: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync<TValue extends unknown>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync<TValue extends unknown>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync<TValue extends unknown>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, options: System_Text_Json.JsonSerializerOptions | null, contentType: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync<TValue extends unknown>(this: Microsoft_AspNetCore_Http.HttpResponse, value: TValue, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo_1<TValue>, contentType?: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: unknown | null, jsonTypeInfo: System_Text_Json_Serialization_Metadata.JsonTypeInfo, contentType?: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: unknown | null, type: System.Type, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: unknown | null, type: System.Type, options: System_Text_Json.JsonSerializerOptions | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: unknown | null, type: System.Type, options: System_Text_Json.JsonSerializerOptions | null, contentType: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  WriteAsJsonAsync(this: Microsoft_AspNetCore_Http.HttpResponse, value: unknown | null, type: System.Type, context: System_Text_Json_Serialization.JsonSerializerContext, contentType?: string | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
   WriteAsync(this: Microsoft_AspNetCore_Http.HttpResponse, text: string, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
   WriteAsync(this: Microsoft_AspNetCore_Http.HttpResponse, text: string, encoding: System_Text.Encoding, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Http
 interface __TsonicExtApplier_Microsoft_AspNetCore_Http {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Http;
 }
 
@@ -887,7 +884,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Http_Connections {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Http.Connections
 interface __TsonicExtApplier_Microsoft_AspNetCore_Http_Connections {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Http_Connections;
 }
 
@@ -906,7 +903,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Http_Extensions {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Http.Extensions
 interface __TsonicExtApplier_Microsoft_AspNetCore_Http_Extensions {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Http_Extensions;
 }
 
@@ -917,13 +914,13 @@ export type ExtensionMethods_Microsoft_AspNetCore_Http_Extensions<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Http.Features
 interface __TsonicExtMethods_Microsoft_AspNetCore_Http_Features {
-  GetRequiredFeature<TFeature>(this: Microsoft_AspNetCore_Http_Features.IFeatureCollection): Rewrap<this, TFeature>;
-  GetRequiredFeature(this: Microsoft_AspNetCore_Http_Features.IFeatureCollection, key: System.Type): Rewrap<this, JsValue>;
+  GetRequiredFeature<TFeature extends unknown>(this: Microsoft_AspNetCore_Http_Features.IFeatureCollection): Rewrap<this, TFeature>;
+  GetRequiredFeature(this: Microsoft_AspNetCore_Http_Features.IFeatureCollection, key: System.Type): Rewrap<this, unknown>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Http.Features
 interface __TsonicExtApplier_Microsoft_AspNetCore_Http_Features {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Http_Features;
 }
 
@@ -947,7 +944,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Identity {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Identity
 interface __TsonicExtApplier_Microsoft_AspNetCore_Identity {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Identity;
 }
 
@@ -960,32 +957,32 @@ export type ExtensionMethods_Microsoft_AspNetCore_Identity<TShape> =
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc {
   Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper): Rewrap<this, string | null>;
   Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null): Rewrap<this, string | null>;
-  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, values: JsValue | null): Rewrap<this, string | null>;
+  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, values: unknown | null): Rewrap<this, string | null>;
   Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null): Rewrap<this, string | null>;
-  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: JsValue | null): Rewrap<this, string | null>;
-  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: JsValue | null, protocol: string | null): Rewrap<this, string | null>;
-  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: JsValue | null, protocol: string | null, host: string | null): Rewrap<this, string | null>;
-  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: JsValue | null, protocol: string | null, host: string | null, fragment: string | null): Rewrap<this, string | null>;
-  ActionLink(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action?: string | null, controller?: string | null, values?: JsValue | null, protocol?: string | null, host?: string | null, fragment?: string | null): Rewrap<this, string | null>;
+  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: unknown | null): Rewrap<this, string | null>;
+  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: unknown | null, protocol: string | null): Rewrap<this, string | null>;
+  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: unknown | null, protocol: string | null, host: string | null): Rewrap<this, string | null>;
+  Action(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action: string | null, controller: string | null, values: unknown | null, protocol: string | null, host: string | null, fragment: string | null): Rewrap<this, string | null>;
+  ActionLink(this: Microsoft_AspNetCore_Mvc.IUrlHelper, action?: string | null, controller?: string | null, values?: unknown | null, protocol?: string | null, host?: string | null, fragment?: string | null): Rewrap<this, string | null>;
   Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null): Rewrap<this, string | null>;
   Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null): Rewrap<this, string | null>;
-  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, values: JsValue | null): Rewrap<this, string | null>;
-  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null): Rewrap<this, string | null>;
-  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null, protocol: string | null): Rewrap<this, string | null>;
-  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null, protocol: string | null, host: string | null): Rewrap<this, string | null>;
-  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: JsValue | null, protocol: string | null, host: string | null, fragment: string | null): Rewrap<this, string | null>;
-  PageLink(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName?: string | null, pageHandler?: string | null, values?: JsValue | null, protocol?: string | null, host?: string | null, fragment?: string | null): Rewrap<this, string | null>;
-  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, values: JsValue | null): Rewrap<this, string | null>;
+  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, values: unknown | null): Rewrap<this, string | null>;
+  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null): Rewrap<this, string | null>;
+  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null, protocol: string | null): Rewrap<this, string | null>;
+  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null, protocol: string | null, host: string | null): Rewrap<this, string | null>;
+  Page(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName: string | null, pageHandler: string | null, values: unknown | null, protocol: string | null, host: string | null, fragment: string | null): Rewrap<this, string | null>;
+  PageLink(this: Microsoft_AspNetCore_Mvc.IUrlHelper, pageName?: string | null, pageHandler?: string | null, values?: unknown | null, protocol?: string | null, host?: string | null, fragment?: string | null): Rewrap<this, string | null>;
+  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, values: unknown | null): Rewrap<this, string | null>;
   RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null): Rewrap<this, string | null>;
-  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: JsValue | null): Rewrap<this, string | null>;
-  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: JsValue | null, protocol: string | null): Rewrap<this, string | null>;
-  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: JsValue | null, protocol: string | null, host: string | null): Rewrap<this, string | null>;
-  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: JsValue | null, protocol: string | null, host: string | null, fragment: string | null): Rewrap<this, string | null>;
+  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: unknown | null): Rewrap<this, string | null>;
+  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: unknown | null, protocol: string | null): Rewrap<this, string | null>;
+  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: unknown | null, protocol: string | null, host: string | null): Rewrap<this, string | null>;
+  RouteUrl(this: Microsoft_AspNetCore_Mvc.IUrlHelper, routeName: string | null, values: unknown | null, protocol: string | null, host: string | null, fragment: string | null): Rewrap<this, string | null>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc;
 }
 
@@ -996,13 +993,13 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.Abstractions
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Abstractions {
-  GetProperty<T>(this: Microsoft_AspNetCore_Mvc_Abstractions.ActionDescriptor): Rewrap<this, T | null>;
-  SetProperty<T>(this: Microsoft_AspNetCore_Mvc_Abstractions.ActionDescriptor, value: T): Rewrap<this, void>;
+  GetProperty<T extends unknown>(this: Microsoft_AspNetCore_Mvc_Abstractions.ActionDescriptor): Rewrap<this, T | null>;
+  SetProperty<T extends unknown>(this: Microsoft_AspNetCore_Mvc_Abstractions.ActionDescriptor, value: T): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.Abstractions
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_Abstractions {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Abstractions;
 }
 
@@ -1013,13 +1010,13 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_Abstractions<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.ApiExplorer
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ApiExplorer {
-  GetProperty<T>(this: Microsoft_AspNetCore_Mvc_ApiExplorer.ApiDescription): Rewrap<this, T | null>;
-  SetProperty<T>(this: Microsoft_AspNetCore_Mvc_ApiExplorer.ApiDescription, value: T): Rewrap<this, void>;
+  GetProperty<T extends unknown>(this: Microsoft_AspNetCore_Mvc_ApiExplorer.ApiDescription): Rewrap<this, T | null>;
+  SetProperty<T extends unknown>(this: Microsoft_AspNetCore_Mvc_ApiExplorer.ApiDescription, value: T): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.ApiExplorer
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_ApiExplorer {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ApiExplorer;
 }
 
@@ -1035,26 +1032,26 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.Formatters.Xml
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_Formatters_Xml {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml;
 }
 
 export type ExtensionMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
-  : TShape extends (infer T)[] ? (TShape & System_Collections_Generic.IEnumerable_1<T> & __TsonicWithExt<TShape, "Microsoft.AspNetCore.Mvc.Formatters.Xml", __TsonicExtApplier_Microsoft_AspNetCore_Mvc_Formatters_Xml> & __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml)
+  : TShape extends (infer T extends unknown)[] ? (TShape & System_Collections_Generic.IEnumerable_1<T> & __TsonicWithExt<TShape, "Microsoft.AspNetCore.Mvc.Formatters.Xml", __TsonicExtApplier_Microsoft_AspNetCore_Mvc_Formatters_Xml> & __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml)
   : TShape & __TsonicWithExt<TShape, "Microsoft.AspNetCore.Mvc.Formatters.Xml", __TsonicExtApplier_Microsoft_AspNetCore_Mvc_Formatters_Xml> & __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Formatters_Xml;
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.Localization
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Localization {
   GetAllStrings(this: Microsoft_AspNetCore_Mvc_Localization.IHtmlLocalizer): Rewrap<this, System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_Localization.LocalizedString>>;
   GetHtml(this: Microsoft_AspNetCore_Mvc_Localization.IHtmlLocalizer, name: string): Rewrap<this, Microsoft_AspNetCore_Mvc_Localization.LocalizedHtmlString>;
-  GetHtml(this: Microsoft_AspNetCore_Mvc_Localization.IHtmlLocalizer, name: string, ...arguments: JsValue[]): Rewrap<this, Microsoft_AspNetCore_Mvc_Localization.LocalizedHtmlString>;
+  GetHtml(this: Microsoft_AspNetCore_Mvc_Localization.IHtmlLocalizer, name: string, ...arguments: unknown[]): Rewrap<this, Microsoft_AspNetCore_Mvc_Localization.LocalizedHtmlString>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.Localization
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_Localization {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Localization;
 }
 
@@ -1065,21 +1062,21 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.ModelBinding
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding {
-  AddModelError<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, JsValue>>, errorMessage: string): Rewrap<this, void>;
-  AddModelError<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, JsValue>>, exception: System.Exception, metadata: Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata): Rewrap<this, void>;
+  AddModelError<TModel extends unknown>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>, errorMessage: string): Rewrap<this, void>;
+  AddModelError<TModel extends unknown>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>, exception: System.Exception, metadata: Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata): Rewrap<this, void>;
   GetMetadataForProperty(this: Microsoft_AspNetCore_Mvc_ModelBinding.IModelMetadataProvider, containerType: System.Type, propertyName: string): Rewrap<this, Microsoft_AspNetCore_Mvc_ModelBinding.ModelMetadata>;
-  Remove<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, JsValue>>): Rewrap<this, boolean>;
-  RemoveAll<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, JsValue>>): Rewrap<this, void>;
-  RemoveType<TModelBinderProvider extends Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>): Rewrap<this, void>;
+  Remove<TModel extends unknown>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>): Rewrap<this, boolean>;
+  RemoveAll<TModel extends unknown>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>): Rewrap<this, void>;
+  RemoveType<TModelBinderProvider extends unknown & Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IModelBinderProvider>, type: System.Type): Rewrap<this, void>;
-  RemoveType<TValueProviderFactory extends Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>): Rewrap<this, void>;
+  RemoveType<TValueProviderFactory extends unknown & Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding.IValueProviderFactory>, type: System.Type): Rewrap<this, void>;
-  TryAddModelException<TModel>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, JsValue>>, exception: System.Exception): Rewrap<this, void>;
+  TryAddModelException<TModel extends unknown>(this: Microsoft_AspNetCore_Mvc_ModelBinding.ModelStateDictionary, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, unknown>>, exception: System.Exception): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.ModelBinding
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_ModelBinding {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding;
 }
 
@@ -1090,13 +1087,13 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Metadata
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata {
-  RemoveType<TMetadataDetailsProvider extends Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>): Rewrap<this, void>;
+  RemoveType<TMetadataDetailsProvider extends unknown & Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Metadata.IMetadataDetailsProvider>, type: System.Type): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Metadata
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata;
 }
 
@@ -1107,13 +1104,13 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata<TSha
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Validation
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation {
-  RemoveType<TModelValidatorProvider extends Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>): Rewrap<this, void>;
+  RemoveType<TModelValidatorProvider extends unknown & Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ModelBinding_Validation.IModelValidatorProvider>, type: System.Type): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.ModelBinding.Validation
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_ModelBinding_Validation {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation;
 }
 
@@ -1125,166 +1122,166 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_ModelBinding_Validation<TS
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.Rendering
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Rendering {
   ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, routeValues: JsValue, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, routeValues: unknown, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, controllerName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, controllerName: string, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, controllerName: string, routeValues: JsValue, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, controllerName: string, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ActionLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, actionName: string, controllerName: string, routeValues: unknown, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, antiforgery: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, antiforgery: System.Nullable_1<System_Internal.Boolean>, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, antiforgery: System.Nullable_1<System_Internal.Boolean>, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string, routeValues: JsValue, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeValues: JsValue, antiforgery: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string, routeValues: unknown, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, actionName: string, controllerName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeValues: unknown, antiforgery: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, antiforgery: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, routeValues: JsValue, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
-  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, routeValues: unknown, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
+  BeginRouteForm(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, routeName: string, method: Microsoft_AspNetCore_Mvc_Rendering.FormMethod, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.MvcForm>;
   CheckBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   CheckBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, isChecked: boolean): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  CheckBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  CheckBoxFor<TModel>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, System_Internal.Boolean>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  CheckBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  CheckBoxFor<TModel extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, System_Internal.Boolean>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Display(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Display(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  Display(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Display(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Display(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  Display(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Display(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, htmlFieldName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DisplayNameFor<TModelItem, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<System_Collections_Generic.IEnumerable_1<TModelItem>>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModelItem, TResult>>): Rewrap<this, string>;
+  DisplayForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, htmlFieldName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DisplayNameFor<TModelItem extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<System_Collections_Generic.IEnumerable_1<TModelItem>>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModelItem, TResult>>): Rewrap<this, string>;
   DisplayNameForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, string>;
   DropDownList(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   DropDownList(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, optionLabel: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   DropDownList(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownList(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownList(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   DropDownList(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, optionLabel: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownListFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownListFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  DropDownListFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, optionLabel: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownListFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownListFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  DropDownListFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>, optionLabel: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Editor(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Editor(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  Editor(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Editor(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Editor(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  Editor(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Editor(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, htmlFieldName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, htmlFieldName: string, additionalViewData: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  EditorForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, templateName: string, htmlFieldName: string, additionalViewData: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Hidden(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Hidden(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  HiddenFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  Hidden(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  HiddenFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   IdForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, string>;
   InvokeAsync(this: Microsoft_AspNetCore_Mvc.IViewComponentHelper, name: string): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   InvokeAsync(this: Microsoft_AspNetCore_Mvc.IViewComponentHelper, componentType: System.Type): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  InvokeAsync<TComponent>(this: Microsoft_AspNetCore_Mvc.IViewComponentHelper, arguments: JsValue | null): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  InvokeAsync<TComponent>(this: Microsoft_AspNetCore_Mvc.IViewComponentHelper): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  InvokeAsync<TComponent extends unknown>(this: Microsoft_AspNetCore_Mvc.IViewComponentHelper, arguments: unknown | null): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  InvokeAsync<TComponent extends unknown>(this: Microsoft_AspNetCore_Mvc.IViewComponentHelper): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   Label(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Label(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, labelText: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, labelText: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, labelText: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   LabelForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   LabelForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, labelText: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  LabelForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, labelText: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  LabelForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, labelText: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ListBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ListBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ListBoxFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ListBoxFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, selectList: System_Collections_Generic.IEnumerable_1<Microsoft_AspNetCore_Mvc_Rendering.SelectListItem>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   NameForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, string>;
   Partial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Partial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Partial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Partial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: JsValue, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  Partial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  Partial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: unknown, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   PartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   PartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  PartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: JsValue): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  PartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: unknown): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   Password(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  Password(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  PasswordFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue, isChecked: boolean): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RadioButtonFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, value: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RenderComponentAsync<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  RenderComponentAsync<TComponent extends Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: JsValue): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
-  RenderComponentAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, componentType: System.Type, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: JsValue): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  Password(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  PasswordFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RadioButton(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown, isChecked: boolean): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RadioButtonFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, value: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RenderComponentAsync<TComponent extends unknown & Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  RenderComponentAsync<TComponent extends unknown & Microsoft_AspNetCore_Components.IComponent>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
+  RenderComponentAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, componentType: System.Type, renderMode: Microsoft_AspNetCore_Mvc_Rendering.RenderMode, parameters: unknown): Rewrap<this, System_Threading_Tasks.Task_1<Microsoft_AspNetCore_Html.IHtmlContent>>;
   RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string): Rewrap<this, void>;
   RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, void>;
-  RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: JsValue): Rewrap<this, void>;
-  RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: JsValue, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, void>;
+  RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: unknown): Rewrap<this, void>;
+  RenderPartial(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: unknown, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, void>;
   RenderPartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string): Rewrap<this, System_Threading_Tasks.Task>;
   RenderPartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, viewData: Microsoft_AspNetCore_Mvc_ViewFeatures.ViewDataDictionary): Rewrap<this, System_Threading_Tasks.Task>;
-  RenderPartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: JsValue): Rewrap<this, System_Threading_Tasks.Task>;
-  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RenderPartialAsync(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, partialViewName: string, model: unknown): Rewrap<this, System_Threading_Tasks.Task>;
+  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeName: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeName: string, routeValues: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeValues: JsValue, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeName: string, routeValues: JsValue, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeName: string, routeValues: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeValues: unknown, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  RouteLink(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, linkText: string, routeName: string, routeValues: unknown, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   TextArea(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextArea(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextArea(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   TextArea(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextArea(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextAreaFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextAreaFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextArea(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextAreaFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextAreaFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   TextBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue, format: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: JsValue, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBoxFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBoxFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, format: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  TextBoxFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown, format: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBox(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, value: unknown, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBoxFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBoxFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, format: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  TextBoxFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationMessage(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationMessage(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, message: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessage(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessage(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationMessage(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, message: string, tag: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessage(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, message: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationMessageFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string, tag: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessage(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string, message: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationMessageFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>, message: string, tag: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, excludePropertyErrors: boolean): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, message: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, message: string, tag: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, excludePropertyErrors: boolean, message: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, message: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, message: string, htmlAttributes: JsValue, tag: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, message: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, message: string, htmlAttributes: unknown, tag: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, excludePropertyErrors: boolean, message: string, tag: string): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, excludePropertyErrors: boolean, message: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
+  ValidationSummary(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, excludePropertyErrors: boolean, message: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
   Value(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, expression: string): Rewrap<this, string>;
-  ValueFor<TModel, TResult>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, string>;
+  ValueFor<TModel extends unknown, TResult extends unknown>(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper_1<TModel>, expression: System_Linq_Expressions.Expression_1<System.Func_2<TModel, TResult>>): Rewrap<this, string>;
   ValueForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper): Rewrap<this, string>;
   ValueForModel(this: Microsoft_AspNetCore_Mvc_Rendering.IHtmlHelper, format: string): Rewrap<this, string>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.Rendering
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_Rendering {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_Rendering;
 }
 
@@ -1304,7 +1301,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_TagHelpers {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.TagHelpers
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_TagHelpers {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_TagHelpers;
 }
 
@@ -1315,16 +1312,16 @@ export type ExtensionMethods_Microsoft_AspNetCore_Mvc_TagHelpers<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Mvc.ViewFeatures
 interface __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ViewFeatures {
-  GenerateForm(this: Microsoft_AspNetCore_Mvc_ViewFeatures.IHtmlGenerator, viewContext: Microsoft_AspNetCore_Mvc_Rendering.ViewContext, actionName: string, controllerName: string, fragment: string, routeValues: JsValue, method: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.TagBuilder>;
-  GenerateRouteForm(this: Microsoft_AspNetCore_Mvc_ViewFeatures.IHtmlGenerator, viewContext: Microsoft_AspNetCore_Mvc_Rendering.ViewContext, routeName: string, routeValues: JsValue, fragment: string, method: string, htmlAttributes: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.TagBuilder>;
+  GenerateForm(this: Microsoft_AspNetCore_Mvc_ViewFeatures.IHtmlGenerator, viewContext: Microsoft_AspNetCore_Mvc_Rendering.ViewContext, actionName: string, controllerName: string, fragment: string, routeValues: unknown, method: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.TagBuilder>;
+  GenerateRouteForm(this: Microsoft_AspNetCore_Mvc_ViewFeatures.IHtmlGenerator, viewContext: Microsoft_AspNetCore_Mvc_Rendering.ViewContext, routeName: string, routeValues: unknown, fragment: string, method: string, htmlAttributes: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_Rendering.TagBuilder>;
   GetHtml(this: Microsoft_AspNetCore_Antiforgery.IAntiforgery, httpContext: Microsoft_AspNetCore_Http.HttpContext): Rewrap<this, Microsoft_AspNetCore_Html.IHtmlContent>;
-  GetModelExplorerForType(this: Microsoft_AspNetCore_Mvc_ModelBinding.IModelMetadataProvider, modelType: System.Type, model: JsValue): Rewrap<this, Microsoft_AspNetCore_Mvc_ViewFeatures.ModelExplorer>;
+  GetModelExplorerForType(this: Microsoft_AspNetCore_Mvc_ModelBinding.IModelMetadataProvider, modelType: System.Type, model: unknown): Rewrap<this, Microsoft_AspNetCore_Mvc_ViewFeatures.ModelExplorer>;
   GetSimpleDisplayText(this: Microsoft_AspNetCore_Mvc_ViewFeatures.ModelExplorer): Rewrap<this, string>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Mvc.ViewFeatures
 interface __TsonicExtApplier_Microsoft_AspNetCore_Mvc_ViewFeatures {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Mvc_ViewFeatures;
 }
 
@@ -1343,7 +1340,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_RateLimiting {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.RateLimiting
 interface __TsonicExtApplier_Microsoft_AspNetCore_RateLimiting {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_RateLimiting;
 }
 
@@ -1359,7 +1356,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Razor_Hosting {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Razor.Hosting
 interface __TsonicExtApplier_Microsoft_AspNetCore_Razor_Hosting {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Razor_Hosting;
 }
 
@@ -1399,7 +1396,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Rewrite {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Rewrite
 interface __TsonicExtApplier_Microsoft_AspNetCore_Rewrite {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Rewrite;
 }
 
@@ -1410,37 +1407,37 @@ export type ExtensionMethods_Microsoft_AspNetCore_Rewrite<TShape> =
 
 // Extension method table for namespace: Microsoft.AspNetCore.Routing
 interface __TsonicExtMethods_Microsoft_AspNetCore_Routing {
-  GetPathByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, action?: string | null, controller?: string | null, values?: JsValue | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetPathByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, action: string, controller: string, values?: JsValue | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetPathByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: JsValue | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, action?: string | null, controller?: string | null, values?: unknown | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, action: string, controller: string, values?: unknown | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: unknown | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetPathByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetPathByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, endpointName: string, values: JsValue | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, endpointName: string, values: unknown | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetPathByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, endpointName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetPathByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, page?: string | null, handler?: string | null, values?: JsValue | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetPathByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, page: string, handler?: string | null, values?: JsValue | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetPathByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string | null, values: JsValue | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, page?: string | null, handler?: string | null, values?: unknown | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, page: string, handler?: string | null, values?: unknown | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string | null, values: unknown | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetPathByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string | null, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary | null, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetPathByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, routeName: string | null, values: JsValue | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetPathByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, routeName: string | null, values: unknown | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetPathByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, routeName: string | null, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary | null, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetRouteData(this: Microsoft_AspNetCore_Http.HttpContext): Rewrap<this, Microsoft_AspNetCore_Routing.RouteData>;
-  GetRouteValue(this: Microsoft_AspNetCore_Http.HttpContext, key: string): Rewrap<this, JsValue | null>;
-  GetUriByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, action?: string | null, controller?: string | null, values?: JsValue | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetUriByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, action: string, controller: string, values: JsValue | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetUriByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: JsValue | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetRouteValue(this: Microsoft_AspNetCore_Http.HttpContext, key: string): Rewrap<this, unknown | null>;
+  GetUriByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, action?: string | null, controller?: string | null, values?: unknown | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetUriByAction(this: Microsoft_AspNetCore_Routing.LinkGenerator, action: string, controller: string, values: unknown | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetUriByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values: unknown | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetUriByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, endpointName: string, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetUriByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, endpointName: string, values: JsValue | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetUriByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, endpointName: string, values: unknown | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetUriByName(this: Microsoft_AspNetCore_Routing.LinkGenerator, endpointName: string, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetUriByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, page?: string | null, handler?: string | null, values?: JsValue | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetUriByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, page: string, handler: string | null, values: JsValue | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetUriByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string | null, values: JsValue | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetUriByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, page?: string | null, handler?: string | null, values?: unknown | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetUriByPage(this: Microsoft_AspNetCore_Routing.LinkGenerator, page: string, handler: string | null, values: unknown | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetUriByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string | null, values: unknown | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetUriByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, httpContext: Microsoft_AspNetCore_Http.HttpContext, routeName: string | null, values?: Microsoft_AspNetCore_Routing.RouteValueDictionary | null, scheme?: string | null, host?: System.Nullable_1<Microsoft_AspNetCore_Http.HostString>, pathBase?: System.Nullable_1<Microsoft_AspNetCore_Http.PathString>, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
-  GetUriByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, routeName: string | null, values: JsValue | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
+  GetUriByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, routeName: string | null, values: unknown | null, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   GetUriByRouteValues(this: Microsoft_AspNetCore_Routing.LinkGenerator, routeName: string | null, values: Microsoft_AspNetCore_Routing.RouteValueDictionary, scheme: string, host: Microsoft_AspNetCore_Http.HostString, pathBase?: Microsoft_AspNetCore_Http.PathString, fragment?: Microsoft_AspNetCore_Http.FragmentString, options?: Microsoft_AspNetCore_Routing.LinkOptions | null): Rewrap<this, string | null>;
   MapDelete(this: Microsoft_AspNetCore_Routing.IRouteBuilder, template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapDelete(this: Microsoft_AspNetCore_Routing.IRouteBuilder, template: string, handler: System.Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapGet(this: Microsoft_AspNetCore_Routing.IRouteBuilder, template: string, handler: Microsoft_AspNetCore_Http.RequestDelegate): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapGet(this: Microsoft_AspNetCore_Routing.IRouteBuilder, template: string, handler: System.Func_4<Microsoft_AspNetCore_Http.HttpRequest, Microsoft_AspNetCore_Http.HttpResponse, Microsoft_AspNetCore_Routing.RouteData, System_Threading_Tasks.Task>): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
-  MapIdentityApi<TUser>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
+  MapIdentityApi<TUser extends (object | null)>(this: Microsoft_AspNetCore_Routing.IEndpointRouteBuilder): Rewrap<this, Microsoft_AspNetCore_Builder.IEndpointConventionBuilder>;
   MapMiddlewareDelete(this: Microsoft_AspNetCore_Routing.IRouteBuilder, template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapMiddlewareGet(this: Microsoft_AspNetCore_Routing.IRouteBuilder, template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
   MapMiddlewarePost(this: Microsoft_AspNetCore_Routing.IRouteBuilder, template: string, action: System.Action_1<Microsoft_AspNetCore_Builder.IApplicationBuilder>): Rewrap<this, Microsoft_AspNetCore_Routing.IRouteBuilder>;
@@ -1460,7 +1457,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_Routing {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Routing
 interface __TsonicExtApplier_Microsoft_AspNetCore_Routing {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Routing;
 }
 
@@ -1469,102 +1466,86 @@ export type ExtensionMethods_Microsoft_AspNetCore_Routing<TShape> =
   : TShape extends void ? void
   : TShape & __TsonicWithExt<TShape, "Microsoft.AspNetCore.Routing", __TsonicExtApplier_Microsoft_AspNetCore_Routing> & __TsonicExtMethods_Microsoft_AspNetCore_Routing;
 
-// Extension method table for namespace: Microsoft.AspNetCore.Server.IIS
-interface __TsonicExtMethods_Microsoft_AspNetCore_Server_IIS {
-  GetIISServerVariable(this: Microsoft_AspNetCore_Http.HttpContext, variableName: string): Rewrap<this, string | null>;
-}
-
-// Generic helper type for extension methods in namespace: Microsoft.AspNetCore.Server.IIS
-interface __TsonicExtApplier_Microsoft_AspNetCore_Server_IIS {
-  __tsonic_shape: JsValue;
-  __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_Server_IIS;
-}
-
-export type ExtensionMethods_Microsoft_AspNetCore_Server_IIS<TShape> =
-  TShape extends null | undefined ? TShape
-  : TShape extends void ? void
-  : TShape & __TsonicWithExt<TShape, "Microsoft.AspNetCore.Server.IIS", __TsonicExtApplier_Microsoft_AspNetCore_Server_IIS> & __TsonicExtMethods_Microsoft_AspNetCore_Server_IIS;
-
 // Extension method table for namespace: Microsoft.AspNetCore.SignalR
 interface __TsonicExtMethods_Microsoft_AspNetCore_SignalR {
   AddFilter(this: Microsoft_AspNetCore_SignalR.HubOptions, hubFilter: Microsoft_AspNetCore_SignalR.IHubFilter): Rewrap<this, void>;
-  AddFilter<TFilter extends Microsoft_AspNetCore_SignalR.IHubFilter>(this: Microsoft_AspNetCore_SignalR.HubOptions): Rewrap<this, void>;
+  AddFilter<TFilter extends unknown & Microsoft_AspNetCore_SignalR.IHubFilter>(this: Microsoft_AspNetCore_SignalR.HubOptions): Rewrap<this, void>;
   AddFilter(this: Microsoft_AspNetCore_SignalR.HubOptions, filterType: System.Type): Rewrap<this, void>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): Rewrap<this, T>;
-  AllExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string, connection8: string): Rewrap<this, T>;
-  Clients<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): Rewrap<this, T>;
+  AllExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, excludedConnectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connection1: string, connection2: string, connection3: string, connection4: string, connection5: string, connection6: string, connection7: string, connection8: string): Rewrap<this, T>;
+  Clients<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, connectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
   GetHttpContext(this: Microsoft_AspNetCore_SignalR.HubCallerContext): Rewrap<this, Microsoft_AspNetCore_Http.HttpContext | null>;
   GetHttpContext(this: Microsoft_AspNetCore_SignalR.HubConnectionContext): Rewrap<this, Microsoft_AspNetCore_Http.HttpContext | null>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): Rewrap<this, T>;
-  GroupExcept<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string, group8: string): Rewrap<this, T>;
-  Groups<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupNames: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, arg8: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, arg8: JsValue | null, arg9: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
-  InvokeAsync<T>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, arg8: JsValue | null, arg9: JsValue | null, arg10: JsValue | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionId1: string, excludedConnectionId2: string, excludedConnectionId3: string, excludedConnectionId4: string, excludedConnectionId5: string, excludedConnectionId6: string, excludedConnectionId7: string, excludedConnectionId8: string): Rewrap<this, T>;
+  GroupExcept<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupName: string, excludedConnectionIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, group1: string, group2: string, group3: string, group4: string, group5: string, group6: string, group7: string, group8: string): Rewrap<this, T>;
+  Groups<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, groupNames: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, arg8: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, arg8: unknown | null, arg9: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
+  InvokeAsync<T extends unknown>(this: Microsoft_AspNetCore_SignalR.ISingleClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, arg8: unknown | null, arg9: unknown | null, arg10: unknown | null, cancellationToken: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<T>>;
   SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, arg8: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, arg8: JsValue | null, arg9: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: JsValue | null, arg2: JsValue | null, arg3: JsValue | null, arg4: JsValue | null, arg5: JsValue | null, arg6: JsValue | null, arg7: JsValue | null, arg8: JsValue | null, arg9: JsValue | null, arg10: JsValue | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
-  UseHub<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string, user8: string): Rewrap<this, T>;
-  Users<T>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, userIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, arg8: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, arg8: unknown | null, arg9: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  SendAsync(this: Microsoft_AspNetCore_SignalR.IClientProxy, method: string, arg1: unknown | null, arg2: unknown | null, arg3: unknown | null, arg4: unknown | null, arg5: unknown | null, arg6: unknown | null, arg7: unknown | null, arg8: unknown | null, arg9: unknown | null, arg10: unknown | null, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task>;
+  UseHub<THub extends unknown & Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_Connections.IConnectionBuilder): Rewrap<this, Microsoft_AspNetCore_Connections.IConnectionBuilder>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, user1: string, user2: string, user3: string, user4: string, user5: string, user6: string, user7: string, user8: string): Rewrap<this, T>;
+  Users<T extends unknown>(this: Microsoft_AspNetCore_SignalR.IHubClients_1<T>, userIds: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, T>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.SignalR
 interface __TsonicExtApplier_Microsoft_AspNetCore_SignalR {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_SignalR;
 }
 
@@ -1580,7 +1561,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_SignalR_Protocol {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.SignalR.Protocol
 interface __TsonicExtApplier_Microsoft_AspNetCore_SignalR_Protocol {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_SignalR_Protocol;
 }
 
@@ -1596,7 +1577,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_WebSockets {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.WebSockets
 interface __TsonicExtApplier_Microsoft_AspNetCore_WebSockets {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_WebSockets;
 }
 
@@ -1619,7 +1600,7 @@ interface __TsonicExtMethods_Microsoft_AspNetCore_WebUtilities {
 
 // Generic helper type for extension methods in namespace: Microsoft.AspNetCore.WebUtilities
 interface __TsonicExtApplier_Microsoft_AspNetCore_WebUtilities {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_AspNetCore_WebUtilities;
 }
 
@@ -1662,8 +1643,8 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddCacheTagHelperLimits(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, configure: System.Action_1<Microsoft_AspNetCore_Mvc_TagHelpers.CacheTagHelperOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddCacheTagHelperLimits(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, configure: System.Action_1<Microsoft_AspNetCore_Mvc_TagHelpers.CacheTagHelperOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddCascadingAuthenticationState(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddCascadingValue<TValue>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, initialValueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddCascadingValue<TValue>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, initialValueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCascadingValue<TValue extends unknown>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, initialValueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCascadingValue<TValue extends unknown>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, initialValueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddCertificateForwarding(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configure: System.Action_1<Microsoft_AspNetCore_HttpOverrides.CertificateForwardingOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddCircuitOptions(this: Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder, configure: System.Action_1<Microsoft_AspNetCore_Components_Server.CircuitOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
   AddConnections(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
@@ -1680,7 +1661,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddCookie(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddCookie(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, displayName: string | null, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_Cookies.CookieAuthenticationOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddCookiePolicy(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_Builder.CookiePolicyOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddCookiePolicy<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.CookiePolicyOptions, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddCookiePolicy<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.CookiePolicyOptions, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddCookieTempDataProvider(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddCookieTempDataProvider(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.CookieTempDataProviderOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddCookieTempDataProvider(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
@@ -1699,23 +1680,23 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddDirectoryBrowser(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddEndpointsApiExplorer(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddExceptionHandler(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_Builder.ExceptionHandlerOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddExceptionHandler<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.ExceptionHandlerOptions, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddExceptionHandler<T extends Microsoft_AspNetCore_Diagnostics.IExceptionHandler>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddExceptionHandler<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.ExceptionHandlerOptions, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddExceptionHandler<T extends (object | null) & Microsoft_AspNetCore_Diagnostics.IExceptionHandler>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddFormatterMappings(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddFormatterMappings(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddFormatterMappings(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc_Formatters.FormatterMappings>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddHttpContextAccessor(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddHttpLogging(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddHttpLogging(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_HttpLogging.HttpLoggingOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddHttpLoggingInterceptor<T extends Microsoft_AspNetCore_HttpLogging.IHttpLoggingInterceptor>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddHubOptions<THub extends Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_SignalR.ISignalRServerBuilder, configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions_1<THub>>): Rewrap<this, Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
+  AddHttpLoggingInterceptor<T extends (object | null) & Microsoft_AspNetCore_HttpLogging.IHttpLoggingInterceptor>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHubOptions<THub extends unknown & Microsoft_AspNetCore_SignalR.Hub>(this: Microsoft_AspNetCore_SignalR.ISignalRServerBuilder, configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions_1<THub>>): Rewrap<this, Microsoft_AspNetCore_SignalR.ISignalRServerBuilder>;
   AddHubOptions(this: Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder, configure: System.Action_1<Microsoft_AspNetCore_SignalR.HubOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
-  AddIdentity<TUser, TRole>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
-  AddIdentity<TUser, TRole>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
-  AddIdentityApiEndpoints<TUser>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
-  AddIdentityApiEndpoints<TUser>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configure: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
-  AddIdentityCore<TUser>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
-  AddIdentityCore<TUser>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentity<TUser extends (object | null), TRole extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentity<TUser extends (object | null), TRole extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentityApiEndpoints<TUser extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentityApiEndpoints<TUser extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configure: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentityCore<TUser extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
+  AddIdentityCore<TUser extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_AspNetCore_Identity.IdentityOptions>): Rewrap<this, Microsoft_AspNetCore_Identity.IdentityBuilder>;
   AddInteractiveServerComponents(this: Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder, configure?: System.Action_1<Microsoft_AspNetCore_Components_Server.CircuitOptions> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServerSideBlazorBuilder>;
   AddJsonOptions(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, configure: System.Action_1<Microsoft_AspNetCore_Mvc.JsonOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   AddJsonOptions(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, configure: System.Action_1<Microsoft_AspNetCore_Mvc.JsonOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
@@ -1743,8 +1724,8 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddMvcOptions(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
   AddOAuth(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddOAuth(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: System.Action_1<Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth<TOptions extends Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions, THandler extends Microsoft_AspNetCore_Authentication_OAuth.OAuthHandler_1<TOptions>>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
-  AddOAuth<TOptions extends Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions, THandler extends Microsoft_AspNetCore_Authentication_OAuth.OAuthHandler_1<TOptions>>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth<TOptions extends unknown & Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions, THandler extends unknown & Microsoft_AspNetCore_Authentication_OAuth.OAuthHandler_1<TOptions>>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
+  AddOAuth<TOptions extends unknown & Microsoft_AspNetCore_Authentication_OAuth.OAuthOptions, THandler extends unknown & Microsoft_AspNetCore_Authentication_OAuth.OAuthHandler_1<TOptions>>(this: Microsoft_AspNetCore_Authentication.AuthenticationBuilder, authenticationScheme: string, displayName: string, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_AspNetCore_Authentication.AuthenticationBuilder>;
   AddOutputCache(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddOutputCache(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_OutputCaching.OutputCacheOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddPageRoute(this: Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection, pageName: string, route: string): Rewrap<this, Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection>;
@@ -1762,7 +1743,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddRequestDecompression(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddRequestDecompression(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_RequestDecompression.RequestDecompressionOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddRequestLocalization(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_Builder.RequestLocalizationOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddRequestLocalization<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.RequestLocalizationOptions, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddRequestLocalization<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_2<Microsoft_AspNetCore_Builder.RequestLocalizationOptions, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddRequestTimeouts(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddRequestTimeouts(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configure: System.Action_1<Microsoft_AspNetCore_Http_Timeouts.RequestTimeoutOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddResponseCaching(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
@@ -1825,15 +1806,15 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   ConfigureFilter(this: Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection, filter: Microsoft_AspNetCore_Mvc_Filters.IFilterMetadata): Rewrap<this, Microsoft_AspNetCore_Mvc_ApplicationModels.PageConventionCollection>;
   ConfigureHttpJsonOptions(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<Microsoft_AspNetCore_Http_Json.JsonOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   ConfigureViews(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, setupAction: System.Action_1<Microsoft_AspNetCore_Mvc.MvcViewOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  InitializeTagHelper<TTagHelper extends Microsoft_AspNetCore_Razor_TagHelpers.ITagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
-  InitializeTagHelper<TTagHelper extends Microsoft_AspNetCore_Razor_TagHelpers.ITagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  RegisterPersistentService<TPersistentService>(this: Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder, renderMode: Microsoft_AspNetCore_Components.IComponentRenderMode): Rewrap<this, Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder>;
-  RemoveType<TApplicationModelConvention extends Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>): Rewrap<this, void>;
+  InitializeTagHelper<TTagHelper extends unknown & Microsoft_AspNetCore_Razor_TagHelpers.ITagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
+  InitializeTagHelper<TTagHelper extends unknown & Microsoft_AspNetCore_Razor_TagHelpers.ITagHelper>(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, initialize: System.Action_2<TTagHelper, Microsoft_AspNetCore_Mvc_Rendering.ViewContext>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
+  RegisterPersistentService<TPersistentService extends unknown>(this: Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder, renderMode: Microsoft_AspNetCore_Components.IComponentRenderMode): Rewrap<this, Microsoft_Extensions_DependencyInjection.IRazorComponentsBuilder>;
+  RemoveType<TApplicationModelConvention extends unknown & Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>): Rewrap<this, void>;
   RemoveType(this: System_Collections_Generic.IList_1<Microsoft_AspNetCore_Mvc_ApplicationModels.IApplicationModelConvention>, type: System.Type): Rewrap<this, void>;
   SetCompatibilityVersion(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, version: Microsoft_AspNetCore_Mvc.CompatibilityVersion): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   SetCompatibilityVersion(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, version: Microsoft_AspNetCore_Mvc.CompatibilityVersion): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
-  TryAddCascadingValue<TValue>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, valueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, void>;
-  TryAddCascadingValue<TValue>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, valueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, void>;
+  TryAddCascadingValue<TValue extends unknown>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, valueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, void>;
+  TryAddCascadingValue<TValue extends unknown>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, valueFactory: System.Func_2<System.IServiceProvider, TValue>): Rewrap<this, void>;
   WithRazorPagesAtContentRoot(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   WithRazorPagesRoot(this: Microsoft_Extensions_DependencyInjection.IMvcBuilder, rootDirectory: string): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcBuilder>;
   WithRazorPagesRoot(this: Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder, rootDirectory: string): Rewrap<this, Microsoft_Extensions_DependencyInjection.IMvcCoreBuilder>;
@@ -1841,7 +1822,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_DependencyInjection;
 }
 
@@ -1861,7 +1842,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_Hosting {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Hosting
 interface __TsonicExtApplier_Microsoft_Extensions_Hosting {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Hosting;
 }
 
@@ -1872,35 +1853,35 @@ export type ExtensionMethods_Microsoft_Extensions_Hosting<TShape> =
 
 // Extension method table for namespace: Microsoft.JSInterop
 interface __TsonicExtMethods_Microsoft_JSInterop {
-  GetValueAsync<TValue>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  GetValueAsync<TValue>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  InvokeAsync<TValue>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
-  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, cancellationToken: System_Threading.CancellationToken, args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan, args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, cancellationToken: System_Threading.CancellationToken, args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan, args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
-  InvokeVoid(this: Microsoft_JSInterop.IJSInProcessObjectReference, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, void>;
-  InvokeVoid(this: Microsoft_JSInterop.IJSInProcessRuntime, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, void>;
-  InvokeVoidAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
-  InvokeVoidAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
-  InvokeVoidAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
-  InvokeVoidAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
-  InvokeVoidAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
-  InvokeVoidAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan, ...args: (JsValue | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
-  SetValueAsync<TValue>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, value: TValue, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask>;
-  SetValueAsync<TValue>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, value: TValue, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  GetValueAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  GetValueAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<TValue>>;
+  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, cancellationToken: System_Threading.CancellationToken, args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan, args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, cancellationToken: System_Threading.CancellationToken, args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeConstructorAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan, args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask_1<Microsoft_JSInterop.IJSObjectReference>>;
+  InvokeVoid(this: Microsoft_JSInterop.IJSInProcessObjectReference, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, void>;
+  InvokeVoid(this: Microsoft_JSInterop.IJSInProcessRuntime, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, void>;
+  InvokeVoidAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  InvokeVoidAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  InvokeVoidAsync(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, timeout: System.TimeSpan, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  InvokeVoidAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  InvokeVoidAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, cancellationToken: System_Threading.CancellationToken, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  InvokeVoidAsync(this: Microsoft_JSInterop.IJSRuntime, identifier: string, timeout: System.TimeSpan, ...args: (unknown | null)[] | null): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  SetValueAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSObjectReference, identifier: string, value: TValue, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask>;
+  SetValueAsync<TValue extends unknown>(this: Microsoft_JSInterop.IJSRuntime, identifier: string, value: TValue, timeout: System.TimeSpan): Rewrap<this, System_Threading_Tasks.ValueTask>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.JSInterop
 interface __TsonicExtApplier_Microsoft_JSInterop {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_JSInterop;
 }
 
@@ -1917,7 +1898,7 @@ interface __TsonicExtMethods_Microsoft_Net_Http_Headers {
 
 // Generic helper type for extension methods in namespace: Microsoft.Net.Http.Headers
 interface __TsonicExtApplier_Microsoft_Net_Http_Headers {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Net_Http_Headers;
 }
 
@@ -1933,7 +1914,7 @@ interface __TsonicExtMethods_System_Security_Claims {
 
 // Generic helper type for extension methods in namespace: System.Security.Claims
 interface __TsonicExtApplier_System_Security_Claims {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_System_Security_Claims;
 }
 

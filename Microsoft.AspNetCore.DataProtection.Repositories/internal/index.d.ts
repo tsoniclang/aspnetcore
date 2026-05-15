@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.DataProtection
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -49,7 +49,7 @@ export interface IXmlRepository$instance {
 
 export type IXmlRepository = IXmlRepository$instance;
 
-export interface FileSystemXmlRepository$instance {
+export interface FileSystemXmlRepository$instance extends IDeletableXmlRepository$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_Repositories_FileSystemXmlRepository: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;
@@ -76,7 +76,7 @@ export interface __FileSystemXmlRepository$views {
 export type FileSystemXmlRepository = FileSystemXmlRepository$instance & __FileSystemXmlRepository$views;
 
 
-export interface RegistryXmlRepository$instance {
+export interface RegistryXmlRepository$instance extends IDeletableXmlRepository$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_DataProtection_Repositories_RegistryXmlRepository: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_DataProtection_Repositories_IDeletableXmlRepository: never;

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core, Microsoft.AspNetCore.Mvc.Formatters.Xml
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -93,7 +93,7 @@ export interface ModelMetadataIdentity$instance {
     readonly ParameterInfo: ParameterInfo | null;
     readonly PropertyInfo: PropertyInfo | null;
     Equals(other: ModelMetadataIdentity): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -143,12 +143,12 @@ export type BindingMetadata = BindingMetadata$instance;
 export interface BindingMetadataProviderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_BindingMetadataProviderContext: never;
 
-    readonly Attributes: IReadOnlyList_1<JsValue>;
+    readonly Attributes: IReadOnlyList_1<unknown>;
     readonly BindingMetadata: BindingMetadata;
     readonly Key: ModelMetadataIdentity;
-    readonly ParameterAttributes: IReadOnlyList_1<JsValue> | null;
-    readonly PropertyAttributes: IReadOnlyList_1<JsValue> | null;
-    readonly TypeAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly ParameterAttributes: IReadOnlyList_1<unknown> | null;
+    readonly PropertyAttributes: IReadOnlyList_1<unknown> | null;
+    readonly TypeAttributes: IReadOnlyList_1<unknown> | null;
 }
 
 
@@ -159,7 +159,7 @@ export const BindingMetadataProviderContext: {
 
 export type BindingMetadataProviderContext = BindingMetadataProviderContext$instance;
 
-export interface BindingSourceMetadataProvider$instance extends IMetadataDetailsProvider, IBindingMetadataProvider$instance {
+export interface BindingSourceMetadataProvider$instance extends IBindingMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_BindingSourceMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
@@ -183,7 +183,7 @@ export interface __BindingSourceMetadataProvider$views {
 export type BindingSourceMetadataProvider = BindingSourceMetadataProvider$instance & __BindingSourceMetadataProvider$views;
 
 
-export interface DataMemberRequiredBindingMetadataProvider$instance extends IMetadataDetailsProvider, IBindingMetadataProvider$instance {
+export interface DataMemberRequiredBindingMetadataProvider$instance extends IBindingMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DataMemberRequiredBindingMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
@@ -210,8 +210,8 @@ export interface DefaultMetadataDetails$instance {
 
     get BindingMetadata(): BindingMetadata | null;
     set BindingMetadata(value: BindingMetadata | null);
-    get BoundConstructorInvoker(): Func_2<(JsValue | null)[], JsValue> | null;
-    set BoundConstructorInvoker(value: Func_2<(JsValue | null)[], JsValue> | null);
+    get BoundConstructorInvoker(): Func_2<(unknown | null)[], unknown> | null;
+    set BoundConstructorInvoker(value: Func_2<(unknown | null)[], unknown> | null);
     get BoundConstructorParameters(): ModelMetadata[] | null;
     set BoundConstructorParameters(value: ModelMetadata[] | null);
     get ContainerMetadata(): ModelMetadata | null;
@@ -222,10 +222,10 @@ export interface DefaultMetadataDetails$instance {
     readonly ModelAttributes: ModelAttributes;
     get Properties(): ModelMetadata[] | null;
     set Properties(value: ModelMetadata[] | null);
-    get PropertyGetter(): Func_2<JsValue, JsValue | null> | null;
-    set PropertyGetter(value: Func_2<JsValue, JsValue | null> | null);
-    get PropertySetter(): Action_2<JsValue, JsValue | null> | null;
-    set PropertySetter(value: Action_2<JsValue, JsValue | null> | null);
+    get PropertyGetter(): Func_2<unknown, unknown | null> | null;
+    set PropertyGetter(value: Func_2<unknown, unknown | null> | null);
+    get PropertySetter(): Action_2<unknown, unknown | null> | null;
+    set PropertySetter(value: Action_2<unknown, unknown | null> | null);
     get ValidationMetadata(): ValidationMetadata | null;
     set ValidationMetadata(value: ValidationMetadata | null);
 }
@@ -274,20 +274,20 @@ export const DefaultModelBindingMessageProvider: {
 
 export type DefaultModelBindingMessageProvider = DefaultModelBindingMessageProvider$instance;
 
-export interface DefaultModelMetadata$instance extends ModelMetadata, System_Internal.IEquatable_1<ModelMetadata> {
+export interface DefaultModelMetadata$instance extends ModelMetadata, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelMetadataProvider$instance, System_Internal.IEquatable_1<ModelMetadata> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DefaultModelMetadata: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly AdditionalValues: IReadOnlyDictionary_2<JsValue, JsValue>;
+    readonly AdditionalValues: IReadOnlyDictionary_2<unknown, unknown>;
     readonly Attributes: ModelAttributes;
     readonly BinderModelName: string | null;
     readonly BinderType: Type | null;
     readonly BindingMetadata: BindingMetadata;
     readonly BindingSource: BindingSource | null;
     readonly BoundConstructor: ModelMetadata | null;
-    readonly BoundConstructorInvoker: Func_2<(JsValue | null)[], JsValue> | null;
+    readonly BoundConstructorInvoker: Func_2<(unknown | null)[], unknown> | null;
     readonly BoundConstructorParameters: IReadOnlyList_1<ModelMetadata> | null;
     readonly ContainerMetadata: ModelMetadata | null;
     readonly ConvertEmptyStringToNull: boolean;
@@ -316,8 +316,8 @@ export interface DefaultModelMetadata$instance extends ModelMetadata, System_Int
     readonly Placeholder: string | null;
     readonly Properties: ModelPropertyCollection;
     readonly PropertyFilterProvider: IPropertyFilterProvider | null;
-    readonly PropertyGetter: Func_2<JsValue, JsValue | null> | null;
-    readonly PropertySetter: Action_2<JsValue, JsValue | null> | null;
+    readonly PropertyGetter: Func_2<unknown, unknown | null> | null;
+    readonly PropertySetter: Action_2<unknown, unknown | null> | null;
     readonly PropertyValidationFilter: IPropertyValidationFilter | null;
     readonly ShowForDisplay: boolean;
     readonly ShowForEdit: boolean;
@@ -325,7 +325,7 @@ export interface DefaultModelMetadata$instance extends ModelMetadata, System_Int
     readonly TemplateHint: string | null;
     readonly ValidateChildren: boolean;
     readonly ValidationMetadata: ValidationMetadata;
-    readonly ValidatorMetadata: IReadOnlyList_1<JsValue>;
+    readonly ValidatorMetadata: IReadOnlyList_1<unknown>;
     GetMetadataForProperties(modelType: Type): IEnumerable_1<ModelMetadata>;
     GetMetadataForType(modelType: Type): ModelMetadata;
 }
@@ -344,7 +344,7 @@ export interface __DefaultModelMetadata$views {
 export type DefaultModelMetadata = DefaultModelMetadata$instance & __DefaultModelMetadata$views;
 
 
-export interface DefaultModelMetadataProvider$instance extends ModelMetadataProvider {
+export interface DefaultModelMetadataProvider$instance extends ModelMetadataProvider, Microsoft_AspNetCore_Mvc_ModelBinding_Internal.IModelMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DefaultModelMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider: never;
@@ -378,7 +378,7 @@ export type DefaultModelMetadataProvider = DefaultModelMetadataProvider$instance
 export interface DisplayMetadata$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DisplayMetadata: never;
 
-    readonly AdditionalValues: IDictionary_2<JsValue, JsValue>;
+    readonly AdditionalValues: IDictionary_2<unknown, unknown>;
     ConvertEmptyStringToNull: boolean;
     get DataTypeName(): string | null;
     set DataTypeName(value: string | null);
@@ -426,11 +426,11 @@ export type DisplayMetadata = DisplayMetadata$instance;
 export interface DisplayMetadataProviderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DisplayMetadataProviderContext: never;
 
-    readonly Attributes: IReadOnlyList_1<JsValue>;
+    readonly Attributes: IReadOnlyList_1<unknown>;
     readonly DisplayMetadata: DisplayMetadata;
     readonly Key: ModelMetadataIdentity;
-    readonly PropertyAttributes: IReadOnlyList_1<JsValue> | null;
-    readonly TypeAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly PropertyAttributes: IReadOnlyList_1<unknown> | null;
+    readonly TypeAttributes: IReadOnlyList_1<unknown> | null;
 }
 
 
@@ -441,7 +441,7 @@ export const DisplayMetadataProviderContext: {
 
 export type DisplayMetadataProviderContext = DisplayMetadataProviderContext$instance;
 
-export interface ExcludeBindingMetadataProvider$instance extends IMetadataDetailsProvider, IBindingMetadataProvider$instance {
+export interface ExcludeBindingMetadataProvider$instance extends IBindingMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ExcludeBindingMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider: never;
@@ -486,7 +486,7 @@ export const ModelBindingMessageProvider: (abstract new() => ModelBindingMessage
 
 export type ModelBindingMessageProvider = ModelBindingMessageProvider$instance;
 
-export interface SystemTextJsonValidationMetadataProvider$instance extends IMetadataDetailsProvider, IDisplayMetadataProvider$instance, IValidationMetadataProvider$instance {
+export interface SystemTextJsonValidationMetadataProvider$instance extends IDisplayMetadataProvider$instance, IValidationMetadataProvider$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_SystemTextJsonValidationMetadataProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider: never;
@@ -525,7 +525,7 @@ export interface ValidationMetadata$instance {
     set ValidateChildren(value: Nullable_1<System_Internal.Boolean> | boolean);
     get ValidationModelName(): string | null;
     set ValidationModelName(value: string | null);
-    readonly ValidatorMetadata: IList_1<JsValue>;
+    readonly ValidatorMetadata: IList_1<unknown>;
 }
 
 
@@ -539,11 +539,11 @@ export type ValidationMetadata = ValidationMetadata$instance;
 export interface ValidationMetadataProviderContext$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ValidationMetadataProviderContext: never;
 
-    readonly Attributes: IReadOnlyList_1<JsValue>;
+    readonly Attributes: IReadOnlyList_1<unknown>;
     readonly Key: ModelMetadataIdentity;
-    readonly ParameterAttributes: IReadOnlyList_1<JsValue> | null;
-    readonly PropertyAttributes: IReadOnlyList_1<JsValue> | null;
-    readonly TypeAttributes: IReadOnlyList_1<JsValue> | null;
+    readonly ParameterAttributes: IReadOnlyList_1<unknown> | null;
+    readonly PropertyAttributes: IReadOnlyList_1<unknown> | null;
+    readonly TypeAttributes: IReadOnlyList_1<unknown> | null;
     readonly ValidationMetadata: ValidationMetadata;
 }
 
@@ -557,7 +557,7 @@ export type ValidationMetadataProviderContext = ValidationMetadataProviderContex
 
 export abstract class MetadataDetailsProviderExtensions$instance {
     static RemoveType(list: IList_1<IMetadataDetailsProvider>, type: Type): void;
-    static RemoveType<TMetadataDetailsProvider extends IMetadataDetailsProvider>(list: IList_1<IMetadataDetailsProvider>): void;
+    static RemoveType<TMetadataDetailsProvider extends unknown & IMetadataDetailsProvider>(list: IList_1<IMetadataDetailsProvider>): void;
 }
 
 

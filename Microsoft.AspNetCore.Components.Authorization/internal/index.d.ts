@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components.Authorization
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -99,8 +99,8 @@ export interface AuthorizeRouteView$instance extends RouteView, Microsoft_AspNet
     set Authorizing(value: RenderFragment | null);
     get NotAuthorized(): RenderFragment_1<AuthenticationState> | null;
     set NotAuthorized(value: RenderFragment_1<AuthenticationState> | null);
-    get Resource(): JsValue | null;
-    set Resource(value: JsValue | null);
+    get Resource(): unknown | null;
+    set Resource(value: unknown | null);
     Render(builder: RenderTreeBuilder): void;
 }
 
@@ -161,8 +161,8 @@ export interface AuthorizeViewCore$instance extends ComponentBase, Microsoft_Asp
     set ChildContent(value: RenderFragment_1<AuthenticationState> | null);
     get NotAuthorized(): RenderFragment_1<AuthenticationState> | null;
     set NotAuthorized(value: RenderFragment_1<AuthenticationState> | null);
-    get Resource(): JsValue | null;
-    set Resource(value: JsValue | null);
+    get Resource(): unknown | null;
+    set Resource(value: unknown | null);
     BuildRenderTree(builder: RenderTreeBuilder): void;
     GetAuthorizeData(): IAuthorizeData[] | null;
     OnParametersSetAsync(): Task;

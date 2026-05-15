@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components, Microsoft.AspNetCore.Components.Web
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -60,7 +60,7 @@ export enum RenderTreeFrameType {
 }
 
 
-export interface ArrayBuilderSegment_1$instance<T> {
+export interface ArrayBuilderSegment_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_ArrayBuilderSegment_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -73,13 +73,13 @@ export interface ArrayBuilderSegment_1$instance<T> {
 
 
 export const ArrayBuilderSegment_1: {
-    new<T>(): ArrayBuilderSegment_1<T>;
+    new<T extends unknown>(): ArrayBuilderSegment_1<T>;
 };
 
 
-export type ArrayBuilderSegment_1<T> = ArrayBuilderSegment_1$instance<T> & { readonly [index: number]: T; };
+export type ArrayBuilderSegment_1<T extends unknown> = ArrayBuilderSegment_1$instance<T> & { readonly [index: number]: T; };
 
-export interface ArrayRange_1$instance<T> {
+export interface ArrayRange_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1: never;
 
     readonly Array: T[];
@@ -89,11 +89,11 @@ export interface ArrayRange_1$instance<T> {
 
 
 export const ArrayRange_1: {
-    new<T>(array: T[], count: int): ArrayRange_1<T>;
+    new<T extends unknown>(array: T[], count: int): ArrayRange_1<T>;
 };
 
 
-export type ArrayRange_1<T> = ArrayRange_1$instance<T>;
+export type ArrayRange_1<T extends unknown> = ArrayRange_1$instance<T>;
 
 export interface NamedEventChange$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_NamedEventChange: never;
@@ -170,17 +170,17 @@ export interface RenderTreeFrame$instance {
     readonly AttributeEventHandlerId: ulong;
     readonly AttributeEventUpdatesAttributeName: string;
     readonly AttributeName: string;
-    readonly AttributeValue: JsValue;
+    readonly AttributeValue: unknown;
     readonly Component: IComponent;
     readonly ComponentFrameFlags: ComponentFrameFlags;
     readonly ComponentId: int;
-    readonly ComponentKey: JsValue;
-    readonly ComponentReferenceCaptureAction: Action_1<JsValue>;
+    readonly ComponentKey: unknown;
+    readonly ComponentReferenceCaptureAction: Action_1<unknown>;
     readonly ComponentReferenceCaptureParentFrameIndex: int;
     readonly ComponentRenderMode: IComponentRenderMode;
     readonly ComponentSubtreeLength: int;
     readonly ComponentType: Type;
-    readonly ElementKey: JsValue;
+    readonly ElementKey: unknown;
     readonly ElementName: string;
     readonly ElementReferenceCaptureAction: Action_1<ElementReference>;
     readonly ElementReferenceCaptureId: string;
@@ -207,7 +207,7 @@ export interface EventFieldInfo$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Components_RenderTree_EventFieldInfo: never;
 
     ComponentId: int;
-    FieldValue: JsValue;
+    FieldValue: unknown;
 }
 
 

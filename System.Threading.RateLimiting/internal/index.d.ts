@@ -3,7 +3,7 @@
 // Assembly: System.Threading.RateLimiting
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -19,7 +19,7 @@ export enum QueueProcessingOrder {
 }
 
 
-export interface RateLimitPartition_1$instance<TKey> {
+export interface RateLimitPartition_1$instance<TKey extends unknown> {
     readonly __tsonic_type_System_Threading_RateLimiting_RateLimitPartition_1: never;
 
     readonly Factory: Func_2<TKey, RateLimiter>;
@@ -28,11 +28,11 @@ export interface RateLimitPartition_1$instance<TKey> {
 
 
 export const RateLimitPartition_1: {
-    new<TKey>(partitionKey: TKey, factory: Func_2<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
+    new<TKey extends unknown>(partitionKey: TKey, factory: Func_2<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
 };
 
 
-export type RateLimitPartition_1<TKey> = RateLimitPartition_1$instance<TKey>;
+export type RateLimitPartition_1<TKey extends unknown> = RateLimitPartition_1$instance<TKey>;
 
 export interface ConcurrencyLimiter$instance extends RateLimiter {
     readonly __tsonic_type_System_Threading_RateLimiting_ConcurrencyLimiter: never;
@@ -117,13 +117,13 @@ export const FixedWindowRateLimiterOptions: {
 
 export type FixedWindowRateLimiterOptions = FixedWindowRateLimiterOptions$instance;
 
-export interface MetadataName_1$instance<T> {
+export interface MetadataName_1$instance<T extends unknown> {
     readonly __tsonic_type_System_Threading_RateLimiting_MetadataName_1: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Name: string;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     Equals(other: MetadataName_1<T> | null): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -131,13 +131,13 @@ export interface MetadataName_1$instance<T> {
 
 
 export const MetadataName_1: {
-    new<T>(name: string): MetadataName_1<T>;
+    new<T extends unknown>(name: string): MetadataName_1<T>;
 };
 
 
-export type MetadataName_1<T> = MetadataName_1$instance<T>;
+export type MetadataName_1<T extends unknown> = MetadataName_1$instance<T>;
 
-export interface PartitionedRateLimiter_1$instance<TResource> {
+export interface PartitionedRateLimiter_1$instance<TResource extends unknown> {
     readonly __tsonic_type_System_Threading_RateLimiting_PartitionedRateLimiter_1: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -152,15 +152,15 @@ export interface PartitionedRateLimiter_1$instance<TResource> {
     DisposeAsync(): ValueTask;
     DisposeAsyncCore(): ValueTask;
     GetStatistics(resource: TResource): RateLimiterStatistics | null;
-    WithTranslatedKey<TOuter>(keyAdapter: Func_2<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
+    WithTranslatedKey<TOuter extends unknown>(keyAdapter: Func_2<TOuter, TResource>, leaveOpen: boolean): PartitionedRateLimiter_1<TOuter>;
 }
 
 
-export const PartitionedRateLimiter_1: (abstract new<TResource>() => PartitionedRateLimiter_1<TResource>) & {
+export const PartitionedRateLimiter_1: (abstract new<TResource extends unknown>() => PartitionedRateLimiter_1<TResource>) & {
 };
 
 
-export type PartitionedRateLimiter_1<TResource> = PartitionedRateLimiter_1$instance<TResource>;
+export type PartitionedRateLimiter_1<TResource extends unknown> = PartitionedRateLimiter_1$instance<TResource>;
 
 export interface RateLimiter$instance {
     readonly __tsonic_type_System_Threading_RateLimiting_RateLimiter: never;
@@ -214,9 +214,9 @@ export interface RateLimitLease$instance {
     readonly MetadataNames: IEnumerable_1<System_Internal.String>;
     Dispose(): void;
     Dispose(disposing: boolean): void;
-    GetAllMetadata(): IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>>;
-    TryGetMetadata(metadataName: string, metadata: JsValue | null): boolean;
-    TryGetMetadata<T>(metadataName: MetadataName_1<T>, metadata: T): boolean;
+    GetAllMetadata(): IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>;
+    TryGetMetadata(metadataName: string, metadata: unknown | null): boolean;
+    TryGetMetadata<T extends unknown>(metadataName: MetadataName_1<T>, metadata: T): boolean;
 }
 
 
@@ -337,27 +337,27 @@ export type TokenBucketRateLimiterOptions = TokenBucketRateLimiterOptions$instan
 export abstract class MetadataName$instance {
     static readonly RetryAfter: MetadataName_1<TimeSpan>;
     static readonly ReasonPhrase: MetadataName_1<System_Internal.String>;
-    static Create<T>(name: string): MetadataName_1<T>;
+    static Create<T extends unknown>(name: string): MetadataName_1<T>;
 }
 
 
 export type MetadataName = MetadataName$instance;
 
 export abstract class PartitionedRateLimiter$instance {
-    static Create<TResource, TPartitionKey>(partitioner: Func_2<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer_1<TPartitionKey> | null): PartitionedRateLimiter_1<TResource>;
-    static CreateChained<TResource>(...limiters: PartitionedRateLimiter_1<TResource>[]): PartitionedRateLimiter_1<TResource>;
+    static Create<TResource extends unknown, TPartitionKey extends unknown>(partitioner: Func_2<TResource, RateLimitPartition_1<TPartitionKey>>, equalityComparer?: IEqualityComparer_1<TPartitionKey> | null): PartitionedRateLimiter_1<TResource>;
+    static CreateChained<TResource extends unknown>(...limiters: PartitionedRateLimiter_1<TResource>[]): PartitionedRateLimiter_1<TResource>;
 }
 
 
 export type PartitionedRateLimiter = PartitionedRateLimiter$instance;
 
 export abstract class RateLimitPartition$instance {
-    static Get<TKey>(partitionKey: TKey, factory: Func_2<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
-    static GetConcurrencyLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, ConcurrencyLimiterOptions>): RateLimitPartition_1<TKey>;
-    static GetFixedWindowLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, FixedWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
-    static GetNoLimiter<TKey>(partitionKey: TKey): RateLimitPartition_1<TKey>;
-    static GetSlidingWindowLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, SlidingWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
-    static GetTokenBucketLimiter<TKey>(partitionKey: TKey, factory: Func_2<TKey, TokenBucketRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static Get<TKey extends unknown>(partitionKey: TKey, factory: Func_2<TKey, RateLimiter>): RateLimitPartition_1<TKey>;
+    static GetConcurrencyLimiter<TKey extends unknown>(partitionKey: TKey, factory: Func_2<TKey, ConcurrencyLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetFixedWindowLimiter<TKey extends unknown>(partitionKey: TKey, factory: Func_2<TKey, FixedWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetNoLimiter<TKey extends unknown>(partitionKey: TKey): RateLimitPartition_1<TKey>;
+    static GetSlidingWindowLimiter<TKey extends unknown>(partitionKey: TKey, factory: Func_2<TKey, SlidingWindowRateLimiterOptions>): RateLimitPartition_1<TKey>;
+    static GetTokenBucketLimiter<TKey extends unknown>(partitionKey: TKey, factory: Func_2<TKey, TokenBucketRateLimiterOptions>): RateLimitPartition_1<TKey>;
 }
 
 

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Identity/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { CookieAuthenticationOptions, CookieValidatePrincipalContext } from './Microsoft.AspNetCore.Authentication.Cookies/internal/index.js';
 import type { AuthenticationBuilder, AuthenticationProperties, AuthenticationScheme, AuthenticationToken, IAuthenticationSchemeProvider, ISystemClock } from './Microsoft.AspNetCore.Authentication/internal/index.js';
@@ -32,8 +36,8 @@ export { IdentityConstants as IdentityConstants } from './Microsoft.AspNetCore.I
 export { IdentityCookiesBuilder as IdentityCookiesBuilder } from './Microsoft.AspNetCore.Identity/internal/index.js';
 export { IdentityCookieAuthenticationBuilderExtensions$instance as IdentityCookieAuthenticationBuilderExtensions } from './Microsoft.AspNetCore.Identity/internal/index.js';
 export { IdentityPasskeyOptions as IdentityPasskeyOptions } from './Microsoft.AspNetCore.Identity/internal/index.js';
-export type IEmailSender<TUser> = Internal.IEmailSender_1<TUser>;
-export type IPasskeyHandler<TUser> = Internal.IPasskeyHandler_1<TUser>;
+export type IEmailSender<TUser extends (object | null)> = Internal.IEmailSender_1<TUser>;
+export type IPasskeyHandler<TUser extends (object | null)> = Internal.IPasskeyHandler_1<TUser>;
 export type ISecurityStampValidator = Internal.ISecurityStampValidator;
 export type ITwoFactorSecurityStampValidator = Internal.ITwoFactorSecurityStampValidator;
 export { PasskeyAssertionContext as PasskeyAssertionContext } from './Microsoft.AspNetCore.Identity/internal/index.js';
@@ -64,33 +68,33 @@ export { IdentitySchemaVersions$instance as IdentitySchemaVersions } from './Mic
 export type ILookupNormalizer = Internal.ILookupNormalizer;
 export type ILookupProtector = Internal.ILookupProtector;
 export type ILookupProtectorKeyRing = Internal.ILookupProtectorKeyRing;
-export type IPasswordHasher<TUser> = Internal.IPasswordHasher_1<TUser>;
-export type IPasswordValidator<TUser> = Internal.IPasswordValidator_1<TUser>;
+export type IPasswordHasher<TUser extends (object | null)> = Internal.IPasswordHasher_1<TUser>;
+export type IPasswordValidator<TUser extends (object | null)> = Internal.IPasswordValidator_1<TUser>;
 export type IPersonalDataProtector = Internal.IPersonalDataProtector;
-export type IProtectedUserStore<TUser> = Internal.IProtectedUserStore_1<TUser>;
-export type IQueryableRoleStore<TRole> = Internal.IQueryableRoleStore_1<TRole>;
-export type IQueryableUserStore<TUser> = Internal.IQueryableUserStore_1<TUser>;
-export type IRoleClaimStore<TRole> = Internal.IRoleClaimStore_1<TRole>;
-export type IRoleStore<TRole> = Internal.IRoleStore_1<TRole>;
-export type IRoleValidator<TRole> = Internal.IRoleValidator_1<TRole>;
-export type IUserAuthenticationTokenStore<TUser> = Internal.IUserAuthenticationTokenStore_1<TUser>;
-export type IUserAuthenticatorKeyStore<TUser> = Internal.IUserAuthenticatorKeyStore_1<TUser>;
-export type IUserClaimsPrincipalFactory<TUser> = Internal.IUserClaimsPrincipalFactory_1<TUser>;
-export type IUserClaimStore<TUser> = Internal.IUserClaimStore_1<TUser>;
-export type IUserConfirmation<TUser> = Internal.IUserConfirmation_1<TUser>;
-export type IUserEmailStore<TUser> = Internal.IUserEmailStore_1<TUser>;
-export type IUserLockoutStore<TUser> = Internal.IUserLockoutStore_1<TUser>;
-export type IUserLoginStore<TUser> = Internal.IUserLoginStore_1<TUser>;
-export type IUserPasskeyStore<TUser> = Internal.IUserPasskeyStore_1<TUser>;
-export type IUserPasswordStore<TUser> = Internal.IUserPasswordStore_1<TUser>;
-export type IUserPhoneNumberStore<TUser> = Internal.IUserPhoneNumberStore_1<TUser>;
-export type IUserRoleStore<TUser> = Internal.IUserRoleStore_1<TUser>;
-export type IUserSecurityStampStore<TUser> = Internal.IUserSecurityStampStore_1<TUser>;
-export type IUserStore<TUser> = Internal.IUserStore_1<TUser>;
-export type IUserTwoFactorRecoveryCodeStore<TUser> = Internal.IUserTwoFactorRecoveryCodeStore_1<TUser>;
-export type IUserTwoFactorStore<TUser> = Internal.IUserTwoFactorStore_1<TUser>;
-export type IUserTwoFactorTokenProvider<TUser> = Internal.IUserTwoFactorTokenProvider_1<TUser>;
-export type IUserValidator<TUser> = Internal.IUserValidator_1<TUser>;
+export type IProtectedUserStore<TUser extends (object | null)> = Internal.IProtectedUserStore_1<TUser>;
+export type IQueryableRoleStore<TRole extends (object | null)> = Internal.IQueryableRoleStore_1<TRole>;
+export type IQueryableUserStore<TUser extends (object | null)> = Internal.IQueryableUserStore_1<TUser>;
+export type IRoleClaimStore<TRole extends (object | null)> = Internal.IRoleClaimStore_1<TRole>;
+export type IRoleStore<TRole extends (object | null)> = Internal.IRoleStore_1<TRole>;
+export type IRoleValidator<TRole extends (object | null)> = Internal.IRoleValidator_1<TRole>;
+export type IUserAuthenticationTokenStore<TUser extends (object | null)> = Internal.IUserAuthenticationTokenStore_1<TUser>;
+export type IUserAuthenticatorKeyStore<TUser extends (object | null)> = Internal.IUserAuthenticatorKeyStore_1<TUser>;
+export type IUserClaimsPrincipalFactory<TUser extends (object | null)> = Internal.IUserClaimsPrincipalFactory_1<TUser>;
+export type IUserClaimStore<TUser extends (object | null)> = Internal.IUserClaimStore_1<TUser>;
+export type IUserConfirmation<TUser extends (object | null)> = Internal.IUserConfirmation_1<TUser>;
+export type IUserEmailStore<TUser extends (object | null)> = Internal.IUserEmailStore_1<TUser>;
+export type IUserLockoutStore<TUser extends (object | null)> = Internal.IUserLockoutStore_1<TUser>;
+export type IUserLoginStore<TUser extends (object | null)> = Internal.IUserLoginStore_1<TUser>;
+export type IUserPasskeyStore<TUser extends (object | null)> = Internal.IUserPasskeyStore_1<TUser>;
+export type IUserPasswordStore<TUser extends (object | null)> = Internal.IUserPasswordStore_1<TUser>;
+export type IUserPhoneNumberStore<TUser extends (object | null)> = Internal.IUserPhoneNumberStore_1<TUser>;
+export type IUserRoleStore<TUser extends (object | null)> = Internal.IUserRoleStore_1<TUser>;
+export type IUserSecurityStampStore<TUser extends (object | null)> = Internal.IUserSecurityStampStore_1<TUser>;
+export type IUserStore<TUser extends (object | null)> = Internal.IUserStore_1<TUser>;
+export type IUserTwoFactorRecoveryCodeStore<TUser extends (object | null)> = Internal.IUserTwoFactorRecoveryCodeStore_1<TUser>;
+export type IUserTwoFactorStore<TUser extends (object | null)> = Internal.IUserTwoFactorStore_1<TUser>;
+export type IUserTwoFactorTokenProvider<TUser extends (object | null)> = Internal.IUserTwoFactorTokenProvider_1<TUser>;
+export type IUserValidator<TUser extends (object | null)> = Internal.IUserValidator_1<TUser>;
 export { LockoutOptions as LockoutOptions } from './Microsoft.AspNetCore.Identity/internal/index.js';
 export { PasswordHasher_1 as PasswordHasher } from './Microsoft.AspNetCore.Identity/internal/index.js';
 export { PasswordHasherCompatibilityMode as PasswordHasherCompatibilityMode } from './Microsoft.AspNetCore.Identity/internal/index.js';
@@ -136,35 +140,35 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type IdentityRole<
-  T1 = __,
+  T1 extends unknown & IEquatable<T1> | __ = __,
 > =
   [T1] extends [__] ? Internal.IdentityRole :
-  [T1] extends [IEquatable<T1>] ? Internal.IdentityRole_1<T1> : never;
+  [T1] extends [unknown & IEquatable<T1>] ? Internal.IdentityRole_1<T1> : never;
 
 export type IdentityUser<
-  T1 = __,
+  T1 extends unknown & IEquatable<T1> | __ = __,
 > =
   [T1] extends [__] ? Internal.IdentityUser :
-  [T1] extends [IEquatable<T1>] ? Internal.IdentityUser_1<T1> : never;
+  [T1] extends [unknown & IEquatable<T1>] ? Internal.IdentityUser_1<T1> : never;
 
 export type PasskeyAssertionResult<
-  T1 = __,
+  T1 extends (object | null) | __ = __,
 > =
   [T1] extends [__] ? Internal.PasskeyAssertionResult :
-  Internal.PasskeyAssertionResult_1<T1>;
+  [T1] extends [(object | null)] ? Internal.PasskeyAssertionResult_1<T1> : never;
 
 export type SecurityStampValidator<
-  T1 = __,
+  T1 extends (object | null) | __ = __,
 > =
   [T1] extends [__] ? Internal.SecurityStampValidator :
-  Internal.SecurityStampValidator_1<T1>;
+  [T1] extends [(object | null)] ? Internal.SecurityStampValidator_1<T1> : never;
 
 export type UserClaimsPrincipalFactory<
-  T1 = __,
-  T2 = __,
+  T1 extends (object | null) | __ = __,
+  T2 extends (object | null) | __ = __,
 > =
-  [T2] extends [__] ? Internal.UserClaimsPrincipalFactory_1<T1> :
-  Internal.UserClaimsPrincipalFactory_2<T1, T2>;
+  [T2] extends [__] ? [T1] extends [(object | null)] ? Internal.UserClaimsPrincipalFactory_1<T1> : never :
+  [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? Internal.UserClaimsPrincipalFactory_2<T1, T2> : never : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Identity as ExtensionMethods } from './__internal/extensions/index.js';

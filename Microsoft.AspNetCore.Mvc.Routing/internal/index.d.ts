@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -80,8 +80,8 @@ export type AttributeRouteInfo = AttributeRouteInfo$instance;
 export interface DynamicRouteValueTransformer$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_DynamicRouteValueTransformer: never;
 
-    get State(): JsValue | null;
-    set State(value: JsValue | null);
+    get State(): unknown | null;
+    set State(value: unknown | null);
     FilterAsync(httpContext: HttpContext, values: RouteValueDictionary, endpoints: IReadOnlyList_1<Endpoint>): ValueTask_1<IReadOnlyList_1<Endpoint>>;
     TransformAsync(httpContext: HttpContext, values: RouteValueDictionary): ValueTask_1<RouteValueDictionary>;
 }
@@ -119,7 +119,7 @@ export interface __HttpMethodAttribute$views {
 export type HttpMethodAttribute = HttpMethodAttribute$instance & __HttpMethodAttribute$views;
 
 
-export interface KnownRouteValueConstraint$instance extends IParameterPolicy, Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
+export interface KnownRouteValueConstraint$instance extends Microsoft_AspNetCore_Routing_Internal.IRouteConstraint$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_KnownRouteValueConstraint: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Routing_IParameterPolicy: never;
@@ -175,8 +175,8 @@ export interface UrlActionContext$instance {
     set Host(value: string | null);
     get Protocol(): string | null;
     set Protocol(value: string | null);
-    get Values(): JsValue | null;
-    set Values(value: JsValue | null);
+    get Values(): unknown | null;
+    set Values(value: unknown | null);
 }
 
 
@@ -187,7 +187,7 @@ export const UrlActionContext: {
 
 export type UrlActionContext = UrlActionContext$instance;
 
-export interface UrlHelper$instance extends UrlHelperBase$instance {
+export interface UrlHelper$instance extends UrlHelperBase$instance, Microsoft_AspNetCore_Mvc_Internal.IUrlHelper$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Routing_UrlHelper: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_IUrlHelper: never;
@@ -220,7 +220,7 @@ export interface UrlHelperBase$instance extends Microsoft_AspNetCore_Mvc_Interna
     Action(actionContext: UrlActionContext): string | null;
     Content(contentPath: string | null): string | null;
     IsLocalUrl(url: string | null): boolean;
-    Link(routeName: string | null, values: JsValue | null): string | null;
+    Link(routeName: string | null, values: unknown | null): string | null;
     RouteUrl(routeContext: UrlRouteContext): string | null;
 }
 
@@ -268,8 +268,8 @@ export interface UrlRouteContext$instance {
     set Protocol(value: string | null);
     get RouteName(): string | null;
     set RouteName(value: string | null);
-    get Values(): JsValue | null;
-    set Values(value: JsValue | null);
+    get Values(): unknown | null;
+    set Values(value: unknown | null);
 }
 
 

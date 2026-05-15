@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.HttpLogging
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -97,10 +97,10 @@ export interface HttpLoggingInterceptorContext$instance {
 
     HttpContext: HttpContext;
     LoggingFields: HttpLoggingFields;
-    readonly Parameters: IList_1<KeyValuePair_2<System_Internal.String, JsValue>>;
+    readonly Parameters: IList_1<KeyValuePair_2<System_Internal.String, unknown>>;
     RequestBodyLogLimit: int;
     ResponseBodyLogLimit: int;
-    AddParameter(key: string, value: JsValue | null): void;
+    AddParameter(key: string, value: unknown | null): void;
     Disable(fields: HttpLoggingFields): void;
     Enable(fields: HttpLoggingFields): void;
     IsAnyEnabled(fields: HttpLoggingFields): boolean;

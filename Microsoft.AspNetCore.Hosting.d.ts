@@ -5,11 +5,14 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Hosting/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IApplicationBuilder } from './Microsoft.AspNetCore.Builder/internal/index.js';
 import type { IServer } from './Microsoft.AspNetCore.Hosting.Server/internal/index.js';
 import type { IFeatureCollection } from './Microsoft.AspNetCore.Http.Features/internal/index.js';
-import type { HttpSysOptions } from './Microsoft.AspNetCore.Server.HttpSys/internal/index.js';
 import type { KestrelServerOptions, ListenOptions } from './Microsoft.AspNetCore.Server.Kestrel.Core/internal/index.js';
 import type { HttpsConnectionAdapterOptions, TlsHandshakeCallbackOptions } from './Microsoft.AspNetCore.Server.Kestrel.Https/internal/index.js';
 import type { NamedPipeTransportOptions } from './Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes/internal/index.js';
@@ -39,7 +42,7 @@ export type IApplicationLifetime = Internal.IApplicationLifetime;
 export type IHostingEnvironment = Internal.IHostingEnvironment;
 export type IHostingStartup = Internal.IHostingStartup;
 export type IStartup = Internal.IStartup;
-export type IStartupConfigureContainerFilter<TContainerBuilder> = Internal.IStartupConfigureContainerFilter_1<TContainerBuilder>;
+export type IStartupConfigureContainerFilter<TContainerBuilder extends unknown> = Internal.IStartupConfigureContainerFilter_1<TContainerBuilder>;
 export type IStartupConfigureServicesFilter = Internal.IStartupConfigureServicesFilter;
 export type IStartupFilter = Internal.IStartupFilter;
 export type IWebHost = Internal.IWebHost;
@@ -47,7 +50,6 @@ export type IWebHostBuilder = Internal.IWebHostBuilder;
 export type IWebHostEnvironment = Internal.IWebHostEnvironment;
 export { WebHostBuilderContext as WebHostBuilderContext } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 export { WebHostDefaults$instance as WebHostDefaults } from './Microsoft.AspNetCore.Hosting/internal/index.js';
-export { WebHostBuilderHttpSysExtensions$instance as WebHostBuilderHttpSysExtensions } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 export { WebHostBuilderIISExtensions$instance as WebHostBuilderIISExtensions } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 export { WebHostBuilderIISExtensions2$instance as WebHostBuilderIISExtensions2 } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 export { WebHostBuilderKestrelExtensions$instance as WebHostBuilderKestrelExtensions } from './Microsoft.AspNetCore.Hosting/internal/index.js';
@@ -66,10 +68,10 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type StartupBase<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.StartupBase :
-  Internal.StartupBase_1<T1>;
+  [T1] extends [unknown] ? Internal.StartupBase_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Hosting as ExtensionMethods } from './__internal/extensions/index.js';

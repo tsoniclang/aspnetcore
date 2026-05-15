@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Mvc.Cors/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { ICorsPolicyProvider, ICorsService } from './Microsoft.AspNetCore.Cors.Infrastructure/internal/index.js';
 import type { AuthorizationFilterContext, IAsyncAuthorizationFilter, IFilterMetadata, IOrderedFilter } from './Microsoft.AspNetCore.Mvc.Filters/internal/index.js';

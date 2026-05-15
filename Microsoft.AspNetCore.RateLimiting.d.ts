@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.RateLimiting/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { HttpContext } from './Microsoft.AspNetCore.Http/internal/index.js';
 import type { ConcurrencyLimiterOptions, FixedWindowRateLimiterOptions, PartitionedRateLimiter_1, RateLimitLease, RateLimitPartition_1, SlidingWindowRateLimiterOptions, TokenBucketRateLimiterOptions } from './System.Threading.RateLimiting/internal/index.js';
@@ -15,7 +19,7 @@ import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 // Public API exports (curated - no internal $instance/$views leakage)
 export { DisableRateLimitingAttribute as DisableRateLimitingAttribute } from './Microsoft.AspNetCore.RateLimiting/internal/index.js';
 export { EnableRateLimitingAttribute as EnableRateLimitingAttribute } from './Microsoft.AspNetCore.RateLimiting/internal/index.js';
-export type IRateLimiterPolicy<TPartitionKey> = Internal.IRateLimiterPolicy_1<TPartitionKey>;
+export type IRateLimiterPolicy<TPartitionKey extends unknown> = Internal.IRateLimiterPolicy_1<TPartitionKey>;
 export { OnRejectedContext as OnRejectedContext } from './Microsoft.AspNetCore.RateLimiting/internal/index.js';
 export { RateLimiterOptions as RateLimiterOptions } from './Microsoft.AspNetCore.RateLimiting/internal/index.js';
 export { RateLimiterOptionsExtensions$instance as RateLimiterOptionsExtensions } from './Microsoft.AspNetCore.RateLimiting/internal/index.js';

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Authentication.OAuth/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { ClaimActionCollection } from './Microsoft.AspNetCore.Authentication.OAuth.Claims/internal/index.js';
 import type { AccessDeniedContext, AuthenticateResult, AuthenticationProperties, AuthenticationScheme, AuthenticationTicket, HandleRequestResult, IAuthenticationHandler, IAuthenticationRequestHandler, ISecureDataFormat_1, ISystemClock, RedirectContext_1, RemoteAuthenticationEvents, RemoteAuthenticationHandler_1, RemoteAuthenticationOptions, RemoteFailureContext, ResultContext_1, TicketReceivedContext } from './Microsoft.AspNetCore.Authentication/internal/index.js';

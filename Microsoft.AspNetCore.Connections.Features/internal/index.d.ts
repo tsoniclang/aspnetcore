@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Connections.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -25,7 +25,7 @@ import type { Action_1, Boolean as ClrBoolean, Byte, Func_2, Int32, Int64, Nulla
 export interface IConnectionCompleteFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature: never;
 
-    OnCompleted(callback: Func_2<JsValue, Task>, state: JsValue): void;
+    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
 }
 
 
@@ -46,7 +46,7 @@ export type IConnectionEndPointFeature = IConnectionEndPointFeature$instance;
 export interface IConnectionHeartbeatFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature: never;
 
-    OnHeartbeat(action: Action_1<JsValue>, state: JsValue): void;
+    OnHeartbeat(action: Action_1<unknown>, state: unknown): void;
 }
 
 
@@ -73,7 +73,7 @@ export type IConnectionInherentKeepAliveFeature = IConnectionInherentKeepAliveFe
 export interface IConnectionItemsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature: never;
 
-    Items: IDictionary_2<JsValue, JsValue | null>;
+    Items: IDictionary_2<unknown, unknown | null>;
 }
 
 
@@ -102,7 +102,7 @@ export type IConnectionLifetimeNotificationFeature = IConnectionLifetimeNotifica
 export interface IConnectionMetricsTagsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IConnectionMetricsTagsFeature: never;
 
-    readonly Tags: ICollection_1<KeyValuePair_2<System_Internal.String, JsValue>>;
+    readonly Tags: ICollection_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -157,7 +157,7 @@ export type IMemoryPoolFeature = IMemoryPoolFeature$instance;
 export interface IPersistentStateFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature: never;
 
-    readonly State: IDictionary_2<JsValue, JsValue | null>;
+    readonly State: IDictionary_2<unknown, unknown | null>;
 }
 
 
@@ -184,7 +184,7 @@ export type IStreamAbortFeature = IStreamAbortFeature$instance;
 export interface IStreamClosedFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Connections_Features_IStreamClosedFeature: never;
 
-    OnClosed(callback: Action_1<JsValue | null>, state: JsValue | null): void;
+    OnClosed(callback: Action_1<unknown | null>, state: unknown | null): void;
 }
 
 

@@ -3,18 +3,18 @@
 // Assembly: Microsoft.AspNetCore.Hosting.Server.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IHostContextContainer_1$instance<TContext> {
+export interface IHostContextContainer_1$instance<TContext extends unknown> {
     readonly __tsonic_iface_Microsoft_AspNetCore_Hosting_Server_Abstractions_IHostContextContainer_1: never;
 
     HostContext: TContext | null;
 }
 
 
-export type IHostContextContainer_1<TContext> = IHostContextContainer_1$instance<TContext>;
+export type IHostContextContainer_1<TContext extends unknown> = IHostContextContainer_1$instance<TContext>;
 

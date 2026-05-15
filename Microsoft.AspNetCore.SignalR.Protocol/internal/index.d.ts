@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.SignalR.Common, Microsoft.AspNetCore.SignalR.Protocols.Json
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -80,16 +80,16 @@ export interface CompletionMessage$instance extends HubInvocationMessage {
 
     readonly Error: string | null;
     readonly HasResult: boolean;
-    readonly Result: JsValue | null;
+    readonly Result: unknown | null;
     ToString(): string;
 }
 
 
 export const CompletionMessage: {
-    new(invocationId: string, error: string | null, result: JsValue | null, hasResult: boolean): CompletionMessage;
+    new(invocationId: string, error: string | null, result: unknown | null, hasResult: boolean): CompletionMessage;
     Empty(invocationId: string): CompletionMessage;
     WithError(invocationId: string, error: string | null): CompletionMessage;
-    WithResult(invocationId: string, payload: JsValue | null): CompletionMessage;
+    WithResult(invocationId: string, payload: unknown | null): CompletionMessage;
 };
 
 
@@ -155,13 +155,13 @@ export type HubMessage = HubMessage$instance;
 export interface HubMethodInvocationMessage$instance extends HubInvocationMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_HubMethodInvocationMessage: never;
 
-    readonly Arguments: (JsValue | null)[];
+    readonly Arguments: (unknown | null)[];
     readonly StreamIds: string[] | null;
     readonly Target: string;
 }
 
 
-export const HubMethodInvocationMessage: (abstract new(invocationId: string | null, target: string, arguments: (JsValue | null)[], streamIds: string[] | null) => HubMethodInvocationMessage) & (abstract new(invocationId: string | null, target: string, arguments: (JsValue | null)[]) => HubMethodInvocationMessage) & {
+export const HubMethodInvocationMessage: (abstract new(invocationId: string | null, target: string, arguments: (unknown | null)[], streamIds: string[] | null) => HubMethodInvocationMessage) & (abstract new(invocationId: string | null, target: string, arguments: (unknown | null)[]) => HubMethodInvocationMessage) & {
 };
 
 
@@ -190,9 +190,9 @@ export interface InvocationMessage$instance extends HubMethodInvocationMessage {
 
 
 export const InvocationMessage: {
-    new(target: string, arguments: (JsValue | null)[]): InvocationMessage;
-    new(invocationId: string | null, target: string, arguments: (JsValue | null)[]): InvocationMessage;
-    new(invocationId: string | null, target: string, arguments: (JsValue | null)[], streamIds: string[] | null): InvocationMessage;
+    new(target: string, arguments: (unknown | null)[]): InvocationMessage;
+    new(invocationId: string | null, target: string, arguments: (unknown | null)[]): InvocationMessage;
+    new(invocationId: string | null, target: string, arguments: (unknown | null)[], streamIds: string[] | null): InvocationMessage;
 };
 
 
@@ -290,8 +290,8 @@ export interface StreamInvocationMessage$instance extends HubMethodInvocationMes
 
 
 export const StreamInvocationMessage: {
-    new(invocationId: string, target: string, arguments: (JsValue | null)[]): StreamInvocationMessage;
-    new(invocationId: string, target: string, arguments: (JsValue | null)[], streamIds: string[] | null): StreamInvocationMessage;
+    new(invocationId: string, target: string, arguments: (unknown | null)[]): StreamInvocationMessage;
+    new(invocationId: string, target: string, arguments: (unknown | null)[], streamIds: string[] | null): StreamInvocationMessage;
 };
 
 
@@ -300,14 +300,14 @@ export type StreamInvocationMessage = StreamInvocationMessage$instance;
 export interface StreamItemMessage$instance extends HubInvocationMessage {
     readonly __tsonic_type_Microsoft_AspNetCore_SignalR_Protocol_StreamItemMessage: never;
 
-    get Item(): JsValue | null;
-    set Item(value: JsValue | null);
+    get Item(): unknown | null;
+    set Item(value: unknown | null);
     ToString(): string;
 }
 
 
 export const StreamItemMessage: {
-    new(invocationId: string, item: JsValue | null): StreamItemMessage;
+    new(invocationId: string, item: unknown | null): StreamItemMessage;
 };
 
 

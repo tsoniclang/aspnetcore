@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Mvc/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AuthenticationProperties } from './Microsoft.AspNetCore.Authentication/internal/index.js';
 import type { IHtmlContent } from './Microsoft.AspNetCore.Html/internal/index.js';
@@ -182,52 +186,52 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type ActionResult<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ActionResult :
-  Internal.ActionResult_1<T1>;
+  [T1] extends [unknown] ? Internal.ActionResult_1<T1> : never;
 
 export type MiddlewareFilterAttribute<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.MiddlewareFilterAttribute :
-  Internal.MiddlewareFilterAttribute_1<T1>;
+  [T1] extends [unknown] ? Internal.MiddlewareFilterAttribute_1<T1> : never;
 
 export type ModelBinderAttribute<
-  T1 = __,
+  T1 extends unknown & IModelBinder | __ = __,
 > =
   [T1] extends [__] ? Internal.ModelBinderAttribute :
-  [T1] extends [IModelBinder] ? Internal.ModelBinderAttribute_1<T1> : never;
+  [T1] extends [unknown & IModelBinder] ? Internal.ModelBinderAttribute_1<T1> : never;
 
 export type ModelMetadataTypeAttribute<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ModelMetadataTypeAttribute :
-  Internal.ModelMetadataTypeAttribute_1<T1>;
+  [T1] extends [unknown] ? Internal.ModelMetadataTypeAttribute_1<T1> : never;
 
 export type ProducesAttribute<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ProducesAttribute :
-  Internal.ProducesAttribute_1<T1>;
+  [T1] extends [unknown] ? Internal.ProducesAttribute_1<T1> : never;
 
 export type ProducesResponseTypeAttribute<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ProducesResponseTypeAttribute :
-  Internal.ProducesResponseTypeAttribute_1<T1>;
+  [T1] extends [unknown] ? Internal.ProducesResponseTypeAttribute_1<T1> : never;
 
 export type ServiceFilterAttribute<
-  T1 = __,
+  T1 extends unknown & IFilterMetadata | __ = __,
 > =
   [T1] extends [__] ? Internal.ServiceFilterAttribute :
-  [T1] extends [IFilterMetadata] ? Internal.ServiceFilterAttribute_1<T1> : never;
+  [T1] extends [unknown & IFilterMetadata] ? Internal.ServiceFilterAttribute_1<T1> : never;
 
 export type TypeFilterAttribute<
-  T1 = __,
+  T1 extends unknown & IFilterMetadata | __ = __,
 > =
   [T1] extends [__] ? Internal.TypeFilterAttribute :
-  [T1] extends [IFilterMetadata] ? Internal.TypeFilterAttribute_1<T1> : never;
+  [T1] extends [unknown & IFilterMetadata] ? Internal.TypeFilterAttribute_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Mvc as ExtensionMethods } from './__internal/extensions/index.js';

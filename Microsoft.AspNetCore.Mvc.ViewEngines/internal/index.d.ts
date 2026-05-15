@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.ViewFeatures
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -48,7 +48,7 @@ export interface IViewEngine$instance {
 
 export type IViewEngine = IViewEngine$instance;
 
-export interface CompositeViewEngine$instance {
+export interface CompositeViewEngine$instance extends ICompositeViewEngine$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ViewEngines_CompositeViewEngine: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine: never;

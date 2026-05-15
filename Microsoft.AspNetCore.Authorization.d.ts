@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Authorization/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { PolicyAuthorizationResult } from './Microsoft.AspNetCore.Authorization.Policy/internal/index.js';
 import type { HttpContext, RequestDelegate } from './Microsoft.AspNetCore.Http/internal/index.js';
@@ -53,11 +57,11 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type AuthorizationHandler<
-  T1 = __,
-  T2 = __,
+  T1 extends unknown & Internal.IAuthorizationRequirement | __ = __,
+  T2 extends unknown | __ = __,
 > =
-  [T2] extends [__] ? [T1] extends [Internal.IAuthorizationRequirement] ? Internal.AuthorizationHandler_1<T1> : never :
-  [T1] extends [Internal.IAuthorizationRequirement] ? Internal.AuthorizationHandler_2<T1, T2> : never;
+  [T2] extends [__] ? [T1] extends [unknown & Internal.IAuthorizationRequirement] ? Internal.AuthorizationHandler_1<T1> : never :
+  [T1] extends [unknown & Internal.IAuthorizationRequirement] ? [T2] extends [unknown] ? Internal.AuthorizationHandler_2<T1, T2> : never : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Authorization as ExtensionMethods } from './__internal/extensions/index.js';

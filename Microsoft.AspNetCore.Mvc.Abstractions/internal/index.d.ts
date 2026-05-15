@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -56,11 +56,11 @@ export interface ActionDescriptor$instance {
     BoundProperties: IList_1<ParameterDescriptor>;
     get DisplayName(): string | null;
     set DisplayName(value: string | null);
-    EndpointMetadata: IList_1<JsValue>;
+    EndpointMetadata: IList_1<unknown>;
     FilterDescriptors: IList_1<FilterDescriptor>;
     readonly Id: string;
     Parameters: IList_1<ParameterDescriptor>;
-    Properties: IDictionary_2<JsValue, JsValue | null>;
+    Properties: IDictionary_2<unknown, unknown | null>;
     RouteValues: IDictionary_2<System_Internal.String, string | null>;
 }
 
@@ -120,8 +120,8 @@ export const ParameterDescriptor: {
 export type ParameterDescriptor = ParameterDescriptor$instance;
 
 export abstract class ActionDescriptorExtensions$instance {
-    static GetProperty<T>(actionDescriptor: ActionDescriptor): T | null;
-    static SetProperty<T>(actionDescriptor: ActionDescriptor, value: T): void;
+    static GetProperty<T extends unknown>(actionDescriptor: ActionDescriptor): T | null;
+    static SetProperty<T extends unknown>(actionDescriptor: ActionDescriptor, value: T): void;
 }
 
 

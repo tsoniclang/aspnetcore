@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './System.Formats.Cbor/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Decimal, Double, Enum, Exception, Half, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, UInt32, UInt64, Void } from '@tsonic/dotnet/System.js';
 import type { BigInteger } from '@tsonic/dotnet/System.Numerics.js';

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -27,9 +27,9 @@ import type { Action_2, Boolean as ClrBoolean, Func_2, Func_3, Object as ClrObje
 export interface IControllerActivator$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator: never;
 
-    Create(context: ControllerContext): JsValue;
-    Release(context: ControllerContext, controller: JsValue): void;
-    ReleaseAsync(context: ControllerContext, controller: JsValue): ValueTask;
+    Create(context: ControllerContext): unknown;
+    Release(context: ControllerContext, controller: unknown): void;
+    ReleaseAsync(context: ControllerContext, controller: unknown): ValueTask;
 }
 
 
@@ -38,9 +38,9 @@ export type IControllerActivator = IControllerActivator$instance;
 export interface IControllerActivatorProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider: never;
 
-    CreateActivator(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, JsValue>;
-    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, JsValue, ValueTask> | null;
-    CreateReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, JsValue> | null;
+    CreateActivator(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, unknown>;
+    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, unknown, ValueTask> | null;
+    CreateReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, unknown> | null;
 }
 
 
@@ -49,9 +49,9 @@ export type IControllerActivatorProvider = IControllerActivatorProvider$instance
 export interface IControllerFactory$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory: never;
 
-    CreateController(context: ControllerContext): JsValue;
-    ReleaseController(context: ControllerContext, controller: JsValue): void;
-    ReleaseControllerAsync(context: ControllerContext, controller: JsValue): ValueTask;
+    CreateController(context: ControllerContext): unknown;
+    ReleaseController(context: ControllerContext, controller: unknown): void;
+    ReleaseControllerAsync(context: ControllerContext, controller: unknown): ValueTask;
 }
 
 
@@ -60,9 +60,9 @@ export type IControllerFactory = IControllerFactory$instance;
 export interface IControllerFactoryProvider$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider: never;
 
-    CreateAsyncControllerReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, JsValue, ValueTask> | null;
-    CreateControllerFactory(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, JsValue>;
-    CreateControllerReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, JsValue> | null;
+    CreateAsyncControllerReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, unknown, ValueTask> | null;
+    CreateControllerFactory(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, unknown>;
+    CreateControllerReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, unknown> | null;
 }
 
 
@@ -92,9 +92,9 @@ export interface ControllerActivatorProvider$instance extends IControllerActivat
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider: never;
 
-    CreateActivator(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, JsValue>;
-    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, JsValue, ValueTask> | null;
-    CreateReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, JsValue> | null;
+    CreateActivator(descriptor: ControllerActionDescriptor): Func_2<ControllerContext, unknown>;
+    CreateAsyncReleaser(descriptor: ControllerActionDescriptor): Func_3<ControllerContext, unknown, ValueTask> | null;
+    CreateReleaser(descriptor: ControllerActionDescriptor): Action_2<ControllerContext, unknown> | null;
 }
 
 
@@ -145,7 +145,7 @@ export const ControllerFeature: {
 
 export type ControllerFeature = ControllerFeature$instance;
 
-export interface ControllerFeatureProvider$instance extends IApplicationFeatureProvider, Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<ControllerFeature> {
+export interface ControllerFeatureProvider$instance extends Microsoft_AspNetCore_Mvc_ApplicationParts_Internal.IApplicationFeatureProvider_1$instance<ControllerFeature> {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_Controllers_ControllerFeatureProvider: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider: never;
@@ -194,8 +194,8 @@ export interface ServiceBasedControllerActivator$instance extends IControllerAct
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator: never;
 
-    Create(actionContext: ControllerContext): JsValue;
-    Release(context: ControllerContext, controller: JsValue): void;
+    Create(actionContext: ControllerContext): unknown;
+    Release(context: ControllerContext, controller: unknown): void;
 }
 
 

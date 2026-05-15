@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.OutputCaching
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -156,7 +156,7 @@ export interface OutputCachePolicyBuilder$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_OutputCaching_OutputCachePolicyBuilder: never;
 
     AddPolicy(policyType: Type): OutputCachePolicyBuilder;
-    AddPolicy<T extends IOutputCachePolicy>(): OutputCachePolicyBuilder;
+    AddPolicy<T extends unknown & IOutputCachePolicy>(): OutputCachePolicyBuilder;
     Cache(): OutputCachePolicyBuilder;
     Expire(expiration: TimeSpan): OutputCachePolicyBuilder;
     NoCache(): OutputCachePolicyBuilder;

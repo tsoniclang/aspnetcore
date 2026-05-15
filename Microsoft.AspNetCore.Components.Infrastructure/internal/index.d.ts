@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Components
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -50,7 +50,7 @@ export abstract class PersistentStateProviderServiceCollectionExtensions$instanc
 export type PersistentStateProviderServiceCollectionExtensions = PersistentStateProviderServiceCollectionExtensions$instance;
 
 export abstract class RegisterPersistentComponentStateServiceCollectionExtensions$instance {
-    static AddPersistentServiceRegistration<TService>(services: IServiceCollection, componentRenderMode: IComponentRenderMode): IServiceCollection;
+    static AddPersistentServiceRegistration<TService extends unknown>(services: IServiceCollection, componentRenderMode: IComponentRenderMode): IServiceCollection;
 }
 
 

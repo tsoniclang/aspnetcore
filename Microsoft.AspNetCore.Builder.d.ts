@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Builder/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AuthorizationPolicy, AuthorizationPolicyBuilder, IAuthorizeData } from './Microsoft.AspNetCore.Authorization/internal/index.js';
 import type { ServerComponentsEndpointOptions } from './Microsoft.AspNetCore.Components.Server/internal/index.js';
@@ -139,7 +143,6 @@ export { ValidationEndpointConventionBuilderExtensions$instance as ValidationEnd
 export { MapRouteRouteBuilderExtensions$instance as MapRouteRouteBuilderExtensions } from './Microsoft.AspNetCore.Builder/internal/index.js';
 export { RouterMiddleware as RouterMiddleware } from './Microsoft.AspNetCore.Builder/internal/index.js';
 export { RouteShortCircuitEndpointConventionBuilderExtensions$instance as RouteShortCircuitEndpointConventionBuilderExtensions } from './Microsoft.AspNetCore.Builder/internal/index.js';
-export { IISServerOptions as IISServerOptions } from './Microsoft.AspNetCore.Builder/internal/index.js';
 export { IISOptions as IISOptions } from './Microsoft.AspNetCore.Builder/internal/index.js';
 export { SessionMiddlewareExtensions$instance as SessionMiddlewareExtensions } from './Microsoft.AspNetCore.Builder/internal/index.js';
 export { SessionOptions as SessionOptions } from './Microsoft.AspNetCore.Builder/internal/index.js';

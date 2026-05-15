@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Http.Features/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { ConnectionContext } from './Microsoft.AspNetCore.Connections/internal/index.js';
 import type { Endpoint, HttpContext, HttpRequest, IFormCollection, IHeaderDictionary, IQueryCollection, IRequestCookieCollection, IResponseCookies, ISession, WebSocketAcceptContext } from './Microsoft.AspNetCore.Http/internal/index.js';

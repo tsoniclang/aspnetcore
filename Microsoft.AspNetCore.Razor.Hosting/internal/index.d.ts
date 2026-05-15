@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Razor.Runtime
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -28,7 +28,7 @@ export interface RazorCompiledItem$instance {
 
     readonly Identifier: string;
     readonly Kind: string;
-    readonly Metadata: IReadOnlyList_1<JsValue>;
+    readonly Metadata: IReadOnlyList_1<unknown>;
     readonly Type: Type;
 }
 

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.AspNetCore.Mvc.Localization/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IWebHostEnvironment } from './Microsoft.AspNetCore.Hosting/internal/index.js';
 import type { IHtmlContent } from './Microsoft.AspNetCore.Html/internal/index.js';
@@ -32,16 +36,16 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type HtmlLocalizer<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.HtmlLocalizer :
-  Internal.HtmlLocalizer_1<T1>;
+  [T1] extends [unknown] ? Internal.HtmlLocalizer_1<T1> : never;
 
 export type IHtmlLocalizer<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IHtmlLocalizer :
-  Internal.IHtmlLocalizer_1<T1>;
+  [T1] extends [unknown] ? Internal.IHtmlLocalizer_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_AspNetCore_Mvc_Localization as ExtensionMethods } from './__internal/extensions/index.js';

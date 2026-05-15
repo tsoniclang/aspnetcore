@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Mvc.Abstractions, Microsoft.AspNetCore.Mvc.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -120,7 +120,7 @@ export const ActionConstraintProviderContext: {
 
 export type ActionConstraintProviderContext = ActionConstraintProviderContext$instance;
 
-export interface ActionMethodSelectorAttribute$instance extends Attribute, IActionConstraintMetadata {
+export interface ActionMethodSelectorAttribute$instance extends Attribute {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionConstraints_ActionMethodSelectorAttribute: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;
@@ -143,7 +143,7 @@ export interface __ActionMethodSelectorAttribute$views {
 export type ActionMethodSelectorAttribute = ActionMethodSelectorAttribute$instance & __ActionMethodSelectorAttribute$views;
 
 
-export interface HttpMethodActionConstraint$instance extends IActionConstraintMetadata, IActionConstraint$instance {
+export interface HttpMethodActionConstraint$instance extends IActionConstraint$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Mvc_ActionConstraints_HttpMethodActionConstraint: never;
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint: never;

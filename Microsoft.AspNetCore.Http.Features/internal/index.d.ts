@@ -3,7 +3,7 @@
 // Assembly: Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Http.Abstractions, Microsoft.AspNetCore.Http.Features, Microsoft.Extensions.Features
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -54,19 +54,19 @@ export interface IEndpointFeature$instance {
 
 export type IEndpointFeature = IEndpointFeature$instance;
 
-export interface IFeatureCollection$instance extends IEnumerable_1<KeyValuePair_2<Type, JsValue>>, IEnumerable {
+export interface IFeatureCollection$instance extends IEnumerable_1<KeyValuePair_2<Type, unknown>>, IEnumerable {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IFeatureCollection: never;
 
     readonly IsReadOnly: boolean;
     readonly Revision: int;
-    get Item(): JsValue | null;
-    set Item(value: JsValue | null);
-    Get<TFeature>(): TFeature | null;
-    Set<TFeature>(instance: TFeature | null): void;
+    get Item(): unknown | null;
+    set Item(value: unknown | null);
+    Get<TFeature extends unknown>(): TFeature | null;
+    Set<TFeature extends unknown>(instance: TFeature | null): void;
 }
 
 
-export interface IFeatureCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<Type, JsValue>> {}
+export interface IFeatureCollection$instance extends System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<Type, unknown>> {}
 
 export type IFeatureCollection = IFeatureCollection$instance;
 
@@ -141,7 +141,7 @@ export type IHttpMaxRequestBodySizeFeature = IHttpMaxRequestBodySizeFeature$inst
 export interface IHttpMetricsTagsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IHttpMetricsTagsFeature: never;
 
-    readonly Tags: ICollection_1<KeyValuePair_2<System_Internal.String, JsValue>>;
+    readonly Tags: ICollection_1<KeyValuePair_2<System_Internal.String, unknown>>;
     MetricsDisabled: boolean;
 }
 
@@ -235,7 +235,7 @@ export interface IHttpResponseFeature$instance {
     Headers: IHeaderDictionary;
     Body: Stream;
     readonly HasStarted: boolean;
-    OnStarting(callback: Func_2<JsValue, Task>, state: JsValue): void;
+    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
 }
 
 
@@ -292,7 +292,7 @@ export type IHttpWebTransportFeature = IHttpWebTransportFeature$instance;
 export interface IItemsFeature$instance {
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IItemsFeature: never;
 
-    Items: IDictionary_2<JsValue, JsValue | null>;
+    Items: IDictionary_2<unknown, unknown | null>;
 }
 
 
@@ -413,7 +413,7 @@ export interface IWebTransportSession$instance {
 
 export type IWebTransportSession = IWebTransportSession$instance;
 
-export interface FeatureReference_1$instance<T> {
+export interface FeatureReference_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FeatureReference_1: never;
 
     Fetch(features: IFeatureCollection): T | null;
@@ -422,32 +422,32 @@ export interface FeatureReference_1$instance<T> {
 
 
 export const FeatureReference_1: {
-    new<T>(): FeatureReference_1<T>;
-    readonly Default: <T>() => FeatureReference_1<T>;
+    new<T extends unknown>(): FeatureReference_1<T>;
+    readonly Default: <T extends unknown>() => FeatureReference_1<T>;
 };
 
 
-export type FeatureReference_1<T> = FeatureReference_1$instance<T>;
+export type FeatureReference_1<T extends unknown> = FeatureReference_1$instance<T>;
 
-export interface FeatureReferences_1$instance<TCache> {
+export interface FeatureReferences_1$instance<TCache extends unknown> {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_FeatureReferences_1: never;
 
     Cache: TCache | null;
     Collection: IFeatureCollection;
     Revision: int;
-    Fetch<TFeature, TState>(cached: TFeature | null, state: TState, factory: Func_2<TState, TFeature | null>): TFeature | null;
-    Fetch<TFeature>(cached: TFeature | null, factory: Func_2<IFeatureCollection, TFeature | null>): TFeature | null;
+    Fetch<TFeature extends (object | null), TState extends unknown>(cached: TFeature | null, state: TState, factory: Func_2<TState, TFeature | null>): TFeature | null;
+    Fetch<TFeature extends (object | null)>(cached: TFeature | null, factory: Func_2<IFeatureCollection, TFeature | null>): TFeature | null;
     Initalize(collection: IFeatureCollection): void;
     Initalize(collection: IFeatureCollection, revision: int): void;
 }
 
 
 export const FeatureReferences_1: {
-    new<TCache>(collection: IFeatureCollection): FeatureReferences_1<TCache>;
+    new<TCache extends unknown>(collection: IFeatureCollection): FeatureReferences_1<TCache>;
 };
 
 
-export type FeatureReferences_1<TCache> = FeatureReferences_1$instance<TCache>;
+export type FeatureReferences_1<TCache extends unknown> = FeatureReferences_1$instance<TCache>;
 
 export interface DefaultSessionFeature$instance extends ISessionFeature$instance {
     readonly __tsonic_type_Microsoft_AspNetCore_Http_Features_DefaultSessionFeature: never;
@@ -478,12 +478,12 @@ export interface FeatureCollection$instance extends IFeatureCollection$instance 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly IsReadOnly: boolean;
-    get Item(): JsValue | null;
-    set Item(value: JsValue | null);
+    get Item(): unknown | null;
+    set Item(value: unknown | null);
     readonly Revision: int;
-    Get<TFeature>(): TFeature | null;
-    GetEnumerator(): IEnumerator_1<KeyValuePair_2<Type, JsValue>>;
-    Set<TFeature>(instance: TFeature | null): void;
+    Get<TFeature extends unknown>(): TFeature | null;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<Type, unknown>>;
+    Set<TFeature extends unknown>(instance: TFeature | null): void;
 }
 
 
@@ -666,8 +666,8 @@ export interface HttpResponseFeature$instance extends IHttpResponseFeature$insta
     get ReasonPhrase(): string | null;
     set ReasonPhrase(value: string | null);
     StatusCode: int;
-    OnCompleted(callback: Func_2<JsValue, Task>, state: JsValue): void;
-    OnStarting(callback: Func_2<JsValue, Task>, state: JsValue): void;
+    OnCompleted(callback: Func_2<unknown, Task>, state: unknown): void;
+    OnStarting(callback: Func_2<unknown, Task>, state: unknown): void;
 }
 
 
@@ -688,7 +688,7 @@ export interface ItemsFeature$instance extends IItemsFeature$instance {
 
     readonly __tsonic_iface_Microsoft_AspNetCore_Http_Features_IItemsFeature: never;
 
-    Items: IDictionary_2<JsValue, JsValue | null>;
+    Items: IDictionary_2<unknown, unknown | null>;
 }
 
 
@@ -882,8 +882,8 @@ export type TlsConnectionFeature = TlsConnectionFeature$instance & __TlsConnecti
 
 
 export abstract class FeatureCollectionExtensions$instance {
-    static GetRequiredFeature(featureCollection: IFeatureCollection, key: Type): JsValue;
-    static GetRequiredFeature<TFeature>(featureCollection: IFeatureCollection): TFeature;
+    static GetRequiredFeature(featureCollection: IFeatureCollection, key: Type): unknown;
+    static GetRequiredFeature<TFeature extends unknown>(featureCollection: IFeatureCollection): TFeature;
 }
 
 
